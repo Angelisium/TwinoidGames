@@ -9,7 +9,7 @@ movie 'swapou2.swf' compressed // flash 7, total frames: 4, frame rate: 40 fps, 
   end // of exportAssets
   
   exportAssets
-    3 as ''|=?[)"'
+    3 as '\'|=?[)"'
   end // of exportAssets
   
   exportAssets
@@ -17,11 +17,11 @@ movie 'swapou2.swf' compressed // flash 7, total frames: 4, frame rate: 40 fps, 
   end // of exportAssets
   
   exportAssets
-    5 as ''^{1"1!'
+    5 as '\'^{1"1!'
   end // of exportAssets
   
   exportAssets
-    6 as '?""'17"'
+    6 as '?""\'17"'
   end // of exportAssets
   
   exportAssets
@@ -37,11 +37,11 @@ movie 'swapou2.swf' compressed // flash 7, total frames: 4, frame rate: 40 fps, 
   end // of exportAssets
   
   exportAssets
-    10 as '}4?'5"#'
+    10 as '}4?\'5"#'
   end // of exportAssets
   
   exportAssets
-    11 as '*0'"#$#'
+    11 as '*0\'"#$#'
   end // of exportAssets
   
   exportAssets
@@ -300,7 +300,7 @@ movie 'swapou2.swf' compressed // flash 7, total frames: 4, frame rate: 40 fps, 
 
     setMember
     push r:0, '21*1|+!'
-    function2 (r:2='!9', r:3='#82[!', r:4='?41'!!') ()
+    function2 (r:2='!9', r:3='#82[!', r:4='?41\'!!') ()
       push r:'#82[!', '@'
       add
       push '3&!$'
@@ -318,7 +318,7 @@ movie 'swapou2.swf' compressed // flash 7, total frames: 4, frame rate: 40 fps, 
       add
       setRegister r:1
       pop
-      push r:'?41'!!', r:1, r:'#82[!', 3, r:'!9', 'attachMovie'
+      push r:'?41\'!!', r:1, r:'#82[!', 3, r:'!9', 'attachMovie'
       callMethod
       pop
       push r:'!9', r:1
@@ -328,7 +328,7 @@ movie 'swapou2.swf' compressed // flash 7, total frames: 4, frame rate: 40 fps, 
 
     setMember
     push r:0, ']()?5+"'
-    function2 (r:2='!9', r:3='?41'!!') ()
+    function2 (r:2='!9', r:3='?41\'!!') ()
       push '_empty@', '3&!$'
       getVariable
       push '3+9{&6"'
@@ -344,7 +344,7 @@ movie 'swapou2.swf' compressed // flash 7, total frames: 4, frame rate: 40 fps, 
       add
       setRegister r:1
       pop
-      push r:'?41'!!', r:1, 2, r:'!9', 'createEmptyMovieClip'
+      push r:'?41\'!!', r:1, 2, r:'!9', 'createEmptyMovieClip'
       callMethod
       pop
       push r:'!9', r:1
@@ -354,7 +354,7 @@ movie 'swapou2.swf' compressed // flash 7, total frames: 4, frame rate: 40 fps, 
 
     setMember
     push r:0, ']79${2#'
-    function2 (r:2='!9', r:3='?41'!!') ()
+    function2 (r:2='!9', r:3='?41\'!!') ()
       push '_dup@', '3&!$'
       getVariable
       push '3+9{&6"'
@@ -370,7 +370,7 @@ movie 'swapou2.swf' compressed // flash 7, total frames: 4, frame rate: 40 fps, 
       add
       setRegister r:1
       pop
-      push r:'?41'!!', r:1, 2, r:'!9', 'duplicateMovieClip'
+      push r:'?41\'!!', r:1, 2, r:'!9', 'duplicateMovieClip'
       callMethod
       pop
       push r:'!9', '_parent'
@@ -419,7 +419,7 @@ movie 'swapou2.swf' compressed // flash 7, total frames: 4, frame rate: 40 fps, 
 
     setMember
     push r:0, 'createTextField'
-    function2 (r:2='!9', r:3='?41'!!', r:6='?', r:4='@', r:7='=', r:5='(') ()
+    function2 (r:2='!9', r:3='?41\'!!', r:6='?', r:4='@', r:7='=', r:5='(') ()
       push 'TextField@', '3&!$'
       getVariable
       push '3+9{&6"'
@@ -435,7 +435,7 @@ movie 'swapou2.swf' compressed // flash 7, total frames: 4, frame rate: 40 fps, 
       add
       setRegister r:1
       pop
-      push r:'(', r:'=', r:'@', r:'?', r:'?41'!!', r:1, 6, r:'!9', 'createTextField'
+      push r:'(', r:'=', r:'@', r:'?', r:'?41\'!!', r:1, 6, r:'!9', 'createTextField'
       callMethod
       pop
       push r:'!9', r:1
@@ -503,8 +503,8 @@ movie 'swapou2.swf' compressed // flash 7, total frames: 4, frame rate: 40 fps, 
 
     setMember
     push r:0, 'hitTest'
-    function2 (r:2='-'%!', r:1='0'%!') ()
-      push r:'0'%!', 1, r:'-'%!', 'hitTest'
+    function2 (r:2='-\'%!', r:1='0\'%!') ()
+      push r:'0\'%!', 1, r:'-\'%!', 'hitTest'
       callMethod
       return
     end // of function 
@@ -1516,7 +1516,7 @@ movie 'swapou2.swf' compressed // flash 7, total frames: 4, frame rate: 40 fps, 
 
     setMember
     push r:1, '49{^'
-    function2 (r:3='}!2|'9"', r:4='#3%+79', r:2='length') (r:1='this')
+    function2 (r:3='}!2|\'9"', r:4='#3%+79', r:2='length') (r:1='this')
       push r:this, '8#{-=8"'
       getMember
       push -1
@@ -1550,7 +1550,7 @@ movie 'swapou2.swf' compressed // flash 7, total frames: 4, frame rate: 40 fps, 
       callMethod
       pop
      label8:
-      push r:this, '}?*)18', r:'}!2|'9"', 1, r:this, '5!=1$0'
+      push r:this, '}?*)18', r:'}!2|\'9"', 1, r:this, '5!=1$0'
       callMethod
       setMember
       push r:this, ']##^- #', r:'#3%+79', 1, r:this, '5!=1$0'
@@ -1751,12 +1751,12 @@ movie 'swapou2.swf' compressed // flash 7, total frames: 4, frame rate: 40 fps, 
 
     setMember
     push r:1, 'setVolume'
-    function2 (r:3='-%$2', r:4=''['%{3!') (r:1='this')
+    function2 (r:3='-%$2', r:4='\'[\'%{3!') (r:1='this')
       push r:'-%$2', 1, r:this, '5!=1$0'
       callMethod
       setRegister r:2
       pop
-      push r:2, '11}!', r:''['%{3!'
+      push r:2, '11}!', r:'\'[\'%{3!'
       setMember
       push r:2, 'enabled'
       getMember
@@ -3154,7 +3154,7 @@ movie 'swapou2.swf' compressed // flash 7, total frames: 4, frame rate: 40 fps, 
 
     setMember
     push r:0, '\'}6$?2"'
-    function2 (r:5='^}=9 )#', r:6=''8')  "', r:4='']%$0 "') ()
+    function2 (r:5='^}=9 )#', r:6='\'8\')  "', r:4='\']%$0 "') ()
       push r:'^}=9 )#'
       branchIfTrue label4
       push 2, 'swapou2'
@@ -3177,9 +3177,9 @@ movie 'swapou2.swf' compressed // flash 7, total frames: 4, frame rate: 40 fps, 
      label5:
       setRegister r:3
       pop
-      push r:''8')  "', 3
+      push r:'\'8\')  "', 3
       subtract
-      push r:'']%$0 "'
+      push r:'\']%$0 "'
       add
       setRegister r:2
       pop
@@ -3199,7 +3199,7 @@ movie 'swapou2.swf' compressed // flash 7, total frames: 4, frame rate: 40 fps, 
       getMember
       push 1
       subtract
-      push r:'']%$0 "', 2, 'Math'
+      push r:'\']%$0 "', 2, 'Math'
       getVariable
       push 'min'
       callMethod
@@ -3262,8 +3262,8 @@ movie 'swapou2.swf' compressed // flash 7, total frames: 4, frame rate: 40 fps, 
 
     setMember
     push r:0, '2|"05}#'
-    function2 (r:5='7'[!') ()
-      push '-]#[!', UNDEF, '7\'[!', r:'7'[!', 'face', 0.0, '4{5"{$', 0.0, 'bg', 0.0, 'movie', UNDEF, 6
+    function2 (r:5='7\'[!') ()
+      push '-]#[!', UNDEF, '7\'[!', r:'7\'[!', 'face', 0.0, '4{5"{$', 0.0, 'bg', 0.0, 'movie', UNDEF, 6
       initObject
       return
     end // of function 
@@ -3290,16 +3290,16 @@ movie 'swapou2.swf' compressed // flash 7, total frames: 4, frame rate: 40 fps, 
 
     setMember
     push r:0, '8\'9}85"'
-    function2 (r:7='4-44"$', r:3='4{5"{$', r:2='bg', r:5='7'[!') ()
-      push '-]#[!', FALSE, '7\'[!', r:'7'[!', 'face', r:'4-44"$', '4{5"{$', r:'4{5"{$', 'bg', r:bg, 'movie', UNDEF, 6
+    function2 (r:7='4-44"$', r:3='4{5"{$', r:2='bg', r:5='7\'[!') ()
+      push '-]#[!', FALSE, '7\'[!', r:'7\'[!', 'face', r:'4-44"$', '4{5"{$', r:'4{5"{$', 'bg', r:bg, 'movie', UNDEF, 6
       initObject
       return
     end // of function 
 
     setMember
     push r:0, '8& !@'
-    function2 (r:2='4{5"{$', r:1='bg', r:3='7'[!') ()
-      push r:'7'[!', r:bg, r:'4{5"{$', -1, 4, 'swapou2'
+    function2 (r:2='4{5"{$', r:1='bg', r:3='7\'[!') ()
+      push r:'7\'[!', r:bg, r:'4{5"{$', -1, 4, 'swapou2'
       getVariable
       push '0#)3$'
       getMember
@@ -3310,8 +3310,8 @@ movie 'swapou2.swf' compressed // flash 7, total frames: 4, frame rate: 40 fps, 
 
     setMember
     push r:0, '%@9%&1'
-    function2 (r:2='4{5"{$', r:1='bg', r:3='7'[!') ()
-      push r:'7'[!', r:bg, r:'4{5"{$', -2, 4, 'swapou2'
+    function2 (r:2='4{5"{$', r:1='bg', r:3='7\'[!') ()
+      push r:'7\'[!', r:bg, r:'4{5"{$', -2, 4, 'swapou2'
       getVariable
       push '0#)3$'
       getMember
@@ -3322,8 +3322,8 @@ movie 'swapou2.swf' compressed // flash 7, total frames: 4, frame rate: 40 fps, 
 
     setMember
     push r:0, '%%|%-"!'
-    function2 (r:2='4{5"{$', r:1='bg', r:3='7'[!') ()
-      push r:'7'[!', r:bg, r:'4{5"{$', -3, 4, 'swapou2'
+    function2 (r:2='4{5"{$', r:1='bg', r:3='7\'[!') ()
+      push r:'7\'[!', r:bg, r:'4{5"{$', -3, 4, 'swapou2'
       getVariable
       push '0#)3$'
       getMember
@@ -5554,8 +5554,8 @@ movie 'swapou2.swf' compressed // flash 7, total frames: 4, frame rate: 40 fps, 
 
     setMember
     push r:1, '6 87*%'
-    function2 (r:3=''"!', r:2='|@*06!') (r:1='this')
-      push r:''"!', r:this, '^{6[}{"'
+    function2 (r:3='\'"!', r:2='|@*06!') (r:1='this')
+      push r:'\'"!', r:this, '^{6[}{"'
       getMember
       equals
       not
@@ -5962,7 +5962,7 @@ movie 'swapou2.swf' compressed // flash 7, total frames: 4, frame rate: 40 fps, 
 
     setMember
     push r:1, '%^?32%'
-    function2 (r:3='-]', ''!=6[') (r:1='this')
+    function2 (r:3='-]', '\'!=6[') (r:1='this')
       push r:this, '0651&5!'
       getMember
       not
@@ -6714,7 +6714,7 @@ movie 'swapou2.swf' compressed // flash 7, total frames: 4, frame rate: 40 fps, 
     push 'swapou2'
     getVariable
     push '&07[5"#'
-    function2 (r:5='2|=!!', r:4='=@-*+7"', r:3='])+^3'#') (r:1='this')
+    function2 (r:5='2|=!!', r:4='=@-*+7"', r:3='])+^3\'#') (r:1='this')
       push r:this, ' 112#+"', r:'=@-*+7"'
       setMember
       push r:this, '2|=!!', r:'2|=!!'
@@ -6855,7 +6855,7 @@ movie 'swapou2.swf' compressed // flash 7, total frames: 4, frame rate: 40 fps, 
       setRegister r:2
       pop
      label2:
-      push r:2, r:'])+^3'#'
+      push r:2, r:'])+^3\'#'
       lessThan
       not
       branchIfTrue label3
@@ -7919,7 +7919,7 @@ movie 'swapou2.swf' compressed // flash 7, total frames: 4, frame rate: 40 fps, 
 
     setMember
     push r:1, ' $]=]2!'
-    function2 ('^=&|+'"') (r:1='this')
+    function2 ('^=&|+\'"') (r:1='this')
       push 0.0
       setRegister r:2
       pop
@@ -8813,11 +8813,11 @@ movie 'swapou2.swf' compressed // flash 7, total frames: 4, frame rate: 40 fps, 
     setRegister r:1
     pop
     push r:1, '3"*1|+!'
-    function2 (r:3='#82[!', r:6='?', r:5='@', r:4='('') (r:1='this')
+    function2 (r:3='#82[!', r:6='?', r:5='@', r:4='(\'') (r:1='this')
       push UNDEF
       setRegister r:2
       pop
-      push r:'('', r:'#82[!', 2, r:this, ' 112#+"'
+      push r:'(\'', r:'#82[!', 2, r:this, ' 112#+"'
       getMember
       push '1$8"]5'
       callMethod
@@ -9245,7 +9245,7 @@ movie 'swapou2.swf' compressed // flash 7, total frames: 4, frame rate: 40 fps, 
 
     setMember
     push r:1, '7}+167!'
-    function2 (r:8='?', r:7='@', r:6='3'', r:5='4'') (r:1='this')
+    function2 (r:8='?', r:7='@', r:6='3\'', r:5='4\'') (r:1='this')
       push 'swapou2'
       getVariable
       push '0#)3$'
@@ -9319,13 +9319,13 @@ movie 'swapou2.swf' compressed // flash 7, total frames: 4, frame rate: 40 fps, 
       not
       not
       branchIfTrue label23
-      push r:2, '3\'', r:'3'', 100
+      push r:2, '3\'', r:'3\'', 100
       random
       multiply
       push 100
       divide
       setMember
-      push r:2, '4\'', r:'4'', 100
+      push r:2, '4\'', r:'4\'', 100
       random
       multiply
       push 100
@@ -11925,7 +11925,7 @@ movie 'swapou2.swf' compressed // flash 7, total frames: 4, frame rate: 40 fps, 
     setRegister r:1
     pop
     push r:1, '1$8"]5'
-    function2 (r:6='?47"+8"', r:2='+) 2#"!', r:5='?', r:4='@', r:3='!56+1'!') (r:1='this')
+    function2 (r:6='?47"+8"', r:2='+) 2#"!', r:5='?', r:4='@', r:3='!56+1\'!') (r:1='this')
       push r:this, '(3)^"'
       getMember
       push '_name'
@@ -11970,7 +11970,7 @@ movie 'swapou2.swf' compressed // flash 7, total frames: 4, frame rate: 40 fps, 
       push r:this, 'onRollOut', r:this, '|[+!'
       getMember
       setMember
-      push r:this, '!56+1\'!', r:'!56+1'!'
+      push r:this, '!56+1\'!', r:'!56+1\'!'
       setMember
       push r:this, '#82[!', r:'+) 2#"!'
       setMember
@@ -12777,12 +12777,12 @@ movie 'swapou2.swf' compressed // flash 7, total frames: 4, frame rate: 40 fps, 
     push 'swapou2'
     getVariable
     push '^]*"@!"'
-    function2 (r:7=''', r:5='*!1!', r:4='|+[', r:3='?]', r:2='@]', r:6='7*12!3!') (r:1='this')
+    function2 (r:7='\'', r:5='*!1!', r:4='|+[', r:3='?]', r:2='@]', r:6='7*12!3!') (r:1='this')
       push r:this, '*2', r:'*!1!'
       setMember
       push r:this, '86(#+"', r:'|+['
       setMember
-      push r:this, '2|=!!', r:'''
+      push r:this, '2|=!!', r:'\''
       setMember
       push r:'7*12!3!'
       not
@@ -17042,7 +17042,7 @@ movie 'swapou2.swf' compressed // flash 7, total frames: 4, frame rate: 40 fps, 
 
     setMember
     push r:1, ' $]=]2!'
-    function2 (r:10='6%+2#', r:7=''@'3?9"') (r:1='this')
+    function2 (r:10='6%+2#', r:7='\'@\'3?9"') (r:1='this')
       push UNDEF
       setRegister r:5
       pop
@@ -17067,7 +17067,7 @@ movie 'swapou2.swf' compressed // flash 7, total frames: 4, frame rate: 40 fps, 
       setRegister r:5
       pop
      label66:
-      push r:5, r:''@'3?9"', 'length'
+      push r:5, r:'\'@\'3?9"', 'length'
       getMember
       lessThan
       not
@@ -17076,14 +17076,14 @@ movie 'swapou2.swf' compressed // flash 7, total frames: 4, frame rate: 40 fps, 
       setRegister r:3
       pop
      label67:
-      push r:3, r:''@'3?9"', r:5
+      push r:3, r:'\'@\'3?9"', r:5
       getMember
       push 'length'
       getMember
       lessThan
       not
       branchIfTrue label69
-      push r:''@'3?9"', r:5
+      push r:'\'@\'3?9"', r:5
       getMember
       push r:3
       getMember
@@ -17199,7 +17199,7 @@ movie 'swapou2.swf' compressed // flash 7, total frames: 4, frame rate: 40 fps, 
 
     setMember
     push r:1, '%]3%4 #'
-    function ('%4$5[$', '0-8'=)')
+    function ('%4$5[$', '0-8\'=)')
     end // of function 
 
     setMember
@@ -17273,12 +17273,12 @@ movie 'swapou2.swf' compressed // flash 7, total frames: 4, frame rate: 40 fps, 
 
     setMember
     push r:1, '%]4($+!'
-    function ('%4$5[$', '0-8'=)')
+    function ('%4$5[$', '0-8\'=)')
     end // of function 
 
     setMember
     push r:1, '=8?@ [#'
-    function2 (r:2='data', r:3=''@'3?9"') (r:1='this')
+    function2 (r:2='data', r:3='\'@\'3?9"') (r:1='this')
       push 0.0, r:this, '\'237|)!'
       callMethod
       pop
@@ -17308,7 +17308,7 @@ movie 'swapou2.swf' compressed // flash 7, total frames: 4, frame rate: 40 fps, 
       branchIfTrue label81
       branch label82
      label75:
-      push r:''@'3?9"', r:'data', '0\'%!'
+      push r:'\'@\'3?9"', r:'data', '0\'%!'
       getMember
       push r:'data', '-\'%!'
       getMember
@@ -17317,7 +17317,7 @@ movie 'swapou2.swf' compressed // flash 7, total frames: 4, frame rate: 40 fps, 
       pop
       branch label82
      label76:
-      push r:''@'3?9"', r:'data', '6-%%'
+      push r:'\'@\'3?9"', r:'data', '6-%%'
       getMember
       push r:'data', '8]|9"'
       getMember
@@ -17326,21 +17326,21 @@ movie 'swapou2.swf' compressed // flash 7, total frames: 4, frame rate: 40 fps, 
       pop
       branch label82
      label77:
-      push r:''@'3?9"', r:'data', '\'&*3'
+      push r:'\'@\'3?9"', r:'data', '\'&*3'
       getMember
       push 2, r:this, '$89{2]#'
       callMethod
       pop
       branch label82
      label78:
-      push r:''@'3?9"', r:'data', '\'&*3'
+      push r:'\'@\'3?9"', r:'data', '\'&*3'
       getMember
       push 2, r:this, '0]}!?('
       callMethod
       pop
       branch label82
      label79:
-      push r:''@'3?9"', r:'data', '&0-'
+      push r:'\'@\'3?9"', r:'data', '&0-'
       getMember
       push r:'data', ']!=!'
       getMember
@@ -17351,7 +17351,7 @@ movie 'swapou2.swf' compressed // flash 7, total frames: 4, frame rate: 40 fps, 
       pop
       branch label82
      label80:
-      push r:''@'3?9"', r:'data', ')&%!'
+      push r:'\'@\'3?9"', r:'data', ')&%!'
       getMember
       push 2, r:this, '42{=1?"'
       callMethod
@@ -17530,8 +17530,8 @@ movie 'swapou2.swf' compressed // flash 7, total frames: 4, frame rate: 40 fps, 
 
     setMember
     push r:1, '732659'
-    function2 (r:7='-'%!', r:6='0'%!', r:12=''@'3?9"') (r:1='this')
-      push r:''@'3?9"', 'length'
+    function2 (r:7='-\'%!', r:6='0\'%!', r:12='\'@\'3?9"') (r:1='this')
+      push r:'\'@\'3?9"', 'length'
       getMember
       push 2
       divide
@@ -17559,7 +17559,7 @@ movie 'swapou2.swf' compressed // flash 7, total frames: 4, frame rate: 40 fps, 
       setRegister r:4
       pop
      label83:
-      push r:4, r:''@'3?9"', 'length'
+      push r:4, r:'\'@\'3?9"', 'length'
       getMember
       lessThan
       not
@@ -17568,14 +17568,14 @@ movie 'swapou2.swf' compressed // flash 7, total frames: 4, frame rate: 40 fps, 
       setRegister r:2
       pop
      label84:
-      push r:2, r:''@'3?9"', r:4
+      push r:2, r:'\'@\'3?9"', r:4
       getMember
       push 'length'
       getMember
       lessThan
       not
       branchIfTrue label87
-      push r:''@'3?9"', r:4
+      push r:'\'@\'3?9"', r:4
       getMember
       push r:2
       getMember
@@ -17656,12 +17656,12 @@ movie 'swapou2.swf' compressed // flash 7, total frames: 4, frame rate: 40 fps, 
       setRegister r:4
       pop
      label89:
-      push r:4, r:'-'%!', 'length'
+      push r:4, r:'-\'%!', 'length'
       getMember
       lessThan
       not
       branchIfTrue label91
-      push r:'-'%!', r:4
+      push r:'-\'%!', r:4
       getMember
       setRegister r:3
       pop
@@ -17696,12 +17696,12 @@ movie 'swapou2.swf' compressed // flash 7, total frames: 4, frame rate: 40 fps, 
       setRegister r:4
       pop
      label92:
-      push r:4, r:'0'%!', 'length'
+      push r:4, r:'0\'%!', 'length'
       getMember
       lessThan
       not
       branchIfTrue label94
-      push r:'0'%!', r:4
+      push r:'0\'%!', r:4
       getMember
       setRegister r:3
       pop
@@ -17748,7 +17748,7 @@ movie 'swapou2.swf' compressed // flash 7, total frames: 4, frame rate: 40 fps, 
       push '[0=(!%'
       getMember
       setMember
-      push '-5(5#%', r:10, '-]#[!', r:13, '?#?*6$', r:11, '$"&[', r:9, '\'@\'3?9"', r:''@'3?9"', 5
+      push '-5(5#%', r:10, '-]#[!', r:13, '?#?*6$', r:11, '$"&[', r:9, '\'@\'3?9"', r:'\'@\'3?9"', 5
       initObject
       push r:this, ' [#{{}"'
       getMember
@@ -17763,7 +17763,7 @@ movie 'swapou2.swf' compressed // flash 7, total frames: 4, frame rate: 40 fps, 
 
     setMember
     push r:1, '-3@9^*#'
-    function2 (r:5='8]|9"', r:9='6-%%', r:8=''@'3?9"') (r:1='this')
+    function2 (r:5='8]|9"', r:9='6-%%', r:8='\'@\'3?9"') (r:1='this')
       push 0.0, 'Array'
       new
       setRegister r:7
@@ -17797,18 +17797,18 @@ movie 'swapou2.swf' compressed // flash 7, total frames: 4, frame rate: 40 fps, 
       setRegister r:2
       pop
      label96:
-      push r:2, r:''@'3?9"', r:3
+      push r:2, r:'\'@\'3?9"', r:3
       getMember
       push 'length'
       getMember
       lessThan
       not
       branchIfTrue label97
-      push r:''@'3?9"', r:3
+      push r:'\'@\'3?9"', r:3
       getMember
       push r:2
       getMember
-      push '4"!', r:''@'3?9"', r:3
+      push '4"!', r:'\'@\'3?9"', r:3
       getMember
       push r:2
       getMember
@@ -17822,7 +17822,7 @@ movie 'swapou2.swf' compressed // flash 7, total frames: 4, frame rate: 40 fps, 
       getMember
       add
       setMember
-      push r:''@'3?9"', r:3
+      push r:'\'@\'3?9"', r:3
       getMember
       push r:2
       getMember
@@ -17870,7 +17870,7 @@ movie 'swapou2.swf' compressed // flash 7, total frames: 4, frame rate: 40 fps, 
       setRegister r:2
       pop
      label100:
-      push r:2, r:''@'3?9"', r:3
+      push r:2, r:'\'@\'3?9"', r:3
       getMember
       push 'length'
       getMember
@@ -17879,11 +17879,11 @@ movie 'swapou2.swf' compressed // flash 7, total frames: 4, frame rate: 40 fps, 
       lessThan
       not
       branchIfTrue label101
-      push r:''@'3?9"', r:3
+      push r:'\'@\'3?9"', r:3
       getMember
       push r:2
       getMember
-      push '4"!', r:''@'3?9"', r:3
+      push '4"!', r:'\'@\'3?9"', r:3
       getMember
       push r:2
       getMember
@@ -17897,7 +17897,7 @@ movie 'swapou2.swf' compressed // flash 7, total frames: 4, frame rate: 40 fps, 
       getMember
       subtract
       setMember
-      push r:''@'3?9"', r:3
+      push r:'\'@\'3?9"', r:3
       getMember
       push r:2
       getMember
@@ -17932,7 +17932,7 @@ movie 'swapou2.swf' compressed // flash 7, total frames: 4, frame rate: 40 fps, 
       push '[0=(!%'
       getMember
       setMember
-      push '8]|9"', r:'8]|9"', '6-%%', r:'6-%%', '\'@\'3?9"', r:''@'3?9"', '#&][3!', r:7, '\'8^!', r:6, 5
+      push '8]|9"', r:'8]|9"', '6-%%', r:'6-%%', '\'@\'3?9"', r:'\'@\'3?9"', '#&][3!', r:7, '\'8^!', r:6, 5
       initObject
       push 1, '3&!$'
       getVariable
@@ -17951,17 +17951,17 @@ movie 'swapou2.swf' compressed // flash 7, total frames: 4, frame rate: 40 fps, 
 
     setMember
     push r:1, '$89{2]#'
-    function2 (r:4=''&*3', r:5=''@'3?9"') (r:1='this')
+    function2 (r:4='\'&*3', r:5='\'@\'3?9"') (r:1='this')
       push 0.0
       setRegister r:2
       pop
      label103:
-      push r:2, r:''&*3', 'length'
+      push r:2, r:'\'&*3', 'length'
       getMember
       lessThan
       not
       branchIfTrue label104
-      push r:''&*3', r:2
+      push r:'\'&*3', r:2
       getMember
       setRegister r:3
       pop
@@ -17990,7 +17990,7 @@ movie 'swapou2.swf' compressed // flash 7, total frames: 4, frame rate: 40 fps, 
       push '[0=(!%'
       getMember
       setMember
-      push '\'&*3', r:''&*3', '\'@\'3?9"', r:''@'3?9"', 2
+      push '\'&*3', r:'\'&*3', '\'@\'3?9"', r:'\'@\'3?9"', 2
       initObject
       push 1, '3&!$'
       getVariable
@@ -18009,21 +18009,21 @@ movie 'swapou2.swf' compressed // flash 7, total frames: 4, frame rate: 40 fps, 
 
     setMember
     push r:1, '0]}!?('
-    function2 (r:4=''&*3', r:5=''@'3?9"') (r:1='this')
+    function2 (r:4='\'&*3', r:5='\'@\'3?9"') (r:1='this')
       push 0.0
       setRegister r:3
       pop
      label105:
-      push r:3, r:''&*3', 'length'
+      push r:3, r:'\'&*3', 'length'
       getMember
       lessThan
       not
       branchIfTrue label106
-      push r:''&*3', r:3
+      push r:'\'&*3', r:3
       getMember
       setRegister r:2
       pop
-      push r:2, '-5(5#%', 3, r:''&*3', 'length'
+      push r:2, '-5(5#%', 3, r:'\'&*3', 'length'
       getMember
       push 2
       divide
@@ -18045,12 +18045,12 @@ movie 'swapou2.swf' compressed // flash 7, total frames: 4, frame rate: 40 fps, 
       setRegister r:3
       pop
      label107:
-      push r:3, r:''@'3?9"', 'length'
+      push r:3, r:'\'@\'3?9"', 'length'
       getMember
       lessThan
       not
       branchIfTrue label108
-      push r:''@'3?9"', r:3
+      push r:'\'@\'3?9"', r:3
       getMember
       push 1, '3&!$'
       getVariable
@@ -18108,7 +18108,7 @@ movie 'swapou2.swf' compressed // flash 7, total frames: 4, frame rate: 40 fps, 
       push '[0=(!%'
       getMember
       setMember
-      push '\'&*3', r:''&*3', '\'@\'3?9"', r:''@'3?9"', 2
+      push '\'&*3', r:'\'&*3', '\'@\'3?9"', r:'\'@\'3?9"', 2
       initObject
       push 1, '3&!$'
       getVariable
@@ -18127,7 +18127,7 @@ movie 'swapou2.swf' compressed // flash 7, total frames: 4, frame rate: 40 fps, 
 
     setMember
     push r:1, '-*\'\'+$'
-    function2 (r:6='+09361!', r:4=']!=!', r:3='&0-', r:5=''@'3?9"') (r:1='this')
+    function2 (r:6='+09361!', r:4=']!=!', r:3='&0-', r:5='\'@\'3?9"') (r:1='this')
       push 0.0
       setRegister r:2
       pop
@@ -18184,7 +18184,7 @@ movie 'swapou2.swf' compressed // flash 7, total frames: 4, frame rate: 40 fps, 
       push '[0=(!%'
       getMember
       setMember
-      push '+09361!', r:'+09361!', ']!=!', r:']!=!', '&0-', r:'&0-', '\'@\'3?9"', r:''@'3?9"', 4
+      push '+09361!', r:'+09361!', ']!=!', r:']!=!', '&0-', r:'&0-', '\'@\'3?9"', r:'\'@\'3?9"', 4
       initObject
       push 1, '3&!$'
       getVariable
@@ -18203,7 +18203,7 @@ movie 'swapou2.swf' compressed // flash 7, total frames: 4, frame rate: 40 fps, 
 
     setMember
     push r:1, '42{=1?"'
-    function2 (r:4=')&%!', r:5=''@'3?9"') (r:1='this')
+    function2 (r:4=')&%!', r:5='\'@\'3?9"') (r:1='this')
       push 0.0
       setRegister r:3
       pop
@@ -18276,7 +18276,7 @@ movie 'swapou2.swf' compressed // flash 7, total frames: 4, frame rate: 40 fps, 
       push '[0=(!%'
       getMember
       setMember
-      push ')&%!', r:')&%!', '\'@\'3?9"', r:''@'3?9"', 2
+      push ')&%!', r:')&%!', '\'@\'3?9"', r:'\'@\'3?9"', 2
       initObject
       push 1, '3&!$'
       getVariable
@@ -18328,7 +18328,7 @@ movie 'swapou2.swf' compressed // flash 7, total frames: 4, frame rate: 40 fps, 
 
     setMember
     push r:1, '4-09!-!'
-    function2 (r:5='8]|9"', r:9='6-%%', r:8=''@'3?9"') (r:1='this')
+    function2 (r:5='8]|9"', r:9='6-%%', r:8='\'@\'3?9"') (r:1='this')
       push 0.0, 'Array'
       new
       setRegister r:7
@@ -18366,14 +18366,14 @@ movie 'swapou2.swf' compressed // flash 7, total frames: 4, frame rate: 40 fps, 
       setRegister r:2
       pop
      label114:
-      push r:2, r:''@'3?9"', r:3
+      push r:2, r:'\'@\'3?9"', r:3
       getMember
       push 'length'
       getMember
       lessThan
       not
       branchIfTrue label115
-      push r:''@'3?9"', r:3
+      push r:'\'@\'3?9"', r:3
       getMember
       push r:2
       getMember
@@ -18389,7 +18389,7 @@ movie 'swapou2.swf' compressed // flash 7, total frames: 4, frame rate: 40 fps, 
       multiply
       add
       setMember
-      push r:''@'3?9"', r:3
+      push r:'\'@\'3?9"', r:3
       getMember
       push r:2
       getMember
@@ -18441,7 +18441,7 @@ movie 'swapou2.swf' compressed // flash 7, total frames: 4, frame rate: 40 fps, 
       setRegister r:2
       pop
      label118:
-      push r:2, r:''@'3?9"', r:3
+      push r:2, r:'\'@\'3?9"', r:3
       getMember
       push 'length'
       getMember
@@ -18450,7 +18450,7 @@ movie 'swapou2.swf' compressed // flash 7, total frames: 4, frame rate: 40 fps, 
       lessThan
       not
       branchIfTrue label119
-      push r:''@'3?9"', r:3
+      push r:'\'@\'3?9"', r:3
       getMember
       push r:2
       getMember
@@ -18466,7 +18466,7 @@ movie 'swapou2.swf' compressed // flash 7, total frames: 4, frame rate: 40 fps, 
       multiply
       add
       setMember
-      push r:''@'3?9"', r:3
+      push r:'\'@\'3?9"', r:3
       getMember
       push r:2
       getMember
@@ -18492,7 +18492,7 @@ movie 'swapou2.swf' compressed // flash 7, total frames: 4, frame rate: 40 fps, 
       push '[#( (0!'
       getMember
       setMember
-      push '8]|9"', r:'8]|9"', '6-%%', r:'6-%%', '\'@\'3?9"', r:''@'3?9"', '#&][3!', r:7, '\'8^!', r:6, 5
+      push '8]|9"', r:'8]|9"', '6-%%', r:'6-%%', '\'@\'3?9"', r:'\'@\'3?9"', '#&][3!', r:7, '\'8^!', r:6, 5
       initObject
       push 1, '3&!$'
       getVariable
@@ -18511,7 +18511,7 @@ movie 'swapou2.swf' compressed // flash 7, total frames: 4, frame rate: 40 fps, 
 
     setMember
     push r:1, '[3=5{1'
-    function2 (r:2=')&%!', r:3=''@'3?9"') (r:1='this')
+    function2 (r:2=')&%!', r:3='\'@\'3?9"') (r:1='this')
       push r:this, '-@&0{@#', 'swapou2'
       getVariable
       push '0#)3$'
@@ -18519,7 +18519,7 @@ movie 'swapou2.swf' compressed // flash 7, total frames: 4, frame rate: 40 fps, 
       push '[#( (0!'
       getMember
       setMember
-      push ')&%!', r:')&%!', '\'@\'3?9"', r:''@'3?9"', 2
+      push ')&%!', r:')&%!', '\'@\'3?9"', r:'\'@\'3?9"', 2
       initObject
       push 1, '3&!$'
       getVariable
@@ -20173,8 +20173,8 @@ movie 'swapou2.swf' compressed // flash 7, total frames: 4, frame rate: 40 fps, 
 
     setMember
     push r:1, '%]3%4 #'
-    function2 (r:6='%4$5[$', r:4='0-8'=)') (r:1='this', r:2='super')
-      push r:'0-8'=)', r:'%4$5[$', 2, r:super, '%]3%4 #'
+    function2 (r:6='%4$5[$', r:4='0-8\'=)') (r:1='this', r:2='super')
+      push r:'0-8\'=)', r:'%4$5[$', 2, r:super, '%]3%4 #'
       callMethod
       pop
       push UNDEF
@@ -20253,14 +20253,14 @@ movie 'swapou2.swf' compressed // flash 7, total frames: 4, frame rate: 40 fps, 
       callMethod
       pop
      label8:
-      push r:'0-8'=)', 0.0
+      push r:'0-8\'=)', 0.0
       greaterThan
       not
       branchIfTrue label9
       push UNDEF
       setRegister r:5
       pop
-      push r:'0-8'=)', 'swapou2'
+      push r:'0-8\'=)', 'swapou2'
       getVariable
       push '0#)3$'
       getMember
@@ -20321,15 +20321,15 @@ movie 'swapou2.swf' compressed // flash 7, total frames: 4, frame rate: 40 fps, 
       getMember
       push 'txtField'
       getMember
-      push 'text', r:'0-8'=)'
+      push 'text', r:'0-8\'=)'
       setMember
      label9:
     end // of function 
 
     setMember
     push r:1, '%]4($+!'
-    function2 (r:5='%4$5[$', r:4='0-8'=)') (r:1='this', r:2='super')
-      push r:'0-8'=)', r:'%4$5[$', 2, r:super, '%]4($+!'
+    function2 (r:5='%4$5[$', r:4='0-8\'=)') (r:1='this', r:2='super')
+      push r:'0-8\'=)', r:'%4$5[$', 2, r:super, '%]4($+!'
       callMethod
       pop
       push r:'%4$5[$', 0.0
@@ -20425,7 +20425,7 @@ movie 'swapou2.swf' compressed // flash 7, total frames: 4, frame rate: 40 fps, 
       not
       branchIfTrue label14
      label11:
-      push r:'0-8'=)', 'swapou2'
+      push r:'0-8\'=)', 'swapou2'
       getVariable
       push '0#)3$'
       getMember
@@ -20459,7 +20459,7 @@ movie 'swapou2.swf' compressed // flash 7, total frames: 4, frame rate: 40 fps, 
      label13:
       branch label17
      label14:
-      push r:'0-8'=)', 'swapou2'
+      push r:'0-8\'=)', 'swapou2'
       getVariable
       push '0#)3$'
       getMember
@@ -21066,7 +21066,7 @@ movie 'swapou2.swf' compressed // flash 7, total frames: 4, frame rate: 40 fps, 
     push 'swapou2'
     getVariable
     push '*^9|7)'
-    function2 (r:4='86(#+"', r:5='9{5'*') (r:1='this')
+    function2 (r:4='86(#+"', r:5='9{5\'*') (r:1='this')
       push r:this, 'width', r:'86(#+"', 'width'
       getMember
       setMember
@@ -21082,7 +21082,7 @@ movie 'swapou2.swf' compressed // flash 7, total frames: 4, frame rate: 40 fps, 
       push r:this, '$0^8^^#', r:'86(#+"', '$0^8^^#'
       getMember
       setMember
-      push r:this, '7[$!@&"', r:'9{5'*'
+      push r:this, '7[$!@&"', r:'9{5\'*'
       setMember
       push r:this, '8|3{ 2', 0.0, r:this, '7[$!@&"'
       getMember
@@ -22998,8 +22998,8 @@ movie 'swapou2.swf' compressed // flash 7, total frames: 4, frame rate: 40 fps, 
     push 'swapou2'
     getVariable
     push '^%%[$4!'
-    function2 (r:8=''', r:7='*!1!', r:3='86(#+"', r:6='?]', r:5='@]', r:4='=9&'22') (r:1='this', r:2='super')
-      push FALSE, r:'@]', r:'?]', r:'86(#+"', r:'*!1!', r:''', 6, r:super, UNDEF
+    function2 (r:8='\'', r:7='*!1!', r:3='86(#+"', r:6='?]', r:5='@]', r:4='=9&\'22') (r:1='this', r:2='super')
+      push FALSE, r:'@]', r:'?]', r:'86(#+"', r:'*!1!', r:'\'', 6, r:super, UNDEF
       callMethod
       pop
       push r:this, '\'2', r:this, '*}^#"#'
@@ -23013,7 +23013,7 @@ movie 'swapou2.swf' compressed // flash 7, total frames: 4, frame rate: 40 fps, 
       setMember
       push r:this, '74&{5\'#', FALSE
       setMember
-      push r:this, '=9&\'22', r:'=9&'22'
+      push r:this, '=9&\'22', r:'=9&\'22'
       setMember
     end // of function 
 
@@ -24657,7 +24657,7 @@ movie 'swapou2.swf' compressed // flash 7, total frames: 4, frame rate: 40 fps, 
 
     setMember
     push r:1, '23*7[+'
-    function2 (r:6='-]#[!', r:5='7'[!', r:4='face', r:8='4{5"{$', r:7='bg') (r:1='this')
+    function2 (r:6='-]#[!', r:5='7\'[!', r:4='face', r:8='4{5"{$', r:7='bg') (r:1='this')
       push 'swapou2'
       getVariable
       push '0#)3$'
@@ -24683,11 +24683,11 @@ movie 'swapou2.swf' compressed // flash 7, total frames: 4, frame rate: 40 fps, 
       callMethod
       setRegister r:2
       pop
-      push r:2, '$#', r:'7'[!', 3, '3&!$'
+      push r:2, '$#', r:'7\'[!', 3, '3&!$'
       getVariable
       push '+-\'^4{!'
       callMethod
-      setRegister r:'7'[!'
+      setRegister r:'7\'[!'
       pop
       push 'swapou2'
       getVariable
@@ -24715,11 +24715,11 @@ movie 'swapou2.swf' compressed // flash 7, total frames: 4, frame rate: 40 fps, 
       callMethod
       setRegister r:2
       pop
-      push r:2, '$*', r:'7'[!', 3, '3&!$'
+      push r:2, '$*', r:'7\'[!', 3, '3&!$'
       getVariable
       push '+-\'^4{!'
       callMethod
-      setRegister r:'7'[!'
+      setRegister r:'7\'[!'
       pop
       push r:face
       setRegister r:0
@@ -24814,7 +24814,7 @@ movie 'swapou2.swf' compressed // flash 7, total frames: 4, frame rate: 40 fps, 
       getMember
       push 'field'
       getMember
-      push 'text', r:'7'[!'
+      push 'text', r:'7\'[!'
       setMember
       push r:this, 'map'
       getMember
@@ -25085,7 +25085,7 @@ movie 'swapou2.swf' compressed // flash 7, total frames: 4, frame rate: 40 fps, 
     getVariable
     push '2\'8]*#!'
     function2 (r:2='!9') (r:1='this')
-      function '@31!^'#' ()
+      function '@31!^\'#' ()
         push 0.0, '#9'
         getVariable
         push '!1$1=8'
@@ -25460,7 +25460,7 @@ movie 'swapou2.swf' compressed // flash 7, total frames: 4, frame rate: 40 fps, 
 
     setMember
     push r:1, '%^?32%'
-    function2 ('3', ''!=6[') (r:1='this')
+    function2 ('3', '\'!=6[') (r:1='this')
       push r:this, '^{6[}{"'
       getMember
       push '%4$5[$'
@@ -26232,8 +26232,8 @@ movie 'swapou2.swf' compressed // flash 7, total frames: 4, frame rate: 40 fps, 
 
     setMember
     push r:1, ' $]=]2!'
-    function2 (r:2='^=&|+'"') (r:1='super')
-      push r:'^=&|+'"', 1, r:super, ' $]=]2!'
+    function2 (r:2='^=&|+\'"') (r:1='super')
+      push r:'^=&|+\'"', 1, r:super, ' $]=]2!'
       callMethod
       pop
     end // of function 
@@ -27984,7 +27984,7 @@ movie 'swapou2.swf' compressed // flash 7, total frames: 4, frame rate: 40 fps, 
 
     setMember
     push r:1, '?@043+#'
-    function2 (r:4='@', r:3='[{^1!#', r:6='+}|'6)', r:5='-"{&!') (r:1='this')
+    function2 (r:4='@', r:3='[{^1!#', r:6='+}|\'6)', r:5='-"{&!') (r:1='this')
       push 'swapou2'
       getVariable
       push '0#)3$'
@@ -28001,7 +28001,7 @@ movie 'swapou2.swf' compressed // flash 7, total frames: 4, frame rate: 40 fps, 
       callMethod
       setRegister r:2
       pop
-      push r:'-"{&!', r:'+}|'6)', r:'[{^1!#', r:'@', r:this, 5, r:2, '?%?)65!'
+      push r:'-"{&!', r:'+}|\'6)', r:'[{^1!#', r:'@', r:this, 5, r:2, '?%?)65!'
       callMethod
       pop
       push r:this, ')% ]!'
@@ -28056,7 +28056,7 @@ movie 'swapou2.swf' compressed // flash 7, total frames: 4, frame rate: 40 fps, 
 
     setMember
     push r:1, '+2*-3"!'
-    function2 (r:4='83@8'0!', r:3='5'!|+5"', r:6='+}|'6)', r:5='-"{&!') (r:1='this')
+    function2 (r:4='83@8\'0!', r:3='5\'!|+5"', r:6='+}|\'6)', r:5='-"{&!') (r:1='this')
       push 'swapou2'
       getVariable
       push '0#)3$'
@@ -28073,7 +28073,7 @@ movie 'swapou2.swf' compressed // flash 7, total frames: 4, frame rate: 40 fps, 
       callMethod
       setRegister r:2
       pop
-      push r:'-"{&!', r:'+}|'6)', r:'5'!|+5"', r:'83@8'0!', r:this, 5, r:2, '+[5$!=#'
+      push r:'-"{&!', r:'+}|\'6)', r:'5\'!|+5"', r:'83@8\'0!', r:this, 5, r:2, '+[5$!=#'
       callMethod
       pop
       push 'swapou2'
@@ -28082,7 +28082,7 @@ movie 'swapou2.swf' compressed // flash 7, total frames: 4, frame rate: 40 fps, 
       getMember
       push '6)!4@'
       getMember
-      push r:'5'!|+5"'
+      push r:'5\'!|+5"'
       getMember
       not
       not
@@ -28108,7 +28108,7 @@ movie 'swapou2.swf' compressed // flash 7, total frames: 4, frame rate: 40 fps, 
 
     setMember
     push r:1, '%{8@7\'"'
-    function2 (r:5='^}4(3!#', r:2='+}|'6)', r:3='title') (r:1='this')
+    function2 (r:5='^}4(3!#', r:2='+}|\'6)', r:3='title') (r:1='this')
       push UNDEF
       setRegister r:4
       pop
@@ -28117,7 +28117,7 @@ movie 'swapou2.swf' compressed // flash 7, total frames: 4, frame rate: 40 fps, 
       push r:title, 1, r:this, '8545\'+"'
       callMethod
       pop
-      push r:'+}|'6)', 51
+      push r:'+}|\'6)', 51
       equals
       not
       branchIfTrue label47
@@ -28129,7 +28129,7 @@ movie 'swapou2.swf' compressed // flash 7, total frames: 4, frame rate: 40 fps, 
       getMember
       push 0.0
       getMember
-      push r:'+}|'6)', 0.0, 0.0, 4, r:this, '+2*-3"!'
+      push r:'+}|\'6)', 0.0, 0.0, 4, r:this, '+2*-3"!'
       callMethod
       pop
       push 'swapou2'
@@ -28140,7 +28140,7 @@ movie 'swapou2.swf' compressed // flash 7, total frames: 4, frame rate: 40 fps, 
       getMember
       push 1
       getMember
-      push r:'+}|'6)', 1, 2, 4, r:this, '+2*-3"!'
+      push r:'+}|\'6)', 1, 2, 4, r:this, '+2*-3"!'
       callMethod
       pop
       branch label48
@@ -28153,7 +28153,7 @@ movie 'swapou2.swf' compressed // flash 7, total frames: 4, frame rate: 40 fps, 
       getMember
       push 0.0
       getMember
-      push r:'+}|'6)', 0.0, 0.0, 4, r:this, '+2*-3"!'
+      push r:'+}|\'6)', 0.0, 0.0, 4, r:this, '+2*-3"!'
       callMethod
       pop
       push 'swapou2'
@@ -28164,7 +28164,7 @@ movie 'swapou2.swf' compressed // flash 7, total frames: 4, frame rate: 40 fps, 
       getMember
       push 1
       getMember
-      push r:'+}|'6)', 1, 1, 4, r:this, '+2*-3"!'
+      push r:'+}|\'6)', 1, 1, 4, r:this, '+2*-3"!'
       callMethod
       pop
       push 'swapou2'
@@ -28175,7 +28175,7 @@ movie 'swapou2.swf' compressed // flash 7, total frames: 4, frame rate: 40 fps, 
       getMember
       push 2
       getMember
-      push r:'+}|'6)', 2, 2, 4, r:this, '+2*-3"!'
+      push r:'+}|\'6)', 2, 2, 4, r:this, '+2*-3"!'
       callMethod
       pop
       push 'swapou2'
@@ -28186,7 +28186,7 @@ movie 'swapou2.swf' compressed // flash 7, total frames: 4, frame rate: 40 fps, 
       getMember
       push 3
       getMember
-      push r:'+}|'6)', 3, 3, 4, r:this, '+2*-3"!'
+      push r:'+}|\'6)', 3, 3, 4, r:this, '+2*-3"!'
       callMethod
       pop
       push 'swapou2'
@@ -28197,7 +28197,7 @@ movie 'swapou2.swf' compressed // flash 7, total frames: 4, frame rate: 40 fps, 
       getMember
       push 4
       getMember
-      push r:'+}|'6)', 4, 4, 4, r:this, '+2*-3"!'
+      push r:'+}|\'6)', 4, 4, 4, r:this, '+2*-3"!'
       callMethod
       pop
       push 'swapou2'
@@ -28208,7 +28208,7 @@ movie 'swapou2.swf' compressed // flash 7, total frames: 4, frame rate: 40 fps, 
       getMember
       push 5
       getMember
-      push r:'+}|'6)', 5, 5, 4, r:this, '+2*-3"!'
+      push r:'+}|\'6)', 5, 5, 4, r:this, '+2*-3"!'
       callMethod
       pop
       push 'swapou2'
@@ -28219,7 +28219,7 @@ movie 'swapou2.swf' compressed // flash 7, total frames: 4, frame rate: 40 fps, 
       getMember
       push 6
       getMember
-      push r:'+}|'6)', 6, 7, 4, r:this, '+2*-3"!'
+      push r:'+}|\'6)', 6, 7, 4, r:this, '+2*-3"!'
       callMethod
       pop
      label48:
@@ -28756,7 +28756,7 @@ movie 'swapou2.swf' compressed // flash 7, total frames: 4, frame rate: 40 fps, 
 
     setMember
     push r:1, '5\'|4!'
-    function2 (r:6='+}|'6)') (r:1='this')
+    function2 (r:6='+}|\'6)') (r:1='this')
       push 0.0
       setRegister r:2
       pop
@@ -28781,14 +28781,14 @@ movie 'swapou2.swf' compressed // flash 7, total frames: 4, frame rate: 40 fps, 
       pop
       branch label54
      label55:
-      push r:'+}|'6)', 0.0
+      push r:'+}|\'6)', 0.0
       lessThan
       not
       not
       branchIfTrue label58
       push r:this, '+)1|"$'
       getMember
-      push r:'+}|'6)'
+      push r:'+}|\'6)'
       equals
       not
       dup
@@ -28819,11 +28819,11 @@ movie 'swapou2.swf' compressed // flash 7, total frames: 4, frame rate: 40 fps, 
       callMethod
       pop
      label57:
-      push r:this, '+)1|"$', r:'+}|'6)'
+      push r:this, '+)1|"$', r:'+}|\'6)'
       setMember
       branch label60
      label58:
-      push r:'+}|'6)', -2
+      push r:'+}|\'6)', -2
       equals
       not
       branchIfTrue label59
@@ -29267,7 +29267,7 @@ movie 'swapou2.swf' compressed // flash 7, total frames: 4, frame rate: 40 fps, 
 
     setMember
     push r:1, '[%#!5^"'
-    function2 (r:3='+}|'6)', r:2='5'!|+5"') (r:1='this')
+    function2 (r:3='+}|\'6)', r:2='5\'!|+5"') (r:1='this')
       push 'swapou2'
       getVariable
       push '0#)3$'
@@ -29276,19 +29276,19 @@ movie 'swapou2.swf' compressed // flash 7, total frames: 4, frame rate: 40 fps, 
       getMember
       push r:this, '^}4(3!#'
       getMember
-      push r:'5'!|+5"'
+      push r:'5\'!|+5"'
       setMember
-      push r:'+}|'6)', 1, r:this, '5\'|4!'
+      push r:'+}|\'6)', 1, r:this, '5\'|4!'
       callMethod
       pop
     end // of function 
 
     setMember
     push r:1, '[23\'$#"'
-    function2 (r:3='+}|'6)', r:2='*2') (r:1='this')
+    function2 (r:3='+}|\'6)', r:2='*2') (r:1='this')
       push r:this, '?4&"}*"', r:'*2'
       setMember
-      push r:'+}|'6)', 1, r:this, '5\'|4!'
+      push r:'+}|\'6)', 1, r:this, '5\'|4!'
       callMethod
       pop
     end // of function 
@@ -29836,7 +29836,7 @@ movie 'swapou2.swf' compressed // flash 7, total frames: 4, frame rate: 40 fps, 
     setRegister r:1
     pop
     push r:1, '$343)(#'
-    function2 (r:2='8!||!', r:5='?', r:4='@', r:3='=%"'!!', r:6='-"{&!') (r:1='this')
+    function2 (r:2='8!||!', r:5='?', r:4='@', r:3='=%"\'!!', r:6='-"{&!') (r:1='this')
       push r:this, '8!||!', r:'8!||!'
       setMember
       push r:this, '?', r:'?'
@@ -29882,9 +29882,9 @@ movie 'swapou2.swf' compressed // flash 7, total frames: 4, frame rate: 40 fps, 
       push 0.0, r:this, '04{$}\'"'
       callMethod
       pop
-      push r:this, '=%"\'!!', r:'=%"'!!'
+      push r:this, '=%"\'!!', r:'=%"\'!!'
       setMember
-      push r:this, 'wait', 10, r:'=%"'!!', 'swapou2'
+      push r:this, 'wait', 10, r:'=%"\'!!', 'swapou2'
       getVariable
       push '0#)3$'
       getMember
@@ -30605,7 +30605,7 @@ movie 'swapou2.swf' compressed // flash 7, total frames: 4, frame rate: 40 fps, 
     setRegister r:1
     pop
     push r:1, '+[5$!=#'
-    function2 (r:9='8!||!', r:5='83@8'0!', r:7='5'!|+5"', r:10='5  ]4&!', r:8='-"{&!') (r:1='this')
+    function2 (r:9='8!||!', r:5='83@8\'0!', r:7='5\'!|+5"', r:10='5  ]4&!', r:8='-"{&!') (r:1='this')
       push UNDEF
       setRegister r:2
       pop
@@ -30620,7 +30620,7 @@ movie 'swapou2.swf' compressed // flash 7, total frames: 4, frame rate: 40 fps, 
       pop
       push r:this, '^3&7%%"', r:'-"{&!'
       setMember
-      push r:'83@8'0!', 'swapou2'
+      push r:'83@8\'0!', 'swapou2'
       getVariable
       push '0#)3$'
       getMember
@@ -30633,7 +30633,7 @@ movie 'swapou2.swf' compressed // flash 7, total frames: 4, frame rate: 40 fps, 
       callMethod
       setRegister r:3
       pop
-      push r:'83@8'0!', r:3, 'swapou2'
+      push r:'83@8\'0!', r:3, 'swapou2'
       getVariable
       push '0#)3$'
       getMember
@@ -30708,9 +30708,9 @@ movie 'swapou2.swf' compressed // flash 7, total frames: 4, frame rate: 40 fps, 
      label2:
       push r:this, '5  ]4&!', r:'5  ]4&!'
       setMember
-      push r:this, '5\'!|+5"', r:'5'!|+5"'
+      push r:this, '5\'!|+5"', r:'5\'!|+5"'
       setMember
-      push r:'-"{&!', r:'83@8'0!', 0.5
+      push r:'-"{&!', r:'83@8\'0!', 0.5
       multiply
       push r:4, r:6, r:'8!||!', 5, r:this, '$343)(#'
       callMethod
@@ -30720,7 +30720,7 @@ movie 'swapou2.swf' compressed // flash 7, total frames: 4, frame rate: 40 fps, 
       push 0.8
       multiply
       setMember
-      push r:'5'!|+5"', 1
+      push r:'5\'!|+5"', 1
       add
       toString
       push 1, r:this, 'sub'
@@ -31256,7 +31256,7 @@ movie 'swapou2.swf' compressed // flash 7, total frames: 4, frame rate: 40 fps, 
 
     setMember
     push r:1, '([698!!'
-    function2 (r:2='7'[!') (r:1='this')
+    function2 (r:2='7\'[!') (r:1='this')
       push 1, 1, r:this, '*3&'
       getMember
       push 'gotoAndStop'
@@ -31273,7 +31273,7 @@ movie 'swapou2.swf' compressed // flash 7, total frames: 4, frame rate: 40 fps, 
       getMember
       push 'field'
       getMember
-      push 'text', r:'7'[!'
+      push 'text', r:'7\'[!'
       setMember
       push r:this, '*3&'
       getMember
@@ -31603,7 +31603,7 @@ movie 'swapou2.swf' compressed // flash 7, total frames: 4, frame rate: 40 fps, 
   end // of defineMovieClip 66
   
   exportAssets
-    66 as '@ '9]0"'
+    66 as '@ \'9]0"'
   end // of exportAssets
 
   defineMovieClip 69 // total frames: 2
@@ -31751,7 +31751,7 @@ movie 'swapou2.swf' compressed // flash 7, total frames: 4, frame rate: 40 fps, 
   end // of defineMovieClip 138
   
   exportAssets
-    138 as '[ |$')'
+    138 as '[ |$\')'
   end // of exportAssets
 
   defineMovieClip 171 // total frames: 1
@@ -32716,7 +32716,7 @@ movie 'swapou2.swf' compressed // flash 7, total frames: 4, frame rate: 40 fps, 
   end // of defineMovieClip 387
   
   exportAssets
-    387 as ''8)55%'
+    387 as '\'8)55%'
   end // of exportAssets
 
   defineMovieClip 388 // total frames: 1
@@ -32788,7 +32788,7 @@ movie 'swapou2.swf' compressed // flash 7, total frames: 4, frame rate: 40 fps, 
   end // of defineMovieClip 421
   
   exportAssets
-    421 as '&7?'-?'
+    421 as '&7?\'-?'
   end // of exportAssets
 
   defineMovieClip 424 // total frames: 1
@@ -32802,7 +32802,7 @@ movie 'swapou2.swf' compressed // flash 7, total frames: 4, frame rate: 40 fps, 
   end // of defineMovieClip 425
   
   exportAssets
-    425 as '@8'3+)!'
+    425 as '@8\'3+)!'
   end // of exportAssets
   
   exportAssets
