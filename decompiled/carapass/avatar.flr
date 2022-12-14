@@ -1,0 +1,293 @@
+movie 'avatar.swf' {
+// flash 8, total frames: 1, frame rate: 12 fps, 70x70 px, compressed
+
+  frame 1 {
+    function decode62(n) {
+      if (n >= 48 && n <= 58) {
+        return n - 48;
+      }
+      if (n >= 65 && n <= 90) {
+        return n - 65 + 10;
+      }
+      if (n >= 97 && n <= 122) {
+        return n - 97 + 36;
+      }
+      return 63;
+    }
+
+    function _init(data) {
+      cl = data.split(';');
+      if (data == null || cl.length == 1) {
+        var v4 = 0;
+        cl = new Array();
+        var v1 = 0;
+        while (v1 < data.length) {
+          var v2 = decode62(data.charCodeAt(v1));
+          cl.push(v2);
+          v4 = (v4 * 5 ^ v2) & 65535;
+          ++v1;
+        }
+      } else {
+        var v1 = 0;
+        while (v1 < cl.length) {
+          cl[v1] = int(cl[v1]);
+          ++v1;
+        }
+      }
+      initPalette();
+      apply();
+    }
+
+    function initPalette() {
+      var v7 = this.attachMovie('palette', 'palinst', 0);
+      if (v7 == null) {
+        return undefined;
+      }
+      v7.gotoAndStop(cl[0] + 1);
+      var v8 = v7.getBounds(v7);
+      var v6 = new flash.display.BitmapData(v8.xMax, v8.yMax);
+      v6.draw(v7);
+      v7.removeMovieClip();
+      palette = new Array();
+      var v4 = 0;
+      while (v4 < 4) {
+        var v3 = new Array();
+        var v5 = v4 * 15 + 7;
+        while (!false) {
+          var v2 = v6.getPixel32(v3.length * 15 + 7, v5);
+          if (v2 == 0 || v2 == -1) {
+            break;
+          }
+          v3.push(v2 & 16777215);
+        }
+        palette.push(v3);
+        ++v4;
+      }
+      v6.dispose();
+    }
+
+    function apply() {
+      applyRec(this);
+      applyStatus();
+    }
+
+    function applyRec(mc) {
+      for (var v7 in mc) {
+        var v1 = mc[v7];
+        if (typeof v1 == 'movieclip') {
+          var v2 = null;
+          if (v1._name.substr(0, 2) == '_p') {
+            var v3 = int(v1._name.substr(2, 1));
+            var v5 = cl[v3] % v1._totalframes;
+            v1.gotoAndStop(v5 + 1);
+            if (v1._name.substr(3, 3) == 'col') {
+              v2 = int(v1._name.substr(6, 1));
+            }
+          } else {
+            if (v1._name.substr(0, 4) == '_col') {
+              v2 = int(v1._name.substr(4, 1));
+            }
+          }
+          if (v2 != null) {
+            var v4 = palette[v2];
+            setColor(v1, v4[cl[pMax + v2] % v4.length]);
+          }
+          applyRec(v1, storedv3);
+        }
+      }
+    }
+
+    function setColor(mc, col) {
+      var v1 = {'r': col >> 16, 'g': col >> 8 & 255, 'b': col & 255};
+      var v2 = new Color(mc);
+      var v3 = {'ra': 100, 'ga': 100, 'ba': 100, 'aa': 100, 'rb': v1.r - 255, 'gb': v1.g - 255, 'bb': v1.b - 255, 'ab': 0};
+      v2.setTransform(v3);
+    }
+
+    pMax = 10;
+    var defpal = [16773855, 16764025, 16755230, 15531993, 13369239, 14019327, 9948159, 9151447, 14646839, 12082973, 13834264, 16775598, 15785113];
+    var skinPal = [16773855, 16764025, 16755230, 16703198, 16633550, 16559533, 14589814, 13992781, 11295784, 8078110];
+    var shirtPal = [16711680, 13238786, 8192514, 12377854, 9619966, 4563710, 10153752, 7912974, 4757522, 16776960, 16737792, 13369344, 0];
+    var hairPal = [16711680, 13238786, 8192514, 12377854, 9619966, 4563710, 10153752, 7912974, 4757522, 16763904, 16737792, 13369344, 13934441, 13013858, 11961434, 11040850, 10054219, 9265221, 8344638, 7424055, 6634800, 16777215, 6710886];
+    palette = [skinPal, defpal, hairPal, shirtPal];
+    _init(_root.data);
+    if (_root.flip != null) {
+      body._xscale = -100;
+    }
+    if (_root.alpha != null) {
+      _root._alpha = int(_root.alpha);
+      _root.blendMode = 'layer';
+    }
+  }
+
+  movieClip 6  {
+  }
+
+  movieClip 8  {
+  }
+
+  movieClip 10  {
+  }
+
+  movieClip 12  {
+  }
+
+  movieClip 14  {
+  }
+
+  movieClip 16  {
+  }
+
+  movieClip 18  {
+  }
+
+  movieClip 19  {
+  }
+
+  movieClip 21  {
+  }
+
+  movieClip 23  {
+  }
+
+  movieClip 25  {
+  }
+
+  movieClip 28  {
+  }
+
+  movieClip 34  {
+  }
+
+  movieClip 35  {
+  }
+
+  movieClip 37  {
+  }
+
+  movieClip 40  {
+  }
+
+  movieClip 45  {
+  }
+
+  movieClip 46  {
+  }
+
+  movieClip 48  {
+  }
+
+  movieClip 49  {
+  }
+
+  movieClip 53  {
+  }
+
+  movieClip 55  {
+  }
+
+  movieClip 59  {
+  }
+
+  movieClip 62  {
+  }
+
+  movieClip 63  {
+  }
+
+  movieClip 65  {
+  }
+
+  movieClip 67  {
+  }
+
+  movieClip 70  {
+  }
+
+  movieClip 72  {
+  }
+
+  movieClip 74  {
+  }
+
+  movieClip 77  {
+  }
+
+  movieClip 79  {
+  }
+
+  movieClip 82  {
+  }
+
+  movieClip 84  {
+  }
+
+  movieClip 85  {
+  }
+
+  movieClip 87  {
+  }
+
+  movieClip 89  {
+  }
+
+  movieClip 91  {
+  }
+
+  movieClip 93  {
+  }
+
+  movieClip 95  {
+  }
+
+  movieClip 98  {
+  }
+
+  movieClip 100  {
+  }
+
+  movieClip 102  {
+  }
+
+  movieClip 105  {
+  }
+
+  movieClip 108  {
+  }
+
+  movieClip 109  {
+  }
+
+  movieClip 112  {
+  }
+
+  movieClip 114  {
+  }
+
+  movieClip 116  {
+  }
+
+  movieClip 118  {
+  }
+
+  movieClip 120  {
+  }
+
+  movieClip 122  {
+  }
+
+  movieClip 124  {
+  }
+
+  movieClip 126  {
+  }
+
+  movieClip 127  {
+  }
+
+  movieClip 128  {
+  }
+
+  movieClip 129  {
+  }
+}

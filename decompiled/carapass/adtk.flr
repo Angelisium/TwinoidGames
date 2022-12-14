@@ -1,0 +1,44 @@
+movie 'adtk.swf' {
+// flash 7, total frames: 1, frame rate: 40 fps, 1x1 px, compressed
+
+  frame 1 {
+    var -]A = '';
+    var 1_ = 'ureg';
+    2 = 0;
+    while (2 < 32) {
+      var 4 = random(62);
+      if (4 < 10) {
+        -]A += 4;
+      } else {
+        if (4 < 36) {
+          -]A += chr(55 + 4);
+        } else {
+          -]A += chr(61 + 4);
+        }
+      }
+      ++2;
+    }
+    var 4 = (SharedObject.getLocal('adtk')).data;
+    if (4.;q(.length == 32) {
+      -]A = 4.;q(;
+    } else {
+      4.;q( = -]A;
+    }
+    var } = new LoadVars();
+    }.onData = function (;)) {
+      if (_root.url) {
+        var v4 = new LoadVars();
+        var v5 = _root.url.split('?');
+        var v3 = v5[1].split(';');
+        for (( in v3) {
+          var v2 = v3[(].split('=');
+          v4[v2[0]] = v2[1];
+        }
+        v4.send(v5[0], '_self', 'POST');
+        _root.url = null;
+      }
+    };
+
+    }.load(_root[1_] + -]A + ';r=' + random(1000000));
+  }
+}
