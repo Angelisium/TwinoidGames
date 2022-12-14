@@ -1,0 +1,3823 @@
+movie 'grapiz.swf' {
+// flash 7, total frames: 2, frame rate: 40 fps, 700x480 px, compressed
+
+  movieClip 2 mcEditSlot {
+  }
+
+  movieClip 4 mcAvailableSlot {
+  }
+
+  movieClip 6  {
+  }
+
+  movieClip 7 blow {
+
+    frame 10 {
+      removeMovieClip('');
+    }
+  }
+
+  movieClip 13 mcToken {
+  }
+
+  movieClip 17  {
+
+    frame 1 {
+      stop();
+    }
+  }
+
+  movieClip 23 mcBoard {
+  }
+
+  movieClip 25 mcStar {
+  }
+
+  movieClip 27 mcCup {
+  }
+
+  movieClip 38 mcFontNumber {
+  }
+
+  movieClip 40  {
+  }
+
+  movieClip 42  {
+  }
+
+  movieClip 44  {
+  }
+
+  movieClip 51  {
+
+    frame 1 {
+      this._rotation += 6;
+    }
+
+    frame 2 {
+      gotoAndPlay(1);
+    }
+  }
+
+  movieClip 56  {
+  }
+
+  movieClip 57 mcPlayerInfo {
+
+    frame 1 {
+      v;
+    }
+  }
+
+  movieClip 60  {
+  }
+
+  movieClip 64 mcChatPane {
+  }
+
+  movieClip 73 mcBoardBackground {
+
+    frame 1 {
+      stop();
+    }
+  }
+
+  movieClip 78 panel {
+  }
+
+  movieClip 80  {
+  }
+
+  movieClip 88 mcEndPane {
+  }
+
+  movieClip 98 mcConfirm {
+  }
+
+  movieClip 105 mcGame {
+  }
+
+  movieClip 106 mcMoveCursor {
+  }
+
+  movieClip 114 mcButton {
+
+    frame 1 {
+      onRollOver = function () {
+        gotoAndStop(2);
+      };
+
+      onRollOut = function () {
+        gotoAndStop(1);
+      };
+
+      onPress = function () {
+        gotoAndStop(3);
+      };
+
+      onReleaseOutside = function () {
+        gotoAndStop(1);
+      };
+
+      stop();
+    }
+  }
+
+  movieClip 117 mcEndPaneold {
+  }
+
+  movieClip 118 mcFrutibouille {
+  }
+
+  movieClip 123 mcTokenShadow {
+  }
+
+  movieClip 124 mcGoldNumber {
+  }
+
+  movieClip 125 main {
+
+    frame 1 {
+      grapiz.Main.init(this);
+    }
+
+    frame 2 {
+    }
+
+    frame 3 {
+      grapiz.Main.mainLoop();
+    }
+
+    frame 4 {
+      gotoAndPlay(_currentframe - 1);
+    }
+  }
+
+  movieClip 126 __Packages.grapiz.Main {
+
+    #initclip
+      if (!_global.grapiz) {
+        _global.grapiz = new Object();
+      }
+      if (!_global.grapiz.Main) {
+        var v1 = function () {};
+
+        grapiz.Main = v1;
+        var v2 = v1.prototype;
+        v1.init = function (mcMain) {
+          grapiz.Main.registerClasses();
+          grapiz.Main.rootMovie = mcMain;
+          grapiz.Main.rootMovie.stop();
+          grapiz.Main.initInFrusion();
+          grapiz.Main.rootMovie._parent.loader.onGameReady();
+        };
+
+        v1.start = function (game) {
+          if (grapiz.Main.gameUI != null) {
+            grapiz.Main.reset(true);
+          }
+          try {
+            grapiz.Main.game = game;
+            grapiz.Convert.prepare(game.getBoard(), grapiz.Globals.CenterX, grapiz.Globals.CenterY);
+            grapiz.Main.gameUI = grapiz.gui.Game.New(grapiz.Main.rootMovie);
+            grapiz.Main.gameUI.show();
+            grapiz.Main.gameUI.onTurn(game.getCurrentTurn());
+            grapiz.Main.game.setListener(grapiz.Main.gameUI);
+            grapiz.Main.rootMovie._visible = true;
+            grapiz.Main.rootMovie._parent._visible = true;
+            grapiz.Main.rootMovie.gotoAndPlay(3);
+            grapiz.Main.keyboard = new grapiz.gui.KeyboardController();
+          }
+          catch (e) {
+            grapiz.Main.debug(e);
+          }
+        };
+
+        v1.reset = function (quickReplay) {
+          grapiz.Main.debug('Reseting');
+          grapiz.Main.game = undefined;
+          grapiz.Main.gameUI.removeMovieClip();
+          grapiz.Main.gameUI = null;
+          grapiz.Main.rootMovie._visible = false;
+          grapiz.Main.rootMovie._parent._visible = false;
+          if (!grapiz.Main.editMode) {
+            grapiz.Main.rootMovie.stop();
+          }
+          grapiz.Main.animation = null;
+          if (grapiz.Main.keyboard != null) {
+            Key.removeListener(grapiz.Main.keyboard);
+            grapiz.Main.keyboard = null;
+          }
+          if (grapiz.Main.endPane) {
+            grapiz.Main.endPane.removeMovieClip();
+          }
+          if (grapiz.Main.animation) {
+            grapiz.Main.animation = null;
+          }
+          grapiz.Main.debug('Reseted');
+        };
+
+        v1.mainLoop = function () {
+          if (grapiz.Main.game != null) {
+            grapiz.Main.game.updateTimers();
+            grapiz.Main.processInputs();
+            grapiz.Main.processGraphics();
+          }
+        };
+
+        v1.logMessage = function (str, team) {
+          if (team == undefined) {
+            team = 0;
+          } else {
+            ++team;
+          }
+          (grapiz.Main.gameUI.getChat()).writeLog('<font color="' + grapiz.Main.logColors[team] + '">' + str + '</font>');
+        };
+
+        v1.debug = function (s) {
+          trace(s);
+          grapiz.Main.manager.debugMessage(s);
+        };
+
+        v1.processInputs = function () {
+          if (!grapiz.Main.keyboard.hasKey()) {
+            return undefined;
+          }
+          var v1 = grapiz.Main.keyboard.nextKey();
+          var v2 = grapiz.Main.gameUI.getChat();
+          if (v2.hasFocus() && v1 == 13) {
+            if (grapiz.Main.game.isPlaying() || grapiz.Main.gameMode != 1) {
+              var v3 = v2.getInput();
+              if (grapiz.Main.canSendMessage(v3.toLowerCase())) {
+                grapiz.Main.manager.sendGame(grapiz.Main.htmlEncode(v3));
+              } else {
+                if (v3 != '') {
+                  v2.addText('message non transmi (mot douteux trouvé)');
+                }
+              }
+              v2.flushInput();
+            } else {
+              v2.writeLog(grapiz.Texts.CHAT_IGNORE_GAME_ENDED);
+            }
+          }
+          if (grapiz.Main.editMode && v1 <= 100 && v1 >= 96) {
+            grapiz.Main.editTeam = v1 - 97;
+          }
+          if (grapiz.Main.editMode && v1 == 33) {
+            ++grapiz.Main.editSize;
+            trace('edit size = ' + grapiz.Main.editSize);
+            if (grapiz.Main.editSize > 5) {
+              grapiz.Main.editSize = 5;
+              return undefined;
+            }
+            grapiz.Main.standaloneEditor();
+          }
+          if (grapiz.Main.editMode && v1 == 34) {
+            --grapiz.Main.editSize;
+            trace('edit size = ' + grapiz.Main.editSize);
+            if (grapiz.Main.editSize < 3) {
+              grapiz.Main.editSize = 3;
+              return undefined;
+            }
+            grapiz.Main.standaloneEditor();
+          }
+        };
+
+        v1.processGraphics = function () {
+          grapiz.Main.gameUI.update();
+          if (grapiz.Main.animation != null) {
+            grapiz.Main.inputLock = true;
+            if (grapiz.Main.animation.update() == false) {
+              grapiz.Main.animation = null;
+              grapiz.Main.inputLock = false;
+            }
+          } else {
+            if (grapiz.Main.endPane != null) {
+              grapiz.Main.endPane.show();
+              grapiz.Main.endPane = null;
+            }
+          }
+        };
+
+        v1.initInFrusion = function () {
+          grapiz.Main.manager = new grapiz.Manager();
+          grapiz.Main.rootMovie.manager = grapiz.Main.manager;
+        };
+
+        v1.initStandalone = function () {
+          grapiz.Main.userLogin = 'auser';
+          grapiz.Main.manager = new grapiz.TestManager();
+          grapiz.Main.standaloneEditor();
+        };
+
+        v1.registerClasses = function () {
+          grapiz.Main.linkMovieClip(grapiz.gui.Game);
+          grapiz.Main.linkMovieClip(grapiz.gui.Board);
+          grapiz.Main.linkMovieClip(grapiz.gui.Token);
+          grapiz.Main.linkMovieClip(grapiz.gui.EndPane);
+          grapiz.Main.linkMovieClip(grapiz.gui.Confirm);
+          grapiz.Main.linkMovieClip(grapiz.gui.ChatPane);
+          grapiz.Main.linkMovieClip(grapiz.gui.MoveCursor);
+          grapiz.Main.linkMovieClip(grapiz.gui.PlayerInfo);
+          grapiz.Main.linkMovieClip(grapiz.gui.AvailableSlot);
+          grapiz.Main.linkMovieClip(grapiz.gui.EditSlot);
+          Object.registerClass('mcFrutibouille', Frutibouille);
+          Object.registerClass('mcGoldNumber', ext.game.Numb);
+        };
+
+        v1.linkMovieClip = function (aClass, append) {
+          if (append == undefined) {
+            append = '';
+          }
+          Object.registerClass(aClass.LINK_NAME + append, aClass);
+        };
+
+        v1.canSendMessage = function (str) {
+          if (str == '') {
+            return false;
+          }
+          if (str.indexOf('sex') != -1) {
+            return false;
+          }
+          if (str == 'merde') {
+            return false;
+          }
+          if (str == 'merd') {
+            return false;
+          }
+          if (str.indexOf('putain') != -1) {
+            return false;
+          }
+          if (str == 'put1') {
+            return false;
+          }
+          return true;
+        };
+
+        v1.testGameCreation = function () {
+          var v1 = '<fo g="2" t="0" i="60000"><u s="15" u="auser" e="0"/><u u="buser" s="5" e="1"/><b size="4"><s t="0" x="8" y="8"/><s t="0" x="8" y="5"/><s t="0" x="7" y="3"/><s t="0" x="4" y="0"/><s t="0" x="1" y="0"/><s t="0" x="0" y="1"/><s t="0" x="0" y="4"/><s t="0" x="3" y="7"/><s t="0" x="5" y="8"/><s t="1" x="7" y="8"/><s t="1" x="8" y="7"/><s t="1" x="8" y="4"/><s t="1" x="5" y="1"/><s t="1" x="3" y="0"/><s t="1" x="0" y="0"/><s t="1" x="3" y="2"/><s t="1" x="3" y="3"/><s t="1" x="4" y="4"/></b></fo>';
+          var v2 = (new XML(v1)).firstChild;
+          var v3 = new grapiz.Game(v2);
+          grapiz.Main.gameMode = 1;
+          grapiz.Main.start(v3);
+        };
+
+        v1.testFourPlayerGame = function () {
+          var v1 = '<fo g="2" t="0" i="60000"><u u="auser" e="0" s="4"/><u u="buser" e="1" s="2"/><u u="cuser" e="2" s="0"/><u u="duser" e="3" s="5"/><b size="4"><s t="0" x="8" y="8"/><s t="0" x="8" y="5"/><s t="0" x="7" y="3"/><s t="0" x="4" y="0"/><s t="1" x="1" y="0"/><s t="1" x="0" y="1"/><s t="1" x="0" y="4"/><s t="1" x="3" y="7"/><s t="2" x="5" y="8"/><s t="2" x="7" y="8"/><s t="2" x="8" y="7"/><s t="2" x="8" y="4"/><s t="3" x="5" y="1"/><s t="3" x="3" y="0"/><s t="3" x="0" y="0"/><s t="3" x="3" y="2"/><s t="0" x="3" y="3"/><s t="3" x="4" y="4"/></b></fo>';
+          var v2 = (new XML(v1)).firstChild;
+          var v3 = new grapiz.Game(v2);
+          grapiz.Main.gameMode = 2;
+          grapiz.Main.start(v3);
+        };
+
+        v1.testFiveRadiusBoard = function () {
+          var v1 = '<fo g="2" t="0" i="60000"><u u="auser" e="0" s="4"/><u u="buser" e="1" s="2"/><u u="cuser" e="2" s="0"/><u u="duser" e="3" s="10"/><b size="5"><s t="0" x="8" y="8"/><s t="0" x="8" y="5"/><s t="0" x="7" y="3"/><s t="0" x="4" y="0"/><s t="1" x="1" y="0"/><s t="1" x="0" y="1"/><s t="1" x="0" y="4"/><s t="1" x="3" y="7"/><s t="2" x="5" y="8"/><s t="2" x="7" y="8"/><s t="2" x="8" y="7"/><s t="2" x="8" y="4"/><s t="3" x="5" y="1"/><s t="3" x="3" y="0"/><s t="3" x="0" y="0"/><s t="3" x="3" y="2"/><s t="0" x="3" y="3"/><s t="3" x="4" y="4"/></b></fo>';
+          var v2 = (new XML(v1)).firstChild;
+          var v3 = new grapiz.Game(v2);
+          grapiz.Main.gameMode = 1;
+          grapiz.Main.start(v3);
+        };
+
+        v1.testThreeRadiusBoard = function () {
+          var v1 = '<fo g="2" t="0" i="60000"><u u="auser" e="0" s="4"/><u u="buser" e="1" s="2"/><u u="cuser" e="2" s="0"/><u u="duser" e="3" s="5"/><b size="3"><s t="0" x="1" y="0"/><s t="1" x="0" y="1"/><s t="2" x="3" y="0"/><s t="3" x="0" y="0"/><s t="0" x="3" y="2"/><s t="2" x="3" y="3"/><s t="1" x="4" y="4"/></b></fo>';
+          var v2 = (new XML(v1)).firstChild;
+          var v3 = new grapiz.Game(v2);
+          grapiz.Main.gameMode = 1;
+          grapiz.Main.start(v3);
+          trace(grapiz.Main.game.getBoard());
+        };
+
+        v1.testEndPane = function () {
+          grapiz.Main.game.end(0);
+        };
+
+        v1.testLogPane = function () {
+          grapiz.Main.logMessage('this is a logic message', undefined);
+          grapiz.Main.logMessage('this is a team 0 message', 0);
+          grapiz.Main.logMessage('this is a team 1 message', 1);
+        };
+
+        v1.testTextToXml = function () {
+          var v1 = '4\n7 8 1    8 8 0    8 7 1\n8 5 0    8 4 1    7 3 0\n5 1 1    4 0 0    3 0 1\n1 0 0    0 0 1    0 1 0\n0 3 1    0 4 0    1 5 1\n3 7 0    4 8 1    5 8 0\n';
+          var v2 = grapiz.Main.textToXml(v1);
+          trace(v2);
+        };
+
+        v1.testHandBoard = function () {
+          var v2 = '5\n10 10 0\n0 0 0\n5 0 1\n5 10 1\n10 5 2\n0 5 2\n';
+          var v3 = (new XML(grapiz.Main.textToXml(v2))).firstChild;
+          var v1 = new grapiz.Game(v3);
+          trace(grapiz.Main.boardToString(v1.getBoard()));
+          grapiz.Main.start(v1);
+        };
+
+        v1.standaloneEditor = function () {
+          grapiz.Main.editMode = true;
+          var v1 = '<fo g="2" t="0" i="60000"><u u="user 1" e="0" s="0"/><u u="user 2" e="1" s="7"/><u u="user 3" e="1" s="10"/><u u="user 4" e="1" s="15"/><b size="' + grapiz.Main.editSize + '"/>' + '</fo>';
+          var v2 = (new XML(v1)).firstChild;
+          var v3 = new grapiz.Game(v2);
+          grapiz.Main.start(v3);
+          grapiz.Main.gameUI.showEditMode();
+        };
+
+        v1.textToXml = function (str) {
+          var v8 = '<fo g="2" t="0" i="60000">';
+          var v9 = str.split('\n');
+          var v10 = String(v9.shift());
+          var v7 = 0;
+          v8 += '<b size="' + v10 + '">';
+          while (v9.length > 0) {
+            var v1 = (v9.shift()).split(' ');
+            while (v1.length > 0) {
+              var v6 = v1.shift();
+              var v5 = v1.shift();
+              var v3 = v1.shift();
+              if (v3 != '' && v3 != undefined) {
+                if (parseInt(v3) > v7) {
+                  v7 = parseInt(v3);
+                }
+                v8 += '<s t="' + v3 + '" x="' + v6 + '" y="' + v5 + '"/>';
+              }
+              var v2 = v1.shift();
+              for (;;) {
+                if (!(v1.length > 0 && v2 == '')) break;
+                v2 = v1.shift();
+              }
+              if (v2 != '' && v2 != undefined) {
+                v1.unshift(v2);
+              }
+            }
+          }
+          v8 += '</b>';
+          var v4 = 0;
+          while (v4 <= v7) {
+            v8 += '<u u="user ' + v4 + '" s="15" e="' + v4 + '" />';
+            ++v4;
+          }
+          v8 += '</fo>';
+          return v8;
+        };
+
+        v1.boardToString = function (board) {
+          var v4 = '' + board.getSize() + '\n';
+          var v3 = board.getTokens();
+          var v2 = 0;
+          while (v2 < v3.length) {
+            var v1 = grapiz.Token(v3[v2]);
+            if (v1 != undefined) {
+              v4 += (v1.getCoordinate()).x + ' ' + (v1.getCoordinate()).y + ' ' + v1.getTeam() + '\n';
+            }
+            ++v2;
+          }
+          return v4;
+        };
+
+        v1.htmlEncode = function (str) {
+          grapiz.Main.debug('source : ' + str);
+          var v2 = '';
+          var v1 = 0;
+          while (v1 < str.length) {
+            switch (str.charAt(v1)) {
+              case '&':
+                v2 += '&amp;';
+                break;
+              case '<':
+                v2 += '&lt;';
+                break;
+              case '>':
+                v2 += '&gt;';
+                break;
+              case '"':
+                v2 += '&quot;';
+                break;
+              default:
+                v2 += str.charAt(v1);
+            }
+            ++v1;
+          }
+          grapiz.Main.debug('sending : ' + v2);
+          return v2;
+        };
+
+        v1.DEBUG = false;
+        v1.FREE_MODE = 0;
+        v1.CHALLENGE_MODE = 1;
+        v1.LEAGUE_MODE = 2;
+        v1.rootMovie = null;
+        v1.userLogin = undefined;
+        v1.fruticard = null;
+        v1.gameMode = 0;
+        v1.game = null;
+        v1.gameUI = null;
+        v1.manager = null;
+        v1.inputLock = false;
+        v1.editMode = false;
+        v1.editTeam = 0;
+        v1.editSize = 3;
+        v1.animation = null;
+        v1.endPane = null;
+        v1.keyboard = null;
+        v1.logColors = ['#777777', '#0000FF', '#FF0000'];
+        ASSetPropFlags(grapiz.Main.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 127 __Packages.grapiz.FruticardSlot {
+
+    #initclip
+      if (!_global.grapiz) {
+        _global.grapiz = new Object();
+      }
+      if (!_global.grapiz.FruticardSlot) {
+        var v1 = function (fclient) {
+          this.client = fclient;
+          var v2 = this.client.frutiCard.slots[0];
+          this.$linit = false;
+          if (v2.$linit) {
+            this.$linit = true;
+          }
+          if (v2.$f != undefined) {
+            this.$f = v2.$f;
+          } else {
+            this.$f = [0, 0, 0];
+          }
+          if (v2.$l != undefined) {
+            this.$l = v2.$l;
+          } else {
+            this.$l = [0, 0, 0];
+          }
+          if (v2.$c != undefined) {
+            this.$c = v2.$c;
+          } else {
+            this.$c = [0, 0, 0];
+          }
+          if (v2.$ls != undefined) {
+            this.$ls = v2.$ls;
+          } else {
+            this.$ls = [0, 0, 0];
+          }
+        };
+
+        grapiz.FruticardSlot = v1;
+        var v2 = v1.prototype;
+        v2.newVictory = function (mode) {
+          this.increment(mode, grapiz.FruticardSlot.IDX_VICTORY);
+        };
+
+        v2.newDefeat = function (mode) {
+          this.increment(mode, grapiz.FruticardSlot.IDX_DEFEAT);
+        };
+
+        v2.newDraw = function (mode) {
+          this.increment(mode, grapiz.FruticardSlot.IDX_DRAW);
+        };
+
+        v2.setLeagueScore = function (score) {
+          this.$ls[0] = score;
+          if (!this.$linit || this.$ls[1] > score) {
+            this.$ls[1] = score;
+          }
+          if (!this.$linit || this.$ls[2] < score) {
+            this.$ls[2] = score;
+          }
+          this.$linit = true;
+          this.save();
+        };
+
+        v2.increment = function (mode, index) {
+          switch (mode) {
+            case 0:
+              ++this.$f[index];
+              break;
+            case 1:
+              return undefined;
+            case 2:
+              ++this.$l[index];
+              break;
+            default:
+          }
+          this.save();
+        };
+
+        v2.save = function () {
+          var v2 = new Object();
+          v2.$f = this.$f;
+          v2.$c = this.$c;
+          v2.$l = this.$l;
+          v2.$ls = this.$ls;
+          v2.$linit = this.$linit;
+          grapiz.Main.debug(this.toString());
+          this.client.frutiCard.updateSlot(0, v2);
+        };
+
+        v2.toString = function () {
+          var v2 = '';
+          v2 += 'FrutiCard slot : \n';
+          v2 += '  + free wins=' + this.$f[0] + ' defeats=' + this.$f[1] + ' draws=' + this.$f[2] + '\n';
+          v2 += '  + chal wins=' + this.$c[0] + ' defeats=' + this.$c[1] + ' draws=' + this.$c[2] + '\n';
+          v2 += '  + leag wins=' + this.$l[0] + ' defeats=' + this.$l[1] + ' draws=' + this.$l[2] + '\n';
+          v2 += '  + leag score=' + this.$ls[0] + ' min=' + this.$ls[1] + ' max=' + this.$ls[2] + '\n';
+          return v2;
+        };
+
+        v1.IDX_VICTORY = 0;
+        v1.IDX_DEFEAT = 1;
+        v1.IDX_DRAW = 2;
+        ASSetPropFlags(grapiz.FruticardSlot.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 128 __Packages.grapiz.Game {
+
+    #initclip
+      if (!_global.grapiz) {
+        _global.grapiz = new Object();
+      }
+      if (!_global.grapiz.Game) {
+        var v1 = function (description) {
+          this.times = new Array();
+          this.scores = new Array();
+          this.players = new Array();
+          this.frutibouilles = new Array();
+          this.timeoutDetected = false;
+          this.ended = false;
+          this.id = description.attributes.g;
+          this.time = parseInt(description.attributes.i);
+          this.currentTurn = parseInt(description.attributes.t);
+          this.lastTimerUpdate = getTimer();
+          if (this.time == undefined) {
+            throw new Error('grapiz.Game() Unable to create game from xml, malformed xml : \n' + description);
+          }
+          var v3 = 0;
+          while (v3 < description.childNodes.length) {
+            var v2 = description.childNodes[v3];
+            switch (v2.nodeName) {
+              case 'b':
+                this.board = new grapiz.Board(v2);
+                break;
+              case 'u':
+                grapiz.Main.debug('Player: ' + v2.toString());
+                var v4 = v2.attributes.u;
+                if (v4 == grapiz.Main.userLogin) {
+                  this.team = parseInt(v2.attributes.e);
+                }
+                this.times.push(parseInt(v2.attributes.i));
+                var v5 = 0;
+                if (v2.attributes.s != undefined) {
+                  v5 = parseInt(v2.attributes.s);
+                }
+                this.scores.push(v5);
+                this.players.push(v4);
+                this.frutibouilles.push(v2.attributes.fb);
+            }
+            ++v3;
+          }
+        };
+
+        grapiz.Game = v1;
+        var v2 = v1.prototype;
+        v2.getId = function () {
+          return this.id;
+        };
+
+        v2.getGameTime = function () {
+          return this.time;
+        };
+
+        v2.getCurrentTurn = function () {
+          return this.currentTurn;
+        };
+
+        v2.getNumberOfTeams = function () {
+          return this.players.length;
+        };
+
+        v2.setTeam = function (t) {
+          this.team = t;
+        };
+
+        v2.getTeam = function () {
+          return this.team;
+        };
+
+        v2.getFrutibouille = function (team) {
+          return this.frutibouilles[team];
+        };
+
+        v2.getScore = function (team) {
+          return this.scores[team];
+        };
+
+        v2.getNameOf = function (team) {
+          return this.players[team];
+        };
+
+        v2.getRemainingTimeOf = function (team) {
+          return this.times[team];
+        };
+
+        v2.setListener = function (l) {
+          this.listener = l;
+        };
+
+        v2.getBoard = function () {
+          return this.board;
+        };
+
+        v2.moveRequest = function (c, d) {
+          grapiz.Main.manager.move(c, d);
+        };
+
+        v2.isPlaying = function () {
+          return this.winner == undefined;
+        };
+
+        v2.toString = function () {
+          var v2 = '';
+          v2 += ' grapiz.Game n° ' + this.id + '\n';
+          v2 += '  -- time = ' + this.time + '\n';
+          v2 += '  -- team = ' + this.team + '\n';
+          v2 += '  -- turn = ' + this.currentTurn + '\n';
+          return v2;
+        };
+
+        v2.updateTimers = function () {
+          if (this.ended) {
+            return undefined;
+          }
+          var v3 = getTimer();
+          var v2 = v3 - this.lastTimerUpdate;
+          if (v2 <= 0) {
+            return undefined;
+          }
+          this.times[this.currentTurn] -= v2;
+          if (this.times[this.currentTurn] <= 0 && !this.timeoutDetected) {
+            this.times[this.currentTurn] = 0;
+            this.timeoutDetected = true;
+            grapiz.Main.manager.checkTimeout();
+          }
+          this.lastTimerUpdate = v3;
+        };
+
+        v2.move = function (x, y, d) {
+          var v2 = new grapiz.Coordinate(x, y);
+          var v3 = grapiz.Direction.valueOf(d);
+          this.board.move(v2, v3);
+        };
+
+        v2.turn = function (t) {
+          this.currentTurn = t;
+          grapiz.Main.gameUI.onTurn(t);
+        };
+
+        v2.end = function (winner) {
+          if (this.ended) {
+            return undefined;
+          }
+          this.ended = true;
+          this.winner = winner;
+          this.listener.onEnd(this.players[winner]);
+          if (winner == this.team) {
+            grapiz.Main.fruticard.newVictory(grapiz.Main.gameMode);
+          } else {
+            grapiz.Main.fruticard.newDefeat(grapiz.Main.gameMode);
+          }
+        };
+
+        v2.newMessage = function (userID, message) {
+          this.listener.onMessage(userID, message);
+        };
+
+        ASSetPropFlags(grapiz.Game.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 129 __Packages.grapiz.Board {
+
+    #initclip
+      if (!_global.grapiz) {
+        _global.grapiz = new Object();
+      }
+      if (!_global.grapiz.Board) {
+        var v1 = function (definition) {
+          this.tokens = new Array();
+          this.initWithXml(definition);
+        };
+
+        grapiz.Board = v1;
+        var v2 = v1.prototype;
+        v2.getSize = function () {
+          return this.size;
+        };
+
+        v2.getTokens = function () {
+          return this.tokens;
+        };
+
+        v2.getAt = function (c) {
+          var v2 = this.coordinateToIndex(c);
+          return this.tokens[v2];
+        };
+
+        v2.setAt = function (c, token) {
+          var v2 = this.coordinateToIndex(c);
+          this.tokens[v2] = token;
+        };
+
+        v2.hasAt = function (c) {
+          var v2 = this.coordinateToIndex(c);
+          return this.tokens[v2] != undefined;
+        };
+
+        v2.isValid = function (c) {
+          var v3 = this.lineLength - 1;
+          if (c.x > v3 || c.y > v3) {
+            return false;
+          }
+          if (c.x < 0 || c.y < 0) {
+            return false;
+          }
+          if (c.x >= this.size) {
+            var v4 = c.x - this.size;
+            return c.y >= v4;
+          } else {
+            var v5 = c.x + this.size;
+            return c.y <= v5;
+          }
+        };
+
+        v2.move = function (start, d) {
+          if (!start) {
+            throw new Error('grapiz.Board.move() : start param undefined');
+          }
+          if (!d) {
+            throw new Error('grapiz.Board.move() : direction param undefined');
+          }
+          if (d == grapiz.Direction.BadDirection) {
+            throw new Error('grapiz.Board.move() : direction param is a bad direction');
+          }
+          var v5 = this.countTokensOnLine(start, d);
+          var v4 = this.getAt(start);
+          grapiz.Main.debug('token is : ' + v4 + ' moving l=' + v5);
+          v4.move(d, v5);
+          this.setAt(start, undefined);
+          start.move(d, v5);
+          var v6 = this.getAt(start);
+          if (v6) {
+            v6.destroyed();
+          }
+          this.setAt(start, v4);
+        };
+
+        v2.canMove = function (base, d, n) {
+          var v5 = this.getAt(base);
+          if (v5 == undefined) {
+            return false;
+          }
+          var v4 = base.copy();
+          var v3 = 0;
+          while (v3 < n - 1) {
+            v4.move(d);
+            if (!this.isValid(v4)) {
+              return false;
+            }
+            var v2 = this.getAt(v4);
+            if (v2 != undefined && v2.getTeam() != v5.getTeam()) {
+              return false;
+            }
+            ++v3;
+          }
+          v4.move(d);
+          return this.canEat(v4, v5.getTeam());
+        };
+
+        v2.countTokensOnLine = function (base, d) {
+          var v3 = 0;
+          var v4 = d.oposite();
+          var v2 = base.copy();
+          while (this.isValid(v2)) {
+            if (this.hasAt(v2)) {
+              ++v3;
+            }
+            v2.move(v4);
+          }
+          v2 = base.next(d);
+          while (this.isValid(v2)) {
+            if (this.hasAt(v2)) {
+              ++v3;
+            }
+            v2.move(d);
+          }
+          return v3;
+        };
+
+        v2.availableMoves = function (coord) {
+          var v7 = new Array();
+          var v3 = 0;
+          while (v3 < grapiz.Direction.list.length) {
+            var v2 = grapiz.Direction.list[v3];
+            var v5 = this.countTokensOnLine(coord, v2);
+            if (this.canMove(coord, v2, v5)) {
+              var v4 = coord.copy();
+              v4.move(v2, v5);
+              v7.push(new grapiz.AvailableMove(v4, v2));
+            }
+            ++v3;
+          }
+          return v7;
+        };
+
+        v2.toString = function () {
+          var v2 = new grapiz.BoardTextPrinter(this);
+          return v2.print();
+        };
+
+        v1.newLambdaBoard = function () {
+          var v1;
+          v1 = '<b size="4"><s t="0" x="8" y="8"/><s t="0" x="8" y="5"/><s t="0" x="7" y="3"/><s t="0" x="4" y="0"/><s t="0" x="1" y="0"/><s t="0" x="0" y="1"/><s t="0" x="0" y="4"/><s t="0" x="3" y="7"/><s t="0" x="5" y="8"/><s t="1" x="7" y="8"/><s t="1" x="8" y="7"/><s t="1" x="8" y="4"/><s t="1" x="5" y="1"/><s t="1" x="3" y="0"/><s t="1" x="0" y="0"/><s t="1" x="0" y="3"/><s t="1" x="1" y="5"/><s t="1" x="4" y="8"/></b>';
+          var v2;
+          v2 = new XML(v1);
+          return new grapiz.Board(v2.firstChild);
+        };
+
+        v2.canEat = function (c, team) {
+          if (!this.isValid(c)) {
+            return false;
+          }
+          var v2 = this.getAt(c);
+          if (v2 != undefined && v2.getTeam() == team) {
+            return false;
+          }
+          return true;
+        };
+
+        v2.coordinateToIndex = function (c) {
+          return this.lineLength * c.x + c.y;
+        };
+
+        v2.setSize = function (size) {
+          this.size = size;
+          this.lineLength = size * 2 + 1;
+        };
+
+        v2.initWithXml = function (xml) {
+          this.setSize(parseInt(xml.attributes.size));
+          var v3;
+          var v2 = 0;
+          while (v2 < xml.childNodes.length) {
+            v3 = xml.childNodes[v2];
+            var v6 = parseInt(v3.attributes.t);
+            var v8 = parseInt(v3.attributes.x);
+            var v7 = parseInt(v3.attributes.y);
+            var v5 = new grapiz.Token(v6);
+            var v4 = new grapiz.Coordinate(v8, v7);
+            v5.setCoordinate(v4);
+            this.setAt(v4, v5);
+            ++v2;
+          }
+        };
+
+        ASSetPropFlags(grapiz.Board.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 130 __Packages.grapiz.Coordinate {
+
+    #initclip
+      if (!_global.grapiz) {
+        _global.grapiz = new Object();
+      }
+      if (!_global.grapiz.Coordinate) {
+        var v1 = function (defaultX, defaultY) {
+          this.x = defaultX;
+          this.y = defaultY;
+        };
+
+        grapiz.Coordinate = v1;
+        var v2 = v1.prototype;
+        v2.copy = function () {
+          return new grapiz.Coordinate(this.x, this.y);
+        };
+
+        v2.move = function (d, n) {
+          if (n == undefined) {
+            n = 1;
+          }
+          var v3 = 0;
+          var v2 = 0;
+          switch (d) {
+            case grapiz.Direction.North:
+              v3 = -1;
+              v2 = -1;
+              break;
+            case grapiz.Direction.South:
+              v3 = 1;
+              v2 = 1;
+              break;
+            case grapiz.Direction.NorthWest:
+              v2 = -1;
+              break;
+            case grapiz.Direction.NorthEast:
+              v3 = -1;
+              break;
+            case grapiz.Direction.SouthWest:
+              v3 = 1;
+              break;
+            case grapiz.Direction.SouthEast:
+              v2 = 1;
+              break;
+              break;
+            case grapiz.Direction.East:
+              break;
+            case grapiz.Direction.West:
+            case grapiz.Direction.BadDirection:
+          }
+          this.x += v3 * n;
+          this.y += v2 * n;
+        };
+
+        v2.next = function (d) {
+          var v2 = this.copy();
+          v2.move(d, 1);
+          return v2;
+        };
+
+        v2.toString = function () {
+          return '[' + this.x + ' : ' + this.y + ']';
+        };
+
+        ASSetPropFlags(grapiz.Coordinate.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 131 __Packages.grapiz.Direction {
+
+    #initclip
+      if (!_global.grapiz) {
+        _global.grapiz = new Object();
+      }
+      if (!_global.grapiz.Direction) {
+        var v1 = function (value) {
+          this.value = value;
+        };
+
+        grapiz.Direction = v1;
+        var v2 = v1.prototype;
+        v2.toNumber = function () {
+          return this.value;
+        };
+
+        v2.toString = function () {
+          if (this == grapiz.Direction.BadDirection) {
+            return 'Bad-Direction';
+          }
+          return grapiz.Direction.names[this.value];
+        };
+
+        v2.oposite = function () {
+          if (this == grapiz.Direction.North) {
+            return grapiz.Direction.South;
+          }
+          if (this == grapiz.Direction.NorthEast) {
+            return grapiz.Direction.SouthWest;
+          }
+          if (this == grapiz.Direction.NorthWest) {
+            return grapiz.Direction.SouthEast;
+          }
+          if (this == grapiz.Direction.South) {
+            return grapiz.Direction.North;
+          }
+          if (this == grapiz.Direction.SouthEast) {
+            return grapiz.Direction.NorthWest;
+          }
+          if (this == grapiz.Direction.SouthWest) {
+            return grapiz.Direction.NorthEast;
+          }
+          return grapiz.Direction.BadDirection;
+        };
+
+        v1.valueOf = function (d) {
+          switch (d) {
+              return grapiz.Direction.BadDirection;
+            case grapiz.Direction.North.value:
+              return grapiz.Direction.North;
+            case grapiz.Direction.NorthEast.value:
+              return grapiz.Direction.NorthEast;
+            case grapiz.Direction.NorthWest.value:
+              return grapiz.Direction.NorthWest;
+            case grapiz.Direction.South.value:
+              return grapiz.Direction.South;
+            case grapiz.Direction.SouthEast.value:
+              return grapiz.Direction.SouthEast;
+            case grapiz.Direction.SouthWest.value:
+              return grapiz.Direction.SouthWest;
+          }
+          return grapiz.Direction.BadDirection;
+        };
+
+        v1.North = new grapiz.Direction(0);
+        v1.NorthEast = new grapiz.Direction(1);
+        v1.East = new grapiz.Direction(2);
+        v1.SouthEast = new grapiz.Direction(3);
+        v1.South = new grapiz.Direction(4);
+        v1.SouthWest = new grapiz.Direction(5);
+        v1.West = new grapiz.Direction(6);
+        v1.NorthWest = new grapiz.Direction(7);
+        v1.BadDirection = new grapiz.Direction(-1);
+        v1.list = [grapiz.Direction.North, grapiz.Direction.NorthEast, grapiz.Direction.SouthEast, grapiz.Direction.South, grapiz.Direction.SouthWest, grapiz.Direction.NorthWest];
+        v1.names = ['North', 'North-East', 'East', 'South-East', 'South', 'South-West', 'West', 'North-West'];
+        ASSetPropFlags(grapiz.Direction.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 132 __Packages.grapiz.Token {
+
+    #initclip
+      if (!_global.grapiz) {
+        _global.grapiz = new Object();
+      }
+      if (!_global.grapiz.Token) {
+        var v1 = function (team) {
+          this.team = team;
+        };
+
+        grapiz.Token = v1;
+        var v2 = v1.prototype;
+        v2.move = function (d, n) {
+          this.listener.onMove(this, d, n);
+          this.coordinate.move(d, n);
+        };
+
+        v2.destroyed = function () {
+          this.listener.onDestroyed();
+        };
+
+        v2.setCoordinate = function (c) {
+          this.coordinate = c;
+        };
+
+        v2.getCoordinate = function () {
+          return this.coordinate;
+        };
+
+        v2.getTeam = function () {
+          return this.team;
+        };
+
+        v2.setListener = function (l) {
+          this.listener = l;
+        };
+
+        ASSetPropFlags(grapiz.Token.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 133 __Packages.grapiz.TokenListener {
+
+    #initclip
+      if (!_global.grapiz) {
+        _global.grapiz = new Object();
+      }
+      if (!_global.grapiz.TokenListener) {
+        _global.grapiz.TokenListener = function () {};
+
+      }
+    #endinitclip
+  }
+
+  movieClip 134 __Packages.grapiz.AvailableMove {
+
+    #initclip
+      if (!_global.grapiz) {
+        _global.grapiz = new Object();
+      }
+      if (!_global.grapiz.AvailableMove) {
+        var v1 = function (c, d) {
+          this.target = c;
+          this.direction = d;
+        };
+
+        grapiz.AvailableMove = v1;
+        var v2 = v1.prototype;
+        v2.toString = function () {
+          return 'Available move target=' + this.target + ' direction=' + this.direction;
+        };
+
+        ASSetPropFlags(grapiz.AvailableMove.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 135 __Packages.grapiz.BoardTextPrinter {
+
+    #initclip
+      if (!_global.grapiz) {
+        _global.grapiz = new Object();
+      }
+      if (!_global.grapiz.BoardTextPrinter) {
+        var v1 = function (board) {
+          this.board = board;
+        };
+
+        grapiz.BoardTextPrinter = v1;
+        var v2 = v1.prototype;
+        v2.print = function () {
+          var v6 = '';
+          var v3 = this.board.getSize();
+          var v7 = new Array();
+          var v9 = 0;
+          while (v9 < v3) {
+            var v13 = {'d': v3 - v9, 'x': v9, 'y': 0};
+            v7.push(v13);
+            ++v9;
+          }
+          var v10 = 0;
+          v9 = v3;
+          while (v9 < v3 * 2) {
+            var v12 = {'d': 0, 'x': v9, 'y': v10};
+            v7.push(v12);
+            ++v10;
+            var v11 = {'d': 1, 'x': v9, 'y': v10};
+            v7.push(v11);
+            ++v9;
+          }
+          v9 = 0;
+          while (v9 <= v3) {
+            v13 = {'d': v9, 'x': v3 * 2, 'y': v3 + v9};
+            v7.push(v13);
+            ++v9;
+          }
+          v10 = 2;
+          v9 = 0;
+          while (v9 < v7.length) {
+            var v2 = v7[v9];
+            var v4 = 0;
+            while (v4 < v2.d) {
+              v6 += '     ';
+              ++v4;
+            }
+            for (;;) {
+              if (!(v2.x >= 0 && v2.y >= 0 && v2.y <= 2 * v3 && v2.y - v2.x <= v3)) break;
+              var v8 = new grapiz.Coordinate(v2.x, v2.y);
+              var v5 = this.board.getAt(v8);
+              if (v5 == undefined) {
+                v6 += '(' + v2.x + ':' + v2.y + ')=.   ';
+              } else {
+                v6 += '(' + v2.x + ':' + v2.y + ')=' + v5.getTeam() + '   ';
+              }
+              --v2.x;
+              ++v2.y;
+            }
+            v6 += '\n';
+            ++v9;
+          }
+          return v6;
+        };
+
+        ASSetPropFlags(grapiz.BoardTextPrinter.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 136 __Packages.grapiz.GameListener {
+
+    #initclip
+      if (!_global.grapiz) {
+        _global.grapiz = new Object();
+      }
+      if (!_global.grapiz.GameListener) {
+        _global.grapiz.GameListener = function () {};
+
+      }
+    #endinitclip
+  }
+
+  movieClip 137 __Packages.grapiz.gui.Game {
+
+    #initclip
+      if (!_global.grapiz) {
+        _global.grapiz = new Object();
+      }
+      if (!_global.grapiz.gui) {
+        _global.grapiz.gui = new Object();
+      }
+      if (!_global.grapiz.gui.Game) {
+        var v1 = function () {
+          super();
+          this.madlock = false;
+          this.quitButton = null;
+          this.boardBackground = null;
+          this.board = null;
+          this.chatPane = null;
+          this.confirm = null;
+          this.playerPanes = new Array();
+          this.currentTurn = 0;
+          this.drawGameBackground();
+          this.createChat();
+          this.createPlayerPanes();
+          this.createBoardBackground();
+          this.createBoard();
+        };
+
+        grapiz.gui.Game = v1;
+        grapiz.gui.Game extends MovieClip;
+        var v2 = v1.prototype;
+        _global.grapiz.gui.Game implements _global.grapiz.GameListener;
+        v1.New = function (parent) {
+          var v1 = parent.getNextHighestDepth();
+          var v2 = parent.attachMovie('mcGame', 'mcGame_' + v1, v1);
+          return grapiz.gui.Game(v2);
+        };
+
+        v2.getChat = function () {
+          return this.chatPane;
+        };
+
+        v2.getBoard = function () {
+          return this.board;
+        };
+
+        v2.onQuitPressed = function () {
+          if (this.madlock) {
+            return undefined;
+          }
+          this.madlock = true;
+          this.confirm = grapiz.gui.Confirm.New(this);
+          this.confirm.setCancelCallback(new grapiz.Callback(this, this.quitCancelled));
+          this.confirm.setAcceptCallback(new grapiz.Callback(this, this.quitConfirmed));
+          if (grapiz.Main.game.isPlaying()) {
+            this.confirm.setTitle('Abandonner ?');
+            this.confirm.setText('Attention, quitter la partie donnera la victoire à votre adversaire !');
+          } else {
+            this.confirm.setTitle('Quitter ?');
+            this.confirm.setText('La partie est terminée, voulez vous revenir à l\'interface de création de partie ?');
+          }
+          this.confirm.show();
+        };
+
+        v2.quitConfirmed = function () {
+          this.madlock = false;
+          if (grapiz.Main.game.isPlaying()) {
+            grapiz.Main.manager.abandon();
+            if (grapiz.Main.gameMode == 1) {
+              grapiz.Main.manager.hardReboot();
+            }
+          } else {
+            grapiz.Main.manager.quit();
+          }
+        };
+
+        v2.quitCancelled = function () {
+          this.madlock = false;
+          trace('quitCancelled()');
+        };
+
+        v2.show = function () {
+          this.board.show();
+          this._visible = true;
+        };
+
+        v2.showEditMode = function () {
+          var v2 = this.createEmptyMovieClip('Validation', this.getNextHighestDepth());
+          v2._x = 0;
+          v2._y = 0;
+          v2.beginFill(16711935);
+          v2.moveTo(0, 0);
+          v2.lineTo(30, 0);
+          v2.lineto(30, 20);
+          v2.lineTo(0, 20);
+          v2.lineTo(0, 0);
+          v2.endFill();
+          v2.onRelease = function () {
+            grapiz.Main.gameUI.showEditResult();
+          };
+
+          this.board.showEditionSlots();
+        };
+
+        v2.showEditResult = function () {
+          var v6 = (grapiz.Main.game.getBoard()).getSize() + '\n';
+          var v5 = this.board.getEditionSlots();
+          var v3 = 0;
+          while (v3 < v5.length) {
+            var v2 = v5[v3];
+            if (v2.getTeam() != -1) {
+              var v4 = grapiz.Convert.getLogicCoordinate(v2.getCoordinate());
+              v6 += v4.x + ' ' + v4.y + ' ' + v2.getTeam() + '\n';
+            }
+            ++v3;
+          }
+          v6 += '\n';
+          this.chatPane.clear();
+          this.chatPane.addText(v6);
+          this.chatPane.setSelectable(true);
+        };
+
+        v2.update = function () {
+          var v4 = grapiz.Main.game;
+          var v2 = 0;
+          while (v2 < this.playerPanes.length) {
+            var v3 = v4.getRemainingTimeOf(v2);
+            this.playerPanes[v2].setRemainingTime(v3);
+            ++v2;
+          }
+        };
+
+        v2.onTurn = function (t) {
+          this.playerPanes[this.currentTurn].deactivateThinking();
+          this.currentTurn = t;
+          this.playerPanes[this.currentTurn].activateThinking();
+        };
+
+        v2.onEnd = function (winner) {
+          if (this.confirm != null) {
+            this.quitCancelled();
+            this.confirm.removeMovieClip();
+            this.confirm = null;
+          }
+          this.madlock = true;
+          var v2 = grapiz.gui.EndPane.New(this);
+          var v4 = function () {};
+
+          if (grapiz.Main.gameMode == 1 && winner != grapiz.Main.userLogin) {
+            v2.setText(grapiz.Texts.LOST_CHALLENGE);
+            v2.setQuitCallback(new grapiz.Callback(grapiz.Main.manager, grapiz.Main.manager.hardReboot));
+          } else {
+            v2.setText(grapiz.Texts.QUIT_POPUP_TEXT_1 + winner + grapiz.Texts.QUIT_POPUP_TEXT_2);
+            v2.setQuitCallback(new grapiz.Callback(this, this.quitConfirmed));
+          }
+          v2._visible = false;
+          grapiz.Main.endPane = v2;
+        };
+
+        v2.onMessage = function (userID, message) {
+          this.chatPane.writeMessage(userID, message);
+        };
+
+        v2.writeLog = function (str) {
+          this.chatPane.writeLog(str);
+        };
+
+        v2.drawGameBackground = function () {
+          this.beginFill(16777215);
+          this.moveTo(0, 0);
+          this.lineTo(grapiz.Globals.GWidth, 0);
+          this.lineTo(grapiz.Globals.GWidth, grapiz.Globals.GHeight);
+          this.lineTo(0, grapiz.Globals.GHeight);
+          this.lineTo(0, 0);
+          this.endFill();
+        };
+
+        v2.createChat = function () {
+          var v2;
+          v2 = this.getNextHighestDepth();
+          this.chatPane = grapiz.gui.ChatPane.New(this);
+          this.chatPane._x = grapiz.Globals.GWidth - this.chatPane._width;
+          this.chatPane._y = grapiz.Globals.GHeight - this.chatPane._height;
+        };
+
+        v2.createBoardBackground = function () {
+          var v3 = this.getNextHighestDepth();
+          var v2 = this.attachMovie('mcBoardBackground', 'BG_' + v3, v3);
+          v2._x = 0;
+          v2._y = grapiz.Globals.GHeight - v2._height;
+          this.boardBackground = v2;
+          this.quitButton = this.boardBackground.quit;
+          this.quitButton.onRelease = function () {
+            this._parent._parent.onQuitPressed();
+          };
+
+        };
+
+        v2.createBoard = function () {
+          this.board = grapiz.gui.Board.New(this.boardBackground);
+          this.board._x = 199;
+          this.board._y = 199;
+          var v3 = (grapiz.Main.game.getBoard()).getSize();
+          var v2;
+          switch (v3) {
+            case 3:
+              v2 = 100;
+              break;
+            case 4:
+              v2 = 90;
+              break;
+            case 5:
+              v2 = 80;
+          }
+          this.board._xscale = v2;
+          this.board._yscale = v2;
+        };
+
+        v2.createPlayerPanes = function () {
+          var v4 = grapiz.Main.game;
+          var v6 = v4.getNumberOfTeams();
+          var v5 = grapiz.Globals.GWidth / v6;
+          var v3 = 0;
+          while (v3 < v6) {
+            var v2 = grapiz.gui.PlayerInfo.New(this);
+            v2.setGameMode(grapiz.Main.gameMode);
+            v2.setPlayerIndex(v3);
+            v2.setPlayerName(v4.getNameOf(v3));
+            v2.setRemainingTime(v4.getRemainingTimeOf(v3));
+            v2.setFrutibouille(v4.getFrutibouille(v3));
+            v2.setScore(v4.getScore(v3));
+            v2.setWidth(v5);
+            v2.draw();
+            v2._x = v3 * v5;
+            v2._y = 0;
+            this.playerPanes.push(v2);
+            ++v3;
+          }
+        };
+
+        v1.LINK_NAME = 'mcGame';
+        ASSetPropFlags(grapiz.gui.Game.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 138 __Packages.grapiz.gui.Board {
+
+    #initclip
+      if (!_global.grapiz) {
+        _global.grapiz = new Object();
+      }
+      if (!_global.grapiz.gui) {
+        _global.grapiz.gui = new Object();
+      }
+      if (!_global.grapiz.gui.Board) {
+        var v1 = function () {
+          super();
+          this.moves = new Array();
+          this.tokens = new Array();
+          this.createTokens();
+          this.gotoAndStop((grapiz.Main.game.getBoard()).getSize());
+        };
+
+        grapiz.gui.Board = v1;
+        grapiz.gui.Board extends MovieClip;
+        var v2 = v1.prototype;
+        v1.New = function (parent) {
+          var v1 = parent.getNextHighestDepth();
+          var v2 = parent.attachMovie('mcBoard', 'mcBoard_' + v1, v1);
+          return grapiz.gui.Board(v2);
+        };
+
+        v2.hideAvailableMoves = function () {
+          var v2 = 0;
+          while (v2 < this.moves.length) {
+            if (this.moves[v2]) {
+              this.moves[v2].destroy();
+              this.moves[v2] = null;
+            }
+            ++v2;
+          }
+        };
+
+        v2.showAvailableMoves = function (token) {
+          var v6 = new grapiz.gui.Coordinate(token._x, token._y);
+          var v5 = grapiz.Convert.getLogicCoordinate(v6);
+          var v4 = (grapiz.Main.game.getBoard()).availableMoves(v5);
+          var v2 = 0;
+          while (v2 < v4.length) {
+            var v3 = v4[v2];
+            this.moves[v2] = grapiz.gui.AvailableSlot.New(this, grapiz.gui.Board.AVAILABLE_DEPTH + v2);
+            this.moves[v2].setPosition(grapiz.Convert.getGuiCoordinate(v3.target));
+            this.moves[v2].setMoveDirection(v3.direction);
+            this.moves[v2].show();
+            ++v2;
+          }
+        };
+
+        v2.showEditionSlots = function () {
+          this.editSlots = new Array();
+          var v5 = grapiz.Convert.getGuiPositions();
+          var v2 = 0;
+          while (v2 < v5.length) {
+            var v3 = v5[v2];
+            var v4 = grapiz.gui.EditSlot.New(this, v3);
+            this.editSlots.push(v4);
+            ++v2;
+          }
+        };
+
+        v2.getEditionSlots = function () {
+          return this.editSlots;
+        };
+
+        v2.getCurrentAvailableMoves = function () {
+          return this.moves;
+        };
+
+        v2.show = function () {
+          var v2 = 0;
+          while (v2 < this.tokens.length) {
+            this.tokens[v2].show();
+            ++v2;
+          }
+          this._visible = true;
+        };
+
+        v2.playExplosionAt = function (c) {
+          var v2 = this.attachMovie('blow', 'Blow', grapiz.gui.Board.EXPLOSION_DEPTH);
+          v2._x = c.x;
+          v2._y = c.y;
+          v2.play();
+        };
+
+        v2.createTokens = function () {
+          var v5 = grapiz.Main.game.getBoard();
+          var v4 = v5.getTokens();
+          var v2 = 0;
+          while (v2 < v4.length) {
+            var v3 = v4[v2];
+            if (v3 != undefined) {
+              this.tokens.push(this.createToken(v3));
+            }
+            ++v2;
+          }
+        };
+
+        v2.createToken = function (token) {
+          var v2;
+          var v4 = grapiz.Convert.getGuiCoordinate(token.getCoordinate());
+          v2 = grapiz.gui.Token.New(this, token.getTeam());
+          v2.setPosition(v4);
+          token.setListener(v2);
+          return v2;
+        };
+
+        v1.LINK_NAME = 'mcBoard';
+        v1.AVAILABLE_DEPTH = 0;
+        v1.EXPLOSION_DEPTH = 7;
+        v1.TOKENS_DEPTH = 8;
+        ASSetPropFlags(grapiz.gui.Board.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 139 __Packages.grapiz.gui.Token {
+
+    #initclip
+      if (!_global.grapiz) {
+        _global.grapiz = new Object();
+      }
+      if (!_global.grapiz.gui) {
+        _global.grapiz.gui = new Object();
+      }
+      if (!_global.grapiz.gui.Token) {
+        var v1 = function () {
+          super();
+          this.team = undefined;
+        };
+
+        grapiz.gui.Token = v1;
+        grapiz.gui.Token extends MovieClip;
+        var v2 = v1.prototype;
+        _global.grapiz.gui.Token implements _global.grapiz.TokenListener;
+        v1.New = function (board, team) {
+          var v2 = grapiz.gui.Token.LINK_NAME;
+          var v3 = board.getNextHighestDepth() + grapiz.gui.Board.TOKENS_DEPTH;
+          var v1 = grapiz.gui.Token(board.attachMovie(v2, v2 + '_' + v3, v3));
+          v1.board = board;
+          v1.setTeam(team);
+          return v1;
+        };
+
+        v2.getTeam = function () {
+          return this.team;
+        };
+
+        v2.getCoordinate = function () {
+          return new grapiz.gui.Coordinate(this._x, this._y);
+        };
+
+        v2.onMove = function (token, direction, steps) {
+          var v2 = new grapiz.gui.Coordinate(this._x, this._y);
+          v2.move(direction, steps);
+          grapiz.Main.animation = new grapiz.gui.TokenAnim(this, v2, steps);
+          grapiz.Main.debug('animation is =' + grapiz.Main.animation);
+          this.swapDepths(this._parent.getNextHighestDepth());
+          this._alpha = 100;
+        };
+
+        v2.onDestroyed = function () {
+          grapiz.Main.animation.setTokenToDestroy(this);
+        };
+
+        v2.setPosition = function (c) {
+          this._x = c.x;
+          this._y = c.y;
+        };
+
+        v2.onPress = function () {
+          if (this.editSlot) {
+            this.editSlot.toggleTeam();
+            return undefined;
+          }
+          if (this.team != grapiz.Main.game.getTeam() || this.team != grapiz.Main.game.getCurrentTurn() || grapiz.Main.inputLock) {
+            return undefined;
+          }
+          var v2;
+          v2 = grapiz.gui.MoveCursor.New(this.board);
+          v2.setOriginToken(this);
+          v2.show();
+          v2.startDrag(true);
+          this.board.showAvailableMoves(this);
+        };
+
+        v2.show = function () {
+          this._visible = true;
+        };
+
+        v2.setTeam = function (t) {
+          this.team = t;
+          this.gotoAndStop(t + 1);
+        };
+
+        v2.setEditSlot = function (slot) {
+          this.editSlot = slot;
+        };
+
+        v1.LINK_NAME = 'mcToken';
+        ASSetPropFlags(grapiz.gui.Token.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 140 __Packages.grapiz.gui.EditSlot {
+
+    #initclip
+      if (!_global.grapiz) {
+        _global.grapiz = new Object();
+      }
+      if (!_global.grapiz.gui) {
+        _global.grapiz.gui = new Object();
+      }
+      if (!_global.grapiz.gui.EditSlot) {
+        var v1 = function () {
+          super();
+          this.team = -1;
+        };
+
+        grapiz.gui.EditSlot = v1;
+        grapiz.gui.EditSlot extends MovieClip;
+        var v2 = v1.prototype;
+        v1.New = function (board, c) {
+          var v2 = board.getNextHighestDepth();
+          var v3 = board.attachMovie(grapiz.gui.EditSlot.LINK_NAME, grapiz.gui.EditSlot.LINK_NAME + v2, v2);
+          var v1 = grapiz.gui.EditSlot(v3);
+          v1.team = -1;
+          v1.setBoard(board);
+          v1.setCoordinate(c);
+          v1.show();
+          return v1;
+        };
+
+        v2.getCoordinate = function () {
+          return this.coordinate;
+        };
+
+        v2.setCoordinate = function (c) {
+          this.coordinate = c;
+          this._x = c.x;
+          this._y = c.y;
+        };
+
+        v2.getTeam = function () {
+          return this.team;
+        };
+
+        v2.show = function () {
+          this.token = grapiz.gui.Token.New(this.board, this.team);
+          this.token.setPosition(this.coordinate);
+          this.token._visible = false;
+          this.token.setEditSlot(this);
+        };
+
+        v2.toggleTeam = function () {
+          this.team = grapiz.Main.editTeam;
+          if (this.team == -1) {
+            this.token._visible = false;
+          } else {
+            this.token._visible = true;
+            this.token.setTeam(this.team);
+          }
+        };
+
+        v2.onRelease = function () {
+          this.toggleTeam();
+        };
+
+        v2.setBoard = function (b) {
+          this.board = b;
+        };
+
+        v1.LINK_NAME = 'mcEditSlot';
+        ASSetPropFlags(grapiz.gui.EditSlot.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 141 __Packages.grapiz.gui.Coordinate {
+
+    #initclip
+      if (!_global.grapiz) {
+        _global.grapiz = new Object();
+      }
+      if (!_global.grapiz.gui) {
+        _global.grapiz.gui = new Object();
+      }
+      if (!_global.grapiz.gui.Coordinate) {
+        var v1 = function (x, y) {
+          this.x = x;
+          this.y = y;
+        };
+
+        grapiz.gui.Coordinate = v1;
+        var v2 = v1.prototype;
+        v2.toString = function () {
+          return 'gui[' + this.x + ':' + this.y + ']';
+        };
+
+        v2.move = function (direction, n) {
+          if (n == undefined) {
+            n = 1;
+          }
+          if (direction == grapiz.Direction.North) {
+            this.y -= grapiz.Globals.SlotHeight * n;
+          } else {
+            if (direction == grapiz.Direction.South) {
+              this.y += grapiz.Globals.SlotHeight * n;
+            } else {
+              if (direction == grapiz.Direction.NorthWest) {
+                this.y -= (grapiz.Globals.SlotHeight / 2) * n;
+                this.x -= grapiz.Globals.SlotWidth * n;
+              } else {
+                if (direction == grapiz.Direction.NorthEast) {
+                  this.y -= (grapiz.Globals.SlotHeight / 2) * n;
+                  this.x += grapiz.Globals.SlotWidth * n;
+                } else {
+                  if (direction == grapiz.Direction.SouthWest) {
+                    this.y += (grapiz.Globals.SlotHeight / 2) * n;
+                    this.x -= grapiz.Globals.SlotWidth * n;
+                  } else {
+                    if (direction == grapiz.Direction.SouthEast) {
+                      this.y += (grapiz.Globals.SlotHeight / 2) * n;
+                      this.x += grapiz.Globals.SlotWidth * n;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        };
+
+        v2.copy = function () {
+          return new grapiz.gui.Coordinate(this.x, this.y);
+        };
+
+        v2.equals = function (c) {
+          return c.x == this.x && c.y == this.y;
+        };
+
+        ASSetPropFlags(grapiz.gui.Coordinate.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 142 __Packages.grapiz.Globals {
+
+    #initclip
+      if (!_global.grapiz) {
+        _global.grapiz = new Object();
+      }
+      if (!_global.grapiz.Globals) {
+        var v1 = function () {};
+
+        grapiz.Globals = v1;
+        var v2 = v1.prototype;
+        v1.GWidth = 700;
+        v1.GHeight = 480;
+        v1.CenterX = 0;
+        v1.CenterY = 0;
+        v1.SlotHeight = 43;
+        v1.SlotWidth = 37.5;
+        ASSetPropFlags(grapiz.Globals.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 143 __Packages.grapiz.gui.TokenAnim {
+
+    #initclip
+      if (!_global.grapiz) {
+        _global.grapiz = new Object();
+      }
+      if (!_global.grapiz.gui) {
+        _global.grapiz.gui = new Object();
+      }
+      if (!_global.grapiz.gui.TokenAnim) {
+        var v1 = function (tok, destination, stp) {
+          grapiz.Main.debug('Animation from ' + tok.getCoordinate() + ' to ' + destination);
+          this.token = tok;
+          this.target = destination;
+          this.tokenToDestroy = null;
+          this.steps = grapiz.gui.TokenAnim.STEPS * stp < grapiz.gui.TokenAnim.MAX_STEPS ? grapiz.gui.TokenAnim.STEPS * stp : grapiz.gui.TokenAnim.MAX_STEPS;
+          this.vector = new grapiz.gui.Coordinate();
+          this.vector.x = (this.target.x - this.token._x) / this.steps;
+          this.vector.y = (this.target.y - this.token._y) / this.steps;
+          this.zoom = 100;
+          this.zoomMd = this.steps / 2;
+          this.zoomFx = grapiz.gui.TokenAnim.MAX_ZOOM * this.steps / grapiz.gui.TokenAnim.MAX_STEPS / this.zoomMd;
+          var v2 = this.token._parent.getNextHighestDepth();
+          this.shadow = this.token._parent.attachMovie('mcTokenShadow', 'Shadow', v2);
+          this.shadow.gotoAndStop(this.token.getTeam() + 1);
+          this.shadow.swapDepths(this.token.getDepth());
+          this.shadow._x = this.token._x;
+          this.shadow._y = this.token._y;
+        };
+
+        grapiz.gui.TokenAnim = v1;
+        var v2 = v1.prototype;
+        v2.setTokenToDestroy = function (token) {
+          this.tokenToDestroy = token;
+        };
+
+        v2.update = function () {
+          --this.steps;
+          if (this.steps >= this.zoomMd - 1) {
+            this.zoom += this.zoomFx;
+          } else {
+            this.zoom -= this.zoomFx;
+          }
+          this.shadow._x += this.vector.x;
+          this.shadow._y += this.vector.y;
+          this.shadow._yscale = this.zoom;
+          this.shadow._xscale = this.zoom;
+          this.token._x = this.shadow._x;
+          this.token._y = this.shadow._y - (this.zoom - 100);
+          this.token._xscale = this.zoom;
+          this.token._yscale = this.zoom;
+          if (this.steps < 0) {
+            this.token.setPosition(this.target);
+            this.token._xscale = 100;
+            this.token._yscale = 100;
+            this.shadow.removeMovieClip();
+            if (this.tokenToDestroy != null) {
+              this.tokenToDestroy._visible = false;
+              this.tokenToDestroy.removeMovieClip();
+              (grapiz.Main.gameUI.getBoard()).playExplosionAt(this.target);
+            }
+            return false;
+          }
+          return true;
+        };
+
+        v1.STEPS = 6;
+        v1.MAX_STEPS = 60;
+        v1.MAX_ZOOM = 100;
+        ASSetPropFlags(grapiz.gui.TokenAnim.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 144 __Packages.grapiz.gui.MoveCursor {
+
+    #initclip
+      if (!_global.grapiz) {
+        _global.grapiz = new Object();
+      }
+      if (!_global.grapiz.gui) {
+        _global.grapiz.gui = new Object();
+      }
+      if (!_global.grapiz.gui.MoveCursor) {
+        var v1 = function () {
+          super();
+          this.originToken = null;
+          this.movingToken = null;
+        };
+
+        grapiz.gui.MoveCursor = v1;
+        grapiz.gui.MoveCursor extends MovieClip;
+        var v2 = v1.prototype;
+        v1.New = function (board) {
+          var v2 = board.getNextHighestDepth();
+          var v1 = grapiz.gui.MoveCursor(board.attachMovie(grapiz.gui.MoveCursor.LINK_NAME, grapiz.gui.MoveCursor.LINK_NAME + v2, v2));
+          v1.board = board;
+          return v1;
+        };
+
+        v2.onPress = function () {
+          this.stopDrag();
+          this._visible = false;
+          var target = eval(this._droptarget);
+          if (target == this.originToken) {
+            this.originToken._alpha = 100;
+          } else {
+            if (target instanceof grapiz.gui.Token) {
+              var valid = false;
+              var moves = this.board.getCurrentAvailableMoves();
+              var i = 0;
+              while (i < moves.length) {
+                if (moves[i] == undefined) {
+                  break;
+                }
+                if ((target.getCoordinate()).equals(moves[i].getCoordinate())) {
+                  grapiz.Main.game.moveRequest(grapiz.Convert.getLogicCoordinate(this.originToken.getCoordinate()), moves[i].getMoveDirection());
+                  valid = true;
+                  break;
+                }
+                ++i;
+              }
+              if (!valid) {
+                this.originToken._alpha = 100;
+              }
+            } else {
+              if (target instanceof grapiz.gui.AvailableSlot) {
+                grapiz.Main.game.moveRequest(grapiz.Convert.getLogicCoordinate(this.originToken.getCoordinate()), target.getMoveDirection());
+              } else {
+                this.originToken._alpha = 100;
+              }
+            }
+          }
+          this.board.hideAvailableMoves();
+          this.removeMovieClip();
+        };
+
+        v2.setOriginToken = function (t) {
+          this.originToken = t;
+          this.originToken._alpha = 50;
+          this.setPosition(t.getCoordinate());
+          var v2 = this.getNextHighestDepth();
+          this.movingToken = grapiz.gui.Token(this.attachMovie(grapiz.gui.Token.LINK_NAME, 'AT_' + v2, v2));
+          this.movingToken.setTeam(this.originToken.getTeam());
+        };
+
+        v2.setPosition = function (c) {
+          this._x = c.x;
+          this._y = c.y;
+        };
+
+        v2.show = function () {
+          this._visible = true;
+        };
+
+        v2.destroy = function () {
+          this._visible = false;
+          this.removeMovieClip();
+        };
+
+        v1.LINK_NAME = 'mcMoveCursor';
+        ASSetPropFlags(grapiz.gui.MoveCursor.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 145 __Packages.grapiz.Convert {
+
+    #initclip
+      if (!_global.grapiz) {
+        _global.grapiz = new Object();
+      }
+      if (!_global.grapiz.Convert) {
+        var v1 = function () {};
+
+        grapiz.Convert = v1;
+        var v2 = v1.prototype;
+        v1.getGuiCoordinate = function (coord) {
+          var v1 = grapiz.Convert.coordinateToIndex(coord);
+          if (grapiz.Convert.guiPositions[v1] == undefined) {
+            trace('grapiz.Convert.getGuiCoordinate() : unable to convert ' + coord.toString());
+            throw new Error('grapiz.Convert.getGuiCoordinate() : unable to convert ' + coord.toString());
+          }
+          return grapiz.Convert.guiPositions[v1].copy();
+        };
+
+        v1.getLogicCoordinate = function (coord) {
+          var v1 = grapiz.Convert.guiCoordinateToIndex(coord);
+          if (grapiz.Convert.logicPositions[v1] == undefined) {
+            trace('grapiz.Convert.getLogicCoordinate() : unable to convert ' + coord.toString());
+            throw new Error('grapiz.Convert.getLogicCoordinate() : unable to convert ' + coord.toString());
+          }
+          return grapiz.Convert.logicPositions[v1].copy();
+        };
+
+        v1.prepare = function (board, guiCenterX, guiCenterY) {
+          if (board == undefined || board == null) {
+            throw new Error('grapiz.Convert.prepare() : board parameter undefined');
+          }
+          if (guiCenterX == undefined) {
+            throw new Error('grapiz.Convert.prepare() : guiCenterX undefined');
+          }
+          if (guiCenterY == undefined) {
+            throw new Error('grapiz.Convert.prepare() : guiCenterY undefined');
+          }
+          grapiz.Convert.guiPositions = new Array();
+          grapiz.Convert.logicPositions = new Array();
+          grapiz.Convert.boardLineLength = board.getSize() * 2 + 1;
+          var v4 = board.getSize();
+          var v3 = new grapiz.gui.Coordinate(guiCenterX, guiCenterY);
+          v3.move(grapiz.Direction.North, v4);
+          var v2 = v3.copy();
+          var v1 = new grapiz.Coordinate(0, 0);
+          while (v1.x <= v4 * 2) {
+            while (board.isValid(v1)) {
+              grapiz.Convert.guiPositions[grapiz.Convert.coordinateToIndex(v1)] = v2.copy();
+              grapiz.Convert.logicPositions[grapiz.Convert.guiCoordinateToIndex(v2)] = v1.copy();
+              v2.move(grapiz.Direction.SouthEast);
+              v1.move(grapiz.Direction.SouthEast);
+            }
+            v1.y = 0;
+            ++v1.x;
+            if (v1.x > v4) {
+              v1.y = v1.x - v4;
+              v3.move(grapiz.Direction.South);
+            } else {
+              v3.move(grapiz.Direction.SouthWest);
+            }
+            v2 = v3.copy();
+          }
+        };
+
+        v1.getGuiPositions = function () {
+          return grapiz.Convert.guiPositions;
+        };
+
+        v1.guiCoordinateToIndex = function (coord) {
+          return 700 * coord.x + coord.y;
+        };
+
+        v1.coordinateToIndex = function (coord) {
+          return grapiz.Convert.boardLineLength * coord.x + coord.y;
+        };
+
+        v1.logicPositions = null;
+        v1.guiPositions = null;
+        v1.boardLineLength = 0;
+        ASSetPropFlags(grapiz.Convert.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 146 __Packages.grapiz.gui.AvailableSlot {
+
+    #initclip
+      if (!_global.grapiz) {
+        _global.grapiz = new Object();
+      }
+      if (!_global.grapiz.gui) {
+        _global.grapiz.gui = new Object();
+      }
+      if (!_global.grapiz.gui.AvailableSlot) {
+        var v1 = function () {
+          super();
+        };
+
+        grapiz.gui.AvailableSlot = v1;
+        grapiz.gui.AvailableSlot extends MovieClip;
+        var v2 = v1.prototype;
+        v1.New = function (board, idx) {
+          return grapiz.gui.AvailableSlot(board.attachMovie(grapiz.gui.AvailableSlot.LINK_NAME, grapiz.gui.AvailableSlot.LINK_NAME + idx, idx));
+        };
+
+        v2.setPosition = function (c) {
+          this._x = c.x;
+          this._y = c.y;
+        };
+
+        v2.getCoordinate = function () {
+          return new grapiz.gui.Coordinate(this._x, this._y);
+        };
+
+        v2.setMoveDirection = function (d) {
+          this.direction = d;
+        };
+
+        v2.getMoveDirection = function () {
+          return this.direction;
+        };
+
+        v2.show = function () {
+          this._visible = true;
+        };
+
+        v2.destroy = function () {
+          this._visible = false;
+          this.removeMovieClip();
+        };
+
+        v2.onPress = function () {
+          trace('AvailableSlot on press');
+        };
+
+        v1.LINK_NAME = 'mcAvailableSlot';
+        ASSetPropFlags(grapiz.gui.AvailableSlot.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 147 __Packages.grapiz.gui.ChatPane {
+
+    #initclip
+      if (!_global.grapiz) {
+        _global.grapiz = new Object();
+      }
+      if (!_global.grapiz.gui) {
+        _global.grapiz.gui = new Object();
+      }
+      if (!_global.grapiz.gui.ChatPane) {
+        var v1 = function () {
+          function onSetFocusP(a) {
+            this._parent.onSetFocus(a);
+          }
+
+          function onKillFocusP(a) {
+            this._parent.onKillFocusP(a);
+          }
+
+          super();
+          this.content = grapiz.Texts.WARNING_CHEATERS + '<br/>';
+          this.input = '';
+          this.focused = false;
+          this.inputArea.onSetFocus = onSetFocusP;
+          this.inputArea.onKillFocus = onKillFocusP;
+        };
+
+        grapiz.gui.ChatPane = v1;
+        grapiz.gui.ChatPane extends MovieClip;
+        var v2 = v1.prototype;
+        v1.New = function (parent) {
+          var v1 = parent.getNextHighestDepth();
+          return grapiz.gui.ChatPane(parent.attachMovie(grapiz.gui.ChatPane.LINK_NAME, grapiz.gui.ChatPane.LINK_NAME + v1, v1));
+        };
+
+        v2.writeMessage = function (src, msg) {
+          this.addText(src + ' > ' + msg);
+        };
+
+        v2.writeLog = function (msg) {
+          this.addText(msg);
+        };
+
+        v2.clear = function () {
+          this.content = '';
+        };
+
+        v2.addText = function (str) {
+          this.content += str + '<br/>';
+          this.textArea.scroll += this.textArea.maxscroll;
+        };
+
+        v2.setSelectable = function (b) {
+          this.textArea.selectable = b;
+        };
+
+        v2.hasFocus = function () {
+          return this.focused;
+        };
+
+        v2.getInput = function () {
+          return this.input;
+        };
+
+        v2.flushInput = function () {
+          this.input = '';
+        };
+
+        v2.onSetFocus = function (a) {
+          this.focused = true;
+        };
+
+        v2.onKillFocus = function (a) {
+          this.focused = false;
+        };
+
+        v1.LINK_NAME = 'mcChatPane';
+        ASSetPropFlags(grapiz.gui.ChatPane.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 148 __Packages.grapiz.Texts {
+
+    #initclip
+      if (!_global.grapiz) {
+        _global.grapiz = new Object();
+      }
+      if (!_global.grapiz.Texts) {
+        var v1 = function () {};
+
+        grapiz.Texts = v1;
+        var v2 = v1.prototype;
+        v1.END_OF_GAME = 'Fin de partie';
+        v1.LEAVED_THE_GAME = ' a quitté la partie';
+        v1.ABANDONED_GAME = ' a abandonné la partie';
+        v1.YOUR_TURN = 'A vous de jouer';
+        v1.ABANDON_POPUP_TITLE = 'Abandonner la partie';
+        v1.ABANDON_POPUP_TEXT = 'Voulez-vous abandonner la partie ?';
+        v1.QUIT_POPUP_TITLE = 'Quitter la partie';
+        v1.QUIT_POPUP_TEXT_1 = 'La partie est terminée, ';
+        v1.QUIT_POPUP_TEXT_2 = ' a gagné !';
+        v1.LOST_CHALLENGE = 'Pas de chance !\n A bientot sur le challenge grapiz.';
+        v1.CHAT_IGNORE_GAME_ENDED = 'Votre oposant a quitté le challenge.';
+        v1.DISCONNECTED = ' a été déconnecté ! Jouez/attendez la fin de son temps pour gagner.';
+        v1.REJOINED = ' a rejoint la partie !';
+        v1.WARNING_CHEATERS = 'ATTENTION : Les touches F5, Alt-F4, Control-W, ou autres ferment ou relancent Frutiparc et vous font perdre la partie. Ne les utilisez pas !';
+        ASSetPropFlags(grapiz.Texts.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 149 __Packages.grapiz.gui.Confirm {
+
+    #initclip
+      if (!_global.grapiz) {
+        _global.grapiz = new Object();
+      }
+      if (!_global.grapiz.gui) {
+        _global.grapiz.gui = new Object();
+      }
+      if (!_global.grapiz.gui.Confirm) {
+        var v1 = function () {
+          function onReleaseCancel() {
+            this._parent.onCancel();
+          }
+
+          function onReleaseAccept() {
+            this._parent.onAccept();
+          }
+
+          super();
+          this.btnCancel = this.btnCancel;
+          this.btnAccept = this.btnAccept;
+          this.madlock = false;
+          this.setCancelLabel('Annuler');
+          this.setAcceptLabel('Accepter');
+          this.cancelCallback = null;
+          this.acceptCallback = null;
+          this.btnCancel.onRelease = onReleaseCancel;
+          this.btnAccept.onRelease = onReleaseAccept;
+        };
+
+        grapiz.gui.Confirm = v1;
+        grapiz.gui.Confirm extends MovieClip;
+        var v2 = v1.prototype;
+        v1.New = function (parent) {
+          var v1;
+          var v2 = parent.getNextHighestDepth();
+          v1 = grapiz.gui.Confirm(parent.attachMovie('mcConfirm', 'mcConfirm@' + v2, v2));
+          v1.center();
+          return v1;
+        };
+
+        v2.setTitle = function (txt) {
+          this.pane.titleArea.text = txt;
+        };
+
+        v2.setText = function (txt) {
+          this.pane.textArea.text = txt;
+        };
+
+        v2.setCancelLabel = function (txt) {
+          this.btnCancel.label = txt;
+        };
+
+        v2.setAcceptLabel = function (txt) {
+          this.btnAccept.label = txt;
+        };
+
+        v2.setCancelCallback = function (callback) {
+          this.cancelCallback = callback;
+        };
+
+        v2.setAcceptCallback = function (callback) {
+          this.acceptCallback = callback;
+        };
+
+        v2.show = function () {
+          this._visible = true;
+        };
+
+        v2.center = function () {
+          this._x = (this._parent._width - this._width) / 2;
+          this._y = (this._parent._height - this._height) / 2;
+        };
+
+        v2.onCancel = function () {
+          if (this.madlock) {
+            return undefined;
+          }
+          this.madlock = true;
+          this._visible = false;
+          if (this.cancelCallback != null) {
+            this.cancelCallback.execute();
+          }
+          this.removeMovieClip();
+        };
+
+        v2.onAccept = function () {
+          if (this.madlock) {
+            return undefined;
+          }
+          this.madlock = true;
+          this._visible = false;
+          if (this.acceptCallback != null) {
+            this.acceptCallback.execute();
+          }
+          this.removeMovieClip();
+        };
+
+        v1.LINK_NAME = 'mcConfirm';
+        ASSetPropFlags(grapiz.gui.Confirm.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 150 __Packages.grapiz.Callback {
+
+    #initclip
+      if (!_global.grapiz) {
+        _global.grapiz = new Object();
+      }
+      if (!_global.grapiz.Callback) {
+        var v1 = function (o, m) {
+          this.object = o;
+          this.method = m;
+        };
+
+        grapiz.Callback = v1;
+        var v2 = v1.prototype;
+        v2.execute = function () {
+          this.method.call(this.object);
+        };
+
+        v2.execute_1 = function (param) {
+          this.method.call(this.object, param);
+        };
+
+        ASSetPropFlags(grapiz.Callback.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 151 __Packages.grapiz.gui.EndPane {
+
+    #initclip
+      if (!_global.grapiz) {
+        _global.grapiz = new Object();
+      }
+      if (!_global.grapiz.gui) {
+        _global.grapiz.gui = new Object();
+      }
+      if (!_global.grapiz.gui.EndPane) {
+        var v1 = function () {
+          super();
+          this.madLock = false;
+          this.pane.titleArea.text = grapiz.Texts.END_OF_GAME;
+          this.quitCallback = null;
+          this.btnQuit.label = 'Quitter';
+          this.btnQuit.onRelease = function () {
+            this._parent.onQuit();
+          };
+
+        };
+
+        grapiz.gui.EndPane = v1;
+        grapiz.gui.EndPane extends MovieClip;
+        var v2 = v1.prototype;
+        v1.New = function (game) {
+          var v1 = game.getNextHighestDepth();
+          var v2 = grapiz.gui.EndPane(game.attachMovie(grapiz.gui.EndPane.LINK_NAME, grapiz.gui.EndPane.LINK_NAME + v1, v1));
+          return v2;
+        };
+
+        v2.setText = function (txt) {
+          this.pane.textArea.text = txt;
+        };
+
+        v2.setQuitCallback = function (cb) {
+          this.quitCallback = cb;
+        };
+
+        v2.show = function () {
+          this._x = (this._parent._width - this._width) / 2;
+          this._y = (this._parent._height - this._height) / 2;
+          this._visible = true;
+        };
+
+        v2.onQuit = function () {
+          this.callAndClose(this.quitCallback);
+        };
+
+        v2.callAndClose = function (cb) {
+          if (this.madLock) {
+            return undefined;
+          }
+          if (cb == null) {
+            throw new Error('Unable to activate EndPane callback (' + cb + ')');
+          }
+          this.madLock = true;
+          this._visible = false;
+          cb.execute();
+          this.removeMovieClip();
+        };
+
+        v1.LINK_NAME = 'mcEndPane';
+        v1.WinText = ' remporte la partie !';
+        ASSetPropFlags(grapiz.gui.EndPane.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 152 __Packages.grapiz.gui.PlayerInfo {
+
+    #initclip
+      if (!_global.grapiz) {
+        _global.grapiz = new Object();
+      }
+      if (!_global.grapiz.gui) {
+        _global.grapiz.gui = new Object();
+      }
+      if (!_global.grapiz.gui.PlayerInfo) {
+        var v1 = function () {
+          super();
+          this.index = 0;
+          this.gameMode = 1;
+          this.name = undefined;
+          this.time = '00:00:00';
+          this.score = 0;
+          this.mark.wheel._visible = false;
+          this.stop();
+        };
+
+        grapiz.gui.PlayerInfo = v1;
+        grapiz.gui.PlayerInfo extends MovieClip;
+        var v2 = v1.prototype;
+        v1.New = function (parent) {
+          var v1 = parent.getNextHighestDepth();
+          return grapiz.gui.PlayerInfo(parent.attachMovie(grapiz.gui.PlayerInfo.LINK_NAME, 'PlayerInfo' + v1, v1));
+        };
+
+        v2.setGameMode = function (mode) {
+          this.gameMode = mode;
+        };
+
+        v2.setScore = function (score) {
+          this.score = score;
+        };
+
+        v2.setPlayerIndex = function (i) {
+          this.index = i;
+          this.partA.gotoAndStop(i + 1);
+          this.mark.gotoAndStop(i + 1);
+        };
+
+        v2.setPlayerName = function (n) {
+          this.name = n;
+        };
+
+        v2.activateThinking = function () {
+          this.mark.wheel._visible = true;
+          this.mark.wheel.play();
+        };
+
+        v2.deactivateThinking = function () {
+          this.mark.wheel._visible = false;
+          this.mark.wheel.stop();
+        };
+
+        v2.setRemainingTime = function (t) {
+          if (t < 0) {
+            t = 0;
+          }
+          var v4 = Math.floor(t / 60000);
+          t -= v4 * 1000 * 60;
+          var v2 = Math.floor(t / 1000);
+          t -= v2 * 1000;
+          this.time = (v4 < 10 ? '0' + v4 : v4) + ':' + (v2 < 10 ? '0' + v2 : v2);
+        };
+
+        v2.setFrutibouille = function (fb) {
+          this.frutibouilleID = fb;
+        };
+
+        v2.setWidth = function (w) {
+          this.width = w;
+        };
+
+        v2.draw = function () {
+          var v3 = this.width - grapiz.gui.PlayerInfo.DECO_X_START;
+          this.partB._width = v3;
+          this.partC._x = this.partB._x + v3;
+          this.fieldName._width = v3;
+          switch (this.gameMode) {
+            case 0:
+              this.fieldTime._y = 32;
+              break;
+            case 1:
+              if (this.score < grapiz.gui.PlayerInfo.MAX_STARS && this.score > 0) {
+                this.createStarAt(0);
+                var v2 = 1;
+                while (v2 < this.score) {
+                  this.createStarAt(v2);
+                  ++v2;
+                }
+              } else {
+                if (this.score > 0) {
+                  this.createStarAt(0);
+                  this.drawGoldNumber(this.score);
+                }
+              }
+              break;
+            case 2:
+              this.createCup();
+              this.drawGoldNumber(this.score);
+          }
+          this.drawFrutibouille();
+        };
+
+        v2.createStarAt = function (i) {
+          var v2 = this.attachMovie(grapiz.gui.PlayerInfo.STAR_LINK_NAME, 'Star' + i, this.getNextHighestDepth());
+          v2._x = grapiz.gui.PlayerInfo.DECO_X_START + i * grapiz.gui.PlayerInfo.DECO_ELEMENT_SIZE;
+          v2._y = grapiz.gui.PlayerInfo.DECO_Y_START;
+        };
+
+        v2.createCup = function () {
+          var v2 = this.attachMovie(grapiz.gui.PlayerInfo.CUP_LINK_NAME, 'CUP', this.getNextHighestDepth());
+          v2._x = grapiz.gui.PlayerInfo.DECO_X_START;
+          v2._y = grapiz.gui.PlayerInfo.DECO_Y_START;
+        };
+
+        v2.drawGoldNumber = function (value) {
+          var v3 = {'num': String(value), 'link': grapiz.gui.PlayerInfo.FONT_LINK_NAME};
+          var v2 = ext.game.Numb(this.attachMovie(grapiz.gui.PlayerInfo.NUMB_LINK_NAME, 'num', this.getNextHighestDepth(), v3));
+          v2._x = grapiz.gui.PlayerInfo.DECO_X_START + grapiz.gui.PlayerInfo.DECO_ELEMENT_SIZE + 25;
+          v2._y = 34;
+        };
+
+        v2.drawFrutibouille = function () {
+          var v4 = 66;
+          var v3 = this.getNextHighestDepth();
+          this.frutibouille = this.createEmptyMovieClip('Frutibouille', v3);
+          this.frutibouille._yscale = v4;
+          this.frutibouille._xscale = v4;
+          this.frutibouille._x = 10;
+          this.frutibouille._y = (this.partA._height - 60) / 2;
+          v3 = this.frutibouille.getNextHighestDepth();
+          var v6 = {'id': this.frutibouilleID};
+          var v5;
+          v5 = this.frutibouille.attachMovie('mcFrutibouille', 'Frutibouille', v3, v6);
+          var v2 = this.frutibouille.createEmptyMovieClip('BouilleMask', v3 + 1);
+          v2.beginFill(16776960);
+          v2.moveTo(0, 0);
+          v2.lineTo(100, 0);
+          v2.lineTo(100, 100);
+          v2.lineTo(0, 100);
+          v2.lineTo(0, 0);
+          v2.endFill();
+          v5.setMask(v2);
+        };
+
+        v1.LINK_NAME = 'mcPlayerInfo';
+        v1.CUP_LINK_NAME = 'mcCup';
+        v1.STAR_LINK_NAME = 'mcStar';
+        v1.FONT_LINK_NAME = 'mcFontNumber';
+        v1.NUMB_LINK_NAME = 'mcGoldNumber';
+        v1.MAX_STARS = 10;
+        v1.DECO_ELEMENT_SIZE = 20;
+        v1.DECO_ELEMENT_HEIGHT = 20;
+        v1.DECO_X_START = 94;
+        v1.DECO_Y_START = 40;
+        ASSetPropFlags(grapiz.gui.PlayerInfo.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 153 __Packages.ext.game.Numb {
+
+    #initclip
+      if (!_global.ext) {
+        _global.ext = new Object();
+      }
+      if (!_global.ext.game) {
+        _global.ext.game = new Object();
+      }
+      if (!_global.ext.game.Numb) {
+        var v1 = function () {
+          super();
+          this.init();
+        };
+
+        ext.game.Numb = v1;
+        ext.game.Numb extends MovieClip;
+        var v2 = v1.prototype;
+        v2.init = function () {
+          if (this.align == undefined) {
+            this.align = 1;
+          }
+          if (this.scale == undefined) {
+            this.scale = 100;
+          }
+          if (this.link == undefined) {
+            this.link = 'numberRed';
+          }
+          if (this.num) {
+            this.setNum(this.num);
+          }
+        };
+
+        v2.setNum = function (num) {
+          this.num = num;
+          this.createEmptyMovieClip('compteur', 1);
+          var v5 = 0;
+          var v2 = 0;
+          while (v2 < num.length) {
+            this.compteur.attachMovie(this.link, 'n' + v2, v2);
+            var v3 = this.compteur['n' + v2];
+            var v4 = num.substr(v2, 1);
+            switch (v4) {
+              case '.':
+                v3.gotoAndStop(11);
+                break;
+              case ':':
+                v3.gotoAndStop(12);
+                break;
+              default:
+                v3.gotoAndStop(Number(v4) + 1);
+            }
+            v3._x = v5;
+            v5 += v3._width;
+            ++v2;
+          }
+          this.compteur._xscale = this.scale;
+          this.compteur._yscale = this.scale;
+          this.compteur._x = (-this.compteur._width / 2) * this.align;
+        };
+
+        ASSetPropFlags(ext.game.Numb.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 154 __Packages.grapiz.Manager {
+
+    #initclip
+      if (!_global.grapiz) {
+        _global.grapiz = new Object();
+      }
+      if (!_global.grapiz.Manager) {
+        var v1 = function () {
+          super(undefined);
+          this._debugBox = null;
+          this._network = null;
+          this._joinRoomCalled = false;
+          this.frusionClient = null;
+          this.debug = grapiz.Main.debug;
+        };
+
+        grapiz.Manager = v1;
+        grapiz.Manager extends frusion.client.MultiManager;
+        var v2 = v1.prototype;
+        v2.onCbkIdentFinished = function () {
+          this._network = new grapiz.NetworkController(this, this.frusionClient);
+          grapiz.Main.userLogin = this.frusionClient.getUserName();
+          grapiz.Main.fruticard = new grapiz.FruticardSlot(this.frusionClient);
+          this.listRooms();
+          if (grapiz.Main.userLogin == 'yota') {
+            this.initDebugBox();
+          }
+        };
+
+        v2.listRooms = function () {
+          this._network.listRooms(this.getDiscID());
+        };
+
+        v2.listGames = function () {
+          this._network.listGames();
+        };
+
+        v2.listPlayers = function () {
+          this._network.listPlayers();
+        };
+
+        v2.joinRoom = function (id) {
+          if (this._joinRoomCalled) {
+            return undefined;
+          }
+          this._joinRoomCalled = true;
+          this._network.joinRoom(id, this.getDiscID());
+        };
+
+        v2.sendMessage = function (msg) {
+          this._network.sendRoom(msg);
+        };
+
+        v2.joinGame = function (gameID) {
+          this._network.joinGame(gameID);
+        };
+
+        v2.createGame = function (data) {
+          var v2 = new grapiz.GameParameters(data);
+          this._network.createGame(v2);
+        };
+
+        v2.challengePlayer = function (playerID) {
+          this._network.challengePlayer(playerID);
+        };
+
+        v2.getChallengerInfo = function (playerID) {
+          this._network.getChallengerInfo(playerID);
+        };
+
+        v2.checkTimeout = function () {
+          this._network.checkTimeout();
+        };
+
+        v2.kickFromGame = function (id) {
+          this._network.kick(id);
+        };
+
+        v2.leaveGame = function () {
+          this._network.partGame();
+        };
+
+        v2.startGame = function () {
+          this._network.startGame();
+        };
+
+        v2.sendGame = function (msg) {
+          this._network.sendGame(msg);
+        };
+
+        v2.move = function (c, d) {
+          this._network.move(c, d);
+        };
+
+        v2.quit = function () {
+          if (grapiz.Main.gameMode != 1) {
+            this._network.partGame();
+          }
+          grapiz.Main.reset(false);
+          grapiz.Main.rootMovie.mediator.reloadFrutiConnect();
+        };
+
+        v2.abandon = function () {
+          this._network.abandon();
+        };
+
+        v2._onCbkPlayerLeftGame = function (xml) {
+          if (grapiz.Main.game) {
+            if (grapiz.Main.game.getId() != xml.attributes.g) {
+              grapiz.Main.debug('not our game game=' + xml.attributes.g + ' our game is ' + grapiz.Main.game.getId());
+            } else {
+              if (!grapiz.Main.game.isPlaying()) {
+                grapiz.Main.debug('game ended');
+              }
+            }
+          }
+          if (grapiz.Main.game && grapiz.Main.game.getId() == xml.attributes.g && grapiz.Main.game.isPlaying()) {
+            grapiz.Main.debug('_onCbkPlayerLeftGame gameId=' + xml.attributes.g);
+            grapiz.Main.logMessage(xml.attributes.u + grapiz.Texts.DISCONNECTED);
+          }
+          super.onCbkPlayerLeftGame(xml.toString());
+        };
+
+        v2._onCbkPlayerJoinedGame = function (xml) {
+          if (grapiz.Main.game && grapiz.Main.game.getId() == xml.attributes.g && grapiz.Main.game.isPlaying()) {
+            grapiz.Main.debug('_onCbkPlayerJoinedGame gameId=' + xml.attributes.g);
+            grapiz.Main.logMessage(xml.attributes.u + grapiz.Texts.REJOINED);
+          }
+          super.onCbkPlayerJoinedGame(xml.toString());
+        };
+
+        v2.hardReboot = function () {
+          this.frusionClient.closeService();
+        };
+
+        v2.onCmdJoinRoom = function (xml) {
+          grapiz.Main.gameMode = parseInt(xml.attributes.m);
+          if (grapiz.Main.gameMode == undefined || isNaN(grapiz.Main.gameMode)) {
+            this.errorMessage('Mode de jeu non récupéré');
+            return undefined;
+          }
+          super.peepShow(xml.attributes.rm, grapiz.Main.gameMode);
+          this.listGames();
+        };
+
+        v2.onGameClosed = function (gameID) {};
+
+        v2.onGameStarted = function (description) {
+          if (description.firstChild != undefined) {
+            this.hideUI();
+            try {
+              var v3 = new grapiz.Game(description);
+              grapiz.Main.start(v3);
+              this.frusionClient.registerStartGame();
+              super.gameStarted();
+            }
+            catch (v0) {
+              if (Error(v0) != null) {
+                var e = Error(v0);
+                grapiz.Main.debug(e);
+              } else {
+                throw v0;
+              }
+            }
+          } else {
+            super.onCbkGameStarted(description.attributes.g);
+          }
+        };
+
+        v2.onAbandon = function () {
+          this.quit();
+        };
+
+        v2.onPlayerAbandonned = function (userID) {
+          var v1 = grapiz.Main.game.getNameOf(parseInt(userID));
+          grapiz.Main.logMessage(v1 + grapiz.Texts.ABANDONED_GAME);
+        };
+
+        v2.onMove = function (xml) {
+          try {
+            var v6 = parseInt(xml.attributes.e);
+            var v4 = parseInt(xml.attributes.x);
+            var v3 = parseInt(xml.attributes.y);
+            var v5 = parseInt(xml.attributes.d);
+            grapiz.Main.game.move(v4, v3, v5);
+          }
+          catch (e) {
+            this.debugMessage('Error: ' + e);
+          }
+        };
+
+        v2.onNextTurn = function (xml) {
+          var v1 = parseInt(xml.attributes.e);
+          grapiz.Main.game.turn(v1);
+        };
+
+        v2.onGameEnded = function (xml) {
+          var v1 = parseInt(xml.attributes.e);
+          grapiz.Main.game.end(v1);
+        };
+
+        v2.onGameMessage = function (userID, msg) {
+          grapiz.Main.game.newMessage(userID, msg);
+        };
+
+        v2.onCbkScoreModif = function (xml) {
+          if (grapiz.Main.gameMode == grapiz.Main.LEAGUE_MODE) {
+            grapiz.Main.fruticard.setLeagueScore(parseInt(xml.attributes.s));
+          }
+        };
+
+        v2.onPartGame = function (xml) {};
+
+        v2.onEventPause = function () {};
+
+        v2.onEventClose = function () {
+          this.frusionClient.closeService();
+        };
+
+        v2.onEventReset = function () {};
+
+        v2.initDebugBox = function () {
+          this._debugBox = new box.Debug();
+          this._debugBox.setTitle('Grapiz');
+          _global.desktop.addBox(this._debugBox);
+          this._debugBox.putInTab(null);
+        };
+
+        v2.debugMessage = function (msg) {
+          trace(msg);
+          this._debugBox.addText(FEString.unHTML(msg));
+        };
+
+        v2.errorMessage = function (str) {
+          super.displayError(str, null);
+          grapiz.Main.gameUI.writeLog('ERREUR: ' + str);
+        };
+
+        ASSetPropFlags(grapiz.Manager.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 155 __Packages.grapiz.NetworkController {
+
+    #initclip
+      if (!_global.grapiz) {
+        _global.grapiz = new Object();
+      }
+      if (!_global.grapiz.NetworkController) {
+        var v1 = function (manager, frusion) {
+          this._manager = manager;
+          this._frusion = frusion;
+          this._frusion.addListener(this);
+          this.initializeProtocol();
+        };
+
+        grapiz.NetworkController = v1;
+        var v2 = v1.prototype;
+        v2.listGames = function () {
+          this._frusion.sendCommand(this._commands.listGames, null);
+        };
+
+        v2.listRooms = function (discID) {
+          var v2 = [new ext.util.Pair('d', discID)];
+          this._frusion.sendCommand(this._commands.listRooms, v2);
+        };
+
+        v2.listPlayers = function () {
+          this._frusion.sendCommand(this._commands.listPlayers, null);
+        };
+
+        v2.joinRoom = function (id, discID) {
+          var v2 = new Array();
+          v2.push(new ext.util.Pair('rm', id));
+          v2.push(new ext.util.Pair('d', discID));
+          this._frusion.sendCommand(this._commands.joinRoom, v2);
+        };
+
+        v2.sendRoom = function (str) {
+          this._frusion.sendCommandWithText(this._commands.sendRoom, null, str);
+        };
+
+        v2.sendGame = function (str) {
+          this.debugMessage('NetworkController.sendGame() ' + str);
+          this._frusion.sendCommandWithText(this._commands.sendGame, null, str);
+        };
+
+        v2.joinGame = function (id) {
+          var v2 = new Array();
+          v2.push(new ext.util.Pair('g', id));
+          this._frusion.sendCommand(this._commands.joinGame, v2);
+        };
+
+        v2.partGame = function () {
+          this._frusion.sendCommand(this._commands.partGame, null);
+        };
+
+        v2.createGame = function (gameParams) {
+          var v2 = new Array();
+          v2.push(new ext.util.Pair('ps', gameParams.nbrPlayers));
+          v2.push(new ext.util.Pair('i', gameParams.time));
+          v2.push(new ext.util.Pair('ty', gameParams.boardSize));
+          this._frusion.sendCommand(this._commands.createGame, v2);
+        };
+
+        v2.checkTimeout = function () {
+          this._frusion.sendCommand(this._commands.checkTimeout, null);
+        };
+
+        v2.challengePlayer = function (player) {
+          var v2 = [new ext.util.Pair('u', player)];
+          this._frusion.sendCommand(this._commands.createGame, v2);
+        };
+
+        v2.getChallengerInfo = function (pid) {
+          var v2 = [new ext.util.Pair('u', pid)];
+          this._frusion.sendCommand(this._commands.challengerInfo, v2);
+        };
+
+        v2.startGame = function () {
+          this._frusion.sendCommand(this._commands.startGame, null);
+        };
+
+        v2.move = function (c, d) {
+          var v2 = new Array();
+          v2.push(new ext.util.Pair('x', c.x));
+          v2.push(new ext.util.Pair('y', c.y));
+          v2.push(new ext.util.Pair('d', d.toNumber()));
+          this._frusion.sendCommand(this._commands.move, v2);
+        };
+
+        v2.abandon = function () {
+          this._frusion.sendCommand(this._commands.abandon, null);
+        };
+
+        v2.kick = function (id) {
+          var v2 = [new ext.util.Pair('si', String(id))];
+          this._frusion.sendCommand(this._commands.kick, v2);
+        };
+
+        v2.onCmdListRooms = function (node) {
+          this.debugMessage('List rooms response : ' + node);
+          var v3 = this.parseMessage(node);
+          if (this.hasError(v3)) {
+            return undefined;
+          }
+          this._manager.onCmdListRooms(node);
+        };
+
+        v2.onCmdJoinRoom = function (node) {
+          this.debugMessage('Join room response : ' + node);
+          var v2 = this.parseMessage(node);
+          if (this.hasError(v2)) {
+            return undefined;
+          }
+          this._manager.onCmdJoinRoom(v2);
+        };
+
+        v2.onCmdListGames = function (node) {
+          this.debugMessage('List games response : ' + node);
+          var v3 = this.parseMessage(node);
+          if (this.hasError(v3)) {
+            return undefined;
+          }
+          this._manager.onCmdListGames(node);
+        };
+
+        v2.onCmdListPlayers = function (node) {
+          this.debugMessage('List players response : ' + node);
+          this._manager.onCmdListPlayers(node);
+        };
+
+        v2.onCmdChallengerInfo = function (node) {
+          var v2 = this.parseMessage(node);
+          if (this.hasError(v2)) {
+            return undefined;
+          }
+          this._manager.onCmdChallengerInfo(node);
+        };
+
+        v2.onCmdJoinGame = function (node) {
+          this.debugMessage('Join response : ' + node);
+          var v3 = this.parseMessage(node);
+          if (this.hasError(v3)) {
+            return undefined;
+          }
+          this._manager.onCmdJoinGame(node);
+        };
+
+        v2.onCmdCreateGame = function (node) {
+          this.debugMessage('Create response : ' + node);
+          var v3 = this.parseMessage(node);
+          if (this.hasError(v3)) {
+            return undefined;
+          }
+          this._manager.onCmdCreateGame(node, 2);
+        };
+
+        v2.onCmdStart = function (node) {
+          var v2 = this.parseMessage(node);
+          if (this.hasError(v2)) {
+            return undefined;
+          }
+          this.debugMessage('Start response : ' + node);
+        };
+
+        v2.onCmdChooseCard = function (node) {
+          var v2 = this.parseMessage(node);
+          if (this.hasError(v2)) {
+            return undefined;
+          }
+        };
+
+        v2.onCmdMove = function (node) {
+          var v2 = this.parseMessage(node);
+          if (this.hasError(v2)) {
+            return undefined;
+          }
+          this.debugMessage('Move response : ' + node);
+        };
+
+        v2.onCmdPlayCard = function (node) {
+          var v2 = this.parseMessage(node);
+          if (this.hasError(v2)) {
+            return undefined;
+          }
+          this.debugMessage('PlayCard response : ' + node);
+        };
+
+        v2.onCmdAbandon = function (node) {
+          var v2 = this.parseMessage(node);
+          if (this.hasError(v2)) {
+            return undefined;
+          }
+          this.debugMessage('Abandon response : ' + node);
+          this._manager.onAbandon();
+        };
+
+        v2.onCbkRoomMessage = function (node) {
+          var v2 = this.parseMessage(node);
+          if (this.hasError(v2)) {
+            return undefined;
+          }
+          this._manager.onCbkReceiveMessage(node);
+        };
+
+        v2.onCbkPlayerJoinedRoom = function (node) {
+          var v2 = this.parseMessage(node);
+          if (this.hasError(v2)) {
+            return undefined;
+          }
+          this._manager.onCbkPlayerJoinedRoom(node);
+        };
+
+        v2.onCbkPlayerLeftRoom = function (node) {
+          var v2 = this.parseMessage(node);
+          if (this.hasError(v2)) {
+            return undefined;
+          }
+          this._manager.onCbkPlayerLeftRoom(node);
+        };
+
+        v2.onCbkResume = function (node) {
+          var v2 = this.parseMessage(node);
+          if (this.hasError(v2)) {
+            return undefined;
+          }
+          this._manager.onGameStarted(v2);
+        };
+
+        v2.onCbkGameCreated = function (node) {
+          var v2 = this.parseMessage(node);
+          if (this.hasError(v2)) {
+            return undefined;
+          }
+          this._manager.onCbkGameCreated(v2.toString());
+        };
+
+        v2.onCbkGameStarted = function (node) {
+          var v2 = this.parseMessage(node);
+          if (this.hasError(v2)) {
+            return undefined;
+          }
+          this._manager.onGameStarted(v2);
+        };
+
+        v2.onCbkGameEnded = function (node) {
+          var v2 = this.parseMessage(node);
+          if (this.hasError(v2)) {
+            return undefined;
+          }
+          this._manager.onGameEnded(v2);
+        };
+
+        v2.onCbkGameClosed = function (node) {
+          var v2 = this.parseMessage(node);
+          if (this.hasError(v2)) {
+            return undefined;
+          }
+          this._manager.onGameClosed(v2.attributes.g);
+        };
+
+        v2.onCbkPlayerJoinedGame = function (node) {
+          var v2 = this.parseMessage(node);
+          if (this.hasError(v2)) {
+            return undefined;
+          }
+          this._manager._onCbkPlayerJoinedGame(v2);
+        };
+
+        v2.onCbkPlayerLeftGame = function (node) {
+          var v2 = this.parseMessage(node);
+          if (this.hasError(v2)) {
+            return undefined;
+          }
+          this._manager._onCbkPlayerLeftGame(v2);
+        };
+
+        v2.onCbkNewChallenge = function (node) {
+          this._manager.onCbkNewChallenge(node);
+        };
+
+        v2.onCbkNewRecord = function (node) {};
+
+        v2.onCbkScoreModif = function (node) {
+          var v2 = this.parseMessage(node);
+          if (this.hasError(v2)) {
+            return undefined;
+          }
+          this._manager.onCbkScoreModif(v2);
+        };
+
+        v2.onCbkGameMessage = function (node) {
+          var v2 = this.parseMessage(node);
+          if (this.hasError(v2)) {
+            return undefined;
+          }
+          this._manager.onGameMessage(v2.attributes.u, v2.firstChild.nodeValue);
+        };
+
+        v2.onCbkPlayerAbandon = function (node) {
+          var v2 = this.parseMessage(node);
+          if (this.hasError(v2)) {
+            return undefined;
+          }
+          this._manager.onPlayerAbandonned(v2.attributes.e);
+        };
+
+        v2.onCbkMove = function (node) {
+          var v2 = this.parseMessage(node);
+          if (this.hasError(v2)) {
+            return undefined;
+          }
+          this._manager.onMove(v2);
+        };
+
+        v2.onCbkTurn = function (node) {
+          var v2 = this.parseMessage(node);
+          if (this.hasError(v2)) {
+            return undefined;
+          }
+          this._manager.onNextTurn(v2);
+        };
+
+        v2.onCmdPart = function (node) {
+          var v2 = this.parseMessage(node);
+          if (this.hasError(v2)) {
+            return undefined;
+          }
+          this._manager.onPartGame();
+        };
+
+        v2.parseMessage = function (node) {
+          var v1 = new XML(node);
+          return v1.firstChild;
+        };
+
+        v2.hasError = function (node) {
+          if (node.attributes.k != undefined) {
+            this.debugMessage('Erreur ' + node.attributes.k + ' : ' + this.getErrorMessage(node.attributes.k));
+            this._manager.errorMessage(this.getErrorMessage(node.attributes.k));
+            return true;
+          }
+          return false;
+        };
+
+        v2.getErrorMessage = function (code) {
+          if (this._errors[parseInt(code)] != undefined) {
+            return this._errors[parseInt(code)];
+          } else {
+            return 'Erreur ' + code;
+          }
+        };
+
+        v2.debugMessage = function (str) {
+          this._manager.debugMessage(str);
+        };
+
+        v2.initializeProtocol = function () {
+          this._callbacks = new Object();
+          this._callbacks.fa = 'onCmdListRooms';
+          this._callbacks.fb = 'onCmdJoinRoom';
+          this._callbacks.ff = 'onCmdListGames';
+          this._callbacks.fg = 'onCmdListPlayers';
+          this._callbacks.fj = 'onCmdJoinGame';
+          this._callbacks.fi = 'onCmdCreateGame';
+          this._callbacks.fl = 'onCmdStart';
+          this._callbacks.fz = 'onCmdAbandon';
+          this._callbacks.gb = 'onCmdChallengerInfo';
+          this._callbacks.fk = 'onCmdPart';
+          this._callbacks.fd = 'onCbkRoomMessage';
+          this._callbacks.fe = 'onCbkGameMessage';
+          this._callbacks.ga = 'onCbkGameCreated';
+          this._callbacks.fo = 'onCbkGameStarted';
+          this._callbacks.fw = 'onCbkGameEnded';
+          this._callbacks.fy = 'onCbkGameClosed';
+          this._callbacks.fp = 'onCbkPlayerJoinedGame';
+          this._callbacks.fq = 'onCbkPlayerLeftGame';
+          this._callbacks.fr = 'onCbkPlayerJoinedRoom';
+          this._callbacks.fs = 'onCbkPlayerLeftRoom';
+          this._callbacks.fu = 'onCbkPlayerAbandon';
+          this._callbacks.fc = 'onCbkMove';
+          this._callbacks.fv = 'onCbkTurn';
+          this._callbacks.fx = 'onCbkNewRecord';
+          this._callbacks.gc = 'onCbkNewChallenge';
+          this._callbacks.ge = 'onCbkKick';
+          this._callbacks.m = 'onCbkScoreModif';
+          this._callbacks.r = 'onCbkResume';
+          this._frusion.registerCallbackList(this._callbacks);
+          this._commands = new Object();
+          this._commands.listRooms = 'fa';
+          this._commands.joinRoom = 'fb';
+          this._commands.listGames = 'ff';
+          this._commands.listPlayers = 'fg';
+          this._commands.joinGame = 'fj';
+          this._commands.createGame = 'fi';
+          this._commands.startGame = 'fl';
+          this._commands.move = 'fc';
+          this._commands.abandon = 'fz';
+          this._commands.sendRoom = 'fd';
+          this._commands.sendGame = 'fe';
+          this._commands.partGame = 'fk';
+          this._commands.challengerInfo = 'gb';
+          this._commands.checkTimeout = 'gd';
+          this._commands.kick = 'ge';
+          this._errors = new Array();
+          this._errors[2000] = 'Erreur d\'identification';
+          this._errors[2001] = 'Mauvais disque';
+          this._errors[2002] = 'Disque non trouvé';
+          this._errors[2003] = 'Le disque ne peu activer le mode de jeu choisi';
+          this._errors[2004] = 'Vous n\'êtes pas le possesseur de ce disque';
+          this._errors[2005] = 'Salon de jeu inconnu';
+          this._errors[2006] = 'Vous n\'êtes pas sur un salon';
+          this._errors[2007] = 'Vous n\'êtes pas sur un salon ou la commande est inconnue';
+          this._errors[2008] = 'Vous êtes déjà sur un salon';
+          this._errors[2009] = 'La partie n\'existe plus';
+          this._errors[2010] = 'Vous n\'êtes pas sur une partie';
+          this._errors[2011] = 'Vous n\'êtes pas sur une partie ou la commande est inconnue';
+          this._errors[2012] = 'Vous devez d\'abord quitter la partie en cours';
+          this._errors[2013] = 'Coordonnées invalides';
+          this._errors[2014] = 'Destination invalide';
+          this._errors[2015] = 'Pas de jeton aux coordonnées spécifiées';
+          this._errors[2016] = 'Le jeton choisi ne vous appartient pas';
+          this._errors[2017] = 'Le jeton ne peut sauter par dessus de jetons adverses';
+          this._errors[2018] = 'Le jeton ne peut écraser un jeton allié';
+          this._errors[2019] = 'Utilisateur inconnu ou déconnecté';
+          this._errors[2020] = 'Vous défiez déjà quelqu\'un';
+          this._errors[2021] = 'Quelqu\'un vous a défié';
+          this._errors[2022] = 'L\'adversaire vous a déjà défié';
+          this._errors[2023] = 'Vous avez déjà perdu contre cet adversaire';
+          this._errors[2024] = 'Vous êtes déjà dans la liste d\'attente de l\'aversaire';
+          this._errors[2025] = 'Vous ne pouvez vous défier';
+          this._errors[2026] = 'La partie a démarré';
+          this._errors[2027] = 'La partie ne peut contenir plus de joueurs';
+          this._errors[2028] = 'Il n\'y a pas assez de joueurs pour démarrer la partie';
+          this._errors[2029] = 'Vous n\'êtes pas le créateur de la partie';
+          this._errors[2030] = 'Erreur interne, slot-out-of-bound';
+          this._errors[2031] = 'Le slot du créateur ne peut être fermé';
+          this._errors[2032] = 'Une partie doit avoir au moins deux joueurs';
+          this._errors[2033] = 'Vous ne jouez pas dans cette partie';
+          this._errors[2034] = 'Les observateurs ne sont pas authorisés dans cette partie';
+          this._errors[2035] = 'Les observateurs ne peuvent parler dans cette partie';
+          this._errors[2036] = 'Ce n\'est pas votre tour';
+          this._errors[2037] = 'Temps de jeu trop bas';
+          this._errors[2038] = 'La partie new joue pas';
+          this._errors[2039] = 'Taille de plateau trop grande';
+          this._errors[2040] = 'Impossible de trouver un plateau de jeu pour ces paramêtres';
+          this._errors[2041] = 'Le challenge de la journée est terminé';
+          this._errors[2042] = 'Salon de jeu non trouvé';
+          this._errors[2043] = 'Votre frutidisc ne permet pas de rentrer sur ce salon';
+          this._errors[2044] = 'Le salon de jeu est fermé';
+          this._errors[2045] = 'Gros mot détecté, vous êtes éjecté du jeu';
+        };
+
+        ASSetPropFlags(grapiz.NetworkController.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 156 __Packages.ext.util.Pair {
+
+    #initclip
+      if (!_global.ext) {
+        _global.ext = new Object();
+      }
+      if (!_global.ext.util) {
+        _global.ext.util = new Object();
+      }
+      if (!_global.ext.util.Pair) {
+        var v1 = function (name, value) {
+          this.name = name;
+          this.value = value;
+        };
+
+        ext.util.Pair = v1;
+        var v2 = v1.prototype;
+        ASSetPropFlags(ext.util.Pair.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 157 __Packages.grapiz.GameParameters {
+
+    #initclip
+      if (!_global.grapiz) {
+        _global.grapiz = new Object();
+      }
+      if (!_global.grapiz.GameParameters) {
+        var v1 = function (data) {
+          this.time = grapiz.GameParameters.TIMES[data.time.value];
+          this.nbrPlayers = grapiz.GameParameters.PLAYERS[data.nbrPlayers.value];
+          this.boardSize = grapiz.GameParameters.BOARDS[data.boardSize.value];
+        };
+
+        grapiz.GameParameters = v1;
+        var v2 = v1.prototype;
+        v2.toString = function () {
+          var v2 = '';
+          v2 += '::: grapiz.GameParameters :::\n';
+          v2 += ' + nbr players = ' + this.nbrPlayers + '\n';
+          v2 += ' + time        = ' + this.time + '\n';
+          v2 += ' + board size  = ' + this.boardSize + '\n';
+          return v2;
+        };
+
+        v1.TIMES = [600000, 480000, 360000, 300000, 180000];
+        v1.PLAYERS = [2, 3, 4];
+        v1.BOARDS = [3, 4, 5];
+        ASSetPropFlags(grapiz.GameParameters.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 158 __Packages.grapiz.gui.KeyboardController {
+
+    #initclip
+      if (!_global.grapiz) {
+        _global.grapiz = new Object();
+      }
+      if (!_global.grapiz.gui) {
+        _global.grapiz.gui = new Object();
+      }
+      if (!_global.grapiz.gui.KeyboardController) {
+        var v1 = function () {
+          this.key = -1;
+          Key.addListener(this);
+        };
+
+        grapiz.gui.KeyboardController = v1;
+        var v2 = v1.prototype;
+        v2.hasKey = function () {
+          return this.key != -1;
+        };
+
+        v2.nextKey = function () {
+          var v2 = this.key;
+          this.key = -1;
+          return v2;
+        };
+
+        v2.onKeyUp = function () {};
+
+        v2.onKeyDown = function () {
+          this.key = Key.getCode();
+        };
+
+        ASSetPropFlags(grapiz.gui.KeyboardController.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 159 __Packages.grapiz.TestManager {
+
+    #initclip
+      if (!_global.grapiz) {
+        _global.grapiz = new Object();
+      }
+      if (!_global.grapiz.TestManager) {
+        var v1 = function () {
+          super();
+        };
+
+        grapiz.TestManager = v1;
+        grapiz.TestManager extends grapiz.Manager;
+        var v2 = v1.prototype;
+        v2.quit = function () {
+          trace('grapiz.TestManager.quit() called');
+        };
+
+        v2.debugMessage = function (msg) {
+          trace(msg);
+        };
+
+        v2.move = function (c, d) {
+          grapiz.Main.game.move(c.x, c.y, d.toNumber());
+          var v1 = (grapiz.Main.game.getCurrentTurn() + 1) % grapiz.Main.game.getNumberOfTeams();
+          grapiz.Main.game.turn(v1);
+          grapiz.Main.game.setTeam(grapiz.Main.game.getCurrentTurn());
+        };
+
+        ASSetPropFlags(grapiz.TestManager.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 160 __Packages.ext.util.ExtendedLocalConnection {
+
+    #initclip
+      if (!_global.ext) {
+        _global.ext = new Object();
+      }
+      if (!_global.ext.util) {
+        _global.ext.util = new Object();
+      }
+      if (!_global.ext.util.ExtendedLocalConnection) {
+        var v1 = function (localHost, remoteHost) {
+          super();
+          this.localHost = localHost;
+          this.remoteHost = remoteHost;
+          this.allowedDomains = new Array();
+        };
+
+        ext.util.ExtendedLocalConnection = v1;
+        ext.util.ExtendedLocalConnection extends LocalConnection;
+        var v2 = v1.prototype;
+        v2.finalize = function () {
+          this.connectionFailureCallback.finalize();
+          delete this.connectionFailureCallback;
+          this.connectionFailureCallback = null;
+          delete this.localHost;
+          this.connectionFailureCallback = null;
+          delete this.remoteHost;
+          this.connectionFailureCallback = null;
+          delete this.remote;
+          this.remote = null;
+          delete this.allowedDomains;
+          this.allowedDomains = null;
+        };
+
+        v2.connect = function () {
+          super.connect(this.localHost);
+        };
+
+        v2.sendRemote = function (method, arguments, sender) {
+          this.remote.send(this.remoteHost, method, arguments, sender);
+        };
+
+        v2.enableConnectionFailureHandling = function (cbk) {
+          this.connectionFailureCallback = cbk;
+        };
+
+        v2.disableConnectionFailureHandling = function (cbk) {
+          this.connectionFailureCallback = null;
+          this.remote.onStatus = function () {};
+
+        };
+
+        v2.manageConnectionFailure = function () {
+          this.connectionFailureCallback.execute();
+        };
+
+        v2.initRemote = function () {
+          _global.debug('LEC::initRemote');
+          this.remote = new LocalConnection();
+          this.remote.onStatus = function (infoObject) {
+            if (infoObject.level == 'error') {
+              arguments.callee.obj.manageConnectionFailure();
+            }
+          };
+
+          this.remote.onStatus.obj = this;
+          this.connectionAlreadyFailed = false;
+        };
+
+        v2.close = function () {
+          this.remote.close();
+          this.remote = null;
+          delete this.remote;
+          super.close();
+        };
+
+        v2.addDomain = function (domainName) {
+          this.allowedDomains.push(domainName);
+        };
+
+        v2.allowInsecureDomain = function (sendingDomain) {
+          var v3 = this.allowedDomains.length;
+          var v2 = 0;
+          while (v2 < v3) {
+            if (sendingDomain == this.allowedDomains[v2]) {
+              return true;
+            }
+            ++v2;
+          }
+          return false;
+        };
+
+        v2.allowDomain = function (sendingDomain) {
+          var v3 = this.allowedDomains.length;
+          var v2 = 0;
+          while (v2 < v3) {
+            if (sendingDomain == this.allowedDomains[v2]) {
+              return true;
+            }
+            ++v2;
+          }
+          return false;
+        };
+
+        ASSetPropFlags(ext.util.ExtendedLocalConnection.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 161 __Packages.ext.util.Callback {
+
+    #initclip
+      if (!_global.ext) {
+        _global.ext = new Object();
+      }
+      if (!_global.ext.util) {
+        _global.ext.util = new Object();
+      }
+      if (!_global.ext.util.Callback) {
+        var v1 = function (context, method) {
+          this.context = context;
+          this.method = method;
+        };
+
+        ext.util.Callback = v1;
+        var v2 = v1.prototype;
+        v2.finalize = function () {
+          delete this.context;
+          this.context = null;
+          delete this.method;
+          this.method = null;
+        };
+
+        v2.execute = function (object) {
+          this.method.call(this.context, object);
+        };
+
+        ASSetPropFlags(ext.util.Callback.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 162 __Packages.ext.util.CardiogramPatient {
+
+    #initclip
+      if (!_global.ext) {
+        _global.ext = new Object();
+      }
+      if (!_global.ext.util) {
+        _global.ext.util = new Object();
+      }
+      if (!_global.ext.util.CardiogramPatient) {
+        _global.ext.util.CardiogramPatient = function () {};
+
+      }
+    #endinitclip
+  }
+
+  movieClip 163 __Packages.ext.util.Cardiogram {
+
+    #initclip
+      if (!_global.ext) {
+        _global.ext = new Object();
+      }
+      if (!_global.ext.util) {
+        _global.ext.util = new Object();
+      }
+      if (!_global.ext.util.Cardiogram) {
+        var v1 = function (actFrequency, checkPulseFrequency, attackThreshold, cardiogramPatient) {
+          this.actFrequency = actFrequency;
+          this.checkPulseFrequency = checkPulseFrequency;
+          this.attackThreshold = attackThreshold;
+          this.cardiogramPatient = cardiogramPatient;
+          this.pulseFailureRecord = 0;
+        };
+
+        ext.util.Cardiogram = v1;
+        var v2 = v1.prototype;
+        v2.finalize = function () {
+          delete this.cardiogramPatient;
+          this.cardiogramPatient = null;
+        };
+
+        v2.start = function () {
+          this.actInterval = setInterval(this, 'actOnBeat', this.actFrequency);
+          this.beatInterval = setInterval(this, 'checkPulse', this.checkPulseFrequency);
+        };
+
+        v2.pulse = function () {
+          this.pulsed = true;
+        };
+
+        v2.stop = function () {
+          this.pulsed = false;
+        };
+
+        v2.actOnBeat = function () {
+          this.cardiogramPatient.monitorActivity();
+        };
+
+        v2.checkPulse = function () {
+          if (this.pulsed) {
+            this.pulsed = false;
+            return undefined;
+          }
+          if (++this.pulseFailureRecord == this.attackThreshold) {
+            this.actOnCrisis();
+          }
+          this.pulsed = false;
+        };
+
+        v2.actOnCrisis = function () {
+          clearInterval(this.actInterval);
+          clearInterval(this.beatInterval);
+          this.cardiogramPatient.manageCrisis();
+        };
+
+        v2.pulsed = false;
+        ASSetPropFlags(ext.util.Cardiogram.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  frame 2 {
+    stop();
+  }
+}

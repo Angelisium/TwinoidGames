@@ -1,0 +1,5736 @@
+movie 'snake3.swf' {
+// flash 7, total frames: 9, frame rate: 40 fps, 700x480 px, compressed
+
+  movieClip 62  {
+  }
+
+  movieClip 354 @!$*1? {
+  }
+
+  movieClip 356  {
+  }
+
+  movieClip 358  {
+  }
+
+  movieClip 370 #6}-" {
+  }
+
+  movieClip 371 }%"18@ {
+  }
+
+  movieClip 372 ?7?'55# {
+  }
+
+  movieClip 374 )@!95[" {
+  }
+
+  movieClip 376 )0(}4[" {
+  }
+
+  movieClip 378 ](&!4[" {
+  }
+
+  movieClip 381  {
+  }
+
+  movieClip 382  {
+
+    frame 7 {
+      gotoAndPlay(2);
+    }
+  }
+
+  movieClip 384  {
+  }
+
+  movieClip 385  {
+  }
+
+  movieClip 386  {
+
+    frame 7 {
+      gotoAndPlay(2);
+    }
+  }
+
+  movieClip 388  {
+  }
+
+  movieClip 390  {
+  }
+
+  movieClip 393 0('35 {
+
+    frame 1 {
+      stop();
+    }
+
+    frame 6 {
+      _parent.#&4\'@(#();
+    }
+
+    frame 23 {
+      removeMovieClip('');
+    }
+  }
+
+  movieClip 396 %4$5[$ {
+  }
+
+  movieClip 399  {
+
+    frame 21 {
+      gotoAndPlay(1);
+    }
+  }
+
+  movieClip 410  {
+  }
+
+  movieClip 414  {
+  }
+
+  movieClip 416  {
+  }
+
+  movieClip 419  {
+  }
+
+  movieClip 424  {
+  }
+
+  movieClip 427  {
+  }
+
+  movieClip 429  {
+  }
+
+  movieClip 431  {
+  }
+
+  movieClip 432  {
+
+    frame 2 {
+      fleche._rotation = _parent._parent._parent.4?5 #._rotation;
+      fleche_ombre._rotation = fleche._rotation;
+    }
+
+    frame 3 {
+      gotoAndPlay(2);
+    }
+  }
+
+  movieClip 434  {
+  }
+
+  movieClip 435  {
+
+    frame 2 {
+      fleche._rotation = _parent._parent._parent.4?5 #._rotation;
+      fleche_ombre._rotation = fleche._rotation;
+    }
+
+    frame 3 {
+      gotoAndPlay(2);
+    }
+  }
+
+  movieClip 439  {
+  }
+
+  movieClip 449  {
+  }
+
+  movieClip 450 !08[-@ {
+
+    frame 10 {
+      stop();
+    }
+
+    frame 23 {
+      removeMovieClip('');
+    }
+  }
+
+  movieClip 451 |"8=0[ {
+
+    frame 10 {
+      stop();
+    }
+
+    frame 12 {
+    }
+
+    frame 23 {
+      removeMovieClip('');
+    }
+  }
+
+  movieClip 453 title {
+  }
+
+  movieClip 455 @3^#+0" {
+  }
+
+  movieClip 457 fleche {
+
+    frame 1 {
+      Color;
+    }
+  }
+
+  movieClip 458 +15|%2! {
+  }
+
+  movieClip 460  {
+  }
+
+  movieClip 465  {
+  }
+
+  movieClip 483 6+-46% {
+
+    frame 1 {
+      stop();
+    }
+
+    frame 7 {
+      stop();
+    }
+  }
+
+  movieClip 515 ]!4?@|" {
+  }
+
+  movieClip 516 $-@0(2# {
+  }
+
+  movieClip 517 "(9?{)" {
+  }
+
+  movieClip 519 '4=!# {
+  }
+
+  movieClip 521  {
+  }
+
+  movieClip 522 )&2'{|! {
+  }
+
+  movieClip 524  {
+  }
+
+  movieClip 526  {
+  }
+
+  movieClip 527 2?8|3$! {
+  }
+
+  movieClip 529 #%{ 4 {
+  }
+
+  movieClip 561 "@")52" {
+  }
+
+  movieClip 590 !^&'8[! {
+  }
+
+  movieClip 600 8!||! {
+  }
+
+  movieClip 602 7^&1[6# {
+  }
+
+  movieClip 616  {
+  }
+
+  movieClip 618  {
+  }
+
+  movieClip 620  {
+  }
+
+  movieClip 622  {
+  }
+
+  button 628 {
+
+    on (release) {
+      gotoAndPlay('loop');
+      toucheCode = '???';
+      +?"*|8! = Key.getCode();
+    }
+  }
+
+  movieClip 629  {
+
+    frame 1 {
+      2"+8! = _parent._parent.729#][#;
+      toucheCode = 2"+8!.=-80]!(2"+8!.%=-^4+(*2));
+      stop();
+    }
+
+    frame 2 {
+      if (+?"*|8! != Key.getCode()) {
+        2"+8!.%=24^=!(*2, Key.getCode());
+        gotoAndStop(1);
+      }
+    }
+
+    frame 3 {
+      gotoAndPlay('loop');
+    }
+  }
+
+  movieClip 630 *9?]2}! {
+
+    instance of movieClip 629  {
+
+      onClipEvent (construct) {
+        *2 = 0;
+      }
+    }
+
+    instance of movieClip 629  {
+
+      onClipEvent (construct) {
+        *2 = 1;
+      }
+    }
+
+    instance of movieClip 629  {
+
+      onClipEvent (construct) {
+        *2 = 2;
+      }
+    }
+
+    instance of movieClip 629  {
+
+      onClipEvent (construct) {
+        *2 = 3;
+      }
+    }
+
+    instance of movieClip 629  {
+
+      onClipEvent (construct) {
+        *2 = 4;
+      }
+    }
+
+    instance of movieClip 629  {
+
+      onClipEvent (construct) {
+        *2 = 5;
+      }
+    }
+
+    instance of movieClip 629  {
+
+      onClipEvent (construct) {
+        *2 = 6;
+      }
+    }
+
+    instance of movieClip 629  {
+
+      onClipEvent (construct) {
+        *2 = 7;
+      }
+    }
+
+    instance of movieClip 629  {
+
+      onClipEvent (construct) {
+        *2 = 8;
+      }
+    }
+
+    instance of movieClip 629  {
+
+      onClipEvent (construct) {
+        *2 = 9;
+      }
+    }
+
+    instance of movieClip 629  {
+
+      onClipEvent (construct) {
+        *2 = 10;
+      }
+    }
+
+    instance of movieClip 629  {
+
+      onClipEvent (construct) {
+        *2 = 11;
+      }
+    }
+  }
+
+  movieClip 637 &%?0&# {
+  }
+
+  movieClip 644 @-6#^-! {
+  }
+
+  movieClip 646  {
+  }
+
+  movieClip 647 %}# ^{ {
+
+    frame 1 {
+      stop();
+    }
+
+    frame 2 {
+      )%0\'* *= -1;
+      s1._rotation = )%0\'*;
+      )%0\'* *= 0.9;
+      @!!._rotation = )%0\'*;
+    }
+
+    frame 3 {
+      if (Math.abs()%0\'*) > 0.2) {
+        gotoAndPlay(2);
+      }
+    }
+  }
+
+  movieClip 649 %)==84 {
+  }
+
+  movieClip 652  {
+  }
+
+  movieClip 653  {
+
+    frame 1 {
+      stop();
+    }
+  }
+
+  movieClip 655  {
+  }
+
+  movieClip 661 4?5 # {
+
+    frame 1 {
+      stop();
+    }
+  }
+
+  movieClip 663  {
+  }
+
+  movieClip 669  {
+  }
+
+  movieClip 676 98-^" {
+  }
+
+  movieClip 679  {
+  }
+
+  movieClip 681  {
+  }
+
+  movieClip 685 45!@65" {
+  }
+
+  movieClip 689  {
+  }
+
+  movieClip 693  {
+
+    frame 1 {
+      stop();
+      9;
+    }
+  }
+
+  movieClip 694 background {
+  }
+
+  frame 1 {
+    stop();
+  }
+
+  movieClip 696  {
+
+    frame 1 {
+      snake3.7}}#$$!.**3-!(this);
+    }
+
+    frame 2 {
+      3&!$.!2{#1#!();
+      snake3.7}}#$$!.main();
+    }
+
+    frame 3 {
+      gotoAndPlay(_currentframe - 1);
+    }
+  }
+
+  instance main of movieClip 696  {
+  }
+
+  movieClip 704 __Packages.snake3.Manager {
+
+    #initclip
+      if (!_global.snake3) {
+        _global.snake3 = new Object();
+      }
+      if (!_global.snake3.7}}#$$!) {
+        snake3.7}}#$$! = function () {};
+
+        var v1 = snake3.7}}#$$!.prototype;
+        snake3.7}}#$$!.**3-! = function (!9) {
+          snake3.7}}#$$!.8"+8! = new asml.7#-(0*"();
+          snake3.7}}#$$!.)-=6[@# = new asml.[)^!7?!();
+          Object.registerClass('|"8=0[', snake3.|9$(&();
+          Object.registerClass('"(9?{)"', snake3.&1\'^9*);
+          Object.registerClass('!08[-@', snake3.!!%+%\');
+          Object.registerClass('$-@0(2#', asml.=  93+!);
+          3&!$.?5*8+%(!9, '729#][#', snake3.7}}#$$!.8"+8!);
+          snake3.7}}#$$!.8"+8!.%{ 1{-! = snake3.&9710\'.6054&2!;
+          snake3.7}}#$$!.{9238=#();
+          snake3.7}}#$$!.4}@}! = null;
+          snake3.7}}#$$!.!}1{]- = -1;
+          snake3.7}}#$$!.725&"&! = new asml.72{\'}-(!9, 30000);
+          snake3.7}}#$$!.725&"&!.setVolume(snake3.&9710\'.-&"8]3#, 50);
+          snake3.7}}#$$!.725&"&!.setVolume(snake3.&9710\'.0&"8]3#, 50);
+          snake3.7}}#$$!.!9 = !9;
+          snake3.7}}#$$!.4}@}! = new snake3.(#4{&(!9, snake3.&9710\'.{257]!, snake3.&9710\'.)-1?%");
+          snake3.7}}#$$!.7%1+$-! = new snake3.7)^5*[!();
+          snake3.7}}#$$!.7%1+$-!.serviceConnect();
+        };
+
+        snake3.7}}#$$!.{9238=# = function () {
+          snake3.&9710\'.(-[][* = 0;
+          snake3.&9710\'.)-[][* = 0;
+          var v1 = snake3.7}}#$$!.!9;
+          while (v1._parent != null) {
+            snake3.&9710\'.(-[][* += v1._x;
+            snake3.&9710\'.)-[][* += v1._y;
+            v1 = v1._parent;
+          }
+        };
+
+        snake3.7}}#$$!.main = function () {
+          snake3.7}}#$$!.{9238=#();
+          snake3.7}}#$$!.)-=6[@#.main();
+          snake3.7}}#$$!.725&"&!.main();
+          snake3.7}}#$$!.4}@}!.main();
+        };
+
+        snake3.7}}#$$!.1[ 4@9 = function (|]@[+1", |(!)67") {
+          if (|]@[+1" == 1 && snake3.7}}#$$!.7%1+$-!.isWhite()) {
+            |]@[+1" = 9;
+          }
+          if (|(!)67" == 0) {
+            return |]@[+1";
+          }
+          return snake3.7}}#$$!.7%1+$-!.isWhite() ? |]@[+1" : -|]@[+1";
+        };
+
+        snake3.7}}#$$!.70#@3+! = function () {
+          snake3.7}}#$$!.7%1+$-!.startGame();
+          snake3.7}}#$$!.)-=6[@#.0|%77=#(snake3.7}}#$$!, snake3.7}}#$$!.70#@3+!);
+        };
+
+        snake3.7}}#$$!.}4---?" = function () {
+          snake3.7}}#$$!.7%1+$-!.saveScore(snake3.7}}#$$!.%4$5[$, null);
+          snake3.7}}#$$!.)-=6[@#.0|%77=#(snake3.7}}#$$!, snake3.7}}#$$!.}4---?");
+        };
+
+        snake3.7}}#$$!.!=#"42# = function () {
+          var v2 = snake3.7}}#$$!.!}1{]-;
+          switch (v2) {
+              return null;
+            case 0:
+              return new snake3.%%^]%(snake3.7}}#$$!.!9, [snake3.7}}#$$!.1[ 4@9(1, 0), snake3.7}}#$$!.1[ 4@9(2, 1), 3, snake3.7}}#$$!.1[ 4@9(4, 2)], snake3.7}}#$$!.%)}4^&!);
+            case 1:
+              snake3.7}}#$$!.)-=6[@#.push(snake3.7}}#$$!, snake3.7}}#$$!.70#@3+!);
+              return new snake3.(#4{&(snake3.7}}#$$!.!9, snake3.&9710\'.{257]!, snake3.&9710\'.)-"*-{#);
+            case 2:
+              3&!$."))!# = 1;
+              return new snake3.01*&3}#(snake3.7}}#$$!.!9, snake3.7}}#$$!.]80#]&);
+            case 3:
+              return new snake3.]%]]]$!(snake3.7}}#$$!.!9);
+            case 4:
+              return new snake3.+")}?]!(snake3.7}}#$$!.!9);
+            case 5:
+              return new snake3.%%^]%(snake3.7}}#$$!.!9, [6, 7, 8, 5], snake3.7}}#$$!.%)}4^&!);
+            case 97:
+              3&!$."))!# = 1;
+              return new snake3.}!9|$(snake3.7}}#$$!.!9);
+            case 98:
+              var v1 = new snake3.(#4{&(snake3.7}}#$$!.!9, snake3.&9710\'.9"|8%5!, '');
+              v1.?%%})]!(snake3.&9710\'.5!%6*7");
+              return v1;
+          }
+          return null;
+        };
+
+        snake3.7}}#$$!.%)}4^&! = function (n) {
+          switch (n) {
+            case 1:
+            case 9:
+              snake3.7}}#$$!.!}^6(*#(1);
+              break;
+            case 2:
+              snake3.7}}#$$!.!}^6(*#(5);
+              break;
+            case 3:
+              snake3.7}}#$$!.!}^6(*#(3);
+              break;
+            case 4:
+              snake3.7}}#$$!.!}^6(*#(4);
+              break;
+            case 5:
+              snake3.7}}#$$!.!}^6(*#(0);
+              break;
+            case 6:
+            case 7:
+            case 8:
+              snake3.7}}#$$!.]80#]& = n - 4;
+              snake3.7}}#$$!.!}^6(*#(2);
+          }
+        };
+
+        snake3.7}}#$$!.!}^6(*# = function ()) {
+          if (snake3.7}}#$$!.!}1{]- == -1) {
+            snake3.7}}#$$!.4}@}! = new snake3.-"6@$*!(snake3.7}}#$$!.!9, snake3.7}}#$$!.4}@}!);
+            snake3.7}}#$$!.!}1{]- = );
+          }
+        };
+
+        snake3.7}}#$$!.!\'20$( = function ()) {
+          if (snake3.7}}#$$!.!}1{]- == -1) {
+            snake3.7}}#$$!.!}^6(*#());
+          } else {
+            var v1 = 3&!$."&41(snake3.7}}#$$!.4}@}!);
+            v1.|\'?[5-" = false;
+            snake3.7}}#$$!.!}1{]- = );
+          }
+        };
+
+        snake3.7}}#$$!.startGame = function () {
+          snake3.7}}#$$!.!\'20$((97);
+        };
+
+        snake3.7}}#$$!.09@0$^ = function () {
+          snake3.7}}#$$!.!\'20$((2);
+        };
+
+        snake3.7}}#$$!.error = function () {
+          snake3.7}}#$$!.!\'20$((98);
+        };
+
+        snake3.7}}#$$!.connected = function () {
+          snake3.7}}#$$!.!\'20$((0);
+        };
+
+        snake3.7}}#$$!.saveScore = function (%4$5[$) {
+          snake3.7}}#$$!.%4$5[$ = %4$5[$;
+          snake3.7}}#$$!.)-=6[@#.push(snake3.7}}#$$!, snake3.7}}#$$!.}4---?");
+        };
+
+        snake3.7}}#$$!.5]@\'73 = function (%4$5[$, %94)#]!, #3(%+^#, #=487-#) {
+          var v1;
+          v1 = snake3.&9710\'.65\'4!$#(%4$5[$) + '\n';
+          if (%4$5[$ > %94)#]! && (#3(%+^# > 0 || snake3.7}}#$$!.7%1+$-!.isWhite())) {
+            v1 += snake3.&9710\'.#$32#}# + '\n';
+          }
+          if (#=487-# < #3(%+^# && #3(%+^# > 0) {
+            v1 += snake3.&9710\'.#^@#}&"(#3(%+^# - #=487-#) + '\n';
+          }
+          if (snake3.7}}#$$!.7%1+$-!.isWhite()) {
+            v1 += snake3.&9710\'.51(6+0(Math.max(%4$5[$, %94)#]!)) + '\n';
+          } else {
+            v1 += snake3.&9710\'.@5=3*##(#=487-#) + '\n';
+          }
+          var v3 = 3&!$."&41(snake3.7}}#$$!.4}@}!);
+          v3.?{6{[8"(v1);
+        };
+
+        snake3.7}}#$$!.}]#[0]# = function () {
+          if (snake3.7}}#$$!.7%1+$-!.isWhite()) {
+            snake3.7}}#$$!.!\'20$((0);
+          } else {
+            snake3.7}}#$$!.7%1+$-!.closeService();
+          }
+        };
+
+        snake3.7}}#$$!.]]^[^}! = function () {
+          snake3.7}}#$$!.7%1+$-!.]]^[^}!();
+        };
+
+        snake3.7}}#$$!.returnMenu = function () {
+          snake3.7}}#$$!.725&"&!.play(snake3.&9710\'.6|1%|4!);
+          snake3.7}}#$$!.!}^6(*#(0);
+        };
+
+        snake3.7}}#$$!.!$6\'99 = function (0) {
+          snake3.7}}#$$!.4}@}!.close();
+          snake3.7}}#$$!.!}1{]- = -1;
+          snake3.7}}#$$!.4}@}! = 0;
+        };
+
+        snake3.7}}#$$!.{ \'(&# = function () {
+          snake3.7}}#$$!.music = !snake3.7}}#$$!.music;
+          if (snake3.7}}#$$!.music) {
+            snake3.7}}#$$!.725&"&!.04{$}\'"(snake3.&9710\'.-&"8]3#, true);
+            snake3.7}}#$$!.725&"&!.04{$}\'"(snake3.&9710\'.0&"8]3#, true);
+          } else {
+            snake3.7}}#$$!.725&"&!.04{$}\'"(snake3.&9710\'.-&"8]3#, false);
+            snake3.7}}#$$!.725&"&!.04{$}\'"(snake3.&9710\'.0&"8]3#, false);
+          }
+        };
+
+        snake3.7}}#$$!.+]5^${# = function () {
+          snake3.7}}#$$!.++![^\' = !snake3.7}}#$$!.++![^\';
+          if (snake3.7}}#$$!.++![^\') {
+            snake3.7}}#$$!.725&"&!.04{$}\'"(snake3.&9710\'.@%6[]6!, true);
+          } else {
+            snake3.7}}#$$!.725&"&!.04{$}\'"(snake3.&9710\'.@%6[]6!, false);
+          }
+        };
+
+        snake3.7}}#$$!.]80#]& = 4;
+        snake3.7}}#$$!.!9 = null;
+        snake3.7}}#$$!.4}@}! = null;
+        snake3.7}}#$$!.!}1{]- = -1;
+        snake3.7}}#$$!.%4$5[$ = 0;
+        snake3.7}}#$$!.)-=6[@# = null;
+        snake3.7}}#$$!.music = true;
+        snake3.7}}#$$!.++![^\' = true;
+        snake3.7}}#$$!.8"+8! = null;
+        snake3.7}}#$$!.7%1+$-! = null;
+        snake3.7}}#$$!.725&"&! = null;
+        ASSetPropFlags(snake3.7}}#$$!.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 705 __Packages.asml.UpdateList {
+
+    #initclip
+      if (!_global.asml) {
+        _global.asml = new Object();
+      }
+      if (!_global.asml.[)^!7?!) {
+        asml.[)^!7?! = function () {
+          this.)-=6[@# = new Array();
+        };
+
+        var v1 = asml.[)^!7?!.prototype;
+        v1.push = function (@}9?$$, f) {
+          this.)-=6[@#.push({'f': f, '@}9?$$': @}9?$$});
+        };
+
+        v1.0|%77=# = function (@}9?$$, f) {
+          var v2;
+          var v4 = this.)-=6[@#.length;
+          v2 = 0;
+          while (v2 < v4) {
+            var v3 = this.)-=6[@#[v2];
+            if (v3.f == f && v3.@}9?$$ == @}9?$$) {
+              this.)-=6[@#.splice(v2, 1);
+              return undefined;
+            }
+            ++v2;
+          }
+        };
+
+        v1.main = function () {
+          for (var v3 in this.)-=6[@#) {
+            var v2 = this.)-=6[@#[v3];
+            v2.f.call(v2.@}9?$$);
+          }
+        };
+
+        ASSetPropFlags(asml.[)^!7?!.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 706 __Packages.snake3.SnakeClient {
+
+    #initclip
+      if (!_global.snake3) {
+        _global.snake3 = new Object();
+      }
+      if (!_global.snake3.7)^5*[!) {
+        snake3.7)^5*[! = function () {
+          function )(7(=|*?5!) {
+            return {'name': =|*?5!, 'size': 0};
+          }
+
+          function +$0)%"#() {
+            return true;
+          }
+
+          super();
+          if (snake3.7)^5*[!.6^8%7$) {
+            this.getFileInfos = )(7;
+            this.isBlack = +$0)%"#;
+          }
+        };
+
+        snake3.7)^5*[! extends frusion.gameclient.GameClient;
+        var v1 = snake3.7)^5*[!.prototype;
+        v1.serviceConnect = function () {
+          super.serviceConnect();
+          if (snake3.7)^5*[!.6^8%7$) {
+            this.slots = 3&!$."&41([{'$fruits': [0, 12, 3, 45, 4]}]);
+            this.onServiceConnect();
+          }
+        };
+
+        v1.startGame = function () {
+          super.startGame();
+          if (snake3.7)^5*[!.6^8%7$) {
+            this.onStartGame();
+          }
+        };
+
+        v1.]]^[^}! = function () {
+          this.slots[1] = 3&!$."&41({'$music': snake3.7}}#$$!.music, '$sounds': snake3.7}}#$$!.++![^\', '$keys': snake3.7}}#$$!.8"+8!.%{ 1{-!});
+          this.saveSlot(1, undefined);
+        };
+
+        v1.saveScore = function (%4$5[$, data) {
+          super.saveScore(%4$5[$, data);
+          if (snake3.7)^5*[!.6^8%7$) {
+            this.ranking = 3&!$."&41({'rankingScore': %4$5[$, 'rankingData': data, 'oldScore': undefined, 'oldPos': undefined, 'bestScorePos': undefined});
+            if (this.isWhite()) {
+              this.onSaveScoreFruticard();
+            }
+            this.onSaveScore();
+          }
+        };
+
+        v1.onStartGame = function () {
+          snake3.7}}#$$!.startGame();
+        };
+
+        v1.onServiceConnect = function () {
+          var v4 = 3&!$."&41(this.slots[0]);
+          var v3 = v4.$fruits;
+          if (v3 == undefined && this.isWhite()) {
+            v3 = [];
+          }
+          snake3.+")}?]!.\'@\'3?9" = v3;
+          var v2 = 3&!$."&41(this.slots[1]);
+          if (v2 == undefined) {
+            v2 = {'$keys': snake3.&9710\'.6054&2!, '$music': true, '$sounds': true};
+          }
+          snake3.7}}#$$!.music = !v2.$music;
+          snake3.7}}#$$!.++![^\' = !v2.$sounds;
+          snake3.7}}#$$!.{ \'(&#();
+          snake3.7}}#$$!.+]5^${#();
+          snake3.7}}#$$!.8"+8!.%{ 1{-! = v2.$keys;
+          snake3.7}}#$$!.connected();
+        };
+
+        v1.onSaveScore = function () {
+          var v3 = this.ranking.rankingScore;
+          var v2 = (3&!$."&41(this.slots[0])).$record;
+          if (v2 == undefined) {
+            v2 = 0;
+          }
+          var v4 = v2;
+          if (v3 > v2) {
+            v2 = v3;
+          }
+          if (snake3.+")}?]!.\'@\'3?9" != undefined) {
+            this.slots[0] = 3&!$."&41({'$fruits': snake3.+")}?]!.\'@\'3?9", '$record': v2});
+            this.saveSlot(0, undefined);
+          }
+          if (this.ranking.oldScore == undefined) {
+            this.ranking.oldScore = v4;
+          }
+          snake3.7}}#$$!.5]@\'73(this.ranking.rankingScore, this.ranking.oldScore, this.ranking.oldPos, this.ranking.bestScorePos);
+        };
+
+        v1.onGameReset = function () {
+          super.onGameReset();
+          if (this.isWhite() || !this.gameRunning) {
+            snake3.7}}#$$!.!\'20$((0);
+          }
+        };
+
+        snake3.7)^5*[!.6^8%7$ = false;
+        ASSetPropFlags(snake3.7)^5*[!.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 707 __Packages.Std {
+
+    #initclip
+      if (!_global.3&!$) {
+        _global.3&!$ = function () {};
+
+        var v1 = _global.3&!$.prototype;
+        _global.3&!$.**3-! = function (fps) {
+          3&!$.040)53" = true;
+          3&!$.@%[\'6%! = fps;
+          if (_global.2$8^$) == undefined) {
+            _global.2$8^$) = function (?) {
+              return ?;
+            };
+
+          }
+          Array.prototype.0|%77=# = function (5[*!) {
+            var v2;
+            var v3 = this.length;
+            v2 = 0;
+            while (v2 < v3) {
+              if (this[v2] == 5[*!) {
+                this.splice(v2, 1);
+                return true;
+              }
+              ++v2;
+            }
+            return false;
+          };
+
+          Array.prototype.%^?2@*" = function () {
+            var v4;
+            v4 = 0;
+            while (v4 < this.length) {
+              var v3 = random(this.length);
+              var v2 = random(this.length);
+              var v5 = this[v3];
+              this[v3] = this[v2];
+              this[v2] = v5;
+              ++v4;
+            }
+          };
+
+          Color.prototype.&!6?5$ = function () {
+            this.setTransform({'ra': 100, 'rb': 0, 'ba': 100, 'bb': 0, 'ga': 100, 'gb': 0, 'aa': 100, 'ab': 0});
+          };
+
+          @2}4@5#.prototype.get = function (?) {
+            return this.attributes[?];
+          };
+
+          @2}4@5#.prototype.set = function (?, @) {
+            this.attributes[?] = @;
+          };
+
+          _global.ASSetPropFlags(Array.prototype, '0|%77=#', 1);
+          _global.ASSetPropFlags(Array.prototype, '%^?2@*"', 1);
+          _global.ASSetPropFlags(Color.prototype, '&!6?5$', 1);
+          _global.ASSetPropFlags(@2}4@5#.prototype, 'get', 1);
+          _global.ASSetPropFlags(@2}4@5#.prototype, 'set', 1);
+        };
+
+        _global.3&!$.21*1|+! = function (!9, #82[!, ?41'!!) {
+          var v1 = #82[! + '@' + 3&!$.3+9{&6"++;
+          !9.attachMovie(#82[!, v1, ?41'!!);
+          return !9[v1];
+        };
+
+        _global.3&!$.]()?5+" = function (!9, ?41'!!) {
+          var v1 = '_empty@' + 3&!$.3+9{&6"++;
+          !9.createEmptyMovieClip(v1, ?41'!!);
+          return !9[v1];
+        };
+
+        _global.3&!$.]79${2# = function (!9, ?41'!!) {
+          var v1 = '_dup@' + 3&!$.3+9{&6"++;
+          !9.duplicateMovieClip(v1, ?41'!!);
+          return !9._parent[v1];
+        };
+
+        _global.3&!$.?1"|$!# = function (!9, 9) {
+          return !9[9];
+        };
+
+        _global.3&!$.?5*8+% = function (!9, 9, *=8+#) {
+          !9[9] = *=8+#;
+        };
+
+        _global.3&!$.[3%&*|# = function () {
+          return _root;
+        };
+
+        _global.3&!$.5??(4!" = function (9) {
+          return _global[9];
+        };
+
+        _global.3&!$.5?]{]0# = function (9, [%!) {
+          _global[9] = [%!;
+        };
+
+        _global.3&!$.createTextField = function (!9, ?41'!!, ?, @, =, () {
+          var v1 = 'TextField@' + 3&!$.3+9{&6"++;
+          !9.createTextField(v1, ?41'!!, ?, @, =, ();
+          return !9[v1];
+        };
+
+        _global.3&!$.+-\'^4{! = function (str, ^&=!, %$) {
+          var v2;
+          var v3 = ^&=!.length;
+          v2 = str.indexOf(^&=!, 0);
+          while (v2 != -1) {
+            str = str.substr(0, v2) + %$ + str.substr(v2 + v3, undefined);
+          }
+          return str;
+        };
+
+        _global.3&!$.fps = function () {
+          return 3&!$.@%[\'6%! / 3&!$."))!#;
+        };
+
+        _global.3&!$."&41 = function (?) {
+          return ?;
+        };
+
+        _global.3&!$.hitTest = function (-'%!, 0'%!) {
+          return -'%!.hitTest(0'%!);
+        };
+
+        _global.3&!$.!2{#1#! = function () {
+          if (!3&!$.040)53") {
+            3&!$.**3-!(3&!$.@%[\'6%!);
+          }
+          ++3&!$.7(3[9 #;
+          var v1 = getTimer();
+          3&!$.$4*}!?! = (v1 - 3&!$.=3=$74#) / 1000;
+          3&!$.=3=$74# = v1;
+          if (3&!$.$4*}!?! < 3&!$.\'8={=9#) {
+            3&!$."))!# = 3&!$."))!# * 3&!$.$#6[!$ + (1 - 3&!$.$#6[!$) * 3&!$.$4*}!?! * 3&!$.@%[\'6%!;
+          } else {
+            3&!$.$4*}!?! = 1 / 3&!$.@%[\'6%!;
+          }
+        };
+
+        _global.3&!$.1+]]76! = function () {
+          return new Object();
+        };
+
+        _global.3&!$.@315}= = function (!) {
+          var v3 = 0;
+          var v1;
+          v1 = !.length - 1;
+          while (v1 >= 0) {
+            v3 += ![v1];
+            --v1;
+          }
+          v3 = random(v3);
+          v1 = 0;
+          while (v3 >= ![v1]) {
+            v3 -= ![v1];
+            ++v1;
+          }
+          return v1;
+        };
+
+        _global.3&!$.random = function (?) {
+          return random(?);
+        };
+
+        _global.3&!$.66^%@+" = function () {
+          return _xmouse;
+        };
+
+        _global.3&!$.6|2"2@" = function () {
+          return _ymouse;
+        };
+
+        _global.3&!$.escape = function (?) {
+          return _global.escape(?);
+        };
+
+        _global.3&!$.unescape = function (?) {
+          return _global.unescape(?);
+        };
+
+        _global.3&!$.parseInt = function (?, n) {
+          return _global.parseInt(?, n);
+        };
+
+        _global.3&!$.toString = function (?) {
+          return String(?);
+        };
+
+        _global.3&!$.2?(*46 = function (?, n) {
+          return (Number(?)).toString(n);
+        };
+
+        _global.3&!$.isNaN = function (n) {
+          return _global.isNaN(n);
+        };
+
+        _global.3&!$.registerClass = function (-, #) {
+          Object.registerClass(-, #);
+        };
+
+        _global.3&!$.\'8={=9# = 0.5;
+        _global.3&!$.@%[\'6%! = 32;
+        _global.3&!$.=3=$74# = getTimer();
+        _global.3&!$.040)53" = false;
+        _global.3&!$.$#6[!$ = 0.95;
+        _global.3&!$."))!# = 1;
+        _global.3&!$.$4*}!?! = 1;
+        _global.3&!$.3+9{&6" = 0;
+        _global.3&!$.7(3[9 # = 0;
+        ASSetPropFlags(_global.3&!$.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 708 __Packages.snake3.Encyclo {
+
+    #initclip
+      if (!_global.snake3) {
+        _global.snake3 = new Object();
+      }
+      if (!_global.snake3.+")}?]!) {
+        snake3.+")}?]! = function (0*?"&&") {
+          function 4"@'$%"() {
+            #9.4!]==]();
+          }
+
+          this.!9 = 3&!$.21*1|+!(0*?"&&", '+15|%2!', 0);
+          var v2 = 3&!$.?1"|$!#(this.!9, 'fback');
+          var #9 = this;
+          v2.onPress = 4"@\'$%";
+          this.7\'#7-}# = false;
+          this.4=2943"();
+        };
+
+        var v1 = snake3.+")}?]!.prototype;
+        v1.4=2943" = function () {
+          function 77*' ?"() {
+            #9.7\'#7-}# = true;
+          }
+
+          function []']76!() {
+            #9.7\'#7-}# = false;
+          }
+
+          var v3 = 0;
+          this.!"}* = 3&!$.21*1|+!(this.!9, '](&!4["', v3++);
+          this.!"}*._x = snake3.+")}?]!.?14?=);
+          this.!"}*._y = snake3.+")}?]!.@14?=);
+          this.-=545[" = 3&!$.21*1|+!(this.!9, '#6}-"', v3++);
+          this.-=545["._x = snake3.+")}?]!.?14?=) + snake3.+")}?]!.&9*\'-&#;
+          this.-=545["._y = snake3.+")}?]!.@14?=) + snake3.+")}?]!.9#^\'-*" + snake3.+")}?]!.&9*\'-&#;
+          this.-=545["._rotation = 0;
+          this.?+]{[^ = 3&!$.21*1|+!(this.!9, '#6}-"', v3++);
+          this.?+]{[^._x = snake3.+")}?]!.?14?=) + snake3.+")}?]!.&9*\'-&# * 2 + 1.5;
+          this.?+]{[^._y = snake3.+")}?]!.@14?=) + snake3.+")}?]!.9#^\'-*" + snake3.+")}?]!.&9*\'-&#;
+          this.?+]{[^._rotation = 0;
+          this.)4@\'! = 3&!$.21*1|+!(this.!9, ')0(}4["', v3++);
+          this.)4@\'!._x = snake3.+")}?]!.?14?=);
+          this.)4@\'!._y = snake3.+")}?]!.@14?=);
+          this.65!@5! = 3&!$.21*1|+!(this.!9, '#6}-"', 1000);
+          this.65!@5!._x = snake3.+")}?]!.?14?=) + snake3.+")}?]!.&9*\'-&# * 2 + 1.5;
+          this.65!@5!._y = snake3.+")}?]!.@14?=) + snake3.+")}?]!.9#^\'-*" + snake3.+")}?]!.&9*\'-&#;
+          this.65!@5!._rotation = 0;
+          this.6- \'"]! = 3&!$.21*1|+!(this.!9, '#6}-"', 1001);
+          this.6- \'"]!._x = snake3.+")}?]!.?14?=) + snake3.+")}?]!.&9*\'-&#;
+          this.6- \'"]!._y = snake3.+")}?]!.@14?=) + snake3.+")}?]!.9#^\'-*" + snake3.+")}?]!.&9*\'-&#;
+          this.6- \'"]!._rotation = 0;
+          this.?7?\'55# = 3&!$.21*1|+!(this.!9, '?7?\'55#', v3++);
+          this.?7?\'55#._x = this.6- \'"]!._x;
+          this.?7?\'55#._y = this.6- \'"]!._y;
+          this.?7?\'55#._rotation = 0;
+          this.?7?\'55#._alpha = 0;
+          this.}%"18@ = 3&!$.21*1|+!(this.!9, '}%"18@', v3++);
+          this.}%"18@._x = this.6- \'"]!._x;
+          this.}%"18@._y = this.6- \'"]!._y;
+          this.}%"18@._rotation = 0;
+          this.}%"18@._alpha = 0;
+          this.@96?!]! = 3&!$.]()?5+"(this.!9, v3++);
+          this.@^7*5! = 3&!$.]()?5+"(this.!9, v3++);
+          this.@-$[?2" = 3&!$.21*1|+!(this.!9, ')@!95["', v3++);
+          this.@-$[?2"._x = snake3.+")}?]!.?14?=);
+          this.@-$[?2"._y = snake3.+")}?]!.@14?=);
+          this.?7?\'55#.setMask(this.@-$[?2");
+          this.)?5?8!# = 3&!$.21*1|+!(this.!9, ')@!95["', v3++);
+          this.)?5?8!#._x = snake3.+")}?]!.?14?=);
+          this.)?5?8!#._y = snake3.+")}?]!.@14?=);
+          this.}%"18@.setMask(this.)?5?8!#);
+          var #9 = this;
+          this.!"}*.onPress = 77*\' ?";
+          this.!"}*.onRelease = []\']76!;
+          this.\'8\')  " = 0;
+          this.06*\'$#" = 0;
+          this.\'8=?##" = 0;
+          this.+ 56(}! = 0;
+          for (var v4 in snake3.+")}?]!.\'@\'3?9") {
+            if (snake3.+")}?]!.\'@\'3?9"[v4] > 0) {
+              this.\'8=?##" += snake3.+")}?]!.\'@\'3?9"[v4];
+              ++this.\'8\')  ";
+              if (snake3.+")}?]!.\'@\'3?9"[v4] > snake3.&9710\'.$@\'|)$# - 1) {
+                ++this.06*\'$#";
+              }
+              var v2 = snake3.&9710\'.+50#)}!(v4);
+              if (v2 > this.+ 56(}!) {
+                this.+ 56(}! = v2;
+              }
+            }
+          }
+          this.9092^$ = 0;
+          this.6--9[!" = 0;
+          this.6- \'"]!._rotation = 90;
+          this.82^8)5"();
+          this.!2{#1#!();
+        };
+
+        v1.!2{#1#! = function () {
+          var v2 = this.6- \'"]!._rotation / 90;
+          var v5 = 0.0174532925199433 * (v2 * 45);
+          var v4 = snake3.+")}?]!.*=^1^0" * Math.sin(v5);
+          var v3 = snake3.+")}?]!.*=^1^0" * Math.cos(v5);
+          this.@96?!]!.clear();
+          this.@96?!]!.lineStyle(undefined, undefined, undefined);
+          this.@96?!]!.beginFill(16711680, 100);
+          this.@96?!]!.moveTo(snake3.+")}?]!.?14?=), snake3.+")}?]!.@14?=) - snake3.+")}?]!.9+#&4]! * 0.5);
+          this.@96?!]!.lineTo(snake3.+")}?]!.?14?=), snake3.+")}?]!.@14?=) + snake3.+")}?]!.9+#&4]!);
+          this.@96?!]!.lineTo(snake3.+")}?]!.?14?=) + snake3.+")}?]!.&9*\'-&#, snake3.+")}?]!.@14?=) + snake3.+")}?]!.9+#&4]! + snake3.+")}?]!.&9*\'-&#);
+          this.@96?!]!.lineTo(snake3.+")}?]!.?14?=) + snake3.+")}?]!.&9*\'-&# + v4, snake3.+")}?]!.@14?=) + snake3.+")}?]!.9+#&4]! + snake3.+")}?]!.&9*\'-&# - v3);
+          this.@96?!]!.endFill();
+          this.@^7*5!.clear();
+          this.@^7*5!.lineStyle(undefined, undefined, undefined);
+          this.@^7*5!.beginFill(16711680, 100);
+          this.@^7*5!.moveTo(snake3.+")}?]!.?14?=), snake3.+")}?]!.@14?=) - snake3.+")}?]!.9+#&4]! * 0.5);
+          this.@^7*5!.lineTo(snake3.+")}?]!.?14?=), snake3.+")}?]!.@14?=) + snake3.+")}?]!.9+#&4]!);
+          this.@^7*5!.lineTo(snake3.+")}?]!.?14?=) + snake3.+")}?]!.&9*\'-&#, snake3.+")}?]!.@14?=) + snake3.+")}?]!.9+#&4]! + snake3.+")}?]!.&9*\'-&#);
+          this.@^7*5!.lineTo(snake3.+")}?]!.?14?=) + snake3.+")}?]!.&9*\'-&# + v4, snake3.+")}?]!.@14?=) + snake3.+")}?]!.9+#&4]! + snake3.+")}?]!.&9*\'-&# - v3);
+          this.@^7*5!.endFill();
+          this.6- \'"]!.setMask(this.@96?!]!);
+          this.65!@5!.setMask(this.@^7*5!);
+          (3&!$."&41(this.6- \'"]!)).grad._alpha = v2 * 100;
+          this.?7?\'55#._rotation = 45 * v2;
+          this.?7?\'55#._alpha = v2 * 85;
+          this.}%"18@._rotation = 45 * v2;
+          if (this.6--9[!" >= 2) {
+            this.}%"18@._alpha = (1 - v2 * 1.5) * 90;
+          } else {
+            this.}%"18@._alpha = 0;
+          }
+        };
+
+        v1.#}-388# = function (3, -8), )4#^") {
+          switch (-8)) {
+            case 0:
+              3.gotoAndStop('3');
+              break;
+            case 1:
+              3.gotoAndStop('5');
+              break;
+            case 2:
+              3.gotoAndStop('4');
+              var v3 = 'Vous avez rammassé ' + this.\'8=?##" + ' fruits.\n\n';
+              v3 += 'Vous avez ' + this.\'8\')  " + ' fruits sur une collection\nde ' + (snake3.&9710\'.(1)!2?! + snake3.&9710\'.?\'%")%) + ' au total.\n\n';
+              v3 += 'Vous avez découvert le nom\nde ' + this.06*\'$#" + ' fruits (' + int(this.06*\'$#" * 100 / (snake3.&9710\'.(1)!2?! + snake3.&9710\'.?\'%")%)) + '% découverts).\n\n';
+              v3 += 'Votre plus gros fruit vous a\nrapporté ' + this.+ 56(}! + ' points.';
+              (3&!$.?1"|$!#(3, 'sommaire')).text = v3;
+              break;
+            default:
+              if ()4#^" == snake3.+")}?]!.LEFT) {
+                3.gotoAndStop('1');
+              } else {
+                3.gotoAndStop('2');
+              }
+              this.!\'05]4!(3&!$.?1"|$!#(3, 'tpl'), -8) - 3, )4#^");
+          }
+        };
+
+        v1.82^8)5" = function () {
+          this.#}-388#(this.-=545[", this.6--9[!" - 1, snake3.+")}?]!.LEFT);
+          this.#}-388#(this.65!@5!, this.6--9[!", snake3.+")}?]!.RIGHT);
+          this.#}-388#(this.6- \'"]!, this.6--9[!" + 1, snake3.+")}?]!.LEFT);
+          this.#}-388#(this.?+]{[^, this.6--9[!" + 2, snake3.+")}?]!.RIGHT);
+          (3&!$.?1"|$!#(this.?+]{[^, 'grad'))._visible = false;
+          (3&!$.?1"|$!#(this.-=545[", 'grad'))._visible = false;
+          (3&!$.?1"|$!#(this.65!@5!, 'grad'))._visible = false;
+        };
+
+        v1.!\'05]4! = function (!9, *2, )4#^") {
+          var v3 = *2 + 1;
+          if (*2 >= 300) {
+            v3 += 20;
+          }
+          var v2 = snake3.+")}?]!.\'@\'3?9"[v3];
+          !9.skin.gotoAndStop(v3);
+          var v5 = new Color(!9.skin);
+          if (v2 > 0) {
+            v5.&!6?5$();
+          } else {
+            v5.setTransform({'ra': 0, 'rb': 127, 'ga': 0, 'gb': 180, 'ba': 0, 'bb': 56, 'aa': 1000, 'ab': 1000});
+          }
+          if ()4#^" == snake3.+")}?]!.LEFT) {
+            !9.pageLeft.text = *2 + 1;
+            !9.pageRight.text = '';
+          } else {
+            !9.pageLeft.text = '';
+            !9.pageRight.text = *2 + 1;
+          }
+          if (v2 > snake3.&9710\'.$@\'|)$# - 1) {
+            !9.name.text = snake3.&9710\'.]7(#[[![*2];
+          } else {
+            if (v2 > 0) {
+              !9.name.text = snake3.&9710\'.@$$*%9#;
+            } else {
+              !9.name.text = snake3.&9710\'.5937"6";
+            }
+          }
+          if (v2 > 0) {
+            !9.count.text = String(v2);
+            !9.value.text = snake3.&9710\'.+50#)}!(v3);
+          } else {
+            !9.count.text = snake3.&9710\'.8231&{;
+            if (random(1000) == 0) {
+              !9.value.text = snake3.&9710\'.-{1&8@!;
+            } else {
+              !9.value.text = snake3.&9710\'.)1!1 [";
+            }
+          }
+        };
+
+        v1.4!]==] = function () {
+          snake3.7}}#$$!.returnMenu();
+        };
+
+        v1.main = function () {
+          var v2 = false;
+          if (Key.isDown(39) || this.7\'#7-}# && 3&!$.66^%@+"() > snake3.&9710\'.&2"95- / 2) {
+            if (this.6--9[!" != 322 && Math.abs(this.9092^$) < 0.1) {
+              snake3.7}}#$$!.725&"&!.play(snake3.&9710\'.!55556!);
+            }
+            this.9092^$ -= snake3.+")}?]!.$@70|9!;
+            v2 = true;
+          }
+          if (Key.isDown(37) || this.7\'#7-}# && 3&!$.66^%@+"() < snake3.&9710\'.&2"95- / 2) {
+            if (this.6--9[!" != 0 && Math.abs(this.9092^$) < 0.1) {
+              snake3.7}}#$$!.725&"&!.play(snake3.&9710\'.!55556!);
+            }
+            this.9092^$ += snake3.+")}?]!.$@70|9!;
+            v2 = true;
+          }
+          if (!v2) {
+            if (this.6- \'"]!._rotation >= snake3.+")}?]!.7$("8(") {
+              this.9092^$ += snake3.+")}?]!.$@70|9! * 0.5;
+            }
+            if (this.6- \'"]!._rotation < snake3.+")}?]!.7$("8(") {
+              this.9092^$ -= snake3.+")}?]!.$@70|9! * 0.5;
+            }
+          }
+          this.9092^$ *= Math.pow(snake3.+")}?]!.[0*!=*", 3&!$."))!#);
+          this.6- \'"]!._rotation += this.9092^$ * 3&!$."))!#;
+          if (this.9092^$ > 0 && this.6- \'"]!._rotation > 90) {
+            if (v2) {
+              if (this.6--9[!" > 0) {
+                this.6- \'"]!._rotation -= 90;
+                this.#)(]54"();
+              } else {
+                this.9092^$ = 0;
+                this.6- \'"]!._rotation = 90;
+              }
+            } else {
+              this.6- \'"]!._rotation = 90;
+              this.9092^$ = 0;
+            }
+          }
+          if (this.9092^$ < 0 && this.6- \'"]!._rotation < 0) {
+            if (v2) {
+              if (this.6--9[!" < snake3.&9710\'.(1)!2?! + snake3.&9710\'.?\'%")%) {
+                this.6- \'"]!._rotation += 90;
+                this.6*)242#();
+              } else {
+                this.9092^$ = 0;
+                this.6- \'"]!._rotation = 0;
+              }
+            } else {
+              this.6- \'"]!._rotation = 0;
+              this.9092^$ = 0;
+            }
+          }
+          this.!2{#1#!();
+          if (this.6--9[!" == 0 && this.6- \'"]!._rotation > 0) {
+            this.)4@\'!._visible = true;
+          } else {
+            this.)4@\'!._visible = false;
+          }
+        };
+
+        v1.#)(]54" = function () {
+          this.6--9[!" -= 2;
+          this.82^8)5"();
+        };
+
+        v1.6*)242# = function () {
+          this.6--9[!" += 2;
+          this.82^8)5"();
+        };
+
+        v1.close = function () {
+          this.!9.removeMovieClip();
+        };
+
+        snake3.+")}?]!.\'@\'3?9" = null;
+        snake3.+")}?]!.?14?=) = 53;
+        snake3.+")}?]!.@14?=) = 20;
+        snake3.+")}?]!.&9*\'-&# = 297;
+        snake3.+")}?]!.9#^\'-*" = 443;
+        snake3.+")}?]!.&52??3 = snake3.+")}?]!.&9*\'-&# * 2;
+        snake3.+")}?]!.9+#&4]! = snake3.+")}?]!.9#^\'-*";
+        snake3.+")}?]!.*=^1^0" = 1000;
+        snake3.+")}?]!.$@70|9! = 1;
+        snake3.+")}?]!.[0*!=*" = 0.98;
+        snake3.+")}?]!.7$("8(" = 20;
+        snake3.+")}?]!.LEFT = 0;
+        snake3.+")}?]!.RIGHT = 1;
+        ASSetPropFlags(snake3.+")}?]!.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 709 __Packages.snake3.Const {
+
+    #initclip
+      if (!_global.snake3) {
+        _global.snake3 = new Object();
+      }
+      if (!_global.snake3.&9710\') {
+        snake3.&9710\' = function () {};
+
+        var v1 = snake3.&9710\'.prototype;
+        snake3.&9710\'.+50#)}! = function (*2) {
+          if (*2 <= 40) {
+            return *2 * 5;
+          } else {
+            if (*2 <= 90) {
+              return 200 + (*2 - 40) * 10;
+            } else {
+              if (*2 <= 150) {
+                return 700 + (*2 - 90) * 20;
+              } else {
+                if (*2 <= 220) {
+                  return 1900 + (*2 - 150) * 30;
+                } else {
+                  if (*2 <= 260) {
+                    return 4000 + (*2 - 220) * 50;
+                  } else {
+                    if (*2 <= 300) {
+                      return 6000 + (*2 - 260) * 100;
+                    } else {
+                      return -(*2 - 320) * 250;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        };
+
+        snake3.&9710\'.&[}&"4" = function (??]8"{!) {
+          return 'Le serpent ' + snake3.&9710\'.5#\'{@6"[??]8"{!] + 'a gagné !';
+        };
+
+        snake3.&9710\'.65\'4!$# = function (6) {
+          return 'Votre score : ' + 6;
+        };
+
+        snake3.&9710\'.51(6+0 = function (6) {
+          return 'Votre record personnel : ' + 6;
+        };
+
+        snake3.&9710\'.@5=3*## = function (3) {
+          return 'Votre classement aujourd\'hui : ' + 3;
+        };
+
+        snake3.&9710\'.#^@#}&" = function (3) {
+          if (3 != 1) {
+            return 'Vous avez gagné ' + (3 + ' places') + ' dans le classement !';
+          }
+          return 'Vous avez gagné ' + 'une place' + ' dans le classement !';
+        };
+
+        snake3.&9710\'.8(*(+=# = function (*2) {
+          if (*2 >= 320) {
+            *2 -= 20;
+          }
+          return snake3.&9710\'.]7(#[[![*2 - 1];
+        };
+
+        snake3.&9710\'.-)?!8?# = function (*2, n) {
+          var v1 = 'Bravo ! Vous avez rammassé ' + n + ' fruits "' + snake3.&9710\'.8(*(+=#(*2) + '" !\n';
+          v1 += 'Vous pouvez maintenant utiliser ce fruit sur le Forum !';
+          return v1;
+        };
+
+        snake3.&9710\'.(-[][* = 0;
+        snake3.&9710\'.)-[][* = 0;
+        snake3.&9710\'.&2"95- = 700;
+        snake3.&9710\'.9) $)@" = 480;
+        snake3.&9710\'.(1)!2?! = 300;
+        snake3.&9710\'.?\'%")% = 22;
+        snake3.&9710\'.6!)-% # = 20;
+        snake3.&9710\'.$@\'|)$# = 10;
+        snake3.&9710\'.8%&)+*" = 375;
+        snake3.&9710\'.@)"4*)# = 60;
+        snake3.&9710\'.?}}-$0# = 150;
+        snake3.&9710\'.@\'65 1" = 0.004;
+        snake3.&9710\'.-%?]2## = 0.7;
+        snake3.&9710\'.773!6&# = -1;
+        snake3.&9710\'.8#!{+^ = 600;
+        snake3.&9710\'."%[-4? = 0;
+        snake3.&9710\'.}+6)+&" = 1;
+        snake3.&9710\'.6?&2@#! = 2;
+        snake3.&9710\'.8+[\'0& = 2;
+        snake3.&9710\'.{*(9%7" = 3;
+        snake3.&9710\'.)!!5-#" = 4;
+        snake3.&9710\'.)8*?+@! = 5;
+        snake3.&9710\'.%]8)-#" = 5;
+        snake3.&9710\'.]3)!3]! = 6;
+        snake3.&9710\'.#=)69$# = [340, 150, 40, 50, 100, 4, 60, 10, 15, 7, 5, 10, 50, 7, 2, 7, 200, 70, 5, 6, 4, 2, 20, 10, 40, 3, 400, 3, 30, 10, 12, 3, 9, 40, 15, 50, 5];
+        snake3.&9710\'.98^!36 = 39168;
+        snake3.&9710\'.9{!|2-! = 27648;
+        snake3.&9710\'.+}=$"%" = 9021109;
+        snake3.&9710\'.+}81&2" = 6391450;
+        snake3.&9710\'.|3|8|6 = 11396971;
+        snake3.&9710\'.2!4499! = 8575011;
+        snake3.&9710\'. *6$3) = 16711680;
+        snake3.&9710\'.$%48-!! = 10;
+        snake3.&9710\'.$93^9{# = 45;
+        snake3.&9710\'.$9"3+4" = 25;
+        snake3.&9710\'.$&#==+" = 45;
+        snake3.&9710\'.)|[##8# = 30;
+        snake3.&9710\'.%+=1! = 12.5;
+        snake3.&9710\'.84$^ 4# = 25;
+        snake3.&9710\'.!#(4@}! = 30;
+        snake3.&9710\'.6@^^]*" = 37.5;
+        snake3.&9710\'.#?54@)! = 6.3;
+        snake3.&9710\'.+03!"9# = 80 + random(80);
+        snake3.&9710\'.{|7$^* = 30;
+        snake3.&9710\'.6+7$ 6# = 30;
+        snake3.&9710\'.+)[7"7# = 30;
+        snake3.&9710\'.8!#?=}! = 60;
+        snake3.&9710\'.%)%39}" = 30;
+        snake3.&9710\'.]%481-! = 5;
+        snake3.&9710\'.6054&2! = [37, 39, 38, 49, 50, 51, 75, 76, 77, 103, 104, 105];
+        snake3.&9710\'.${[)=$! = 3.3;
+        snake3.&9710\'.-5]$${ = 0.125;
+        snake3.&9710\'.*]&3@^" = 3;
+        snake3.&9710\'.91@4|9! = 3;
+        snake3.&9710\'.[8)#!9" = 0.97;
+        snake3.&9710\'.(4[&6}# = 60;
+        snake3.&9710\'.34(0#7# = 0.03;
+        snake3.&9710\'.[8|-}| = 0.96;
+        snake3.&9710\'.-&2)45" = 12;
+        snake3.&9710\'.@0{17\' = [39168, 14622752, 15127302, 16750103];
+        snake3.&9710\'.@4?7*&" = [27648, 8655635, 10780678, 11819521];
+        snake3.&9710\'.|3  &*! = 'gameOver';
+        snake3.&9710\'.{257]! = 'connexion';
+        snake3.&9710\'.9"|8%5! = 'text';
+        snake3.&9710\'.9\'*?95# = 'resultat';
+        snake3.&9710\'.-@!1#5 = 'fruit';
+        snake3.&9710\'.5#\'{@6" = ['vert ', 'rouge ', 'jaune ', 'orange '];
+        snake3.&9710\'.62%}7@ = 'Egalité !';
+        snake3.&9710\'.8231&{ = 'Aucun ';
+        snake3.&9710\'.-{1&8@! = 'Devine ';
+        snake3.&9710\'.)1!1 [" = '? ';
+        snake3.&9710\'.)-1?%" = 'Merci de patienter quelques instants.';
+        snake3.&9710\'.0&\'4}?! = 'Démarrage du jeu...';
+        snake3.&9710\'.)-"*-{# = snake3.&9710\'.)-1?%";
+        snake3.&9710\'.5!%6*7" = 'ERREUR !';
+        snake3.&9710\'.07#73?! = 'Sauvegarde en cours...';
+        snake3.&9710\'.]1&%^2" = 'Résultats du Match :';
+        snake3.&9710\'.#$32#}# = 'Bravo ! vous avez battu votre record !';
+        snake3.&9710\'.5937"6" = ' Inconnu ';
+        snake3.&9710\'.@$$*%9# = 'Analyse en cours...';
+        snake3.&9710\'.-&"8]3# = 1;
+        snake3.&9710\'.0&"8]3# = 2;
+        snake3.&9710\'.*\'15?! = 1.5;
+        snake3.&9710\'.@%6[]6! = 0;
+        snake3.&9710\'.7#]3@0 = '&?)&=?"';
+        snake3.&9710\'.7!&)0{# = '&97|*("';
+        snake3.&9710\'.|?&?0{# = '3080+("';
+        snake3.&9710\'.*6^|(\'! = '7||"5"#';
+        snake3.&9710\'.3-5||)! = '6^&(&)"';
+        snake3.&9710\'.4-5||)! = '0}(7$|!';
+        snake3.&9710\'. *##]?" = '5@1^$]!';
+        snake3.&9710\'.=?}]@[" = ')$$=$6';
+        snake3.&9710\'.5(2 4$" = '7#0^{1!';
+        snake3.&9710\'.{*"615" = '29&1@*';
+        snake3.&9710\'.$${4= = '^\'088=!';
+        snake3.&9710\'.=+2^"[" = ')=6=05';
+        snake3.&9710\'.=-% 5& = ')74@"#"';
+        snake3.&9710\'."{[9+1# = '7-&383"';
+        snake3.&9710\'.2&-8#"# = '!^--[0"';
+        snake3.&9710\'.[1-6?- = '-[31#%"';
+        snake3.&9710\'.*#{66 # = '9\'!14*"';
+        snake3.&9710\'.62%*5|! = '%=4##]#';
+        snake3.&9710\'.41]@(+# = '#|&650"';
+        snake3.&9710\'.!55556! = '6& 66"#';
+        snake3.&9710\'.6|1%|4! = '8[|8^3"';
+        snake3.&9710\'.6?-^{1" = '8( 7=@"';
+        snake3.&9710\'.65}]6(# = '8(8"[4!';
+        snake3.&9710\'.]7(#[[! = [' pokiros ', 'pomme chauve', 'quartier de pomme', ' prunette ', ' gland ', ' goozblou ', 'noix de Gondomar', ' mornille ', ' grorange ', 'piwi rose', 'carotte douce', ' mousselin ', ' harikou ', 'amande fraîche', 'baie d\'Ouen', 'pain-pêche', 'prune marine', ' saccarolme ', ' citron ', ' dates ', ' fouillot ', 'oignon du Sahel', 'olivion confit', 'baie d\'Aran', 'raisin glinglin', ' peurangue ', 'cerise burlat', 'baie du Bourg', 'fouillot mure', ' girondine ', ' anemordorée ', ' nouaztek ', 'paire de girondines', 'abricot velu', 'fève de Barcelos', 'outres birmanes', ' Frougère ', 'kiwi bob\'s leg', ' zilmeon ', ' ivreprune ', ' pastavia ', 'figue de l\'abbe Santos', 'poire sableuse', ' poustil ', ' crocgnoles ', ' sarderose ', ' gramade ', ' noix ', ' grozine ', ' mangarine ', 'fraise feroce d\'outre-sang', 'bouton de pecanette', ' dolmitos ', 'pompine d\'Almansa', 'piastre aigre', 'jacquelin bossu', 'pêche papuleuse', ' florkebella ', 'coeur de Salamahari', 'coque d\'obeissance', 'ficus iberia', 'fruit d\'Ostrac', 'fruit de Lupox', 'pelote ougandaise', 'fouillot séché', 'prune triomphante', ' bogueraide ', ' moltereaux ', 'balauste latine', 'baie d\'Inah', ' gornales ', 'noisette de Chaperet', ' mossetoise ', 'merangue crispée', ' cookie ', 'pomme d\'Arnequin', 'perce-gazette', 'navet lacté', ' malegousse ', 'grasse-langue de Salignac', ' obustang ', 'paire de bolchevine', 'baie d\'Estipule', ' poiranque ', 'tranche de goujaunaine', ' ondines ', ' palmeran ', ' rongemirage ', 'niches d\'Armangaux', ' ficelode ', 'hisse-fièvre', 'festin du mendigot', ' pugne ', ' pruneau ', 'pastisson amère d\'Oberwart', 'cosse foraine', 'corne d\'abondance', 'bourraine vermeille', 'bile-du-diable', ' cipoline ', ' rosat ', 'pivoc d\'Aleöne ', ' tourmerande ', 'poire Packham', 'succul de Korma', ' Danoude ', 'cerise guillaume', 'noix du Sichuan', 'courte-baies malsone', 'noeud-de-brume', ' rogneron ', ' indigoyave ', ' clocheboise ', ' turmelin ', 'saramise ecailleuse', 'fraise-papillon', ' mangueponce ', 'mi-cannebille', ' florion ', 'tomates cireuses du Mexique', 'pêche Nelly', ' gorgamone ', ' cantebrise ', ' polyFrameole ', 'lustre d\'Hyperion', ' chavenagre ', ' elibaba ', 'palet-sucre de Catamarca', 'parmepugne frisée', 'citron velu d\'escampette', ' marapourpre ', ' cariano ', 'gousse de camerile', ' bolognos ', ' guignefauve ', 'musette du pèlerin', ' lichelen ', ' polkine ', 'opalin des Malouines', ' ganesouge ', 'régal de mirmelin', 'poivre-chaud de Bilbao', ' toxecarne ', ' pierrot ', ' chicoutai ', ' coulemelle ', ' solivatre ', 'parangon d\'Ispahan', ' pranterase ', 'mangue de Tulem', ' ecumides ', ' flasme ', ' poquecharde ', 'chaussette-du-pape', 'prune imperiale', ' saperin ', 'corne de boulingre', 'noix de coco', ' rostegibse ', ' geminicama ', ' saramiche ', 'pigne-reine', 'germe de cariano', ' fraiseraunes ', ' fauchelouge ', 'coloquinte ocre de Barbezieux', ' alnetrine ', 'larme du coquebin', 'grenat splendide de Manaus', 'maille d\'Oursan', ' furnegrise ', 'alberge bergaline', ' mandrelouste ', 'polne bourrelée', ' aigrette ', 'poire Bosc', 'fruit-du-guède', ' achegrèse ', ' morphéanulme ', ' veloutard ', 'dazongre molle de San Fernando', ' annelet ', 'prunes totemiques d\'Abigaël', ' kibis ', 'nacre de Carbet', ' hypoponacre ', 'prune hyaline de Borza', 'aumonière hirsute de Kaesong', 'rutabaga bicephale', ' goulveraide ', 'fane amere du Rousillon', 'birmes tondues', 'paneton aubé', ' pouillemine ', 'calebasse du wigam', 'polisson scléreux de masse-pierre', 'citron royal', ' pisquedine ', 'beuglante de Tachkent', 'baies rousses titanesque ', 'cyclatrice tourmentée', ' pansedisette ', ' fristelin ', 'pauline d\'aigue-sylvaine', 'violine d\'Istanbul', 'pescorelle gauloise', 'corympe géante de Hapevoie', 'prune-givre', ' jaboticaba ', 'agulme d\'Holmavik', ' bilimbi ', 'brochette de mochi', ' niguelion ', 'piffre d\'Aude', 'charme-janthe', 'yubi constellé', 'bulbe rosé de Gundagai', ' sorghine ', ' coquemyre ', 'orbière méditerranéenne', ' pangrelot ', 'mangue piquée de saoul-rosse', 'camelot de Louhans', 'triticale princière', ' pistelins ', ' moguerouge ', 'purnerine d\'Apollon', 'arbouse géante de Gobi', ' hyspenasse ', 'igname roux', 'courge funky', 'ecrin d\'Estoroth', 'gelée de cythere', ' pléthorane ', 'coiffe-matassin', ' dangarne ', ' pibom ', ' ambroisine ', ' argeraine ', ' noubab ', ' saccharide ', 'fuse d\'Op', ' nocemorte ', 'poursenaille fleurie de Bangkok', ' perlerrante ', 'cosserelle naine d\'Amandou', ' ravefane ', ' pulsenoire ', ' machepime ', 'courge poncte de Chicoutimi', 'salamaude houppée', 'suiffe-grappe', 'pognegrove de Selfoss', 'gorzine cassenadaise', ' folmerone ', 'noix-bigre', 'alouate safrinée', 'gros tas de mirabelles', 'brochette de moquenard', 'perle blanche', 'bocassin d\'espenil', 'sangre-ploie estoupé', 'aigledrupe géant', 'coscard mièvre des graves', 'pouc-marine', 'pêche-neige', 'tolmine supre d\'Astirmin', 'plume-grasse colossale', ' smarterine ', 'gossenaille cyclopéenne d\'Oblivion', ' monstropoire ', ' acolichte ', 'cornacre lancelin ', ' pachycourge ', 'esthioche singulière de Mont-Perron', ' oignefarge ', 'carambolisse d\'Ouperang', 'dangarne monumentale', 'kumquat ocre du Berhampur', 'anne-jumeleine', 'lorneline chanoine', 'perle dorée', 'colche-ventrue d\'Eluos', 'trovinelles des marais', 'polfregueuse de Casse-NaN', ' valseglante ', 'bideplune de Deorbalde', 'maltre-chat de bubenys', 'herculime dyaphane de Boguebrud', 'balzane galbée', 'pomme granite de Pitronde', 'caltesime de piong-ni', 'potironne joustre de biche-râle', 'noix de Goliath', 'hotte-de-Brande', 'pilme-en-pot', 'golfane d\'Iscanie', 'bille-changre des rebouteux', 'pocsin de mascarade', 'cornette mauve de Malaisie', 'pichte-aigre', ' prunesangue ', 'olcre délétère', 'mouchtre fétide', 'noeud-de-bile', 'flestrane de Gaubert', 'plaie de loutre', 'histre-taille', ' morsebrive ', ' flambergine ', ' limanide ', 'supplice du ka', 'navechulne des mâne-folles', 'mirges toxiques de Cuzco', 'ulsceme de Sapporo', 'grigue lépreuse ', 'poire-eventail', ' calveret ', 'acre-gose de Galacao', 'crese nauseabonde de Sult', 'lacherone d\'obbrefus', 'l\'infâme pamplefrousse'];
+        ASSetPropFlags(snake3.&9710\'.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 710 __Packages.asml.KeyManager {
+
+    #initclip
+      if (!_global.asml) {
+        _global.asml = new Object();
+      }
+      if (!_global.asml.7#-(0*") {
+        asml.7#-(0*" = function () {
+          if (asml.7#-(0*".]"6#2{# == null) {
+            this.%?] 63"();
+          }
+          this.%{ 1{-! = new Array();
+        };
+
+        var v1 = asml.7#-(0*".prototype;
+        v1.%?] 63" = function () {
+          var v1;
+          asml.7#-(0*".]"6#2{# = new Array();
+          v1 = 0;
+          while (v1 < 256) {
+            asml.7#-(0*".]"6#2{#[v1] = '?';
+            ++v1;
+          }
+          v1 = 65;
+          while (v1 <= 90) {
+            asml.7#-(0*".]"6#2{#[v1] = chr(v1);
+            ++v1;
+          }
+          v1 = 48;
+          while (v1 <= 57) {
+            asml.7#-(0*".]"6#2{#[v1] = chr(v1);
+            ++v1;
+          }
+          v1 = 96;
+          while (v1 <= 105) {
+            asml.7#-(0*".]"6#2{#[v1] = 'PavNum ' + (v1 - 96);
+            ++v1;
+          }
+          asml.7#-(0*".]"6#2{#[106] = 'PavNum *';
+          asml.7#-(0*".]"6#2{#[107] = 'PavNum +';
+          asml.7#-(0*".]"6#2{#[108] = 'PavNum Entrée';
+          asml.7#-(0*".]"6#2{#[109] = 'PavNum -';
+          asml.7#-(0*".]"6#2{#[110] = 'PavNum Suppr';
+          asml.7#-(0*".]"6#2{#[111] = 'PavNum /';
+          v1 = 112;
+          while (v1 <= 123) {
+            asml.7#-(0*".]"6#2{#[v1] = 'F ' + (v1 - 111);
+            ++v1;
+          }
+          asml.7#-(0*".]"6#2{#[8] = 'Retour';
+          asml.7#-(0*".]"6#2{#[9] = 'TAB';
+          asml.7#-(0*".]"6#2{#[12] = 'Supprimer';
+          asml.7#-(0*".]"6#2{#[13] = 'Entrée';
+          asml.7#-(0*".]"6#2{#[16] = 'Majuscule';
+          asml.7#-(0*".]"6#2{#[17] = 'Controle';
+          asml.7#-(0*".]"6#2{#[18] = 'Alt';
+          asml.7#-(0*".]"6#2{#[20] = 'Verr.Maj.';
+          asml.7#-(0*".]"6#2{#[27] = 'Echappe';
+          asml.7#-(0*".]"6#2{#[32] = 'Espace';
+          asml.7#-(0*".]"6#2{#[33] = 'Page préc.';
+          asml.7#-(0*".]"6#2{#[34] = 'Page suiv.';
+          asml.7#-(0*".]"6#2{#[35] = 'Fin';
+          asml.7#-(0*".]"6#2{#[36] = 'Début';
+          asml.7#-(0*".]"6#2{#[37] = 'Gauche';
+          asml.7#-(0*".]"6#2{#[38] = 'Haut';
+          asml.7#-(0*".]"6#2{#[39] = 'Droite';
+          asml.7#-(0*".]"6#2{#[40] = 'Bas';
+          asml.7#-(0*".]"6#2{#[45] = 'Insérer';
+          asml.7#-(0*".]"6#2{#[46] = 'Supprimer';
+          asml.7#-(0*".]"6#2{#[47] = 'Aide';
+          asml.7#-(0*".]"6#2{#[144] = 'VerrNum';
+          asml.7#-(0*".]"6#2{#[186] = '$ £';
+          asml.7#-(0*".]"6#2{#[187] = ' =  +';
+          asml.7#-(0*".]"6#2{#[189] = '- _';
+          asml.7#-(0*".]"6#2{#[191] = ': /';
+          asml.7#-(0*".]"6#2{#[192] = 'ù %';
+          asml.7#-(0*".]"6#2{#[219] = '° )';
+          asml.7#-(0*".]"6#2{#[220] = '* µ';
+          asml.7#-(0*".]"6#2{#[221] = '^ ¨';
+          asml.7#-(0*".]"6#2{#[222] = '²';
+        };
+
+        v1.%=24^=! = function (*2, 66}) {
+          this.%{ 1{-![*2] = 66};
+        };
+
+        v1.%=-^4+ = function (*2) {
+          return this.%{ 1{-![*2];
+        };
+
+        v1.=-80]! = function (66}) {
+          return asml.7#-(0*".]"6#2{#[66}];
+        };
+
+        asml.7#-(0*".]"6#2{# = null;
+        ASSetPropFlags(asml.7#-(0*".prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 711 __Packages.snake3.Moveable {
+
+    #initclip
+      if (!_global.snake3) {
+        _global.snake3 = new Object();
+      }
+      if (!_global.snake3.{48&89#) {
+        snake3.{48&89# = function () {
+          super();
+        };
+
+        snake3.{48&89# extends MovieClip;
+        var v1 = snake3.{48&89#.prototype;
+        v1.{41]9" = function () {
+          this.? = this._x;
+          this.@ = this._y;
+          this.[ = 0;
+          this.}*@5@8! = false;
+        };
+
+        v1.%[()?!! = function (?], @]) {
+          this.? = ?];
+          this.@ = @];
+          this.[ = 0;
+          this.}*@5@8! = false;
+          this.4@^(]$._visible = false;
+          this._x = this.?;
+          this._y = this.@;
+        };
+
+        v1.}* \'))" = function () {
+          return this.}*@5@8!;
+        };
+
+        v1.{{[}! = function () {
+          if (this.}*@5@8!) {
+            this.7 += 3&!$."))!# * this.9092^$;
+            if (this.7 >= 1) {
+              this.? = this.[[\'|-?";
+              this.@ = this.[%]["&#;
+              this.[ = 0;
+              this.4@^(]$._visible = false;
+              this.}*@5@8! = false;
+            } else {
+              this.? = this.7}"^9)! + (this.[[\'|-?" - this.7}"^9)!) * this.7;
+              this.@ = this.74=$8- + (this.[%]["&# - this.74=$8-) * this.7;
+              this.[ = this.+@]"^-! * this.7 * this.7 + this.-@]"^-! * this.7 + this.7#-062#;
+            }
+            if (this.[ != 0) {
+              this.4@^(]$._x = this.? + this.[ / 4;
+              this.4@^(]$._y = this.@ + this.[ / 3;
+              this.4@^(]$._xscale = (100 - this.[ / 2) * this.)+^3[$;
+              this.4@^(]$._yscale = (100 - this.[ / 2) * this.)+^3[$;
+            }
+            this._xscale = (100 + this.[) * this.)+^3[$;
+            this._yscale = (100 + this.[) * this.)+^3[$;
+            this._x = this.?;
+            this._y = this.@ - this.[;
+          }
+          return true;
+        };
+
+        v1.43%4{-! = function () {
+          var v1 = 3&!$."&41(0);
+          return v1;
+        };
+
+        v1.41#50@# = function () {
+          if (this.4@^(]$ == null) {
+            this.4@^(]$ = this.43%4{-!();
+          }
+          this.4@^(]$._visible = true;
+          this.4@^(]$._y = this.@;
+          this.4@^(]$._x = this.?;
+        };
+
+        v1.^4!750" = function (=*6!, 5&#|#, 9092^$, +3?6(}) {
+          this.9092^$ = 9092^$;
+          this.7}"^9)! = this.?;
+          this.74=$8- = this.@;
+          this.7#-062# = this.[;
+          this.7 = 0;
+          this.-@]"^-! = 5&#|# * 4 - this.[;
+          this.+@]"^-! = -this.-@]"^-! - this.[;
+          var v5 = random(360) / 6.283185307179586;
+          this.[[\'|-?" = this.? + Math.cos(v5) * =*6!;
+          this.[%]["&# = this.@ + Math.sin(v5) * =*6!;
+          var v4 = this._width / 2;
+          var v3 = this._height / 2;
+          if (this.[[\'|-?" - v4 < +3?6(}.-]#[! || this.[[\'|-?" + v4 > +3?6(}.?#?*6$ || this.[%]["&# - v3 < +3?6(}.*?@! || this.[%]["&# + v3 > +3?6(}.=-32(}) {
+            this.^4!750"(=*6!, 5&#|#, 9092^$, +3?6(});
+            return undefined;
+          }
+          this.41#50@#();
+          this.}*@5@8! = true;
+        };
+
+        v1.($|^ = function (9092^$) {
+          this.9092^$ = 9092^$;
+          this.7}"^9)! = this.?;
+          this.74=$8- = this.@;
+          this.7#-062# = this.[;
+          this.[[\'|-?" = this.?;
+          this.[%]["&# = this.@;
+          this.7 = 0;
+          this.+@]"^-! = 5;
+          this.-@]"^-! = -this.[ - this.+@]"^-!;
+          this.41#50@#();
+          this.}*@5@8! = true;
+        };
+
+        ASSetPropFlags(snake3.{48&89#.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 712 __Packages.snake3.Fruit {
+
+    #initclip
+      if (!_global.snake3) {
+        _global.snake3 = new Object();
+      }
+      if (!_global.snake3.|9$(&() {
+        snake3.|9$(&( = function () {
+          super();
+        };
+
+        snake3.|9$(&( extends snake3.{48&89#;
+        var v1 = snake3.|9$(&(.prototype;
+        v1.**3-! = function (7]"1]6, *2, '@{ #) {
+          this.{41]9"();
+          this.*2 = *2;
+          this.\'@{ # = '@{ #;
+          this.7]"1]6 = 7]"1]6;
+          this.&$9@78# = undefined;
+        };
+
+        v1.9989+% = function (|)"9| ") {
+          this.*2 = |)"9| ";
+          (3&!$.?1"|$!#(this, 'f')).gotoAndStop(this.*2);
+        };
+
+        v1.950}$!# = function () {
+          return this.*2;
+        };
+
+        v1.+^5*@|" = function () {
+          return snake3.&9710\'.+50#)}!(this.*2);
+        };
+
+        v1.|)1 = function (col) {
+          return this.[ == 0 && 3&!$.hitTest(this, col);
+        };
+
+        v1.43%4{-! = function () {
+          var v2 = this.7]"1]6.1$8"]5('|"8=0[', snake3.&9710\'.}+6)+&");
+          v2.gotoAndStop('ombre');
+          (3&!$.?1"|$!#(v2, 'f')).gotoAndStop(this.*2);
+          return v2;
+        };
+
+        v1.{{[}! = function () {
+          super.{{[}!();
+          if (this.}*@5@8!) {
+            return true;
+          } else {
+            this.\'@{ # -= 3&!$."))!#;
+            return this.\'@{ # > 0;
+          }
+        };
+
+        v1.]!98#8" = function () {
+          this.4@^(]$.removeMovieClip();
+          this.removeMovieClip();
+        };
+
+        v1.& #8-@! = function () {
+          this.&$9@78#(this);
+          this.gotoAndPlay('disparait');
+        };
+
+        v1.&{$0#4" = function (6) {
+          6.2(})}?#(this.*2);
+        };
+
+        v1.&75= @" = function (!) {
+          this.&$9@78# = !;
+        };
+
+        ASSetPropFlags(snake3.|9$(&(.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 713 __Packages.snake3.Snake {
+
+    #initclip
+      if (!_global.snake3) {
+        _global.snake3 = new Object();
+      }
+      if (!_global.snake3.]94 2+) {
+        snake3.]94 2+ = function (?%-7, {+1!) {
+          this.7]"1]6 = ?%-7;
+          this.color = snake3.&9710\'.98^!36;
+          this.$434@}# = snake3.&9710\'.9{!|2-!;
+          this.?(7 = ?%-7.@3-4*!(snake3.&9710\'.)!!5-#");
+          this.4?5 # = ?%-7.1$8"]5('4?5 #', snake3.&9710\'.)!!5-#");
+          this.9(^=6{# = 1;
+          this.9|#5@$" = 1;
+          this.26? 0$ = new Array();
+          this.0^2){-! = 3&!$.?1"|$!#(this.4?5 #, 'col');
+          this.0^2){-!._visible = false;
+          this.? = {+1!.?;
+          this.@ = {+1!.@;
+          this.3\' = 0;
+          this.4\' = 0;
+          this.}5# = 0;
+          this.|)1 = 0;
+          this.}54\'-)# = null;
+          this.\'|9894# = -100;
+          this.=58[0*" = snake3.&9710\'.-5]$${;
+          this.9092^$ = snake3.&9710\'.${[)=$!;
+          this.-1"! = snake3.&9710\'.*]&3@^";
+          this.[=!7 = 0;
+          this.08"0@2" = true;
+          this.-!]\']+ = false;
+          this."$^26{" = 0;
+          this.%1%)6=# = true;
+          this.!44^0$# = true;
+          this.+9&2?9" = false;
+          this.59182 ! = 100;
+          this.%$\']08! = -1;
+          var v2;
+          v2 = 0;
+          while (v2 < 50) {
+            this.26? 0$.push({+1!);
+            ++v2;
+          }
+        };
+
+        var v1 = snake3.]94 2+.prototype;
+        v1.855$@^ = function (!%#'!!) {
+          return this.26? 0$[Math.max(0, this.26? 0$.length - this.-1"! * 5 + !%#'!!)];
+        };
+
+        v1.{{[}! = function (+3?6(}) {
+          var v10 = 3&!$."))!#;
+          var v6 = false;
+          this.9092^$ += 3&!$."))!# / 10000;
+          if (this.|)1 > 0) {
+            this.|)1 -= this.9|#5@$" * v10 / 2;
+            this.%1%)6=# = true;
+            if (this.|)1 < 0 && this.}54\'-)# != null) {
+              --this.-1"!;
+              var v14 = this.}54\'-)#.||&*^(();
+              var v11 = this.855$@^(0);
+              v14.9989+%(this.95*5-6);
+              v14.%[()?!!(v11.?, v11.@);
+            }
+          }
+          if (this.\'|9894# != this.}5#) {
+            this.}5# -= int(this.}5# / 6.283185307179586) * Math.PI * 2;
+            this.\'|9894# = this.}5#;
+            this.3\' = Math.cos(this.}5#);
+            this.4\' = Math.sin(this.}5#);
+          }
+          var v5 = this.9092^$ * v10 * this.9(^=6{#;
+          if (!this.08"0@2") {
+            v5 = 0;
+          }
+          var v13 = Math.min(10 + this.-1"!, 18);
+          var v2 = {'?': snake3.&9710\'.(-[][* + this.? + this.3\' * v13, '@': snake3.&9710\'.)-[][* + this.@ + this.4\' * v13};
+          var v4 = int(v5 / 5) + 1;
+          while (v4 > 0) {
+            --v4;
+            var v3 = v4 > 0 ? 5 : v5 % 5;
+            v2.? += this.3\' * v3;
+            v2.@ += this.4\' * v3;
+            if (this.!44^0$# && this.?(7.hitTest(v2.?, v2.@, true)) {
+              v6 = true;
+              break;
+            }
+          }
+          this.? += this.3\' * v5;
+          this.@ += this.4\' * v5;
+          this.[=!7 += v5 / 5;
+          var v7 = {'?': this.?, '@': this.@};
+          while (this.[=!7 >= 1) {
+            --this.[=!7;
+            this.26? 0$.push(v7);
+            this.%1%)6=# = true;
+          }
+          var v9 = v2.? - snake3.&9710\'.(-[][*;
+          var v12 = v2.@ - snake3.&9710\'.)-[][*;
+          if (v9 < +3?6(}.-]#[! || v12 < +3?6(}.*?@! || v9 > +3?6(}.?#?*6$ || v12 > +3?6(}.=-32(}) {
+            if (this.+9&2?9") {
+              if (v9 < +3?6(}.-]#[! || v9 > +3?6(}.?#?*6$) {
+                this.3\' *= -1;
+              } else {
+                this.4\' *= -1;
+              }
+              this.}5# = Math.atan2(this.4\', this.3\');
+              snake3.7}}#$$!.725&"&!.play(snake3.&9710\'."{[9+1#);
+              this. "3){-! = v2;
+              return v6;
+            }
+            v6 = true;
+          }
+          this. "3){-! = v2;
+          return v6;
+        };
+
+        v1.3=85}2! = function () {
+          return this. "3){-!;
+        };
+
+        v1.7()(\'\' = function () {
+          return this.0^2){-!;
+        };
+
+        v1.[(= = function (7]) {
+          return this.?(7.hitTest(7].?, 7].@, true) || this.4?5 #.hitTest(7].?, 7].@, true);
+        };
+
+        v1.80[7 = function () {
+          var v2 = Math.min(10, this.-1"! + 3) / 10;
+          this.4?5 #._x = this.?;
+          this.4?5 #._y = this.@;
+          this.4?5 #._rotation = this.}5# * 180 / Math.PI;
+          this.4?5 #._xscale = 30 + 70 * v2;
+          this.4?5 #._yscale = 30 + 70 * v2;
+          if (!this.%1%)6=#) {
+            return undefined;
+          }
+          this.\'@{ # = getTimer() / 100;
+          this.%1%)6=# = false;
+          this.?(7.clear();
+          var v3 = this.color;
+          this.color = this.$434@}#;
+          this.2"8}[%"(v2, 8);
+          this.color = v3;
+          this.2"8}[%"(v2, 5);
+        };
+
+        v1.2"8}[%" = function ()+^3[$, 0^!&$#) {
+          var v7 = this.26? 0$.length - 1;
+          var v3 = this.26? 0$[v7];
+          var v8;
+          var v2;
+          var v11 = )+^3[$ * 15 / this.-1"!;
+          var v6;
+          var v10 = this.|)1 > 0;
+          var v5;
+          var v4;
+          this.?(7.moveTo(v3.?, v3.@);
+          if (3&!$."))!# < 1.7) {
+            v2 = this.-1"!;
+            while (v2 > 0) {
+              v3 = this.26? 0$[v7 - 5];
+              v8 = this.26? 0$[v7 - 2];
+              if (v10) {
+                v6 = Math.max(1, 2 - (v2 - this.|)1) * (v2 - this.|)1) / 2);
+              } else {
+                v6 = 1;
+              }
+              if (v2 == this.%$\']08!) {
+                v4 = this."3#5?5!;
+              } else {
+                v4 = this.color;
+              }
+              if (v2 == 1) {
+                v5 = this.59182 !;
+              } else {
+                v5 = 100;
+              }
+              this.?(7.lineStyle(v2 * v11 * v6 + 0^!&$#, v4, v5);
+              if (this.-!]\']+) {
+                var v9 = Math.cos(v2 + this.\'@{ #) * Math.min(6, this.-1"! - v2) * this."$^26{";
+                this.?(7.curveTo(v8.? + v9, v8.@ - v9, v3.? + v9, v3.@ - v9);
+              } else {
+                this.?(7.curveTo(v8.?, v8.@, v3.?, v3.@);
+              }
+              v7 -= 5;
+              --v2;
+            }
+          } else {
+            v2 = this.-1"!;
+            while (v2 > 0) {
+              v7 -= 5;
+              v3 = this.26? 0$[v7];
+              if (v10) {
+                v6 = Math.max(1, 2 - (v2 - this.|)1) * (v2 - this.|)1) / 2);
+              } else {
+                v6 = 1;
+              }
+              if (v2 == this.%$\']08!) {
+                v4 = this."3#5?5!;
+              } else {
+                v4 = this.color;
+              }
+              if (v2 == 1) {
+                v5 = this.59182 !;
+              } else {
+                v5 = 100;
+              }
+              this.?(7.lineStyle(v2 * v11 * v6 + 0^!&$#, v4, v5);
+              if (this.-!]\']+) {
+                var v9 = Math.cos(v2 + this.\'@{ #) * Math.min(6, this.-1"! - v2) * this."$^26{";
+                this.?(7.lineTo(v3.? + v9, v3.@ - v9);
+              } else {
+                this.?(7.lineTo(v3.?, v3.@);
+              }
+              --v2;
+            }
+          }
+        };
+
+        v1.2(})}?# = function ("54) {
+          this.95*5-6 = "54;
+          this.26? 0$.splice(0, Math.max(0, this.26? 0$.length - this.-1"! * 5 - 1));
+          var v3 = this.26? 0$[0];
+          var v2;
+          v2 = 0;
+          while (v2 < 10) {
+            this.26? 0$.unshift(v3);
+            ++v2;
+          }
+          ++this.-1"!;
+          this.%1%)6=# = true;
+          this.|)1 = int(this.-1"! - 1);
+        };
+
+        v1.reverse = function () {
+          var v6 = -1;
+          var v7 = 3&!$."&41(this.855$@^(v6));
+          var v5;
+          do {
+            v5 = 3&!$."&41(this.855$@^(v6++));
+          } while (v7 == v5 && v6 < 20);
+          this.26? 0$.splice(0, Math.max(0, this.26? 0$.length - this.-1"! * 5 - 1));
+          var v2;
+          var v3 = this.26? 0$.length;
+          v2 = 0;
+          while (v2 < int(v3 / 2)) {
+            var v4 = this.26? 0$[v2];
+            this.26? 0$[v2] = this.26? 0$[v3 - v2 - 1];
+            this.26? 0$[v3 - v2 - 1] = v4;
+            ++v2;
+          }
+          this.}5# = Math.atan2(v7.@ - v5.@, v7.? - v5.?);
+          this.? = v7.?;
+          this.@ = v7.@;
+          this.%1%)6=# = true;
+        };
+
+        v1.$02@#& = function (83$6", $={@1)#) {
+          if (83$6" != this.%$\']08!) {
+            this.%1%)6=# = true;
+          }
+          this.%$\']08! = 83$6";
+          this."3#5?5! = $={@1)#;
+        };
+
+        v1.@36-(]! = function ($76!) {
+          function @*(1]-#() {
+            var v3;
+            v3 = 0;
+            while (v3 < @*]2=-#.length) {
+              var v1 = @*]2=-#[v3];
+              var v2 = v1.9092^$ * 3&!$."))!#;
+              v1.!9._x += Math.cos(v1.}5#) * v2;
+              v1.!9._y += Math.sin(v1.}5#) * v2;
+              v1.!9._rotation += v2 * 10;
+              v1.!9._alpha -= v2 * 10;
+              if (v1.!9._alpha <= 0) {
+                v1.!9.removeMovieClip();
+                @*]2=-#.0|%77=#(v1);
+                --v3;
+              }
+              ++v3;
+            }
+            if (@*]2=-#.length == 0) {
+              snake3.7}}#$$!.)-=6[@#.0|%77=#(@*]2=-#, @*(50=#);
+            }
+          }
+
+          var v6 = this.26? 0$[this.26? 0$.length - this.-1"! * 5];
+          --this.-1"!;
+          var @*]2=-# = new Array();
+          var v4;
+          v4 = 0;
+          while (v4 < 10) {
+            var v2 = this.7]"1]6.1$8"]5('@3^#+0"', snake3.&9710\'.]3)!3]!);
+            var v9 = random(180) / Math.PI;
+            var v8 = 1 + random(100) / 100;
+            var v5 = new Color(v2);
+            v5.setRGB($76!);
+            v2._x = v6.?;
+            v2._y = v6.@;
+            @*]2=-#.push({'!9': v2, '}5#': v9, '9092^$': v8});
+            ++v4;
+          }
+          var @*(50=#;
+          @*(50=# = @*(1]-#;
+          snake3.7}}#$$!.)-=6[@#.push(@*]2=-#, @*(1]-#);
+          snake3.7}}#$$!.725&"&!.play(snake3.&9710\'.41]@(+#);
+          this.%1%)6=# = true;
+        };
+
+        v1.18) = function (83$6") {
+          this.-1"! -= 83$6";
+          this.%1%)6=# = true;
+        };
+
+        v1.]!98#8" = function () {
+          this.4?5 #.removeMovieClip();
+          this.?(7.removeMovieClip();
+        };
+
+        ASSetPropFlags(snake3.]94 2+.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 714 __Packages.asml.DepthManager {
+
+    #initclip
+      if (!_global.asml) {
+        _global.asml = new Object();
+      }
+      if (!_global.asml.7} |5$!) {
+        asml.7} |5$! = function (!9) {
+          this.0*?"&&" = !9;
+          this.+$84#$ = new Array();
+        };
+
+        var v1 = asml.7} |5$!.prototype;
+        v1.2(*5@! = function () {
+          return this.0*?"&&";
+        };
+
+        v1.$9(^)|# = function (9)1!) {
+          var v2 = this.+$84#$[9)1!];
+          if (v2 == undefined) {
+            v2 = {'("@!': new Array(), '-8)': 0};
+            this.+$84#$[9)1!] = v2;
+          }
+          return v2;
+        };
+
+        v1.*&-!2@# = function (76|0") {
+          var v7 = this.+$84#$[76|0"];
+          var v3 = v7.("@!;
+          var v6 = v7.-8);
+          var v2;
+          var v4 = 0;
+          var v5 = 76|0" * 1000;
+          v2 = 0;
+          while (v2 < v6) {
+            if (v3[v2]._name != null) {
+              v3[v2].swapDepths(v5 + v4);
+              v3[v4] = v3[v2];
+              ++v4;
+            }
+            ++v2;
+          }
+          v7.-8) = v4;
+        };
+
+        v1.1$8"]5 = function (&]3-!, 76|0") {
+          var v3 = this.$9(^)|#(76|0");
+          var v6 = v3.("@!;
+          var v2 = v3.-8);
+          if (v2 == 1000) {
+            this.*&-!2@#(76|0");
+            return this.1$8"]5(&]3-!, 76|0");
+          }
+          var v4 = 3&!$.21*1|+!(this.0*?"&&", &]3-!, v2 + 76|0" * 1000);
+          v6[v2] = v4;
+          ++v3.-8);
+          return v4;
+        };
+
+        v1.@3-4*! = function (76|0") {
+          var v3 = this.$9(^)|#(76|0");
+          var v6 = v3.("@!;
+          var v2 = v3.-8);
+          if (v2 == 1000) {
+            this.*&-!2@#(76|0");
+            return this.@3-4*!(76|0");
+          }
+          var v4 = 3&!$.]()?5+"(this.0*?"&&", v2 + 76|0" * 1000);
+          v6[v2] = v4;
+          ++v3.-8);
+          return v4;
+        };
+
+        v1.@86&)|! = function (!9, 76|0") {
+          var v3 = this.$9(^)|#(76|0");
+          var v5 = v3.("@!;
+          var v2 = v3.-8);
+          if (v2 == 1000) {
+            this.*&-!2@#(76|0");
+            return this.@86&)|!(!9, 76|0");
+          }
+          v5[v2] = !9;
+          ++v3.-8);
+          return v2 + 76|0" * 1000;
+        };
+
+        v1.*(+{" = function (!9, 76|0") {
+          var v6 = int(!9.getDepth() / 1000);
+          if (v6 == 76|0") {
+            return undefined;
+          }
+          var v7 = this.$9(^)|#(v6);
+          var v3 = v7.("@!;
+          var v5 = v7.-8);
+          var v2;
+          v2 = 0;
+          while (v2 < v5) {
+            if (v3[v2] == !9) {
+              v3[v2] = null;
+              break;
+            }
+            ++v2;
+          }
+          !9.swapDepths(this.@86&)|!(!9, 76|0"));
+        };
+
+        v1.35}--% = function (!9) {
+          var v3 = !9.getDepth();
+          var v5 = int(v3 / 1000);
+          var v6 = this.$9(^)|#(v5);
+          var v2 = v6.("@!;
+          var v4 = v3 % 1000;
+          if (v2[v4] == !9) {
+            v2[v4] = null;
+            v2.unshift(!9);
+            ++v6.-8);
+            this.*&-!2@#(v5);
+          }
+        };
+
+        v1. 4!*" = function (!9) {
+          var v2 = !9.getDepth();
+          var v5 = int(v2 / 1000);
+          var v3 = this.$9(^)|#(v5);
+          var v4 = v3.("@!;
+          var v7 = v2 % 1000;
+          if (v4[v7] == !9) {
+            v4[v7] = null;
+            if (v3.-8) == 1000) {
+              this.*&-!2@#(v5);
+            }
+            v2 = v3.-8);
+            ++v3.-8);
+            !9.swapDepths(v2 + v5 * 1000);
+            v4[v2] = !9;
+          }
+        };
+
+        v1.clear = function (76|0") {
+          var v3 = this.$9(^)|#(76|0");
+          var v2;
+          var v4 = v3.("@!;
+          v2 = 0;
+          while (v2 < v3.-8)) {
+            v4[v2].removeMovieClip();
+            ++v2;
+          }
+          v3.-8) = 0;
+        };
+
+        v1.]!98#8" = function () {
+          for (var v2 in this.+$84#$) {
+            this.clear(v2);
+          }
+        };
+
+        ASSetPropFlags(asml.7} |5$!.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 715 __Packages.asml.NumberMC {
+
+    #initclip
+      if (!_global.asml) {
+        _global.asml = new Object();
+      }
+      if (!_global.asml.=  93+!) {
+        asml.=  93+! = function () {
+          super();
+        };
+
+        asml.=  93+! extends MovieClip;
+        var v1 = asml.=  93+!.prototype;
+        v1.**3-! = function (#82[!) {
+          this.#82[! = #82[!;
+          this.)&%! = new Array();
+          this.align = 0;
+          this.=76 &6! = 0;
+          this.[9|! = -1;
+          this.55*8+%(0);
+        };
+
+        v1.366(%! = function () {
+          this.align |= 1;
+        };
+
+        v1.3\'88%9" = function () {
+          this.align |= 2;
+        };
+
+        v1.55*8+% = function (9) {
+          if (9 == this.[9|!) {
+            return undefined;
+          }
+          this.clear();
+          var v2 = 0;
+          var v5 = this.=76 &6!;
+          this.[9|! = 9;
+          if (9 == 0) {
+            var v3 = 3&!$.21*1|+!(this, this.#82[!, v2);
+            v3.gotoAndStop(String(1));
+            v5 -= -v3._width + this.=76 &6!;
+            v3._x = -v5;
+            this.)&%!.push(v3);
+          } else {
+            while (9 > 0) {
+              var v3 = 3&!$.21*1|+!(this, this.#82[!, v2++);
+              v3.gotoAndStop(String(1 + 9 % 10));
+              v5 -= v3._width + this.=76 &6!;
+              v3._x = v5;
+              this.)&%!.push(v3);
+              9 = int(9 / 10);
+            }
+          }
+          if (this.align & true) {
+            v5 += this.=76 &6!;
+            v5 /= 2;
+            v5 = Math.abs(v5);
+            v2 = 0;
+            while (v2 < this.)&%!.length) {
+              this.)&%![v2]._x += v5;
+              ++v2;
+            }
+          }
+          if (this.align & true) {
+            var v6 = this.)&%![0]._height / 2;
+            v2 = 0;
+            while (v2 < this.)&%!.length) {
+              this.)&%![v2]._y -= v6;
+              ++v2;
+            }
+          }
+        };
+
+        v1.clear = function () {
+          var v2;
+          v2 = 0;
+          while (v2 < this.)&%!.length) {
+            this.)&%![v2].removeMovieClip();
+            ++v2;
+          }
+          this.)&%! = new Array();
+        };
+
+        ASSetPropFlags(asml.=  93+!.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 716 __Packages.snake3.Popup {
+
+    #initclip
+      if (!_global.snake3) {
+        _global.snake3 = new Object();
+      }
+      if (!_global.snake3.&1\'^9*) {
+        snake3.&1\'^9* = function () {
+          super();
+        };
+
+        snake3.&1\'^9* extends asml.=  93+!;
+        var v1 = snake3.&1\'^9*.prototype;
+        v1.!2{#1#! = function () {
+          if (this.+@#(!}") {
+            this.\'![?$$ -= 3&!$.$4*}!?!;
+            if (this.\'![?$$ < 0) {
+              this.+4|-3-" = true;
+              this.+^4)&[" = true;
+              this.+@#(!}" = false;
+            } else {
+              return undefined;
+            }
+          }
+          if (this.+4|-3-") {
+            this.\'%?7%& += 3&!$.$4*}!?! * this.98&|)0";
+          }
+          if (this.+^4)&[") {
+            this.={\'?0& += 3&!$.$4*}!?! * this.9 [[}[";
+          }
+          this._xscale = this.\'%?7%& * this.{60"22;
+          this._yscale = this.={\'?0& * this.{60"22;
+          if (this.\'![?$$ > 0) {
+            if (this.+4|-3-" && this.\'%?7%& > 1) {
+              this.+4|-3-" = false;
+              if (!this.+^4)&[") {
+                this.+@#(!}" = true;
+              }
+              this.98&|)0" *= -1;
+            }
+            if (this.+^4)&[" && this.={\'?0& > 1) {
+              this.+^4)&[" = false;
+              if (!this.+4|-3-") {
+                this.+@#(!}" = true;
+              }
+              this.9 [[}[" *= -1;
+            }
+          }
+          if (this.98&|)0" < 0 && this.\'%?7%& <= 0.3 || this.9 [[}[" < 0 && this.={\'?0& <= 0.3) {
+            this.2|=!!.)-=6[@#.0|%77=#(this, this.!2{#1#!);
+            this.removeMovieClip();
+          }
+        };
+
+        v1.&^9+)+" = function (', ?, @, n) {
+          this.2|=!! = ';
+          super.**3-!(n < 0 ? '!^&\'8[!' : '"@")52"');
+          this.366(%!();
+          this.3\'88%9"();
+          this.55*8+%(Math.abs(n));
+          if (n < 0) {
+            var v3 = 3&!$.21*1|+!(this, '#%{ 4', 100);
+            v3._x = this.)&%![0]._x + this.)&%![0]._width + 5;
+            v3._y = this.)&%![0]._y;
+            v3 = 3&!$.21*1|+!(this, '#%{ 4', 101);
+            v3._x = this.)&%![this.)&%!.length - 1]._x - 38;
+            v3._y = this.)&%![0]._y;
+          }
+          this._x = ?;
+          this._y = @;
+          this._xscale = 0;
+          this._yscale = 0;
+          this.\'%?7%& = 0;
+          this.={\'?0& = 0;
+          this.\'![?$$ = 1;
+          this.{60"22 = 50 + Math.abs(n) / 100;
+          if (this.{60"22 > 200) {
+            this.{60"22 = 200;
+          }
+          this.98&|)0" = (1 + random(10) / 10) / 0.4;
+          this.9 [[}[" = (1 + random(10) / 10) / 0.4;
+          this.+4|-3-" = true;
+          this.+^4)&[" = true;
+          this.+@#(!}" = false;
+          this.2|=!!.)-=6[@#.push(this, this.!2{#1#!);
+        };
+
+        ASSetPropFlags(snake3.&1\'^9*.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 717 __Packages.snake3.Game {
+
+    #initclip
+      if (!_global.snake3) {
+        _global.snake3 = new Object();
+      }
+      if (!_global.snake3.}!9|$) {
+        snake3.}!9|$ = function (!9) {
+          this.7]"1]6 = new asml.7} |5$!(!9);
+          this.)-=6[@# = new asml.[)^!7?!();
+          this.%4$5[$ = 0;
+          this.3\'6%}8! = 0;
+          this.=+|}1+" = 0;
+          this.9}\'#1%" = 1;
+          this.*){&-# = snake3.&9710\'.91@4|9!;
+          this.pause = false;
+          this.$\'9)](! = 1;
+          this.$}78!\' = 1;
+          this.(^63*#! = true;
+          this.0651&5! = false;
+          var v7 = this.7]"1]6.1$8"]5('%)==84', snake3.&9710\'.)8*?+@!);
+          v7._x = snake3.&9710\'.&2"95-;
+          this.89@&\') = 3&!$."&41(this.7]"1]6.1$8"]5('$-@0(2#', snake3.&9710\'.)8*?+@!));
+          this.89@&\').**3-!(']!4?@|"');
+          this.89@&\')._x = snake3.&9710\'.&2"95- - snake3.*^9|7).|$)&?);
+          this.89@&\')._y = 30;
+          snake3.7}}#$$!.725&"&!.setVolume(snake3.&9710\'.0&"8]3#, 0);
+          snake3.7}}#$$!.725&"&!.49{^(snake3.&9710\'.-&"8]3#, snake3.&9710\'.0&"8]3#, snake3.&9710\'.*\'15?!);
+          snake3.7}}#$$!.725&"&!.loop(snake3.&9710\'.7!&)0{#, snake3.&9710\'.0&"8]3#);
+          this.45!@65" = 0;
+          this.8=}=%5# = this.7]"1]6.1$8"]5('45!@65"', snake3.&9710\'.)8*?+@!);
+          this.8=}=%5#._x = snake3.*^9|7).|$)&?);
+          this.8=}=%5#._y = snake3.&9710\'.9) $)@" - snake3.*^9|7)."2}[&\'#;
+          this.99$@[8# = 0;
+          snake3.!$+35.!?7*&.3}-82]# = 0;
+          snake3.!$+35.%=)&}%".[45+(\'# = false;
+          this.slots = new Array();
+          this.=90-? " = new Array();
+          this.0-\'{53" = false;
+          this.%6|"(3" = true;
+          this.&+"[#9! = true;
+          this.*}^#"# = new snake3.*^9|7)(this.7]"1]6);
+          var v3 = this.*}^#"#.?5|!|-!;
+          v3 = {'?': v3.?, '@': v3.@};
+          v3.? += 50;
+          v3.@ += 50;
+          this.]@=%^$ = new snake3.]94 2+(this.7]"1]6, v3);
+          var v5 = this.7]"1]6.1$8"]5('\'4=!#', snake3.&9710\'.}+6)+&");
+          v5._x = v3.?;
+          v5._y = v3.@;
+          this.\'4=!# = new asml.*5*9$0(v5, 100, 0, 0, 3, 1, 0, 0, 0);
+          this.81\'(@?" = new Array();
+          var v2;
+          v2 = 0;
+          while (v2 < snake3.&9710\'.#=)69$#.length) {
+            this.81\'(@?"[v2] = snake3.&9710\'.#=)69$#[v2];
+            ++v2;
+          }
+          this.47$54$! = new Array();
+          for (var v4 in snake3.+")}?]!.\'@\'3?9") {
+            this.47$54$![v4] = snake3.+")}?]!.\'@\'3?9"[v4] >= snake3.&9710\'.6!)-% #;
+          }
+          this.]@=%^$.}5# = 0.7853981633974483;
+          this.!9 = !9;
+          this.$#?*[]" = new Color(!9);
+        };
+
+        var v1 = snake3.}!9|$.prototype;
+        v1.&+-6*5 = function (f) {
+          if (this.&+"[#9!) {
+            f.&{$0#4"(this.]@=%^$);
+          }
+        };
+
+        v1.close = function () {
+          this.7]"1]6.]!98#8"();
+          this.$#?*[]".setTransform({'ra': 100, 'rb': 0, 'ba': 100, 'bb': 0, 'ga': 100, 'gb': 0, 'aa': 100, 'ab': 0});
+        };
+
+        v1.3{17+| = function () {
+          this.]@=%^$.|)1 = -1;
+          this.slots[0].!?}4}](false);
+          var v2;
+          v2 = 0;
+          while (v2 < this.slots.length) {
+            this.slots[v2].close();
+            ++v2;
+          }
+          v2 = 0;
+          while (v2 < this.=90-? ".length) {
+            this.=90-? "[v2].close();
+            ++v2;
+          }
+          this.0651&5! = true;
+          if (this.]@=%^$.-1"! == 0) {
+            this.]@=%^$.4?5 #._visible = false;
+          }
+          snake3.7}}#$$!.725&"&!.setVolume(snake3.&9710\'.-&"8]3#, 0);
+          snake3.7}}#$$!.725&"&!.49{^(snake3.&9710\'.0&"8]3#, snake3.&9710\'.-&"8]3#, snake3.&9710\'.*\'15?!);
+          snake3.7}}#$$!.725&"&!.$(0=(}(snake3.&9710\'.|?&?0{#, snake3.&9710\'.-&"8]3#);
+        };
+
+        v1.endGame = function () {
+          function @*9"16() {
+            #9.endGame();
+          }
+
+          var #9 = this;
+          for (var v4 in snake3.+")}?]!.\'@\'3?9") {
+            if (snake3.+")}?]!.\'@\'3?9"[v4] > snake3.&9710\'.6!)-% # - 1 && !this.47$54$![v4]) {
+              this.47$54$![v4] = true;
+              var v3 = this.(=(4(5!;
+              var v2 = this.7]"1]6.@3-4*!(snake3.&9710\'.)8*?+@!);
+              this.(=(4(5! = new snake3.(#4{&(v2, snake3.&9710\'.-@!1#5, snake3.&9710\'.-)?!8?#(v4, snake3.+")}?]!.\'@\'3?9"[v4]));
+              this.(=(4(5!.|3=5$=(v4);
+              this.(=(4(5!.@$(78@(@*9"16);
+              v3.]!98#8"();
+                            return undefined;
+            }
+          }
+          snake3.7}}#$$!.}]#[0]#();
+        };
+
+        v1.?{6{[8" = function (7'[!) {
+          function @*9"16() {
+            #9.endGame();
+          }
+
+          this.(=(4(5!.3"-$[2(snake3.&9710\'.|3  &*!);
+          this.(=(4(5!.([698!!(7'[!);
+          var #9 = this;
+          this.(=(4(5!.@$(78@(@*9"16);
+        };
+
+        v1.&$-]%$ = function (f) {
+          if (this.(^63*#! && f.+^5*@|"() > 0) {
+            this.45!@65" += snake3.&9710\'.773!6&#;
+            if (this.45!@65" < 0) {
+              this.45!@65" = 0;
+            }
+          }
+        };
+
+        v1.!\' [= " = function (*2) {
+          return *2 == 8 || *2 == 12 || *2 == 14 || *2 == 21 || *2 == 28 || *2 == 31 || *2 == 33;
+        };
+
+        v1.&{# 84! = function (6) {
+          if (6.08})(\'#()) {
+            this.slots[0].!?}4}](false);
+            this.slots.unshift(6);
+            var v2;
+            v2 = 0;
+            while (v2 < this.slots.length) {
+              this.slots[v2].8+89?8#(v2);
+              ++v2;
+            }
+            this.slots[0].!?}4}](true);
+          } else {
+            6.8+89?8#(this.slots.length);
+            this.slots.push(6);
+          }
+        };
+
+        v1.&"@ +4" = function (6) {
+          this.=90-? ".unshift(6);
+          var v2;
+          v2 = 0;
+          while (v2 < this.=90-? ".length) {
+            this.=90-? "[v2].8+89?8#(9.5 - v2);
+            ++v2;
+          }
+        };
+
+        v1.&-6\'8 " = function (6) {
+          6.close();
+          this.slots.0|%77=#(6);
+          var v2;
+          v2 = 0;
+          while (v2 < this.slots.length) {
+            this.slots[v2].8+89?8#(v2);
+            ++v2;
+          }
+          this.slots[0].!?}4}](true);
+        };
+
+        v1.&"0$\'0" = function (6) {
+          6.close();
+          this.=90-? ".0|%77=#(6);
+          var v2;
+          v2 = 0;
+          while (v2 < this.=90-? ".length) {
+            this.=90-? "[v2].8+89?8#(9.5 - v2);
+            ++v2;
+          }
+        };
+
+        v1.!8"!4@" = function (") {
+          var v3 = snake3.&9710\'.$${4=;
+          switch (".*2) {
+            case 1:
+            case 2:
+            case 3:
+              this.&{# 84!(new snake3.!$+35.5@5908!(this, ".*2));
+              break;
+            case 4:
+              this.&{# 84!(new snake3.!$+35.29-&*((this));
+              break;
+            case 5:
+              v3 = snake3.&9710\'.=?}]@[";
+              snake3.!$+35.)$*283.!?}4}](this, "._x, "._y);
+              break;
+            case 6:
+              v3 = snake3.&9710\'.[1-6?-;
+              this.&{# 84!(new snake3.!$+35.]5[#!1#(this));
+              break;
+            case 7:
+              this.&{# 84!(new snake3.!$+35.="#06[!(this, "._x, "._y));
+              break;
+            case 8:
+              this.&"@ +4"(new snake3.!$+35.\'((\'#\'(this));
+              break;
+            case 9:
+              v3 = snake3.&9710\'.[1-6?-;
+              this.&{# 84!(new snake3.!$+35.\'&$^|)#(this));
+              break;
+            case 10:
+              v3 = snake3.&9710\'.[1-6?-;
+              this.&{# 84!(new snake3.!$+35.#|663+"(this));
+              break;
+            case 11:
+              v3 = snake3.&9710\'.[1-6?-;
+              this.&{# 84!(new snake3.!$+35.%)?]72!(this));
+              break;
+            case 12:
+              this.&"@ +4"(new snake3.!$+35.7-**|*"(this));
+              break;
+            case 13:
+              this.&{# 84!(new snake3.!$+35.82|2+$#(this));
+              break;
+            case 14:
+              this.&"@ +4"(new snake3.!$+35.^{#]76#(this));
+              break;
+            case 15:
+              v3 = snake3.&9710\'.[1-6?-;
+              this.&{# 84!(new snake3.!$+35.{{@7 0#(this));
+              break;
+            case 16:
+              snake3.!$+35.@5+++\'.!?}4}](this, "._x, "._y);
+              break;
+            case 17:
+              snake3.!$+35.@?{6[0#.!?}4}](this, false);
+              break;
+            case 18:
+              snake3.!$+35.@?{6[0#.!?}4}](this, true);
+              break;
+            case 19:
+              this.&{# 84!(new snake3.!$+35.0%!+%\'(this));
+              break;
+            case 20:
+              v3 = snake3.&9710\'.[1-6?-;
+              this.&{# 84!(new snake3.!$+35.{!3! 2#(this));
+              break;
+            case 21:
+              this.&"@ +4"(new snake3.!$+35.={\'19*(this));
+              break;
+            case 22:
+              snake3.!$+35.|02%&.!?}4}](this);
+              break;
+            case 23:
+              var v4 = new snake3.!$+35.\'8!0+ "(this, "._rotation, "._x, "._y);
+              break;
+            case 24:
+              var v4 = new snake3.!$+35.]!?70$"(this, "._x, "._y);
+              break;
+            case 25:
+              v3 = snake3.&9710\'.[1-6?-;
+              this.&{# 84!(new snake3.!$+35.27!$30(this));
+              break;
+            case 26:
+              v3 = snake3.&9710\'.[1-6?-;
+              this.&{# 84!(new snake3.!$+35.% 7$|+#(this));
+              break;
+            case 27:
+              v3 = snake3.&9710\'.=-% 5&;
+              snake3.!$+35.!?7*&.!?}4}](this);
+              snake3.7}}#$$!.725&"&!.stop(snake3.&9710\'.@%6[]6!);
+              break;
+            case 28:
+              this.&"@ +4"(new snake3.!$+35.]}#-7""(this));
+              break;
+            case 29:
+              snake3.!$+35.!0)[26.!?}4}](this, "._x, "._y);
+              break;
+            case 30:
+              var v4 = new snake3.!$+35.[*${0\'(this, "._x, "._y);
+              break;
+            case 31:
+              this.&"@ +4"(new snake3.!$+35.%=)&}%"(this));
+              break;
+            case 32:
+              v3 = snake3.&9710\'.=+2^"[";
+              snake3.!$+35.)=@2|2.!?}4}](this);
+              break;
+            case 33:
+              this.&"@ +4"(new snake3.!$+35.47}=?-"(this));
+              break;
+            case 34:
+              v3 = snake3.&9710\'.2&-8#"#;
+              snake3.!$+35.!^%"0+.!?}4}](this);
+              break;
+            case 35:
+              v3 = snake3.&9710\'.=?}]@[";
+              snake3.!$+35.]8(?3!!.!?}4}](this, "._x, "._y);
+              break;
+            case 36:
+              this.&{# 84!(new snake3.!$+35.=-7*&(this));
+              break;
+            case 37:
+              v3 = snake3.&9710\'.[1-6?-;
+              this.&{# 84!(new snake3.!$+35.=^1[1+"(this));
+          }
+          ".]!98#8"();
+          if (v3 != null) {
+            snake3.7}}#$$!.725&"&!.play(v3);
+          }
+        };
+
+        v1.952}&? = function () {
+          return Math.min(1 + random(Math.round(snake3.&9710\'.@)"4*)# + this.45!@65" * 1.6)), snake3.&9710\'.(1)!2?!);
+        };
+
+        v1.&40!$$ = function (?, @, 7'[!) {
+          var v2 = 3&!$."&41(this.7]"1]6.1$8"]5('"(9?{)"', snake3.&9710\'.]3)!3]!));
+          v2.&^9+)+"(this, ?, @, 7'[!);
+        };
+
+        v1.||&*^( = function () {
+          function &7{7 "(f) {
+            #9.&$-]%$(f);
+          }
+
+          var v3 = this.952}&?();
+          if (random(100) == 0) {
+            v3 = int((v3 - 1) * snake3.&9710\'.?\'%")% / snake3.&9710\'.(1)!2?!) + 321;
+          }
+          var v2 = this.*}^#"#.| -^99"(v3);
+          v2.\'@{ # *= this.$}78!\';
+          var #9 = this;
+          v2.&75= @"(&7{7 ");
+          return v2;
+        };
+
+        v1.!)\'0]\' = function () {
+          var v2 = 1 + 3&!$.@315}=(this.81\'(@?");
+          var v3 = this.*}^#"#.!+-}88"(v2);
+          if (this.!\' [= "(v2)) {
+            this.81\'(@?"[v2 - 1] = 0;
+          }
+          return v3;
+        };
+
+        v1.|*?23!" = function (f) {
+          this.&+-6*5(f);
+          if (random(2) == 0) {
+            snake3.7}}#$$!.725&"&!.play(snake3.&9710\'.3-5||)!);
+          } else {
+            snake3.7}}#$$!.725&"&!.play(snake3.&9710\'.4-5||)!);
+          }
+          var v3 = f.950}$!#();
+          if (snake3.+")}?]!.\'@\'3?9"[v3] == undefined) {
+            snake3.+")}?]!.\'@\'3?9"[v3] = 1;
+          } else {
+            ++snake3.+")}?]!.\'@\'3?9"[v3];
+          }
+          var v4 = f.+^5*@|"() * this.$\'9)](!;
+          this.%4$5[$ += v4;
+          this.&40!$$(f._x, f._y, v4);
+          this.45!@65" += snake3.&9710\'.-%?]2##;
+          f.]!98#8"();
+        };
+
+        v1.main = function () {
+          var v4 = 3&!$."))!#;
+          if (snake3.7)^5*[!.6^8%7$) {
+            var v2;
+            v2 = 0;
+            while (v2 < 10) {
+              if (Key.isDown(v2 + 48) || Key.isDown(v2 + 96)) {
+                if (this.]!$1&]" != v2) {
+                  this.]!$1&]" = v2;
+                  if (this.99$@[8# == 0) {
+                    this.99$@[8# = v2 + 1;
+                  } else {
+                    var v3 = (this.99$@[8# - 1) * 10 + v2;
+                    this.*}^#"#.!+-}88"(v3);
+                    this.99$@[8# = 0;
+                  }
+                }
+                break;
+              }
+              ++v2;
+            }
+            if (v2 == 10) {
+              this.]!$1&]" = -1;
+            }
+          }
+          if (this.pause) {
+            if (!snake3.7}}#$$!.7%1+$-!.forcePause && Key.isDown(27)) {
+              if (!this.07+90}#) {
+                this.pause = false;
+                this.07+90}# = true;
+                this.%)4-1?#.removeMovieClip();
+              }
+            } else {
+              this.07+90}# = false;
+            }
+            return undefined;
+          }
+          this.)-=6[@#.main();
+          if (this.%4$5[$ < 0) {
+            this.%4$5[$ = 0;
+          }
+          this.89@&\').55*8+%(this.%4$5[$);
+          if (this.0651&5!) {
+            if (this.]@=%^$.-1"! > 0) {
+              var v6 = 4;
+              if (this.]@=%^$.-1"! > 10) {
+                v6 = 3;
+              }
+              if (this.]@=%^$.-1"! > 50) {
+                v6 = 2;
+              }
+              if (this.]@=%^$.-1"! > 100) {
+                v6 = 1;
+              }
+              if (this.3\'6%}8!++ % Math.max(1, int(v6 / 3&!$."))!#)) == 0) {
+                this.]@=%^$.@36-(]!(this.]@=%^$.color);
+              }
+              if (this.]@=%^$.-1"! == 0) {
+                this.]@=%^$.4?5 #._visible = false;
+              }
+              this.]@=%^$.80[7();
+            } else {
+              if (this.(=(4(5! == null) {
+                this.(=(4(5! = new snake3.(#4{&(this.7]"1]6.@3-4*!(snake3.&9710\'.)8*?+@!), snake3.&9710\'.{257]!, snake3.&9710\'.07#73?!);
+                for (var v13 in snake3.+")}?]!.\'@\'3?9") {
+                  if (snake3.+")}?]!.\'@\'3?9"[v13] > snake3.&9710\'.6!)-% # - 1 && !this.47$54$![v13]) {
+                    snake3.7}}#$$!.7%1+$-!.giveItem('Fruit ' + v13);
+                  }
+                }
+                snake3.7}}#$$!.saveScore(this.%4$5[$);
+              }
+            }
+            this.(=(4(5!.main();
+            return undefined;
+          }
+          this.\'4=!#.main();
+          if (this.\'4=!#.[ < 3) {
+            this.\'4=!#.]!98#8"();
+            this.\'4=!# = null;
+          }
+          this.45!@65" -= snake3.&9710\'.@\'65 1" * v4;
+          if (this.45!@65" < 0) {
+            this.45!@65" = 0;
+          } else {
+            if (this.45!@65" > snake3.&9710\'.?}}-$0#) {
+              this.45!@65" = snake3.&9710\'.?}}-$0#;
+            }
+          }
+          var v10 = (this.45!@65" / snake3.&9710\'.?}}-$0#) * (snake3.&9710\'.&2"95- - 125);
+          var v5 = 3&!$.?1"|$!#(this.8=}=%5#, 'mid');
+          if (v5._width != v10) {
+            v5._width = v5._width * 0.9 + v10 * 0.1;
+            (3&!$.?1"|$!#(this.8=}=%5#, 'b2'))._x = (3&!$.?1"|$!#(this.8=}=%5#, 'b1'))._x + v5._width;
+          }
+          if (random(Math.round(100 / v4)) == 0) {
+            (3&!$.?1"|$!#(this.]@=%^$.4?5 #, 'o1')).play();
+            (3&!$.?1"|$!#(this.]@=%^$.4?5 #, 'o2')).play();
+          }
+          if (random(Math.round(snake3.&9710\'.8%&)+*" * this.*}^#"#.\'8\')  "() / v4)) == 0) {
+            this.||&*^(();
+          }
+          if (this.slots.length + this.=90-? ".length + this.*}^#"#.!|@ % "() < 10) {
+            v13 = Math.round((snake3.&9710\'.8#!{+^ + this.%4$5[$ / 500) * (this.*}^#"#.!|@ % "() + 1) / v4 - this.=+|}1+" / 6);
+            if (random(v13) == 0) {
+              this.=+|}1+" = 0;
+              this.!)\'0]\'();
+            } else {
+              this.=+|}1+" += v4;
+            }
+          }
+          var v7 = snake3.7}}#$$!.8"+8!.%{ 1{-!;
+          if (this.%6|"(3") {
+            if (Key.isDown(v7[0])) {
+              this.]@=%^$.}5# -= this.]@=%^$.=58[0*" * v4;
+              this.0$-9]2 = false;
+            } else {
+              this.0$-9]2 = true;
+            }
+            if (Key.isDown(v7[1])) {
+              this.]@=%^$.}5# += this.]@=%^$.=58[0*" * v4;
+              this.0$^21]! = false;
+            } else {
+              this.0$^21]! = true;
+            }
+          }
+          this.]@=%^$.9(^=6{# *= Math.pow(snake3.&9710\'.[8)#!9", v4);
+          if (Key.isDown(v7[2])) {
+            if (this.\')90") {
+              this.]@=%^$.9(^=6{# = 1;
+            } else {
+              this.]@=%^$.9(^=6{# = this.*){&-#;
+            }
+          }
+          if (this.]@=%^$.9(^=6{# < 1) {
+            if (this.\')90") {
+              this.]@=%^$.9(^=6{# = 0;
+            } else {
+              this.]@=%^$.9(^=6{# = this.9}\'#1%";
+            }
+          }
+          if (Key.isDown(32)) {
+            if (this.0-\'{53" == false) {
+              this.0-\'{53" = true;
+              if (this.slots[0].]@^!()) {
+                this.&-6\'8 "(this.slots[0]);
+              }
+            }
+          } else {
+            this.0-\'{53" = false;
+          }
+          if (snake3.7}}#$$!.7%1+$-!.forcePause || Key.isDown(27)) {
+            if (!this.07+90}#) {
+              this.pause = true;
+              this.%)4-1?# = this.7]"1]6.1$8"]5('6+-46%', snake3.&9710\'.]3)!3]!);
+              this.%)4-1?#.gotoAndPlay('pause');
+              this.07+90}# = true;
+            }
+          } else {
+            this.07+90}# = false;
+          }
+          var v12 = this.]@=%^$.{{[}!(this.*}^#"#.+3?6(}());
+          var v8 = this.]@=%^$.7()(\'\'();
+          this.]@=%^$.80[7();
+          this.slots[0].!2{#1#!();
+          v2 = 0;
+          while (v2 < this.slots.length) {
+            this.slots[v2].^!)30(#();
+            ++v2;
+          }
+          v2 = 0;
+          while (v2 < this.=90-? ".length) {
+            this.=90-? "[v2].^!)30(#();
+            ++v2;
+          }
+          if (v12) {
+            this.3{17+|();
+            return undefined;
+          }
+          this.*}^#"#.!2{#1#!(this);
+          var v11 = this.*}^#"#.|*"|4["(v8);
+          if (v11 != null) {
+            this.|*?23!"(v11);
+          }
+          var v9 = this.*}^#"#.!8"!4@"(v8);
+          if (v9 != null) {
+            this.!8"!4@"(v9);
+          }
+        };
+
+        ASSetPropFlags(snake3.}!9|$.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 718 __Packages.snake3.Text {
+
+    #initclip
+      if (!_global.snake3) {
+        _global.snake3 = new Object();
+      }
+      if (!_global.snake3.(#4{&) {
+        snake3.(#4{& = function (!9, title, 7'[!) {
+          this.3({ ]$ = 3&!$.21*1|+!(!9, '6+-46%', 1);
+          this.3({ ]$._x = snake3.&9710\'.&2"95- / 2;
+          this.3({ ]$._y = snake3.&9710\'.9) $)@" / 2;
+          this.3"-$[2(title);
+          this.$&}"6{#(1);
+          this.([698!!(7'[!);
+          this.^* = new asml.*5*9$0(this.3({ ]$, 0, 100, 10, 3, 1.2, 0.6, 0.5, 1);
+          this.^*.main();
+        };
+
+        var v1 = snake3.(#4{&.prototype;
+        v1.$&}"6{# = function (*2) {
+          (3&!$.?1"|$!#(this.3({ ]$, 'pan')).gotoAndStop(String(*2));
+        };
+
+        v1.([698!! = function (7'[!) {
+          var v2 = 3&!$.?1"|$!#(this.3({ ]$, 'fieldText');
+          v2.text = 7'[!;
+          v2._y = -v2.textHeight / 2;
+        };
+
+        v1.|3=5$= = function (*2) {
+          (3&!$.?1"|$!#(this.3({ ]$, 'mcFruit')).gotoAndStop(String(*2));
+        };
+
+        v1.3"-$[2 = function ( )9!) {
+          this.3({ ]$.gotoAndStop( )9!);
+        };
+
+        v1.@$(78@ = function (f) {
+          function @*9"16() {
+            f();
+            delete 6.onPress;
+          }
+
+          var 6 = this.3({ ]$;
+          this.3({ ]$.onPress = @*9"16;
+        };
+
+        v1.?%%})]! = function (7'[!) {
+          3&!$.?5*8+%(this.3({ ]$, 'title', 7'[!);
+        };
+
+        v1.main = function () {
+          this.^*.main();
+        };
+
+        v1.]!98#8" = function () {
+          this.3({ ]$.removeMovieClip();
+        };
+
+        v1.close = function () {
+          this.3({ ]$.removeMovieClip();
+        };
+
+        ASSetPropFlags(snake3.(#4{&.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 719 __Packages.asml.PopupFX {
+
+    #initclip
+      if (!_global.asml) {
+        _global.asml = new Object();
+      }
+      if (!_global.asml.*5*9$0) {
+        asml.*5*9$0 = function (!9, start, -}1, 7 *}5=#, 9092^$, $4]"*6, $0(1&4#, $4%!0!", 71-=!'#) {
+          this.!9 = !9;
+          this.start = start;
+          this.-}1 = -}1;
+          this.7 *}5=# = 7 *}5=#;
+          this.9092^$ = 9092^$;
+          this.$4]"*6 = $4]"*6;
+          this.$0(1&4# = $0(1&4#;
+          this.$4%!0!" = $4%!0!";
+          this.71-=!\'# = 71-=!'#;
+          this.+5!" = start < -}1;
+          this.[ = start;
+        };
+
+        var v1 = asml.*5*9$0.prototype;
+        v1.main = function () {
+          if (this.+5!") {
+            this.[ += 3&!$."))!# * this.9092^$;
+            this.9092^$ *= Math.pow(this.$4]"*6, 3&!$."))!#);
+            if (this.[ > this.-}1 + this.7 *}5=#) {
+              this.[ = this.-}1 + this.7 *}5=#;
+              this.7 *}5=# *= this.$0(1&4#;
+              this.9092^$ *= this.$4%!0!";
+              this.+5!" = !this.+5!";
+            }
+          } else {
+            this.[ -= 3&!$."))!# * this.9092^$;
+            this.9092^$ *= Math.pow(this.$4]"*6, 3&!$."))!#);
+            if (this.[ < this.-}1 - this.7 *}5=#) {
+              this.[ = this.-}1 - this.7 *}5=#;
+              this.7 *}5=# *= this.$0(1&4#;
+              this.9092^$ *= this.$4%!0!";
+              this.+5!" = !this.+5!";
+            }
+          }
+          if (this.7 *}5=# < this.71-=!\'#) {
+            this.7 *}5=# = 0;
+            this.[ = this.-}1;
+            this.9092^$ = 0;
+          }
+          this.!9._xscale = this.[;
+          this.!9._yscale = this.[;
+        };
+
+        v1.]!98#8" = function () {
+          this.!9.removeMovieClip();
+        };
+
+        ASSetPropFlags(asml.*5*9$0.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 720 __Packages.snake3.Level {
+
+    #initclip
+      if (!_global.snake3) {
+        _global.snake3 = new Object();
+      }
+      if (!_global.snake3.*^9|7)) {
+        snake3.*^9|7) = function (?%-7) {
+          this.7]"1]6 = ?%-7;
+          this.width = snake3.&9710\'.&2"95- - snake3.*^9|7).|$)&?) * 2;
+          this.height = snake3.&9710\'.9) $)@" - (snake3.*^9|7)."2}[&\'# + snake3.*^9|7).?-]6&]!);
+          this.?5|!|-! = {'?': snake3.*^9|7).|$)&?), '@': snake3.*^9|7).?-]6&]!};
+          this.73*%}@" = {'?': snake3.*^9|7).|$)&?) + this.width, '@': snake3.*^9|7).?-]6&]! + this.height};
+          this.6# = this.7]"1]6.1$8"]5('background', snake3.&9710\'."%[-4?);
+          this.6#.playField._x = this.?5|!|-!.?;
+          this.6#.playField._y = this.?5|!|-!.@;
+          this.6#.playField._width = this.width;
+          this.6#.playField._height = this.height;
+          this.\'@\'3?9" = new Array();
+          this.%7]8@9 = new Array();
+        };
+
+        var v1 = snake3.*^9|7).prototype;
+        v1.+3?6(} = function () {
+          return {'-]#[!': this.?5|!|-!.?, '*?@!': this.?5|!|-!.@, '?#?*6$': this.?5|!|-!.? + this.width, '=-32(}': this.?5|!|-!.@ + this.height};
+        };
+
+        v1.\'8\')  " = function () {
+          return this.\'@\'3?9".length;
+        };
+
+        v1.!|@ % " = function () {
+          return this.%7]8@9.length;
+        };
+
+        v1.8+^&8+! = function (!9, =, () {
+          var v1 = snake3.*^9|7).|$)&?) + 10;
+          var v3 = v1 + random(int(snake3.&9710\'.&2"95- - v1 * 2 - =)) + = / 2;
+          var v2 = v1 + snake3.*^9|7).?-]6&]! + random(int(snake3.&9710\'.9) $)@" - v1 * 2 - ( - snake3.*^9|7).?-]6&]! - snake3.*^9|7).+$-[[%!)) + ( / 2;
+          !9._x = v3;
+          !9._y = v2;
+        };
+
+        v1.| -^99" = function (*2) {
+          var v3 = this.7]"1]6.1$8"]5('|"8=0[', snake3.&9710\'.8+[\'0&);
+          var v5 = 250 + random(125);
+          var v2 = 3&!$.?1"|$!#(v3, 'f');
+          v2.gotoAndStop(*2);
+          this.8+^&8+!(v3, v2._width * (100 / v2._xscale), v2._height * (100 / v2._yscale));
+          var v4 = 3&!$."&41(v3);
+          v4.**3-!(this.7]"1]6, *2, v5);
+          this.\'@\'3?9".push(v4);
+          return v4;
+        };
+
+        v1.!+-}88" = function (*2) {
+          var v4 = this.7]"1]6.1$8"]5('!08[-@', snake3.&9710\'.6?&2@#!);
+          var v5 = 300 + random(150);
+          var v2 = 3&!$.?1"|$!#(v4, 'f');
+          v2.gotoAndStop(*2);
+          this.8+^&8+!(v4, v2._width * (100 / v2._xscale), v2._height * (100 / v2._yscale));
+          var v3 = 3&!$."&41(v4);
+          v3.**3-!(this.7]"1]6, *2, v5);
+          this.%7]8@9.push(v3);
+          return v3;
+        };
+
+        v1.!2{#1#! = function (2|=!!) {
+          var v2;
+          v2 = 0;
+          while (v2 < this.\'@\'3?9".length) {
+            var v4 = this.\'@\'3?9"[v2];
+            if (!v4.{{[}!()) {
+              snake3.7}}#$$!.725&"&!.play(snake3.&9710\'.*#{66 #);
+              v4.& #8-@!();
+              this.\'@\'3?9".0|%77=#(v4);
+            }
+            ++v2;
+          }
+          v2 = 0;
+          while (v2 < this.%7]8@9.length) {
+            var v3 = this.%7]8@9[v2];
+            v3.!2{#1#!(2|=!!);
+            v3.\'@{ # -= 3&!$."))!#;
+            if (v3.\'@{ # <= 0) {
+              snake3.7}}#$$!.725&"&!.play(snake3.&9710\'.*#{66 #);
+              v3.& #8-@!();
+              this.%7]8@9.0|%77=#(v3);
+            }
+            ++v2;
+          }
+        };
+
+        v1.|*"|4[" = function (col) {
+          var v3;
+          v3 = 0;
+          while (v3 < this.\'@\'3?9".length) {
+            var v2 = this.\'@\'3?9"[v3];
+            if (v2.|)1(col)) {
+              this.\'@\'3?9".0|%77=#(v2);
+              return v2;
+            }
+            ++v3;
+          }
+          return null;
+        };
+
+        v1.|"7[\'%# = function (!9) {
+          var v3;
+          v3 = 0;
+          while (v3 < this.\'@\'3?9".length) {
+            var v2 = this.\'@\'3?9"[v3];
+            if (3&!$.hitTest(v2, !9)) {
+              this.\'@\'3?9".0|%77=#(v2);
+              return v2;
+            }
+            ++v3;
+          }
+          return null;
+        };
+
+        v1.|  9# = function (f) {
+          this.\'@\'3?9".push(f);
+        };
+
+        v1.!8"!4@" = function (col) {
+          var v3;
+          v3 = 0;
+          while (v3 < this.%7]8@9.length) {
+            var v2 = this.%7]8@9[v3];
+            if (!v2.}* \'))"() && 3&!$.hitTest(v2, col)) {
+              this.%7]8@9.0|%77=#(v2);
+              return v2;
+            }
+            ++v3;
+          }
+          return null;
+        };
+
+        snake3.*^9|7).?-]6&]! = 60;
+        snake3.*^9|7)."2}[&\'# = 10;
+        snake3.*^9|7).|$)&?) = 10;
+        snake3.*^9|7).+$-[[%! = 15;
+        ASSetPropFlags(snake3.*^9|7).prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 721 __Packages.snake3.Bonus {
+
+    #initclip
+      if (!_global.snake3) {
+        _global.snake3 = new Object();
+      }
+      if (!_global.snake3.!!%+%\') {
+        snake3.!!%+%\' = function () {
+          super();
+        };
+
+        snake3.!!%+%\' extends snake3.{48&89#;
+        var v1 = snake3.!!%+%\'.prototype;
+        v1.**3-! = function (?%-7, *2, '@{ #) {
+          this.{41]9"();
+          this.7]"1]6 = ?%-7;
+          this.*2 = *2;
+          this.\'@{ # = '@{ #;
+        };
+
+        v1.]!98#8" = function () {
+          this.4@^(]$.removeMovieClip();
+          this.removeMovieClip();
+        };
+
+        v1.& #8-@! = function () {
+          this.gotoAndPlay('disparait');
+        };
+
+        v1.43%4{-! = function () {
+          var v2 = this.7]"1]6.1$8"]5('!08[-@', snake3.&9710\'.}+6)+&");
+          v2.gotoAndStop(10);
+          (3&!$.?1"|$!#(v2, 'f')).gotoAndStop(this.*2);
+          var v3 = new Color(v2);
+          v3.setRGB(snake3.&9710\'.2!4499!);
+          return v2;
+        };
+
+        v1.!2{#1#! = function (') {
+          this.{{[}!();
+          if (this.*2 == 23) {
+            this._rotation += snake3.&9710\'.$%48-!!;
+          }
+          if (this.*2 == 24) {
+            this._rotation = '.]@=%^$.}5# * 180 / Math.PI;
+          }
+        };
+
+        ASSetPropFlags(snake3.!!%+%\'.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 722 __Packages.snake3.bonus.Pile {
+
+    #initclip
+      if (!_global.snake3) {
+        _global.snake3 = new Object();
+      }
+      if (!_global.snake3.!$+35) {
+        _global.snake3.!$+35 = new Object();
+      }
+      if (!_global.snake3.!$+35.!?7*&) {
+        snake3.!$+35.!?7*& = function () {};
+
+        var v1 = snake3.!$+35.!?7*&.prototype;
+        snake3.!$+35.!?7*&.!?}4}] = function (2|=!!) {
+          ++snake3.!$+35.!?7*&.3}-82]#;
+          var v2;
+          v2 = 0;
+          while (v2 < snake3.!$+35.!?7*&.3}-82]#) {
+            if (2|=!!.]@=%^$.-1"! > 0) {
+              2|=!!.]@=%^$.@36-(]!(2|=!!.]@=%^$.color);
+            } else {
+              2|=!!.3{17+|();
+              return undefined;
+            }
+            ++v2;
+          }
+        };
+
+        snake3.!$+35.!?7*&.3}-82]# = 0;
+        ASSetPropFlags(snake3.!$+35.!?7*&.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 723 __Packages.snake3.bonus.Slot {
+
+    #initclip
+      if (!_global.snake3) {
+        _global.snake3 = new Object();
+      }
+      if (!_global.snake3.!$+35) {
+        _global.snake3.!$+35 = new Object();
+      }
+      if (!_global.snake3.!$+35.&@*@&) {
+        snake3.!$+35.&@*@& = function (2|=!!, *2) {
+          this.2|=!! = 2|=!!;
+          this.!9 = 2|=!!.7]"1]6.1$8"]5('98-^"', snake3.&9710\'.%]8)-#");
+          this.!9.gotoAndStop(String(*2));
+        };
+
+        var v1 = snake3.!$+35.&@*@&.prototype;
+        v1.8+89?8# = function ()) {
+          this.!9._x = ) * 50 + 30;
+          this.!9._y = 30;
+        };
+
+        v1.close = function () {
+          this.!9.removeMovieClip();
+        };
+
+        v1.!?}4}] = function ({]^{) {};
+
+        v1.!2{#1#! = function () {};
+
+        v1.]@^! = function () {
+          return false;
+        };
+
+        v1.08})(\'# = function () {
+          return false;
+        };
+
+        ASSetPropFlags(snake3.!$+35.&@*@&.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 724 __Packages.snake3.bonus.Sonnette {
+
+    #initclip
+      if (!_global.snake3) {
+        _global.snake3 = new Object();
+      }
+      if (!_global.snake3.!$+35) {
+        _global.snake3.!$+35 = new Object();
+      }
+      if (!_global.snake3.!$+35.%=)&}%") {
+        snake3.!$+35.%=)&}%" = function (2|=!!) {
+          super(2|=!!, 45);
+          this.%@{ # = 2|=!!.7]"1]6.1$8"]5('%}# ^{', snake3.&9710\'.]3)!3]!);
+          this.!2{#1#!();
+          snake3.!$+35.%=)&}%".[45+(\'# = true;
+        };
+
+        snake3.!$+35.%=)&}%" extends snake3.!$+35.&@*@&;
+        var v1 = snake3.!$+35.%=)&}%".prototype;
+        v1.close = function () {
+          this.%@{ #.removeMovieClip();
+          super.close();
+        };
+
+        v1.^!)30(# = function () {
+          if (this.2|=!!.]@=%^$.-1"! <= 1) {
+            this.2|=!!.&"0$\'0"(this);
+            return undefined;
+          }
+          if (!snake3.!$+35.%=)&}%".[45+(\'#) {
+            return undefined;
+          }
+          var v3 = 2;
+          var v4 = 3&!$."&41(this.2|=!!.]@=%^$.855$@^(0));
+          var v2;
+          do {
+            v2 = 3&!$."&41(this.2|=!!.]@=%^$.855$@^(v3++));
+          } while (v4 == v2 && v3 < 100);
+          var v6 = Math.atan2(v4.@ - v2.@, v4.? - v2.?);
+          this.%@{ #._x = v4.?;
+          this.%@{ #._y = v4.@;
+          this.%@{ #._rotation = v6 * 180 / Math.PI;
+          if (this.%@{ #._currentframe == 1 && Key.isDown(32)) {
+            3&!$.?5*8+%(this.%@{ #, ')%0\'*', 25);
+            this.%@{ #.play();
+            snake3.7}}#$$!.725&"&!.play(snake3.&9710\'.62%*5|!);
+          }
+          var v5 = this.2|=!!.*}^#"#.|*"|4["(this.%@{ #);
+          if (v5 != null) {
+            this.2|=!!.|*?23!"(v5);
+            snake3.7}}#$$!.725&"&!.$@[@"4!(snake3.&9710\'.3-5||)!, snake3.&9710\'.@%6[]6!);
+            snake3.7}}#$$!.725&"&!.$@[@"4!(snake3.&9710\'.4-5||)!, snake3.&9710\'.@%6[]6!);
+            this.2|=!!.]@=%^$.|)1 = -1;
+          }
+        };
+
+        snake3.!$+35.%=)&}%".[45+(\'# = false;
+        ASSetPropFlags(snake3.!$+35.%=)&}%".prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 725 __Packages.snake3.bonus.Ciseaux {
+
+    #initclip
+      if (!_global.snake3) {
+        _global.snake3 = new Object();
+      }
+      if (!_global.snake3.!$+35) {
+        _global.snake3.!$+35 = new Object();
+      }
+      if (!_global.snake3.!$+35.5@5908!) {
+        snake3.!$+35.5@5908! = function (2|=!!,  +#!) {
+          super(2|=!!, 1);
+          this.*}^#"# =  +#!;
+          this.8#5+6$ = 0;
+          this.=]\'#9?# = 0;
+          this.!-#$\'4# = 1;
+        };
+
+        snake3.!$+35.5@5908! extends snake3.!$+35.&@*@&;
+        var v1 = snake3.!$+35.5@5908!.prototype;
+        v1.!2{#1#! = function () {
+          this.=]\'#9?# += 3&!$.$4*}!?! / (3.5 - this.*}^#"#);
+          while (this.=]\'#9?# > 0.1) {
+            this.8#5+6$ += this.!-#$\'4#;
+            this.=]\'#9?# -= 0.1;
+          }
+          if (this.8#5+6$ <= 0) {
+            this.8#5+6$ = 0;
+            this.!-#$\'4# = 1;
+          }
+          var v2 = Math.min(snake3.!$+35.5@5908!.8=62$[this.*}^#"# - 1], this.2|=!!.]@=%^$.-1"! - 4) - 1;
+          if (v2 < 0) {
+            v2 = 0;
+            this.8#5+6$ = -1;
+          }
+          if (this.8#5+6$ >= v2) {
+            this.8#5+6$ = v2;
+            this.!-#$\'4# = -1;
+          }
+          this.2|=!!.]@=%^$.$02@#&(this.8#5+6$ + 1, snake3.&9710\'. *6$3));
+        };
+
+        v1.!?}4}] = function (") {
+          if (!") {
+            this.2|=!!.]@=%^$.$02@#&(0, 0);
+          }
+        };
+
+        v1.]@^! = function () {
+          this.!?}4}](false);
+          snake3.7}}#$$!.725&"&!.play(snake3.&9710\'. *##]?");
+          this.2|=!!.]@=%^$.18)(this.8#5+6$ + 1);
+          return true;
+        };
+
+        v1.08})(\'# = function () {
+          return true;
+        };
+
+        snake3.!$+35.5@5908!.8=62$ = [3, 7, 12];
+        ASSetPropFlags(snake3.!$+35.5@5908!.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 726 __Packages.snake3.bonus.Langue {
+
+    #initclip
+      if (!_global.snake3) {
+        _global.snake3 = new Object();
+      }
+      if (!_global.snake3.!$+35) {
+        _global.snake3.!$+35 = new Object();
+      }
+      if (!_global.snake3.!$+35.29-&*() {
+        snake3.!$+35.29-&*( = function (2|=!!) {
+          super(2|=!!, 2);
+          this.n = 10;
+          this.|""@+4 = null;
+          this.=4(=]& = false;
+        };
+
+        snake3.!$+35.29-&*( extends snake3.!$+35.&@*@&;
+        var v1 = snake3.!$+35.29-&*(.prototype;
+        v1.!2{#1#! = function () {
+          (3&!$."&41(this.!9)).count.n = this.n;
+          if (this.=4(=]&) {
+            this.!5^?2" *= Math.pow(1.05, 3&!$."))!#);
+            this.{!12(7! += this.!5^?2" * 3&!$."))!#;
+            if (this.{!12(7! > 100) {
+              this.{!12(7! = 100;
+              this.!5^?2" = -Math.abs(this.!5^?2");
+            }
+            if (this.!5^?2" < 0 && this.{!12(7! < 40) {
+              if (this.|""@+4 != null) {
+                this.2|=!!.$\'9)](! *= 2;
+                this.2|=!!.|*?23!"(this.|""@+4);
+                this.2|=!!.$\'9)](! /= 2;
+                this.|""@+4 = null;
+              }
+              this.!?}4}](false);
+              return undefined;
+            }
+            var v2 = 15;
+            this.{+)}!._x = this.2|=!!.]@=%^$.? + Math.cos(this.2|=!!.]@=%^$.}5#) * v2;
+            this.{+)}!._y = this.2|=!!.]@=%^$.@ + Math.sin(this.2|=!!.]@=%^$.}5#) * v2;
+            this.{+)}!._rotation = this.2|=!!.]@=%^$.}5# * 180 / Math.PI;
+            this.{+)}!.col._x = (this.{!12(7! / 100) * (this.{!12(7! / 100) * 100 * 1.4;
+            this.{+)}!.base._xscale = this.{+)}!.col._x;
+            if (this.|""@+4 == null) {
+              this.|""@+4 = this.2|=!!.*}^#"#.|"7[\'%#(3&!$.?1"|$!#(this.{+)}!, 'col'));
+            } else {
+              this.|""@+4._x = this.{+)}!._x + Math.cos(this.2|=!!.]@=%^$.}5#) * this.{+)}!.base._xscale;
+              this.|""@+4._y = this.{+)}!._y + Math.sin(this.2|=!!.]@=%^$.}5#) * this.{+)}!.base._xscale;
+            }
+          }
+        };
+
+        v1.!?}4}] = function (") {
+          if (!") {
+            if (this.|""@+4 != null) {
+              this.2|=!!.*}^#"#.|  9#(this.|""@+4);
+              this.|""@+4 = null;
+            }
+            this.{+)}!.removeMovieClip();
+            this.=4(=]& = false;
+            if (this.n == 0) {
+              this.2|=!!.&-6\'8 "(this);
+            }
+          }
+        };
+
+        v1.]@^! = function () {
+          if (!this.=4(=]&) {
+            --this.n;
+            this.=4(=]& = true;
+            this.{+)}! = this.2|=!!.7]"1]6.1$8"]5('2?8|3$!', snake3.&9710\'.{*(9%7");
+            this.!5^?2" = 7;
+            this.{!12(7! = 0;
+            snake3.7}}#$$!.725&"&!.play(snake3.&9710\'.{*"615");
+          }
+          return false;
+        };
+
+        v1.08})(\'# = function () {
+          return true;
+        };
+
+        ASSetPropFlags(snake3.!$+35.29-&*(.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 727 __Packages.snake3.bonus.Coffre {
+
+    #initclip
+      if (!_global.snake3) {
+        _global.snake3 = new Object();
+      }
+      if (!_global.snake3.!$+35) {
+        _global.snake3.!$+35 = new Object();
+      }
+      if (!_global.snake3.!$+35.)$*283) {
+        snake3.!$+35.)$*283 = function () {};
+
+        var v1 = snake3.!$+35.)$*283.prototype;
+        snake3.!$+35.)$*283.!?}4}] = function (2|=!!, ?, @) {
+          var v2;
+          var v4 = 10 + random(10);
+          v2 = 0;
+          while (v2 < v4) {
+            var v1 = 2|=!!.||&*^(();
+            v1.%[()?!!(?, @);
+            v1.&{$0#4" = undefined;
+            v1.^4!750"(random(50) + 50, random(10) + 20, 0.05, 2|=!!.*}^#"#.+3?6(}());
+            ++v2;
+          }
+        };
+
+        ASSetPropFlags(snake3.!$+35.)$*283.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 728 __Packages.snake3.bonus.TimedSlot {
+
+    #initclip
+      if (!_global.snake3) {
+        _global.snake3 = new Object();
+      }
+      if (!_global.snake3.!$+35) {
+        _global.snake3.!$+35 = new Object();
+      }
+      if (!_global.snake3.!$+35.&?[}(?!) {
+        snake3.!$+35.&?[}(?! = function (2|=!!, 1 )6#', =9&'22) {
+          super(2|=!!, 1 )6#');
+          this.\'@{ # = =9&'22;
+        };
+
+        snake3.!$+35.&?[}(?! extends snake3.!$+35.&@*@&;
+        var v1 = snake3.!$+35.&?[}(?!.prototype;
+        v1.^!)30(# = function () {
+          this.\'@{ # -= 3&!$.$4*}!?!;
+          if (this.\'@{ # < 0) {
+            snake3.7}}#$$!.725&"&!.play(snake3.&9710\'.5(2 4$");
+            this.2|=!!.&-6\'8 "(this);
+            return undefined;
+          }
+          this.[+(!}%"();
+        };
+
+        v1.[+(!}%" = function () {};
+
+        ASSetPropFlags(snake3.!$+35.&?[}(?!.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 729 __Packages.snake3.bonus.PotionRouge {
+
+    #initclip
+      if (!_global.snake3) {
+        _global.snake3 = new Object();
+      }
+      if (!_global.snake3.!$+35) {
+        _global.snake3.!$+35 = new Object();
+      }
+      if (!_global.snake3.!$+35.]5[#!1#) {
+        snake3.!$+35.]5[#!1# = function (2|=!!) {
+          function f() {
+            return #9.952}&?();
+          }
+
+          super(2|=!!, 3, snake3.&9710\'.)|[##8#);
+          this.$^\'0+$ = 2|=!!.952}&?;
+          var #9 = this;
+          2|=!!.952}&? = f;
+        };
+
+        snake3.!$+35.]5[#!1# extends snake3.!$+35.&?[}(?!;
+        var v1 = snake3.!$+35.]5[#!1#.prototype;
+        v1.952}&? = function () {
+          return snake3.!$+35.]5[#!1#.6[82"3[random(snake3.!$+35.]5[#!1#.6[82"3.length)];
+        };
+
+        v1.close = function () {
+          this.2|=!!.952}&? = this.$^\'0+$;
+          super.close();
+        };
+
+        snake3.!$+35.]5[#!1#.6[82"3 = [2, 3, 11, 13, 27, 37, 45, 50, 51, 53, 57, 74, 79, 80, 82, 83, 93, 98, 103, 107, 116, 119, 124, 131, 140, 143, 149, 156, 159, 167, 182, 186, 199, 200, 201, 203, 214, 220, 226, 230, 235, 240, 251, 258, 262, 263, 266, 267, 269, 272, 281, 296];
+        ASSetPropFlags(snake3.!$+35.]5[#!1#.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 730 __Packages.snake3.bonus.Steroids {
+
+    #initclip
+      if (!_global.snake3) {
+        _global.snake3 = new Object();
+      }
+      if (!_global.snake3.!$+35) {
+        _global.snake3.!$+35 = new Object();
+      }
+      if (!_global.snake3.!$+35.="#06[!) {
+        snake3.!$+35.="#06[! = function (2|=!!, ?, @) {
+          super(2|=!!, 4, snake3.&9710\'.%+=1!);
+          2|=!!.]@=%^$.9092^$ *= 2;
+          2|=!!.%4$5[$ += 3000;
+          2|=!!.&40!$$(?, @, 3000);
+        };
+
+        snake3.!$+35.="#06[! extends snake3.!$+35.&?[}(?!;
+        var v1 = snake3.!$+35.="#06[!.prototype;
+        v1.close = function () {
+          this.2|=!!.]@=%^$.9092^$ /= 2;
+          super.close();
+        };
+
+        ASSetPropFlags(snake3.!$+35.="#06[!.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 731 __Packages.snake3.bonus.Bague {
+
+    #initclip
+      if (!_global.snake3) {
+        _global.snake3 = new Object();
+      }
+      if (!_global.snake3.!$+35) {
+        _global.snake3.!$+35 = new Object();
+      }
+      if (!_global.snake3.!$+35.\'((\'#\') {
+        snake3.!$+35.\'((\'#\' = function (2|=!!) {
+          super(2|=!!, 40);
+          2|=!!.]@=%^$.=58[0*" *= 1.7;
+        };
+
+        snake3.!$+35.\'((\'#\' extends snake3.!$+35.&@*@&;
+        var v1 = snake3.!$+35.\'((\'#\'.prototype;
+        ASSetPropFlags(snake3.!$+35.\'((\'#\'.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 732 __Packages.snake3.bonus.PotionBleue {
+
+    #initclip
+      if (!_global.snake3) {
+        _global.snake3 = new Object();
+      }
+      if (!_global.snake3.!$+35) {
+        _global.snake3.!$+35 = new Object();
+      }
+      if (!_global.snake3.!$+35.\'&$^|)#) {
+        snake3.!$+35.\'&$^|)# = function (2|=!!) {
+          super(2|=!!, 6, snake3.&9710\'.84$^ 4#);
+          this.3}-82]# = 0;
+        };
+
+        snake3.!$+35.\'&$^|)# extends snake3.!$+35.&?[}(?!;
+        var v1 = snake3.!$+35.\'&$^|)#.prototype;
+        v1.color = function ({]^{) {
+          if ({]^{) {
+            this.2|=!!.]@=%^$.color = snake3.&9710\'.+}=$"%";
+            this.2|=!!.]@=%^$.$434@}# = snake3.&9710\'.+}81&2";
+            this.2|=!!.]@=%^$.4?5 #.gotoAndStop(String(2));
+          } else {
+            this.2|=!!.]@=%^$.color = snake3.&9710\'.98^!36;
+            this.2|=!!.]@=%^$.$434@}# = snake3.&9710\'.9{!|2-!;
+            this.2|=!!.]@=%^$.4?5 #.gotoAndStop(String(1));
+          }
+        };
+
+        v1.close = function () {
+          this.color(false);
+          this.2|=!!.]@=%^$.!44^0$# = true;
+          super.close();
+        };
+
+        v1.[+(!}%" = function () {
+          if (this.\'@{ # < 2 && (this.3}-82]#++ & 2) == 0) {
+            this.color(false);
+          } else {
+            this.color(true);
+          }
+          this.2|=!!.]@=%^$.!44^0$# = false;
+        };
+
+        ASSetPropFlags(snake3.!$+35.\'&$^|)#.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 733 __Packages.snake3.bonus.PotionRose {
+
+    #initclip
+      if (!_global.snake3) {
+        _global.snake3 = new Object();
+      }
+      if (!_global.snake3.!$+35) {
+        _global.snake3.!$+35 = new Object();
+      }
+      if (!_global.snake3.!$+35.#|663+") {
+        snake3.!$+35.#|663+" = function (2|=!!) {
+          super(2|=!!, 5, snake3.&9710\'.!#(4@}!);
+          2|=!!.$\'9)](! *= 2;
+          2|=!!.$}78!\' *= 2;
+        };
+
+        snake3.!$+35.#|663+" extends snake3.!$+35.&?[}(?!;
+        var v1 = snake3.!$+35.#|663+".prototype;
+        v1.close = function () {
+          this.2|=!!.&+"[#9! = true;
+          this.2|=!!.$\'9)](! /= 2;
+          this.2|=!!.$}78!\' /= 2;
+          super.close();
+        };
+
+        v1.|5{|1]" = function () {
+          var v2 = this.2|=!!.*}^#"#.\'@\'3?9"[random(this.2|=!!.*}^#"#.\'@\'3?9".length)];
+          if (v2.}* \'))"()) {
+            return undefined;
+          }
+          v2.^4!750"(random(50) + 20, random(10) + 20, 0.1, this.2|=!!.*}^#"#.+3?6(}());
+        };
+
+        v1.[+(!}%" = function () {
+          this.2|=!!.&+"[#9! = false;
+          if (random(int(30 / 3&!$."))!#)) == 0) {
+            this.|5{|1]"();
+          }
+        };
+
+        ASSetPropFlags(snake3.!$+35.#|663+".prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 734 __Packages.snake3.bonus.PotionViolette {
+
+    #initclip
+      if (!_global.snake3) {
+        _global.snake3 = new Object();
+      }
+      if (!_global.snake3.!$+35) {
+        _global.snake3.!$+35 = new Object();
+      }
+      if (!_global.snake3.!$+35.%)?]72!) {
+        snake3.!$+35.%)?]72! = function (2|=!!) {
+          super(2|=!!, 7, snake3.&9710\'.6@^^]*");
+        };
+
+        snake3.!$+35.%)?]72! extends snake3.!$+35.&?[}(?!;
+        var v1 = snake3.!$+35.%)?]72!.prototype;
+        v1.close = function () {
+          this.2|=!!.]@=%^$.-!]\']+ = false;
+          super.close();
+        };
+
+        v1.[+(!}%" = function () {
+          if (!this.2|=!!.]@=%^$.08"0@2") {
+            this.2|=!!.]@=%^$.%1%)6=# = true;
+          }
+          this.2|=!!.]@=%^$.-!]\']+ = true;
+          if (this.\'@{ # < 5) {
+            this.2|=!!.]@=%^$."$^26{" = this.\'@{ # / 5;
+          } else {
+            this.2|=!!.]@=%^$."$^26{" = 1;
+          }
+        };
+
+        ASSetPropFlags(snake3.!$+35.%)?]72!.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 735 __Packages.snake3.bonus.Ressort {
+
+    #initclip
+      if (!_global.snake3) {
+        _global.snake3 = new Object();
+      }
+      if (!_global.snake3.!$+35) {
+        _global.snake3.!$+35 = new Object();
+      }
+      if (!_global.snake3.!$+35.7-**|*") {
+        snake3.!$+35.7-**|*" = function (2|=!!) {
+          super(2|=!!, 41);
+          2|=!!.]@=%^$.+9&2?9" = true;
+        };
+
+        snake3.!$+35.7-**|*" extends snake3.!$+35.&@*@&;
+        var v1 = snake3.!$+35.7-**|*".prototype;
+        ASSetPropFlags(snake3.!$+35.7-**|*".prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 736 __Packages.snake3.bonus.Rondelle {
+
+    #initclip
+      if (!_global.snake3) {
+        _global.snake3 = new Object();
+      }
+      if (!_global.snake3.!$+35) {
+        _global.snake3.!$+35 = new Object();
+      }
+      if (!_global.snake3.!$+35.82|2+$#) {
+        snake3.!$+35.82|2+$# = function (2|=!!) {
+          super(2|=!!, 8, snake3.&9710\'.#?54@)!);
+          2|=!!.(^63*#! = false;
+        };
+
+        snake3.!$+35.82|2+$# extends snake3.!$+35.&?[}(?!;
+        var v1 = snake3.!$+35.82|2+$#.prototype;
+        v1.close = function () {
+          this.2|=!!.(^63*#! = true;
+          super.close();
+        };
+
+        v1.[+(!}%" = function () {
+          if (random(int(15 / 3&!$."))!#)) == 0) {
+            this.2|=!!.||&*^(();
+          }
+        };
+
+        ASSetPropFlags(snake3.!$+35.82|2+$#.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 737 __Packages.snake3.bonus.Inverseur {
+
+    #initclip
+      if (!_global.snake3) {
+        _global.snake3 = new Object();
+      }
+      if (!_global.snake3.!$+35) {
+        _global.snake3.!$+35 = new Object();
+      }
+      if (!_global.snake3.!$+35.^{#]76#) {
+        snake3.!$+35.^{#]76# = function (2|=!!) {
+          super(2|=!!, 42);
+        };
+
+        snake3.!$+35.^{#]76# extends snake3.!$+35.&@*@&;
+        var v1 = snake3.!$+35.^{#]76#.prototype;
+        v1.^!)30(# = function () {
+          if (Key.isDown(40)) {
+            if (!this.0293}|#) {
+              this.2|=!!.]@=%^$.reverse();
+            }
+            this.0293}|# = true;
+          } else {
+            this.0293}|# = false;
+          }
+        };
+
+        ASSetPropFlags(snake3.!$+35.^{#]76#.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 738 __Packages.snake3.bonus.PotionNoire {
+
+    #initclip
+      if (!_global.snake3) {
+        _global.snake3 = new Object();
+      }
+      if (!_global.snake3.!$+35) {
+        _global.snake3.!$+35 = new Object();
+      }
+      if (!_global.snake3.!$+35.{{@7 0#) {
+        snake3.!$+35.{{@7 0# = function (2|=!!) {
+          super(2|=!!, 12);
+          this.]@=%^$ = new snake3.]94 2+(2|=!!.7]"1]6, {'?': 2|=!!.]@=%^$.?, '@': 2|=!!.]@=%^$.@});
+          this.]@=%^$.color = 0;
+          this.]@=%^$.$434@}# = 0;
+          this.]@=%^$.4?5 #.gotoAndStop(String(3));
+          this.]@=%^$.}5# = 2|=!!.]@=%^$.}5#;
+          this.]@=%^$.-1"! = 3;
+          this.]@=%^$.!44^0$# = false;
+          var v3;
+          var v4 = 2|=!!.]@=%^$.26? 0$;
+          v3 = 0;
+          while (v3 < v4.length) {
+            this.]@=%^$.26? 0$.push(v4[v3]);
+            ++v3;
+          }
+          this.]@=%^$.80[7();
+          this.[(= = false;
+        };
+
+        snake3.!$+35.{{@7 0# extends snake3.!$+35.&@*@&;
+        var v1 = snake3.!$+35.{{@7 0#.prototype;
+        v1.close = function () {
+          super.close();
+        };
+
+        v1.^!)30(# = function () {
+          if (this.[(=) {
+            this.]@=%^$.@36-(]!(0);
+            this.]@=%^$.80[7();
+            if (this.]@=%^$.-1"! == 0) {
+              this.]@=%^$.]!98#8"();
+              this.2|=!!.&-6\'8 "(this);
+            }
+            return undefined;
+          }
+          var v4 = this.2|=!!.*}^#"#.\'@\'3?9";
+          var v2;
+          var v6 = null;
+          var v5 = 10000000;
+          v2 = 0;
+          while (v2 < v4.length) {
+            var v7 = v4[v2];
+            var v3 = (v7.? - this.]@=%^$.?) * (v7.? - this.]@=%^$.?) + (v7.@ - this.]@=%^$.@) * (v7.@ - this.]@=%^$.@);
+            if (v3 < v5) {
+              v5 = v3;
+              v6 = v7;
+            }
+            ++v2;
+          }
+          this.[(= = this.]@=%^$.{{[}!(this.2|=!!.*}^#"#.+3?6(}());
+          var v9 = Math.atan2(v6.@ - this.]@=%^$.@, v6.? - this.]@=%^$.?);
+          if (Math.sin(v9 - this.]@=%^$.}5#) < 0) {
+            this.]@=%^$.}5# -= 0.1 * 3&!$."))!#;
+          } else {
+            this.]@=%^$.}5# += 0.1 * 3&!$."))!#;
+          }
+          this.]@=%^$.80[7();
+          var v8 = this.]@=%^$.7()(\'\'();
+          v7 = this.2|=!!.*}^#"#.|*"|4["(v8);
+          if (v7 != null) {
+            v7.&{$0#4" = undefined;
+            this.2|=!!.|*?23!"(v7);
+          }
+        };
+
+        ASSetPropFlags(snake3.!$+35.{{@7 0#.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 739 __Packages.snake3.bonus.Canne {
+
+    #initclip
+      if (!_global.snake3) {
+        _global.snake3 = new Object();
+      }
+      if (!_global.snake3.!$+35) {
+        _global.snake3.!$+35 = new Object();
+      }
+      if (!_global.snake3.!$+35.@5+++\') {
+        snake3.!$+35.@5+++\' = function () {};
+
+        var v1 = snake3.!$+35.@5+++\'.prototype;
+        snake3.!$+35.@5+++\'.!?}4}] = function (2|=!!, ?, @) {
+          function 6|$%[!() {
+            return +71!;
+          }
+
+          var v1 = 2|=!!.||&*^(();
+          var +71! = v1.+^5*@|"() * 10;
+          v1.gotoAndStop('standard');
+          v1.[ = 100;
+          v1.)+^3[$ = 3;
+          v1.($|^(0.08);
+          v1.+^5*@|" = 6|$%[!;
+        };
+
+        ASSetPropFlags(snake3.!$+35.@5+++\'.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 740 __Packages.snake3.bonus.Molecule {
+
+    #initclip
+      if (!_global.snake3) {
+        _global.snake3 = new Object();
+      }
+      if (!_global.snake3.!$+35) {
+        _global.snake3.!$+35 = new Object();
+      }
+      if (!_global.snake3.!$+35.@?{6[0#) {
+        snake3.!$+35.@?{6[0# = function () {};
+
+        var v1 = snake3.!$+35.@?{6[0#.prototype;
+        snake3.!$+35.@?{6[0#.!?}4}] = function (2|=!!, 8%&) {
+          if (8%&) {
+            2|=!!.45!@65" += 20;
+          } else {
+            2|=!!.45!@65" += 5;
+          }
+        };
+
+        ASSetPropFlags(snake3.!$+35.@?{6[0#.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 741 __Packages.snake3.bonus.Bombe {
+
+    #initclip
+      if (!_global.snake3) {
+        _global.snake3 = new Object();
+      }
+      if (!_global.snake3.!$+35) {
+        _global.snake3.!$+35 = new Object();
+      }
+      if (!_global.snake3.!$+35.0%!+%\') {
+        snake3.!$+35.0%!+%\' = function (2|=!!) {
+          super(2|=!!, 13);
+        };
+
+        snake3.!$+35.0%!+%\' extends snake3.!$+35.&@*@&;
+        var v1 = snake3.!$+35.0%!+%\'.prototype;
+        v1.#*7-(]! = function () {
+          var v5 = this.2|=!!.]@=%^$.26? 0$;
+          var v7 = v5.length;
+          var v2;
+          v2 = 1;
+          while (v2 < this.2|=!!.]@=%^$.-1"!) {
+            var v3 = v5[v7 - v2 * 5 - 3];
+            var v4 = (v3.? - this.?) * (v3.? - this.?) + (v3.@ - this.@) * (v3.@ - this.@);
+            if (v4 < 25600) {
+              break;
+            }
+            ++v2;
+          }
+          var v6 = int(v2 / 3);
+          while (v2 < this.2|=!!.]@=%^$.-1"!) {
+            this.2|=!!.]@=%^$.@36-(]!(16777215);
+            this.2|=!!.]@=%^$.-1"! -= v6;
+            if (this.2|=!!.]@=%^$.-1"! <= v2) {
+              this.2|=!!.]@=%^$.-1"! = v2;
+            }
+          }
+          if (v2 < 2) {
+            this.2|=!!.3{17+|();
+          }
+        };
+
+        v1.]@^! = function () {
+          function !2{#1#!() {
+            \'@{ # -= 3&!$.$4*}!?!;
+            if (\'@{ # <= 0) {
+              ".play();
+              this.2|=!!.)-=6[@#.0|%77=#(*2, !%673=!);
+            }
+          }
+
+          function #&%4'?!() {
+            #9.#*7-(]!();
+          }
+
+          var " = this.2|=!!.7]"1]6.1$8"]5('0(\'35', snake3.&9710\'.6?&2@#!);
+          this.? = this.2|=!!.]@=%^$.?;
+          this.@ = this.2|=!!.]@=%^$.@;
+          "._x = this.?;
+          "._y = this.@;
+          var \'@{ # = snake3.&9710\'.]%481-!;
+          var *2 = {'_': 0};
+          var !%673=!;
+          !%673=! = !2{#1#!;
+          this.2|=!!.)-=6[@#.push(*2, !2{#1#!);
+          var #9 = this;
+          3&!$.?5*8+%(this.2|=!!.!9, '#&4\'@(#', #&%4\'?!);
+          return true;
+        };
+
+        v1.08})(\'# = function () {
+          return true;
+        };
+
+        ASSetPropFlags(snake3.!$+35.0%!+%\'.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 742 __Packages.snake3.bonus.PotionVerte {
+
+    #initclip
+      if (!_global.snake3) {
+        _global.snake3 = new Object();
+      }
+      if (!_global.snake3.!$+35) {
+        _global.snake3.!$+35 = new Object();
+      }
+      if (!_global.snake3.!$+35.{!3! 2#) {
+        snake3.!$+35.{!3! 2# = function (2|=!!) {
+          super(2|=!!, 9, snake3.&9710\'.+03!"9#);
+          this.7 = 100;
+        };
+
+        snake3.!$+35.{!3! 2# extends snake3.!$+35.&?[}(?!;
+        var v1 = snake3.!$+35.{!3! 2#.prototype;
+        v1.close = function () {
+          this.2|=!!.]@=%^$.59182 ! = 100;
+          super.close();
+        };
+
+        v1.[+(!}%" = function () {
+          this.7 -= 3&!$.$4*}!?! * 100;
+          if (this.7 < 0) {
+            this.7 = 100;
+            --this.2|=!!.]@=%^$.-1"!;
+            if (this.2|=!!.]@=%^$.-1"! <= 0) {
+              this.2|=!!.3{17+|();
+            }
+          }
+          this.2|=!!.]@=%^$.59182 ! = this.7;
+        };
+
+        ASSetPropFlags(snake3.!$+35.{!3! 2#.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 743 __Packages.snake3.bonus.Plume {
+
+    #initclip
+      if (!_global.snake3) {
+        _global.snake3 = new Object();
+      }
+      if (!_global.snake3.!$+35) {
+        _global.snake3.!$+35 = new Object();
+      }
+      if (!_global.snake3.!$+35.={\'19*) {
+        snake3.!$+35.={\'19* = function (2|=!!) {
+          super(2|=!!, 43);
+          --2|=!!.]@=%^$.9092^$;
+        };
+
+        snake3.!$+35.={\'19* extends snake3.!$+35.&@*@&;
+        var v1 = snake3.!$+35.={\'19*.prototype;
+        ASSetPropFlags(snake3.!$+35.={\'19*.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 744 __Packages.snake3.bonus.Oeil {
+
+    #initclip
+      if (!_global.snake3) {
+        _global.snake3 = new Object();
+      }
+      if (!_global.snake3.!$+35) {
+        _global.snake3.!$+35 = new Object();
+      }
+      if (!_global.snake3.!$+35.|02%&) {
+        snake3.!$+35.|02%& = function () {};
+
+        var v1 = snake3.!$+35.|02%&.prototype;
+        snake3.!$+35.|02%&.!?}4}] = function (2|=!!) {
+          2|=!!.45!@65" = 0;
+        };
+
+        ASSetPropFlags(snake3.!$+35.|02%&.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 745 __Packages.snake3.bonus.FlecheBleue {
+
+    #initclip
+      if (!_global.snake3) {
+        _global.snake3 = new Object();
+      }
+      if (!_global.snake3.!$+35) {
+        _global.snake3.!$+35 = new Object();
+      }
+      if (!_global.snake3.!$+35.\'8!0+ ") {
+        snake3.!$+35.\'8!0+ " = function (2|=!!, }5#, ?, @) {
+          this.? = ?;
+          this.@ = @;
+          this.*2 = 2|=!!.952}&?();
+          this.}5# = }5# * Math.PI / 180;
+          this.2|=!! = 2|=!!;
+          2|=!!.)-=6[@#.push(this, this.!2{#1#!);
+        };
+
+        var v1 = snake3.!$+35.\'8!0+ ".prototype;
+        v1.close = function () {
+          this.2|=!!.)-=6[@#.0|%77=#(this, this.!2{#1#!);
+        };
+
+        v1.!2{#1#! = function () {
+          this.? += Math.cos(this.}5#) * snake3.&9710\'.$9"3+4";
+          this.@ += Math.sin(this.}5#) * snake3.&9710\'.$9"3+4";
+          var v2 = this.2|=!!.*}^#"#.+3?6(}();
+          if (this.? - 50 <= v2.-]#[! || this.@ - 50 <= v2.*?@! || this.? + 50 >= v2.?#?*6$ || this.@ + 50 >= v2.=-32(}) {
+            this.close();
+          }
+          var v3 = this.2|=!!.||&*^(();
+          if (this.*2 == snake3.&9710\'.(1)!2?!) {
+            --this.*2;
+          }
+          v3.&{$0#4" = undefined;
+          v3.9989+%(this.*2++);
+          v3.%[()?!!(this.?, this.@);
+        };
+
+        ASSetPropFlags(snake3.!$+35.\'8!0+ ".prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 746 __Packages.snake3.bonus.FlecheRouge {
+
+    #initclip
+      if (!_global.snake3) {
+        _global.snake3 = new Object();
+      }
+      if (!_global.snake3.!$+35) {
+        _global.snake3.!$+35 = new Object();
+      }
+      if (!_global.snake3.!$+35.]!?70$") {
+        snake3.!$+35.]!?70$" = function (2|=!!, ?, @) {
+          this.? = ?;
+          this.@ = @;
+          this.*2 = 2|=!!.952}&?();
+          this.}5# = this.}5# * Math.PI / 180;
+          this.2|=!! = 2|=!!;
+          2|=!!.)-=6[@#.push(this, this.!2{#1#!);
+        };
+
+        var v1 = snake3.!$+35.]!?70$".prototype;
+        v1.close = function () {
+          this.2|=!!.)-=6[@#.0|%77=#(this, this.!2{#1#!);
+        };
+
+        v1.!2{#1#! = function () {
+          this.}5# = this.2|=!!.]@=%^$.}5#;
+          this.? += Math.cos(this.}5#) * snake3.&9710\'.$93^9{#;
+          this.@ += Math.sin(this.}5#) * snake3.&9710\'.$93^9{#;
+          var v2 = this.2|=!!.*}^#"#.+3?6(}();
+          if (this.? - 50 <= v2.-]#[! || this.@ - 50 <= v2.*?@! || this.? + 50 >= v2.?#?*6$ || this.@ + 50 >= v2.=-32(}) {
+            this.close();
+          }
+          var v3 = this.2|=!!.||&*^(();
+          if (this.*2 == snake3.&9710\'.(1)!2?!) {
+            --this.*2;
+          }
+          v3.&{$0#4" = undefined;
+          v3.9989+%(this.*2++);
+          v3.%[()?!!(this.?, this.@);
+        };
+
+        ASSetPropFlags(snake3.!$+35.]!?70$".prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 747 __Packages.snake3.bonus.PotionOrange {
+
+    #initclip
+      if (!_global.snake3) {
+        _global.snake3 = new Object();
+      }
+      if (!_global.snake3.!$+35) {
+        _global.snake3.!$+35 = new Object();
+      }
+      if (!_global.snake3.!$+35.27!$30) {
+        snake3.!$+35.27!$30 = function (2|=!!) {
+          super(2|=!!, 10, snake3.&9710\'.{|7$^*);
+          this.!%#\'!! = 0;
+        };
+
+        snake3.!$+35.27!$30 extends snake3.!$+35.&?[}(?!;
+        var v1 = snake3.!$+35.27!$30.prototype;
+        v1.[+(!}%" = function () {
+          this.!%#\'!! += 3&!$."))!# * (random(3) - 1) * 0.02;
+          if (this.!%#\'!! < -0.07000000000000001) {
+            this.!%#\'!! = -0.07000000000000001;
+          }
+          if (this.!%#\'!! > 0.07000000000000001) {
+            this.!%#\'!! = 0.07000000000000001;
+          }
+          this.2|=!!.]@=%^$.}5# += this.!%#\'!!;
+        };
+
+        ASSetPropFlags(snake3.!$+35.27!$30.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 748 __Packages.snake3.bonus.PotionJaune {
+
+    #initclip
+      if (!_global.snake3) {
+        _global.snake3 = new Object();
+      }
+      if (!_global.snake3.!$+35) {
+        _global.snake3.!$+35 = new Object();
+      }
+      if (!_global.snake3.!$+35.% 7$|+#) {
+        snake3.!$+35.% 7$|+# = function (2|=!!) {
+          super(2|=!!, 11, snake3.&9710\'.6+7$ 6#);
+          this.(^+ = -1;
+          2|=!!.%6|"(3" = false;
+        };
+
+        snake3.!$+35.% 7$|+# extends snake3.!$+35.&?[}(?!;
+        var v1 = snake3.!$+35.% 7$|+#.prototype;
+        v1.close = function () {
+          this.2|=!!.%6|"(3" = true;
+          super.close();
+        };
+
+        v1.[+(!}%" = function () {
+          switch (this.(^+) {
+            case 0:
+              this.2|=!!.]@=%^$.}5# = 0;
+              break;
+            case 1:
+              this.2|=!!.]@=%^$.}5# = -1.570796326794897;
+              break;
+            case 2:
+              this.2|=!!.]@=%^$.}5# = Math.PI;
+              break;
+            case 3:
+              this.2|=!!.]@=%^$.}5# = 1.570796326794897;
+          }
+          if (Key.isDown(37) && this.(^+ != 0) {
+            this.(^+ = 2;
+          }
+          if (Key.isDown(39) && this.(^+ != 2) {
+            this.(^+ = 0;
+          }
+          if (Key.isDown(38) && this.(^+ != 3) {
+            this.(^+ = 1;
+          }
+          if (Key.isDown(40) && this.(^+ != 1) {
+            this.(^+ = 3;
+          }
+        };
+
+        ASSetPropFlags(snake3.!$+35.% 7$|+#.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 749 __Packages.snake3.bonus.Poupee {
+
+    #initclip
+      if (!_global.snake3) {
+        _global.snake3 = new Object();
+      }
+      if (!_global.snake3.!$+35) {
+        _global.snake3.!$+35 = new Object();
+      }
+      if (!_global.snake3.!$+35.]}#-7"") {
+        snake3.!$+35.]}#-7"" = function (2|=!!) {
+          super(2|=!!, 44);
+        };
+
+        snake3.!$+35.]}#-7"" extends snake3.!$+35.&@*@&;
+        var v1 = snake3.!$+35.]}#-7"".prototype;
+        v1.^!)30(# = function () {
+          var v7 = this.2|=!!.*}^#"#.\'@\'3?9";
+          var v5;
+          v5 = 0;
+          while (v5 < v7.length) {
+            var v2 = v7[v5];
+            if (!v2.}* \'))"()) {
+              var v4 = this.2|=!!.]@=%^$.? - v2._x;
+              var v3 = this.2|=!!.]@=%^$.@ - v2._y;
+              var v6 = Math.sqrt(v4 * v4 + v3 * v3);
+              v2._x += v4 / v6;
+              v2._y += v3 / v6;
+            }
+            ++v5;
+          }
+        };
+
+        ASSetPropFlags(snake3.!$+35.]}#-7"".prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 750 __Packages.snake3.bonus.Aureole {
+
+    #initclip
+      if (!_global.snake3) {
+        _global.snake3 = new Object();
+      }
+      if (!_global.snake3.!$+35) {
+        _global.snake3.!$+35 = new Object();
+      }
+      if (!_global.snake3.!$+35.!0)[26) {
+        snake3.!$+35.!0)[26 = function () {};
+
+        var v1 = snake3.!$+35.!0)[26.prototype;
+        snake3.!$+35.!0)[26.!?}4}] = function (2|=!!, ?, @) {
+          var v5;
+          var v8 = 100;
+          var v4 = 2|=!!.*}^#"#.+3?6(}();
+          var v9 = 12;
+          var v7;
+          do {
+            v7 = 2|=!!.952}&?();
+          } while (v7 % 10 != 0);
+          v5 = 0;
+          while (v5 < v9) {
+            var v6 = (v5 / v9) * Math.PI * 2;
+            var v2 = ? + v8 * Math.cos(v6);
+            var v1 = @ + v8 * Math.sin(v6);
+            if (v2 >= v4.-]#[! + 10 && v1 >= v4.*?@! + 10 && v2 <= v4.?#?*6$ - 10 && v1 <= v4.=-32(} - 10) {
+              var v3 = 2|=!!.||&*^(();
+              v3.9989+%(v7);
+              v3.%[()?!!(v2, v1);
+              v3.&{$0#4" = undefined;
+            }
+            ++v5;
+          }
+        };
+
+        ASSetPropFlags(snake3.!$+35.!0)[26.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 751 __Packages.snake3.bonus.Croix {
+
+    #initclip
+      if (!_global.snake3) {
+        _global.snake3 = new Object();
+      }
+      if (!_global.snake3.!$+35) {
+        _global.snake3.!$+35 = new Object();
+      }
+      if (!_global.snake3.!$+35.[*${0\') {
+        snake3.!$+35.[*${0\' = function (2|=!!, ?, @) {
+          this.[ ! = ?;
+          this.] ! = @;
+          this.[=!7 = 10;
+          this.*2 = 2|=!!.952}&?();
+          this.2|=!! = 2|=!!;
+          2|=!!.)-=6[@#.push(this, this.!2{#1#!);
+        };
+
+        var v1 = snake3.!$+35.[*${0\'.prototype;
+        v1.close = function () {
+          this.2|=!!.)-=6[@#.0|%77=#(this, this.!2{#1#!);
+        };
+
+        v1.||&*^( = function (}5#) {
+          var v4 = this.[ ! + Math.cos(}5#) * this.[=!7;
+          var v3 = this.] ! + Math.sin(}5#) * this.[=!7;
+          var v2 = this.2|=!!.*}^#"#.+3?6(}();
+          if (v4 - 10 <= v2.-]#[! || v3 - 10 <= v2.*?@! || v4 + 10 >= v2.?#?*6$ || v3 + 10 >= v2.=-32(}) {
+            return false;
+          }
+          var v5 = this.2|=!!.||&*^(();
+          v5.9989+%(this.*2);
+          v5.%[()?!!(v4, v3);
+          v5.&{$0#4" = undefined;
+          return true;
+        };
+
+        v1.!2{#1#! = function () {
+          this.[=!7 += snake3.&9710\'.$&#==+";
+          var v2 = false;
+          if (this.||&*^((0.7853981633974483)) {
+            v2 = true;
+          }
+          if (this.||&*^((2.356194490192345)) {
+            v2 = true;
+          }
+          if (this.||&*^((-2.356194490192345)) {
+            v2 = true;
+          }
+          if (this.||&*^((-0.7853981633974483)) {
+            v2 = true;
+          }
+          if (!v2) {
+            this.close();
+          }
+          if (this.*2 == snake3.&9710\'.(1)!2?!) {
+            --this.*2;
+          }
+          ++this.*2;
+        };
+
+        ASSetPropFlags(snake3.!$+35.[*${0\'.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 752 __Packages.snake3.bonus.Cloche {
+
+    #initclip
+      if (!_global.snake3) {
+        _global.snake3 = new Object();
+      }
+      if (!_global.snake3.!$+35) {
+        _global.snake3.!$+35 = new Object();
+      }
+      if (!_global.snake3.!$+35.)=@2|2) {
+        snake3.!$+35.)=@2|2 = function () {};
+
+        var v1 = snake3.!$+35.)=@2|2.prototype;
+        snake3.!$+35.)=@2|2.!?}4}] = function (2|=!!) {
+          snake3.!$+35.)=@2|2.2|=!! = 2|=!!;
+          snake3.!$+35.%=)&}%".[45+(\'# = false;
+          2|=!!.)-=6[@#.push(snake3.!$+35.)=@2|2, snake3.!$+35.)=@2|2.2}=*6]!);
+        };
+
+        snake3.!$+35.)=@2|2.2}=*6]! = function () {
+          if (snake3.!$+35.)=@2|2.2|=!!.]@=%^$.-1"! <= 0) {
+            snake3.!$+35.%=)&}%".[45+(\'# = true;
+            snake3.!$+35.)=@2|2.2|=!! = null;
+            snake3.!$+35.)=@2|2.2|=!!.)-=6[@#.0|%77=#(snake3.!$+35.)=@2|2, snake3.!$+35.)=@2|2.2}=*6]!);
+            return undefined;
+          }
+          var v2 = snake3.!$+35.)=@2|2.2|=!!.]@=%^$.855$@^(0);
+          var v1 = snake3.!$+35.)=@2|2.2|=!!.||&*^(();
+          v1.9989+%(snake3.!$+35.)=@2|2.@|}*!6![random(snake3.!$+35.)=@2|2.@|}*!6!.length)]);
+          v1._x = v2.?;
+          v1._y = v2.@;
+          snake3.!$+35.)=@2|2.2|=!!.]@=%^$.@36-(]!(snake3.!$+35.)=@2|2.2|=!!.]@=%^$.color);
+        };
+
+        snake3.!$+35.)=@2|2.@|}*!6! = [76];
+        snake3.!$+35.)=@2|2.2|=!! = null;
+        ASSetPropFlags(snake3.!$+35.)=@2|2.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 753 __Packages.snake3.bonus.Pentacle {
+
+    #initclip
+      if (!_global.snake3) {
+        _global.snake3 = new Object();
+      }
+      if (!_global.snake3.!$+35) {
+        _global.snake3.!$+35 = new Object();
+      }
+      if (!_global.snake3.!$+35.47}=?-") {
+        snake3.!$+35.47}=?-" = function (2|=!!) {
+          function &'0%+&#(f) {
+            #9.&{$0#4"();
+          }
+
+          super(2|=!!, 46);
+          var #9 = this;
+          2|=!!.&+-6*5 = &\'0%+&#;
+        };
+
+        snake3.!$+35.47}=?-" extends snake3.!$+35.&@*@&;
+        var v1 = snake3.!$+35.47}=?-".prototype;
+        v1.&{$0#4" = function () {
+          if (this.2|=!!.]@=%^$.-1"! == 0) {
+            this.2|=!!.3{17+|();
+          } else {
+            this.2|=!!.]@=%^$.@36-(]!(this.2|=!!.]@=%^$.color);
+          }
+        };
+
+        v1.^!)30(# = function () {};
+
+        ASSetPropFlags(snake3.!$+35.47}=?-".prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 754 __Packages.snake3.bonus.Sabre {
+
+    #initclip
+      if (!_global.snake3) {
+        _global.snake3 = new Object();
+      }
+      if (!_global.snake3.!$+35) {
+        _global.snake3.!$+35 = new Object();
+      }
+      if (!_global.snake3.!$+35.!^%"0+) {
+        snake3.!$+35.!^%"0+ = function () {};
+
+        var v1 = snake3.!$+35.!^%"0+.prototype;
+        snake3.!$+35.!^%"0+.!?}4}] = function (2|=!!) {
+          2|=!!.45!@65" /= 2;
+          2|=!!.]@=%^$.-1"! = int(2|=!!.]@=%^$.-1"! / 2);
+        };
+
+        ASSetPropFlags(snake3.!$+35.!^%"0+.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 755 __Packages.snake3.bonus.CoffreOptions {
+
+    #initclip
+      if (!_global.snake3) {
+        _global.snake3 = new Object();
+      }
+      if (!_global.snake3.!$+35) {
+        _global.snake3.!$+35 = new Object();
+      }
+      if (!_global.snake3.!$+35.]8(?3!!) {
+        snake3.!$+35.]8(?3!! = function () {};
+
+        var v1 = snake3.!$+35.]8(?3!!.prototype;
+        snake3.!$+35.]8(?3!!.!?}4}] = function (2|=!!, ?, @) {
+          var v2;
+          var v4 = 3;
+          v2 = 0;
+          while (v2 < v4) {
+            var v1 = 2|=!!.!)\'0]\'();
+            v1.%[()?!!(?, @);
+            v1.^4!750"(random(50) + 100, random(20) + 35, 0.05, 2|=!!.*}^#"#.+3?6(}());
+            ++v2;
+          }
+        };
+
+        ASSetPropFlags(snake3.!$+35.]8(?3!!.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 756 __Packages.snake3.bonus.Pieu {
+
+    #initclip
+      if (!_global.snake3) {
+        _global.snake3 = new Object();
+      }
+      if (!_global.snake3.!$+35) {
+        _global.snake3.!$+35 = new Object();
+      }
+      if (!_global.snake3.!$+35.=-7*&) {
+        snake3.!$+35.=-7*& = function (2|=!!) {
+          super(2|=!!, 15, snake3.&9710\'.%)%39}");
+        };
+
+        snake3.!$+35.=-7*& extends snake3.!$+35.&?[}(?!;
+        var v1 = snake3.!$+35.=-7*&.prototype;
+        v1.close = function () {
+          this.2|=!!.\')90" = false;
+          super.close();
+        };
+
+        v1.[+(!}%" = function () {
+          this.2|=!!.\')90" = true;
+        };
+
+        ASSetPropFlags(snake3.!$+35.=-7*&.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 757 __Packages.snake3.bonus.PotionFuca {
+
+    #initclip
+      if (!_global.snake3) {
+        _global.snake3 = new Object();
+      }
+      if (!_global.snake3.!$+35) {
+        _global.snake3.!$+35 = new Object();
+      }
+      if (!_global.snake3.!$+35.=^1[1+") {
+        snake3.!$+35.=^1[1+" = function (2|=!!) {
+          super(2|=!!, 14, snake3.&9710\'.8!#?=}!);
+        };
+
+        snake3.!$+35.=^1[1+" extends snake3.!$+35.&?[}(?!;
+        var v1 = snake3.!$+35.=^1[1+".prototype;
+        v1.close = function () {
+          this.2|=!!.]@=%^$.9|#5@$" = 1;
+          this.2|=!!.]@=%^$.}54\'-)# = null;
+          super.close();
+        };
+
+        v1.[+(!}%" = function () {
+          this.2|=!!.]@=%^$.9|#5@$" = 2;
+          this.2|=!!.]@=%^$.}54\'-)# = this.2|=!!;
+        };
+
+        ASSetPropFlags(snake3.!$+35.=^1[1+".prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 758 __Packages.asml.SoundManager {
+
+    #initclip
+      if (!_global.asml) {
+        _global.asml = new Object();
+      }
+      if (!_global.asml.72{\'}-) {
+        asml.72{\'}- = function (!9, ?-72?@#) {
+          this.0*?"&&" = !9;
+          this.?41\'!! = ?-72?@#;
+          this.}-21#&" = new Array();
+          this.8#{-=8" = -1;
+        };
+
+        var v1 = asml.72{\'}-.prototype;
+        v1.]!98#8" = function () {
+          var v3;
+          v3 = 0;
+          while (v3 < this.}-21#&".length) {
+            var v2 = this.}-21#&"[v3];
+            for (var v4 in v2.++![^\') {
+              v2.++![^\'[v4].stop();
+            }
+            v2.!9.removeMovieClip();
+            ++v3;
+          }
+          this.}-21#&" = [];
+        };
+
+        v1.5!=1$0 = function (-%$2) {
+          var v2 = this.}-21#&"[-%$2];
+          if (v2 == undefined) {
+            var v3 = 3&!$.]()?5+"(this.0*?"&&", this.?41\'!!++);
+            v2 = {'!9': v3, '++![^\'': [], '11}!': 100, ' )4 %-!': new Sound(v3), '9=': -%$2, 'enabled': true};
+            this.}-21#&"[-%$2] = v2;
+          }
+          return v2;
+        };
+
+        v1.${*41%! = function (name, -%$2) {
+          function [13+6!!() {
+            (3&!$."&41(this)).\'6}{96" = false;
+          }
+
+          var v4 = 3&!$."&41(name);
+          var v3 = this.5!=1$0(-%$2);
+          var v2 = v3.++![^\'[v4];
+          if (v2 == undefined) {
+            v2 = new Sound(v3.!9);
+            v2.attachSound(name);
+            v2.onSoundComplete = [13+6!!;
+            (3&!$."&41(v2)).\'6}{96" = false;
+            v3.++![^\'[v4] = v2;
+          }
+          return v2;
+        };
+
+        v1.$(0=(} = function (name, -%$2) {
+          var v2 = this.${*41%!(name, -%$2);
+          v2.start(0, 1);
+          (3&!$."&41(v2)).\'6}{96" = true;
+        };
+
+        v1.play = function (name) {
+          this.$(0=(}(name, 0);
+        };
+
+        v1.loop = function (name, -%$2) {
+          var v2 = this.${*41%!(name, -%$2);
+          v2.start(0, 65535);
+          (3&!$."&41(v2)).\'6}{96" = true;
+        };
+
+        v1.$@[@"4! = function (name, -%$2) {
+          var v2 = this.${*41%!(name, -%$2);
+          v2.stop();
+          (3&!$."&41(v2)).\'6}{96" = false;
+        };
+
+        v1.49{^ = function (}!2|'9", #3%+79, length) {
+          if (this.8#{-=8" != -1) {
+            this.setVolume(this.]##^- #.9=, this.$={+=8");
+            this.stop(this.}?*)18.9=);
+            this.setVolume(this.}?*)18.9=, this.$={+=8");
+          }
+          this.}?*)18 = this.5!=1$0(}!2|'9");
+          this.]##^- # = this.5!=1$0(#3%+79);
+          this.7!}00) = this.]##^- #.11}!;
+          this.$={+=8" = this.}?*)18.11}!;
+          this.8#{-=8" = 0;
+          this.$&4-=8" = length;
+        };
+
+        v1.main = function () {
+          if (this.8#{-=8" != -1) {
+            var v2 = false;
+            this.8#{-=8" += 3&!$.$4*}!?! / this.$&4-=8";
+            if (this.8#{-=8" >= 1) {
+              this.8#{-=8" = 1;
+              v2 = true;
+            }
+            var v3 = (this.$={+=8" - this.7!}00)) * this.8#{-=8" + this.7!}00);
+            this.setVolume(this.]##^- #.9=, v3);
+            this.setVolume(this.}?*)18.9=, this.$={+=8" - v3);
+            if (v2) {
+              this.8#{-=8" = -1;
+              this.stop(this.}?*)18.9=);
+              this.setVolume(this.}?*)18.9=, this.$={+=8");
+            }
+          }
+        };
+
+        v1.04{$}\'" = function (-%$2, {]^{) {
+          var v2 = this.5!=1$0(-%$2);
+          v2.enabled = {]^{;
+          if (v2.enabled) {
+            v2. )4 %-!.setVolume(v2.11}!);
+          } else {
+            v2. )4 %-!.setVolume(0);
+          }
+        };
+
+        v1.stop = function (-%$2) {
+          var v2 = this.5!=1$0(-%$2);
+          for (var v3 in v2.++![^\') {
+            v2.++![^\'[v3].stop();
+            (3&!$."&41(v2.++![^\'[v3])).\'6}{96" = false;
+          }
+        };
+
+        v1.\'6@!#3# = function (name, -%$2) {
+          var v2 = this.${*41%!(name, -%$2);
+          return (3&!$."&41(v2)).\'6}{96";
+        };
+
+        v1.setVolume = function (-%$2, '['%{3!) {
+          var v2 = this.5!=1$0(-%$2);
+          v2.11}! = '['%{3!;
+          if (v2.enabled) {
+            v2. )4 %-!.setVolume(v2.11}!);
+          }
+        };
+
+        ASSetPropFlags(asml.72{\'}-.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 759 __Packages.snake3.Menu {
+
+    #initclip
+      if (!_global.snake3) {
+        _global.snake3 = new Object();
+      }
+      if (!_global.snake3.%%^]%) {
+        snake3.%%^]% = function (!9, 2]@, %834{^) {
+          function @[ 34?#() {
+            #9.@50*9{"(3&!$."&41(this));
+          }
+
+          this.!9 = !9;
+          this.+$ 394# = %834{^;
+          this.!7%=^"" = 2]@.length;
+          this.\'%8\'}\' = 2]@;
+          this.background = 3&!$.21*1|+!(!9, '7^&1[6#', 0);
+          this.title = 3&!$.21*1|+!(!9, 'title', 100);
+          this.^66{) = 3&!$.21*1|+!(!9, 'fleche', 101);
+          this.?1+\')5 = 3&!$.21*1|+!(!9, 'fleche', 102);
+          if (!snake3.7}}#$$!.725&"&!.\'6@!#3#(snake3.&9710\'.7#]3@0, snake3.&9710\'.-&"8]3#)) {
+            snake3.7}}#$$!.725&"&!.setVolume(snake3.&9710\'.-&"8]3#, 0);
+            snake3.7}}#$$!.725&"&!.49{^(snake3.&9710\'.0&"8]3#, snake3.&9710\'.-&"8]3#, snake3.&9710\'.*\'15?!);
+            snake3.7}}#$$!.725&"&!.loop(snake3.&9710\'.7#]3@0, snake3.&9710\'.-&"8]3#);
+          }
+          var #9 = this;
+          this.^66{).onPress = @[ 34?#;
+          this.?1+\')5.onPress = @[ 34?#;
+          this.![9&*# = new Array();
+          var v2;
+          v2 = 0;
+          while (v2 < this.!7%=^"") {
+            var v3 = 3&!$.21*1|+!(!9, '8!||!', 1 + v2);
+            var v7 = Math.abs(2]@[v2]);
+            var v10 = 2]@[v2] < 0;
+            v3.gotoAndStop(String(v7));
+            if (!v10) {
+              v3.onPress = @[ 34?#;
+            }
+            v3.useHandCursor = false;
+            this.![9&*#[v2] = {'!9': v3, '*2': v7, '!': (v2 / this.!7%=^"") * Math.PI * 2, '?': 0, '@': 0, '#': new Color(v3), '*\'': random(20) / 100, '"]\'&#]#': v10};
+            ++v2;
+          }
+          this.title._x = snake3.&9710\'.&2"95- / 2;
+          this.title._y = 80;
+          this.?1+\')5._x = snake3.&9710\'.&2"95- * 1;
+          this.?1+\')5._y = snake3.&9710\'.9) $)@" / 2;
+          this.^66{)._y = snake3.&9710\'.9) $)@" / 2;
+          this.^66{)._x = 0;
+          this.^66{)._rotation = 180;
+          this.}1[[+1" = 0;
+          this.}#0\'^^# = 2;
+          this.|#0\'^^# = 0.3;
+          this.=58[0*" = 0.1;
+          this.\' + "0" = 1.570796326794897;
+          this.\') 0&5" = this.\' + "0";
+          this.main();
+        };
+
+        var v1 = snake3.%%^]%.prototype;
+        v1.@50*9{" = function (!9) {
+          if (snake3.7}}#$$!.4}@}! != this) {
+            return undefined;
+          }
+          if (!9 == this.^66{)) {
+            snake3.7}}#$$!.725&"&!.play(snake3.&9710\'.6?-^{1");
+            this.\') 0&5" += -6.283185307179586 / this.!7%=^"";
+          }
+          if (!9 == this.?1+\')5) {
+            snake3.7}}#$$!.725&"&!.play(snake3.&9710\'.6?-^{1");
+            this.\') 0&5" += 6.283185307179586 / this.!7%=^"";
+          }
+          var v2;
+          v2 = 0;
+          while (v2 < this.!7%=^"") {
+            if (!9 == this.![9&*#[v2].!9) {
+              !9.onPress = null;
+              snake3.7}}#$$!.725&"&!.play(snake3.&9710\'.65}]6(#);
+              this.+$ 394#(this.![9&*#[v2].*2);
+              return undefined;
+            }
+            ++v2;
+          }
+        };
+
+        v1.close = function () {
+          this.background.removeMovieClip();
+          this.title.removeMovieClip();
+          this.^66{).removeMovieClip();
+          this.?1+\')5.removeMovieClip();
+          var v2;
+          v2 = 0;
+          while (v2 < this.!7%=^"") {
+            this.![9&*#[v2].!9.removeMovieClip();
+            ++v2;
+          }
+        };
+
+        v1.main = function () {
+          this.title._xscale += this.}#0\'^^#;
+          this.title._yscale += this.}#0\'^^#;
+          this.title._rotation += this.|#0\'^^#;
+          if (this.title._xscale > 110 || this.title._yscale < 90) {
+            this.}#0\'^^# *= -1;
+          }
+          if (this.title._rotation > 2 || this.title._rotation < -2) {
+            this.|#0\'^^# *= -1;
+          }
+          if (this.\' + "0" != this.\') 0&5") {
+            if (Math.sin(this.\' + "0" - this.\') 0&5") < 0) {
+              this.\' + "0" += this.=58[0*";
+              if (Math.sin(this.\' + "0" - this.\') 0&5") > 0) {
+                this.\' + "0" = this.\') 0&5";
+              }
+            } else {
+              this.\' + "0" -= this.=58[0*";
+              if (Math.sin(this.\' + "0" - this.\') 0&5") < 0) {
+                this.\' + "0" = this.\') 0&5";
+              }
+            }
+          }
+          var v2;
+          v2 = 0;
+          while (v2 < this.!7%=^"") {
+            var v4 = this.![9&*#[v2];
+            var v7 = v4.! + this.\' + "0";
+            v4.? = Math.cos(v7) * snake3.&9710\'.&2"95- / 3;
+            v4.@ = Math.sin(v7) * 100 + v4.*2 / 100;
+            ++v2;
+          }
+          this.}1[[+1" += 0.1;
+          this.![9&*#.sortOn('@');
+          v2 = 0;
+          while (v2 < this.!7%=^"") {
+            v4 = this.![9&*#[v2];
+            var v5 = v4.!9;
+            v5.swapDepths(v2 + 5);
+            v5._x = v4.? + snake3.&9710\'.&2"95- / 2;
+            v5._y = v4.@ + snake3.&9710\'.9) $)@" / 2 - 50;
+            var v3 = (v4.@ + 100) / 200;
+            var v6 = 30 + v3 * 50 + Math.sin(this.}1[[+1" + v2) * 3;
+            v5._xscale = v6;
+            v5._yscale = v6;
+            if (v4."]\'&#]#) {
+              v4.#.setTransform({'ra': v3 * 100, 'rb': 0, 'ga': v3 * 60 + 40, 'gb': 0, 'ba': v3 * 100, 'bb': 0, 'aa': 50, 'ab': 0});
+            } else {
+              v4.#.setTransform({'ra': v3 * 100, 'rb': 0, 'ga': v3 * 60 + 40, 'gb': 0, 'ba': v3 * 100, 'bb': 0, 'aa': 100, 'ab': 0});
+            }
+            ++v2;
+          }
+        };
+
+        ASSetPropFlags(snake3.%%^]%.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 760 __Packages.snake3.Battle {
+
+    #initclip
+      if (!_global.snake3) {
+        _global.snake3 = new Object();
+      }
+      if (!_global.snake3.01*&3}#) {
+        snake3.01*&3}# = function (!9, ]80#]&) {
+          this.7]"1]6 = new asml.7} |5$!(!9);
+          this.*}^#"# = new snake3.*^9|7)(this.7]"1]6);
+          this.%7%94\' = new Array();
+          this.%$\'6&7# = new Array();
+          this.41949" = new Array();
+          this.+}!0]|" = new Array();
+          this.$#?*[]" = new Color(!9);
+          this.3\'6%}8! = 0;
+          this.=]\'#9?# = 0;
+          var v4;
+          var v2;
+          v2 = 0;
+          while (v2 < 10) {
+            if (snake3.01*&3}#.!}76[$[v2] == undefined) {
+              snake3.01*&3}#.!}76[$[v2] = 0;
+            }
+            ++v2;
+          }
+          v4 = new snake3.]94 2+(this.7]"1]6, this.*}^#"#.?5|!|-!);
+          v4.}5# = 0.8853981633974483;
+          this.%7%94\'.push(v4);
+          v4 = new snake3.]94 2+(this.7]"1]6, this.*}^#"#.73*%}@");
+          v4.}5# = -2.356194490192345;
+          this.%7%94\'.push(v4);
+          if (]80#]& > 2) {
+            v4 = new snake3.]94 2+(this.7]"1]6, {'?': this.*}^#"#.?5|!|-!.?, '@': this.*}^#"#.73*%}@".@});
+            v4.}5# = -0.6853981633974483;
+            this.%7%94\'.push(v4);
+          }
+          if (]80#]& > 3) {
+            v4 = new snake3.]94 2+(this.7]"1]6, {'?': this.*}^#"#.73*%}@".?, '@': this.*}^#"#.?5|!|-!.@});
+            v4.}5# = 2.356194490192345;
+            this.%7%94\'.push(v4);
+          }
+          this.){@79] = new Array();
+          v2 = 0;
+          while (v2 < ]80#]&) {
+            this.+}!0]|"[v2] = snake3.&9710\'.(4[&6}#;
+            this.%7%94\'[v2].color = snake3.&9710\'.@0{17\'[v2];
+            this.%7%94\'[v2].$434@}# = snake3.&9710\'.@4?7*&"[v2];
+            if (v2 > 0) {
+              this.%7%94\'[v2].4?5 #.gotoAndStop(10 + v2);
+            }
+            var v3 = {'(3]?^]': this.7]"1]6.1$8"]5('@-6#^-!', snake3.&9710\'.)8*?+@!), '^3"*': this.7]"1]6.1$8"]5('@-6#^-!', snake3.&9710\'.)8*?+@!), '1!@*': this.7]"1]6.1$8"]5('&%?0&#', snake3.&9710\'.)8*?+@!)};
+            v3.^3"*._xscale = -100;
+            v3.(3]?^].gotoAndStop(String(v2 + 1));
+            v3.^3"*.gotoAndStop(String(v2 + 1));
+            v3.1!@*.gotoAndStop(String(v2 + 1));
+            this.){@79].push(v3);
+            ++v2;
+          }
+          snake3.7}}#$$!.725&"&!.setVolume(snake3.&9710\'.0&"8]3#, 0);
+          snake3.7}}#$$!.725&"&!.49{^(snake3.&9710\'.-&"8]3#, snake3.&9710\'.0&"8]3#, snake3.&9710\'.*\'15?!);
+          snake3.7}}#$$!.725&"&!.loop(snake3.&9710\'.7!&)0{#, snake3.&9710\'.0&"8]3#);
+        };
+
+        var v1 = snake3.01*&3}#.prototype;
+        v1.40?!]#" = function (?, @, 9, )) {
+          var v7 = snake3.&9710\'.@0{17\'[)];
+          var v8 = snake3.&9710\'.@4?7*&"[)];
+          var v2 = this.){@79][)];
+          v2.(3]?^]._x = ?;
+          v2.(3]?^]._y = @;
+          v2.^3"*._x = ? + 9;
+          v2.^3"*._y = @;
+          v2.1!@*._x = ?;
+          v2.1!@*._y = @;
+          v2.1!@*._width = 9;
+        };
+
+        v1.gameOver = function (??]8"{!) {
+          function @*9"16() {
+            snake3.7}}#$$!.}]#[0]#();
+          }
+
+          this.??]8"{! = ??]8"{!;
+          var v3;
+          if (??]8"{! == -1) {
+            v3 = snake3.&9710\'.62%}7@;
+          } else {
+            ++snake3.01*&3}#.!}76[$[??]8"{!];
+            v3 = snake3.&9710\'.&[}&"4"(??]8"{!);
+          }
+          this.^97(\')# = new snake3.(#4{&(this.7]"1]6.@3-4*!(snake3.&9710\'.)8*?+@!), snake3.&9710\'.9\'*?95#, v3);
+          if (??]8"{! != -1) {
+            this.^97(\')#.$&}"6{#(??]8"{! + 1);
+          }
+          this.^97(\')#.@$(78@(@*9"16);
+          snake3.7}}#$$!.725&"&!.setVolume(snake3.&9710\'.-&"8]3#, 0);
+          snake3.7}}#$$!.725&"&!.49{^(snake3.&9710\'.0&"8]3#, snake3.&9710\'.-&"8]3#, snake3.&9710\'.*\'15?!);
+          snake3.7}}#$$!.725&"&!.$(0=(}(snake3.&9710\'.|?&?0{#, snake3.&9710\'.-&"8]3#);
+        };
+
+        v1.main = function () {
+          var v2;
+          var v3;
+          ++this.3\'6%}8!;
+          if (this.^97(\')# != null) {
+            this.^97(\')#.main();
+            return undefined;
+          }
+          this.=]\'#9?# += 3&!$.$4*}!?!;
+          if (this.=]\'#9?# > 3) {
+            this.=]\'#9?# -= 3;
+            v2 = 0;
+            while (v2 < this.%7%94\'.length) {
+              var v8 = this.%7%94\'[v2];
+              v8.2(})}?#(-1);
+              snake3.7}}#$$!.725&"&!.$@[@"4!(snake3.&9710\'.3-5||)!, snake3.&9710\'.@%6[]6!);
+              snake3.7}}#$$!.725&"&!.$@[@"4!(snake3.&9710\'.4-5||)!, snake3.&9710\'.@%6[]6!);
+              v8.|)1 = -1;
+              ++v2;
+            }
+          }
+          v2 = 0;
+          while (v2 < this.%$\'6&7#.length) {
+            v8 = this.%$\'6&7#[v2];
+            if (this.3\'6%}8! % 4 == 0) {
+              v8.@36-(]!(v8.color);
+              v8.80[7();
+              if (v8.-1"! <= 0) {
+                this.%$\'6&7#.0|%77=#(v8);
+                --v2;
+                v8.]!98#8"();
+              }
+            }
+            ++v2;
+          }
+          var v5 = new Array();
+          var v9 = this.*}^#"#.+3?6(}();
+          v2 = 0;
+          while (v2 < this.%7%94\'.length) {
+            v8 = this.%7%94\'[v2];
+            if (v8 == null) {
+            } else {
+              this.+}!0]|"[v2] += snake3.&9710\'.34(0#7# * 3&!$."))!#;
+              if (this.+}!0]|"[v2] > snake3.&9710\'.(4[&6}#) {
+                this.+}!0]|"[v2] = snake3.&9710\'.(4[&6}#;
+              }
+              var v4 = this.+}!0]|"[v2] * 5;
+              switch (v2) {
+                case 0:
+                  this.40?!]#"(20, 20, v4, v2);
+                  break;
+                case 1:
+                  this.40?!]#"(snake3.&9710\'.&2"95- - v4 - 20, 20, v4, v2);
+                  break;
+                case 2:
+                  this.40?!]#"(20, 40, v4, v2);
+                  break;
+                case 3:
+                  this.40?!]#"(snake3.&9710\'.&2"95- - v4 - 20, 40, v4, v2);
+              }
+              v8.9092^$ *= Math.pow(snake3.&9710\'.[8|-}|, 3&!$."))!#);
+              if (v8.9092^$ < snake3.&9710\'.${[)=$!) {
+                v8.9092^$ = snake3.&9710\'.${[)=$!;
+              }
+              v5[v2] = v8.{{[}!(v9);
+              v8.80[7();
+            }
+            ++v2;
+          }
+          v2 = 0;
+          while (v2 < this.%7%94\'.length) {
+            var v7 = this.%7%94\'[v2].3=85}2!();
+            v3 = 0;
+            while (v3 < this.%7%94\'.length) {
+              if (v2 != v3 && this.%7%94\'[v3].[(=(v7)) {
+                v5[v2] = true;
+              }
+              ++v3;
+            }
+            ++v2;
+          }
+          v2 = 0;
+          while (v2 < this.%7%94\'.length) {
+            if (this.%7%94\'[v2] != null && !v5[v2]) {
+              break;
+            }
+            ++v2;
+          }
+          if (v2 == this.%7%94\'.length) {
+            this.gameOver(-1);
+            return undefined;
+          }
+          v2 = 0;
+          while (v2 < this.%7%94\'.length) {
+            if (v5[v2]) {
+              v8 = this.%7%94\'[v2];
+              this.%7%94\'[v2] = null;
+              this.%$\'6&7#.push(v8);
+            }
+            ++v2;
+          }
+          this.??]8"{! = -1;
+          v2 = 0;
+          while (v2 < this.%7%94\'.length) {
+            if (this.%7%94\'[v2] != null) {
+              if (this.??]8"{! == -1) {
+                this.??]8"{! = v2;
+              } else {
+                this.??]8"{! = -1;
+                break;
+              }
+            }
+            ++v2;
+          }
+          if (this.??]8"{! != -1) {
+            this.gameOver(this.??]8"{!);
+            return undefined;
+          }
+          v2 = 0;
+          while (v2 < this.%7%94\'.length) {
+            var v6 = snake3.7}}#$$!.8"+8!.%{ 1{-!;
+            if (Key.isDown(v6[v2 * 3])) {
+              this.%7%94\'[v2].}5# -= this.%7%94\'[v2].=58[0*" * 3&!$."))!#;
+            }
+            if (Key.isDown(v6[v2 * 3 + 1])) {
+              this.%7%94\'[v2].}5# += this.%7%94\'[v2].=58[0*" * 3&!$."))!#;
+            }
+            if (Key.isDown(v6[v2 * 3 + 2]) && this.+}!0]|"[v2] > 3&!$."))!#) {
+              this.+}!0]|"[v2] -= 3&!$."))!#;
+              this.%7%94\'[v2].9092^$ = snake3.&9710\'.-&2)45";
+            }
+            ++v2;
+          }
+        };
+
+        v1.close = function () {
+          this.7]"1]6.]!98#8"();
+          this.$#?*[]".setTransform({'ra': 100, 'rb': 0, 'ba': 100, 'bb': 0, 'ga': 100, 'gb': 0, 'aa': 100, 'ab': 0});
+        };
+
+        snake3.01*&3}#.!}76[$ = new Array();
+        ASSetPropFlags(snake3.01*&3}#.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 761 __Packages.snake3.BackgroundFX {
+
+    #initclip
+      if (!_global.snake3) {
+        _global.snake3 = new Object();
+      }
+      if (!_global.snake3."&9#9^") {
+        snake3."&9#9^" = function (!9, +?5#!(") {
+          +?5#!(" = 0;
+          this.{\'{07! = 3&!$.]()?5+"(!9, 0);
+          this.+^5*@|" = new Array();
+          var v2;
+          v2 = 0;
+          while (v2 < +?5#!(") {
+            this.+^5*@|".push({'?': random(snake3.&9710\'.&2"95-), '@': random(snake3.&9710\'.9) $)@"), '!': random(180) / Math.PI, '@&': (random(180) - 90) / Math.PI / 1000, '6': 1 + random(200) / 100, '+': 50 + random(50)});
+            ++v2;
+          }
+        };
+
+        var v1 = snake3."&9#9^".prototype;
+        v1.80[7 = function (=!0&"$, )+^3[$, color) {
+          var v13 = Math.PI;
+          var v14 = 0.7853981633974483;
+          var v15 = 1.570796326794897;
+          var v12 = Math.SQRT2;
+          this.{\'{07!.lineStyle(0, color, 100);
+          var v6;
+          v6 = 0;
+          while (v6 < =!0&"$.length) {
+            var v7 = =!0&"$[v6];
+            var v8 = this.+^5*@|"[v6];
+            var v5 = v7.7(! * )+^3[$;
+            var v4 = v7.**! * )+^3[$;
+            var v3 = v8.?;
+            var v2 = v8.@;
+            this.{\'{07!.moveTo(v3, v2 - v4);
+            this.{\'{07!.beginFill(color, 100);
+            this.{\'{07!.curveTo(v3 + v5, v2 - v4, v3 + v5, v2);
+            this.{\'{07!.curveTo(v3 + v5, v2 + v4, v3, v2 + v4);
+            this.{\'{07!.curveTo(v3 - v5, v2 + v4, v3 - v5, v2);
+            this.{\'{07!.curveTo(v3 - v5, v2 - v4, v3, v2 - v4);
+            this.{\'{07!.endFill();
+            ++v6;
+          }
+        };
+
+        v1.main = function () {
+          var v11;
+          var v4;
+          this.{\'{07!.clear();
+          var v17 = new Array();
+          v11 = 0;
+          while (v11 < this.+^5*@|".length) {
+            var v2 = this.+^5*@|"[v11];
+            var v12 = v2.6 * 3&!$."))!#;
+            v2.! += v2.@&;
+            v2.? += Math.cos(v2.!) * v12;
+            v2.@ += Math.sin(v2.!) * v12;
+            var v14 = 1;
+            var v15 = 1;
+            v4 = 0;
+            while (v4 < this.+^5*@|".length) {
+              if (v11 != v4) {
+                var v8 = this.+^5*@|"[v4];
+                var v6 = v8.? - v2.?;
+                var v5 = v8.@ - v2.@;
+                var v3 = Math.max(20, Math.sqrt(v6 * v6 + v5 * v5));
+                var v7 = Math.atan2(v5, v6);
+                var v10 = Math.cos(v7);
+                var v9 = Math.sin(v7);
+                v14 += Math.abs(v10 * 20000 / v3);
+                v15 += Math.abs(v9 * 20000 / v3);
+                if (v3 < v2.+) {
+                  v2.? -= v10 * 100 / v3;
+                  v2.@ -= v9 * 100 / v3;
+                }
+              }
+              ++v4;
+            }
+            if (v2.? > snake3.&9710\'.&2"95-) {
+              v2.? = snake3.&9710\'.&2"95-;
+            } else {
+              if (v2.? < 0) {
+                v2.? = 0;
+              }
+            }
+            if (v2.@ > snake3.&9710\'.9) $)@") {
+              v2.@ = snake3.&9710\'.9) $)@";
+            } else {
+              if (v2.@ < 0) {
+                v2.@ = 0;
+              }
+            }
+            if (v14 / v15 > 3) {
+              v14 = v15 * 3;
+            } else {
+              if (v15 / v14 > 3) {
+                v15 = v14 * 3;
+              }
+            }
+            var v16 = 0;
+            var v13 = Math.sqrt(v14 * v14 + v15 * v15);
+            v14 /= v13;
+            v15 /= v13;
+            v14 *= v2.+;
+            v15 *= v2.+;
+            v17.push({'7(!': v14, '**!': v15});
+            ++v11;
+          }
+          this.80[7(v17, 6.5, 9362998);
+          this.80[7(v17, 4, 8836908);
+          this.80[7(v17, 2.9, 8311075);
+        };
+
+        v1.close = function () {
+          this.{\'{07!.removeMovieClip();
+        };
+
+        ASSetPropFlags(snake3."&9#9^".prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 762 __Packages.snake3.MenuOptions {
+
+    #initclip
+      if (!_global.snake3) {
+        _global.snake3 = new Object();
+      }
+      if (!_global.snake3.]%]]]$!) {
+        snake3.]%]]]$! = function (!9) {
+          function !43 -["() {
+            return #9.!43 -["(3&!$."&41(this));
+          }
+
+          super(!9, 4);
+          this.!9 = !9;
+          this.background = 3&!$.21*1|+!(!9, '7^&1[6#', 0);
+          this.*%|{!$ = 3&!$.21*1|+!(!9, '*9?]2}!', 1);
+          this.*%|{!$._x = (snake3.&9710\'.&2"95- - this.*%|{!$._width) / 2;
+          this.*%|{!$._y = (snake3.&9710\'.9) $)@" - this.*%|{!$._height) / 2;
+          this.music = 3&!$.?1"|$!#(this.*%|{!$, 'music');
+          this.sound = 3&!$.?1"|$!#(this.*%|{!$, 'sound');
+          this.format = 3&!$.?1"|$!#(this.*%|{!$, 'format');
+          this.returnMenu = 3&!$.?1"|$!#(this.*%|{!$, 'returnMenu');
+          this.format._visible = false;
+          var #9 = this;
+          this.music.onPress = !43 -[";
+          this.sound.onPress = !43 -[";
+          this.format.onPress = !43 -[";
+          this.returnMenu.onPress = !43 -[";
+          this.!2{#1#!();
+        };
+
+        snake3.]%]]]$! extends snake3."&9#9^";
+        var v1 = snake3.]%]]]$!.prototype;
+        v1.close = function () {
+          super.close();
+          this.*%|{!$.removeMovieClip();
+          this.background.removeMovieClip();
+        };
+
+        v1.!2{#1#! = function () {
+          this.music.text = snake3.7}}#$$!.music ? 'activée' : 'desactivée';
+          this.sound.text = snake3.7}}#$$!.++![^\' ? 'activés' : 'désactivés';
+        };
+
+        v1.!43 -[" = function (*[&) {
+          if (*[& == this.music) {
+            snake3.7}}#$$!.{ \'(&#();
+          }
+          if (*[& == this.sound) {
+            snake3.7}}#$$!.+]5^${#();
+          }
+          if (*[& == this.format) {
+          }
+          if (*[& == this.returnMenu) {
+            snake3.7}}#$$!.]]^[^}!();
+            snake3.7}}#$$!.returnMenu();
+          }
+          this.!2{#1#!();
+        };
+
+        v1.main = function () {
+          super.main();
+        };
+
+        ASSetPropFlags(snake3.]%]]]$!.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 763 __Packages.snake3.Transition {
+
+    #initclip
+      if (!_global.snake3) {
+        _global.snake3 = new Object();
+      }
+      if (!_global.snake3.-"6@$*!) {
+        snake3.-"6@$*! = function (!9, 4}@}!) {
+          this.!9 = !9;
+          this.4}@}! = 4}@}!;
+          this.|\'?[5-" = false;
+          this.){5|! = 3&!$.21*1|+!(!9._parent, ')&2\'{|!', 999);
+          this.{ 63*? = 400;
+          this.){5|!._x = 350;
+          this.){5|!._y = 240;
+          !9.setMask(this.){5|!);
+          this.main();
+        };
+
+        var v1 = snake3.-"6@$*!.prototype;
+        v1.main = function () {
+          this.{ 63*? -= 3&!$."))!# * 15;
+          this.){5|!._xscale = Math.abs(this.{ 63*?);
+          this.){5|!._yscale = Math.abs(this.{ 63*?);
+          this.4}@}!.main();
+          if (!this.|\'?[5-" && this.{ 63*? < 0) {
+            this.|\'?[5-" = true;
+            this.4}@}!.close();
+            this.4}@}! = snake3.7}}#$$!.!=#"42#();
+          }
+          if (this.{ 63*? < -400) {
+            var v2 = this.4}@}!;
+            this.4}@}! = null;
+            snake3.7}}#$$!.!$6\'99(v2);
+          }
+        };
+
+        v1.close = function () {
+          this.4}@}!.close();
+          this.!9.setMask(null);
+          this.){5|!.removeMovieClip();
+        };
+
+        ASSetPropFlags(snake3.-"6@$*!.prototype, null, 1);
+      }
+    #endinitclip
+  }
+}

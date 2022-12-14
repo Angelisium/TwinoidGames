@@ -1,0 +1,6212 @@
+movie 'bandas.swf' {
+// flash 7, total frames: 2, frame rate: 40 fps, 700x480 px, compressed
+
+  movieClip 6  {
+  }
+
+  movieClip 9  {
+  }
+
+  movieClip 10 mcEffectTitle {
+  }
+
+  movieClip 12 mcBackground {
+  }
+
+  movieClip 13 mcGame {
+  }
+
+  movieClip 14 mcBoard {
+  }
+
+  movieClip 23 mcCardLauncher {
+
+    frame 1 {
+      stop();
+    }
+  }
+
+  movieClip 27 mcTarget {
+  }
+
+  movieClip 28 mcBoardMask {
+  }
+
+  movieClip 29 mcFrutibouille {
+  }
+
+  movieClip 30 main {
+
+    frame 1 {
+      frutibandas.Main.init(this);
+    }
+
+    frame 3 {
+      frutibandas.Main.mainLoop();
+    }
+
+    frame 4 {
+      gotoAndPlay(_currentframe - 1);
+    }
+  }
+
+  movieClip 33 mcArrow {
+
+    frame 10 {
+      _visible = false;
+      stop();
+    }
+  }
+
+  movieClip 39  {
+  }
+
+  movieClip 48 mcTrap {
+
+    frame 1 {
+    }
+
+    frame 35 {
+      removeMovieClip('');
+    }
+  }
+
+  movieClip 56 mcCoefSquare {
+  }
+
+  movieClip 58  {
+  }
+
+  movieClip 60  {
+  }
+
+  movieClip 62  {
+  }
+
+  movieClip 63 mcVachette {
+
+    frame 17 {
+      gotoAndPlay(1);
+    }
+  }
+
+  movieClip 65 rondMaskBlink {
+
+    frame 21 {
+      gotoAndPlay(2);
+    }
+  }
+
+  movieClip 68 rondMask {
+  }
+
+  movieClip 73 mcSquare {
+
+    frame 1 {
+    }
+
+    frame 35 {
+      removeMovieClip('');
+    }
+  }
+
+  movieClip 84 mcFullSquare {
+  }
+
+  movieClip 88  {
+  }
+
+  movieClip 92  {
+  }
+
+  movieClip 123 card {
+
+    frame 1 {
+      stop();
+    }
+  }
+
+  movieClip 124 mcCardSlot {
+
+    frame 31 {
+      card2.gotoAndStop(newCardId);
+    }
+
+    frame 41 {
+      this.setCard(this.newCardId);
+    }
+
+    frame 54 {
+      this.removeCard();
+    }
+  }
+
+  movieClip 125 mcPlayerInfo {
+
+    frame 1 {
+      stop();
+    }
+  }
+
+  movieClip 154 card {
+
+    frame 1 {
+      stop();
+    }
+  }
+
+  movieClip 155 mcCardSlot {
+
+    frame 31 {
+      card2.gotoAndStop(newCardId);
+    }
+
+    frame 41 {
+      this.setCard(this.newCardId);
+    }
+
+    frame 54 {
+      this.removeCard();
+    }
+  }
+
+  movieClip 184  {
+  }
+
+  movieClip 185 mcLogBox {
+  }
+
+  movieClip 187 mcAnvil {
+  }
+
+  movieClip 194  {
+
+    frame 1 {
+      gotoAndStop(_parent._parent.team + 1);
+    }
+  }
+
+  movieClip 198  {
+
+    frame 1 {
+      stop();
+    }
+  }
+
+  movieClip 200  {
+  }
+
+  movieClip 211  {
+
+    frame 31 {
+      _parent.updatePos();
+      _parent.gotoNext();
+    }
+
+    frame 61 {
+      _parent.updatePos();
+      _parent.gotoNext();
+    }
+
+    frame 91 {
+      _parent.updatePos();
+      _parent.gotoNext();
+    }
+
+    frame 121 {
+      _parent.updatePos();
+      _parent.gotoNext();
+    }
+
+    frame 146 {
+      _parent.updatePos();
+      _parent.gotoNext();
+    }
+
+    frame 171 {
+      _parent.updatePos();
+      _parent.gotoNext();
+    }
+
+    frame 190 {
+      _parent.kill();
+    }
+
+    frame 211 {
+      stop();
+    }
+
+    frame 244 {
+      _parent.gotoNext();
+    }
+
+    frame 274 {
+      _parent.gotoNext();
+    }
+
+    frame 304 {
+      _parent.gotoNext();
+    }
+
+    frame 335 {
+      _parent.gotoNext();
+    }
+
+    frame 365 {
+      _parent.gotoNext();
+    }
+
+    frame 407 {
+      _parent.gotoNext();
+    }
+
+    frame 437 {
+      _parent.gotoNext();
+    }
+
+    frame 467 {
+      _parent.gotoNext();
+    }
+
+    frame 497 {
+      _parent.gotoNext();
+    }
+
+    frame 527 {
+      _parent.gotoNext();
+    }
+  }
+
+  movieClip 217  {
+
+    frame 1 {
+      stop();
+    }
+  }
+
+  movieClip 222  {
+
+    frame 1 {
+      gotoAndStop(_parent._parent.team + 1);
+    }
+  }
+
+  movieClip 233  {
+
+    frame 31 {
+      _parent.updatePos();
+      _parent.gotoNext();
+    }
+
+    frame 61 {
+      _parent.updatePos();
+      _parent.gotoNext();
+    }
+
+    frame 91 {
+      _parent.updatePos();
+      _parent.gotoNext();
+    }
+
+    frame 121 {
+      _parent.updatePos();
+      _parent.gotoNext();
+    }
+
+    frame 138 {
+      if (_parent.flShooted) {
+        stop();
+      }
+    }
+
+    frame 148 {
+      _parent.updatePos();
+      _parent.gotoNext();
+    }
+
+    frame 173 {
+      _parent.updatePos();
+      _parent.gotoNext();
+    }
+
+    frame 196 {
+      _parent.kill();
+    }
+
+    frame 215 {
+      stop();
+    }
+
+    frame 245 {
+      _parent.gotoNext();
+    }
+
+    frame 275 {
+      _parent.gotoNext();
+    }
+
+    frame 305 {
+      _parent.gotoNext();
+    }
+
+    frame 336 {
+      _parent.gotoNext();
+    }
+
+    frame 366 {
+      _parent.gotoNext();
+    }
+
+    frame 408 {
+      _parent.gotoNext();
+    }
+
+    frame 438 {
+      _parent.gotoNext();
+    }
+
+    frame 468 {
+      _parent.gotoNext();
+    }
+
+    frame 498 {
+      _parent.gotoNext();
+    }
+
+    frame 528 {
+      _parent.gotoNext();
+    }
+  }
+
+  movieClip 234 mcBandas {
+  }
+
+  movieClip 236  {
+  }
+
+  movieClip 238  {
+  }
+
+  movieClip 239 mcSmoke {
+
+    frame 21 {
+      removeMovieClip('');
+    }
+  }
+
+  button 244 {
+
+    on (press) {
+      startDrag(this, false);
+    }
+
+    on (release) {
+      stopDrag();
+    }
+  }
+
+  movieClip 245 mcPopup {
+  }
+
+  movieClip 257 mcSmokeAnvil {
+
+    frame 12 {
+      removeMovieClip('');
+    }
+  }
+
+  movieClip 259  {
+  }
+
+  movieClip 264  {
+  }
+
+  button 266 {
+
+    on (rollOver) {
+      light._visible = true;
+      shade._visible = false;
+    }
+
+    on (rollOut, dragOut) {
+      light._visible = false;
+      shade._visible = true;
+    }
+
+    on (press) {
+      this.callback.obj[this.callback.method](this.callback.args);
+    }
+  }
+
+  movieClip 267 bouton {
+  }
+
+  movieClip 268  {
+  }
+
+  movieClip 269 __Packages.frutibandas.Main {
+
+    #initclip
+      if (!_global.frutibandas) {
+        _global.frutibandas = new Object();
+      }
+      if (!_global.frutibandas.Main) {
+        var v1 = function () {};
+
+        frutibandas.Main = v1;
+        var v2 = v1.prototype;
+        v1.init = function (mc) {
+          frutibandas.Main._animations = new frutibandas.gui.AnimationList();
+          frutibandas.Main._animController = new frutibandas.gui.AnimationController(frutibandas.Main.MAX_ANIM_PRIO);
+          frutibandas.Main.registerClasses();
+          frutibandas.Main._rootMovie = mc;
+          frutibandas.Main._rootMovie.stop();
+          frutibandas.Main.manager = new frutibandas.Manager(frutibandas.Main._rootMovie);
+          mc.manager = frutibandas.Main.manager;
+          frutibandas.Main._rootMovie._parent.loader.onGameReady();
+        };
+
+        v1.start = function (aGame) {
+          if (frutibandas.Main.gameUI != null) {
+            frutibandas.Main.reset();
+          }
+          try {
+            frutibandas.Main.game = aGame;
+            frutibandas.Main.gameUI = frutibandas.gui.Game.New(frutibandas.Main._rootMovie);
+            frutibandas.Main.gameUI.chat.setSendCallback(frutibandas.Main.manager, frutibandas.Main.manager.sendGame);
+            frutibandas.Main.gameUI.show();
+            if (frutibandas.Main.game.phase == frutibandas.Game.PHASE_CARD_SELECTION) {
+              frutibandas.Main.gameUI.showDraftCards(frutibandas.Main.game.getPool(), frutibandas.Main.game.team == frutibandas.Main.game.currentTeam);
+            } else {
+              frutibandas.Main.gameUI.showPlayersCards(frutibandas.Main.game.cards);
+            }
+            frutibandas.Main.gameUI.onTurnChanged(frutibandas.Main.game.currentTeam);
+            frutibandas.Main._kbdController = new frutibandas.gui.KeyboardController();
+            frutibandas.Main.sndManager = new frutibandas.gui.SoundManager(frutibandas.Main._rootMovie);
+            if (frutibandas.Main._music) {
+              frutibandas.Main.sndManager.start();
+            }
+            frutibandas.Main.inputLocked = false;
+            frutibandas.Main._rootMovie._visible = true;
+            frutibandas.Main._rootMovie._parent._visible = true;
+            frutibandas.Main._rootMovie.gotoAndPlay(3);
+          }
+          catch (v0) {
+            if (Error(v0) != null) {
+              var e = Error(v0);
+              frutibandas.Main.debug('Error in start() : ' + e);
+            } else {
+              throw v0;
+            }
+          }
+        };
+
+        v1.reset = function () {
+          frutibandas.Main.inputLocked = false;
+          frutibandas.Main.game = undefined;
+          frutibandas.Main.gameUI.removeMovieClip();
+          frutibandas.Main.gameUI = null;
+          frutibandas.Main.sndManager.stop();
+          frutibandas.Main.sndManager = null;
+          frutibandas.Main._kbdController = null;
+          frutibandas.Main._rootMovie._visible = false;
+          frutibandas.Main._rootMovie.stop();
+        };
+
+        v1.debug = function (msg) {
+          frutibandas.Main.manager.debugMessage(msg);
+        };
+
+        v1.logMessage = function (msg, team) {
+          if (team == undefined) {
+            team = 0;
+          } else {
+            ++team;
+          }
+          frutibandas.Main.gameUI.chat.addText('<font color="' + frutibandas.Main.TEAM_LOG_COLOR[team] + '">' + msg + '</font>');
+        };
+
+        v1.mainLoop = function () {
+          if (frutibandas.Main.game != undefined) {
+            if (frutibandas.Main.game.isRunning()) {
+              frutibandas.Main.game.processTime();
+            }
+            if (frutibandas.Main._kbdController.hasKey()) {
+              frutibandas.Main.processInputs();
+            }
+            frutibandas.Main.gameUI.update();
+            frutibandas.Main.inputLocked = frutibandas.Main._animations.update();
+            if (!frutibandas.Main.inputLocked) {
+              frutibandas.Main.gameUI.showArrows();
+            } else {
+              frutibandas.Main.gameUI.hideArrows();
+            }
+          }
+        };
+
+        v1.pushAnimation = function (animatedObject, priority) {
+          frutibandas.Main._animController.push(animatedObject, priority);
+        };
+
+        v1.flushAnimation = function () {
+          frutibandas.Main.gameUI.hideArrows();
+          frutibandas.Main._animations.push(frutibandas.Main._animController);
+          frutibandas.Main._animations.push(new frutibandas.gui.PauseAnimation());
+          frutibandas.Main._animController = new frutibandas.gui.AnimationController(frutibandas.Main.MAX_ANIM_PRIO + 1);
+        };
+
+        v1.getAnimControl = function () {
+          return frutibandas.Main._animController;
+        };
+
+        v1.processInputs = function () {
+          if (frutibandas.Main.pause) {
+            frutibandas.Main.debug('pause pause !');
+            return undefined;
+          }
+          if (frutibandas.Main.gameUI.chatHasFocus()) {
+            frutibandas.Main.processChatInput();
+          } else {
+            if (!frutibandas.Main.inputLocked) {
+              frutibandas.Main.processBoardInput();
+            }
+          }
+        };
+
+        v1.processChatInput = function () {
+          if (frutibandas.Main._kbdController.nextKey() == 13) {
+            if (frutibandas.Main.game.isRunning() || frutibandas.Main.gameMode != 1) {
+              frutibandas.Main.gameUI.chat.send();
+            } else {
+              frutibandas.Main.gameUI.chat.writeLog(frutibandas.Texts.CHAT_IGNORE_GAME_ENDED);
+            }
+          }
+        };
+
+        v1.processBoardInput = function () {
+          var v1 = frutibandas.Main._kbdController.nextKey();
+          if (frutibandas.Main._rootMovie._parent.inFrusion == undefined) {
+            switch (v1) {
+              case 67:
+                frutibandas.Main._debugTeam = 1 - frutibandas.Main._debugTeam;
+                frutibandas.Main.game.team = frutibandas.Main._debugTeam;
+                return undefined;
+              case 38:
+                frutibandas.Main.game.move(frutibandas.Main._debugTeam, frutibandas.Direction.Up);
+                return undefined;
+              case 40:
+                frutibandas.Main.game.move(frutibandas.Main._debugTeam, frutibandas.Direction.Down);
+                return undefined;
+              case 37:
+                frutibandas.Main.game.move(frutibandas.Main._debugTeam, frutibandas.Direction.Left);
+                return undefined;
+              case 39:
+                frutibandas.Main.game.move(frutibandas.Main._debugTeam, frutibandas.Direction.Right);
+                return undefined;
+              case 77:
+                frutibandas.Main.toggleMusicOnOff();
+                return undefined;
+            }
+          }
+          switch (v1) {
+            case 38:
+              frutibandas.Main.game.requestMove(frutibandas.Direction.Up);
+              break;
+            case 40:
+              frutibandas.Main.game.requestMove(frutibandas.Direction.Down);
+              break;
+            case 37:
+              frutibandas.Main.game.requestMove(frutibandas.Direction.Left);
+              break;
+            case 39:
+              frutibandas.Main.game.requestMove(frutibandas.Direction.Right);
+              break;
+            case 77:
+              frutibandas.Main.toggleMusicOnOff();
+          }
+        };
+
+        v1.toggleMusicOnOff = function () {
+          frutibandas.Main._music = !frutibandas.Main._music;
+          if (!frutibandas.Main._music) {
+            frutibandas.Main.sndManager.stop();
+          } else {
+            frutibandas.Main.sndManager.start();
+          }
+        };
+
+        v1.registerClasses = function () {
+          Object.registerClass('mcFrutibouille', Frutibouille);
+          Object.registerClass('mcCoefSquare', ext.geom.CoefSquare);
+          Object.registerClass('mcGame', frutibandas.gui.Game);
+          Object.registerClass('mcBandas', frutibandas.gui.Sprite);
+          Object.registerClass('mcLogBox', frutibandas.gui.Chat);
+          Object.registerClass('mcBoard', frutibandas.gui.Board);
+          Object.registerClass('mcPlayerInfo', frutibandas.gui.PlayerInfo);
+          Object.registerClass('mcConfirm', frutibandas.gui.Confirm);
+          Object.registerClass('mcEndPanel', frutibandas.gui.EndPanel);
+          Object.registerClass('mcCardSlot', frutibandas.gui.CardSlot);
+          Object.registerClass('mcPopup', frutibandas.gui.Popup);
+          Object.registerClass('mcTarget', frutibandas.gui.Target);
+          Object.registerClass('mcBoardMask', frutibandas.gui.BoardMask);
+          Object.registerClass('mcSquare', frutibandas.gui.Slot);
+          Object.registerClass('mcEffectTitle', frutibandas.gui.EffectTitle);
+          Object.registerClass('mcTrap', frutibandas.gui.Trap);
+          Object.registerClass('mcArrow', frutibandas.gui.Arrow);
+        };
+
+        v1.showDummyGame = function () {
+          var v1 = '<gm t="0" i="360000" c="3:3:3:3:3:7:8:9"><u u="a"/><u u="b"/><b size="8" x1="0" x2="7" y1="0" y2="7">7877888866687888878778787877788888877887788777878778777788888778</b></gm>';
+          var v2 = (new XML(v1)).firstChild;
+          frutibandas.Main.userLogin = 'a';
+          var v3 = new frutibandas.Game(v2);
+          frutibandas.Main.start(v3);
+        };
+
+        v1.testRecoverGame = function () {
+          frutibandas.Main.userLogin = 'a';
+          var v1 = '<gm t="0" i="380000" c="" p="2"><u u="a" i="360000" c="3:4:5"/><u u="b" i="370000" c="7:8"/><b size="8" x1="0" x2="7" y1="0" y2="7">7877888866687888878778787877788888877887788777878778777788888778</b></gm>';
+          var v2 = (new XML(v1)).firstChild;
+          var v3 = new frutibandas.Game(v2);
+          frutibandas.Main._rootMovie.play();
+          frutibandas.Main.start(v3);
+        };
+
+        v1.DEBUG = false;
+        v1.FREE_MODE = 0;
+        v1.CHALLENGE_MODE = 1;
+        v1.CHAMPION_MODE = 2;
+        v1.ANIM_PRIO_CARD_TITLE = 0;
+        v1.ANIM_PRIO_CARD_PLAY = 1;
+        v1.ANIM_PRIO_CARD = 2;
+        v1.ANIM_PRIO_MOVE = 3;
+        v1.ANIM_PRIO_DEATH = 4;
+        v1.ANIM_PRIO_DEL_BORDER = 5;
+        v1.ANIM_PRIO_DEL_CARD = 6;
+        v1.ANIM_PRIO_APP_CARD = 7;
+        v1.ANIM_POPUP_END_GAME = 8;
+        v1.MAX_ANIM_PRIO = 12;
+        v1.TEAM_LOG_COLOR = ['#777777', '#AA4444', '#44AA44'];
+        v1.userLogin = null;
+        v1.manager = null;
+        v1.fruticard = null;
+        v1._rootMovie = null;
+        v1.game = null;
+        v1.gameUI = null;
+        v1.gameMode = -1;
+        v1.inputLocked = false;
+        v1.sndManager = null;
+        v1._music = true;
+        v1.pause = false;
+        v1._kbdController = null;
+        v1._animations = null;
+        v1._animController = null;
+        v1.StandaloneDebug = false;
+        v1._debugTeam = 0;
+        v1._lastFps = 0;
+        v1._fps = 0;
+        ASSetPropFlags(frutibandas.Main.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 270 __Packages.frutibandas.Manager {
+
+    #initclip
+      if (!_global.frutibandas) {
+        _global.frutibandas = new Object();
+      }
+      if (!_global.frutibandas.Manager) {
+        var v1 = function (rootMovie) {
+          super(undefined);
+          this._debugBox = null;
+          this._network = null;
+          this._rootMovie = rootMovie;
+          this.frusionClient = null;
+          this.joinRoomCalled = false;
+          this.debug = frutibandas.Main.debug;
+        };
+
+        frutibandas.Manager = v1;
+        frutibandas.Manager extends frusion.client.MultiManager;
+        var v2 = v1.prototype;
+        v2.onCbkIdentFinished = function () {
+          this._network = new frutibandas.NetworkController(this, this.frusionClient);
+          frutibandas.Main.userLogin = this.frusionClient.getUserName();
+          if (frutibandas.Main.userLogin == 'yota') {
+            this.initDebugBox();
+          }
+          frutibandas.Main.fruticard = new frutibandas.FruticardSlot(this.frusionClient);
+          this.listRooms();
+        };
+
+        v2.listRooms = function () {
+          this._network.listRooms(this.getDiscID());
+        };
+
+        v2.listGames = function () {
+          this._network.listGames();
+        };
+
+        v2.listPlayers = function () {
+          this._network.listPlayers();
+        };
+
+        v2.joinRoom = function (id) {
+          if (this.joinRoomCalled) {
+            return undefined;
+          }
+          this.joinRoomCalled = true;
+          this._network.joinRoom(id, this.getDiscID());
+        };
+
+        v2.sendMessage = function (msg) {
+          this._network.sendRoom(msg);
+        };
+
+        v2.joinGame = function (gameID) {
+          this._network.joinGame(gameID);
+        };
+
+        v2.createGame = function (data) {
+          var v2 = new frutibandas.CreateParameters();
+          v2.init(data.time.value, data.size.value, data.card.value);
+          this._network.createGame(v2);
+        };
+
+        v2.challengePlayer = function (playerID) {
+          this._network.challengePlayer(playerID);
+        };
+
+        v2.getChallengerInfo = function (playerID) {
+          this._network.getChallengerInfo(playerID);
+        };
+
+        v2.leaveGame = function () {
+          this._network.partGame();
+        };
+
+        v2.startGame = function () {
+          this._network.startGame();
+        };
+
+        v2.sendGame = function (msg) {
+          this._network.sendGame(msg);
+        };
+
+        v2.chooseCard = function (id) {
+          this._network.chooseCard(id);
+        };
+
+        v2.move = function (d) {
+          this._network.move(d);
+        };
+
+        v2.playCard = function (id, c, d) {
+          this._network.playCard(id, c, d);
+        };
+
+        v2.quit = function () {
+          if (frutibandas.Main.gameMode != frutibandas.Main.CHALLENGE_MODE) {
+            this._network.partGame();
+          }
+          frutibandas.Main.reset();
+          this._rootMovie.mediator.reloadFrutiConnect();
+        };
+
+        v2.abandon = function () {
+          this._network.abandon();
+          if (frutibandas.Main.gameMode == frutibandas.Main.CHALLENGE_MODE) {
+            this.hardReboot();
+          }
+        };
+
+        v2.checkTimeout = function () {
+          this._network.checkTimeout();
+        };
+
+        v2.kickFromGame = function (slotId) {
+          this._network.kick(slotId);
+        };
+
+        v2.onCmdJoinRoom = function (xml) {
+          this.joinRoomCalled = false;
+          if (this._network.hasError(xml)) {
+            return undefined;
+          }
+          frutibandas.Main.gameMode = parseInt(xml.attributes.m);
+          super.peepShow(xml.attributes.rm, frutibandas.Main.gameMode);
+          this.listGames();
+        };
+
+        v2.onGameStarted = function (description) {
+          if (description.firstChild != undefined) {
+            this.hideUI();
+            var v3 = new frutibandas.Game(description);
+            frutibandas.Main.start(v3);
+            this.frusionClient.registerStartGame();
+            super.gameStarted();
+          } else {
+            super.onCbkGameStarted(description.attributes.g);
+          }
+        };
+
+        v2.onAbandon = function () {
+          this.quit();
+        };
+
+        v2.onPlayerAbandonned = function (userID) {};
+
+        v2.onCardChosen = function (xml) {
+          var v1 = parseInt(xml.attributes.e);
+          var v2 = parseInt(xml.attributes.c);
+          var v4 = xml.attributes.mp == '1';
+          frutibandas.Main.game.cardSelected(v1, v2, v4);
+        };
+
+        v2.onMove = function (xml) {
+          var v1 = parseInt(xml.attributes.e);
+          var v2 = parseInt(xml.attributes.d);
+          frutibandas.Main.game.move(v1, frutibandas.Direction.valueOf(v2));
+        };
+
+        v2.onCardPlayed = function (xml) {
+          var v3 = parseInt(xml.attributes.e);
+          var v8 = parseInt(xml.attributes.c);
+          var v7 = parseInt(xml.attributes.x);
+          var v5 = parseInt(xml.attributes.y);
+          var v2 = parseInt(xml.attributes.d);
+          var v4 = parseInt(xml.attributes.p);
+          var v6 = xml.attributes.h != undefined;
+          frutibandas.Main.game.playCard(v3, v8, new frutibandas.Coordinate(v7, v5), frutibandas.Direction.valueOf(v2), v4, v6);
+        };
+
+        v2.onNextTurn = function (xml) {
+          frutibandas.Main.game.turn(parseInt(xml.attributes.t));
+        };
+
+        v2.onGameEnded = function (xml) {
+          frutibandas.Main.game.end(parseInt(xml.attributes.e));
+        };
+
+        v2.onGameMessage = function (userID, msg) {
+          frutibandas.Main.game.newMessage(userID, msg);
+        };
+
+        v2.onCbkScoreModif = function (xml) {
+          if (frutibandas.Main.gameMode == 2) {
+            frutibandas.Main.fruticard.setLeagueScore(parseInt(xml.attributes.s));
+          }
+        };
+
+        v2._onCbkPlayerLeftGame = function (xml) {
+          if (frutibandas.Main.game && frutibandas.Main.game.id == xml.attributes.g && frutibandas.Main.game.isRunning()) {
+            frutibandas.Main.debug('_onCbkPlayerLeftGame gameId=' + xml.attributes.g);
+            frutibandas.Main.logMessage(xml.attributes.u + frutibandas.Texts.DISCONNECTED);
+          }
+          super.onCbkPlayerLeftGame(xml.toString());
+        };
+
+        v2._onCbkPlayerJoinedGame = function (xml) {
+          if (frutibandas.Main.game && frutibandas.Main.game.id == xml.attributes.g && frutibandas.Main.game.isRunning()) {
+            frutibandas.Main.debug('_onCbkPlayerJoinedGame gameId=' + xml.attributes.g);
+            frutibandas.Main.logMessage(xml.attributes.u + frutibandas.Texts.REJOINED);
+          }
+          super.onCbkPlayerJoinedGame(xml.toString());
+        };
+
+        v2.onEventPause = function () {
+          frutibandas.Main.pause = this.frusionClient.pauseStatus;
+        };
+
+        v2.onEventClose = function () {
+          this.frusionClient.closeService();
+        };
+
+        v2.onEventReset = function () {};
+
+        v2.hardReboot = function () {
+          this.frusionClient.closeService();
+        };
+
+        v2.initDebugBox = function () {
+          this._debugBox = new box.Debug();
+          this._debugBox.setTitle('FrutiBandas');
+          _global.desktop.addBox(this._debugBox);
+          this._debugBox.putInTab(null);
+          this.debugMessage('---- debug box for frutibandas manager ----');
+        };
+
+        v2.debugMessage = function (msg) {
+          trace(msg);
+          this._debugBox.addText(FEString.unHTML(msg));
+        };
+
+        v2.errorMessage = function (str) {
+          this.debugMessage('ERROR MESSAGE : ' + str);
+          this.displayError(str, null);
+          frutibandas.Main.gameUI.writeLog('ERREUR: ' + str);
+        };
+
+        ASSetPropFlags(frutibandas.Manager.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 271 __Packages.frutibandas.NetworkController {
+
+    #initclip
+      if (!_global.frutibandas) {
+        _global.frutibandas = new Object();
+      }
+      if (!_global.frutibandas.NetworkController) {
+        var v1 = function (manager, frusion) {
+          this._manager = manager;
+          this._frusion = frusion;
+          this._frusion.addListener(this);
+          this.initProtocol();
+          this._manager.debugMessage('here');
+        };
+
+        frutibandas.NetworkController = v1;
+        var v2 = v1.prototype;
+        v2.listGames = function () {
+          this._frusion.sendCommand(this._commands.listGames, null);
+        };
+
+        v2.listRooms = function (discID) {
+          var v2 = [new ext.util.Pair('d', discID)];
+          this._frusion.sendCommand(this._commands.listRooms, v2);
+        };
+
+        v2.listPlayers = function () {
+          this._frusion.sendCommand(this._commands.listPlayers, null);
+        };
+
+        v2.joinRoom = function (id, discID) {
+          var v2 = new Array();
+          v2.push(new ext.util.Pair('rm', id));
+          v2.push(new ext.util.Pair('d', discID));
+          this._frusion.sendCommand(this._commands.joinRoom, v2);
+        };
+
+        v2.sendRoom = function (str) {
+          this._frusion.sendCommandWithText(this._commands.sendRoom, null, str);
+        };
+
+        v2.sendGame = function (str) {
+          this._frusion.sendCommandWithText(this._commands.sendGame, null, str);
+        };
+
+        v2.joinGame = function (id) {
+          var v2 = new Array();
+          v2.push(new ext.util.Pair('g', id));
+          this._frusion.sendCommand(this._commands.joinGame, v2);
+        };
+
+        v2.partGame = function () {
+          this._frusion.sendCommand(this._commands.partGame, null);
+        };
+
+        v2.createGame = function (parms) {
+          var v2 = new Array();
+          v2.push(new ext.util.Pair('i', String(parms.time)));
+          v2.push(new ext.util.Pair('s', String(parms.size)));
+          v2.push(new ext.util.Pair('c', String(parms.card)));
+          this._frusion.sendCommand(this._commands.createGame, v2);
+        };
+
+        v2.challengePlayer = function (pid) {
+          var v2 = [new ext.util.Pair('u', pid)];
+          this._frusion.sendCommand(this._commands.createGame, v2);
+        };
+
+        v2.getChallengerInfo = function (pid) {
+          var v2 = [new ext.util.Pair('u', pid)];
+          this._frusion.sendCommand(this._commands.challengerInfos, v2);
+        };
+
+        v2.startGame = function () {
+          this._frusion.sendCommand(this._commands.startGame, null);
+        };
+
+        v2.kick = function (id) {
+          var v2 = [new ext.util.Pair('s', String(id))];
+          this._frusion.sendCommand(this._commands.kick, v2);
+        };
+
+        v2.chooseCard = function (id) {
+          var v2 = [new ext.util.Pair('c', String(id))];
+          this._frusion.sendCommand(this._commands.chooseCard, v2);
+        };
+
+        v2.move = function (d) {
+          var v2 = [new ext.util.Pair('d', String(d.toNumber()))];
+          this._frusion.sendCommand(this._commands.move, v2);
+        };
+
+        v2.playCard = function (id, c, d) {
+          var v2 = new Array();
+          v2.push(new ext.util.Pair('c', id));
+          if (c != undefined) {
+            v2.push(new ext.util.Pair('x', c.x));
+          }
+          if (c != undefined) {
+            v2.push(new ext.util.Pair('y', c.y));
+          }
+          if (d != undefined) {
+            v2.push(new ext.util.Pair('d', d.toNumber()));
+          }
+          this._frusion.sendCommand(this._commands.playCard, v2);
+        };
+
+        v2.abandon = function () {
+          this._frusion.sendCommand(this._commands.abandon, null);
+        };
+
+        v2.checkTimeout = function () {
+          this._frusion.sendCommand(this._commands.checkTimeout, null);
+        };
+
+        v2.onCmdListRooms = function (node) {
+          var v2 = this.parseMessage(node);
+          if (this.hasError(v2)) {
+            return undefined;
+          }
+          this._manager.onCmdListRooms(node);
+        };
+
+        v2.onCmdJoinRoom = function (node) {
+          var v2 = this.parseMessage(node);
+          if (this.hasError(v2)) {
+            return undefined;
+          }
+          this._manager.onCmdJoinRoom(v2);
+        };
+
+        v2.onCmdListGames = function (node) {
+          var v2 = this.parseMessage(node);
+          if (this.hasError(v2)) {
+            return undefined;
+          }
+          this._manager.onCmdListGames(node);
+        };
+
+        v2.onCmdListPlayers = function (node) {
+          var v2 = this.parseMessage(node);
+          if (this.hasError(v2)) {
+            return undefined;
+          }
+          this._manager.onCmdListPlayers(node);
+        };
+
+        v2.onCmdJoinGame = function (node) {
+          var v2 = this.parseMessage(node);
+          if (this.hasError(v2)) {
+            return undefined;
+          }
+          this._manager.onCmdJoinGame(node);
+        };
+
+        v2.onCmdCreateGame = function (node) {
+          var v2 = this.parseMessage(node);
+          if (this.hasError(v2)) {
+            return undefined;
+          }
+          this._manager.onCmdCreateGame(node, 2);
+        };
+
+        v2.onCmdChallengerInfo = function (node) {
+          var v2 = this.parseMessage(node);
+          if (this.hasError(v2)) {
+            return undefined;
+          }
+          this._manager.onCmdChallengerInfo(node);
+        };
+
+        v2.onCmdStart = function (node) {
+          var v2 = this.parseMessage(node);
+          if (this.hasError(v2)) {
+            return undefined;
+          }
+        };
+
+        v2.onCmdChooseCard = function (node) {
+          var v2 = this.parseMessage(node);
+          if (this.hasError(v2)) {
+            return undefined;
+          }
+        };
+
+        v2.onCmdMove = function (node) {
+          var v2 = this.parseMessage(node);
+          if (this.hasError(v2)) {
+            return undefined;
+          }
+        };
+
+        v2.onCmdPlayCard = function (node) {
+          var v2 = this.parseMessage(node);
+          if (this.hasError(v2)) {
+            return undefined;
+          }
+        };
+
+        v2.onCmdAbandon = function (node) {
+          var v2 = this.parseMessage(node);
+          if (this.hasError(v2)) {
+            return undefined;
+          }
+          this._manager.onAbandon();
+        };
+
+        v2.onCbkRoomMessage = function (node) {
+          var v2 = this.parseMessage(node);
+          if (this.hasError(v2)) {
+            this._manager.debugMessage('onCbkRoomMessage:: error detected');
+            return undefined;
+          } else {
+            this._manager.debugMessage('onCbkRoomMessage:: no error');
+          }
+          this._manager.onCbkReceiveMessage(node);
+        };
+
+        v2.onCbkPlayerJoinedRoom = function (node) {
+          this._manager.onCbkPlayerJoinedRoom(node);
+        };
+
+        v2.onCbkPlayerLeftRoom = function (node) {
+          this._manager.onCbkPlayerLeftRoom(node);
+        };
+
+        v2.onCbkGameCreated = function (node) {
+          this._manager.onCbkGameCreated(node);
+        };
+
+        v2.onCbkGameStarted = function (node) {
+          var v2 = this.parseMessage(node);
+          this._manager.onGameStarted(v2);
+        };
+
+        v2.onCbkGameEnded = function (node) {
+          var v2 = this.parseMessage(node);
+          this._manager.onGameEnded(v2);
+        };
+
+        v2.onCbkGameClosed = function (node) {
+          var v2 = this.parseMessage(node);
+          this._manager.onCbkGameClosed(v2.attributes.g);
+        };
+
+        v2.onCbkPlayerJoinedGame = function (node) {
+          var v2 = this.parseMessage(node);
+          this._manager._onCbkPlayerJoinedGame(v2);
+        };
+
+        v2.onCbkPlayerLeftGame = function (node) {
+          var v2 = this.parseMessage(node);
+          if (this.hasError(v2)) {
+            return undefined;
+          }
+          this._manager._onCbkPlayerLeftGame(v2);
+        };
+
+        v2.onCbkNewRecord = function (node) {};
+
+        v2.onCbkNewChallenge = function (node) {
+          this._manager.onCbkNewChallenge(node);
+        };
+
+        v2.onCbkResume = function (node) {
+          var v2 = this.parseMessage(node);
+          if (this.hasError(v2)) {
+            return undefined;
+          }
+          this._manager.onGameStarted(v2);
+        };
+
+        v2.onCbkGameMessage = function (node) {
+          var v2 = this.parseMessage(node);
+          if (this.hasError(v2)) {
+            return undefined;
+          }
+          this._manager.onGameMessage(v2.attributes.u, v2.firstChild.nodeValue);
+        };
+
+        v2.onCbkPlayerAbandon = function (node) {
+          var v2 = this.parseMessage(node);
+          this._manager.onPlayerAbandonned(v2.attributes.e);
+        };
+
+        v2.onCbkCardChosen = function (node) {
+          var v2 = this.parseMessage(node);
+          this._manager.onCardChosen(v2);
+        };
+
+        v2.onCbkMove = function (node) {
+          var v2 = this.parseMessage(node);
+          this._manager.onMove(v2);
+        };
+
+        v2.onCbkTurn = function (node) {
+          var v2 = this.parseMessage(node);
+          this._manager.onNextTurn(v2);
+        };
+
+        v2.onCbkCardPlayed = function (node) {
+          var v2 = this.parseMessage(node);
+          this._manager.onCardPlayed(v2);
+        };
+
+        v2.onCbkTimedOut = function (node) {};
+
+        v2.onCbkScoreModif = function (node) {
+          var v2 = this.parseMessage(node);
+          this._manager.onCbkScoreModif(v2);
+        };
+
+        v2.parseMessage = function (node) {
+          var v1 = new XML(node);
+          var v2 = v1.firstChild;
+          return v2;
+        };
+
+        v2.hasError = function (node) {
+          if (node.attributes.k != undefined) {
+            this._manager.errorMessage(this.getErrorMessage(node.attributes.k));
+            return true;
+          }
+          return false;
+        };
+
+        v2.getErrorMessage = function (code) {
+          if (this._errors[parseInt(code)] != undefined) {
+            return this._errors[parseInt(code)];
+          } else {
+            return 'Erreur ' + code;
+          }
+        };
+
+        v2.debugMessage = function (str) {
+          this._manager.debugMessage(str);
+        };
+
+        v2.initProtocol = function () {
+          this._callbacks = new Object();
+          this._callbacks.onCmdListRooms = 'ga';
+          this._callbacks.onCmdJoinRoom = 'gb';
+          this._callbacks.onCmdListGames = 'gc';
+          this._callbacks.onCmdListPlayers = 'gd';
+          this._callbacks.onCmdJoinGame = 'ge';
+          this._callbacks.onCmdCreateGame = 'gf';
+          this._callbacks.onCmdStart = 'gg';
+          this._callbacks.onCmdMove = 'gh';
+          this._callbacks.onCmdAbandon = 'gi';
+          this._callbacks.onCmdPlayCard = 'gw';
+          this._callbacks.onCmdChooseCard = 'fa';
+          this._callbacks.onCmdChallengerInfo = 'fd';
+          this._callbacks.onCbkRoomMessage = 'gj';
+          this._callbacks.onCbkGameMessage = 'gk';
+          this._callbacks.onCbkGameCreated = 'gl';
+          this._callbacks.onCbkGameStarted = 'gm';
+          this._callbacks.onCbkGameEnded = 'gn';
+          this._callbacks.onCbkGameClosed = 'go';
+          this._callbacks.onCbkPlayerJoinedGame = 'gp';
+          this._callbacks.onCbkPlayerLeftGame = 'gq';
+          this._callbacks.onCbkPlayerJoinedRoom = 'gy';
+          this._callbacks.onCbkPlayerLeftRoom = 'gz';
+          this._callbacks.onCbkPlayerAbandon = 'gr';
+          this._callbacks.onCbkMove = 'gs';
+          this._callbacks.onCbkCardPlayed = 'gx';
+          this._callbacks.onCbkTurn = 'gt';
+          this._callbacks.onCbkCardChosen = 'fb';
+          this._callbacks.onCbkNewRecord = 'ff';
+          this._callbacks.onCbkNewChallenge = 'fe';
+          this._callbacks.onCbkTimedOut = 'gv';
+          this._callbacks.onCbkKick = 'fh';
+          this._callbacks.onCbkScoreModif = 'm';
+          this._callbacks.onCbkResume = 'r';
+          var v2 = new Object();
+          for (var v3 in this._callbacks) {
+            v2[this._callbacks[v3]] = v3;
+          }
+          this._frusion.registerCallbackList(v2);
+          this._commands = new Object();
+          this._commands.listRooms = 'ga';
+          this._commands.joinRoom = 'gb';
+          this._commands.listGames = 'gc';
+          this._commands.listPlayers = 'gd';
+          this._commands.joinGame = 'ge';
+          this._commands.createGame = 'gf';
+          this._commands.startGame = 'gg';
+          this._commands.move = 'gh';
+          this._commands.abandon = 'gi';
+          this._commands.sendRoom = 'gj';
+          this._commands.sendGame = 'gk';
+          this._commands.playCard = 'gw';
+          this._commands.chooseCard = 'fa';
+          this._commands.partGame = 'fc';
+          this._commands.challengerInfos = 'fd';
+          this._commands.checkTimeout = 'fg';
+          this._commands.kick = 'fh';
+          this._errors = new Array();
+          this._errors[1500] = 'La partie n\'est plus valide';
+          this._errors[1501] = 'Vous n\'êtes pas sur une partie';
+          this._errors[1502] = 'Cette fonction est réservée au créateur de la partie';
+          this._errors[1503] = 'La partie ne joue pas';
+          this._errors[1504] = 'Vous ne jouez plus sur cette partie';
+          this._errors[1505] = 'Il n\'y a pas assez de joueurs pour commencer';
+          this._errors[1506] = 'La partie a déjà  commencée';
+          this._errors[1507] = 'La partie est en cours';
+          this._errors[1508] = 'Vous êtes encore sur une partie';
+          this._errors[1509] = 'La partie est pleine';
+          this._errors[1510] = 'Ce n\'est pas votre tour';
+          this._errors[1511] = 'Impossible de rejoindre un salon de jeu inexistant';
+          this._errors[1512] = 'Vous êtes déjà sur un salon de jeu';
+          this._errors[1513] = 'Vous avez rejoint la partie trop tard';
+          this._errors[1514] = 'Le disque n\'est pas trouvé';
+          this._errors[1515] = 'Le disque ne vous appartient pas';
+          this._errors[1516] = 'Le disque n\'est pas valable pour ce jeu';
+          this._errors[1517] = 'Vous ne pouvez jouer qu\'une carte par tour';
+          this._errors[1518] = 'La carte est mauvaise';
+          this._errors[1519] = 'Phase de sélection de carte passée';
+          this._errors[1520] = 'Ce n\'est pas encore la phase de mouvement';
+          this._errors[1521] = 'Temps dépassé';
+          this._errors[1522] = 'Temps de partie invalide';
+          this._errors[1523] = 'Taille de plateau invalide';
+          this._errors[1524] = 'Utilisateur déconnecté';
+          this._errors[1525] = 'Le challenge est terminé';
+          this._errors[1526] = 'Vous ne pouvez vous défier';
+          this._errors[1527] = 'Vous défiez déjà  un autre joueur';
+          this._errors[1528] = 'Quelqu\'un vous a défié';
+          this._errors[1529] = 'Ce joueur a déjà  gagné contre vous et n\'a pas perdu depuis';
+          this._errors[1530] = 'Ce joueur viens juste de vous défier';
+          this._errors[1531] = 'Votre FD ne permet pas d\'accéder à  ce salon de jeu';
+          this._errors[1532] = 'Le salon de jeu est fermé';
+          this._errors[1536] = 'Gros mot détecté, vous êtes éjecté du jeu';
+        };
+
+        ASSetPropFlags(frutibandas.NetworkController.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 272 __Packages.ext.util.Pair {
+
+    #initclip
+      if (!_global.ext) {
+        _global.ext = new Object();
+      }
+      if (!_global.ext.util) {
+        _global.ext.util = new Object();
+      }
+      if (!_global.ext.util.Pair) {
+        var v1 = function (name, value) {
+          this.name = name;
+          this.value = value;
+        };
+
+        ext.util.Pair = v1;
+        var v2 = v1.prototype;
+        ASSetPropFlags(ext.util.Pair.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 273 __Packages.frutibandas.CreateParameters {
+
+    #initclip
+      if (!_global.frutibandas) {
+        _global.frutibandas = new Object();
+      }
+      if (!_global.frutibandas.CreateParameters) {
+        var v1 = function () {
+          this.time = undefined;
+          this.size = undefined;
+          this.card = undefined;
+        };
+
+        frutibandas.CreateParameters = v1;
+        var v2 = v1.prototype;
+        v2.init = function (timeId, sizeId, cardId) {
+          this.time = frutibandas.CreateParameters.timeChoices[timeId];
+          this.size = frutibandas.CreateParameters.sizeChoices[sizeId];
+          this.card = frutibandas.CreateParameters.cardChoices[cardId];
+        };
+
+        v1.timeChoices = [600, 480, 400, 240];
+        v1.sizeChoices = [8, 7, 6, 5];
+        v1.cardChoices = [4, 3, 2, 1];
+        ASSetPropFlags(frutibandas.CreateParameters.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 274 __Packages.frutibandas.Direction {
+
+    #initclip
+      if (!_global.frutibandas) {
+        _global.frutibandas = new Object();
+      }
+      if (!_global.frutibandas.Direction) {
+        var v1 = function (val) {
+          this.value = val;
+        };
+
+        frutibandas.Direction = v1;
+        var v2 = v1.prototype;
+        v2.toNumber = function () {
+          return this.value;
+        };
+
+        v2.oposite = function () {
+          if (this == frutibandas.Direction.Up) {
+            return frutibandas.Direction.Down;
+          }
+          if (this == frutibandas.Direction.Down) {
+            return frutibandas.Direction.Up;
+          }
+          if (this == frutibandas.Direction.Left) {
+            return frutibandas.Direction.Right;
+          }
+          if (this == frutibandas.Direction.Right) {
+            return frutibandas.Direction.Left;
+          }
+          return frutibandas.Direction.BadDirection;
+        };
+
+        v2.toString = function () {
+          return frutibandas.Direction.Strings[this.value];
+        };
+
+        v2.toLogString = function () {
+          return frutibandas.Direction.LogStrings[this.value];
+        };
+
+        v1.valueOf = function (v) {
+          if (v == frutibandas.Direction.Up.value) {
+            return frutibandas.Direction.Up;
+          }
+          if (v == frutibandas.Direction.Down.value) {
+            return frutibandas.Direction.Down;
+          }
+          if (v == frutibandas.Direction.Left.value) {
+            return frutibandas.Direction.Left;
+          }
+          if (v == frutibandas.Direction.Right.value) {
+            return frutibandas.Direction.Right;
+          }
+          return frutibandas.Direction.BadDirection;
+        };
+
+        v1.Up = new frutibandas.Direction(0);
+        v1.Right = new frutibandas.Direction(1);
+        v1.Down = new frutibandas.Direction(2);
+        v1.Left = new frutibandas.Direction(3);
+        v1.BadDirection = new frutibandas.Direction(-1);
+        v1.Strings = ['Up', 'Right', 'Down', 'Left'];
+        v1.LogStrings = ['le haut', 'la droite', 'le bas', 'la gauche'];
+        ASSetPropFlags(frutibandas.Direction.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 275 __Packages.frutibandas.Coordinate {
+
+    #initclip
+      if (!_global.frutibandas) {
+        _global.frutibandas = new Object();
+      }
+      if (!_global.frutibandas.Coordinate) {
+        var v1 = function (x, y) {
+          if (x == undefined) {
+            x = -1;
+          }
+          if (y == undefined) {
+            y = -1;
+          }
+          this.x = x;
+          this.y = y;
+        };
+
+        frutibandas.Coordinate = v1;
+        var v2 = v1.prototype;
+        v2.copy = function () {
+          return new frutibandas.Coordinate(this.x, this.y);
+        };
+
+        v2.move = function (d) {
+          switch (d) {
+            case frutibandas.Direction.Up:
+              --this.y;
+              break;
+            case frutibandas.Direction.Down:
+              ++this.y;
+              break;
+            case frutibandas.Direction.Left:
+              --this.x;
+              break;
+            case frutibandas.Direction.Right:
+              ++this.x;
+              break;
+            default:
+              throw new Error('Unable to move coordinate to BadDirection');
+          }
+        };
+
+        v2.next = function (d) {
+          var v2 = this.copy();
+          v2.move(d);
+          return v2;
+        };
+
+        v2.toString = function () {
+          return '[' + this.x + ':' + this.y + ']';
+        };
+
+        v2.isValid = function () {
+          return this.x >= 0 && this.y >= 0;
+        };
+
+        v2.equals = function (c) {
+          return this.x == c.x && this.y == c.y;
+        };
+
+        ASSetPropFlags(frutibandas.Coordinate.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 276 __Packages.frutibandas.FruticardSlot {
+
+    #initclip
+      if (!_global.frutibandas) {
+        _global.frutibandas = new Object();
+      }
+      if (!_global.frutibandas.FruticardSlot) {
+        var v1 = function (fclient) {
+          this.client = fclient;
+          var v2 = this.client.frutiCard.slots[0];
+          this.$linit = false;
+          if (v2.$linit) {
+            this.$linit = true;
+          }
+          if (v2.$f != undefined) {
+            this.$f = v2.$f;
+          } else {
+            this.$f = [0, 0, 0];
+          }
+          if (v2.$l != undefined) {
+            this.$l = v2.$l;
+          } else {
+            this.$l = [0, 0, 0];
+          }
+          if (v2.$c != undefined) {
+            this.$c = v2.$c;
+          } else {
+            this.$c = [0, 0, 0];
+          }
+          if (v2.$ls != undefined) {
+            this.$ls = v2.$ls;
+          } else {
+            this.$ls = [0, 0, 0];
+          }
+          frutibandas.Main.debug(this.toString());
+        };
+
+        frutibandas.FruticardSlot = v1;
+        var v2 = v1.prototype;
+        v2.newVictory = function (mode) {
+          this.increment(mode, frutibandas.FruticardSlot.IDX_VICTORY);
+        };
+
+        v2.newDefeat = function (mode) {
+          this.increment(mode, frutibandas.FruticardSlot.IDX_DEFEAT);
+        };
+
+        v2.newDraw = function (mode) {
+          this.increment(mode, frutibandas.FruticardSlot.IDX_DRAW);
+        };
+
+        v2.setLeagueScore = function (score) {
+          this.$ls[0] = score;
+          if (!this.$linit || this.$ls[1] > score) {
+            this.$ls[1] = score;
+          }
+          if (!this.$linit || this.$ls[2] < score) {
+            this.$ls[2] = score;
+          }
+          this.$linit = true;
+          this.save();
+        };
+
+        v2.increment = function (mode, index) {
+          switch (mode) {
+            case 0:
+              ++this.$f[index];
+              break;
+            case 1:
+              return undefined;
+            case 2:
+              ++this.$l[index];
+              break;
+            default:
+          }
+          this.save();
+        };
+
+        v2.save = function () {
+          var v2 = new Object();
+          v2.$linit = this.$linit;
+          v2.$f = this.$f;
+          v2.$c = this.$c;
+          v2.$l = this.$l;
+          v2.$ls = this.$ls;
+          frutibandas.Main.debug(this.toString());
+          this.client.frutiCard.updateSlot(0, v2);
+        };
+
+        v2.toString = function () {
+          var v2 = '';
+          v2 += 'FrutiCard slot : \n';
+          v2 += '  + free wins=' + this.$f[0] + ' defeats=' + this.$f[1] + ' draws=' + this.$f[2] + '\n';
+          v2 += '  + chal wins=' + this.$c[0] + ' defeats=' + this.$c[1] + ' draws=' + this.$c[2] + '\n';
+          v2 += '  + leag wins=' + this.$l[0] + ' defeats=' + this.$l[1] + ' draws=' + this.$l[2] + '\n';
+          v2 += '  + leag score=' + this.$ls[0] + ' min=' + this.$ls[1] + ' max=' + this.$ls[2] + '\n';
+          return v2;
+        };
+
+        v1.IDX_VICTORY = 0;
+        v1.IDX_DEFEAT = 1;
+        v1.IDX_DRAW = 2;
+        ASSetPropFlags(frutibandas.FruticardSlot.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 277 __Packages.frutibandas.Game {
+
+    #initclip
+      if (!_global.frutibandas) {
+        _global.frutibandas = new Object();
+      }
+      if (!_global.frutibandas.Game) {
+        var v1 = function (description) {
+          this.id = null;
+          this.time = undefined;
+          this.team = undefined;
+          this.board = null;
+          this.winner = null;
+          this.ended = false;
+          this.endReason = frutibandas.Game.END_VICTORY;
+          this.currentTeam = undefined;
+          this.lastTime = getTimer();
+          this.timeoutDetected = false;
+          this.players = new Array();
+          this.frutibouilles = new Array();
+          this.times = new Array();
+          this.skins = new Array();
+          this.nextSolo = null;
+          this.cardPool = null;
+          this.celeritePlayed = false;
+          this.phase = frutibandas.Game.PHASE_CARD_SELECTION;
+          this.cards = new Array();
+          this.cards[0] = new Array();
+          this.cards[1] = new Array();
+          this.initializeWithXml(description);
+          this.lastHidenCard = -1;
+          this.lastHidenTurn = -1;
+        };
+
+        frutibandas.Game = v1;
+        var v2 = v1.prototype;
+        v2.isRunning = function () {
+          return !this.ended;
+        };
+
+        v2.getBoard = function () {
+          return this.board;
+        };
+
+        v2.getTeamOf = function (player) {
+          var v2 = 0;
+          while (v2 < this.players.length) {
+            if (this.players[v2] == player) {
+              return v2;
+            }
+            ++v2;
+          }
+          return -1;
+        };
+
+        v2.getNameOf = function (team) {
+          return this.players[team];
+        };
+
+        v2.getWinnerTeam = function () {
+          return this.winnerTeam;
+        };
+
+        v2.getWinner = function () {
+          return this.winner;
+        };
+
+        v2.getPool = function () {
+          return this.cardPool;
+        };
+
+        v2.processTime = function () {
+          var v3 = getTimer();
+          var v2 = v3 - this.lastTime;
+          if (v2 <= 0) {
+            return undefined;
+          }
+          this.times[this.currentTeam] -= v2;
+          if (this.times[this.currentTeam] <= 0 && !this.timeoutDetected) {
+            this.times[this.currentTeam] = 0;
+            this.timeoutDetected = true;
+            frutibandas.Main.manager.checkTimeout();
+          }
+          this.lastTime = v3;
+        };
+
+        v2.toString = function () {
+          var v3 = '';
+          v3 += '----- Game n°' + this.id + ' ----- \n';
+          v3 += 'team        = ' + this.team + '\n';
+          v3 += 'time        = ' + this.time + '\n';
+          v3 += 'currentTeam = ' + this.currentTeam + '\n';
+          var v2 = 0;
+          while (v2 < this.times.length) {
+            v3 += 'player ' + v2 + ' is ' + this.players[v2] + '\n';
+            ++v2;
+          }
+          v2 = 0;
+          while (v2 < this.times.length) {
+            v3 += 'time of ' + v2 + ' is ' + this.times[v2] + '\n';
+            ++v2;
+          }
+          v3 += 'board -------- \n' + this.board.toString() + '\n';
+          v3 += '----- EOGame ---------------- \n';
+          return v3;
+        };
+
+        v2.newMessage = function (src, msg) {
+          frutibandas.Main.gameUI.newMessage(src, msg);
+        };
+
+        v2.end = function (winnerTeam, reason) {
+          this.winnerTeam = winnerTeam;
+          if (reason == undefined) {
+            this.endReason = frutibandas.Game.END_VICTORY;
+          }
+          if (winnerTeam < 0 || winnerTeam > 1) {
+            this.winner = 'La Vachette';
+            frutibandas.Main.fruticard.newDraw(frutibandas.Main.gameMode);
+          } else {
+            this.winner = this.players[winnerTeam];
+            if (winnerTeam == frutibandas.Main.game.team) {
+              frutibandas.Main.fruticard.newVictory(frutibandas.Main.gameMode);
+            } else {
+              frutibandas.Main.fruticard.newDefeat(frutibandas.Main.gameMode);
+            }
+          }
+          this.ended = true;
+          frutibandas.Main.gameUI.onEnded();
+        };
+
+        v2.cardSelected = function (teamNumber, cardID, enterMovePhase) {
+          this.cardPool.remove(cardID);
+          this.cards[teamNumber].push(cardID);
+          if (enterMovePhase) {
+            this.phase = frutibandas.Game.PHASE_MOVE;
+            frutibandas.Main.gameUI.hideDraftCards();
+            frutibandas.Main.gameUI.showPlayersCards(this.cards);
+          }
+        };
+
+        v2.move = function (teamNumber, direction) {
+          frutibandas.Main.gameUI.board.onMoveBegin();
+          if (this.nextSolo != null) {
+            this.board.moveSprite(this.nextSolo, direction);
+            this.nextSolo = null;
+          } else {
+            this.board.move(teamNumber, direction);
+          }
+          this.board.removeEmptyBorders();
+          frutibandas.Main.gameUI.board.onMoveDone();
+        };
+
+        v2.playCard = function (teamNumber, id, coord, direction, param, hiden) {
+          frutibandas.Main.debug('Card played ' + id + ' coord=' + coord);
+          if (id == frutibandas.Card.CELERITE) {
+            this.celeritePlayed = true;
+          }
+          var v4 = frutibandas.Card.New(id);
+          v4.hiden = hiden;
+          if (id == frutibandas.Card.PIEGE && this.board.getElement(coord) == frutibandas.Board.TRAPPED) {
+            frutibandas.Main.gameUI.board.onTrapDiscovered(coord);
+            return undefined;
+          }
+          if (teamNumber != this.team) {
+            frutibandas.Main.gameUI.board.onMoveBegin();
+            frutibandas.Main.gameUI.onCardPlayed(teamNumber, id, false);
+            v4.execute(this, teamNumber, coord, direction, param);
+            frutibandas.Main.gameUI.board.onMoveDone();
+            return undefined;
+          }
+          var v6 = false;
+          if (id == frutibandas.Card.PIEGE || id == frutibandas.Card.DESORDRE || id == frutibandas.Card.CONFISCATION) {
+            v6 = !hiden;
+          }
+          frutibandas.Main.gameUI.board.onMoveBegin();
+          frutibandas.Main.gameUI.onCardPlayed(teamNumber, id, v6);
+          v4.execute(this, teamNumber, coord, direction, param);
+          frutibandas.Main.gameUI.board.onMoveDone();
+        };
+
+        v2.turn = function (turnNumber) {
+          if (this.lastHidenTurn == turnNumber) {
+            this.lastHidenCard = -1;
+            this.lastHidenTurn = -1;
+          }
+          this.currentTeam = turnNumber;
+          frutibandas.Main.gameUI.onTurnChanged(turnNumber);
+          var v2 = this.team == this.currentTeam;
+          if (this.phase == frutibandas.Game.PHASE_CARD_SELECTION) {
+            frutibandas.Main.gameUI.showDraftCards(this.cardPool, v2);
+          } else {
+            if (v2) {
+              if (this.celeritePlayed) {
+                frutibandas.Main.logMessage(frutibandas.Texts.CELERITE_YOUR_T);
+              }
+              this.celeritePlayed = false;
+            } else {
+              if (this.celeritePlayed) {
+                frutibandas.Main.logMessage(frutibandas.Texts.CELERITE_OPON_T);
+                this.celeritePlayed = false;
+              }
+            }
+          }
+        };
+
+        v2.setNextSolo = function (team, c) {
+          this.nextSolo = c;
+        };
+
+        v2.requestChooseCard = function (id) {
+          frutibandas.Main.manager.chooseCard(id);
+        };
+
+        v2.requestMove = function (d) {
+          if (this.ended) {
+            return undefined;
+          }
+          if (this.currentTeam == this.team) {
+            frutibandas.Main.manager.move(d);
+          } else {
+            frutibandas.Main.debug('Game.requestMove() called but not our turn, turn is : ' + this.currentTeam);
+          }
+        };
+
+        v2.requestPlayCard = function (id, coord) {
+          frutibandas.Main.manager.playCard(id, coord, frutibandas.Direction.BadDirection);
+        };
+
+        v2.initializeWithXml = function (description) {
+          this.cardPool = new frutibandas.CardPool(description.attributes.c);
+          this.id = description.attributes.g;
+          this.currentTeam = parseInt(description.attributes.t);
+          this.time = parseInt(description.attributes.i);
+          var v2 = description.firstChild;
+          while (v2.nodeName != 'b') {
+            this.addPlayerFromXml(v2);
+            v2 = v2.nextSibling;
+          }
+          this.board = frutibandas.Board.newBoardFromXml(v2);
+          if (description.attributes.p != undefined) {
+            this.phase = parseInt(description.attributes.p);
+          }
+          this.cardPool = new frutibandas.CardPool(description.attributes.c);
+        };
+
+        v2.addPlayerFromXml = function (node) {
+          this.skins.push(this.players.length);
+          this.players.push(node.attributes.u);
+          this.times.push(node.attributes.i);
+          if (node.attributes.u == frutibandas.Main.userLogin) {
+            this.team = this.players.length - 1;
+          }
+          if (node.attributes.c != undefined) {
+            var v3 = node.attributes.c.split(':');
+            var v2 = 0;
+            while (v2 < v3.length) {
+              this.cardSelected(this.players.length - 1, parseInt(v3[v2]), false);
+              ++v2;
+            }
+          }
+          this.frutibouilles.push(node.attributes.fb);
+        };
+
+        v1.PHASE_CARD_SELECTION = 1;
+        v1.PHASE_MOVE = 2;
+        v1.END_VICTORY = 0;
+        v1.END_ABANDON = 1;
+        v1.END_TIMEOUT = 2;
+        v1.END_DISCO = 3;
+        v1.END_DRAW = -2;
+        ASSetPropFlags(frutibandas.Game.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 278 __Packages.frutibandas.Board {
+
+    #initclip
+      if (!_global.frutibandas) {
+        _global.frutibandas = new Object();
+      }
+      if (!_global.frutibandas.Board) {
+        var v1 = function (size) {
+          this.size = size;
+          this.teamCounters = new Array();
+          this.slots = new Array();
+          this.minX = 0;
+          this.minY = 0;
+          this.maxX = size - 1;
+          this.maxY = size - 1;
+        };
+
+        frutibandas.Board = v1;
+        var v2 = v1.prototype;
+        v2.setListener = function (bl) {
+          this.listener = bl;
+        };
+
+        v2.getSize = function () {
+          return this.size;
+        };
+
+        v2.move = function (team, d) {
+          var v4 = this.getCorner(d);
+          var v6 = this.getPerpendicular(d);
+          while (this.isValid(v4)) {
+            var v2 = v4.copy();
+            while (this.isValid(v2)) {
+              if (this.getElement(v2) == team) {
+                this.moveSprite(v2, d);
+              }
+              v2.move(d.oposite());
+            }
+            v4.move(v6);
+          }
+        };
+
+        v2.moveSprite = function (c, d, pushed) {
+          if (!this.canMoveSprite(c, d)) {
+            return undefined;
+          }
+          if (pushed == undefined) {
+            pushed = false;
+          }
+          var v8 = this.toIndex(c);
+          var v7 = this.getElementAt(v8);
+          this.setElementAt(v8, frutibandas.Board.FREE);
+          var v2 = c.copy();
+          v2.move(d);
+          var v5 = this.getElement(v2);
+          if (v5 > frutibandas.Board.FREE) {
+            this.moveSprite(v2, d, true);
+            this.setElement(v2, v7);
+            this.listener.onSpriteMove(c, d, pushed);
+            return undefined;
+          }
+          if (v5 == frutibandas.Board.FREE) {
+            this.setElement(v2, v7);
+            this.listener.onSpriteMove(c, d, pushed);
+            return undefined;
+          }
+          if (v5 == frutibandas.Board.DESTROYED || v5 == frutibandas.Board.TRAPPED) {
+            --this.teamCounters[v7];
+            this.listener.onSpriteMove(c, d, pushed);
+            return undefined;
+          }
+        };
+
+        v2.getElement = function (c) {
+          if (!this.isValid(c)) {
+            return frutibandas.Board.DESTROYED;
+          }
+          return this.slots[this.toIndex(c)];
+        };
+
+        v2.getElementAt = function (i) {
+          return this.slots[i];
+        };
+
+        v2.setElement = function (c, element) {
+          this.slots[this.toIndex(c)] = element;
+        };
+
+        v2.setElementAt = function (i, element) {
+          this.slots[i] = element;
+        };
+
+        v2.getMinY = function () {
+          return this.minY;
+        };
+
+        v2.getMaxY = function () {
+          return this.maxY;
+        };
+
+        v2.destroy = function (c) {
+          var v4 = this.toIndex(c);
+          var v2 = this.getElementAt(v4);
+          this.setElement(c, frutibandas.Board.DESTROYED);
+          if (v2 == frutibandas.Board.TRAPPED) {
+            this.listener.onTrapDiscovered(c);
+            return undefined;
+          }
+          if (v2 != frutibandas.Board.DESTROYED) {
+            this.listener.onSlotDestroyed(c);
+          }
+          if (v2 > frutibandas.Board.FREE) {
+            --this.teamCounters[v2];
+          }
+          if (v2 == frutibandas.Board.ROCK) {
+          }
+        };
+
+        v2.setTrapped = function (c) {
+          var v3 = this.toIndex(c);
+          var v4 = this.getElementAt(v3);
+          this.listener.onSlotTrapped(c);
+          this.setElement(c, frutibandas.Board.TRAPPED);
+        };
+
+        v2.isValid = function (c) {
+          return c.x >= this.minX && c.x <= this.maxX && c.y >= this.minY && c.y <= this.maxY;
+        };
+
+        v2.isEmptyBorder = function (border) {
+          var v2 = this.getCorner(border);
+          var v3 = this.getPerpendicular(border);
+          while (this.isValid(v2)) {
+            if (this.getElement(v2) > frutibandas.Board.FREE) {
+              return false;
+            }
+            v2.move(v3);
+          }
+          return true;
+        };
+
+        v2.countSpritesOf = function (team) {
+          return this.teamCounters[team];
+        };
+
+        v2.toCoordinate = function (index) {
+          var v2 = Math.round(index / this.size);
+          var v3 = index - v2 * this.size;
+          return new frutibandas.Coordinate(v3, v2);
+        };
+
+        v2.toIndex = function (c) {
+          return c.x + c.y * this.size;
+        };
+
+        v2.getMoveOrder = function (c, d) {
+          switch (d) {
+              return 0;
+            case frutibandas.Direction.Up:
+              return this.maxY - c.y;
+            case frutibandas.Direction.Down:
+              return c.y - this.minY;
+            case frutibandas.Direction.Right:
+              return c.x - this.minX;
+            case frutibandas.Direction.Left:
+              return this.maxX - c.x;
+          }
+          return 0;
+        };
+
+        v2.removeEmptyBorders = function () {
+          for (;;) {
+            if (!(this.isEmptyBorder(frutibandas.Direction.Up) && this.minY <= this.maxY)) break;
+            this.removeBorder(frutibandas.Direction.Up);
+          }
+          for (;;) {
+            if (!(this.isEmptyBorder(frutibandas.Direction.Down) && this.minY <= this.maxY)) break;
+            this.removeBorder(frutibandas.Direction.Down);
+          }
+          for (;;) {
+            if (!(this.isEmptyBorder(frutibandas.Direction.Left) && this.minX <= this.maxX)) break;
+            this.removeBorder(frutibandas.Direction.Left);
+          }
+          for (;;) {
+            if (!(this.isEmptyBorder(frutibandas.Direction.Right) && this.minX <= this.maxX)) break;
+            this.removeBorder(frutibandas.Direction.Right);
+          }
+        };
+
+        v2.removeBorder = function (border) {
+          var v2 = this.getCorner(border);
+          var v3 = this.getPerpendicular(border);
+          while (this.isValid(v2)) {
+            if (this.getElement(v2) != frutibandas.Board.DESTROYED) {
+              this.destroy(v2);
+            }
+            v2.move(v3);
+          }
+          if (border == frutibandas.Direction.Up) {
+            ++this.minY;
+          }
+          if (border == frutibandas.Direction.Down) {
+            --this.maxY;
+          }
+          if (border == frutibandas.Direction.Left) {
+            ++this.minX;
+          }
+          if (border == frutibandas.Direction.Right) {
+            --this.maxX;
+          }
+        };
+
+        v2.getCorner = function (border) {
+          if (border == frutibandas.Direction.Up) {
+            return new frutibandas.Coordinate(this.minX, this.minY);
+          }
+          if (border == frutibandas.Direction.Down) {
+            return new frutibandas.Coordinate(this.minX, this.maxY);
+          }
+          if (border == frutibandas.Direction.Left) {
+            return new frutibandas.Coordinate(this.minX, this.minY);
+          }
+          if (border == frutibandas.Direction.Right) {
+            return new frutibandas.Coordinate(this.maxX, this.minY);
+          }
+          return new frutibandas.Coordinate();
+        };
+
+        v2.getPerpendicular = function (d) {
+          if (d == frutibandas.Direction.Up) {
+            return frutibandas.Direction.Right;
+          }
+          if (d == frutibandas.Direction.Down) {
+            return frutibandas.Direction.Right;
+          }
+          if (d == frutibandas.Direction.Left) {
+            return frutibandas.Direction.Down;
+          }
+          if (d == frutibandas.Direction.Right) {
+            return frutibandas.Direction.Down;
+          }
+          return frutibandas.Direction.BadDirection;
+        };
+
+        v2.canMoveSprite = function (c, d) {
+          var v3 = c.copy();
+          v3.move(d);
+          while (this.isValid(v3)) {
+            var v2 = this.getElement(v3);
+            if (v2 <= frutibandas.Board.FREE) {
+              if (v2 == frutibandas.Board.ROCK) {
+                return false;
+              }
+              return true;
+            }
+            v3.move(d);
+          }
+          return true;
+        };
+
+        v1.newBoardFromXml = function (xml) {
+          var v3;
+          var v6 = parseInt(xml.attributes.size);
+          v3 = new frutibandas.Board(v6);
+          var v4;
+          v4 = xml.firstChild.nodeValue;
+          var v1 = 0;
+          while (v1 < v4.length) {
+            if (v4.charAt(v1) != '.') {
+              var v5 = parseInt(v4.charAt(v1));
+              var v2 = v5 - 7;
+              v3.setElementAt(v1, v2);
+              if (v2 > frutibandas.Board.FREE) {
+                if (v3.teamCounters[v2] == undefined) {
+                  v3.teamCounters[v2] = 0;
+                }
+                ++v3.teamCounters[v2];
+              }
+            }
+            ++v1;
+          }
+          return v3;
+        };
+
+        v2.incTeamCounter = function (team) {
+          ++this.teamCounters[team];
+          return this.teamCounters[team];
+        };
+
+        v2.decTeamCounter = function (team) {
+          --this.teamCounters[team];
+          return this.teamCounters[team];
+        };
+
+        v2.toString = function () {
+          var v2 = '';
+          var v5 = 0;
+          while (v5 < this.size) {
+            var v3 = 0;
+            while (v3 < this.size) {
+              var v4 = this.slots[v5 * this.size + v3];
+              switch (v4) {
+                case frutibandas.Board.DESTROYED:
+                  v2 += ' X';
+                  break;
+                case frutibandas.Board.FREE:
+                  v2 += ' .';
+                  break;
+                case frutibandas.Board.TEAM_0:
+                  v2 += ' 0';
+                  break;
+                case frutibandas.Board.TEAM_1:
+                  v2 += ' 1';
+                  break;
+                case frutibandas.Board.ROCK:
+                  v2 += ' #';
+                  break;
+                default:
+                  v2 += v4;
+              }
+              ++v3;
+            }
+            v2 += '\n';
+            ++v5;
+          }
+          return v2;
+        };
+
+        v1.TRAPPED = -4;
+        v1.DESTROYED = -3;
+        v1.ROCK = -2;
+        v1.FREE = -1;
+        v1.TEAM_0 = 0;
+        v1.TEAM_1 = 1;
+        v1.numberOfPlayers = 2;
+        ASSetPropFlags(frutibandas.Board.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 279 __Packages.frutibandas.BoardListener {
+
+    #initclip
+      if (!_global.frutibandas) {
+        _global.frutibandas = new Object();
+      }
+      if (!_global.frutibandas.BoardListener) {
+        _global.frutibandas.BoardListener = function () {};
+
+      }
+    #endinitclip
+  }
+
+  movieClip 280 __Packages.frutibandas.CardPool {
+
+    #initclip
+      if (!_global.frutibandas) {
+        _global.frutibandas = new Object();
+      }
+      if (!_global.frutibandas.CardPool) {
+        var v1 = function (xmlAttribute) {
+          this.cards = new Array();
+          var v3 = xmlAttribute.split(':');
+          var v2 = 0;
+          while (v2 < v3.length) {
+            this.cards.push(parseInt(v3[v2]));
+            ++v2;
+          }
+        };
+
+        frutibandas.CardPool = v1;
+        var v2 = v1.prototype;
+        v2.remove = function (cardID) {
+          var v2 = 0;
+          while (v2 < this.cards.length) {
+            if (this.cards[v2] == cardID) {
+              this.cards.splice(v2, 1);
+              return undefined;
+            }
+            ++v2;
+          }
+        };
+
+        v2.getIdOf = function (index) {
+          return this.cards[index];
+        };
+
+        v2.size = function () {
+          return this.cards.length;
+        };
+
+        v2.toString = function () {
+          var v3 = 'CardPool[ ';
+          var v2 = 0;
+          while (v2 < this.cards.length) {
+            v3 += this.cards[v2] + ' ';
+            ++v2;
+          }
+          v3 += ']';
+          return v3;
+        };
+
+        ASSetPropFlags(frutibandas.CardPool.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 281 __Packages.frutibandas.Card {
+
+    #initclip
+      if (!_global.frutibandas) {
+        _global.frutibandas = new Object();
+      }
+      if (!_global.frutibandas.Card) {
+        var v1 = function () {
+          this.id = -1;
+          this.name = undefined;
+          this.requiresTarget = false;
+          this.targetSprite = false;
+          this.targetFreeSlot = false;
+          this.targetTeam = false;
+          this.targetOponent = false;
+          this.hiden = false;
+        };
+
+        frutibandas.Card = v1;
+        var v2 = v1.prototype;
+        v1.New = function (id) {
+          switch (id) {
+            case frutibandas.Card.ENCLUME:
+              return new frutibandas.card.Enclume();
+            case frutibandas.Card.CELERITE:
+              return new frutibandas.card.Celerite();
+            case frutibandas.Card.CONFISCATION:
+              return new frutibandas.card.Confiscation();
+            case frutibandas.Card.RENFORT:
+              return new frutibandas.card.Renfort();
+            case frutibandas.Card.DESORDRE:
+              return new frutibandas.card.Desordre();
+            case frutibandas.Card.PETRIFICATION:
+              return new frutibandas.card.Petrification();
+            case frutibandas.Card.VACHETTE:
+              return new frutibandas.card.Vachette();
+            case frutibandas.Card.CONVERSION:
+              return new frutibandas.card.Conversion();
+            case frutibandas.Card.CHARGE:
+              return new frutibandas.card.Charge();
+            case frutibandas.Card.ENTRACTE:
+              return new frutibandas.card.Entracte();
+            case frutibandas.Card.SOLO:
+              return new frutibandas.card.Solo();
+            case frutibandas.Card.PIEGE:
+              return new frutibandas.card.Piege();
+          }
+          throw new Error('Unknown card ' + id);
+        };
+
+        v2.isValidTarget = function (c) {
+          if (!this.requiresTarget) {
+            return true;
+          }
+          if (!c.isValid()) {
+            frutibandas.Main.logMessage(frutibandas.Texts.OUT_OF_BOARD);
+            return false;
+          }
+          if (!(frutibandas.Main.game.getBoard()).isValid(c)) {
+            frutibandas.Main.logMessage(frutibandas.Texts.INVALID_TARGET);
+            return false;
+          }
+          var v2 = (frutibandas.Main.game.getBoard()).getElement(c);
+          if (this.targetFreeSlot) {
+            if (v2 == frutibandas.Board.FREE) {
+              return true;
+            }
+            frutibandas.Main.logMessage(frutibandas.Texts.REQUIRES_FREE_SLOT);
+            return false;
+          }
+          if (this.targetSprite) {
+            if (v2 <= frutibandas.Board.FREE) {
+              frutibandas.Main.logMessage(frutibandas.Texts.REQUIRES_SPRITE);
+              return false;
+            }
+            if (this.targetTeam && v2 != frutibandas.Main.game.team) {
+              frutibandas.Main.logMessage(frutibandas.Texts.REQUIRES_OWN_SPRITE);
+              return false;
+            }
+            if (this.targetOponent && v2 != 1 - frutibandas.Main.game.team) {
+              frutibandas.Main.logMessage(frutibandas.Texts.REQUIRES_OPONENT_SP);
+              return false;
+            }
+          }
+          return true;
+        };
+
+        v2.execute = function (game, team, c, d) {
+          throw new Error('Card.execute() not implemented for card ' + this.name);
+        };
+
+        v1.ENCLUME = 0;
+        v1.CELERITE = 1;
+        v1.CONFISCATION = 2;
+        v1.RENFORT = 3;
+        v1.DESORDRE = 4;
+        v1.PETRIFICATION = 5;
+        v1.VACHETTE = 6;
+        v1.CONVERSION = 7;
+        v1.CHARGE = 8;
+        v1.ENTRACTE = 9;
+        v1.SOLO = 10;
+        v1.PIEGE = 11;
+        ASSetPropFlags(frutibandas.Card.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 282 __Packages.frutibandas.card.Enclume {
+
+    #initclip
+      if (!_global.frutibandas) {
+        _global.frutibandas = new Object();
+      }
+      if (!_global.frutibandas.card) {
+        _global.frutibandas.card = new Object();
+      }
+      if (!_global.frutibandas.card.Enclume) {
+        var v1 = function () {
+          super();
+          this.id = frutibandas.Card.ENCLUME;
+          this.name = 'Enclume';
+          this.requiresTarget = true;
+        };
+
+        frutibandas.card.Enclume = v1;
+        frutibandas.card.Enclume extends frutibandas.Card;
+        var v2 = v1.prototype;
+        v2.execute = function (game, team, c, d) {
+          var v3 = frutibandas.Main.gameUI.board.getSpriteAt(c);
+          var v2 = new frutibandas.gui.options.Enclume(c, v3);
+          (game.getBoard()).destroy(c);
+          (game.getBoard()).removeEmptyBorders();
+          (frutibandas.Main.getAnimControl()).push(v2, frutibandas.Main.ANIM_PRIO_CARD);
+        };
+
+        ASSetPropFlags(frutibandas.card.Enclume.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 283 __Packages.frutibandas.gui.Animable {
+
+    #initclip
+      if (!_global.frutibandas) {
+        _global.frutibandas = new Object();
+      }
+      if (!_global.frutibandas.gui) {
+        _global.frutibandas.gui = new Object();
+      }
+      if (!_global.frutibandas.gui.Animable) {
+        _global.frutibandas.gui.Animable = function () {};
+
+      }
+    #endinitclip
+  }
+
+  movieClip 284 __Packages.frutibandas.gui.options.Enclume {
+
+    #initclip
+      if (!_global.frutibandas) {
+        _global.frutibandas = new Object();
+      }
+      if (!_global.frutibandas.gui) {
+        _global.frutibandas.gui = new Object();
+      }
+      if (!_global.frutibandas.gui.options) {
+        _global.frutibandas.gui.options = new Object();
+      }
+      if (!_global.frutibandas.gui.options.Enclume) {
+        var v1 = function (logicCoord, sprite) {
+          this.sprite = sprite;
+          this.logicCoord = logicCoord;
+          this.destination = frutibandas.Main.gameUI.board.getBandasRealCoordinate(logicCoord);
+          this.startGuiCoord = this.destination.copy();
+          this.startGuiCoord.y -= frutibandas.gui.options.Enclume.ANIMATION_HEIGHT;
+          this.running = false;
+          this.flCompleted = false;
+          this.speed = 1;
+          this.createMovie();
+        };
+
+        frutibandas.gui.options.Enclume = v1;
+        var v2 = v1.prototype;
+        _global.frutibandas.gui.options.Enclume implements _global.frutibandas.gui.Animable;
+        v2.start = function () {
+          this.running = true;
+          this.flCompleted = false;
+          this.state = frutibandas.gui.options.Enclume.STATE_FALL;
+        };
+
+        v2.update = function () {
+          if (!this.running) {
+            this.start();
+          }
+          if (this.state == frutibandas.gui.options.Enclume.STATE_FALL) {
+            this.updateFall();
+            return !this.flCompleted;
+          }
+          if (this.state == frutibandas.gui.options.Enclume.STATE_SMOKE) {
+            this.updateSmoke();
+          }
+          return !this.flCompleted;
+        };
+
+        v2.updateFall = function () {
+          if (this.movie._y >= this.destination.y) {
+            var v2 = this.movie.getDepth();
+            this.movie.removeMovieClip();
+            this.movie = frutibandas.Main.gameUI.board.attachMovie('mcSmokeAnvil', 'Smoke_1', v2);
+            this.sprite.kill();
+            this.movie._y = this.destination.y;
+            this.movie._x = this.destination.x;
+            this.smokeAnimStep = frutibandas.gui.options.Enclume.SMOKE_ANIM_LENGTH;
+            this.state = frutibandas.gui.options.Enclume.STATE_SMOKE;
+          } else {
+            this.movie._y += this.speed;
+            this.speed *= frutibandas.gui.options.Enclume.VELOCITY;
+            if (this.speed > frutibandas.gui.options.Enclume.MAX_SPEED) {
+              this.speed = frutibandas.gui.options.Enclume.MAX_SPEED;
+            }
+          }
+        };
+
+        v2.updateSmoke = function () {
+          --this.smokeAnimStep;
+          if (this.smokeAnimStep <= 0) {
+            this.flCompleted = true;
+          }
+        };
+
+        v2.createMovie = function () {
+          var v2 = frutibandas.Main.gameUI.board;
+          var v3 = v2.getNextHighestDepth();
+          this.movie = v2.attachMovie(frutibandas.gui.options.Enclume.SYMBOL, frutibandas.gui.options.Enclume.SYMBOL + v3, v3);
+          this.movie._x = this.startGuiCoord.x;
+          this.movie._y = this.startGuiCoord.y;
+        };
+
+        v2.toString = function () {
+          return 'Anim \'Enclume\' completed=' + this.flCompleted;
+        };
+
+        v1.NAME = 'Enclume';
+        v1.SYMBOL = 'mcAnvil';
+        v1.ANIMATION_HEIGHT = 200;
+        v1.VELOCITY = 1.5;
+        v1.MAX_SPEED = 20;
+        v1.STATE_FALL = 1;
+        v1.STATE_SMOKE = 2;
+        v1.SMOKE_ANIM_LENGTH = 11;
+        ASSetPropFlags(frutibandas.gui.options.Enclume.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 285 __Packages.frutibandas.card.Celerite {
+
+    #initclip
+      if (!_global.frutibandas) {
+        _global.frutibandas = new Object();
+      }
+      if (!_global.frutibandas.card) {
+        _global.frutibandas.card = new Object();
+      }
+      if (!_global.frutibandas.card.Celerite) {
+        var v1 = function () {
+          super();
+          this.id = frutibandas.Card.CELERITE;
+          this.name = 'Celerite';
+        };
+
+        frutibandas.card.Celerite = v1;
+        frutibandas.card.Celerite extends frutibandas.Card;
+        var v2 = v1.prototype;
+        v2.execute = function (game, team, c, d) {};
+
+        ASSetPropFlags(frutibandas.card.Celerite.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 286 __Packages.frutibandas.card.Confiscation {
+
+    #initclip
+      if (!_global.frutibandas) {
+        _global.frutibandas = new Object();
+      }
+      if (!_global.frutibandas.card) {
+        _global.frutibandas.card = new Object();
+      }
+      if (!_global.frutibandas.card.Confiscation) {
+        var v1 = function () {
+          super();
+          this.id = frutibandas.Card.CONFISCATION;
+          this.name = 'Confiscation';
+        };
+
+        frutibandas.card.Confiscation = v1;
+        frutibandas.card.Confiscation extends frutibandas.Card;
+        var v2 = v1.prototype;
+        v2.execute = function (game, team, c, d, p) {
+          if (this.hiden || p == undefined || isNaN(p)) {
+            frutibandas.Main.debug('Confiscation.execute() p:undefined it means that we played the card');
+          } else {
+            frutibandas.Main.gameUI.onCardConfiscated(team, p);
+          }
+        };
+
+        ASSetPropFlags(frutibandas.card.Confiscation.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 287 __Packages.frutibandas.card.Renfort {
+
+    #initclip
+      if (!_global.frutibandas) {
+        _global.frutibandas = new Object();
+      }
+      if (!_global.frutibandas.card) {
+        _global.frutibandas.card = new Object();
+      }
+      if (!_global.frutibandas.card.Renfort) {
+        var v1 = function () {
+          super();
+          this.id = frutibandas.Card.RENFORT;
+          this.name = 'Renfort';
+        };
+
+        frutibandas.card.Renfort = v1;
+        frutibandas.card.Renfort extends frutibandas.Card;
+        var v2 = v1.prototype;
+        v2.execute = function (game, team, co, d) {
+          var v3 = co.x;
+          var v4 = co.y;
+          frutibandas.Main.gameUI.board.onMoveBegin();
+          var v2 = new frutibandas.Coordinate();
+          if (v3 > 10000) {
+            v2.x = Math.floor(v3 / 10000) - 1;
+            v2.y = Math.floor(v4 / 10000) - 1;
+            v3 -= (v2.x + 1) * 10000;
+            v4 -= (v2.y + 1) * 10000;
+            this.createReenforcementAt(game, team, v2);
+          }
+          if (v3 > 100) {
+            v2.x = Math.floor(v3 / 100) - 1;
+            v2.y = Math.floor(v4 / 100) - 1;
+            v3 -= (v2.x + 1) * 100;
+            v4 -= (v2.y + 1) * 100;
+            this.createReenforcementAt(game, team, v2);
+          }
+          if (v3 > 0) {
+            v2.x = v3 - 1;
+            v2.y = v4 - 1;
+            this.createReenforcementAt(game, team, v2);
+          }
+          frutibandas.Main.gameUI.board.onMoveDone();
+        };
+
+        v2.createReenforcementAt = function (game, team, c) {
+          frutibandas.Main.game.board.setElement(c, team);
+          frutibandas.Main.game.board.incTeamCounter(team);
+          var v3 = frutibandas.Main.gameUI.board.createSpriteView(c, team);
+          (frutibandas.Main.getAnimControl()).push(new frutibandas.gui.options.Renfort(v3, c, team), frutibandas.Main.ANIM_PRIO_CARD);
+        };
+
+        ASSetPropFlags(frutibandas.card.Renfort.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 288 __Packages.frutibandas.gui.options.Renfort {
+
+    #initclip
+      if (!_global.frutibandas) {
+        _global.frutibandas = new Object();
+      }
+      if (!_global.frutibandas.gui) {
+        _global.frutibandas.gui = new Object();
+      }
+      if (!_global.frutibandas.gui.options) {
+        _global.frutibandas.gui.options = new Object();
+      }
+      if (!_global.frutibandas.gui.options.Renfort) {
+        var v1 = function (s, c, newTeam) {
+          this.sprite = s;
+          this.sprite._visible = false;
+          if (newTeam == 0) {
+            this.color = 16751001;
+          } else {
+            this.color = 10092441;
+          }
+          this.center = frutibandas.Main.gameUI.board.getBandasRealCoordinate(c);
+          this.steps = frutibandas.gui.options.Renfort.ANIM_LENGTH;
+          this.running = false;
+          this.speed = 4;
+          this.radius = frutibandas.gui.options.Renfort.MIN_RADIUS;
+        };
+
+        frutibandas.gui.options.Renfort = v1;
+        var v2 = v1.prototype;
+        _global.frutibandas.gui.options.Renfort implements _global.frutibandas.gui.Animable;
+        v2.start = function () {
+          this.sprite._visible = true;
+          this.running = true;
+          var v2 = frutibandas.Main.gameUI.board;
+          var v3 = v2.getNextHighestDepth();
+          this.movie = v2.createEmptyMovieClip('High_1', v3);
+          this.movie._x = this.center.x;
+          this.movie._y = this.center.y;
+        };
+
+        v2.update = function () {
+          if (!this.running) {
+            this.start();
+          }
+          --this.steps;
+          this.redraw();
+          if (this.steps <= 0) {
+            this.tearDown();
+            return false;
+          }
+          return true;
+        };
+
+        v2.redraw = function () {
+          var v5 = 100 - this.radius;
+          var v2 = this.radius;
+          var v4 = 0;
+          var v3 = v2;
+          this.movie.clear();
+          this.movie.lineStyle(v2, this.color, v5);
+          this.movie.moveTo(v4, v3);
+          this.movie.curveTo(v4 + v2, v3, v4 + v2, v3 - v2);
+          this.movie.curveTo(v4 + v2, v3 - v2 - v2, v4, v3 - v2 - v2);
+          this.movie.curveTo(v4 - v2, v3 - v2 - v2, v4 - v2, v3 - v2);
+          this.movie.curveTo(v4 - v2, v3, v4, v3);
+          this.radius += frutibandas.gui.options.Renfort.SPEED;
+          if (this.radius >= frutibandas.gui.options.Renfort.MAX_RADIUS) {
+            this.radius = frutibandas.gui.options.Renfort.MIN_RADIUS;
+          }
+        };
+
+        v2.tearDown = function () {
+          this.movie.removeMovieClip();
+        };
+
+        v1.ANIM_LENGTH = 10;
+        v1.MIN_RADIUS = 10;
+        v1.MAX_RADIUS = 100;
+        v1.SPEED = 11;
+        ASSetPropFlags(frutibandas.gui.options.Renfort.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 289 __Packages.frutibandas.gui.Sprite {
+
+    #initclip
+      if (!_global.frutibandas) {
+        _global.frutibandas = new Object();
+      }
+      if (!_global.frutibandas.gui) {
+        _global.frutibandas.gui = new Object();
+      }
+      if (!_global.frutibandas.gui.Sprite) {
+        var v1 = function () {
+          super();
+          this.id = undefined;
+          this.killed = false;
+          this.currentMove = null;
+        };
+
+        frutibandas.gui.Sprite = v1;
+        frutibandas.gui.Sprite extends MovieClip;
+        var v2 = v1.prototype;
+        _global.frutibandas.gui.Sprite implements _global.frutibandas.gui.Animable;
+        v1.New = function (parent) {
+          var v1 = parent.getNextHighestDepth();
+          return frutibandas.gui.Sprite(parent.attachMovie('mcBandas', 'Bandas' + v1, v1));
+        };
+
+        v2.init = function () {
+          this.fruit.beret.gotoAndStop(this.team + 1);
+          this.gotoAndStop(this.skin + 1);
+          this.moveList = new Array();
+          this.danceIndex = -1;
+          this.fruit.stop();
+        };
+
+        v2.setTeam = function (team) {
+          this.team = team;
+          this.fruit.beret.gotoAndStop(team + 1);
+        };
+
+        v2.updatePos = function () {
+          this._x = this.x;
+          this._y = this.y;
+        };
+
+        v2.petrify = function (c) {
+          this.fruit.gotoAndPlay('stone');
+        };
+
+        v2.onMove = function (origin, aDirection) {
+          this.playDirAnim(origin, aDirection, 'jump');
+        };
+
+        v2.onPushed = function (origin, aDirection) {
+          this.playDirAnim(origin, aDirection, 'push');
+        };
+
+        v2.playDirAnim = function (origin, aDirection, anim) {
+          var v3 = origin.copy();
+          v3.move(aDirection);
+          var v4 = frutibandas.Main.gameUI.board.getBandasRealCoordinate(v3);
+          var v2 = aDirection.toNumber();
+          if (v2 == 3) {
+            this._xscale = -100;
+            v2 = 1;
+          } else {
+            this._xscale = 100;
+          }
+          this.flCompleted = false;
+          this.moveList.push({'anim': anim + v2, 'wait': random(3), 'afterWait': 20});
+          this.x = v4.x;
+          this.y = v4.y;
+        };
+
+        v2.gotoNext = function () {
+          if (this.moveList.length > 0) {
+          } else {
+            if (this.danceList.length > 0) {
+              this.danceIndex = (this.danceIndex + 1) % this.danceList.length;
+              var v2 = this.danceList[this.danceIndex];
+              if (Math.round(v2 / 2) == v2 / 2) {
+                this._xscale = 100;
+              } else {
+                this._xscale = -100;
+                ++v2;
+              }
+              this.fruit.gotoAndPlay('danse' + v2);
+            }
+          }
+          this.fruit.gotoAndStop('base');
+        };
+
+        v2.update = function () {
+          this.flCompleted = false;
+          if (this.currentMove != null) {
+            --this.currentMove.afterWait;
+            if (this.currentMove.afterWait <= 0) {
+              this.currentMove = null;
+            }
+            return !this.flCompleted;
+          }
+          if (this.moveList.length > 0) {
+            var v2 = this.moveList[0];
+            if (v2.wait < 0) {
+              this.fruit.gotoAndPlay(v2.anim);
+              this.moveList.shift();
+              if (this.killed) {
+                this.currentMove = v2;
+              }
+            } else {
+              --v2.wait;
+            }
+            return !this.flCompleted;
+          }
+          if (this.killed) {
+            this.flCompleted = true;
+            this.fruit.gotoAndPlay('fall');
+            return !this.flCompleted;
+          }
+          this.flCompleted = true;
+          return !this.flCompleted;
+        };
+
+        v2.onStoned = function (origin, aDirection) {
+          this.playDirAnim(origin, aDirection, 'stone');
+        };
+
+        v2.onDestroyed = function (origin, aDirection) {
+          this.killed = true;
+          this.flCompleted = false;
+        };
+
+        v2.onHitByVachette = function (origin, aDirection) {
+          this.killed = true;
+          this.flCompleted = false;
+        };
+
+        v2.playFly = function (d) {
+          if (d == frutibandas.Direction.Left) {
+            this._xscale = -100;
+          }
+          this.fruit.gotoAndPlay('push1');
+        };
+
+        v2.kill = function () {
+          this.removeMovieClip();
+        };
+
+        v2.toString = function () {
+          return 'Sprite';
+        };
+
+        v2.decal = 8;
+        ASSetPropFlags(frutibandas.gui.Sprite.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 290 __Packages.frutibandas.gui.Board {
+
+    #initclip
+      if (!_global.frutibandas) {
+        _global.frutibandas = new Object();
+      }
+      if (!_global.frutibandas.gui) {
+        _global.frutibandas.gui = new Object();
+      }
+      if (!_global.frutibandas.gui.Board) {
+        var v1 = function () {
+          super();
+          this.borderTop = 0;
+          this.borderLeft = 0;
+          this.slotsDepth = 100;
+          this.traps = new Array();
+          this.board = frutibandas.Main.game.board;
+          this.board.setListener(this);
+          this.size = this.board.getSize();
+          this.width = 0;
+          this.slots = new Array();
+          this.bandas = new Array();
+          this.sprites = new Array();
+          this.boardLine = this.createEmptyMovieClip('BoardLine', frutibandas.gui.Board.BOARD_LINE_DEPTH);
+          this.moveAnimation = new frutibandas.gui.AnimationController(10);
+          this.modified = true;
+          this.counter = 0;
+          this.createSlots();
+        };
+
+        frutibandas.gui.Board = v1;
+        frutibandas.gui.Board extends MovieClip;
+        var v2 = v1.prototype;
+        _global.frutibandas.gui.Board implements _global.frutibandas.BoardListener;
+        v1.New = function (parent) {
+          var v2;
+          var v1 = parent.getNextHighestDepth();
+          v2 = frutibandas.gui.Board(parent.attachMovie('mcBoard', 'mcBoard@' + v1, v1));
+          return v2;
+        };
+
+        v2.toLogicCoordinate = function (guiCoord) {
+          if (guiCoord.x < this._x || guiCoord.x > this._x + this.width) {
+            return null;
+          }
+          if (guiCoord.y < this._y || guiCoord.y > this._y + this.width) {
+            return null;
+          }
+          var v3 = new frutibandas.Coordinate();
+          v3.x = Math.floor((guiCoord.x - this._x) / frutibandas.gui.Board.SlotSize);
+          v3.y = Math.floor((guiCoord.y - this._y) / frutibandas.gui.Board.SlotSize);
+          return v3;
+        };
+
+        v2.getBandasRealCoordinate = function (c) {
+          var v2 = c.copy();
+          v2.x = this.borderLeft + c.x * frutibandas.gui.Board.SlotSize + frutibandas.gui.Board.SlotSize / 2;
+          v2.y = this.borderTop + c.y * frutibandas.gui.Board.SlotSize + frutibandas.gui.Board.SlotSize / 2;
+          return v2;
+        };
+
+        v2.createSpriteView = function (c, team) {
+          var v3 = this.getDepthOf(c);
+          var v4 = 'mcBandas';
+          var v2;
+          ++this.counter;
+          v2 = frutibandas.gui.Sprite(this.attachMovie(v4, v4 + '@' + v3, v3));
+          if (v2 == undefined || v2 == null) {
+            trace('Error : mcBandas not attached');
+          }
+          frutibandas.gui.Board.BandasHeight = v2._height;
+          var v5 = this.getBandasRealCoordinate(c);
+          v2._x = v5.x;
+          v2._y = v5.y;
+          v2.id = v3;
+          v2.skin = frutibandas.Main.game.skins[team];
+          v2.team = team;
+          v2.init();
+          this.bandas.push(v2);
+          this.setSpriteAt(c, v2);
+          return v2;
+        };
+
+        v2.update = function () {
+          this.boardMask.update();
+          this.updateBoardLine();
+        };
+
+        v2.show = function () {
+          var v2 = 0;
+          while (v2 < this.slots.length) {
+            this.slots[v2]._visible = true;
+            ++v2;
+          }
+          v2 = 0;
+          while (v2 < this.bandas.length) {
+            this.bandas[v2]._visible = true;
+            ++v2;
+          }
+          this._visible = true;
+        };
+
+        v2.getSpriteAt = function (c) {
+          var v2 = c.y * this.size + c.x;
+          return frutibandas.gui.Sprite(this.sprites[v2]);
+        };
+
+        v2.setSpriteAt = function (c, s) {
+          var v3 = c.y * this.size + c.x;
+          if (c.y >= this.size || c.x >= this.size || c.x < 0 || c.y < 0) {
+            return undefined;
+          }
+          this.sprites[v3] = s;
+        };
+
+        v2.onSlotDestroyed = function (c) {
+          this.modified = true;
+          this.boardMask.boardModified();
+          var v5 = frutibandas.gui.Board.SLOT_DEPTH + c.y * this.size + c.x;
+          var v4 = frutibandas.gui.Slot.New(this, c, v5);
+          this.deleteSlotAnimations.pushNextPriority(v4);
+          var v3 = this.getSpriteAt(c);
+          if (v3 != undefined && v3 != null) {
+            frutibandas.Main.debug('set sprite at ' + c);
+            this.setSpriteAt(c, null);
+            frutibandas.Main.debug('sprite.onDestroyed()');
+            v3.onDestroyed();
+            frutibandas.Main.debug('pushNextPriority()');
+            this.deleteSlotAnimations.pushNextPriority(v3);
+            frutibandas.Main.debug('done');
+          }
+        };
+
+        v2.onSlotTrapped = function (c) {
+          this.modified = true;
+          this.boardMask.boardModified();
+          var v3 = frutibandas.gui.Board.SLOT_DEPTH + c.y * this.size + c.x;
+          var v4 = frutibandas.gui.Trap.New(this, c, v3);
+          this.traps.push(v4);
+        };
+
+        v2.onTrapDiscovered = function (c) {
+          var v2 = 0;
+          while (v2 < this.traps.length) {
+            if ((this.traps[v2].getCoordinate()).equals(c)) {
+              this.traps[v2].play();
+              this.traps[v2] = null;
+            }
+            ++v2;
+          }
+        };
+
+        v2.onSpriteMove = function (c, d, pushed) {
+          var v3 = this.getSpriteAt(c);
+          if (v3 == undefined || v3 == null || v3 == '') {
+            throw new Error('Error: sprite at ' + c + ' undefined');
+          }
+          var v4 = c.copy();
+          v4.move(d);
+          var v8 = this.getDepthOf(v4);
+          v3.swapDepths(v8);
+          var v7;
+          if (pushed) {
+            v7 = new frutibandas.gui.SpriteMoveAnim(v3, c, d, frutibandas.gui.SpriteMoveAnim.PUSHED);
+          } else {
+            v7 = new frutibandas.gui.SpriteMoveAnim(v3, c, d, frutibandas.gui.SpriteMoveAnim.MOVE);
+          }
+          this.setSpriteAt(c, null);
+          this.setSpriteAt(v4, v3);
+          var v5;
+          switch (d) {
+            case frutibandas.Direction.Up:
+              v5 = 9 - c.y;
+              break;
+            case frutibandas.Direction.Down:
+              v5 = c.y;
+              break;
+            case frutibandas.Direction.Left:
+              v5 = 9 - c.x;
+              break;
+            case frutibandas.Direction.Right:
+              v5 = c.x;
+          }
+          this.moveAnimation.push(v7, v5);
+          if (!this.board.isValid(v4) || this.board.getElement(v4) == frutibandas.Board.DESTROYED || this.board.getElement(v4) == frutibandas.Board.TRAPPED) {
+            var v9 = new frutibandas.gui.SpriteMoveAnim(v3, c, d, frutibandas.gui.SpriteMoveAnim.FALL);
+            this.moveAnimation.push(v9, v5 + 1);
+          }
+        };
+
+        v2.onMoveBegin = function (d) {
+          this.deleteSlotAnimations = new frutibandas.gui.AnimationController(10);
+          this.moveAnimation = new frutibandas.gui.AnimationController(10);
+        };
+
+        v2.onMoveDone = function () {
+          (frutibandas.Main.getAnimControl()).push(this.moveAnimation, frutibandas.Main.ANIM_PRIO_MOVE);
+          (frutibandas.Main.getAnimControl()).push(this.deleteSlotAnimations, frutibandas.Main.ANIM_PRIO_DEL_BORDER);
+          frutibandas.Main.flushAnimation();
+        };
+
+        v2.onSpriteConverted = function (c, newTeam) {
+          trace('setting sprite team to ' + newTeam + ' at team coordinate ' + c);
+          var v2 = this.getSpriteAt(c);
+          if (v2 != undefined && v2 != null) {
+            v2.setTeam(newTeam);
+          } else {
+            trace('No sprite at ' + c);
+          }
+        };
+
+        v2.updateBoardLine = function () {
+          if (!this.modified) {
+            return undefined;
+          }
+          this.boardLine.clear();
+          this.boardLine.beginFill(9152305);
+          var v11 = frutibandas.Main.game.getBoard();
+          var v12 = v11.getSize();
+          var v5 = 0;
+          while (v5 < v12) {
+            var v3 = 0;
+            while (v3 < v12) {
+              var v4 = new frutibandas.Coordinate(v3, v5);
+              var v8 = new frutibandas.Coordinate(v3, v5 + 1);
+              var v6 = v11.getElement(v4);
+              var v7 = v11.getElement(v8);
+              var v10 = v6 == frutibandas.Board.DESTROYED || v6 == frutibandas.Board.TRAPPED;
+              var v9 = v7 == frutibandas.Board.DESTROYED || v7 == frutibandas.Board.TRAPPED;
+              if (!v10 && v9) {
+                var v2 = this.getBandasRealCoordinate(v4);
+                v2.x -= Math.floor(frutibandas.gui.Board.SlotSize / 2);
+                v2.y += Math.floor(frutibandas.gui.Board.SlotSize / 2);
+                this.boardLine.moveTo(v2.x, v2.y);
+                this.boardLine.lineTo(v2.x + frutibandas.gui.Board.SlotSize, v2.y);
+                this.boardLine.lineTo(v2.x + frutibandas.gui.Board.SlotSize, v2.y + 4);
+                this.boardLine.lineTo(v2.x, v2.y + 4);
+                this.boardLine.lineTo(v2.x, v2.y);
+              }
+              ++v3;
+            }
+            ++v5;
+          }
+          this.boardLine.endFill();
+          this.modified = false;
+        };
+
+        v2.createSlotView = function (c, slot) {
+          if (slot > frutibandas.Board.FREE) {
+            this.createSpriteView(c, slot);
+          }
+        };
+
+        v2.createSlots = function () {
+          var v8 = frutibandas.gui.Board.BOARD_DEPTH;
+          var v7 = this.attachMovie('mcFullSquare', 'mcFullSquare_' + v8, v8);
+          v7.gotoAndStop(this.size);
+          v7._x = this.borderLeft;
+          v7._y = this.borderTop;
+          v7._visible = true;
+          this.width = v7._width;
+          this.boardMask = frutibandas.gui.BoardMask.New(this);
+          this.boardMask.swapDepths(frutibandas.gui.Board.BOARD_MASK_DEPTH);
+          this.boardMask._x = v7._x;
+          this.boardMask._y = v7._y;
+          v7.setMask(this.boardMask);
+          var v6 = this.board.getSize();
+          var v4 = 0;
+          while (v4 < v6) {
+            var v2 = 0;
+            while (v2 < v6) {
+              var v3 = new frutibandas.Coordinate(v2, v4);
+              var v5 = this.board.getElement(v3);
+              this.createSlotView(v3, v5);
+              ++v2;
+            }
+            ++v4;
+          }
+        };
+
+        v2.getDepthOf = function (c) {
+          return frutibandas.gui.Board.BANDAS_DEPTH + (c.x + 1) + (c.y + 1) * 10;
+        };
+
+        v1.SlotSize = 32;
+        v1.BandasHeight = -1;
+        v1.BOARD_LINE_DEPTH = 0;
+        v1.SLOT_DEPTH = 100;
+        v1.SLOT_ANIM_DEPTH = 209;
+        v1.BOARD_DEPTH = 210;
+        v1.BOARD_MASK_DEPTH = 211;
+        v1.EFFECTS_BOT_DEPTH = 500;
+        v1.EFFECTS_TOP_DEPTH = 2000;
+        v1.BANDAS_DEPTH = 1000;
+        ASSetPropFlags(frutibandas.gui.Board.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 291 __Packages.frutibandas.gui.BoardMask {
+
+    #initclip
+      if (!_global.frutibandas) {
+        _global.frutibandas = new Object();
+      }
+      if (!_global.frutibandas.gui) {
+        _global.frutibandas.gui = new Object();
+      }
+      if (!_global.frutibandas.gui.BoardMask) {
+        var v1 = function () {
+          super();
+        };
+
+        frutibandas.gui.BoardMask = v1;
+        frutibandas.gui.BoardMask extends MovieClip;
+        var v2 = v1.prototype;
+        v1.New = function (board) {
+          var v1 = board.getNextHighestDepth();
+          var v2 = frutibandas.gui.BoardMask(board.attachMovie('mcBoardMask', 'BoardMask_' + v1, v1));
+          return v2;
+        };
+
+        v2.boardModified = function () {
+          this.requiresUpdate = true;
+        };
+
+        v2.update = function () {
+          if (!this.requiresUpdate) {
+            return undefined;
+          }
+          this.requiresUpdate = false;
+          this.clear();
+          var v9 = frutibandas.Main.game.getBoard();
+          var v8 = (frutibandas.Main.game.getBoard()).getSize();
+          var v5 = 0;
+          while (v5 < v8) {
+            var v7 = frutibandas.gui.Board.SlotSize;
+            var v4 = 0;
+            while (v4 < v8) {
+              var v6 = v9.getElement(new frutibandas.Coordinate(v4, v5));
+              if (v6 != frutibandas.Board.DESTROYED && v6 != frutibandas.Board.TRAPPED) {
+                this.beginFill(255);
+                var v3 = v4 * frutibandas.gui.Board.SlotSize;
+                var v2 = v5 * frutibandas.gui.Board.SlotSize;
+                this.moveTo(v3, v2);
+                this.lineTo(v3 + frutibandas.gui.Board.SlotSize, v2);
+                this.lineTo(v3 + frutibandas.gui.Board.SlotSize, v2 + v7);
+                this.lineTo(v3, v2 + v7);
+                this.lineTo(v3, v2);
+                this.endFill();
+              }
+              ++v4;
+            }
+            ++v5;
+          }
+        };
+
+        v2.requiresUpdate = true;
+        ASSetPropFlags(frutibandas.gui.BoardMask.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 292 __Packages.frutibandas.gui.AnimationController {
+
+    #initclip
+      if (!_global.frutibandas) {
+        _global.frutibandas = new Object();
+      }
+      if (!_global.frutibandas.gui) {
+        _global.frutibandas.gui = new Object();
+      }
+      if (!_global.frutibandas.gui.AnimationController) {
+        var v1 = function (size) {
+          this.count = 0;
+          this.currentPrio = 0;
+          this.animations = new Array();
+          this.setPriorityRange(size);
+        };
+
+        frutibandas.gui.AnimationController = v1;
+        var v2 = v1.prototype;
+        _global.frutibandas.gui.AnimationController implements _global.frutibandas.gui.Animable;
+        v2.setPriorityRange = function (max) {
+          var v2 = 0;
+          while (v2 < max) {
+            if (this.animations[v2] == undefined) {
+              this.animations[v2] = new Array();
+            }
+            ++v2;
+          }
+          if (this.animations.length > max + 1) {
+            this.animations.splice(max);
+          }
+        };
+
+        v2.push = function (animatedObject, priority) {
+          if (priority == undefined) {
+            priority = this.animations.length - 1;
+          }
+          if (this.animations[priority] == undefined) {
+            this.animations[priority] = new Array();
+          }
+          var v2 = 0;
+          while (v2 < this.animations[priority].length) {
+            if (this.animations[priority][v2] == animatedObject) {
+              return undefined;
+            }
+            ++v2;
+          }
+          this.animations[priority].push(animatedObject);
+          ++this.count;
+        };
+
+        v2.pushNextPriority = function (animatedObject) {
+          var v2 = this.currentPrio;
+          this.push(animatedObject, v2);
+          ++this.currentPrio;
+        };
+
+        v2.update = function () {
+          var v2 = 0;
+          while (v2 < this.animations.length) {
+            if (this.animations[v2].length > 0) {
+              this.updatePriority(v2);
+              return this.count > 0;
+            }
+            ++v2;
+          }
+          return this.count > 0;
+        };
+
+        v2.isEmpty = function () {
+          return this.count == 0;
+        };
+
+        v2.toString = function () {
+          var v4 = 'Animation controller :\n';
+          v4 += ' nbr priority arrays : ' + this.animations.length + ' count=' + this.count + '\n';
+          var v3 = 0;
+          while (v3 < this.animations.length) {
+            var v2 = 0;
+            while (v2 < this.animations[v3].length) {
+              v4 += '+ [' + v3 + '][' + v2 + '] ' + this.animations[v3][v2].toString() + '\n';
+              ++v2;
+            }
+            ++v3;
+          }
+          v4 += '<-AnimationController';
+          return v4;
+        };
+
+        v2.updatePriority = function (p) {
+          var v4 = this.animations[p];
+          var v2 = 0;
+          while (v2 < v4.length) {
+            var v3 = frutibandas.gui.Animable(v4[v2]);
+            if (v3.update() == false || v3 == undefined) {
+              v4.splice(v2, 1);
+              --this.count;
+              --v2;
+            }
+            ++v2;
+          }
+          this.animations[p] = v4;
+        };
+
+        ASSetPropFlags(frutibandas.gui.AnimationController.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 293 __Packages.frutibandas.gui.Game {
+
+    #initclip
+      if (!_global.frutibandas) {
+        _global.frutibandas = new Object();
+      }
+      if (!_global.frutibandas.gui) {
+        _global.frutibandas.gui = new Object();
+      }
+      if (!_global.frutibandas.gui.Game) {
+        var v1 = function () {
+          super();
+          this.chat = null;
+          this.board = null;
+          this.target = null;
+          this.arrowsVisible = false;
+          this.confirm = null;
+          this.madlock = false;
+          this.playersInfos = new Array();
+          this.arrows = new Array();
+          this.createChat();
+          this.createArrows();
+          this.createBoard();
+          this.createPlayersInfos();
+          this.createQuitButton();
+          this.reserveCardTitleEffectDepth();
+        };
+
+        frutibandas.gui.Game = v1;
+        frutibandas.gui.Game extends MovieClip;
+        var v2 = v1.prototype;
+        v1.New = function (parent) {
+          var v1 = parent.getNextHighestDepth();
+          return frutibandas.gui.Game(parent.attachMovie('mcGame', 'Game_' + v1, v1));
+        };
+
+        v2.initCardPlay = function (id) {
+          this.hideArrows();
+          if (frutibandas.Main.game.phase == frutibandas.Game.PHASE_CARD_SELECTION) {
+            this.chat.initChatMode();
+            frutibandas.Main.game.requestChooseCard(id);
+            return undefined;
+          }
+          if (frutibandas.Main.game.currentTeam != frutibandas.Main.game.team) {
+            return undefined;
+          }
+          var v3 = frutibandas.Card.New(id);
+          if (v3.requiresTarget) {
+            this.target = frutibandas.gui.Target.New(this);
+            this.target.setCard(v3);
+            this.target.setValidationCallback(new frutibandas.Callback(this, this.targetValidated));
+          } else {
+            if (id == frutibandas.Card.RENFORT) {
+              var v4 = new frutibandas.Coordinate(10203, 20202);
+              frutibandas.Main.gameUI.chat.initChatMode(id);
+              frutibandas.Main.game.requestPlayCard(id, v4);
+            } else {
+              frutibandas.Main.gameUI.chat.initChatMode(id);
+              frutibandas.Main.game.requestPlayCard(id);
+            }
+          }
+        };
+
+        v2.targetValidated = function (target) {
+          frutibandas.Main.gameUI.chat.initChatMode();
+          var v2;
+          v2 = this.board.toLogicCoordinate(target.getCoordinate());
+          if (!(target.getCard()).isValidTarget(v2)) {
+            this.showArrows();
+            return undefined;
+          }
+          frutibandas.Main.game.requestPlayCard((target.getCard()).id, v2);
+          this.target = null;
+        };
+
+        v2.newMessage = function (src, msg) {
+          this.chat.writeMessage(src, msg);
+        };
+
+        v2.writeLog = function (str) {
+          this.chat.writeLog(str);
+        };
+
+        v2.toggleChatVisibility = function () {
+          this.chat._visible = !this.chat._visible;
+        };
+
+        v2.chatHasFocus = function () {
+          return this.chat.hasFocus();
+        };
+
+        v2.show = function () {
+          function onQuitRelease() {
+            frutibandas.Main.gameUI.quitRequest();
+          }
+
+          this.quitButton.onRelease = onQuitRelease;
+          this.board.show();
+          this.chat.show();
+          this._visible = true;
+        };
+
+        v2.update = function () {
+          this.board.update();
+          this.updateTimers();
+          this.updateSpriteCounters();
+        };
+
+        v2.destroy = function () {
+          this._visible = false;
+          this.removeMovieClip();
+        };
+
+        v2.quitRequest = function () {
+          if (this.madlock) {
+            return undefined;
+          }
+          this.madlock = true;
+          this.confirm = frutibandas.gui.Popup.New(this);
+          if (frutibandas.Main.game.isRunning()) {
+            this.confirm.setTitle(frutibandas.Texts.ABANDON_POPUP_TITLE);
+            this.confirm.setText(frutibandas.Texts.ABANDON_POPUP_TEXT);
+            var v2;
+            if (frutibandas.Main.gameMode == 1) {
+              v2 = new frutibandas.Callback(frutibandas.Main.manager, frutibandas.Main.manager.abandon);
+            } else {
+              v2 = new frutibandas.Callback(this, this.quitConfirmed);
+            }
+            this.confirm.addButton('Oui', v2);
+            this.confirm.addButton('Non', new frutibandas.Callback(this, this.quitCancelled));
+          } else {
+            var v3 = '';
+            var v2 = null;
+            if (frutibandas.Main.gameMode == 1 && frutibandas.Main.game.getWinnerTeam() != frutibandas.Main.game.team) {
+              if (frutibandas.Main.game.getWinnerTeam() == frutibandas.Game.END_DRAW) {
+                v3 = frutibandas.Texts.QUIT_POPUP_CH_DRAW;
+                v2 = new frutibandas.Callback(this, this.quitConfirmed);
+              } else {
+                v3 = frutibandas.Texts.QUIT_POPUP_CH_LOST;
+                v2 = new frutibandas.Callback(frutibandas.Main.manager, frutibandas.Main.manager.hardReboot);
+              }
+            } else {
+              v3 = frutibandas.Texts.QUIT_POPUP_TEXT_1 + frutibandas.Main.game.getWinner() + frutibandas.Texts.QUIT_POPUP_TEXT_2;
+              v2 = new frutibandas.Callback(this, this.quitConfirmed);
+            }
+            this.confirm.setTitle(frutibandas.Texts.QUIT_POPUP_TITLE);
+            this.confirm.setText(v3);
+            this.confirm.addButton('Oui', v2);
+          }
+          this.confirm.draw();
+          frutibandas.Main.gameUI.board.onMoveBegin(frutibandas.Direction.BadDirection);
+          frutibandas.Main.pushAnimation(this.confirm, frutibandas.Main.ANIM_POPUP_END_GAME);
+          frutibandas.Main.gameUI.board.onMoveDone();
+        };
+
+        v2.quitConfirmed = function () {
+          if (frutibandas.Main.game.isRunning()) {
+            frutibandas.Main.manager.abandon();
+          } else {
+            frutibandas.Main.manager.quit();
+          }
+          this.madlock = false;
+        };
+
+        v2.quitCancelled = function () {
+          this.madlock = false;
+        };
+
+        v2.onTurnChanged = function (team) {
+          this.playersInfos[1 - team].setCurrentPlayer(false);
+          this.playersInfos[team].setCurrentPlayer(true);
+          if (team == frutibandas.Main.game.team && frutibandas.Main.game.phase > frutibandas.Game.PHASE_CARD_SELECTION) {
+            this.showArrows();
+          } else {
+            this.hideArrows();
+          }
+        };
+
+        v2.onCardPlayed = function (team, id, alreadyDestroyed) {
+          var v2 = frutibandas.gui.EffectTitle.New(this, this.cardEffectTitleDepth);
+          v2.setTitle((frutibandas.Card.New(id)).name);
+          v2.setTeam(team);
+          v2._y = this._height / 2 - 30;
+          frutibandas.Main.pushAnimation(v2, frutibandas.Main.ANIM_PRIO_CARD_TITLE);
+          if (!alreadyDestroyed) {
+            (this.playersInfos[team].getCards()).play(id);
+          }
+        };
+
+        v2.onCardConfiscated = function (confiscTeam, id) {
+          (this.playersInfos[1 - confiscTeam].getCards()).remove(id);
+          (this.playersInfos[confiscTeam].getCards()).pushAnimated(id);
+        };
+
+        v2.onEnded = function () {
+          if (this.target != null) {
+            this.target.destroy();
+            this.target = null;
+          }
+          if (this.confirm != null) {
+            this.quitCancelled();
+            this.confirm.removeMovieClip();
+            this.confirm = null;
+            this.madlock = false;
+          }
+          this.quitRequest();
+        };
+
+        v2.showPlayersCards = function (hands) {
+          var v2 = 0;
+          while (v2 < 2) {
+            var v5 = this.playersInfos[v2].getCards();
+            v5.clear();
+            var v3 = 0;
+            while (v3 < hands[v2].length) {
+              if (!isNaN(hands[v2][v3])) {
+                frutibandas.Main.debug('pushing card ' + hands[v2][v3] + ' to player ' + v2 + ' hand');
+                v5.push(hands[v2][v3]);
+              }
+              ++v3;
+            }
+            ++v2;
+          }
+        };
+
+        v2.showDraftCards = function (pool, currentPlayerCanChoose) {
+          this.hideDraftCards();
+          if (currentPlayerCanChoose) {
+            frutibandas.Main.logMessage(frutibandas.Texts.CHOOSE_A_CARD);
+          }
+          var v2 = currentPlayerCanChoose ? frutibandas.Main.game.team : 1 - frutibandas.Main.game.team;
+          var v4 = this.playersInfos[v2].getCards();
+          v2 = 0;
+          while (v2 < pool.size()) {
+            v4.push(pool.getIdOf(v2));
+            ++v2;
+          }
+        };
+
+        v2.hideDraftCards = function () {
+          (this.playersInfos[1 - frutibandas.Main.game.currentTeam].getCards()).clear();
+        };
+
+        v2.hideArrows = function () {
+          if (this.arrowsVisible) {
+            var v2 = 0;
+            while (v2 < 4) {
+              this.arrows[v2].hide();
+              ++v2;
+            }
+            this.arrowsVisible = false;
+          }
+        };
+
+        v2.showArrows = function () {
+          if (this.arrowsVisible) {
+            return undefined;
+          }
+          if (frutibandas.Main.inputLocked) {
+            return undefined;
+          }
+          if (frutibandas.Main.game.team != frutibandas.Main.game.currentTeam) {
+            return undefined;
+          }
+          if (frutibandas.Main.game.phase <= frutibandas.Game.PHASE_CARD_SELECTION) {
+            return undefined;
+          }
+          if (!frutibandas.Main.game.isRunning()) {
+            return undefined;
+          }
+          var v2 = 0;
+          while (v2 < 4) {
+            this.arrows[v2].show();
+            ++v2;
+          }
+          this.arrowsVisible = true;
+        };
+
+        v2.updateTimers = function () {
+          var v2 = 0;
+          while (v2 < frutibandas.Main.game.times.length) {
+            this.playersInfos[v2].setRemainingTime(frutibandas.Main.game.times[v2]);
+            ++v2;
+          }
+        };
+
+        v2.updateSpriteCounters = function () {
+          this.playersInfos[0].setSpriteCount(frutibandas.Main.game.board.countSpritesOf(0));
+          this.playersInfos[1].setSpriteCount(frutibandas.Main.game.board.countSpritesOf(1));
+        };
+
+        v2.createDebugLaunchers = function () {
+          var v3 = 0;
+          while (v3 < 12) {
+            var v4 = this.getNextHighestDepth();
+            var v2 = this.attachMovie('mcCardLauncher', 'CardLauncher_' + v4, v4);
+            v2.id = v3;
+            v2.onRelease = function () {
+              this._parent.initCardPlay(this.id);
+            };
+
+            v2.onRollOver = function () {
+              this.gotoAndStop(2);
+              this._parent.chat.initInfoMode(this.id);
+            };
+
+            v2.onRollOut = function () {
+              this.gotoAndStop(1);
+              this._parent.chat.initChatMode();
+            };
+
+            v2.onReleaseOutside = function () {
+              this.gotoAndStop(1);
+            };
+
+            v2._y = 0;
+            v2._x = v3 * v2._width;
+            ++v3;
+          }
+        };
+
+        v2.createQuitButton = function () {
+          this.quitButton = this.attachMovie('mcQuit', 'QuitButton', this.getNextHighestDepth());
+          this.quitButton._x = this._width - this.quitButton._width;
+          this.quitButton._y = this._height - this.quitButton._height;
+        };
+
+        v2.createChat = function () {
+          this.chat = frutibandas.gui.Chat.New(this);
+          this.chat._x = (this._width - this.chat._width) / 2;
+          this.chat._y = this._height - this.chat._height - 7;
+        };
+
+        v2.createBoard = function () {
+          this.board = frutibandas.gui.Board.New(this);
+          this.board._x = (this._width - this.board._width) / 2;
+          this.board._y = 25 + frutibandas.gui.Board.SlotSize * (10 - (frutibandas.Main.game.getBoard()).getSize()) / 2;
+        };
+
+        v2.reserveCardTitleEffectDepth = function () {
+          var v2 = this.createEmptyMovieClip('CardEffectTitle', this.getNextHighestDepth());
+          this.cardEffectTitleDepth = v2.getDepth();
+        };
+
+        v2.createArrows = function () {
+          this.arrows.push(frutibandas.gui.Arrow.New(this, frutibandas.Direction.Up));
+          this.arrows.push(frutibandas.gui.Arrow.New(this, frutibandas.Direction.Down));
+          this.arrows.push(frutibandas.gui.Arrow.New(this, frutibandas.Direction.Left));
+          this.arrows.push(frutibandas.gui.Arrow.New(this, frutibandas.Direction.Right));
+          this.hideArrows();
+        };
+
+        v2.createPlayersInfos = function () {
+          var v3 = 0;
+          v3 = 0;
+          while (v3 < frutibandas.Main.game.players.length) {
+            var v2 = frutibandas.gui.PlayerInfo.New(this);
+            v2.setSide(v3);
+            v2.setTeamNumber(v3);
+            v2.setPlayerName(frutibandas.Main.game.players[v3]);
+            v2.setSpriteType(frutibandas.Main.game.skins[v3]);
+            v2.setSpriteCount(frutibandas.Main.game.board.countSpritesOf(v3));
+            v2.setFrutibouille(frutibandas.Main.game.frutibouilles[v3]);
+            v2.draw();
+            v2._x = 6 + v3 * (this._parent._width - v2._width - 12);
+            v2._y = 6;
+            if (v3 == frutibandas.Main.game.team) {
+              (v2.getCards()).setVisible(true);
+            }
+            this.playersInfos.push(v2);
+            ++v3;
+          }
+        };
+
+        ASSetPropFlags(frutibandas.gui.Game.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 294 __Packages.frutibandas.gui.Chat {
+
+    #initclip
+      if (!_global.frutibandas) {
+        _global.frutibandas = new Object();
+      }
+      if (!_global.frutibandas.gui) {
+        _global.frutibandas.gui = new Object();
+      }
+      if (!_global.frutibandas.gui.Chat) {
+        var v1 = function () {
+          super();
+          this.value = frutibandas.Texts.WARNING_CHEATERS + '<br/>';
+          this.input = '';
+          this.isFocused = false;
+          this.callback = null;
+          this.initChatMode();
+        };
+
+        frutibandas.gui.Chat = v1;
+        frutibandas.gui.Chat extends MovieClip;
+        var v2 = v1.prototype;
+        v1.New = function (parent) {
+          var v2;
+          var v1 = parent.getNextHighestDepth();
+          v2 = frutibandas.gui.Chat(parent.attachMovie('mcLogBox', 'mcLogBox@' + v1, v1));
+          return v2;
+        };
+
+        v2.initChatMode = function () {
+          function onSetFocusP(a) {
+            this._parent.onSetFocus(a);
+          }
+
+          function onKillFocusP(a) {
+            this._parent.onKillFocus(a);
+          }
+
+          this.gotoAndStop(1);
+          this.inputArea.onSetFocus = onSetFocusP;
+          this.inputArea.onKillFocus = onKillFocusP;
+          this.isFocused = false;
+          this.card._visible = false;
+          this.infoText._visible = false;
+          this.scroll();
+        };
+
+        v2.initInfoMode = function (id) {
+          this.gotoAndStop(2);
+          this.isFocused = false;
+          this.card._visible = true;
+          this.card.gotoAndStop(id + 10);
+          this.infoText._visible = true;
+          this.infoText.gotoAndStop(id + 1);
+        };
+
+        v2.setSendCallback = function (obj, mtd) {
+          this.callback = new frutibandas.Callback(obj, mtd);
+        };
+
+        v2.writeMessage = function (src, msg) {
+          this.addText(src + ' > ' + msg);
+        };
+
+        v2.writeLog = function (msg) {
+          this.addText(msg);
+        };
+
+        v2.send = function () {
+          if (this.canSendInput(this.input.toLowerCase())) {
+            this.callback.execute_1(this.input);
+          } else {
+            if (this.input != '') {
+              this.addText('message non transmi (mot douteux trouvé)');
+            }
+          }
+          this.input = '';
+        };
+
+        v2.addText = function (str) {
+          this.value += str + '<br/>';
+          this.scroll();
+        };
+
+        v2.getValue = function () {
+          return this.value;
+        };
+
+        v2.show = function () {
+          this._visible = true;
+        };
+
+        v2.hasFocus = function () {
+          return this.isFocused;
+        };
+
+        v2.scroll = function () {
+          this.chatArea.scroll += this.chatArea.maxscroll;
+        };
+
+        v2.onSetFocus = function (oldFocus) {
+          this.isFocused = true;
+        };
+
+        v2.onKillFocus = function (newFocus) {
+          this.isFocused = false;
+        };
+
+        v2.canSendInput = function (str) {
+          if (str == '') {
+            return false;
+          }
+          if (str.indexOf('sex') != -1) {
+            return false;
+          }
+          if (str == 'merde') {
+            return false;
+          }
+          if (str == 'merd') {
+            return false;
+          }
+          if (str.indexOf('putain') != -1) {
+            return false;
+          }
+          if (str == 'put1') {
+            return false;
+          }
+          return true;
+        };
+
+        ASSetPropFlags(frutibandas.gui.Chat.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 295 __Packages.frutibandas.Callback {
+
+    #initclip
+      if (!_global.frutibandas) {
+        _global.frutibandas = new Object();
+      }
+      if (!_global.frutibandas.Callback) {
+        var v1 = function (o, m) {
+          this.object = o;
+          this.method = m;
+        };
+
+        frutibandas.Callback = v1;
+        var v2 = v1.prototype;
+        v2.execute = function () {
+          this.method.call(this.object);
+        };
+
+        v2.execute_1 = function (param) {
+          this.method.call(this.object, param);
+        };
+
+        v2.toString = function () {
+          return this.object + '.' + this.method + '()';
+        };
+
+        ASSetPropFlags(frutibandas.Callback.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 296 __Packages.frutibandas.Texts {
+
+    #initclip
+      if (!_global.frutibandas) {
+        _global.frutibandas = new Object();
+      }
+      if (!_global.frutibandas.Texts) {
+        var v1 = function () {};
+
+        frutibandas.Texts = v1;
+        var v2 = v1.prototype;
+        v1.LEAVED_THE_GAME = ' a quitté la partie';
+        v1.ABANDONED_GAME = ' a abandonné la partie';
+        v1.CHOOSE_A_CARD = 'Choisissez une carte';
+        v1.CHOSE_A_CARD = ' a choisi une carte';
+        v1.MOVED_BANDAS = ' bouge ses fruits vers ';
+        v1.PLAYED_CARD = ' a joué la carte ';
+        v1.YOUR_TURN = 'A vous de jouer, vous pouvez lancer une carte avant de bouger';
+        v1.CELERITE_YOUR_T = 'Effet célérité, encore à vous !';
+        v1.CELERITE_OPON_T = 'Effet célérité, l\'adversaire bouge encore !';
+        v1.ABANDON_POPUP_TITLE = 'Abandonner la partie';
+        v1.ABANDON_POPUP_TEXT = 'Voulez-vous abandonner la partie ?';
+        v1.QUIT_POPUP_TITLE = 'Quitter la partie';
+        v1.QUIT_POPUP_TEXT_1 = 'La partie est terminée, ';
+        v1.QUIT_POPUP_TEXT_2 = ' a gagné !';
+        v1.QUIT_POPUP_CH_LOST = 'Vous avez perdu !\nA bientot sur le challenge Frutibandas.';
+        v1.QUIT_POPUP_CH_DRAW = 'Egalité !\nVous avez encore vos chances sur le challenge.';
+        v1.OUT_OF_BOARD = 'Vous avez cliqué hors du plateau, lancement de carte annulé !';
+        v1.INVALID_TARGET = 'La case ciblée n\'est pas valide !';
+        v1.REQUIRES_FREE_SLOT = 'Vous devez cibler un emplacement libre !';
+        v1.REQUIRES_SPRITE = 'Vous devez cibler un fruit !';
+        v1.REQUIRES_OWN_SPRITE = 'Vous devez cibler un fruit vous appartenant !';
+        v1.REQUIRES_OPONENT_SP = 'Vous devez cibler un fruit adverse !';
+        v1.CHAT_IGNORE_GAME_ENDED = 'Votre oposant a quitté le challenge.';
+        v1.DISCONNECTED = ' a été déconnecté ! Jouez/attendez la fin de son temps pour gagner.';
+        v1.REJOINED = ' a rejoint la partie !';
+        v1.WARNING_CHEATERS = 'ATTENTION : Les touches F5, Alt-F4, Control-W, ou autres ferment ou relancent Frutiparc et vous font perdre la partie. Ne les utilisez pas !';
+        ASSetPropFlags(frutibandas.Texts.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 297 __Packages.frutibandas.gui.Popup {
+
+    #initclip
+      if (!_global.frutibandas) {
+        _global.frutibandas = new Object();
+      }
+      if (!_global.frutibandas.gui) {
+        _global.frutibandas.gui = new Object();
+      }
+      if (!_global.frutibandas.gui.Popup) {
+        var v1 = function () {
+          super();
+          this.runDepth = 0;
+          this.butList = new Array();
+          this.setTitle(this.title);
+          this.setText(this.text);
+          this._visible = false;
+        };
+
+        frutibandas.gui.Popup = v1;
+        frutibandas.gui.Popup extends MovieClip;
+        var v2 = v1.prototype;
+        _global.frutibandas.gui.Popup implements _global.frutibandas.gui.Animable;
+        v1.New = function (parent) {
+          var v2 = parent.getNextHighestDepth();
+          var v1 = frutibandas.gui.Popup(parent.attachMovie('mcPopup', 'Popup_' + v2, v2));
+          v1._x = 133;
+          v1._y = 126;
+          return v1;
+        };
+
+        v2.setTitle = function (title) {
+          this.title = title;
+          this.titleArea.text = this.title;
+        };
+
+        v2.setText = function (text) {
+          trace('setting to ' + this.textArea + ' : ' + text);
+          this.text = text;
+          this.textArea.text = this.text;
+          this.textArea._y = 92 - this.textArea.textHeight / 2;
+        };
+
+        v2.addButton = function (text, callback) {
+          var v3 = this.runDepth++;
+          var v2 = this.attachMovie('bouton', 'but' + v3, v3);
+          v2._y = 162;
+          v2.field.text = text;
+          v2.callback = callback;
+          v2.onRollOver = function () {
+            this.lightv._visible = true;
+          };
+
+          v2.onRollOut = function () {
+            this.lightv._visible = false;
+          };
+
+          v2.onRelease = function () {
+            this._parent._visible = false;
+            callback.execute();
+            this._parent.removeMovieClip();
+          };
+
+          v2.lightv._visible = false;
+          this.butList.push(v2);
+        };
+
+        v2.draw = function () {
+          var v4 = this.mcw / (this.butList.length + 1);
+          var v2 = 0;
+          while (v2 < this.butList.length) {
+            var v3 = this.butList[v2];
+            v3._x = (v2 + 1) * v4;
+            ++v2;
+          }
+        };
+
+        v2.update = function () {
+          this._visible = true;
+          return false;
+        };
+
+        v2.mcw = 432;
+        v2.mch = 212;
+        ASSetPropFlags(frutibandas.gui.Popup.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 298 __Packages.frutibandas.gui.Target {
+
+    #initclip
+      if (!_global.frutibandas) {
+        _global.frutibandas = new Object();
+      }
+      if (!_global.frutibandas.gui) {
+        _global.frutibandas.gui = new Object();
+      }
+      if (!_global.frutibandas.gui.Target) {
+        var v1 = function () {
+          super();
+          this.startDrag(true);
+          this.hidenButton.onRelease = function () {
+            this._parent.onButtonRelease();
+          };
+
+          Mouse.hide();
+        };
+
+        frutibandas.gui.Target = v1;
+        frutibandas.gui.Target extends MovieClip;
+        var v2 = v1.prototype;
+        v1.New = function (game) {
+          var v1 = game.getNextHighestDepth();
+          var v2 = frutibandas.gui.Target(game.attachMovie('mcTarget', 'Target_' + v1, v1));
+          return v2;
+        };
+
+        v2.setCard = function (card) {
+          this.invocationCard = card;
+        };
+
+        v2.getCard = function () {
+          return this.invocationCard;
+        };
+
+        v2.getCoordinate = function () {
+          return new frutibandas.Coordinate(this._x, this._y);
+        };
+
+        v2.getDirection = function () {
+          return frutibandas.Direction.BadDirection;
+        };
+
+        v2.setValidationCallback = function (cb) {
+          this.validationCallback = cb;
+        };
+
+        v2.destroy = function () {
+          Mouse.show();
+          this.removeMovieClip();
+        };
+
+        v2.onButtonRelease = function () {
+          this.stopDrag();
+          Mouse.show();
+          this.validationCallback.execute_1(this);
+          this.destroy();
+        };
+
+        ASSetPropFlags(frutibandas.gui.Target.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 299 __Packages.frutibandas.gui.EffectTitle {
+
+    #initclip
+      if (!_global.frutibandas) {
+        _global.frutibandas = new Object();
+      }
+      if (!_global.frutibandas.gui) {
+        _global.frutibandas.gui = new Object();
+      }
+      if (!_global.frutibandas.gui.EffectTitle) {
+        var v1 = function () {
+          super();
+          this.step = 0;
+          this.background.stop();
+          this.stop();
+        };
+
+        frutibandas.gui.EffectTitle = v1;
+        frutibandas.gui.EffectTitle extends MovieClip;
+        var v2 = v1.prototype;
+        _global.frutibandas.gui.EffectTitle implements _global.frutibandas.gui.Animable;
+        v1.New = function (parent, depth) {
+          if (depth == undefined) {
+            depth = parent.getNextHighestDepth();
+          }
+          return frutibandas.gui.EffectTitle(parent.attachMovie(frutibandas.gui.EffectTitle.LINK_NAME, 'EFX', depth));
+        };
+
+        v2.setTitle = function (title) {
+          this.titleArea.titleArea.text = title;
+        };
+
+        v2.setTeam = function (team) {
+          this.background.gotoAndStop(team + 1);
+        };
+
+        v2.update = function () {
+          if (this.step == 0) {
+            this.play();
+          }
+          ++this.step;
+          if (this.step >= this._totalframes) {
+            this.removeMovieClip();
+            return false;
+          }
+          return true;
+        };
+
+        v1.LINK_NAME = 'mcEffectTitle';
+        ASSetPropFlags(frutibandas.gui.EffectTitle.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 300 __Packages.frutibandas.gui.CardPane {
+
+    #initclip
+      if (!_global.frutibandas) {
+        _global.frutibandas = new Object();
+      }
+      if (!_global.frutibandas.gui) {
+        _global.frutibandas.gui = new Object();
+      }
+      if (!_global.frutibandas.gui.CardPane) {
+        var v1 = function (playerPane) {
+          this.playerPane = playerPane;
+          this.slots = new Array();
+          this.visible = false;
+          this.createSlots();
+        };
+
+        frutibandas.gui.CardPane = v1;
+        var v2 = v1.prototype;
+        v1.New = function (playerInfo) {
+          var v1 = new frutibandas.gui.CardPane(playerInfo);
+          return v1;
+        };
+
+        v2.setVisible = function (bool) {
+          this.visible = bool;
+        };
+
+        v2.clear = function () {
+          var v3 = 0;
+          while (v3 < this.slots.length) {
+            var v2 = this.slots[v3];
+            if (v2.cardId != null) {
+              v2.vanish();
+            }
+            v2.cardId = null;
+            ++v3;
+          }
+        };
+
+        v2.remove = function (cardID) {
+          var v2 = this.findSlot(cardID);
+          v2.cardId = null;
+          frutibandas.Main.pushAnimation(new frutibandas.gui.AnimCardDisapear(v2), frutibandas.Main.ANIM_PRIO_DEL_CARD);
+        };
+
+        v2.pushAnimated = function (cardID) {
+          var v2 = this.findSlot(null);
+          v2.cardId = cardID;
+          frutibandas.Main.pushAnimation(new frutibandas.gui.AnimCardApear(v2, this.visible), frutibandas.Main.ANIM_PRIO_APP_CARD);
+        };
+
+        v2.push = function (cardID) {
+          var v2 = this.findSlot(null);
+          if (this.visible) {
+            v2.cardId = cardID;
+            v2.setCard(cardID);
+          } else {
+            v2.cardId = cardID;
+            v2.hide();
+          }
+        };
+
+        v2.play = function (cardID) {
+          var v2 = this.findSlot(cardID);
+          if (v2 == null) {
+            return undefined;
+          }
+          if (this.visible == false) {
+            v2.turned();
+          }
+          v2.cardId = null;
+          frutibandas.Main.pushAnimation(new frutibandas.gui.AnimCardDisapear(v2), frutibandas.Main.ANIM_PRIO_CARD_PLAY);
+        };
+
+        v2.createSlots = function () {
+          var v7 = frutibandas.gui.CardSlot.WIDTH;
+          var v8 = frutibandas.gui.CardSlot.HEIGHT;
+          var v6 = (this.playerPane._width - 2 * frutibandas.gui.PlayerInfo.CARD_MARGIN - 2 * v7) / 3;
+          var v3 = 0;
+          while (v3 < 8) {
+            var v4 = v3 % 2;
+            var v5 = Math.floor(v3 / 2);
+            var v2 = frutibandas.gui.CardSlot(this.playerPane.attachMovie('mcCardSlot', 'CardSlot_' + v3, this.playerPane.getNextHighestDepth()));
+            v2._x = frutibandas.gui.PlayerInfo.CARD_MARGIN + v6 + v4 * v7 + v4 * v6;
+            v2._y = frutibandas.gui.PlayerInfo.CARD_SLOT_Y + frutibandas.gui.PlayerInfo.CARD_SPACING + v5 * v8;
+            v2.cardId = null;
+            v2.interfacePlayer = this.playerPane;
+            this.slots.push(v2);
+            ++v3;
+          }
+        };
+
+        v2.findSlot = function (cardID) {
+          var v2 = 0;
+          while (v2 < this.slots.length) {
+            var v3 = this.slots[v2];
+            if (v3.cardId == cardID) {
+              return v3;
+            }
+            ++v2;
+          }
+          return null;
+        };
+
+        ASSetPropFlags(frutibandas.gui.CardPane.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 301 __Packages.frutibandas.gui.PlayerInfo {
+
+    #initclip
+      if (!_global.frutibandas) {
+        _global.frutibandas = new Object();
+      }
+      if (!_global.frutibandas.gui) {
+        _global.frutibandas.gui = new Object();
+      }
+      if (!_global.frutibandas.gui.PlayerInfo) {
+        var v1 = function () {
+          super();
+          this.slotPane = frutibandas.gui.CardPane.New(this);
+        };
+
+        frutibandas.gui.PlayerInfo = v1;
+        frutibandas.gui.PlayerInfo extends MovieClip;
+        var v2 = v1.prototype;
+        v1.New = function (parent) {
+          var v1 = parent.getNextHighestDepth();
+          return frutibandas.gui.PlayerInfo(parent.attachMovie('mcPlayerInfo', 'mcPlayerInfo@' + v1, v1));
+        };
+
+        v2.setSide = function (side) {
+          this.side = side;
+        };
+
+        v2.setTeamNumber = function (n) {
+          this.teamNumber = n;
+        };
+
+        v2.setPlayerName = function (name) {
+          this.nameArea.text = name;
+        };
+
+        v2.setFrutibouille = function (fb) {
+          this.frutibouilleID = fb;
+        };
+
+        v2.setSpriteCount = function (nbr) {
+          this.spriteCount = String(nbr);
+        };
+
+        v2.setSpriteType = function (type) {
+          this.spriteType = type;
+        };
+
+        v2.setRemainingTime = function (time) {
+          if (time <= 0) {
+            time = 0;
+          }
+          this.infoBar.cs.coef = time / frutibandas.Main.game.time;
+          this.infoBar.cs.update();
+          this.remainingTime = ext.util.MTNumber.getTimeStr(time, ':');
+        };
+
+        v2.rollOverCard = function (id) {
+          frutibandas.Main.gameUI.chat.initInfoMode(id);
+        };
+
+        v2.rollOutCard = function (id) {
+          frutibandas.Main.gameUI.chat.initChatMode(id);
+        };
+
+        v2.getCards = function () {
+          return this.slotPane;
+        };
+
+        v2.draw = function () {
+          if (this.side == 1) {
+            this.portrait._x = 52;
+            this.infoBar._x = 7;
+          }
+          this.drawTimer();
+          this.drawFrutibouille();
+          this.drawSprite();
+        };
+
+        v2.setCurrentPlayer = function (bool) {
+          if (bool) {
+            this.infoBar.mask.blink.gotoAndPlay(2);
+          } else {
+            this.infoBar.mask.blink.gotoAndStop(1);
+          }
+        };
+
+        v2.drawTimer = function () {
+          var v3 = {'color': 8947501, 'ray': 15};
+          var v2 = {'x': 22, 'y': 60, 'r': 15};
+          this.infoBar.cs = this.infoBar.attachMovie('mcCoefSquare', 'cs', this.infoBar.getNextHighestDepth(), v3);
+          this.infoBar.attachMovie('rondMask', 'mask', this.infoBar.getNextHighestDepth());
+          this.setCurrentPlayer(false);
+          this.infoBar.mask.gotoAndStop(this.side + 1);
+          this.infoBar.mask._width = v2.r * 2;
+          this.infoBar.mask._height = v2.r * 2;
+          this.infoBar.mask._x = v2.x;
+          this.infoBar.mask._y = v2.y;
+          this.infoBar.mask.setMask(this.infoBar.cs);
+          this.infoBar.cs._x = v2.x;
+          this.infoBar.cs._y = v2.y;
+        };
+
+        v2.drawFrutibouille = function () {
+          var v2 = this.portrait._width;
+          var v5 = {'id': this.frutibouilleID};
+          var v4 = this.portrait.getNextHighestDepth();
+          var v3 = this.portrait.attachMovie('mcFrutibouille', 'Frutibouille', v4, v5);
+          this.bouilleMask = this.portrait.createEmptyMovieClip('BouilleMask', v4 + 1);
+          this.bouilleMask.beginFill(16776960);
+          this.bouilleMask.moveTo(2, 2);
+          this.bouilleMask.lineTo(v2 - 2, 2);
+          this.bouilleMask.lineTo(v2 - 2, v2 - 2);
+          this.bouilleMask.lineTo(2, v2 - 2);
+          this.bouilleMask.lineTo(2, 2);
+          this.bouilleMask.endFill();
+          v3.setMask(this.bouilleMask);
+          this.frutibouille = Frutibouille(v3);
+          this.frutibouille._yscale = v2;
+          this.frutibouille._xscale = v2;
+          if (this.side == 0) {
+            this.frutibouille._xscale *= -1;
+            this.frutibouille._x = v2;
+          }
+        };
+
+        v2.drawSprite = function () {
+          this.infoBar.mcFruit = frutibandas.gui.Sprite.New(this.infoBar);
+          this.infoBar.mcFruit.skin = this.spriteType;
+          this.infoBar.mcFruit.team = this.teamNumber;
+          this.infoBar.mcFruit._xscale = 50;
+          this.infoBar.mcFruit._yscale = 50;
+          this.infoBar.mcFruit._x = 9;
+          this.infoBar.mcFruit._y = 11;
+          this.infoBar.mcFruit.init();
+        };
+
+        v1.Width = 150;
+        v1.Height = 468;
+        v1.CARD_MARGIN = 4;
+        v1.CARD_SLOT_Y = 119;
+        v1.CARD_SPACING = 4;
+        ASSetPropFlags(frutibandas.gui.PlayerInfo.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 302 __Packages.ext.util.MTNumber {
+
+    #initclip
+      if (!_global.ext) {
+        _global.ext = new Object();
+      }
+      if (!_global.ext.util) {
+        _global.ext.util = new Object();
+      }
+      if (!_global.ext.util.MTNumber) {
+        var v1 = function () {};
+
+        ext.util.MTNumber = v1;
+        var v2 = v1.prototype;
+        v1.getTimeStr = function (t, sep1, sep2) {
+          var v1;
+          var v2;
+          var v3;
+          v1 = Math.floor(t / 60000);
+          v2 = Math.floor((t - v1 * 60000) / 1000);
+          v3 = Math.round((t - (v1 * 60000 + v2 * 1000)) / 10);
+          v1 = v1.toString();
+          v2 = v2.toString();
+          v3 = v3.toString();
+          if (v1.length < 2) {
+            v1 = '0' + v1;
+          }
+          if (v2.length < 2) {
+            v2 = '0' + v2;
+          }
+          if (v3.length < 2) {
+            v3 = '0' + v3;
+          }
+          var v4 = v1;
+          if (sep1 != undefined) {
+            v4 += sep1 + v2;
+          }
+          if (sep2 != undefined) {
+            v4 += sep2 + v3;
+          }
+          return v4;
+        };
+
+        ASSetPropFlags(ext.util.MTNumber.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 303 __Packages.frutibandas.gui.CardSlot {
+
+    #initclip
+      if (!_global.frutibandas) {
+        _global.frutibandas = new Object();
+      }
+      if (!_global.frutibandas.gui) {
+        _global.frutibandas.gui = new Object();
+      }
+      if (!_global.frutibandas.gui.CardSlot) {
+        var v1 = function () {
+          super();
+          this.hiden = false;
+          this.cardId = null;
+          this.init();
+        };
+
+        frutibandas.gui.CardSlot = v1;
+        frutibandas.gui.CardSlot extends MovieClip;
+        var v2 = v1.prototype;
+        v2.init = function () {
+          this.flActive = true;
+          this.stop();
+        };
+
+        v2.onPress = function () {
+          if (!this.hiden && this.cardId != null && !frutibandas.Main.inputLocked) {
+            frutibandas.Main.gameUI.initCardPlay(this.cardId);
+          }
+          if (this.hiden && frutibandas.Main.StandaloneDebug) {
+            if (frutibandas.Main.game.phase == frutibandas.Game.PHASE_CARD_SELECTION) {
+              frutibandas.Main.manager.chooseCard(this.cardId);
+            } else {
+              var v2 = frutibandas.gui.Target.New(frutibandas.Main.gameUI);
+              v2.setCard(frutibandas.Card.New(this.cardId));
+              v2.setValidationCallback(new frutibandas.Callback(this, this._testTargetValidated));
+            }
+          }
+        };
+
+        v2._testTargetValidated = function (target) {
+          this.interfacePlayer.rollOutCard(this.slotId);
+          var v3 = frutibandas.Main.gameUI.board.toLogicCoordinate(target.getCoordinate());
+          var v2 = XMLNode(new XML());
+          v2.nodeName = 'c';
+          v2.attributes.e = String(1 - frutibandas.Main.game.team);
+          v2.attributes.c = String(this.cardId);
+          v2.attributes.x = String(v3.x);
+          v2.attributes.y = String(v3.y);
+          v2.attributes.d = String(frutibandas.Direction.BadDirection.toNumber());
+          frutibandas.Main.manager.onCardPlayed(v2);
+        };
+
+        v2.onRollOver = function () {
+          if (!this.hiden && this.cardId != null) {
+            this.interfacePlayer.rollOverCard(this.cardId);
+          }
+        };
+
+        v2.onRollOut = function () {
+          if (!this.hiden && this.cardId != null) {
+            this.interfacePlayer.rollOutCard(this.slotId);
+          }
+        };
+
+        v2.active = function () {
+          this.flActive = true;
+        };
+
+        v2.deActive = function () {
+          this.flActive = false;
+        };
+
+        v2.setCard = function (cardId) {
+          if (!this.flActive) {
+            this.active();
+          }
+          this.flCard = true;
+          this.cardId = cardId;
+          this.gotoAndStop('card');
+          this.updateCard();
+          this.card1.gotoAndStop(this.cardId + 10);
+        };
+
+        v2.hide = function () {
+          this.hiden = true;
+          this.gotoAndStop(9);
+        };
+
+        v2.removeCard = function () {
+          this.gotoAndStop('empty');
+          this.flCard = false;
+        };
+
+        v2.updateCard = function () {
+          this.card1.gotoAndStop(this.cardId + 1);
+        };
+
+        v2.played = function () {};
+
+        v2.turned = function () {
+          this.gotoAndPlay('turn');
+          this.setCard(this.cardId);
+        };
+
+        v2.turnCard = function (cardId) {
+          if (!this.flCard) {
+            this.cardId = 0;
+            this.updateCard();
+            this.flCard = true;
+          }
+          this.cardId = cardId;
+          this.gotoAndPlay('turn');
+        };
+
+        v2.vanish = function () {
+          this.gotoAndPlay('vanish');
+        };
+
+        v2.kill = function () {
+          this.removeMovieClip();
+        };
+
+        v1.WIDTH = 62;
+        v1.HEIGHT = 82;
+        ASSetPropFlags(frutibandas.gui.CardSlot.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 304 __Packages.frutibandas.gui.AnimCardDisapear {
+
+    #initclip
+      if (!_global.frutibandas) {
+        _global.frutibandas = new Object();
+      }
+      if (!_global.frutibandas.gui) {
+        _global.frutibandas.gui = new Object();
+      }
+      if (!_global.frutibandas.gui.AnimCardDisapear) {
+        var v1 = function (card) {
+          this.wait = 0;
+          this.card = card;
+        };
+
+        frutibandas.gui.AnimCardDisapear = v1;
+        var v2 = v1.prototype;
+        _global.frutibandas.gui.AnimCardDisapear implements _global.frutibandas.gui.Animable;
+        v2.update = function () {
+          ++this.wait;
+          if (this.wait >= frutibandas.gui.AnimCardDisapear.ANIM_WAIT) {
+            this.card.vanish();
+            return false;
+          }
+          return true;
+        };
+
+        v1.ANIM_WAIT = 20;
+        ASSetPropFlags(frutibandas.gui.AnimCardDisapear.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 305 __Packages.frutibandas.gui.AnimCardApear {
+
+    #initclip
+      if (!_global.frutibandas) {
+        _global.frutibandas = new Object();
+      }
+      if (!_global.frutibandas.gui) {
+        _global.frutibandas.gui = new Object();
+      }
+      if (!_global.frutibandas.gui.AnimCardApear) {
+        var v1 = function (card, visible) {
+          this.step = frutibandas.gui.AnimCardApear.ANIM_STEP;
+          this.card = card;
+          this.visible = visible;
+        };
+
+        frutibandas.gui.AnimCardApear = v1;
+        var v2 = v1.prototype;
+        _global.frutibandas.gui.AnimCardApear implements _global.frutibandas.gui.Animable;
+        v2.update = function () {
+          if (this.step == frutibandas.gui.AnimCardApear.ANIM_STEP) {
+            if (this.visible) {
+              this.card.setCard(this.card.cardId);
+            } else {
+              this.card.hide();
+            }
+          }
+          --this.step;
+          if (this.step <= 0) {
+            return false;
+          }
+          return true;
+        };
+
+        v1.ANIM_STEP = 20;
+        ASSetPropFlags(frutibandas.gui.AnimCardApear.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 306 __Packages.frutibandas.gui.Arrow {
+
+    #initclip
+      if (!_global.frutibandas) {
+        _global.frutibandas = new Object();
+      }
+      if (!_global.frutibandas.gui) {
+        _global.frutibandas.gui = new Object();
+      }
+      if (!_global.frutibandas.gui.Arrow) {
+        var v1 = function () {
+          super();
+        };
+
+        frutibandas.gui.Arrow = v1;
+        frutibandas.gui.Arrow extends MovieClip;
+        var v2 = v1.prototype;
+        v1.New = function (game, direction) {
+          var v2 = game.getNextHighestDepth();
+          var v1 = frutibandas.gui.Arrow(game.attachMovie(frutibandas.gui.Arrow.LINK_NAME, frutibandas.gui.Arrow.LINK_NAME + v2, v2));
+          v1._visible = false;
+          v1.setDirection(direction);
+          v1.stop();
+          return v1;
+        };
+
+        v2.hide = function () {
+          if (this._currentframe <= 2) {
+            this.gotoAndPlay(3);
+          }
+        };
+
+        v2.show = function () {
+          this._visible = true;
+          this.gotoAndStop(1);
+        };
+
+        v2.onRollOver = function () {
+          if (this._currentframe <= 2) {
+            this.gotoAndStop(2);
+          }
+        };
+
+        v2.onRollOut = function () {
+          if (this._currentframe == 2) {
+            this.gotoAndStop(1);
+          }
+        };
+
+        v2.onRelease = function () {
+          if (this._currentframe <= 2) {
+            frutibandas.Main.game.requestMove(this.direction);
+          }
+        };
+
+        v2.setDirection = function (d) {
+          this._x = frutibandas.gui.Arrow.POSITIONS[d.toNumber()].x;
+          this._y = frutibandas.gui.Arrow.POSITIONS[d.toNumber()].y;
+          this.direction = d;
+          switch (this.direction) {
+              break;
+            case frutibandas.Direction.Up:
+            case frutibandas.Direction.Down:
+              this._yscale = -100;
+              break;
+            case frutibandas.Direction.Left:
+              this._rotation = -90;
+              break;
+            case frutibandas.Direction.Right:
+              this._rotation = 90;
+          }
+        };
+
+        v1.LINK_NAME = 'mcArrow';
+        v1.POSITIONS = [{'x': 350, 'y': 25}, {'x': 508, 'y': 180}, {'x': 350, 'y': 345}, {'x': 190, 'y': 180}];
+        ASSetPropFlags(frutibandas.gui.Arrow.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 307 __Packages.frutibandas.gui.Slot {
+
+    #initclip
+      if (!_global.frutibandas) {
+        _global.frutibandas = new Object();
+      }
+      if (!_global.frutibandas.gui) {
+        _global.frutibandas.gui = new Object();
+      }
+      if (!_global.frutibandas.gui.Slot) {
+        var v1 = function () {
+          super();
+          this.animStep = frutibandas.gui.Slot.animLength;
+        };
+
+        frutibandas.gui.Slot = v1;
+        frutibandas.gui.Slot extends MovieClip;
+        var v2 = v1.prototype;
+        _global.frutibandas.gui.Slot implements _global.frutibandas.gui.Animable;
+        v1.New = function (board, c, depth) {
+          if (depth == undefined) {
+            depth = board.getNextHighestDepth();
+          }
+          var v1 = frutibandas.gui.Slot(board.attachMovie(frutibandas.gui.Slot.symbolName, frutibandas.gui.Slot.symbolName + depth, depth));
+          var v3 = board.getBandasRealCoordinate(c);
+          v1._x = v3.x;
+          v1._y = v3.y;
+          v1.stop();
+          return v1;
+        };
+
+        v2.start = function () {
+          this.running = true;
+          this.animStep = frutibandas.gui.Slot.animLength;
+          this.gotoAndPlay('destroy');
+        };
+
+        v2.update = function () {
+          if (!this.running) {
+            this.start();
+          }
+          --this.animStep;
+          if (this.animStep <= 0) {
+            return false;
+          }
+          return true;
+        };
+
+        v2.toString = function () {
+          return 'Slot';
+        };
+
+        v1.symbolName = 'mcSquare';
+        v1.animLength = 8;
+        ASSetPropFlags(frutibandas.gui.Slot.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 308 __Packages.frutibandas.gui.Trap {
+
+    #initclip
+      if (!_global.frutibandas) {
+        _global.frutibandas = new Object();
+      }
+      if (!_global.frutibandas.gui) {
+        _global.frutibandas.gui = new Object();
+      }
+      if (!_global.frutibandas.gui.Trap) {
+        var v1 = function () {
+          super();
+        };
+
+        frutibandas.gui.Trap = v1;
+        frutibandas.gui.Trap extends MovieClip;
+        var v2 = v1.prototype;
+        v1.New = function (b, c, depth) {
+          if (depth == undefined) {
+            depth = b.getNextHighestDepth();
+          }
+          var v1 = frutibandas.gui.Trap(b.attachMovie('mcTrap', 'Trap' + depth, depth));
+          v1.coordinate = c;
+          var v2 = b.getBandasRealCoordinate(c);
+          v1._x = v2.x;
+          v1._y = v2.y;
+          v1.stop();
+          return v1;
+        };
+
+        v2.getCoordinate = function () {
+          return this.coordinate;
+        };
+
+        ASSetPropFlags(frutibandas.gui.Trap.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 309 __Packages.frutibandas.gui.SpriteMoveAnim {
+
+    #initclip
+      if (!_global.frutibandas) {
+        _global.frutibandas = new Object();
+      }
+      if (!_global.frutibandas.gui) {
+        _global.frutibandas.gui = new Object();
+      }
+      if (!_global.frutibandas.gui.SpriteMoveAnim) {
+        var v1 = function (sprite, origin, d, t) {
+          this.moveAnim = '';
+          this.sprite = sprite;
+          this.origin = origin;
+          this.direction = d;
+          this.target = origin.copy();
+          this.target.move(d);
+          this.started = false;
+          if (t == frutibandas.gui.SpriteMoveAnim.FALL) {
+            this.step = 0;
+            this.wait = frutibandas.gui.SpriteMoveAnim.WAIT_BEFORE_FALL;
+          } else {
+            this.wait = random(3);
+            this.step = frutibandas.gui.SpriteMoveAnim.ANIM_STEPS;
+          }
+          this.moveType = t;
+          this.target = frutibandas.Main.gameUI.board.getBandasRealCoordinate(this.target);
+        };
+
+        frutibandas.gui.SpriteMoveAnim = v1;
+        var v2 = v1.prototype;
+        _global.frutibandas.gui.SpriteMoveAnim implements _global.frutibandas.gui.Animable;
+        v2.prepare = function () {
+          var v2 = this.direction.toNumber();
+          if (v2 == 3) {
+            this.sprite._xscale = -100;
+            v2 = 1;
+          } else {
+            this.sprite._xscale = 100;
+          }
+          this.sprite.x = this.target.x;
+          this.sprite.y = this.target.y;
+          switch (this.moveType) {
+            case frutibandas.gui.SpriteMoveAnim.MOVE:
+              this.moveAnim = 'jump' + v2;
+              break;
+            case frutibandas.gui.SpriteMoveAnim.PUSHED:
+              this.moveAnim = 'push' + v2;
+              break;
+            case frutibandas.gui.SpriteMoveAnim.FALL:
+              this.moveAnim = 'fall';
+              this.sprite._x = this.target.x;
+              this.sprite._y = this.target.y;
+          }
+        };
+
+        v2.update = function () {
+          if (this.wait > 0) {
+            --this.wait;
+            return true;
+          } else {
+            if (this.wait == 0) {
+              this.prepare();
+              this.sprite.fruit.gotoAndPlay(this.moveAnim);
+              this.wait = -1;
+              return true;
+            } else {
+              --this.step;
+              return this.step > 0;
+            }
+          }
+        };
+
+        v2.toString = function () {
+          return 'SpriteMoveAnim';
+        };
+
+        v1.MOVE = 1;
+        v1.PUSHED = 2;
+        v1.FALL = 3;
+        v1.ANIM_STEPS = 5;
+        v1.WAIT_BEFORE_FALL = 10;
+        ASSetPropFlags(frutibandas.gui.SpriteMoveAnim.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 310 __Packages.frutibandas.card.Desordre {
+
+    #initclip
+      if (!_global.frutibandas) {
+        _global.frutibandas = new Object();
+      }
+      if (!_global.frutibandas.card) {
+        _global.frutibandas.card = new Object();
+      }
+      if (!_global.frutibandas.card.Desordre) {
+        var v1 = function () {
+          super();
+          this.id = frutibandas.Card.DESORDRE;
+          this.name = 'Desordre';
+        };
+
+        frutibandas.card.Desordre = v1;
+        frutibandas.card.Desordre extends frutibandas.Card;
+        var v2 = v1.prototype;
+        v2.execute = function (game, team, c, d) {};
+
+        ASSetPropFlags(frutibandas.card.Desordre.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 311 __Packages.frutibandas.card.Petrification {
+
+    #initclip
+      if (!_global.frutibandas) {
+        _global.frutibandas = new Object();
+      }
+      if (!_global.frutibandas.card) {
+        _global.frutibandas.card = new Object();
+      }
+      if (!_global.frutibandas.card.Petrification) {
+        var v1 = function () {
+          super();
+          this.id = frutibandas.Card.PETRIFICATION;
+          this.name = 'Petrification';
+          this.requiresTarget = true;
+          this.targetSprite = true;
+        };
+
+        frutibandas.card.Petrification = v1;
+        frutibandas.card.Petrification extends frutibandas.Card;
+        var v2 = v1.prototype;
+        v2.execute = function (game, team, c, d) {
+          var v1 = game.getBoard();
+          var v2 = v1.getElement(c);
+          if (v2 > frutibandas.Board.FREE) {
+            var v4 = new frutibandas.gui.options.Stone(c);
+            v1.setElement(c, frutibandas.Board.ROCK);
+            v1.decTeamCounter(v2);
+            v1.removeEmptyBorders();
+            (frutibandas.Main.getAnimControl()).push(v4, frutibandas.Main.ANIM_PRIO_CARD);
+          }
+        };
+
+        ASSetPropFlags(frutibandas.card.Petrification.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 312 __Packages.frutibandas.gui.options.Stone {
+
+    #initclip
+      if (!_global.frutibandas) {
+        _global.frutibandas = new Object();
+      }
+      if (!_global.frutibandas.gui) {
+        _global.frutibandas.gui = new Object();
+      }
+      if (!_global.frutibandas.gui.options) {
+        _global.frutibandas.gui.options = new Object();
+      }
+      if (!_global.frutibandas.gui.options.Stone) {
+        var v1 = function (c) {
+          this.sprite = frutibandas.Main.gameUI.board.getSpriteAt(c);
+          this.coord = c;
+          this.step = frutibandas.gui.options.Stone.ANIM_LENGTH;
+          this.running = false;
+        };
+
+        frutibandas.gui.options.Stone = v1;
+        var v2 = v1.prototype;
+        _global.frutibandas.gui.options.Stone implements _global.frutibandas.gui.Animable;
+        v2.update = function () {
+          if (!this.running) {
+            this.sprite.petrify();
+            this.running = true;
+          }
+          --this.step;
+          return this.step > 0;
+        };
+
+        v1.ANIM_LENGTH = 16;
+        ASSetPropFlags(frutibandas.gui.options.Stone.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 313 __Packages.frutibandas.card.Vachette {
+
+    #initclip
+      if (!_global.frutibandas) {
+        _global.frutibandas = new Object();
+      }
+      if (!_global.frutibandas.card) {
+        _global.frutibandas.card = new Object();
+      }
+      if (!_global.frutibandas.card.Vachette) {
+        var v1 = function () {
+          super();
+          this.id = frutibandas.Card.VACHETTE;
+          this.name = 'Vachette';
+          this.requiresTarget = true;
+        };
+
+        frutibandas.card.Vachette = v1;
+        frutibandas.card.Vachette extends frutibandas.Card;
+        var v2 = v1.prototype;
+        v2.execute = function (game, team, c, d) {
+          c.y = 0;
+          var v4 = new frutibandas.gui.options.Vachette(c);
+          var v2 = frutibandas.Main.game.getBoard();
+          while (c.y < v2.getSize()) {
+            var v3 = v2.getElement(c);
+            if (v3 > frutibandas.Board.FREE) {
+              v2.decTeamCounter(v3);
+            }
+            v2.setElement(c, frutibandas.Board.FREE);
+            v4.addCollisionStep(frutibandas.Main.gameUI.board.getSpriteAt(c));
+            ++c.y;
+          }
+          (frutibandas.Main.getAnimControl()).push(v4, frutibandas.Main.ANIM_PRIO_CARD);
+          v2.removeEmptyBorders();
+        };
+
+        ASSetPropFlags(frutibandas.card.Vachette.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 314 __Packages.frutibandas.gui.options.Vachette {
+
+    #initclip
+      if (!_global.frutibandas) {
+        _global.frutibandas = new Object();
+      }
+      if (!_global.frutibandas.gui) {
+        _global.frutibandas.gui = new Object();
+      }
+      if (!_global.frutibandas.gui.options) {
+        _global.frutibandas.gui.options = new Object();
+      }
+      if (!_global.frutibandas.gui.options.Vachette) {
+        var v1 = function (c) {
+          this.direction = frutibandas.Direction.Right;
+          this.nextThrow = 0;
+          this.moveCompleted = false;
+          this.flCompleted = false;
+          this.startCoord = c;
+          var v2 = frutibandas.gui.Board.EFFECTS_BOT_DEPTH + 100;
+          this.cowMovie = frutibandas.Main.gameUI.board.attachMovie(frutibandas.gui.options.Vachette.SYMBOL_COW, frutibandas.gui.options.Vachette.SYMBOL_COW + v2, v2);
+          var v3 = frutibandas.Main.gameUI.board.getBandasRealCoordinate(c);
+          this.cowMovie._x = v3.x;
+          this.cowMovie._y = (frutibandas.Main.game.getBoard()).getMinY() * frutibandas.gui.Board.SlotSize;
+          this.sprites = new Array();
+          this.subAnimations = new Array();
+          this.endY = frutibandas.gui.Board.SlotSize * ((frutibandas.Main.game.getBoard()).getMaxY() + 1);
+        };
+
+        frutibandas.gui.options.Vachette = v1;
+        var v2 = v1.prototype;
+        _global.frutibandas.gui.options.Vachette implements _global.frutibandas.gui.Animable;
+        v2.update = function () {
+          this.updatePuf();
+          this.updatePos();
+          this.updateSubAnimations();
+          this.updateState();
+          return !this.flCompleted;
+        };
+
+        v2.updateState = function () {
+          this.flCompleted = this.moveCompleted && this.subAnimations.length == 0;
+        };
+
+        v2.updatePos = function () {
+          this.cowMovie._y += frutibandas.gui.options.Vachette.COW_SPEED;
+          if (this.cowMovie._y > this.nextThrow) {
+            this.nextThrow += frutibandas.gui.Board.SlotSize;
+            var v2 = frutibandas.gui.Sprite(this.sprites.shift());
+            if (v2 != null && v2 != undefined) {
+              var v3 = frutibandas.gui.Board.EFFECTS_TOP_DEPTH + 10 - this.sprites.length;
+              this.direction = this.direction.oposite();
+              var v4 = new frutibandas.gui.SpriteFlyAnimation(v2, v3, this.direction);
+              this.subAnimations.push(v4);
+            }
+          }
+          if (this.cowMovie._y >= this.endY) {
+            this.moveCompleted = true;
+            this.cowMovie.removeMovieClip();
+          }
+        };
+
+        v2.updatePuf = function () {
+          --this.nextPuf;
+          if (this.nextPuf <= 0) {
+            this.nextPuf = frutibandas.gui.options.Vachette.PUF_INTERVAL + Math.random(6);
+            var v2 = this.getNextPufDepth();
+            var v3 = frutibandas.Main.gameUI.board.attachMovie(frutibandas.gui.options.Vachette.SYMBOL_PUF, frutibandas.gui.options.Vachette.SYMBOL_PUF + v2, v2);
+            v3._x = this.cowMovie._x + Math.random(5);
+            v3._y = this.cowMovie._y - 5;
+          }
+        };
+
+        v2.updateSubAnimations = function () {
+          if (this.subAnimations.length > 0) {
+            var v2 = 0;
+            while (v2 < this.subAnimations.length) {
+              var v3 = this.subAnimations[v2];
+              if (!v3.update()) {
+                this.subAnimations.splice(v2, 1);
+              }
+              ++v2;
+            }
+          }
+        };
+
+        v2.addCollisionStep = function (s) {
+          this.sprites.push(s);
+        };
+
+        v2.getNextPufDepth = function () {
+          ++this.pufDepth;
+          if (this.pufDepth >= 50) {
+            this.pufDepth = 0;
+          }
+          return this.pufDepth + frutibandas.gui.Board.EFFECTS_BOT_DEPTH;
+        };
+
+        v1.SYMBOL_COW = 'mcVachette';
+        v1.SYMBOL_PUF = 'mcSmoke';
+        v1.COW_SPEED = 4;
+        v1.PUF_INTERVAL = 8;
+        ASSetPropFlags(frutibandas.gui.options.Vachette.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 315 __Packages.frutibandas.gui.SpriteFlyAnimation {
+
+    #initclip
+      if (!_global.frutibandas) {
+        _global.frutibandas = new Object();
+      }
+      if (!_global.frutibandas.gui) {
+        _global.frutibandas.gui = new Object();
+      }
+      if (!_global.frutibandas.gui.SpriteFlyAnimation) {
+        var v1 = function (sprite, depth, direction) {
+          this.depth = depth;
+          this.sprite = sprite;
+          this.steps = 10;
+          if (direction == frutibandas.Direction.Left) {
+            this.xModifier = -1;
+            this.yModifier = 1;
+          }
+          if (direction == frutibandas.Direction.Right) {
+            this.xModifier = 1;
+            this.yModifier = 1;
+          }
+          this.speed = 8;
+          this.sprite.swapDepths(depth);
+          this.sprite.playFly(direction);
+        };
+
+        frutibandas.gui.SpriteFlyAnimation = v1;
+        var v2 = v1.prototype;
+        v2.update = function () {
+          --this.steps;
+          if (this.steps <= 0) {
+            this.sprite.kill();
+            return false;
+          }
+          this.sprite._xscale *= 1.1;
+          this.sprite._yscale *= 1.1;
+          this.sprite._x += this.speed * this.xModifier;
+          this.sprite._y += this.speed * this.yModifier;
+          return true;
+        };
+
+        ASSetPropFlags(frutibandas.gui.SpriteFlyAnimation.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 316 __Packages.frutibandas.card.Conversion {
+
+    #initclip
+      if (!_global.frutibandas) {
+        _global.frutibandas = new Object();
+      }
+      if (!_global.frutibandas.card) {
+        _global.frutibandas.card = new Object();
+      }
+      if (!_global.frutibandas.card.Conversion) {
+        var v1 = function () {
+          super();
+          this.id = frutibandas.Card.CONVERSION;
+          this.name = 'Conversion';
+          this.requiresTarget = true;
+          this.targetSprite = true;
+        };
+
+        frutibandas.card.Conversion = v1;
+        frutibandas.card.Conversion extends frutibandas.Card;
+        var v2 = v1.prototype;
+        v2.execute = function (game, team, c, d) {
+          var v2 = game.getBoard();
+          var v1 = v2.getElement(c);
+          if (v1 > frutibandas.Board.FREE) {
+            v2.decTeamCounter(v1);
+            v2.incTeamCounter(1 - v1);
+            v2.setElement(c, 1 - v1);
+            var v4;
+            v4 = new frutibandas.gui.options.Conversion(c, 1 - v1);
+            frutibandas.Main.gameUI.board.onSpriteConverted(c, 1 - v1);
+            (frutibandas.Main.getAnimControl()).push(v4, frutibandas.Main.ANIM_PRIO_CARD);
+          }
+        };
+
+        ASSetPropFlags(frutibandas.card.Conversion.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 317 __Packages.frutibandas.gui.options.Conversion {
+
+    #initclip
+      if (!_global.frutibandas) {
+        _global.frutibandas = new Object();
+      }
+      if (!_global.frutibandas.gui) {
+        _global.frutibandas.gui = new Object();
+      }
+      if (!_global.frutibandas.gui.options) {
+        _global.frutibandas.gui.options = new Object();
+      }
+      if (!_global.frutibandas.gui.options.Conversion) {
+        var v1 = function (c, newTeam) {
+          if (newTeam == 0) {
+            this.color = 16751001;
+          } else {
+            this.color = 10092441;
+          }
+          this.center = frutibandas.Main.gameUI.board.getBandasRealCoordinate(c);
+          this.steps = frutibandas.gui.options.Conversion.ANIM_LENGTH;
+          this.running = false;
+          this.speed = 4;
+          this.radius = frutibandas.gui.options.Conversion.MIN_RADIUS;
+        };
+
+        frutibandas.gui.options.Conversion = v1;
+        var v2 = v1.prototype;
+        _global.frutibandas.gui.options.Conversion implements _global.frutibandas.gui.Animable;
+        v2.start = function () {
+          this.running = true;
+          var v2 = frutibandas.Main.gameUI.board;
+          var v3 = v2.getNextHighestDepth();
+          this.movie = v2.createEmptyMovieClip('High_1', v3);
+          this.movie._x = this.center.x;
+          this.movie._y = this.center.y;
+        };
+
+        v2.update = function () {
+          if (!this.running) {
+            this.start();
+          }
+          --this.steps;
+          this.redraw();
+          if (this.steps <= 0) {
+            this.tearDown();
+            return false;
+          }
+          return true;
+        };
+
+        v2.redraw = function () {
+          var v5 = 100 - this.radius;
+          var v2 = this.radius;
+          var v4 = 0;
+          var v3 = v2;
+          this.movie.clear();
+          this.movie.lineStyle(v2, this.color, v5);
+          this.movie.moveTo(v4, v3);
+          this.movie.curveTo(v4 + v2, v3, v4 + v2, v3 - v2);
+          this.movie.curveTo(v4 + v2, v3 - v2 - v2, v4, v3 - v2 - v2);
+          this.movie.curveTo(v4 - v2, v3 - v2 - v2, v4 - v2, v3 - v2);
+          this.movie.curveTo(v4 - v2, v3, v4, v3);
+          this.radius += frutibandas.gui.options.Conversion.SPEED;
+          if (this.radius >= frutibandas.gui.options.Conversion.MAX_RADIUS) {
+            this.radius = frutibandas.gui.options.Conversion.MIN_RADIUS;
+          }
+        };
+
+        v2.tearDown = function () {
+          this.movie.removeMovieClip();
+        };
+
+        v1.ANIM_LENGTH = 19;
+        v1.MIN_RADIUS = 10;
+        v1.MAX_RADIUS = 100;
+        v1.SPEED = 11;
+        ASSetPropFlags(frutibandas.gui.options.Conversion.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 318 __Packages.frutibandas.card.Charge {
+
+    #initclip
+      if (!_global.frutibandas) {
+        _global.frutibandas = new Object();
+      }
+      if (!_global.frutibandas.card) {
+        _global.frutibandas.card = new Object();
+      }
+      if (!_global.frutibandas.card.Charge) {
+        var v1 = function () {
+          super();
+          this.id = frutibandas.Card.CHARGE;
+          this.name = 'Charge';
+        };
+
+        frutibandas.card.Charge = v1;
+        frutibandas.card.Charge extends frutibandas.Card;
+        var v2 = v1.prototype;
+        v2.execute = function (game, team, c, d) {};
+
+        ASSetPropFlags(frutibandas.card.Charge.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 319 __Packages.frutibandas.card.Entracte {
+
+    #initclip
+      if (!_global.frutibandas) {
+        _global.frutibandas = new Object();
+      }
+      if (!_global.frutibandas.card) {
+        _global.frutibandas.card = new Object();
+      }
+      if (!_global.frutibandas.card.Entracte) {
+        var v1 = function () {
+          super();
+          this.id = frutibandas.Card.ENTRACTE;
+          this.name = 'Entracte';
+        };
+
+        frutibandas.card.Entracte = v1;
+        frutibandas.card.Entracte extends frutibandas.Card;
+        var v2 = v1.prototype;
+        v2.execute = function (game, team, c, d) {};
+
+        ASSetPropFlags(frutibandas.card.Entracte.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 320 __Packages.frutibandas.card.Solo {
+
+    #initclip
+      if (!_global.frutibandas) {
+        _global.frutibandas = new Object();
+      }
+      if (!_global.frutibandas.card) {
+        _global.frutibandas.card = new Object();
+      }
+      if (!_global.frutibandas.card.Solo) {
+        var v1 = function () {
+          super();
+          this.id = frutibandas.Card.SOLO;
+          this.name = 'Solo';
+          this.requiresTarget = true;
+          this.targetTeam = true;
+        };
+
+        frutibandas.card.Solo = v1;
+        frutibandas.card.Solo extends frutibandas.Card;
+        var v2 = v1.prototype;
+        v2.execute = function (game, team, c, d) {
+          game.setNextSolo(team, c);
+        };
+
+        ASSetPropFlags(frutibandas.card.Solo.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 321 __Packages.frutibandas.card.Piege {
+
+    #initclip
+      if (!_global.frutibandas) {
+        _global.frutibandas = new Object();
+      }
+      if (!_global.frutibandas.card) {
+        _global.frutibandas.card = new Object();
+      }
+      if (!_global.frutibandas.card.Piege) {
+        var v1 = function () {
+          super();
+          this.id = frutibandas.Card.PIEGE;
+          this.name = 'Piege';
+          this.requiresTarget = true;
+          this.targetFreeSlot = true;
+        };
+
+        frutibandas.card.Piege = v1;
+        frutibandas.card.Piege extends frutibandas.Card;
+        var v2 = v1.prototype;
+        v2.execute = function (game, team, c, d) {
+          if (frutibandas.Main.game.board.getElement(c) != frutibandas.Board.DESTROYED && this.hiden) {
+            frutibandas.Main.game.board.setTrapped(c);
+          } else {
+            frutibandas.Main.game.board.destroy(c);
+          }
+        };
+
+        ASSetPropFlags(frutibandas.card.Piege.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 322 __Packages.frutibandas.gui.SoundManager {
+
+    #initclip
+      if (!_global.frutibandas) {
+        _global.frutibandas = new Object();
+      }
+      if (!_global.frutibandas.gui) {
+        _global.frutibandas.gui = new Object();
+      }
+      if (!_global.frutibandas.gui.SoundManager) {
+        var v1 = function (rootMovie) {
+          this._sndIntro = new Sound(rootMovie);
+          this._sndIntro.attachSound(frutibandas.gui.SoundManager.SND_INTRO_LINK_NAME);
+          this._sndIntro.onSoundComplete = function () {
+            frutibandas.Main.sndManager.playLoop();
+          };
+
+          this._sndLoop = new Sound(rootMovie);
+          this._sndLoop.attachSound(frutibandas.gui.SoundManager.SND_LOOP_LINK_NAME);
+        };
+
+        frutibandas.gui.SoundManager = v1;
+        var v2 = v1.prototype;
+        v2.start = function () {
+          this._sndIntro.start();
+        };
+
+        v2.playLoop = function () {
+          this._sndLoop.start(0, 65000);
+        };
+
+        v2.stop = function () {
+          this._sndIntro.stop();
+          this._sndLoop.stop();
+        };
+
+        v1.SND_INTRO_LINK_NAME = 'mp3Intro';
+        v1.SND_LOOP_LINK_NAME = 'mp3Loop';
+        ASSetPropFlags(frutibandas.gui.SoundManager.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 323 __Packages.frutibandas.gui.KeyboardController {
+
+    #initclip
+      if (!_global.frutibandas) {
+        _global.frutibandas = new Object();
+      }
+      if (!_global.frutibandas.gui) {
+        _global.frutibandas.gui = new Object();
+      }
+      if (!_global.frutibandas.gui.KeyboardController) {
+        var v1 = function () {
+          this.key = -1;
+          Key.addListener(this);
+        };
+
+        frutibandas.gui.KeyboardController = v1;
+        var v2 = v1.prototype;
+        v2.hasKey = function () {
+          return this.key != -1;
+        };
+
+        v2.nextKey = function () {
+          var v2 = this.key;
+          this.key = -1;
+          return v2;
+        };
+
+        v2.onKeyUp = function () {};
+
+        v2.onKeyDown = function () {
+          if (!frutibandas.Main.pause) {
+            this.key = Key.getCode();
+          } else {
+            frutibandas.Main.debug('pause, key ignored');
+          }
+        };
+
+        ASSetPropFlags(frutibandas.gui.KeyboardController.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 324 __Packages.frutibandas.gui.AnimationList {
+
+    #initclip
+      if (!_global.frutibandas) {
+        _global.frutibandas = new Object();
+      }
+      if (!_global.frutibandas.gui) {
+        _global.frutibandas.gui = new Object();
+      }
+      if (!_global.frutibandas.gui.AnimationList) {
+        var v1 = function () {
+          this.list = new Array();
+        };
+
+        frutibandas.gui.AnimationList = v1;
+        var v2 = v1.prototype;
+        _global.frutibandas.gui.AnimationList implements _global.frutibandas.gui.Animable;
+        v2.push = function (animatedObject) {
+          this.list.push(animatedObject);
+        };
+
+        v2.update = function () {
+          if (this.list.length > 0) {
+            var v2 = this.list[0];
+            if (!v2.update()) {
+              this.list.shift();
+            }
+          }
+          return this.list.length > 0;
+        };
+
+        v2.toString = function () {
+          var v3 = 'AnimationList[' + this.list.length + ']\n';
+          var v2 = 0;
+          while (v2 < this.list.length) {
+            v3 += this.list[v2].toString() + '\n';
+            ++v2;
+          }
+          return v3;
+        };
+
+        ASSetPropFlags(frutibandas.gui.AnimationList.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 325 __Packages.frutibandas.gui.PauseAnimation {
+
+    #initclip
+      if (!_global.frutibandas) {
+        _global.frutibandas = new Object();
+      }
+      if (!_global.frutibandas.gui) {
+        _global.frutibandas.gui = new Object();
+      }
+      if (!_global.frutibandas.gui.PauseAnimation) {
+        var v1 = function () {
+          this.step = frutibandas.gui.PauseAnimation.DEFAULT_PAUSE;
+        };
+
+        frutibandas.gui.PauseAnimation = v1;
+        var v2 = v1.prototype;
+        _global.frutibandas.gui.PauseAnimation implements _global.frutibandas.gui.Animable;
+        v2.update = function () {
+          --this.step;
+          return this.step > 0;
+        };
+
+        v2.toString = function () {
+          return 'PauseAnimation';
+        };
+
+        v1.DEFAULT_PAUSE = 20;
+        ASSetPropFlags(frutibandas.gui.PauseAnimation.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 326 __Packages.ext.geom.CoefSquare {
+
+    #initclip
+      if (!_global.ext) {
+        _global.ext = new Object();
+      }
+      if (!_global.ext.geom) {
+        _global.ext.geom = new Object();
+      }
+      if (!_global.ext.geom.CoefSquare) {
+        var v1 = function () {
+          super();
+          this.init();
+        };
+
+        ext.geom.CoefSquare = v1;
+        ext.geom.CoefSquare extends MovieClip;
+        var v2 = v1.prototype;
+        v2.init = function () {
+          this.initDefault();
+        };
+
+        v2.initDefault = function () {
+          if (this.color == undefined) {
+            this.color = 16711680;
+          }
+          if (this.alpha == undefined) {
+            this.alpha = 100;
+          }
+          if (this.ray == undefined) {
+            this.ray = 10;
+          }
+          if (this.coef == undefined) {
+            this.coef = 1;
+          }
+        };
+
+        v2.update = function () {
+          this.clear();
+          this.beginFill(this.color, this.alpha);
+          this.moveTo(0, 0);
+          this.lineTo(0, -this.ray);
+          this.lineTo(this.ray, -this.ray);
+          while (!false) {
+            if (this.coef < 0.25) {
+              break;
+            }
+            this.lineTo(this.ray, this.ray);
+            if (this.coef < 0.5) {
+              break;
+            }
+            this.lineTo(this.ray, this.ray);
+            if (this.coef < 0.5) {
+              break;
+            }
+            this.lineTo(-this.ray, this.ray);
+            if (this.coef < 0.75) {
+              break;
+            }
+            this.lineTo(-this.ray, -this.ray);
+            break;
+          }
+          var v3 = Math.cos(this.coef * 6.28 - 1.57) * this.ray;
+          var v2 = Math.sin(this.coef * 6.28 - 1.57) * this.ray;
+          this.lineTo(v3, v2);
+          this.endFill();
+        };
+
+        ASSetPropFlags(ext.geom.CoefSquare.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 327 __Packages.frutibandas.gui.Confirm {
+
+    #initclip
+      if (!_global.frutibandas) {
+        _global.frutibandas = new Object();
+      }
+      if (!_global.frutibandas.gui) {
+        _global.frutibandas.gui = new Object();
+      }
+      if (!_global.frutibandas.gui.Confirm) {
+        var v1 = function () {
+          function onReleaseCancel() {
+            this._parent.onCancel();
+          }
+
+          function onReleaseAccept() {
+            this._parent.onAccept();
+          }
+
+          super();
+          this.madlock = false;
+          this.setCancelLabel('Annuler');
+          this.setAcceptLabel('Accepter');
+          this.text = null;
+          this.cancelCallback = null;
+          this.acceptCallback = null;
+          this.btnCancel.onRelease = onReleaseCancel;
+          this.btnAccept.onRelease = onReleaseAccept;
+        };
+
+        frutibandas.gui.Confirm = v1;
+        frutibandas.gui.Confirm extends MovieClip;
+        var v2 = v1.prototype;
+        v1.New = function (parent) {
+          var v1;
+          var v2 = parent.getNextHighestDepth();
+          v1 = frutibandas.gui.Confirm(parent.attachMovie('mcConfirm', 'mcConfirm@' + v2, v2));
+          v1.center();
+          return v1;
+        };
+
+        v2.setText = function (txt) {
+          this.text = txt;
+        };
+
+        v2.setCancelLabel = function (txt) {
+          this.btnCancel.label = txt;
+        };
+
+        v2.setAcceptLabel = function (txt) {
+          this.btnAccept.label = txt;
+        };
+
+        v2.setCancelCallback = function (callback) {
+          this.cancelCallback = callback;
+        };
+
+        v2.setAcceptCallback = function (callback) {
+          this.acceptCallback = callback;
+        };
+
+        v2.show = function () {
+          this._visible = true;
+        };
+
+        v2.onCancel = function () {
+          if (this.madlock) {
+            return undefined;
+          }
+          this.madlock = true;
+          this._visible = false;
+          if (this.cancelCallback != null) {
+            this.cancelCallback.execute();
+          }
+          this.removeMovieClip();
+        };
+
+        v2.onAccept = function () {
+          if (this.madlock) {
+            return undefined;
+          }
+          this.madlock = true;
+          this._visible = false;
+          if (this.acceptCallback != null) {
+            this.acceptCallback.execute();
+          }
+          this.removeMovieClip();
+        };
+
+        v2.center = function () {
+          this._x = (this._parent._width - this._width) / 2;
+          this._y = (this._parent._height - this._height) / 2;
+        };
+
+        ASSetPropFlags(frutibandas.gui.Confirm.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 328 __Packages.frutibandas.gui.EndPanel {
+
+    #initclip
+      if (!_global.frutibandas) {
+        _global.frutibandas = new Object();
+      }
+      if (!_global.frutibandas.gui) {
+        _global.frutibandas.gui = new Object();
+      }
+      if (!_global.frutibandas.gui.EndPanel) {
+        var v1 = function () {
+          function onReleaseStay() {
+            this._parent.onStay();
+          }
+
+          function onReleaseQuit() {
+            this._parent.onQuit();
+          }
+
+          super();
+          this.stayCallback = null;
+          this.quitCallback = null;
+          this.winnerName = null;
+          this.madlock = false;
+          this.btnStay.label = 'Rester';
+          this.btnQuit.label = 'Quitter';
+          this.btnStay.onRelease = onReleaseStay;
+          this.btnQuit.onRelease = onReleaseQuit;
+        };
+
+        frutibandas.gui.EndPanel = v1;
+        frutibandas.gui.EndPanel extends MovieClip;
+        var v2 = v1.prototype;
+        v1.New = function (parent) {
+          var v1;
+          var v2 = parent.getNextHighestDepth();
+          v1 = frutibandas.gui.EndPanel(parent.attachMovie('mcEndPanel', 'mcEndPanel@' + v2, v2));
+          v1.center();
+          return v1;
+        };
+
+        v2.setStayCallback = function (callback) {
+          this.stayCallback = callback;
+        };
+
+        v2.setQuitCallback = function (callback) {
+          this.quitCallback = callback;
+        };
+
+        v2.setWinnerName = function (name) {
+          this.winnerName = name;
+        };
+
+        v2.show = function () {
+          this._visible = true;
+        };
+
+        v2.onStay = function () {
+          if (this.madlock) {
+            return undefined;
+          }
+          this.madlock = true;
+          this._visible = false;
+          if (this.stayCallback != null) {
+            this.stayCallback.execute();
+          }
+          this.removeMovieClip();
+        };
+
+        v2.onQuit = function () {
+          if (this.madlock) {
+            return undefined;
+          }
+          this.madlock = true;
+          this._visible = false;
+          if (this.quitCallback != null) {
+            this.quitCallback.execute();
+          }
+          this.removeMovieClip();
+        };
+
+        v2.center = function () {
+          this._x = (this._parent._width - this._width) / 2;
+          this._y = (this._parent._height - this._height) / 2;
+        };
+
+        ASSetPropFlags(frutibandas.gui.EndPanel.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 329 __Packages.ext.util.ExtendedLocalConnection {
+
+    #initclip
+      if (!_global.ext) {
+        _global.ext = new Object();
+      }
+      if (!_global.ext.util) {
+        _global.ext.util = new Object();
+      }
+      if (!_global.ext.util.ExtendedLocalConnection) {
+        var v1 = function (localHost, remoteHost) {
+          super();
+          this.localHost = localHost;
+          this.remoteHost = remoteHost;
+          this.allowedDomains = new Array();
+        };
+
+        ext.util.ExtendedLocalConnection = v1;
+        ext.util.ExtendedLocalConnection extends LocalConnection;
+        var v2 = v1.prototype;
+        v2.finalize = function () {
+          this.connectionFailureCallback.finalize();
+          delete this.connectionFailureCallback;
+          this.connectionFailureCallback = null;
+          delete this.localHost;
+          this.connectionFailureCallback = null;
+          delete this.remoteHost;
+          this.connectionFailureCallback = null;
+          delete this.remote;
+          this.remote = null;
+          delete this.allowedDomains;
+          this.allowedDomains = null;
+        };
+
+        v2.connect = function () {
+          super.connect(this.localHost);
+        };
+
+        v2.sendRemote = function (method, arguments, sender) {
+          this.remote.send(this.remoteHost, method, arguments, sender);
+        };
+
+        v2.enableConnectionFailureHandling = function (cbk) {
+          this.connectionFailureCallback = cbk;
+        };
+
+        v2.disableConnectionFailureHandling = function (cbk) {
+          this.connectionFailureCallback = null;
+          this.remote.onStatus = function () {};
+
+        };
+
+        v2.manageConnectionFailure = function () {
+          this.connectionFailureCallback.execute();
+        };
+
+        v2.initRemote = function () {
+          _global.debug('LEC::initRemote');
+          this.remote = new LocalConnection();
+          this.remote.onStatus = function (infoObject) {
+            if (infoObject.level == 'error') {
+              arguments.callee.obj.manageConnectionFailure();
+            }
+          };
+
+          this.remote.onStatus.obj = this;
+          this.connectionAlreadyFailed = false;
+        };
+
+        v2.close = function () {
+          this.remote.close();
+          this.remote = null;
+          delete this.remote;
+          super.close();
+        };
+
+        v2.addDomain = function (domainName) {
+          this.allowedDomains.push(domainName);
+        };
+
+        v2.allowInsecureDomain = function (sendingDomain) {
+          var v3 = this.allowedDomains.length;
+          var v2 = 0;
+          while (v2 < v3) {
+            if (sendingDomain == this.allowedDomains[v2]) {
+              return true;
+            }
+            ++v2;
+          }
+          return false;
+        };
+
+        v2.allowDomain = function (sendingDomain) {
+          var v3 = this.allowedDomains.length;
+          var v2 = 0;
+          while (v2 < v3) {
+            if (sendingDomain == this.allowedDomains[v2]) {
+              return true;
+            }
+            ++v2;
+          }
+          return false;
+        };
+
+        ASSetPropFlags(ext.util.ExtendedLocalConnection.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 330 __Packages.ext.util.Callback {
+
+    #initclip
+      if (!_global.ext) {
+        _global.ext = new Object();
+      }
+      if (!_global.ext.util) {
+        _global.ext.util = new Object();
+      }
+      if (!_global.ext.util.Callback) {
+        var v1 = function (context, method) {
+          this.context = context;
+          this.method = method;
+        };
+
+        ext.util.Callback = v1;
+        var v2 = v1.prototype;
+        v2.finalize = function () {
+          delete this.context;
+          this.context = null;
+          delete this.method;
+          this.method = null;
+        };
+
+        v2.execute = function (object) {
+          this.method.call(this.context, object);
+        };
+
+        ASSetPropFlags(ext.util.Callback.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  movieClip 331 __Packages.ext.util.CardiogramPatient {
+
+    #initclip
+      if (!_global.ext) {
+        _global.ext = new Object();
+      }
+      if (!_global.ext.util) {
+        _global.ext.util = new Object();
+      }
+      if (!_global.ext.util.CardiogramPatient) {
+        _global.ext.util.CardiogramPatient = function () {};
+
+      }
+    #endinitclip
+  }
+
+  movieClip 332 __Packages.ext.util.Cardiogram {
+
+    #initclip
+      if (!_global.ext) {
+        _global.ext = new Object();
+      }
+      if (!_global.ext.util) {
+        _global.ext.util = new Object();
+      }
+      if (!_global.ext.util.Cardiogram) {
+        var v1 = function (actFrequency, checkPulseFrequency, attackThreshold, cardiogramPatient) {
+          this.actFrequency = actFrequency;
+          this.checkPulseFrequency = checkPulseFrequency;
+          this.attackThreshold = attackThreshold;
+          this.cardiogramPatient = cardiogramPatient;
+          this.pulseFailureRecord = 0;
+        };
+
+        ext.util.Cardiogram = v1;
+        var v2 = v1.prototype;
+        v2.finalize = function () {
+          delete this.cardiogramPatient;
+          this.cardiogramPatient = null;
+        };
+
+        v2.start = function () {
+          this.actInterval = setInterval(this, 'actOnBeat', this.actFrequency);
+          this.beatInterval = setInterval(this, 'checkPulse', this.checkPulseFrequency);
+        };
+
+        v2.pulse = function () {
+          this.pulsed = true;
+        };
+
+        v2.stop = function () {
+          this.pulsed = false;
+        };
+
+        v2.actOnBeat = function () {
+          this.cardiogramPatient.monitorActivity();
+        };
+
+        v2.checkPulse = function () {
+          if (this.pulsed) {
+            this.pulsed = false;
+            return undefined;
+          }
+          if (++this.pulseFailureRecord == this.attackThreshold) {
+            this.actOnCrisis();
+          }
+          this.pulsed = false;
+        };
+
+        v2.actOnCrisis = function () {
+          clearInterval(this.actInterval);
+          clearInterval(this.beatInterval);
+          this.cardiogramPatient.manageCrisis();
+        };
+
+        v2.pulsed = false;
+        ASSetPropFlags(ext.util.Cardiogram.prototype, null, 1);
+      }
+    #endinitclip
+  }
+
+  frame 2 {
+    stop();
+  }
+}
