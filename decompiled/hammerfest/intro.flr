@@ -1,0 +1,1061 @@
+movie 'f' {
+// flash 7, total frames: 2, frame rate: 40 fps, 420x325 px, compressed
+
+  movieClip 2 dune6 {
+  }
+
+  movieClip 4 dune4 {
+  }
+
+  movieClip 6 dune2 {
+  }
+
+  movieClip 8 dune1 {
+  }
+
+  movieClip 10  {
+  }
+
+  movieClip 11 bFade {
+  }
+
+  frame 1 {
+    stop();
+  }
+
+  movieClip 15  {
+  }
+
+  movieClip 18  {
+  }
+
+  movieClip 21  {
+
+    frame 1 {
+      stop();
+    }
+  }
+
+  movieClip 23  {
+  }
+
+  movieClip 26  {
+  }
+
+  movieClip 27  {
+  }
+
+  movieClip 39  {
+
+    frame 13 {
+      gotoAndPlay(1);
+    }
+  }
+
+  movieClip 42  {
+  }
+
+  movieClip 55  {
+
+    frame 12 {
+      gotoAndPlay(1);
+    }
+  }
+
+  movieClip 57  {
+  }
+
+  movieClip 63  {
+  }
+
+  movieClip 65  {
+  }
+
+  movieClip 66  {
+  }
+
+  movieClip 67  {
+
+    frame 30 {
+      gotoAndPlay(1);
+    }
+  }
+
+  movieClip 68  {
+
+    frame 30 {
+      gotoAndPlay(1);
+    }
+  }
+
+  movieClip 69  {
+  }
+
+  movieClip 73  {
+  }
+
+  movieClip 76  {
+
+    frame 3 {
+      stop();
+    }
+  }
+
+  movieClip 80  {
+  }
+
+  movieClip 90  {
+
+    frame 35 {
+      compt = 0;
+    }
+
+    frame 43 {
+      ++compt;
+      if (compt >= 6) {
+        gotoAndPlay(_currentframe + 2);
+      } else {
+        gotoAndPlay(_currentframe - 6);
+      }
+    }
+
+    frame 44 {
+      gotoAndPlay(_currentframe - 1);
+    }
+  }
+
+  movieClip 92  {
+  }
+
+  movieClip 94  {
+  }
+
+  movieClip 96  {
+  }
+
+  movieClip 99  {
+  }
+
+  movieClip 108  {
+  }
+
+  movieClip 109  {
+
+    frame 1 {
+      stop();
+    }
+  }
+
+  movieClip 115  {
+
+    frame 7 {
+      stop();
+    }
+
+    frame 14 {
+      stop();
+    }
+  }
+
+  movieClip 116  {
+
+    frame 1 {
+      stop();
+    }
+
+    frame 6 {
+      stop();
+    }
+  }
+
+  movieClip 118  {
+  }
+
+  movieClip 125  {
+  }
+
+  movieClip 128  {
+
+    frame 1 {
+      stop();
+    }
+  }
+
+  movieClip 135  {
+  }
+
+  movieClip 136  {
+  }
+
+  movieClip 141  {
+  }
+
+  movieClip 145  {
+
+    frame 7 {
+      stop();
+      _parent._parent.step = 5;
+    }
+  }
+
+  movieClip 146  {
+
+    frame 6 {
+      stop();
+    }
+  }
+
+  movieClip 147  {
+
+    frame 8 {
+      stop();
+    }
+  }
+
+  movieClip 148  {
+
+    frame 4 {
+      _parent._parent.step = 2;
+    }
+
+    frame 12 {
+      stop();
+    }
+  }
+
+  movieClip 155  {
+  }
+
+  movieClip 159  {
+
+    frame 5 {
+      _parent._parent.pom3._visible = false;
+    }
+
+    frame 66 {
+      _parent._parent.pom3._visible = true;
+    }
+
+    frame 70 {
+      stop();
+      _parent.gotoAndStop(1);
+    }
+  }
+
+  movieClip 160  {
+
+    frame 51 {
+      _parent.gotoAndStop(16);
+    }
+  }
+
+  movieClip 165  {
+
+    frame 5 {
+      _parent._parent.sac.gotoAndPlay(2);
+    }
+
+    frame 43 {
+      _parent.gotoAndStop(19);
+    }
+  }
+
+  movieClip 166  {
+
+    frame 12 {
+      stop();
+      _parent._parent.pom3.gotoAndStop(9);
+      _parent._parent.pom3._xscale = -70;
+    }
+  }
+
+  movieClip 167  {
+
+    frame 11 {
+      stop();
+      _parent.gotoAndStop(20);
+    }
+  }
+
+  movieClip 168  {
+
+    frame 8 {
+      stop();
+      _parent.gotoAndStop(5);
+    }
+  }
+
+  movieClip 169  {
+
+    frame 1 {
+      stop();
+    }
+  }
+
+  movieClip 176 itemOut {
+
+    frame 1 {
+      stop();
+    }
+
+    frame 14 {
+      stop();
+    }
+  }
+
+  movieClip 183  {
+
+    frame 1 {
+      gotoAndStop(_parent._parent._parent.currentWeapon + 2);
+    }
+  }
+
+  movieClip 196  {
+
+    frame 1 {
+      gotoAndStop(_parent._parent._parent.currentWeapon + 2);
+    }
+  }
+
+  movieClip 233  {
+  }
+
+  movieClip 293  {
+
+    frame 22 {
+      gotoAndPlay(1);
+    }
+  }
+
+  movieClip 326  {
+
+    frame 14 {
+      gotoAndPlay(7);
+    }
+  }
+
+  movieClip 376  {
+
+    frame 19 {
+      gotoAndPlay(8);
+    }
+  }
+
+  movieClip 412  {
+
+    frame 9 {
+      stop();
+    }
+  }
+
+  movieClip 413  {
+
+    frame 1 {
+      stop();
+    }
+  }
+
+  movieClip 416  {
+  }
+
+  movieClip 424  {
+
+    frame 13 {
+      gotoAndPlay(1);
+    }
+  }
+
+  movieClip 426  {
+  }
+
+  movieClip 433  {
+  }
+
+  movieClip 436  {
+
+    frame 20 {
+      gotoAndPlay(1);
+    }
+  }
+
+  movieClip 444  {
+
+    frame 5 {
+      gotoAndPlay(1);
+    }
+  }
+
+  movieClip 446  {
+  }
+
+  movieClip 451  {
+
+    frame 6 {
+      stop();
+    }
+  }
+
+  movieClip 455  {
+  }
+
+  movieClip 457  {
+  }
+
+  movieClip 473  {
+
+    frame 9 {
+      gotoAndPlay(5);
+    }
+  }
+
+  movieClip 482  {
+
+    frame 8 {
+      gotoAndPlay(1);
+    }
+  }
+
+  movieClip 483  {
+
+    frame 1 {
+      stop();
+    }
+  }
+
+  movieClip 486  {
+  }
+
+  movieClip 487  {
+
+    frame 1 {
+      stop();
+      if (_parent._parent._parent._parent.chgColor == true) {
+        gotoAndStop(2);
+      }
+    }
+  }
+
+  movieClip 489  {
+  }
+
+  movieClip 490  {
+  }
+
+  movieClip 493  {
+  }
+
+  movieClip 494  {
+  }
+
+  movieClip 497  {
+  }
+
+  movieClip 498  {
+  }
+
+  movieClip 503  {
+  }
+
+  movieClip 504  {
+  }
+
+  movieClip 506  {
+  }
+
+  movieClip 507  {
+  }
+
+  movieClip 515  {
+
+    frame 5 {
+      stop();
+    }
+  }
+
+  movieClip 516  {
+  }
+
+  movieClip 518  {
+  }
+
+  movieClip 520  {
+  }
+
+  movieClip 521  {
+
+    frame 1 {
+      stop();
+    }
+  }
+
+  movieClip 523  {
+  }
+
+  movieClip 531  {
+
+    frame 48 {
+      stop();
+    }
+  }
+
+  movieClip 544  {
+
+    frame 1 {
+      ban1.gotoAndStop(10);
+      ban2.gotoAndStop(10);
+    }
+
+    frame 28 {
+      gotoAndPlay(1);
+      if (_parent.step == -2) {
+        gotoAndPlay('assom');
+      }
+    }
+
+    frame 42 {
+      ban2.gotoAndStop(4);
+    }
+
+    frame 58 {
+      abr.gotoAndStop(4);
+    }
+
+    frame 76 {
+      ban1.gotoAndStop(12);
+    }
+
+    frame 144 {
+      stop();
+    }
+
+    frame 157 {
+      stop();
+      _parent.step = 0;
+    }
+  }
+
+  movieClip 551  {
+
+    frame 1 {
+      stop();
+    }
+
+    frame 14 {
+      stop();
+    }
+  }
+
+  movieClip 555  {
+
+    frame 1 {
+      function init() {
+        pom1.gotoAndStop(11);
+        pom2.gotoAndStop(13);
+        pom3.gotoAndStop(12);
+        step = -1;
+        compt1 = 0;
+        compt2 = 0;
+        compt3 = 0;
+        compt4 = 0;
+        compt5 = 0;
+        compt6 = 0;
+        compt7 = 0;
+        compt8 = 0;
+        compt9 = 0;
+        compt10 = 0;
+        compt11 = 0;
+        compt12 = 0;
+        compt13 = 0;
+        compt14 = 0;
+        compt15 = 0;
+        compt16 = 0;
+        compt17 = 0;
+        compt18 = 0;
+        compt19 = 0;
+        compt20 = 0;
+        carot._visible = false;
+        bouli2._visible = false;
+        attached = false;
+      }
+
+      function main() {
+        function shake() {
+          ecart = random(5) - 2;
+          _parent.main._y += ecart;
+        }
+
+        function retabli() {
+          _parent.main._y = -87;
+        }
+
+        grav -= 0.9;
+        bouli2._y -= grav;
+        if (bouli2._y >= 368) {
+          bouli2._y = 368;
+        }
+        if (step == -1) {
+          ++compt12;
+          if (compt12 >= 80) {
+            step = -2;
+          }
+        } else {
+          if (step == -2) {
+            tuber._x -= 2;
+            if (tuber._x <= 360) {
+              tuber._x = 360;
+              step = -3;
+            }
+          } else {
+            if (step == -3) {
+              ++compt13;
+              if (compt13 >= 20) {
+                bananePlay.ban1.gotoAndStop(14);
+                bananePlay.ban1._xscale = -84.59999999999999;
+                bananePlay.ban1._x -= 5;
+              }
+              if (compt13 >= 80) {
+                step = -4;
+              }
+            } else {
+              if (step == -4) {
+                ++compt14;
+                if (compt14 >= 30) {
+                  bananePlay.ban2.gotoAndStop(11);
+                  bananePlay.ban2._rotation += 10;
+                  step = -5;
+                }
+              } else {
+                if (step == -5) {
+                  ++compt15;
+                  if (compt15 >= 15) {
+                    bananePlay.ban2._rotation -= 0.5;
+                    if (bananePlay.ban2._rotation >= 155 && bananePlay.ban2._rotation <= 160) {
+                      step = -6;
+                    }
+                  }
+                } else {
+                  if (step == -6) {
+                    ++compt16;
+                    if (compt16 >= 15) {
+                      tuber.turn.tete.gotoAndStop(2);
+                      step = -7;
+                    }
+                  } else {
+                    if (step == -7) {
+                      ++compt17;
+                      if (compt17 >= 15) {
+                        bananePlay.ban2._xscale = -84.59999999999999;
+                        bananePlay.ban2.gotoAndStop(12);
+                        step = -8;
+                      }
+                    } else {
+                      if (step == -8) {
+                        ++compt18;
+                        if (compt18 >= 40) {
+                          tuber.turn.tete.gotoAndStop(1);
+                          bananePlay.ban2.gotoAndStop(13);
+                          bananePlay.ban2._xscale = 84.59999999999999;
+                          bananePlay.gotoAndPlay(145);
+                          step = -9;
+                        }
+                      } else {
+                        if (step == -9) {
+                        } else {
+                          if (step == -10) {
+                          } else {
+                            if (step == -11) {
+                            } else {
+                              if (step == 0) {
+                                tuber._x -= 3;
+                                if (tuber._x < 170) {
+                                  step = 1;
+                                  tuber._x = 170;
+                                  tuber.gotoAndStop(15);
+                                }
+                              } else {
+                                if (step == 1) {
+                                } else {
+                                  if (step == 2) {
+                                    pom1._y += 17;
+                                    pom2._y += 17;
+                                    pom3._y += 17;
+                                    shake();
+                                    pom1.gotoAndStop(6);
+                                    pom2.gotoAndStop(6);
+                                    pom3.gotoAndStop(6);
+                                    if (pom1._y >= 375) {
+                                      pom1._y = 375;
+                                      step = 3;
+                                    }
+                                    if (pom2._y >= 372) {
+                                      pom2._y = 372;
+                                    }
+                                    if (pom3._y >= 377) {
+                                      pom3._y = 377;
+                                    }
+                                  } else {
+                                    if (step == 3) {
+                                      pom1.gotoAndStop(5);
+                                      pom2.gotoAndStop(5);
+                                      pom3.gotoAndStop(5);
+                                      retabli();
+                                      step = 4;
+                                    } else {
+                                      if (step == 4) {
+                                        ++compt1;
+                                        if (compt1 >= 40) {
+                                          tuber._xscale = -131;
+                                          1;
+                                          tuber.gotoAndStop(2);
+                                          sac.sac2.gotoAndPlay(10);
+                                          pom1._visible = false;
+                                          pom2._visible = false;
+                                          sac._x += 3;
+                                        }
+                                      } else {
+                                        if (step == 5) {
+                                          tuber.gotoAndStop(1);
+                                          tuber._x += 5;
+                                          sac._x += 8;
+                                          if (tuber._x >= 212) {
+                                            tuber._x = 212;
+                                            tuber.gotoAndStop(18);
+                                            pom3.gotoAndStop(6);
+                                            step = 6;
+                                          }
+                                        } else {
+                                          if (step == 6) {
+                                            ++compt2;
+                                            if (compt2 >= 50) {
+                                              tuber.gotoAndStop(14);
+                                              step = 7;
+                                            }
+                                          } else {
+                                            if (step == 7) {
+                                              ++compt3;
+                                              if (compt3 >= 30) {
+                                                pom3.gotoAndStop(3);
+                                                step = 8;
+                                              }
+                                            } else {
+                                              if (step == 8) {
+                                                ++compt4;
+                                                if (compt4 >= 90) {
+                                                  sac._x += 4;
+                                                  tuber._x += 4;
+                                                }
+                                                if (tuber._x >= 285) {
+                                                  pom3._xscale = 70;
+                                                  pom3._x += 4;
+                                                }
+                                                if (tuber._x >= 650) {
+                                                  step = 9;
+                                                }
+                                              } else {
+                                                if (step == 9) {
+                                                  tuber._x -= 15;
+                                                  tuber._xscale = 131;
+                                                  1;
+                                                  tuber.gotoAndStop(14);
+                                                  tuber.turn.gotoAndStop(3);
+                                                  if (tuber._x <= 400) {
+                                                    tuber._x = 400;
+                                                    step = 10;
+                                                  }
+                                                } else {
+                                                  if (step == 10) {
+                                                    ++compt5;
+                                                    if (compt5 >= 20) {
+                                                      tuber.turn.gotoAndPlay(5);
+                                                      step = 11;
+                                                    }
+                                                  } else {
+                                                    if (step == 11) {
+                                                      if (tuber.turn._currentframe >= 16) {
+                                                        bouli.carot._visible = false;
+                                                        step = 12;
+                                                      }
+                                                    } else {
+                                                      if (step == 12) {
+                                                        ++compt6;
+                                                        tuber.turn.gotoAndStop(tuber.turn._currentframe - 1);
+                                                        if (tuber.turn._currentframe <= 2) {
+                                                          carot._visible = true;
+                                                        }
+                                                        if (compt6 >= 60) {
+                                                          tuber._visible = false;
+                                                          carot._visible = false;
+                                                          nuage.gotoAndPlay(2);
+                                                          step = 13;
+                                                        }
+                                                      } else {
+                                                        if (step == 13) {
+                                                          ++compt7;
+                                                          if (compt7 >= 50) {
+                                                            bouli.yeux.gotoAndPlay(2);
+                                                            step = 14;
+                                                          }
+                                                        } else {
+                                                          if (step == 14) {
+                                                            ++compt8;
+                                                            if (compt8 >= 40) {
+                                                              bouli._visible = false;
+                                                              bouli2._visible = true;
+                                                              currentWeapon = 0;
+                                                              bouli2.gotoAndStop(4);
+                                                              snow.gotoAndPlay(2);
+                                                              step = 15;
+                                                            }
+                                                          } else {
+                                                            if (step == 15) {
+                                                              grav = 11;
+                                                              step = 16;
+                                                            } else {
+                                                              if (step == 16) {
+                                                                if (bouli2._y >= 368) {
+                                                                  bouli2.gotoAndStop(5);
+                                                                  step = 17;
+                                                                }
+                                                              } else {
+                                                                if (step == 17) {
+                                                                  ++compt9;
+                                                                  if (compt9 >= 30) {
+                                                                    step = 18;
+                                                                    bouli2._xscale = -102.2;
+                                                                  }
+                                                                } else {
+                                                                  if (step == 18) {
+                                                                    ++compt10;
+                                                                    if (compt10 >= 15) {
+                                                                      step = 19;
+                                                                      bouli2._xscale = 102.2;
+                                                                    }
+                                                                  } else {
+                                                                    if (step == 19) {
+                                                                      ++compt11;
+                                                                      if (compt11 >= 40) {
+                                                                        bouli2._xscale = -102.2;
+                                                                        bouli2.gotoAndStop(2);
+                                                                        step = 20;
+                                                                      }
+                                                                    } else {
+                                                                      if (step == 20) {
+                                                                        bouli2._x += 2.3;
+                                                                        if (bouli2._x > 525) {
+                                                                          if (!attached) {
+                                                                            attachMovie('bFade', 'bFade', 500);
+                                                                            bFade._y = 86;
+                                                                            attached = true;
+                                                                          }
+                                                                          bFade.sub._alpha += 1.3;
+                                                                          if (bFade.sub._alpha >= 100) {
+                                                                            bFade.sub._alpha = 100;
+                                                                          }
+                                                                          if (bouli2._x > 700) {
+                                                                            _parent.gotoAndStop(2);
+                                                                          }
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        if (Key.isDown(13)) {
+          step = -2;
+        }
+      }
+
+    }
+
+    frame 2 {
+      init();
+    }
+
+    frame 3 {
+      main();
+    }
+
+    frame 4 {
+      gotoAndPlay(_currentframe - 1);
+    }
+  }
+
+  button 557 {
+
+    on (press) {
+      getURL(_root.url, '_self');
+    }
+  }
+
+  movieClip 561  {
+  }
+
+  movieClip 563  {
+  }
+
+  movieClip 565  {
+  }
+
+  movieClip 591  {
+
+    frame 62 {
+      gotoAndPlay(1);
+    }
+  }
+
+  movieClip 651  {
+
+    frame 95 {
+      _parent._parent.vitx = 0;
+    }
+
+    frame 114 {
+      _parent.gotoAndStop(1);
+    }
+  }
+
+  movieClip 652  {
+
+    frame 1 {
+      stop();
+    }
+  }
+
+  movieClip 654  {
+  }
+
+  movieClip 656  {
+  }
+
+  movieClip 657  {
+  }
+
+  movieClip 660  {
+
+    frame 1 {
+      texts = [{'timer': 70, 'txt': 'Bouli marcha des jours et des jours...'}, {'timer': 70, 'txt': 'Bravant tous les dangers,'}, {'timer': 50, 'txt': 'Parfois au péril de sa vie.'}, {'timer': 10, 'txt': ''}, {'timer': 100, 'txt': 'Tuberculoz, le sorcier, vivait par\ndelà le Grand Désert de l\'est'}, {'timer': 110, 'txt': 'Aux limites de Hammerfest, au plus\nprofond d\'une caverne mystérieuse.'}, {'timer': 30, 'txt': ''}];
+      docWidth = 420;
+      docHeight = 500;
+      main = function () {
+        mainAnim();
+        mainScrolls();
+      };
+
+      mainScrolls = function () {
+        if (textBox._x == undefined) {
+          if (currentText < texts.length) {
+            attachText(currentText);
+            ++currentText;
+          } else {
+            _parent._parent.completed = true;
+          }
+        }
+      };
+
+      attachText = function (id) {
+        this.attachMovie('textBox', 'textBox', id);
+        textBox._x = docWidth / 2;
+        textBox._y = docHeight - 40;
+        textBox.sub.txt = texts[id].txt;
+        textBox.timer = texts[id].timer;
+      };
+
+      mainAnim = function () {
+        bouli3._x -= vitx;
+        ombre._x -= vitx;
+        dune1._x -= 0.1;
+        dune2._x -= 0.1;
+        caillou._x -= 0.4;
+        dune4._x -= 0.6;
+        dune6._x -= 0.9;
+        omb1.omb2._rotation += 0.13;
+        omb1._x = dune6._x;
+        if (fadeIn) {
+          bFade.sub._alpha -= 1.3;
+        }
+        if (bFade.sub._alpha <= 1) {
+          bFade._visible = false;
+          fadeIn = false;
+        }
+        if (fadeOut) {
+          bFade._visible = true;
+          bFade.sub._alpha += 1.3;
+          if (bFade.sub._alpha >= 100) {
+            bFade.sub._alpha = 100;
+            getURL(_root.url, '_self');
+            this.stop();
+          }
+        }
+        if (dune6._x <= 80) {
+          fadeOut = true;
+        }
+        if (caillou._x < 194 && caillou._x > 191) {
+          bouli3.gotoAndStop(2);
+          vitx = 0.19;
+        }
+        if (dune1._x <= -80) {
+          dune1._x = 500;
+        }
+        if (dune2._x <= -80) {
+          dune2._x = 500;
+        }
+        if (dune4._x <= -80) {
+          dune4._x = 500;
+        }
+        if (dune6._x <= -80) {
+          dune6._x = 500;
+        }
+        if (omb1._x >= 490) {
+          omb1.omb2._rotation = -56;
+        }
+      };
+
+      init = function () {
+        vitx = 0;
+        currentText = 0;
+        fadeIn = true;
+        fadeOut = false;
+        attachMovie('bFade', 'bFade', 500);
+        bFade.sub._alpha = 100;
+        bFade.sub._y = 86;
+      };
+
+      init();
+    }
+
+    frame 2 {
+      main();
+    }
+
+    frame 3 {
+      gotoAndPlay(_currentframe - 1);
+    }
+  }
+}

@@ -1,0 +1,358 @@
+movie 'pyramid.swf' {
+// flash 8, total frames: 3, frame rate: 40 fps, 520x170 px, compressed
+
+  movieClip 6 smoke {
+  }
+
+  movieClip 10  {
+  }
+
+  movieClip 11  {
+  }
+
+  movieClip 14  {
+  }
+
+  movieClip 15  {
+  }
+
+  movieClip 17  {
+  }
+
+  movieClip 19  {
+  }
+
+  movieClip 23  {
+  }
+
+  movieClip 24  {
+  }
+
+  movieClip 26  {
+  }
+
+  movieClip 27  {
+  }
+
+  movieClip 28 pyramid {
+  }
+
+  frame 1 {
+    function init() {
+      if (url == null) {
+        url = '#url_missing';
+        DEBUG('warning: url not found');
+      }
+      if (hof == null) {
+        hof = '#hof_missing';
+        DEBUG('warning: hof not found');
+      }
+      cid = sid2fid(parseInt(c, 10));
+      if (isNaN(cid)) {
+        cid = sid2fid(random(MAX_ID));
+        DEBUG('warning: c not found (' + cid + ')');
+      }
+      if (l == null) {
+        DEBUG('warning: l not found');
+      }
+      if (s == null) {
+        DEBUG('warning: s not found');
+      }
+      var v6 = _root.l.toLowerCase();
+      switch (v6) {
+        case 'fr':
+          lang = Langs[0];
+          break;
+        case 'en':
+          lang = Langs[1];
+          break;
+        case 'es':
+          lang = Langs[2];
+          break;
+        default:
+          lang = Langs[0];
+      }
+      steps = s.split('|');
+      _global.context = this;
+      uid = 1;
+      mcList = new Array();
+      fl_lock = false;
+      fl_afk = false;
+      iCounter = 0;
+      hideHelp();
+      pyramid.stop();
+      pList = new Array();
+      pList.push(pyramid.p0);
+      pList.push(pyramid.p1);
+      pList.push(pyramid.p2);
+      pList.push(pyramid.p3);
+      pList.push(pyramid.p4);
+      yList = new Array();
+      var v5 = 0;
+      while (v5 < pList.length) {
+        var v4 = pList[v5];
+        yList[v5] = v4._y;
+        v4.id = v5;
+        v4.dy = 0;
+        v4.fl_stable = true;
+        v4.blendMode = 'layer';
+        ++v5;
+      }
+      yList.push(0);
+      updateCursor(cid);
+      CLS();
+    }
+
+    function getRawY(id) {
+      return yList[id];
+    }
+
+    function getNormalY(id) {
+      var v1 = getRawY(id);
+      if (id == over && id != 0) {
+        return v1 - OVER_OFFSET;
+      } else {
+        return v1;
+      }
+    }
+
+    function getHeight(id) {
+      var v1 = getRawY(id) - getRawY(id + 1);
+      return v1;
+    }
+
+    function getNumber(n) {
+      var v1 = String(n);
+      if (v1.length >= 4) {
+        v1 = v1.substring(0, v1.length - 3) + '.' + v1.substring(v1.length - 3, 9999);
+      }
+      return v1;
+    }
+
+    function onOver(id) {
+      if (over == id) {
+        return undefined;
+      }
+      if (id == 0) {
+        return undefined;
+      }
+      var v3 = pList[id];
+      if (id != 0 && v3.fl_stable) {
+        v3.dy = -2;
+        v3._y -= 5;
+        v3.fl_stable = false;
+      }
+      v3.useHandCursor = true;
+      v3.onRelease = function () {
+        _global.context.onClick(this.id);
+      };
+
+      showHelp(id);
+      over = id;
+    }
+
+    function showHelp(id) {
+      help._visible = true;
+      if (id < pList.length - 1) {
+        help.gotoAndStop(1);
+        help.field.text = getNumber(steps[fid2sid(id) - 1]);
+        help.header.text = lang[0];
+        help.footer.text = lang[1];
+      } else {
+        help.gotoAndStop(2);
+        help.header.text = lang[2];
+        help.hof.text = lang[3];
+      }
+    }
+
+    function hideHelp() {
+      help._visible = false;
+    }
+
+    function onClick(id) {
+      var v2 = fid2sid(id);
+      if (v2 == 0) {
+        getURL(hof, '');
+      } else {
+        getURL(url + v2, '');
+      }
+      fl_lock = true;
+      help._visible = false;
+      var v1 = 0;
+      while (v1 < pList.length) {
+        pList[v1].onRelease = null;
+        pList[v1].useHandCursor = false;
+        ++v1;
+      }
+    }
+
+    function updateCursor(id) {
+      if (id > 4) {
+        cursor._visible = false;
+      }
+      cursor._x = 145 + id * 20;
+      cursor._y = getRawY(id);
+      cursor.right._x = 218 - id * 20 * 2;
+    }
+
+    function DEBUG(s) {
+      field.text += s + '\n';
+      var v1 = field.text.split('\r');
+      while (v1.length > MAX_DEBUG_LINES) {
+        v1.splice(0, 1);
+      }
+      field.text = v1.join('\n');
+    }
+
+    function CLS() {
+      field.text = '';
+    }
+
+    function smoke(id) {
+      return undefined;
+      this.attachMovie('smoke', 'smoke_' + uid, uid);
+      var v2 = this['smoke_' + uid];
+      v2._x = 260;
+      v2._y = getRawY(id) + getHeight(id) * 0.4;
+      v2._xscale = 100 - id * 17;
+      v2._alpha = 50;
+      ++uid;
+      mcList.push(v2);
+    }
+
+    function fid2sid(n) {
+      return MAX_ID - n + 1;
+    }
+
+    function sid2fid(n) {
+      return Math.abs(n - MAX_ID - 1);
+    }
+
+    function main() {
+      if (fl_lock) {
+        return undefined;
+      }
+      if (ox == _xmouse && oy == _ymouse) {
+        ++iCounter;
+        if (iCounter >= MAX_INACTIVITY) {
+          fl_afk = true;
+        }
+      } else {
+        iCounter = 0;
+        fl_afk = false;
+      }
+      ox = _xmouse;
+      oy = _ymouse;
+      var v6 = false;
+      if (!fl_afk) {
+        var v3 = 0;
+        while (v3 < pList.length) {
+          if (!v6 && _ymouse >= getRawY(v3) - getHeight(v3) * 0.5 && _ymouse < getRawY(v3) + getHeight(v3) * 0.5 && _xmouse >= pyramid._x && _xmouse <= pyramid._x + pyramid._width) {
+            onOver(v3);
+            v6 = true;
+          }
+          ++v3;
+        }
+      }
+      if (fl_afk || !v6 && !(_xmouse >= pyramid._x && _xmouse <= pyramid._x + pyramid._width)) {
+        this.onRelease = null;
+        over = null;
+        hideHelp();
+        updateCursor(cid);
+      }
+      v3 = 0;
+      while (v3 < mcList.length) {
+        var v5 = mcList[v3];
+        if (v5._currentframe == v5._totalframes) {
+          v5.removeMovieClip();
+          mcList.splice(v3, 1);
+          --v3;
+        }
+        ++v3;
+      }
+      v3 = 0;
+      while (v3 < pList.length) {
+        var v2 = pList[v3];
+        if (v2._y < getNormalY(v2.id)) {
+          v2.dy += GRAVITY;
+          v2.fl_stable = false;
+        }
+        if (v2.dy >= 0 && v2._y >= getNormalY(v2.id)) {
+          v2._y = getNormalY(v2.id);
+          v2.dy = 0;
+          v2.fl_stable = true;
+          if (over != v2.id && over != v2.id + 1) {
+            smoke(v2.id);
+          }
+        }
+        if (over != null && over != v3 || over == null && v3 != cid) {
+          v2.gotoAndStop(1);
+        } else {
+          v2.gotoAndStop(2);
+        }
+        v2._y += v2.dy;
+        ++v3;
+      }
+      var v4 = getRawY(0);
+      v3 = 0;
+      while (v3 < pList.length) {
+        v2 = pList[v3];
+        if (v2._y > v4) {
+          v2._y = v4;
+          v2.dy = 0;
+        }
+        if (v2._y <= MIN_Y) {
+          v2._y = MIN_Y;
+          v2.dy = 0;
+        }
+        v4 -= getHeight(v3);
+        if (v2._y != v4) {
+          v4 = v2._y - getHeight(v3);
+        }
+        if (v3 == over) {
+          v4 -= OVER_OFFSET;
+        }
+        ++v3;
+      }
+    }
+
+    var Langs = [['Chaque semaine, les', 'premiers joueurs de ce classement monteront à l\'étage supérieur de la pyramide', 'Chaque semaine, le meilleur joueur de ce classement atteindra', 'le Panthéon !'], ['Each week, ', 'players from this ranking will go up to the higher level', 'Each week, the best player from this ranking will reach the', 'Hall of Fame!'], ['Cada semana, los', 'primeros jugadores de esta clasificación subirán un nivel en la pirámide', 'Cada semana, el mejor jugador de esta clasificación alcanzará', '¡El Panteón!']];
+    var OVER_OFFSET = 5;
+    var GRAVITY = 0.5;
+    var MAX_DEBUG_LINES = 12;
+    var MIN_Y = 13;
+    var MAX_INACTIVITY = 192;
+    var MAX_ID = 4;
+    var lang;
+    var pList;
+    var yList;
+    var over;
+    var uid;
+    var mcList;
+    var fl_lock;
+    var fl_afk;
+    var cid;
+    var ox;
+    var oy;
+    var iCounter;
+    var steps;
+    init();
+  }
+
+  movieClip 35  {
+  }
+
+  movieClip 38  {
+  }
+
+  movieClip 39  {
+  }
+
+  frame 2 {
+    main();
+  }
+
+  frame 3 {
+    gotoAndPlay(_currentframe - 1);
+  }
+}
