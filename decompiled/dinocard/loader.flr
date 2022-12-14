@@ -1,0 +1,44 @@
+movie 'loader.swf' {
+// flash 8, total frames: 1, frame rate: 40 fps, 600x500 px, compressed
+
+  movieClip 2  {
+  }
+
+  movieClip 6 mcLoader {
+  }
+
+  frame 1 {
+    function gameProgress(mc, lb, tb) {
+      var v1 = (lb / tb) * 100;
+      loader.bar._xscale = v1;
+      loader.field.text = int(v1) + '%';
+    }
+
+    function gameError(mc, error) {
+      loader.field.text = error;
+    }
+
+    function gameStart() {
+      ++loaded;
+      if (loaded == 2) {
+        loader.removeMovieClip();
+      }
+    }
+
+    if (swfUrl == null) {
+      swfUrl = 'swf/temple.swf';
+    }
+    attachMovie('mcLoader', 'loader', 0);
+    loader._x = 300;
+    loader._y = 250;
+    loader.blendMode = 'subtract';
+    createEmptyMovieClip('trg', 1);
+    mcl = new MovieClipLoader();
+    mcl.onLoadProgress = gameProgress;
+    mcl.onLoadError = gameError;
+    mcl.onLoadStart = gameStart;
+    mcl.onLoadInit = gameStart;
+    mcl.loadClip(swfUrl, trg);
+    loaded = 0;
+  }
+}

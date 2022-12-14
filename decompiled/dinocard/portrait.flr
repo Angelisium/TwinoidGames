@@ -1,0 +1,51 @@
+movie 'portrait.swf' {
+// flash 7, total frames: 4, frame rate: 40 fps, 60x84 px, compressed
+
+  frame 1 {
+    ifFrameLoaded (4) {
+      gotoAndStop('end');
+    }
+  }
+
+  movieClip 5  {
+  }
+
+  movieClip 6  {
+  }
+
+  frame 2 {
+    gotoAndPlay(1);
+  }
+
+  frame 4 {
+    function init() {
+      System.security.allowDomain('*');
+      createEmptyMovieClip('base', 0);
+      if (flip == 2) {
+        base._xscale = -100;
+        base._x = 60;
+      }
+      mcl = new MovieClipLoader();
+      mcl.onLoadComplete = avatarLoaded;
+      mcl.onLoadInit = avatarLoaded;
+      mcl.loadClip(url, base);
+    }
+
+    function avatarLoaded(mc) {
+      if (mc.loadId == null) {
+        mc.loadId = 0;
+      }
+      ++mc.loadId;
+      if (mc.loadId == 2) {
+        initAvatar(mc);
+      }
+    }
+
+    function initAvatar() {
+      base.cl = face.split(';');
+      base.apply();
+    }
+
+    init();
+  }
+}

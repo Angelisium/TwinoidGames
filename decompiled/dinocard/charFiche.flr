@@ -1,0 +1,257 @@
+movie 'charFiche.swf' {
+// flash 8, total frames: 1, frame rate: 40 fps, 180x390 px, compressed
+
+  frame 1 {
+    function resetColApply(id1, id2, id3, id4) {
+      var v1 = Number(num0);
+      artwork.gotoAndStop(v1 + 1);
+      id1 %= palette[paltab[v1][0]].length;
+      id2 %= palette[paltab[v1][1]].length;
+      id3 %= palette[paltab[v1][2]].length;
+      id4 %= palette[paltab[v1][3]].length;
+      setColor(artwork.gfx.col0, palette[paltab[v1][0]][id1]);
+      setColor(artwork.gfx2.col0, palette[paltab[v1][0]][id1]);
+      setColor(artwork.gfx.col1, palette[paltab[v1][1]][id2]);
+      setColor(artwork.gfx2.col1, palette[paltab[v1][1]][id2]);
+      setColor(artwork.gfx.col2, palette[paltab[v1][2]][id3]);
+      setColor(artwork.gfx2.col2, palette[paltab[v1][2]][id3]);
+      setColor(artwork.gfx.col3, palette[paltab[v1][3]][id4]);
+      setColor(artwork.gfx2.col3, palette[paltab[v1][3]][id4]);
+    }
+
+    function setColor(mc, col) {
+      var v1 = {'r': col >> 16, 'g': col >> 8 & 255, 'b': col & 255};
+      var v2 = new Color(mc);
+      var v3 = {'ra': 100, 'ga': 100, 'ba': 100, 'aa': 100, 'rb': v1.r - 255, 'gb': v1.g - 255, 'bb': v1.b - 255, 'ab': 0};
+      v2.setTransform(v3);
+    }
+
+    paltab = [[0, 1, 2, 3], [0, 1, 2, 3], [4, 5, 5, 5], [8, 8, 10, 10], [4, 5, 12, 12], [4, 5, 5, 5], [13, 14, 15, 16], [4, 5, 5, 5], [0, 1, 2, 16], [0, 1, 2, 3]];
+    palette = [[16498564, 16750959, 16755230, 15112294, 12612611, 12345121, 15381661], [16764025, 12227841, 16764057, 12035076, 16641495, 12648962], [16773855, 16764025, 16755230, 15531993, 13369239, 14019327, 9948159, 9151447, 14646839, 12082973, 13834264, 16775598, 15785113], [16773855, 16764025, 16755230, 15531993, 13369239, 14019327, 9948159, 9151447, 14646839, 12082973, 13834264, 16775598, 15785113], [16107947, 16105652, 14658711, 14924435, 15579299, 13015677], [15391440, 11564367, 9795434, 15375722, 10856376, 11644106, 15574367, 12569305, 15785113, 2069617, 16568294, 623778], [16641495, 4676263, 8884924, 13073532, 15375797, 10181169, 15516000, 7439041], [16641495, 16764025, 16755230, 15531993, 13369239, 14019327, 9948159, 9151447, 14646839, 12082973, 13834264, 16775598, 16764159, 15785113], [14210525, 10725050, 10468788, 8826016, 11651303, 9613532], [15391440, 11564367, 9795434, 15375722, 10856376, 11644106, 15785113], [16773855, 16764025, 16755230, 15531993, 13369239, 14019327, 9948159], [16641495, 16764025, 16755230, 15531993, 13369239, 14019327, 9948159, 9151447, 14646839, 12082973, 13834264, 16775598, 15785113], [16764159, 16770815, 15394559, 15531993, 13369239, 14019327, 9948159, 14646839, 16775598], [13879776, 15917537, 14925246, 16051935, 15260089, 13167032, 14742488, 12693205], [12045766, 12014408, 15785113, 16185049, 14542079, 11846910, 14811101, 11272098, 16768477, 16762052, 16568294, 15785113], [11634596, 10645395, 10645395, 10338225, 9948159], [16185049, 14542079, 11846910, 14811101, 11272098, 16768477, 16762052, 16568294, 16772778]];
+    tempCol = '';
+    step = 0;
+    num0 = '';
+    num1 = '';
+    num2 = '';
+    num3 = '';
+    num4 = '';
+    num5 = '';
+    playerName = _root.userName;
+    stringB = _root.str + ';';
+    artwork.p.fieldPseudo.text = String(playerName);
+    var i = 0;
+    while (i <= stringB.length) {
+      if (stringB.charCodeAt(i) == 59) {
+        this['num' + step] = tempCol;
+        tempCol = '';
+        ++step;
+        ++i;
+      }
+      tempCol = String(tempCol) + String(stringB.substr(i, 1));
+      ++i;
+    }
+    resetColApply(Number(num2), Number(num3), Number(num4), Number(num5));
+  }
+
+  movieClip 5  {
+  }
+
+  movieClip 8  {
+  }
+
+  movieClip 11  {
+  }
+
+  movieClip 14  {
+  }
+
+  movieClip 16  {
+  }
+
+  movieClip 18  {
+  }
+
+  movieClip 20  {
+  }
+
+  movieClip 22  {
+  }
+
+  movieClip 25  {
+  }
+
+  movieClip 27  {
+  }
+
+  movieClip 30  {
+  }
+
+  movieClip 32  {
+  }
+
+  movieClip 33  {
+  }
+
+  movieClip 35  {
+  }
+
+  movieClip 37  {
+  }
+
+  movieClip 39  {
+  }
+
+  movieClip 41  {
+  }
+
+  movieClip 44  {
+  }
+
+  movieClip 45  {
+  }
+
+  movieClip 47  {
+  }
+
+  movieClip 50  {
+  }
+
+  movieClip 52  {
+  }
+
+  movieClip 54  {
+  }
+
+  movieClip 56  {
+  }
+
+  movieClip 60  {
+  }
+
+  movieClip 62  {
+  }
+
+  movieClip 64  {
+  }
+
+  movieClip 65  {
+  }
+
+  movieClip 67  {
+  }
+
+  movieClip 70  {
+  }
+
+  movieClip 73  {
+  }
+
+  movieClip 74  {
+  }
+
+  movieClip 76  {
+  }
+
+  movieClip 79  {
+  }
+
+  movieClip 80  {
+  }
+
+  movieClip 82  {
+  }
+
+  movieClip 84  {
+  }
+
+  movieClip 86  {
+  }
+
+  movieClip 88  {
+  }
+
+  movieClip 90  {
+  }
+
+  movieClip 92  {
+  }
+
+  movieClip 94  {
+  }
+
+  movieClip 96  {
+  }
+
+  movieClip 98  {
+  }
+
+  movieClip 100  {
+  }
+
+  movieClip 103  {
+  }
+
+  movieClip 104  {
+  }
+
+  movieClip 106  {
+  }
+
+  movieClip 109  {
+  }
+
+  movieClip 111  {
+  }
+
+  movieClip 114  {
+  }
+
+  movieClip 116  {
+  }
+
+  movieClip 117  {
+  }
+
+  movieClip 119  {
+  }
+
+  movieClip 121  {
+  }
+
+  movieClip 123  {
+  }
+
+  movieClip 125  {
+  }
+
+  movieClip 128  {
+  }
+
+  movieClip 129  {
+  }
+
+  movieClip 131  {
+  }
+
+  movieClip 133  {
+  }
+
+  movieClip 135  {
+  }
+
+  movieClip 137  {
+  }
+
+  movieClip 139  {
+  }
+
+  movieClip 141  {
+  }
+
+  movieClip 142  {
+
+    frame 1 {
+      stop();
+    }
+  }
+}
