@@ -1,0 +1,159 @@
+movie 'sheeps.swf' {
+// flash 10, total frames: 3, frame rate: 40 fps, 870x80 px, compressed
+
+  metadata <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"> <rdf:Description rdf:about="" xmlns:xmp="http://ns.adobe.com/xap/1.0/"> <xmp:CreatorTool>Adobe Flash Professional CS5</xmp:CreatorTool> <xmp:CreateDate>2012-03-09T15:25:32+01:00</xmp:CreateDate> <xmp:MetadataDate>2012-03-14T10:25:48+01:00</xmp:MetadataDate> <xmp:ModifyDate>2012-03-14T10:25:48+01:00</xmp:ModifyDate> </rdf:Description> <rdf:Description rdf:about="" xmlns:dc="http://purl.org/dc/elements/1.1/"> <dc:format>application/x-shockwave-flash</dc:format> </rdf:Description> <rdf:Description rdf:about="" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" xmlns:stRef="http://ns.adobe.com/xap/1.0/sType/ResourceRef#"> <xmpMM:DerivedFrom rdf:parseType="Resource"> <stRef:instanceID>xmp.iid:CD531730B66DE111AAA0F248D61B1F88</stRef:instanceID> <stRef:documentID>xmp.did:FBE11BB57764E1118D14F127C4AA4010</stRef:documentID> <stRef:originalDocumentID>xmp.did:FBE11BB57764E1118D14F127C4AA4010</stRef:originalDocumentID> </xmpMM:DerivedFrom> <xmpMM:DocumentID>xmp.did:D3531730B66DE111AAA0F248D61B1F88</xmpMM:DocumentID> <xmpMM:InstanceID>xmp.iid:D3531730B66DE111AAA0F248D61B1F88</xmpMM:InstanceID> <xmpMM:OriginalDocumentID>xmp.did:FBE11BB57764E1118D14F127C4AA4010</xmpMM:OriginalDocumentID> </rdf:Description> </rdf:RDF> 
+
+  movieClip 2  {
+  }
+
+  movieClip 3  {
+  }
+
+  movieClip 4  {
+  }
+
+  movieClip 5  {
+  }
+
+  movieClip 6 actionIcon {
+
+    frame 1 {
+      stop();
+    }
+
+    frame 25 {
+      parent.removeChild(this);
+      stop();
+    }
+  }
+
+  frame 1 {
+    var compt = 0;
+    var jumpNum = 0;
+    var vit = random(2) + 1.5;
+    sheep._xscale = random(20) + 80;
+    sheep._yscale = sheep._xscale;
+    var c = 0;
+    var cJ = 0;
+    counter.count.text = c;
+    cJanim._visible = false;
+  }
+  
+  // unknown tag 88 length 111
+
+  movieClip 10  {
+  }
+
+  movieClip 12  {
+  }
+
+  movieClip 13  {
+
+    frame 1 {
+      stop();
+      this._visible = true;
+    }
+
+    frame 2 {
+      _parent.jumpNum += 1;
+      sub.count.text = _parent.jumpNum;
+      this._x = _parent.sheep._x;
+    }
+  }
+
+  movieClip 15  {
+  }
+
+  movieClip 16  {
+
+    frame 1 {
+      stop();
+    }
+  }
+
+  movieClip 18  {
+  }
+
+  movieClip 20  {
+  }
+
+  movieClip 22  {
+  }
+
+  movieClip 23  {
+
+    frame 1 {
+      stop();
+    }
+  }
+
+  movieClip 24  {
+  }
+
+  movieClip 25  {
+
+    frame 6 {
+      _parent.jumpNum = 0;
+    }
+
+    frame 16 {
+      gotoAndPlay('run');
+    }
+
+    frame 24 {
+      _parent.jumpCounter.gotoAndPlay(2);
+      _parent.jumpCounter._rotation = -5;
+    }
+  }
+
+  movieClip 27  {
+  }
+
+  movieClip 28  {
+
+    frame 1 {
+      stop();
+    }
+  }
+
+  frame 2 {
+    sheep._x += vit;
+    if (sheep._x >= 900) {
+      if (random(1000) == 1) {
+        sheep.col.gotoAndStop(2);
+      } else {
+        sheep.col.gotoAndStop(1);
+      }
+      sheep._x = -200;
+      vit = random(10) / 10 + 2;
+      sheep._xscale = random(40) + 60;
+      sheep._yscale = sheep._xscale;
+      c += 1;
+      counter.count.text = c;
+      pop.gotoAndPlay(2);
+    }
+    if (sheep._x <= _xmouse && sheep._x >= _xmouse - 30 && sheep._currentframe == 1 && _ymouse >= 40 && _ymouse <= 70) {
+      sheep.gotoAndPlay('jump');
+    }
+    if (jumpNum >= 10) {
+      cJanim._visible = true;
+      jumpNum = 0;
+      cJ += 1;
+      cJanim.counterJ.count.text = cJ;
+      cJanim.gotoAndPlay(2);
+      sauteMouton._x = sheep._x;
+      sauteMouton.gotoAndPlay(2);
+      jumpCounter._visible = false;
+    }
+    if (jumpNum <= 0) {
+      jumpCounter._visible = false;
+    }
+    if (sauteMouton._x + sauteMouton._width / 2 >= 870) {
+      sauteMouton._x = 870 - sauteMouton._width / 2;
+    }
+  }
+
+  frame 3 {
+    gotoAndPlay(_currentframe - 1);
+  }
+}
