@@ -628,7 +628,7 @@ movie 'bkiwi.swf' compressed // flash 7, total frames: 5, frame rate: 40 fps, 35
   end // of defineMovieClip 70
   
   exportAssets
-    70 as '|"|%"'#'
+    70 as '|"|%"\'#'
   end // of exportAssets
 
   defineMovieClip 72 // total frames: 1
@@ -691,7 +691,7 @@ movie 'bkiwi.swf' compressed // flash 7, total frames: 5, frame rate: 40 fps, 35
   end // of defineMovieClip 85
   
   exportAssets
-    85 as '6?@{'(!'
+    85 as '6?@{\'(!'
   end // of exportAssets
 
   defineMovieClip 90 // total frames: 3
@@ -940,7 +940,7 @@ movie 'bkiwi.swf' compressed // flash 7, total frames: 5, frame rate: 40 fps, 35
   end // of defineMovieClip 153
   
   exportAssets
-    153 as '2$(=4'!'
+    153 as '2$(=4\'!'
   end // of exportAssets
 
   defineMovieClip 162 // total frames: 4
@@ -1023,7 +1023,7 @@ movie 'bkiwi.swf' compressed // flash 7, total frames: 5, frame rate: 40 fps, 35
   end // of defineMovieClip 166
   
   exportAssets
-    166 as '?='5]|#'
+    166 as '?=\'5]|#'
   end // of exportAssets
 
   defineMovieClip 168 // total frames: 1
@@ -1373,7 +1373,7 @@ movie 'bkiwi.swf' compressed // flash 7, total frames: 5, frame rate: 40 fps, 35
   end // of exportAssets
   
   exportAssets
-    338 as '4-'&]5#'
+    338 as '4-\'&]5#'
   end // of exportAssets
   
   exportAssets
@@ -1519,7 +1519,7 @@ movie 'bkiwi.swf' compressed // flash 7, total frames: 5, frame rate: 40 fps, 35
   end // of defineMovieClip 400
   
   exportAssets
-    400 as '3'=-}6"'
+    400 as '3\'=-}6"'
   end // of exportAssets
 
   defineMovieClip 404 // total frames: 1
@@ -1572,7 +1572,7 @@ movie 'bkiwi.swf' compressed // flash 7, total frames: 5, frame rate: 40 fps, 35
   end // of exportAssets
   
   exportAssets
-    166 as '?='5]|#'
+    166 as '?=\'5]|#'
   end // of exportAssets
 
   defineMovieClip 411 // total frames: 3
@@ -1589,7 +1589,7 @@ movie 'bkiwi.swf' compressed // flash 7, total frames: 5, frame rate: 40 fps, 35
   end // of defineMovieClip 413
   
   exportAssets
-    413 as '4]2*'='
+    413 as '4]2*\'='
   end // of exportAssets
 
   defineMovieClip 418 // total frames: 2
@@ -1821,7 +1821,7 @@ movie 'bkiwi.swf' compressed // flash 7, total frames: 5, frame rate: 40 fps, 35
   end // of defineMovieClip 502
   
   exportAssets
-    502 as ''[99@+'
+    502 as '\'[99@+'
   end // of exportAssets
 
   defineMovieClip 504 // total frames: 1
@@ -2498,7 +2498,7 @@ movie 'bkiwi.swf' compressed // flash 7, total frames: 5, frame rate: 40 fps, 35
         return
       end // of function 6])=}2#
 
-      function2 '02|}'="' (r:4='}]?@!') (r:1='this')
+      function2 '02|}\'="' (r:4='}]?@!') (r:1='this')
         push UNDEF
         setRegister r:3
         pop
@@ -2579,7 +2579,7 @@ movie 'bkiwi.swf' compressed // flash 7, total frames: 5, frame rate: 40 fps, 35
        label12:
       end // of function 3{|0(#!
 
-      function2 ' (1{'|#' (r:2='8)-="+!', r:1='pos') ()
+      function2 ' (1{\'|#' (r:2='8)-="+!', r:1='pos') ()
         push r:pos, 1, r:'8)-="+!', 'charAt'
         callMethod
         return
@@ -2816,7 +2816,7 @@ movie 'bkiwi.swf' compressed // flash 7, total frames: 5, frame rate: 40 fps, 35
         return
       end // of function 2365))"
 
-      function2 '6{!)'^' (r:1='{]^{') ()
+      function2 '6{!)\'^' (r:1='{]^{') ()
         push '{ {1 0#', r:'{]^{'
         setVariable
       end // of function 6{!)'^
@@ -2846,7 +2846,7 @@ movie 'bkiwi.swf' compressed // flash 7, total frames: 5, frame rate: 40 fps, 35
         return
       end // of function leadingZeros
 
-      function2 '+(&^)'!' (r:1='9%=!', r:5='sub', r:6='$2!14&', r:4='7117[') ()
+      function2 '+(&^)\'!' (r:1='9%=!', r:5='sub', r:6='$2!14&', r:4='7117[') ()
         push UNDEF
         setRegister r:2
         pop
@@ -4007,7 +4007,7 @@ movie 'bkiwi.swf' compressed // flash 7, total frames: 5, frame rate: 40 fps, 35
        label78:
       end // of function !}"^(+"
 
-      function2 '" {}{'"' (r:1='id') ()
+      function2 '" {}{\'"' (r:1='id') ()
         push '$', ')\'4|&\'#'
         getVariable
         push 1, 'track'
@@ -4631,7 +4631,7 @@ movie 'bkiwi.swf' compressed // flash 7, total frames: 5, frame rate: 40 fps, 35
         setMember
       end // of function -29$-%"
 
-      function2 ']051$"' (r:9='id', r:8='x', r:6='y', r:5='3'', r:3='4'', r:4=')+^3[$', r:7=''86[+5"', r:10='5#@]]#') ()
+      function2 ']051$"' (r:9='id', r:8='x', r:6='y', r:5='3\'', r:3='4\'', r:4=')+^3[$', r:7='\'86[+5"', r:10='5#@]]#') ()
         push UNDEF
         setRegister r:2
         pop
@@ -4674,7 +4674,7 @@ movie 'bkiwi.swf' compressed // flash 7, total frames: 5, frame rate: 40 fps, 35
         getMember
         setRegister r:1
         pop
-        push r:x, r:''86[+5"'
+        push r:x, r:'\'86[+5"'
         random
         push 2
         random
@@ -4686,7 +4686,7 @@ movie 'bkiwi.swf' compressed // flash 7, total frames: 5, frame rate: 40 fps, 35
         add
         setRegister r:x
         pop
-        push r:y, r:''86[+5"'
+        push r:y, r:'\'86[+5"'
         random
         push 2
         random
@@ -4702,9 +4702,9 @@ movie 'bkiwi.swf' compressed // flash 7, total frames: 5, frame rate: 40 fps, 35
         setMember
         push r:1, '_y', r:y
         setMember
-        push r:1, '3\'', r:'3''
+        push r:1, '3\'', r:'3\''
         setMember
-        push r:1, '4\'', r:'4''
+        push r:1, '4\'', r:'4\''
         setMember
         push r:1, '-86?3+!', '57=@]!'
         getVariable
@@ -4717,13 +4717,13 @@ movie 'bkiwi.swf' compressed // flash 7, total frames: 5, frame rate: 40 fps, 35
         setMember
         push r:1, '_yscale', r:')+^3[$'
         setMember
-        push r:'3'', 0.0
+        push r:'3\'', 0.0
         equals
         not
         dup
         branchIfTrue label102
         pop
-        push r:'4'', 0.0
+        push r:'4\'', 0.0
         equals
         not
        label102:
@@ -4737,7 +4737,7 @@ movie 'bkiwi.swf' compressed // flash 7, total frames: 5, frame rate: 40 fps, 35
        label103:
       end // of function ]051$"
 
-      function2 '-1#$ ^"' (r:4='x', r:3='y', r:6='3'', r:5='4'') ()
+      function2 '-1#$ ^"' (r:4='x', r:3='y', r:6='3\'', r:5='4\'') ()
         push UNDEF
         setRegister r:2
         pop
@@ -4794,7 +4794,7 @@ movie 'bkiwi.swf' compressed // flash 7, total frames: 5, frame rate: 40 fps, 35
         setMember
         push r:1, '_y', r:y
         setMember
-        push r:1, '3\'', 0.5, r:'3''
+        push r:1, '3\'', 0.5, r:'3\''
         multiply
         push 0.2, 5
         random
@@ -4808,7 +4808,7 @@ movie 'bkiwi.swf' compressed // flash 7, total frames: 5, frame rate: 40 fps, 35
         multiply
         add
         setMember
-        push r:1, '4\'', 0.5, r:'4''
+        push r:1, '4\'', 0.5, r:'4\''
         multiply
         push 0.2, 5
         random
@@ -4972,7 +4972,7 @@ movie 'bkiwi.swf' compressed // flash 7, total frames: 5, frame rate: 40 fps, 35
        label105:
       end // of function *^5{%*"
 
-      function2 '{])((?"' (r:7='9'"!', r:3=''@{ #', r:9='perfect', r:10='1$%&'2', r:8='+12)%9!', r:6='=52 43!') (r:1='this')
+      function2 '{])((?"' (r:7='9\'"!', r:3='\'@{ #', r:9='perfect', r:10='1$%&\'2', r:8='+12)%9!', r:6='=52 43!') (r:1='this')
         push UNDEF
         setRegister r:4
         pop
@@ -4998,23 +4998,23 @@ movie 'bkiwi.swf' compressed // flash 7, total frames: 5, frame rate: 40 fps, 35
         getMember
         setRegister r:2
         pop
-        push r:2, '_y', r:'9'"!', '(038% #'
+        push r:2, '_y', r:'9\'"!', '(038% #'
         getVariable
         multiply
         push ') =*+$#'
         getVariable
         add
         setMember
-        push r:2, 'txt', 'Tour ', r:'9'"!', 1
+        push r:2, 'txt', 'Tour ', r:'9\'"!', 1
         add
         add
         push ' - '
         add
-        push r:''@{ #', 1, '23=$\'2'
+        push r:'\'@{ #', 1, '23=$\'2'
         callFunction
         add
         setMember
-        push r:'9'"!', 0.0
+        push r:'9\'"!', 0.0
         equals
         not
         branchIfTrue label106
@@ -5024,29 +5024,29 @@ movie 'bkiwi.swf' compressed // flash 7, total frames: 5, frame rate: 40 fps, 35
         setMember
         branch label109
        label106:
-        push r:''@{ #', r:'=52 43!'
+        push r:'\'@{ #', r:'=52 43!'
         equals
         not
         branchIfTrue label107
         push r:2, 'progress_txt', 'Même temps !'
         setMember
        label107:
-        push r:''@{ #', r:'=52 43!'
+        push r:'\'@{ #', r:'=52 43!'
         greaterThan
         not
         branchIfTrue label108
-        push r:2, 'progress_txt', '+ ', r:''@{ #', r:'=52 43!'
+        push r:2, 'progress_txt', '+ ', r:'\'@{ #', r:'=52 43!'
         subtract
         push 1, '23=$\'2'
         callFunction
         add
         setMember
        label108:
-        push r:''@{ #', r:'=52 43!'
+        push r:'\'@{ #', r:'=52 43!'
         lessThan
         not
         branchIfTrue label109
-        push r:2, 'progress_txt', '- ', r:'=52 43!', r:''@{ #'
+        push r:2, 'progress_txt', '- ', r:'=52 43!', r:'\'@{ #'
         subtract
         push 1, '23=$\'2'
         callFunction
@@ -5065,7 +5065,7 @@ movie 'bkiwi.swf' compressed // flash 7, total frames: 5, frame rate: 40 fps, 35
         push 1
         setRegister r:5
         pop
-        push r:'1$%&'2'
+        push r:'1$%&\'2'
         not
         branchIfTrue label111
         push r:2, 'txt', r:2, 'txt'
@@ -5182,7 +5182,7 @@ movie 'bkiwi.swf' compressed // flash 7, total frames: 5, frame rate: 40 fps, 35
        label114:
       end // of function 72 3&*
 
-      function2 '1#3%-%"' (r:3='9'"!') (r:1='this')
+      function2 '1#3%-%"' (r:3='9\'"!') (r:1='this')
         push UNDEF
         setRegister r:2
         pop
@@ -5213,12 +5213,12 @@ movie 'bkiwi.swf' compressed // flash 7, total frames: 5, frame rate: 40 fps, 35
         setMember
         push '4}1"#1"'
         getVariable
-        push 'tour', r:'9'"!', 1
+        push 'tour', r:'9\'"!', 1
         add
         setMember
       end // of function 1#3%-%"
 
-      function2 '["|#}'"' () (r:1='this')
+      function2 '["|#}\'"' () (r:1='this')
         push UNDEF
         setRegister r:2
         pop
@@ -5326,8 +5326,8 @@ movie 'bkiwi.swf' compressed // flash 7, total frames: 5, frame rate: 40 fps, 35
         pop
       end // of function 6$)027
 
-      function2 '$6!@+9' (r:11='!9', r:15='19'["', r:14='!$)^&{#', r:12='&&-%!', r:13='!+7!9&#', r:17='1*+0', r:16='!765("!') ()
-        push 'ra', r:'19'["', 'rb', r:'!$)^&{#', 'ga', r:'&&-%!', 'gb', r:'!+7!9&#', 'ba', r:'1*+0', 'bb', r:'!765("!', 'aa', 100, 'ab', 0.0, 8
+      function2 '$6!@+9' (r:11='!9', r:15='19\'["', r:14='!$)^&{#', r:12='&&-%!', r:13='!+7!9&#', r:17='1*+0', r:16='!765("!') ()
+        push 'ra', r:'19\'["', 'rb', r:'!$)^&{#', 'ga', r:'&&-%!', 'gb', r:'!+7!9&#', 'ba', r:'1*+0', 'bb', r:'!765("!', 'aa', 100, 'ab', 0.0, 8
         initObject
         setRegister r:2
         pop
@@ -7603,7 +7603,7 @@ movie 'bkiwi.swf' compressed // flash 7, total frames: 5, frame rate: 40 fps, 35
        label194:
       end // of function })?-]8!
 
-      function2 '2]4*$'#' () (r:1='this')
+      function2 '2]4*$\'#' () (r:1='this')
         push '=%!'
         getVariable
         push '{?]}|8"'
@@ -10123,7 +10123,7 @@ movie 'bkiwi.swf' compressed // flash 7, total frames: 5, frame rate: 40 fps, 35
        label276:
       end // of function 2]4*$'#
 
-      function2 '''*750!' () (r:1='this')
+      function2 '\'\'*750!' () (r:1='this')
         push '}*4-@]"'
         getVariable
         not
@@ -10804,7 +10804,7 @@ movie 'bkiwi.swf' compressed // flash 7, total frames: 5, frame rate: 40 fps, 35
        label315:
       end // of function {)12+""
 
-      function2 '}9('+!"' () (r:1='this')
+      function2 '}9(\'+!"' () (r:1='this')
         push '"@}93*!'
         getVariable
         not
@@ -13480,7 +13480,7 @@ movie 'bkiwi.swf' compressed // flash 7, total frames: 5, frame rate: 40 fps, 35
        label459:
       end // of function @43 !+"
 
-      function2 '"-)|'9' () ()
+      function2 '"-)|\'9' () ()
         push FALSE
         setRegister r:1
         pop
@@ -19444,7 +19444,7 @@ movie 'bkiwi.swf' compressed // flash 7, total frames: 5, frame rate: 40 fps, 35
        label668:
       end // of function %0|)^8!
 
-      function2 '#+2'+'' () ()
+      function2 '#+2\'+\'' () ()
         push UNDEF
         setRegister r:1
         pop
@@ -19520,7 +19520,7 @@ movie 'bkiwi.swf' compressed // flash 7, total frames: 5, frame rate: 40 fps, 35
        label674:
       end // of function #+2'+'
 
-      function2 ''#$  {' () (r:1='this')
+      function2 '\'#$  {' () (r:1='this')
         push UNDEF
         setRegister r:3
         pop
@@ -20374,12 +20374,12 @@ movie 'bkiwi.swf' compressed // flash 7, total frames: 5, frame rate: 40 fps, 35
         return
       end // of function ?@043+#
 
-      function '#'4#-0"' ()
+      function '#\'4#-0"' ()
         push ' )3&8|!', TRUE
         setVariable
       end // of function #'4#-0"
 
-      function2 '}%%]$6"' (r:2='-7'8)"') ()
+      function2 '}%%]$6"' (r:2='-7\'8)"') ()
         push '+ 4*\'6!'
         getVariable
         push 'carSel'
@@ -20399,11 +20399,11 @@ movie 'bkiwi.swf' compressed // flash 7, total frames: 5, frame rate: 40 fps, 35
         lessThan
         not
         branchIfTrue label724
-        push r:1, r:'-7'8)"'
+        push r:1, r:'-7\'8)"'
         equals
         not
         branchIfTrue label722
-        push r:'-7'8)"', 0.0
+        push r:'-7\'8)"', 0.0
         equals
         dup
         not
@@ -20483,7 +20483,7 @@ movie 'bkiwi.swf' compressed // flash 7, total frames: 5, frame rate: 40 fps, 35
         getMember
         push '_xscale', '}8 !|1"'
         getVariable
-        push r:'-7'8)"'
+        push r:'-7\'8)"'
         getMember
         push 'maxSpeed'
         getMember
@@ -20498,7 +20498,7 @@ movie 'bkiwi.swf' compressed // flash 7, total frames: 5, frame rate: 40 fps, 35
         getMember
         push '_xscale', '}8 !|1"'
         getVariable
-        push r:'-7'8)"'
+        push r:'-7\'8)"'
         getMember
         push 'accel'
         getMember
@@ -20513,7 +20513,7 @@ movie 'bkiwi.swf' compressed // flash 7, total frames: 5, frame rate: 40 fps, 35
         getMember
         push '_xscale', '}8 !|1"'
         getVariable
-        push r:'-7'8)"'
+        push r:'-7\'8)"'
         getMember
         push 'grip'
         getMember
@@ -20528,7 +20528,7 @@ movie 'bkiwi.swf' compressed // flash 7, total frames: 5, frame rate: 40 fps, 35
         getMember
         push '_xscale', '}8 !|1"'
         getVariable
-        push r:'-7'8)"'
+        push r:'-7\'8)"'
         getMember
         push 'rot'
         getMember
@@ -20551,7 +20551,7 @@ movie 'bkiwi.swf' compressed // flash 7, total frames: 5, frame rate: 40 fps, 35
         branchIfTrue label728
         push r:1, '}9 ! "'
         getVariable
-        push r:'-7'8)"'
+        push r:'-7\'8)"'
         getMember
         push '{+=6["'
         getMember
@@ -20920,7 +20920,7 @@ movie 'bkiwi.swf' compressed // flash 7, total frames: 5, frame rate: 40 fps, 35
         setMember
       end // of function %]3%32!
 
-      function2 '2"'0))' () ()
+      function2 '2"\'0))' () ()
         push FALSE
         setRegister r:3
         pop
@@ -21371,7 +21371,7 @@ movie 'bkiwi.swf' compressed // flash 7, total frames: 5, frame rate: 40 fps, 35
         pop
       end // of function ?4]%!$!
 
-      function '?)}![&#' ('[ ''3^')
+      function '?)}![&#' ('[ \'\'3^')
         push 0.0, '&9 *3}#'
         callFunction
         not
@@ -21381,26 +21381,26 @@ movie 'bkiwi.swf' compressed // flash 7, total frames: 5, frame rate: 40 fps, 35
        label755:
       end // of function ?)}![&#
 
-      function2 '?)]$+0"' (r:4='''*|6*!', r:3='**'%17"') ()
+      function2 '?)]$+0"' (r:4='\'\'*|6*!', r:3='**\'%17"') ()
         push UNDEF
         setRegister r:2
         pop
-        push r:'**'%17"'
+        push r:'**\'%17"'
         typeof
         push 'string'
         equals
         not
         branchIfTrue label756
-        push r:'**'%17"'
+        push r:'**\'%17"'
         setRegister r:2
         pop
         branch label758
        label756:
-        push r:'**'%17"', 10
+        push r:'**\'%17"', 10
         lessThan
         not
         branchIfTrue label757
-        push 'bk0', r:'**'%17"'
+        push 'bk0', r:'**\'%17"'
         add
         push '.mp3'
         add
@@ -21408,14 +21408,14 @@ movie 'bkiwi.swf' compressed // flash 7, total frames: 5, frame rate: 40 fps, 35
         pop
         branch label758
        label757:
-        push 'bk', r:'**'%17"'
+        push 'bk', r:'**\'%17"'
         add
         push '.mp3'
         add
         setRegister r:2
         pop
        label758:
-        push r:'''*|6*!', 1, 'Sound'
+        push r:'\'\'*|6*!', 1, 'Sound'
         new
         setRegister r:1
         pop
@@ -21562,7 +21562,7 @@ movie 'bkiwi.swf' compressed // flash 7, total frames: 5, frame rate: 40 fps, 35
       function ')"=@({#' ('!9', ')1#+%#!', ')|-&-)#')
       end // of function )"=@({#
 
-      function '4##9('#' ('!9')
+      function '4##9(\'#' ('!9')
         push '09?|]0#'
         getVariable
         push '4#=$@%"', TRUE
@@ -21614,11 +21614,11 @@ movie 'bkiwi.swf' compressed // flash 7, total frames: 5, frame rate: 40 fps, 35
       function '[337+&!' ('!9')
       end // of function [337+&!
 
-      function2 '$@{@79' (r:2='!9', r:3='405{'|!') ()
+      function2 '$@{@79' (r:2='!9', r:3='405{\'|!') ()
         push UNDEF
         setRegister r:1
         pop
-        push r:'405{'|!', 'URLNotFound'
+        push r:'405{\'|!', 'URLNotFound'
         equals
         not
         branchIfTrue label768
@@ -21646,7 +21646,7 @@ movie 'bkiwi.swf' compressed // flash 7, total frames: 5, frame rate: 40 fps, 35
         pop
       end // of function $@{@79
 
-      function2 '$^[-|&!' (r:2='%8**7*"', r:1='== '8["') ()
+      function2 '$^[-|&!' (r:2='%8**7*"', r:1='== \'8["') ()
         push '?6=(}+!'
         getVariable
         push 'error', r:'%8**7*"'
@@ -21670,13 +21670,13 @@ movie 'bkiwi.swf' compressed // flash 7, total frames: 5, frame rate: 40 fps, 35
         pop
         push '?6=(}+!'
         getVariable
-        push '!{7{', r:'== '8["'
+        push '!{7{', r:'== \'8["'
         setMember
         push 'loadingError: ', r:'%8**7*"'
         add
         push ' filename='
         add
-        push r:'== '8["'
+        push r:'== \'8["'
         add
         push ' md5='
         add
@@ -21687,7 +21687,7 @@ movie 'bkiwi.swf' compressed // flash 7, total frames: 5, frame rate: 40 fps, 35
         push 'name'
         getMember
         add
-        push 'Fichier ', r:'== '8["'
+        push 'Fichier ', r:'== \'8["'
         add
         push ' non trouvé sur le FD'
         add
@@ -21696,7 +21696,7 @@ movie 'bkiwi.swf' compressed // flash 7, total frames: 5, frame rate: 40 fps, 35
         pop
       end // of function $^[-|&!
 
-      function2 '&&"13{!' (r:5='5[*!', r:1='== '8["', r:4=']2${62"') ()
+      function2 '&&"13{!' (r:5='5[*!', r:1='== \'8["', r:4=']2${62"') ()
         push 0.0, '?#+05|#'
         callFunction
         pop
@@ -21709,11 +21709,11 @@ movie 'bkiwi.swf' compressed // flash 7, total frames: 5, frame rate: 40 fps, 35
         setMember
         push '09?|]0#'
         getVariable
-        push '=24%6("', r:'== '8["'
+        push '=24%6("', r:'== \'8["'
         setMember
         push '09?|]0#'
         getVariable
-        push '8]7\'6|', r:'== '8["', 1, '7%1+$-!'
+        push '8]7\'6|', r:'== \'8["', 1, '7%1+$-!'
         getVariable
         push 'getFileInfos'
         callMethod
@@ -21724,7 +21724,7 @@ movie 'bkiwi.swf' compressed // flash 7, total frames: 5, frame rate: 40 fps, 35
         branchIfTrue label771
         push '09?|]0#'
         getVariable
-        push '8]7\'6|', 'name', r:'== '8["', 'size', 68498, 2
+        push '8]7\'6|', 'name', r:'== \'8["', 'size', 68498, 2
         initObject
         setMember
        label771:
@@ -21877,7 +21877,7 @@ movie 'bkiwi.swf' compressed // flash 7, total frames: 5, frame rate: 40 fps, 35
         pop
       end // of function ?#85?-"
 
-      function2 '{4]'2{' (r:1='[1-%8{#') ()
+      function2 '{4]\'2{' (r:1='[1-%8{#') ()
         push r:'[1-%8{#', '\'6@!#3#'
         getMember
         not
@@ -22002,8 +22002,8 @@ movie 'bkiwi.swf' compressed // flash 7, total frames: 5, frame rate: 40 fps, 35
         pop
       end // of function %@$1}*"
 
-      function2 '%69?[?"' (r:4='91)+^##', r:5='94+579!', r:6='9=#04'#') ()
-        push r:'91)+^##', r:'9=#04'#'
+      function2 '%69?[?"' (r:4='91)+^##', r:5='94+579!', r:6='9=#04\'#') ()
+        push r:'91)+^##', r:'9=#04\'#'
         divide
         push 7
         multiply
@@ -23090,13 +23090,13 @@ movie 'bkiwi.swf' compressed // flash 7, total frames: 5, frame rate: 40 fps, 35
        label823:
       end // of function -*!"^[#
 
-      function2 '+-%{03"' (r:2='-7'8)"') ()
+      function2 '+-%{03"' (r:2='-7\'8)"') ()
         push UNDEF
         setRegister r:1
         pop
         push '+$41'
         getVariable
-        push r:'-7'8)"'
+        push r:'-7\'8)"'
         getMember
         setRegister r:1
         pop
@@ -23144,7 +23144,7 @@ movie 'bkiwi.swf' compressed // flash 7, total frames: 5, frame rate: 40 fps, 35
         getMember
         increment
         setMember
-        push r:'-7'8)"', 0.0
+        push r:'-7\'8)"', 0.0
         equals
         dup
         branchIfTrue label824
@@ -23192,7 +23192,7 @@ movie 'bkiwi.swf' compressed // flash 7, total frames: 5, frame rate: 40 fps, 35
         push r:1, 1, '6$)027'
         callFunction
         pop
-        push r:'-7'8)"', 0.0
+        push r:'-7\'8)"', 0.0
         equals
         not
         branchIfTrue label826
@@ -23200,7 +23200,7 @@ movie 'bkiwi.swf' compressed // flash 7, total frames: 5, frame rate: 40 fps, 35
         getVariable
         setVariable
        label826:
-        push r:'-7'8)"', 1, '5^6$3^"'
+        push r:'-7\'8)"', 1, '5^6$3^"'
         getVariable
         push 'push'
         callMethod
@@ -23246,7 +23246,7 @@ movie 'bkiwi.swf' compressed // flash 7, total frames: 5, frame rate: 40 fps, 35
         not
         branchIfTrue label828
         pop
-        push r:'-7'8)"', 0.0
+        push r:'-7\'8)"', 0.0
         equals
        label828:
         dup
@@ -23298,7 +23298,7 @@ movie 'bkiwi.swf' compressed // flash 7, total frames: 5, frame rate: 40 fps, 35
         setRegister r:3
         pop
        label830:
-        push r:'-7'8)"', '-{6?&?!'
+        push r:'-7\'8)"', '-{6?&?!'
         getVariable
         equals
         dup
@@ -23322,7 +23322,7 @@ movie 'bkiwi.swf' compressed // flash 7, total frames: 5, frame rate: 40 fps, 35
         push FALSE
         setRegister r:4
         pop
-        push r:'-7'8)"', 0.0
+        push r:'-7\'8)"', 0.0
         equals
         dup
         not
@@ -23363,7 +23363,7 @@ movie 'bkiwi.swf' compressed // flash 7, total frames: 5, frame rate: 40 fps, 35
         callFunction
         pop
        label835:
-        push r:'-7'8)"', 0.0
+        push r:'-7\'8)"', 0.0
         equals
         dup
         not
@@ -23519,7 +23519,7 @@ movie 'bkiwi.swf' compressed // flash 7, total frames: 5, frame rate: 40 fps, 35
         not
         branchIfTrue label841
         pop
-        push r:'-7'8)"', 0.0
+        push r:'-7\'8)"', 0.0
         equals
        label841:
         dup
@@ -23584,7 +23584,7 @@ movie 'bkiwi.swf' compressed // flash 7, total frames: 5, frame rate: 40 fps, 35
         getMember
         setMember
        label844:
-        push r:'-7'8)"', 0.0
+        push r:'-7\'8)"', 0.0
         equals
         not
         branchIfTrue label845
@@ -23712,7 +23712,7 @@ movie 'bkiwi.swf' compressed // flash 7, total frames: 5, frame rate: 40 fps, 35
         push r:1, '(7"$27!', TRUE
         setMember
        label849:
-        push r:'-7'8)"', 0.0
+        push r:'-7\'8)"', 0.0
         equals
         not
         branchIfTrue label850
@@ -24412,7 +24412,7 @@ movie 'bkiwi.swf' compressed // flash 7, total frames: 5, frame rate: 40 fps, 35
         setVariable
       end // of function 3)(31$!
 
-      function '2!4|'=!' ()
+      function '2!4|\'=!' ()
         push '}%|3- "'
         getVariable
         push 'chrono_txt'
@@ -24527,7 +24527,7 @@ movie 'bkiwi.swf' compressed // flash 7, total frames: 5, frame rate: 40 fps, 35
         setMember
       end // of function 2!0?(-!
 
-      function2 '23=$'2' (r:3='temps', r:6=' 0?1$%', r:5='3}?)){', r:7='386@-^"') ()
+      function2 '23=$\'2' (r:3='temps', r:6=' 0?1$%', r:5='3}?)){', r:7='386@-^"') ()
         push r:' 0?1$%', NULL
         equals
         not
@@ -26899,7 +26899,7 @@ movie 'bkiwi.swf' compressed // flash 7, total frames: 5, frame rate: 40 fps, 35
         pop
       end // of function 42}^96"
 
-      function2 '{(|{=1!' (r:6=''', r:5='#"61?+#') ()
+      function2 '{(|{=1!' (r:6='\'', r:5='#"61?+#') ()
         push 'x', '35|3?'
         getVariable
         push 'x'
@@ -26914,17 +26914,17 @@ movie 'bkiwi.swf' compressed // flash 7, total frames: 5, frame rate: 40 fps, 35
         getMember
         push '1', r:'#"61?+#', 4
         initObject
-        push 1, r:''', '421=+#'
+        push 1, r:'\'', '421=+#'
         getMember
         push 'push'
         callMethod
         pop
       end // of function {(|{=1!
 
-      function2 '1+?-75!' (r:1=''') ()
-        push r:''', 'current'
+      function2 '1+?-75!' (r:1='\'') ()
+        push r:'\'', 'current'
         getMember
-        push r:''', '421=+#'
+        push r:'\'', '421=+#'
         getMember
         push 'length'
         getMember
@@ -26932,7 +26932,7 @@ movie 'bkiwi.swf' compressed // flash 7, total frames: 5, frame rate: 40 fps, 35
         not
         not
         branchIfTrue label984
-        push r:''', 'current', r:''', '421=+#'
+        push r:'\'', 'current', r:'\'', '421=+#'
         getMember
         push 'length'
         getMember
@@ -26940,11 +26940,11 @@ movie 'bkiwi.swf' compressed // flash 7, total frames: 5, frame rate: 40 fps, 35
         subtract
         setMember
        label984:
-        push r:''', '421=+#'
+        push r:'\'', '421=+#'
         getMember
-        push r:''', 'current'
+        push r:'\'', 'current'
         getMember
-        push r:''', 'current', r:''', 'current'
+        push r:'\'', 'current', r:'\'', 'current'
         getMember
         increment
         setMember
@@ -26969,7 +26969,7 @@ movie 'bkiwi.swf' compressed // flash 7, total frames: 5, frame rate: 40 fps, 35
         return
       end // of function "@+ 17#
 
-      function2 '7'&8+}"' () (r:1='this')
+      function2 '7\'&8+}"' () (r:1='this')
         push '%@!941#'
         getVariable
         push '7=4&%'
@@ -27555,8 +27555,8 @@ movie 'bkiwi.swf' compressed // flash 7, total frames: 5, frame rate: 40 fps, 35
       push '_global'
       getVariable
       push '\'2\'&0'
-      function2 (r:2=''6!1)]"') (r:1='_global')
-        push r:_global, '\'# 2!$!', r:''6!1)]"'
+      function2 (r:2='\'6!1)]"') (r:1='_global')
+        push r:_global, '\'# 2!$!', r:'\'6!1)]"'
         setMember
       end // of function 
 
