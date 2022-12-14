@@ -1812,7 +1812,7 @@ for ($somevar in v2) {
         var v3 = arg0.substr(-32, 32);
         arg0 = arg0.substr(0, arg0.length - 32);
         var v4 = this.*.;LI(arg0);
-        var v5 = haxe.5QGZh.;LI(v4);
+        var v5 = haxe.Unserializer.;LI(v4);
         if (haxe.=6k.=Z(MN(v4 + [wBA,.{_nEU.))) != v3) {
           [wBA,.Loader.*KB2.0QyZ*([wBA,.Loader.6NX].2[s);
           return null;
@@ -2889,32 +2889,32 @@ for ($somevar in v2) {
       return arg0[1];
     };
 
-    haxe.5QGZh = function (arg0) {
+    haxe.Unserializer = function (arg0) {
       this. [* = arg0;
       this.length = arg0.length;
       this.4AF = 0;
       this.{3b96 = new Array();
       this.+Hp() = new Array();
-      this.,x*(}(haxe.5QGZh.9LccS);
+      this.,x*(}(haxe.Unserializer.9LccS);
     };
 
-    haxe.5QGZh.__name__ = ['haxe', '5QGZh'];
-    v1 = haxe.5QGZh.prototype;
-    v1.__class__ = haxe.5QGZh;
-    haxe.5QGZh.*4slg = function () {
+    haxe.Unserializer.__name__ = ['haxe', 'Unserializer'];
+    v1 = haxe.Unserializer.prototype;
+    v1.__class__ = haxe.Unserializer;
+    haxe.Unserializer.*4slg = function () {
       var v2 = new Array();
       var v3 = 0;
-      var v4 = haxe.5QGZh.9tEy4(.length;
+      var v4 = haxe.Unserializer.9tEy4(.length;
       while (v3 < v4) {
         ++v3;
         var v5 = v3;
-        v2[haxe.5QGZh.9tEy4(.cca(v5)] = v5;
+        v2[haxe.Unserializer.9tEy4(.cca(v5)] = v5;
       }
       return v2;
     };
 
-    haxe.5QGZh.;LI = function (arg0) {
-      return (new haxe.5QGZh(arg0)).1O-15();
+    haxe.Unserializer.;LI = function (arg0) {
+      return (new haxe.Unserializer(arg0)).1O-15();
     };
 
     v1. [* = null;
@@ -3147,10 +3147,10 @@ for ($somevar in v2) {
                                                     if (this. [*.cca(this.4AF) != 58 || this.length - this.4AF < v3) {
                                                       throw 'Invalid bytes length';
                                                     }
-                                                    v5 = haxe.5QGZh.+BH{A;
+                                                    v5 = haxe.Unserializer.+BH{A;
                                                     if (v5 == null) {
-                                                      v5 = haxe.5QGZh.*4slg();
-                                                      haxe.5QGZh.+BH{A = v5;
+                                                      v5 = haxe.Unserializer.*4slg();
+                                                      haxe.Unserializer.+BH{A = v5;
                                                     }
                                                     v6 = this.4AF;
                                                     var v7 = v3 & 3;
@@ -4843,9 +4843,9 @@ for ($somevar in this.1) {
       [wBA,.Loader.)vX(9 = ['score', 'slow', 'size', 'mark', 'delta', 'tmod', 'rightClick'];
       [wBA,.Loader.,qmCL = '8tleTrleno0diu7Ou1i96Riu7riEQLad';
       [wBA,.Loader.9(V4F( = ['S%5FVt%2A%245y%5DY%0BurOJuFL%5B3AAV%21', 'CVp%60152XLQ%7F%3D%40DzHCUyM%2EXaC%1A', 'fZAR%07%15%3EIELDPht%24', 'S_Vt%2A%245yY%5B%0BurOJuFL%5B3AAV%21'];
-      haxe.5QGZh.9LccS = ]RN];
-      haxe.5QGZh.9tEy4( = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789%:';
-      haxe.5QGZh.+BH{A = null;
+      haxe.Unserializer.9LccS = ]RN];
+      haxe.Unserializer.9tEy4( = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789%:';
+      haxe.Unserializer.+BH{A = null;
       haxe.Serializer.}VCyQ = false;
       haxe.Serializer.(SkV ( = false;
       haxe.Serializer.9tEy4( = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789%:';

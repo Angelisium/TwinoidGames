@@ -449,7 +449,7 @@ for ($somevar in this.1) {
     v1.,Cq_i = null;
     v1.2B+H*( = function (arg0) {
       try {
-        this.,Cq_i = haxe.5QGZh.;LI(arg0);
+        this.,Cq_i = haxe.Unserializer.;LI(arg0);
       }
       catch (v0) {
         var v3 = v0;
@@ -2031,37 +2031,37 @@ for ($somevar in v2) {
       [8X6+.7]AJ.__set_trace_color(arg0);
     };
 
-    haxe.5QGZh = function (arg0) {
+    haxe.Unserializer = function (arg0) {
       this. [* = arg0;
       this.length = arg0.length;
       this.4AF = 0;
       this.{3b96 = new Array();
       this.+Hp() = new Array();
-      var v3 = haxe.5QGZh.9LccS;
+      var v3 = haxe.Unserializer.9LccS;
       if (v3 == null) {
         v3 = ]RN];
-        haxe.5QGZh.9LccS = v3;
+        haxe.Unserializer.9LccS = v3;
       }
       this.,x*(}(v3);
     };
 
-    haxe.5QGZh.__name__ = ['haxe', '5QGZh'];
-    v1 = haxe.5QGZh.prototype;
-    v1.__class__ = haxe.5QGZh;
-    haxe.5QGZh.*4slg = function () {
+    haxe.Unserializer.__name__ = ['haxe', 'Unserializer'];
+    v1 = haxe.Unserializer.prototype;
+    v1.__class__ = haxe.Unserializer;
+    haxe.Unserializer.*4slg = function () {
       var v2 = new Array();
       var v3 = 0;
-      var v4 = haxe.5QGZh.9tEy4(.length;
+      var v4 = haxe.Unserializer.9tEy4(.length;
       while (v3 < v4) {
         ++v3;
         var v5 = v3;
-        v2[haxe.5QGZh.9tEy4(.cca(v5)] = v5;
+        v2[haxe.Unserializer.9tEy4(.cca(v5)] = v5;
       }
       return v2;
     };
 
-    haxe.5QGZh.;LI = function (arg0) {
-      return (new haxe.5QGZh(arg0)).1O-15();
+    haxe.Unserializer.;LI = function (arg0) {
+      return (new haxe.Unserializer(arg0)).1O-15();
     };
 
     v1. [* = null;
@@ -2303,10 +2303,10 @@ for ($somevar in v2) {
                                                       if (this. [*.cca(this.4AF) != 58 || this.length - this.4AF < v3) {
                                                         throw 'Invalid bytes length';
                                                       }
-                                                      v5 = haxe.5QGZh.+BH{A;
+                                                      v5 = haxe.Unserializer.+BH{A;
                                                       if (v5 == null) {
-                                                        v5 = haxe.5QGZh.*4slg();
-                                                        haxe.5QGZh.+BH{A = v5;
+                                                        v5 = haxe.Unserializer.*4slg();
+                                                        haxe.Unserializer.+BH{A = v5;
                                                       }
                                                       v6 = this.4AF;
                                                       var v7 = v3 & 3;
@@ -4139,9 +4139,9 @@ for ($somevar in v2) {
       0,k.5R0u1 = 5710867;
       [8X6+.7]AJ. p)sT = 0;
       [8X6+.7]AJ.)Sdm5( = null;
-      haxe.5QGZh.9LccS = ]RN];
-      haxe.5QGZh.9tEy4( = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789%:';
-      haxe.5QGZh.+BH{A = null;
+      haxe.Unserializer.9LccS = ]RN];
+      haxe.Unserializer.9tEy4( = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789%:';
+      haxe.Unserializer.+BH{A = null;
       9K.+7U K.}Sgx4 = 0;
       9K.[8X6+.29h.8LVC_ = new Array();
       9K.;PMnE(.3] 6.0MeU.3Yl = 0 / 0;

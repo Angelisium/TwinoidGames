@@ -1490,7 +1490,7 @@ for ($somevar in this.1) {
         if (v5.__data.8+, == null) {
           throw 'No context shared for the connection ' + arg0;
         }
-        var v6 = (new haxe.5QGZh(arg2)).1O-15();
+        var v6 = (new haxe.Unserializer(arg2)).1O-15();
         var v7 = v5.__data.8+,.5T(*(arg1.split('.'), v6);
         var v8 = new haxe.Serializer();
         v8. aNDa(v7);
@@ -1525,7 +1525,7 @@ for ($somevar in this.1) {
       if (v5 == null) {
         throw 'Call failure : ExternalConnection is not ' + 'compiled in JS';
       }
-      return (new haxe.5QGZh(v5)).1O-15();
+      return (new haxe.Unserializer(v5)).1O-15();
     };
 
     v1.2C+6) = function () {
@@ -2499,7 +2499,7 @@ for ($somevar in v2) {
     v1.+Iji) = null;
     v1.}-B2 = function () {
       try {
-        this.,_(+ = haxe.5QGZh.;LI(this.[RW26);
+        this.,_(+ = haxe.Unserializer.;LI(this.[RW26);
       }
       catch (v0) {
         var v2 = v0;
@@ -2596,7 +2596,7 @@ for ($somevar in v2) {
     };
 
     v1.{=Q L( = function (arg0) {
-      var v3 = haxe.5QGZh.;LI(arg0);
+      var v3 = haxe.Unserializer.;LI(arg0);
       if (]RN].;m,6N(v3, this.278Cj)) {
         return undefined;
       }
@@ -3310,32 +3310,32 @@ for ($somevar in v2) {
       }
     };
 
-    haxe.5QGZh = function (arg0) {
+    haxe.Unserializer = function (arg0) {
       this. [* = arg0;
       this.length = arg0.length;
       this.4AF = 0;
       this.{3b96 = new Array();
       this.+Hp() = new Array();
-      this.,x*(}(haxe.5QGZh.9LccS);
+      this.,x*(}(haxe.Unserializer.9LccS);
     };
 
-    haxe.5QGZh.__name__ = ['haxe', '5QGZh'];
-    v1 = haxe.5QGZh.prototype;
-    v1.__class__ = haxe.5QGZh;
-    haxe.5QGZh.*4slg = function () {
+    haxe.Unserializer.__name__ = ['haxe', 'Unserializer'];
+    v1 = haxe.Unserializer.prototype;
+    v1.__class__ = haxe.Unserializer;
+    haxe.Unserializer.*4slg = function () {
       var v2 = new Array();
       var v3 = 0;
-      var v4 = haxe.5QGZh.9tEy4(.length;
+      var v4 = haxe.Unserializer.9tEy4(.length;
       while (v3 < v4) {
         ++v3;
         var v5 = v3;
-        v2[haxe.5QGZh.9tEy4(.cca(v5)] = v5;
+        v2[haxe.Unserializer.9tEy4(.cca(v5)] = v5;
       }
       return v2;
     };
 
-    haxe.5QGZh.;LI = function (arg0) {
-      return (new haxe.5QGZh(arg0)).1O-15();
+    haxe.Unserializer.;LI = function (arg0) {
+      return (new haxe.Unserializer(arg0)).1O-15();
     };
 
     v1. [* = null;
@@ -3573,10 +3573,10 @@ for ($somevar in v2) {
                                                       if (this. [*.cca(this.4AF) != 58 || this.length - this.4AF < v3) {
                                                         throw 'Invalid bytes length';
                                                       }
-                                                      v5 = haxe.5QGZh.+BH{A;
+                                                      v5 = haxe.Unserializer.+BH{A;
                                                       if (v5 == null) {
-                                                        v5 = haxe.5QGZh.*4slg();
-                                                        haxe.5QGZh.+BH{A = v5;
+                                                        v5 = haxe.Unserializer.*4slg();
+                                                        haxe.Unserializer.+BH{A = v5;
                                                       }
                                                       v6 = this.4AF;
                                                       var v7 = v3 & 3;
@@ -4699,9 +4699,9 @@ for ($somevar in arg0) {
       5=SIf.7+wL3 = 3;
       9K.+7U K.}Sgx4 = 0;
       +}B(.4+=I.*P} q = new Array();
-      haxe.5QGZh.9LccS = ]RN];
-      haxe.5QGZh.9tEy4( = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789%:';
-      haxe.5QGZh.+BH{A = null;
+      haxe.Unserializer.9LccS = ]RN];
+      haxe.Unserializer.9tEy4( = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789%:';
+      haxe.Unserializer.+BH{A = null;
       (1MEG(.}-gW1( = null;
       (1MEG(.+Cs;B = null;
       (1MEG(.0d;nd = null;

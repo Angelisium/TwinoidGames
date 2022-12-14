@@ -2021,32 +2021,32 @@ for ($somevar in v2) {
       return arg0[1];
     };
 
-    haxe.5QGZh = function (arg0) {
+    haxe.Unserializer = function (arg0) {
       this. [* = arg0;
       this.length = arg0.length;
       this.4AF = 0;
       this.{3b96 = new Array();
       this.+Hp() = new Array();
-      this.,x*(}(haxe.5QGZh.9LccS);
+      this.,x*(}(haxe.Unserializer.9LccS);
     };
 
-    haxe.5QGZh.__name__ = ['haxe', '5QGZh'];
-    v1 = haxe.5QGZh.prototype;
-    v1.__class__ = haxe.5QGZh;
-    haxe.5QGZh.*4slg = function () {
+    haxe.Unserializer.__name__ = ['haxe', 'Unserializer'];
+    v1 = haxe.Unserializer.prototype;
+    v1.__class__ = haxe.Unserializer;
+    haxe.Unserializer.*4slg = function () {
       var v2 = new Array();
       var v3 = 0;
-      var v4 = haxe.5QGZh.9tEy4(.length;
+      var v4 = haxe.Unserializer.9tEy4(.length;
       while (v3 < v4) {
         ++v3;
         var v5 = v3;
-        v2[haxe.5QGZh.9tEy4(.cca(v5)] = v5;
+        v2[haxe.Unserializer.9tEy4(.cca(v5)] = v5;
       }
       return v2;
     };
 
-    haxe.5QGZh.;LI = function (arg0) {
-      return (new haxe.5QGZh(arg0)).1O-15();
+    haxe.Unserializer.;LI = function (arg0) {
+      return (new haxe.Unserializer(arg0)).1O-15();
     };
 
     v1. [* = null;
@@ -2280,10 +2280,10 @@ for ($somevar in v2) {
                                                     if (v4.charAt(this.4AF) != ':' || this.length - this.4AF < v3) {
                                                       throw 'Invalid bytes length';
                                                     }
-                                                    v5 = haxe.5QGZh.+BH{A;
+                                                    v5 = haxe.Unserializer.+BH{A;
                                                     if (v5 == null) {
-                                                      v5 = haxe.5QGZh.*4slg();
-                                                      haxe.5QGZh.+BH{A = v5;
+                                                      v5 = haxe.Unserializer.*4slg();
+                                                      haxe.Unserializer.+BH{A = v5;
                                                     }
                                                     v6 = this.4AF;
                                                     var v7 = v3 & 3;
@@ -3861,7 +3861,7 @@ for ($somevar in v2) {
         haxe.]{i.-[Ra6(v4, {'fileName': 'Game.hx', 'lineNumber': 127, 'className': 'Game', 'methodName': 'decode'});
         throw v4;
       }
-      return haxe.5QGZh.;LI(v3.;LI(arg0));
+      return haxe.Unserializer.;LI(v3.;LI(arg0));
     };
 
     v1.6*(7n = function () {
@@ -4996,9 +4996,9 @@ for ($somevar in this.1) {
       -[m(M.2goax = 12;
       -[m(M.]YQkb = 200;
       -[m(M.06Gll = [1, 5, 20];
-      haxe.5QGZh.9LccS = ]RN];
-      haxe.5QGZh.9tEy4( = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789%:';
-      haxe.5QGZh.+BH{A = null;
+      haxe.Unserializer.9LccS = ]RN];
+      haxe.Unserializer.9tEy4( = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789%:';
+      haxe.Unserializer.+BH{A = null;
       haxe.Serializer.}VCyQ = false;
       haxe.Serializer.(SkV ( = false;
       haxe.Serializer.9tEy4( = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789%:';

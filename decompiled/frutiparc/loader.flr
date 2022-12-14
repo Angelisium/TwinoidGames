@@ -1330,7 +1330,7 @@ for ($somevar in this.1) {
         if (v5.__data.8+, == null) {
           throw 'No context shared for the connection ' + arg0;
         }
-        var v6 = (new haxe.5QGZh(arg2)).1O-15();
+        var v6 = (new haxe.Unserializer(arg2)).1O-15();
         var v7 = v5.__data.8+,.5T(*(arg1.split('.'), v6);
         var v8 = new haxe.Serializer();
         v8. aNDa(v7);
@@ -1365,7 +1365,7 @@ for ($somevar in this.1) {
       if (v5 == null) {
         throw 'Call failure : ExternalConnection is not ' + 'compiled in JS';
       }
-      return (new haxe.5QGZh(v5)).1O-15();
+      return (new haxe.Unserializer(v5)).1O-15();
     };
 
     v1.2C+6) = function () {
@@ -1787,7 +1787,7 @@ for ($somevar in v2) {
         }
         arg0 = arg0.substr(this.*V9.length);
       }
-      var v4 = new haxe.5QGZh(arg0);
+      var v4 = new haxe.Unserializer(arg0);
       v4.,x*(}({'9h6 t': function (arg0) {
         var v3 = *hr_A.87kh6.6Y3(arg0);
         if (v3 != null) {
@@ -2009,32 +2009,32 @@ for ($somevar in v2) {
       return arg0[1];
     };
 
-    haxe.5QGZh = function (arg0) {
+    haxe.Unserializer = function (arg0) {
       this. [* = arg0;
       this.length = arg0.length;
       this.4AF = 0;
       this.{3b96 = new Array();
       this.+Hp() = new Array();
-      this.,x*(}(haxe.5QGZh.9LccS);
+      this.,x*(}(haxe.Unserializer.9LccS);
     };
 
-    haxe.5QGZh.__name__ = ['haxe', '5QGZh'];
-    v1 = haxe.5QGZh.prototype;
-    v1.__class__ = haxe.5QGZh;
-    haxe.5QGZh.*4slg = function () {
+    haxe.Unserializer.__name__ = ['haxe', 'Unserializer'];
+    v1 = haxe.Unserializer.prototype;
+    v1.__class__ = haxe.Unserializer;
+    haxe.Unserializer.*4slg = function () {
       var v2 = new Array();
       var v3 = 0;
-      var v4 = haxe.5QGZh.9tEy4(.length;
+      var v4 = haxe.Unserializer.9tEy4(.length;
       while (v3 < v4) {
         ++v3;
         var v5 = v3;
-        v2[haxe.5QGZh.9tEy4(.cca(v5)] = v5;
+        v2[haxe.Unserializer.9tEy4(.cca(v5)] = v5;
       }
       return v2;
     };
 
-    haxe.5QGZh.;LI = function (arg0) {
-      return (new haxe.5QGZh(arg0)).1O-15();
+    haxe.Unserializer.;LI = function (arg0) {
+      return (new haxe.Unserializer(arg0)).1O-15();
     };
 
     v1. [* = null;
@@ -2272,10 +2272,10 @@ for ($somevar in v2) {
                                                       if (this. [*.cca(this.4AF) != 58 || this.length - this.4AF < v3) {
                                                         throw 'Invalid bytes length';
                                                       }
-                                                      v5 = haxe.5QGZh.+BH{A;
+                                                      v5 = haxe.Unserializer.+BH{A;
                                                       if (v5 == null) {
-                                                        v5 = haxe.5QGZh.*4slg();
-                                                        haxe.5QGZh.+BH{A = v5;
+                                                        v5 = haxe.Unserializer.*4slg();
+                                                        haxe.Unserializer.+BH{A = v5;
                                                       }
                                                       v6 = this.4AF;
                                                       var v7 = v3 & 3;
@@ -2495,7 +2495,7 @@ for ($somevar in v2) {
       this.[wBA,.frusion = this;
       this._d = Loader.64TL;
       this.dailyData = this._d._today;
-      this.slots = (this._d._slots == null) ? [] : haxe.5QGZh.;LI(this._d._slots);
+      this.slots = (this._d._slots == null) ? [] : haxe.Unserializer.;LI(this._d._slots);
     };
 
     ,f {P.__name__ = [',f {P'];
@@ -3422,9 +3422,9 @@ for ($somevar in v2) {
       *hr_A.;YXL8( = null;
       *hr_A.87kh6 = new 19{O();
       *hr_A.0f 5 = null;
-      haxe.5QGZh.9LccS = ]RN];
-      haxe.5QGZh.9tEy4( = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789%:';
-      haxe.5QGZh.+BH{A = null;
+      haxe.Unserializer.9LccS = ]RN];
+      haxe.Unserializer.9tEy4( = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789%:';
+      haxe.Unserializer.+BH{A = null;
       haxe.Serializer.}VCyQ = false;
       haxe.Serializer.(SkV ( = false;
       haxe.Serializer.9tEy4( = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789%:';
