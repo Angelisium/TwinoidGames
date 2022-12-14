@@ -1,0 +1,566 @@
+movie 'carte.swf' compressed // flash 8, total frames: 3, frame rate: 40 fps, 242x284 px
+
+
+  defineMovieClip 3 // total frames: 1
+  end // of defineMovieClip 3
+  
+  exportAssets
+    3 as 'mcFieldName'
+  end // of exportAssets
+
+  defineMovieClip 5 // total frames: 1
+  end // of defineMovieClip 5
+  
+  exportAssets
+    5 as 'rhones-alpes'
+  end // of exportAssets
+
+  defineMovieClip 7 // total frames: 1
+  end // of defineMovieClip 7
+  
+  exportAssets
+    7 as 'limousin'
+  end // of exportAssets
+
+  frame 0
+    constants 'flInit', 'select', 'defaultSelection', 'rList', 'carte', 'r', 'push', 'id', 'name', 'REGION_NAMES', 'onPress', 'selectRegion', 'onRollOver', 'rOverRegion', 'onRollOut', 'rOutRegion', 'onDragOut', 'mcNames', 'createEmptyMovieClip', '_x', '_y', 'depth', 'nList', 'updateNames', 'setPercentColor', 'old', 'lastName', 'vs', 'url', 'javascript:js.App.setField(\'idRegion\',', ')', '', 'setName', 'flGo', 'field', 'mcFieldName', 'attachMovie', '_alpha', 'fieldName', 'text', 'length', 'removeMovieClip', 'splice', 'Math', 'min', '_xscale', '_yscale', 'g', 'b', 'Color', 'ra', 'ga', 'ba', 'aa', 'rb', 'gb', 'bb', 'ab', 'setTransform', 'Corse', 'Provence Côte d\'Azur', 'Languedoc Rousillon', 'Midi-Pyrenées', 'Aquitaine', 'Rhones-Alpes', 'Auvergne', 'Limousin', 'Poitou-Charente', 'Franche-Comte', 'Bourgogne', 'Centre', 'Pays de la Loire', 'Bretagne', 'Ile-de-France', 'Basse-Normandie', 'Alsace', 'Lorraine', 'Champagne-Ardenne', 'Picardie', 'Haute-Normandie', 'Nord Pas-de-Calais', 'init'  
+    function2 init () ()
+      push 'flInit', TRUE
+      setVariable
+      push 'select', 'defaultSelection'
+      getVariable
+      setVariable
+      push 'rList', 0.0
+      initArray
+      setVariable
+      push 0.0
+      setRegister r:2
+      pop
+     label1:
+      push r:2, 22
+      lessThan
+      not
+      branchIfTrue label3
+      push 'carte'
+      getVariable
+      push 'r', r:2
+      add
+      getMember
+      setRegister r:1
+      pop
+      push r:1, 1, 'rList'
+      getVariable
+      push 'push'
+      callMethod
+      pop
+      push r:1, 'id', r:2
+      setMember
+      push r:1, 'name', 'REGION_NAMES'
+      getVariable
+      push r:2
+      getMember
+      setMember
+      push r:1, 'onPress', 'selectRegion'
+      getVariable
+      setMember
+      push r:1, 'onRollOver', 'rOverRegion'
+      getVariable
+      setMember
+      push r:1, 'onRollOut', 'rOutRegion'
+      getVariable
+      setMember
+      push r:1, 'onDragOut', 'rOutRegion'
+      getVariable
+      setMember
+      push 'select'
+      getVariable
+      push r:2
+      equals
+      not
+      branchIfTrue label2
+      push 0.0, r:1, 'onPress'
+      callMethod
+      pop
+     label2:
+      push r:2
+      increment
+      setRegister r:2
+      pop
+      branch label1
+     label3:
+      push 'mcNames', 0.0, 'mcNames', 2, 'createEmptyMovieClip'
+      callFunction
+      setVariable
+      push 'mcNames'
+      getVariable
+      push '_x', 120
+      setMember
+      push 'mcNames'
+      getVariable
+      push '_y', 268
+      setMember
+      push 'mcNames'
+      getVariable
+      push 'depth', 0.0
+      setMember
+      push 'nList', 0.0
+      initArray
+      setVariable
+      push 'flInit', FALSE
+      setVariable
+    end // of function init
+
+    function main ()
+      push 0.0, 'updateNames'
+      callFunction
+      pop
+    end // of function main
+
+    function2 selectRegion () (r:1='this')
+      push 16711680, 100, r:this, 3, 'setPercentColor'
+      callFunction
+      pop
+      push 'old', 'select'
+      getVariable
+      setVariable
+      push 'select', r:this, 'id'
+      getMember
+      setVariable
+      push 'old'
+      getVariable
+      push NULL
+      equals
+      not
+      not
+      branchIfTrue label4
+      push 'rList'
+      getVariable
+      push 'old'
+      getVariable
+      getMember
+      setRegister r:2
+      pop
+      push TRUE, 1, r:2, 'onRollOut'
+      callMethod
+      pop
+     label4:
+      push 'lastName'
+      getVariable
+      push 'vs', -50
+      setMember
+      push 'flInit'
+      getVariable
+      not
+      not
+      branchIfTrue label6
+      push 'url'
+      getVariable
+      push NULL
+      equals
+      not
+      branchIfTrue label5
+      push 'javascript:js.App.setField(\'idRegion\',', r:this, 'id'
+      getMember
+      add
+      push ')'
+      add
+      push ''
+      getURL2
+      branch label6
+     label5:
+      push 'url'
+      getVariable
+      push r:this, 'id'
+      getMember
+      add
+      push ''
+      getURL2
+     label6:
+    end // of function selectRegion
+
+    function2 rOverRegion () (r:1='this')
+      push r:this, 'id'
+      getMember
+      push 'select'
+      getVariable
+      equals
+      not
+      not
+      branchIfTrue label7
+      push 10733822, 100, r:this, 3, 'setPercentColor'
+      callFunction
+      pop
+      push r:this, 'name'
+      getMember
+      push 1, 'setName'
+      callFunction
+      pop
+     label7:
+    end // of function rOverRegion
+
+    function2 rOutRegion (r:3='flSelect') (r:1='this')
+      push r:this, 'id'
+      getMember
+      push 'select'
+      getVariable
+      equals
+      not
+      not
+      branchIfTrue label9
+      push 0.0, 0.0, r:this, 3, 'setPercentColor'
+      callFunction
+      pop
+      push r:flSelect, TRUE
+      equals
+      not
+      not
+      branchIfTrue label9
+      push ''
+      setRegister r:2
+      pop
+      push 'select'
+      getVariable
+      push NULL
+      equals
+      not
+      not
+      branchIfTrue label8
+      push 'rList'
+      getVariable
+      push 'select'
+      getVariable
+      getMember
+      push 'name'
+      getMember
+      setRegister r:2
+      pop
+     label8:
+      push r:2, 1, 'setName'
+      callFunction
+      pop
+     label9:
+    end // of function rOutRegion
+
+    function2 setName (r:3='name') ()
+      push 'lastName'
+      getVariable
+      push NULL
+      equals
+      not
+      not
+      branchIfTrue label10
+      push 'lastName'
+      getVariable
+      push 'flGo', TRUE
+      setMember
+     label10:
+      push 'mcNames'
+      getVariable
+      push 'depth'
+      getMember
+      push 'mcNames'
+      getVariable
+      push 'depth', 'mcNames'
+      getVariable
+      push 'depth'
+      getMember
+      increment
+      setMember
+      setRegister r:2
+      pop
+      push r:2, 'field', r:2
+      add
+      push 'mcFieldName', 3, 'mcNames'
+      getVariable
+      push 'attachMovie'
+      callMethod
+      setRegister r:1
+      pop
+      push r:1, '_x', -100
+      setMember
+      push r:1, '_alpha', 0.0
+      setMember
+      push r:1, 'fieldName'
+      getMember
+      push 'text', r:name
+      setMember
+      push r:1, 1, 'nList'
+      getVariable
+      push 'push'
+      callMethod
+      pop
+      push 'lastName', r:1
+      setVariable
+    end // of function setName
+
+    function2 updateNames () ()
+      push 0.0
+      setRegister r:2
+      pop
+     label11:
+      push r:2, 'nList'
+      getVariable
+      push 'length'
+      getMember
+      lessThan
+      not
+      branchIfTrue label16
+      push 'nList'
+      getVariable
+      push r:2
+      getMember
+      setRegister r:1
+      pop
+      push r:1, 'flGo'
+      getMember
+      not
+      branchIfTrue label13
+      push r:1, '_x', r:1, '_x'
+      getMember
+      push 20
+      add
+      setMember
+      push r:1, '_alpha', r:1, '_alpha'
+      getMember
+      push 20
+      subtract
+      setMember
+      push r:1, '_alpha'
+      getMember
+      push 0.0
+      greaterThan
+      not
+      not
+      branchIfTrue label12
+      push 0.0, r:1, 'removeMovieClip'
+      callMethod
+      pop
+      push 1, r:2, r:2
+      decrement
+      setRegister r:2
+      pop
+      push 2, 'nList'
+      getVariable
+      push 'splice'
+      callMethod
+      pop
+     label12:
+      branch label14
+     label13:
+      push r:1, '_x', r:1, '_x'
+      getMember
+      push 0.5
+      multiply
+      setMember
+      push r:1, '_alpha', 100, r:1, '_alpha'
+      getMember
+      push 20
+      add
+      push 2, 'Math'
+      getVariable
+      push 'min'
+      callMethod
+      setMember
+     label14:
+      push 'lastName'
+      getVariable
+      push 'vs'
+      getMember
+      push NULL
+      equals
+      not
+      not
+      branchIfTrue label15
+      push 100, 'lastName'
+      getVariable
+      push '_xscale'
+      getMember
+      subtract
+      setRegister r:3
+      pop
+      push 'lastName'
+      getVariable
+      push 'vs', 'lastName'
+      getVariable
+      push 'vs'
+      getMember
+      push r:3, 0.5
+      multiply
+      add
+      setMember
+      push 'lastName'
+      getVariable
+      push 'vs', 'lastName'
+      getVariable
+      push 'vs'
+      getMember
+      push 0.5
+      multiply
+      setMember
+      push 'lastName'
+      getVariable
+      push '_xscale', 'lastName'
+      getVariable
+      push '_xscale'
+      getMember
+      push 'lastName'
+      getVariable
+      push 'vs'
+      getMember
+      add
+      setMember
+      push 'lastName'
+      getVariable
+      push '_yscale', 'lastName'
+      getVariable
+      push '_xscale'
+      getMember
+      setMember
+     label15:
+      push r:2
+      increment
+      setRegister r:2
+      pop
+      branch label11
+     label16:
+    end // of function updateNames
+
+    function2 setPercentColor (r:18='mc', r:3='prc', r:6='col') ()
+      push 'r', r:col, 16
+      shiftRight
+      push 'g', r:col, 8
+      shiftRight
+      push 255
+      bitwiseAnd
+      push 'b', r:col, 255
+      bitwiseAnd
+      push 3
+      initObject
+      setRegister r:2
+      pop
+      push r:mc, 1, 'Color'
+      new
+      setRegister r:4
+      pop
+      push r:prc, 100
+      divide
+      setRegister r:1
+      pop
+      push 'ra', 100, r:prc
+      subtract
+      int
+      push 'ga', 100, r:prc
+      subtract
+      int
+      push 'ba', 100, r:prc
+      subtract
+      int
+      push 'aa', 100, 'rb', r:1, r:2, 'r'
+      getMember
+      multiply
+      int
+      push 'gb', r:1, r:2, 'g'
+      getMember
+      multiply
+      int
+      push 'bb', r:1, r:2, 'b'
+      getMember
+      multiply
+      int
+      push 'ab', 0.0, 8
+      initObject
+      setRegister r:5
+      pop
+      push r:5, 1, r:4, 'setTransform'
+      callMethod
+      pop
+    end // of function setPercentColor
+
+    push 'REGION_NAMES', 'Corse', 'Provence Côte d\'Azur', 'Languedoc Rousillon', 'Midi-Pyrenées', 'Aquitaine', 'Rhones-Alpes', 'Auvergne', 'Limousin', 'Poitou-Charente', 'Franche-Comte', 'Bourgogne', 'Centre', 'Pays de la Loire', 'Bretagne', 'Ile-de-France', 'Basse-Normandie', 'Alsace', 'Lorraine', 'Champagne-Ardenne', 'Picardie', 'Haute-Normandie', 'Nord Pas-de-Calais', 22
+    initArray
+    setVariable
+    push 0.0, 'init'
+    callFunction
+    pop
+  end // of frame 0
+
+  defineMovieClip 9 // total frames: 1
+  end // of defineMovieClip 9
+
+  defineMovieClip 11 // total frames: 1
+  end // of defineMovieClip 11
+
+  defineMovieClip 13 // total frames: 1
+  end // of defineMovieClip 13
+
+  defineMovieClip 15 // total frames: 1
+  end // of defineMovieClip 15
+
+  defineMovieClip 17 // total frames: 1
+  end // of defineMovieClip 17
+
+  defineMovieClip 19 // total frames: 1
+  end // of defineMovieClip 19
+
+  defineMovieClip 21 // total frames: 1
+  end // of defineMovieClip 21
+
+  defineMovieClip 23 // total frames: 1
+  end // of defineMovieClip 23
+
+  defineMovieClip 25 // total frames: 1
+  end // of defineMovieClip 25
+
+  defineMovieClip 27 // total frames: 1
+  end // of defineMovieClip 27
+
+  defineMovieClip 29 // total frames: 1
+  end // of defineMovieClip 29
+
+  defineMovieClip 31 // total frames: 1
+  end // of defineMovieClip 31
+
+  defineMovieClip 33 // total frames: 1
+  end // of defineMovieClip 33
+
+  defineMovieClip 35 // total frames: 1
+  end // of defineMovieClip 35
+
+  defineMovieClip 37 // total frames: 1
+  end // of defineMovieClip 37
+
+  defineMovieClip 39 // total frames: 1
+  end // of defineMovieClip 39
+
+  defineMovieClip 41 // total frames: 1
+  end // of defineMovieClip 41
+
+  defineMovieClip 43 // total frames: 1
+  end // of defineMovieClip 43
+
+  defineMovieClip 45 // total frames: 1
+  end // of defineMovieClip 45
+
+  defineMovieClip 47 // total frames: 1
+  end // of defineMovieClip 47
+
+  defineMovieClip 49 // total frames: 1
+  end // of defineMovieClip 49
+
+  defineMovieClip 51 // total frames: 1
+  end // of defineMovieClip 51
+
+  defineMovieClip 52 // total frames: 1
+  end // of defineMovieClip 52
+
+  frame 1
+    push 0.0, 'main'
+    callFunction
+    pop
+  end // of frame 1
+
+  frame 2
+    gotoFrame 1
+    play
+  end // of frame 2
+end

@@ -1,0 +1,242 @@
+movie 'name.swf' compressed // flash 8, total frames: 5, frame rate: 12 fps, 210x120 px
+
+
+  frame 0
+    constants 'mc', 'onRelease', 'tot', 'env', 'pol', 'pop', 'crim', 'field', 'text', 'toUpperCase'  
+    push 'mc'
+    getVariable
+    push 'onRelease'
+    function ()
+    end // of function 
+
+    setMember
+    push 'tot', 'env'
+    getVariable
+    push 1, 'pol'
+    getVariable
+    push 100
+    divide
+    subtract
+    multiply
+    setVariable
+    push 'pop'
+    getVariable
+    push 200
+    lessThan
+    not
+    not
+    branchIfTrue label1
+    gotoFrame 1
+   label1:
+    push 'pop'
+    getVariable
+    push 200
+    lessThan
+    not
+    dup
+    not
+    branchIfTrue label2
+    pop
+    push 'tot'
+    getVariable
+    push 100
+    lessThan
+    not
+   label2:
+    not
+    branchIfTrue label3
+    gotoFrame 2
+   label3:
+    push 'crim'
+    getVariable
+    push 40
+    lessThan
+    not
+    dup
+    not
+    branchIfTrue label4
+    pop
+    push 'tot'
+    getVariable
+    push 100
+    lessThan
+   label4:
+    not
+    branchIfTrue label5
+    gotoFrame 3
+   label5:
+    push 'crim'
+    getVariable
+    push 40
+    lessThan
+    not
+    dup
+    not
+    branchIfTrue label6
+    pop
+    push 'tot'
+    getVariable
+    push 100
+    lessThan
+    not
+   label6:
+    not
+    branchIfTrue label7
+    gotoFrame 4
+    push 'pop'
+    getVariable
+    push 200
+    lessThan
+    not
+    branchIfTrue label7
+    gotoFrame 3
+   label7:
+    push 'field'
+    getVariable
+    push 'text', 0.0, 'text'
+    getVariable
+    push 'toUpperCase'
+    callMethod
+    setMember
+    stop
+  end // of frame 0
+
+  defineMovieClip 6 // total frames: 1
+  end // of defineMovieClip 6
+
+  defineMovieClip 12 // total frames: 1
+  end // of defineMovieClip 12
+
+  defineMovieClip 13 // total frames: 1
+  end // of defineMovieClip 13
+
+  defineMovieClip 14 // total frames: 4
+
+    frame 0
+      constants '_root', 'tot'  
+      push '_root'
+      getVariable
+      push 'tot'
+      getMember
+      push 100
+      lessThan
+      not
+      dup
+      not
+      branchIfTrue label1
+      pop
+      push '_root'
+      getVariable
+      push 'tot'
+      getMember
+      push 1000
+      lessThan
+     label1:
+      not
+      branchIfTrue label2
+      gotoFrame 0
+      branch label7
+     label2:
+      push '_root'
+      getVariable
+      push 'tot'
+      getMember
+      push 1000
+      lessThan
+      not
+      dup
+      not
+      branchIfTrue label3
+      pop
+      push '_root'
+      getVariable
+      push 'tot'
+      getMember
+      push 5000
+      lessThan
+     label3:
+      not
+      branchIfTrue label4
+      gotoFrame 1
+      branch label7
+     label4:
+      push '_root'
+      getVariable
+      push 'tot'
+      getMember
+      push 5000
+      lessThan
+      not
+      dup
+      not
+      branchIfTrue label5
+      pop
+      push '_root'
+      getVariable
+      push 'tot'
+      getMember
+      push 10000
+      lessThan
+     label5:
+      not
+      branchIfTrue label6
+      gotoFrame 2
+      branch label7
+     label6:
+      push '_root'
+      getVariable
+      push 'tot'
+      getMember
+      push 10000
+      lessThan
+      not
+      not
+      branchIfTrue label7
+      gotoFrame 3
+     label7:
+    end // of frame 0
+  end // of defineMovieClip 14
+
+  defineMovieClip 21 // total frames: 1
+  end // of defineMovieClip 21
+
+  defineMovieClip 24 // total frames: 2
+
+    frame 0
+      constants '_root', 'crim'  
+      push '_root'
+      getVariable
+      push 'crim'
+      getMember
+      push 34
+      lessThan
+      not
+      dup
+      not
+      branchIfTrue label1
+      pop
+      push '_root'
+      getVariable
+      push 'crim'
+      getMember
+      push 90
+      lessThan
+     label1:
+      not
+      branchIfTrue label2
+      gotoFrame 0
+     label2:
+      push '_root'
+      getVariable
+      push 'crim'
+      getMember
+      push 90
+      lessThan
+      not
+      not
+      branchIfTrue label3
+      gotoFrame 1
+     label3:
+    end // of frame 0
+  end // of defineMovieClip 24
+end

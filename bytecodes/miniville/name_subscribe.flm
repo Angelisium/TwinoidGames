@@ -1,0 +1,124 @@
+movie 'name_subscribe.swf' compressed // flash 8, total frames: 2, frame rate: 40 fps, 200x200 px
+
+
+  frame 0
+    constants 'text', 'getCityName', 'flash', 'external', 'ExternalInterface', 'call', 'temp1', 'null', 'g', 'sub', 'field', '_root', 'defaultName', 'toUpperCase', 'temp2', 'r', 's1', 'gotoAndPlay', 's2'  
+    push 'text', 'getCityName', 1, 'flash'
+    getVariable
+    push 'external'
+    getMember
+    push 'ExternalInterface'
+    getMember
+    push 'call'
+    callMethod
+    varEquals
+    push 'temp1', 'text'
+    getVariable
+    setVariable
+    push 'text'
+    getVariable
+    push 'null'
+    equals
+    dup
+    branchIfTrue label1
+    pop
+    push 'text'
+    getVariable
+    push NULL
+    equals
+   label1:
+    not
+    branchIfTrue label2
+    push 'g'
+    getVariable
+    push 'sub'
+    getMember
+    push 'field'
+    getMember
+    push 'text', '_root'
+    getVariable
+    push 'defaultName'
+    getMember
+    setMember
+    branch label3
+   label2:
+    push 'g'
+    getVariable
+    push 'sub'
+    getMember
+    push 'field'
+    getMember
+    push 'text', 0.0, 'text'
+    getVariable
+    push 'toUpperCase'
+    callMethod
+    setMember
+   label3:
+    push 'temp1'
+    getVariable
+    push 'temp2'
+    getVariable
+    equals
+    not
+    not
+    branchIfTrue label5
+    push 'r', 2
+    random
+    push 1
+    add
+    setVariable
+    push 'r'
+    getVariable
+    push 1
+    equals
+    not
+    branchIfTrue label4
+    push 's1', 1, 'g'
+    getVariable
+    push 'gotoAndPlay'
+    callMethod
+    pop
+   label4:
+    push 'r'
+    getVariable
+    push 2
+    lessThan
+    not
+    not
+    branchIfTrue label5
+    push 's2', 1, 'g'
+    getVariable
+    push 'gotoAndPlay'
+    callMethod
+    pop
+   label5:
+    push 'temp2', 'text'
+    getVariable
+    setVariable
+  end // of frame 0
+  
+  // unknown tag 88 length 150
+
+  defineMovieClip 5 // total frames: 1
+  end // of defineMovieClip 5
+
+  defineMovieClip 6 // total frames: 15
+
+    frame 0
+      stop
+    end // of frame 0
+
+    frame 6
+      gotoFrame 0
+    end // of frame 6
+
+    frame 14
+      gotoFrame 0
+    end // of frame 14
+  end // of defineMovieClip 6
+
+  frame 1
+    gotoFrame 0
+    play
+  end // of frame 1
+end

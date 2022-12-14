@@ -1,0 +1,391 @@
+movie 'rank.swf' compressed // flash 8, total frames: 1, frame rate: 12 fps, 130x260 px
+
+
+  defineMovieClip 2 // total frames: 1
+  end // of defineMovieClip 2
+  
+  exportAssets
+    2 as 'rhones-alpes'
+  end // of exportAssets
+
+  defineMovieClip 4 // total frames: 1
+  end // of defineMovieClip 4
+  
+  exportAssets
+    4 as 'limousin'
+  end // of exportAssets
+  
+  exportAssets
+    6 as 'but'
+  end // of exportAssets
+
+  defineMovieClip 9 // total frames: 1
+  end // of defineMovieClip 9
+  
+  exportAssets
+    9 as 'mcSlot'
+  end // of exportAssets
+
+  defineMovieClip 11 // total frames: 1
+  end // of defineMovieClip 11
+  
+  exportAssets
+    11 as 'bg'
+  end // of exportAssets
+
+  frame 0
+    constants 'select', 'defaultSelection', 'rList', 'carte', 'r', 'push', 'id', 'name', 'REGION_NAMES', 'setPercentColor', 'title', 'field', 'text', 'initRanking', '|', 'ranking', 'split', 'length', ',', 'slot', 'mcSlot', 'attachMovie', '_x', '_y', 'textColor', '_xscale', '_yscale', ' - ', 'substr', 'but', 'onRelease', 'clickOut', 'url', 'http://', '.miniville.fr', 'glow', '_parent', '_self', 'g', 'b', 'Color', 'ra', 'ga', 'ba', 'aa', 'rb', 'gb', 'bb', 'ab', 'setTransform', 'flash', 'filters', 'GlowFilter', 'blurX', 'blurY', 'strength', 'color', 'Corse', 'Provence Côte d\'Azur', 'Languedoc Roussillon', 'Midi-Pyrenées', 'Aquitaine', 'Rhones-Alpes', 'Auvergne', 'Limousin', 'Poitou-Charente', 'Franche-Comte', 'Bourgogne', 'Centre', 'Pays de la Loire', 'Bretagne', 'Ile-de-France', 'Basse-Normandie', 'Alsace', 'Lorraine', 'Champagne-Ardenne', 'Picardie', 'Haute-Normandie', 'Nord Pas-de-Calais', 'init'  
+    function2 init () ()
+      push 'select', 'defaultSelection'
+      getVariable
+      setVariable
+      push 'rList', 0.0
+      initArray
+      setVariable
+      push 0.0
+      setRegister r:1
+      pop
+     label1:
+      push r:1, 22
+      lessThan
+      not
+      branchIfTrue label3
+      push 'carte'
+      getVariable
+      push 'r', r:1
+      add
+      getMember
+      setRegister r:2
+      pop
+      push r:2, 1, 'rList'
+      getVariable
+      push 'push'
+      callMethod
+      pop
+      push r:2, 'id', r:1
+      setMember
+      push r:2, 'name', 'REGION_NAMES'
+      getVariable
+      push r:1
+      getMember
+      setMember
+      push 1793987
+      setRegister r:3
+      pop
+      push 'select'
+      getVariable
+      push r:1
+      equals
+      not
+      branchIfTrue label2
+      push 16711680
+      setRegister r:3
+      pop
+     label2:
+      push r:3, 100, r:2, 3, 'setPercentColor'
+      callFunction
+      pop
+      push r:1
+      increment
+      setRegister r:1
+      pop
+      branch label1
+     label3:
+      push 'title'
+      getVariable
+      push 'field'
+      getMember
+      push 'text', 'REGION_NAMES'
+      getVariable
+      push 'select'
+      getVariable
+      getMember
+      setMember
+      push 0.0, 'initRanking'
+      callFunction
+      pop
+    end // of function init
+
+    function2 initRanking () ()
+      push '|', 1, 'ranking'
+      getVariable
+      push 'split'
+      callMethod
+      setRegister r:9
+      pop
+      push 156
+      setRegister r:6
+      pop
+      push 0.0
+      setRegister r:3
+      pop
+     label4:
+      push r:3, r:9, 'length'
+      getMember
+      lessThan
+      not
+      branchIfTrue label6
+      push r:9, r:3
+      getMember
+      setRegister r:7
+      pop
+      push ',', 1, r:7, 'split'
+      callMethod
+      setRegister r:2
+      pop
+      push r:3, 'slot', r:3
+      add
+      push 'mcSlot', 3, 'attachMovie'
+      callFunction
+      setRegister r:1
+      pop
+      push r:1, '_x', 0.0
+      setMember
+      push r:1, '_y', r:6
+      setMember
+      push 1793987
+      setRegister r:5
+      pop
+      push 13
+      setRegister r:4
+      pop
+      push r:2, 2
+      getMember
+      push NULL
+      equals
+      not
+      not
+      branchIfTrue label5
+      push 16711680
+      setRegister r:5
+      pop
+      push 1.5
+      setRegister r:8
+      pop
+      push r:1, 'field'
+      getMember
+      push 'textColor', 16763071
+      setMember
+      push r:1, '_xscale', r:1, '_yscale', 100, r:8
+      multiply
+      setRegister r:0
+      setMember
+      push r:0
+      setMember
+      push r:1, '_x', -32.5
+      setMember
+      push r:6, 9
+      add
+      setRegister r:6
+      pop
+      push 11
+      setRegister r:4
+      pop
+     label5:
+      push r:4, r:2, 0.0
+      getMember
+      push 'length'
+      getMember
+      subtract
+      setRegister r:4
+      pop
+      push r:1, 'field'
+      getMember
+      push 'text', r:2, 0.0
+      getMember
+      push ' - '
+      add
+      push r:4, 0.0, 2, r:2, 1
+      getMember
+      push 'substr'
+      callMethod
+      add
+      setMember
+      push r:1, 'but'
+      getMember
+      push 'onRelease', 'clickOut'
+      getVariable
+      setMember
+      push r:1, 'url', 'http://', r:2, 1
+      getMember
+      add
+      push '.miniville.fr'
+      add
+      setMember
+      push r:5, 6, 2, r:1, 4, 'glow'
+      callFunction
+      pop
+      push r:6, 12
+      add
+      setRegister r:6
+      pop
+      push r:3
+      increment
+      setRegister r:3
+      pop
+      branch label4
+     label6:
+    end // of function initRanking
+
+    function2 clickOut () (r:1='this')
+      push r:this, '_parent'
+      getMember
+      push 'url'
+      getMember
+      push '_self'
+      getURL2
+    end // of function clickOut
+
+    function2 setPercentColor (r:18='mc', r:3='prc', r:6='col') ()
+      push 'r', r:col, 16
+      shiftRight
+      push 'g', r:col, 8
+      shiftRight
+      push 255
+      bitwiseAnd
+      push 'b', r:col, 255
+      bitwiseAnd
+      push 3
+      initObject
+      setRegister r:2
+      pop
+      push r:mc, 1, 'Color'
+      new
+      setRegister r:4
+      pop
+      push r:prc, 100
+      divide
+      setRegister r:1
+      pop
+      push 'ra', 100, r:prc
+      subtract
+      int
+      push 'ga', 100, r:prc
+      subtract
+      int
+      push 'ba', 100, r:prc
+      subtract
+      int
+      push 'aa', 100, 'rb', r:1, r:2, 'r'
+      getMember
+      multiply
+      int
+      push 'gb', r:1, r:2, 'g'
+      getMember
+      multiply
+      int
+      push 'bb', r:1, r:2, 'b'
+      getMember
+      multiply
+      int
+      push 'ab', 0.0, 8
+      initObject
+      setRegister r:5
+      pop
+      push r:5, 1, r:4, 'setTransform'
+      callMethod
+      pop
+    end // of function setPercentColor
+
+    function2 glow (r:3='mc', r:4='b', r:6='s', r:5='c') ()
+      push 0.0, 'flash'
+      getVariable
+      push 'filters'
+      getMember
+      push 'GlowFilter'
+      newMethod
+      setRegister r:1
+      pop
+      push r:1, 'blurX', r:b
+      setMember
+      push r:1, 'blurY', r:b
+      setMember
+      push r:1, 'strength', r:s
+      setMember
+      push r:1, 'color', r:c
+      setMember
+      push r:mc, 'filters'
+      getMember
+      setRegister r:2
+      pop
+      push r:1, 1, r:2, 'push'
+      callMethod
+      pop
+      push r:mc, 'filters', r:2
+      setMember
+    end // of function glow
+
+    push 'REGION_NAMES', 'Corse', 'Provence Côte d\'Azur', 'Languedoc Roussillon', 'Midi-Pyrenées', 'Aquitaine', 'Rhones-Alpes', 'Auvergne', 'Limousin', 'Poitou-Charente', 'Franche-Comte', 'Bourgogne', 'Centre', 'Pays de la Loire', 'Bretagne', 'Ile-de-France', 'Basse-Normandie', 'Alsace', 'Lorraine', 'Champagne-Ardenne', 'Picardie', 'Haute-Normandie', 'Nord Pas-de-Calais', 22
+    initArray
+    setVariable
+    push 0.0, 'init'
+    callFunction
+    pop
+  end // of frame 0
+
+  defineMovieClip 13 // total frames: 1
+  end // of defineMovieClip 13
+
+  defineMovieClip 15 // total frames: 1
+  end // of defineMovieClip 15
+
+  defineMovieClip 17 // total frames: 1
+  end // of defineMovieClip 17
+
+  defineMovieClip 19 // total frames: 1
+  end // of defineMovieClip 19
+
+  defineMovieClip 21 // total frames: 1
+  end // of defineMovieClip 21
+
+  defineMovieClip 23 // total frames: 1
+  end // of defineMovieClip 23
+
+  defineMovieClip 25 // total frames: 1
+  end // of defineMovieClip 25
+
+  defineMovieClip 27 // total frames: 1
+  end // of defineMovieClip 27
+
+  defineMovieClip 29 // total frames: 1
+  end // of defineMovieClip 29
+
+  defineMovieClip 31 // total frames: 1
+  end // of defineMovieClip 31
+
+  defineMovieClip 33 // total frames: 1
+  end // of defineMovieClip 33
+
+  defineMovieClip 35 // total frames: 1
+  end // of defineMovieClip 35
+
+  defineMovieClip 37 // total frames: 1
+  end // of defineMovieClip 37
+
+  defineMovieClip 39 // total frames: 1
+  end // of defineMovieClip 39
+
+  defineMovieClip 41 // total frames: 1
+  end // of defineMovieClip 41
+
+  defineMovieClip 43 // total frames: 1
+  end // of defineMovieClip 43
+
+  defineMovieClip 45 // total frames: 1
+  end // of defineMovieClip 45
+
+  defineMovieClip 47 // total frames: 1
+  end // of defineMovieClip 47
+
+  defineMovieClip 49 // total frames: 1
+  end // of defineMovieClip 49
+
+  defineMovieClip 51 // total frames: 1
+  end // of defineMovieClip 51
+
+  defineMovieClip 52 // total frames: 1
+  end // of defineMovieClip 52
+
+  defineMovieClip 57 // total frames: 1
+  end // of defineMovieClip 57
+end
