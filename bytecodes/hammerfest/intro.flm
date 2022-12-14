@@ -1,0 +1,2713 @@
+movie 'intro.swf' compressed // flash 7, total frames: 2, frame rate: 40 fps, 420x325 px
+
+  defineMovieClip 2 // total frames: 1
+  end // of defineMovieClip 2
+  
+  exportAssets
+    2 as 'dune6'
+  end // of exportAssets
+
+  defineMovieClip 4 // total frames: 1
+  end // of defineMovieClip 4
+  
+  exportAssets
+    4 as 'dune4'
+  end // of exportAssets
+
+  defineMovieClip 6 // total frames: 1
+  end // of defineMovieClip 6
+  
+  exportAssets
+    6 as 'dune2'
+  end // of exportAssets
+
+  defineMovieClip 8 // total frames: 1
+  end // of defineMovieClip 8
+  
+  exportAssets
+    8 as 'dune1'
+  end // of exportAssets
+
+  defineMovieClip 10 // total frames: 1
+  end // of defineMovieClip 10
+
+  defineMovieClip 11 // total frames: 1
+  end // of defineMovieClip 11
+  
+  exportAssets
+    11 as 'bFade'
+  end // of exportAssets
+
+  frame 0
+    stop
+  end // of frame 0
+
+  defineMovieClip 15 // total frames: 1
+  end // of defineMovieClip 15
+
+  defineMovieClip 18 // total frames: 1
+  end // of defineMovieClip 18
+
+  defineMovieClip 21 // total frames: 16
+
+    frame 0
+      stop
+    end // of frame 0
+  end // of defineMovieClip 21
+
+  defineMovieClip 23 // total frames: 1
+  end // of defineMovieClip 23
+
+  defineMovieClip 26 // total frames: 1
+  end // of defineMovieClip 26
+
+  defineMovieClip 27 // total frames: 1
+  end // of defineMovieClip 27
+
+  defineMovieClip 39 // total frames: 14
+
+    frame 12
+      gotoFrame 0
+      play
+    end // of frame 12
+  end // of defineMovieClip 39
+
+  defineMovieClip 42 // total frames: 1
+  end // of defineMovieClip 42
+
+  defineMovieClip 55 // total frames: 13
+
+    frame 11
+      gotoFrame 0
+      play
+    end // of frame 11
+  end // of defineMovieClip 55
+
+  defineMovieClip 57 // total frames: 1
+  end // of defineMovieClip 57
+
+  defineMovieClip 63 // total frames: 13
+  end // of defineMovieClip 63
+
+  defineMovieClip 65 // total frames: 1
+  end // of defineMovieClip 65
+
+  defineMovieClip 66 // total frames: 9
+  end // of defineMovieClip 66
+
+  defineMovieClip 67 // total frames: 31
+
+    frame 29
+      gotoFrame 0
+      play
+    end // of frame 29
+  end // of defineMovieClip 67
+
+  defineMovieClip 68 // total frames: 31
+
+    frame 29
+      gotoFrame 0
+      play
+    end // of frame 29
+  end // of defineMovieClip 68
+
+  defineMovieClip 69 // total frames: 23
+  end // of defineMovieClip 69
+
+  defineMovieClip 73 // total frames: 4
+  end // of defineMovieClip 73
+
+  defineMovieClip 76 // total frames: 3
+
+    frame 2
+      stop
+    end // of frame 2
+  end // of defineMovieClip 76
+
+  defineMovieClip 80 // total frames: 4
+  end // of defineMovieClip 80
+
+  defineMovieClip 90 // total frames: 59
+
+    frame 34
+      push 'compt', 0.0
+      setVariable
+    end // of frame 34
+
+    frame 42
+      constants 'compt', ''  
+      push 'compt', 'compt'
+      getVariable
+      increment
+      setVariable
+      push 'compt'
+      getVariable
+      push 6
+      lessThan
+      not
+      not
+      branchIfTrue label1
+      push '', 4
+      getProperty
+      push 2
+      add
+      gotoAndPlay
+      branch label2
+     label1:
+      push '', 4
+      getProperty
+      push 6
+      subtract
+      gotoAndPlay
+     label2:
+    end // of frame 42
+
+    frame 43
+      push '', 4
+      getProperty
+      push 1
+      subtract
+      gotoAndPlay
+    end // of frame 43
+  end // of defineMovieClip 90
+
+  defineMovieClip 92 // total frames: 1
+  end // of defineMovieClip 92
+
+  defineMovieClip 94 // total frames: 1
+  end // of defineMovieClip 94
+
+  defineMovieClip 96 // total frames: 80
+  end // of defineMovieClip 96
+
+  defineMovieClip 99 // total frames: 1
+  end // of defineMovieClip 99
+
+  defineMovieClip 108 // total frames: 89
+  end // of defineMovieClip 108
+
+  defineMovieClip 109 // total frames: 13
+
+    frame 0
+      stop
+    end // of frame 0
+  end // of defineMovieClip 109
+
+  defineMovieClip 115 // total frames: 14
+
+    frame 6
+      stop
+    end // of frame 6
+
+    frame 13
+      stop
+    end // of frame 13
+  end // of defineMovieClip 115
+
+  defineMovieClip 116 // total frames: 6
+
+    frame 0
+      stop
+    end // of frame 0
+
+    frame 5
+      stop
+    end // of frame 5
+  end // of defineMovieClip 116
+
+  defineMovieClip 118 // total frames: 1
+  end // of defineMovieClip 118
+
+  defineMovieClip 125 // total frames: 12
+  end // of defineMovieClip 125
+
+  defineMovieClip 128 // total frames: 2
+
+    frame 0
+      stop
+    end // of frame 0
+  end // of defineMovieClip 128
+
+  defineMovieClip 135 // total frames: 12
+  end // of defineMovieClip 135
+
+  defineMovieClip 136 // total frames: 15
+  end // of defineMovieClip 136
+
+  defineMovieClip 141 // total frames: 1
+  end // of defineMovieClip 141
+
+  defineMovieClip 145 // total frames: 7
+
+    frame 6
+      constants '_parent', 'step'  
+      stop
+      push '_parent'
+      getVariable
+      push '_parent'
+      getMember
+      push 'step', 5
+      setMember
+    end // of frame 6
+  end // of defineMovieClip 145
+
+  defineMovieClip 146 // total frames: 6
+
+    frame 5
+      stop
+    end // of frame 5
+  end // of defineMovieClip 146
+
+  defineMovieClip 147 // total frames: 8
+
+    frame 7
+      stop
+    end // of frame 7
+  end // of defineMovieClip 147
+
+  defineMovieClip 148 // total frames: 12
+
+    frame 3
+      constants '_parent', 'step'  
+      push '_parent'
+      getVariable
+      push '_parent'
+      getMember
+      push 'step', 2
+      setMember
+    end // of frame 3
+
+    frame 11
+      stop
+    end // of frame 11
+  end // of defineMovieClip 148
+
+  defineMovieClip 155 // total frames: 1
+  end // of defineMovieClip 155
+
+  defineMovieClip 159 // total frames: 70
+
+    frame 4
+      constants '_parent', 'pom3', '_visible'  
+      push '_parent'
+      getVariable
+      push '_parent'
+      getMember
+      push 'pom3'
+      getMember
+      push '_visible', FALSE
+      setMember
+    end // of frame 4
+
+    frame 65
+      constants '_parent', 'pom3', '_visible'  
+      push '_parent'
+      getVariable
+      push '_parent'
+      getMember
+      push 'pom3'
+      getMember
+      push '_visible', TRUE
+      setMember
+    end // of frame 65
+
+    frame 69
+      stop
+      push 1, 1, '_parent'
+      getVariable
+      push 'gotoAndStop'
+      callMethod
+      pop
+    end // of frame 69
+  end // of defineMovieClip 159
+
+  defineMovieClip 160 // total frames: 51
+
+    frame 50
+      push 16, 1, '_parent'
+      getVariable
+      push 'gotoAndStop'
+      callMethod
+      pop
+    end // of frame 50
+  end // of defineMovieClip 160
+
+  defineMovieClip 165 // total frames: 43
+
+    frame 4
+      constants '_parent', 'sac', 'gotoAndPlay'  
+      push 2, 1, '_parent'
+      getVariable
+      push '_parent'
+      getMember
+      push 'sac'
+      getMember
+      push 'gotoAndPlay'
+      callMethod
+      pop
+    end // of frame 4
+
+    frame 42
+      push 19, 1, '_parent'
+      getVariable
+      push 'gotoAndStop'
+      callMethod
+      pop
+    end // of frame 42
+  end // of defineMovieClip 165
+
+  defineMovieClip 166 // total frames: 12
+
+    frame 11
+      constants '_parent', 'pom3', 'gotoAndStop', '_xscale'  
+      stop
+      push 9, 1, '_parent'
+      getVariable
+      push '_parent'
+      getMember
+      push 'pom3'
+      getMember
+      push 'gotoAndStop'
+      callMethod
+      pop
+      push '_parent'
+      getVariable
+      push '_parent'
+      getMember
+      push 'pom3'
+      getMember
+      push '_xscale', -70
+      setMember
+    end // of frame 11
+  end // of defineMovieClip 166
+
+  defineMovieClip 167 // total frames: 11
+
+    frame 10
+      stop
+      push 20, 1, '_parent'
+      getVariable
+      push 'gotoAndStop'
+      callMethod
+      pop
+    end // of frame 10
+  end // of defineMovieClip 167
+
+  defineMovieClip 168 // total frames: 8
+
+    frame 7
+      stop
+      push 5, 1, '_parent'
+      getVariable
+      push 'gotoAndStop'
+      callMethod
+      pop
+    end // of frame 7
+  end // of defineMovieClip 168
+
+  defineMovieClip 169 // total frames: 20
+
+    frame 0
+      stop
+    end // of frame 0
+  end // of defineMovieClip 169
+
+  defineMovieClip 176 // total frames: 14
+
+    frame 0
+      stop
+    end // of frame 0
+
+    frame 13
+      stop
+    end // of frame 13
+  end // of defineMovieClip 176
+  
+  exportAssets
+    176 as 'itemOut'
+  end // of exportAssets
+
+  defineMovieClip 183 // total frames: 6
+
+    frame 0
+      constants '_parent', 'currentWeapon'  
+      push '_parent'
+      getVariable
+      push '_parent'
+      getMember
+      push '_parent'
+      getMember
+      push 'currentWeapon'
+      getMember
+      push 2
+      add
+      gotoAndStop
+    end // of frame 0
+  end // of defineMovieClip 183
+
+  defineMovieClip 196 // total frames: 6
+
+    frame 0
+      constants '_parent', 'currentWeapon'  
+      push '_parent'
+      getVariable
+      push '_parent'
+      getMember
+      push '_parent'
+      getMember
+      push 'currentWeapon'
+      getMember
+      push 2
+      add
+      gotoAndStop
+    end // of frame 0
+  end // of defineMovieClip 196
+
+  defineMovieClip 233 // total frames: 28
+  end // of defineMovieClip 233
+
+  defineMovieClip 293 // total frames: 23
+
+    frame 21
+      gotoFrame 0
+      play
+    end // of frame 21
+  end // of defineMovieClip 293
+
+  defineMovieClip 326 // total frames: 14
+
+    frame 13
+      gotoFrame 6
+      play
+    end // of frame 13
+  end // of defineMovieClip 326
+
+  defineMovieClip 376 // total frames: 20
+
+    frame 18
+      gotoFrame 7
+      play
+    end // of frame 18
+  end // of defineMovieClip 376
+
+  defineMovieClip 412 // total frames: 9
+
+    frame 8
+      stop
+    end // of frame 8
+  end // of defineMovieClip 412
+
+  defineMovieClip 413 // total frames: 8
+
+    frame 0
+      stop
+    end // of frame 0
+  end // of defineMovieClip 413
+
+  defineMovieClip 416 // total frames: 1
+  end // of defineMovieClip 416
+
+  defineMovieClip 424 // total frames: 14
+
+    frame 12
+      gotoFrame 0
+      play
+    end // of frame 12
+  end // of defineMovieClip 424
+
+  defineMovieClip 426 // total frames: 1
+  end // of defineMovieClip 426
+
+  defineMovieClip 433 // total frames: 21
+  end // of defineMovieClip 433
+
+  defineMovieClip 436 // total frames: 21
+
+    frame 19
+      gotoFrame 0
+      play
+    end // of frame 19
+  end // of defineMovieClip 436
+
+  defineMovieClip 444 // total frames: 5
+
+    frame 4
+      gotoFrame 0
+      play
+    end // of frame 4
+  end // of defineMovieClip 444
+
+  defineMovieClip 446 // total frames: 1
+  end // of defineMovieClip 446
+
+  defineMovieClip 451 // total frames: 6
+
+    frame 5
+      stop
+    end // of frame 5
+  end // of defineMovieClip 451
+
+  defineMovieClip 455 // total frames: 1
+  end // of defineMovieClip 455
+
+  defineMovieClip 457 // total frames: 1
+  end // of defineMovieClip 457
+
+  defineMovieClip 473 // total frames: 9
+
+    frame 8
+      gotoFrame 4
+      play
+    end // of frame 8
+  end // of defineMovieClip 473
+
+  defineMovieClip 482 // total frames: 9
+
+    frame 7
+      gotoFrame 0
+      play
+    end // of frame 7
+  end // of defineMovieClip 482
+
+  defineMovieClip 483 // total frames: 13
+
+    frame 0
+      stop
+    end // of frame 0
+  end // of defineMovieClip 483
+
+  defineMovieClip 486 // total frames: 1
+  end // of defineMovieClip 486
+
+  defineMovieClip 487 // total frames: 2
+
+    frame 0
+      constants '_parent', 'chgColor'  
+      stop
+      push '_parent'
+      getVariable
+      push '_parent'
+      getMember
+      push '_parent'
+      getMember
+      push '_parent'
+      getMember
+      push 'chgColor'
+      getMember
+      push TRUE
+      equals
+      not
+      branchIfTrue label1
+      gotoFrame 1
+     label1:
+    end // of frame 0
+  end // of defineMovieClip 487
+
+  defineMovieClip 489 // total frames: 1
+  end // of defineMovieClip 489
+
+  defineMovieClip 490 // total frames: 17
+  end // of defineMovieClip 490
+
+  defineMovieClip 493 // total frames: 1
+  end // of defineMovieClip 493
+
+  defineMovieClip 494 // total frames: 13
+  end // of defineMovieClip 494
+
+  defineMovieClip 497 // total frames: 1
+  end // of defineMovieClip 497
+
+  defineMovieClip 498 // total frames: 1
+  end // of defineMovieClip 498
+
+  defineMovieClip 503 // total frames: 13
+  end // of defineMovieClip 503
+
+  defineMovieClip 504 // total frames: 23
+  end // of defineMovieClip 504
+
+  defineMovieClip 506 // total frames: 1
+  end // of defineMovieClip 506
+
+  defineMovieClip 507 // total frames: 13
+  end // of defineMovieClip 507
+
+  defineMovieClip 515 // total frames: 5
+
+    frame 4
+      stop
+    end // of frame 4
+  end // of defineMovieClip 515
+
+  defineMovieClip 516 // total frames: 1
+  end // of defineMovieClip 516
+
+  defineMovieClip 518 // total frames: 1
+  end // of defineMovieClip 518
+
+  defineMovieClip 520 // total frames: 1
+  end // of defineMovieClip 520
+
+  defineMovieClip 521 // total frames: 9
+
+    frame 0
+      stop
+    end // of frame 0
+  end // of defineMovieClip 521
+
+  defineMovieClip 523 // total frames: 1
+  end // of defineMovieClip 523
+
+  defineMovieClip 531 // total frames: 48
+
+    frame 47
+      stop
+    end // of frame 47
+  end // of defineMovieClip 531
+
+  defineMovieClip 544 // total frames: 157
+
+    frame 0
+      constants 'ban1', 'gotoAndStop', 'ban2'  
+      push 10, 1, 'ban1'
+      getVariable
+      push 'gotoAndStop'
+      callMethod
+      pop
+      push 10, 1, 'ban2'
+      getVariable
+      push 'gotoAndStop'
+      callMethod
+      pop
+    end // of frame 0
+
+    frame 27
+      gotoFrame 0
+      play
+      push '_parent'
+      getVariable
+      push 'step'
+      getMember
+      push -2
+      equals
+      not
+      branchIfTrue label1
+      gotoLabel 'assom'
+      play
+     label1:
+    end // of frame 27
+
+    frame 41
+      push 4, 1, 'ban2'
+      getVariable
+      push 'gotoAndStop'
+      callMethod
+      pop
+    end // of frame 41
+
+    frame 57
+      push 4, 1, 'abr'
+      getVariable
+      push 'gotoAndStop'
+      callMethod
+      pop
+    end // of frame 57
+
+    frame 75
+      push 12, 1, 'ban1'
+      getVariable
+      push 'gotoAndStop'
+      callMethod
+      pop
+    end // of frame 75
+
+    frame 143
+      stop
+    end // of frame 143
+
+    frame 156
+      stop
+      push '_parent'
+      getVariable
+      push 'step', 0.0
+      setMember
+    end // of frame 156
+  end // of defineMovieClip 544
+
+  defineMovieClip 551 // total frames: 14
+
+    frame 0
+      stop
+    end // of frame 0
+
+    frame 13
+      stop
+    end // of frame 13
+  end // of defineMovieClip 551
+  
+  exportAssets
+    11 as 'bFade'
+  end // of exportAssets
+  
+  exportAssets
+    176 as 'itemOut'
+  end // of exportAssets
+  
+  exportAssets
+    11 as 'bFade'
+  end // of exportAssets
+  
+  exportAssets
+    176 as 'itemOut'
+  end // of exportAssets
+  
+  exportAssets
+    11 as 'bFade'
+  end // of exportAssets
+  
+  exportAssets
+    176 as 'itemOut'
+  end // of exportAssets
+  
+  exportAssets
+    11 as 'bFade'
+  end // of exportAssets
+
+  defineMovieClip 555 // total frames: 4
+
+    frame 0
+      constants 'pom1', 'gotoAndStop', 'pom2', 'pom3', 'step', 'compt1', 'compt2', 'compt3', 'compt4', 'compt5', 'compt6', 'compt7', 'compt8', 'compt9', 'compt10', 'compt11', 'compt12', 'compt13', 'compt14', 'compt15', 'compt16', 'compt17', 'compt18', 'compt19', 'compt20', 'carot', '_visible', 'bouli2', 'attached', 'ecart', 'main', '_y', 'grav', 'tuber', '_x', 'bananePlay', 'ban1', '_xscale', 'ban2', '_rotation', 'turn', 'tete', 'gotoAndPlay', 'shake', 'retabli', 'sac', 'sac2', '_currentframe', 'bouli', 'nuage', 'yeux', 'currentWeapon', 'snow', 'bFade', 'attachMovie', 'sub', '_alpha', 'Key', 'isDown'  
+      function init ()
+        push 11, 1, 'pom1'
+        getVariable
+        push 'gotoAndStop'
+        callMethod
+        pop
+        push 13, 1, 'pom2'
+        getVariable
+        push 'gotoAndStop'
+        callMethod
+        pop
+        push 12, 1, 'pom3'
+        getVariable
+        push 'gotoAndStop'
+        callMethod
+        pop
+        push 'step', -1
+        setVariable
+        push 'compt1', 0.0
+        setVariable
+        push 'compt2', 0.0
+        setVariable
+        push 'compt3', 0.0
+        setVariable
+        push 'compt4', 0.0
+        setVariable
+        push 'compt5', 0.0
+        setVariable
+        push 'compt6', 0.0
+        setVariable
+        push 'compt7', 0.0
+        setVariable
+        push 'compt8', 0.0
+        setVariable
+        push 'compt9', 0.0
+        setVariable
+        push 'compt10', 0.0
+        setVariable
+        push 'compt11', 0.0
+        setVariable
+        push 'compt12', 0.0
+        setVariable
+        push 'compt13', 0.0
+        setVariable
+        push 'compt14', 0.0
+        setVariable
+        push 'compt15', 0.0
+        setVariable
+        push 'compt16', 0.0
+        setVariable
+        push 'compt17', 0.0
+        setVariable
+        push 'compt18', 0.0
+        setVariable
+        push 'compt19', 0.0
+        setVariable
+        push 'compt20', 0.0
+        setVariable
+        push 'carot'
+        getVariable
+        push '_visible', FALSE
+        setMember
+        push 'bouli2'
+        getVariable
+        push '_visible', FALSE
+        setMember
+        push 'attached', FALSE
+        setVariable
+      end // of function init
+
+      function2 main () (r:1='_parent')
+        function2 shake () (r:1='_parent')
+          push 'ecart', 5
+          random
+          push 2
+          subtract
+          setVariable
+          push r:_parent, 'main'
+          getMember
+          push '_y', r:_parent, 'main'
+          getMember
+          push '_y'
+          getMember
+          push 'ecart'
+          getVariable
+          add
+          setMember
+        end // of function shake
+
+        function2 retabli () (r:1='_parent')
+          push r:_parent, 'main'
+          getMember
+          push '_y', -87
+          setMember
+        end // of function retabli
+
+        push 'grav', 'grav'
+        getVariable
+        push 0.9
+        subtract
+        setVariable
+        push 'bouli2'
+        getVariable
+        push '_y', 'bouli2'
+        getVariable
+        push '_y'
+        getMember
+        push 'grav'
+        getVariable
+        subtract
+        setMember
+        push 'bouli2'
+        getVariable
+        push '_y'
+        getMember
+        push 368
+        lessThan
+        not
+        not
+        branchIfTrue label1
+        push 'bouli2'
+        getVariable
+        push '_y', 368
+        setMember
+       label1:
+        push 'step'
+        getVariable
+        push -1
+        equals
+        not
+        branchIfTrue label3
+        push 'compt12', 'compt12'
+        getVariable
+        increment
+        setVariable
+        push 'compt12'
+        getVariable
+        push 80
+        lessThan
+        not
+        not
+        branchIfTrue label2
+        push 'step', -2
+        setVariable
+       label2:
+        branch label67
+       label3:
+        push 'step'
+        getVariable
+        push -2
+        equals
+        not
+        branchIfTrue label5
+        push 'tuber'
+        getVariable
+        push '_x', 'tuber'
+        getVariable
+        push '_x'
+        getMember
+        push 2
+        subtract
+        setMember
+        push 'tuber'
+        getVariable
+        push '_x'
+        getMember
+        push 360
+        greaterThan
+        not
+        not
+        branchIfTrue label4
+        push 'tuber'
+        getVariable
+        push '_x', 360
+        setMember
+        push 'step', -3
+        setVariable
+       label4:
+        branch label67
+       label5:
+        push 'step'
+        getVariable
+        push -3
+        equals
+        not
+        branchIfTrue label8
+        push 'compt13', 'compt13'
+        getVariable
+        increment
+        setVariable
+        push 'compt13'
+        getVariable
+        push 20
+        lessThan
+        not
+        not
+        branchIfTrue label6
+        push 14, 1, 'bananePlay'
+        getVariable
+        push 'ban1'
+        getMember
+        push 'gotoAndStop'
+        callMethod
+        pop
+        push 'bananePlay'
+        getVariable
+        push 'ban1'
+        getMember
+        push '_xscale', -84.59999999999999
+        setMember
+        push 'bananePlay'
+        getVariable
+        push 'ban1'
+        getMember
+        push '_x', 'bananePlay'
+        getVariable
+        push 'ban1'
+        getMember
+        push '_x'
+        getMember
+        push 5
+        subtract
+        setMember
+       label6:
+        push 'compt13'
+        getVariable
+        push 80
+        lessThan
+        not
+        not
+        branchIfTrue label7
+        push 'step', -4
+        setVariable
+       label7:
+        branch label67
+       label8:
+        push 'step'
+        getVariable
+        push -4
+        equals
+        not
+        branchIfTrue label10
+        push 'compt14', 'compt14'
+        getVariable
+        increment
+        setVariable
+        push 'compt14'
+        getVariable
+        push 30
+        lessThan
+        not
+        not
+        branchIfTrue label9
+        push 11, 1, 'bananePlay'
+        getVariable
+        push 'ban2'
+        getMember
+        push 'gotoAndStop'
+        callMethod
+        pop
+        push 'bananePlay'
+        getVariable
+        push 'ban2'
+        getMember
+        push '_rotation', 'bananePlay'
+        getVariable
+        push 'ban2'
+        getMember
+        push '_rotation'
+        getMember
+        push 10
+        add
+        setMember
+        push 'step', -5
+        setVariable
+       label9:
+        branch label67
+       label10:
+        push 'step'
+        getVariable
+        push -5
+        equals
+        not
+        branchIfTrue label13
+        push 'compt15', 'compt15'
+        getVariable
+        increment
+        setVariable
+        push 'compt15'
+        getVariable
+        push 15
+        lessThan
+        not
+        not
+        branchIfTrue label12
+        push 'bananePlay'
+        getVariable
+        push 'ban2'
+        getMember
+        push '_rotation', 'bananePlay'
+        getVariable
+        push 'ban2'
+        getMember
+        push '_rotation'
+        getMember
+        push 0.5
+        subtract
+        setMember
+        push 'bananePlay'
+        getVariable
+        push 'ban2'
+        getMember
+        push '_rotation'
+        getMember
+        push 155
+        lessThan
+        not
+        dup
+        not
+        branchIfTrue label11
+        pop
+        push 'bananePlay'
+        getVariable
+        push 'ban2'
+        getMember
+        push '_rotation'
+        getMember
+        push 160
+        greaterThan
+        not
+       label11:
+        not
+        branchIfTrue label12
+        push 'step', -6
+        setVariable
+       label12:
+        branch label67
+       label13:
+        push 'step'
+        getVariable
+        push -6
+        equals
+        not
+        branchIfTrue label15
+        push 'compt16', 'compt16'
+        getVariable
+        increment
+        setVariable
+        push 'compt16'
+        getVariable
+        push 15
+        lessThan
+        not
+        not
+        branchIfTrue label14
+        push 2, 1, 'tuber'
+        getVariable
+        push 'turn'
+        getMember
+        push 'tete'
+        getMember
+        push 'gotoAndStop'
+        callMethod
+        pop
+        push 'step', -7
+        setVariable
+       label14:
+        branch label67
+       label15:
+        push 'step'
+        getVariable
+        push -7
+        equals
+        not
+        branchIfTrue label17
+        push 'compt17', 'compt17'
+        getVariable
+        increment
+        setVariable
+        push 'compt17'
+        getVariable
+        push 15
+        lessThan
+        not
+        not
+        branchIfTrue label16
+        push 'bananePlay'
+        getVariable
+        push 'ban2'
+        getMember
+        push '_xscale', -84.59999999999999
+        setMember
+        push 12, 1, 'bananePlay'
+        getVariable
+        push 'ban2'
+        getMember
+        push 'gotoAndStop'
+        callMethod
+        pop
+        push 'step', -8
+        setVariable
+       label16:
+        branch label67
+       label17:
+        push 'step'
+        getVariable
+        push -8
+        equals
+        not
+        branchIfTrue label19
+        push 'compt18', 'compt18'
+        getVariable
+        increment
+        setVariable
+        push 'compt18'
+        getVariable
+        push 40
+        lessThan
+        not
+        not
+        branchIfTrue label18
+        push 1, 1, 'tuber'
+        getVariable
+        push 'turn'
+        getMember
+        push 'tete'
+        getMember
+        push 'gotoAndStop'
+        callMethod
+        pop
+        push 13, 1, 'bananePlay'
+        getVariable
+        push 'ban2'
+        getMember
+        push 'gotoAndStop'
+        callMethod
+        pop
+        push 'bananePlay'
+        getVariable
+        push 'ban2'
+        getMember
+        push '_xscale', 84.59999999999999
+        setMember
+        push 145, 1, 'bananePlay'
+        getVariable
+        push 'gotoAndPlay'
+        callMethod
+        pop
+        push 'step', -9
+        setVariable
+       label18:
+        branch label67
+       label19:
+        push 'step'
+        getVariable
+        push -9
+        equals
+        not
+        branchIfTrue label20
+        branch label67
+       label20:
+        push 'step'
+        getVariable
+        push -10
+        equals
+        not
+        branchIfTrue label21
+        branch label67
+       label21:
+        push 'step'
+        getVariable
+        push -11
+        equals
+        not
+        branchIfTrue label22
+        branch label67
+       label22:
+        push 'step'
+        getVariable
+        push 0.0
+        equals
+        not
+        branchIfTrue label24
+        push 'tuber'
+        getVariable
+        push '_x', 'tuber'
+        getVariable
+        push '_x'
+        getMember
+        push 3
+        subtract
+        setMember
+        push 'tuber'
+        getVariable
+        push '_x'
+        getMember
+        push 170
+        lessThan
+        not
+        branchIfTrue label23
+        push 'step', 1
+        setVariable
+        push 'tuber'
+        getVariable
+        push '_x', 170
+        setMember
+        push 15, 1, 'tuber'
+        getVariable
+        push 'gotoAndStop'
+        callMethod
+        pop
+       label23:
+        branch label67
+       label24:
+        push 'step'
+        getVariable
+        push 1
+        equals
+        not
+        branchIfTrue label25
+        branch label67
+       label25:
+        push 'step'
+        getVariable
+        push 2
+        equals
+        not
+        branchIfTrue label29
+        push 'pom1'
+        getVariable
+        push '_y', 'pom1'
+        getVariable
+        push '_y'
+        getMember
+        push 17
+        add
+        setMember
+        push 'pom2'
+        getVariable
+        push '_y', 'pom2'
+        getVariable
+        push '_y'
+        getMember
+        push 17
+        add
+        setMember
+        push 'pom3'
+        getVariable
+        push '_y', 'pom3'
+        getVariable
+        push '_y'
+        getMember
+        push 17
+        add
+        setMember
+        push 0.0, 'shake'
+        callFunction
+        pop
+        push 6, 1, 'pom1'
+        getVariable
+        push 'gotoAndStop'
+        callMethod
+        pop
+        push 6, 1, 'pom2'
+        getVariable
+        push 'gotoAndStop'
+        callMethod
+        pop
+        push 6, 1, 'pom3'
+        getVariable
+        push 'gotoAndStop'
+        callMethod
+        pop
+        push 'pom1'
+        getVariable
+        push '_y'
+        getMember
+        push 375
+        lessThan
+        not
+        not
+        branchIfTrue label26
+        push 'pom1'
+        getVariable
+        push '_y', 375
+        setMember
+        push 'step', 3
+        setVariable
+       label26:
+        push 'pom2'
+        getVariable
+        push '_y'
+        getMember
+        push 372
+        lessThan
+        not
+        not
+        branchIfTrue label27
+        push 'pom2'
+        getVariable
+        push '_y', 372
+        setMember
+       label27:
+        push 'pom3'
+        getVariable
+        push '_y'
+        getMember
+        push 377
+        lessThan
+        not
+        not
+        branchIfTrue label28
+        push 'pom3'
+        getVariable
+        push '_y', 377
+        setMember
+       label28:
+        branch label67
+       label29:
+        push 'step'
+        getVariable
+        push 3
+        equals
+        not
+        branchIfTrue label30
+        push 5, 1, 'pom1'
+        getVariable
+        push 'gotoAndStop'
+        callMethod
+        pop
+        push 5, 1, 'pom2'
+        getVariable
+        push 'gotoAndStop'
+        callMethod
+        pop
+        push 5, 1, 'pom3'
+        getVariable
+        push 'gotoAndStop'
+        callMethod
+        pop
+        push 0.0, 'retabli'
+        callFunction
+        pop
+        push 'step', 4
+        setVariable
+        branch label67
+       label30:
+        push 'step'
+        getVariable
+        push 4
+        equals
+        not
+        branchIfTrue label32
+        push 'compt1', 'compt1'
+        getVariable
+        increment
+        setVariable
+        push 'compt1'
+        getVariable
+        push 40
+        lessThan
+        not
+        not
+        branchIfTrue label31
+        push 'tuber'
+        getVariable
+        push '_xscale', -131
+        setRegister r:0
+        setMember
+        push r:0
+        pop
+        push 1
+        pop
+        push 2, 1, 'tuber'
+        getVariable
+        push 'gotoAndStop'
+        callMethod
+        pop
+        push 10, 1, 'sac'
+        getVariable
+        push 'sac2'
+        getMember
+        push 'gotoAndPlay'
+        callMethod
+        pop
+        push 'pom1'
+        getVariable
+        push '_visible', FALSE
+        setMember
+        push 'pom2'
+        getVariable
+        push '_visible', FALSE
+        setMember
+        push 'sac'
+        getVariable
+        push '_x', 'sac'
+        getVariable
+        push '_x'
+        getMember
+        push 3
+        add
+        setMember
+       label31:
+        branch label67
+       label32:
+        push 'step'
+        getVariable
+        push 5
+        equals
+        not
+        branchIfTrue label34
+        push 1, 1, 'tuber'
+        getVariable
+        push 'gotoAndStop'
+        callMethod
+        pop
+        push 'tuber'
+        getVariable
+        push '_x', 'tuber'
+        getVariable
+        push '_x'
+        getMember
+        push 5
+        add
+        setMember
+        push 'sac'
+        getVariable
+        push '_x', 'sac'
+        getVariable
+        push '_x'
+        getMember
+        push 8
+        add
+        setMember
+        push 'tuber'
+        getVariable
+        push '_x'
+        getMember
+        push 212
+        lessThan
+        not
+        not
+        branchIfTrue label33
+        push 'tuber'
+        getVariable
+        push '_x', 212
+        setMember
+        push 18, 1, 'tuber'
+        getVariable
+        push 'gotoAndStop'
+        callMethod
+        pop
+        push 6, 1, 'pom3'
+        getVariable
+        push 'gotoAndStop'
+        callMethod
+        pop
+        push 'step', 6
+        setVariable
+       label33:
+        branch label67
+       label34:
+        push 'step'
+        getVariable
+        push 6
+        equals
+        not
+        branchIfTrue label36
+        push 'compt2', 'compt2'
+        getVariable
+        increment
+        setVariable
+        push 'compt2'
+        getVariable
+        push 50
+        lessThan
+        not
+        not
+        branchIfTrue label35
+        push 14, 1, 'tuber'
+        getVariable
+        push 'gotoAndStop'
+        callMethod
+        pop
+        push 'step', 7
+        setVariable
+       label35:
+        branch label67
+       label36:
+        push 'step'
+        getVariable
+        push 7
+        equals
+        not
+        branchIfTrue label38
+        push 'compt3', 'compt3'
+        getVariable
+        increment
+        setVariable
+        push 'compt3'
+        getVariable
+        push 30
+        lessThan
+        not
+        not
+        branchIfTrue label37
+        push 3, 1, 'pom3'
+        getVariable
+        push 'gotoAndStop'
+        callMethod
+        pop
+        push 'step', 8
+        setVariable
+       label37:
+        branch label67
+       label38:
+        push 'step'
+        getVariable
+        push 8
+        equals
+        not
+        branchIfTrue label42
+        push 'compt4', 'compt4'
+        getVariable
+        increment
+        setVariable
+        push 'compt4'
+        getVariable
+        push 90
+        lessThan
+        not
+        not
+        branchIfTrue label39
+        push 'sac'
+        getVariable
+        push '_x', 'sac'
+        getVariable
+        push '_x'
+        getMember
+        push 4
+        add
+        setMember
+        push 'tuber'
+        getVariable
+        push '_x', 'tuber'
+        getVariable
+        push '_x'
+        getMember
+        push 4
+        add
+        setMember
+       label39:
+        push 'tuber'
+        getVariable
+        push '_x'
+        getMember
+        push 285
+        lessThan
+        not
+        not
+        branchIfTrue label40
+        push 'pom3'
+        getVariable
+        push '_xscale', 70
+        setMember
+        push 'pom3'
+        getVariable
+        push '_x', 'pom3'
+        getVariable
+        push '_x'
+        getMember
+        push 4
+        add
+        setMember
+       label40:
+        push 'tuber'
+        getVariable
+        push '_x'
+        getMember
+        push 650
+        lessThan
+        not
+        not
+        branchIfTrue label41
+        push 'step', 9
+        setVariable
+       label41:
+        branch label67
+       label42:
+        push 'step'
+        getVariable
+        push 9
+        equals
+        not
+        branchIfTrue label44
+        push 'tuber'
+        getVariable
+        push '_x', 'tuber'
+        getVariable
+        push '_x'
+        getMember
+        push 15
+        subtract
+        setMember
+        push 'tuber'
+        getVariable
+        push '_xscale', 131
+        setRegister r:0
+        setMember
+        push r:0
+        pop
+        push 1
+        pop
+        push 14, 1, 'tuber'
+        getVariable
+        push 'gotoAndStop'
+        callMethod
+        pop
+        push 3, 1, 'tuber'
+        getVariable
+        push 'turn'
+        getMember
+        push 'gotoAndStop'
+        callMethod
+        pop
+        push 'tuber'
+        getVariable
+        push '_x'
+        getMember
+        push 400
+        greaterThan
+        not
+        not
+        branchIfTrue label43
+        push 'tuber'
+        getVariable
+        push '_x', 400
+        setMember
+        push 'step', 10
+        setVariable
+       label43:
+        branch label67
+       label44:
+        push 'step'
+        getVariable
+        push 10
+        equals
+        not
+        branchIfTrue label46
+        push 'compt5', 'compt5'
+        getVariable
+        increment
+        setVariable
+        push 'compt5'
+        getVariable
+        push 20
+        lessThan
+        not
+        not
+        branchIfTrue label45
+        push 5, 1, 'tuber'
+        getVariable
+        push 'turn'
+        getMember
+        push 'gotoAndPlay'
+        callMethod
+        pop
+        push 'step', 11
+        setVariable
+       label45:
+        branch label67
+       label46:
+        push 'step'
+        getVariable
+        push 11
+        equals
+        not
+        branchIfTrue label48
+        push 'tuber'
+        getVariable
+        push 'turn'
+        getMember
+        push '_currentframe'
+        getMember
+        push 16
+        lessThan
+        not
+        not
+        branchIfTrue label47
+        push 'bouli'
+        getVariable
+        push 'carot'
+        getMember
+        push '_visible', FALSE
+        setMember
+        push 'step', 12
+        setVariable
+       label47:
+        branch label67
+       label48:
+        push 'step'
+        getVariable
+        push 12
+        equals
+        not
+        branchIfTrue label51
+        push 'compt6', 'compt6'
+        getVariable
+        increment
+        setVariable
+        push 'tuber'
+        getVariable
+        push 'turn'
+        getMember
+        push '_currentframe'
+        getMember
+        push 1
+        subtract
+        push 1, 'tuber'
+        getVariable
+        push 'turn'
+        getMember
+        push 'gotoAndStop'
+        callMethod
+        pop
+        push 'tuber'
+        getVariable
+        push 'turn'
+        getMember
+        push '_currentframe'
+        getMember
+        push 2
+        greaterThan
+        not
+        not
+        branchIfTrue label49
+        push 'carot'
+        getVariable
+        push '_visible', TRUE
+        setMember
+       label49:
+        push 'compt6'
+        getVariable
+        push 60
+        lessThan
+        not
+        not
+        branchIfTrue label50
+        push 'tuber'
+        getVariable
+        push '_visible', FALSE
+        setMember
+        push 'carot'
+        getVariable
+        push '_visible', FALSE
+        setMember
+        push 2, 1, 'nuage'
+        getVariable
+        push 'gotoAndPlay'
+        callMethod
+        pop
+        push 'step', 13
+        setVariable
+       label50:
+        branch label67
+       label51:
+        push 'step'
+        getVariable
+        push 13
+        equals
+        not
+        branchIfTrue label53
+        push 'compt7', 'compt7'
+        getVariable
+        increment
+        setVariable
+        push 'compt7'
+        getVariable
+        push 50
+        lessThan
+        not
+        not
+        branchIfTrue label52
+        push 2, 1, 'bouli'
+        getVariable
+        push 'yeux'
+        getMember
+        push 'gotoAndPlay'
+        callMethod
+        pop
+        push 'step', 14
+        setVariable
+       label52:
+        branch label67
+       label53:
+        push 'step'
+        getVariable
+        push 14
+        equals
+        not
+        branchIfTrue label55
+        push 'compt8', 'compt8'
+        getVariable
+        increment
+        setVariable
+        push 'compt8'
+        getVariable
+        push 40
+        lessThan
+        not
+        not
+        branchIfTrue label54
+        push 'bouli'
+        getVariable
+        push '_visible', FALSE
+        setMember
+        push 'bouli2'
+        getVariable
+        push '_visible', TRUE
+        setMember
+        push 'currentWeapon', 0.0
+        setVariable
+        push 4, 1, 'bouli2'
+        getVariable
+        push 'gotoAndStop'
+        callMethod
+        pop
+        push 2, 1, 'snow'
+        getVariable
+        push 'gotoAndPlay'
+        callMethod
+        pop
+        push 'step', 15
+        setVariable
+       label54:
+        branch label67
+       label55:
+        push 'step'
+        getVariable
+        push 15
+        equals
+        not
+        branchIfTrue label56
+        push 'grav', 11
+        setVariable
+        push 'step', 16
+        setVariable
+        branch label67
+       label56:
+        push 'step'
+        getVariable
+        push 16
+        equals
+        not
+        branchIfTrue label58
+        push 'bouli2'
+        getVariable
+        push '_y'
+        getMember
+        push 368
+        lessThan
+        not
+        not
+        branchIfTrue label57
+        push 5, 1, 'bouli2'
+        getVariable
+        push 'gotoAndStop'
+        callMethod
+        pop
+        push 'step', 17
+        setVariable
+       label57:
+        branch label67
+       label58:
+        push 'step'
+        getVariable
+        push 17
+        equals
+        not
+        branchIfTrue label60
+        push 'compt9', 'compt9'
+        getVariable
+        increment
+        setVariable
+        push 'compt9'
+        getVariable
+        push 30
+        lessThan
+        not
+        not
+        branchIfTrue label59
+        push 'step', 18
+        setVariable
+        push 'bouli2'
+        getVariable
+        push '_xscale', -102.2
+        setMember
+       label59:
+        branch label67
+       label60:
+        push 'step'
+        getVariable
+        push 18
+        equals
+        not
+        branchIfTrue label62
+        push 'compt10', 'compt10'
+        getVariable
+        increment
+        setVariable
+        push 'compt10'
+        getVariable
+        push 15
+        lessThan
+        not
+        not
+        branchIfTrue label61
+        push 'step', 19
+        setVariable
+        push 'bouli2'
+        getVariable
+        push '_xscale', 102.2
+        setMember
+       label61:
+        branch label67
+       label62:
+        push 'step'
+        getVariable
+        push 19
+        equals
+        not
+        branchIfTrue label64
+        push 'compt11', 'compt11'
+        getVariable
+        increment
+        setVariable
+        push 'compt11'
+        getVariable
+        push 40
+        lessThan
+        not
+        not
+        branchIfTrue label63
+        push 'bouli2'
+        getVariable
+        push '_xscale', -102.2
+        setMember
+        push 2, 1, 'bouli2'
+        getVariable
+        push 'gotoAndStop'
+        callMethod
+        pop
+        push 'step', 20
+        setVariable
+       label63:
+        branch label67
+       label64:
+        push 'step'
+        getVariable
+        push 20
+        equals
+        not
+        branchIfTrue label67
+        push 'bouli2'
+        getVariable
+        push '_x', 'bouli2'
+        getVariable
+        push '_x'
+        getMember
+        push 2.3
+        add
+        setMember
+        push 'bouli2'
+        getVariable
+        push '_x'
+        getMember
+        push 525
+        greaterThan
+        not
+        branchIfTrue label67
+        push 'attached'
+        getVariable
+        not
+        not
+        branchIfTrue label65
+        push 500, 'bFade', 'bFade', 3, 'attachMovie'
+        callFunction
+        pop
+        push 'bFade'
+        getVariable
+        push '_y', 86
+        setMember
+        push 'attached', TRUE
+        setVariable
+       label65:
+        push 'bFade'
+        getVariable
+        push 'sub'
+        getMember
+        push '_alpha', 'bFade'
+        getVariable
+        push 'sub'
+        getMember
+        push '_alpha'
+        getMember
+        push 1.3
+        add
+        setMember
+        push 'bFade'
+        getVariable
+        push 'sub'
+        getMember
+        push '_alpha'
+        getMember
+        push 100
+        lessThan
+        not
+        not
+        branchIfTrue label66
+        push 'bFade'
+        getVariable
+        push 'sub'
+        getMember
+        push '_alpha', 100
+        setMember
+       label66:
+        push 'bouli2'
+        getVariable
+        push '_x'
+        getMember
+        push 700
+        greaterThan
+        not
+        branchIfTrue label67
+        push 2, 1, r:_parent, 'gotoAndStop'
+        callMethod
+        pop
+       label67:
+        push 13, 1, 'Key'
+        getVariable
+        push 'isDown'
+        callMethod
+        not
+        branchIfTrue label68
+        push 'step', -2
+        setVariable
+       label68:
+      end // of function main
+
+    end // of frame 0
+
+    frame 1
+      push 0.0, 'init'
+      callFunction
+      pop
+    end // of frame 1
+
+    frame 2
+      push 0.0, 'main'
+      callFunction
+      pop
+    end // of frame 2
+
+    frame 3
+      push '', 4
+      getProperty
+      push 1
+      subtract
+      gotoAndPlay
+    end // of frame 3
+  end // of defineMovieClip 555
+
+  defineButton 557
+
+    on overUpToOverDown
+      push '_root'
+      getVariable
+      push 'url'
+      getMember
+      push '_self'
+      getURL2
+    end
+  end // of defineButton 557
+
+  defineMovieClip 561 // total frames: 5
+  end // of defineMovieClip 561
+
+  defineMovieClip 563 // total frames: 1
+  end // of defineMovieClip 563
+
+  defineMovieClip 565 // total frames: 1
+  end // of defineMovieClip 565
+  
+  exportAssets
+    8 as 'dune1'
+  end // of exportAssets
+  
+  exportAssets
+    6 as 'dune2'
+  end // of exportAssets
+
+  defineMovieClip 591 // total frames: 62
+
+    frame 61
+      gotoFrame 0
+      play
+    end // of frame 61
+  end // of defineMovieClip 591
+
+  defineMovieClip 651 // total frames: 114
+
+    frame 94
+      constants '_parent', 'vitx'  
+      push '_parent'
+      getVariable
+      push '_parent'
+      getMember
+      push 'vitx', 0.0
+      setMember
+    end // of frame 94
+
+    frame 113
+      push 1, 1, '_parent'
+      getVariable
+      push 'gotoAndStop'
+      callMethod
+      pop
+    end // of frame 113
+  end // of defineMovieClip 651
+
+  defineMovieClip 652 // total frames: 2
+
+    frame 0
+      stop
+    end // of frame 0
+  end // of defineMovieClip 652
+  
+  exportAssets
+    4 as 'dune4'
+  end // of exportAssets
+
+  defineMovieClip 654 // total frames: 1
+  end // of defineMovieClip 654
+
+  defineMovieClip 656 // total frames: 1
+  end // of defineMovieClip 656
+
+  defineMovieClip 657 // total frames: 1
+  end // of defineMovieClip 657
+  
+  exportAssets
+    2 as 'dune6'
+  end // of exportAssets
+  
+  exportAssets
+    8 as 'dune1'
+  end // of exportAssets
+  
+  exportAssets
+    6 as 'dune2'
+  end // of exportAssets
+  
+  exportAssets
+    4 as 'dune4'
+  end // of exportAssets
+  
+  exportAssets
+    2 as 'dune6'
+  end // of exportAssets
+  
+  exportAssets
+    8 as 'dune1'
+  end // of exportAssets
+  
+  exportAssets
+    6 as 'dune2'
+  end // of exportAssets
+  
+  exportAssets
+    4 as 'dune4'
+  end // of exportAssets
+  
+  exportAssets
+    2 as 'dune6'
+  end // of exportAssets
+
+  defineMovieClip 660 // total frames: 3
+
+    frame 0
+      constants 'texts', 'timer', 'txt', '', 'Aux limites de Hammerfest, au plus\nprofond d\'une caverne mystérieuse.', 'Tuberculoz, le sorcier, vivait par\ndelà le Grand Désert de l\'est', 'Parfois au péril de sa vie.', 'Bravant tous les dangers,', 'Bouli marcha des jours et des jours...', 'docWidth', 'docHeight', 'main', 'mainAnim', 'mainScrolls', 'textBox', '_x', 'currentText', 'length', 'attachText', '_parent', 'completed', 'attachMovie', '_y', 'sub', 'bouli3', 'vitx', 'ombre', 'dune1', 'dune2', 'caillou', 'dune4', 'dune6', 'omb1', 'omb2', '_rotation', 'fadeIn', 'bFade', '_alpha', '_visible', 'fadeOut', 'url', '_self', 'stop', 'gotoAndStop', 'init'  
+      push 'texts', 'timer', 30, 'txt', '', 2
+      initObject
+      push 'timer', 110, 'txt', 'Aux limites de Hammerfest, au plus\nprofond d\'une caverne mystérieuse.', 2
+      initObject
+      push 'timer', 100, 'txt', 'Tuberculoz, le sorcier, vivait par\ndelà le Grand Désert de l\'est', 2
+      initObject
+      push 'timer', 10, 'txt', '', 2
+      initObject
+      push 'timer', 50, 'txt', 'Parfois au péril de sa vie.', 2
+      initObject
+      push 'timer', 70, 'txt', 'Bravant tous les dangers,', 2
+      initObject
+      push 'timer', 70, 'txt', 'Bouli marcha des jours et des jours...', 2
+      initObject
+      push 7
+      initArray
+      setVariable
+      push 'docWidth', 420
+      setVariable
+      push 'docHeight', 500
+      setVariable
+      push 'main'
+      function ()
+        push 0.0, 'mainAnim'
+        callFunction
+        pop
+        push 0.0, 'mainScrolls'
+        callFunction
+        pop
+      end // of function 
+
+      setVariable
+      push 'mainScrolls'
+      function2 () (r:1='_parent')
+        push 'textBox'
+        getVariable
+        push '_x'
+        getMember
+        push UNDEF
+        equals
+        not
+        branchIfTrue label2
+        push 'currentText'
+        getVariable
+        push 'texts'
+        getVariable
+        push 'length'
+        getMember
+        lessThan
+        not
+        branchIfTrue label1
+        push 'currentText'
+        getVariable
+        push 1, 'attachText'
+        callFunction
+        pop
+        push 'currentText', 'currentText'
+        getVariable
+        increment
+        setVariable
+        branch label2
+       label1:
+        push r:_parent, '_parent'
+        getMember
+        push 'completed', TRUE
+        setMember
+       label2:
+      end // of function 
+
+      setVariable
+      push 'attachText'
+      function2 (r:2='id') (r:1='this')
+        push r:id, 'textBox', 'textBox', 3, r:this, 'attachMovie'
+        callMethod
+        pop
+        push 'textBox'
+        getVariable
+        push '_x', 'docWidth'
+        getVariable
+        push 2
+        divide
+        setMember
+        push 'textBox'
+        getVariable
+        push '_y', 'docHeight'
+        getVariable
+        push 40
+        subtract
+        setMember
+        push 'textBox'
+        getVariable
+        push 'sub'
+        getMember
+        push 'txt', 'texts'
+        getVariable
+        push r:id
+        getMember
+        push 'txt'
+        getMember
+        setMember
+        push 'textBox'
+        getVariable
+        push 'timer', 'texts'
+        getVariable
+        push r:id
+        getMember
+        push 'timer'
+        getMember
+        setMember
+      end // of function 
+
+      setVariable
+      push 'mainAnim'
+      function2 () (r:1='this', r:2='_root')
+        push 'bouli3'
+        getVariable
+        push '_x', 'bouli3'
+        getVariable
+        push '_x'
+        getMember
+        push 'vitx'
+        getVariable
+        subtract
+        setMember
+        push 'ombre'
+        getVariable
+        push '_x', 'ombre'
+        getVariable
+        push '_x'
+        getMember
+        push 'vitx'
+        getVariable
+        subtract
+        setMember
+        push 'dune1'
+        getVariable
+        push '_x', 'dune1'
+        getVariable
+        push '_x'
+        getMember
+        push 0.1
+        subtract
+        setMember
+        push 'dune2'
+        getVariable
+        push '_x', 'dune2'
+        getVariable
+        push '_x'
+        getMember
+        push 0.1
+        subtract
+        setMember
+        push 'caillou'
+        getVariable
+        push '_x', 'caillou'
+        getVariable
+        push '_x'
+        getMember
+        push 0.4
+        subtract
+        setMember
+        push 'dune4'
+        getVariable
+        push '_x', 'dune4'
+        getVariable
+        push '_x'
+        getMember
+        push 0.6
+        subtract
+        setMember
+        push 'dune6'
+        getVariable
+        push '_x', 'dune6'
+        getVariable
+        push '_x'
+        getMember
+        push 0.9
+        subtract
+        setMember
+        push 'omb1'
+        getVariable
+        push 'omb2'
+        getMember
+        push '_rotation', 'omb1'
+        getVariable
+        push 'omb2'
+        getMember
+        push '_rotation'
+        getMember
+        push 0.13
+        add
+        setMember
+        push 'omb1'
+        getVariable
+        push '_x', 'dune6'
+        getVariable
+        push '_x'
+        getMember
+        setMember
+        push 'fadeIn'
+        getVariable
+        not
+        branchIfTrue label3
+        push 'bFade'
+        getVariable
+        push 'sub'
+        getMember
+        push '_alpha', 'bFade'
+        getVariable
+        push 'sub'
+        getMember
+        push '_alpha'
+        getMember
+        push 1.3
+        subtract
+        setMember
+       label3:
+        push 'bFade'
+        getVariable
+        push 'sub'
+        getMember
+        push '_alpha'
+        getMember
+        push 1
+        greaterThan
+        not
+        not
+        branchIfTrue label4
+        push 'bFade'
+        getVariable
+        push '_visible', FALSE
+        setMember
+        push 'fadeIn', FALSE
+        setVariable
+       label4:
+        push 'fadeOut'
+        getVariable
+        not
+        branchIfTrue label5
+        push 'bFade'
+        getVariable
+        push '_visible', TRUE
+        setMember
+        push 'bFade'
+        getVariable
+        push 'sub'
+        getMember
+        push '_alpha', 'bFade'
+        getVariable
+        push 'sub'
+        getMember
+        push '_alpha'
+        getMember
+        push 1.3
+        add
+        setMember
+        push 'bFade'
+        getVariable
+        push 'sub'
+        getMember
+        push '_alpha'
+        getMember
+        push 100
+        lessThan
+        not
+        not
+        branchIfTrue label5
+        push 'bFade'
+        getVariable
+        push 'sub'
+        getMember
+        push '_alpha', 100
+        setMember
+        push r:_root, 'url'
+        getMember
+        push '_self'
+        getURL2
+        push 0.0, r:this, 'stop'
+        callMethod
+        pop
+       label5:
+        push 'dune6'
+        getVariable
+        push '_x'
+        getMember
+        push 80
+        greaterThan
+        not
+        not
+        branchIfTrue label6
+        push 'fadeOut', TRUE
+        setVariable
+       label6:
+        push 'caillou'
+        getVariable
+        push '_x'
+        getMember
+        push 194
+        lessThan
+        dup
+        not
+        branchIfTrue label7
+        pop
+        push 'caillou'
+        getVariable
+        push '_x'
+        getMember
+        push 191
+        greaterThan
+       label7:
+        not
+        branchIfTrue label8
+        push 2, 1, 'bouli3'
+        getVariable
+        push 'gotoAndStop'
+        callMethod
+        pop
+        push 'vitx', 0.19
+        setVariable
+       label8:
+        push 'dune1'
+        getVariable
+        push '_x'
+        getMember
+        push -80
+        greaterThan
+        not
+        not
+        branchIfTrue label9
+        push 'dune1'
+        getVariable
+        push '_x', 500
+        setMember
+       label9:
+        push 'dune2'
+        getVariable
+        push '_x'
+        getMember
+        push -80
+        greaterThan
+        not
+        not
+        branchIfTrue label10
+        push 'dune2'
+        getVariable
+        push '_x', 500
+        setMember
+       label10:
+        push 'dune4'
+        getVariable
+        push '_x'
+        getMember
+        push -80
+        greaterThan
+        not
+        not
+        branchIfTrue label11
+        push 'dune4'
+        getVariable
+        push '_x', 500
+        setMember
+       label11:
+        push 'dune6'
+        getVariable
+        push '_x'
+        getMember
+        push -80
+        greaterThan
+        not
+        not
+        branchIfTrue label12
+        push 'dune6'
+        getVariable
+        push '_x', 500
+        setMember
+       label12:
+        push 'omb1'
+        getVariable
+        push '_x'
+        getMember
+        push 490
+        lessThan
+        not
+        not
+        branchIfTrue label13
+        push 'omb1'
+        getVariable
+        push 'omb2'
+        getMember
+        push '_rotation', -56
+        setMember
+       label13:
+      end // of function 
+
+      setVariable
+      push 'init'
+      function ()
+        push 'vitx', 0.0
+        setVariable
+        push 'currentText', 0.0
+        setVariable
+        push 'fadeIn', TRUE
+        setVariable
+        push 'fadeOut', FALSE
+        setVariable
+        push 500, 'bFade', 'bFade', 3, 'attachMovie'
+        callFunction
+        pop
+        push 'bFade'
+        getVariable
+        push 'sub'
+        getMember
+        push '_alpha', 100
+        setMember
+        push 'bFade'
+        getVariable
+        push 'sub'
+        getMember
+        push '_y', 86
+        setMember
+      end // of function 
+
+      setVariable
+      push 0.0, 'init'
+      callFunction
+      pop
+    end // of frame 0
+
+    frame 1
+      push 0.0, 'main'
+      callFunction
+      pop
+    end // of frame 1
+
+    frame 2
+      push '', 4
+      getProperty
+      push 1
+      subtract
+      gotoAndPlay
+    end // of frame 2
+  end // of defineMovieClip 660
+end

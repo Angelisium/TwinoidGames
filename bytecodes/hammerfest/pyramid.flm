@@ -1,0 +1,1301 @@
+movie 'pyramid.swf' compressed // flash 8, total frames: 3, frame rate: 40 fps, 520x170 px
+
+
+  defineMovieClip 6 // total frames: 6
+  end // of defineMovieClip 6
+  
+  exportAssets
+    6 as 'smoke'
+  end // of exportAssets
+
+  defineMovieClip 10 // total frames: 1
+  end // of defineMovieClip 10
+
+  defineMovieClip 11 // total frames: 2
+  end // of defineMovieClip 11
+
+  defineMovieClip 14 // total frames: 1
+  end // of defineMovieClip 14
+
+  defineMovieClip 15 // total frames: 2
+  end // of defineMovieClip 15
+
+  defineMovieClip 17 // total frames: 1
+  end // of defineMovieClip 17
+
+  defineMovieClip 19 // total frames: 2
+  end // of defineMovieClip 19
+
+  defineMovieClip 23 // total frames: 1
+  end // of defineMovieClip 23
+
+  defineMovieClip 24 // total frames: 2
+  end // of defineMovieClip 24
+
+  defineMovieClip 26 // total frames: 1
+  end // of defineMovieClip 26
+
+  defineMovieClip 27 // total frames: 2
+  end // of defineMovieClip 27
+
+  defineMovieClip 28 // total frames: 1
+  end // of defineMovieClip 28
+  
+  exportAssets
+    28 as 'pyramid'
+  end // of exportAssets
+
+  frame 0
+    constants 'url', '#url_missing', 'warning: url not found', 'DEBUG', 'hof', '#hof_missing', 'warning: hof not found', 'cid', 'c', 'parseInt', 'sid2fid', 'isNaN', 'MAX_ID', 'warning: c not found (', ')', 'l', 'warning: l not found', 's', 'warning: s not found', 'toLowerCase', 'fr', 'en', 'es', 'lang', 'Langs', 'steps', '|', 'split', 'context', 'uid', 'mcList', 'Array', 'fl_lock', 'fl_afk', 'iCounter', 'hideHelp', 'pyramid', 'stop', 'pList', 'p0', 'push', 'p1', 'p2', 'p3', 'p4', 'yList', 'length', '_y', 'id', 'dy', 'fl_stable', 'blendMode', 'layer', 'updateCursor', 'CLS', 'getRawY', 'over', 'OVER_OFFSET', 'substring', '.', 'useHandCursor', 'onRelease', 'onClick', 'showHelp', 'help', '_visible', 'gotoAndStop', 'field', 'text', 'fid2sid', 'getNumber', 'header', 'footer', '', 'cursor', '_x', 'right', '\n', '\r', 'MAX_DEBUG_LINES', 'splice', 'join', 'smoke_', 'smoke', 'attachMovie', 'getHeight', '_xscale', '_alpha', 'Math', 'abs', 'ox', 'oy', 'MAX_INACTIVITY', '_width', 'onOver', '_currentframe', '_totalframes', 'removeMovieClip', 'getNormalY', 'GRAVITY', 'MIN_Y', '¡El Panteón!', 'Cada semana, el mejor jugador de esta clasificación alcanzará', 'primeros jugadores de esta clasificación subirán un nivel en la pirámide', 'Cada semana, los', 'Hall of Fame!', 'Each week, the best player from this ranking will reach the', 'players from this ranking will go up to the higher level', 'Each week, ', 'le Panthéon !', 'Chaque semaine, le meilleur joueur de ce classement atteindra', 'premiers joueurs de ce classement monteront à l\'étage supérieur de la pyramide', 'Chaque semaine, les', 'init'  
+    function2 init () (r:1='this', r:2='_root', r:3='_global')
+      push 'url'
+      getVariable
+      push NULL
+      equals
+      not
+      branchIfTrue label1
+      push 'url', '#url_missing'
+      setVariable
+      push 'warning: url not found', 1, 'DEBUG'
+      callFunction
+      pop
+     label1:
+      push 'hof'
+      getVariable
+      push NULL
+      equals
+      not
+      branchIfTrue label2
+      push 'hof', '#hof_missing'
+      setVariable
+      push 'warning: hof not found', 1, 'DEBUG'
+      callFunction
+      pop
+     label2:
+      push 'cid', 10, 'c'
+      getVariable
+      push 2, 'parseInt'
+      callFunction
+      push 1, 'sid2fid'
+      callFunction
+      setVariable
+      push 'cid'
+      getVariable
+      push 1, 'isNaN'
+      callFunction
+      not
+      branchIfTrue label3
+      push 'cid', 'MAX_ID'
+      getVariable
+      random
+      push 1, 'sid2fid'
+      callFunction
+      setVariable
+      push 'warning: c not found (', 'cid'
+      getVariable
+      add
+      push ')'
+      add
+      push 1, 'DEBUG'
+      callFunction
+      pop
+     label3:
+      push 'l'
+      getVariable
+      push NULL
+      equals
+      not
+      branchIfTrue label4
+      push 'warning: l not found', 1, 'DEBUG'
+      callFunction
+      pop
+     label4:
+      push 's'
+      getVariable
+      push NULL
+      equals
+      not
+      branchIfTrue label5
+      push 'warning: s not found', 1, 'DEBUG'
+      callFunction
+      pop
+     label5:
+      push 0.0, r:_root, 'l'
+      getMember
+      push 'toLowerCase'
+      callMethod
+      setRegister r:6
+      pop
+      push r:6
+      setRegister r:0
+      push 'fr'
+      strictEquals
+      branchIfTrue label6
+      push r:0, 'en'
+      strictEquals
+      branchIfTrue label7
+      push r:0, 'es'
+      strictEquals
+      branchIfTrue label8
+      branch label9
+     label6:
+      push 'lang', 'Langs'
+      getVariable
+      push 0.0
+      getMember
+      setVariable
+      branch label10
+     label7:
+      push 'lang', 'Langs'
+      getVariable
+      push 1
+      getMember
+      setVariable
+      branch label10
+     label8:
+      push 'lang', 'Langs'
+      getVariable
+      push 2
+      getMember
+      setVariable
+      branch label10
+     label9:
+      push 'lang', 'Langs'
+      getVariable
+      push 0.0
+      getMember
+      setVariable
+      branch label10
+     label10:
+      push 'steps', '|', 1, 's'
+      getVariable
+      push 'split'
+      callMethod
+      setVariable
+      push r:_global, 'context', r:this
+      setMember
+      push 'uid', 1
+      setVariable
+      push 'mcList', 0.0, 'Array'
+      new
+      setVariable
+      push 'fl_lock', FALSE
+      setVariable
+      push 'fl_afk', FALSE
+      setVariable
+      push 'iCounter', 0.0
+      setVariable
+      push 0.0, 'hideHelp'
+      callFunction
+      pop
+      push 0.0, 'pyramid'
+      getVariable
+      push 'stop'
+      callMethod
+      pop
+      push 'pList', 0.0, 'Array'
+      new
+      setVariable
+      push 'pyramid'
+      getVariable
+      push 'p0'
+      getMember
+      push 1, 'pList'
+      getVariable
+      push 'push'
+      callMethod
+      pop
+      push 'pyramid'
+      getVariable
+      push 'p1'
+      getMember
+      push 1, 'pList'
+      getVariable
+      push 'push'
+      callMethod
+      pop
+      push 'pyramid'
+      getVariable
+      push 'p2'
+      getMember
+      push 1, 'pList'
+      getVariable
+      push 'push'
+      callMethod
+      pop
+      push 'pyramid'
+      getVariable
+      push 'p3'
+      getMember
+      push 1, 'pList'
+      getVariable
+      push 'push'
+      callMethod
+      pop
+      push 'pyramid'
+      getVariable
+      push 'p4'
+      getMember
+      push 1, 'pList'
+      getVariable
+      push 'push'
+      callMethod
+      pop
+      push 'yList', 0.0, 'Array'
+      new
+      setVariable
+      push 0.0
+      setRegister r:5
+      pop
+     label11:
+      push r:5, 'pList'
+      getVariable
+      push 'length'
+      getMember
+      lessThan
+      not
+      branchIfTrue label12
+      push 'pList'
+      getVariable
+      push r:5
+      getMember
+      setRegister r:4
+      pop
+      push 'yList'
+      getVariable
+      push r:5, r:4, '_y'
+      getMember
+      setMember
+      push r:4, 'id', r:5
+      setMember
+      push r:4, 'dy', 0.0
+      setMember
+      push r:4, 'fl_stable', TRUE
+      setMember
+      push r:4, 'blendMode', 'layer'
+      setMember
+      push r:5
+      increment
+      setRegister r:5
+      pop
+      branch label11
+     label12:
+      push 0.0, 1, 'yList'
+      getVariable
+      push 'push'
+      callMethod
+      pop
+      push 'cid'
+      getVariable
+      push 1, 'updateCursor'
+      callFunction
+      pop
+      push 0.0, 'CLS'
+      callFunction
+      pop
+    end // of function init
+
+    function2 getRawY (r:1='id') ()
+      push 'yList'
+      getVariable
+      push r:id
+      getMember
+      return
+    end // of function getRawY
+
+    function2 getNormalY (r:2='id') ()
+      push r:id, 1, 'getRawY'
+      callFunction
+      setRegister r:1
+      pop
+      push r:id, 'over'
+      getVariable
+      equals
+      dup
+      not
+      branchIfTrue label13
+      pop
+      push r:id, 0.0
+      equals
+      not
+     label13:
+      not
+      branchIfTrue label14
+      push r:1, 'OVER_OFFSET'
+      getVariable
+      subtract
+      return
+      branch label15
+     label14:
+      push r:1
+      return
+     label15:
+    end // of function getNormalY
+
+    function2 getHeight (r:2='id') ()
+      push r:id, 1, 'getRawY'
+      callFunction
+      push r:id, 1
+      add
+      push 1, 'getRawY'
+      callFunction
+      subtract
+      setRegister r:1
+      pop
+      push r:1
+      return
+    end // of function getHeight
+
+    function2 getNumber (r:2='n') ()
+      push r:n
+      toString
+      setRegister r:1
+      pop
+      push r:1, 'length'
+      getMember
+      push 4
+      lessThan
+      not
+      not
+      branchIfTrue label16
+      push r:1, 'length'
+      getMember
+      push 3
+      subtract
+      push 0.0, 2, r:1, 'substring'
+      callMethod
+      push '.'
+      add
+      push 9999, r:1, 'length'
+      getMember
+      push 3
+      subtract
+      push 2, r:1, 'substring'
+      callMethod
+      add
+      setRegister r:1
+      pop
+     label16:
+      push r:1
+      return
+    end // of function getNumber
+
+    function2 onOver ('id') (r:1='this', r:2='_global')
+      push 'over'
+      getVariable
+      push 'id'
+      getVariable
+      equals
+      not
+      branchIfTrue label17
+      push UNDEF
+      return
+     label17:
+      push 'id'
+      getVariable
+      push 0.0
+      equals
+      not
+      branchIfTrue label18
+      push UNDEF
+      return
+     label18:
+      push 'pList'
+      getVariable
+      push 'id'
+      getVariable
+      getMember
+      setRegister r:3
+      pop
+      push 'id'
+      getVariable
+      push 0.0
+      equals
+      not
+      dup
+      not
+      branchIfTrue label19
+      pop
+      push r:3, 'fl_stable'
+      getMember
+     label19:
+      not
+      branchIfTrue label20
+      push r:3, 'dy', -2
+      setMember
+      push r:3, '_y', r:3, '_y'
+      getMember
+      push 5
+      subtract
+      setMember
+      push r:3, 'fl_stable', FALSE
+      setMember
+     label20:
+      push r:3, 'useHandCursor', TRUE
+      setMember
+      push r:3, 'onRelease'
+      function2 () (r:1='this', r:2='_global')
+        push r:this, 'id'
+        getMember
+        push 1, r:_global, 'context'
+        getMember
+        push 'onClick'
+        callMethod
+        pop
+      end // of function 
+
+      setMember
+      push 'id'
+      getVariable
+      push 1, 'showHelp'
+      callFunction
+      pop
+      push 'over', 'id'
+      getVariable
+      setVariable
+    end // of function onOver
+
+    function2 showHelp (r:1='id') ()
+      push 'help'
+      getVariable
+      push '_visible', TRUE
+      setMember
+      push r:id, 'pList'
+      getVariable
+      push 'length'
+      getMember
+      push 1
+      subtract
+      lessThan
+      not
+      branchIfTrue label21
+      push 1, 1, 'help'
+      getVariable
+      push 'gotoAndStop'
+      callMethod
+      pop
+      push 'help'
+      getVariable
+      push 'field'
+      getMember
+      push 'text', 'steps'
+      getVariable
+      push r:id, 1, 'fid2sid'
+      callFunction
+      push 1
+      subtract
+      getMember
+      push 1, 'getNumber'
+      callFunction
+      setMember
+      push 'help'
+      getVariable
+      push 'header'
+      getMember
+      push 'text', 'lang'
+      getVariable
+      push 0.0
+      getMember
+      setMember
+      push 'help'
+      getVariable
+      push 'footer'
+      getMember
+      push 'text', 'lang'
+      getVariable
+      push 1
+      getMember
+      setMember
+      branch label22
+     label21:
+      push 2, 1, 'help'
+      getVariable
+      push 'gotoAndStop'
+      callMethod
+      pop
+      push 'help'
+      getVariable
+      push 'header'
+      getMember
+      push 'text', 'lang'
+      getVariable
+      push 2
+      getMember
+      setMember
+      push 'help'
+      getVariable
+      push 'hof'
+      getMember
+      push 'text', 'lang'
+      getVariable
+      push 3
+      getMember
+      setMember
+     label22:
+    end // of function showHelp
+
+    function hideHelp ()
+      push 'help'
+      getVariable
+      push '_visible', FALSE
+      setMember
+    end // of function hideHelp
+
+    function2 onClick (r:3='id') ()
+      push r:id, 1, 'fid2sid'
+      callFunction
+      setRegister r:2
+      pop
+      push r:2, 0.0
+      equals
+      not
+      branchIfTrue label23
+      push 'hof'
+      getVariable
+      push ''
+      getURL2
+      branch label24
+     label23:
+      push 'url'
+      getVariable
+      push r:2
+      add
+      push ''
+      getURL2
+     label24:
+      push 'fl_lock', TRUE
+      setVariable
+      push 'help'
+      getVariable
+      push '_visible', FALSE
+      setMember
+      push 0.0
+      setRegister r:1
+      pop
+     label25:
+      push r:1, 'pList'
+      getVariable
+      push 'length'
+      getMember
+      lessThan
+      not
+      branchIfTrue label26
+      push 'pList'
+      getVariable
+      push r:1
+      getMember
+      push 'onRelease', NULL
+      setMember
+      push 'pList'
+      getVariable
+      push r:1
+      getMember
+      push 'useHandCursor', FALSE
+      setMember
+      push r:1
+      increment
+      setRegister r:1
+      pop
+      branch label25
+     label26:
+    end // of function onClick
+
+    function2 updateCursor (r:1='id') ()
+      push r:id, 4
+      greaterThan
+      not
+      branchIfTrue label27
+      push 'cursor'
+      getVariable
+      push '_visible', FALSE
+      setMember
+     label27:
+      push 'cursor'
+      getVariable
+      push '_x', 145, r:id, 20
+      multiply
+      add
+      setMember
+      push 'cursor'
+      getVariable
+      push '_y', r:id, 1, 'getRawY'
+      callFunction
+      setMember
+      push 'cursor'
+      getVariable
+      push 'right'
+      getMember
+      push '_x', 218, r:id, 20
+      multiply
+      push 2
+      multiply
+      subtract
+      setMember
+    end // of function updateCursor
+
+    function2 DEBUG (r:2='s') ()
+      push 'field'
+      getVariable
+      push 'text', 'field'
+      getVariable
+      push 'text'
+      getMember
+      push r:s, '\n'
+      add
+      add
+      setMember
+      push '\r', 1, 'field'
+      getVariable
+      push 'text'
+      getMember
+      push 'split'
+      callMethod
+      setRegister r:1
+      pop
+     label28:
+      push r:1, 'length'
+      getMember
+      push 'MAX_DEBUG_LINES'
+      getVariable
+      greaterThan
+      not
+      branchIfTrue label29
+      push 1, 0.0, 2, r:1, 'splice'
+      callMethod
+      pop
+      branch label28
+     label29:
+      push 'field'
+      getVariable
+      push 'text', '\n', 1, r:1, 'join'
+      callMethod
+      setMember
+    end // of function DEBUG
+
+    function CLS ()
+      push 'field'
+      getVariable
+      push 'text', ''
+      setMember
+    end // of function CLS
+
+    function2 smoke (r:3='id') (r:1='this')
+      push UNDEF
+      return
+      push 'uid'
+      getVariable
+      push 'smoke_', 'uid'
+      getVariable
+      add
+      push 'smoke', 3, r:this, 'attachMovie'
+      callMethod
+      pop
+      push r:this, 'smoke_', 'uid'
+      getVariable
+      add
+      getMember
+      setRegister r:2
+      pop
+      push r:2, '_x', 260
+      setMember
+      push r:2, '_y', r:id, 1, 'getRawY'
+      callFunction
+      push r:id, 1, 'getHeight'
+      callFunction
+      push 0.4
+      multiply
+      add
+      setMember
+      push r:2, '_xscale', 100, r:id, 17
+      multiply
+      subtract
+      setMember
+      push r:2, '_alpha', 50
+      setMember
+      push 'uid', 'uid'
+      getVariable
+      increment
+      setVariable
+      push r:2, 1, 'mcList'
+      getVariable
+      push 'push'
+      callMethod
+      pop
+    end // of function smoke
+
+    function2 fid2sid (r:1='n') ()
+      push 'MAX_ID'
+      getVariable
+      push r:n
+      subtract
+      push 1
+      add
+      return
+    end // of function fid2sid
+
+    function2 sid2fid (r:1='n') ()
+      push r:n, 'MAX_ID'
+      getVariable
+      subtract
+      push 1
+      subtract
+      push 1, 'Math'
+      getVariable
+      push 'abs'
+      callMethod
+      return
+    end // of function sid2fid
+
+    function2 main () (r:1='this')
+      push 'fl_lock'
+      getVariable
+      not
+      branchIfTrue label30
+      push UNDEF
+      return
+     label30:
+      push 'ox'
+      getVariable
+      push '', 20
+      getProperty
+      equals
+      dup
+      not
+      branchIfTrue label31
+      pop
+      push 'oy'
+      getVariable
+      push '', 21
+      getProperty
+      equals
+     label31:
+      not
+      branchIfTrue label33
+      push 'iCounter', 'iCounter'
+      getVariable
+      increment
+      setVariable
+      push 'iCounter'
+      getVariable
+      push 'MAX_INACTIVITY'
+      getVariable
+      lessThan
+      not
+      not
+      branchIfTrue label32
+      push 'fl_afk', TRUE
+      setVariable
+     label32:
+      branch label34
+     label33:
+      push 'iCounter', 0.0
+      setVariable
+      push 'fl_afk', FALSE
+      setVariable
+     label34:
+      push 'ox', '', 20
+      getProperty
+      setVariable
+      push 'oy', '', 21
+      getProperty
+      setVariable
+      push FALSE
+      setRegister r:6
+      pop
+      push 'fl_afk'
+      getVariable
+      not
+      not
+      branchIfTrue label41
+      push 0.0
+      setRegister r:3
+      pop
+     label35:
+      push r:3, 'pList'
+      getVariable
+      push 'length'
+      getMember
+      lessThan
+      not
+      branchIfTrue label41
+      push r:6
+      not
+      dup
+      not
+      branchIfTrue label36
+      pop
+      push '', 21
+      getProperty
+      push r:3, 1, 'getRawY'
+      callFunction
+      push r:3, 1, 'getHeight'
+      callFunction
+      push 0.5
+      multiply
+      subtract
+      lessThan
+      not
+     label36:
+      dup
+      not
+      branchIfTrue label37
+      pop
+      push '', 21
+      getProperty
+      push r:3, 1, 'getRawY'
+      callFunction
+      push r:3, 1, 'getHeight'
+      callFunction
+      push 0.5
+      multiply
+      add
+      lessThan
+     label37:
+      dup
+      not
+      branchIfTrue label38
+      pop
+      push '', 20
+      getProperty
+      push 'pyramid'
+      getVariable
+      push '_x'
+      getMember
+      lessThan
+      not
+     label38:
+      dup
+      not
+      branchIfTrue label39
+      pop
+      push '', 20
+      getProperty
+      push 'pyramid'
+      getVariable
+      push '_x'
+      getMember
+      push 'pyramid'
+      getVariable
+      push '_width'
+      getMember
+      add
+      greaterThan
+      not
+     label39:
+      not
+      branchIfTrue label40
+      push r:3, 1, 'onOver'
+      callFunction
+      pop
+      push TRUE
+      setRegister r:6
+      pop
+     label40:
+      push r:3
+      increment
+      setRegister r:3
+      pop
+      branch label35
+     label41:
+      push 'fl_afk'
+      getVariable
+      dup
+      branchIfTrue label43
+      pop
+      push r:6
+      not
+      dup
+      not
+      branchIfTrue label43
+      pop
+      push '', 20
+      getProperty
+      push 'pyramid'
+      getVariable
+      push '_x'
+      getMember
+      lessThan
+      not
+      dup
+      not
+      branchIfTrue label42
+      pop
+      push '', 20
+      getProperty
+      push 'pyramid'
+      getVariable
+      push '_x'
+      getMember
+      push 'pyramid'
+      getVariable
+      push '_width'
+      getMember
+      add
+      greaterThan
+      not
+     label42:
+      not
+     label43:
+      not
+      branchIfTrue label44
+      push r:this, 'onRelease', NULL
+      setMember
+      push 'over', NULL
+      setVariable
+      push 0.0, 'hideHelp'
+      callFunction
+      pop
+      push 'cid'
+      getVariable
+      push 1, 'updateCursor'
+      callFunction
+      pop
+     label44:
+      push 0.0
+      setRegister r:3
+      pop
+     label45:
+      push r:3, 'mcList'
+      getVariable
+      push 'length'
+      getMember
+      lessThan
+      not
+      branchIfTrue label47
+      push 'mcList'
+      getVariable
+      push r:3
+      getMember
+      setRegister r:5
+      pop
+      push r:5, '_currentframe'
+      getMember
+      push r:5, '_totalframes'
+      getMember
+      equals
+      not
+      branchIfTrue label46
+      push 0.0, r:5, 'removeMovieClip'
+      callMethod
+      pop
+      push 1, r:3, 2, 'mcList'
+      getVariable
+      push 'splice'
+      callMethod
+      pop
+      push r:3
+      decrement
+      setRegister r:3
+      pop
+     label46:
+      push r:3
+      increment
+      setRegister r:3
+      pop
+      branch label45
+     label47:
+      push 0.0
+      setRegister r:3
+      pop
+     label48:
+      push r:3, 'pList'
+      getVariable
+      push 'length'
+      getMember
+      lessThan
+      not
+      branchIfTrue label57
+      push 'pList'
+      getVariable
+      push r:3
+      getMember
+      setRegister r:2
+      pop
+      push r:2, '_y'
+      getMember
+      push r:2, 'id'
+      getMember
+      push 1, 'getNormalY'
+      callFunction
+      lessThan
+      not
+      branchIfTrue label49
+      push r:2, 'dy', r:2, 'dy'
+      getMember
+      push 'GRAVITY'
+      getVariable
+      add
+      setMember
+      push r:2, 'fl_stable', FALSE
+      setMember
+     label49:
+      push r:2, 'dy'
+      getMember
+      push 0.0
+      lessThan
+      not
+      dup
+      not
+      branchIfTrue label50
+      pop
+      push r:2, '_y'
+      getMember
+      push r:2, 'id'
+      getMember
+      push 1, 'getNormalY'
+      callFunction
+      lessThan
+      not
+     label50:
+      not
+      branchIfTrue label52
+      push r:2, '_y', r:2, 'id'
+      getMember
+      push 1, 'getNormalY'
+      callFunction
+      setMember
+      push r:2, 'dy', 0.0
+      setMember
+      push r:2, 'fl_stable', TRUE
+      setMember
+      push 'over'
+      getVariable
+      push r:2, 'id'
+      getMember
+      equals
+      not
+      dup
+      not
+      branchIfTrue label51
+      pop
+      push 'over'
+      getVariable
+      push r:2, 'id'
+      getMember
+      push 1
+      add
+      equals
+      not
+     label51:
+      not
+      branchIfTrue label52
+      push r:2, 'id'
+      getMember
+      push 1, 'smoke'
+      callFunction
+      pop
+     label52:
+      push 'over'
+      getVariable
+      push NULL
+      equals
+      not
+      dup
+      not
+      branchIfTrue label53
+      pop
+      push 'over'
+      getVariable
+      push r:3
+      equals
+      not
+     label53:
+      dup
+      branchIfTrue label54
+      pop
+      push 'over'
+      getVariable
+      push NULL
+      equals
+      dup
+      not
+      branchIfTrue label54
+      pop
+      push r:3, 'cid'
+      getVariable
+      equals
+      not
+     label54:
+      not
+      branchIfTrue label55
+      push 1, 1, r:2, 'gotoAndStop'
+      callMethod
+      pop
+      branch label56
+     label55:
+      push 2, 1, r:2, 'gotoAndStop'
+      callMethod
+      pop
+     label56:
+      push r:2, '_y', r:2, '_y'
+      getMember
+      push r:2, 'dy'
+      getMember
+      add
+      setMember
+      push r:3
+      increment
+      setRegister r:3
+      pop
+      branch label48
+     label57:
+      push 0.0, 1, 'getRawY'
+      callFunction
+      setRegister r:4
+      pop
+      push 0.0
+      setRegister r:3
+      pop
+     label58:
+      push r:3, 'pList'
+      getVariable
+      push 'length'
+      getMember
+      lessThan
+      not
+      branchIfTrue label63
+      push 'pList'
+      getVariable
+      push r:3
+      getMember
+      setRegister r:2
+      pop
+      push r:2, '_y'
+      getMember
+      push r:4
+      greaterThan
+      not
+      branchIfTrue label59
+      push r:2, '_y', r:4
+      setMember
+      push r:2, 'dy', 0.0
+      setMember
+     label59:
+      push r:2, '_y'
+      getMember
+      push 'MIN_Y'
+      getVariable
+      greaterThan
+      not
+      not
+      branchIfTrue label60
+      push r:2, '_y', 'MIN_Y'
+      getVariable
+      setMember
+      push r:2, 'dy', 0.0
+      setMember
+     label60:
+      push r:4, r:3, 1, 'getHeight'
+      callFunction
+      subtract
+      setRegister r:4
+      pop
+      push r:2, '_y'
+      getMember
+      push r:4
+      equals
+      not
+      not
+      branchIfTrue label61
+      push r:2, '_y'
+      getMember
+      push r:3, 1, 'getHeight'
+      callFunction
+      subtract
+      setRegister r:4
+      pop
+     label61:
+      push r:3, 'over'
+      getVariable
+      equals
+      not
+      branchIfTrue label62
+      push r:4, 'OVER_OFFSET'
+      getVariable
+      subtract
+      setRegister r:4
+      pop
+     label62:
+      push r:3
+      increment
+      setRegister r:3
+      pop
+      branch label58
+     label63:
+    end // of function main
+
+    push 'Langs', '¡El Panteón!', 'Cada semana, el mejor jugador de esta clasificación alcanzará', 'primeros jugadores de esta clasificación subirán un nivel en la pirámide', 'Cada semana, los', 4
+    initArray
+    push 'Hall of Fame!', 'Each week, the best player from this ranking will reach the', 'players from this ranking will go up to the higher level', 'Each week, ', 4
+    initArray
+    push 'le Panthéon !', 'Chaque semaine, le meilleur joueur de ce classement atteindra', 'premiers joueurs de ce classement monteront à l\'étage supérieur de la pyramide', 'Chaque semaine, les', 4
+    initArray
+    push 3
+    initArray
+    varEquals
+    push 'OVER_OFFSET', 5
+    varEquals
+    push 'GRAVITY', 0.5
+    varEquals
+    push 'MAX_DEBUG_LINES', 12
+    varEquals
+    push 'MIN_Y', 13
+    varEquals
+    push 'MAX_INACTIVITY', 192
+    varEquals
+    push 'MAX_ID', 4
+    varEquals
+    push 'lang'
+    var
+    push 'pList'
+    var
+    push 'yList'
+    var
+    push 'over'
+    var
+    push 'uid'
+    var
+    push 'mcList'
+    var
+    push 'fl_lock'
+    var
+    push 'fl_afk'
+    var
+    push 'cid'
+    var
+    push 'ox'
+    var
+    push 'oy'
+    var
+    push 'iCounter'
+    var
+    push 'steps'
+    var
+    push 0.0, 'init'
+    callFunction
+    pop
+  end // of frame 0
+
+  defineMovieClip 35 // total frames: 2
+  end // of defineMovieClip 35
+
+  defineMovieClip 38 // total frames: 1
+  end // of defineMovieClip 38
+
+  defineMovieClip 39 // total frames: 1
+  end // of defineMovieClip 39
+
+  frame 1
+    push 0.0, 'main'
+    callFunction
+    pop
+  end // of frame 1
+
+  frame 2
+    push '', 4
+    getProperty
+    push 1
+    subtract
+    gotoAndPlay
+  end // of frame 2
+end
