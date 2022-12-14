@@ -1,0 +1,241 @@
+movie 'titles.swf' compressed // flash 8, total frames: 1, frame rate: 12 fps, 520x27 px
+
+
+  frame 0
+    constants 'Array', 'text', 'length', 'charAt', 'TextFormat', 'size', 'toUpperCase', 'push', 'setTextFormat', '_y', 'HEI', 'textHeight', 'mc', 'field', 'title', 'sub', 'null', '', 'smallCaps', 'WID', 'flash', 'display', 'BitmapData', 'draw', 'cont', 'createEmptyMovieClip', 'attachBitmap', 'filters', 'GlowFilter', 'geom', 'ColorTransform', 'Rectangle', 'colorTransform', '_x', 'textWidth', 'color', 'COL_SUB', 'init'  
+    function2 smallCaps (r:4='f') ()
+      push 0.0, 'Array'
+      new
+      setRegister r:5
+      pop
+      push 0.0
+      setRegister r:1
+      pop
+     label1:
+      push r:1, r:f, 'text'
+      getMember
+      push 'length'
+      getMember
+      lessThan
+      not
+      branchIfTrue label3
+      push r:1, 1, r:f, 'text'
+      getMember
+      push 'charAt'
+      callMethod
+      setRegister r:3
+      pop
+      push 0.0, 'TextFormat'
+      new
+      setRegister r:2
+      pop
+      push r:2, 'size', 19
+      setMember
+      push r:3, 0.0, r:3, 'toUpperCase'
+      callMethod
+      equals
+      not
+      branchIfTrue label2
+      push r:2, 'size', r:2, 'size'
+      getMember
+      push 5
+      add
+      setMember
+     label2:
+      push r:2, 1, r:5, 'push'
+      callMethod
+      pop
+      push r:1
+      increment
+      setRegister r:1
+      pop
+      branch label1
+     label3:
+      push r:f, 'text', 0.0, r:f, 'text'
+      getMember
+      push 'toUpperCase'
+      callMethod
+      setMember
+      push 0.0
+      setRegister r:1
+      pop
+     label4:
+      push r:1, r:5, 'length'
+      getMember
+      lessThan
+      not
+      branchIfTrue label5
+      push r:5, r:1
+      getMember
+      push r:1, 2, r:f, 'setTextFormat'
+      callMethod
+      pop
+      push r:1
+      increment
+      setRegister r:1
+      pop
+      branch label4
+     label5:
+      push r:f, '_y', 'HEI'
+      getVariable
+      push r:f, 'textHeight'
+      getMember
+      subtract
+      setMember
+    end // of function smallCaps
+
+    function2 init () (r:1='_root')
+      push 'mc'
+      getVariable
+      push 'field'
+      getMember
+      setRegister r:2
+      pop
+      push r:_root, 'title'
+      getMember
+      setRegister r:7
+      pop
+      push r:_root, 'sub'
+      getMember
+      setRegister r:3
+      pop
+      push r:3, 'null'
+      equals
+      dup
+      branchIfTrue label6
+      pop
+      push r:3, NULL
+      equals
+     label6:
+      not
+      branchIfTrue label7
+      push ''
+      setRegister r:3
+      pop
+     label7:
+      push r:2, 'text', r:7
+      setMember
+      push r:2, 1, 'smallCaps'
+      callFunction
+      pop
+      push 16573372, TRUE, 'HEI'
+      getVariable
+      push 'WID'
+      getVariable
+      push 4, 'flash'
+      getVariable
+      push 'display'
+      getMember
+      push 'BitmapData'
+      newMethod
+      setRegister r:5
+      pop
+      push 'mc'
+      getVariable
+      push 1, r:5, 'draw'
+      callMethod
+      pop
+      push 2, 'cont', 2, r:_root, 'createEmptyMovieClip'
+      callMethod
+      pop
+      push 1, r:5, 2, 'cont'
+      getVariable
+      push 'attachBitmap'
+      callMethod
+      pop
+      push 0.0, 'Array'
+      new
+      setRegister r:4
+      pop
+      push TRUE, 1, 2, 2, 2, 1, 4681479, 7, 'flash'
+      getVariable
+      push 'filters'
+      getMember
+      push 'GlowFilter'
+      newMethod
+      push 1, r:4, 'push'
+      callMethod
+      pop
+      push 1, 6, 2, 2, 1, 16642495, 6, 'flash'
+      getVariable
+      push 'filters'
+      getMember
+      push 'GlowFilter'
+      newMethod
+      push 1, r:4, 'push'
+      callMethod
+      pop
+      push 3, 0.4, 4, 4, 1, 11689249, 6, 'flash'
+      getVariable
+      push 'filters'
+      getMember
+      push 'GlowFilter'
+      newMethod
+      push 1, r:4, 'push'
+      callMethod
+      pop
+      push 'cont'
+      getVariable
+      push 'filters', r:4
+      setMember
+      push 0.0, 6, 212, 157, 1, 0.0, 0.0, 0.0, 8, 'flash'
+      getVariable
+      push 'geom'
+      getMember
+      push 'ColorTransform'
+      newMethod
+      setRegister r:8
+      pop
+      push r:8, 'HEI'
+      getVariable
+      push 20
+      subtract
+      push 'WID'
+      getVariable
+      push 17, 0.0, 4, 'flash'
+      getVariable
+      push 'geom'
+      getMember
+      push 'Rectangle'
+      newMethod
+      push 2, r:5, 'colorTransform'
+      callMethod
+      pop
+      push r:2, '_x', r:2, 'textWidth'
+      getMember
+      push 10
+      add
+      setMember
+      push r:2, 'text', r:3
+      setMember
+      push r:2, 1, 'smallCaps'
+      callFunction
+      pop
+      push 0.0, 'TextFormat'
+      new
+      setRegister r:6
+      pop
+      push r:6, 'color', 'COL_SUB'
+      getVariable
+      setMember
+      push r:6, 1, r:2, 'setTextFormat'
+      callMethod
+      pop
+    end // of function init
+
+    push 'WID', 520
+    varEquals
+    push 'HEI', 27
+    varEquals
+    push 'COL_SUB', 10834221
+    varEquals
+    push 0.0, 'init'
+    callFunction
+    pop
+  end // of frame 0
+  
+  // unknown tag 88 length 115
+
+  defineMovieClip 3 // total frames: 1
+  end // of defineMovieClip 3
+end
