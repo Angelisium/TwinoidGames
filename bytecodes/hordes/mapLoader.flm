@@ -1,0 +1,137 @@
+movie 'mapLoader.swf' compressed // flash 8, total frames: 3, frame rate: 40 fps, 300x300 px
+
+
+  defineMovieClip 3 // total frames: 1
+  end // of defineMovieClip 3
+
+  defineMovieClip 6 // total frames: 1
+  end // of defineMovieClip 6
+
+  defineMovieClip 8 // total frames: 1
+  end // of defineMovieClip 8
+
+  defineMovieClip 10 // total frames: 1
+  end // of defineMovieClip 10
+
+  defineMovieClip 12 // total frames: 1
+  end // of defineMovieClip 12
+
+  defineMovieClip 14 // total frames: 1
+  end // of defineMovieClip 14
+
+  defineMovieClip 17 // total frames: 1
+  end // of defineMovieClip 17
+
+  defineMovieClip 18 // total frames: 1
+  end // of defineMovieClip 18
+  
+  exportAssets
+    18 as 'bgLoader'
+  end // of exportAssets
+
+  frame 0
+    constants 'bg', 'bgLoader', 'attachMovie', 'root', 'createEmptyMovieClip', 'MovieClipLoader', 'onLoadInit', 'onLoadStep', 'onLoadComplete', 'onLoadProgress', 'onProgress', 'onLoadError', 'onError', 'swf/map.', 'lang', '.swf?v=', 'v', 'loadClip', 'step', 'intervalId', 'clearInterval', 'field', '_visible', 'removeMovieClip', 'bar', '_xscale', '_alpha', 'startLoad'  
+    function2 startLoad () (r:1='_root')
+      push 'bg', 1, 'bg', 'bgLoader', 3, 'attachMovie'
+      callFunction
+      setVariable
+      push 'root', 2, 'root', 2, 'createEmptyMovieClip'
+      callFunction
+      setVariable
+      push 0.0, 'MovieClipLoader'
+      new
+      setRegister r:2
+      pop
+      push r:2, 'onLoadInit', 'onLoadStep'
+      getVariable
+      setMember
+      push r:2, 'onLoadComplete', 'onLoadStep'
+      getVariable
+      setMember
+      push r:2, 'onLoadProgress', 'onProgress'
+      getVariable
+      setMember
+      push r:2, 'onLoadError', 'onError'
+      getVariable
+      setMember
+      push 'root'
+      getVariable
+      push 'swf/map.', r:_root, 'lang'
+      getMember
+      add
+      push '.swf?v='
+      add
+      push r:_root, 'v'
+      getMember
+      add
+      push 2, r:2, 'loadClip'
+      callMethod
+      pop
+      push 'step', 0.0
+      setVariable
+      push 'intervalId'
+      getVariable
+      push 1, 'clearInterval'
+      callFunction
+      pop
+    end // of function startLoad
+
+    function onLoadStep ()
+      push 'step', 'step'
+      getVariable
+      increment
+      setVariable
+      push 'step'
+      getVariable
+      push 2
+      lessThan
+      not
+      not
+      branchIfTrue label1
+      push 'field'
+      getVariable
+      push '_visible', FALSE
+      setMember
+      push 0.0, 'bg'
+      getVariable
+      push 'removeMovieClip'
+      callMethod
+      pop
+     label1:
+    end // of function onLoadStep
+
+    function2 onProgress ('mc', r:1='cur', r:2='tot') ()
+      push 'bg'
+      getVariable
+      push 'bar'
+      getMember
+      push '_xscale', 100, r:cur
+      multiply
+      push r:tot
+      divide
+      setMember
+      push 'bg'
+      getVariable
+      push 'bar'
+      getMember
+      push '_alpha', 100
+      setMember
+    end // of function onProgress
+
+    function onError ('t')
+      push 'bg'
+      getVariable
+      push '_alpha', 50
+      setMember
+    end // of function onError
+
+    push 0.0, 'startLoad'
+    callFunction
+    pop
+    stop
+  end // of frame 0
+  
+  // unknown tag 88 length 63
+  
+  // unknown tag 88 length 63
+end
