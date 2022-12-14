@@ -1,0 +1,2416 @@
+movie 'scoreStar.swf' compressed // flash 8, total frames: 3, frame rate: 60 fps, 300x320 px
+
+
+  defineMovieClip 2 // total frames: 1
+  end // of defineMovieClip 2
+
+  defineMovieClip 4 // total frames: 1
+  end // of defineMovieClip 4
+
+  defineMovieClip 5 // total frames: 14
+  end // of defineMovieClip 5
+  
+  exportAssets
+    5 as 'hero'
+  end // of exportAssets
+
+  defineMovieClip 6 // total frames: 1
+  end // of defineMovieClip 6
+  
+  exportAssets
+    6 as 'mcChrono'
+  end // of exportAssets
+
+  defineMovieClip 8 // total frames: 1
+  end // of defineMovieClip 8
+
+  defineMovieClip 9 // total frames: 40
+  end // of defineMovieClip 9
+  
+  exportAssets
+    9 as 'quarterAnim'
+  end // of exportAssets
+  
+  // unknown tag 88 length 311
+
+  defineMovieClip 12 // total frames: 1
+
+    frame 0
+      constants 'field', 'text', '_root'  
+      push 'field'
+      getVariable
+      push 'text', '_root'
+      getVariable
+      push 'text'
+      getMember
+      push 12
+      getMember
+      setMember
+    end // of frame 0
+  end // of defineMovieClip 12
+
+  defineMovieClip 13 // total frames: 17
+  end // of defineMovieClip 13
+
+  defineMovieClip 15 // total frames: 1
+
+    frame 0
+      constants 'field', 'text', '_root'  
+      push 'field'
+      getVariable
+      push 'text', '_root'
+      getVariable
+      push 'text'
+      getMember
+      push 13
+      getMember
+      setMember
+    end // of frame 0
+  end // of defineMovieClip 15
+
+  defineMovieClip 16 // total frames: 11
+  end // of defineMovieClip 16
+
+  defineMovieClip 17 // total frames: 2
+  end // of defineMovieClip 17
+  
+  exportAssets
+    17 as 'best'
+  end // of exportAssets
+
+  defineMovieClip 19 // total frames: 1
+  end // of defineMovieClip 19
+
+  defineMovieClip 20 // total frames: 1
+  end // of defineMovieClip 20
+
+  defineMovieClip 24 // total frames: 2
+  end // of defineMovieClip 24
+  
+  exportAssets
+    24 as 'panScore'
+  end // of exportAssets
+
+  defineMovieClip 26 // total frames: 1
+  end // of defineMovieClip 26
+
+  defineMovieClip 29 // total frames: 1
+  end // of defineMovieClip 29
+
+  defineMovieClip 30 // total frames: 35
+  end // of defineMovieClip 30
+  
+  exportAssets
+    30 as 'anim'
+  end // of exportAssets
+
+  defineMovieClip 31 // total frames: 1
+  end // of defineMovieClip 31
+
+  defineMovieClip 33 // total frames: 1
+  end // of defineMovieClip 33
+
+  defineMovieClip 35 // total frames: 1
+  end // of defineMovieClip 35
+
+  defineMovieClip 36 // total frames: 4
+
+    frame 0
+      stop
+    end // of frame 0
+  end // of defineMovieClip 36
+  
+  exportAssets
+    36 as 'stars'
+  end // of exportAssets
+
+  defineMovieClip 38 // total frames: 1
+  end // of defineMovieClip 38
+
+  defineMovieClip 41 // total frames: 1
+  end // of defineMovieClip 41
+
+  defineMovieClip 45 // total frames: 7
+
+    frame 0
+      stop
+    end // of frame 0
+  end // of defineMovieClip 45
+  
+  exportAssets
+    45 as 'shield'
+  end // of exportAssets
+
+  defineMovieClip 49 // total frames: 1
+  end // of defineMovieClip 49
+  
+  exportAssets
+    49 as 'TextQual'
+  end // of exportAssets
+
+  frame 0
+    constants 'Vous n\'avez pas encore l\'étoile ', 'Vous avez presque atteint l\'étoile ', 'Vous passez à quelques points de l\'étoile ', 'rouge', 'orange', 'verte', ' !', 'lang', 'en', 'You didn\'t get the ', 'You nearly got the ', 'Only a few more points were necessary to get the ', 'red', 'green', ' star!', 'es', '¡No has conseguido la estrella ', '¡Casi consigues la estrella ', 'Un poquito más, ¡y casi consigues la estrella ', 'roja', 'naranja', 'verde', '!', 'de', 'Ein erster Schritt zum ', 'Gleich hast du den ', 'Nur noch wenige Punkte bis zum ', 'roten', 'orangenen', 'grünen', ' Stern!', 'Congratulations, you completed this mission step!', 'Enhorabuena, ¡has superado esta etapa de la misión!', 'Glückwunsch, du hast diesen Missionsschritt abgeschlossen!', 'Félicitions ! Vous avez sauvé cette étape de la mission !', 'You failed to complete this mission step. Try again...', 'Has fracasado en completar esta etapa de la misión.', 'Du konntest diesen Missionsschritt nicht abschließen.', 'Vous ne parvenez pas à passer cette étape de la mission. Ré-essayez !', 'mission', 'txtMissionCountered', 'Congratulations, you countered the attack of the <b>', '</b> clan!', 'Enhorabuena, ¡has superado el ataque del clan <b>', '</b>!', 'Glückwunsch, du konntest den Angriff von Klan <b>', '</b> kontern!', 'Vous avez repoussé l\'attaque du clan <b>', '</b>. Félicitations !', 'txtMissionNotCountered', 'You failed to counter the attack of the <b>', '</b> clan.', 'Has fracasado en tu intento de contraatacar el desafío del clan <b>', '</b>.', 'Du konntest den Angriff von Klan <b>', '</b> nicht kontern.', 'Vous ne parvenez pas a repousser l\'attaque du clan <b>', 'You launched an attack of <b>', '</b> against the <b>', 'Has lanzado un desafío de <b>', '</b> contra el clan <b>', 'Du hast einen Angriff mit <b>', '</b> gegen <b>', '</b> gestartet.', 'Vous avez lancé une attaque de <b>', '</b> contre le clan <b>', '</b> !', 'You still have ', ' players to overtake!', '¡Todavía tienes que superar a ', ' jugadores!', 'Du hast noch ', ' Spieler vor dir!', 'Il y a encore ', ' joueurs à dépasser !', 'url', 'coucou', 'score', '96280', 'best', '2', 'contrat', '15454', 'tokens', '47', 'multi', 'olds', '104', 'news', '804 ', 'pos', '290', 'tot', '1130', 'qual', '300', 'clan', 'best killer', 'att', '198280', 'text', 'textFr', 'textEn', 'textEs', 'textDe', 'oldPos', 'o', 'parseInt', 'n', 'op', 'p', 't', 'q', 'initScore', 'barPos', '_visible', 'panContrat', 'clic', 'replay', 'onPress', 'redirect', 'main', 'sstep', 'updateScore', 'updateProgression', 'updateContrat', 'float', 'cursor', '_y', 'Math', 'cos', '_rotation', 'flash', 'filters', 'GlowFilter', 'blurX', 'blurY', 'color', 'strength', 'step', 'cc', 'panScore', 'gotoAndStop', 'textBest', 'fieldTitle', 'fieldScore', 'size', '_x', '_xscale', '_yscale', 'initProgression', '_alpha', 'getRank', 'stPos', 'enPos', 'stop', 'movePiou', 'play', 'gotoAndPlay', 'initContrat', 'shade', 'floor', 'textQual', 'field', 'txtPlayersToOvertake', 'fieldQual', 'wait', 'compt', 'goldText', 'htmlText', 'txtAttackCountered', 'shield', 'txtAttackNotCountered', 'bar', '%', 'txtAttackLaunched', '3', ' <font color=\'#FF0000\'>x', '</font> = ', 'k', 'textWidth', 'fieldContrat', 'fieldPoints', 'panStar', 's', 'star', 'starB', 'barStar', 'stCoef', 'enCoef', 'comment', 'txtStar', '_self', 'textColor', 'fl', 'BlurFilter', 'ETAPE MISSION RATEE !', 'ETAPE MISSION OK !', 'Cliquez pour retenter une attaque', 'Cliquez pour défendre à nouveau', 'Cliquez pour rejouer', 'RECORD DE LA PERIODE', 'NOUVEAU RECORD', 'VOTRE SCORE', 'NOUVELLE ETOILE', 'ETOILE', 'POINTS', 'SCORE BATTU', 'ATTAQUE LANCEE !', 'DEFENSE RATEE !', 'DEFENSE REUSSIE !', 'CONTRAT REUSSI !', 'Attention a ne pas perdre votre place!', 'VOUS N\'ETES PAS QUALIFIE', 'VOUS ETES QUALIFIE !', 'MISSION STEP FAILED!', 'MISSION STEP OK!', 'Click here to relaunch your attack', 'Click here to defend again', 'Click here to play again', 'PERIOD RECORD', 'NEW RECORD', 'YOUR SCORE', 'NEW STAR', 'STAR', 'SCORE BEATEN', 'ATTACK LAUNCHED!', 'DEFENSE FAILED!', 'DEFENSE SUCCESS!', 'CONTRACT SUCCESS!', 'Pay attention and do not lose your position!', 'YOU ARE NOT QUALIFIED', 'YOU ARE QUALIFIED!', '¡ETAPA DE MISIÓN FRACASADA!', '¡ETAPA DE MISIÓN SUPERADA CON ÉXITO!', 'Haz clic aquí para reintentar el desafío', 'Haz clic aquí para defender de nuevo', 'Haz clic aquí para jugar de nuevo', 'RÉCORD DEL PERIODO', 'NUEVO RÉCORD', 'TU PUNTUACIÓN', 'NUEVA ESTRELLA', 'ESTRELLA', 'PTS.', 'PTS. SUPERADOS', '¡DESAFÍO LANZADO!', '¡DEFENSA FRACASADA!', '¡DEFENSA CONSEGUIDA!', '¡CONTRATO CUMPLIDO!', '¡Presta atención y no pierdas tu posición!', 'NO TE HAS CLASIFICADO', '¡ESTÁS CLASIFICADO!', 'MISSIONSSCHRITT FEHLGESCHLAGEN!', 'MISSIONSSCHRITT OK!', 'Klick hier, um nochmal anzugreifen', 'Klick hier, um nochmal zu verteidigen', 'Klick hier, um nochmal zu spielen', 'SAISONREKORD', 'NEUER REKORD', 'DEINE PUNKTE', 'NEUER STERN', 'STERN', 'PUNKTE', 'REKORD GESCHLAGEN', 'ANGRIFF GESTARTET!', 'VERTEIDIGUNG FEHLGESCHLAGEN!', 'VERTEIDIGUNG ERFOLGREICH!', 'AUFGABE ERFÜLLT!', 'Pass auf und halte deinen Platz in der Rangliste!', 'DU BIST NICHT QUALIFIZIERT\t', 'DU BIST QUALIFIZIERT!', 'init'  
+    function2 txtStar (r:8='enCoef', r:9='ro') (r:1='_root')
+      push 'Vous n\'avez pas encore l\'étoile '
+      setRegister r:5
+      pop
+      push 'Vous avez presque atteint l\'étoile '
+      setRegister r:4
+      pop
+      push 'Vous passez à quelques points de l\'étoile '
+      setRegister r:3
+      pop
+      push 'rouge', 'orange', 'verte', 3
+      initArray
+      setRegister r:6
+      pop
+      push ' !'
+      setRegister r:7
+      pop
+      push r:_root, 'lang'
+      getMember
+      push 'en'
+      equals
+      not
+      branchIfTrue label1
+      push 'You didn\'t get the '
+      setRegister r:5
+      pop
+      push 'You nearly got the '
+      setRegister r:4
+      pop
+      push 'Only a few more points were necessary to get the '
+      setRegister r:3
+      pop
+      push 'red', 'orange', 'green', 3
+      initArray
+      setRegister r:6
+      pop
+      push ' star!'
+      setRegister r:7
+      pop
+     label1:
+      push r:_root, 'lang'
+      getMember
+      push 'es'
+      equals
+      not
+      branchIfTrue label2
+      push '¡No has conseguido la estrella '
+      setRegister r:5
+      pop
+      push '¡Casi consigues la estrella '
+      setRegister r:4
+      pop
+      push 'Un poquito más, ¡y casi consigues la estrella '
+      setRegister r:3
+      pop
+      push 'roja', 'naranja', 'verde', 3
+      initArray
+      setRegister r:6
+      pop
+      push '!'
+      setRegister r:7
+      pop
+     label2:
+      push r:_root, 'lang'
+      getMember
+      push 'de'
+      equals
+      not
+      branchIfTrue label3
+      push 'Ein erster Schritt zum '
+      setRegister r:5
+      pop
+      push 'Gleich hast du den '
+      setRegister r:4
+      pop
+      push 'Nur noch wenige Punkte bis zum '
+      setRegister r:3
+      pop
+      push 'roten', 'orangenen', 'grünen', 3
+      initArray
+      setRegister r:6
+      pop
+      push ' Stern!'
+      setRegister r:7
+      pop
+     label3:
+      push r:5
+      setRegister r:2
+      pop
+      push r:enCoef, 0.8
+      greaterThan
+      not
+      branchIfTrue label4
+      push r:4
+      setRegister r:2
+      pop
+     label4:
+      push r:enCoef, 0.95
+      greaterThan
+      not
+      branchIfTrue label5
+      push r:3
+      setRegister r:2
+      pop
+     label5:
+      push r:2, r:6, r:ro
+      getMember
+      add
+      setRegister r:2
+      pop
+      push r:2, r:7
+      add
+      setRegister r:2
+      pop
+      push r:2
+      return
+    end // of function txtStar
+
+    function2 txtMissionCountered () (r:1='_root')
+      push r:_root, 'lang'
+      getMember
+      push 'en'
+      equals
+      not
+      branchIfTrue label6
+      push 'Congratulations, you completed this mission step!'
+      return
+      branch label8
+     label6:
+      push r:_root, 'lang'
+      getMember
+      push 'es'
+      equals
+      not
+      branchIfTrue label7
+      push 'Enhorabuena, ¡has superado esta etapa de la misión!'
+      return
+      branch label8
+     label7:
+      push r:_root, 'lang'
+      getMember
+      push 'de'
+      equals
+      not
+      branchIfTrue label8
+      push 'Glückwunsch, du hast diesen Missionsschritt abgeschlossen!'
+      return
+     label8:
+      push 'Félicitions ! Vous avez sauvé cette étape de la mission !'
+      return
+    end // of function txtMissionCountered
+
+    function2 txtMissionNotCountered () (r:1='_root')
+      push r:_root, 'lang'
+      getMember
+      push 'en'
+      equals
+      not
+      branchIfTrue label9
+      push 'You failed to complete this mission step. Try again...'
+      return
+      branch label11
+     label9:
+      push r:_root, 'lang'
+      getMember
+      push 'es'
+      equals
+      not
+      branchIfTrue label10
+      push 'Has fracasado en completar esta etapa de la misión.'
+      return
+      branch label11
+     label10:
+      push r:_root, 'lang'
+      getMember
+      push 'de'
+      equals
+      not
+      branchIfTrue label11
+      push 'Du konntest diesen Missionsschritt nicht abschließen.'
+      return
+     label11:
+      push 'Vous ne parvenez pas à passer cette étape de la mission. Ré-essayez !'
+      return
+    end // of function txtMissionNotCountered
+
+    function2 txtAttackCountered (r:2='clan') (r:1='_root')
+      push r:_root, 'mission'
+      getMember
+      push NULL
+      equals
+      not
+      not
+      branchIfTrue label12
+      push 0.0, 'txtMissionCountered'
+      callFunction
+      return
+     label12:
+      push r:_root, 'lang'
+      getMember
+      push 'en'
+      equals
+      not
+      branchIfTrue label13
+      push 'Congratulations, you countered the attack of the <b>', r:clan
+      add
+      push '</b> clan!'
+      add
+      return
+      branch label15
+     label13:
+      push r:_root, 'lang'
+      getMember
+      push 'es'
+      equals
+      not
+      branchIfTrue label14
+      push 'Enhorabuena, ¡has superado el ataque del clan <b>', r:clan
+      add
+      push '</b>!'
+      add
+      return
+      branch label15
+     label14:
+      push r:_root, 'lang'
+      getMember
+      push 'de'
+      equals
+      not
+      branchIfTrue label15
+      push 'Glückwunsch, du konntest den Angriff von Klan <b>', r:clan
+      add
+      push '</b> kontern!'
+      add
+      return
+     label15:
+      push 'Vous avez repoussé l\'attaque du clan <b>', r:clan
+      add
+      push '</b>. Félicitations !'
+      add
+      return
+    end // of function txtAttackCountered
+
+    function2 txtAttackNotCountered (r:2='clan') (r:1='_root')
+      push r:_root, 'mission'
+      getMember
+      push NULL
+      equals
+      not
+      not
+      branchIfTrue label16
+      push 0.0, 'txtMissionNotCountered'
+      callFunction
+      return
+     label16:
+      push r:_root, 'lang'
+      getMember
+      push 'en'
+      equals
+      not
+      branchIfTrue label17
+      push 'You failed to counter the attack of the <b>', r:clan
+      add
+      push '</b> clan.'
+      add
+      return
+      branch label19
+     label17:
+      push r:_root, 'lang'
+      getMember
+      push 'es'
+      equals
+      not
+      branchIfTrue label18
+      push 'Has fracasado en tu intento de contraatacar el desafío del clan <b>', r:clan
+      add
+      push '</b>.'
+      add
+      return
+      branch label19
+     label18:
+      push r:_root, 'lang'
+      getMember
+      push 'de'
+      equals
+      not
+      branchIfTrue label19
+      push 'Du konntest den Angriff von Klan <b>', r:clan
+      add
+      push '</b> nicht kontern.'
+      add
+      return
+     label19:
+      push 'Vous ne parvenez pas a repousser l\'attaque du clan <b>', r:clan
+      add
+      push '</b>.'
+      add
+      return
+    end // of function txtAttackNotCountered
+
+    function2 txtAttackLaunched (r:3='clan', r:2='score') (r:1='_root')
+      push r:_root, 'lang'
+      getMember
+      push 'en'
+      equals
+      not
+      branchIfTrue label20
+      push 'You launched an attack of <b>', r:score
+      add
+      push '</b> against the <b>'
+      add
+      push r:clan
+      add
+      push '</b> clan!'
+      add
+      return
+      branch label22
+     label20:
+      push r:_root, 'lang'
+      getMember
+      push 'es'
+      equals
+      not
+      branchIfTrue label21
+      push 'Has lanzado un desafío de <b>', r:score
+      add
+      push '</b> contra el clan <b>'
+      add
+      push r:clan
+      add
+      push '</b>.'
+      add
+      return
+      branch label22
+     label21:
+      push r:_root, 'lang'
+      getMember
+      push 'de'
+      equals
+      not
+      branchIfTrue label22
+      push 'Du hast einen Angriff mit <b>', r:score
+      add
+      push '</b> gegen <b>'
+      add
+      push r:clan
+      add
+      push '</b> gestartet.'
+      add
+      return
+     label22:
+      push 'Vous avez lancé une attaque de <b>', r:score
+      add
+      push '</b> contre le clan <b>'
+      add
+      push r:clan
+      add
+      push '</b> !'
+      add
+      return
+    end // of function txtAttackLaunched
+
+    function2 txtPlayersToOvertake (r:2='n') (r:1='_root')
+      push r:_root, 'lang'
+      getMember
+      push 'en'
+      equals
+      not
+      branchIfTrue label23
+      push 'You still have ', r:n
+      add
+      push ' players to overtake!'
+      add
+      return
+      branch label25
+     label23:
+      push r:_root, 'lang'
+      getMember
+      push 'es'
+      equals
+      not
+      branchIfTrue label24
+      push '¡Todavía tienes que superar a ', r:n
+      add
+      push ' jugadores!'
+      add
+      return
+      branch label25
+     label24:
+      push r:_root, 'lang'
+      getMember
+      push 'de'
+      equals
+      not
+      branchIfTrue label25
+      push 'Du hast noch ', r:n
+      add
+      push ' Spieler vor dir!'
+      add
+      return
+     label25:
+      push 'Il y a encore ', r:n
+      add
+      push ' joueurs à dépasser !'
+      add
+      return
+    end // of function txtPlayersToOvertake
+
+    function2 init () (r:1='_root')
+      push r:_root, 'url'
+      getMember
+      push NULL
+      equals
+      not
+      branchIfTrue label26
+      push 'coucou'
+      trace
+      push r:_root, 'mission', 1
+      setMember
+      push r:_root, 'lang', 'de'
+      setMember
+      push r:_root, 'url', 'coucou'
+      setMember
+      push r:_root, 'score', '96280'
+      setMember
+      push r:_root, 'best', '2'
+      setMember
+      push r:_root, 'contrat', '15454'
+      setMember
+      push r:_root, 'tokens', '47'
+      setMember
+      push r:_root, 'multi', '2'
+      setMember
+      push r:_root, 'olds', '104'
+      setMember
+      push r:_root, 'news', '804 '
+      setMember
+      push r:_root, 'pos', '290'
+      setMember
+      push r:_root, 'tot', '1130'
+      setMember
+      push r:_root, 'qual', '300'
+      setMember
+      push r:_root, 'clan', 'best killer'
+      setMember
+      push r:_root, 'att', '198280'
+      setMember
+     label26:
+      push 'text', 'textFr'
+      getVariable
+      setVariable
+      push r:_root, 'lang'
+      getMember
+      push 'en'
+      equals
+      not
+      branchIfTrue label27
+      push 'text', 'textEn'
+      getVariable
+      setVariable
+     label27:
+      push r:_root, 'lang'
+      getMember
+      push 'es'
+      equals
+      not
+      branchIfTrue label28
+      push 'text', 'textEs'
+      getVariable
+      setVariable
+     label28:
+      push r:_root, 'lang'
+      getMember
+      push 'de'
+      equals
+      not
+      branchIfTrue label29
+      push 'text', 'textDe'
+      getVariable
+      setVariable
+     label29:
+      push r:_root, 'oldPos'
+      getMember
+      push NULL
+      equals
+      not
+      branchIfTrue label30
+      push r:_root, 'oldPos', r:_root, 'tot'
+      getMember
+      setMember
+     label30:
+      push 'o', r:_root, 'olds'
+      getMember
+      push 1, 'parseInt'
+      callFunction
+      setVariable
+      push 'n', r:_root, 'news'
+      getMember
+      push 1, 'parseInt'
+      callFunction
+      setVariable
+      push 'op', r:_root, 'oldPos'
+      getMember
+      push 1, 'parseInt'
+      callFunction
+      setVariable
+      push 'p', r:_root, 'pos'
+      getMember
+      push 1, 'parseInt'
+      callFunction
+      setVariable
+      push 't', r:_root, 'tot'
+      getMember
+      push 1, 'parseInt'
+      callFunction
+      setVariable
+      push 'q', r:_root, 'qual'
+      getMember
+      push 1, 'parseInt'
+      callFunction
+      setVariable
+      push 't'
+      getVariable
+      push 'q'
+      getVariable
+      lessThan
+      not
+      branchIfTrue label31
+      push 't', 'q'
+      getVariable
+      setVariable
+     label31:
+      push 'n'
+      getVariable
+      push 'o'
+      getVariable
+      lessThan
+      not
+      branchIfTrue label32
+      push 'n', 'o'
+      getVariable
+      setVariable
+     label32:
+      push 0.0, 'initScore'
+      callFunction
+      pop
+      push 'barPos'
+      getVariable
+      push '_visible', FALSE
+      setMember
+      push 'panContrat'
+      getVariable
+      push '_visible', FALSE
+      setMember
+      push 'clic'
+      getVariable
+      push '_visible', FALSE
+      setMember
+      push 'replay'
+      getVariable
+      push 'onPress', 'redirect'
+      getVariable
+      setMember
+      push 0.0, 'main'
+      callFunction
+      pop
+    end // of function init
+
+    function2 main () ()
+      push 'sstep'
+      getVariable
+      setRegister r:0
+      push 0.0
+      strictEquals
+      branchIfTrue label33
+      push r:0, 1
+      strictEquals
+      branchIfTrue label34
+      push r:0, 2
+      strictEquals
+      branchIfTrue label35
+      branch label36
+     label33:
+      push 0.0, 'updateScore'
+      callFunction
+      pop
+      branch label36
+     label34:
+      push 0.0, 'updateProgression'
+      callFunction
+      pop
+      branch label36
+     label35:
+      push 0.0, 'updateContrat'
+      callFunction
+      pop
+      branch label36
+     label36:
+      push 'float'
+      getVariable
+      push NULL
+      equals
+      not
+      not
+      branchIfTrue label37
+      push 'float', 'float'
+      getVariable
+      push 23
+      add
+      push 628
+      modulo
+      setVariable
+      push 'barPos'
+      getVariable
+      push 'cursor'
+      getMember
+      push '_y', 'float'
+      getVariable
+      push 0.01
+      multiply
+      push 1, 'Math'
+      getVariable
+      push 'cos'
+      callMethod
+      push 4
+      multiply
+      push 1
+      subtract
+      setMember
+      push 'barPos'
+      getVariable
+      push 'cursor'
+      getMember
+      push '_rotation', 'barPos'
+      getVariable
+      push 'cursor'
+      getMember
+      push '_rotation'
+      getMember
+      push 5
+      add
+      setMember
+      push 4, 'float'
+      getVariable
+      push 0.01
+      multiply
+      push 1, 'Math'
+      getVariable
+      push 'cos'
+      callMethod
+      push 3
+      multiply
+      add
+      setRegister r:2
+      pop
+      push 0.0, 'flash'
+      getVariable
+      push 'filters'
+      getMember
+      push 'GlowFilter'
+      newMethod
+      setRegister r:1
+      pop
+      push r:1, 'blurX', r:2
+      setMember
+      push r:1, 'blurY', r:2
+      setMember
+      push r:1, 'color', 16777215
+      setMember
+      push r:1, 'strength', 2
+      setMember
+      push 'barPos'
+      getVariable
+      push 'cursor'
+      getMember
+      push 'filters', r:1, 1
+      initArray
+      setMember
+     label37:
+    end // of function main
+
+    function2 initScore () (r:1='_root')
+      push 'sstep', 0.0
+      setVariable
+      push 'step', 0.0
+      setVariable
+      push 'cc', 0.0
+      setVariable
+      push 1
+      setRegister r:2
+      pop
+      push r:_root, 'best'
+      getMember
+      push NULL
+      equals
+      not
+      not
+      branchIfTrue label38
+      push 2
+      setRegister r:2
+      pop
+     label38:
+      push r:2, 1, 'panScore'
+      getVariable
+      push 'gotoAndStop'
+      callMethod
+      pop
+      push r:_root, 'best'
+      getMember
+      push 1, 'parseInt'
+      callFunction
+      push 1, 'panScore'
+      getVariable
+      push 'textBest'
+      getMember
+      push 'gotoAndStop'
+      callMethod
+      pop
+      push 'panScore'
+      getVariable
+      push 'fieldTitle'
+      getMember
+      push 'text', 'text'
+      getVariable
+      push 11
+      getMember
+      setMember
+      push 'panScore'
+      getVariable
+      push 'fieldScore'
+      getMember
+      push 'text', 'score'
+      getVariable
+      setMember
+      push 'textBest'
+      getVariable
+      push '_visible', r:_root, 'best'
+      getMember
+      push NULL
+      equals
+      not
+      setMember
+      push r:_root, 'best'
+      getMember
+      push 1, 'parseInt'
+      callFunction
+      push 1
+      add
+      push 1, 'textBest'
+      getVariable
+      push 'gotoAndStop'
+      callMethod
+      pop
+      push 'size', 200
+      setVariable
+      push 'panScore'
+      getVariable
+      push '_x', 150
+      setMember
+      push 'panScore'
+      getVariable
+      push '_y', 150
+      setMember
+    end // of function initScore
+
+    function updateScore ()
+      push 'step'
+      getVariable
+      setRegister r:0
+      push 0.0
+      strictEquals
+      branchIfTrue label39
+      push r:0, 1
+      strictEquals
+      branchIfTrue label41
+      branch label44
+     label39:
+      push 'size', 'size'
+      getVariable
+      push 0.5
+      multiply
+      setVariable
+      push 'panScore'
+      getVariable
+      push '_xscale', 'panScore'
+      getVariable
+      push '_yscale', 100, 'size'
+      getVariable
+      add
+      setRegister r:0
+      setMember
+      push r:0
+      setMember
+      push 'cc', 'cc'
+      getVariable
+      push 0.03
+      add
+      setVariable
+      push 'cc'
+      getVariable
+      push 1
+      greaterThan
+      not
+      branchIfTrue label40
+      push 'cc', 0.0
+      setVariable
+      push 'step', 'step'
+      getVariable
+      increment
+      setVariable
+     label40:
+      branch label44
+     label41:
+      push 'cc', 'cc'
+      getVariable
+      push 0.05
+      add
+      setVariable
+      push 'cc'
+      getVariable
+      push 1
+      greaterThan
+      not
+      branchIfTrue label42
+      push 'cc', 1
+      setVariable
+     label42:
+      push 'panScore'
+      getVariable
+      push '_y', 150, 1, 'cc'
+      getVariable
+      subtract
+      multiply
+      push 46, 'cc'
+      getVariable
+      multiply
+      add
+      setMember
+      push 'cc'
+      getVariable
+      push 1
+      equals
+      not
+      branchIfTrue label43
+      push 0.0, 'initProgression'
+      callFunction
+      pop
+     label43:
+      branch label44
+     label44:
+    end // of function updateScore
+
+    function2 initProgression () (r:1='_root')
+      push 'cc', 0.0
+      setVariable
+      push 'sstep', 1
+      setVariable
+      push 'step', -1
+      setVariable
+      push 'barPos'
+      getVariable
+      push '_visible', TRUE
+      setMember
+      push 'barPos'
+      getVariable
+      push '_alpha', 0.0
+      setMember
+      push r:_root, 'contrat'
+      getMember
+      push NULL
+      equals
+      dup
+      not
+      branchIfTrue label45
+      pop
+      push 'o'
+      getVariable
+      push 1, 'getRank'
+      callFunction
+      push 3
+      lessThan
+      not
+     label45:
+      not
+      branchIfTrue label46
+      push 'barPos'
+      getVariable
+      push '_y', 175
+      setMember
+     label46:
+      push 205
+      setRegister r:2
+      pop
+      push 'stPos', 1, 'op'
+      getVariable
+      push 'q'
+      getVariable
+      subtract
+      push 't'
+      getVariable
+      push 'q'
+      getVariable
+      subtract
+      divide
+      subtract
+      push r:2
+      multiply
+      setVariable
+      push 'enPos', 1, 'p'
+      getVariable
+      push 'q'
+      getVariable
+      subtract
+      push 't'
+      getVariable
+      push 'q'
+      getVariable
+      subtract
+      divide
+      subtract
+      push r:2
+      multiply
+      setVariable
+      push 'stPos'
+      getVariable
+      push r:2
+      lessThan
+      not
+      not
+      branchIfTrue label47
+      push 'stPos', r:2, 20
+      add
+      setVariable
+     label47:
+      push 'enPos'
+      getVariable
+      push r:2
+      lessThan
+      not
+      not
+      branchIfTrue label48
+      push 'enPos', r:2, 20
+      add
+      setVariable
+     label48:
+      push 0.0, 'barPos'
+      getVariable
+      push 'cursor'
+      getMember
+      push 'stop'
+      callMethod
+      pop
+      push 0.0, 'updateProgression'
+      callFunction
+      pop
+    end // of function initProgression
+
+    function2 updateProgression () ()
+      push 'step'
+      getVariable
+      setRegister r:0
+      push -1
+      strictEquals
+      branchIfTrue label49
+      push r:0, 0.0
+      strictEquals
+      branchIfTrue label51
+      branch label56
+     label49:
+      push 'cc', 'cc'
+      getVariable
+      push 0.03
+      add
+      setVariable
+      push 0.0, 1, 'movePiou'
+      callFunction
+      pop
+      push 'barPos'
+      getVariable
+      push '_alpha', 'cc'
+      getVariable
+      push 4
+      multiply
+      push 100
+      multiply
+      setMember
+      push 'cc'
+      getVariable
+      push 1
+      lessThan
+      not
+      not
+      branchIfTrue label50
+      push 'cc', 0.0
+      setVariable
+      push 'step', 'step'
+      getVariable
+      increment
+      setVariable
+      push 0.0, 'barPos'
+      getVariable
+      push 'cursor'
+      getMember
+      push 'play'
+      callMethod
+      pop
+      push 'enPos'
+      getVariable
+      push 'stPos'
+      getVariable
+      equals
+      not
+      branchIfTrue label50
+      push 'cc', 1
+      setVariable
+     label50:
+      branch label56
+     label51:
+      push 'cc', 'cc'
+      getVariable
+      push 0.02
+      add
+      setVariable
+      push 'cc'
+      getVariable
+      push 1
+      greaterThan
+      not
+      branchIfTrue label52
+      push 'cc', 1
+      setVariable
+     label52:
+      push 1, 'cc'
+      getVariable
+      push 3.14
+      multiply
+      push 1, 'Math'
+      getVariable
+      push 'cos'
+      callMethod
+      subtract
+      push 0.5
+      multiply
+      setRegister r:1
+      pop
+      push r:1, 1, 'movePiou'
+      callFunction
+      pop
+      push 'cc'
+      getVariable
+      push 1
+      equals
+      not
+      branchIfTrue label55
+      push 'p'
+      getVariable
+      push 'q'
+      getVariable
+      greaterThan
+      not
+      not
+      branchIfTrue label53
+      push 'float', 0.0
+      setVariable
+      push 'float', 1, 'barPos'
+      getVariable
+      push 'cursor'
+      getMember
+      push 'gotoAndPlay'
+      callMethod
+      pop
+      push 'barPos'
+      getVariable
+      push 'cursor'
+      getMember
+      push '_y', 3
+      setMember
+      branch label54
+     label53:
+      push 1, 1, 'barPos'
+      getVariable
+      push 'cursor'
+      getMember
+      push 'gotoAndStop'
+      callMethod
+      pop
+     label54:
+      push 0.0, 'initContrat'
+      callFunction
+      pop
+      push 'step', 99
+      setVariable
+     label55:
+      branch label56
+     label56:
+    end // of function updateProgression
+
+    function2 movePiou (r:3='ccc') ()
+      push 'stPos'
+      getVariable
+      push 1, r:ccc
+      subtract
+      multiply
+      push 'enPos'
+      getVariable
+      push r:ccc
+      multiply
+      add
+      setRegister r:1
+      pop
+      push 'barPos'
+      getVariable
+      push 'cursor'
+      getMember
+      push '_x', r:1
+      setMember
+      push 'barPos'
+      getVariable
+      push 'shade'
+      getMember
+      push '_x', r:1
+      setMember
+      push 'op'
+      getVariable
+      push 1, r:ccc
+      subtract
+      multiply
+      push 'p'
+      getVariable
+      push r:ccc
+      multiply
+      add
+      push 'q'
+      getVariable
+      subtract
+      push 1, 'Math'
+      getVariable
+      push 'floor'
+      callMethod
+      setRegister r:4
+      pop
+      push r:1, 205
+      lessThan
+      setRegister r:2
+      pop
+      push 'barPos'
+      getVariable
+      push 'textQual'
+      getMember
+      push 'field'
+      getMember
+      push 'text', r:2
+      branchIfTrue label57
+      push 'text'
+      getVariable
+      push 2
+      getMember
+      branch label58
+     label57:
+      push r:4, 1, 'txtPlayersToOvertake'
+      callFunction
+     label58:
+      setMember
+      push 'barPos'
+      getVariable
+      push 'textQual'
+      getMember
+      push 'fieldQual'
+      getMember
+      push 'text', r:2
+      branchIfTrue label59
+      push 'text'
+      getVariable
+      push 0.0
+      getMember
+      branch label60
+     label59:
+      push 'text'
+      getVariable
+      push 1
+      getMember
+     label60:
+      setMember
+    end // of function movePiou
+
+    function2 initContrat () (r:1='_root')
+      push 'o'
+      getVariable
+      push 1, 'getRank'
+      callFunction
+      setRegister r:3
+      pop
+      push 'n'
+      getVariable
+      push 1, 'getRank'
+      callFunction
+      setRegister r:6
+      pop
+      push r:_root, 'contrat'
+      getMember
+      push NULL
+      equals
+      dup
+      not
+      branchIfTrue label61
+      pop
+      push r:_root, 'clan'
+      getMember
+      push NULL
+      equals
+     label61:
+      dup
+      not
+      branchIfTrue label62
+      pop
+      push r:3, 3
+      lessThan
+      not
+     label62:
+      not
+      branchIfTrue label63
+      push 'clic'
+      getVariable
+      push '_visible', TRUE
+      setMember
+      push UNDEF
+      return
+     label63:
+      push 'cc', 0.0
+      setVariable
+      push 'sstep', 2
+      setVariable
+      push 0.0
+      setRegister r:4
+      pop
+      push NULL
+      setRegister r:2
+      pop
+      push 'panContrat'
+      getVariable
+      push '_visible', TRUE
+      setMember
+      push 'panContrat'
+      getVariable
+      push '_y', 368
+      setMember
+      push 'panContrat'
+      getVariable
+      push 'wait', 80
+      setMember
+      push 'panContrat'
+      getVariable
+      push 'compt', 0.0
+      setMember
+      push r:_root, 'clan'
+      getMember
+      push NULL
+      equals
+      not
+      not
+      branchIfTrue label73
+      push r:4
+      increment
+      setRegister r:4
+      pop
+      push 'contrat'
+      setRegister r:2
+      pop
+      push 'panContrat'
+      getVariable
+      push 'compt', -100
+      setMember
+      push r:_root, 'att'
+      getMember
+      push NULL
+      equals
+      not
+      not
+      branchIfTrue label71
+      push r:_root, 'score'
+      getMember
+      int
+      push r:_root, 'att'
+      getMember
+      int
+      divide
+      setRegister r:5
+      pop
+      push r:5, 1
+      greaterThan
+      dup
+      branchIfTrue label64
+      pop
+      push r:5, 1
+      equals
+      dup
+      not
+      branchIfTrue label64
+      pop
+      push r:_root, 'mission'
+      getMember
+      push NULL
+      equals
+      not
+     label64:
+      not
+      branchIfTrue label67
+      push 2, 1, 'panContrat'
+      getVariable
+      push 'contrat'
+      getMember
+      push 'gotoAndStop'
+      callMethod
+      pop
+      push r:_root, 'mission'
+      getMember
+      push NULL
+      equals
+      not
+      branchIfTrue label65
+      push 'panContrat'
+      getVariable
+      push 'contrat'
+      getMember
+      push 'fieldTitle'
+      getMember
+      push 'text', 'text'
+      getVariable
+      push 4
+      getMember
+      setMember
+      branch label66
+     label65:
+      push 'panContrat'
+      getVariable
+      push 'contrat'
+      getMember
+      push 'fieldTitle'
+      getMember
+      push 'text', 'text'
+      getVariable
+      push 17
+      getMember
+      setMember
+     label66:
+      push 'panContrat'
+      getVariable
+      push 'contrat'
+      getMember
+      push 'fieldTitle'
+      getMember
+      push 1, 'goldText'
+      callFunction
+      pop
+      push 'panContrat'
+      getVariable
+      push 'contrat'
+      getMember
+      push 'field'
+      getMember
+      push 'htmlText', r:_root, 'clan'
+      getMember
+      push 1, 'txtAttackCountered'
+      callFunction
+      setMember
+      push 'panContrat'
+      getVariable
+      push 'contrat'
+      getMember
+      push 'shield'
+      getMember
+      push 'field'
+      getMember
+      push '_visible', FALSE
+      setMember
+      branch label70
+     label67:
+      push 3, 1, 'panContrat'
+      getVariable
+      push 'contrat'
+      getMember
+      push 'gotoAndStop'
+      callMethod
+      pop
+      push r:_root, 'mission'
+      getMember
+      push NULL
+      equals
+      not
+      branchIfTrue label68
+      push 'panContrat'
+      getVariable
+      push 'contrat'
+      getMember
+      push 'fieldTitle'
+      getMember
+      push 'text', 'text'
+      getVariable
+      push 5
+      getMember
+      setMember
+      branch label69
+     label68:
+      push 'panContrat'
+      getVariable
+      push 'contrat'
+      getMember
+      push 'fieldTitle'
+      getMember
+      push 'text', 'text'
+      getVariable
+      push 18
+      getMember
+      setMember
+     label69:
+      push 'panContrat'
+      getVariable
+      push 'contrat'
+      getMember
+      push 'field'
+      getMember
+      push 'htmlText', r:_root, 'clan'
+      getMember
+      push 1, 'txtAttackNotCountered'
+      callFunction
+      setMember
+      push 'panContrat'
+      getVariable
+      push 'contrat'
+      getMember
+      push 'shield'
+      getMember
+      push 'bar'
+      getMember
+      push '_yscale', r:5, 100
+      multiply
+      setMember
+      push 'panContrat'
+      getVariable
+      push 'contrat'
+      getMember
+      push 'shield'
+      getMember
+      push 'field'
+      getMember
+      push 'text', r:5, 100
+      multiply
+      push 1.0e-007
+      subtract
+      push 1, 'Math'
+      getVariable
+      push 'floor'
+      callMethod
+      push '%'
+      add
+      setMember
+      push '2', 1, 'clic'
+      getVariable
+      push 'gotoAndStop'
+      callMethod
+      pop
+     label70:
+      branch label72
+     label71:
+      push 4, 1, 'panContrat'
+      getVariable
+      push 'contrat'
+      getMember
+      push 'gotoAndStop'
+      callMethod
+      pop
+      push 'panContrat'
+      getVariable
+      push 'contrat'
+      getMember
+      push 'fieldTitle'
+      getMember
+      push 'text', 'text'
+      getVariable
+      push 6
+      getMember
+      setMember
+      push 'panContrat'
+      getVariable
+      push 'contrat'
+      getMember
+      push 'fieldTitle'
+      getMember
+      push 1, 'goldText'
+      callFunction
+      pop
+      push 'panContrat'
+      getVariable
+      push 'contrat'
+      getMember
+      push 'field'
+      getMember
+      push 'htmlText', r:_root, 'score'
+      getMember
+      push r:_root, 'clan'
+      getMember
+      push 2, 'txtAttackLaunched'
+      callFunction
+      setMember
+      push '3', 1, 'clic'
+      getVariable
+      push 'gotoAndStop'
+      callMethod
+      pop
+     label72:
+      branch label76
+     label73:
+      push r:_root, 'contrat'
+      getMember
+      push NULL
+      equals
+      not
+      not
+      branchIfTrue label76
+      push 1, 1, 'panContrat'
+      getVariable
+      push 'contrat'
+      getMember
+      push 'gotoAndStop'
+      callMethod
+      pop
+      push 'panContrat'
+      getVariable
+      push 'contrat'
+      getMember
+      push 'fieldTitle'
+      getMember
+      push 'text', 'text'
+      getVariable
+      push 3
+      getMember
+      setMember
+      push 'panContrat'
+      getVariable
+      push 'contrat'
+      getMember
+      push 'fieldTitle'
+      getMember
+      push 1, 'goldText'
+      callFunction
+      pop
+      push r:4
+      increment
+      setRegister r:4
+      pop
+      push r:_root, 'multi'
+      getMember
+      push NULL
+      equals
+      not
+      not
+      branchIfTrue label74
+      push 'panContrat'
+      getVariable
+      push 'contrat'
+      getMember
+      push 'tokens'
+      getMember
+      push 'htmlText', r:_root, 'tokens'
+      getMember
+      push ' <font color=\'#FF0000\'>x'
+      add
+      push r:_root, 'multi'
+      getMember
+      add
+      push '</font> = '
+      add
+      push r:_root, 'tokens'
+      getMember
+      int
+      push r:_root, 'multi'
+      getMember
+      int
+      multiply
+      add
+      setMember
+      branch label75
+     label74:
+      push 'panContrat'
+      getVariable
+      push 'contrat'
+      getMember
+      push 'tokens'
+      getMember
+      push 'htmlText', r:_root, 'tokens'
+      getMember
+      setMember
+     label75:
+      push 'panContrat'
+      getVariable
+      push 'contrat'
+      getMember
+      push 'k'
+      getMember
+      push '_x', 150, 'panContrat'
+      getVariable
+      push 'contrat'
+      getMember
+      push 'tokens'
+      getMember
+      push 'textWidth'
+      getMember
+      push 0.5
+      multiply
+      add
+      push 4
+      add
+      setMember
+      push 'panContrat'
+      getVariable
+      push 'contrat'
+      getMember
+      push 'score'
+      getMember
+      push 'text', r:_root, 'contrat'
+      getMember
+      setMember
+      push 'panContrat'
+      getVariable
+      push 'contrat'
+      getMember
+      push 'fieldContrat'
+      getMember
+      push 'text', 'text'
+      getVariable
+      push 7
+      getMember
+      setMember
+      push 'panContrat'
+      getVariable
+      push 'contrat'
+      getMember
+      push 'fieldPoints'
+      getMember
+      push 'text', 'text'
+      getVariable
+      push 8
+      getMember
+      setMember
+      push 'contrat'
+      setRegister r:2
+      pop
+     label76:
+      push r:3, 3
+      lessThan
+      not
+      branchIfTrue label82
+      push r:4
+      increment
+      setRegister r:4
+      pop
+      push r:6, r:3
+      greaterThan
+      not
+      branchIfTrue label77
+      push 2, 1, 'panContrat'
+      getVariable
+      push 'panStar'
+      getMember
+      push 'gotoAndStop'
+      callMethod
+      pop
+      push r:6, 1
+      add
+      push 1, 'panContrat'
+      getVariable
+      push 'panStar'
+      getMember
+      push 's'
+      getMember
+      push 'star'
+      getMember
+      push 'gotoAndStop'
+      callMethod
+      pop
+      push r:6, 1
+      add
+      push 1, 'panContrat'
+      getVariable
+      push 'panStar'
+      getMember
+      push 's'
+      getMember
+      push 'starB'
+      getMember
+      push 'gotoAndStop'
+      callMethod
+      pop
+      push 'star'
+      setRegister r:2
+      pop
+      branch label82
+     label77:
+      push 1, 1, 'panContrat'
+      getVariable
+      push 'panStar'
+      getMember
+      push 'gotoAndStop'
+      callMethod
+      pop
+      push r:3, 1
+      add
+      push 1, 'panContrat'
+      getVariable
+      push 'panStar'
+      getMember
+      push 'barStar'
+      getMember
+      push 'gotoAndStop'
+      callMethod
+      pop
+      push r:3
+      setRegister r:0
+      push 0.0
+      strictEquals
+      branchIfTrue label78
+      push r:0, 1
+      strictEquals
+      branchIfTrue label79
+      push r:0, 2
+      strictEquals
+      branchIfTrue label80
+      branch label81
+     label78:
+      push 'stCoef', 'o'
+      getVariable
+      push 1000
+      divide
+      setVariable
+      push 'enCoef', 'n'
+      getVariable
+      push 1000
+      divide
+      setVariable
+      branch label81
+     label79:
+      push 'stCoef', 'o'
+      getVariable
+      push 1000
+      subtract
+      push 100
+      divide
+      setVariable
+      push 'enCoef', 'n'
+      getVariable
+      push 1000
+      subtract
+      push 100
+      divide
+      setVariable
+      branch label81
+     label80:
+      push 'stCoef', 'o'
+      getVariable
+      push 1100
+      subtract
+      push 50
+      divide
+      setVariable
+      push 'enCoef', 'n'
+      getVariable
+      push 1100
+      subtract
+      push 50
+      divide
+      setVariable
+      branch label81
+     label81:
+      push 'panContrat'
+      getVariable
+      push 'panStar'
+      getMember
+      push 'fieldTitle'
+      getMember
+      push 'text', 'text'
+      getVariable
+      push 9
+      getMember
+      setMember
+      push 'panContrat'
+      getVariable
+      push 'panStar'
+      getMember
+      push 'fieldTitle'
+      getMember
+      push 1, 'goldText'
+      callFunction
+      pop
+      push 'panContrat'
+      getVariable
+      push 'panStar'
+      getMember
+      push 'comment'
+      getMember
+      push 'text', r:3, 'enCoef'
+      getVariable
+      push 2, 'txtStar'
+      callFunction
+      setMember
+      push 'panContrat'
+      getVariable
+      push 'panStar'
+      getMember
+      push 'barStar'
+      getMember
+      push 'bar'
+      getMember
+      push '_xscale', 'stCoef'
+      getVariable
+      push 100
+      multiply
+      setMember
+      push r:2, NULL
+      equals
+      not
+      branchIfTrue label82
+      push 'star'
+      setRegister r:2
+      pop
+     label82:
+      push r:4, 1
+      equals
+      not
+      branchIfTrue label83
+      push r:2, 1, 'panContrat'
+      getVariable
+      push 'gotoAndStop'
+      callMethod
+      pop
+     label83:
+      push r:4, 2
+      equals
+      not
+      branchIfTrue label84
+      push r:2, 1, 'panContrat'
+      getVariable
+      push 'gotoAndPlay'
+      callMethod
+      pop
+     label84:
+    end // of function initContrat
+
+    function updateContrat ()
+      push 'cc', 'cc'
+      getVariable
+      push 0.1
+      add
+      setVariable
+      push 'cc'
+      getVariable
+      push 1
+      greaterThan
+      not
+      branchIfTrue label85
+      push 'cc', 1
+      setVariable
+      push 'clic'
+      getVariable
+      push '_visible', TRUE
+      setMember
+     label85:
+      push 'panContrat'
+      getVariable
+      push '_y', 368, 1, 'cc'
+      getVariable
+      subtract
+      multiply
+      push 248, 'cc'
+      getVariable
+      multiply
+      add
+      setMember
+      push 'panContrat'
+      getVariable
+      push 'panStar'
+      getMember
+      push 'barStar'
+      getMember
+      push 'bar'
+      getMember
+      push '_xscale', 'enCoef'
+      getVariable
+      push 'cc'
+      getVariable
+      multiply
+      push 100
+      multiply
+      setMember
+    end // of function updateContrat
+
+    function2 redirect () (r:1='_root')
+      push r:_root, 'url'
+      getMember
+      push '_self'
+      getURL2
+    end // of function redirect
+
+    function2 goldText (r:2='field') ()
+      push r:field, 'textColor', 16763904
+      setMember
+      push 0.0, 'flash'
+      getVariable
+      push 'filters'
+      getMember
+      push 'GlowFilter'
+      newMethod
+      setRegister r:1
+      pop
+      push r:1, 'blurX', 2
+      setMember
+      push r:1, 'blurY', 2
+      setMember
+      push r:1, 'strength', 4
+      setMember
+      push r:1, 'color', 16737792
+      setMember
+      push r:field, 'filters', r:1, 1
+      initArray
+      setMember
+    end // of function goldText
+
+    function2 getRank (r:1='n') ()
+      push r:n, 1150
+      lessThan
+      not
+      not
+      branchIfTrue label86
+      push 3
+      return
+     label86:
+      push r:n, 1100
+      lessThan
+      not
+      not
+      branchIfTrue label87
+      push 2
+      return
+     label87:
+      push r:n, 1000
+      lessThan
+      not
+      not
+      branchIfTrue label88
+      push 1
+      return
+     label88:
+      push 0.0
+      return
+    end // of function getRank
+
+    function2 blur (r:1='mc', r:3='x', r:2='y') ()
+      push 'fl', 0.0, 'flash'
+      getVariable
+      push 'filters'
+      getMember
+      push 'BlurFilter'
+      newMethod
+      setVariable
+      push 'fl'
+      getVariable
+      push 'blurX', r:x
+      setMember
+      push 'fl'
+      getVariable
+      push 'blurY', r:y
+      setMember
+      push r:mc, 'filters', 'fl'
+      getVariable
+      push 1
+      initArray
+      setMember
+    end // of function blur
+
+    push 'text', 0.0
+    initArray
+    setVariable
+    push 'textFr', 'ETAPE MISSION RATEE !', 'ETAPE MISSION OK !', 'Cliquez pour retenter une attaque', 'Cliquez pour défendre à nouveau', 'Cliquez pour rejouer', 'RECORD DE LA PERIODE', 'NOUVEAU RECORD', 'VOTRE SCORE', 'NOUVELLE ETOILE', 'ETOILE', 'POINTS', 'SCORE BATTU', 'ATTAQUE LANCEE !', 'DEFENSE RATEE !', 'DEFENSE REUSSIE !', 'CONTRAT REUSSI !', 'Attention a ne pas perdre votre place!', 'VOUS N\'ETES PAS QUALIFIE', 'VOUS ETES QUALIFIE !', 19
+    initArray
+    setVariable
+    push 'textEn', 'MISSION STEP FAILED!', 'MISSION STEP OK!', 'Click here to relaunch your attack', 'Click here to defend again', 'Click here to play again', 'PERIOD RECORD', 'NEW RECORD', 'YOUR SCORE', 'NEW STAR', 'STAR', 'POINTS', 'SCORE BEATEN', 'ATTACK LAUNCHED!', 'DEFENSE FAILED!', 'DEFENSE SUCCESS!', 'CONTRACT SUCCESS!', 'Pay attention and do not lose your position!', 'YOU ARE NOT QUALIFIED', 'YOU ARE QUALIFIED!', 19
+    initArray
+    setVariable
+    push 'textEs', '¡ETAPA DE MISIÓN FRACASADA!', '¡ETAPA DE MISIÓN SUPERADA CON ÉXITO!', 'Haz clic aquí para reintentar el desafío', 'Haz clic aquí para defender de nuevo', 'Haz clic aquí para jugar de nuevo', 'RÉCORD DEL PERIODO', 'NUEVO RÉCORD', 'TU PUNTUACIÓN', 'NUEVA ESTRELLA', 'ESTRELLA', 'PTS.', 'PTS. SUPERADOS', '¡DESAFÍO LANZADO!', '¡DEFENSA FRACASADA!', '¡DEFENSA CONSEGUIDA!', '¡CONTRATO CUMPLIDO!', '¡Presta atención y no pierdas tu posición!', 'NO TE HAS CLASIFICADO', '¡ESTÁS CLASIFICADO!', 19
+    initArray
+    setVariable
+    push 'textDe', 'MISSIONSSCHRITT FEHLGESCHLAGEN!', 'MISSIONSSCHRITT OK!', 'Klick hier, um nochmal anzugreifen', 'Klick hier, um nochmal zu verteidigen', 'Klick hier, um nochmal zu spielen', 'SAISONREKORD', 'NEUER REKORD', 'DEINE PUNKTE', 'NEUER STERN', 'STERN', 'PUNKTE', 'REKORD GESCHLAGEN', 'ANGRIFF GESTARTET!', 'VERTEIDIGUNG FEHLGESCHLAGEN!', 'VERTEIDIGUNG ERFOLGREICH!', 'AUFGABE ERFÜLLT!', 'Pass auf und halte deinen Platz in der Rangliste!', 'DU BIST NICHT QUALIFIZIERT\t', 'DU BIST QUALIFIZIERT!', 19
+    initArray
+    setVariable
+    push 0.0, 'init'
+    callFunction
+    pop
+  end // of frame 0
+
+  defineMovieClip 56 // total frames: 1
+  end // of defineMovieClip 56
+
+  defineMovieClip 58 // total frames: 1
+  end // of defineMovieClip 58
+
+  defineMovieClip 60 // total frames: 1
+  end // of defineMovieClip 60
+
+  defineMovieClip 62 // total frames: 1
+  end // of defineMovieClip 62
+
+  defineMovieClip 64 // total frames: 1
+  end // of defineMovieClip 64
+
+  defineMovieClip 66 // total frames: 1
+  end // of defineMovieClip 66
+
+  defineMovieClip 68 // total frames: 37
+
+    frame 16
+      gotoFrame 0
+      play
+    end // of frame 16
+
+    frame 35
+      gotoLabel 'float'
+      play
+    end // of frame 35
+  end // of defineMovieClip 68
+
+  defineMovieClip 70 // total frames: 1
+  end // of defineMovieClip 70
+
+  defineMovieClip 72 // total frames: 1
+  end // of defineMovieClip 72
+
+  defineMovieClip 80 // total frames: 1
+  end // of defineMovieClip 80
+
+  defineMovieClip 85 // total frames: 1
+  end // of defineMovieClip 85
+
+  defineMovieClip 87 // total frames: 1
+  end // of defineMovieClip 87
+
+  defineMovieClip 89 // total frames: 1
+  end // of defineMovieClip 89
+
+  defineMovieClip 90 // total frames: 4
+  end // of defineMovieClip 90
+
+  defineMovieClip 96 // total frames: 35
+
+    frame 0
+      stop
+    end // of frame 0
+
+    frame 34
+      gotoLabel 'loop'
+      play
+    end // of frame 34
+  end // of defineMovieClip 96
+
+  defineMovieClip 102 // total frames: 35
+
+    frame 0
+      stop
+    end // of frame 0
+
+    frame 34
+      gotoLabel 'loop'
+      play
+    end // of frame 34
+  end // of defineMovieClip 102
+
+  defineMovieClip 108 // total frames: 35
+
+    frame 0
+      stop
+    end // of frame 0
+
+    frame 34
+      gotoLabel 'loop'
+      play
+    end // of frame 34
+  end // of defineMovieClip 108
+
+  defineMovieClip 109 // total frames: 4
+  end // of defineMovieClip 109
+
+  defineMovieClip 113 // total frames: 2
+
+    frame 0
+      constants 'field', 'text', '_root'  
+      push 'field'
+      getVariable
+      push 'text', '_root'
+      getVariable
+      push 'text'
+      getMember
+      push 10
+      getMember
+      setMember
+    end // of frame 0
+  end // of defineMovieClip 113
+
+  defineMovieClip 115 // total frames: 1
+  end // of defineMovieClip 115
+
+  defineMovieClip 116 // total frames: 4
+
+    frame 0
+      stop
+    end // of frame 0
+  end // of defineMovieClip 116
+
+  defineMovieClip 118 // total frames: 1
+  end // of defineMovieClip 118
+
+  defineMovieClip 119 // total frames: 80
+  end // of defineMovieClip 119
+
+  defineMovieClip 120 // total frames: 15
+  end // of defineMovieClip 120
+
+  defineMovieClip 121 // total frames: 2
+  end // of defineMovieClip 121
+
+  defineMovieClip 122 // total frames: 35
+
+    frame 1
+      constants 'compt', 'wait', ''  
+      push 'compt'
+      getVariable
+      push 'compt', 'compt'
+      getVariable
+      increment
+      setVariable
+      push 'wait'
+      getVariable
+      greaterThan
+      not
+      branchIfTrue label1
+      push 'compt', 0.0
+      setVariable
+      branch label2
+     label1:
+      push '', 4
+      getProperty
+      push 1
+      subtract
+      gotoAndPlay
+     label2:
+    end // of frame 1
+
+    frame 18
+      constants 'compt', 'wait', ''  
+      push 'compt'
+      getVariable
+      push 'compt', 'compt'
+      getVariable
+      increment
+      setVariable
+      push 'wait'
+      getVariable
+      greaterThan
+      not
+      branchIfTrue label1
+      push 'compt', 0.0
+      setVariable
+      branch label2
+     label1:
+      push '', 4
+      getProperty
+      push 1
+      subtract
+      gotoAndPlay
+     label2:
+    end // of frame 18
+  end // of defineMovieClip 122
+
+  defineMovieClip 124 // total frames: 1
+  end // of defineMovieClip 124
+
+  defineMovieClip 125 // total frames: 1
+  end // of defineMovieClip 125
+
+  defineMovieClip 127 // total frames: 1
+
+    frame 0
+      constants 'field', 'text', '_root'  
+      push 'field'
+      getVariable
+      push 'text', '_root'
+      getVariable
+      push 'text'
+      getMember
+      push 14
+      getMember
+      setMember
+    end // of frame 0
+  end // of defineMovieClip 127
+
+  defineMovieClip 128 // total frames: 29
+  end // of defineMovieClip 128
+
+  defineMovieClip 130 // total frames: 1
+
+    frame 0
+      constants 'field', 'text', '_root'  
+      push 'field'
+      getVariable
+      push 'text', '_root'
+      getVariable
+      push 'text'
+      getMember
+      push 15
+      getMember
+      setMember
+    end // of frame 0
+  end // of defineMovieClip 130
+
+  defineMovieClip 131 // total frames: 29
+  end // of defineMovieClip 131
+
+  defineMovieClip 133 // total frames: 1
+
+    frame 0
+      constants 'field', 'text', '_root'  
+      push 'field'
+      getVariable
+      push 'text', '_root'
+      getVariable
+      push 'text'
+      getMember
+      push 16
+      getMember
+      setMember
+    end // of frame 0
+  end // of defineMovieClip 133
+
+  defineMovieClip 134 // total frames: 29
+  end // of defineMovieClip 134
+
+  defineMovieClip 135 // total frames: 3
+
+    frame 0
+      stop
+    end // of frame 0
+  end // of defineMovieClip 135
+
+  frame 1
+    push 0.0, 'main'
+    callFunction
+    pop
+  end // of frame 1
+
+  frame 2
+    push '', 4
+    getProperty
+    push 1
+    subtract
+    gotoAndPlay
+  end // of frame 2
+end

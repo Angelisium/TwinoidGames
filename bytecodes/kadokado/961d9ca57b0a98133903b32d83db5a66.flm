@@ -1,0 +1,6788 @@
+movie '961d9ca57b0a98133903b32d83db5a66.swf' compressed // flash 8, total frames: 1, frame rate: 40 fps, 300x300 px
+
+
+  defineMovieClip 3 // total frames: 1
+  end // of defineMovieClip 3
+  
+  exportAssets
+    3 as 'bg_plan5'
+  end // of exportAssets
+
+  defineMovieClip 6 // total frames: 1
+  end // of defineMovieClip 6
+  
+  exportAssets
+    6 as 'bg_plan4'
+  end // of exportAssets
+
+  defineMovieClip 9 // total frames: 1
+  end // of defineMovieClip 9
+  
+  exportAssets
+    9 as 'bg_plan3'
+  end // of exportAssets
+
+  defineMovieClip 12 // total frames: 1
+  end // of defineMovieClip 12
+  
+  exportAssets
+    12 as 'bg_plan2'
+  end // of exportAssets
+
+  defineMovieClip 15 // total frames: 1
+  end // of defineMovieClip 15
+  
+  exportAssets
+    15 as 'bg_plan1'
+  end // of exportAssets
+
+  defineMovieClip 18 // total frames: 1
+  end // of defineMovieClip 18
+  
+  exportAssets
+    18 as 'bg_plan0'
+  end // of exportAssets
+
+  defineMovieClip 21 // total frames: 1
+  end // of defineMovieClip 21
+
+  defineMovieClip 24 // total frames: 1
+  end // of defineMovieClip 24
+
+  defineMovieClip 26 // total frames: 1
+  end // of defineMovieClip 26
+
+  defineMovieClip 28 // total frames: 1
+  end // of defineMovieClip 28
+
+  defineMovieClip 33 // total frames: 4
+  end // of defineMovieClip 33
+
+  defineMovieClip 38 // total frames: 4
+  end // of defineMovieClip 38
+
+  defineMovieClip 39 // total frames: 30
+  end // of defineMovieClip 39
+
+  defineMovieClip 41 // total frames: 1
+  end // of defineMovieClip 41
+
+  defineMovieClip 45 // total frames: 82
+  end // of defineMovieClip 45
+
+  defineMovieClip 47 // total frames: 1
+  end // of defineMovieClip 47
+
+  defineMovieClip 50 // total frames: 2
+  end // of defineMovieClip 50
+
+  defineMovieClip 53 // total frames: 1
+  end // of defineMovieClip 53
+
+  defineMovieClip 54 // total frames: 1
+  end // of defineMovieClip 54
+
+  defineMovieClip 55 // total frames: 60
+
+    frame 0
+      stop
+    end // of frame 0
+
+    frame 59
+      stop
+    end // of frame 59
+  end // of defineMovieClip 55
+
+  defineMovieClip 58 // total frames: 1
+  end // of defineMovieClip 58
+
+  defineMovieClip 61 // total frames: 1
+  end // of defineMovieClip 61
+
+  defineMovieClip 62 // total frames: 1
+  end // of defineMovieClip 62
+
+  defineMovieClip 63 // total frames: 15
+
+    frame 0
+      stop
+    end // of frame 0
+  end // of defineMovieClip 63
+
+  defineMovieClip 65 // total frames: 1
+  end // of defineMovieClip 65
+
+  defineMovieClip 67 // total frames: 1
+  end // of defineMovieClip 67
+
+  defineMovieClip 69 // total frames: 1
+  end // of defineMovieClip 69
+
+  defineMovieClip 71 // total frames: 1
+  end // of defineMovieClip 71
+
+  defineMovieClip 75 // total frames: 3
+  end // of defineMovieClip 75
+
+  defineMovieClip 82 // total frames: 8
+  end // of defineMovieClip 82
+  
+  exportAssets
+    82 as 'hammer_supa_smoke'
+  end // of exportAssets
+
+  defineMovieClip 83 // total frames: 43
+
+    frame 0
+      stop
+    end // of frame 0
+
+    frame 42
+      stop
+    end // of frame 42
+  end // of defineMovieClip 83
+
+  defineMovieClip 85 // total frames: 1
+  end // of defineMovieClip 85
+
+  defineMovieClip 88 // total frames: 1
+  end // of defineMovieClip 88
+
+  defineMovieClip 89 // total frames: 9
+
+    frame 8
+      constants '35v}5', '+L-', '*', '(', 'Math', '2oH', '+', '', 'cos', 'sin'  
+      push '35v}5', '+L-'
+      setVariable
+      push '*'
+      getVariable
+      push NULL
+      equals
+      not
+      branchIfTrue label1
+      push '*', 1
+      setVariable
+      branch label2
+     label1:
+      push '*', '*'
+      getVariable
+      push 0.75
+      multiply
+      setVariable
+     label2:
+      push '(', 0.0, 'Math'
+      getVariable
+      push '2oH', '35v}5'
+      getVariable
+      add
+      callMethod
+      push 6.28
+      multiply
+      setVariable
+      push '+', 0.0, 'Math'
+      getVariable
+      push '2oH', '35v}5'
+      getVariable
+      add
+      callMethod
+      push 16
+      multiply
+      setVariable
+      push '', 0.0, '('
+      getVariable
+      push 1, 'Math'
+      getVariable
+      push 'cos'
+      callMethod
+      push '+'
+      getVariable
+      multiply
+      setProperty
+      push '', 1, '('
+      getVariable
+      push 1, 'Math'
+      getVariable
+      push 'sin'
+      callMethod
+      push '+'
+      getVariable
+      multiply
+      setProperty
+      push '', 2, '', 3, 100, '+'
+      getVariable
+      push 4
+      multiply
+      subtract
+      push '*'
+      getVariable
+      multiply
+      setRegister r:0
+      setProperty
+      push r:0
+      setProperty
+    end // of frame 8
+  end // of defineMovieClip 89
+
+  defineMovieClip 90 // total frames: 60
+  end // of defineMovieClip 90
+
+  defineMovieClip 91 // total frames: 3
+  end // of defineMovieClip 91
+  
+  exportAssets
+    91 as 'fx_flash'
+  end // of exportAssets
+
+  defineMovieClip 92 // total frames: 1
+  end // of defineMovieClip 92
+
+  defineMovieClip 93 // total frames: 3
+
+    frame 0
+      stop
+    end // of frame 0
+
+    frame 2
+      stop
+    end // of frame 2
+  end // of defineMovieClip 93
+
+  defineMovieClip 94 // total frames: 6
+  end // of defineMovieClip 94
+  
+  exportAssets
+    94 as 'next'
+  end // of exportAssets
+
+  defineMovieClip 97 // total frames: 1
+  end // of defineMovieClip 97
+
+  defineMovieClip 100 // total frames: 2
+
+    frame 0
+      stop
+    end // of frame 0
+
+    frame 1
+      stop
+    end // of frame 1
+  end // of defineMovieClip 100
+
+  defineMovieClip 102 // total frames: 3
+
+    frame 0
+      stop
+    end // of frame 0
+
+    frame 2
+      stop
+    end // of frame 2
+  end // of defineMovieClip 102
+
+  defineMovieClip 103 // total frames: 6
+  end // of defineMovieClip 103
+  
+  exportAssets
+    103 as 'item'
+  end // of exportAssets
+
+  defineMovieClip 105 // total frames: 1
+  end // of defineMovieClip 105
+
+  defineMovieClip 106 // total frames: 30
+  end // of defineMovieClip 106
+
+  defineMovieClip 109 // total frames: 1
+  end // of defineMovieClip 109
+
+  defineMovieClip 110 // total frames: 1
+  end // of defineMovieClip 110
+
+  defineMovieClip 111 // total frames: 5
+  end // of defineMovieClip 111
+
+  defineMovieClip 113 // total frames: 5
+  end // of defineMovieClip 113
+
+  defineMovieClip 115 // total frames: 1
+  end // of defineMovieClip 115
+
+  defineMovieClip 116 // total frames: 1
+  end // of defineMovieClip 116
+
+  defineMovieClip 117 // total frames: 4
+
+    frame 0
+      push '', 10, 0.0, '_global'
+      getVariable
+      push '4,01'
+      getMember
+      push '_rotation'
+      getMember
+      subtract
+      setProperty
+    end // of frame 0
+  end // of defineMovieClip 117
+
+  defineMovieClip 118 // total frames: 1
+  end // of defineMovieClip 118
+
+  defineMovieClip 119 // total frames: 18
+
+    frame 17
+      push 1, 1, '_parent'
+      getVariable
+      push 'gotoAndStop'
+      callMethod
+      pop
+    end // of frame 17
+  end // of defineMovieClip 119
+
+  defineMovieClip 120 // total frames: 1
+  end // of defineMovieClip 120
+
+  defineMovieClip 122 // total frames: 1
+  end // of defineMovieClip 122
+
+  defineMovieClip 127 // total frames: 1
+  end // of defineMovieClip 127
+
+  defineMovieClip 130 // total frames: 6
+  end // of defineMovieClip 130
+
+  defineMovieClip 131 // total frames: 6
+  end // of defineMovieClip 131
+
+  defineMovieClip 141 // total frames: 1
+  end // of defineMovieClip 141
+
+  defineMovieClip 142 // total frames: 8
+  end // of defineMovieClip 142
+
+  defineMovieClip 144 // total frames: 1
+  end // of defineMovieClip 144
+
+  defineMovieClip 146 // total frames: 1
+  end // of defineMovieClip 146
+
+  defineMovieClip 149 // total frames: 1
+  end // of defineMovieClip 149
+
+  defineMovieClip 150 // total frames: 11
+  end // of defineMovieClip 150
+
+  defineMovieClip 151 // total frames: 32
+
+    frame 14
+      push 1, 1, '_parent'
+      getVariable
+      push 'gotoAndPlay'
+      callMethod
+      pop
+    end // of frame 14
+
+    frame 31
+      stop
+    end // of frame 31
+  end // of defineMovieClip 151
+
+  defineMovieClip 152 // total frames: 7
+  end // of defineMovieClip 152
+
+  defineMovieClip 153 // total frames: 10
+
+    frame 0
+      stop
+    end // of frame 0
+  end // of defineMovieClip 153
+  
+  exportAssets
+    153 as 'hero'
+  end // of exportAssets
+
+  defineMovieClip 162 // total frames: 8
+  end // of defineMovieClip 162
+  
+  exportAssets
+    162 as 'part'
+  end // of exportAssets
+
+  defineMovieClip 164 // total frames: 1
+  end // of defineMovieClip 164
+
+  defineMovieClip 165 // total frames: 5
+  end // of defineMovieClip 165
+  
+  exportAssets
+    165 as 'aim'
+  end // of exportAssets
+
+  defineMovieClip 169 // total frames: 5
+  end // of defineMovieClip 169
+
+  defineMovieClip 170 // total frames: 1
+  end // of defineMovieClip 170
+  
+  exportAssets
+    170 as 'arrow'
+  end // of exportAssets
+
+  defineMovieClip 172 // total frames: 1
+  end // of defineMovieClip 172
+
+  defineMovieClip 173 // total frames: 1
+  end // of defineMovieClip 173
+
+  defineMovieClip 175 // total frames: 1
+  end // of defineMovieClip 175
+
+  defineMovieClip 176 // total frames: 2
+  end // of defineMovieClip 176
+
+  defineMovieClip 178 // total frames: 1
+  end // of defineMovieClip 178
+
+  defineMovieClip 179 // total frames: 9
+  end // of defineMovieClip 179
+
+  defineMovieClip 181 // total frames: 1
+  end // of defineMovieClip 181
+
+  defineMovieClip 182 // total frames: 6
+  end // of defineMovieClip 182
+
+  defineMovieClip 183 // total frames: 9
+  end // of defineMovieClip 183
+
+  defineMovieClip 184 // total frames: 5
+
+    frame 4
+      gotoFrame 0
+      play
+    end // of frame 4
+  end // of defineMovieClip 184
+
+  defineMovieClip 186 // total frames: 1
+  end // of defineMovieClip 186
+
+  defineMovieClip 187 // total frames: 6
+  end // of defineMovieClip 187
+
+  defineMovieClip 188 // total frames: 6
+  end // of defineMovieClip 188
+
+  defineMovieClip 190 // total frames: 1
+  end // of defineMovieClip 190
+
+  defineMovieClip 192 // total frames: 1
+  end // of defineMovieClip 192
+
+  defineMovieClip 193 // total frames: 200
+
+    frame 36
+      gotoFrame 0
+      play
+    end // of frame 36
+
+    frame 122
+      stop
+    end // of frame 122
+  end // of defineMovieClip 193
+
+  defineMovieClip 194 // total frames: 1
+  end // of defineMovieClip 194
+  
+  exportAssets
+    194 as 'startPlat'
+  end // of exportAssets
+
+  defineMovieClip 201 // total frames: 3
+  end // of defineMovieClip 201
+  
+  exportAssets
+    201 as 'bgItem'
+  end // of exportAssets
+
+  defineMovieClip 205 // total frames: 1
+  end // of defineMovieClip 205
+
+  defineMovieClip 206 // total frames: 42
+  end // of defineMovieClip 206
+
+  defineMovieClip 20481 // total frames: 1
+
+    frame 0
+      constants ')PVyX', '', '[8X6+', '7]AJ', '__string_rec', 'Object', '_global', 'flash', '}ZF-m', 'display', '__name__', 'prototype', '__class__', 'length', '<...>', 'movieclip', 'function', '__ename__', 'object', 'string', 'String', 'Array', '__enum__', '(', '    ', ',', ')', '[', ']', 'toString', '[object Object]', '[type Function]', '{\n', 'typeof', 'MC(', '_name', ') ', 'push', 'iterator', '1ll a', '7Y-7', '__class__', '__super__', '__interfaces__', ',\n', ' : ', 'substring', '\n', '}', '<function>', '__closure', 'arguments', 'callee', 'o', 'f', 'apply', '__instanceof', '}Se', '+-r[C', '-]AJ', '}ANwG', 'Math', 'ceil', 'isFinite', 'number', '9vIf=(', '1ni', '0]Ss)', '__trace_txt', 'Stage', 'height', 'width', '__trace_txt', 'createTextField', 'getTextFormat', 'font', '_sans', 'setNewTextFormat', 'selectable', 'textColor', ' p)sT', '__trace_lines', '__set_trace_color', '__trace', 'fileName', 'lineNumber', ':', ': ', 'split', 'concat', 'text', 'join', 'textHeight', 'shift', '__exc', ')2I7S', ']6=8H(', '(uncaught exception)', '__clear_trace', 'removeTextField', '__init', '=w 0[', '(4GB', ']nl)+', 'Number', 'prototype', 'copy', 'slice', 'insert', 'splice', 'remove', '7-,', '=()', 'ASSetPropFlags', '}W+', 'charCodeAt', 'call', '_root', '1Z;X+', 'align', 'LT', '_MovieClip', '9K', '+7U K', ')2fr3', '}Zms3', '*=_p_', '-fC3a', '9oK', ']bu40', '@', '}Sgx4', 'attachMovie', ';_dAm', 'attachBitmap', '+tq5)', 'removeMovieClip', 'swapDepths', ',}2X (', '18wU*', 'empty@', 'createEmptyMovieClip', ']1sj+', '08M8', 'getDepth', 'floor', '(GbB}', '+2NA', '}oQA7', 'unshift', '9(K ;', '_y', 'text', '-[Ra6', '[8N,', '9jX3L', '_self', ';AI]A', 'FSCommand:', '0oxy3', 'bframe', 'bmax', 'print:', 'print:#', '6{1o=(', '6vCsj', '$version', '}0fUr', 'registerClass', '4x-4', '4}6gG(', '{-kxL', '87vE7(', '4plQ5', ';ILSy', '3R,QM', ';y}-6(', '6GI,F', '-)Xd+', '[Ad;n', '-V;B', '[L2', ' D(1', '8D2UU', '=(,aA', '__interfaces__', '0000', 'geom', '-UHXC', '9]A', '2KA', '3Wt', '=B', '+_PpF', '9n6', '}VD)', ',Iq1+(', 'parseInt', 'isNaN', '}KlBo', 'parseFloat', '=f+', 'fromCharCode', '2qD', 'random', ' {p*;', '__res', '3[4k{', 'filters', '+6[ML', '__constructs__', 'Run', 'Angle', 'WaitFrames', 'WaitSpace', 'Start', 'Wait', ', -C=', 'toString', ' 0s', '22[ML', ',=ya', ';cFo2', '9(Uf)(', '=UwLY', 'Grass', '7HTHD', '44{N', ']}lAm', '57*', '3d0fx', '}EQqb', 'bg_plan', '_height', '=ays3', ']BMP2', ',-)8f', 'next', '_x', '-_X}5', '_d', '}-B2', '7j(', '9O*r', '[PAv', '4B1W(', ' k5=B', ',Kwdh', '_width', '1qKD-', '}J', ']L,PR', '4AF', ')(', '((', '58rO6', 'hitTest', '{Y1 G(', '4', '0tJ', 'play', '582dG', ';ndCG', '5b)bA(', 'abs', '7M9bQ', '{2', '4,01', '_visible', '8]X}5', 'PI', '-R3p+(', '8Xod,', '}2', '}Yax5', 'smc', 'gotoAndStop', '1av-m', '6V[ZE', '*[PT7', 'Key', 'SPACE', 'isDown', '+aDob', 'back', '8jms3', '8{S]A', 'aim', '_rotation', 'launch', 'gotoAndPlay', '*h0p]', 'hero', 'pow', 'cos', 'sin', '4u=dZ', '*7y_j', '-Q)9)', '65l5n', ')yVkk', '9hgxq', ',e-X)(', ']GD;', '++yn{', '3[R43(', '4Jq E(', '7g,ln', 'startPlat', '(hn1*', '(n0fx', 'part', '_xscale', '_yscale', '_alpha', 'arrow', '[QL', 'm', 'sqrt', ',gd2D(', 'max', '_currentframe', ';', '_totalframes', '7T4cF(', 'end', '0unn]', '-0mb+', 'item', 'bgItem', 'atan2', 'LEFT', 'UP', 'RIGHT', 'DOWN', '}Vok9', '980Sb', '_main', '(kJ+1(', '0D 6', 'this', 'MovieClip', 'TextField', 'StyleSheet', 'addListener', 'TextFormat', 'NaN', 'NEGATIVE_INFINITY', 'POSITIVE_INFINITY', 'TextSnapshot', '}m6', '*G6KR'  
+      push ')PVyX'
+      function2 () (r:1='this')
+        push '', r:this, 2, '[8X6+'
+        getVariable
+        push '7]AJ'
+        getMember
+        push '__string_rec'
+        callMethod
+        return
+      end // of function 
+
+      setVariable
+      push '[8X6+', 0, 'Object'
+      new
+      setRegister r:1
+      setVariable
+      push '_global'
+      getVariable
+      push 'flash'
+      getMember
+      setRegister r:2
+      enumerateValue
+     label1:
+      setRegister r:0
+      push NULL
+      equals
+      branchIfTrue label2
+      push r:1, r:0, r:2, r:0
+      getMember
+      setMember
+      branch label1
+     label2:
+      pop
+      push '[8X6+'
+      getVariable
+      push '}ZF-m', 0, 'Object'
+      new
+      setRegister r:1
+      setMember
+      push '_global'
+      getVariable
+      push 'flash'
+      getMember
+      push 'display'
+      getMember
+      setRegister r:2
+      enumerateValue
+     label3:
+      setRegister r:0
+      push NULL
+      equals
+      branchIfTrue label4
+      push r:1, r:0, r:2, r:0
+      getMember
+      setMember
+      branch label3
+     label4:
+      pop
+      push '[8X6+'
+      getVariable
+      push '7]AJ'
+      function2 () (r:1='this', r:2='super')
+      end // of function 
+
+      setRegister r:0
+      setMember
+      push r:0, '__name__', '7]AJ', '[8X6+', 2
+      initArray
+      setMember
+      push r:0, 'prototype'
+      getMember
+      setRegister r:1
+      pop
+      push r:1, '__class__', r:0
+      setMember
+      push r:0, '__string_rec'
+      function2 (r:2='', r:3='') (r:1='this')
+        push r:3, 'length'
+        getMember
+        push 20
+        lessThan
+        not
+        not
+        branchIfTrue label5
+        push '<...>'
+        return
+       label5:
+        push r:2
+        typeof
+        setRegister r:4
+        pop
+        push r:4, 'movieclip'
+        equals
+        branchIfTrue label8
+        push r:4, 'function'
+        equals
+        dup
+        not
+        branchIfTrue label6
+        pop
+        push r:2, '__name__'
+        getMember
+        push NULL
+        equals
+        not
+        dup
+        branchIfTrue label6
+        pop
+        push r:2, '__ename__'
+        getMember
+        push NULL
+        equals
+        not
+       label6:
+        not
+        branchIfTrue label7
+        push 'object'
+        setRegister r:4
+        pop
+       label7:
+        branch label9
+       label8:
+        push 'object'
+        setRegister r:4
+        pop
+       label9:
+        push r:4
+        setRegister r:5
+        push 'object'
+        equals
+        branchIfTrue label10
+        push r:5, 'function'
+        equals
+        branchIfTrue label34
+        push r:5, 'string'
+        equals
+        branchIfTrue label35
+        push r:2, 1, 'String'
+        callFunction
+        return
+        branch label36
+       label10:
+        push r:2, 'Array'
+        getVariable
+        instanceOf
+        not
+        branchIfTrue label21
+        push r:2, '__enum__'
+        getMember
+        push NULL
+        equals
+        not
+        not
+        branchIfTrue label16
+        push r:2, 'length'
+        getMember
+        push 2
+        equals
+        not
+        branchIfTrue label11
+        push r:2, 0
+        getMember
+        return
+       label11:
+        push r:2, 0
+        getMember
+        push '('
+        add
+        setRegister r:6
+        pop
+        push r:3, '    '
+        add
+        setRegister r:3
+        pop
+        push 2
+        setRegister r:7
+        pop
+        push r:2, 'length'
+        getMember
+        setRegister r:8
+        pop
+       label12:
+        push r:7, r:8
+        lessThan
+        not
+        branchIfTrue label15
+        push r:7
+        setRegister r:9
+        pop
+        push r:7
+        increment
+        setRegister r:7
+        pop
+        push r:9, 2
+        equals
+        not
+        branchIfTrue label13
+        push r:6, r:3, r:2, r:9
+        getMember
+        push 2, '[8X6+'
+        getVariable
+        push '7]AJ'
+        getMember
+        push '__string_rec'
+        callMethod
+        add
+        setRegister r:6
+        pop
+        branch label14
+       label13:
+        push r:6, ',', r:3, r:2, r:9
+        getMember
+        push 2, '[8X6+'
+        getVariable
+        push '7]AJ'
+        getMember
+        push '__string_rec'
+        callMethod
+        add
+        add
+        setRegister r:6
+        pop
+       label14:
+        branch label12
+       label15:
+        push r:6, ')'
+        add
+        return
+       label16:
+        push r:2, 'length'
+        getMember
+        setRegister r:6
+        pop
+        push '['
+        setRegister r:8
+        pop
+        push r:3, '    '
+        add
+        setRegister r:3
+        pop
+        push 0
+        setRegister r:9
+        pop
+        push r:6
+        setRegister r:10
+        pop
+       label17:
+        push r:9, r:10
+        lessThan
+        not
+        branchIfTrue label20
+        push r:9
+        setRegister r:11
+        pop
+        push r:9
+        increment
+        setRegister r:9
+        pop
+        push r:8, r:11, 0
+        greaterThan
+        branchIfTrue label18
+        push ''
+        branch label19
+       label18:
+        push ','
+       label19:
+        push r:3, r:2, r:11
+        getMember
+        push 2, '[8X6+'
+        getVariable
+        push '7]AJ'
+        getMember
+        push '__string_rec'
+        callMethod
+        add
+        add
+        setRegister r:8
+        pop
+        branch label17
+       label20:
+        push r:8, ']'
+        add
+        setRegister r:8
+        pop
+        push r:8
+        return
+       label21:
+        push 0, r:2, 'toString'
+        callMethod
+        setRegister r:6
+        pop
+        push r:6
+        typeof
+        push 'string'
+        equals
+        dup
+        branchIfTrue label22
+        pop
+        push r:6, 'String'
+        getVariable
+        instanceOf
+       label22:
+        dup
+        not
+        branchIfTrue label23
+        pop
+        push r:6, '[object Object]'
+        equals
+        not
+        dup
+        not
+        branchIfTrue label23
+        pop
+        push r:6, '[type Function]'
+        equals
+        not
+       label23:
+        not
+        branchIfTrue label24
+        push r:6
+        return
+       label24:
+        push '{\n'
+        setRegister r:8
+        pop
+        push r:2, 1, 'typeof'
+        callFunction
+        push 'movieclip'
+        equals
+        not
+        branchIfTrue label25
+        push 'MC(', r:2, '_name'
+        getMember
+        add
+        push ') '
+        add
+        push r:8
+        add
+        setRegister r:8
+        pop
+       label25:
+        push r:3, '    '
+        add
+        setRegister r:3
+        pop
+        push 0, 'Array'
+        new
+        setRegister r:10
+        pop
+        push r:2
+        enumerateValue
+       label26:
+        setRegister r:0
+        push NULL
+        equals
+        branchIfTrue label27
+        push r:0, 1, r:10, 'push'
+        callMethod
+        pop
+        branch label26
+       label27:
+        push r:10
+        setRegister r:9
+        pop
+        push 0, r:9, 'iterator'
+        callMethod
+        setRegister r:10
+        pop
+       label28:
+        push 0, r:10, '1ll a'
+        callMethod
+        not
+        branchIfTrue label32
+        push 0, r:10, '7Y-7'
+        callMethod
+        setRegister r:11
+        pop
+        push r:11, 'prototype'
+        equals
+        dup
+        branchIfTrue label29
+        pop
+        push r:11, '__class__'
+        equals
+        dup
+        branchIfTrue label29
+        pop
+        push r:11, '__super__'
+        equals
+        dup
+        branchIfTrue label29
+        pop
+        push r:11, '__interfaces__'
+        equals
+       label29:
+        not
+        branchIfTrue label30
+        branch label28
+       label30:
+        push r:8, 'length'
+        getMember
+        push 2
+        equals
+        not
+        not
+        branchIfTrue label31
+        push r:8, ',\n'
+        add
+        setRegister r:8
+        pop
+       label31:
+        push r:8, r:3, r:11
+        add
+        push ' : '
+        add
+        push r:3, r:2, r:11
+        getMember
+        push 2, '[8X6+'
+        getVariable
+        push '7]AJ'
+        getMember
+        push '__string_rec'
+        callMethod
+        add
+        add
+        setRegister r:8
+        pop
+        branch label28
+       label32:
+        push 4, 1, r:3, 'substring'
+        callMethod
+        setRegister r:3
+        pop
+        push r:8, 'length'
+        getMember
+        push 2
+        equals
+        not
+        not
+        branchIfTrue label33
+        push r:8, '\n'
+        add
+        setRegister r:8
+        pop
+       label33:
+        push r:8, r:3, '}'
+        add
+        add
+        setRegister r:8
+        pop
+        push r:8
+        return
+        branch label36
+       label34:
+        push '<function>'
+        return
+        branch label36
+       label35:
+        push r:2
+        return
+        branch label36
+       label36:
+      end // of function 
+
+      setMember
+      push r:0, '__closure'
+      function2 (r:2='', r:3='') (r:1='this')
+        push r:3, r:2
+        getMember
+        setRegister r:4
+        pop
+        push r:4, NULL
+        equals
+        not
+        branchIfTrue label37
+        push NULL
+        return
+       label37:
+        function2 () (r:1='this', 'arguments')
+          push 'arguments'
+          getVariable
+          push 'callee'
+          getMember
+          setRegister r:2
+          pop
+          push 'arguments'
+          getVariable
+          push r:2, 'o'
+          getMember
+          push 2, r:2, 'f'
+          getMember
+          push 'apply'
+          callMethod
+          return
+        end // of function 
+
+        setRegister r:5
+        pop
+        push r:5, 'f', r:4
+        setMember
+        push r:5, 'o', r:3
+        setMember
+        push r:5
+        return
+      end // of function 
+
+      setMember
+      push r:0, '__instanceof'
+      function2 (r:2='', r:3='') (r:1='this')
+        push r:3
+        not
+        not
+        branchIfTrue label38
+        push FALSE
+        return
+       label38:
+        push r:2, r:3
+        instanceOf
+        not
+        branchIfTrue label40
+        push r:3, 'Array'
+        getVariable
+        equals
+        not
+        branchIfTrue label39
+        push r:2, '__enum__'
+        getMember
+        push NULL
+        equals
+        return
+       label39:
+        push TRUE
+        return
+       label40:
+        push r:3
+        setRegister r:4
+        push '}Se'
+        getVariable
+        equals
+        branchIfTrue label42
+        push r:4, '+-r[C'
+        getVariable
+        equals
+        branchIfTrue label44
+        push r:4, '-]AJ'
+        getVariable
+        equals
+        branchIfTrue label45
+        push r:4, 'String'
+        getVariable
+        equals
+        branchIfTrue label47
+        push r:4, '}ANwG'
+        getVariable
+        equals
+        branchIfTrue label48
+        push r:2, '__enum__'
+        getMember
+        push r:3
+        equals
+        not
+        branchIfTrue label41
+        push TRUE
+        return
+       label41:
+        push FALSE
+        return
+        branch label49
+       label42:
+        push r:2, 1, 'Math'
+        getVariable
+        push 'ceil'
+        callMethod
+        push r:2
+        strictEquals
+        dup
+        not
+        branchIfTrue label43
+        pop
+        push r:2, 1, 'isFinite'
+        callFunction
+        dup
+        not
+        branchIfTrue label43
+        pop
+        push r:2, TRUE
+        strictEquals
+        not
+        dup
+        not
+        branchIfTrue label43
+        pop
+        push r:2, FALSE
+        strictEquals
+        not
+       label43:
+        return
+        branch label49
+       label44:
+        push r:2
+        typeof
+        push 'number'
+        equals
+        return
+        branch label49
+       label45:
+        push r:2, TRUE
+        strictEquals
+        dup
+        branchIfTrue label46
+        pop
+        push r:2, FALSE
+        strictEquals
+       label46:
+        return
+        branch label49
+       label47:
+        push r:2
+        typeof
+        push 'string'
+        equals
+        return
+        branch label49
+       label48:
+        push TRUE
+        return
+        branch label49
+       label49:
+      end // of function 
+
+      setMember
+      push r:0, '9vIf=('
+      function2 () (r:1='this')
+        push '[8X6+'
+        getVariable
+        push '1ni'
+        getMember
+        push '0]Ss)'
+        getMember
+        setRegister r:2
+        pop
+        push r:2, '__trace_txt'
+        getMember
+        setRegister r:3
+        pop
+        push r:3, NULL
+        equals
+        not
+        branchIfTrue label50
+        push '[8X6+'
+        getVariable
+        push 'Stage'
+        getMember
+        push 'height'
+        getMember
+        push 30
+        add
+        push '[8X6+'
+        getVariable
+        push 'Stage'
+        getMember
+        push 'width'
+        getMember
+        push 0, 0, 1048500, '__trace_txt', 6, r:2, 'createTextField'
+        callMethod
+        pop
+        push r:2, '__trace_txt'
+        getMember
+        setRegister r:3
+        pop
+        push 0, r:3, 'getTextFormat'
+        callMethod
+        setRegister r:4
+        pop
+        push r:4, 'font', '_sans'
+        setMember
+        push r:4, 1, r:3, 'setNewTextFormat'
+        callMethod
+        pop
+        push r:3, 'selectable', FALSE
+        setMember
+        push r:3, 'textColor', '[8X6+'
+        getVariable
+        push '7]AJ'
+        getMember
+        push ' p)sT'
+        getMember
+        setMember
+        push r:2, '__trace_lines', 0, 'Array'
+        new
+        setMember
+       label50:
+        push r:3
+        return
+      end // of function 
+
+      setMember
+      push r:0, '__set_trace_color'
+      function2 (r:2='') (r:1='this')
+        push 0, '[8X6+'
+        getVariable
+        push '7]AJ'
+        getMember
+        push '9vIf=('
+        callMethod
+        push 'textColor', r:2
+        setMember
+        push '[8X6+'
+        getVariable
+        push '7]AJ'
+        getMember
+        push ' p)sT', r:2
+        setMember
+      end // of function 
+
+      setMember
+      push r:0, '__trace'
+      function2 (r:2='', r:3='') (r:1='this')
+        push '[8X6+'
+        getVariable
+        push '1ni'
+        getMember
+        push '0]Ss)'
+        getMember
+        setRegister r:4
+        pop
+        push 0, '[8X6+'
+        getVariable
+        push '7]AJ'
+        getMember
+        push '9vIf=('
+        callMethod
+        setRegister r:5
+        pop
+        push r:3, 'fileName'
+        getMember
+        push r:3, 'lineNumber'
+        getMember
+        push NULL
+        equals
+        branchIfTrue label51
+        push ':', r:3, 'lineNumber'
+        getMember
+        add
+        branch label52
+       label51:
+        push ''
+       label52:
+        add
+        push ': '
+        add
+        push '', r:2, 2, '[8X6+'
+        getVariable
+        push '7]AJ'
+        getMember
+        push '__string_rec'
+        callMethod
+        add
+        setRegister r:6
+        pop
+        push '\n', 1, r:6, 'split'
+        callMethod
+        push 1, r:4, '__trace_lines'
+        getMember
+        push 'concat'
+        callMethod
+        setRegister r:7
+        pop
+        push r:5, 'text', '\n', 1, r:7, 'join'
+        callMethod
+        setMember
+       label53:
+        push r:5, 'textHeight'
+        getMember
+        push '[8X6+'
+        getVariable
+        push 'Stage'
+        getMember
+        push 'height'
+        getMember
+        greaterThan
+        not
+        branchIfTrue label54
+        push 0, r:7, 'shift'
+        callMethod
+        pop
+        push r:5, 'text', '\n', 1, r:7, 'join'
+        callMethod
+        setMember
+        branch label53
+       label54:
+        push r:4, '__trace_lines', r:7
+        setMember
+      end // of function 
+
+      setMember
+      push r:0, '__exc'
+      function2 (r:2='') (r:1='this')
+        push ''
+        setRegister r:3
+        pop
+        push '[8X6+'
+        getVariable
+        push '1ni'
+        getMember
+        push ')2I7S', 2, ']6=8H('
+        callFunction
+        push NULL
+        equals
+        not
+        branchIfTrue label55
+        push 'fileName', '(uncaught exception)', 1
+        initObject
+        push '', r:2, 2, '[8X6+'
+        getVariable
+        push '7]AJ'
+        getMember
+        push '__string_rec'
+        callMethod
+        push r:3
+        add
+        push 2, '[8X6+'
+        getVariable
+        push '7]AJ'
+        getMember
+        push '__trace'
+        callMethod
+        pop
+        branch label56
+       label55:
+        push 0
+        initArray
+        push '', r:2, 2, '[8X6+'
+        getVariable
+        push '7]AJ'
+        getMember
+        push '__string_rec'
+        callMethod
+        push 2, '[8X6+'
+        getVariable
+        push '1ni'
+        getMember
+        push ')2I7S'
+        callMethod
+        pop
+       label56:
+      end // of function 
+
+      setMember
+      push r:0, '__clear_trace'
+      function2 () (r:1='this')
+        push '[8X6+'
+        getVariable
+        push '1ni'
+        getMember
+        push '0]Ss)'
+        getMember
+        setRegister r:2
+        pop
+        push 0, r:2, '__trace_txt'
+        getMember
+        push 'removeTextField'
+        callMethod
+        pop
+        push r:2, '__trace_lines', NULL
+        setMember
+      end // of function 
+
+      setMember
+      push r:0, '__init'
+      function2 (r:2='') (r:1='this')
+        push '_global'
+        getVariable
+        setRegister r:3
+        pop
+        push r:3, '=w 0['
+        getMember
+        not
+        not
+        branchIfTrue label61
+        push '_global'
+        getVariable
+        push 'Object'
+        getMember
+        setRegister r:4
+        pop
+        push r:3, '=w 0[', TRUE
+        setMember
+        push r:3, '}Se', 0, r:4, UNDEF
+        newMethod
+        setMember
+        push r:3, '-]AJ', 0, r:4, UNDEF
+        newMethod
+        setMember
+        push r:3, '}ANwG', 0, r:4, UNDEF
+        newMethod
+        setMember
+        push r:3, '-]AJ', 0, r:4, UNDEF
+        newMethod
+        setMember
+        push r:3, '-]AJ'
+        getMember
+        push '(4GB', TRUE
+        setMember
+        push r:3, '-]AJ'
+        getMember
+        push ']nl)+', FALSE
+        setMember
+        push r:3, '+-r[C', '_global'
+        getVariable
+        push 'Number'
+        getMember
+        setMember
+        push 'Array'
+        getVariable
+        push 'prototype'
+        getMember
+        push 'copy', 'Array'
+        getVariable
+        push 'prototype'
+        getMember
+        push 'slice'
+        getMember
+        setMember
+        push 'Array'
+        getVariable
+        push 'prototype'
+        getMember
+        push 'insert'
+        function2 (r:2='', r:3='') (r:1='this')
+          push r:3, 0, r:2, 3, r:this, 'splice'
+          callMethod
+          pop
+        end // of function 
+
+        setMember
+        push 'Array'
+        getVariable
+        push 'prototype'
+        getMember
+        push 'remove'
+        function2 (r:2='') (r:1='this')
+          push 0
+          setRegister r:3
+          pop
+          push r:this, 'length'
+          getMember
+          setRegister r:4
+          pop
+         label57:
+          push r:3, r:4
+          lessThan
+          not
+          branchIfTrue label59
+          push r:this, r:3
+          getMember
+          push r:2
+          equals
+          not
+          branchIfTrue label58
+          push 1, r:3, 2, r:this, 'splice'
+          callMethod
+          pop
+          push TRUE
+          return
+         label58:
+          push r:3
+          increment
+          setRegister r:3
+          pop
+          branch label57
+         label59:
+          push FALSE
+          return
+        end // of function 
+
+        setMember
+        push 'Array'
+        getVariable
+        push 'prototype'
+        getMember
+        push 'iterator'
+        function2 () (r:1='this')
+          push '7-,', 0, '=()', r:this, '1ll a'
+          function2 () (r:1='this')
+            push r:this, '7-,'
+            getMember
+            push r:this, '=()'
+            getMember
+            push 'length'
+            getMember
+            lessThan
+            return
+          end // of function 
+
+          push '7Y-7'
+          function2 () (r:1='this')
+            push r:this, '=()'
+            getMember
+            push r:this, '7-,'
+            getMember
+            push r:this, '7-,', r:this, '7-,'
+            getMember
+            increment
+            setMember
+            getMember
+            return
+          end // of function 
+
+          push 4
+          initObject
+          return
+        end // of function 
+
+        setMember
+        push 'Array'
+        getVariable
+        push 'prototype'
+        getMember
+        push '__class__', 'Array'
+        getVariable
+        setMember
+        push 'Array'
+        getVariable
+        push '__name__', 'Array', 1
+        initArray
+        setMember
+        push 7, NULL, 'Array'
+        getVariable
+        push 'prototype'
+        getMember
+        push 3, '_global'
+        getVariable
+        push 'ASSetPropFlags'
+        callMethod
+        pop
+        push 'String'
+        getVariable
+        push 'prototype'
+        getMember
+        push '__class__', 'String'
+        getVariable
+        setMember
+        push 'String'
+        getVariable
+        push '__name__', 'String', 1
+        initArray
+        setMember
+        push '}W+', 'String'
+        getVariable
+        push 'prototype'
+        getMember
+        push 'charCodeAt'
+        getMember
+        varEquals
+        push 'String'
+        getVariable
+        push 'prototype'
+        getMember
+        push 'charCodeAt'
+        function2 (r:2='') (r:1='this')
+          push r:2, r:this, 2, '}W+'
+          getVariable
+          push 'call'
+          callMethod
+          setRegister r:3
+          pop
+          push r:3, 0
+          greaterThan
+          not
+          not
+          branchIfTrue label60
+          push NULL
+          return
+         label60:
+          push r:3
+          return
+        end // of function 
+
+        setMember
+        push '_global'
+        getVariable
+        push 'flash'
+        getMember
+        push NULL
+        equals
+        not
+        branchIfTrue label61
+        push '_global'
+        getVariable
+        push 'flash', 0, r:4, UNDEF
+        newMethod
+        setMember
+       label61:
+        push r:2, '[8X6+'
+        getMember
+        push '1ni'
+        getMember
+        push '_global', '_global'
+        getVariable
+        setMember
+        push r:2, '[8X6+'
+        getMember
+        push '1ni'
+        getMember
+        push '_root', '_root'
+        getVariable
+        setMember
+        push r:2, '[8X6+'
+        getMember
+        push '1ni'
+        getMember
+        push '0]Ss)', r:2
+        setMember
+        push r:2, '1Z;X+', '[8X6+'
+        getVariable
+        push '7]AJ'
+        getMember
+        push '__instanceof'
+        getMember
+        setMember
+        push r:2, ']6=8H(', '[8X6+'
+        getVariable
+        push '7]AJ'
+        getMember
+        push '__closure'
+        getMember
+        setMember
+        push '_global'
+        getVariable
+        push 'Stage'
+        getMember
+        push 'align'
+        getMember
+        push ''
+        equals
+        branchIfTrue label62
+        push NULL
+        pop
+        branch label63
+       label62:
+        push '_global'
+        getVariable
+        push 'Stage'
+        getMember
+        push 'align', 'LT'
+        setMember
+       label63:
+      end // of function 
+
+      setMember
+      push '[8X6+'
+      getVariable
+      push '_MovieClip', 0, 'Object'
+      new
+      setRegister r:1
+      setMember
+      push '_global'
+      getVariable
+      push 'flash'
+      getMember
+      push '_MovieClip'
+      getMember
+      setRegister r:2
+      enumerateValue
+     label64:
+      setRegister r:0
+      push NULL
+      equals
+      branchIfTrue label65
+      push r:1, r:0, r:2, r:0
+      getMember
+      setMember
+      branch label64
+     label65:
+      pop
+      push '9K', 0, 'Object'
+      new
+      setRegister r:1
+      setVariable
+      push '_global'
+      getVariable
+      push '9K'
+      getMember
+      setRegister r:2
+      enumerateValue
+     label66:
+      setRegister r:0
+      push NULL
+      equals
+      branchIfTrue label67
+      push r:1, r:0, r:2, r:0
+      getMember
+      setMember
+      branch label66
+     label67:
+      pop
+      push '9K'
+      getVariable
+      push '+7U K'
+      function2 (r:2='') (r:1='this')
+        push r:this, ')2fr3', r:2
+        setMember
+        push r:this, '}Zms3', 0, 'Array'
+        new
+        setMember
+      end // of function 
+
+      setRegister r:0
+      setMember
+      push r:0, '__name__', '+7U K', '9K', 2
+      initArray
+      setMember
+      push r:0, 'prototype'
+      getMember
+      setRegister r:1
+      pop
+      push r:1, '__class__', r:0
+      setMember
+      push r:1, '*=_p_'
+      function2 (r:2='', r:3='') (r:1='this')
+        push r:3, 1, r:this, '-fC3a'
+        callMethod
+        setRegister r:4
+        pop
+        push r:4, '9oK'
+        getMember
+        setRegister r:5
+        pop
+        push r:4, '7-,'
+        getMember
+        setRegister r:6
+        pop
+        push r:6, 1000
+        equals
+        not
+        branchIfTrue label68
+        push r:3, 1, r:this, ']bu40'
+        callMethod
+        pop
+        push r:3, r:2, 2, r:this, '*=_p_'
+        callMethod
+        return
+       label68:
+        push r:2, '@'
+        add
+        push '9K'
+        getVariable
+        push '+7U K'
+        getMember
+        push '}Sgx4'
+        getMember
+        push '9K'
+        getVariable
+        push '+7U K'
+        getMember
+        push '}Sgx4', '9K'
+        getVariable
+        push '+7U K'
+        getMember
+        push '}Sgx4'
+        getMember
+        increment
+        setMember
+        add
+        setRegister r:7
+        pop
+        push NULL, r:6, r:3, 1000
+        multiply
+        add
+        push r:7, r:2, 4, r:this, ')2fr3'
+        getMember
+        push 'attachMovie'
+        callMethod
+        setRegister r:8
+        pop
+        push r:5, r:6, r:8
+        setMember
+        push r:4, '7-,', r:6, 1
+        add
+        setMember
+        push r:8
+        return
+      end // of function 
+
+      setMember
+      push r:1, ';_dAm'
+      function2 (r:2='', r:3='') (r:1='this')
+        push r:3, 1, r:this, '-fC3a'
+        callMethod
+        setRegister r:4
+        pop
+        push r:4, '9oK'
+        getMember
+        setRegister r:5
+        pop
+        push r:4, '7-,'
+        getMember
+        setRegister r:6
+        pop
+        push r:6, 1000
+        equals
+        not
+        branchIfTrue label69
+        push r:3, 1, r:this, ']bu40'
+        callMethod
+        pop
+        push r:3, r:2, 2, r:this, ';_dAm'
+        callMethod
+        pop
+        push UNDEF
+        return
+       label69:
+        push r:6, r:3, 1000
+        multiply
+        add
+        push r:2, 2, r:this, ')2fr3'
+        getMember
+        push 'attachBitmap'
+        callMethod
+        pop
+        push r:5, r:6, NULL
+        setMember
+        push r:4, '7-,', r:6, 1
+        add
+        setMember
+      end // of function 
+
+      setMember
+      push r:1, '+tq5)'
+      function2 (r:2='') (r:1='this')
+        push r:2, 1, r:this, '-fC3a'
+        callMethod
+        setRegister r:3
+        pop
+        push r:3, '9oK'
+        getMember
+        setRegister r:4
+        pop
+        push 0
+        setRegister r:5
+        pop
+        push r:3, '7-,'
+        getMember
+        setRegister r:6
+        pop
+       label70:
+        push r:5, r:6
+        lessThan
+        not
+        branchIfTrue label71
+        push r:5
+        setRegister r:7
+        pop
+        push r:5
+        increment
+        setRegister r:5
+        pop
+        push 0, r:4, r:7
+        getMember
+        push 'removeMovieClip'
+        callMethod
+        pop
+        branch label70
+       label71:
+        push r:3, '7-,', 0
+        setMember
+      end // of function 
+
+      setMember
+      push r:1, ']bu40'
+      function2 (r:2='') (r:1='this')
+        push r:this, '}Zms3'
+        getMember
+        push r:2
+        getMember
+        setRegister r:3
+        pop
+        push r:3, '9oK'
+        getMember
+        setRegister r:4
+        pop
+        push 0
+        setRegister r:5
+        pop
+        push r:2, 1000
+        multiply
+        setRegister r:6
+        pop
+        push 0
+        setRegister r:7
+        pop
+        push r:3, '7-,'
+        getMember
+        setRegister r:8
+        pop
+       label72:
+        push r:7, r:8
+        lessThan
+        not
+        branchIfTrue label74
+        push r:7
+        setRegister r:9
+        pop
+        push r:7
+        increment
+        setRegister r:7
+        pop
+        push r:4, r:9
+        getMember
+        push '_name'
+        getMember
+        push NULL
+        equals
+        not
+        not
+        branchIfTrue label73
+        push r:6, r:5
+        add
+        push 1, r:4, r:9
+        getMember
+        push 'swapDepths'
+        callMethod
+        pop
+        push r:4, r:5, r:4, r:9
+        getMember
+        setMember
+        push r:5
+        increment
+        setRegister r:5
+        pop
+       label73:
+        branch label72
+       label74:
+        push r:3, '7-,', r:5
+        setMember
+      end // of function 
+
+      setMember
+      push r:1, ',}2X ('
+      function2 () (r:1='this')
+        push 0
+        setRegister r:2
+        pop
+        push r:this, '}Zms3'
+        getMember
+        push 'length'
+        getMember
+        setRegister r:3
+        pop
+       label75:
+        push r:2, r:3
+        lessThan
+        not
+        branchIfTrue label76
+        push r:2
+        setRegister r:4
+        pop
+        push r:2
+        increment
+        setRegister r:2
+        pop
+        push r:4, 1, r:this, '+tq5)'
+        callMethod
+        pop
+        branch label75
+       label76:
+      end // of function 
+
+      setMember
+      push r:1, '18wU*'
+      function2 (r:2='') (r:1='this')
+        push r:2, 1, r:this, '-fC3a'
+        callMethod
+        setRegister r:3
+        pop
+        push r:3, '9oK'
+        getMember
+        setRegister r:4
+        pop
+        push r:3, '7-,'
+        getMember
+        setRegister r:5
+        pop
+        push r:5, 1000
+        equals
+        not
+        branchIfTrue label77
+        push r:2, 1, r:this, ']bu40'
+        callMethod
+        pop
+        push r:2, 1, r:this, '18wU*'
+        callMethod
+        return
+       label77:
+        push 'empty@', '9K'
+        getVariable
+        push '+7U K'
+        getMember
+        push '}Sgx4'
+        getMember
+        push '9K'
+        getVariable
+        push '+7U K'
+        getMember
+        push '}Sgx4', '9K'
+        getVariable
+        push '+7U K'
+        getMember
+        push '}Sgx4'
+        getMember
+        increment
+        setMember
+        add
+        setRegister r:6
+        pop
+        push r:5, r:2, 1000
+        multiply
+        add
+        push r:6, 2, r:this, ')2fr3'
+        getMember
+        push 'createEmptyMovieClip'
+        callMethod
+        setRegister r:7
+        pop
+        push r:4, r:5, r:7
+        setMember
+        push r:3, '7-,', r:5, 1
+        add
+        setMember
+        push r:7
+        return
+      end // of function 
+
+      setMember
+      push r:1, ']1sj+'
+      function2 () (r:1='this')
+        push r:this, ')2fr3'
+        getMember
+        return
+      end // of function 
+
+      setMember
+      push r:1, '-fC3a'
+      function2 (r:2='') (r:1='this')
+        push r:this, '}Zms3'
+        getMember
+        push r:2
+        getMember
+        setRegister r:3
+        pop
+        push r:3, NULL
+        equals
+        not
+        branchIfTrue label78
+        push '9oK', 0, 'Array'
+        new
+        push '7-,', 0, 2
+        initObject
+        setRegister r:3
+        pop
+        push r:this, '}Zms3'
+        getMember
+        push r:2, r:3
+        setMember
+       label78:
+        push r:3
+        return
+      end // of function 
+
+      setMember
+      push r:1, '08M8'
+      function2 (r:2='') (r:1='this')
+        push 0, r:2, 'getDepth'
+        callMethod
+        setRegister r:3
+        pop
+        push r:3, 1000
+        divide
+        push 1, 'Math'
+        getVariable
+        push 'floor'
+        callMethod
+        setRegister r:4
+        pop
+        push r:4, 1, r:this, '-fC3a'
+        callMethod
+        setRegister r:5
+        pop
+        push r:5, '9oK'
+        getMember
+        setRegister r:6
+        pop
+        push r:3, 1000
+        modulo
+        setRegister r:7
+        pop
+        push r:6, r:7
+        getMember
+        push r:2
+        equals
+        not
+        branchIfTrue label80
+        push r:6, r:7, NULL
+        setMember
+        push r:5, '7-,'
+        getMember
+        push 1000
+        equals
+        not
+        branchIfTrue label79
+        push r:4, 1, r:this, ']bu40'
+        callMethod
+        pop
+       label79:
+        push r:5, '7-,'
+        getMember
+        setRegister r:3
+        pop
+        push r:5, '7-,', r:5, '7-,'
+        getMember
+        increment
+        setMember
+        push r:3, r:4, 1000
+        multiply
+        add
+        push 1, r:2, 'swapDepths'
+        callMethod
+        pop
+        push r:6, r:3, r:2
+        setMember
+       label80:
+      end // of function 
+
+      setMember
+      push r:1, '}Zms3', NULL
+      setMember
+      push r:1, '(GbB}'
+      function2 (r:2='', r:3='') (r:1='this')
+        push r:3, 1, r:this, '-fC3a'
+        callMethod
+        setRegister r:4
+        pop
+        push r:4, '9oK'
+        getMember
+        setRegister r:5
+        pop
+        push r:4, '7-,'
+        getMember
+        setRegister r:6
+        pop
+        push r:6, 1000
+        equals
+        not
+        branchIfTrue label81
+        push r:3, 1, r:this, ']bu40'
+        callMethod
+        pop
+        push r:3, r:2, 2, r:this, '(GbB}'
+        callMethod
+        return
+       label81:
+        push r:5, r:6, r:2
+        setMember
+        push r:4, '7-,', r:6, 1
+        add
+        setMember
+        push r:6, r:3, 1000
+        multiply
+        add
+        return
+      end // of function 
+
+      setMember
+      push r:1, ')2fr3', NULL
+      setMember
+      push r:1, '+2NA'
+      function2 (r:2='', r:3='') (r:1='this')
+        push 0, r:2, 'getDepth'
+        callMethod
+        push 1000
+        divide
+        push 1, 'Math'
+        getVariable
+        push 'floor'
+        callMethod
+        setRegister r:4
+        pop
+        push r:4, r:3
+        equals
+        not
+        branchIfTrue label82
+        push UNDEF
+        return
+       label82:
+        push r:4, 1, r:this, '-fC3a'
+        callMethod
+        setRegister r:5
+        pop
+        push r:5, '9oK'
+        getMember
+        setRegister r:6
+        pop
+        push 0
+        setRegister r:7
+        pop
+        push r:5, '7-,'
+        getMember
+        setRegister r:8
+        pop
+       label83:
+        push r:7, r:8
+        lessThan
+        not
+        branchIfTrue label85
+        push r:7
+        setRegister r:9
+        pop
+        push r:7
+        increment
+        setRegister r:7
+        pop
+        push r:6, r:9
+        getMember
+        push r:2
+        equals
+        not
+        branchIfTrue label84
+        push r:6, r:9, NULL
+        setMember
+        branch label85
+       label84:
+        branch label83
+       label85:
+        push r:3, r:2, 2, r:this, '(GbB}'
+        callMethod
+        push 1, r:2, 'swapDepths'
+        callMethod
+        pop
+      end // of function 
+
+      setMember
+      push r:1, '}oQA7'
+      function2 (r:2='') (r:1='this')
+        push 0, r:2, 'getDepth'
+        callMethod
+        setRegister r:3
+        pop
+        push r:3, 1000
+        divide
+        push 1, 'Math'
+        getVariable
+        push 'floor'
+        callMethod
+        setRegister r:4
+        pop
+        push r:4, 1, r:this, '-fC3a'
+        callMethod
+        setRegister r:5
+        pop
+        push r:5, '9oK'
+        getMember
+        setRegister r:6
+        pop
+        push r:3, 1000
+        modulo
+        setRegister r:7
+        pop
+        push r:6, r:7
+        getMember
+        push r:2
+        equals
+        not
+        branchIfTrue label86
+        push r:6, r:7, NULL
+        setMember
+        push r:2, 1, r:6, 'unshift'
+        callMethod
+        pop
+        push r:5, '7-,', r:5, '7-,'
+        getMember
+        increment
+        setMember
+        push r:4, 1, r:this, ']bu40'
+        callMethod
+        pop
+       label86:
+      end // of function 
+
+      setMember
+      push r:1, '9(K ;'
+      function2 (r:2='') (r:1='this')
+        push r:2, 1, r:this, '-fC3a'
+        callMethod
+        setRegister r:3
+        pop
+        push r:3, '9oK'
+        getMember
+        setRegister r:4
+        pop
+        push r:3, '7-,'
+        getMember
+        setRegister r:5
+        pop
+        push -99999999
+        setRegister r:6
+        pop
+        push 0
+        setRegister r:7
+        pop
+        push r:5
+        setRegister r:8
+        pop
+       label87:
+        push r:7, r:8
+        lessThan
+        not
+        branchIfTrue label95
+        push r:7
+        setRegister r:9
+        pop
+        push r:7
+        increment
+        setRegister r:7
+        pop
+        push r:4, r:9
+        getMember
+        setRegister r:10
+        pop
+        push r:10, '_y'
+        getMember
+        setRegister r:11
+        pop
+        push r:11, r:6
+        lessThan
+        not
+        branchIfTrue label93
+        push r:9
+        setRegister r:12
+        pop
+       label88:
+        push r:12, 0
+        greaterThan
+        not
+        branchIfTrue label91
+        push r:4, r:12, 1
+        subtract
+        getMember
+        setRegister r:13
+        pop
+        push r:13, '_y'
+        getMember
+        push r:11
+        greaterThan
+        branchIfTrue label89
+        push r:4, r:12, r:10
+        setMember
+        branch label91
+        branch label90
+       label89:
+        push r:4, r:12, r:13
+        setMember
+        push r:13, 1, r:10, 'swapDepths'
+        callMethod
+        pop
+       label90:
+        push r:12
+        decrement
+        setRegister r:12
+        pop
+        branch label88
+       label91:
+        push r:12, 0
+        equals
+        not
+        branchIfTrue label92
+        push r:4, 0, r:10
+        setMember
+       label92:
+        branch label94
+       label93:
+        push r:11
+        setRegister r:6
+        pop
+       label94:
+        branch label87
+       label95:
+      end // of function 
+
+      setMember
+      push '[8X6+'
+      getVariable
+      push 'text', 0, 'Object'
+      new
+      setRegister r:1
+      setMember
+      push '_global'
+      getVariable
+      push 'flash'
+      getMember
+      push 'text'
+      getMember
+      setRegister r:2
+      enumerateValue
+     label96:
+      setRegister r:0
+      push NULL
+      equals
+      branchIfTrue label97
+      push r:1, r:0, r:2, r:0
+      getMember
+      setMember
+      branch label96
+     label97:
+      pop
+      push '[8X6+'
+      getVariable
+      push '1ni'
+      function2 () (r:1='this', r:2='super')
+      end // of function 
+
+      setRegister r:0
+      setMember
+      push r:0, '__name__', '1ni', '[8X6+', 2
+      initArray
+      setMember
+      push r:0, 'prototype'
+      getMember
+      setRegister r:1
+      pop
+      push r:1, '__class__', r:0
+      setMember
+      push r:0, '_global', NULL
+      setMember
+      push r:0, '_root', NULL
+      setMember
+      push r:0, '0]Ss)', NULL
+      setMember
+      push r:0, ')2I7S', NULL
+      setMember
+      push r:0, '-[Ra6'
+      function2 (r:2='') (r:1='this')
+        push r:2
+        trace
+      end // of function 
+
+      setMember
+      push r:0, '[8N,'
+      function2 (r:2='') (r:1='this')
+        push r:2
+        getVariable
+        return
+      end // of function 
+
+      setMember
+      push r:0, '9jX3L'
+      function2 (r:2='', r:3='') (r:1='this')
+        push r:2, r:3, NULL
+        equals
+        branchIfTrue label98
+        push r:3
+        branch label99
+       label98:
+        push '_self'
+       label99:
+        getURL2
+      end // of function 
+
+      setMember
+      push r:0, ';AI]A'
+      function2 (r:2='', r:3='') (r:1='this')
+        push 'FSCommand:', r:2
+        add
+        push r:3, NULL
+        equals
+        branchIfTrue label100
+        push r:3
+        branch label101
+       label100:
+        push ''
+       label101:
+        getURL2
+      end // of function 
+
+      setMember
+      push r:0, '0oxy3'
+      function2 (r:2='', r:3='') (r:1='this')
+        push r:3, 'bframe'
+        equals
+        dup
+        branchIfTrue label102
+        pop
+        push r:3, 'bmax'
+        equals
+       label102:
+        branchIfTrue label103
+        push 'print:'
+        branch label104
+       label103:
+        push 'print:#', r:3
+        add
+       label104:
+        setRegister r:3
+        pop
+        push r:3, r:2
+        getURL2
+      end // of function 
+
+      setMember
+      push r:0, '6{1o=('
+      function2 () (r:1='this')
+        getTimer
+        return
+      end // of function 
+
+      setMember
+      push r:0, '6vCsj'
+      function2 () (r:1='this')
+        push '[8X6+'
+        getVariable
+        push '1ni'
+        getMember
+        push '_root'
+        getMember
+        push '$version'
+        getMember
+        return
+      end // of function 
+
+      setMember
+      push r:0, '}0fUr'
+      function2 (r:2='', r:3='') (r:1='this')
+        push r:3, r:2, 2, '[8X6+'
+        getVariable
+        push '1ni'
+        getMember
+        push '_global'
+        getMember
+        push 'Object'
+        getMember
+        push 'registerClass'
+        callMethod
+        pop
+      end // of function 
+
+      setMember
+      push r:0, '4x-4'
+      function2 (r:2='') (r:1='this')
+        push 0, 'Array'
+        new
+        setRegister r:3
+        pop
+        push r:2
+        enumerateValue
+       label105:
+        setRegister r:0
+        push NULL
+        equals
+        branchIfTrue label106
+        push r:0, 1, r:3, 'push'
+        callMethod
+        pop
+        branch label105
+       label106:
+        push r:3
+        return
+      end // of function 
+
+      setMember
+      push r:0, '4}6gG('
+      function2 (r:2='') (r:1='this')
+        push '[8X6+'
+        getVariable
+        push '1ni'
+        getMember
+        push ')2I7S', r:2
+        setMember
+      end // of function 
+
+      setMember
+      push '9K'
+      getVariable
+      push '{-kxL'
+      function2 () (r:1='this', r:2='super')
+      end // of function 
+
+      setRegister r:0
+      setMember
+      push r:0, '__name__', '{-kxL', '9K', 2
+      initArray
+      setMember
+      push r:0, 'prototype'
+      getMember
+      setRegister r:1
+      pop
+      push r:1, '__class__', r:0
+      setMember
+      push r:0, '87vE7('
+      function2 () (r:1='this')
+        push '9K'
+        getVariable
+        push '{-kxL'
+        getMember
+        push '4plQ5', '9K'
+        getVariable
+        push '{-kxL'
+        getMember
+        push '4plQ5'
+        getMember
+        increment
+        setMember
+        push 0, '[8X6+'
+        getVariable
+        push '1ni'
+        getMember
+        push '6{1o=('
+        callMethod
+        setRegister r:2
+        pop
+        push '9K'
+        getVariable
+        push '{-kxL'
+        getMember
+        push ';ILSy', r:2, '9K'
+        getVariable
+        push '{-kxL'
+        getMember
+        push '3R,QM'
+        getMember
+        subtract
+        push 1000.0
+        divide
+        setMember
+        push '9K'
+        getVariable
+        push '{-kxL'
+        getMember
+        push '3R,QM', r:2
+        setMember
+        push '9K'
+        getVariable
+        push '{-kxL'
+        getMember
+        push ';ILSy'
+        getMember
+        push '9K'
+        getVariable
+        push '{-kxL'
+        getMember
+        push ';y}-6('
+        getMember
+        lessThan
+        branchIfTrue label107
+        push '9K'
+        getVariable
+        push '{-kxL'
+        getMember
+        push ';ILSy', 1, '9K'
+        getVariable
+        push '{-kxL'
+        getMember
+        push '6GI,F'
+        getMember
+        divide
+        setMember
+        branch label108
+       label107:
+        push '9K'
+        getVariable
+        push '{-kxL'
+        getMember
+        push '-)Xd+', '9K'
+        getVariable
+        push '{-kxL'
+        getMember
+        push '-)Xd+'
+        getMember
+        push '9K'
+        getVariable
+        push '{-kxL'
+        getMember
+        push '[Ad;n'
+        getMember
+        multiply
+        push 1, '9K'
+        getVariable
+        push '{-kxL'
+        getMember
+        push '[Ad;n'
+        getMember
+        subtract
+        push '9K'
+        getVariable
+        push '{-kxL'
+        getMember
+        push ';ILSy'
+        getMember
+        multiply
+        push '9K'
+        getVariable
+        push '{-kxL'
+        getMember
+        push '6GI,F'
+        getMember
+        multiply
+        add
+        setMember
+       label108:
+        push '9K'
+        getVariable
+        push '{-kxL'
+        getMember
+        push '-V;B', '9K'
+        getVariable
+        push '{-kxL'
+        getMember
+        push '-)Xd+'
+        getMember
+        setMember
+      end // of function 
+
+      setMember
+      push r:0, '[L2'
+      function2 () (r:1='this')
+        push '9K'
+        getVariable
+        push '{-kxL'
+        getMember
+        push '6GI,F'
+        getMember
+        push '9K'
+        getVariable
+        push '{-kxL'
+        getMember
+        push '-V;B'
+        getMember
+        divide
+        return
+      end // of function 
+
+      setMember
+      push ' D(1', 0, 'Object'
+      new
+      setRegister r:1
+      setVariable
+      push '_global'
+      getVariable
+      push ' D(1'
+      getMember
+      setRegister r:2
+      enumerateValue
+     label109:
+      setRegister r:0
+      push NULL
+      equals
+      branchIfTrue label110
+      push r:1, r:0, r:2, r:0
+      getMember
+      setMember
+      branch label109
+     label110:
+      pop
+      push ' D(1'
+      getVariable
+      push '8D2UU'
+      function2 () (r:1='this', r:2='super')
+      end // of function 
+
+      setRegister r:0
+      setMember
+      push r:0, '__name__', '8D2UU', ' D(1', 2
+      initArray
+      setMember
+      push r:0, 'prototype'
+      getMember
+      setRegister r:1
+      pop
+      push r:1, '__class__', r:0
+      setMember
+      push '=(,aA'
+      function2 () (r:1='this', r:2='super')
+      end // of function 
+
+      setRegister r:0
+      setVariable
+      push r:0, '__name__', '=(,aA', 1
+      initArray
+      setMember
+      push r:0, '__interfaces__', ' D(1'
+      getVariable
+      push '8D2UU'
+      getMember
+      push 1
+      initArray
+      setMember
+      push ' D(1'
+      getVariable
+      push '8D2UU'
+      getMember
+      push 1, r:0
+      implements
+      push r:0, 'prototype'
+      getMember
+      setRegister r:1
+      pop
+      push r:1, '__class__', r:0
+      setMember
+      push '[8X6+'
+      getVariable
+      push '0000', 0, 'Object'
+      new
+      setRegister r:1
+      setMember
+      push '_global'
+      getVariable
+      push 'flash'
+      getMember
+      push 'geom'
+      getMember
+      setRegister r:2
+      enumerateValue
+     label111:
+      setRegister r:0
+      push NULL
+      equals
+      branchIfTrue label112
+      push r:1, r:0, r:2, r:0
+      getMember
+      setMember
+      branch label111
+     label112:
+      pop
+      push '-UHXC'
+      function2 (r:2='', r:3='') (r:1='this')
+        push r:this, '9]A', r:2
+        setMember
+        push r:this, '2KA', r:3
+        setMember
+      end // of function 
+
+      setRegister r:0
+      setVariable
+      push r:0, '__name__', '-UHXC', 1
+      initArray
+      setMember
+      push r:0, 'prototype'
+      getMember
+      setRegister r:1
+      pop
+      push r:1, '__class__', r:0
+      setMember
+      push r:1, '1ll a'
+      function2 () (r:1='this')
+        push r:this, '9]A'
+        getMember
+        push r:this, '2KA'
+        getMember
+        lessThan
+        return
+      end // of function 
+
+      setMember
+      push r:1, '2KA', NULL
+      setMember
+      push r:1, '9]A', NULL
+      setMember
+      push r:1, '7Y-7'
+      function2 () (r:1='this')
+        push r:this, '9]A'
+        getMember
+        push r:this, '9]A', r:this, '9]A'
+        getMember
+        increment
+        setMember
+        return
+      end // of function 
+
+      setMember
+      push '3Wt'
+      function2 () (r:1='this', r:2='super')
+      end // of function 
+
+      setRegister r:0
+      setVariable
+      push r:0, '__name__', '3Wt', 1
+      initArray
+      setMember
+      push r:0, 'prototype'
+      getMember
+      setRegister r:1
+      pop
+      push r:1, '__class__', r:0
+      setMember
+      push r:0, '=B'
+      function2 (r:2='', r:3='') (r:1='this')
+        push r:3, r:2, 2, '[8X6+'
+        getVariable
+        push '7]AJ'
+        getMember
+        push '__instanceof'
+        callMethod
+        return
+      end // of function 
+
+      setMember
+      push r:0, '+_PpF'
+      function2 (r:2='') (r:1='this')
+        push '', r:2, 2, '[8X6+'
+        getVariable
+        push '7]AJ'
+        getMember
+        push '__string_rec'
+        callMethod
+        return
+      end // of function 
+
+      setMember
+      push r:0, '9n6'
+      function2 (r:2='') (r:1='this')
+        push r:2, 0
+        lessThan
+        not
+        branchIfTrue label113
+        push r:2, 1, 'Math'
+        getVariable
+        push 'ceil'
+        callMethod
+        return
+       label113:
+        push r:2, 1, 'Math'
+        getVariable
+        push 'floor'
+        callMethod
+        return
+      end // of function 
+
+      setMember
+      push r:0, '}VD)'
+      function2 (r:2='') (r:1='this')
+        push r:2, 0
+        strictEquals
+        not
+        dup
+        not
+        branchIfTrue label114
+        pop
+        push r:2, NULL
+        equals
+        not
+        dup
+        not
+        branchIfTrue label114
+        pop
+        push r:2, FALSE
+        strictEquals
+        not
+       label114:
+        return
+      end // of function 
+
+      setMember
+      push r:0, ',Iq1+('
+      function2 (r:2='') (r:1='this')
+        push r:2, 1, '_global'
+        getVariable
+        push 'parseInt'
+        callMethod
+        setRegister r:3
+        pop
+        push r:3, 1, 'Math'
+        getVariable
+        push 'isNaN'
+        callMethod
+        not
+        branchIfTrue label115
+        push NULL
+        return
+       label115:
+        push r:3
+        return
+      end // of function 
+
+      setMember
+      push r:0, '}KlBo'
+      function2 (r:2='') (r:1='this')
+        push r:2, 1, '_global'
+        getVariable
+        push 'parseFloat'
+        callMethod
+        return
+      end // of function 
+
+      setMember
+      push r:0, '=f+'
+      function2 (r:2='') (r:1='this')
+        push r:2, 1, 'String'
+        getVariable
+        push 'fromCharCode'
+        callMethod
+        return
+      end // of function 
+
+      setMember
+      push r:0, '2qD'
+      function2 (r:2='') (r:1='this')
+        push r:2, ''
+        equals
+        branchIfTrue label116
+        push 0, 1, r:2, 'charCodeAt'
+        callMethod
+        return
+        branch label117
+       label116:
+        push NULL
+        return
+       label117:
+      end // of function 
+
+      setMember
+      push r:0, 'random'
+      function2 (r:2='') (r:1='this')
+        push r:2
+        random
+        return
+      end // of function 
+
+      setMember
+      push r:0, ' {p*;'
+      function2 (r:2='') (r:1='this')
+        push '[8X6+'
+        getVariable
+        push '7]AJ'
+        getMember
+        push '__res'
+        getMember
+        push r:2
+        getMember
+        return
+      end // of function 
+
+      setMember
+      push '[8X6+'
+      getVariable
+      push '3[4k{', 0, 'Object'
+      new
+      setRegister r:1
+      setMember
+      push '_global'
+      getVariable
+      push 'flash'
+      getMember
+      push 'filters'
+      getMember
+      setRegister r:2
+      enumerateValue
+     label118:
+      setRegister r:0
+      push NULL
+      equals
+      branchIfTrue label119
+      push r:1, r:0, r:2, r:0
+      getMember
+      setMember
+      branch label118
+     label119:
+      pop
+      push '+6[ML', 0, 'Object'
+      new
+      setRegister r:0
+      setVariable
+      push r:0, '__ename__', '+6[ML', 1
+      initArray
+      setMember
+      push r:0, '__constructs__', 'Run', 'Angle', 'WaitFrames', 'WaitSpace', 'Start', 'Wait', 6
+      initArray
+      setMember
+      push r:0, ', -C=', 4, ', -C=', 2
+      initArray
+      dup
+      dup
+      push '__enum__', r:0
+      setMember
+      push 'toString', ')PVyX'
+      getVariable
+      setMember
+      setMember
+      push r:0, ' 0s', 5, ' 0s', 2
+      initArray
+      dup
+      dup
+      push '__enum__', r:0
+      setMember
+      push 'toString', ')PVyX'
+      getVariable
+      setMember
+      setMember
+      push r:0, '22[ML'
+      function2 (r:2='') (r:1='this')
+        push r:2, 1, '22[ML', 3
+        initArray
+        dup
+        dup
+        push '__enum__', r:this
+        setMember
+        push 'toString', ')PVyX'
+        getVariable
+        setMember
+        return
+      end // of function 
+
+      setMember
+      push r:0, ',=ya', 0, ',=ya', 2
+      initArray
+      dup
+      dup
+      push '__enum__', r:0
+      setMember
+      push 'toString', ')PVyX'
+      getVariable
+      setMember
+      setMember
+      push r:0, ';cFo2'
+      function2 (r:2='') (r:1='this')
+        push r:2, 3, ';cFo2', 3
+        initArray
+        dup
+        dup
+        push '__enum__', r:this
+        setMember
+        push 'toString', ')PVyX'
+        getVariable
+        setMember
+        return
+      end // of function 
+
+      setMember
+      push r:0, '9(Uf)('
+      function2 (r:2='') (r:1='this')
+        push r:2, 2, '9(Uf)(', 3
+        initArray
+        dup
+        dup
+        push '__enum__', r:this
+        setMember
+        push 'toString', ')PVyX'
+        getVariable
+        setMember
+        return
+      end // of function 
+
+      setMember
+      push '=UwLY', 0, 'Object'
+      new
+      setRegister r:0
+      setVariable
+      push r:0, '__ename__', '=UwLY', 1
+      initArray
+      setMember
+      push r:0, '__constructs__', 'Grass', 1
+      initArray
+      setMember
+      push r:0, '7HTHD', 0, '7HTHD', 2
+      initArray
+      dup
+      dup
+      push '__enum__', r:0
+      setMember
+      push 'toString', ')PVyX'
+      getVariable
+      setMember
+      setMember
+      push '44{N'
+      function2 (r:2='') (r:1='this')
+        push r:this, ']}lAm', r:2, 1, '9K'
+        getVariable
+        push '+7U K'
+        newMethod
+        setMember
+        push r:this, '57*', 0, 'Array'
+        new
+        setMember
+        push 0
+        setRegister r:3
+        pop
+        push 6
+        setRegister r:4
+        pop
+       label120:
+        push r:3, r:4
+        lessThan
+        not
+        branchIfTrue label123
+        push r:3
+        setRegister r:5
+        pop
+        push r:3
+        increment
+        setRegister r:3
+        pop
+        push r:this, '57*'
+        getMember
+        push r:5, r:5, 0
+        equals
+        branchIfTrue label121
+        push '=(,aA'
+        getVariable
+        push '3d0fx'
+        getMember
+        branch label122
+       label121:
+        push '=(,aA'
+        getVariable
+        push '}EQqb'
+        getMember
+       label122:
+        push 'bg_plan', r:5
+        add
+        push 2, r:this, ']}lAm'
+        getMember
+        push '*=_p_'
+        callMethod
+        setMember
+        push r:this, '57*'
+        getMember
+        push r:5
+        getMember
+        push 1, r:this, ']}lAm'
+        getMember
+        push '}oQA7'
+        callMethod
+        pop
+        branch label120
+       label123:
+        push r:this, '57*'
+        getMember
+        push 0
+        getMember
+        push '_y', 300, r:this, '57*'
+        getMember
+        push 0
+        getMember
+        push '_height'
+        getMember
+        subtract
+        setMember
+        push r:this, '57*'
+        getMember
+        push 1
+        getMember
+        push '_y', 300, r:this, '57*'
+        getMember
+        push 1
+        getMember
+        push '_height'
+        getMember
+        subtract
+        setMember
+        push r:this, '57*'
+        getMember
+        push 2
+        getMember
+        push '_y', 300, r:this, '57*'
+        getMember
+        push 2
+        getMember
+        push '_height'
+        getMember
+        subtract
+        setMember
+        push r:this, '57*'
+        getMember
+        push 3
+        getMember
+        push '_y', 290, r:this, '57*'
+        getMember
+        push 3
+        getMember
+        push '_height'
+        getMember
+        subtract
+        setMember
+        push r:this, '57*'
+        getMember
+        push 4
+        getMember
+        push '_y', 170, r:this, '57*'
+        getMember
+        push 4
+        getMember
+        push '_height'
+        getMember
+        subtract
+        setMember
+        push r:this, '=ays3', 0, 'Array'
+        new
+        setMember
+        push r:this, ']BMP2', 0, 'Array'
+        new
+        setMember
+        push 0
+        setRegister r:3
+        pop
+        push 3
+        setRegister r:4
+        pop
+       label124:
+        push r:3, r:4
+        lessThan
+        not
+        branchIfTrue label125
+        push r:3
+        setRegister r:5
+        pop
+        push r:3
+        increment
+        setRegister r:3
+        pop
+        push '=(,aA'
+        getVariable
+        push ',-)8f'
+        getMember
+        push 'next', 2, r:this, ']}lAm'
+        getMember
+        push '*=_p_'
+        callMethod
+        setRegister r:6
+        pop
+        push r:6, 1, r:this, ']BMP2'
+        getMember
+        push 'push'
+        callMethod
+        pop
+        push r:6, '_x', 210, r:5, 35
+        multiply
+        add
+        setMember
+        push r:6, '_y', 20
+        setMember
+        branch label124
+       label125:
+        push r:this, '-_X}5', '_d', 0, 1
+        initObject
+        setMember
+        push 0, r:this, '}-B2'
+        callMethod
+        pop
+      end // of function 
+
+      setRegister r:0
+      setVariable
+      push r:0, '__name__', '44{N', 1
+      initArray
+      setMember
+      push r:0, 'prototype'
+      getMember
+      setRegister r:1
+      pop
+      push r:1, '__class__', r:0
+      setMember
+      push r:1, '7j(', NULL
+      setMember
+      push r:1, '9O*r', NULL
+      setMember
+      push r:1, '[PAv', NULL
+      setMember
+      push r:1, '57*', NULL
+      setMember
+      push r:1, '4B1W(', NULL
+      setMember
+      push r:1, ' k5=B'
+      function2 (r:2='') (r:1='this')
+        push 0
+        setRegister r:3
+        pop
+       label126:
+        push r:3, r:this, ',Kwdh'
+        getMember
+        push 'length'
+        getMember
+        lessThan
+        not
+        branchIfTrue label129
+        push r:this, ',Kwdh'
+        getMember
+        push r:3
+        getMember
+        setRegister r:4
+        pop
+        push r:4, '_x', r:4, '_x'
+        getMember
+        push r:2, 0.7
+        multiply
+        subtract
+        setMember
+        push r:4, '_x'
+        getMember
+        push 0, r:4, '_width'
+        getMember
+        subtract
+        lessThan
+        branchIfTrue label127
+        push r:3
+        increment
+        setRegister r:3
+        pop
+        branch label128
+       label127:
+        push 0, r:4, 'removeMovieClip'
+        callMethod
+        pop
+        push 1, r:3, 2, r:this, ',Kwdh'
+        getMember
+        push 'splice'
+        callMethod
+        pop
+       label128:
+        branch label126
+       label129:
+        push 0
+        setRegister r:4
+        pop
+       label130:
+        push r:4, r:this, '1qKD-'
+        getMember
+        push 'length'
+        getMember
+        lessThan
+        not
+        branchIfTrue label150
+        push r:this, '1qKD-'
+        getMember
+        push r:4
+        getMember
+        setRegister r:5
+        pop
+        push r:5, '}J'
+        getMember
+        push '_x', r:5, '}J'
+        getMember
+        push '_x'
+        getMember
+        push r:2
+        subtract
+        setMember
+        push r:5, '}J'
+        getMember
+        push '_x'
+        getMember
+        push -30
+        lessThan
+        branchIfTrue label148
+        push r:5, ']L,PR'
+        getMember
+        not
+        dup
+        not
+        branchIfTrue label131
+        pop
+        push r:this, '4AF'
+        getMember
+        push ')('
+        getMember
+        push r:this, '4AF'
+        getMember
+        push '(('
+        getMember
+        push r:this, '58rO6'
+        getMember
+        subtract
+        push 2, r:5, '}J'
+        getMember
+        push 'hitTest'
+        callMethod
+        dup
+        not
+        branchIfTrue label131
+        pop
+        push r:this, '{Y1 G('
+        getMember
+        not
+       label131:
+        not
+        branchIfTrue label147
+        push r:5, ']L,PR', TRUE
+        setMember
+        push r:this, '4B1W('
+        getMember
+        dup
+        not
+        branchIfTrue label132
+        pop
+        push r:5, '4'
+        getMember
+        push 3
+        equals
+        dup
+        branchIfTrue label132
+        pop
+        push r:5, '4'
+        getMember
+        push 4
+        equals
+       label132:
+        branchIfTrue label146
+        push 0, r:5, '}J'
+        getMember
+        push '0tJ'
+        getMember
+        push 'play'
+        callMethod
+        pop
+        push '=(,aA'
+        getVariable
+        push '582dG'
+        getMember
+        push r:5, '4'
+        getMember
+        getMember
+        push 1, ';ndCG'
+        getVariable
+        push '5b)bA('
+        callMethod
+        pop
+        push r:5, '4'
+        getMember
+        setRegister r:6
+        push 0
+        equals
+        branchIfTrue label133
+        push r:6, 1
+        equals
+        branchIfTrue label136
+        push r:6, 2
+        equals
+        branchIfTrue label140
+        push r:6, 3
+        equals
+        branchIfTrue label142
+        push r:6, 4
+        equals
+        branchIfTrue label143
+        push r:6, 5
+        equals
+        branchIfTrue label144
+        branch label145
+       label133:
+        push r:this, '9O*r'
+        getMember
+        push 0
+        getMember
+        push 1, 'Math'
+        getVariable
+        push 'abs'
+        callMethod
+        push 0.3
+        lessThan
+        not
+        branchIfTrue label134
+        push 0, 0.3
+        subtract
+        push 1, r:this, '7M9bQ'
+        callMethod
+        pop
+       label134:
+        push r:this, '4AF'
+        getMember
+        push '{2', r:this, '4AF'
+        getMember
+        push '{2'
+        getMember
+        push 20
+        add
+        setMember
+        push r:this, '4AF'
+        getMember
+        push '{2'
+        getMember
+        push 30
+        greaterThan
+        not
+        branchIfTrue label135
+        push r:this, '4AF'
+        getMember
+        push '{2', 30
+        setMember
+       label135:
+        push r:this, '4,01'
+        getMember
+        push '_visible', FALSE
+        setMember
+        push r:this, '8]X}5', 21, 1, '+6[ML'
+        getVariable
+        push ';cFo2'
+        callMethod
+        setMember
+        branch label145
+       label136:
+        push r:this, '9O*r', r:this, '9O*r'
+        getMember
+        push 0
+        getMember
+        push 'Math'
+        getVariable
+        push 'PI'
+        getMember
+        push 5
+        divide
+        add
+        push 1
+        initArray
+        setMember
+        push r:this, '9O*r'
+        getMember
+        push 0
+        getMember
+        push 1, r:this, '7M9bQ'
+        callMethod
+        pop
+        push 0
+        setRegister r:7
+        pop
+        push 10
+        setRegister r:8
+        pop
+       label137:
+        push r:7, r:8
+        lessThan
+        not
+        branchIfTrue label138
+        push r:7
+        setRegister r:9
+        pop
+        push r:7
+        increment
+        setRegister r:7
+        pop
+        push r:2, r:5, '}J'
+        getMember
+        push '_y'
+        getMember
+        push r:5, '}J'
+        getMember
+        push '_x'
+        getMember
+        push 5, 4, r:this, '-R3p+('
+        callMethod
+        pop
+        branch label137
+       label138:
+        push r:this, '8Xod,', 60
+        setMember
+        push r:this, '4AF'
+        getMember
+        push '}2'
+        getMember
+        push 4
+        greaterThan
+        not
+        not
+        branchIfTrue label139
+        push r:this, '4AF'
+        getMember
+        push '}2', 4
+        setMember
+       label139:
+        branch label145
+       label140:
+        push r:this, '4AF'
+        getMember
+        push '}2', r:this, '4AF'
+        getMember
+        push '}2'
+        getMember
+        push 1, 'Math'
+        getVariable
+        push 'abs'
+        callMethod
+        push 10
+        add
+        setMember
+        push r:this, '4AF'
+        getMember
+        push '}2'
+        getMember
+        push 30
+        greaterThan
+        not
+        branchIfTrue label141
+        push r:this, '4AF'
+        getMember
+        push '}2', 30
+        setMember
+       label141:
+        branch label145
+       label142:
+        push r:this, '}Yax5', 0, 1
+        initArray
+        setMember
+        push r:this, '4AF'
+        getMember
+        push '{2', 0.01
+        setMember
+        push r:this, '4AF'
+        getMember
+        push '}2', 0
+        setMember
+        push 0, r:this, '4,01'
+        getMember
+        push 'removeMovieClip'
+        callMethod
+        pop
+        branch label145
+       label143:
+        push r:this, '4B1W(', TRUE
+        setMember
+        push r:this, '4,01'
+        getMember
+        push '0tJ'
+        getMember
+        push 'smc'
+        getMember
+        push '_visible', TRUE
+        setMember
+        push r:this, '4AF'
+        getMember
+        push '{2', r:this, '4AF'
+        getMember
+        push '{2'
+        getMember
+        push 10
+        add
+        setMember
+        branch label145
+       label144:
+        push r:this, '4AF'
+        getMember
+        push '{2', r:this, '4AF'
+        getMember
+        push '{2'
+        getMember
+        push 15
+        add
+        setMember
+        branch label145
+       label145:
+        branch label147
+       label146:
+        push r:this, '4B1W(', FALSE
+        setMember
+        push r:this, '4,01'
+        getMember
+        push '0tJ'
+        getMember
+        push 'smc'
+        getMember
+        push '_visible', FALSE
+        setMember
+        push r:this, '[PAv'
+        getMember
+        push '0tJ'
+        getMember
+        push 'smc'
+        getMember
+        push '_visible', FALSE
+        setMember
+        push r:5, '4'
+        getMember
+        push 4
+        equals
+        not
+        branchIfTrue label147
+        push 1, 1, r:5, '}J'
+        getMember
+        push '0tJ'
+        getMember
+        push 'gotoAndStop'
+        callMethod
+        pop
+       label147:
+        push r:4
+        increment
+        setRegister r:4
+        pop
+        branch label149
+       label148:
+        push 0, r:5, '}J'
+        getMember
+        push 'removeMovieClip'
+        callMethod
+        pop
+        push 1, r:4, 2, r:this, '1qKD-'
+        getMember
+        push 'splice'
+        callMethod
+        pop
+        push r:this, '1av-m', r:this, '1av-m'
+        getMember
+        increment
+        setMember
+        push '=(,aA'
+        getVariable
+        push '6V[ZE'
+        getMember
+        push 3, '=(,aA'
+        getVariable
+        push '6V[ZE'
+        getMember
+        push 3
+        getMember
+        increment
+        setMember
+       label149:
+        branch label130
+       label150:
+      end // of function 
+
+      setMember
+      push r:1, '1av-m', NULL
+      setMember
+      push r:1, ']}lAm', NULL
+      setMember
+      push r:1, '*[PT7'
+      function2 (r:2='', r:3='') (r:1='this')
+        push r:this, '8]X}5'
+        getMember
+        setRegister r:4
+        push 1
+        getMember
+        setRegister r:5
+        push 2
+        strictEquals
+        branchIfTrue label151
+        push r:5, 0
+        strictEquals
+        branchIfTrue label153
+        push r:5, 1
+        strictEquals
+        branchIfTrue label155
+        push r:5, 4
+        strictEquals
+        branchIfTrue label162
+        push r:5, 5
+        strictEquals
+        branchIfTrue label165
+        push r:5, 3
+        strictEquals
+        branchIfTrue label172
+        branch label177
+       label151:
+        push r:4, 2
+        getMember
+        setRegister r:5
+        pop
+        push '[8X6+'
+        getVariable
+        push 'Key'
+        getMember
+        push 'SPACE'
+        getMember
+        push 1, '[8X6+'
+        getVariable
+        push 'Key'
+        getMember
+        push 'isDown'
+        callMethod
+        not
+        not
+        branchIfTrue label152
+        push r:this, '8]X}5', r:5
+        setMember
+       label152:
+        branch label177
+       label153:
+        push r:2, 1, r:this, '+aDob'
+        callMethod
+        pop
+        push '[8X6+'
+        getVariable
+        push 'Key'
+        getMember
+        push 'SPACE'
+        getMember
+        push 1, '[8X6+'
+        getVariable
+        push 'Key'
+        getMember
+        push 'isDown'
+        callMethod
+        not
+        branchIfTrue label154
+        push 'back', 1, r:this, '8jms3'
+        getMember
+        push '0tJ'
+        getMember
+        push 'gotoAndStop'
+        callMethod
+        pop
+        push r:this, '8]X}5', FALSE, 1, '+6[ML'
+        getVariable
+        push '22[ML'
+        callMethod
+        push 1, '+6[ML'
+        getVariable
+        push '9(Uf)('
+        callMethod
+        setMember
+        push r:this, '}Yax5', 10, 1
+        initArray
+        setMember
+       label154:
+        branch label177
+       label155:
+        push r:4, 2
+        getMember
+        setRegister r:5
+        pop
+        push r:this, '}Yax5', r:this, '}Yax5'
+        getMember
+        push 0
+        getMember
+        push r:2, 2
+        divide
+        add
+        push 1
+        initArray
+        setMember
+        push r:this, '}Yax5'
+        getMember
+        push 0
+        getMember
+        push 30
+        greaterThan
+        not
+        branchIfTrue label156
+        push r:this, '}Yax5', 30, 1
+        initArray
+        setMember
+       label156:
+        push 43, r:this, '}Yax5'
+        getMember
+        push 0
+        getMember
+        push 10
+        subtract
+        push 80
+        multiply
+        push 20
+        divide
+        add
+        push 1, '3Wt'
+        getVariable
+        push '9n6'
+        callMethod
+        push 1, r:this, '8jms3'
+        getMember
+        push '0tJ'
+        getMember
+        push 'gotoAndStop'
+        callMethod
+        pop
+        push r:this, '4AF'
+        getMember
+        push '((', 200, r:this, '}Yax5'
+        getMember
+        push 0
+        getMember
+        push 3
+        multiply
+        subtract
+        setMember
+        push r:2, 1, r:this, '+aDob'
+        callMethod
+        setRegister r:6
+        pop
+        push 0, r:this, '8{S]A'
+        callMethod
+        pop
+        push r:6, 1, r:this, ' k5=B'
+        callMethod
+        pop
+        push r:5
+        dup
+        not
+        branchIfTrue label157
+        pop
+        push '[8X6+'
+        getVariable
+        push 'Key'
+        getMember
+        push 'SPACE'
+        getMember
+        push 1, '[8X6+'
+        getVariable
+        push 'Key'
+        getMember
+        push 'isDown'
+        callMethod
+        not
+       label157:
+        branchIfTrue label160
+        push r:5
+        not
+        dup
+        not
+        branchIfTrue label158
+        pop
+        push '[8X6+'
+        getVariable
+        push 'Key'
+        getMember
+        push 'SPACE'
+        getMember
+        push 1, '[8X6+'
+        getVariable
+        push 'Key'
+        getMember
+        push 'isDown'
+        callMethod
+        dup
+        branchIfTrue label158
+        pop
+        push r:this, '}Yax5'
+        getMember
+        push 0
+        getMember
+        push 30
+        equals
+       label158:
+        not
+        branchIfTrue label159
+        push r:this, '8]X}5', TRUE, 1, '+6[ML'
+        getVariable
+        push '22[ML'
+        callMethod
+        setMember
+       label159:
+        branch label161
+       label160:
+        push r:this, '7j(', '=(,aA'
+        getVariable
+        push ',-)8f'
+        getMember
+        push 'aim', 2, r:this, ']}lAm'
+        getMember
+        push '*=_p_'
+        callMethod
+        setMember
+        push r:this, '7j('
+        getMember
+        push '_x', r:this, '4AF'
+        getMember
+        push '(('
+        getMember
+        push 100
+        subtract
+        push r:this, '}Yax5'
+        getMember
+        push 0
+        getMember
+        push 2
+        multiply
+        add
+        setMember
+        push r:this, '7j('
+        getMember
+        push '_y', 250
+        setMember
+        push r:this, '8]X}5', '+6[ML'
+        getVariable
+        push ', -C='
+        getMember
+        setMember
+       label161:
+        branch label177
+       label162:
+        push r:this, '9O*r', r:this, '9O*r'
+        getMember
+        push 0
+        getMember
+        push r:this, '}Yax5'
+        getMember
+        push 0
+        getMember
+        push r:2
+        multiply
+        push 50
+        divide
+        add
+        push 1
+        initArray
+        setMember
+        push r:this, '9O*r'
+        getMember
+        push 0
+        getMember
+        push 'Math'
+        getVariable
+        push 'PI'
+        getMember
+        modulo
+        setRegister r:5
+        pop
+        push r:5, 'Math'
+        getVariable
+        push 'PI'
+        getMember
+        push 2
+        divide
+        greaterThan
+        not
+        branchIfTrue label163
+        push 'Math'
+        getVariable
+        push 'PI'
+        getMember
+        push r:5
+        subtract
+        setRegister r:5
+        pop
+       label163:
+        push r:5, 'Math'
+        getVariable
+        push 'PI'
+        getMember
+        push 2
+        divide
+        divide
+        push 0.4
+        multiply
+        push 0.05
+        add
+        push 'Math'
+        getVariable
+        push 'PI'
+        getMember
+        multiply
+        push 2
+        divide
+        setRegister r:6
+        pop
+        push r:this, '7j('
+        getMember
+        push '_rotation', 0, r:6
+        subtract
+        push 180
+        multiply
+        push 'Math'
+        getVariable
+        push 'PI'
+        getMember
+        divide
+        setMember
+        push '[8X6+'
+        getVariable
+        push 'Key'
+        getMember
+        push 'SPACE'
+        getMember
+        push 1, '[8X6+'
+        getVariable
+        push 'Key'
+        getMember
+        push 'isDown'
+        callMethod
+        not
+        branchIfTrue label164
+        push 'launch', 1, r:this, '8jms3'
+        getMember
+        push '0tJ'
+        getMember
+        push 'gotoAndPlay'
+        callMethod
+        pop
+        push r:this, '8jms3'
+        getMember
+        push '_x', r:this, '8jms3'
+        getMember
+        push '_x'
+        getMember
+        push 100
+        add
+        setMember
+        push r:this, '4,01', '=(,aA'
+        getVariable
+        push '*h0p]'
+        getMember
+        push 'hero', 2, r:this, ']}lAm'
+        getMember
+        push '*=_p_'
+        callMethod
+        setMember
+        push r:this, '4,01'
+        getMember
+        push '0tJ'
+        getMember
+        push 'smc'
+        getMember
+        push '_visible', FALSE
+        setMember
+        push r:this, '[PAv'
+        getMember
+        push '0tJ'
+        getMember
+        push 'smc'
+        getMember
+        push '_visible', FALSE
+        setMember
+        push '[8X6+'
+        getVariable
+        push '1ni'
+        getMember
+        push '_global'
+        getMember
+        push '4,01', r:this, '4,01'
+        getMember
+        setMember
+        push 0, r:this, '7j('
+        getMember
+        push 'removeMovieClip'
+        callMethod
+        pop
+        push 0.7, r:this, '}Yax5'
+        getMember
+        push 0
+        getMember
+        push 10
+        subtract
+        push 2, 'Math'
+        getVariable
+        push 'pow'
+        callMethod
+        push 30
+        add
+        setRegister r:7
+        pop
+        push r:this, '4AF'
+        getMember
+        push '{2', r:6, 1, 'Math'
+        getVariable
+        push 'cos'
+        callMethod
+        push r:7
+        multiply
+        setMember
+        push r:this, '4AF'
+        getMember
+        push '}2', r:6, 1, 'Math'
+        getVariable
+        push 'sin'
+        callMethod
+        push r:7
+        multiply
+        setMember
+        push r:this, '4AF'
+        getMember
+        push '((', r:this, '4AF'
+        getMember
+        push '(('
+        getMember
+        push r:this, '4AF'
+        getMember
+        push '{2'
+        getMember
+        add
+        setMember
+        push r:this, '4AF'
+        getMember
+        push ')(', r:this, '4AF'
+        getMember
+        push ')('
+        getMember
+        push r:this, '4AF'
+        getMember
+        push '}2'
+        getMember
+        subtract
+        setMember
+        push r:this, '8]X}5', '+6[ML'
+        getVariable
+        push ' 0s'
+        getMember
+        setMember
+       label164:
+        branch label177
+       label165:
+        push r:2, 1, r:this, '4u=dZ'
+        callMethod
+        pop
+        push r:2, 1, r:this, '+aDob'
+        callMethod
+        setRegister r:5
+        pop
+        push r:this, '*7y_j', r:this, '*7y_j'
+        getMember
+        push 0
+        getMember
+        push r:5
+        add
+        push 1
+        initArray
+        setMember
+        push r:this, '{Y1 G('
+        getMember
+        not
+        not
+        branchIfTrue label166
+        push r:5, 1, ';ndCG'
+        getVariable
+        push '-Q)9)'
+        callMethod
+        push 1, ';ndCG'
+        getVariable
+        push '5b)bA('
+        callMethod
+        pop
+       label166:
+        push 0, r:this, '8{S]A'
+        callMethod
+        pop
+        push r:5, 1, r:this, ' k5=B'
+        callMethod
+        pop
+        push r:2, 1, r:this, '65l5n'
+        callMethod
+        pop
+        push r:5, 1, r:this, ')yVkk'
+        callMethod
+        pop
+        push r:3
+        dup
+        not
+        branchIfTrue label167
+        pop
+        push r:this, '8jms3'
+        getMember
+        push '_name'
+        getMember
+        push NULL
+        equals
+        not
+       label167:
+        not
+        branchIfTrue label171
+        push r:this, '8jms3'
+        getMember
+        push '_x'
+        getMember
+        push 0
+        lessThan
+        branchIfTrue label168
+        push r:this, '8jms3'
+        getMember
+        push '_x'
+        getMember
+        branch label169
+       label168:
+        push 0
+       label169:
+        setRegister r:6
+        pop
+        push 20
+        setRegister r:7
+        pop
+        push 200, r:6, r:7
+        multiply
+        push 250
+        divide
+        subtract
+        push 1, '3Wt'
+        getVariable
+        push '9n6'
+        callMethod
+        setRegister r:8
+        pop
+        push r:8, 200, r:7
+        subtract
+        lessThan
+        not
+        branchIfTrue label170
+        push 200, r:7
+        subtract
+        setRegister r:8
+        pop
+       label170:
+        push r:8, 1, r:this, '8jms3'
+        getMember
+        push '0tJ'
+        getMember
+        push 'gotoAndStop'
+        callMethod
+        pop
+       label171:
+        branch label177
+       label172:
+        push r:4, 2
+        getMember
+        setRegister r:5
+        pop
+        push 0, 1, r:this, ')yVkk'
+        callMethod
+        pop
+        push r:3
+        not
+        not
+        branchIfTrue label173
+        push UNDEF
+        return
+       label173:
+        push r:5, 0
+        equals
+        not
+        branchIfTrue label174
+        push r:this, '4,01'
+        getMember
+        push '_visible', TRUE
+        setMember
+       label174:
+        push r:this, '8]X}5', r:5, 0
+        equals
+        branchIfTrue label175
+        push r:5, 1
+        subtract
+        push 1, '+6[ML'
+        getVariable
+        push ';cFo2'
+        callMethod
+        branch label176
+       label175:
+        push '+6[ML'
+        getVariable
+        push ' 0s'
+        getMember
+       label176:
+        setMember
+        branch label177
+       label177:
+      end // of function 
+
+      setMember
+      push r:1, '{Y1 G(', NULL
+      setMember
+      push r:1, '8Xod,', NULL
+      setMember
+      push r:1, '4,01', NULL
+      setMember
+      push r:1, '9hgxq', NULL
+      setMember
+      push r:1, '}-B2'
+      function2 () (r:1='this')
+        push r:this, '58rO6', 150.0
+        setMember
+        push r:this, '4AF', '((', 200.0, ')(', '44{N'
+        getVariable
+        push ',e-X)('
+        getMember
+        push 10
+        subtract
+        push '{2', 0.0, '}2', 0.0, 4
+        initObject
+        setMember
+        push r:this, '9O*r', 0, 1
+        initArray
+        setMember
+        push r:this, ']GD;', 0
+        setMember
+        push r:this, '}Yax5', 10, 1
+        initArray
+        setMember
+        push r:this, '++yn{', 100, 400, 1, '3Wt'
+        getVariable
+        push 'random'
+        callMethod
+        add
+        push 1
+        initArray
+        setMember
+        push r:this, '*7y_j', 0, 1
+        initArray
+        setMember
+        push r:this, '8]X}5', '+6[ML'
+        getVariable
+        push ',=ya'
+        getMember
+        setMember
+        push r:this, '3[R43(', 0
+        setMember
+        push r:this, '1av-m', 0
+        setMember
+        push r:this, '4B1W(', FALSE
+        setMember
+        push r:this, '4Jq E(', '=(,aA'
+        getVariable
+        push '6V[ZE'
+        getMember
+        push 1, r:this, '7g,ln'
+        callMethod
+        push '=(,aA'
+        getVariable
+        push '6V[ZE'
+        getMember
+        push 1, r:this, '7g,ln'
+        callMethod
+        push '=(,aA'
+        getVariable
+        push '6V[ZE'
+        getMember
+        push 1, r:this, '7g,ln'
+        callMethod
+        push 3
+        initArray
+        setMember
+        push r:this, ',Kwdh', 0, 'Array'
+        new
+        setMember
+        push r:this, '1qKD-', 0, 'Array'
+        new
+        setMember
+        push r:this, '8jms3', '=(,aA'
+        getVariable
+        push '3d0fx'
+        getMember
+        push 'startPlat', 2, r:this, ']}lAm'
+        getMember
+        push '*=_p_'
+        callMethod
+        setMember
+        push r:this, '8jms3'
+        getMember
+        push 1, r:this, ',Kwdh'
+        getMember
+        push 'push'
+        callMethod
+        pop
+        push 0, r:this, '87vE7('
+        callMethod
+        pop
+        push 0, r:this, '8{S]A'
+        callMethod
+        pop
+      end // of function 
+
+      setMember
+      push r:1, '*7y_j', NULL
+      setMember
+      push r:1, '1qKD-', NULL
+      setMember
+      push r:1, '(hn1*', NULL
+      setMember
+      push r:1, '4Jq E(', NULL
+      setMember
+      push r:1, '++yn{', NULL
+      setMember
+      push r:1, '3[R43(', NULL
+      setMember
+      push r:1, ']BMP2', NULL
+      setMember
+      push r:1, ',Kwdh', NULL
+      setMember
+      push r:1, '-R3p+('
+      function2 (r:2='', r:3='', r:4='', r:5='') (r:1='this')
+        push '=(,aA'
+        getVariable
+        push '(n0fx'
+        getMember
+        push 'part', 2, r:this, ']}lAm'
+        getMember
+        push '*=_p_'
+        callMethod
+        setRegister r:6
+        pop
+        push NULL
+        setRegister r:7
+        pop
+        push NULL
+        setRegister r:8
+        pop
+        push r:6, '_xscale', 70, 1, '3Wt'
+        getVariable
+        push 'random'
+        callMethod
+        push 30
+        add
+        setMember
+        push r:6, '_yscale', r:6, '_xscale'
+        getMember
+        setMember
+        push r:6, '_alpha', 40, 1, '3Wt'
+        getVariable
+        push 'random'
+        callMethod
+        push 60
+        add
+        setMember
+        push r:6, '_rotation', 360, 1, '3Wt'
+        getVariable
+        push 'random'
+        callMethod
+        setMember
+        push '', r:2
+        add
+        push 1, r:6, 'gotoAndStop'
+        callMethod
+        pop
+        push r:2, 1
+        equals
+        branchIfTrue label182
+        push r:6, '_x', r:3, 15, 1, '3Wt'
+        getVariable
+        push 'random'
+        callMethod
+        push 2, 1, '3Wt'
+        getVariable
+        push 'random'
+        callMethod
+        push 2
+        multiply
+        push 1
+        subtract
+        multiply
+        add
+        setMember
+        push r:6, '_y', r:4, 15, 1, '3Wt'
+        getVariable
+        push 'random'
+        callMethod
+        push 2, 1, '3Wt'
+        getVariable
+        push 'random'
+        callMethod
+        push 2
+        multiply
+        push 1
+        subtract
+        multiply
+        add
+        setMember
+        push r:5, 10, 1, '3Wt'
+        getVariable
+        push 'random'
+        callMethod
+        push 10
+        divide
+        multiply
+        setRegister r:7
+        pop
+        push r:2, 6
+        lessThan
+        not
+        branchIfTrue label179
+        push 0, 10, 1, '3Wt'
+        getVariable
+        push 'random'
+        callMethod
+        subtract
+        push 10
+        divide
+        setRegister r:8
+        pop
+        push r:2, 5
+        equals
+        not
+        branchIfTrue label178
+        push r:7, 0.5, 2, 1, '3Wt'
+        getVariable
+        push 'random'
+        callMethod
+        push 2
+        multiply
+        push 1
+        subtract
+        multiply
+        multiply
+        setRegister r:7
+        pop
+       label178:
+        branch label180
+       label179:
+        push 0, 20, 1, '3Wt'
+        getVariable
+        push 'random'
+        callMethod
+        subtract
+        push 10
+        divide
+        setRegister r:8
+        pop
+       label180:
+        push r:5, 1
+        greaterThan
+        not
+        not
+        branchIfTrue label181
+        push r:8, 0.5
+        multiply
+        setRegister r:8
+        pop
+       label181:
+        branch label183
+       label182:
+        push r:6, '_x', r:3, 25
+        add
+        push 10, 1, '3Wt'
+        getVariable
+        push 'random'
+        callMethod
+        push 2, 1, '3Wt'
+        getVariable
+        push 'random'
+        callMethod
+        push 2
+        multiply
+        push 1
+        subtract
+        multiply
+        add
+        setMember
+        push r:6, '_y', r:4, 7, 1, '3Wt'
+        getVariable
+        push 'random'
+        callMethod
+        push 2, 1, '3Wt'
+        getVariable
+        push 'random'
+        callMethod
+        push 2
+        multiply
+        push 1
+        subtract
+        multiply
+        add
+        setMember
+        push r:5, 1
+        greaterThan
+        not
+        not
+        branchIfTrue label183
+        push r:6, '_xscale', r:6, '_xscale'
+        getMember
+        push 0.5
+        multiply
+        setMember
+        push r:6, '_yscale', r:6, '_yscale'
+        getMember
+        push 0.5
+        multiply
+        setMember
+       label183:
+        push '}J', r:6, '{2', r:7, '}2', r:8, 3
+        initObject
+        push 1, r:this, '=ays3'
+        getMember
+        push 'push'
+        callMethod
+        pop
+      end // of function 
+
+      setMember
+      push r:1, '8jms3', NULL
+      setMember
+      push r:1, '=ays3', NULL
+      setMember
+      push r:1, '4AF', NULL
+      setMember
+      push r:1, ']GD;', NULL
+      setMember
+      push r:1, '7g,ln'
+      function2 (r:2='') (r:1='this')
+        push 0
+        setRegister r:3
+        pop
+        push 0
+        setRegister r:4
+        pop
+        push r:2, 'length'
+        getMember
+        setRegister r:5
+        pop
+       label184:
+        push r:4, r:5
+        lessThan
+        not
+        branchIfTrue label185
+        push r:4
+        setRegister r:6
+        pop
+        push r:4
+        increment
+        setRegister r:4
+        pop
+        push r:3, r:2, r:6
+        getMember
+        add
+        setRegister r:3
+        pop
+        branch label184
+       label185:
+        push r:3, 1, '3Wt'
+        getVariable
+        push 'random'
+        callMethod
+        setRegister r:3
+        pop
+        push 0
+        setRegister r:4
+        pop
+       label186:
+        push TRUE
+        not
+        branchIfTrue label188
+        push r:3, r:2, r:4
+        getMember
+        subtract
+        setRegister r:3
+        pop
+        push r:3, 0
+        lessThan
+        not
+        branchIfTrue label187
+        push r:4
+        return
+       label187:
+        push r:4, 1
+        add
+        setRegister r:4
+        pop
+        branch label186
+       label188:
+        push NULL
+        return
+      end // of function 
+
+      setMember
+      push r:1, '58rO6', NULL
+      setMember
+      push r:1, '7M9bQ'
+      function2 (r:2='') (r:1='this')
+        push 'Math'
+        getVariable
+        push 'PI'
+        getMember
+        push 7
+        multiply
+        push 16
+        divide
+        setRegister r:3
+        pop
+        push r:2, r:3
+        greaterThan
+        not
+        branchIfTrue label189
+        push r:3
+        setRegister r:2
+        pop
+       label189:
+        push r:this, '9O*r', r:2, 1
+        initArray
+        setMember
+        push r:this, '4AF'
+        getMember
+        push '{2', r:2, 1, 'Math'
+        getVariable
+        push 'cos'
+        callMethod
+        push r:this, '}Yax5'
+        getMember
+        push 0
+        getMember
+        multiply
+        setMember
+        push r:this, '4AF'
+        getMember
+        push '}2', 0, r:2, 1, 'Math'
+        getVariable
+        push 'sin'
+        callMethod
+        subtract
+        push r:this, '}Yax5'
+        getMember
+        push 0
+        getMember
+        multiply
+        setMember
+      end // of function 
+
+      setMember
+      push r:1, '}Yax5', NULL
+      setMember
+      push r:1, '8]X}5', NULL
+      setMember
+      push r:1, '-_X}5', NULL
+      setMember
+      push r:1, '87vE7('
+      function2 () (r:1='this')
+        push 5
+        setRegister r:2
+        pop
+        push 0
+        setRegister r:3
+        pop
+        push r:2
+        setRegister r:4
+        pop
+       label190:
+        push r:3, r:4
+        lessThan
+        not
+        branchIfTrue label191
+        push r:3
+        setRegister r:5
+        pop
+        push r:3
+        increment
+        setRegister r:3
+        pop
+        push r:5, 0
+        equals
+        push '9K'
+        getVariable
+        push '{-kxL'
+        getMember
+        push '-V;B'
+        getMember
+        push r:2
+        divide
+        push 2, r:this, '*[PT7'
+        callMethod
+        pop
+        branch label190
+       label191:
+      end // of function 
+
+      setMember
+      push r:1, '65l5n'
+      function2 (r:2='') (r:1='this')
+        push r:this, '4,01'
+        getMember
+        push '_x', r:this, '4AF'
+        getMember
+        push '(('
+        getMember
+        push r:this, '58rO6'
+        getMember
+        subtract
+        push 1, '3Wt'
+        getVariable
+        push '9n6'
+        callMethod
+        setMember
+        push r:this, '4,01'
+        getMember
+        push '_y', r:this, '4AF'
+        getMember
+        push ')('
+        getMember
+        setMember
+        push r:this, '4,01'
+        getMember
+        push '_y'
+        getMember
+        push -30
+        lessThan
+        branchIfTrue label192
+        push 0, r:this, '[PAv'
+        getMember
+        push 'removeMovieClip'
+        callMethod
+        pop
+        branch label194
+       label192:
+        push r:this, '[PAv'
+        getMember
+        push '_name'
+        getMember
+        push NULL
+        equals
+        not
+        branchIfTrue label193
+        push r:this, '[PAv', '=(,aA'
+        getVariable
+        push ',-)8f'
+        getMember
+        push 'arrow', 2, r:this, ']}lAm'
+        getMember
+        push '*=_p_'
+        callMethod
+        setMember
+       label193:
+        push r:this, '[PAv'
+        getMember
+        push '_x', r:this, '4,01'
+        getMember
+        push '_x'
+        getMember
+        setMember
+        push r:this, '[PAv'
+        getMember
+        push '[QL'
+        getMember
+        push 'text', 0, r:this, '4,01'
+        getMember
+        push '_y'
+        getMember
+        subtract
+        push 10
+        divide
+        push 1, '3Wt'
+        getVariable
+        push '9n6'
+        callMethod
+        push 'm'
+        add
+        setMember
+        push r:this, '[PAv'
+        getMember
+        push '_xscale', r:this, '[PAv'
+        getMember
+        push '_yscale', 100, 0, r:this, '4,01'
+        getMember
+        push '_y'
+        getMember
+        subtract
+        push 1, 'Math'
+        getVariable
+        push 'sqrt'
+        callMethod
+        subtract
+        setRegister r:0
+        setMember
+        push r:0
+        setMember
+       label194:
+        push r:this, '4,01'
+        getMember
+        push '_rotation'
+        getMember
+        push 'Math'
+        getVariable
+        push 'PI'
+        getMember
+        multiply
+        push 180
+        divide
+        setRegister r:3
+        pop
+        push r:3, r:this, ',gd2D('
+        getMember
+        push r:3
+        subtract
+        push 1, 'Math'
+        getVariable
+        push 'sin'
+        callMethod
+        push 0.03, r:this, '}Yax5'
+        getMember
+        push 0
+        getMember
+        push 30
+        divide
+        push 2, 'Math'
+        getVariable
+        push 'max'
+        callMethod
+        multiply
+        push r:2
+        multiply
+        add
+        setRegister r:3
+        pop
+        push r:this, '4,01'
+        getMember
+        push '_rotation', r:3, 180
+        multiply
+        push 'Math'
+        getVariable
+        push 'PI'
+        getMember
+        divide
+        setMember
+        push r:this, '8]X}5'
+        getMember
+        push '+6[ML'
+        getVariable
+        push ' 0s'
+        getMember
+        equals
+        dup
+        not
+        branchIfTrue label195
+        pop
+        push r:this, '9hgxq'
+        getMember
+        push r:this, '4,01'
+        getMember
+        push '_currentframe'
+        getMember
+        equals
+        not
+        dup
+        not
+        branchIfTrue label195
+        pop
+        push r:this, '4,01'
+        getMember
+        push '_currentframe'
+        getMember
+        push 2
+        equals
+        not
+       label195:
+        not
+        branchIfTrue label196
+        push r:this, '9hgxq'
+        getMember
+        push 1, r:this, '4,01'
+        getMember
+        push 'gotoAndStop'
+        callMethod
+        pop
+       label196:
+        push r:this, ']GD;', r:this, ']GD;'
+        getMember
+        push r:this, '}Yax5'
+        getMember
+        push 0
+        getMember
+        push 20
+        divide
+        add
+        setMember
+        push r:this, ']GD;'
+        getMember
+        push r:this, '4,01'
+        getMember
+        push '0tJ'
+        getMember
+        push ';'
+        getMember
+        push '_totalframes'
+        getMember
+        modulo
+        push 1, '3Wt'
+        getVariable
+        push '9n6'
+        callMethod
+        push 1
+        add
+        push 1, r:this, '4,01'
+        getMember
+        push '0tJ'
+        getMember
+        push ';'
+        getMember
+        push 'gotoAndStop'
+        callMethod
+        pop
+        push r:this, '4,01'
+        getMember
+        push '0tJ'
+        getMember
+        push ';'
+        getMember
+        push '_rotation', 0, r:this, '4,01'
+        getMember
+        push '_rotation'
+        getMember
+        subtract
+        push r:this, '9O*r'
+        getMember
+        push 0
+        getMember
+        push 180
+        multiply
+        push 'Math'
+        getVariable
+        push 'PI'
+        getMember
+        divide
+        add
+        setMember
+        push r:this, '4,01'
+        getMember
+        push '_currentframe'
+        getMember
+        push 1, r:this, '[PAv'
+        getMember
+        push '0tJ'
+        getMember
+        push 'gotoAndStop'
+        callMethod
+        pop
+        push r:this, '[PAv'
+        getMember
+        push '0tJ'
+        getMember
+        push '_rotation', r:this, '4,01'
+        getMember
+        push '_rotation'
+        getMember
+        setMember
+        push r:this, '}Yax5'
+        getMember
+        push 0
+        getMember
+        push 1
+        lessThan
+        dup
+        not
+        branchIfTrue label197
+        pop
+        push r:this, '4AF'
+        getMember
+        push ')('
+        getMember
+        push '44{N'
+        getVariable
+        push ',e-X)('
+        getMember
+        push 20
+        subtract
+        greaterThan
+        dup
+        not
+        branchIfTrue label197
+        pop
+        push r:this, '4AF'
+        getMember
+        push '}2'
+        getMember
+        push 0
+        greaterThan
+        not
+        dup
+        not
+        branchIfTrue label197
+        pop
+        push r:this, '{Y1 G('
+        getMember
+        not
+       label197:
+        not
+        branchIfTrue label198
+        push r:this, '-_X}5'
+        getMember
+        push '_d', r:this, '4AF'
+        getMember
+        push '(('
+        getMember
+        push 1, '3Wt'
+        getVariable
+        push '9n6'
+        callMethod
+        setMember
+        push r:this, '-_X}5'
+        getMember
+        push 1, ';ndCG'
+        getVariable
+        push '7T4cF('
+        callMethod
+        pop
+        push r:this, '{Y1 G(', TRUE
+        setMember
+        push 'end', 1, r:this, '4,01'
+        getMember
+        push '0tJ'
+        getMember
+        push 'gotoAndPlay'
+        callMethod
+        pop
+       label198:
+        push r:this, '4,01'
+        getMember
+        push '0tJ'
+        getMember
+        push 'smc'
+        getMember
+        push '_visible', r:this, '4B1W('
+        getMember
+        setMember
+        push r:this, '[PAv'
+        getMember
+        push '0tJ'
+        getMember
+        push 'smc'
+        getMember
+        push '_visible', r:this, '4B1W('
+        getMember
+        setMember
+      end // of function 
+
+      setMember
+      push r:1, '8{S]A'
+      function2 () (r:1='this')
+       label199:
+        push r:this, '*7y_j'
+        getMember
+        push 0
+        getMember
+        push 500
+        greaterThan
+        not
+        branchIfTrue label207
+        push r:this, '*7y_j', r:this, '*7y_j'
+        getMember
+        push 0
+        getMember
+        push 500
+        subtract
+        push 1
+        initArray
+        setMember
+       label200:
+        push r:this, '4Jq E('
+        getMember
+        push 'length'
+        getMember
+        push r:this, '3[R43('
+        getMember
+        push 3
+        add
+        greaterThan
+        not
+        not
+        branchIfTrue label201
+        push '=(,aA'
+        getVariable
+        push '6V[ZE'
+        getMember
+        push 1, r:this, '7g,ln'
+        callMethod
+        push 1, r:this, '4Jq E('
+        getMember
+        push 'push'
+        callMethod
+        pop
+        branch label200
+       label201:
+        push r:this, '4Jq E('
+        getMember
+        push r:this, '3[R43('
+        getMember
+        push r:this, '3[R43(', r:this, '3[R43('
+        getMember
+        increment
+        setMember
+        getMember
+        setRegister r:2
+        pop
+        push r:2, 1
+        equals
+        branchIfTrue label202
+        push '=(,aA'
+        getVariable
+        push '0unn]'
+        getMember
+        branch label203
+       label202:
+        push '=(,aA'
+        getVariable
+        push '-0mb+'
+        getMember
+       label203:
+        push 'item', 2, r:this, ']}lAm'
+        getMember
+        push '*=_p_'
+        callMethod
+        setRegister r:3
+        pop
+        push '}J', r:3, '4', r:2, ']L,PR', FALSE, 3
+        initObject
+        push 1, r:this, '1qKD-'
+        getMember
+        push 'push'
+        callMethod
+        pop
+        push 1, r:2
+        add
+        push 1, r:3, 'gotoAndStop'
+        callMethod
+        pop
+        push r:2, 4
+        equals
+        not
+        branchIfTrue label206
+        push r:this, '4B1W('
+        getMember
+        branchIfTrue label204
+        push 1
+        branch label205
+       label204:
+        push 2
+       label205:
+        push 1, r:3, '0tJ'
+        getMember
+        push 'gotoAndStop'
+        callMethod
+        pop
+       label206:
+        push r:3, '_x', 400, r:this, '*7y_j'
+        getMember
+        push 0
+        getMember
+        add
+        setMember
+        push r:3, '_y', '44{N'
+        getVariable
+        push ',e-X)('
+        getMember
+        setMember
+        branch label199
+       label207:
+        push r:this, '58rO6'
+        getMember
+        push r:this, '++yn{'
+        getMember
+        push 0
+        getMember
+        lessThan
+        not
+        not
+        branchIfTrue label209
+        push r:this, '++yn{', r:this, '++yn{'
+        getMember
+        push 0
+        getMember
+        push 140, 500, 1, '3Wt'
+        getVariable
+        push 'random'
+        callMethod
+        add
+        add
+        push 1
+        initArray
+        setMember
+        push '=(,aA'
+        getVariable
+        push '3d0fx'
+        getMember
+        push 'bgItem', 2, r:this, ']}lAm'
+        getMember
+        push '*=_p_'
+        callMethod
+        setRegister r:2
+        pop
+       label208:
+        push 1, r:2, '_totalframes'
+        getMember
+        push 1, '3Wt'
+        getVariable
+        push 'random'
+        callMethod
+        add
+        setRegister r:3
+        pop
+        push r:3, r:this, '(hn1*'
+        getMember
+        equals
+        branchIfTrue label208
+        push r:3, 1, r:2, 'gotoAndStop'
+        callMethod
+        pop
+        push r:this, '(hn1*', r:2, '_currentframe'
+        getMember
+        setMember
+        push r:2, '_x', 300, r:2, '_width'
+        getMember
+        add
+        setMember
+        push r:2, '_y', '44{N'
+        getVariable
+        push ',e-X)('
+        getMember
+        push 30
+        add
+        setMember
+        push r:2, 1, r:this, ',Kwdh'
+        getMember
+        push 'push'
+        callMethod
+        pop
+       label209:
+        push 0
+        setRegister r:2
+        pop
+        push 3
+        setRegister r:3
+        pop
+       label210:
+        push r:2, r:3
+        lessThan
+        not
+        branchIfTrue label211
+        push r:2
+        setRegister r:4
+        pop
+        push r:2
+        increment
+        setRegister r:2
+        pop
+        push r:this, '4Jq E('
+        getMember
+        push r:this, '1av-m'
+        getMember
+        push r:4
+        add
+        getMember
+        push 1
+        add
+        push 1, r:this, ']BMP2'
+        getMember
+        push r:4
+        getMember
+        push 'gotoAndStop'
+        callMethod
+        pop
+        branch label210
+       label211:
+      end // of function 
+
+      setMember
+      push r:1, ')yVkk'
+      function2 (r:2='') (r:1='this')
+        push r:this, '8Xod,'
+        getMember
+        push 0
+        greaterThan
+        not
+        branchIfTrue label214
+        push r:this, '8Xod,', r:this, '8Xod,'
+        getMember
+        push 1
+        subtract
+        setMember
+        push 5, 1, '3Wt'
+        getVariable
+        push 'random'
+        callMethod
+        push 0
+        equals
+        not
+        branchIfTrue label212
+        push r:2, r:this, '4,01'
+        getMember
+        push '_y'
+        getMember
+        push r:this, '4,01'
+        getMember
+        push '_x'
+        getMember
+        push 2, 3, 1, '3Wt'
+        getVariable
+        push 'random'
+        callMethod
+        add
+        push 4, r:this, '-R3p+('
+        callMethod
+        pop
+       label212:
+        push r:this, '4,01'
+        getMember
+        push '_y'
+        getMember
+        push '44{N'
+        getVariable
+        push ',e-X)('
+        getMember
+        push 15
+        subtract
+        lessThan
+        not
+        dup
+        not
+        branchIfTrue label213
+        pop
+        push 8, 1, '3Wt'
+        getVariable
+        push 'random'
+        callMethod
+        push 0
+        equals
+       label213:
+        not
+        branchIfTrue label214
+        push r:2, r:this, '4,01'
+        getMember
+        push '_y'
+        getMember
+        push r:this, '4,01'
+        getMember
+        push '_x'
+        getMember
+        push 6, 3, 1, '3Wt'
+        getVariable
+        push 'random'
+        callMethod
+        add
+        push 4, r:this, '-R3p+('
+        callMethod
+        pop
+       label214:
+        push r:this, '4,01'
+        getMember
+        push '_y'
+        getMember
+        push '44{N'
+        getVariable
+        push ',e-X)('
+        getMember
+        push 5
+        subtract
+        lessThan
+        not
+        not
+        branchIfTrue label215
+        push r:2, 1
+        lessThan
+        not
+        not
+        branchIfTrue label215
+        push r:2, '44{N'
+        getVariable
+        push ',e-X)('
+        getMember
+        push 2
+        subtract
+        push r:this, '4,01'
+        getMember
+        push '_x'
+        getMember
+        push 1, 4, r:this, '-R3p+('
+        callMethod
+        pop
+       label215:
+        push 0
+        setRegister r:3
+        pop
+       label216:
+        push r:3, r:this, '=ays3'
+        getMember
+        push 'length'
+        getMember
+        lessThan
+        not
+        branchIfTrue label225
+        push r:this, '=ays3'
+        getMember
+        push r:3
+        getMember
+        setRegister r:4
+        pop
+        push FALSE
+        setRegister r:5
+        pop
+        push r:4, '}J'
+        getMember
+        push '_currentframe'
+        getMember
+        push 1
+        equals
+        branchIfTrue label219
+        push r:4, '}J'
+        getMember
+        push '_x', r:4, '}J'
+        getMember
+        push '_x'
+        getMember
+        push r:2, 0.6
+        multiply
+        subtract
+        setMember
+        push r:4, '}J'
+        getMember
+        push '_rotation', r:4, '}J'
+        getMember
+        push '_rotation'
+        getMember
+        push 5, 1, '3Wt'
+        getVariable
+        push 'random'
+        callMethod
+        subtract
+        setMember
+        push r:4, '}J'
+        getMember
+        push '_alpha'
+        getMember
+        push 0
+        greaterThan
+        not
+        dup
+        branchIfTrue label217
+        pop
+        push r:4, '}J'
+        getMember
+        push '_x'
+        getMember
+        push -10
+        greaterThan
+        not
+        dup
+        branchIfTrue label217
+        pop
+        push r:4, '}J'
+        getMember
+        push '_y'
+        getMember
+        push 310
+        lessThan
+        not
+       label217:
+        not
+        branchIfTrue label218
+        push TRUE
+        setRegister r:5
+        pop
+       label218:
+        branch label220
+       label219:
+        push r:4, '}J'
+        getMember
+        push '_x', r:4, '}J'
+        getMember
+        push '_x'
+        getMember
+        push r:2
+        subtract
+        setMember
+        push r:4, '}J'
+        getMember
+        push '_y', r:4, '}J'
+        getMember
+        push '_y'
+        getMember
+        push 0.25
+        subtract
+        setMember
+        push r:4, '}J'
+        getMember
+        push '_xscale', r:4, '}J'
+        getMember
+        push '_xscale'
+        getMember
+        push 1, 2, 1, '3Wt'
+        getVariable
+        push 'random'
+        callMethod
+        add
+        subtract
+        setMember
+        push r:4, '}J'
+        getMember
+        push '_yscale', r:4, '}J'
+        getMember
+        push '_xscale'
+        getMember
+        setMember
+        push r:4, '}J'
+        getMember
+        push '_xscale'
+        getMember
+        push 5
+        greaterThan
+        not
+        not
+        branchIfTrue label220
+        push TRUE
+        setRegister r:5
+        pop
+       label220:
+        push r:4, '{2'
+        getMember
+        push NULL
+        equals
+        not
+        dup
+        not
+        branchIfTrue label221
+        pop
+        push r:4, '}2'
+        getMember
+        push NULL
+        equals
+        not
+       label221:
+        not
+        branchIfTrue label223
+        push r:4, '}J'
+        getMember
+        push '_x', r:4, '}J'
+        getMember
+        push '_x'
+        getMember
+        push r:4, '{2'
+        getMember
+        add
+        setMember
+        push r:4, '}J'
+        getMember
+        push '_y', r:4, '}J'
+        getMember
+        push '_y'
+        getMember
+        push r:4, '}2'
+        getMember
+        add
+        setMember
+        push r:4, '}J'
+        getMember
+        push '_currentframe'
+        getMember
+        push 6
+        lessThan
+        not
+        branchIfTrue label222
+        push r:4, '{2', r:4, '{2'
+        getMember
+        push r:2, 0.01
+        multiply
+        subtract
+        setMember
+        push r:4, '}2', r:4, '}2'
+        getMember
+        push 0.006
+        add
+        setMember
+        branch label223
+       label222:
+        push r:4, '{2', r:4, '{2'
+        getMember
+        push r:2, 0.006
+        multiply
+        subtract
+        setMember
+        push r:4, '}2', r:4, '}2'
+        getMember
+        push 0.01
+        add
+        setMember
+       label223:
+        push r:5
+        not
+        branchIfTrue label224
+        push 0, r:4, '}J'
+        getMember
+        push 'removeMovieClip'
+        callMethod
+        pop
+        push 1, r:3, 2, r:this, '=ays3'
+        getMember
+        push 'splice'
+        callMethod
+        pop
+        push r:3
+        decrement
+        setRegister r:3
+        pop
+       label224:
+        push r:3
+        increment
+        setRegister r:3
+        pop
+        branch label216
+       label225:
+      end // of function 
+
+      setMember
+      push r:1, '4u=dZ'
+      function2 (r:2='') (r:1='this')
+        push r:this, '4AF'
+        getMember
+        push '((', r:this, '4AF'
+        getMember
+        push '(('
+        getMember
+        push r:this, '4AF'
+        getMember
+        push '{2'
+        getMember
+        push 2
+        divide
+        push r:2
+        multiply
+        add
+        setMember
+        push r:this, '4AF'
+        getMember
+        push ')(', r:this, '4AF'
+        getMember
+        push ')('
+        getMember
+        push r:this, '4AF'
+        getMember
+        push '}2'
+        getMember
+        push 2
+        divide
+        push r:2
+        multiply
+        subtract
+        setMember
+        push r:this, '4AF'
+        getMember
+        push '}2', r:this, '4AF'
+        getMember
+        push '}2'
+        getMember
+        push 0.1, r:2
+        multiply
+        subtract
+        setMember
+        push r:this, '4AF'
+        getMember
+        push ')('
+        getMember
+        push '44{N'
+        getVariable
+        push ',e-X)('
+        getMember
+        greaterThan
+        not
+        branchIfTrue label228
+        push r:this, '4AF'
+        getMember
+        push ')(', '44{N'
+        getVariable
+        push ',e-X)('
+        getMember
+        setMember
+        push r:this, '4AF'
+        getMember
+        push '{2', r:this, '4AF'
+        getMember
+        push '{2'
+        getMember
+        push 0.7
+        multiply
+        setMember
+        push r:this, '4AF'
+        getMember
+        push '}2', r:this, '4AF'
+        getMember
+        push '}2'
+        getMember
+        push 0, 0.65
+        subtract
+        multiply
+        setMember
+        push r:this, '}Yax5'
+        getMember
+        push 0
+        getMember
+        push 10
+        greaterThan
+        branchIfTrue label227
+        push r:this, '}Yax5'
+        getMember
+        push 0
+        getMember
+        push 3
+        lessThan
+        not
+        branchIfTrue label226
+        push r:this, '4AF'
+        getMember
+        push '}2', 1
+        setMember
+       label226:
+        branch label228
+       label227:
+        push 2, 1, r:this, '4,01'
+        getMember
+        push 'gotoAndStop'
+        callMethod
+        pop
+        push r:this, '8Xod,', 70
+        setMember
+        push r:this, '8]X}5', 4, 1, '+6[ML'
+        getVariable
+        push ';cFo2'
+        callMethod
+        setMember
+       label228:
+        push r:this, '}Yax5', r:this, '4AF'
+        getMember
+        push '{2'
+        getMember
+        push r:this, '4AF'
+        getMember
+        push '{2'
+        getMember
+        multiply
+        push r:this, '4AF'
+        getMember
+        push '}2'
+        getMember
+        push r:this, '4AF'
+        getMember
+        push '}2'
+        getMember
+        multiply
+        add
+        push 1, 'Math'
+        getVariable
+        push 'sqrt'
+        callMethod
+        push 1
+        initArray
+        setMember
+        push r:this, '}Yax5'
+        getMember
+        push 0
+        getMember
+        push 20
+        greaterThan
+        not
+        branchIfTrue label229
+        push r:2, 0.999, 2, 'Math'
+        getVariable
+        push 'pow'
+        callMethod
+        setRegister r:3
+        pop
+        push r:this, '}Yax5', r:this, '}Yax5'
+        getMember
+        push 0
+        getMember
+        push r:3
+        multiply
+        push 1
+        initArray
+        setMember
+        push r:this, '4AF'
+        getMember
+        push '{2', r:this, '4AF'
+        getMember
+        push '{2'
+        getMember
+        push r:3
+        multiply
+        setMember
+        push r:this, '4AF'
+        getMember
+        push '}2', r:this, '4AF'
+        getMember
+        push '}2'
+        getMember
+        push r:3
+        multiply
+        setMember
+       label229:
+        push r:this, '9O*r', r:this, '4AF'
+        getMember
+        push '{2'
+        getMember
+        push 0, r:this, '4AF'
+        getMember
+        push '}2'
+        getMember
+        subtract
+        push 2, 'Math'
+        getVariable
+        push 'atan2'
+        callMethod
+        push 1
+        initArray
+        setMember
+        push r:this, ',gd2D(', r:this, '9O*r'
+        getMember
+        push 0
+        getMember
+        setMember
+        push r:this, '9hgxq', 1
+        setMember
+        push r:this, '4AF'
+        getMember
+        push ')('
+        getMember
+        push '44{N'
+        getVariable
+        push ',e-X)('
+        getMember
+        push 20
+        subtract
+        greaterThan
+        dup
+        not
+        branchIfTrue label230
+        pop
+        push r:this, '}Yax5'
+        getMember
+        push 0
+        getMember
+        push 10
+        lessThan
+       label230:
+        branchIfTrue label238
+        push '[8X6+'
+        getVariable
+        push 'Key'
+        getMember
+        push 'LEFT'
+        getMember
+        push 1, '[8X6+'
+        getVariable
+        push 'Key'
+        getMember
+        push 'isDown'
+        callMethod
+        dup
+        branchIfTrue label231
+        pop
+        push '[8X6+'
+        getVariable
+        push 'Key'
+        getMember
+        push 'UP'
+        getMember
+        push 1, '[8X6+'
+        getVariable
+        push 'Key'
+        getMember
+        push 'isDown'
+        callMethod
+       label231:
+        branchIfTrue label234
+        push '[8X6+'
+        getVariable
+        push 'Key'
+        getMember
+        push 'RIGHT'
+        getMember
+        push 1, '[8X6+'
+        getVariable
+        push 'Key'
+        getMember
+        push 'isDown'
+        callMethod
+        dup
+        branchIfTrue label232
+        pop
+        push '[8X6+'
+        getVariable
+        push 'Key'
+        getMember
+        push 'DOWN'
+        getMember
+        push 1, '[8X6+'
+        getVariable
+        push 'Key'
+        getMember
+        push 'isDown'
+        callMethod
+       label232:
+        not
+        branchIfTrue label233
+        push r:this, '4AF'
+        getMember
+        push '}2', r:this, '4AF'
+        getMember
+        push '}2'
+        getMember
+        push 0.1, r:2
+        multiply
+        subtract
+        setMember
+        push r:this, ',gd2D(', 'Math'
+        getVariable
+        push 'PI'
+        getMember
+        push 4
+        divide
+        setMember
+        push r:this, '9hgxq', 4
+        setMember
+       label233:
+        branch label237
+       label234:
+        push 0.05, '44{N'
+        getVariable
+        push ',e-X)('
+        getMember
+        push r:this, '4AF'
+        getMember
+        push ')('
+        getMember
+        subtract
+        push 10000
+        divide
+        add
+        setRegister r:3
+        pop
+        push r:this, '9O*r'
+        getMember
+        push 0
+        getMember
+        push r:3
+        greaterThan
+        not
+        branchIfTrue label236
+        push r:this, '9O*r', r:this, '9O*r'
+        getMember
+        push 0
+        getMember
+        push 0.03, r:this, '}Yax5'
+        getMember
+        push 0
+        getMember
+        push 1, 'Math'
+        getVariable
+        push 'sqrt'
+        callMethod
+        multiply
+        push 4
+        divide
+        push r:2
+        multiply
+        subtract
+        push 1
+        initArray
+        setMember
+        push r:this, '9O*r'
+        getMember
+        push 0
+        getMember
+        push r:3
+        lessThan
+        not
+        branchIfTrue label235
+        push r:this, '9O*r', r:3, 1
+        initArray
+        setMember
+       label235:
+        push r:this, '9O*r'
+        getMember
+        push 0
+        getMember
+        push 1, r:this, '7M9bQ'
+        callMethod
+        pop
+       label236:
+        push r:this, ',gd2D(', 0, 'Math'
+        getVariable
+        push 'PI'
+        getMember
+        subtract
+        push 4
+        divide
+        setMember
+        push r:this, '9hgxq', 3
+        setMember
+       label237:
+        branch label239
+       label238:
+        push r:this, '9hgxq', 6
+        setMember
+        push r:this, '4AF'
+        getMember
+        push '{2', r:this, '}Yax5'
+        getMember
+        push 0
+        getMember
+        push r:2, 0.95, 2, 'Math'
+        getVariable
+        push 'pow'
+        callMethod
+        multiply
+        setMember
+        push r:this, '4AF'
+        getMember
+        push '}2', 0
+        setMember
+        push r:this, '4AF'
+        getMember
+        push ')(', '44{N'
+        getVariable
+        push ',e-X)('
+        getMember
+        setMember
+       label239:
+      end // of function 
+
+      setMember
+      push r:1, '+aDob'
+      function2 (r:2='') (r:1='this')
+        push r:2, 0.825, 2, 'Math'
+        getVariable
+        push 'pow'
+        callMethod
+        setRegister r:3
+        pop
+        push r:this, '58rO6'
+        getMember
+        push 1, '3Wt'
+        getVariable
+        push '9n6'
+        callMethod
+        setRegister r:4
+        pop
+        push r:this, '58rO6', r:this, '58rO6'
+        getMember
+        push r:3
+        multiply
+        push r:this, '4AF'
+        getMember
+        push '(('
+        getMember
+        push 50
+        subtract
+        push 1, r:3
+        subtract
+        multiply
+        add
+        setMember
+        push 0
+        setRegister r:5
+        pop
+        push 0, r:this, '57*'
+        getMember
+        push 'iterator'
+        callMethod
+        setRegister r:6
+        pop
+       label240:
+        push 0, r:6, '1ll a'
+        callMethod
+        not
+        branchIfTrue label241
+        push 0, r:6, '7Y-7'
+        callMethod
+        setRegister r:7
+        pop
+        push r:this, '58rO6'
+        getMember
+        push '44{N'
+        getVariable
+        push '}Vok9'
+        getMember
+        push r:5
+        getMember
+        multiply
+        push 500
+        modulo
+        push 1, '3Wt'
+        getVariable
+        push '9n6'
+        callMethod
+        setRegister r:8
+        pop
+        push r:7, '_x', 0, r:8
+        subtract
+        setMember
+        push r:5
+        increment
+        setRegister r:5
+        pop
+        branch label240
+       label241:
+        push r:this, '58rO6'
+        getMember
+        push 1, '3Wt'
+        getVariable
+        push '9n6'
+        callMethod
+        push r:4
+        subtract
+        return
+      end // of function 
+
+      setMember
+      push r:1, ',gd2D(', NULL
+      setMember
+      push '980Sb'
+      function2 () (r:1='this', r:2='super')
+      end // of function 
+
+      setRegister r:0
+      setVariable
+      push r:0, '__name__', '980Sb', 1
+      initArray
+      setMember
+      push r:0, 'prototype'
+      getMember
+      setRegister r:1
+      pop
+      push r:1, '__class__', r:0
+      setMember
+      push r:0, '_main', NULL
+      setMember
+      push r:0, '}-B2'
+      function2 () (r:1='this')
+        push 0, ';ndCG'
+        getVariable
+        push '(kJ+1('
+        callMethod
+        push TRUE
+        equals
+        not
+        not
+        branchIfTrue label242
+        push UNDEF
+        return
+       label242:
+        push '980Sb'
+        getVariable
+        push '_main', '[8X6+'
+        getVariable
+        push '1ni'
+        getMember
+        push '0]Ss)'
+        getMember
+        push 1, '44{N'
+        new
+        setMember
+      end // of function 
+
+      setMember
+      push r:0, '0D 6'
+      function2 () (r:1='this')
+        push 0, '9K'
+        getVariable
+        push '{-kxL'
+        getMember
+        push '87vE7('
+        callMethod
+        pop
+        push 0, '980Sb'
+        getVariable
+        push '_main'
+        getMember
+        push '87vE7('
+        callMethod
+        pop
+      end // of function 
+
+      setMember
+      push '[8X6+'
+      getVariable
+      push '7]AJ'
+      getMember
+      setRegister r:0
+      pop
+      push 'this'
+      getVariable
+      push 1, r:0, '__init'
+      callMethod
+      pop
+      push r:0, '__res', 0
+      initObject
+      setMember
+      try r:0
+        push '[8X6+'
+        getVariable
+        push 'MovieClip', '_global'
+        getVariable
+        push 'MovieClip'
+        getMember
+        setMember
+        push '[8X6+'
+        getVariable
+        push 'TextField', '_global'
+        getVariable
+        push 'TextField'
+        getMember
+        setMember
+        push '[8X6+'
+        getVariable
+        push 'text'
+        getMember
+        push 'StyleSheet', '_global'
+        getVariable
+        push 'TextField'
+        getMember
+        push 'StyleSheet'
+        getMember
+        setMember
+        push '[8X6+'
+        getVariable
+        push 'Key', '_global'
+        getVariable
+        push 'Key'
+        getMember
+        setMember
+        push '[8X6+'
+        getVariable
+        push 'Key'
+        getMember
+        push 1, '[8X6+'
+        getVariable
+        push 'Key'
+        getMember
+        push 'addListener'
+        callMethod
+        pop
+        push '[8X6+'
+        getVariable
+        push 'TextFormat', '_global'
+        getVariable
+        push 'TextFormat'
+        getMember
+        setMember
+        push 'Math'
+        getVariable
+        push 'NaN', 'Number'
+        getVariable
+        push 'NaN'
+        getMember
+        setMember
+        push 'Math'
+        getVariable
+        push 'NEGATIVE_INFINITY', 'Number'
+        getVariable
+        push 'NEGATIVE_INFINITY'
+        getMember
+        setMember
+        push 'Math'
+        getVariable
+        push 'POSITIVE_INFINITY', 'Number'
+        getVariable
+        push 'POSITIVE_INFINITY'
+        getMember
+        setMember
+        push 'Math'
+        getVariable
+        push 'isFinite'
+        function2 (r:2='') (r:1='this')
+          push r:2, 1, '_global'
+          getVariable
+          push 'isFinite'
+          callMethod
+          return
+        end // of function 
+
+        setMember
+        push 'Math'
+        getVariable
+        push 'isNaN'
+        function2 (r:2='') (r:1='this')
+          push r:2, 1, '_global'
+          getVariable
+          push 'isNaN'
+          callMethod
+          return
+        end // of function 
+
+        setMember
+        push '[8X6+'
+        getVariable
+        push 'Stage', '_global'
+        getVariable
+        push 'Stage'
+        getMember
+        setMember
+        push '[8X6+'
+        getVariable
+        push 'TextSnapshot', '_global'
+        getVariable
+        push 'TextSnapshot'
+        getMember
+        setMember
+        push '[8X6+'
+        getVariable
+        push '7]AJ'
+        getMember
+        push ' p)sT', 0
+        setMember
+        push '9K'
+        getVariable
+        push '+7U K'
+        getMember
+        push '}Sgx4', 0
+        setMember
+        push '9K'
+        getVariable
+        push '{-kxL'
+        getMember
+        push '6GI,F', 32
+        setMember
+        push '9K'
+        getVariable
+        push '{-kxL'
+        getMember
+        push ';y}-6(', 0.5
+        setMember
+        push '9K'
+        getVariable
+        push '{-kxL'
+        getMember
+        push '3R,QM', 0, '[8X6+'
+        getVariable
+        push '1ni'
+        getMember
+        push '6{1o=('
+        callMethod
+        setMember
+        push '9K'
+        getVariable
+        push '{-kxL'
+        getMember
+        push '[Ad;n', 0.95
+        setMember
+        push '9K'
+        getVariable
+        push '{-kxL'
+        getMember
+        push '-)Xd+', 1
+        setMember
+        push '9K'
+        getVariable
+        push '{-kxL'
+        getMember
+        push '-V;B', 1
+        setMember
+        push '9K'
+        getVariable
+        push '{-kxL'
+        getMember
+        push ';ILSy', 1
+        setMember
+        push '9K'
+        getVariable
+        push '{-kxL'
+        getMember
+        push '4plQ5', 0
+        setMember
+        push '=(,aA'
+        getVariable
+        push '}m6', 0
+        setMember
+        push '=(,aA'
+        getVariable
+        push '3d0fx', '=(,aA'
+        getVariable
+        push '}m6'
+        getMember
+        push '=(,aA'
+        getVariable
+        push '}m6', '=(,aA'
+        getVariable
+        push '}m6'
+        getMember
+        increment
+        setMember
+        setMember
+        push '=(,aA'
+        getVariable
+        push '0unn]', '=(,aA'
+        getVariable
+        push '}m6'
+        getMember
+        push '=(,aA'
+        getVariable
+        push '}m6', '=(,aA'
+        getVariable
+        push '}m6'
+        getMember
+        increment
+        setMember
+        setMember
+        push '=(,aA'
+        getVariable
+        push '*h0p]', '=(,aA'
+        getVariable
+        push '}m6'
+        getMember
+        push '=(,aA'
+        getVariable
+        push '}m6', '=(,aA'
+        getVariable
+        push '}m6'
+        getMember
+        increment
+        setMember
+        setMember
+        push '=(,aA'
+        getVariable
+        push '-0mb+', '=(,aA'
+        getVariable
+        push '}m6'
+        getMember
+        push '=(,aA'
+        getVariable
+        push '}m6', '=(,aA'
+        getVariable
+        push '}m6'
+        getMember
+        increment
+        setMember
+        setMember
+        push '=(,aA'
+        getVariable
+        push '(n0fx', '=(,aA'
+        getVariable
+        push '}m6'
+        getMember
+        push '=(,aA'
+        getVariable
+        push '}m6', '=(,aA'
+        getVariable
+        push '}m6'
+        getMember
+        increment
+        setMember
+        setMember
+        push '=(,aA'
+        getVariable
+        push ',-)8f', '=(,aA'
+        getVariable
+        push '}m6'
+        getMember
+        push '=(,aA'
+        getVariable
+        push '}m6', '=(,aA'
+        getVariable
+        push '}m6'
+        getMember
+        increment
+        setMember
+        setMember
+        push '=(,aA'
+        getVariable
+        push '}EQqb', '=(,aA'
+        getVariable
+        push '}m6'
+        getMember
+        push '=(,aA'
+        getVariable
+        push '}m6', '=(,aA'
+        getVariable
+        push '}m6'
+        getMember
+        increment
+        setMember
+        setMember
+        push '=(,aA'
+        getVariable
+        push '6V[ZE', 10, 20, 5, 50, 50, 50, 6
+        initArray
+        setMember
+        push '=(,aA'
+        getVariable
+        push '582dG', 20000, 0, 0, 0, 0, 0, 6
+        initArray
+        push 1, ';ndCG'
+        getVariable
+        push '*G6KR'
+        callMethod
+        setMember
+        push '44{N'
+        getVariable
+        push ',e-X)(', 280.0
+        setMember
+        push '44{N'
+        getVariable
+        push '}Vok9', 0, 0.1, 0.2, 0.3, 0.6, 1, 6
+        initArray
+        setMember
+        branch label243
+      catch
+        push r:0, 1, '[8X6+'
+        getVariable
+        push '7]AJ'
+        getMember
+        push '__exc'
+        callMethod
+        pop
+       label243:
+      end // of try
+    end // of frame 0
+  end // of defineMovieClip 20481
+  
+  exportAssets
+    20481 as '90D*'
+  end // of exportAssets
+end
