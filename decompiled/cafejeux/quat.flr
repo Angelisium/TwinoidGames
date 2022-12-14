@@ -183,7 +183,7 @@ for ($somevar in v2) {
     haxe.{-kxL = function (arg0) {
       var (K = this;
       this.*B = _global.setInterval(function () {
-        (K.;LI();
+        (K.run();
       }, arg0);
     };
 
@@ -193,7 +193,7 @@ for ($somevar in v2) {
     haxe.{-kxL.+TOS,( = function (-, 5U4B) {
       return function () {
         var ] = new haxe.{-kxL(5U4B);
-        ].;LI = function () {
+        ].run = function () {
           ].stop();
           -();
         };
@@ -213,7 +213,7 @@ for ($somevar in v2) {
     };
 
     v1.*B = null;
-    v1.;LI = function () {};
+    v1.run = function () {};
 
     v1.stop = function () {
       if (this.*B == null) {
@@ -431,7 +431,7 @@ for ($somevar in v2) {
     v1.5W_C2 = function () {
       var v2 = new haxe.{-kxL(1000);
       var v3 = this;
-      v2.;LI = ]6=8H(('0POpX', this);
+      v2.run = ]6=8H(('0POpX', this);
     };
 
     v1.}J = null;
@@ -541,7 +541,7 @@ for ($somevar in v2) {
       this.0D 6();
       }-VbH.5nwDR(false);
       var v3 = new haxe.{-kxL(5000);
-      v3.;LI = ]6=8H(('1=hnJ(', this);
+      v3.run = ]6=8H(('1=hnJ(', this);
     };
 
     44{N.__name__ = ['44{N'];

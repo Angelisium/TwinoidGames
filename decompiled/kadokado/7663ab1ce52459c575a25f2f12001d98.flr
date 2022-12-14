@@ -1177,7 +1177,7 @@ for ($somevar in v2) {
       haxe.{-kxL = function (arg0) {
         var (K = this;
         this.*B = _global.setInterval(function () {
-          (K.;LI();
+          (K.run();
         }, arg0);
       };
 
@@ -1186,7 +1186,7 @@ for ($somevar in v2) {
       v1.__class__ = haxe.{-kxL;
       haxe.{-kxL.,Hwi) = function (-, arg1) {
         var ] = new haxe.{-kxL(arg1);
-        ].;LI = function () {
+        ].run = function () {
           ].stop();
           -();
         };
@@ -1206,7 +1206,7 @@ for ($somevar in v2) {
       };
 
       v1.*B = null;
-      v1.;LI = function () {};
+      v1.run = function () {};
 
       v1.stop = function () {
         if (this.*B == null) {

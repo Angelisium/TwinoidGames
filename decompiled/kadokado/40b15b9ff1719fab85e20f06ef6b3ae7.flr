@@ -2858,7 +2858,7 @@ movie '40b15b9ff1719fab85e20f06ef6b3ae7.swf' {
         this.)( = 5Xx_O.2QF=} + Math.random() * (*r.[{ - 2 * 5Xx_O.2QF=});
         this.(Erk5 = *r.=EQy6(;
         this.;d3 = 3;
-        this.;LI = 3;
+        this.run = 3;
         this.*8orO = 150;
       };
 
@@ -2871,7 +2871,7 @@ movie '40b15b9ff1719fab85e20f06ef6b3ae7.swf' {
         this.;zS4(((v3, 0.2, 0.2);
         this.*8orO -= {-kxL.-V;B;
         if (this.*8orO <= 0) {
-          if (this.;LI-- > 0) {
+          if (this.run-- > 0) {
             this.*8orO = 50 + Math.random() * 150;
             this.}CL = {'((': 5Xx_O.2QF=} + Math.random() * (*r.=OA - 2 * 5Xx_O.2QF=}), ')(': 5Xx_O.2QF=} + Math.random() * (*r.[{ - 2 * 5Xx_O.2QF=})};
           } else {
@@ -2879,7 +2879,7 @@ movie '40b15b9ff1719fab85e20f06ef6b3ae7.swf' {
             this.}CL = {'((': *r.=OA + 20, ')(': this.)(};
           }
         }
-        if (this.;LI == 0 && this.(( > *r.=OA + 20) {
+        if (this.run == 0 && this.(( > *r.=OA + 20) {
           this.9T54();
         }
         this.{c}4W();

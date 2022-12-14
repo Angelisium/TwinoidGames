@@ -359,7 +359,7 @@ for ($somevar in v2) {
     haxe.{-kxL = function (arg0) {
       var (K = this;
       this.*B = _global.setInterval(function () {
-        (K.;LI();
+        (K.run();
       }, arg0);
     };
 
@@ -369,7 +369,7 @@ for ($somevar in v2) {
     haxe.{-kxL.+TOS,( = function (-, 5U4B) {
       return function () {
         var ] = new haxe.{-kxL(5U4B);
-        ].;LI = function () {
+        ].run = function () {
           ].stop();
           -();
         };
@@ -389,7 +389,7 @@ for ($somevar in v2) {
     };
 
     v1.*B = null;
-    v1.;LI = function () {};
+    v1.run = function () {};
 
     v1.stop = function () {
       if (this.*B == null) {

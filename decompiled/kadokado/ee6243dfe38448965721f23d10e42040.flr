@@ -523,7 +523,7 @@ movie 'ee6243dfe38448965721f23d10e42040.swf' {
           this.9d = null;
         }
         if (this. IWA+ != null) {
-          this.;LI();
+          this.run();
         }
         this.+1DY9._x = this.((;
         this.+1DY9._y = this.)(;
@@ -605,7 +605,7 @@ movie 'ee6243dfe38448965721f23d10e42040.swf' {
         2u=W=.call(this);
       };
 
-      v1.;LI = function () {
+      v1.run = function () {
         var v2 = Math.sqrt(this.[b * this.[b + this.]b * this.]b);
         this. IWA+ = (this. IWA+ + v2 * 2 * {-kxL.-V;B) % 40;
         this.=S7A.gotoAndStop(String(1 + int(this. IWA+)));
@@ -1227,7 +1227,7 @@ movie 'ee6243dfe38448965721f23d10e42040.swf' {
       };
 
       v1.;gvo( = function (4AF) {
-        this.=S7A.gotoAndPlay(';LI');
+        this.=S7A.gotoAndPlay('run');
         =vRV0(.call(this, 4AF);
       };
 

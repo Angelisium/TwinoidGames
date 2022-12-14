@@ -70,7 +70,7 @@ for ($somevar in v2) {
         var v6 = v5[v4];
         ++v4;
         var v7 = 4rH6a.+M;(j(v6);
-        if (v3.;LI(arg0.substr(0, v7.length)) == v7) {
+        if (v3.run(arg0.substr(0, v7.length)) == v7) {
           return true;
         }
       }
@@ -1082,7 +1082,7 @@ for ($somevar in v2) {
     };
 
     v1.*V9 = null;
-    v1.;LI = function (arg0, arg1) {
+    v1.run = function (arg0, arg1) {
       if (arg1 == null) {
         arg1 = arg0.length;
       }
