@@ -1,0 +1,1022 @@
+movie 'box_present.swf' {
+// flash 8, total frames: 16, frame rate: 40 fps, 230x200 px, compressed
+
+  movieClip 2 mcHole {
+  }
+
+  movieClip 3 empty {
+  }
+
+  movieClip 5 partDirt {
+  }
+
+  movieClip 7 mcTache {
+  }
+
+  frame 1 {
+    b._xscale = 100 * getBytesLoaded() / getBytesTotal();
+    ifFrameLoaded (16) {
+      gotoAndPlay('init');
+    }
+    bar._xscale = (getBytesLoaded() / getBytesTotal()) * 100;
+  }
+
+  movieClip 10  {
+  }
+
+  frame 2 {
+    gotoAndPlay(_currentframe - 1);
+  }
+
+  movieClip 15  {
+  }
+
+  movieClip 16 base4 {
+  }
+
+  movieClip 20  {
+  }
+
+  movieClip 21  {
+  }
+
+  movieClip 23  {
+
+    frame 30 {
+      gotoAndPlay(1);
+    }
+  }
+
+  movieClip 25  {
+  }
+
+  movieClip 26  {
+  }
+
+  movieClip 30 mcMagmaxElement {
+  }
+
+  movieClip 32 partGoutte {
+  }
+
+  movieClip 33 mcRound {
+  }
+
+  movieClip 35 mcCadre {
+  }
+
+  movieClip 37 base5 {
+  }
+
+  movieClip 44  {
+  }
+
+  movieClip 60  {
+  }
+
+  movieClip 68 mcExpSquare {
+  }
+
+  movieClip 71  {
+  }
+
+  movieClip 72 mcTwinkle {
+
+    frame 11 {
+      removeMovieClip('');
+    }
+  }
+
+  movieClip 74 base6 {
+  }
+
+  movieClip 76  {
+  }
+
+  movieClip 77 mcMap {
+  }
+
+  movieClip 79 mcPod {
+  }
+
+  movieClip 81  {
+  }
+
+  movieClip 82 mcWeapon {
+  }
+
+  movieClip 84  {
+  }
+
+  movieClip 85 mcCosmo {
+  }
+
+  movieClip 87 mcCross {
+  }
+
+  movieClip 89 mcShot {
+  }
+
+  movieClip 96 mcSphereBlink {
+
+    frame 7 {
+      removeMovieClip('');
+    }
+  }
+
+  movieClip 98 mcBaseMask {
+  }
+
+  frame 14 {
+    function init() {
+      _root.onPress = leave;
+      snum = 0;
+      initStep(4);
+      attachMovie('mcCadre', 'mcCadre', 156);
+    }
+
+    function leave() {
+      getURL(_root.url, '_self');
+    }
+
+    function initStep(n, fadeType) {
+      step = n;
+      initFader(fadeType);
+      attachMovie('base' + step, 'base', 1);
+      base.depth = 0;
+      base.timer = 0;
+      base.pList = [];
+      switch (step) {
+        case 4:
+          initMagmax();
+          break;
+        case 5:
+          initExpanz();
+          break;
+        case 6:
+          initWorms();
+      }
+      if (fader != null) {
+        glow(fader.mask, 50, 5, 16777215);
+        base.setMask(fader.mask);
+      }
+    }
+
+    function main() {
+      ++base.timer;
+      switch (step) {
+        case 0:
+          updateTitle();
+          break;
+        case 1:
+          updateCafe();
+          break;
+        case 2:
+          updateBoisson();
+          break;
+        case 3:
+          updateTransition();
+          break;
+        case 4:
+          updateMagmax();
+          break;
+        case 5:
+          updateExpanz();
+          break;
+        case 6:
+          updateWorms();
+      }
+      if (shake != null) {
+        shake *= -0.6;
+        if (Math.abs(shake) < 1) {
+          shake = 0;
+        }
+        base._y = shake;
+        if (shake == 0) {
+          shake = null;
+        }
+      }
+      updatePhys();
+      updateFader();
+      updateScope();
+    }
+
+    function initMagmax() {
+      base.decor.depth = 0;
+      cs = MAGMAX_CS;
+      mx = 36;
+      my = 0;
+      elements = [];
+      anims = [];
+      animIndex = 0;
+      mcGround = getMc('empty', base.decor);
+      mcGround.depth = 0;
+      mcGround.blendMode = 'layer';
+      mcGround._alpha = 30;
+      i = 0;
+      while (i < MAGMAX_SG.length) {
+        var v2 = MAGMAX_SG[i];
+        var v1 = getPhys('mcMagmaxElement', base.decor);
+        v1.x = getX(v2.x);
+        v1.y = getY(v2.y);
+        v1.gotoAndStop(v2.type + 1);
+        v1.smc.gotoAndStop(v2.side + 1);
+        v1.bhl = [1];
+        v1.type = v2.type;
+        elements.push(v1);
+        ++i;
+      }
+    }
+
+    function updateMagmax() {
+      if (base.timer == 5) {
+        setSloganUp(3);
+      }
+      if (base.timer == 90) {
+        removeSlogans();
+      }
+      if (base.timer == 100) {
+        initStep(5, 0);
+      }
+      if (anims.length == 0) {
+        if (animIndex < MAGMAX_MSG.length) {
+          launchNextAnim();
+        }
+      }
+      updateAnims();
+    }
+
+    function launchNextAnim() {
+      var v1 = MAGMAX_MSG[animIndex];
+      var v3 = v1[1];
+      i = 0;
+      while (i < v3.length) {
+        var v5 = elements[v3[i]];
+        switch (v1[0]) {
+          case 0:
+            var v2 = {'type': 0, 'mc': v5, 'c': 0, 'sx': v5.x, 'sy': v5.y, 'ex': v5.x + DIR[v1[2]][0] * cs, 'ey': v5.y + DIR[v1[2]][1] * cs};
+            anims.push(v2);
+            v5.smc.gotoAndStop(v1[2] + 1);
+            break;
+          case 1:
+            mis = getMc('mcMagmaxElement', base.decor);
+            var v6 = DIR[v1[2]];
+            mis._x = v5.x + v6[0] * cs * 0.5;
+            mis._y = v5.y + v6[1] * cs * 0.5;
+            mis.gotoAndStop(4);
+            var v2 = {'type': 1, 'mc': mis, 'd': v6, 'trg': elements[v1[3]]};
+            anims.push(v2);
+        }
+        ++i;
+      }
+      sortElements();
+      ++animIndex;
+    }
+
+    function updateAnims() {
+      i = 0;
+      while (i < anims.length) {
+        var v1 = anims[i];
+        switch (v1.type) {
+          case 0:
+            v1.c = Math.min(v1.c + 0.15, 1);
+            v1.mc.x = v1.sx * (1 - v1.c) + v1.ex * v1.c;
+            v1.mc.y = v1.sy * (1 - v1.c) + v1.ey * v1.c;
+            if (v1.c == 1) {
+              anims.splice(i--, 1);
+            }
+            var v2 = getPhys('mcTache', mcGround);
+            setScale(v2, 20 + random(30));
+            v2.x = v1.mc.x + (Math.random() * 2 - 1) * 4;
+            v2.y = v1.mc.y + (Math.random() * 2 - 1) * 4;
+            v2.cs = 1.01;
+            v2.bhl = [2];
+            v2.timer = 10 + random(40);
+            v2.updatePos();
+            v2.fadeType = 0;
+            break;
+          case 1:
+            var v3 = 8;
+            v1.mc._x += v1.d[0] * v3;
+            v1.mc._y += v1.d[1] * v3;
+            var v5 = v1.mc._x - v1.trg._x;
+            var v4 = v1.mc._y - v1.trg._y;
+            if (Math.abs(v5) < 5 && Math.abs(v4) < 5) {
+              v1.mc.removeMovieClip();
+              explodeBlob(v1.trg);
+              anims.splice(i--, 1);
+            }
+        }
+        ++i;
+      }
+    }
+
+    function sortElements() {
+      var v2 = [];
+      var v1 = 0;
+      while (v1 < elements.length) {
+        v2.push(elements[v1]);
+        ++v1;
+      }
+      var v4 = function (a, b) {
+        if (a.y - a.type > b.y - b.type) {
+          return 1;
+        }
+        return -1;
+      };
+
+      v2.sort(v4);
+      v1 = 0;
+      while (v1 < v2.length) {
+        ++base.decor.depth;
+        var v3 = v2[v1];
+        v3.swapDepths(base.decor.depth);
+        ++v1;
+      }
+    }
+
+    function explodeBlob(blob) {
+      var v7 = 32;
+      var v10 = 6000;
+      var v8 = 4;
+      var v3 = 0;
+      while (v3 < v7) {
+        var v1 = getPhys('partGoutte');
+        var v4 = ((v3 + Math.random()) / v7) * 6.28;
+        var v6 = Math.cos(v4);
+        var v5 = Math.sin(v4);
+        var v2 = Math.random() * 2;
+        v1.x = blob.x + v6 * (6 + v8 * v2);
+        v1.y = blob.y + v5 * (6 + v8 * v2);
+        v1.z = 0;
+        v1.vx = v6 * v2;
+        v1.vy = v5 * v2;
+        v1.vz = -Math.random() * 5;
+        v1.wz = 0.1 + Math.random() * 0.1;
+        v1.timer = 10 + Math.random() * 30;
+        v1.bhl = [1];
+        v1.updatePos();
+        ++v3;
+      }
+      blob.removeMovieClip();
+    }
+
+    function initExpanz() {
+      cs = EXPANZ_CS;
+      mx = 0;
+      my = 0;
+      var v3 = (cs / 30) * 100;
+      grid = [];
+      x = 0;
+      while (x < 12) {
+        grid[x] = [];
+        y = 0;
+        while (y < 10) {
+          var v4 = getMc('mcExpSquare');
+          v4._yscale = v3;
+          v4._xscale = v4._yscale;
+          v4._x = getX(x);
+          v4._y = getY(y);
+          grid[x][y] = v4;
+          v4.stop();
+          v4.smc.stop();
+          v4.cid = random(5);
+          v4.smc.smc.gotoAndStop(v4.cid + 1);
+          setColor(v4.smc, EXPANZ_COLOR[v4.cid]);
+          ++y;
+        }
+        ++x;
+      }
+      blobs = [];
+      i = 0;
+      while (i < 2) {
+        bl = {'cid': random(5), 'bmp': new flash.display.BitmapData(mcw, mch, true, 0), 'mc': getMc('empty')};
+        blobs.push(bl);
+        bl.mc.attachBitmap(bl.bmp, 0);
+        var v1 = new flash.filters.DropShadowFilter();
+        v1.distance = 0;
+        v1.blurX = 8;
+        v1.blurY = 8;
+        v1.color = 16777215;
+        v1.strength = 2;
+        var v2 = v1.clone();
+        v2.inner = true;
+        v1.strength = 1.5;
+        v1.blurY = 12;
+        v1.blurX = 12;
+        v2.knockout = true;
+        bl.mc.filters = [v2, v1];
+        ++i;
+      }
+      grid[4][4].id = 0;
+      grid[3][4].id = 0;
+      grid[3][5].id = 0;
+      grid[7][4].id = 1;
+      grid[7][3].id = 1;
+      grid[6][4].id = 1;
+      grid[6][5].id = 1;
+      displayBlob(0);
+      displayBlob(1);
+      current = 0;
+      transfo = 0;
+    }
+
+    function updateExpanz() {
+      if (base.timer == 5 && transfo == 0) {
+        setSloganUp(4);
+      }
+      if (transfo == 10) {
+        removeSlogans();
+      }
+      if (base.timer == 6) {
+        displayBlob(current);
+        current = (current + 1) % 2;
+      }
+      if (base.timer == 8) {
+        var v1 = 0;
+        for (;;) {
+          if (!(!expandBlob(current) && v1++ < 5)) break;
+        }
+        willDisplay = 6;
+        base.timer = 0;
+        ++transfo;
+      }
+      if (transfo > 11) {
+        initStep(6, 0);
+      }
+    }
+
+    function expandBlob(id) {
+      var v9 = blobs[id];
+      var v7 = [];
+      i = 0;
+      while (i < 5) {
+        v7[i] = i;
+        ++i;
+      }
+      i = 0;
+      while (i < 2) {
+        v7[blobs[i].cid] = null;
+        ++i;
+      }
+      i = 0;
+      while (i < v7.length) {
+        if (v7[i] == null) {
+          v7.splice(i--, 1);
+        }
+        ++i;
+      }
+      v9.cid = v7[random(v7.length)];
+      displayBlob(id);
+      var v8 = [];
+      x = 0;
+      while (x < 12) {
+        y = 0;
+        while (y < 10) {
+          var v5 = grid[x][y];
+          if (v5.id == id) {
+            n = 0;
+            while (n < DIR.length) {
+              var v1 = DIR[n];
+              var v4 = x + v1[0];
+              var v2 = y + v1[1];
+              var v3 = grid[v4][v2];
+              if (v3.cid == v9.cid && v3.id == null) {
+                v8.push([v4, v2]);
+              }
+              ++n;
+            }
+          }
+          ++y;
+        }
+        ++x;
+      }
+      if (v8.length == 0) {
+        return false;
+      }
+      i = 0;
+      while (i < v8.length) {
+        var v6 = v8[i];
+        grid[v6[0]][v6[1]].id = id;
+        v5 = getMc('mcTwinkle');
+        v5._x = getX(v6[0]);
+        v5._y = getY(v6[1]);
+        v5._xscale = (20 / size) * 100;
+        v5._xscale = v5._xscale;
+        ++i;
+      }
+      return true;
+    }
+
+    function displayBlob(id) {
+      var v9 = blobs[id];
+      x = 0;
+      while (x < 12) {
+        y = 0;
+        while (y < 10) {
+          var v1 = grid[x][y];
+          if (v1.id == id) {
+            v1.smc.smc._visible = false;
+            var v3 = 1;
+            n = 0;
+            while (n < DIR.length) {
+              var v2 = DIR[n];
+              var v5 = grid[x + v2[0]][y + v2[1]];
+              var v6 = (n + 1) % 4;
+              if (v5.id == id) {
+                v3 += Math.pow(2, v6);
+              }
+              ++n;
+            }
+            v1.gotoAndStop(v3);
+            v1.smc.gotoAndStop(v3);
+            setColor(v1.smc, EXPANZ_COLOR[v9.cid], -200);
+            var v4 = new flash.geom.Matrix();
+            var v7 = v1._xscale * 0.01;
+            v4.scale(v7, v7);
+            v4.translate(v1._x, v1._y);
+            v9.bmp.draw(v1, v4);
+          }
+          ++y;
+        }
+        ++x;
+      }
+    }
+
+    function initWorms() {
+      initMap();
+      var v3 = [[124, 62, 1, 0], [502, 178, -1, -30], [587, 130, -1, 0], [658, 113, -1, 0]];
+      worms = [];
+      i = 0;
+      while (i < v3.length) {
+        var v2 = v3[i];
+        var v1 = getPhys('mcCosmo', mcMap);
+        v1.x = v2[0];
+        v1.y = v2[1];
+        z;
+        v1._xscale = 100 * v2[2];
+        v1._rotation = v2[3];
+        worms.push(v1);
+        if (i == 0) {
+          focus = v1;
+        }
+        ++i;
+      }
+      glow(mcMap, 2, 4, 0);
+      mcCross = getMc('mcCross', mcMap);
+      angle = 0;
+      angleTrg = -0.6;
+      sstep = 0;
+    }
+
+    function initMap() {
+      mcBg = getMc('empty');
+      mcMap = getMc('empty');
+      mcMap2 = getMc('empty');
+      mcBg.depth = 10;
+      mcMap.depth = 10;
+      mcMap2.depth = 10;
+      mcMap.bmp = new flash.display.BitmapData(1000, 600, true, 0);
+      mcMap.attachBitmap(mcMap.bmp, 5);
+      var v1 = getMc('mcMap');
+      mcMap.bmp.draw(v1, new flash.geom.Matrix());
+      v1.removeMovieClip();
+      mcMapMask = getMc('mcBaseMask');
+      mcMap.setMask(mcMapMask);
+      i = 0;
+      while (i < 50) {
+        ++i;
+      }
+    }
+
+    function updateWorms() {
+      if (base.timer == 5) {
+        setSloganUp(5);
+      }
+      if (base.timer == 105) {
+        removeSlogans();
+      }
+      if (base.timer == 115) {
+        var v4 = 0;
+        if (!scope._visible) {
+          v4 = 4;
+        }
+        initStep(v4, 0);
+      }
+      switch (sstep) {
+        case 0:
+          var v7 = hMod(angleTrg - angle, 3.14);
+          var v5 = 1;
+          angle += mm(-v5, v7 * 0.1, v5);
+          var v3 = angle / 0.0174;
+          focus.head._rotation = v3;
+          focus.weapon._rotation += (v3 - focus.weapon._rotation) * 0.15;
+          if (base.timer == 10) {
+            angleTrg += 0.3;
+          }
+          if (base.timer == 35) {
+            angleTrg -= 0.2;
+          }
+          if (base.timer == 50) {
+            fire(10);
+          }
+          var v6 = 50;
+          mcCross._x = focus.x + Math.cos(angle) * v6;
+          mcCross._y = focus.y + Math.sin(angle) * v6;
+          break;
+        case 1:
+          var v2 = 0.1;
+          var v1 = getPhys('mcSmoke', mcMap2);
+          v1.x = mis.x - mis.vx;
+          v1.y = mis.y - mis.vy;
+          v1.vx = mis.vx * v2;
+          v1.vy = mis.vy * v2;
+          v1.vr = (Math.random() * 2 - 1) * 20;
+          v1.frictRot = 0.9;
+          v1.fadeType = 0;
+          v1._yscale = 20 + Math.random() * 20;
+          v1._xscale = v1._yscale;
+          v1.scale = v1._yscale;
+          v1._alpha = 60;
+          v1.alpha = 60;
+          v1.timer = 10 + Math.random() * 10;
+          v1.blendMode = 'add';
+          mis._rotation = Math.atan2(mis.vy, mis.vx) / 0.0174;
+          if (mcMap.bmp.getPixel32(int(mis.x), int(mis.y)) != 0) {
+            boum();
+          }
+      }
+      updateMap();
+    }
+
+    function updateMap() {
+      tx = mcw * 0.5 - focus.x;
+      ty = mcw * 0.5 - (focus.y + 10);
+      mcMap._x += (tx - mcMap._x) * 0.5;
+      mcMap._y += (ty - mcMap._y) * 0.5;
+      mcMap2._x = mcMap._x;
+      mcMap2._y = mcMap._y;
+    }
+
+    function fire(power) {
+      mcCross.removeMovieClip();
+      sstep = 1;
+      mis = getPhys('mcShot', mcMap);
+      mis.x = focus.x + 6;
+      mis.y = focus.y - 6;
+      mis._rotation = angle / 0.0174;
+      mis.vx = Math.cos(angle) * power;
+      mis.vy = Math.sin(angle) * power;
+      mis.weight = 0.25;
+      mis.updatePos();
+      focus = mis;
+    }
+
+    function boum() {
+      var v10 = getMc('mcRound');
+      var v11 = new flash.geom.Matrix();
+      v11.translate(mis.x, mis.y);
+      mcMap.bmp.draw(v10, v11, null, 'erase');
+      v10.removeMovieClip();
+      i = 0;
+      while (i < worms.length) {
+        v10 = worms[i];
+        var v4 = v10.x - mis.x;
+        var v3 = v10.y - mis.y;
+        var v8 = Math.sqrt(v4 * v4 + v3 * v3);
+        if (v8 < 60) {
+          speed = 10;
+          var v5 = Math.atan2(v3, v4);
+          v10.vx = Math.cos(v5) * speed;
+          v10.vy = Math.sin(v5) * speed;
+          v10.vr = 30;
+          v10.frictRot = 1;
+        }
+        ++i;
+      }
+      v10 = getMc('mcSphereBlink');
+      v10._x = mis.x + mcMap._x;
+      v10._y = mis.y + mcMap._y;
+      glow(v10, 10, 2, 16777215);
+      v10._yscale = 85;
+      v10._xscale = 85;
+      var v9 = 10;
+      var i = 0;
+      while (i < 40) {
+        v5 = Math.random() * 6.28;
+        var v7 = Math.cos(v5);
+        var v6 = Math.sin(v5);
+        var v2 = Math.random() * 4;
+        var v1 = getPhys('partDirt', mcMap);
+        v1.x = mis.x + v7 * v2 * v9;
+        v1.y = mis.y + v6 * v2 * v9;
+        v1.vx = v7 * v2;
+        v1.vy = v6 * v2;
+        v1.weight = 0.1 + Math.random() * 0.1;
+        v1.timer = 10 + Math.random() * 30;
+        v1.frict = 0.98;
+        setScale(v1, 10 + Math.random() * 40);
+        ++i;
+      }
+      mis.removeMovieClip();
+    }
+
+    function getX(x) {
+      return mx + (x + 0.5) * cs;
+    }
+
+    function getY(y) {
+      return my + (y + 0.5) * cs;
+    }
+
+    function initFader(fadeType) {
+      if (fadeType == null) {
+        return undefined;
+      }
+      fader = createEmptyMovieClip('fader', 0);
+      fader.type = fadeType;
+      fader.bmp = new flash.display.BitmapData(mcw, mch, false, 0);
+      fader.bmp.draw(base, new flash.geom.Matrix(), null, null, null, null);
+      fader.attachBitmap(fader.bmp, 0);
+      fader.mask = createEmptyMovieClip('mcMask', 2);
+      fader.mask.depth = 0;
+      fader.rounds = [];
+      i = 0;
+      while (i < 10) {
+        var v1 = getMc('mcRound', fader.mask);
+        var v2 = 1 + Math.random() * 2;
+        v1._x = random(mcw);
+        v1._y = random(mch);
+        v1.cs = 1.2;
+        if (i == 0) {
+          v1._x = mcw * 0.5;
+          v1._y = mch * 0.5;
+        }
+        v1._yscale = v2;
+        v1._xscale = v1._yscale;
+        fader.rounds.push(v1);
+        ++i;
+      }
+    }
+
+    function updateFader() {
+      if (fader == null) {
+        return undefined;
+      }
+      i = 0;
+      while (i < fader.rounds.length) {
+        var v1 = fader.rounds[i];
+        v1._xscale *= v1.cs;
+        v1._yscale = v1._xscale;
+        if (i == 0 && v1._xscale > 300) {
+          fader.mask.removeMovieClip();
+          fader.removeMovieClip();
+          fader = null;
+        }
+        ++i;
+      }
+    }
+
+    function initPlasma() {
+      base.bmp = lastBase;
+      base.createEmptyMovieClip('mcBmp', base.depth++);
+      base.mcBmp.attachBitmap(base.bmp, 0);
+      base.mcBmp._yscale = 100 / PQ;
+      base.mcBmp._xscale = base.mcBmp._yscale;
+    }
+
+    function updatePlasma(da, sy) {
+      if (da == null) {
+        da = -2;
+      }
+      inc = -1;
+      c = 1;
+      var v2 = new flash.geom.ColorTransform(c, c, c, 1, 1, inc * 2, inc * 3, da);
+      base.bmp.colorTransform(base.bmp.rectangle, v2);
+      var v1 = new flash.filters.BlurFilter();
+      v1.blurX = 8 * PQ;
+      v1.blurY = 8 * PQ;
+      base.bmp.applyFilter(base.bmp, base.bmp.rectangle, new flash.geom.Point(), v1);
+      if (sy != null) {
+        base.bmp.scroll(0, sy * PQ);
+      }
+    }
+
+    function movePhys(mc) {
+      i = 0;
+      while (i < mc.bhl.length) {
+        bh = mc.bhl[i];
+        switch (bh) {
+          case 0:
+            if (mc._alpha < mc.alpha) {
+              mc._alpha += 5;
+            }
+            mc.decal = (mc.decal + mc.vdec) % 628;
+            mc.vx = Math.cos(mc.decal * 0.01) * mc.ecart;
+            mc._xscale += 1;
+            mc._yscale = mc._xscale;
+            break;
+          case 1:
+            mc.vz += mc.wz;
+            mc.vz *= 0.98;
+            mc.z += mc.vz;
+            if (mc.z > 0) {
+              mc.vz *= -0.7;
+              mc.z = 0;
+            }
+            break;
+          case 2:
+            mc.scale *= mc.cs;
+            setScale(mc, mc.scale);
+        }
+        ++i;
+      }
+      if (mc.weight != null) {
+        mc.vy += mc.weight;
+      }
+      if (mc.vr != null) {
+        mc.vr *= mc.frictRot;
+        mc._rotation += mc.vr;
+      }
+      mc.vx *= mc.frict;
+      mc.vy *= mc.frict;
+      mc.x += mc.vx;
+      mc.y += mc.vy;
+      mc._x = mc.x;
+      mc._y = mc.y;
+      if (mc.z != null) {
+        mc._y += mc.z;
+      }
+      if (mc.timer != null) {
+        --mc.timer;
+        if (mc.timer < 10 || mc.timer > mc.maxTimer - 10) {
+          var v2 = mc.timer / 10;
+          if (mc.timer > 10) {
+            v2 = (mc.maxTimer - mc.timer) / 10;
+          }
+          switch (mc.fadeType) {
+            case 0:
+              mc._alpha = v2 * mc.alpha;
+              break;
+            default:
+              mc._xscale = mc.scale * v2;
+              mc._yscale = mc.scale * v2;
+          }
+          if (mc.timer < 0) {
+            removePhys(mc);
+          }
+        }
+      }
+    }
+
+    function updatePhys() {
+      var v2 = duplicate(base.pList);
+      var v1 = 0;
+      while (v1 < v2.length) {
+        movePhys(v2[v1]);
+        ++v1;
+      }
+    }
+
+    function colToObj32(col) {
+      return {'a': col >>> 24, 'r': col >> 16 & 255, 'g': col >> 8 & 255, 'b': col & 255};
+    }
+
+    function objToCol(o) {
+      return o.r << 16 | o.g << 8 | o.b;
+    }
+
+    function getMc(link, root) {
+      if (root == null) {
+        root = base;
+      }
+      var v1 = root.depth++;
+      var v3 = root.attachMovie(link, 'mc' + v1, v1);
+      return v3;
+    }
+
+    function getDepthMc(link) {
+      var v3 = random(depthList.length);
+      var v1 = depthList[v3];
+      depthList.splice(v3, 1);
+      var v2 = base.attachMovie(link, 'mc' + v1, v1);
+      v2.depth = v1;
+      initPhys(v2);
+      return v2;
+    }
+
+    function getPhys(link, root) {
+      var v1 = getMc(link, root);
+      initPhys(v1);
+      return v1;
+    }
+
+    function initPhys(mc) {
+      mc.step = 0;
+      mc.vx = 0;
+      mc.vy = 0;
+      mc.x = 0;
+      mc.y = 0;
+      mc.scale = 100;
+      mc.colFrict = 1;
+      mc.frict = 1;
+      mc.alpha = 100;
+      mc._y = -100;
+      base.pList.push(mc);
+    }
+
+    function setScale(mc, sc) {
+      mc.scale = sc;
+      mc._yscale = mc.scale;
+      mc._xscale = mc.scale;
+    }
+
+    function removePhys(mc) {
+      removeFromList(mc, base.pList);
+      mc.removeMovieClip();
+    }
+
+    function removeFromList(mc, list) {
+      var v1 = 0;
+      while (v1 < list.length) {
+        if (list[v1] == mc) {
+          list.splice(v1, 1);
+          return undefined;
+        }
+        ++v1;
+      }
+    }
+
+    function duplicate(list) {
+      var v3 = new Array();
+      var v1 = 0;
+      while (v1 < list.length) {
+        v3.push(list[v1]);
+        ++v1;
+      }
+      return v3;
+    }
+
+    function mm(a, b, c) {
+      return Math.min(Math.max(a, b), c);
+    }
+
+    function hMod(n, mod) {
+      if (n <= -mod) {
+        n += 2 * mod;
+      }
+      if (n > mod) {
+        n -= 2 * mod;
+      }
+      return n;
+    }
+
+    function setPercentColor(mc, prc, col) {
+      var v2 = {'r': col >> 16, 'g': col >> 8 & 255, 'b': col & 255};
+      var v4 = new Color(mc);
+      var v1 = prc / 100;
+      var v5 = {'ra': int(100 - prc), 'ga': int(100 - prc), 'ba': int(100 - prc), 'aa': 100, 'rb': int(v1 * v2.r), 'gb': int(v1 * v2.g), 'bb': int(v1 * v2.b), 'ab': 0};
+      v4.setTransform(v5);
+    }
+
+    function setColor(mc, col, inc) {
+      if (inc == null) {
+        inc = -255;
+      }
+      var v1 = {'r': col >> 16, 'g': col >> 8 & 255, 'b': col & 255};
+      var v3 = new Color(mc);
+      var v4 = {'ra': 100, 'ga': 100, 'ba': 100, 'aa': 100, 'rb': v1.r + inc, 'gb': v1.g + inc, 'bb': v1.b + inc, 'ab': 0};
+      v3.setTransform(v4);
+    }
+
+    function glow(mc, b, s, c) {
+      var v1 = new flash.filters.GlowFilter();
+      v1.blurX = b;
+      v1.blurY = b;
+      v1.strength = s;
+      v1.color = c;
+      var v2 = mc.filters;
+      v2.push(v1);
+      mc.filters = v2;
+    }
+
+    mcw = 230;
+    mch = 200;
+    PQ = 0.5;
+    DIR = [[1, 0], [0, 1], [-1, 0], [0, -1]];
+    MAGMAX_CS = 32;
+    EXPANZ_CS = 20;
+    EXPANZ_COLOR = [16746632, 8978312, 8947967, 16777096, 8978431];
+    MAGMAX_SG = [{'type': 0, 'x': 0, 'y': 1, 'side': 1}, {'type': 0, 'x': 1, 'y': 0, 'side': 1}, {'type': 0, 'x': 2, 'y': 1, 'side': 0}, {'type': 1, 'x': 3, 'y': 5, 'side': 3}, {'type': 1, 'x': 4, 'y': 5, 'side': 3}, {'type': 1, 'x': 5, 'y': 5, 'side': 3}, {'type': 2, 'x': 5, 'y': 3, 'side': 3}, {'type': 2, 'x': 1, 'y': 2, 'side': 3}, {'type': 2, 'x': 3, 'y': 3, 'side': 3}, {'type': 2, 'x': 2, 'y': 6, 'side': 3}];
+    MAGMAX_MSG = [[0, [2], 1], [0, [0, 1, 2], 0], [0, [3, 4, 5], 2], [0, [3], 3], [1, [3], 3, 1], [0, [0, 2], 0], [0, [0, 2], 1], [1, [2], 1, 5], [1, [0], 1, 3], [0, [4], 2], [0, [4], 3], [1, [4], 3, 0], [0, [4], 2], [0, [4], 2], [0, [4], 3]];
+    init();
+  }
+
+  frame 15 {
+    main();
+  }
+
+  frame 16 {
+    gotoAndPlay(_currentframe - 1);
+  }
+}
