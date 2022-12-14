@@ -1,0 +1,43 @@
+movie 'loader.swf' {
+// flash 7, total frames: 1, frame rate: 40 fps, 300x300 px, compressed
+
+  frame 1 {
+    Stage.align = 'LT';
+    doLoad = function (count) {
+      _root.createEmptyMovieClip('mc', 0);
+      if (count == 3) {
+        return undefined;
+      }
+      var l = new MovieClipLoader();
+      var tid;
+      l.onLoadError = function () {
+        clearInterval(tid);
+        doLoad(count + 1);
+      };
+
+      var lastT = getTimer();
+      var lastP = 0;
+      checkProgress = function () {
+        if (getTimer() - lastT > 10000) {
+          l.onLoadError();
+        }
+      };
+
+      tid = setInterval('checkProgress', 1000);
+      l.onLoadComplete = function () {
+        clearInterval(tid);
+      };
+
+      l.onLoadProgress = function (a, b, c) {
+        if (c != lastP) {
+          lastP = c;
+          lastT = getTimer();
+        }
+      };
+
+      l.loadClip(_root.swf_url + (count ? ';_r=' + count : ''), _root.mc);
+    };
+
+    doLoad(0);
+  }
+}

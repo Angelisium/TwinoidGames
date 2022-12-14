@@ -1,0 +1,342 @@
+movie 'banner.swf' {
+// flash 7, total frames: 1, frame rate: 40 fps, 760x100 px, compressed
+
+  movieClip 27  {
+
+    frame 13 {
+      gotoAndPlay(1);
+    }
+
+    frame 29 {
+      gotoAndPlay('loop');
+    }
+  }
+
+  movieClip 34  {
+  }
+
+  movieClip 42 cloud1 {
+
+    frame 1 {
+      compt = random(1500) + 200;
+    }
+
+    frame 2 {
+      --compt;
+      if (compt <= 0) {
+        gotoAndPlay(_currentframe + 2);
+      }
+    }
+
+    frame 3 {
+      gotoAndPlay(_currentframe - 1);
+    }
+
+    frame 62 {
+      c.gotoAndPlay('up');
+    }
+
+    frame 92 {
+      c.gotoAndPlay('loop');
+    }
+  }
+
+  movieClip 45 collines {
+  }
+
+  movieClip 48  {
+  }
+
+  movieClip 50  {
+  }
+
+  movieClip 52  {
+  }
+
+  movieClip 81  {
+  }
+
+  movieClip 84  {
+  }
+
+  movieClip 96  {
+  }
+
+  movieClip 108  {
+  }
+
+  movieClip 109  {
+
+    frame 1 {
+      stop();
+    }
+  }
+
+  movieClip 110  {
+
+    frame 1 {
+      compt = random(2000) + 500;
+    }
+
+    frame 2 {
+      --compt;
+      if (compt <= 0) {
+        this._rotation += vit;
+        vit = (random(3) + 1) / 3;
+      }
+      if (this._rotation >= 111) {
+        d.gotoAndStop(2);
+        _parent.shake = true;
+      }
+      if (this._rotation >= 166) {
+        d.gotoAndStop(1);
+        this._rotation = 0;
+        compt = random(2000) + 500;
+      }
+    }
+
+    frame 3 {
+      gotoAndPlay(_currentframe - 1);
+    }
+  }
+
+  movieClip 155 arbres {
+
+    frame 1 {
+      shake = false;
+    }
+
+    frame 2 {
+      if (shake) {
+        gotoAndPlay(_currentframe + 2);
+      }
+    }
+
+    frame 3 {
+      gotoAndPlay(_currentframe - 1);
+    }
+  }
+
+  movieClip 157  {
+  }
+
+  movieClip 159  {
+  }
+
+  movieClip 161  {
+  }
+
+  movieClip 163  {
+  }
+
+  movieClip 164  {
+  }
+
+  movieClip 165  {
+  }
+
+  movieClip 172  {
+  }
+
+  movieClip 191  {
+  }
+
+  movieClip 198  {
+  }
+
+  movieClip 211  {
+  }
+
+  movieClip 215  {
+  }
+
+  movieClip 217  {
+  }
+
+  movieClip 221  {
+  }
+
+  movieClip 229  {
+  }
+
+  movieClip 241 piknik {
+
+    frame 2 {
+      compt = random(6000);
+      if (compt == 1) {
+        gotoAndPlay(_currentframe + 2);
+      }
+    }
+
+    frame 3 {
+      gotoAndPlay(_currentframe - 1);
+    }
+  }
+
+  movieClip 244 fond {
+  }
+
+  movieClip 247  {
+  }
+
+  movieClip 250  {
+  }
+
+  movieClip 252  {
+  }
+
+  movieClip 253  {
+
+    frame 1 {
+      function init() {
+        vit = 1;
+        amp = 60;
+        fly = false;
+        compt = random(1500) + 200;
+      }
+
+      function main() {
+        fq = Math.sin(c._x * 0.1) * 7;
+        --compt;
+        if (compt <= 0) {
+          fly = true;
+        }
+        if (fly) {
+          c._x += vit;
+          c._y = fq + 70;
+          if (c._x - c._width / 2 >= 760) {
+            c._x = -(c._width / 2);
+            compt = random(1000) + 500;
+            fly = false;
+          }
+        }
+      }
+
+    }
+
+    frame 2 {
+      init();
+    }
+
+    frame 3 {
+      main();
+    }
+
+    frame 4 {
+      gotoAndPlay(_currentframe - 1);
+    }
+  }
+
+  movieClip 255  {
+  }
+
+  movieClip 257  {
+  }
+
+  movieClip 258  {
+  }
+
+  movieClip 259  {
+  }
+
+  movieClip 263  {
+  }
+
+  movieClip 265  {
+  }
+
+  movieClip 266  {
+  }
+
+  movieClip 267  {
+  }
+
+  movieClip 280  {
+
+    frame 1 {
+      stop();
+    }
+  }
+
+  movieClip 288  {
+  }
+
+  movieClip 301  {
+  }
+
+  movieClip 303  {
+
+    frame 1 {
+      stop();
+    }
+
+    frame 6 {
+      play();
+    }
+
+    frame 32 {
+      stop();
+    }
+  }
+
+  movieClip 304  {
+
+    frame 1 {
+      stop();
+    }
+  }
+
+  button 306 {
+
+    on (press) {
+      if (o.egg._currentframe <= 6) {
+        o.gotoAndPlay(2);
+        o.egg.part.play();
+        o.egg.nextFrame();
+      }
+    }
+  }
+
+  movieClip 307  {
+
+    frame 1 {
+      compt = random(500);
+    }
+
+    frame 2 {
+      --compt;
+      if (compt <= 0) {
+        if (o.egg._currentframe <= 6) {
+          o.gotoAndPlay(2);
+        }
+        compt = random(500);
+      }
+    }
+
+    frame 3 {
+      gotoAndPlay(_currentframe - 1);
+    }
+  }
+
+  movieClip 310  {
+
+    frame 1 {
+    }
+
+    frame 2 {
+    }
+
+    frame 3 {
+    }
+
+    frame 4 {
+    }
+  }
+
+  button 312 {
+
+    on (release) {
+      getURL('/', '_self');
+    }
+  }
+}

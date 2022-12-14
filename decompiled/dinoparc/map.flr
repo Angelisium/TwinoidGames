@@ -1,0 +1,255 @@
+movie 'map.swf' {
+// flash 7, total frames: 1, frame rate: 30 fps, 400x250 px, compressed
+
+  frame 1 {
+    function init() {
+      if (_root.lang == null) {
+        DEFAULT = 'Error: null lang';
+      }
+      if (_root.lang == 'fr') {
+        LOADING = 'Chargement...';
+        CANCEL = 'annuler le déplacement';
+        DEFAULT = '';
+        DEFAULT_CHOOSE = 'Choisissez votre destination...';
+        PLACES = ['Dinoville', 'Caverne d\'Irma', 'Clairière', 'Dinoplage', 'Barrage Routier', 'Falaises de l\'Ermite', 'Mont Dino', 'Porte de Granit', 'Chemin des Gredins', 'Forêt Millénaire', 'Temple Bouddhiste', 'Port de la Prune', 'L\'Ile de la Pitié', 'Ruines Mayinca', 'Crédit Arboricole', 'Bazar de Ter\'Magik', 'Marais collant', 'Jungle des Ouistitis', 'Bordeciel', 'Source chantante', 'Caverne de l\'anomalie', 'Hutte du vieux sage', 'Cratère du grand Tout-chaud'];
+      }
+      if (_root.lang == 'sp') {
+        LOADING = 'Cargando...';
+        CANCEL = 'anular el desplazamiento';
+        DEFAULT = '';
+        DEFAULT_CHOOSE = 'Elige un destino...';
+        PLACES = ['Dinovilla', 'Caverna de Lola', 'Claro del Bosque', 'Dinoplaya', 'Barrera de Caminos', 'Acantilados de la Ermita', 'Monte Dino', 'Puerta de Granito', 'Camino de los Bribones', 'Bosque Milenario', 'Templo Budista', 'Puerto de Santa Moría', 'Isla de la Piedad', 'Ruinas Mayinca', 'Instituto de Crédito Olímpico', 'Mercado de la Isla de Jazz', 'Pantano Pegajoso', 'Jungla de los Wistitis', 'Burdecielo', 'Fuente Cantante', 'Caverna de la Anomalí', 'Casucha del viejo sabio', 'Cráter del Gran Señor-Todo-Quema'];
+      }
+      if (_root.lang == 'en') {
+        LOADING = 'Loading...';
+        CANCEL = 'cancel your trip';
+        DEFAULT = '';
+        DEFAULT_CHOOSE = 'Choose your destination...';
+        PLACES = ['Dinotown', 'Sparky\'s Cave', 'Clearing in the Wood', 'Dinobeach', 'Check Point', 'Hermitage Cliffs', 'Mount Dinoz', 'Granite Door', 'Bandits Road', 'Ancient Wood', 'Buddhist Temple', 'Port of Saint Berry', 'Pity Island', 'Mayinca Ruins', 'Institute of Olimpic Credit', 'Jazz island Market', 'Sticky swamp', 'Wistitis Jungle', 'Bordesky', 'Singing Fountain', 'Anomaly Cavern', 'Wise Old Man\'s shack', 'Crater of the Great Lord Burn-All'];
+      }
+      POP_OFFSET = 10;
+      var i;
+      var visits = int(_root.v);
+      var cur = int(_root.p);
+      var _nexts = _root.n.split(':');
+      var nexts = [];
+      if (_nexts.length == 1 && int(_nexts[0]) == 0 && _root.n != '0') {
+        _nexts = null;
+        bouncer._visible = false;
+        path._visible = false;
+      }
+      i = 0;
+      while (i < _nexts.length) {
+        nexts[int(_nexts[i])] = true;
+        ++i;
+      }
+      _root.dbg = '';
+      if (_nexts != null) {
+        DEFAULT = DEFAULT_CHOOSE;
+      }
+      placeName.text = DEFAULT;
+      placeName._alpha = 80;
+      zones._yscale = 40;
+      zones._xscale = 40;
+      filter._visible = false;
+      var fl_disable = false;
+      if (_root.moved != 'true' && _nexts == null) {
+        bg.onRelease = function () {
+          move(_root.goto + 'go', '_self');
+        };
+
+      }
+      i = 0;
+      while (i <= 22) {
+        var mc = eval('p' + i);
+        mc.n = i;
+        if (i == cur) {
+          mc.gotoAndStop(3);
+          cursor._x = mc._x;
+          cursor._y = mc._y;
+          if (_nexts != null) {
+            cursor._visible = false;
+            bouncer._x = mc._x;
+            bouncer._y = mc._y;
+          }
+          if (_root.moved != 'true') {
+            mc.onPress = function () {
+              if (fl_disable) {
+                return undefined;
+              }
+              if (_nexts == null) {
+                move(_root.goto + 'go', '_self');
+              } else {
+                move(_root.goto + 'back', '_self');
+              }
+            };
+
+          } else {
+            mc.useHandCursor = false;
+          }
+        } else {
+          if (nexts[i]) {
+            mc.gotoAndStop(4);
+            mc.onPress = function () {
+              if (fl_disable) {
+                return undefined;
+              }
+              move(_root.goto + this.n, '_self');
+            };
+
+          } else {
+            if (_nexts == null) {
+              mc.onRelease = function () {
+                move(_root.goto + 'go', '_self');
+              };
+
+              mc.gotoAndStop(1);
+            } else {
+              mc.gotoAndStop(2);
+            }
+          }
+        }
+        mc.onRollOver = function () {
+          if (fl_disable) {
+            return undefined;
+          }
+          zones._visible = true;
+          zones._x = this._x + POP_OFFSET;
+          zones._y = this._y + POP_OFFSET;
+          zones.gotoAndPlay(1);
+          if (visits & 1 << this.n) {
+            if (_nexts != null && cur == this.n) {
+              placeName.text = '- ' + CANCEL + ' -';
+            } else {
+              placeName.text = PLACES[this.n];
+            }
+            zones.sub.gotoAndStop(this.n + 1);
+            zones.sub.sp._visible = _root.lang == 'SP';
+          } else {
+            placeName.text = PLACES[this.n];
+            zones.sub.gotoAndStop('unk');
+          }
+          placeName._alpha = 100;
+          if (zones._y >= 250 - zones._height - 15) {
+            zones._y = this._y - POP_OFFSET - zones._height;
+          }
+          if (zones._x >= 400 - zones._width) {
+            zones._x = this._x - POP_OFFSET - zones._width;
+          }
+          if (this.n != cur && !nexts[this.n]) {
+            this.gotoAndStop(2);
+          }
+        };
+
+        mc.onRollOut = function () {
+          placeName.text = DEFAULT;
+          placeName._alpha = 80;
+          zones.gotoAndPlay('hide');
+          if (this.n != cur && !nexts[this.n] && _nexts == null) {
+            this.gotoAndStop(1);
+          }
+        };
+
+        ++i;
+      }
+      if (cur <= 14 || cur >= 22) {
+        path.gotoAndStop(1);
+        bg.gotoAndStop(1);
+        var i = 15;
+        while (i < 22) {
+          (eval('p' + i))._visible = false;
+          ++i;
+        }
+        if (cur != 22) {
+          p22._visible = false;
+        }
+      } else {
+        path.gotoAndStop(2);
+        bg.gotoAndStop(2);
+        var i = 0;
+        while (i < 15) {
+          (eval('p' + i))._visible = false;
+          ++i;
+        }
+        p22._visible = false;
+      }
+    }
+
+    function DEBUG(txt) {
+      _root.dbg += '~ ' + txt + '\n';
+    }
+
+    function move(url) {
+      var i = 0;
+      while (i <= 14) {
+        var mc = eval('p' + i);
+        mc.gotoAndStop(1);
+        ++i;
+      }
+      fl_disable = true;
+      zones._visible = false;
+      filter._visible = true;
+      filter.loadingField.text = LOADING;
+      filter.onRelease = function () {};
+
+      filter.useHandCursor = true;
+      bouncer._visible = false;
+      cursor._visible = false;
+      getURL(url, '');
+    }
+
+    init();
+  }
+
+  movieClip 5  {
+  }
+
+  movieClip 8  {
+  }
+
+  movieClip 17  {
+  }
+
+  movieClip 18  {
+  }
+
+  movieClip 22  {
+  }
+
+  movieClip 23  {
+
+    frame 25 {
+      gotoAndPlay(1);
+    }
+  }
+
+  movieClip 25  {
+  }
+
+  movieClip 26  {
+  }
+
+  movieClip 35  {
+  }
+
+  movieClip 58  {
+  }
+
+  movieClip 82  {
+  }
+
+  movieClip 83  {
+
+    frame 6 {
+      stop();
+    }
+
+    frame 13 {
+      stop();
+      _visible = false;
+    }
+  }
+
+  movieClip 85  {
+  }
+}
