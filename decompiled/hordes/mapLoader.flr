@@ -1,0 +1,66 @@
+movie 'mapLoader.swf' {
+// flash 8, total frames: 3, frame rate: 40 fps, 300x300 px, compressed
+
+  movieClip 3  {
+  }
+
+  movieClip 6  {
+  }
+
+  movieClip 8  {
+  }
+
+  movieClip 10  {
+  }
+
+  movieClip 12  {
+  }
+
+  movieClip 14  {
+  }
+
+  movieClip 17  {
+  }
+
+  movieClip 18 bgLoader {
+  }
+
+  frame 1 {
+    function startLoad() {
+      bg = attachMovie('bgLoader', 'bg', 1);
+      root = createEmptyMovieClip('root', 2);
+      var v2 = new MovieClipLoader();
+      v2.onLoadInit = onLoadStep;
+      v2.onLoadComplete = onLoadStep;
+      v2.onLoadProgress = onProgress;
+      v2.onLoadError = onError;
+      v2.loadClip('swf/map.' + _root.lang + '.swf?v=' + _root.v, root);
+      step = 0;
+      clearInterval(intervalId);
+    }
+
+    function onLoadStep() {
+      ++step;
+      if (step >= 2) {
+        field._visible = false;
+        bg.removeMovieClip();
+      }
+    }
+
+    function onProgress(mc, cur, tot) {
+      bg.bar._xscale = 100 * cur / tot;
+      bg.bar._alpha = 100;
+    }
+
+    function onError(t) {
+      bg._alpha = 50;
+    }
+
+    startLoad();
+    stop();
+  }
+  
+  // unknown tag 88 length 63
+  
+  // unknown tag 88 length 63
+}
