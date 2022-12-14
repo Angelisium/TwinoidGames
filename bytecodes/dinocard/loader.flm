@@ -1,0 +1,130 @@
+movie 'loader.swf' compressed // flash 8, total frames: 1, frame rate: 40 fps, 600x500 px
+
+
+  defineMovieClip 2 // total frames: 1
+  end // of defineMovieClip 2
+
+  defineMovieClip 6 // total frames: 1
+  end // of defineMovieClip 6
+  
+  exportAssets
+    6 as 'mcLoader'
+  end // of exportAssets
+
+  frame 0
+    constants 'loader', 'bar', '_xscale', 'field', 'text', '%', 'loaded', 'removeMovieClip', 'swfUrl', 'swf/temple.swf', 'mcLoader', 'attachMovie', '_x', '_y', 'blendMode', 'subtract', 'trg', 'createEmptyMovieClip', 'mcl', 'MovieClipLoader', 'onLoadProgress', 'gameProgress', 'onLoadError', 'gameError', 'onLoadStart', 'gameStart', 'onLoadInit', 'loadClip'  
+    function2 gameProgress ('mc', r:2='lb', r:3='tb') ()
+      push r:lb, r:tb
+      divide
+      push 100
+      multiply
+      setRegister r:1
+      pop
+      push 'loader'
+      getVariable
+      push 'bar'
+      getMember
+      push '_xscale', r:1
+      setMember
+      push 'loader'
+      getVariable
+      push 'field'
+      getMember
+      push 'text', r:1
+      int
+      push '%'
+      add
+      setMember
+    end // of function gameProgress
+
+    function2 gameError ('mc', r:1='error') ()
+      push 'loader'
+      getVariable
+      push 'field'
+      getMember
+      push 'text', r:error
+      setMember
+    end // of function gameError
+
+    function gameStart ()
+      push 'loaded', 'loaded'
+      getVariable
+      increment
+      setVariable
+      push 'loaded'
+      getVariable
+      push 2
+      equals
+      not
+      branchIfTrue label1
+      push 0.0, 'loader'
+      getVariable
+      push 'removeMovieClip'
+      callMethod
+      pop
+     label1:
+    end // of function gameStart
+
+    push 'swfUrl'
+    getVariable
+    push NULL
+    equals
+    not
+    branchIfTrue label2
+    push 'swfUrl', 'swf/temple.swf'
+    setVariable
+   label2:
+    push 0.0, 'loader', 'mcLoader', 3, 'attachMovie'
+    callFunction
+    pop
+    push 'loader'
+    getVariable
+    push '_x', 300
+    setMember
+    push 'loader'
+    getVariable
+    push '_y', 250
+    setMember
+    push 'loader'
+    getVariable
+    push 'blendMode', 'subtract'
+    setMember
+    push 1, 'trg', 2, 'createEmptyMovieClip'
+    callFunction
+    pop
+    push 'mcl', 0.0, 'MovieClipLoader'
+    new
+    setVariable
+    push 'mcl'
+    getVariable
+    push 'onLoadProgress', 'gameProgress'
+    getVariable
+    setMember
+    push 'mcl'
+    getVariable
+    push 'onLoadError', 'gameError'
+    getVariable
+    setMember
+    push 'mcl'
+    getVariable
+    push 'onLoadStart', 'gameStart'
+    getVariable
+    setMember
+    push 'mcl'
+    getVariable
+    push 'onLoadInit', 'gameStart'
+    getVariable
+    setMember
+    push 'trg'
+    getVariable
+    push 'swfUrl'
+    getVariable
+    push 2, 'mcl'
+    getVariable
+    push 'loadClip'
+    callMethod
+    pop
+    push 'loaded', 0.0
+    setVariable
+  end // of frame 0
+end

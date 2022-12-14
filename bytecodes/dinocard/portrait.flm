@@ -1,0 +1,118 @@
+movie 'portrait.swf' compressed // flash 7, total frames: 4, frame rate: 40 fps, 60x84 px
+
+  frame 0
+    ifFrameLoaded 3
+      gotoLabel 'end'
+    end // of ifFrameLoaded 3
+
+  end // of frame 0
+
+  defineMovieClip 5 // total frames: 1
+  end // of defineMovieClip 5
+
+  defineMovieClip 6 // total frames: 20
+  end // of defineMovieClip 6
+
+  frame 1
+    gotoFrame 0
+    play
+  end // of frame 1
+
+  frame 3
+    constants '*', 'System', 'security', 'allowDomain', 'base', 'createEmptyMovieClip', 'flip', '_xscale', '_x', 'mcl', 'MovieClipLoader', 'onLoadComplete', 'avatarLoaded', 'onLoadInit', 'url', 'loadClip', 'loadId', 'initAvatar', 'cl', ';', 'face', 'split', 'apply', 'init'  
+    function init ()
+      push '*', 1, 'System'
+      getVariable
+      push 'security'
+      getMember
+      push 'allowDomain'
+      callMethod
+      pop
+      push 0.0, 'base', 2, 'createEmptyMovieClip'
+      callFunction
+      pop
+      push 'flip'
+      getVariable
+      push 2
+      equals
+      not
+      branchIfTrue label1
+      push 'base'
+      getVariable
+      push '_xscale', -100
+      setMember
+      push 'base'
+      getVariable
+      push '_x', 60
+      setMember
+     label1:
+      push 'mcl', 0.0, 'MovieClipLoader'
+      new
+      setVariable
+      push 'mcl'
+      getVariable
+      push 'onLoadComplete', 'avatarLoaded'
+      getVariable
+      setMember
+      push 'mcl'
+      getVariable
+      push 'onLoadInit', 'avatarLoaded'
+      getVariable
+      setMember
+      push 'base'
+      getVariable
+      push 'url'
+      getVariable
+      push 2, 'mcl'
+      getVariable
+      push 'loadClip'
+      callMethod
+      pop
+    end // of function init
+
+    function2 avatarLoaded (r:1='mc') ()
+      push r:mc, 'loadId'
+      getMember
+      push NULL
+      equals
+      not
+      branchIfTrue label2
+      push r:mc, 'loadId', 0.0
+      setMember
+     label2:
+      push r:mc, 'loadId', r:mc, 'loadId'
+      getMember
+      increment
+      setMember
+      push r:mc, 'loadId'
+      getMember
+      push 2
+      equals
+      not
+      branchIfTrue label3
+      push r:mc, 1, 'initAvatar'
+      callFunction
+      pop
+     label3:
+    end // of function avatarLoaded
+
+    function initAvatar ()
+      push 'base'
+      getVariable
+      push 'cl', ';', 1, 'face'
+      getVariable
+      push 'split'
+      callMethod
+      setMember
+      push 0.0, 'base'
+      getVariable
+      push 'apply'
+      callMethod
+      pop
+    end // of function initAvatar
+
+    push 0.0, 'init'
+    callFunction
+    pop
+  end // of frame 3
+end

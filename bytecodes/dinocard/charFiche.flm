@@ -1,0 +1,651 @@
+movie 'charFiche.swf' compressed // flash 8, total frames: 1, frame rate: 40 fps, 180x390 px
+
+
+  frame 0
+    constants 'num0', 'artwork', 'gotoAndStop', 'palette', 'paltab', 'length', 'gfx', 'col0', 'setColor', 'gfx2', 'col1', 'col2', 'col3', 'r', 'g', 'b', 'Color', 'ra', 'ga', 'ba', 'aa', 'rb', 'gb', 'bb', 'ab', 'setTransform', 'tempCol', '', 'step', 'num1', 'num2', 'num3', 'num4', 'num5', 'playerName', '_root', 'userName', 'stringB', 'str', ';', 'p', 'fieldPseudo', 'text', 'i', 'charCodeAt', 'this', 'num', 'substr', 'resetColApply'  
+    function2 resetColApply (r:5='id1', r:4='id2', r:3='id3', r:2='id4') ()
+      push 'num0'
+      getVariable
+      toNumber
+      setRegister r:1
+      pop
+      push r:1, 1
+      add
+      push 1, 'artwork'
+      getVariable
+      push 'gotoAndStop'
+      callMethod
+      pop
+      push r:id1, 'palette'
+      getVariable
+      push 'paltab'
+      getVariable
+      push r:1
+      getMember
+      push 0.0
+      getMember
+      getMember
+      push 'length'
+      getMember
+      modulo
+      setRegister r:id1
+      pop
+      push r:id2, 'palette'
+      getVariable
+      push 'paltab'
+      getVariable
+      push r:1
+      getMember
+      push 1
+      getMember
+      getMember
+      push 'length'
+      getMember
+      modulo
+      setRegister r:id2
+      pop
+      push r:id3, 'palette'
+      getVariable
+      push 'paltab'
+      getVariable
+      push r:1
+      getMember
+      push 2
+      getMember
+      getMember
+      push 'length'
+      getMember
+      modulo
+      setRegister r:id3
+      pop
+      push r:id4, 'palette'
+      getVariable
+      push 'paltab'
+      getVariable
+      push r:1
+      getMember
+      push 3
+      getMember
+      getMember
+      push 'length'
+      getMember
+      modulo
+      setRegister r:id4
+      pop
+      push 'palette'
+      getVariable
+      push 'paltab'
+      getVariable
+      push r:1
+      getMember
+      push 0.0
+      getMember
+      getMember
+      push r:id1
+      getMember
+      push 'artwork'
+      getVariable
+      push 'gfx'
+      getMember
+      push 'col0'
+      getMember
+      push 2, 'setColor'
+      callFunction
+      pop
+      push 'palette'
+      getVariable
+      push 'paltab'
+      getVariable
+      push r:1
+      getMember
+      push 0.0
+      getMember
+      getMember
+      push r:id1
+      getMember
+      push 'artwork'
+      getVariable
+      push 'gfx2'
+      getMember
+      push 'col0'
+      getMember
+      push 2, 'setColor'
+      callFunction
+      pop
+      push 'palette'
+      getVariable
+      push 'paltab'
+      getVariable
+      push r:1
+      getMember
+      push 1
+      getMember
+      getMember
+      push r:id2
+      getMember
+      push 'artwork'
+      getVariable
+      push 'gfx'
+      getMember
+      push 'col1'
+      getMember
+      push 2, 'setColor'
+      callFunction
+      pop
+      push 'palette'
+      getVariable
+      push 'paltab'
+      getVariable
+      push r:1
+      getMember
+      push 1
+      getMember
+      getMember
+      push r:id2
+      getMember
+      push 'artwork'
+      getVariable
+      push 'gfx2'
+      getMember
+      push 'col1'
+      getMember
+      push 2, 'setColor'
+      callFunction
+      pop
+      push 'palette'
+      getVariable
+      push 'paltab'
+      getVariable
+      push r:1
+      getMember
+      push 2
+      getMember
+      getMember
+      push r:id3
+      getMember
+      push 'artwork'
+      getVariable
+      push 'gfx'
+      getMember
+      push 'col2'
+      getMember
+      push 2, 'setColor'
+      callFunction
+      pop
+      push 'palette'
+      getVariable
+      push 'paltab'
+      getVariable
+      push r:1
+      getMember
+      push 2
+      getMember
+      getMember
+      push r:id3
+      getMember
+      push 'artwork'
+      getVariable
+      push 'gfx2'
+      getMember
+      push 'col2'
+      getMember
+      push 2, 'setColor'
+      callFunction
+      pop
+      push 'palette'
+      getVariable
+      push 'paltab'
+      getVariable
+      push r:1
+      getMember
+      push 3
+      getMember
+      getMember
+      push r:id4
+      getMember
+      push 'artwork'
+      getVariable
+      push 'gfx'
+      getMember
+      push 'col3'
+      getMember
+      push 2, 'setColor'
+      callFunction
+      pop
+      push 'palette'
+      getVariable
+      push 'paltab'
+      getVariable
+      push r:1
+      getMember
+      push 3
+      getMember
+      getMember
+      push r:id4
+      getMember
+      push 'artwork'
+      getVariable
+      push 'gfx2'
+      getMember
+      push 'col3'
+      getMember
+      push 2, 'setColor'
+      callFunction
+      pop
+    end // of function resetColApply
+
+    function2 setColor (r:16='mc', r:4='col') ()
+      push 'r', r:col, 16
+      shiftRight
+      push 'g', r:col, 8
+      shiftRight
+      push 255
+      bitwiseAnd
+      push 'b', r:col, 255
+      bitwiseAnd
+      push 3
+      initObject
+      setRegister r:1
+      pop
+      push r:mc, 1, 'Color'
+      new
+      setRegister r:2
+      pop
+      push 'ra', 100, 'ga', 100, 'ba', 100, 'aa', 100, 'rb', r:1, 'r'
+      getMember
+      push 255
+      subtract
+      push 'gb', r:1, 'g'
+      getMember
+      push 255
+      subtract
+      push 'bb', r:1, 'b'
+      getMember
+      push 255
+      subtract
+      push 'ab', 0.0, 8
+      initObject
+      setRegister r:3
+      pop
+      push r:3, 1, r:2, 'setTransform'
+      callMethod
+      pop
+    end // of function setColor
+
+    push 'paltab', 3, 2, 1, 0.0, 4
+    initArray
+    push 16, 2, 1, 0.0, 4
+    initArray
+    push 5, 5, 5, 4, 4
+    initArray
+    push 16, 15, 14, 13, 4
+    initArray
+    push 5, 5, 5, 4, 4
+    initArray
+    push 12, 12, 5, 4, 4
+    initArray
+    push 10, 10, 8, 8, 4
+    initArray
+    push 5, 5, 5, 4, 4
+    initArray
+    push 3, 2, 1, 0.0, 4
+    initArray
+    push 3, 2, 1, 0.0, 4
+    initArray
+    push 10
+    initArray
+    setVariable
+    push 'palette', 16772778, 16568294, 16762052, 16768477, 11272098, 14811101, 11846910, 14542079, 16185049, 9
+    initArray
+    push 9948159, 10338225, 10645395, 10645395, 11634596, 5
+    initArray
+    push 15785113, 16568294, 16762052, 16768477, 11272098, 14811101, 11846910, 14542079, 16185049, 15785113, 12014408, 12045766, 12
+    initArray
+    push 12693205, 14742488, 13167032, 15260089, 16051935, 14925246, 15917537, 13879776, 8
+    initArray
+    push 16775598, 14646839, 9948159, 14019327, 13369239, 15531993, 15394559, 16770815, 16764159, 9
+    initArray
+    push 15785113, 16775598, 13834264, 12082973, 14646839, 9151447, 9948159, 14019327, 13369239, 15531993, 16755230, 16764025, 16641495, 13
+    initArray
+    push 9948159, 14019327, 13369239, 15531993, 16755230, 16764025, 16773855, 7
+    initArray
+    push 15785113, 11644106, 10856376, 15375722, 9795434, 11564367, 15391440, 7
+    initArray
+    push 9613532, 11651303, 8826016, 10468788, 10725050, 14210525, 6
+    initArray
+    push 15785113, 16764159, 16775598, 13834264, 12082973, 14646839, 9151447, 9948159, 14019327, 13369239, 15531993, 16755230, 16764025, 16641495, 14
+    initArray
+    push 7439041, 15516000, 10181169, 15375797, 13073532, 8884924, 4676263, 16641495, 8
+    initArray
+    push 623778, 16568294, 2069617, 15785113, 12569305, 15574367, 11644106, 10856376, 15375722, 9795434, 11564367, 15391440, 12
+    initArray
+    push 13015677, 15579299, 14924435, 14658711, 16105652, 16107947, 6
+    initArray
+    push 15785113, 16775598, 13834264, 12082973, 14646839, 9151447, 9948159, 14019327, 13369239, 15531993, 16755230, 16764025, 16773855, 13
+    initArray
+    push 15785113, 16775598, 13834264, 12082973, 14646839, 9151447, 9948159, 14019327, 13369239, 15531993, 16755230, 16764025, 16773855, 13
+    initArray
+    push 12648962, 16641495, 12035076, 16764057, 12227841, 16764025, 6
+    initArray
+    push 15381661, 12345121, 12612611, 15112294, 16755230, 16750959, 16498564, 7
+    initArray
+    push 17
+    initArray
+    setVariable
+    push 'tempCol', ''
+    setVariable
+    push 'step', 0.0
+    setVariable
+    push 'num0', ''
+    setVariable
+    push 'num1', ''
+    setVariable
+    push 'num2', ''
+    setVariable
+    push 'num3', ''
+    setVariable
+    push 'num4', ''
+    setVariable
+    push 'num5', ''
+    setVariable
+    push 'playerName', '_root'
+    getVariable
+    push 'userName'
+    getMember
+    setVariable
+    push 'stringB', '_root'
+    getVariable
+    push 'str'
+    getMember
+    push ';'
+    add
+    setVariable
+    push 'artwork'
+    getVariable
+    push 'p'
+    getMember
+    push 'fieldPseudo'
+    getMember
+    push 'text', 'playerName'
+    getVariable
+    toString
+    setMember
+    push 'i', 0.0
+    varEquals
+   label1:
+    push 'i'
+    getVariable
+    push 'stringB'
+    getVariable
+    push 'length'
+    getMember
+    greaterThan
+    not
+    not
+    branchIfTrue label3
+    push 'i'
+    getVariable
+    push 1, 'stringB'
+    getVariable
+    push 'charCodeAt'
+    callMethod
+    push 59
+    equals
+    not
+    branchIfTrue label2
+    push 'this'
+    getVariable
+    push 'num', 'step'
+    getVariable
+    add
+    push 'tempCol'
+    getVariable
+    setMember
+    push 'tempCol', ''
+    setVariable
+    push 'step', 'step'
+    getVariable
+    increment
+    setVariable
+    push 'i', 'i'
+    getVariable
+    increment
+    setVariable
+   label2:
+    push 'tempCol', 'tempCol'
+    getVariable
+    toString
+    push 1, 'i'
+    getVariable
+    push 2, 'stringB'
+    getVariable
+    push 'substr'
+    callMethod
+    toString
+    add
+    setVariable
+    push 'i', 'i'
+    getVariable
+    increment
+    setVariable
+    branch label1
+   label3:
+    push 'num5'
+    getVariable
+    toNumber
+    push 'num4'
+    getVariable
+    toNumber
+    push 'num3'
+    getVariable
+    toNumber
+    push 'num2'
+    getVariable
+    toNumber
+    push 4, 'resetColApply'
+    callFunction
+    pop
+  end // of frame 0
+
+  defineMovieClip 5 // total frames: 1
+  end // of defineMovieClip 5
+
+  defineMovieClip 8 // total frames: 1
+  end // of defineMovieClip 8
+
+  defineMovieClip 11 // total frames: 1
+  end // of defineMovieClip 11
+
+  defineMovieClip 14 // total frames: 1
+  end // of defineMovieClip 14
+
+  defineMovieClip 16 // total frames: 1
+  end // of defineMovieClip 16
+
+  defineMovieClip 18 // total frames: 1
+  end // of defineMovieClip 18
+
+  defineMovieClip 20 // total frames: 1
+  end // of defineMovieClip 20
+
+  defineMovieClip 22 // total frames: 1
+  end // of defineMovieClip 22
+
+  defineMovieClip 25 // total frames: 1
+  end // of defineMovieClip 25
+
+  defineMovieClip 27 // total frames: 1
+  end // of defineMovieClip 27
+
+  defineMovieClip 30 // total frames: 1
+  end // of defineMovieClip 30
+
+  defineMovieClip 32 // total frames: 1
+  end // of defineMovieClip 32
+
+  defineMovieClip 33 // total frames: 1
+  end // of defineMovieClip 33
+
+  defineMovieClip 35 // total frames: 1
+  end // of defineMovieClip 35
+
+  defineMovieClip 37 // total frames: 1
+  end // of defineMovieClip 37
+
+  defineMovieClip 39 // total frames: 1
+  end // of defineMovieClip 39
+
+  defineMovieClip 41 // total frames: 1
+  end // of defineMovieClip 41
+
+  defineMovieClip 44 // total frames: 1
+  end // of defineMovieClip 44
+
+  defineMovieClip 45 // total frames: 20
+  end // of defineMovieClip 45
+
+  defineMovieClip 47 // total frames: 1
+  end // of defineMovieClip 47
+
+  defineMovieClip 50 // total frames: 1
+  end // of defineMovieClip 50
+
+  defineMovieClip 52 // total frames: 1
+  end // of defineMovieClip 52
+
+  defineMovieClip 54 // total frames: 1
+  end // of defineMovieClip 54
+
+  defineMovieClip 56 // total frames: 1
+  end // of defineMovieClip 56
+
+  defineMovieClip 60 // total frames: 1
+  end // of defineMovieClip 60
+
+  defineMovieClip 62 // total frames: 1
+  end // of defineMovieClip 62
+
+  defineMovieClip 64 // total frames: 1
+  end // of defineMovieClip 64
+
+  defineMovieClip 65 // total frames: 1
+  end // of defineMovieClip 65
+
+  defineMovieClip 67 // total frames: 1
+  end // of defineMovieClip 67
+
+  defineMovieClip 70 // total frames: 1
+  end // of defineMovieClip 70
+
+  defineMovieClip 73 // total frames: 1
+  end // of defineMovieClip 73
+
+  defineMovieClip 74 // total frames: 1
+  end // of defineMovieClip 74
+
+  defineMovieClip 76 // total frames: 1
+  end // of defineMovieClip 76
+
+  defineMovieClip 79 // total frames: 1
+  end // of defineMovieClip 79
+
+  defineMovieClip 80 // total frames: 1
+  end // of defineMovieClip 80
+
+  defineMovieClip 82 // total frames: 1
+  end // of defineMovieClip 82
+
+  defineMovieClip 84 // total frames: 1
+  end // of defineMovieClip 84
+
+  defineMovieClip 86 // total frames: 1
+  end // of defineMovieClip 86
+
+  defineMovieClip 88 // total frames: 1
+  end // of defineMovieClip 88
+
+  defineMovieClip 90 // total frames: 1
+  end // of defineMovieClip 90
+
+  defineMovieClip 92 // total frames: 1
+  end // of defineMovieClip 92
+
+  defineMovieClip 94 // total frames: 1
+  end // of defineMovieClip 94
+
+  defineMovieClip 96 // total frames: 1
+  end // of defineMovieClip 96
+
+  defineMovieClip 98 // total frames: 1
+  end // of defineMovieClip 98
+
+  defineMovieClip 100 // total frames: 1
+  end // of defineMovieClip 100
+
+  defineMovieClip 103 // total frames: 1
+  end // of defineMovieClip 103
+
+  defineMovieClip 104 // total frames: 1
+  end // of defineMovieClip 104
+
+  defineMovieClip 106 // total frames: 1
+  end // of defineMovieClip 106
+
+  defineMovieClip 109 // total frames: 1
+  end // of defineMovieClip 109
+
+  defineMovieClip 111 // total frames: 1
+  end // of defineMovieClip 111
+
+  defineMovieClip 114 // total frames: 1
+  end // of defineMovieClip 114
+
+  defineMovieClip 116 // total frames: 1
+  end // of defineMovieClip 116
+
+  defineMovieClip 117 // total frames: 1
+  end // of defineMovieClip 117
+
+  defineMovieClip 119 // total frames: 1
+  end // of defineMovieClip 119
+
+  defineMovieClip 121 // total frames: 1
+  end // of defineMovieClip 121
+
+  defineMovieClip 123 // total frames: 1
+  end // of defineMovieClip 123
+
+  defineMovieClip 125 // total frames: 1
+  end // of defineMovieClip 125
+
+  defineMovieClip 128 // total frames: 1
+  end // of defineMovieClip 128
+
+  defineMovieClip 129 // total frames: 1
+  end // of defineMovieClip 129
+
+  defineMovieClip 131 // total frames: 1
+  end // of defineMovieClip 131
+
+  defineMovieClip 133 // total frames: 1
+  end // of defineMovieClip 133
+
+  defineMovieClip 135 // total frames: 1
+  end // of defineMovieClip 135
+
+  defineMovieClip 137 // total frames: 1
+  end // of defineMovieClip 137
+
+  defineMovieClip 139 // total frames: 1
+  end // of defineMovieClip 139
+
+  defineMovieClip 141 // total frames: 1
+  end // of defineMovieClip 141
+
+  defineMovieClip 142 // total frames: 10
+
+    frame 0
+      stop
+    end // of frame 0
+  end // of defineMovieClip 142
+end

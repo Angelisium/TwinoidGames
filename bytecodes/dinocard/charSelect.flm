@@ -1,0 +1,4456 @@
+movie 'charSelect.swf' compressed // flash 8, total frames: 36, frame rate: 40 fps, 640x480 px
+
+
+  defineMovieClip 6 // total frames: 1
+  end // of defineMovieClip 6
+
+  defineMovieClip 9 // total frames: 2
+
+    frame 0
+      stop
+    end // of frame 0
+  end // of defineMovieClip 9
+  
+  exportAssets
+    9 as 'mcPlayBut'
+  end // of exportAssets
+
+  frame 0
+    push 'f1', FALSE
+    varEquals
+    push 'f2', FALSE
+    varEquals
+    push 'f3', FALSE
+    varEquals
+    push 'f4', FALSE
+    varEquals
+    push 'f5', FALSE
+    varEquals
+  end // of frame 0
+
+  defineMovieClip 12 // total frames: 1
+  end // of defineMovieClip 12
+
+  defineMovieClip 16 // total frames: 22
+
+    frame 0
+      stop
+    end // of frame 0
+
+    frame 11
+      constants '_parent', 'pal', '_visible', 'gotoAndPlay', 'circle'  
+      push '_parent'
+      getVariable
+      push 'pal'
+      getMember
+      push '_visible', TRUE
+      setMember
+      push 2, 1, '_parent'
+      getVariable
+      push 'pal'
+      getMember
+      push 'gotoAndPlay'
+      callMethod
+      pop
+      push 1, 1, '_parent'
+      getVariable
+      push 'pal'
+      getMember
+      push 'circle'
+      getMember
+      push 'gotoAndPlay'
+      callMethod
+      pop
+      stop
+    end // of frame 11
+  end // of defineMovieClip 16
+
+  defineMovieClip 19 // total frames: 1
+  end // of defineMovieClip 19
+
+  defineMovieClip 27 // total frames: 40
+  end // of defineMovieClip 27
+
+  defineMovieClip 34 // total frames: 14
+  end // of defineMovieClip 34
+
+  defineMovieClip 57 // total frames: 28
+  end // of defineMovieClip 57
+
+  defineMovieClip 68 // total frames: 11
+
+    frame 0
+      push 10
+      random
+      gotoAndPlay
+    end // of frame 0
+
+    frame 10
+      gotoLabel 'loop'
+      play
+    end // of frame 10
+  end // of defineMovieClip 68
+
+  defineMovieClip 69 // total frames: 1
+  end // of defineMovieClip 69
+
+  defineMovieClip 70 // total frames: 64
+
+    frame 0
+      stop
+    end // of frame 0
+
+    frame 11
+      stop
+    end // of frame 11
+
+    frame 20
+      stop
+    end // of frame 20
+
+    frame 29
+      stop
+    end // of frame 29
+
+    frame 38
+      stop
+    end // of frame 38
+
+    frame 62
+      push 'start', 1, '_parent'
+      getVariable
+      push 'gotoAndPlay'
+      callMethod
+      pop
+    end // of frame 62
+  end // of defineMovieClip 70
+
+  frame 1
+    constants 'total', 'getBytesTotal', 'loadedBytes', 'getBytesLoaded', 'loaded', 'loading', 'text', 'f1', 'one', 'f', 'gotoAndPlay', 'f2', 'two', 'f3', 'three', 'f4', 'four', 'f5', 'five'  
+    push 'total', 0.0, 'getBytesTotal'
+    callFunction
+    setVariable
+    push 'loadedBytes', 0.0, 'getBytesLoaded'
+    callFunction
+    setVariable
+    push 'loaded', 'loadedBytes'
+    getVariable
+    push 100
+    multiply
+    push 'total'
+    getVariable
+    divide
+    int
+    setVariable
+    push 'loading'
+    getVariable
+    push 'text', 'loaded'
+    getVariable
+    setMember
+    push 'loaded'
+    getVariable
+    push 20
+    lessThan
+    not
+    dup
+    not
+    branchIfTrue label1
+    pop
+    push 'f1'
+    getVariable
+    push FALSE
+    equals
+   label1:
+    not
+    branchIfTrue label2
+    push 'one', 1, 'f'
+    getVariable
+    push 'gotoAndPlay'
+    callMethod
+    pop
+    push 'f1', TRUE
+    setVariable
+   label2:
+    push 'loaded'
+    getVariable
+    push 40
+    lessThan
+    not
+    dup
+    not
+    branchIfTrue label3
+    pop
+    push 'f2'
+    getVariable
+    push FALSE
+    equals
+   label3:
+    not
+    branchIfTrue label4
+    push 'two', 1, 'f'
+    getVariable
+    push 'gotoAndPlay'
+    callMethod
+    pop
+    push 'f2', TRUE
+    setVariable
+   label4:
+    push 'loaded'
+    getVariable
+    push 60
+    lessThan
+    not
+    dup
+    not
+    branchIfTrue label5
+    pop
+    push 'f3'
+    getVariable
+    push FALSE
+    equals
+   label5:
+    not
+    branchIfTrue label6
+    push 'three', 1, 'f'
+    getVariable
+    push 'gotoAndPlay'
+    callMethod
+    pop
+    push 'f3', TRUE
+    setVariable
+   label6:
+    push 'loaded'
+    getVariable
+    push 80
+    lessThan
+    not
+    dup
+    not
+    branchIfTrue label7
+    pop
+    push 'f4'
+    getVariable
+    push FALSE
+    equals
+   label7:
+    not
+    branchIfTrue label8
+    push 'four', 1, 'f'
+    getVariable
+    push 'gotoAndPlay'
+    callMethod
+    pop
+    push 'f4', TRUE
+    setVariable
+   label8:
+    push 'loaded'
+    getVariable
+    push 100
+    lessThan
+    not
+    dup
+    not
+    branchIfTrue label9
+    pop
+    push 'f5'
+    getVariable
+    push FALSE
+    equals
+   label9:
+    not
+    branchIfTrue label10
+    push 'five', 1, 'f'
+    getVariable
+    push 'gotoAndPlay'
+    callMethod
+    pop
+    push 'f5', TRUE
+    setVariable
+   label10:
+  end // of frame 1
+
+  frame 2
+    push '', 4
+    getProperty
+    push 1
+    subtract
+    gotoAndPlay
+  end // of frame 2
+
+  defineMovieClip 73 // total frames: 1
+  end // of defineMovieClip 73
+
+  defineMovieClip 74 // total frames: 11
+  end // of defineMovieClip 74
+
+  defineMovieClip 81 // total frames: 6
+  end // of defineMovieClip 81
+
+  defineMovieClip 84 // total frames: 1
+  end // of defineMovieClip 84
+
+  defineMovieClip 85 // total frames: 2
+
+    frame 0
+      constants 'g', '_rotation'  
+      push 'g'
+      getVariable
+      push '_rotation', 'g'
+      getVariable
+      push '_rotation'
+      getMember
+      push 5
+      add
+      setMember
+    end // of frame 0
+
+    frame 1
+      gotoFrame 0
+      play
+    end // of frame 1
+  end // of defineMovieClip 85
+
+  defineMovieClip 86 // total frames: 1
+  end // of defineMovieClip 86
+
+  defineMovieClip 87 // total frames: 23
+  end // of defineMovieClip 87
+
+  defineMovieClip 88 // total frames: 4
+
+    frame 0
+      stop
+    end // of frame 0
+  end // of defineMovieClip 88
+  
+  exportAssets
+    88 as 'vRoll'
+  end // of exportAssets
+
+  defineMovieClip 94 // total frames: 1
+  end // of defineMovieClip 94
+
+  defineButton 95
+
+    on overUpToOverDown
+      constants '_root', 'selectedP', '', 'main', 'clap', 'pan', 'n', '_currentframe', 'gotoAndPlay', 'artwork', 'desc', 'gotoAndStop', 'fl'  
+      push '_root'
+      getVariable
+      push 'selectedP', '', 4
+      getProperty
+      setMember
+      push '_root'
+      getVariable
+      push 'selectedP'
+      getMember
+      push '_root'
+      getVariable
+      push 'main'
+      getMember
+      push 'clap'
+      getMember
+      push 'pan'
+      getMember
+      push 'n'
+      getMember
+      push '_currentframe'
+      getMember
+      equals
+      not
+      not
+      branchIfTrue label1
+      push 2, 1, '_root'
+      getVariable
+      push 'main'
+      getMember
+      push 'clap'
+      getMember
+      push 'gotoAndPlay'
+      callMethod
+      pop
+      push 2, 1, '_root'
+      getVariable
+      push 'main'
+      getMember
+      push 'artwork'
+      getMember
+      push 'gotoAndPlay'
+      callMethod
+      pop
+      push '_root'
+      getVariable
+      push 'selectedP'
+      getMember
+      push 1, '_root'
+      getVariable
+      push 'main'
+      getMember
+      push 'desc'
+      getMember
+      push 'gotoAndStop'
+      callMethod
+      pop
+      push '_root'
+      getVariable
+      push 'selectedP'
+      getMember
+      push 1, '_root'
+      getVariable
+      push 'main'
+      getMember
+      push 'fl'
+      getMember
+      push 'gotoAndStop'
+      callMethod
+      pop
+     label1:
+    end
+  end // of defineButton 95
+
+  defineMovieClip 114 // total frames: 25
+  end // of defineMovieClip 114
+  
+  exportAssets
+    114 as 'vignette'
+  end // of exportAssets
+
+  defineMovieClip 115 // total frames: 1
+  end // of defineMovieClip 115
+
+  defineMovieClip 117 // total frames: 1
+  end // of defineMovieClip 117
+
+  defineMovieClip 119 // total frames: 1
+  end // of defineMovieClip 119
+
+  defineMovieClip 123 // total frames: 1
+  end // of defineMovieClip 123
+
+  defineMovieClip 126 // total frames: 1
+  end // of defineMovieClip 126
+
+  defineMovieClip 130 // total frames: 1
+  end // of defineMovieClip 130
+
+  defineMovieClip 141 // total frames: 40
+  end // of defineMovieClip 141
+
+  defineMovieClip 143 // total frames: 2
+
+    frame 0
+      stop
+    end // of frame 0
+  end // of defineMovieClip 143
+
+  defineMovieClip 144 // total frames: 1
+  end // of defineMovieClip 144
+
+  defineMovieClip 147 // total frames: 1
+  end // of defineMovieClip 147
+
+  defineMovieClip 158 // total frames: 24
+
+    frame 0
+      stop
+    end // of frame 0
+  end // of defineMovieClip 158
+
+  defineMovieClip 159 // total frames: 1
+
+    frame 0
+      stop
+    end // of frame 0
+  end // of defineMovieClip 159
+
+  frame 35
+    stop
+  end // of frame 35
+
+  defineMovieClip 162 // total frames: 1
+  end // of defineMovieClip 162
+
+  defineMovieClip 164 // total frames: 1
+  end // of defineMovieClip 164
+
+  defineMovieClip 165 // total frames: 9
+
+    frame 0
+      stop
+    end // of frame 0
+
+    frame 4
+      stop
+    end // of frame 4
+  end // of defineMovieClip 165
+
+  defineMovieClip 166 // total frames: 3
+
+    frame 0
+      push 'vit', -180
+      setVariable
+      push 'acc', TRUE
+      setVariable
+    end // of frame 0
+
+    frame 1
+      constants 'acc', 'vit', 's1', '_x', 's2'  
+      push 'acc'
+      getVariable
+      not
+      branchIfTrue label1
+      push 'vit', 'vit'
+      getVariable
+      push 1.1
+      divide
+      setVariable
+      push 'vit'
+      getVariable
+      push -5
+      lessThan
+      not
+      not
+      branchIfTrue label1
+      push 'vit', -5
+      setVariable
+      push 'acc', FALSE
+      setVariable
+     label1:
+      push 's1'
+      getVariable
+      push '_x', 's1'
+      getVariable
+      push '_x'
+      getMember
+      push 'vit'
+      getVariable
+      subtract
+      setMember
+      push 's2'
+      getVariable
+      push '_x', 's2'
+      getVariable
+      push '_x'
+      getMember
+      push 'vit'
+      getVariable
+      subtract
+      setMember
+      push 's1'
+      getVariable
+      push '_x'
+      getMember
+      push 1670
+      lessThan
+      not
+      not
+      branchIfTrue label2
+      push 's1'
+      getVariable
+      push '_x', -1683
+      setMember
+     label2:
+      push 's2'
+      getVariable
+      push '_x'
+      getMember
+      push 1670
+      lessThan
+      not
+      not
+      branchIfTrue label3
+      push 's2'
+      getVariable
+      push '_x', -1683
+      setMember
+     label3:
+    end // of frame 1
+
+    frame 2
+      gotoFrame 1
+      play
+    end // of frame 2
+  end // of defineMovieClip 166
+
+  defineMovieClip 180 // total frames: 10
+
+    frame 0
+      stop
+    end // of frame 0
+  end // of defineMovieClip 180
+
+  defineMovieClip 181 // total frames: 3
+
+    frame 0
+      push 'vit', 80
+      setVariable
+      push 'acc', TRUE
+      setVariable
+    end // of frame 0
+
+    frame 1
+      constants 'acc', 'vit', 's1', '_x', 's2'  
+      push 'acc'
+      getVariable
+      not
+      branchIfTrue label1
+      push 'vit', 'vit'
+      getVariable
+      push 1.1
+      divide
+      setVariable
+      push 'vit'
+      getVariable
+      push 1
+      greaterThan
+      not
+      not
+      branchIfTrue label1
+      push 'vit', 1
+      setVariable
+      push 'acc', FALSE
+      setVariable
+     label1:
+      push 's1'
+      getVariable
+      push '_x', 's1'
+      getVariable
+      push '_x'
+      getMember
+      push 'vit'
+      getVariable
+      subtract
+      setMember
+      push 's2'
+      getVariable
+      push '_x', 's2'
+      getVariable
+      push '_x'
+      getMember
+      push 'vit'
+      getVariable
+      subtract
+      setMember
+      push 's1'
+      getVariable
+      push '_x'
+      getMember
+      push -1022
+      greaterThan
+      not
+      not
+      branchIfTrue label2
+      push 's1'
+      getVariable
+      push '_x', 1022
+      setMember
+     label2:
+      push 's2'
+      getVariable
+      push '_x'
+      getMember
+      push -1022
+      greaterThan
+      not
+      not
+      branchIfTrue label3
+      push 's2'
+      getVariable
+      push '_x', 1022
+      setMember
+     label3:
+    end // of frame 1
+
+    frame 2
+      gotoFrame 1
+      play
+    end // of frame 2
+  end // of defineMovieClip 181
+
+  defineMovieClip 202 // total frames: 19
+  end // of defineMovieClip 202
+
+  defineMovieClip 208 // total frames: 53
+
+    frame 0
+      stop
+    end // of frame 0
+
+    frame 5
+      push '_root'
+      getVariable
+      push 'selectedP'
+      getMember
+      push 1, 'pan'
+      getVariable
+      push 'n'
+      getMember
+      push 'gotoAndStop'
+      callMethod
+      pop
+    end // of frame 5
+
+    frame 30
+      gotoFrame 0
+    end // of frame 30
+
+    frame 42
+      stop
+    end // of frame 42
+  end // of defineMovieClip 208
+
+  defineMovieClip 212 // total frames: 1
+  end // of defineMovieClip 212
+
+  defineMovieClip 213 // total frames: 1
+  end // of defineMovieClip 213
+
+  defineMovieClip 215 // total frames: 1
+  end // of defineMovieClip 215
+
+  defineMovieClip 217 // total frames: 1
+  end // of defineMovieClip 217
+
+  defineMovieClip 222 // total frames: 20
+
+    frame 0
+      stop
+    end // of frame 0
+
+    frame 9
+      stop
+    end // of frame 9
+  end // of defineMovieClip 222
+
+  defineMovieClip 223 // total frames: 1
+  end // of defineMovieClip 223
+
+  defineMovieClip 224 // total frames: 10
+
+    frame 0
+      stop
+    end // of frame 0
+  end // of defineMovieClip 224
+
+  defineMovieClip 227 // total frames: 1
+  end // of defineMovieClip 227
+
+  defineMovieClip 230 // total frames: 1
+  end // of defineMovieClip 230
+
+  defineMovieClip 231 // total frames: 15
+
+    frame 0
+      stop
+    end // of frame 0
+
+    frame 4
+      stop
+    end // of frame 4
+
+    frame 4
+      push '_parent'
+      getVariable
+      push 'blur', TRUE
+      setMember
+    end // of frame 4
+
+    frame 5
+      push '_parent'
+      getVariable
+      push 'blur', FALSE
+      setMember
+    end // of frame 5
+  end // of defineMovieClip 231
+
+  defineMovieClip 233 // total frames: 1
+  end // of defineMovieClip 233
+
+  defineMovieClip 235 // total frames: 3
+
+    frame 0
+      push 'c2'
+      getVariable
+      push '_rotation', 0.0
+      setMember
+      push 'vit', 1
+      setVariable
+      push 'blur', FALSE
+      setVariable
+    end // of frame 0
+
+    frame 1
+      constants 'c1', '_rotation', 'vit', 'c2', 'blur', 'gotoAndPlay'  
+      push 'c1'
+      getVariable
+      push '_rotation', 'c1'
+      getVariable
+      push '_rotation'
+      getMember
+      push 'vit'
+      getVariable
+      push 2
+      divide
+      add
+      setMember
+      push 'c2'
+      getVariable
+      push '_rotation', 'c2'
+      getVariable
+      push '_rotation'
+      getMember
+      push 'vit'
+      getVariable
+      subtract
+      setMember
+      push 'vit', 'vit'
+      getVariable
+      push 1.05
+      divide
+      setVariable
+      push 'vit'
+      getVariable
+      push 1
+      greaterThan
+      not
+      not
+      branchIfTrue label1
+      push 'vit', 1
+      setVariable
+     label1:
+      push 'vit'
+      getVariable
+      push 25
+      lessThan
+      not
+      not
+      branchIfTrue label2
+      push 'vit', 25
+      setVariable
+      push 'blur'
+      getVariable
+      push FALSE
+      equals
+      not
+      branchIfTrue label2
+      push 2, 1, 'c2'
+      getVariable
+      push 'gotoAndPlay'
+      callMethod
+      pop
+     label2:
+      push 'vit'
+      getVariable
+      push 16
+      lessThan
+      not
+      branchIfTrue label3
+      push 'blur'
+      getVariable
+      push TRUE
+      equals
+      not
+      branchIfTrue label3
+      push 6, 1, 'c2'
+      getVariable
+      push 'gotoAndPlay'
+      callMethod
+      pop
+     label3:
+    end // of frame 1
+
+    frame 2
+      gotoFrame 1
+      play
+    end // of frame 2
+  end // of defineMovieClip 235
+
+  defineMovieClip 238 // total frames: 1
+  end // of defineMovieClip 238
+
+  defineMovieClip 240 // total frames: 1
+  end // of defineMovieClip 240
+
+  defineMovieClip 241 // total frames: 4
+
+    frame 0
+      stop
+    end // of frame 0
+  end // of defineMovieClip 241
+
+  defineMovieClip 244 // total frames: 1
+  end // of defineMovieClip 244
+
+  defineMovieClip 245 // total frames: 16
+
+    frame 0
+      stop
+    end // of frame 0
+  end // of defineMovieClip 245
+
+  defineMovieClip 246 // total frames: 3
+
+    frame 0
+      stop
+    end // of frame 0
+  end // of defineMovieClip 246
+
+  defineMovieClip 249 // total frames: 2
+  end // of defineMovieClip 249
+
+  defineMovieClip 250 // total frames: 30
+
+    frame 0
+      stop
+    end // of frame 0
+
+    frame 29
+      stop
+    end // of frame 29
+  end // of defineMovieClip 250
+
+  defineMovieClip 252 // total frames: 1
+  end // of defineMovieClip 252
+
+  defineMovieClip 255 // total frames: 1
+  end // of defineMovieClip 255
+  
+  exportAssets
+    255 as 'box'
+  end // of exportAssets
+
+  defineMovieClip 258 // total frames: 1
+  end // of defineMovieClip 258
+
+  defineMovieClip 259 // total frames: 1
+  end // of defineMovieClip 259
+
+  defineMovieClip 260 // total frames: 15
+  end // of defineMovieClip 260
+
+  defineMovieClip 261 // total frames: 2
+
+    frame 0
+      constants 'sub', '_rotation'  
+      push 'sub'
+      getVariable
+      push '_rotation', 'sub'
+      getVariable
+      push '_rotation'
+      getMember
+      push 8
+      add
+      setMember
+    end // of frame 0
+
+    frame 1
+      gotoFrame 0
+      play
+    end // of frame 1
+  end // of defineMovieClip 261
+
+  defineMovieClip 263 // total frames: 1
+  end // of defineMovieClip 263
+
+  defineMovieClip 267 // total frames: 1
+  end // of defineMovieClip 267
+
+  defineMovieClip 268 // total frames: 2
+
+    frame 0
+      stop
+    end // of frame 0
+  end // of defineMovieClip 268
+
+  defineMovieClip 270 // total frames: 1
+  end // of defineMovieClip 270
+
+  defineMovieClip 271 // total frames: 2
+
+    frame 0
+      stop
+    end // of frame 0
+  end // of defineMovieClip 271
+
+  defineMovieClip 272 // total frames: 1
+  end // of defineMovieClip 272
+
+  defineMovieClip 275 // total frames: 1
+  end // of defineMovieClip 275
+
+  defineMovieClip 278 // total frames: 4
+
+    frame 0
+      stop
+    end // of frame 0
+
+    frame 3
+      stop
+    end // of frame 3
+  end // of defineMovieClip 278
+
+  defineMovieClip 280 // total frames: 1
+  end // of defineMovieClip 280
+
+  defineMovieClip 284 // total frames: 1
+  end // of defineMovieClip 284
+
+  defineMovieClip 286 // total frames: 1
+  end // of defineMovieClip 286
+
+  defineMovieClip 289 // total frames: 1
+  end // of defineMovieClip 289
+
+  defineMovieClip 291 // total frames: 1
+  end // of defineMovieClip 291
+
+  defineMovieClip 293 // total frames: 20
+
+    frame 0
+      stop
+    end // of frame 0
+  end // of defineMovieClip 293
+
+  defineMovieClip 295 // total frames: 1
+  end // of defineMovieClip 295
+
+  defineMovieClip 298 // total frames: 1
+  end // of defineMovieClip 298
+
+  defineMovieClip 300 // total frames: 1
+  end // of defineMovieClip 300
+
+  defineMovieClip 303 // total frames: 1
+  end // of defineMovieClip 303
+
+  defineMovieClip 305 // total frames: 1
+  end // of defineMovieClip 305
+
+  defineMovieClip 306 // total frames: 20
+
+    frame 0
+      stop
+    end // of frame 0
+  end // of defineMovieClip 306
+
+  defineMovieClip 309 // total frames: 1
+  end // of defineMovieClip 309
+
+  defineMovieClip 311 // total frames: 1
+  end // of defineMovieClip 311
+
+  defineMovieClip 313 // total frames: 1
+  end // of defineMovieClip 313
+
+  defineMovieClip 316 // total frames: 1
+  end // of defineMovieClip 316
+
+  defineMovieClip 317 // total frames: 20
+
+    frame 0
+      stop
+    end // of frame 0
+  end // of defineMovieClip 317
+
+  defineMovieClip 319 // total frames: 1
+  end // of defineMovieClip 319
+
+  defineMovieClip 322 // total frames: 1
+  end // of defineMovieClip 322
+
+  defineMovieClip 324 // total frames: 1
+  end // of defineMovieClip 324
+
+  defineMovieClip 326 // total frames: 1
+  end // of defineMovieClip 326
+
+  defineMovieClip 328 // total frames: 1
+  end // of defineMovieClip 328
+
+  defineMovieClip 330 // total frames: 1
+  end // of defineMovieClip 330
+
+  defineMovieClip 332 // total frames: 1
+  end // of defineMovieClip 332
+
+  defineMovieClip 334 // total frames: 1
+  end // of defineMovieClip 334
+
+  defineMovieClip 336 // total frames: 19
+
+    frame 0
+      stop
+    end // of frame 0
+  end // of defineMovieClip 336
+
+  defineMovieClip 340 // total frames: 1
+  end // of defineMovieClip 340
+
+  defineMovieClip 343 // total frames: 1
+  end // of defineMovieClip 343
+
+  defineMovieClip 344 // total frames: 1
+  end // of defineMovieClip 344
+
+  defineMovieClip 346 // total frames: 1
+  end // of defineMovieClip 346
+
+  defineMovieClip 349 // total frames: 1
+  end // of defineMovieClip 349
+
+  defineMovieClip 350 // total frames: 20
+
+    frame 0
+      stop
+    end // of frame 0
+  end // of defineMovieClip 350
+
+  defineMovieClip 352 // total frames: 1
+  end // of defineMovieClip 352
+
+  defineMovieClip 354 // total frames: 1
+  end // of defineMovieClip 354
+
+  defineMovieClip 356 // total frames: 1
+  end // of defineMovieClip 356
+
+  defineMovieClip 358 // total frames: 1
+  end // of defineMovieClip 358
+
+  defineMovieClip 360 // total frames: 1
+  end // of defineMovieClip 360
+
+  defineMovieClip 362 // total frames: 20
+
+    frame 0
+      stop
+    end // of frame 0
+  end // of defineMovieClip 362
+
+  defineMovieClip 366 // total frames: 13
+
+    frame 0
+      stop
+    end // of frame 0
+
+    frame 3
+      stop
+    end // of frame 3
+  end // of defineMovieClip 366
+
+  defineMovieClip 368 // total frames: 1
+  end // of defineMovieClip 368
+
+  defineMovieClip 370 // total frames: 1
+  end // of defineMovieClip 370
+
+  defineMovieClip 372 // total frames: 1
+  end // of defineMovieClip 372
+
+  defineMovieClip 375 // total frames: 1
+  end // of defineMovieClip 375
+
+  defineMovieClip 376 // total frames: 20
+
+    frame 0
+      stop
+    end // of frame 0
+  end // of defineMovieClip 376
+
+  defineMovieClip 379 // total frames: 1
+  end // of defineMovieClip 379
+
+  defineMovieClip 381 // total frames: 1
+  end // of defineMovieClip 381
+
+  defineMovieClip 384 // total frames: 1
+  end // of defineMovieClip 384
+
+  defineMovieClip 386 // total frames: 1
+  end // of defineMovieClip 386
+
+  defineMovieClip 387 // total frames: 20
+
+    frame 0
+      stop
+    end // of frame 0
+  end // of defineMovieClip 387
+
+  defineMovieClip 390 // total frames: 1
+  end // of defineMovieClip 390
+
+  defineMovieClip 392 // total frames: 1
+  end // of defineMovieClip 392
+
+  defineMovieClip 394 // total frames: 1
+  end // of defineMovieClip 394
+
+  defineMovieClip 397 // total frames: 1
+  end // of defineMovieClip 397
+
+  defineMovieClip 398 // total frames: 20
+
+    frame 0
+      stop
+    end // of frame 0
+  end // of defineMovieClip 398
+
+  defineMovieClip 400 // total frames: 1
+  end // of defineMovieClip 400
+
+  defineMovieClip 402 // total frames: 1
+  end // of defineMovieClip 402
+
+  defineMovieClip 404 // total frames: 1
+  end // of defineMovieClip 404
+
+  defineMovieClip 406 // total frames: 1
+  end // of defineMovieClip 406
+
+  defineMovieClip 408 // total frames: 1
+  end // of defineMovieClip 408
+
+  defineMovieClip 410 // total frames: 20
+
+    frame 0
+      stop
+    end // of frame 0
+  end // of defineMovieClip 410
+
+  defineMovieClip 411 // total frames: 10
+
+    frame 0
+      stop
+    end // of frame 0
+  end // of defineMovieClip 411
+
+  defineMovieClip 412 // total frames: 42
+
+    frame 0
+      stop
+    end // of frame 0
+
+    frame 1
+      constants '_parent', 'title', 'vit', 'title2', 'fl', '_visible'  
+      push '_parent'
+      getVariable
+      push 'title'
+      getMember
+      push 'vit', 0.0
+      setMember
+      push '_parent'
+      getVariable
+      push 'title2'
+      getMember
+      push 'vit', 0.0
+      setMember
+      push '_parent'
+      getVariable
+      push 'fl'
+      getMember
+      push '_visible', FALSE
+      setMember
+    end // of frame 1
+
+    frame 14
+      constants '_root', 'selectedP', 'n', 'gotoAndStop', 'gfx', 'cacheAsBitmap', 'gfx2'  
+      push '_root'
+      getVariable
+      push 'selectedP'
+      getMember
+      push 1, 'n'
+      getVariable
+      push 'gotoAndStop'
+      callMethod
+      pop
+      push 'n'
+      getVariable
+      push 'gfx'
+      getMember
+      push 'cacheAsBitmap', TRUE
+      setMember
+      push 'n'
+      getVariable
+      push 'gfx2'
+      getMember
+      push 'cacheAsBitmap', TRUE
+      setMember
+    end // of frame 14
+
+    frame 19
+      constants '_parent', 'title', 'vit', 'title2', 'fl', '_visible'  
+      push '_parent'
+      getVariable
+      push 'title'
+      getMember
+      push 'vit', 2
+      setMember
+      push '_parent'
+      getVariable
+      push 'title2'
+      getMember
+      push 'vit', -5
+      setMember
+      push '_parent'
+      getVariable
+      push 'fl'
+      getMember
+      push '_visible', TRUE
+      setMember
+    end // of frame 19
+
+    frame 20
+      gotoFrame 0
+    end // of frame 20
+
+    frame 21
+      constants '_parent', 'title', 'vit', 'title2'  
+      push '_parent'
+      getVariable
+      push 'title'
+      getMember
+      push 'vit', 0.0
+      setMember
+      push '_parent'
+      getVariable
+      push 'title2'
+      getMember
+      push 'vit', 0.0
+      setMember
+    end // of frame 21
+
+    frame 23
+      constants 'colored', 'n', 'gfx2', 'gotoAndStop', 'gfx', '_root', 'main', 'applyColors', 'resetColor'  
+      push 'colored', 1, 'n'
+      getVariable
+      push 'gfx2'
+      getMember
+      push 'gotoAndStop'
+      callMethod
+      pop
+      push 'colored', 1, 'n'
+      getVariable
+      push 'gfx'
+      getMember
+      push 'gotoAndStop'
+      callMethod
+      pop
+      push 0.0, '_root'
+      getVariable
+      push 'main'
+      getMember
+      push 'applyColors'
+      callMethod
+      pop
+      push 0.0, '_root'
+      getVariable
+      push 'main'
+      getMember
+      push 'resetColor'
+      callMethod
+      pop
+    end // of frame 23
+
+    frame 25
+      constants '_parent', 'title', 'vit', 'title2'  
+      push '_parent'
+      getVariable
+      push 'title'
+      getMember
+      push 'vit', 2
+      setMember
+      push '_parent'
+      getVariable
+      push 'title2'
+      getMember
+      push 'vit', -5
+      setMember
+    end // of frame 25
+
+    frame 26
+      stop
+    end // of frame 26
+
+    frame 27
+      constants '_parent', 'title', 'vit', 'title2'  
+      push '_parent'
+      getVariable
+      push 'title'
+      getMember
+      push 'vit', 0.0
+      setMember
+      push '_parent'
+      getVariable
+      push 'title2'
+      getMember
+      push 'vit', 0.0
+      setMember
+    end // of frame 27
+
+    frame 29
+      constants 'static', 'n', 'gfx2', 'gotoAndStop', 'gfx'  
+      push 'static', 1, 'n'
+      getVariable
+      push 'gfx2'
+      getMember
+      push 'gotoAndStop'
+      callMethod
+      pop
+      push 'static', 1, 'n'
+      getVariable
+      push 'gfx'
+      getMember
+      push 'gotoAndStop'
+      callMethod
+      pop
+    end // of frame 29
+
+    frame 32
+      constants '_parent', 'title', 'vit', 'title2'  
+      push '_parent'
+      getVariable
+      push 'title'
+      getMember
+      push 'vit', 2
+      setMember
+      push '_parent'
+      getVariable
+      push 'title2'
+      getMember
+      push 'vit', -5
+      setMember
+      gotoFrame 0
+    end // of frame 32
+
+    frame 37
+      stop
+    end // of frame 37
+
+    frame 41
+      gotoFrame 26
+    end // of frame 41
+  end // of defineMovieClip 412
+
+  defineMovieClip 414 // total frames: 1
+  end // of defineMovieClip 414
+
+  defineMovieClip 415 // total frames: 15
+
+    frame 0
+      constants 'confirm', '_visible', 'initx', 'inity', 'dimx', 'dimy', 'espace', 'maxPlayer', 'maxLine', 'selectedP', 'domaine', 'dom', 'state', 'charSelect', 'pal', 'colId0', 'colId1', 'colId2', 'colId3', 'stringB', 'rollBox', 'bNext', 'gl', 'avatarToString', 'clap', 'pan2', 'n', 'fieldPseudo', 'text', 'userName', 'toUpperCase', 'v', 'vignette', 'vign', 'attachMovie', '_width', '_height', '_x', 'v1', '_y', 'gotoAndStop', 'vRoll', ';', 'box', '', 'onRelease', 'artwork', '_currentframe', 'gotoColSelect', 'gotoCharSelect', 'onRollOver', 'onRollOut', 'onReleaseOutside', 'pressButton', 'valid', 'famille', 'rand', 'removeMovieClip', 'onPress', 'resetColor', 'circle', 'vit', 'col0', 'sub', 'gotoAndPlay', 'palette', 'paltab', 'length', 'applyColors', 'col1', 'col2', 'col3', 'oui', 'LoadVars', 'perso', 'POST', '_self', '/user/signUpDone', 'send', 'non', 'retry', 'undo', 'col', 'setColor', 'sub2', 'gfx', 'gfx2', 'colSelect', 'bg', 'persToCol', 'title', 's1', 's2', 'title2', 'gBox', 'desc', 'colToPers', 'resetColApply', 'r', 'g', 'b', 'Color', 'ra', 'ga', 'ba', 'aa', 'rb', 'gb', 'bb', 'ab', 'setTransform', 'init'  
+      function2 init () (r:1='this', r:2='_root')
+        push 'confirm'
+        getVariable
+        push '_visible', FALSE
+        setMember
+        push 'initx', 20
+        setVariable
+        push 'inity', 45
+        setVariable
+        push 'dimx', 58
+        setVariable
+        push 'dimy', 58
+        setVariable
+        push 'espace', 5
+        setVariable
+        push 'maxPlayer', 10
+        setVariable
+        push 'maxLine', 5
+        setVariable
+        push r:_root, 'selectedP', 1
+        setMember
+        push 'domaine', r:_root, 'dom'
+        getMember
+        setVariable
+        push 'state', 'charSelect'
+        setVariable
+        push 'pal'
+        getVariable
+        push '_visible', FALSE
+        setMember
+        push 'colId0', 0.0
+        setVariable
+        push 'colId1', 0.0
+        setVariable
+        push 'colId2', 0.0
+        setVariable
+        push 'colId3', 0.0
+        setVariable
+        push 'stringB', 0.0
+        setVariable
+        push 'rollBox', FALSE
+        setVariable
+        push 'bNext'
+        getVariable
+        push 'gl'
+        getMember
+        push '_visible', FALSE
+        setMember
+        push 'avatarToString', 0.0
+        setVariable
+        push 'clap'
+        getVariable
+        push 'pan2'
+        getMember
+        push 'n'
+        getMember
+        push 'fieldPseudo'
+        getMember
+        push 'text', 0.0, 'clap'
+        getVariable
+        push 'pan2'
+        getMember
+        push 'n'
+        getMember
+        push 'fieldPseudo'
+        getMember
+        push 'text'
+        getMember
+        push r:_root, 'userName'
+        getMember
+        toString
+        add
+        push 'toUpperCase'
+        callMethod
+        setMember
+        push 1
+        setRegister r:3
+        pop
+       label1:
+        push r:3, 'maxPlayer'
+        getVariable
+        greaterThan
+        not
+        not
+        branchIfTrue label9
+        push r:3, 'v', r:3
+        add
+        push 'vignette', 3, 'vign'
+        getVariable
+        push 'attachMovie'
+        callMethod
+        pop
+        push r:this, 'v', r:3
+        add
+        getMember
+        push '_width', 'dimx'
+        getVariable
+        setMember
+        push r:this, 'v', r:3
+        add
+        getMember
+        push '_height', 'dimy'
+        getVariable
+        setMember
+        push r:3, 1
+        greaterThan
+        not
+        branchIfTrue label2
+        push r:this, 'v', r:3
+        add
+        getMember
+        push '_x', r:this, 'v', r:3, 1
+        subtract
+        add
+        getMember
+        push '_x'
+        getMember
+        push 'dimx'
+        getVariable
+        add
+        push 'espace'
+        getVariable
+        add
+        setMember
+        branch label3
+       label2:
+        push r:this, 'v1'
+        getMember
+        push '_x', 'initx'
+        getVariable
+        setMember
+       label3:
+        push r:3, 'maxLine'
+        getVariable
+        push 1
+        add
+        lessThan
+        not
+        not
+        branchIfTrue label6
+        push r:3, 'maxLine'
+        getVariable
+        push 1
+        add
+        equals
+        not
+        branchIfTrue label4
+        push r:this, 'v', r:3
+        add
+        getMember
+        push '_x', 'initx'
+        getVariable
+        setMember
+        branch label5
+       label4:
+        push r:this, 'v', r:3
+        add
+        getMember
+        push '_x', r:this, 'v', r:3, 1
+        subtract
+        add
+        getMember
+        push '_x'
+        getMember
+        push 'dimx'
+        getVariable
+        add
+        push 'espace'
+        getVariable
+        add
+        setMember
+       label5:
+        push r:this, 'v', r:3
+        add
+        getMember
+        push '_y', r:this, 'v1'
+        getMember
+        push '_y'
+        getMember
+        push 'dimy'
+        getVariable
+        add
+        push 'espace'
+        getVariable
+        add
+        setMember
+        branch label7
+       label6:
+        push r:this, 'v', r:3
+        add
+        getMember
+        push '_y', 'inity'
+        getVariable
+        setMember
+       label7:
+        push r:3, 'maxLine'
+        getVariable
+        push 2
+        multiply
+        push 1
+        add
+        lessThan
+        not
+        not
+        branchIfTrue label8
+        push r:this, 'v', r:3
+        add
+        getMember
+        push '_y', r:this, 'v1'
+        getMember
+        push '_y'
+        getMember
+        push 'dimy'
+        getVariable
+        push 2
+        multiply
+        add
+        push 'espace'
+        getVariable
+        push 2
+        multiply
+        add
+        setMember
+        push r:this, 'v', r:3
+        add
+        getMember
+        push '_x', r:this, 'v', r:3, 'maxLine'
+        getVariable
+        subtract
+        add
+        getMember
+        push '_x'
+        getMember
+        push 'espace'
+        getVariable
+        add
+        setMember
+       label8:
+        push r:3, 1, r:this, 'v', r:3
+        add
+        getMember
+        push 'gotoAndStop'
+        callMethod
+        pop
+        push r:3
+        increment
+        setRegister r:3
+        pop
+        branch label1
+       label9:
+        push 100, 'vRoll', 'vRoll', 3, 'attachMovie'
+        callFunction
+        pop
+        push 'vRoll'
+        getVariable
+        push '_x', r:this, 'v', r:_root, 'selectedP'
+        getMember
+        add
+        getMember
+        push '_x'
+        getMember
+        setMember
+        push 'vRoll'
+        getVariable
+        push '_y', r:this, 'v', r:_root, 'selectedP'
+        getMember
+        add
+        getMember
+        push '_y'
+        getMember
+        setMember
+      end // of function init
+
+      function2 main () (r:1='this', r:2='_root')
+        push 'stringB', r:_root, 'selectedP'
+        getMember
+        push 1
+        subtract
+        push ';'
+        add
+        push 0.0
+        add
+        push ';'
+        add
+        push 'colId0'
+        getVariable
+        add
+        push ';'
+        add
+        push 'colId1'
+        getVariable
+        add
+        push ';'
+        add
+        push 'colId2'
+        getVariable
+        add
+        push ';'
+        add
+        push 'colId3'
+        getVariable
+        add
+        setVariable
+        push 'vRoll'
+        getVariable
+        push '_x', r:this, 'v', r:_root, 'selectedP'
+        getMember
+        add
+        getMember
+        push '_x'
+        getMember
+        setMember
+        push 'vRoll'
+        getVariable
+        push '_y', r:this, 'v', r:_root, 'selectedP'
+        getMember
+        add
+        getMember
+        push '_y'
+        getMember
+        setMember
+        push 'rollBox'
+        getVariable
+        not
+        branchIfTrue label10
+        push 'box'
+        getVariable
+        push '_x', '', 20
+        getProperty
+        push 30
+        add
+        setMember
+        push 'box'
+        getVariable
+        push '_y', '', 21
+        getProperty
+        push 20
+        add
+        setMember
+       label10:
+        push 'bNext'
+        getVariable
+        push 'onRelease'
+        function ()
+          push 'state'
+          getVariable
+          push 'charSelect'
+          equals
+          not
+          branchIfTrue label12
+          push 'artwork'
+          getVariable
+          push '_currentframe'
+          getMember
+          push 1
+          equals
+          not
+          branchIfTrue label11
+          push 0.0, 'gotoColSelect'
+          callFunction
+          pop
+         label11:
+          branch label13
+         label12:
+          push 'artwork'
+          getVariable
+          push '_currentframe'
+          getMember
+          push 27
+          equals
+          not
+          branchIfTrue label13
+          push 0.0, 'gotoCharSelect'
+          callFunction
+          pop
+         label13:
+        end // of function 
+
+        setMember
+        push 'bNext'
+        getVariable
+        push 'onRollOver'
+        function ()
+          push 'bNext'
+          getVariable
+          push 'gl'
+          getMember
+          push '_visible', TRUE
+          setMember
+        end // of function 
+
+        setMember
+        push 'bNext'
+        getVariable
+        push 'onRollOut'
+        function ()
+          push 'bNext'
+          getVariable
+          push 'gl'
+          getMember
+          push '_visible', FALSE
+          setMember
+        end // of function 
+
+        setMember
+        push 'bNext'
+        getVariable
+        push 'onReleaseOutside'
+        function ()
+          push 'bNext'
+          getVariable
+          push 'gl'
+          getMember
+          push '_visible', FALSE
+          setMember
+        end // of function 
+
+        setMember
+        push 0.0, 'pressButton'
+        callFunction
+        pop
+        push 0.0, 'valid'
+        callFunction
+        pop
+      end // of function main
+
+      function2 pressButton () (r:1='_root')
+        push 'famille', r:_root, 'selectedP'
+        getMember
+        push 1
+        subtract
+        varEquals
+        push 'pal'
+        getVariable
+        push 'rand'
+        getMember
+        push 'onRollOver'
+        function ()
+          push 2, 1, 'pal'
+          getVariable
+          push 'rand'
+          getMember
+          push 'gotoAndStop'
+          callMethod
+          pop
+          push 216, 'box', 'box', 3, 'attachMovie'
+          callFunction
+          pop
+          push 'box'
+          getVariable
+          push '_x', '', 20
+          getProperty
+          push 30
+          add
+          setMember
+          push 'box'
+          getVariable
+          push '_y', '', 21
+          getProperty
+          push 20
+          add
+          setMember
+          push 'rollBox', TRUE
+          setVariable
+        end // of function 
+
+        setMember
+        push 'pal'
+        getVariable
+        push 'rand'
+        getMember
+        push 'onRollOut'
+        function ()
+          push 1, 1, 'pal'
+          getVariable
+          push 'rand'
+          getMember
+          push 'gotoAndStop'
+          callMethod
+          pop
+          push 0.0, 'box'
+          getVariable
+          push 'removeMovieClip'
+          callMethod
+          pop
+        end // of function 
+
+        setMember
+        push 'pal'
+        getVariable
+        push 'rand'
+        getMember
+        push 'onPress'
+        function ()
+          push 0.0, 'resetColor'
+          callFunction
+          pop
+          push 3, 1, 'pal'
+          getVariable
+          push 'rand'
+          getMember
+          push 'gotoAndStop'
+          callMethod
+          pop
+          push 'pal'
+          getVariable
+          push 'circle'
+          getMember
+          push 'vit', 'pal'
+          getVariable
+          push 'circle'
+          getMember
+          push 'vit'
+          getMember
+          push 5
+          add
+          setMember
+        end // of function 
+
+        setMember
+        push 'pal'
+        getVariable
+        push 'rand'
+        getMember
+        push 'onRelease'
+        function ()
+          push 1, 1, 'pal'
+          getVariable
+          push 'rand'
+          getMember
+          push 'gotoAndStop'
+          callMethod
+          pop
+        end // of function 
+
+        setMember
+        push 'pal'
+        getVariable
+        push 'rand'
+        getMember
+        push 'onReleaseOutside'
+        function ()
+          push 1, 1, 'pal'
+          getVariable
+          push 'rand'
+          getMember
+          push 'gotoAndStop'
+          callMethod
+          pop
+          push 0.0, 'box'
+          getVariable
+          push 'removeMovieClip'
+          callMethod
+          pop
+        end // of function 
+
+        setMember
+        push 'pal'
+        getVariable
+        push 'col0'
+        getMember
+        push 'sub'
+        getMember
+        push 'onRollOver'
+        function ()
+          push 2, 1, 'pal'
+          getVariable
+          push 'col0'
+          getMember
+          push 'gotoAndStop'
+          callMethod
+          pop
+        end // of function 
+
+        setMember
+        push 'pal'
+        getVariable
+        push 'col0'
+        getMember
+        push 'sub'
+        getMember
+        push 'onRollOut'
+        function ()
+          push 1, 1, 'pal'
+          getVariable
+          push 'col0'
+          getMember
+          push 'gotoAndStop'
+          callMethod
+          pop
+        end // of function 
+
+        setMember
+        push 'pal'
+        getVariable
+        push 'col0'
+        getMember
+        push 'sub'
+        getMember
+        push 'onPress'
+        function ()
+          push 3, 1, 'pal'
+          getVariable
+          push 'col0'
+          getMember
+          push 'gotoAndStop'
+          callMethod
+          pop
+          push 2, 1, 'pal'
+          getVariable
+          push 'col0'
+          getMember
+          push 'sub'
+          getMember
+          push 'gotoAndPlay'
+          callMethod
+          pop
+          push 'colId0', 'colId0'
+          getVariable
+          increment
+          setVariable
+          push 'colId0'
+          getVariable
+          push 'palette'
+          getVariable
+          push 'paltab'
+          getVariable
+          push 'famille'
+          getVariable
+          getMember
+          push 0.0
+          getMember
+          getMember
+          push 'length'
+          getMember
+          push 1
+          subtract
+          greaterThan
+          not
+          branchIfTrue label14
+          push 'colId0', 0.0
+          setVariable
+         label14:
+          push 0.0, 'applyColors'
+          callFunction
+          pop
+        end // of function 
+
+        setMember
+        push 'pal'
+        getVariable
+        push 'col0'
+        getMember
+        push 'sub'
+        getMember
+        push 'onRelease'
+        function ()
+          push 1, 1, 'pal'
+          getVariable
+          push 'col0'
+          getMember
+          push 'gotoAndStop'
+          callMethod
+          pop
+        end // of function 
+
+        setMember
+        push 'pal'
+        getVariable
+        push 'col0'
+        getMember
+        push 'sub'
+        getMember
+        push 'onReleaseOutside'
+        function ()
+          push 1, 1, 'pal'
+          getVariable
+          push 'col0'
+          getMember
+          push 'gotoAndStop'
+          callMethod
+          pop
+        end // of function 
+
+        setMember
+        push 'pal'
+        getVariable
+        push 'col1'
+        getMember
+        push 'sub'
+        getMember
+        push 'onRollOver'
+        function ()
+          push 2, 1, 'pal'
+          getVariable
+          push 'col1'
+          getMember
+          push 'gotoAndStop'
+          callMethod
+          pop
+        end // of function 
+
+        setMember
+        push 'pal'
+        getVariable
+        push 'col1'
+        getMember
+        push 'sub'
+        getMember
+        push 'onRollOut'
+        function ()
+          push 1, 1, 'pal'
+          getVariable
+          push 'col1'
+          getMember
+          push 'gotoAndStop'
+          callMethod
+          pop
+        end // of function 
+
+        setMember
+        push 'pal'
+        getVariable
+        push 'col1'
+        getMember
+        push 'sub'
+        getMember
+        push 'onPress'
+        function ()
+          push 3, 1, 'pal'
+          getVariable
+          push 'col1'
+          getMember
+          push 'gotoAndStop'
+          callMethod
+          pop
+          push 2, 1, 'pal'
+          getVariable
+          push 'col1'
+          getMember
+          push 'sub'
+          getMember
+          push 'gotoAndPlay'
+          callMethod
+          pop
+          push 'colId1', 'colId1'
+          getVariable
+          increment
+          setVariable
+          push 'colId1'
+          getVariable
+          push 'palette'
+          getVariable
+          push 'paltab'
+          getVariable
+          push 'famille'
+          getVariable
+          getMember
+          push 1
+          getMember
+          getMember
+          push 'length'
+          getMember
+          push 1
+          subtract
+          greaterThan
+          not
+          branchIfTrue label15
+          push 'colId1', 0.0
+          setVariable
+         label15:
+          push 0.0, 'applyColors'
+          callFunction
+          pop
+        end // of function 
+
+        setMember
+        push 'pal'
+        getVariable
+        push 'col1'
+        getMember
+        push 'sub'
+        getMember
+        push 'onRelease'
+        function ()
+          push 1, 1, 'pal'
+          getVariable
+          push 'col1'
+          getMember
+          push 'gotoAndStop'
+          callMethod
+          pop
+        end // of function 
+
+        setMember
+        push 'pal'
+        getVariable
+        push 'col1'
+        getMember
+        push 'sub'
+        getMember
+        push 'onReleaseOutside'
+        function ()
+          push 1, 1, 'pal'
+          getVariable
+          push 'col1'
+          getMember
+          push 'gotoAndStop'
+          callMethod
+          pop
+        end // of function 
+
+        setMember
+        push 'pal'
+        getVariable
+        push 'col2'
+        getMember
+        push 'sub'
+        getMember
+        push 'onRollOver'
+        function ()
+          push 2, 1, 'pal'
+          getVariable
+          push 'col2'
+          getMember
+          push 'gotoAndStop'
+          callMethod
+          pop
+        end // of function 
+
+        setMember
+        push 'pal'
+        getVariable
+        push 'col2'
+        getMember
+        push 'sub'
+        getMember
+        push 'onRollOut'
+        function ()
+          push 1, 1, 'pal'
+          getVariable
+          push 'col2'
+          getMember
+          push 'gotoAndStop'
+          callMethod
+          pop
+        end // of function 
+
+        setMember
+        push 'pal'
+        getVariable
+        push 'col2'
+        getMember
+        push 'sub'
+        getMember
+        push 'onPress'
+        function ()
+          push 3, 1, 'pal'
+          getVariable
+          push 'col2'
+          getMember
+          push 'gotoAndStop'
+          callMethod
+          pop
+          push 2, 1, 'pal'
+          getVariable
+          push 'col2'
+          getMember
+          push 'sub'
+          getMember
+          push 'gotoAndPlay'
+          callMethod
+          pop
+          push 'colId2', 'colId2'
+          getVariable
+          increment
+          setVariable
+          push 'colId2'
+          getVariable
+          push 'palette'
+          getVariable
+          push 'paltab'
+          getVariable
+          push 'famille'
+          getVariable
+          getMember
+          push 2
+          getMember
+          getMember
+          push 'length'
+          getMember
+          push 1
+          subtract
+          greaterThan
+          not
+          branchIfTrue label16
+          push 'colId2', 0.0
+          setVariable
+         label16:
+          push 0.0, 'applyColors'
+          callFunction
+          pop
+        end // of function 
+
+        setMember
+        push 'pal'
+        getVariable
+        push 'col2'
+        getMember
+        push 'sub'
+        getMember
+        push 'onRelease'
+        function ()
+          push 1, 1, 'pal'
+          getVariable
+          push 'col2'
+          getMember
+          push 'gotoAndStop'
+          callMethod
+          pop
+        end // of function 
+
+        setMember
+        push 'pal'
+        getVariable
+        push 'col2'
+        getMember
+        push 'sub'
+        getMember
+        push 'onReleaseOutside'
+        function ()
+          push 1, 1, 'pal'
+          getVariable
+          push 'col2'
+          getMember
+          push 'gotoAndStop'
+          callMethod
+          pop
+        end // of function 
+
+        setMember
+        push 'pal'
+        getVariable
+        push 'col3'
+        getMember
+        push 'sub'
+        getMember
+        push 'onRollOver'
+        function ()
+          push 2, 1, 'pal'
+          getVariable
+          push 'col3'
+          getMember
+          push 'gotoAndStop'
+          callMethod
+          pop
+        end // of function 
+
+        setMember
+        push 'pal'
+        getVariable
+        push 'col3'
+        getMember
+        push 'sub'
+        getMember
+        push 'onRollOut'
+        function ()
+          push 1, 1, 'pal'
+          getVariable
+          push 'col3'
+          getMember
+          push 'gotoAndStop'
+          callMethod
+          pop
+        end // of function 
+
+        setMember
+        push 'pal'
+        getVariable
+        push 'col3'
+        getMember
+        push 'sub'
+        getMember
+        push 'onPress'
+        function ()
+          push 3, 1, 'pal'
+          getVariable
+          push 'col3'
+          getMember
+          push 'gotoAndStop'
+          callMethod
+          pop
+          push 2, 1, 'pal'
+          getVariable
+          push 'col3'
+          getMember
+          push 'sub'
+          getMember
+          push 'gotoAndPlay'
+          callMethod
+          pop
+          push 'colId3', 'colId3'
+          getVariable
+          increment
+          setVariable
+          push 'colId3'
+          getVariable
+          push 'palette'
+          getVariable
+          push 'paltab'
+          getVariable
+          push 'famille'
+          getVariable
+          getMember
+          push 3
+          getMember
+          getMember
+          push 'length'
+          getMember
+          push 1
+          subtract
+          greaterThan
+          not
+          branchIfTrue label17
+          push 'colId3', 0.0
+          setVariable
+         label17:
+          push 0.0, 'applyColors'
+          callFunction
+          pop
+        end // of function 
+
+        setMember
+        push 'pal'
+        getVariable
+        push 'col3'
+        getMember
+        push 'sub'
+        getMember
+        push 'onRelease'
+        function ()
+          push 1, 1, 'pal'
+          getVariable
+          push 'col3'
+          getMember
+          push 'gotoAndStop'
+          callMethod
+          pop
+        end // of function 
+
+        setMember
+        push 'pal'
+        getVariable
+        push 'col3'
+        getMember
+        push 'sub'
+        getMember
+        push 'onReleaseOutside'
+        function ()
+          push 1, 1, 'pal'
+          getVariable
+          push 'col3'
+          getMember
+          push 'gotoAndStop'
+          callMethod
+          pop
+        end // of function 
+
+        setMember
+      end // of function pressButton
+
+      function2 valid () ()
+        push 'clap'
+        getVariable
+        push 'pan2'
+        getMember
+        push 'valid'
+        getMember
+        push 'onRollOver'
+        function ()
+          push 2, 1, 'clap'
+          getVariable
+          push 'pan2'
+          getMember
+          push 'valid'
+          getMember
+          push 'gotoAndStop'
+          callMethod
+          pop
+        end // of function 
+
+        setMember
+        push 'clap'
+        getVariable
+        push 'pan2'
+        getMember
+        push 'valid'
+        getMember
+        push 'onRollOut'
+        function ()
+          push 1, 1, 'clap'
+          getVariable
+          push 'pan2'
+          getMember
+          push 'valid'
+          getMember
+          push 'gotoAndStop'
+          callMethod
+          pop
+        end // of function 
+
+        setMember
+        push 'clap'
+        getVariable
+        push 'pan2'
+        getMember
+        push 'valid'
+        getMember
+        push 'onRelease'
+        function ()
+          push 'confirm'
+          getVariable
+          push '_visible', TRUE
+          setMember
+          push 'confirm', 1, 'artwork'
+          getVariable
+          push 'gotoAndPlay'
+          callMethod
+          pop
+        end // of function 
+
+        setMember
+        push 'confirm'
+        getVariable
+        push 'box'
+        getMember
+        push 'oui'
+        getMember
+        push 'onRollOver'
+        function ()
+          push 2, 1, 'confirm'
+          getVariable
+          push 'box'
+          getMember
+          push 'oui'
+          getMember
+          push 'gotoAndStop'
+          callMethod
+          pop
+        end // of function 
+
+        setMember
+        push 'confirm'
+        getVariable
+        push 'box'
+        getMember
+        push 'oui'
+        getMember
+        push 'onRollOut'
+        function ()
+          push 1, 1, 'confirm'
+          getVariable
+          push 'box'
+          getMember
+          push 'oui'
+          getMember
+          push 'gotoAndStop'
+          callMethod
+          pop
+        end // of function 
+
+        setMember
+        push 'confirm'
+        getVariable
+        push 'box'
+        getMember
+        push 'oui'
+        getMember
+        push 'onRelease'
+        function2 () ()
+          push 2, 1, 'confirm'
+          getVariable
+          push 'gotoAndPlay'
+          callMethod
+          pop
+          push 0.0, 'LoadVars'
+          new
+          setRegister r:1
+          pop
+          push r:1, 'perso', 'stringB'
+          getVariable
+          setMember
+          push 'POST', '_self', 'domaine'
+          getVariable
+          push '/user/signUpDone'
+          add
+          push 3, r:1, 'send'
+          callMethod
+          pop
+        end // of function 
+
+        setMember
+        push 'confirm'
+        getVariable
+        push 'box'
+        getMember
+        push 'non'
+        getMember
+        push 'onRollOver'
+        function ()
+          push 2, 1, 'confirm'
+          getVariable
+          push 'box'
+          getMember
+          push 'non'
+          getMember
+          push 'gotoAndStop'
+          callMethod
+          pop
+        end // of function 
+
+        setMember
+        push 'confirm'
+        getVariable
+        push 'box'
+        getMember
+        push 'non'
+        getMember
+        push 'onRollOut'
+        function ()
+          push 1, 1, 'confirm'
+          getVariable
+          push 'box'
+          getMember
+          push 'non'
+          getMember
+          push 'gotoAndStop'
+          callMethod
+          pop
+        end // of function 
+
+        setMember
+        push 'confirm'
+        getVariable
+        push 'box'
+        getMember
+        push 'non'
+        getMember
+        push 'onRelease'
+        function ()
+          push 'artwork'
+          getVariable
+          push '_currentframe'
+          getMember
+          push 38
+          equals
+          not
+          branchIfTrue label18
+          push 'confirm'
+          getVariable
+          push '_visible', FALSE
+          setMember
+          push 'retry', 1, 'artwork'
+          getVariable
+          push 'gotoAndPlay'
+          callMethod
+          pop
+         label18:
+        end // of function 
+
+        setMember
+        push 'confirm'
+        getVariable
+        push 'undo'
+        getMember
+        push 'onRelease'
+        function ()
+          push 'artwork'
+          getVariable
+          push '_currentframe'
+          getMember
+          push 38
+          equals
+          not
+          branchIfTrue label19
+          push 'confirm'
+          getVariable
+          push '_visible', FALSE
+          setMember
+          push 'retry', 1, 'artwork'
+          getVariable
+          push 'gotoAndPlay'
+          callMethod
+          pop
+         label19:
+        end // of function 
+
+        setMember
+      end // of function valid
+
+      function2 applyColors () (r:1='_root')
+        push r:_root, 'selectedP'
+        getMember
+        push 1
+        subtract
+        setRegister r:2
+        pop
+        push 0.0
+        setRegister r:3
+        pop
+       label20:
+        push r:3, 3
+        greaterThan
+        not
+        not
+        branchIfTrue label21
+        push 'palette'
+        getVariable
+        push 'paltab'
+        getVariable
+        push r:2
+        getMember
+        push 0.0
+        getMember
+        getMember
+        push 'colId0'
+        getVariable
+        getMember
+        push 'pal'
+        getVariable
+        push 'col0'
+        getMember
+        push 'sub'
+        getMember
+        push 'col'
+        getMember
+        push 2, 'setColor'
+        callFunction
+        pop
+        push 'palette'
+        getVariable
+        push 'paltab'
+        getVariable
+        push r:2
+        getMember
+        push 0.0
+        getMember
+        getMember
+        push 'colId0'
+        getVariable
+        getMember
+        push 'pal'
+        getVariable
+        push 'col0'
+        getMember
+        push 'sub2'
+        getMember
+        push 'col'
+        getMember
+        push 2, 'setColor'
+        callFunction
+        pop
+        push 'palette'
+        getVariable
+        push 'paltab'
+        getVariable
+        push r:2
+        getMember
+        push 1
+        getMember
+        getMember
+        push 'colId1'
+        getVariable
+        getMember
+        push 'pal'
+        getVariable
+        push 'col1'
+        getMember
+        push 'sub'
+        getMember
+        push 'col'
+        getMember
+        push 2, 'setColor'
+        callFunction
+        pop
+        push 'palette'
+        getVariable
+        push 'paltab'
+        getVariable
+        push r:2
+        getMember
+        push 1
+        getMember
+        getMember
+        push 'colId1'
+        getVariable
+        getMember
+        push 'pal'
+        getVariable
+        push 'col1'
+        getMember
+        push 'sub2'
+        getMember
+        push 'col'
+        getMember
+        push 2, 'setColor'
+        callFunction
+        pop
+        push 'palette'
+        getVariable
+        push 'paltab'
+        getVariable
+        push r:2
+        getMember
+        push 2
+        getMember
+        getMember
+        push 'colId2'
+        getVariable
+        getMember
+        push 'pal'
+        getVariable
+        push 'col2'
+        getMember
+        push 'sub'
+        getMember
+        push 'col'
+        getMember
+        push 2, 'setColor'
+        callFunction
+        pop
+        push 'palette'
+        getVariable
+        push 'paltab'
+        getVariable
+        push r:2
+        getMember
+        push 2
+        getMember
+        getMember
+        push 'colId2'
+        getVariable
+        getMember
+        push 'pal'
+        getVariable
+        push 'col2'
+        getMember
+        push 'sub2'
+        getMember
+        push 'col'
+        getMember
+        push 2, 'setColor'
+        callFunction
+        pop
+        push 'palette'
+        getVariable
+        push 'paltab'
+        getVariable
+        push r:2
+        getMember
+        push 3
+        getMember
+        getMember
+        push 'colId3'
+        getVariable
+        getMember
+        push 'pal'
+        getVariable
+        push 'col3'
+        getMember
+        push 'sub'
+        getMember
+        push 'col'
+        getMember
+        push 2, 'setColor'
+        callFunction
+        pop
+        push 'palette'
+        getVariable
+        push 'paltab'
+        getVariable
+        push r:2
+        getMember
+        push 3
+        getMember
+        getMember
+        push 'colId3'
+        getVariable
+        getMember
+        push 'pal'
+        getVariable
+        push 'col3'
+        getMember
+        push 'sub2'
+        getMember
+        push 'col'
+        getMember
+        push 2, 'setColor'
+        callFunction
+        pop
+        push 'palette'
+        getVariable
+        push 'paltab'
+        getVariable
+        push r:2
+        getMember
+        push 0.0
+        getMember
+        getMember
+        push 'colId0'
+        getVariable
+        getMember
+        push 'artwork'
+        getVariable
+        push 'n'
+        getMember
+        push 'gfx'
+        getMember
+        push 'col0'
+        getMember
+        push 2, 'setColor'
+        callFunction
+        pop
+        push 'palette'
+        getVariable
+        push 'paltab'
+        getVariable
+        push r:2
+        getMember
+        push 0.0
+        getMember
+        getMember
+        push 'colId0'
+        getVariable
+        getMember
+        push 'artwork'
+        getVariable
+        push 'n'
+        getMember
+        push 'gfx2'
+        getMember
+        push 'col0'
+        getMember
+        push 2, 'setColor'
+        callFunction
+        pop
+        push 'palette'
+        getVariable
+        push 'paltab'
+        getVariable
+        push r:2
+        getMember
+        push 1
+        getMember
+        getMember
+        push 'colId1'
+        getVariable
+        getMember
+        push 'artwork'
+        getVariable
+        push 'n'
+        getMember
+        push 'gfx'
+        getMember
+        push 'col1'
+        getMember
+        push 2, 'setColor'
+        callFunction
+        pop
+        push 'palette'
+        getVariable
+        push 'paltab'
+        getVariable
+        push r:2
+        getMember
+        push 1
+        getMember
+        getMember
+        push 'colId1'
+        getVariable
+        getMember
+        push 'artwork'
+        getVariable
+        push 'n'
+        getMember
+        push 'gfx2'
+        getMember
+        push 'col1'
+        getMember
+        push 2, 'setColor'
+        callFunction
+        pop
+        push 'palette'
+        getVariable
+        push 'paltab'
+        getVariable
+        push r:2
+        getMember
+        push 2
+        getMember
+        getMember
+        push 'colId2'
+        getVariable
+        getMember
+        push 'artwork'
+        getVariable
+        push 'n'
+        getMember
+        push 'gfx'
+        getMember
+        push 'col2'
+        getMember
+        push 2, 'setColor'
+        callFunction
+        pop
+        push 'palette'
+        getVariable
+        push 'paltab'
+        getVariable
+        push r:2
+        getMember
+        push 2
+        getMember
+        getMember
+        push 'colId2'
+        getVariable
+        getMember
+        push 'artwork'
+        getVariable
+        push 'n'
+        getMember
+        push 'gfx2'
+        getMember
+        push 'col2'
+        getMember
+        push 2, 'setColor'
+        callFunction
+        pop
+        push 'palette'
+        getVariable
+        push 'paltab'
+        getVariable
+        push r:2
+        getMember
+        push 3
+        getMember
+        getMember
+        push 'colId3'
+        getVariable
+        getMember
+        push 'artwork'
+        getVariable
+        push 'n'
+        getMember
+        push 'gfx'
+        getMember
+        push 'col3'
+        getMember
+        push 2, 'setColor'
+        callFunction
+        pop
+        push 'palette'
+        getVariable
+        push 'paltab'
+        getVariable
+        push r:2
+        getMember
+        push 3
+        getMember
+        getMember
+        push 'colId3'
+        getVariable
+        getMember
+        push 'artwork'
+        getVariable
+        push 'n'
+        getMember
+        push 'gfx2'
+        getMember
+        push 'col3'
+        getMember
+        push 2, 'setColor'
+        callFunction
+        pop
+        push r:3
+        increment
+        setRegister r:3
+        pop
+        branch label20
+       label21:
+      end // of function applyColors
+
+      function2 gotoColSelect () (r:1='this')
+        push 'state', 'colSelect'
+        setVariable
+        push 'colSelect', 1, 'clap'
+        getVariable
+        push 'gotoAndPlay'
+        callMethod
+        pop
+        push 'colSelect', 1, 'artwork'
+        getVariable
+        push 'gotoAndPlay'
+        callMethod
+        pop
+        push 'colSelect', 1, 'bNext'
+        getVariable
+        push 'gotoAndPlay'
+        callMethod
+        pop
+        push 'colSelect', 1, 'bg'
+        getVariable
+        push 'gotoAndPlay'
+        callMethod
+        pop
+        push 'persToCol', 1, 'title'
+        getVariable
+        push 's1'
+        getMember
+        push 'gotoAndPlay'
+        callMethod
+        pop
+        push 'persToCol', 1, 'title'
+        getVariable
+        push 's2'
+        getMember
+        push 'gotoAndPlay'
+        callMethod
+        pop
+        push 'persToCol', 1, 'title2'
+        getVariable
+        push 's1'
+        getMember
+        push 'gotoAndPlay'
+        callMethod
+        pop
+        push 'persToCol', 1, 'title2'
+        getVariable
+        push 's2'
+        getMember
+        push 'gotoAndPlay'
+        callMethod
+        pop
+        push 1
+        setRegister r:2
+        pop
+       label22:
+        push r:2, 'maxPlayer'
+        getVariable
+        greaterThan
+        not
+        not
+        branchIfTrue label23
+        push r:this, 'v', r:2
+        add
+        getMember
+        push '_visible', FALSE
+        setMember
+        push r:2
+        increment
+        setRegister r:2
+        pop
+        branch label22
+       label23:
+        push 'gBox'
+        getVariable
+        push '_visible', FALSE
+        setMember
+        push 'vRoll'
+        getVariable
+        push '_visible', FALSE
+        setMember
+        push 'desc'
+        getVariable
+        push '_visible', FALSE
+        setMember
+      end // of function gotoColSelect
+
+      function2 gotoCharSelect () (r:1='this')
+        push 'state', 'charSelect'
+        setVariable
+        push 'charSelect', 1, 'clap'
+        getVariable
+        push 'gotoAndPlay'
+        callMethod
+        pop
+        push 'charSelect', 1, 'artwork'
+        getVariable
+        push 'gotoAndPlay'
+        callMethod
+        pop
+        push 'charSelect', 1, 'bNext'
+        getVariable
+        push 'gotoAndPlay'
+        callMethod
+        pop
+        push 'charSelect', 1, 'bg'
+        getVariable
+        push 'gotoAndPlay'
+        callMethod
+        pop
+        push 'colToPers', 1, 'title'
+        getVariable
+        push 's1'
+        getMember
+        push 'gotoAndPlay'
+        callMethod
+        pop
+        push 'colToPers', 1, 'title'
+        getVariable
+        push 's2'
+        getMember
+        push 'gotoAndPlay'
+        callMethod
+        pop
+        push 'colToPers', 1, 'title2'
+        getVariable
+        push 's1'
+        getMember
+        push 'gotoAndPlay'
+        callMethod
+        pop
+        push 'colToPers', 1, 'title2'
+        getVariable
+        push 's2'
+        getMember
+        push 'gotoAndPlay'
+        callMethod
+        pop
+        push 1
+        setRegister r:2
+        pop
+       label24:
+        push r:2, 'maxPlayer'
+        getVariable
+        greaterThan
+        not
+        not
+        branchIfTrue label25
+        push r:this, 'v', r:2
+        add
+        getMember
+        push '_visible', TRUE
+        setMember
+        push r:2
+        increment
+        setRegister r:2
+        pop
+        branch label24
+       label25:
+        push 'gBox'
+        getVariable
+        push '_visible', TRUE
+        setMember
+        push 'vRoll'
+        getVariable
+        push '_visible', TRUE
+        setMember
+        push 'desc'
+        getVariable
+        push '_visible', TRUE
+        setMember
+        push 'pal'
+        getVariable
+        push '_visible', FALSE
+        setMember
+      end // of function gotoCharSelect
+
+      function2 resetColor () (r:1='_root')
+        push r:_root, 'selectedP'
+        getMember
+        push 1
+        subtract
+        setRegister r:2
+        pop
+        push r:_root, 'selectedP'
+        getMember
+        setRegister r:0
+        push 1
+        strictEquals
+        branchIfTrue label26
+        push r:0, 2
+        strictEquals
+        branchIfTrue label27
+        push r:0, 3
+        strictEquals
+        branchIfTrue label28
+        push r:0, 4
+        strictEquals
+        branchIfTrue label29
+        push r:0, 5
+        strictEquals
+        branchIfTrue label30
+        push r:0, 6
+        strictEquals
+        branchIfTrue label31
+        push r:0, 7
+        strictEquals
+        branchIfTrue label32
+        push r:0, 8
+        strictEquals
+        branchIfTrue label33
+        push r:0, 9
+        strictEquals
+        branchIfTrue label34
+        push r:0, 10
+        strictEquals
+        branchIfTrue label35
+        branch label36
+       label26:
+        push 'palette'
+        getVariable
+        push 'paltab'
+        getVariable
+        push r:2
+        getMember
+        push 0.0
+        getMember
+        getMember
+        push 'length'
+        getMember
+        random
+        setRegister r:6
+        pop
+        push 'palette'
+        getVariable
+        push 'paltab'
+        getVariable
+        push r:2
+        getMember
+        push 1
+        getMember
+        getMember
+        push 'length'
+        getMember
+        random
+        setRegister r:5
+        pop
+        push 'palette'
+        getVariable
+        push 'paltab'
+        getVariable
+        push r:2
+        getMember
+        push 2
+        getMember
+        getMember
+        push 'length'
+        getMember
+        random
+        setRegister r:4
+        pop
+        push 'palette'
+        getVariable
+        push 'paltab'
+        getVariable
+        push r:2
+        getMember
+        push 3
+        getMember
+        getMember
+        push 'length'
+        getMember
+        random
+        setRegister r:3
+        pop
+        push r:3, r:4, r:5, r:6, 4, 'resetColApply'
+        callFunction
+        pop
+        branch label36
+       label27:
+        push 'palette'
+        getVariable
+        push 'paltab'
+        getVariable
+        push r:2
+        getMember
+        push 0.0
+        getMember
+        getMember
+        push 'length'
+        getMember
+        random
+        setRegister r:6
+        pop
+        push 'palette'
+        getVariable
+        push 'paltab'
+        getVariable
+        push r:2
+        getMember
+        push 1
+        getMember
+        getMember
+        push 'length'
+        getMember
+        random
+        setRegister r:5
+        pop
+        push 'palette'
+        getVariable
+        push 'paltab'
+        getVariable
+        push r:2
+        getMember
+        push 2
+        getMember
+        getMember
+        push 'length'
+        getMember
+        random
+        setRegister r:4
+        pop
+        push 'palette'
+        getVariable
+        push 'paltab'
+        getVariable
+        push r:2
+        getMember
+        push 3
+        getMember
+        getMember
+        push 'length'
+        getMember
+        random
+        setRegister r:3
+        pop
+        push r:3, r:4, r:5, r:6, 4, 'resetColApply'
+        callFunction
+        pop
+        branch label36
+       label28:
+        push 'palette'
+        getVariable
+        push 'paltab'
+        getVariable
+        push r:2
+        getMember
+        push 0.0
+        getMember
+        getMember
+        push 'length'
+        getMember
+        random
+        setRegister r:6
+        pop
+        push 'palette'
+        getVariable
+        push 'paltab'
+        getVariable
+        push r:2
+        getMember
+        push 1
+        getMember
+        getMember
+        push 'length'
+        getMember
+        random
+        setRegister r:5
+        pop
+        push 'palette'
+        getVariable
+        push 'paltab'
+        getVariable
+        push r:2
+        getMember
+        push 2
+        getMember
+        getMember
+        push 'length'
+        getMember
+        random
+        setRegister r:4
+        pop
+        push 'palette'
+        getVariable
+        push 'paltab'
+        getVariable
+        push r:2
+        getMember
+        push 3
+        getMember
+        getMember
+        push 'length'
+        getMember
+        random
+        setRegister r:3
+        pop
+        push r:3, r:4, r:5, r:6, 4, 'resetColApply'
+        callFunction
+        pop
+        branch label36
+       label29:
+        push 'palette'
+        getVariable
+        push 'paltab'
+        getVariable
+        push r:2
+        getMember
+        push 0.0
+        getMember
+        getMember
+        push 'length'
+        getMember
+        random
+        setRegister r:6
+        pop
+        push 'palette'
+        getVariable
+        push 'paltab'
+        getVariable
+        push r:2
+        getMember
+        push 1
+        getMember
+        getMember
+        push 'length'
+        getMember
+        random
+        setRegister r:5
+        pop
+        push 'palette'
+        getVariable
+        push 'paltab'
+        getVariable
+        push r:2
+        getMember
+        push 2
+        getMember
+        getMember
+        push 'length'
+        getMember
+        random
+        setRegister r:4
+        pop
+        push 'palette'
+        getVariable
+        push 'paltab'
+        getVariable
+        push r:2
+        getMember
+        push 3
+        getMember
+        getMember
+        push 'length'
+        getMember
+        random
+        setRegister r:3
+        pop
+        push r:3, r:4, r:5, r:6, 4, 'resetColApply'
+        callFunction
+        pop
+        branch label36
+       label30:
+        push 'palette'
+        getVariable
+        push 'paltab'
+        getVariable
+        push r:2
+        getMember
+        push 0.0
+        getMember
+        getMember
+        push 'length'
+        getMember
+        random
+        setRegister r:6
+        pop
+        push 'palette'
+        getVariable
+        push 'paltab'
+        getVariable
+        push r:2
+        getMember
+        push 1
+        getMember
+        getMember
+        push 'length'
+        getMember
+        random
+        setRegister r:5
+        pop
+        push 'palette'
+        getVariable
+        push 'paltab'
+        getVariable
+        push r:2
+        getMember
+        push 2
+        getMember
+        getMember
+        push 'length'
+        getMember
+        random
+        setRegister r:4
+        pop
+        push 'palette'
+        getVariable
+        push 'paltab'
+        getVariable
+        push r:2
+        getMember
+        push 3
+        getMember
+        getMember
+        push 'length'
+        getMember
+        random
+        setRegister r:3
+        pop
+        push r:3, r:4, r:5, r:6, 4, 'resetColApply'
+        callFunction
+        pop
+        branch label36
+       label31:
+        push 'palette'
+        getVariable
+        push 'paltab'
+        getVariable
+        push r:2
+        getMember
+        push 0.0
+        getMember
+        getMember
+        push 'length'
+        getMember
+        random
+        setRegister r:6
+        pop
+        push 'palette'
+        getVariable
+        push 'paltab'
+        getVariable
+        push r:2
+        getMember
+        push 1
+        getMember
+        getMember
+        push 'length'
+        getMember
+        random
+        setRegister r:5
+        pop
+        push 'palette'
+        getVariable
+        push 'paltab'
+        getVariable
+        push r:2
+        getMember
+        push 2
+        getMember
+        getMember
+        push 'length'
+        getMember
+        random
+        setRegister r:4
+        pop
+        push 'palette'
+        getVariable
+        push 'paltab'
+        getVariable
+        push r:2
+        getMember
+        push 3
+        getMember
+        getMember
+        push 'length'
+        getMember
+        random
+        setRegister r:3
+        pop
+        push r:3, r:4, r:5, r:6, 4, 'resetColApply'
+        callFunction
+        pop
+        branch label36
+       label32:
+        push 'palette'
+        getVariable
+        push 'paltab'
+        getVariable
+        push r:2
+        getMember
+        push 0.0
+        getMember
+        getMember
+        push 'length'
+        getMember
+        random
+        setRegister r:6
+        pop
+        push 'palette'
+        getVariable
+        push 'paltab'
+        getVariable
+        push r:2
+        getMember
+        push 1
+        getMember
+        getMember
+        push 'length'
+        getMember
+        random
+        setRegister r:5
+        pop
+        push 'palette'
+        getVariable
+        push 'paltab'
+        getVariable
+        push r:2
+        getMember
+        push 2
+        getMember
+        getMember
+        push 'length'
+        getMember
+        random
+        setRegister r:4
+        pop
+        push 'palette'
+        getVariable
+        push 'paltab'
+        getVariable
+        push r:2
+        getMember
+        push 3
+        getMember
+        getMember
+        push 'length'
+        getMember
+        random
+        setRegister r:3
+        pop
+        push r:3, r:4, r:5, r:6, 4, 'resetColApply'
+        callFunction
+        pop
+        branch label36
+       label33:
+        push 'palette'
+        getVariable
+        push 'paltab'
+        getVariable
+        push r:2
+        getMember
+        push 0.0
+        getMember
+        getMember
+        push 'length'
+        getMember
+        random
+        setRegister r:6
+        pop
+        push 'palette'
+        getVariable
+        push 'paltab'
+        getVariable
+        push r:2
+        getMember
+        push 1
+        getMember
+        getMember
+        push 'length'
+        getMember
+        random
+        setRegister r:5
+        pop
+        push 'palette'
+        getVariable
+        push 'paltab'
+        getVariable
+        push r:2
+        getMember
+        push 2
+        getMember
+        getMember
+        push 'length'
+        getMember
+        random
+        setRegister r:4
+        pop
+        push 'palette'
+        getVariable
+        push 'paltab'
+        getVariable
+        push r:2
+        getMember
+        push 3
+        getMember
+        getMember
+        push 'length'
+        getMember
+        random
+        setRegister r:3
+        pop
+        push r:3, r:4, r:5, r:6, 4, 'resetColApply'
+        callFunction
+        pop
+        branch label36
+       label34:
+        push 'palette'
+        getVariable
+        push 'paltab'
+        getVariable
+        push r:2
+        getMember
+        push 0.0
+        getMember
+        getMember
+        push 'length'
+        getMember
+        random
+        setRegister r:6
+        pop
+        push 'palette'
+        getVariable
+        push 'paltab'
+        getVariable
+        push r:2
+        getMember
+        push 1
+        getMember
+        getMember
+        push 'length'
+        getMember
+        random
+        setRegister r:5
+        pop
+        push 'palette'
+        getVariable
+        push 'paltab'
+        getVariable
+        push r:2
+        getMember
+        push 2
+        getMember
+        getMember
+        push 'length'
+        getMember
+        random
+        setRegister r:4
+        pop
+        push 'palette'
+        getVariable
+        push 'paltab'
+        getVariable
+        push r:2
+        getMember
+        push 3
+        getMember
+        getMember
+        push 'length'
+        getMember
+        random
+        setRegister r:3
+        pop
+        push r:3, r:4, r:5, r:6, 4, 'resetColApply'
+        callFunction
+        pop
+        branch label36
+       label35:
+        push 'palette'
+        getVariable
+        push 'paltab'
+        getVariable
+        push r:2
+        getMember
+        push 0.0
+        getMember
+        getMember
+        push 'length'
+        getMember
+        random
+        setRegister r:6
+        pop
+        push 'palette'
+        getVariable
+        push 'paltab'
+        getVariable
+        push r:2
+        getMember
+        push 1
+        getMember
+        getMember
+        push 'length'
+        getMember
+        random
+        setRegister r:5
+        pop
+        push 'palette'
+        getVariable
+        push 'paltab'
+        getVariable
+        push r:2
+        getMember
+        push 2
+        getMember
+        getMember
+        push 'length'
+        getMember
+        random
+        setRegister r:4
+        pop
+        push 'palette'
+        getVariable
+        push 'paltab'
+        getVariable
+        push r:2
+        getMember
+        push 3
+        getMember
+        getMember
+        push 'length'
+        getMember
+        random
+        setRegister r:3
+        pop
+        push r:3, r:4, r:5, r:6, 4, 'resetColApply'
+        callFunction
+        pop
+        branch label36
+       label36:
+      end // of function resetColor
+
+      function2 resetColApply (r:6='id1', r:5='id2', r:4='id3', r:3='id4') (r:1='_root')
+        push r:_root, 'selectedP'
+        getMember
+        push 1
+        subtract
+        setRegister r:2
+        pop
+        push 'palette'
+        getVariable
+        push 'paltab'
+        getVariable
+        push r:2
+        getMember
+        push 0.0
+        getMember
+        getMember
+        push r:id1
+        getMember
+        push 'pal'
+        getVariable
+        push 'col0'
+        getMember
+        push 'sub'
+        getMember
+        push 'col'
+        getMember
+        push 2, 'setColor'
+        callFunction
+        pop
+        push 'palette'
+        getVariable
+        push 'paltab'
+        getVariable
+        push r:2
+        getMember
+        push 0.0
+        getMember
+        getMember
+        push r:id1
+        getMember
+        push 'pal'
+        getVariable
+        push 'col0'
+        getMember
+        push 'sub2'
+        getMember
+        push 'col'
+        getMember
+        push 2, 'setColor'
+        callFunction
+        pop
+        push 'palette'
+        getVariable
+        push 'paltab'
+        getVariable
+        push r:2
+        getMember
+        push 1
+        getMember
+        getMember
+        push r:id2
+        getMember
+        push 'pal'
+        getVariable
+        push 'col1'
+        getMember
+        push 'sub'
+        getMember
+        push 'col'
+        getMember
+        push 2, 'setColor'
+        callFunction
+        pop
+        push 'palette'
+        getVariable
+        push 'paltab'
+        getVariable
+        push r:2
+        getMember
+        push 1
+        getMember
+        getMember
+        push r:id2
+        getMember
+        push 'pal'
+        getVariable
+        push 'col1'
+        getMember
+        push 'sub2'
+        getMember
+        push 'col'
+        getMember
+        push 2, 'setColor'
+        callFunction
+        pop
+        push 'palette'
+        getVariable
+        push 'paltab'
+        getVariable
+        push r:2
+        getMember
+        push 2
+        getMember
+        getMember
+        push r:id3
+        getMember
+        push 'pal'
+        getVariable
+        push 'col2'
+        getMember
+        push 'sub'
+        getMember
+        push 'col'
+        getMember
+        push 2, 'setColor'
+        callFunction
+        pop
+        push 'palette'
+        getVariable
+        push 'paltab'
+        getVariable
+        push r:2
+        getMember
+        push 2
+        getMember
+        getMember
+        push r:id3
+        getMember
+        push 'pal'
+        getVariable
+        push 'col2'
+        getMember
+        push 'sub2'
+        getMember
+        push 'col'
+        getMember
+        push 2, 'setColor'
+        callFunction
+        pop
+        push 'palette'
+        getVariable
+        push 'paltab'
+        getVariable
+        push r:2
+        getMember
+        push 3
+        getMember
+        getMember
+        push r:id4
+        getMember
+        push 'pal'
+        getVariable
+        push 'col3'
+        getMember
+        push 'sub'
+        getMember
+        push 'col'
+        getMember
+        push 2, 'setColor'
+        callFunction
+        pop
+        push 'palette'
+        getVariable
+        push 'paltab'
+        getVariable
+        push r:2
+        getMember
+        push 3
+        getMember
+        getMember
+        push r:id4
+        getMember
+        push 'pal'
+        getVariable
+        push 'col3'
+        getMember
+        push 'sub2'
+        getMember
+        push 'col'
+        getMember
+        push 2, 'setColor'
+        callFunction
+        pop
+        push 'palette'
+        getVariable
+        push 'paltab'
+        getVariable
+        push r:2
+        getMember
+        push 0.0
+        getMember
+        getMember
+        push r:id1
+        getMember
+        push 'artwork'
+        getVariable
+        push 'n'
+        getMember
+        push 'gfx'
+        getMember
+        push 'col0'
+        getMember
+        push 2, 'setColor'
+        callFunction
+        pop
+        push 'palette'
+        getVariable
+        push 'paltab'
+        getVariable
+        push r:2
+        getMember
+        push 0.0
+        getMember
+        getMember
+        push r:id1
+        getMember
+        push 'artwork'
+        getVariable
+        push 'n'
+        getMember
+        push 'gfx2'
+        getMember
+        push 'col0'
+        getMember
+        push 2, 'setColor'
+        callFunction
+        pop
+        push 'palette'
+        getVariable
+        push 'paltab'
+        getVariable
+        push r:2
+        getMember
+        push 1
+        getMember
+        getMember
+        push r:id2
+        getMember
+        push 'artwork'
+        getVariable
+        push 'n'
+        getMember
+        push 'gfx'
+        getMember
+        push 'col1'
+        getMember
+        push 2, 'setColor'
+        callFunction
+        pop
+        push 'palette'
+        getVariable
+        push 'paltab'
+        getVariable
+        push r:2
+        getMember
+        push 1
+        getMember
+        getMember
+        push r:id2
+        getMember
+        push 'artwork'
+        getVariable
+        push 'n'
+        getMember
+        push 'gfx2'
+        getMember
+        push 'col1'
+        getMember
+        push 2, 'setColor'
+        callFunction
+        pop
+        push 'palette'
+        getVariable
+        push 'paltab'
+        getVariable
+        push r:2
+        getMember
+        push 2
+        getMember
+        getMember
+        push r:id3
+        getMember
+        push 'artwork'
+        getVariable
+        push 'n'
+        getMember
+        push 'gfx'
+        getMember
+        push 'col2'
+        getMember
+        push 2, 'setColor'
+        callFunction
+        pop
+        push 'palette'
+        getVariable
+        push 'paltab'
+        getVariable
+        push r:2
+        getMember
+        push 2
+        getMember
+        getMember
+        push r:id3
+        getMember
+        push 'artwork'
+        getVariable
+        push 'n'
+        getMember
+        push 'gfx2'
+        getMember
+        push 'col2'
+        getMember
+        push 2, 'setColor'
+        callFunction
+        pop
+        push 'palette'
+        getVariable
+        push 'paltab'
+        getVariable
+        push r:2
+        getMember
+        push 3
+        getMember
+        getMember
+        push r:id4
+        getMember
+        push 'artwork'
+        getVariable
+        push 'n'
+        getMember
+        push 'gfx'
+        getMember
+        push 'col3'
+        getMember
+        push 2, 'setColor'
+        callFunction
+        pop
+        push 'palette'
+        getVariable
+        push 'paltab'
+        getVariable
+        push r:2
+        getMember
+        push 3
+        getMember
+        getMember
+        push r:id4
+        getMember
+        push 'artwork'
+        getVariable
+        push 'n'
+        getMember
+        push 'gfx2'
+        getMember
+        push 'col3'
+        getMember
+        push 2, 'setColor'
+        callFunction
+        pop
+        push 'colId0', r:id1
+        setVariable
+        push 'colId1', r:id2
+        setVariable
+        push 'colId2', r:id3
+        setVariable
+        push 'colId3', r:id4
+        setVariable
+      end // of function resetColApply
+
+      function2 setColor (r:16='mc', r:4='col') ()
+        push 'r', r:col, 16
+        shiftRight
+        push 'g', r:col, 8
+        shiftRight
+        push 255
+        bitwiseAnd
+        push 'b', r:col, 255
+        bitwiseAnd
+        push 3
+        initObject
+        setRegister r:1
+        pop
+        push r:mc, 1, 'Color'
+        new
+        setRegister r:2
+        pop
+        push 'ra', 100, 'ga', 100, 'ba', 100, 'aa', 100, 'rb', r:1, 'r'
+        getMember
+        push 255
+        subtract
+        push 'gb', r:1, 'g'
+        getMember
+        push 255
+        subtract
+        push 'bb', r:1, 'b'
+        getMember
+        push 255
+        subtract
+        push 'ab', 0.0, 8
+        initObject
+        setRegister r:3
+        pop
+        push r:3, 1, r:2, 'setTransform'
+        callMethod
+        pop
+      end // of function setColor
+
+      push 'paltab', 3, 2, 1, 0.0, 4
+      initArray
+      push 16, 2, 1, 0.0, 4
+      initArray
+      push 5, 5, 5, 4, 4
+      initArray
+      push 16, 15, 14, 13, 4
+      initArray
+      push 5, 5, 5, 4, 4
+      initArray
+      push 12, 12, 5, 4, 4
+      initArray
+      push 10, 10, 8, 8, 4
+      initArray
+      push 5, 5, 5, 4, 4
+      initArray
+      push 3, 2, 1, 0.0, 4
+      initArray
+      push 3, 2, 1, 0.0, 4
+      initArray
+      push 10
+      initArray
+      setVariable
+      push 'palette', 16772778, 16568294, 16762052, 16768477, 11272098, 14811101, 11846910, 14542079, 16185049, 9
+      initArray
+      push 9948159, 10338225, 10645395, 10645395, 11634596, 5
+      initArray
+      push 15785113, 16568294, 16762052, 16768477, 11272098, 14811101, 11846910, 14542079, 16185049, 15785113, 12014408, 12045766, 12
+      initArray
+      push 12693205, 14742488, 13167032, 15260089, 16051935, 14925246, 15917537, 13879776, 8
+      initArray
+      push 16775598, 14646839, 9948159, 14019327, 13369239, 15531993, 15394559, 16770815, 16764159, 9
+      initArray
+      push 15785113, 16775598, 13834264, 12082973, 14646839, 9151447, 9948159, 14019327, 13369239, 15531993, 16755230, 16764025, 16641495, 13
+      initArray
+      push 9948159, 14019327, 13369239, 15531993, 16755230, 16764025, 16773855, 7
+      initArray
+      push 15785113, 11644106, 10856376, 15375722, 9795434, 11564367, 15391440, 7
+      initArray
+      push 9613532, 11651303, 8826016, 10468788, 10725050, 14210525, 6
+      initArray
+      push 15785113, 16764159, 16775598, 13834264, 12082973, 14646839, 9151447, 9948159, 14019327, 13369239, 15531993, 16755230, 16764025, 16641495, 14
+      initArray
+      push 7439041, 15516000, 10181169, 15375797, 13073532, 8884924, 4676263, 16641495, 8
+      initArray
+      push 623778, 16568294, 2069617, 15785113, 12569305, 15574367, 11644106, 10856376, 15375722, 9795434, 11564367, 15391440, 12
+      initArray
+      push 13015677, 15579299, 14924435, 14658711, 16105652, 16107947, 6
+      initArray
+      push 15785113, 16775598, 13834264, 12082973, 14646839, 9151447, 9948159, 14019327, 13369239, 15531993, 16755230, 16764025, 16773855, 13
+      initArray
+      push 15785113, 16775598, 13834264, 12082973, 14646839, 9151447, 9948159, 14019327, 13369239, 15531993, 16755230, 16764025, 16773855, 13
+      initArray
+      push 12648962, 16641495, 12035076, 16764057, 12227841, 16764025, 6
+      initArray
+      push 15381661, 12345121, 12612611, 15112294, 16755230, 16750959, 16498564, 7
+      initArray
+      push 17
+      initArray
+      setVariable
+      push 0.0, 'init'
+      callFunction
+      pop
+    end // of frame 0
+
+    frame 8
+      push 'new', 1, 'artwork'
+      getVariable
+      push 'gotoAndPlay'
+      callMethod
+      pop
+    end // of frame 8
+
+    frame 10
+      push 0.0, 'main'
+      callFunction
+      pop
+    end // of frame 10
+
+    frame 11
+      push '', 4
+      getProperty
+      push 1
+      subtract
+      gotoAndPlay
+    end // of frame 11
+  end // of defineMovieClip 415
+end
