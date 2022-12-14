@@ -1,0 +1,450 @@
+movie 'sheeps.swf' compressed // flash 10, total frames: 3, frame rate: 40 fps, 870x80 px
+  
+  fileAttributes attrHasMetadata
+  
+  metadata '<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"> <rdf:Description rdf:about="" xmlns:xmp="http://ns.adobe.com/xap/1.0/"> <xmp:CreatorTool>Adobe Flash Professional CS5</xmp:CreatorTool> <xmp:CreateDate>2012-03-09T15:25:32+01:00</xmp:CreateDate> <xmp:MetadataDate>2012-03-14T10:25:48+01:00</xmp:MetadataDate> <xmp:ModifyDate>2012-03-14T10:25:48+01:00</xmp:ModifyDate> </rdf:Description> <rdf:Description rdf:about="" xmlns:dc="http://purl.org/dc/elements/1.1/"> <dc:format>application/x-shockwave-flash</dc:format> </rdf:Description> <rdf:Description rdf:about="" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" xmlns:stRef="http://ns.adobe.com/xap/1.0/sType/ResourceRef#"> <xmpMM:DerivedFrom rdf:parseType="Resource"> <stRef:instanceID>xmp.iid:CD531730B66DE111AAA0F248D61B1F88</stRef:instanceID> <stRef:documentID>xmp.did:FBE11BB57764E1118D14F127C4AA4010</stRef:documentID> <stRef:originalDocumentID>xmp.did:FBE11BB57764E1118D14F127C4AA4010</stRef:originalDocumentID> </xmpMM:DerivedFrom> <xmpMM:DocumentID>xmp.did:D3531730B66DE111AAA0F248D61B1F88</xmpMM:DocumentID> <xmpMM:InstanceID>xmp.iid:D3531730B66DE111AAA0F248D61B1F88</xmpMM:InstanceID> <xmpMM:OriginalDocumentID>xmp.did:FBE11BB57764E1118D14F127C4AA4010</xmpMM:OriginalDocumentID> </rdf:Description> </rdf:RDF> '
+
+  defineMovieClip 2 // total frames: 1
+  end // of defineMovieClip 2
+
+  defineMovieClip 3 // total frames: 351
+  end // of defineMovieClip 3
+
+  defineMovieClip 4 // total frames: 228
+  end // of defineMovieClip 4
+
+  defineMovieClip 5 // total frames: 30
+  end // of defineMovieClip 5
+
+  defineMovieClip 6 // total frames: 25
+
+    frame 0
+      stop
+    end // of frame 0
+
+    frame 24
+      push 'this'
+      getVariable
+      push 1, 'parent'
+      getVariable
+      push 'removeChild'
+      callMethod
+      pop
+      stop
+    end // of frame 24
+  end // of defineMovieClip 6
+  
+  exportAssets
+    6 as 'actionIcon'
+  end // of exportAssets
+
+  frame 0
+    constants 'compt', 'jumpNum', 'vit', 'sheep', '_xscale', '_yscale', 'c', 'cJ', 'counter', 'count', 'text', 'cJanim', '_visible'  
+    push 'compt', 0.0
+    varEquals
+    push 'jumpNum', 0.0
+    varEquals
+    push 'vit', 2
+    random
+    push 1.5
+    add
+    varEquals
+    push 'sheep'
+    getVariable
+    push '_xscale', 20
+    random
+    push 80
+    add
+    setMember
+    push 'sheep'
+    getVariable
+    push '_yscale', 'sheep'
+    getVariable
+    push '_xscale'
+    getMember
+    setMember
+    push 'c', 0.0
+    varEquals
+    push 'cJ', 0.0
+    varEquals
+    push 'counter'
+    getVariable
+    push 'count'
+    getMember
+    push 'text', 'c'
+    getVariable
+    setMember
+    push 'cJanim'
+    getVariable
+    push '_visible', FALSE
+    setMember
+  end // of frame 0
+  
+  // unknown tag 88 length 111
+
+  defineMovieClip 10 // total frames: 1
+  end // of defineMovieClip 10
+
+  defineMovieClip 12 // total frames: 1
+  end // of defineMovieClip 12
+
+  defineMovieClip 13 // total frames: 14
+
+    frame 0
+      stop
+      push 'this'
+      getVariable
+      push '_visible', TRUE
+      setMember
+    end // of frame 0
+
+    frame 1
+      constants '_parent', 'jumpNum', 'sub', 'count', 'text', 'this', '_x', 'sheep'  
+      push '_parent'
+      getVariable
+      push 'jumpNum', '_parent'
+      getVariable
+      push 'jumpNum'
+      getMember
+      push 1
+      add
+      setMember
+      push 'sub'
+      getVariable
+      push 'count'
+      getMember
+      push 'text', '_parent'
+      getVariable
+      push 'jumpNum'
+      getMember
+      setMember
+      push 'this'
+      getVariable
+      push '_x', '_parent'
+      getVariable
+      push 'sheep'
+      getMember
+      push '_x'
+      getMember
+      setMember
+    end // of frame 1
+  end // of defineMovieClip 13
+
+  defineMovieClip 15 // total frames: 1
+  end // of defineMovieClip 15
+
+  defineMovieClip 16 // total frames: 10
+
+    frame 0
+      stop
+    end // of frame 0
+  end // of defineMovieClip 16
+
+  defineMovieClip 18 // total frames: 1
+  end // of defineMovieClip 18
+
+  defineMovieClip 20 // total frames: 1
+  end // of defineMovieClip 20
+
+  defineMovieClip 22 // total frames: 1
+  end // of defineMovieClip 22
+
+  defineMovieClip 23 // total frames: 2
+
+    frame 0
+      stop
+    end // of frame 0
+  end // of defineMovieClip 23
+
+  defineMovieClip 24 // total frames: 1
+  end // of defineMovieClip 24
+
+  defineMovieClip 25 // total frames: 35
+
+    frame 5
+      push '_parent'
+      getVariable
+      push 'jumpNum', 0.0
+      setMember
+    end // of frame 5
+
+    frame 15
+      gotoLabel 'run'
+      play
+    end // of frame 15
+
+    frame 23
+      constants '_parent', 'jumpCounter', 'gotoAndPlay', '_rotation'  
+      push 2, 1, '_parent'
+      getVariable
+      push 'jumpCounter'
+      getMember
+      push 'gotoAndPlay'
+      callMethod
+      pop
+      push '_parent'
+      getVariable
+      push 'jumpCounter'
+      getMember
+      push '_rotation', -5
+      setMember
+    end // of frame 23
+  end // of defineMovieClip 25
+
+  defineMovieClip 27 // total frames: 1
+  end // of defineMovieClip 27
+
+  defineMovieClip 28 // total frames: 24
+
+    frame 0
+      stop
+    end // of frame 0
+  end // of defineMovieClip 28
+
+  frame 1
+    constants 'sheep', '_x', 'vit', 'col', 'gotoAndStop', '_xscale', '_yscale', 'c', 'counter', 'count', 'text', 'pop', 'gotoAndPlay', '', '_currentframe', 'jump', 'jumpNum', 'cJanim', '_visible', 'cJ', 'counterJ', 'sauteMouton', 'jumpCounter', '_width'  
+    push 'sheep'
+    getVariable
+    push '_x', 'sheep'
+    getVariable
+    push '_x'
+    getMember
+    push 'vit'
+    getVariable
+    add
+    setMember
+    push 'sheep'
+    getVariable
+    push '_x'
+    getMember
+    push 900
+    lessThan
+    not
+    not
+    branchIfTrue label3
+    push 1000
+    random
+    push 1
+    equals
+    not
+    branchIfTrue label1
+    push 2, 1, 'sheep'
+    getVariable
+    push 'col'
+    getMember
+    push 'gotoAndStop'
+    callMethod
+    pop
+    branch label2
+   label1:
+    push 1, 1, 'sheep'
+    getVariable
+    push 'col'
+    getMember
+    push 'gotoAndStop'
+    callMethod
+    pop
+   label2:
+    push 'sheep'
+    getVariable
+    push '_x', -200
+    setMember
+    push 'vit', 10
+    random
+    push 10
+    divide
+    push 2
+    add
+    setVariable
+    push 'sheep'
+    getVariable
+    push '_xscale', 40
+    random
+    push 60
+    add
+    setMember
+    push 'sheep'
+    getVariable
+    push '_yscale', 'sheep'
+    getVariable
+    push '_xscale'
+    getMember
+    setMember
+    push 'c', 'c'
+    getVariable
+    push 1
+    add
+    setVariable
+    push 'counter'
+    getVariable
+    push 'count'
+    getMember
+    push 'text', 'c'
+    getVariable
+    setMember
+    push 2, 1, 'pop'
+    getVariable
+    push 'gotoAndPlay'
+    callMethod
+    pop
+   label3:
+    push 'sheep'
+    getVariable
+    push '_x'
+    getMember
+    push '', 20
+    getProperty
+    greaterThan
+    not
+    dup
+    not
+    branchIfTrue label4
+    pop
+    push 'sheep'
+    getVariable
+    push '_x'
+    getMember
+    push '', 20
+    getProperty
+    push 30
+    subtract
+    lessThan
+    not
+   label4:
+    dup
+    not
+    branchIfTrue label5
+    pop
+    push 'sheep'
+    getVariable
+    push '_currentframe'
+    getMember
+    push 1
+    equals
+   label5:
+    dup
+    not
+    branchIfTrue label6
+    pop
+    push '', 21
+    getProperty
+    push 40
+    lessThan
+    not
+   label6:
+    dup
+    not
+    branchIfTrue label7
+    pop
+    push '', 21
+    getProperty
+    push 70
+    greaterThan
+    not
+   label7:
+    not
+    branchIfTrue label8
+    push 'jump', 1, 'sheep'
+    getVariable
+    push 'gotoAndPlay'
+    callMethod
+    pop
+   label8:
+    push 'jumpNum'
+    getVariable
+    push 10
+    lessThan
+    not
+    not
+    branchIfTrue label9
+    push 'cJanim'
+    getVariable
+    push '_visible', TRUE
+    setMember
+    push 'jumpNum', 0.0
+    setVariable
+    push 'cJ', 'cJ'
+    getVariable
+    push 1
+    add
+    setVariable
+    push 'cJanim'
+    getVariable
+    push 'counterJ'
+    getMember
+    push 'count'
+    getMember
+    push 'text', 'cJ'
+    getVariable
+    setMember
+    push 2, 1, 'cJanim'
+    getVariable
+    push 'gotoAndPlay'
+    callMethod
+    pop
+    push 'sauteMouton'
+    getVariable
+    push '_x', 'sheep'
+    getVariable
+    push '_x'
+    getMember
+    setMember
+    push 2, 1, 'sauteMouton'
+    getVariable
+    push 'gotoAndPlay'
+    callMethod
+    pop
+    push 'jumpCounter'
+    getVariable
+    push '_visible', FALSE
+    setMember
+   label9:
+    push 'jumpNum'
+    getVariable
+    push 0.0
+    greaterThan
+    not
+    not
+    branchIfTrue label10
+    push 'jumpCounter'
+    getVariable
+    push '_visible', FALSE
+    setMember
+   label10:
+    push 'sauteMouton'
+    getVariable
+    push '_x'
+    getMember
+    push 'sauteMouton'
+    getVariable
+    push '_width'
+    getMember
+    push 2
+    divide
+    add
+    push 870
+    lessThan
+    not
+    not
+    branchIfTrue label11
+    push 'sauteMouton'
+    getVariable
+    push '_x', 870, 'sauteMouton'
+    getVariable
+    push '_width'
+    getMember
+    push 2
+    divide
+    subtract
+    setMember
+   label11:
+  end // of frame 1
+
+  frame 2
+    push '', 4
+    getProperty
+    push 1
+    subtract
+    gotoAndPlay
+  end // of frame 2
+end
