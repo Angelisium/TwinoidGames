@@ -1,0 +1,3635 @@
+movie 'djview.swf' {
+// flash 8, total frames: 1, frame rate: 40 fps, 360x360 px, compressed
+
+  movieClip 14 fx_pop {
+  }
+
+  movieClip 23 msg_icon {
+  }
+  
+  // unknown tag 88 length 67
+
+  movieClip 26 msg_field {
+  }
+
+  movieClip 43 msg_box {
+  }
+
+  movieClip 45 fx_reveal {
+  }
+
+  movieClip 48  {
+  }
+
+  movieClip 49 mask {
+  }
+
+  movieClip 80  {
+  }
+
+  movieClip 111  {
+  }
+
+  movieClip 142  {
+  }
+
+  movieClip 173  {
+  }
+
+  movieClip 204  {
+  }
+
+  movieClip 235  {
+  }
+
+  movieClip 236 overground {
+  }
+
+  movieClip 255 wall_side_right {
+  }
+
+  movieClip 265 wall_side_left {
+  }
+
+  movieClip 284 wall_back {
+  }
+
+  movieClip 291  {
+  }
+
+  movieClip 296  {
+  }
+
+  movieClip 305  {
+  }
+
+  movieClip 314  {
+  }
+
+  movieClip 325  {
+  }
+
+  movieClip 338  {
+  }
+
+  movieClip 351  {
+  }
+
+  movieClip 358  {
+  }
+
+  movieClip 359 wall_front {
+  }
+
+  movieClip 362  {
+  }
+
+  movieClip 367  {
+  }
+
+  movieClip 384  {
+  }
+
+  movieClip 388  {
+  }
+
+  movieClip 392  {
+  }
+
+  movieClip 394  {
+  }
+
+  movieClip 397  {
+  }
+
+  movieClip 398 item {
+  }
+
+  movieClip 404 fog {
+  }
+
+  movieClip 407  {
+  }
+
+  movieClip 409  {
+  }
+
+  movieClip 412  {
+  }
+
+  movieClip 413  {
+  }
+
+  movieClip 416  {
+  }
+
+  movieClip 417  {
+  }
+
+  movieClip 420  {
+  }
+
+  movieClip 421  {
+  }
+
+  movieClip 422 arrows {
+  }
+
+  movieClip 437  {
+  }
+
+  movieClip 450  {
+  }
+
+  movieClip 465  {
+  }
+
+  movieClip 476  {
+  }
+
+  movieClip 489  {
+  }
+
+  movieClip 500  {
+  }
+
+  movieClip 517  {
+  }
+
+  movieClip 518  {
+  }
+
+  movieClip 519 block {
+  }
+
+  movieClip 538 wall_corner {
+  }
+
+  frame 1 {
+    @estr = function () {
+      return flash.Boot.__string_rec(this, 'xx');
+    };
+
+    Dino = function (arg0, arg1) {
+      this.gfx = arg0._g;
+      this.name = arg0._n;
+      this.mc = arg1;
+      this.delay = 0;
+      var v4 = new flash.MovieClipLoader();
+      var me = this;
+      var k = 0;
+      v4.onLoadInit = function (arg0) {
+        ++k;
+        if (k == 2) {
+          me.playAnim('');
+          me.mc._visible = false;
+          me.onLoaded();
+        }
+      };
+
+      v4.onLoadComplete = v4.onLoadInit;
+      v4.loadClip(View.DATA._sdino, arg1);
+    };
+
+    Dino.__name__ = ['Dino'];
+    var v1 = Dino.prototype;
+    v1.__class__ = Dino;
+    v1.curAnim = null;
+    v1.delay = null;
+    v1.flip = null;
+    v1.gfx = null;
+    v1.mc = null;
+    v1.moving = null;
+    v1.name = null;
+    v1.onLoaded = function () {};
+
+    v1.playAnim = function (arg0) {
+      if (this.curAnim == arg0) {
+        return undefined;
+      }
+      this.curAnim = arg0;
+      var v3 = this.mc;
+      v3._p0._p1._anim.gotoAndStop(arg0);
+      v3._init(this.gfx, 0, true);
+      v3._p0._s._visible = false;
+    };
+
+    v1.px = null;
+    v1.py = null;
+    v1.speed = null;
+    v1.tx = null;
+    v1.ty = null;
+    v1.update = function () {
+      if (this.delay > 0) {
+        --this.delay;
+        return undefined;
+      }
+      var v2 = this.tx - this.px;
+      var v3 = this.ty - this.py;
+      var v4 = Math.sqrt(v2 * v2 + v3 * v3);
+      if (v4 >= 0.1) {
+        if (v4 > this.speed) {
+          v2 *= this.speed / v4;
+          v3 *= this.speed / v4;
+        }
+        this.px += v2;
+        this.py += v3;
+        this.moving = true;
+        this.playAnim('walk');
+      } else {
+        this.px = this.tx;
+        this.py = this.ty;
+        this.moving = false;
+        this.playAnim('stand');
+      }
+      this.mc._xscale = this.flip ? -100 : 100;
+      this.mc._x = this.px * 40 + (this.flip ? 40 : 0);
+      this.mc._y = this.py * 40;
+    };
+
+    DungeonItem = new Object();
+    DungeonItem.__ename__ = ['DungeonItem'];
+    DungeonItem.__constructs__ = ['IKey', 'IGold', 'IHeal', 'IScenario'];
+    ['IGold', 1].__enum__ = DungeonItem;
+    ['IGold', 1].toString = @estr;
+    DungeonItem.IGold = ['IGold', 1];
+    ['IHeal', 2].__enum__ = ['IGold', 1].__enum__;
+    ['IHeal', 2].toString = @estr;
+    ['IGold', 1].__enum__.IHeal = ['IHeal', 2];
+    ['IKey', 0].__enum__ = ['IGold', 1].__enum__;
+    ['IKey', 0].toString = @estr;
+    ['IGold', 1].__enum__.IKey = ['IKey', 0];
+    ['IScenario', 3].__enum__ = ['IGold', 1].__enum__;
+    ['IScenario', 3].toString = @estr;
+    ['IGold', 1].__enum__.IScenario = ['IScenario', 3];
+    DungeonCodec = function () {};
+
+    DungeonCodec.__name__ = ['DungeonCodec'];
+    v1 = DungeonCodec.prototype;
+    v1.__class__ = DungeonCodec;
+    v1.bc = null;
+    v1.d = null;
+    v1.decode = function (arg0) {
+      arg0 = this.removeSignature(arg0);
+      this.bc = new mt.BitCodec(arg0, true);
+      var v3 = this.bc.read(8);
+      var v4 = this.bc.read(8);
+      var v5 = this.bc.read(8);
+      var v6 = this.bc.read(5);
+      var v7 = this.nbits(v3 > v4 ? v3 : v4);
+      var v8 = v7 - 1;
+      var v9 = new Array();
+      this.d = {'width': v3, 'height': v4, 'levels': v9, 'start': {'x': 0, 'y': 0, 'l': 0}, 'exit': {'x': 0, 'y': 0, 'l': 0}};
+      var v10 = Lambda.array(Lambda.map(Type.getEnumConstructs(DungeonItem), function (arg0) {
+        return Type.createEnum(DungeonItem, arg0);
+      }));
+      var v11 = 0;
+      var v12 = 0;
+      while (v12 < v5) {
+        ++v12;
+        var v13 = v12;
+        var v14 = new Array();
+        var v15 = 0;
+        while (v15 < v3) {
+          ++v15;
+          var v16 = v15;
+          v14[v16] = new Array();
+        }
+        v15 = new Array();
+        v16 = 0;
+        var v17 = this.bc.read(v6);
+        while (v16 < v17) {
+          ++v16;
+          var v18 = v16;
+          var v19 = this.bc.read(v7);
+          var v20 = this.bc.read(v7);
+          var v21 = this.bc.read(v8);
+          var v22 = this.bc.read(v8);
+          var v23 = new Array();
+          var v24 = null;
+          this.decodeTable(v14, v19, v20, v21, v22);
+          var v25 = 0;
+          var v26 = this.bc.read(5);
+          while (v25 < v26) {
+            ++v25;
+            var v27 = v25;
+            var v29 = null;
+            var v30 = this.bc.read(v7);
+            var v31 = this.bc.read(v7);
+            var v32 = this.bc.read(2);
+            if (v32 != 0) {
+            } else {
+              if (v32 != 1) {
+                  var v28 = null;
+                  v29 = this.bc.read(6);
+              } else {
+                  var v28 = false;
+                if (v32 != 2) {
+                  v28 = true;
+                } else {
+                  v28 = null;
+                }
+              }
+            }
+            v23.push({'x': v30, 'y': v31, 'up': v28, 'key': v29});
+            v14[v30][v31] = true;
+          }
+          if (this.bc.read(1) == 1) {
+            v25 = this.bc.read(v7);
+            v26 = this.bc.read(v7);
+            v27 = v10[this.bc.read(4)];
+            v28 = this.bc.read(8);
+            v24 = {'x': v25, 'y': v26, 'k': v27, 'v': v28};
+          }
+          ++v11;
+          v15.push({'id': v11, 'x': v19, 'y': v20, 'w': v21, 'h': v22, 'doors': v23, 'item': v24});
+        }
+        v9.push({'table': v14, 'rooms': v15});
+      }
+      this.d.start.x = this.bc.read(v7);
+      this.d.start.y = this.bc.read(v7);
+      this.d.start.l = this.bc.read(8);
+      this.d.exit.x = this.bc.read(v7);
+      this.d.exit.y = this.bc.read(v7);
+      this.d.exit.l = this.bc.read(8);
+      return this.bc.crcStr() == arg0.substr(arg0.length - 4, 4);
+    };
+
+    v1.decodeTable = function (arg0, arg1, arg2, arg3, arg4) {
+      var v7 = this.nbits(arg3 * arg4 - 1);
+      var v8 = arg1;
+      var v9 = arg2;
+      var v10 = false;
+      arg3 += arg1;
+      arg4 += arg2;
+      while (v8 < arg3) {
+        if (this.bc.read(1) != 0) {
+          if (this.bc.read(1) != 0) {
+            var v11 = this.bc.read(v7) + 1;
+          } else {
+            var v11 = this.bc.read(3) + 1;
+          }
+        } else {
+          var v11 = this.bc.read(2);
+        }
+        while (v11 > 0) {
+          arg0[v8][v9] = v10;
+          --v11;
+          ++v9;
+          if (v9 == arg4) {
+            v9 = arg2;
+            ++v8;
+          }
+        }
+        v10 = !v10;
+      }
+    };
+
+    v1.encode = function () {
+      this.bc = new mt.BitCodec(null, true);
+      this.bc.write(8, this.d.width);
+      this.bc.write(8, this.d.height);
+      var v2 = 0;
+      var v3 = 0;
+      var v4 = 0;
+      var v5 = 0;
+      var v6 = 0;
+      var v7 = this.d.levels;
+      while (v6 < v7.length) {
+        var v8 = v7[v6];
+        ++v6;
+        v2 += v8.rooms.length;
+      }
+      this.bc.write(8, this.d.levels.length);
+      v6 = this.nbits(v2);
+      this.bc.write(5, v6);
+      v7 = this.nbits(this.d.width > this.d.height ? this.d.width : this.d.height);
+      v8 = v7 - 1;
+      var v9 = 0;
+      var v10 = this.d.levels;
+      while (v9 < v10.length) {
+        var v11 = v10[v9];
+        ++v9;
+        this.bc.write(v6, v11.rooms.length);
+        var v12 = 0;
+        var v13 = v11.rooms;
+        while (v12 < v13.length) {
+          var v14 = v13[v12];
+          ++v12;
+          this.bc.write(v7, v14.x);
+          this.bc.write(v7, v14.y);
+          this.bc.write(v8, v14.w);
+          this.bc.write(v8, v14.h);
+          this.encodeTable(v11.table, v14.x, v14.y, v14.w, v14.h);
+          this.bc.write(5, v14.doors.length);
+          var v15 = 0;
+          var v16 = v14.doors;
+          while (v15 < v16.length) {
+            var v17 = v16[v15];
+            ++v15;
+            this.bc.write(v7, v17.x);
+            this.bc.write(v7, v17.y);
+            this.bc.write(2, (v17.up == null) ? ((v17.key == null) ? 2 : 3) : (v17.up ? 1 : 0));
+            if (v17.key == null) {
+              if (v17.up == null) {
+                ++v3;
+              }
+            } else {
+              this.bc.write(6, v17.key);
+            }
+          }
+          if (v14.item == null) {
+            this.bc.write(1, 0);
+          } else {
+            this.bc.write(1, 1);
+            this.bc.write(v7, v14.item.x);
+            this.bc.write(v7, v14.item.y);
+            this.bc.write(4, v14.item.k[1]);
+            this.bc.write(8, v14.item.v);
+            v15 = v14.item.k;
+            v16 = v15[1];
+            switch (v16) {
+              case 0:
+                ++v5;
+                break;
+              case 3:
+                ++v4;
+            }
+          }
+        }
+      }
+      this.bc.write(v7, this.d.start.x);
+      this.bc.write(v7, this.d.start.y);
+      this.bc.write(8, this.d.start.l);
+      this.bc.write(v7, this.d.exit.x);
+      this.bc.write(v7, this.d.exit.y);
+      this.bc.write(8, this.d.exit.l);
+      v9 = this.d.width + 'x' + this.d.height + 'x' + this.d.levels.length + ' ' + v2 + 'R ' + v3 + 'M ' + v4 + 'S ' + v5 + 'K';
+      return '[[' + v9 + ']]' + this.bc.toString() + this.bc.crcStr();
+    };
+
+    v1.encodeTable = function (arg0, arg1, arg2, arg3, arg4) {
+      var v7 = this.nbits(arg3 * arg4 - 1);
+      var v8 = false;
+      var v9 = 0;
+      var v10 = 0;
+      while (v10 < arg3) {
+        ++v10;
+        var v11 = v10;
+        var v12 = 0;
+        while (v12 < arg4) {
+          ++v12;
+          var v13 = v12;
+          if (arg0[arg1 + v11][arg2 + v13] != v8) {
+            this.saveBits(this.bc, v7, v9);
+            v9 = 1;
+            v8 = !v8;
+          } else {
+            ++v9;
+          }
+        }
+      }
+      this.saveBits(this.bc, v7, v9);
+    };
+
+    v1.nbits = function (arg0) {
+      var v3 = 1;
+      while (arg0 >= 1 << v3) {
+        ++v3;
+      }
+      return v3;
+    };
+
+    v1.removeSignature = function (arg0) {
+      if (arg0.substr(0, 2) == '[[') {
+        arg0 = arg0.substr(arg0.indexOf(']]') + 2);
+      }
+      return arg0;
+    };
+
+    v1.saveBits = function (arg0, arg1, arg2) {
+      if (arg2 >= 4) {
+        if (arg2 > 8) {
+          arg0.write(2, 3);
+          arg0.write(arg1, arg2 - 1);
+        } else {
+          arg0.write(2, 2);
+          arg0.write(3, arg2 - 1);
+        }
+      } else {
+        arg0.write(1, 0);
+        arg0.write(2, arg2);
+      }
+    };
+
+    _DIcon = new Object();
+    _DIcon.__ename__ = ['_DIcon'];
+    _DIcon.__constructs__ = ['DINothing', 'DIBlock', 'DIIcon', 'DIMonster'];
+    ['DIBlock', 1].__enum__ = _DIcon;
+    ['DIBlock', 1].toString = @estr;
+    _DIcon.DIBlock = ['DIBlock', 1];
+    ['DIBlock', 1].__enum__.DIIcon = function (arg0) {
+      ['DIIcon', 2, arg0].__enum__ = this;
+      ['DIIcon', 2, arg0].toString = @estr;
+      return ['DIIcon', 2, arg0];
+    };
+
+    ['DIBlock', 1].__enum__.DIMonster = function (arg0) {
+      ['DIMonster', 3, arg0].__enum__ = this;
+      ['DIMonster', 3, arg0].toString = @estr;
+      return ['DIMonster', 3, arg0];
+    };
+
+    ['DINothing', 0].__enum__ = ['DIBlock', 1].__enum__;
+    ['DINothing', 0].toString = @estr;
+    ['DIBlock', 1].__enum__.DINothing = ['DINothing', 0];
+    _DResponse = new Object();
+    _DResponse.__ename__ = ['_DResponse'];
+    _DResponse.__constructs__ = ['DOk', 'DUrl', 'DMessage'];
+    _DResponse.DMessage = function (arg0, arg1, arg2) {
+      ['DMessage', 2, arg0, arg1, arg2].__enum__ = this;
+      ['DMessage', 2, arg0, arg1, arg2].toString = @estr;
+      return ['DMessage', 2, arg0, arg1, arg2];
+    };
+
+    ['DOk', 0].__enum__ = _DResponse;
+    ['DOk', 0].toString = @estr;
+    _DResponse.DOk = ['DOk', 0];
+    ['DOk', 0].__enum__.DUrl = function (arg0) {
+      ['DUrl', 1, arg0].__enum__ = this;
+      ['DUrl', 1, arg0].toString = @estr;
+      return ['DUrl', 1, arg0];
+    };
+
+    Hash = function () {
+      this.h = new _global.Object();
+    };
+
+    Hash.__name__ = ['Hash'];
+    v1 = Hash.prototype;
+    v1.__class__ = Hash;
+    v1.get = function (arg0) {
+      return this.h['$' + arg0];
+    };
+
+    v1.h = null;
+    v1.keys = function () {
+      var v2 = new Array();
+      // Loop counter not found
+for ($somevar in this.h) {
+        v2.push((enumerate this.h).substr(1));
+      }
+      return v2.iterator();
+    };
+
+    v1.set = function (arg0, arg1) {
+      this.h['$' + arg0] = arg1;
+    };
+
+    IntHash = function () {
+      this.h = new _global.Object();
+    };
+
+    IntHash.__name__ = ['IntHash'];
+    v1 = IntHash.prototype;
+    v1.__class__ = IntHash;
+    v1.get = function (arg0) {
+      return this.h[arg0];
+    };
+
+    v1.h = null;
+    v1.keys = function () {
+      var v3 = new Array();
+      // Loop counter not found
+for ($somevar in this.h) {
+        v3.push(enumerate this.h);
+      }
+      var v2 = v3;
+      v3 = 0;
+      var v4 = v2.length;
+      while (v3 < v4) {
+        ++v3;
+        var v5 = v3;
+        v2[v5] = Std.int(v2[v5]);
+      }
+      return v2.iterator();
+    };
+
+    v1.set = function (arg0, arg1) {
+      this.h[arg0] = arg1;
+    };
+
+    Lambda = function () {};
+
+    Lambda.__name__ = ['Lambda'];
+    v1 = Lambda.prototype;
+    v1.__class__ = Lambda;
+    v1.__class__.array = function (arg0) {
+      var v3 = new Array();
+      var v4 = arg0.iterator();
+      while (v4.hasNext()) {
+        var v5 = v4.next();
+        v3.push(v5);
+      }
+      return v3;
+    };
+
+    v1.__class__.map = function (arg0, arg1) {
+      var v4 = new List();
+      var v5 = arg0.iterator();
+      while (v5.hasNext()) {
+        var v6 = v5.next();
+        v4.add(arg1(v6));
+      }
+      return v4;
+    };
+
+    List = function () {
+      this.length = 0;
+    };
+
+    List.__name__ = ['List'];
+    v1 = List.prototype;
+    v1.__class__ = List;
+    v1.add = function (arg0) {
+      var v3 = [arg0];
+      if (this.h != null) {
+        this.q[1] = v3;
+      } else {
+        this.h = v3;
+      }
+      this.q = v3;
+      ++this.length;
+    };
+
+    v1.h = null;
+    v1.iterator = function () {
+      return {'h': this.h, 'hasNext': function () {
+        return this.h != null;
+      }, 'next': function () {
+        if (this.h == null) {
+          return null;
+        }
+        var v2 = this.h[0];
+        this.h = this.h[1];
+        return v2;
+      }};
+    };
+
+    v1.length = null;
+    v1.q = null;
+    Reflect = function () {};
+
+    Reflect.__name__ = ['Reflect'];
+    v1 = Reflect.prototype;
+    v1.__class__ = Reflect;
+    v1.__class__.fields = function (arg0) {
+      if (arg0 == null) {
+        return new Array();
+      }
+      var v4 = new Array();
+      // Loop counter not found
+for ($somevar in arg0) {
+        v4.push(enumerate arg0);
+      }
+      var v3 = v4;
+      v4 = 0;
+      while (v4 < v3.length) {
+        if (v3.hasOwnProperty.call(arg0, v3[v4])) {
+          ++v4;
+        } else {
+          v3.splice(v4, 1);
+        }
+      }
+      return v3;
+    };
+
+    v1.__class__.isFunction = function (arg0) {
+      return typeof arg0 == 'function' && arg0.__name__ == null;
+    };
+
+    Std = function () {};
+
+    Std.__name__ = ['Std'];
+    v1 = Std.prototype;
+    v1.__class__ = Std;
+    v1.__class__.is = function (arg0, arg1) {
+      return flash.Boot.__instanceof(arg0, arg1);
+    };
+
+    v1.__class__.string = function (arg0) {
+      return flash.Boot.__string_rec(arg0, '');
+    };
+
+    v1.__class__.int = function (arg0) {
+      if (arg0 < 0) {
+        return Math.ceil(arg0);
+      }
+      return Math.floor(arg0);
+    };
+
+    v1.__class__.parseFloat = function (arg0) {
+      return _global.parseFloat(arg0);
+    };
+
+    v1.__class__.random = function (arg0) {
+      return random(arg0);
+    };
+
+    StringBuf = function () {};
+
+    StringBuf.__name__ = ['StringBuf'];
+    v1 = StringBuf.prototype;
+    v1.__class__ = StringBuf;
+    v1.b = '';
+    StringTools = function () {};
+
+    StringTools.__name__ = ['StringTools'];
+    v1 = StringTools.prototype;
+    v1.__class__ = StringTools;
+    v1.__class__.urlEncode = function (arg0) {
+      return _global.escape(arg0);
+    };
+
+    v1.__class__.urlDecode = function (arg0) {
+      return _global.unescape(arg0);
+    };
+
+    v1.__class__.replace = function (arg0, arg1, arg2) {
+      return (arg0.split(arg1)).join(arg2);
+    };
+
+    ValueType = new Object();
+    ValueType.__ename__ = ['ValueType'];
+    ValueType.__constructs__ = ['TNull', 'TInt', 'TFloat', 'TBool', 'TObject', 'TFunction', 'TClass', 'TEnum', 'TUnknown'];
+    ['TBool', 3].__enum__ = ValueType;
+    ['TBool', 3].toString = @estr;
+    ValueType.TBool = ['TBool', 3];
+    ['TBool', 3].__enum__.TClass = function (arg0) {
+      ['TClass', 6, arg0].__enum__ = this;
+      ['TClass', 6, arg0].toString = @estr;
+      return ['TClass', 6, arg0];
+    };
+
+    ['TBool', 3].__enum__.TEnum = function (arg0) {
+      ['TEnum', 7, arg0].__enum__ = this;
+      ['TEnum', 7, arg0].toString = @estr;
+      return ['TEnum', 7, arg0];
+    };
+
+    ['TFloat', 2].__enum__ = ['TBool', 3].__enum__;
+    ['TFloat', 2].toString = @estr;
+    ['TBool', 3].__enum__.TFloat = ['TFloat', 2];
+    ['TFunction', 5].__enum__ = ['TBool', 3].__enum__;
+    ['TFunction', 5].toString = @estr;
+    ['TBool', 3].__enum__.TFunction = ['TFunction', 5];
+    ['TInt', 1].__enum__ = ['TBool', 3].__enum__;
+    ['TInt', 1].toString = @estr;
+    ['TBool', 3].__enum__.TInt = ['TInt', 1];
+    ['TNull', 0].__enum__ = ['TBool', 3].__enum__;
+    ['TNull', 0].toString = @estr;
+    ['TBool', 3].__enum__.TNull = ['TNull', 0];
+    ['TObject', 4].__enum__ = ['TBool', 3].__enum__;
+    ['TObject', 4].toString = @estr;
+    ['TBool', 3].__enum__.TObject = ['TObject', 4];
+    ['TUnknown', 8].__enum__ = ['TBool', 3].__enum__;
+    ['TUnknown', 8].toString = @estr;
+    ['TBool', 3].__enum__.TUnknown = ['TUnknown', 8];
+    Type = function () {};
+
+    Type.__name__ = ['Type'];
+    v1 = Type.prototype;
+    v1.__class__ = Type;
+    v1.__class__.getClassName = function (arg0) {
+      if (arg0 == null) {
+        return null;
+      }
+      var v3 = arg0.__name__;
+      return v3.join('.');
+    };
+
+    v1.__class__.getEnumName = function (arg0) {
+      var v3 = arg0.__ename__;
+      return v3.join('.');
+    };
+
+    v1.__class__.resolveClass = function (arg0) {
+      var v3 = eval(arg0);
+      if (v3 == null || v3.__name__ == null) {
+        return null;
+      }
+      return v3;
+    };
+
+    v1.__class__.resolveEnum = function (arg0) {
+      var v3 = eval(arg0);
+      if (v3 == null || v3.__ename__ == null) {
+        return null;
+      }
+      return v3;
+    };
+
+    v1.__class__.createEmptyInstance = function (arg0) {
+      if (arg0 == Array) {
+        return new Array();
+      }
+      var v3 = new _global.Object();
+      v3.__proto__ = arg0.prototype;
+      return v3;
+    };
+
+    v1.__class__.createEnum = function (arg0, arg1, arg2) {
+      var v5 = arg0[arg1];
+      if (v5 == null) {
+        throw 'No such constructor ' + arg1;
+      }
+      if (Reflect.isFunction(v5)) {
+        if (arg2 == null) {
+          throw 'Constructor ' + arg1 + ' need parameters';
+        }
+        return v5.apply(arg0, arg2);
+      }
+      if (arg2 != null && arg2.length != 0) {
+        throw 'Constructor ' + arg1 + ' does not need parameters';
+      }
+      return v5;
+    };
+
+    v1.__class__.getEnumConstructs = function (arg0) {
+      var v3 = arg0.__constructs__;
+      return v3.copy();
+    };
+
+    v1.__class__.typeof = function (arg0) {
+      var v3 = typeof arg0;
+      if (v3 != 'null') {
+      } else {
+        if (v3 != 'boolean') {
+        } else {
+          if (v3 != 'string') {
+          } else {
+            if (v3 != 'number') {
+                    return ValueType.TUnknown;
+            } else {
+                    return ValueType.TNull;
+              if (v3 != 'object') {
+                    return ValueType.TBool;
+              } else {
+                    return ValueType.TClass(String);
+                if (v3 != 'function') {
+                    if (Math.ceil(arg0) == arg0 % 2147483648.0) {
+                      return ValueType.TInt;
+                    }
+                    return ValueType.TFloat;
+                } else {
+                    var v4 = arg0.__enum__;
+                    if (v4 != null) {
+                      return ValueType.TEnum(v4);
+                    }
+                    var v5 = arg0.__class__;
+                    if (v5 != null) {
+                      return ValueType.TClass(v5);
+                    }
+                    return ValueType.TObject;
+                  if (v3 != 'undefined') {
+                    if (arg0.__name__ != null) {
+                      return ValueType.TObject;
+                    }
+                    return ValueType.TFunction;
+                  } else {
+                    return ValueType.TNull;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    };
+
+    v1 = new Object();
+    _View = v1;
+    var v2 = _global._View;
+    // Loop counter not found
+for ($somevar in v2) {
+      v1[enumerate v2] = v2[enumerate v2];
+    }
+    _View.PerlinType = new Object();
+    _View.PerlinType.__ename__ = ['_View', 'PerlinType'];
+    _View.PerlinType.__constructs__ = ['PNormal', 'PDense', 'PFew'];
+    ['PDense', 1].__enum__ = _View.PerlinType;
+    ['PDense', 1].toString = @estr;
+    _View.PerlinType.PDense = ['PDense', 1];
+    ['PFew', 2].__enum__ = _View.PerlinType;
+    ['PFew', 2].toString = @estr;
+    _View.PerlinType.PFew = ['PFew', 2];
+    ['PNormal', 0].__enum__ = _View.PerlinType;
+    ['PNormal', 0].toString = @estr;
+    _View.PerlinType.PNormal = ['PNormal', 0];
+    View = function (arg0) {
+      this.dm = new mt.DepthManager(arg0);
+      var v3 = new DungeonCodec();
+      if (!v3.decode(View.DATA._d)) {
+        throw 'Invalid data';
+      }
+      this.d = v3.d;
+      this.width = this.d.width;
+      this.height = this.d.height;
+      this.setupLevel();
+      this.setSkin(View.DATA._skin);
+      this.fl_fog = false;
+      this.initZones();
+      this.commands = new Array();
+      arg0.beginFill(this.skin.fog);
+      arg0.lineTo(400, 0);
+      arg0.lineTo(400, 400);
+      arg0.lineTo(0, 400);
+      arg0.endFill();
+      var count = 0;
+      var me = this;
+      this.fxList = new Array();
+      this.simpleFx = new Array();
+      this.monsters = new Array();
+      this.levelMC = this.dm.empty(0);
+      this.dtmp = new mt.DepthManager(this.levelMC);
+      this.dinozMC = this.dtmp.empty(2);
+      this.dinoz = new Array();
+      var v4 = 99;
+      var v5 = 0;
+      var v6 = View.DATA._group;
+      while (v5 < v6.length) {
+        var v7 = v6[v5];
+        ++v5;
+        --v4;
+        var v8 = new Dino(v7, this.dinozMC.createEmptyMovieClip('d' + v4, v4));
+        ++count;
+        v8.flip = View.DATA._dir;
+        v8.onLoaded = function () {
+          if (--count == 0) {
+            me.onLoaded();
+          }
+        };
+
+        this.dinoz.push(v8);
+      }
+      this.overMaps = new Array();
+      v5 = 0;
+      while (v5 < 3) {
+        ++v5;
+        v6 = v5;
+        this.overMaps[v6] = new Array();
+        v7 = 0;
+        v8 = this.width;
+        while (v7 < v8) {
+          ++v7;
+          var v9 = v7;
+          this.overMaps[v6][v9] = new Array();
+        }
+      }
+    };
+
+    View.__name__ = ['View'];
+    v1 = View.prototype;
+    v1.__class__ = View;
+    v1.__class__.DATA = null;
+    v1.__class__.inst = null;
+    v1.__class__.start = function () {
+      View.inst = new View(flash.Lib.current);
+      flash.Lib.current.onEnterFrame = @closure('update', View.inst);
+    };
+
+    v1.__class__.main = function () {
+      haxe.Log.setColor(16711680);
+      var v2 = flash.Lib._root.data;
+      if (v2 != null) {
+        View.DATA = haxe.Unserializer.run(v2);
+        View.start();
+      } else {
+        var v3 = new haxe.Http('dungeon_test.xml');
+        v3.onData = function (arg0) {
+          View.DATA = {'_d': arg0, '_x': null, '_y': null, '_dir': true, '_l': 0, '_ldelta': 0, '_sdino': '../../dev/swf/sdino.swf', '_smonster': '../../dev/swf/smonster.swf', '_group': [{'_n': 'RedRed', '_g': '86v70XPBxnd8ctaS'}], '_monsters': ['goupi', 'coq', 'grdien', 'borg'], '_flags': [], '_keys': [], '_fog': null, '_url': null, '_lock': false, '_tower': false, '_skin': View.DEFAULT_SKIN, '_sicons': [_DIcon.DIIcon('skel')], '_text': null, '_tlvl': 'Niveau ::n::'};
+          try {
+            View.start();
+          }
+          catch (v0) {
+            var v3 = v0;
+            haxe.Log.trace('error : ' + Std.string(v3), {'fileName': 'View.hx', 'lineNumber': 1097, 'className': 'View', 'methodName': 'main'});
+            haxe.Log.trace(Std.string(v3), null);
+          }
+        };
+
+        v3.onError = function (arg0) {
+          haxe.Log.trace('msg:' + arg0, {'fileName': 'View.hx', 'lineNumber': 1102, 'className': 'View', 'methodName': 'main'});
+          haxe.Log.trace(arg0, null);
+        };
+
+        v3.request(false);
+      }
+    };
+
+    v1.addFadeFx = function (arg0, arg1, arg2, arg3) {
+      var v6 = this.addFx(arg0, arg1, arg2, arg3, function (arg0) {
+        arg0.mc._alpha = Math.cos(arg0.cpt) * 100;
+        return arg0.cpt >= Math.PI;
+      });
+      return v6;
+    };
+
+    v1.addFx = function (arg0, arg1, arg2, arg3, arg4) {
+      if (arg3 == null) {
+        arg3 = 2;
+      }
+      var v7 = this.dtmp.attach(arg0, arg3);
+      v7._x = arg1;
+      v7._y = arg2;
+      v7.stop();
+      var v8 = {'update': arg4, 'cpt': 0, 'mc': v7};
+      this.fxList.push(v8);
+      return v8;
+    };
+
+    v1.addPop = function (arg0, arg1) {
+      var v4 = this.dm.attach('fx_pop', 10);
+      v4._x = arg0;
+      v4._y = arg1;
+      v4.filters = [new flash.filters.GlowFilter(16766773, 1, 16, 16, 3, 2)];
+      v4.blendMode = 'screen';
+      this.simpleFx.push(v4);
+    };
+
+    v1.arrows = null;
+    v1.commands = null;
+    v1.curLevel = function () {
+      return this.d.levels[this.posL];
+    };
+
+    v1.d = null;
+    v1.dinoz = null;
+    v1.dinozMC = null;
+    v1.displayLevel = function () {
+      if (this.skin.mask <= 0) {
+        if (this.mask != null) {
+          this.mask.removeMovieClip();
+          this.mask = null;
+        }
+      } else {
+        if (this.mask == null) {
+          this.mask = this.dm.attach('mask', 2);
+          mt.bumdum.Col.setPercentColor(this.mask, 70, this.skin.fog);
+          this.mask._alpha = this.skin.mask;
+          this.mask.cacheAsBitmap = true;
+        }
+      }
+      var v2 = new mt.Rand(0);
+      this.dtmp.clear(0);
+      this.dtmp.clear(1);
+      this.dtmp.clear(3);
+      var v3 = this.d.levels[this.posL];
+      var v4 = v3.table;
+      var v5 = this.view.ix - 2;
+      var v6 = this.view.iy - 1;
+      var v7 = this.view.ix + 9 + 1;
+      var v8 = this.view.iy + 9 + 2;
+      var v9 = 480;
+      var v10 = new flash.geom.Matrix();
+      v10.identity();
+      var v11 = this.dtmp.attach('block', 0);
+      var v12 = this.dtmp.attach('overground', 0);
+      var v13 = this.dtmp.attach('overground', 0);
+      this.groundBitmap.dispose();
+      this.groundBitmap = new flash.display.BitmapData(v9, v9, true, 0);
+      this.overgroundBitmap.dispose();
+      this.overgroundBitmap = new flash.display.BitmapData(v9, v9, true, 0);
+      var v14 = this.dtmp.empty(0);
+      v14._x = v5 * 40;
+      v14._y = v6 * 40;
+      v14.attachBitmap(this.groundBitmap, 0);
+      v14.attachBitmap(this.overgroundBitmap, 1);
+      var v15 = this.roomIds[this.posL];
+      var v16 = v6;
+      while (v16 < v8) {
+        ++v16;
+        var v17 = v16;
+        var v18 = v5;
+        while (v18 < v7) {
+          ++v18;
+          var v19 = v18;
+          v2.initSeed(v17 * this.height + v19);
+          if (v4[v19][v17]) {
+            var v20 = this.zonesIds[this.zonesBitmap.getPixel32(v19, v17) & 255];
+            v11.gotoAndStop(this.skin.g);
+            v2.seed = v2.seed * 16807 % 2147483647;
+            v11.smc.gotoAndStop((v2.seed & 1073741823) % v11.smc._totalframes + 1);
+            v10.tx = (v19 - v5) * 40;
+            v10.ty = (v17 - v6) * 40;
+            this.groundBitmap.draw(v11, v10);
+            var v21 = this.getOverMap(1, v19, v17);
+            if (v21 > 0) {
+              v12.gotoAndStop(this.skin.over[0]);
+              v12.smc.gotoAndStop(v21);
+              this.overgroundBitmap.draw(v12, v10);
+            }
+            var v22 = this.getOverMap(2, v19, v17);
+            if (v22 > 0) {
+              v13.gotoAndStop(this.skin.over[1]);
+              v13.smc.gotoAndStop(v22);
+              this.overgroundBitmap.draw(v13, v10);
+            }
+            v11._x = v19 * 40;
+            v11._y = v17 * 40;
+            if (!v4[v19][v17 - 1]) {
+              var v23 = this.dtmp.attach('wall_front', 0);
+              this.initWall(v2, v11, v23);
+            }
+            if (!v4[v19 - 1][v17]) {
+              v23 = this.dtmp.attach('wall_side_left', 3);
+              this.initWall(v2, v11, v23);
+            }
+            if (!v4[v19][v17 - 1] && !v4[v19 - 1][v17]) {
+              v23 = this.dtmp.attach('wall_corner', 0);
+              this.initWall(v2, v11, v23);
+            }
+            if (!v4[v19 + 1][v17]) {
+              v23 = this.dtmp.attach('wall_side_right', 3);
+              this.initWall(v2, v11, v23);
+            }
+            if (!v4[v19][v17 + 1]) {
+              v23 = this.dtmp.attach('wall_back', 3);
+              this.initWall(v2, v11, v23);
+            }
+            if (!v4[v19][v17 - 1] && !v4[v19 + 1][v17]) {
+              v23 = this.dtmp.attach('wall_corner', 0);
+              this.initWall(v2, v11, v23, 48);
+            }
+            if (!v4[v19][v17 + 1] && !v4[v19 - 1][v17]) {
+              v23 = this.dtmp.attach('wall_corner', 3);
+              this.initWall(v2, v11, v23, 0, 48);
+            }
+            if (!v4[v19][v17 + 1] && !v4[v19 + 1][v17]) {
+              v23 = this.dtmp.attach('wall_corner', 3);
+              this.initWall(v2, v11, v23, 48, 48);
+            }
+          }
+        }
+      }
+      v16 = 0;
+      v17 = this.monsters;
+      while (v16 < v17.length) {
+        v18 = v17[v16];
+        ++v16;
+        v18._visible = false;
+      }
+      v16 = this.monsters.length;
+      v17 = 0;
+      v18 = v3.rooms;
+      while (v17 < v18.length) {
+        v19 = v18[v17];
+        ++v17;
+        v20 = v19.item;
+        if (v20 == null) {
+          continue;
+        }
+        if (v20.x >= v5 && v20.x < v7 && v20.y >= v6 && v20.y < v8) {
+          v21 = this.dtmp.attach('item', 1);
+          v22 = !this.hasFlag(this.posL, v20.x, v20.y);
+          v23 = v20.k;
+          var v24 = v23[1];
+          switch (v24) {
+            case 0:
+              if (!v22) {
+                v21.removeMovieClip();
+              }
+              v21.gotoAndStop(4);
+              v21.smc.gotoAndStop(1 + v20.v % v21.smc._totalframes);
+              break;
+            case 1:
+              if (!v22) {
+                v21.removeMovieClip();
+              }
+              v21.gotoAndStop(3);
+              break;
+            case 2:
+              v21.gotoAndStop(v22 ? 7 : 8);
+              break;
+            case 3:
+              v24 = View.DATA._sicons[v20.v];
+              var v25 = v24[1];
+              switch (v25) {
+                case 0:
+                  v21.removeMovieClip();
+                  continue;
+                  break;
+                case 2:
+                  v25 = v24[2];
+                  if (!v22) {
+                    v21.removeMovieClip();
+                  }
+                  v21.gotoAndStop(9);
+                  v21.smc.stop();
+                  v21.smc.gotoAndStop(v25);
+                  break;
+                case 3:
+                  v25 = v24[2];
+                  v21.removeMovieClip();
+                  if (!v22) {
+                    continue;
+                  }
+                  var v26 = (v20.x == this.posX) ? !this.dinoz[0].flip : v20.x < this.posX;
+                  var v27 = this.initMonster(v25, v26, --v16);
+                  v27._x = v20.x * 40;
+                  v27._y = v20.y * 40;
+                  v27._x += 20.0;
+                  v27._y += 24.0;
+                  break;
+                case 1:
+                  v21.removeMovieClip();
+              }
+          }
+          v21._x = v20.x * 40;
+          v21._y = v20.y * 40;
+        }
+      }
+      v17 = 0;
+      v18 = v3.rooms;
+      while (v17 < v18.length) {
+        v19 = v18[v17];
+        ++v17;
+        v20 = 0;
+        v21 = v19.doors;
+        while (v20 < v21.length) {
+          v22 = v21[v20];
+          ++v20;
+          if (v22.x >= v5 && v22.x < v7 && v22.y >= v6 && v22.y < v8) {
+            v23 = this.hasFlag(this.posL, v22.x, v22.y);
+            if (v22.up == null) {
+              if (v22.key == null) {
+                if (!v23) {
+                  v24 = new mt.Rand(0);
+                  v24.initSeed(v22.x * this.height + v22.y);
+                  v24.seed = v24.seed * 16807 % 2147483647;
+                  var v25 = View.DATA._monsters[(v24.seed & 1073741823) % View.DATA._monsters.length];
+                  var v26 = (v22.x == this.posX) ? !this.dinoz[0].flip : v22.x < this.posX;
+                  var v27 = this.initMonster(v25, v26, --v16);
+                  v27._x = v22.x * 40;
+                  v27._y = v22.y * 40;
+                  v27._x += 20.0;
+                  v27._y += 24.0;
+                }
+              } else {
+                v24 = this.dtmp.attach('item', 1);
+                v24.gotoAndStop(v23 ? 2 : 1);
+                v24.smc.gotoAndStop(v4[v22.x][v22.y - 1] ? 1 : 2);
+                v24._x = v22.x * 40;
+                v24._y = v22.y * 40;
+              }
+            } else {
+              v24 = this.dtmp.attach('item', 1);
+              v24.gotoAndStop(View.DATA._tower ? (v22.up ? 6 : 5) : (v22.up ? 5 : 6));
+              v24.smc.gotoAndStop(v4[v22.x + 1][v22.y] ? 1 : 2);
+              v24._x = v22.x * 40;
+              v24._y = v22.y * 40;
+            }
+          }
+        }
+      }
+      this.fogBitmap.dispose();
+      if (this.fl_fog) {
+        this.fogBitmap = new flash.display.BitmapData(v9, v9, true, 0);
+        v17 = this.dtmp.empty(4);
+        v17._x = v5 * 40;
+        v17._y = v6 * 40;
+        v17.attachBitmap(this.fogBitmap, 0);
+        v18 = this.dtmp.attach('fog', 0);
+        v19 = v5;
+        while (v19 < v7) {
+          ++v19;
+          v20 = v19;
+          v21 = this.posL * this.width * this.height + v20 * this.height + v6;
+          v22 = v6;
+          while (v22 < v8) {
+            ++v22;
+            v23 = v22;
+            if ((View.DATA._fog.b[v21 + 7 >> 3] & 1 << (v21 & 7)) == 0) {
+              v18.gotoAndStop(1 + v21 % v11._totalframes);
+              v10.tx = (v20 - v5) * 40;
+              v10.ty = (v23 - v6) * 40;
+              this.fogBitmap.draw(v18, v10);
+            }
+            ++v21;
+          }
+        }
+        mt.bumdum.Col.setPercentColor(v17, 100, this.skin.fog);
+        v18.removeMovieClip();
+      }
+      this.filter(this.overgroundBitmap, new flash.filters.GlowFilter(0, 0.7, 2, 2, 2, 1));
+      this.groundBitmap.draw(this.overgroundBitmap);
+      this.overgroundBitmap.dispose();
+      this.filter(this.groundBitmap, new flash.filters.DropShadowFilter(15, 0, 0, 0.3, 3, 3, 1, 2, true));
+      this.filter(this.groundBitmap, new flash.filters.GlowFilter(0, 0.35, 64, 64, 2, 1, true));
+      this.filter(this.groundBitmap, new flash.filters.GlowFilter(7492187, 0.6, 64, 64, 2, 1));
+      this.filter(this.fogBitmap, new flash.filters.BlurFilter(32, 32, 1));
+      v11.removeMovieClip();
+      v12.removeMovieClip();
+      v13.removeMovieClip();
+      this.posLabel.text = (View.DATA._tlvl.split('::n::')).join(Std.string((this.posL + 1 + View.DATA._ldelta) * (View.DATA._tower ? 1 : -1)));
+    };
+
+    v1.dm = null;
+    v1.dtmp = null;
+    v1.filter = function (arg0, arg1) {
+      arg0.applyFilter(arg0, arg0.rectangle, new flash.geom.Point(0, 0), arg1);
+    };
+
+    v1.fl_fog = null;
+    v1.fogBitmap = null;
+    v1.fxList = null;
+    v1.getItem = function () {
+      var v2 = 0;
+      var v3 = this.d.levels[this.posL].rooms;
+      while (v2 < v3.length) {
+        var v4 = v3[v2];
+        ++v2;
+        var v5 = v4.item;
+        if (v5 == null || v5.x != this.posX || v5.y != this.posY) {
+          continue;
+        }
+        var v6 = false;
+        var v7 = v5.k;
+        var v8 = v7[1];
+        switch (v8) {
+          case 0:
+            View.DATA._keys[v5.v] = true;
+            v6 = this.setFlag(this.posL, v5.x, v5.y);
+            break;
+          case 1:
+          case 3:
+            v6 = this.setFlag(this.posL, v5.x, v5.y);
+            break;
+          case 2:
+        }
+        return v6;
+      }
+      return false;
+    };
+
+    v1.getNoiseId = function (arg0, arg1) {
+      return this.zonesIds[this.zonesBitmap.getPixel32(arg0, arg1) & 255];
+    };
+
+    v1.getOverMap = function (arg0, arg1, arg2) {
+      if (this.skin.over[arg0 - 1] == null) {
+        return 0;
+      }
+      var v5 = this.overMaps[arg0][arg1][arg2];
+      if (v5 != null) {
+        return v5;
+      }
+      if (this.zonesIds[this.zonesBitmap.getPixel32(arg1, arg2) & 255] >= arg0) {
+        v5 = 15;
+        this.overMaps[arg0][arg1][arg2] = v5;
+        return v5;
+      }
+      v5 |= this.zonesIds[this.zonesBitmap.getPixel32(arg1 - 1, arg2 - 1) & 255] >= arg0 ? 8 : 0;
+      v5 |= this.zonesIds[this.zonesBitmap.getPixel32(arg1, arg2 - 1) & 255] >= arg0 ? 12 : 0;
+      v5 |= this.zonesIds[this.zonesBitmap.getPixel32(arg1 + 1, arg2 - 1) & 255] >= arg0 ? 4 : 0;
+      v5 |= this.zonesIds[this.zonesBitmap.getPixel32(arg1 - 1, arg2) & 255] >= arg0 ? 10 : 0;
+      v5 |= this.zonesIds[this.zonesBitmap.getPixel32(arg1 + 1, arg2) & 255] >= arg0 ? 5 : 0;
+      v5 |= this.zonesIds[this.zonesBitmap.getPixel32(arg1 - 1, arg2 + 1) & 255] >= arg0 ? 2 : 0;
+      v5 |= this.zonesIds[this.zonesBitmap.getPixel32(arg1, arg2 + 1) & 255] >= arg0 ? 3 : 0;
+      v5 |= this.zonesIds[this.zonesBitmap.getPixel32(arg1 + 1, arg2 + 1) & 255] >= arg0 ? 1 : 0;
+      this.overMaps[arg0][arg1][arg2] = v5;
+      return v5;
+    };
+
+    v1.groundBitmap = null;
+    v1.h = null;
+    v1.hasFlag = function (arg0, arg1, arg2) {
+      var v5 = arg0 * this.width * this.height + arg1 * this.height + arg2;
+      var v6 = 0;
+      var v7 = View.DATA._flags;
+      while (v6 < v7.length) {
+        var v8 = v7[v6];
+        ++v6;
+        if (v5 == v8) {
+          return true;
+        }
+      }
+      return false;
+    };
+
+    v1.height = null;
+    v1.initArrow = function (arg0, arg1) {
+      arg0.gotoAndStop(1);
+      var me = arg0;
+      arg0.onRollOver = function () {
+        me.gotoAndStop(2);
+      };
+
+      arg0.onRollOut = function () {
+        me.gotoAndStop(1);
+      };
+
+      arg0.onReleaseOutside = function () {
+        me.gotoAndStop(1);
+      };
+
+      arg0.onRelease = arg1;
+    };
+
+    v1.initDinoz = function () {
+      var v2 = 0;
+      var v3 = this.dinoz;
+      while (v2 < v3.length) {
+        var v4 = v3[v2];
+        ++v2;
+        v4.mc._visible = true;
+        v4.tx = this.posX;
+        v4.px = v4.tx;
+        v4.ty = this.posY;
+        v4.py = v4.ty;
+        v4.speed = 0.05;
+      }
+    };
+
+    v1.initMonster = function (gfx, flip, id) {
+      var v2 = this.monsters[id];
+      if (v2 != null) {
+        v2._visible = true;
+        v2._p0._x = 0;
+        v2._p0._y = 0;
+        v2._p0.gotoAndStop(gfx);
+        v2._p0._p1._anim.gotoAndStop('stand');
+        v2._p0._box._visible = false;
+        var v3 = v2._p0._box.getBounds(v2);
+        var v4 = Math.max(Math.max(Math.abs(v3.xMin), Math.abs(v3.xMax)), Math.max(Math.abs(v3.yMin * 0.8), Math.abs(v3.yMax)));
+        var v5 = 2000.0 / v4;
+        if (v5 > 100) {
+          v5 = 100;
+        }
+        v2._yscale = v5;
+        v2._xscale = v2._yscale;
+        if (flip) {
+          v2._xscale *= -1;
+        }
+        return v2;
+      }
+      v2 = this.dtmp.empty(2);
+      v2._visible = false;
+      id = this.monsters.length;
+      this.monsters.push(v2);
+      v3 = new flash.MovieClipLoader();
+      var k = 0;
+      var me = this;
+      v3.onLoadInit = function (arg0) {
+        ++k;
+        if (k == 2) {
+          me.initMonster(gfx, flip, id);
+        }
+      };
+
+      v3.onLoadComplete = v3.onLoadInit;
+      v3.loadClip(View.DATA._smonster, v2);
+      return v2;
+    };
+
+    v1.initWall = function (arg0, arg1, arg2, arg3, arg4) {
+      if (arg3 == null) {
+        arg3 = 0;
+      }
+      if (arg4 == null) {
+        arg4 = 0;
+      }
+      arg2._x = arg1._x + arg3;
+      arg2._y = arg1._y + arg4;
+      arg2.gotoAndStop(this.skin.w);
+      arg0.seed = arg0.seed * 16807 % 2147483647;
+      arg2.smc.gotoAndStop((arg0.seed & 1073741823) % arg2.smc._totalframes + 1);
+    };
+
+    v1.initZones = function () {
+      this.zonesBitmap = new flash.display.BitmapData(this.width, this.height);
+      var v2 = (View.DATA._url == null) ? Std.random(9999) : 0;
+      var v3 = this.skin.perlin;
+      var v4 = v3[1];
+      switch (v4) {
+          this.zonesBitmap.perlinNoise(7, 7, 1, v2, true, true, 5);
+        case 1:
+          this.zonesBitmap.perlinNoise(5, 5, 4, v2, true, true, 5);
+          break;
+        case 2:
+          this.zonesBitmap.perlinNoise(7, 7, 4, v2, true, true, 5);
+      }
+      this.zonesIds = new Array();
+      v3 = 0;
+      while (v3 < 256) {
+        ++v3;
+        v4 = v3;
+        var v6 = this.skin.perlin;
+        var v7 = v6[1];
+        var v5 = (v7 === 2) ? (v4 < 60 ? 2 : (v4 < 75 ? 1 : 0)) : (v4 < 85 ? 2 : (v4 < 115 ? 1 : 0));
+        this.zonesIds.push(v5);
+      }
+      this.roomIds = new Array();
+      v3 = 0;
+      v4 = this.d.levels;
+      while (v3 < v4.length) {
+        v5 = v4[v3];
+        ++v3;
+        v6 = new Array();
+        v7 = 0;
+        var v8 = this.d.width;
+        while (v7 < v8) {
+          ++v7;
+          var v9 = v7;
+          v6[v9] = new Array();
+        }
+        this.roomIds.push(v6);
+        v7 = 0;
+        v8 = v5.rooms;
+        while (v7 < v8.length) {
+          v9 = v8[v7];
+          ++v7;
+          var v10 = 0;
+          var v11 = v9.w;
+          while (v10 < v11) {
+            ++v10;
+            var v12 = v10;
+            var v13 = 0;
+            var v14 = v9.h;
+            while (v13 < v14) {
+              ++v13;
+              var v15 = v13;
+              v6[v12 + v9.x][v15 + v9.y] = v9.id;
+            }
+          }
+          v10 = 0;
+          v11 = v9.doors;
+          while (v10 < v11.length) {
+            v12 = v11[v10];
+            ++v10;
+            v6[v12.x][v12.y] = v9.id;
+          }
+        }
+      }
+    };
+
+    v1.levelMC = null;
+    v1.mask = null;
+    v1.message = function (arg0, arg1, url) {
+      var v4 = 320;
+      var v5 = 300;
+      var v6 = 8;
+      this.winMsg.removeMovieClip();
+      this.winMsg = this.dm.empty(5);
+      var v7 = new mt.DepthManager(this.winMsg);
+      var v8 = (v7.attach('msg_field', 1)).field;
+      arg0 = StringTools.replace(arg0, ' !', '#!');
+      arg0 = StringTools.replace(arg0, ' ?', '#?');
+      arg0 = StringTools.replace(arg0, ' :', '#:');
+      v8.text = arg0;
+      var v9 = new flash.TextFormat();
+      v9.size = arg0.length <= 100 ? 20 : 13;
+      var v10 = 0;
+      var v11 = 50;
+      var v12 = false;
+      for (;;) {
+        if (!(!v12 && v10 < v11)) break;
+        var v13 = v4 - v6 * 2;
+        v8._width = v4 - v6 * 2;
+        v8._height = v5 - v6 * 2;
+        var v14 = arg0.split(' ');
+        v8.text = '';
+        var v15 = 0;
+        var v16 = 0;
+        var v17 = true;
+        var v18 = 0;
+        while (v18 < v14.length) {
+          var v19 = v14[v18];
+          ++v18;
+          v8.text += (v17 ? '' : '_') + v19;
+          v8.setTextFormat(v9);
+          v17 = false;
+          if (v8.textWidth <= v13) {
+            v8.text = StringTools.replace(v8.text, '_', ' ');
+          } else {
+            var v20 = v8.text.indexOf('_') + 1;
+            v16 = v20 - v15;
+            v15 = v20;
+            v8.text = StringTools.replace(v8.text, '_', '\n');
+          }
+        }
+        v18 = v8.text.length - v15;
+        v12 = v18 / v16 > 0.4;
+        if (!v12) {
+          v4 -= 5;
+        }
+        ++v10;
+      }
+      if (!v12 && v10 >= v11) {
+        v8.wordWrap = true;
+        v8.text = arg0;
+        v4 = 320;
+      }
+      v8.text = StringTools.replace(v8.text, '#', ' ');
+      v8.setTextFormat(v9);
+      v5 = Std.int(Math.max(50, v8.textHeight + v6 * 2.5));
+      v13 = 180.0 - v4 * 0.5;
+      v14 = 180.0 - v5 * 0.5;
+      v8._x = v13 + v6;
+      v8._y = v14 + v6;
+      this.winMsg.beginFill(5053968);
+      this.winMsg.lineTo(v13, v14);
+      this.winMsg.lineTo(v13 + v4, v14);
+      this.winMsg.lineTo(v13 + v4, v14 + v5);
+      this.winMsg.lineTo(v13, v14 + v5);
+      this.winMsg.lineTo(v13, v14);
+      this.winMsg.endFill();
+      v15 = 23;
+      v16 = 1;
+      v17 = Math.floor(v4 / v15);
+      while (v16 < v17) {
+        ++v16;
+        v18 = v16;
+        v19 = this.windowPart(v7, 2, v13, v14, v4, v5, 0, 0);
+        v19._x = v13 + v18 * v15;
+        v20 = this.windowPart(v7, 8, v13, v14, v4, v5, 0, 2);
+        v20._x = v13 + v18 * v15;
+      }
+      v16 = 41;
+      v17 = 1;
+      v18 = Math.floor(v5 / v16);
+      while (v17 < v18) {
+        ++v17;
+        v19 = v17;
+        v20 = this.windowPart(v7, 4, v13, v14, v4, v5, 0, 0);
+        v20._y = v14 + v19 * v16;
+        var v21 = this.windowPart(v7, 6, v13, v14, v4, v5, 2, 0);
+        v21._y = v14 + v19 * v16;
+      }
+      this.windowPart(v7, 1, v13, v14, v4, v5, 0, 0);
+      this.windowPart(v7, 3, v13, v14, v4, v5, 2, 0);
+      this.windowPart(v7, 7, v13, v14, v4, v5, 0, 2);
+      this.windowPart(v7, 9, v13, v14, v4, v5, 2, 2);
+      if (arg1 != null) {
+        v17 = v7.attach('msg_icon', 2);
+        v17.gotoAndStop(arg1);
+        v17._x = v13 + v4 * 0.5;
+        v17._y = v14 - 5;
+      }
+      this.winMsg.filters = [new flash.filters.GlowFilter(0, 0.7, 32, 32, 2, 2)];
+      var me = this;
+      this.winMsg.onPress = function () {
+        me.winMsg.removeMovieClip();
+        me.winMsg = null;
+        if (url != null) {
+          flash.Lib.getURL(url, '_self');
+        }
+      };
+
+    };
+
+    v1.monsters = null;
+    v1.move = function (arg0, arg1, arg2) {
+      var v5 = this.d.levels[this.posL].table;
+      if (this.scrolling || this.winMsg != null) {
+        return undefined;
+      }
+      if (!v5[this.posX + arg0][this.posY + arg1]) {
+        return undefined;
+      }
+      var send = false;
+      var v6 = true;
+      var v7 = 0;
+      var v8 = this.d.levels[this.posL].rooms;
+      while (v7 < v8.length) {
+        var v9 = v8[v7];
+        ++v7;
+        var v10 = 0;
+        var v11 = v9.doors;
+        while (v10 < v11.length) {
+          var v12 = v11[v10];
+          ++v10;
+          if (v12.x == this.posX + arg0 && v12.y == this.posY + arg1) {
+            send = true;
+            if (v12.key != null) {
+              v6 = View.DATA._keys[v12.key];
+            }
+            break;
+          }
+        }
+        if (v9.item != null && v9.item.x == this.posX + arg0 && v9.item.y == this.posY + arg1) {
+          send = true;
+        }
+      }
+      if (View.DATA._lock && (arg0 != 0 || arg1 != 0 || arg2 != 0)) {
+        return undefined;
+      }
+      v7 = {'_x': this.posX, '_y': this.posY, '_l': this.posL, '_dx': arg0, '_dy': arg1, '_dl': arg2};
+      this.commands.push(v7);
+      if (!v6) {
+        arg0 = 0;
+        arg1 = 0;
+        arg2 = 0;
+      } else {
+        this.posX += arg0;
+        this.posY += arg1;
+        if (arg2 != 0 && !this.onPos(this.d.start) && !this.onPos(this.d.exit)) {
+          this.posL += arg2;
+        }
+      }
+      v8 = 0;
+      v9 = 0;
+      v10 = this.dinoz;
+      while (v9 < v10.length) {
+        v11 = v10[v9];
+        ++v9;
+        if (arg0 != 0) {
+          v11.flip = arg0 > 0;
+        }
+        if (v6 && v11.delay <= 0 && !v11.moving) {
+          v11.delay = v8 * 10;
+        }
+        ++v8;
+        v11.tx += arg0;
+        v11.ty += arg1;
+      }
+      this.updateFog();
+      if (this.openDoor()) {
+        send = true;
+      }
+      if (this.commands.length >= 10) {
+        send = true;
+      }
+      if (View.DATA._url == null) {
+        send = false;
+      }
+      if (send) {
+        this.h = new haxe.Http(View.DATA._url);
+        this.h.onData = @closure('onData', this);
+        this.h.onError = function (arg0) {
+          haxe.Log.trace(arg0, null);
+        };
+
+        this.h.setParameter('data', haxe.Serializer.run(this.commands));
+        this.h.request(true);
+        this.commands = new Array();
+      }
+      var me = this;
+      this.scrolling = true;
+      this.scrollDone = function () {
+        if (!send) {
+          me.scrollEnd();
+        }
+      };
+
+      this.displayLevel();
+      this.updateScroll();
+    };
+
+    v1.onData = function (arg0) {
+      var r;
+      try {
+        r = haxe.Unserializer.run(arg0);
+      }
+      catch (v0) {
+        var v3 = v0;
+        haxe.Log.trace('INVALID DATA ' + arg0, null);
+        return undefined;
+      }
+      var me = this;
+      this.scrollDone = function () {
+        View.DATA._lock = false;
+        var v2 = r;
+        var v3 = v2[1];
+        switch (v3) {
+          case 0:
+            me.scrollEnd();
+            break;
+          case 1:
+            v3 = v2[2];
+            flash.Lib.getURL(v3, '_self');
+            me.scrollDone = function () {};
+
+            break;
+          case 2:
+            v3 = v2[2];
+            var v4 = v2[3];
+            var v5 = v2[4];
+            me.message(v3, v4, v5);
+            me.scrollEnd();
+        }
+      };
+
+    };
+
+    v1.onLoaded = function () {
+      this.posX = View.DATA._x;
+      this.posY = View.DATA._y;
+      this.posL = View.DATA._l;
+      if (this.posX != null) {
+        this.fl_fog = View.DATA._fog != null;
+      } else {
+        this.posX = this.d.start.x;
+        this.posY = this.d.start.y;
+        this.posL = this.d.start.l;
+        View.DATA._fog = haxe.io.Bytes.alloc(this.d.levels.length * this.width * this.height + 7 >> 3);
+        this.updateFog();
+      }
+      this.view = {'ix': this.posX - 4, 'iy': this.posY - 4, 'dx': 0, 'dy': 0};
+      var v2 = this.dm.attach('msg_field', 4);
+      v2._x = 250;
+      v2._y = 340;
+      v2.field.autoSize = 'right';
+      this.posLabel = v2.field;
+      this.displayLevel();
+      this.initDinoz();
+      this.arrows = this.dm.attach('arrows', 4);
+      this.arrows._y = 5;
+      this.arrows._x = 5;
+      var f = @closure('move', this);
+      this.initArrow(this.arrows._u, function () {
+        return f(0, -1, 0);
+      });
+      var f1 = @closure('move', this);
+      this.initArrow(this.arrows._d, function () {
+        return f1(0, 1, 0);
+      });
+      var f2 = @closure('move', this);
+      this.initArrow(this.arrows._l, function () {
+        return f2(-1, 0, 0);
+      });
+      var f3 = @closure('move', this);
+      this.initArrow(this.arrows._r, function () {
+        return f3(1, 0, 0);
+      });
+      if (!View.DATA._tower) {
+        var f6 = @closure('move', this);
+        this.initArrow(this.arrows._cu, function () {
+          return f6(0, 0, -1);
+        });
+        var f7 = @closure('move', this);
+        this.initArrow(this.arrows._cd, function () {
+          return f7(0, 0, 1);
+        });
+      } else {
+        var f4 = @closure('move', this);
+        this.initArrow(this.arrows._cu, function () {
+          return f4(0, 0, 1);
+        });
+        var f5 = @closure('move', this);
+        this.initArrow(this.arrows._cd, function () {
+          return f5(0, 0, -1);
+        });
+      }
+      var f8 = @closure('move', this);
+      this.initArrow(this.arrows._i, function () {
+        return f8(0, 0, 0);
+      });
+      this.arrows.filters = [new flash.filters.GlowFilter(0, 0.5, 10, 10, 1, 2)];
+      this.updateArrows();
+      if (View.DATA._text != null) {
+        this.message(View.DATA._text, null);
+        View.DATA._text = null;
+      }
+    };
+
+    v1.onPos = function (arg0) {
+      return this.posL == arg0.l && this.posX == arg0.x && this.posY == arg0.y;
+    };
+
+    v1.openDoor = function () {
+      var v2 = 0;
+      var v3 = this.d.levels[this.posL].rooms;
+      while (v2 < v3.length) {
+        var v4 = v3[v2];
+        ++v2;
+        var v5 = 0;
+        var v6 = v4.doors;
+        while (v5 < v6.length) {
+          var v7 = v6[v5];
+          ++v5;
+          if (v7.key != null && v7.x == this.posX && v7.y == this.posY) {
+            if (!this.setFlag(this.posL, v7.x, v7.y)) {
+              return false;
+            } else {
+              var v8 = this.addFadeFx('item', v7.x * 40, v7.y * 40);
+              v8.mc.gotoAndStop(1);
+              v8.mc.smc.gotoAndStop(this.d.levels[this.posL].table[v7.x][v7.y - 1] ? 1 : 2);
+              return true;
+            }
+          }
+        }
+      }
+      return false;
+    };
+
+    v1.overMaps = null;
+    v1.overgroundBitmap = null;
+    v1.posL = null;
+    v1.posLabel = null;
+    v1.posX = null;
+    v1.posY = null;
+    v1.roomIds = null;
+    v1.scrollDone = null;
+    v1.scrollEnd = function () {
+      this.scrolling = false;
+      if (this.getItem()) {
+        this.displayLevel();
+      }
+      this.updateArrows();
+    };
+
+    v1.scrolling = null;
+    v1.set = function (arg0, arg1, arg2) {
+      arg0._x = arg1 * 40;
+      arg0._y = arg2 * 40;
+    };
+
+    v1.setFlag = function (arg0, arg1, arg2) {
+      if (this.hasFlag(arg0, arg1, arg2)) {
+        return false;
+      }
+      var v5 = arg0 * this.width * this.height + arg1 * this.height + arg2;
+      View.DATA._flags.push(v5);
+      return true;
+    };
+
+    v1.setSkin = function (arg0) {
+      var v3 = 0;
+      var v4 = View.SKINS;
+      while (v3 < v4.length) {
+        var v5 = v4[v3];
+        ++v3;
+        if (v5.key == arg0) {
+          this.skin = v5;
+          return undefined;
+        }
+      }
+    };
+
+    v1.setupLevel = function () {
+      this.d.levels[this.d.start.l].rooms[0].doors.push({'x': this.d.start.x, 'y': this.d.start.y, 'up': false, 'key': null});
+      this.d.levels[this.d.exit.l].rooms[0].doors.push({'x': this.d.exit.x, 'y': this.d.exit.y, 'up': true, 'key': null});
+      var v2 = 0;
+      var v3 = this.d.levels;
+      while (v2 < v3.length) {
+        var v4 = v3[v2];
+        ++v2;
+        var v5 = 0;
+        var v6 = v4.rooms;
+        while (v5 < v6.length) {
+          var v7 = v6[v5];
+          ++v5;
+          if (v7.item == null) {
+            continue;
+          }
+          var v8 = v7.item.k;
+          var v9 = v8[1];
+          if (v9 !== 3) {
+          } else {
+            v9 = View.DATA._sicons[v7.item.v];
+            var v10 = v9[1];
+            if (v10 !== 1) {
+            } else {
+              v4.table[v7.item.x][v7.item.y] = false;
+            }
+          }
+        }
+      }
+    };
+
+    v1.simpleFx = null;
+    v1.skin = null;
+    v1.update = function () {
+      var v2 = 0;
+      while (v2 < this.fxList.length) {
+        var v3 = this.fxList[v2];
+        v3.cpt += 0.07000000000000001;
+        if (v3.update(v3)) {
+          v3.mc.removeMovieClip();
+          this.fxList.splice(v2, 1);
+          --v2;
+        }
+        ++v2;
+      }
+      v3 = 0;
+      while (v3 < this.simpleFx.length) {
+        var v4 = this.simpleFx[v3];
+        v4.nextFrame();
+        if (v4._currentframe >= v4._totalframes) {
+          v4.removeMovieClip();
+          this.simpleFx.splice(v3, 1);
+          --v3;
+        }
+        ++v3;
+      }
+      if (this.arrows == null) {
+        return undefined;
+      }
+      if (!flash.Key.isDown(flash.Key.DOWN)) {
+        if (!flash.Key.isDown(flash.Key.UP)) {
+          if (!flash.Key.isDown(flash.Key.LEFT)) {
+            if (flash.Key.isDown(flash.Key.RIGHT)) {
+              this.move(1, 0, 0);
+            }
+          } else {
+            this.move(-1, 0, 0);
+          }
+        } else {
+          this.move(0, -1, 0);
+        }
+      } else {
+        this.move(0, 1, 0);
+      }
+      v4 = 0;
+      var v5 = this.dinoz;
+      while (v4 < v5.length) {
+        var v6 = v5[v4];
+        ++v4;
+        v6.update();
+      }
+      if (this.scrolling && !this.dinoz[0].moving) {
+        this.scrollDone();
+      }
+      this.updateScroll();
+    };
+
+    v1.updateArrows = function () {
+      var v2 = this.arrows._cu._visible || this.arrows._cd._visible;
+      this.arrows._cu._visible = false;
+      this.arrows._cd._visible = false;
+      var v3 = !View.DATA._lock;
+      this.arrows._l._visible = v3;
+      this.arrows._r._visible = v3;
+      this.arrows._u._visible = v3;
+      this.arrows._d._visible = v3;
+      this.arrows._i._visible = !v3;
+      if (!v3) {
+        this.addPop(this.arrows._x + this.arrows._i._x + 10, this.arrows._y + this.arrows._i._y + 15);
+      }
+      var v4 = 0;
+      var v5 = this.d.levels[this.posL].rooms;
+      while (v4 < v5.length) {
+        var v6 = v5[v4];
+        ++v4;
+        var v7 = 0;
+        var v8 = v6.doors;
+        while (v7 < v8.length) {
+          var v9 = v8[v7];
+          ++v7;
+          if (v9.x == this.posX && v9.y == this.posY && v9.up != null) {
+            if (!View.DATA._tower) {
+              this.arrows._cu._visible = !v9.up;
+              this.arrows._cd._visible = v9.up;
+            } else {
+              this.arrows._cu._visible = v9.up;
+              this.arrows._cd._visible = !v9.up;
+            }
+            if (!v2) {
+              this.addPop(this.arrows._x + this.arrows._cu._x + 12, this.arrows._y + this.arrows._cu._y + 12);
+            }
+            break;
+          }
+        }
+      }
+    };
+
+    v1.updateFog = function () {
+      if (!this.fl_fog) {
+        return false;
+      }
+      var v2 = this.d.levels[this.posL].table;
+      var v3 = this.posX;
+      var v4 = this.posY;
+      var v5 = false;
+      var v6 = v3 - 1;
+      var v7 = v3 + 2;
+      while (v6 < v7) {
+        ++v6;
+        var v8 = v6;
+        var v9 = v4 - 1;
+        var v10 = v4 + 2;
+        while (v9 < v10) {
+          ++v9;
+          var v11 = v9;
+          var v12 = this.posL * this.width * this.height + v8 * this.height + v11;
+          var v13 = v12 + 7 >> 3;
+          var v14 = View.DATA._fog.b[v13];
+          if ((v14 & 1 << (v12 & 7)) == 0) {
+            v14 |= 1 << (v12 & 7);
+            View.DATA._fog.b[v13] = v14 & 255;
+            var v15 = this.addFadeFx('fx_reveal', v8 * 40 + 20.0, v11 * 40 + 20.0, 4);
+            mt.bumdum.Col.setPercentColor(v15.mc, 100, this.skin.fog);
+            v15.mc._rotation = Math.atan2(this.posY - v11, this.posX - v8) * 180 / Math.PI;
+            v15.mc.filters = [new flash.filters.BlurFilter(32, 32, 1)];
+            v5 = true;
+          }
+        }
+      }
+      return v5;
+    };
+
+    v1.updateScroll = function () {
+      var v2 = this.dinoz[this.dinoz.length - 1];
+      var v3 = v2.px - 4.0 - (this.view.ix + this.view.dx);
+      var v4 = v2.py - 4.0 - (this.view.iy + this.view.dy);
+      this.view.dx += v3 * 0.1;
+      this.view.dy += v4 * 0.1;
+      var v5 = Std.int(this.view.dx);
+      var v6 = Std.int(this.view.dy);
+      if (v5 != 0) {
+        this.view.ix += v5;
+        this.view.dx -= v5;
+      }
+      if (v6 != 0) {
+        this.view.iy += v6;
+        this.view.dy -= v6;
+      }
+      if (v5 != 0 || v6 != 0) {
+        this.displayLevel();
+      }
+      this.levelMC._x = -Math.round((this.view.ix + this.view.dx) * 40);
+      this.levelMC._y = -Math.round((this.view.iy + this.view.dy) * 40);
+    };
+
+    v1.view = null;
+    v1.width = null;
+    v1.winMsg = null;
+    v1.windowPart = function (arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7) {
+      var v10 = arg0.attach('msg_box', 0);
+      v10.gotoAndStop(arg1);
+      v10._x = arg2 + arg6 * arg4 * 0.5 - ((arg6 == 0) ? 0 : v10._width);
+      if (arg7 != 0) {
+        v10._y = arg3 + arg7 * arg5 * 0.5 - v10._height;
+        return v10;
+      }
+      v10._y = arg3 + arg7 * arg5 * 0.5 - 0;
+      return v10;
+    };
+
+    v1.zonesBitmap = null;
+    v1.zonesIds = null;
+    v1 = new Object();
+    flash = v1;
+    v2 = _global.flash;
+    // Loop counter not found
+for ($somevar in v2) {
+      v1[enumerate v2] = v2[enumerate v2];
+    }
+    flash.Boot = function () {};
+
+    flash.Boot.__name__ = ['flash', 'Boot'];
+    v1 = flash.Boot.prototype;
+    v1.__class__ = flash.Boot;
+    flash.Boot.__string_rec = function (arg0, arg1) {
+      if (arg1.length >= 20) {
+        return '<...>';
+      }
+      var v4 = typeof arg0;
+      if (v4 != 'movieclip') {
+        if (v4 == 'function' && (arg0.__name__ != null || arg0.__ename__ != null)) {
+          v4 = 'object';
+        }
+      } else {
+        v4 = 'object';
+      }
+      var v5 = v4;
+      if (v5 != 'object') {
+      } else {
+        if (v5 != 'function') {
+            return String(arg0);
+        } else {
+            if (arg0 instanceof Array) {
+              if (arg0.__enum__ != null) {
+                if (arg0.length == 2) {
+                  return arg0[0];
+                }
+                var v6 = arg0[0] + '(';
+                arg1 += '    ';
+                var v7 = 2;
+                var v8 = arg0.length;
+                while (v7 < v8) {
+                  ++v7;
+                  var v9 = v7;
+                  if (v9 == 2) {
+                    v6 += flash.Boot.__string_rec(arg0[v9], arg1);
+                  } else {
+                    v6 += ',' + flash.Boot.__string_rec(arg0[v9], arg1);
+                  }
+                }
+                return v6 + ')';
+              }
+              v6 = arg0.length;
+              v8 = '[';
+              arg1 += '    ';
+              v9 = 0;
+              while (v9 < v6) {
+                ++v9;
+                var v10 = v9;
+                v8 += (v10 > 0 ? ',' : '') + flash.Boot.__string_rec(arg0[v10], arg1);
+              }
+              v8 += ']';
+              return v8;
+            }
+            v6 = arg0.toString();
+            if ((typeof v6 == 'string' || v6 instanceof String) && v6 != '[object Object]' && v6 != '[type Function]') {
+              return v6;
+            }
+            v8 = '{\n';
+            if (typeof(arg0) == 'movieclip') {
+              v8 = 'MC(' + Std.string(arg0._name) + ') ' + v8;
+            }
+            arg1 += '    ';
+            v10 = new Array();
+            // Loop counter not found
+for ($somevar in arg0) {
+              v10.push(enumerate arg0);
+            }
+            v9 = v10;
+            v10 = v9.iterator();
+            while (v10.hasNext()) {
+              var v11 = v10.next();
+              if (v11 == 'prototype' || v11 == '__class__' || v11 == '__super__' || v11 == '__interfaces__') {
+                continue;
+              }
+              if (v8.length != 2) {
+                v8 += ',\n';
+              }
+              v8 += arg1 + v11 + ' : ' + flash.Boot.__string_rec(arg0[v11], arg1);
+            }
+            arg1 = arg1.substring(4);
+            if (v8.length != 2) {
+              v8 += '\n';
+            }
+            v8 += arg1 + '}';
+            return v8;
+          if (v5 != 'string') {
+            return '<function>';
+          } else {
+            return arg0;
+          }
+        }
+      }
+    };
+
+    flash.Boot.__closure = function (arg0, arg1) {
+      var v4 = arg1[super];
+      if (v4 == null) {
+        return null;
+      }
+      var v5 = function () {
+        super = arguments.callee;
+        return super.f.apply(super.o, arguments);
+      };
+
+      v5.f = v4;
+      v5.o = arg1;
+      return v5;
+    };
+
+    flash.Boot.__instanceof = function (arg0, arg1) {
+      if (!arg1) {
+        return false;
+      }
+      if (arg0 instanceof arg1) {
+        if (arg1 == Array) {
+          return arg0.__enum__ == null;
+        }
+        return true;
+      }
+      var v4 = arg1;
+      if (v4 != Int) {
+      } else {
+        if (v4 != Float) {
+        } else {
+          if (v4 != Bool) {
+                return arg0.__enum__ == arg1 || arg1 == Class && arg0.__name__ != null || arg1 == Enum && arg0.__ename__ != null;
+          } else {
+                return typeof arg0 == 'number' && Math.ceil(arg0) === arg0 % 2147483648.0 && !(arg0 === true || arg0 === false);
+            if (v4 != String) {
+                return typeof arg0 == 'number';
+            } else {
+                return arg0 === true || arg0 === false;
+              if (v4 != Dynamic) {
+                return typeof arg0 == 'string';
+              } else {
+                return true;
+              }
+            }
+          }
+        }
+      }
+    };
+
+    flash.Boot.getTrace = function () {
+      var v2 = flash.Lib.current;
+      var v3 = v2.__trace_txt;
+      if (v3 == null) {
+        var v4 = flash.Stage.width;
+        var v5 = flash.Stage.height;
+        if (v4 == 0) {
+          v4 = 800;
+        }
+        if (v5 == 0) {
+          v5 = 600;
+        }
+        v2.createTextField('__trace_txt', 1048500, 0, 0, v4, v5 + 30);
+        v3 = v2.__trace_txt;
+        var v6 = v3.getTextFormat();
+        v6.font = '_sans';
+        v3.setNewTextFormat(v6);
+        v3.selectable = false;
+        v3.textColor = flash.Boot.def_color;
+        v2.__trace_lines = new Array();
+      }
+      return v3;
+    };
+
+    flash.Boot.__set_trace_color = function (arg0) {
+      (flash.Boot.getTrace()).textColor = arg0;
+      flash.Boot.def_color = arg0;
+    };
+
+    flash.Boot.__trace = function (arg0, arg1) {
+      var v4 = flash.Lib.current;
+      var v5 = flash.Boot.getTrace();
+      var v6 = arg1.fileName + ((arg1.lineNumber == null) ? '' : ':' + arg1.lineNumber) + ': ' + flash.Boot.__string_rec(arg0, '');
+      var v7 = v4.__trace_lines.concat(v6.split('\n'));
+      v5.text = v7.join('\n');
+      for (;;) {
+        if (!(v7.length > 1 && v5.textHeight > flash.Stage.height)) break;
+        v7.shift();
+        v5.text = v7.join('\n');
+      }
+      v4.__trace_lines = v7;
+    };
+
+    flash.Boot.__exc = function (arg0) {
+      var v3 = '';
+      if (flash.Lib.onerror == null) {
+        flash.Boot.__trace(flash.Boot.__string_rec(arg0, '') + v3, {'fileName': '(uncaught exception)'});
+      } else {
+        flash.Lib.onerror(flash.Boot.__string_rec(arg0, ''), []);
+      }
+    };
+
+    flash.Boot.__clear_trace = function () {
+      var v2 = flash.Lib.current;
+      v2.__trace_txt.removeTextField();
+      v2.__trace_lines = null;
+    };
+
+    flash.Boot.__init = function (arg0) {
+      var v3 = _global;
+      if (!v3.haxeInitDone) {
+        v3.haxeInitDone = true;
+        Array.prototype.copy = Array.prototype.slice;
+        Array.prototype.insert = function (arg0, arg1) {
+          this.splice(arg0, 0, arg1);
+        };
+
+        Array.prototype.remove = function (arg0) {
+          var v3 = 0;
+          var v4 = this.length;
+          while (v3 < v4) {
+            if (this[v3] == arg0) {
+              this.splice(v3, 1);
+              return true;
+            }
+            ++v3;
+          }
+          return false;
+        };
+
+        Array.prototype.iterator = function () {
+          return {'cur': 0, 'arr': this, 'hasNext': function () {
+            return this.cur < this.arr.length;
+          }, 'next': function () {
+            ++this.cur;
+            return this.arr[this.cur];
+          }};
+        };
+
+        _global.ASSetPropFlags(Array.prototype, null, 7);
+        var v4 = String.prototype.charCodeAt;
+        String.prototype.cca = v4;
+        String.prototype.charCodeAt = function (arg0) {
+          var v3 = this.cca(arg0);
+          if (v3 <= 0) {
+            return null;
+          }
+          return v3;
+        };
+
+        if (_global.flash == null) {
+          _global.flash = {};
+        }
+      }
+      arg0.flash.Lib._global = _global;
+      arg0.flash.Lib._root = _root;
+      arg0.flash.Lib.current = arg0;
+      arg0.@instanceof = flash.Boot.__instanceof;
+      arg0.@closure = flash.Boot.__closure;
+      if (_global.Stage.align == '') {
+        _global.Stage.align = 'LT';
+      }
+      mt.flash.Init.check();
+    };
+
+    flash.Lib = function () {};
+
+    flash.Lib.__name__ = ['flash', 'Lib'];
+    v1 = flash.Lib.prototype;
+    v1.__class__ = flash.Lib;
+    flash.Lib._root = null;
+    flash.Lib.current = null;
+    flash.Lib.onerror = null;
+    flash.Lib.getURL = function (arg0, arg1) {
+      getURL(arg0, (arg1 == null) ? '_self' : arg1);
+    };
+
+    v1 = new Object();
+    flash._MovieClip = v1;
+    v2 = _global.flash._MovieClip;
+    // Loop counter not found
+for ($somevar in v2) {
+      v1[enumerate v2] = v2[enumerate v2];
+    }
+    v1 = new Object();
+    flash.display = v1;
+    v2 = _global.flash.display;
+    // Loop counter not found
+for ($somevar in v2) {
+      v1[enumerate v2] = v2[enumerate v2];
+    }
+    v1 = new Object();
+    flash.filters = v1;
+    v2 = _global.flash.filters;
+    // Loop counter not found
+for ($somevar in v2) {
+      v1[enumerate v2] = v2[enumerate v2];
+    }
+    v1 = new Object();
+    flash.geom = v1;
+    v2 = _global.flash.geom;
+    // Loop counter not found
+for ($somevar in v2) {
+      v1[enumerate v2] = v2[enumerate v2];
+    }
+    v1 = new Object();
+    flash.text = v1;
+    v2 = _global.flash.text;
+    // Loop counter not found
+for ($somevar in v2) {
+      v1[enumerate v2] = v2[enumerate v2];
+    }
+    v1 = new Object();
+    haxe = v1;
+    v2 = _global.haxe;
+    // Loop counter not found
+for ($somevar in v2) {
+      v1[enumerate v2] = v2[enumerate v2];
+    }
+    haxe.Http = function (arg0) {
+      this.url = arg0;
+      this.headers = new Hash();
+      this.params = new Hash();
+    };
+
+    haxe.Http.__name__ = ['haxe', 'Http'];
+    v1 = haxe.Http.prototype;
+    v1.__class__ = haxe.Http;
+    v1.headers = null;
+    v1.onData = function (arg0) {};
+
+    v1.onError = function (arg0) {};
+
+    v1.onStatus = function (arg0) {};
+
+    v1.params = null;
+    v1.request = function (arg0) {
+      var me = this;
+      var v3 = new flash.LoadVars();
+      v3.onData = function (arg0) {
+        if (arg0 == null) {
+          me.onError('Failed to retrieve url');
+          return undefined;
+        }
+        me.onData(arg0);
+      };
+
+      v3.onHTTPStatus = function (arg0) {
+        if (arg0 != 0) {
+          me.onStatus(arg0);
+        }
+      };
+
+      ASSetPropFlags(v3, 'onHTTPStatus', 7);
+      ASSetPropFlags(v3, 'onData', 7);
+      var v4 = this.headers.keys();
+      while (v4.hasNext()) {
+        var v5 = v4.next();
+        v3.addRequestHeader(v5, this.headers.get(v5));
+      }
+      v4 = false;
+      v5 = this.params.keys();
+      while (v5.hasNext()) {
+        var v6 = v5.next();
+        v4 = true;
+        v3[v6] = this.params.get(v6);
+      }
+      v5 = this.url;
+      if (v4 && !arg0) {
+        v6 = this.url.split('?');
+        if (v6.length > 1) {
+          v5 = v6.shift();
+          v3.decode(v6.join('?'));
+        }
+      }
+      if (!v3.sendAndLoad(v5, v3, v4 ? (arg0 ? 'POST' : 'GET') : null)) {
+        this.onError('Failed to initialize Connection');
+      }
+    };
+
+    v1.setParameter = function (arg0, arg1) {
+      this.params.set(arg0, arg1);
+    };
+
+    v1.url = null;
+    haxe.Log = function () {};
+
+    haxe.Log.__name__ = ['haxe', 'Log'];
+    v1 = haxe.Log.prototype;
+    v1.__class__ = haxe.Log;
+    haxe.Log.trace = function (arg0, arg1) {
+      flash.Boot.__trace(arg0, arg1);
+    };
+
+    haxe.Log.setColor = function (arg0) {
+      flash.Boot.__set_trace_color(arg0);
+    };
+
+    haxe.Serializer = function () {
+      this.buf = new StringBuf();
+      this.cache = new Array();
+      this.useCache = haxe.Serializer.USE_CACHE;
+      this.useEnumIndex = haxe.Serializer.USE_ENUM_INDEX;
+      this.shash = new Hash();
+      this.scount = 0;
+    };
+
+    haxe.Serializer.__name__ = ['haxe', 'Serializer'];
+    v1 = haxe.Serializer.prototype;
+    v1.__class__ = haxe.Serializer;
+    haxe.Serializer.run = function (arg0) {
+      var v3 = new haxe.Serializer();
+      v3.serialize(arg0);
+      return v3.toString();
+    };
+
+    v1.buf = null;
+    v1.cache = null;
+    v1.scount = null;
+    v1.serialize = function (arg0) {
+      var v3 = Type.typeof(arg0);
+      var v4 = v3[1];
+      switch (v4) {
+          throw 'Cannot serialize ' + Std.string(arg0);
+        case 0:
+          this.buf.b += 'n';
+          break;
+        case 1:
+          if (arg0 == 0) {
+            this.buf.b += 'z';
+            return undefined;
+          }
+          this.buf.b += 'i';
+          this.buf.b += Std.string(arg0);
+          break;
+        case 2:
+          if (!Math.isNaN(arg0)) {
+            if (Math.isFinite(arg0)) {
+              this.buf.b += 'd';
+              this.buf.b += Std.string(arg0);
+            } else {
+              this.buf.b += Std.string(arg0 < 0 ? 'm' : 'p');
+            }
+          } else {
+            this.buf.b += 'k';
+          }
+          break;
+        case 3:
+          this.buf.b += Std.string(arg0 ? 't' : 'f');
+          break;
+        case 6:
+          v4 = v3[2];
+          if (v4 == String) {
+            this.serializeString(arg0);
+            return undefined;
+          }
+          if (this.useCache && this.serializeRef(arg0)) {
+            return undefined;
+          }
+          var v5 = v4;
+          if (v5 != Array) {
+          } else {
+            if (v5 != List) {
+            } else {
+              if (v5 != Date) {
+              } else {
+                      this.cache.pop();
+                      if (arg0.hxSerialize == null) {
+                        this.buf.b += 'c';
+                        this.serializeString(Type.getClassName(v4));
+                        this.cache.push(arg0);
+                        this.serializeFields(arg0);
+                      } else {
+                        this.buf.b += 'C';
+                        this.serializeString(Type.getClassName(v4));
+                        this.cache.push(arg0);
+                        arg0.hxSerialize(this);
+                        this.buf.b += 'g';
+                      }
+                if (v5 != Hash) {
+                      var v6 = 0;
+                      this.buf.b += 'a';
+                      var v7 = arg0.length;
+                      var v8 = 0;
+                      while (v8 < v7) {
+                        ++v8;
+                        var v9 = v8;
+                        if (arg0[v9] != null) {
+                          if (v6 > 0) {
+                            if (v6 != 1) {
+                              this.buf.b += 'u';
+                              this.buf.b += Std.string(v6);
+                            } else {
+                              this.buf.b += 'n';
+                            }
+                            v6 = 0;
+                          }
+                          this.serialize(arg0[v9]);
+                        } else {
+                          ++v6;
+                        }
+                      }
+                      if (v6 > 0) {
+                        if (v6 != 1) {
+                          this.buf.b += 'u';
+                          this.buf.b += Std.string(v6);
+                        } else {
+                          this.buf.b += 'n';
+                        }
+                      }
+                      this.buf.b += 'h';
+                } else {
+                      this.buf.b += 'l';
+                      var v6 = arg0;
+                      var v7 = v6.iterator();
+                      while (v7.hasNext()) {
+                        var v8 = v7.next();
+                        this.serialize(v8);
+                      }
+                      this.buf.b += 'h';
+                  if (v5 != IntHash) {
+                      v6 = arg0;
+                      this.buf.b += 'v';
+                      this.buf.b += Std.string(v6.toString());
+                  } else {
+                      this.buf.b += 'b';
+                      v6 = arg0;
+                      v7 = v6.keys();
+                      while (v7.hasNext()) {
+                        v8 = v7.next();
+                        this.serializeString(v8);
+                        this.serialize(v6.get(v8));
+                      }
+                      this.buf.b += 'h';
+                    if (v5 != haxe.io.Bytes) {
+                      this.buf.b += 'q';
+                      v6 = arg0;
+                      v7 = v6.keys();
+                      while (v7.hasNext()) {
+                        v8 = v7.next();
+                        this.buf.b += ':';
+                        this.buf.b += Std.string(v8);
+                        this.serialize(v6.get(v8));
+                      }
+                      this.buf.b += 'h';
+                    } else {
+                      v6 = arg0;
+                      v7 = 0;
+                      v8 = v6.length - 2;
+                      var v9 = new StringBuf();
+                      var v10 = haxe.Serializer.BASE64;
+                      while (v7 < v8) {
+                        ++v7;
+                        var v11 = v6.b[v7];
+                        ++v7;
+                        var v12 = v6.b[v7];
+                        ++v7;
+                        var v13 = v6.b[v7];
+                        v9.b += Std.string(v10.charAt(v11 >> 2));
+                        v9.b += Std.string(v10.charAt((v11 << 4 | v12 >> 4) & 63));
+                        v9.b += Std.string(v10.charAt((v12 << 2 | v13 >> 6) & 63));
+                        v9.b += Std.string(v10.charAt(v13 & 63));
+                      }
+                      if (v7 != v8) {
+                        if (v7 == v8 + 1) {
+                          ++v7;
+                          v11 = v6.b[v7];
+                          v9.b += Std.string(v10.charAt(v11 >> 2));
+                          v9.b += Std.string(v10.charAt(v11 << 4 & 63));
+                        }
+                      } else {
+                        ++v7;
+                        v11 = v6.b[v7];
+                        ++v7;
+                        v12 = v6.b[v7];
+                        v9.b += Std.string(v10.charAt(v11 >> 2));
+                        v9.b += Std.string(v10.charAt((v11 << 4 | v12 >> 4) & 63));
+                        v9.b += Std.string(v10.charAt(v12 << 2 & 63));
+                      }
+                      v11 = v9.b;
+                      this.buf.b += 's';
+                      this.buf.b += Std.string(v11.length);
+                      this.buf.b += ':';
+                      this.buf.b += Std.string(v11);
+                    }
+                  }
+                }
+              }
+            }
+          }
+          break;
+        case 4:
+          if (this.useCache && this.serializeRef(arg0)) {
+            return undefined;
+          }
+          this.buf.b += 'o';
+          this.serializeFields(arg0);
+          break;
+        case 7:
+          v4 = v3[2];
+          if (this.useCache && this.serializeRef(arg0)) {
+            return undefined;
+          }
+          this.cache.pop();
+          this.buf.b += Std.string(this.useEnumIndex ? 'j' : 'w');
+          this.serializeString(Type.getEnumName(v4));
+          if (!this.useEnumIndex) {
+            this.serializeString(arg0[0]);
+          } else {
+            this.buf.b += ':';
+            this.buf.b += Std.string(arg0[1]);
+          }
+          this.buf.b += ':';
+          var v5 = arg0.length;
+          this.buf.b += Std.string(v5 - 2);
+          var v6 = 2;
+          while (v6 < v5) {
+            ++v6;
+            var v7 = v6;
+            this.serialize(arg0[v7]);
+          }
+          this.cache.push(arg0);
+          break;
+        case 5:
+          throw 'Cannot serialize function';
+      }
+    };
+
+    v1.serializeFields = function (arg0) {
+      var v3 = 0;
+      var v4 = Reflect.fields(arg0);
+      while (v3 < v4.length) {
+        var v5 = v4[v3];
+        ++v3;
+        this.serializeString(v5);
+        this.serialize(arg0[v5]);
+      }
+      this.buf.b += 'g';
+    };
+
+    v1.serializeRef = function (arg0) {
+      var v3 = 0;
+      var v4 = this.cache.length;
+      while (v3 < v4) {
+        ++v3;
+        var v5 = v3;
+        if (this.cache[v5] == arg0) {
+          this.buf.b += 'r';
+          this.buf.b += Std.string(v5);
+          return true;
+        }
+      }
+      this.cache.push(arg0);
+      return false;
+    };
+
+    v1.serializeString = function (arg0) {
+      var v3 = this.shash.get(arg0);
+      if (v3 != null) {
+        this.buf.b += 'R';
+        this.buf.b += Std.string(v3);
+        return undefined;
+      }
+      ++this.scount;
+      this.shash.set(arg0, this.scount);
+      this.buf.b += 'y';
+      arg0 = StringTools.urlEncode(arg0);
+      this.buf.b += Std.string(arg0.length);
+      this.buf.b += ':';
+      this.buf.b += Std.string(arg0);
+    };
+
+    v1.shash = null;
+    v1.toString = function () {
+      return this.buf.b;
+    };
+
+    v1.useCache = null;
+    v1.useEnumIndex = null;
+    haxe.Unserializer = function (arg0) {
+      this.buf = arg0;
+      this.length = arg0.length;
+      this.pos = 0;
+      this.scache = new Array();
+      this.cache = new Array();
+      var v3 = haxe.Unserializer.DEFAULT_RESOLVER;
+      if (v3 == null) {
+        v3 = Type;
+        haxe.Unserializer.DEFAULT_RESOLVER = v3;
+      }
+      this.setResolver(v3);
+    };
+
+    haxe.Unserializer.__name__ = ['haxe', 'Unserializer'];
+    v1 = haxe.Unserializer.prototype;
+    v1.__class__ = haxe.Unserializer;
+    haxe.Unserializer.initCodes = function () {
+      var v2 = new Array();
+      var v3 = 0;
+      var v4 = haxe.Unserializer.BASE64.length;
+      while (v3 < v4) {
+        ++v3;
+        var v5 = v3;
+        v2[haxe.Unserializer.BASE64.cca(v5)] = v5;
+      }
+      return v2;
+    };
+
+    haxe.Unserializer.run = function (arg0) {
+      return (new haxe.Unserializer(arg0)).unserialize();
+    };
+
+    v1.buf = null;
+    v1.cache = null;
+    v1.length = null;
+    v1.pos = null;
+    v1.readDigits = function () {
+      var v2 = 0;
+      var v3 = false;
+      var v4 = this.pos;
+      while (true) {
+        var v5 = this.buf.cca(this.pos);
+        if (v5 <= 0) {
+          break;
+        }
+        if (v5 == 45) {
+          if (this.pos != v4) {
+            break;
+          }
+          v3 = true;
+          ++this.pos;
+          continue;
+        }
+        if (v5 < 48 || v5 > 57) {
+          break;
+        }
+        v2 = v2 * 10 + (v5 - 48);
+        ++this.pos;
+      }
+      if (v3) {
+        v2 *= -1;
+      }
+      return v2;
+    };
+
+    v1.resolver = null;
+    v1.scache = null;
+    v1.setResolver = function (arg0) {
+      if (arg0 != null) {
+        this.resolver = arg0;
+      } else {
+        this.resolver = {'resolveClass': function (arg0) {
+          return null;
+        }, 'resolveEnum': function (arg0) {
+          return null;
+        }};
+      }
+    };
+
+    v1.unserialize = function () {
+      ++this.pos;
+      var v2 = this.buf.cca(this.pos);
+      if (v2 != 110) {
+      } else {
+        if (v2 != 116) {
+        } else {
+          if (v2 != 102) {
+          } else {
+            if (v2 != 122) {
+            } else {
+              if (v2 != 105) {
+              } else {
+                if (v2 != 100) {
+                } else {
+                  if (v2 != 121) {
+                  } else {
+                    if (v2 != 107) {
+                    } else {
+                      if (v2 != 109) {
+                      } else {
+                        if (v2 != 112) {
+                        } else {
+                          if (v2 != 97) {
+                          } else {
+                            if (v2 != 111) {
+                            } else {
+                              if (v2 != 114) {
+                                                      return null;
+                              } else {
+                                                      return true;
+                                if (v2 != 82) {
+                                                      return false;
+                                } else {
+                                                      return 0;
+                                  if (v2 != 120) {
+                                                      return this.readDigits();
+                                  } else {
+                                                      var v3 = this.pos;
+                                                      while (true) {
+                                                        var v4 = this.buf.cca(this.pos);
+                                                        if (!(v4 >= 43 && v4 < 58 || v4 == 101 || v4 == 69)) {
+                                                          break;
+                                                        } else {
+                                                          ++this.pos;
+                                                        }
+                                                      }
+                                                      return Std.parseFloat(this.buf.substr(v3, this.pos - v3));
+                                    if (v2 != 99) {
+                                                      var v3 = this.readDigits();
+                                                      ++this.pos;
+                                                      if (this.buf.cca(this.pos) != 58 || this.length - this.pos < v3) {
+                                                        throw 'Invalid string length';
+                                                      }
+                                                      var v4 = this.buf.substr(this.pos, v3);
+                                                      this.pos += v3;
+                                                      v4 = StringTools.urlDecode(v4);
+                                                      this.scache.push(v4);
+                                                      return v4;
+                                    } else {
+                                                      return Math.NaN;
+                                      if (v2 != 119) {
+                                                      return Math.NEGATIVE_INFINITY;
+                                      } else {
+                                                      return Math.POSITIVE_INFINITY;
+                                        if (v2 != 106) {
+                                                      v3 = this.buf;
+                                                      v4 = new Array();
+                                                      this.cache.push(v4);
+                                                      while (true) {
+                                                        var v5 = this.buf.cca(this.pos);
+                                                        if (v5 == 104) {
+                                                          ++this.pos;
+                                                          break;
+                                                        }
+                                                        if (v5 != 117) {
+                                                          v4.push(this.unserialize());
+                                                        } else {
+                                                          ++this.pos;
+                                                          var v6 = this.readDigits();
+                                                          v4[v4.length + v6 - 1] = null;
+                                                        }
+                                                      }
+                                                      return v4;
+                                        } else {
+                                                      v3 = {};
+                                                      this.cache.push(v3);
+                                                      this.unserializeObject(v3);
+                                                      return v3;
+                                          if (v2 != 108) {
+                                                      v3 = this.readDigits();
+                                                      if (v3 < 0 || v3 >= this.cache.length) {
+                                                        throw 'Invalid reference';
+                                                      }
+                                                      return this.cache[v3];
+                                          } else {
+                                                      v3 = this.readDigits();
+                                                      if (v3 < 0 || v3 >= this.scache.length) {
+                                                        throw 'Invalid string reference';
+                                                      }
+                                                      return this.scache[v3];
+                                            if (v2 != 98) {
+                                                      throw this.unserialize();
+                                            } else {
+                                                      v3 = this.unserialize();
+                                                      v4 = this.resolver.resolveClass(v3);
+                                                      if (v4 == null) {
+                                                        throw 'Class not found ' + v3;
+                                                      }
+                                                      var v5 = Type.createEmptyInstance(v4);
+                                                      this.cache.push(v5);
+                                                      this.unserializeObject(v5);
+                                                      return v5;
+                                              if (v2 != 113) {
+                                                      v3 = this.unserialize();
+                                                      v4 = this.resolver.resolveEnum(v3);
+                                                      if (v4 == null) {
+                                                        throw 'Enum not found ' + v3;
+                                                      }
+                                                      v5 = this.unserializeEnum(v4, this.unserialize());
+                                                      this.cache.push(v5);
+                                                      return v5;
+                                              } else {
+                                                      v3 = this.unserialize();
+                                                      v4 = this.resolver.resolveEnum(v3);
+                                                      if (v4 == null) {
+                                                        throw 'Enum not found ' + v3;
+                                                      }
+                                                      ++this.pos;
+                                                      v5 = this.readDigits();
+                                                      var v6 = (Type.getEnumConstructs(v4))[v5];
+                                                      if (v6 == null) {
+                                                        throw 'Unknown enum index ' + v3 + '@' + v5;
+                                                      }
+                                                      var v7 = this.unserializeEnum(v4, v6);
+                                                      this.cache.push(v7);
+                                                      return v7;
+                                                if (v2 != 118) {
+                                                      v3 = new List();
+                                                      this.cache.push(v3);
+                                                      v4 = this.buf;
+                                                      while (this.buf.cca(this.pos) != 104) {
+                                                        v3.add(this.unserialize());
+                                                      }
+                                                      ++this.pos;
+                                                      return v3;
+                                                } else {
+                                                      v3 = new Hash();
+                                                      this.cache.push(v3);
+                                                      v4 = this.buf;
+                                                      while (this.buf.cca(this.pos) != 104) {
+                                                        v5 = this.unserialize();
+                                                        v3.set(v5, this.unserialize());
+                                                      }
+                                                      ++this.pos;
+                                                      return v3;
+                                                  if (v2 != 115) {
+                                                      v3 = new IntHash();
+                                                      this.cache.push(v3);
+                                                      v4 = this.buf;
+                                                      ++this.pos;
+                                                      v5 = this.buf.cca(this.pos);
+                                                      while (v5 == 58) {
+                                                        v6 = this.readDigits();
+                                                        v3.set(v6, this.unserialize());
+                                                        ++this.pos;
+                                                        v5 = this.buf.cca(this.pos);
+                                                      }
+                                                      if (v5 != 104) {
+                                                        throw 'Invalid IntHash format';
+                                                      }
+                                                      return v3;
+                                                  } else {
+                                                      v3 = Date.fromString(this.buf.substr(this.pos, 19));
+                                                      this.cache.push(v3);
+                                                      this.pos += 19;
+                                                      return v3;
+                                                    if (v2 != 67) {
+                                                      v3 = this.readDigits();
+                                                      v4 = this.buf;
+                                                      ++this.pos;
+                                                      if (this.buf.cca(this.pos) != 58 || this.length - this.pos < v3) {
+                                                        throw 'Invalid bytes length';
+                                                      }
+                                                      v5 = haxe.Unserializer.CODES;
+                                                      if (v5 == null) {
+                                                        v5 = haxe.Unserializer.initCodes();
+                                                        haxe.Unserializer.CODES = v5;
+                                                      }
+                                                      v6 = this.pos;
+                                                      var v7 = v3 & 3;
+                                                      var v8 = (v3 >> 2) * 3 + (v7 >= 2 ? v7 - 1 : 0);
+                                                      var v9 = v6 + (v3 - v7);
+                                                      var v10 = haxe.io.Bytes.alloc(v8);
+                                                      var v11 = 0;
+                                                      while (v6 < v9) {
+                                                        ++v6;
+                                                        var v12 = v5[v4.cca(v6)];
+                                                        ++v6;
+                                                        var v13 = v5[v4.cca(v6)];
+                                                        ++v11;
+                                                        v10.b[v11] = (v12 << 2 | v13 >> 4) & 255;
+                                                        ++v6;
+                                                        var v14 = v5[v4.cca(v6)];
+                                                        ++v11;
+                                                        v10.b[v11] = (v13 << 4 | v14 >> 2) & 255;
+                                                        ++v6;
+                                                        var v15 = v5[v4.cca(v6)];
+                                                        ++v11;
+                                                        v10.b[v11] = (v14 << 6 | v15) & 255;
+                                                      }
+                                                      if (v7 >= 2) {
+                                                        ++v6;
+                                                        v12 = v5[v4.cca(v6)];
+                                                        ++v6;
+                                                        v13 = v5[v4.cca(v6)];
+                                                        ++v11;
+                                                        v10.b[v11] = (v12 << 2 | v13 >> 4) & 255;
+                                                        if (v7 == 3) {
+                                                          ++v6;
+                                                          v14 = v5[v4.cca(v6)];
+                                                          ++v11;
+                                                          v10.b[v11] = (v13 << 4 | v14 >> 2) & 255;
+                                                        }
+                                                      }
+                                                      this.pos += v3;
+                                                      this.cache.push(v10);
+                                                      return v10;
+                                                    } else {
+                                                      v3 = this.unserialize();
+                                                      v4 = this.resolver.resolveClass(v3);
+                                                      if (v4 == null) {
+                                                        throw 'Class not found ' + v3;
+                                                      }
+                                                      v5 = Type.createEmptyInstance(v4);
+                                                      this.cache.push(v5);
+                                                      v5.hxUnserialize(this);
+                                                      ++this.pos;
+                                                      if (this.buf.cca(this.pos) != 103) {
+                                                        throw 'Invalid custom data';
+                                                      }
+                                                      return v5;
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      --this.pos;
+      throw 'Invalid char ' + this.buf.charAt(this.pos) + ' at position ' + this.pos;
+    };
+
+    v1.unserializeEnum = function (arg0, arg1) {
+      ++this.pos;
+      if (this.buf.cca(this.pos) != 58) {
+        throw 'Invalid enum format';
+      }
+      var v4 = this.readDigits();
+      if (v4 == 0) {
+        return Type.createEnum(arg0, arg1);
+      }
+      var v5 = new Array();
+      --v4;
+      while (v4 > 0) {
+        v5.push(this.unserialize());
+      }
+      return Type.createEnum(arg0, arg1, v5);
+    };
+
+    v1.unserializeObject = function (arg0) {
+      while (true) {
+        if (this.pos >= this.length) {
+          throw 'Invalid object';
+        }
+        if (this.buf.cca(this.pos) == 103) {
+          break;
+        }
+        var v3 = this.unserialize();
+        if (!Std.is(v3, String)) {
+          throw 'Invalid object key';
+        }
+        var v4 = this.unserialize();
+        arg0[v3] = v4;
+      }
+      ++this.pos;
+    };
+
+    v1 = new Object();
+    haxe.io = v1;
+    v2 = _global.haxe.io;
+    // Loop counter not found
+for ($somevar in v2) {
+      v1[enumerate v2] = v2[enumerate v2];
+    }
+    haxe.io.Bytes = function (arg0, arg1) {
+      this.length = arg0;
+      this.b = arg1;
+    };
+
+    haxe.io.Bytes.__name__ = ['haxe', 'io', 'Bytes'];
+    v1 = haxe.io.Bytes.prototype;
+    v1.__class__ = haxe.io.Bytes;
+    haxe.io.Bytes.alloc = function (arg0) {
+      var v3 = new Array();
+      var v4 = 0;
+      while (v4 < arg0) {
+        ++v4;
+        var v5 = v4;
+        v3.push(0);
+      }
+      return new haxe.io.Bytes(arg0, v3);
+    };
+
+    v1.b = null;
+    v1.length = null;
+    v1 = new Object();
+    mt = v1;
+    v2 = _global.mt;
+    // Loop counter not found
+for ($somevar in v2) {
+      v1[enumerate v2] = v2[enumerate v2];
+    }
+    mt.BitCodec = function (arg0, arg1) {
+      this.in_buf = (arg0 == null) ? '' : arg0;
+      this.in_pos = 0;
+      this.nbits = 0;
+      this.bits = 0;
+      this.crc = 0;
+      this.crcFix = arg1 ? 1 : 0;
+      this.out_buf = '';
+    };
+
+    mt.BitCodec.__name__ = ['mt', 'BitCodec'];
+    v1 = mt.BitCodec.prototype;
+    v1.__class__ = mt.BitCodec;
+    mt.BitCodec.initInvChars = function () {
+      var v2 = new Array();
+      var v3 = 0;
+      while (v3 < 64) {
+        ++v3;
+        var v4 = v3;
+        v2[mt.BitCodec.ENCODE.charCodeAt(v4)] = v4;
+      }
+      return v2;
+    };
+
+    v1.bits = null;
+    v1.crc = null;
+    v1.crcFix = null;
+    v1.crcStr = function () {
+      return mt.BitCodec.ENCODE.charAt(this.crc & 63) + mt.BitCodec.ENCODE.charAt(this.crc >> 6 & 63) + mt.BitCodec.ENCODE.charAt(this.crc >> 12 & 63) + mt.BitCodec.ENCODE.charAt(this.crc >> 18 & 63);
+    };
+
+    v1.in_buf = null;
+    v1.in_pos = null;
+    v1.nbits = null;
+    v1.out_buf = null;
+    v1.read = function (arg0) {
+      while (this.nbits < arg0) {
+        ++this.in_pos;
+        var v3 = mt.BitCodec.DECODE[this.in_buf.charCodeAt(this.in_pos)];
+        if (v3 == null) {
+          throw 'EOF';
+        }
+        this.crc ^= v3;
+        this.crc &= 16777215;
+        this.crc *= v3 + this.crcFix;
+        this.nbits += 6;
+        this.bits <<= 6;
+        this.bits |= v3;
+      }
+      this.nbits -= arg0;
+      return this.bits >> this.nbits & (1 << arg0) - 1;
+    };
+
+    v1.toString = function () {
+      if (this.nbits > 0) {
+        this.write(6 - this.nbits, 0);
+      }
+      return this.out_buf;
+    };
+
+    v1.write = function (arg0, arg1) {
+      this.nbits += arg0;
+      this.bits <<= arg0;
+      this.bits |= arg1;
+      while (this.nbits >= 6) {
+        this.nbits -= 6;
+        var v4 = this.bits >> this.nbits & 63;
+        this.crc ^= v4;
+        this.crc &= 16777215;
+        this.crc *= v4 + this.crcFix;
+        this.out_buf += mt.BitCodec.ENCODE.charAt(v4);
+      }
+    };
+
+    mt.DepthManager = function (arg0) {
+      this.root_mc = arg0;
+      this.plans = new Array();
+    };
+
+    mt.DepthManager.__name__ = ['mt', 'DepthManager'];
+    v1 = mt.DepthManager.prototype;
+    v1.__class__ = mt.DepthManager;
+    v1.attach = function (arg0, arg1) {
+      var v4 = this.getPlan(arg1);
+      var v5 = v4.tbl;
+      var v6 = v4.cur;
+      if (v6 == 1000) {
+        this.compact(arg1);
+        return this.attach(arg0, arg1);
+      }
+      ++mt.DepthManager.INST_COUNTER;
+      var v7 = arg0 + '@' + mt.DepthManager.INST_COUNTER;
+      var v8 = this.root_mc.attachMovie(arg0, v7, v6 + arg1 * 1000, null);
+      v5[v6] = v8;
+      v4.cur = v6 + 1;
+      return v8;
+    };
+
+    v1.clear = function (arg0) {
+      var v3 = this.getPlan(arg0);
+      var v4 = v3.tbl;
+      var v5 = 0;
+      var v6 = v3.cur;
+      while (v5 < v6) {
+        ++v5;
+        var v7 = v5;
+        v4[v7].removeMovieClip();
+      }
+      v3.cur = 0;
+    };
+
+    v1.compact = function (arg0) {
+      var v3 = this.plans[arg0];
+      var v4 = v3.tbl;
+      var v5 = 0;
+      var v6 = arg0 * 1000;
+      var v7 = 0;
+      var v8 = v3.cur;
+      while (v7 < v8) {
+        ++v7;
+        var v9 = v7;
+        if (v4[v9]._name != null) {
+          v4[v9].swapDepths(v6 + v5);
+          v4[v5] = v4[v9];
+          ++v5;
+        }
+      }
+      v3.cur = v5;
+    };
+
+    v1.empty = function (arg0) {
+      var v3 = this.getPlan(arg0);
+      var v4 = v3.tbl;
+      var v5 = v3.cur;
+      if (v5 == 1000) {
+        this.compact(arg0);
+        return this.empty(arg0);
+      }
+      ++mt.DepthManager.INST_COUNTER;
+      var v6 = 'empty@' + mt.DepthManager.INST_COUNTER;
+      var v7 = this.root_mc.createEmptyMovieClip(v6, v5 + arg0 * 1000);
+      v4[v5] = v7;
+      v3.cur = v5 + 1;
+      return v7;
+    };
+
+    v1.getPlan = function (arg0) {
+      var v3 = this.plans[arg0];
+      if (v3 == null) {
+        v3 = {'tbl': new Array(), 'cur': 0};
+        this.plans[arg0] = v3;
+      }
+      return v3;
+    };
+
+    v1.plans = null;
+    v1.root_mc = null;
+    mt.Rand = function (arg0) {
+      this.seed = (arg0 < 0 ? -arg0 : arg0) + 131;
+    };
+
+    mt.Rand.__name__ = ['mt', 'Rand'];
+    v1 = mt.Rand.prototype;
+    v1.__class__ = mt.Rand;
+    v1.initSeed = function (arg0, arg1) {
+      if (arg1 == null) {
+        arg1 = 5;
+      }
+      var v4 = 0;
+      while (v4 < arg1) {
+        ++v4;
+        var v5 = v4;
+        arg0 ^= arg0 << 7 & 727393536;
+        arg0 ^= arg0 << 15 & 462094336;
+        arg0 ^= arg0 >>> 16;
+        arg0 &= 1073741823;
+        var v6 = 5381;
+        v6 = (v6 << 5) + v6 + (arg0 & 255);
+        v6 = (v6 << 5) + v6 + (arg0 >> 8 & 255);
+        v6 = (v6 << 5) + v6 + (arg0 >> 16 & 255);
+        v6 = (v6 << 5) + v6 + (arg0 >> 24);
+        arg0 = v6 & 1073741823;
+      }
+      this.seed = (arg0 & 536870911) + 131;
+    };
+
+    v1.seed = null;
+    v1 = new Object();
+    mt.bumdum = v1;
+    v2 = _global.mt.bumdum;
+    // Loop counter not found
+for ($somevar in v2) {
+      v1[enumerate v2] = v2[enumerate v2];
+    }
+    mt.bumdum.Col = function () {};
+
+    mt.bumdum.Col.__name__ = ['mt', 'bumdum', 'Col'];
+    v1 = mt.bumdum.Col.prototype;
+    v1.__class__ = mt.bumdum.Col;
+    mt.bumdum.Col.colToObj = function (arg0) {
+      return {'r': arg0 >> 16, 'g': arg0 >> 8 & 255, 'b': arg0 & 255};
+    };
+
+    mt.bumdum.Col.setPercentColor = function (arg0, arg1, arg2, arg3, arg4) {
+      if (arg4 == null) {
+        arg4 = 100;
+      }
+      if (arg3 == null) {
+        arg3 = 0;
+      }
+      var v7 = mt.bumdum.Col.colToObj(arg2);
+      var v8 = new flash.Color(arg0);
+      var v9 = arg1 / 100;
+      var v10 = {'_': null};
+      var v11 = Std.int(100 - arg1);
+      v10.ra = v11;
+      v10.ga = v11;
+      v10.ba = v11;
+      v10.aa = arg4;
+      v10.rb = Std.int(v9 * v7.r + arg3);
+      v10.gb = Std.int(v9 * v7.g + arg3);
+      v10.bb = Std.int(v9 * v7.b + arg3);
+      v10.ab = 0;
+      v8.setTransform(v10);
+    };
+
+    v1 = new Object();
+    mt.flash = v1;
+    v2 = _global.mt.flash;
+    // Loop counter not found
+for ($somevar in v2) {
+      v1[enumerate v2] = v2[enumerate v2];
+    }
+    mt.flash.Init = function () {};
+
+    mt.flash.Init.__name__ = ['mt', 'flash', 'Init'];
+    v1 = mt.flash.Init.prototype;
+    v1.__class__ = mt.flash.Init;
+    mt.flash.Init.check = function () {
+      var v2 = flash.Lib._root._url;
+      var v3 = v2.split('?');
+      v3.shift();
+      v3 = (v3.join('?')).split('&');
+      var v4 = 0;
+      while (v4 < v3.length) {
+        var v5 = v3[v4];
+        ++v4;
+        var v6 = (v5.split('='))[0];
+        if (v6 != '' && v6 != 'v') {
+          throw 'Vars not allowed';
+        }
+      }
+    };
+
+    flash.Boot.__init(this);
+    var d = Date;
+    d.now = function () {
+      return new Date();
+    };
+
+    d.fromTime = function (arg0) {
+      var v3 = new Date();
+      v3.setTime(arg0);
+      return v3;
+    };
+
+    d.fromString = function (arg0) {
+      var v3 = arg0.length;
+      if (v3 != 8) {
+      } else {
+        if (v3 != 10) {
+            throw 'Invalid date format : ' + arg0;
+        } else {
+            var v4 = arg0.split(':');
+            var v5 = new Date();
+            v5.setTime(0);
+            v5.setUTCHours(v4[0]);
+            v5.setUTCMinutes(v4[1]);
+            v5.setUTCSeconds(v4[2]);
+            return v5;
+          if (v3 != 19) {
+            var v4 = arg0.split('-');
+            return new Date(v4[0], v4[1] - 1, v4[2], 0, 0, 0);
+          } else {
+            v4 = arg0.split(' ');
+            v5 = v4[0].split('-');
+            var v6 = v4[1].split(':');
+            return new Date(v5[0], v5[1] - 1, v5[2], v6[0], v6[1], v6[2]);
+          }
+        }
+      }
+    };
+
+    d.prototype.toString = function () {
+      var v2 = this;
+      var v3 = v2.getMonth() + 1;
+      var v4 = v2.getDate();
+      var v5 = v2.getHours();
+      var v6 = v2.getMinutes();
+      var v7 = v2.getSeconds();
+      return v2.getFullYear() + '-' + (v3 < 10 ? '0' + v3 : '' + v3) + '-' + (v4 < 10 ? '0' + v4 : '' + v4) + ' ' + (v5 < 10 ? '0' + v5 : '' + v5) + ':' + (v6 < 10 ? '0' + v6 : '' + v6) + ':' + (v7 < 10 ? '0' + v7 : '' + v7);
+    };
+
+    d.prototype.__class__ = d;
+    d.__name__ = ['Date'];
+    Math.__name__ = ['Math'];
+    Math.NaN = Number.NaN;
+    Math.NEGATIVE_INFINITY = Number.NEGATIVE_INFINITY;
+    Math.POSITIVE_INFINITY = Number.POSITIVE_INFINITY;
+    Math.isFinite = function (arg0) {
+      return _global.isFinite(arg0);
+    };
+
+    Math.isNaN = function (arg0) {
+      return _global.isNaN(arg0);
+    };
+
+    var g = _global;
+    g.Int = {'__name__': ['Int']};
+    g.Bool = {'__ename__': ['Bool']};
+    g.Dynamic = {'__name__': ['Dynamic']};
+    g.Class = {'__name__': ['Class']};
+    g.Enum = {};
+    g.Void = {'__ename__': ['Void']};
+    g.Float = _global.Number;
+    g.Float.__name__ = ['Float'];
+    Array.prototype.__class__ = Array;
+    Array.__name__ = ['Array'];
+    String.prototype.__class__ = String;
+    String.__name__ = ['String'];
+    g.ASSetPropFlags(Array.prototype, null, 7);
+    flash.Color = _global.Color;
+    flash.Key = _global.Key;
+    flash.Key.addListener(flash.Key);
+    flash.LoadVars = _global.LoadVars;
+    flash.MovieClip = _global.MovieClip;
+    flash.MovieClipLoader = _global.MovieClipLoader;
+    flash.Stage = _global.Stage;
+    flash.TextField = _global.TextField;
+    flash.TextFormat = _global.TextFormat;
+    flash.TextSnapshot = _global.TextSnapshot;
+    flash.text.StyleSheet = _global.TextField.StyleSheet;
+    try {
+      View.DEFAULT_SKIN = 'labo';
+      View.SKINS = [{'key': 'crypt', 'w': 'crypt', 'g': 'crypt', 'mask': 100, 'fog': 2562332, 'perlin': _View.PerlinType.PNormal, 'over': [null, 'ruinPurple']}, {'key': 'crypt2', 'w': 'crypt', 'g': 'sewer', 'mask': 100, 'fog': 2562332, 'perlin': _View.PerlinType.PDense, 'over': ['ruinPurple', 'square']}, {'key': 'cavern', 'w': 'cavern', 'g': 'cavern', 'mask': 100, 'fog': 3744809, 'perlin': _View.PerlinType.PNormal, 'over': ['ruin', 'grass']}, {'key': 'cavern2', 'w': 'cavern', 'g': 'hell', 'mask': 70, 'fog': 2562332, 'perlin': _View.PerlinType.PNormal, 'over': ['dirt', 'grass']}, {'key': 'cavern3', 'w': 'cavern', 'g': 'desert', 'mask': 70, 'fog': 2562332, 'perlin': _View.PerlinType.PDense, 'over': ['ruinPurple', 'dirt']}, {'key': 'desert', 'w': 'cavern', 'g': 'desert', 'mask': 50, 'fog': 4010789, 'perlin': _View.PerlinType.PFew, 'over': ['dirt', 'grass']}, {'key': 'sewer', 'w': 'sewer', 'g': 'sewer', 'mask': 70, 'fog': 3617310, 'perlin': _View.PerlinType.PFew, 'over': ['creep', 'dirt']}, {'key': 'sewer2', 'w': 'sewer', 'g': 'sewer', 'mask': 100, 'fog': 3617310, 'perlin': _View.PerlinType.PFew, 'over': [null, 'creep']}, {'key': 'sewer3', 'w': 'sewer', 'g': 'cavern', 'mask': 100, 'fog': 3617310, 'perlin': _View.PerlinType.PFew, 'over': [null, 'creep']}, {'key': 'mine', 'w': 'mine', 'g': 'desert', 'mask': 60, 'fog': 3484704, 'perlin': _View.PerlinType.PDense, 'over': ['dirt', null]}, {'key': 'mine2', 'w': 'mine', 'g': 'cavern', 'mask': 100, 'fog': 3484704, 'perlin': _View.PerlinType.PNormal, 'over': ['dirt', 'grassDark']}, {'key': 'ruin', 'w': 'ruin', 'g': 'cavern', 'mask': 100, 'fog': 2434864, 'perlin': _View.PerlinType.PNormal, 'over': ['square', 'grass']}, {'key': 'ruin2', 'w': 'ruin', 'g': 'sewer', 'mask': 100, 'fog': 2562332, 'perlin': _View.PerlinType.PNormal, 'over': [null, 'ruin']}, {'key': 'ruin3', 'w': 'ruin', 'g': 'grass', 'mask': 60, 'fog': 3159838, 'perlin': _View.PerlinType.PNormal, 'over': ['ruin', 'grass']}, {'key': 'ruin4', 'w': 'ruin', 'g': 'hell', 'mask': 100, 'fog': 2562332, 'perlin': _View.PerlinType.PDense, 'over': ['ruinPurple', 'square']}, {'key': 'hell', 'w': 'hell', 'g': 'hell', 'mask': 100, 'fog': 3345677, 'perlin': _View.PerlinType.PNormal, 'over': ['ruin', 'creep']}, {'key': 'hell2', 'w': 'hell', 'g': 'cavern', 'mask': 100, 'fog': 3345677, 'perlin': _View.PerlinType.PDense, 'over': ['creep', 'ruin']}, {'key': 'forest', 'w': 'forest', 'g': 'grass', 'mask': 0, 'fog': 3159838, 'perlin': _View.PerlinType.PDense, 'over': ['dirt', 'grassDark']}, {'key': 'forest2', 'w': 'forest', 'g': 'cavern', 'mask': 30, 'fog': 3159838, 'perlin': _View.PerlinType.PFew, 'over': ['ruinPurple', 'grassDark']}, {'key': 'forest3', 'w': 'forest', 'g': 'grass', 'mask': 60, 'fog': 3159838, 'perlin': _View.PerlinType.PNormal, 'over': ['grassDark', 'grass']}, {'key': 'forest4', 'w': 'forest', 'g': 'cavern', 'mask': 100, 'fog': 3023921, 'perlin': _View.PerlinType.PNormal, 'over': ['ruinPurple', 'grassDark']}, {'key': 'oasis', 'w': 'forest', 'g': 'desert', 'mask': 30, 'fog': 4403235, 'perlin': _View.PerlinType.PNormal, 'over': [null, 'dirt']}, {'key': 'oasis2', 'w': 'forest', 'g': 'desert', 'mask': 30, 'fog': 4403235, 'perlin': _View.PerlinType.PDense, 'over': [null, 'grass']}, {'key': 'cave', 'w': 'cavern', 'g': 'grass', 'mask': 100, 'fog': 2237973, 'perlin': _View.PerlinType.PDense, 'over': ['grassDark', 'grass']}, {'key': 'hell_oasis', 'w': 'hell', 'g': 'desert', 'mask': 0, 'fog': 3345677, 'perlin': _View.PerlinType.PNormal, 'over': ['dirt', 'grass']}, {'key': 'pyramid', 'w': 'egypt', 'g': 'desert', 'mask': 60, 'fog': 4403235, 'perlin': _View.PerlinType.PNormal, 'over': ['dirt', null]}, {'key': 'pyramid2', 'w': 'egypt', 'g': 'hell', 'mask': 60, 'fog': 4403235, 'perlin': _View.PerlinType.PNormal, 'over': ['ruinPurple', null]}, {'key': 'tomb', 'w': 'egypt', 'g': 'crypt', 'mask': 100, 'fog': 4403235, 'perlin': _View.PerlinType.PFew, 'over': ['ruinPurple', 'square']}, {'key': 'tomb2', 'w': 'ruin', 'g': 'desert', 'mask': 100, 'fog': 4010789, 'perlin': _View.PerlinType.PDense, 'over': [null, 'square']}, {'key': 'tomb3', 'w': 'ruin', 'g': 'crypt', 'mask': 100, 'fog': 3345677, 'perlin': _View.PerlinType.PDense, 'over': [null, 'ruinPurple']}, {'key': 'cuzco', 'w': 'forest', 'g': 'sewer', 'mask': 20, 'fog': 3159838, 'perlin': _View.PerlinType.PDense, 'over': ['ruin', null]}, {'key': 'labo', 'w': 'labo', 'g': 'labo', 'mask': 100, 'fog': 856359, 'perlin': _View.PerlinType.PDense, 'over': [null, 'grassLabo']}];
+      flash.Boot.def_color = 0;
+      flash.Boot.exception = null;
+      haxe.Serializer.USE_CACHE = false;
+      haxe.Serializer.USE_ENUM_INDEX = false;
+      haxe.Serializer.BASE64 = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789%:';
+      haxe.Unserializer.DEFAULT_RESOLVER = Type;
+      haxe.Unserializer.BASE64 = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789%:';
+      haxe.Unserializer.CODES = null;
+      mt.BitCodec.ENCODE = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-_';
+      mt.BitCodec.DECODE = mt.BitCodec.initInvChars();
+      mt.DepthManager.INST_COUNTER = 0;
+      View.main();
+    }
+    catch (flash.Boot) {
+      flash.Boot.__exc(flash.Boot);
+    }
+  }
+}

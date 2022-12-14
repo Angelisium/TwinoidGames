@@ -1,0 +1,65 @@
+movie 'titles.swf' {
+// flash 8, total frames: 1, frame rate: 12 fps, 520x27 px, compressed
+
+  frame 1 {
+    function smallCaps(f) {
+      var v5 = new Array();
+      var v1 = 0;
+      while (v1 < f.text.length) {
+        var v3 = f.text.charAt(v1);
+        var v2 = new TextFormat();
+        v2.size = 19;
+        if (v3 == v3.toUpperCase()) {
+          v2.size += 5;
+        }
+        v5.push(v2);
+        ++v1;
+      }
+      f.text = f.text.toUpperCase();
+      v1 = 0;
+      while (v1 < v5.length) {
+        f.setTextFormat(v1, v5[v1]);
+        ++v1;
+      }
+      f._y = HEI - f.textHeight;
+    }
+
+    function init() {
+      var v2 = mc.field;
+      var v7 = _root.title;
+      var v3 = _root.sub;
+      if (v3 == 'null' || v3 == null) {
+        v3 = '';
+      }
+      v2.text = v7;
+      smallCaps(v2);
+      var v5 = new flash.display.BitmapData(WID, HEI, true, 16573372);
+      v5.draw(mc);
+      _root.createEmptyMovieClip('cont', 2);
+      cont.attachBitmap(v5, 1);
+      var v4 = new Array();
+      v4.push(new flash.filters.GlowFilter(4681479, 1, 2, 2, 2, 1, true));
+      v4.push(new flash.filters.GlowFilter(16642495, 1, 2, 2, 6, 1));
+      v4.push(new flash.filters.GlowFilter(11689249, 1, 4, 4, 0.4, 3));
+      cont.filters = v4;
+      var v8 = new flash.geom.ColorTransform(0, 0, 0, 1, 157, 212, 6, 0);
+      v5.colorTransform(new flash.geom.Rectangle(0, 17, WID, HEI - 20), v8);
+      v2._x = v2.textWidth + 10;
+      v2.text = v3;
+      smallCaps(v2);
+      var v6 = new TextFormat();
+      v6.color = COL_SUB;
+      v2.setTextFormat(v6);
+    }
+
+    var WID = 520;
+    var HEI = 27;
+    var COL_SUB = 10834221;
+    init();
+  }
+  
+  // unknown tag 88 length 115
+
+  movieClip 3  {
+  }
+}
