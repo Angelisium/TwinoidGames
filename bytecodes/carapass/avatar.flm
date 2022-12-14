@@ -1,0 +1,679 @@
+movie 'avatar.swf' compressed // flash 8, total frames: 1, frame rate: 12 fps, 70x70 px
+
+
+  frame 0
+    constants 'cl', ';', 'split', 'length', 'Array', 'charCodeAt', 'decode62', 'push', 'initPalette', 'apply', 'palinst', 'palette', 'attachMovie', 'gotoAndStop', 'getBounds', 'yMax', 'xMax', 'flash', 'display', 'BitmapData', 'draw', 'removeMovieClip', 'getPixel32', 'dispose', 'applyRec', 'applyStatus', 'movieclip', '_name', 'substr', '_p', '_totalframes', 'col', '_col', 'pMax', 'setColor', 'r', 'g', 'b', 'Color', 'ra', 'ga', 'ba', 'aa', 'rb', 'gb', 'bb', 'ab', 'setTransform', 'defpal', 'skinPal', 'shirtPal', 'hairPal', '_root', 'data', '_init', 'flip', 'body', '_xscale', 'alpha', '_alpha', 'blendMode', 'layer'  
+    function2 decode62 (r:1='n') ()
+      push r:n, 48
+      lessThan
+      not
+      dup
+      not
+      branchIfTrue label1
+      pop
+      push r:n, 58
+      greaterThan
+      not
+     label1:
+      not
+      branchIfTrue label2
+      push r:n, 48
+      subtract
+      return
+     label2:
+      push r:n, 65
+      lessThan
+      not
+      dup
+      not
+      branchIfTrue label3
+      pop
+      push r:n, 90
+      greaterThan
+      not
+     label3:
+      not
+      branchIfTrue label4
+      push r:n, 65
+      subtract
+      push 10
+      add
+      return
+     label4:
+      push r:n, 97
+      lessThan
+      not
+      dup
+      not
+      branchIfTrue label5
+      pop
+      push r:n, 122
+      greaterThan
+      not
+     label5:
+      not
+      branchIfTrue label6
+      push r:n, 97
+      subtract
+      push 36
+      add
+      return
+     label6:
+      push 63
+      return
+    end // of function decode62
+
+    function2 _init (r:3='data') ()
+      push 'cl', ';', 1, r:'data', 'split'
+      callMethod
+      setVariable
+      push r:'data', NULL
+      equals
+      dup
+      branchIfTrue label7
+      pop
+      push 'cl'
+      getVariable
+      push 'length'
+      getMember
+      push 1
+      equals
+     label7:
+      not
+      branchIfTrue label10
+      push 0.0
+      setRegister r:4
+      pop
+      push 'cl', 0.0, 'Array'
+      new
+      setVariable
+      push 0.0
+      setRegister r:1
+      pop
+     label8:
+      push r:1, r:'data', 'length'
+      getMember
+      lessThan
+      not
+      branchIfTrue label9
+      push r:1, 1, r:'data', 'charCodeAt'
+      callMethod
+      push 1, 'decode62'
+      callFunction
+      setRegister r:2
+      pop
+      push r:2, 1, 'cl'
+      getVariable
+      push 'push'
+      callMethod
+      pop
+      push r:4, 5
+      multiply
+      push r:2
+      bitwiseXor
+      push 65535
+      bitwiseAnd
+      setRegister r:4
+      pop
+      push r:1
+      increment
+      setRegister r:1
+      pop
+      branch label8
+     label9:
+      branch label12
+     label10:
+      push 0.0
+      setRegister r:1
+      pop
+     label11:
+      push r:1, 'cl'
+      getVariable
+      push 'length'
+      getMember
+      lessThan
+      not
+      branchIfTrue label12
+      push 'cl'
+      getVariable
+      push r:1, 'cl'
+      getVariable
+      push r:1
+      getMember
+      int
+      setMember
+      push r:1
+      increment
+      setRegister r:1
+      pop
+      branch label11
+     label12:
+      push 0.0, 'initPalette'
+      callFunction
+      pop
+      push 0.0, 'apply'
+      callFunction
+      pop
+    end // of function _init
+
+    function2 initPalette () (r:1='this')
+      push 0.0, 'palinst', 'palette', 3, r:this, 'attachMovie'
+      callMethod
+      setRegister r:7
+      pop
+      push r:7, NULL
+      equals
+      not
+      branchIfTrue label13
+      push UNDEF
+      return
+     label13:
+      push 'cl'
+      getVariable
+      push 0.0
+      getMember
+      push 1
+      add
+      push 1, r:7, 'gotoAndStop'
+      callMethod
+      pop
+      push r:7, 1, r:7, 'getBounds'
+      callMethod
+      setRegister r:8
+      pop
+      push r:8, 'yMax'
+      getMember
+      push r:8, 'xMax'
+      getMember
+      push 2, 'flash'
+      getVariable
+      push 'display'
+      getMember
+      push 'BitmapData'
+      newMethod
+      setRegister r:6
+      pop
+      push r:7, 1, r:6, 'draw'
+      callMethod
+      pop
+      push 0.0, r:7, 'removeMovieClip'
+      callMethod
+      pop
+      push 'palette', 0.0, 'Array'
+      new
+      setVariable
+      push 0.0
+      setRegister r:4
+      pop
+     label14:
+      push r:4, 4
+      lessThan
+      not
+      branchIfTrue label19
+      push 0.0, 'Array'
+      new
+      setRegister r:3
+      pop
+      push r:4, 15
+      multiply
+      push 7
+      add
+      setRegister r:5
+      pop
+     label15:
+      push FALSE
+      branchIfTrue label18
+      push r:5, r:3, 'length'
+      getMember
+      push 15
+      multiply
+      push 7
+      add
+      push 2, r:6, 'getPixel32'
+      callMethod
+      setRegister r:2
+      pop
+      push r:2, 0.0
+      equals
+      dup
+      branchIfTrue label16
+      pop
+      push r:2, -1
+      equals
+     label16:
+      not
+      branchIfTrue label17
+      branch label18
+     label17:
+      push r:2, 16777215
+      bitwiseAnd
+      push 1, r:3, 'push'
+      callMethod
+      pop
+      branch label15
+     label18:
+      push r:3, 1, 'palette'
+      getVariable
+      push 'push'
+      callMethod
+      pop
+      push r:4
+      increment
+      setRegister r:4
+      pop
+      branch label14
+     label19:
+      push 0.0, r:6, 'dispose'
+      callMethod
+      pop
+    end // of function initPalette
+
+    function2 apply () (r:1='this')
+      push r:this, 1, 'applyRec'
+      callFunction
+      pop
+      push 0.0, 'applyStatus'
+      callFunction
+      pop
+    end // of function apply
+
+    function2 applyRec (r:6='mc') ()
+      push r:mc
+      enumerateValue
+     label20:
+      setRegister r:0
+      push NULL
+      equals
+      branchIfTrue label26
+      push r:0
+      setRegister r:7
+      pop
+      push r:mc, r:7
+      getMember
+      setRegister r:1
+      pop
+      push r:1
+      typeof
+      push 'movieclip'
+      equals
+      not
+      branchIfTrue label25
+      push NULL
+      setRegister r:2
+      pop
+      push 2, 0.0, 2, r:1, '_name'
+      getMember
+      push 'substr'
+      callMethod
+      push '_p'
+      equals
+      not
+      branchIfTrue label22
+      push 1, 2, 2, r:1, '_name'
+      getMember
+      push 'substr'
+      callMethod
+      int
+      setRegister r:3
+      pop
+      push 'cl'
+      getVariable
+      push r:3
+      getMember
+      push r:1, '_totalframes'
+      getMember
+      modulo
+      setRegister r:5
+      pop
+      push r:5, 1
+      add
+      push 1, r:1, 'gotoAndStop'
+      callMethod
+      pop
+      push 3, 3, 2, r:1, '_name'
+      getMember
+      push 'substr'
+      callMethod
+      push 'col'
+      equals
+      not
+      branchIfTrue label21
+      push 1, 6, 2, r:1, '_name'
+      getMember
+      push 'substr'
+      callMethod
+      int
+      setRegister r:2
+      pop
+     label21:
+      branch label23
+     label22:
+      push 4, 0.0, 2, r:1, '_name'
+      getMember
+      push 'substr'
+      callMethod
+      push '_col'
+      equals
+      not
+      branchIfTrue label23
+      push 1, 4, 2, r:1, '_name'
+      getMember
+      push 'substr'
+      callMethod
+      int
+      setRegister r:2
+      pop
+     label23:
+      push r:2, NULL
+      equals
+      not
+      not
+      branchIfTrue label24
+      push 'palette'
+      getVariable
+      push r:2
+      getMember
+      setRegister r:4
+      pop
+      push r:4, 'cl'
+      getVariable
+      push 'pMax'
+      getVariable
+      push r:2
+      add
+      getMember
+      push r:4, 'length'
+      getMember
+      modulo
+      getMember
+      push r:1, 2, 'setColor'
+      callFunction
+      pop
+     label24:
+      push r:3, r:1, 2, 'applyRec'
+      callFunction
+      pop
+     label25:
+      branch label20
+     label26:
+    end // of function applyRec
+
+    function2 setColor (r:16='mc', r:4='col') ()
+      push 'r', r:col, 16
+      shiftRight
+      push 'g', r:col, 8
+      shiftRight
+      push 255
+      bitwiseAnd
+      push 'b', r:col, 255
+      bitwiseAnd
+      push 3
+      initObject
+      setRegister r:1
+      pop
+      push r:mc, 1, 'Color'
+      new
+      setRegister r:2
+      pop
+      push 'ra', 100, 'ga', 100, 'ba', 100, 'aa', 100, 'rb', r:1, 'r'
+      getMember
+      push 255
+      subtract
+      push 'gb', r:1, 'g'
+      getMember
+      push 255
+      subtract
+      push 'bb', r:1, 'b'
+      getMember
+      push 255
+      subtract
+      push 'ab', 0.0, 8
+      initObject
+      setRegister r:3
+      pop
+      push r:3, 1, r:2, 'setTransform'
+      callMethod
+      pop
+    end // of function setColor
+
+    push 'pMax', 10
+    setVariable
+    push 'defpal', 15785113, 16775598, 13834264, 12082973, 14646839, 9151447, 9948159, 14019327, 13369239, 15531993, 16755230, 16764025, 16773855, 13
+    initArray
+    varEquals
+    push 'skinPal', 8078110, 11295784, 13992781, 14589814, 16559533, 16633550, 16703198, 16755230, 16764025, 16773855, 10
+    initArray
+    varEquals
+    push 'shirtPal', 0.0, 13369344, 16737792, 16776960, 4757522, 7912974, 10153752, 4563710, 9619966, 12377854, 8192514, 13238786, 16711680, 13
+    initArray
+    varEquals
+    push 'hairPal', 6710886, 16777215, 6634800, 7424055, 8344638, 9265221, 10054219, 11040850, 11961434, 13013858, 13934441, 13369344, 16737792, 16763904, 4757522, 7912974, 10153752, 4563710, 9619966, 12377854, 8192514, 13238786, 16711680, 23
+    initArray
+    varEquals
+    push 'palette', 'shirtPal'
+    getVariable
+    push 'hairPal'
+    getVariable
+    push 'defpal'
+    getVariable
+    push 'skinPal'
+    getVariable
+    push 4
+    initArray
+    setVariable
+    push '_root'
+    getVariable
+    push 'data'
+    getMember
+    push 1, '_init'
+    callFunction
+    pop
+    push '_root'
+    getVariable
+    push 'flip'
+    getMember
+    push NULL
+    equals
+    not
+    not
+    branchIfTrue label27
+    push 'body'
+    getVariable
+    push '_xscale', -100
+    setMember
+   label27:
+    push '_root'
+    getVariable
+    push 'alpha'
+    getMember
+    push NULL
+    equals
+    not
+    not
+    branchIfTrue label28
+    push '_root'
+    getVariable
+    push '_alpha', '_root'
+    getVariable
+    push 'alpha'
+    getMember
+    int
+    setMember
+    push '_root'
+    getVariable
+    push 'blendMode', 'layer'
+    setMember
+   label28:
+  end // of frame 0
+
+  defineMovieClip 6 // total frames: 1
+  end // of defineMovieClip 6
+
+  defineMovieClip 8 // total frames: 1
+  end // of defineMovieClip 8
+
+  defineMovieClip 10 // total frames: 1
+  end // of defineMovieClip 10
+
+  defineMovieClip 12 // total frames: 1
+  end // of defineMovieClip 12
+
+  defineMovieClip 14 // total frames: 1
+  end // of defineMovieClip 14
+
+  defineMovieClip 16 // total frames: 1
+  end // of defineMovieClip 16
+
+  defineMovieClip 18 // total frames: 1
+  end // of defineMovieClip 18
+
+  defineMovieClip 19 // total frames: 10
+  end // of defineMovieClip 19
+
+  defineMovieClip 21 // total frames: 1
+  end // of defineMovieClip 21
+
+  defineMovieClip 23 // total frames: 1
+  end // of defineMovieClip 23
+
+  defineMovieClip 25 // total frames: 1
+  end // of defineMovieClip 25
+
+  defineMovieClip 28 // total frames: 1
+  end // of defineMovieClip 28
+
+  defineMovieClip 34 // total frames: 1
+  end // of defineMovieClip 34
+
+  defineMovieClip 35 // total frames: 7
+  end // of defineMovieClip 35
+
+  defineMovieClip 37 // total frames: 1
+  end // of defineMovieClip 37
+
+  defineMovieClip 40 // total frames: 1
+  end // of defineMovieClip 40
+
+  defineMovieClip 45 // total frames: 1
+  end // of defineMovieClip 45
+
+  defineMovieClip 46 // total frames: 12
+  end // of defineMovieClip 46
+
+  defineMovieClip 48 // total frames: 1
+  end // of defineMovieClip 48
+
+  defineMovieClip 49 // total frames: 1
+  end // of defineMovieClip 49
+
+  defineMovieClip 53 // total frames: 1
+  end // of defineMovieClip 53
+
+  defineMovieClip 55 // total frames: 1
+  end // of defineMovieClip 55
+
+  defineMovieClip 59 // total frames: 1
+  end // of defineMovieClip 59
+
+  defineMovieClip 62 // total frames: 1
+  end // of defineMovieClip 62
+
+  defineMovieClip 63 // total frames: 15
+  end // of defineMovieClip 63
+
+  defineMovieClip 65 // total frames: 1
+  end // of defineMovieClip 65
+
+  defineMovieClip 67 // total frames: 1
+  end // of defineMovieClip 67
+
+  defineMovieClip 70 // total frames: 1
+  end // of defineMovieClip 70
+
+  defineMovieClip 72 // total frames: 1
+  end // of defineMovieClip 72
+
+  defineMovieClip 74 // total frames: 1
+  end // of defineMovieClip 74
+
+  defineMovieClip 77 // total frames: 1
+  end // of defineMovieClip 77
+
+  defineMovieClip 79 // total frames: 1
+  end // of defineMovieClip 79
+
+  defineMovieClip 82 // total frames: 1
+  end // of defineMovieClip 82
+
+  defineMovieClip 84 // total frames: 1
+  end // of defineMovieClip 84
+
+  defineMovieClip 85 // total frames: 15
+  end // of defineMovieClip 85
+
+  defineMovieClip 87 // total frames: 1
+  end // of defineMovieClip 87
+
+  defineMovieClip 89 // total frames: 1
+  end // of defineMovieClip 89
+
+  defineMovieClip 91 // total frames: 1
+  end // of defineMovieClip 91
+
+  defineMovieClip 93 // total frames: 1
+  end // of defineMovieClip 93
+
+  defineMovieClip 95 // total frames: 1
+  end // of defineMovieClip 95
+
+  defineMovieClip 98 // total frames: 1
+  end // of defineMovieClip 98
+
+  defineMovieClip 100 // total frames: 1
+  end // of defineMovieClip 100
+
+  defineMovieClip 102 // total frames: 1
+  end // of defineMovieClip 102
+
+  defineMovieClip 105 // total frames: 1
+  end // of defineMovieClip 105
+
+  defineMovieClip 108 // total frames: 1
+  end // of defineMovieClip 108
+
+  defineMovieClip 109 // total frames: 10
+  end // of defineMovieClip 109
+
+  defineMovieClip 112 // total frames: 1
+  end // of defineMovieClip 112
+
+  defineMovieClip 114 // total frames: 1
+  end // of defineMovieClip 114
+
+  defineMovieClip 116 // total frames: 1
+  end // of defineMovieClip 116
+
+  defineMovieClip 118 // total frames: 1
+  end // of defineMovieClip 118
+
+  defineMovieClip 120 // total frames: 1
+  end // of defineMovieClip 120
+
+  defineMovieClip 122 // total frames: 1
+  end // of defineMovieClip 122
+
+  defineMovieClip 124 // total frames: 1
+  end // of defineMovieClip 124
+
+  defineMovieClip 126 // total frames: 1
+  end // of defineMovieClip 126
+
+  defineMovieClip 127 // total frames: 20
+  end // of defineMovieClip 127
+
+  defineMovieClip 128 // total frames: 66
+  end // of defineMovieClip 128
+
+  defineMovieClip 129 // total frames: 1
+  end // of defineMovieClip 129
+end
