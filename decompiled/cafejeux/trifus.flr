@@ -46,7 +46,7 @@ movie 'trifus.swf' {
 
   frame 1 {
     )PVyX = function () {
-      return [8X6+.7]AJ.__string_rec(this, '-g');
+      return flash.7]AJ.__string_rec(this, '-g');
     };
 
     var v1 = new Object();
@@ -263,14 +263,14 @@ for ($somevar in v2) {
     };
 
     v1 = new Object();
-    [8X6+ = v1;
+    flash = v1;
     v2 = _global.flash;
     // Loop counter not found
 for ($somevar in v2) {
       v1[enumerate v2] = v2[enumerate v2];
     }
     v1 = new Object();
-    [8X6+.}ZF-m = v1;
+    flash.}ZF-m = v1;
     v2 = _global.flash.display;
     // Loop counter not found
 for ($somevar in v2) {
@@ -483,7 +483,7 @@ for ($somevar in v2) {
     };
 
     v1 = new Object();
-    [8X6+._MovieClip = v1;
+    flash._MovieClip = v1;
     v2 = _global.flash._MovieClip;
     // Loop counter not found
 for ($somevar in v2) {
@@ -644,21 +644,21 @@ for ($somevar in v2) {
       v1[enumerate v2] = v2[enumerate v2];
     }
     v1 = new Object();
-    [8X6+.3[4k{ = v1;
+    flash.3[4k{ = v1;
     v2 = _global.flash.filters;
     // Loop counter not found
 for ($somevar in v2) {
       v1[enumerate v2] = v2[enumerate v2];
     }
     v1 = new Object();
-    [8X6+.text = v1;
+    flash.text = v1;
     v2 = _global.flash.text;
     // Loop counter not found
 for ($somevar in v2) {
       v1[enumerate v2] = v2[enumerate v2];
     }
     v1 = new Object();
-    [8X6+.0000 = v1;
+    flash.0000 = v1;
     v2 = _global.flash.geom;
     // Loop counter not found
 for ($somevar in v2) {
@@ -1021,7 +1021,7 @@ for ($somevar in v2) {
         v7 *= v4._yscale * 0.01;
         v6 += v4._x;
         v7 += v4._y;
-        if (v4 == arg1 || v4 == [8X6+.1ni._root) {
+        if (v4 == arg1 || v4 == flash.1ni._root) {
           return {'((': v6, ')(': v7};
         }
         arg0 = v4;
@@ -1060,7 +1060,7 @@ for ($somevar in v2) {
         arg3 = 0;
       }
       var v6 = 9K.53kZ-(.0[Y.{SXC{(arg2);
-      var v7 = new [8X6+.Color(arg0);
+      var v7 = new flash.Color(arg0);
       var v8 = arg1 / 100;
       var v9 = {'_': null};
       var v10 = 3Wt.9n6(100 - arg1);
@@ -1080,7 +1080,7 @@ for ($somevar in v2) {
         arg2 = -255;
       }
       var v5 = 9K.53kZ-(.0[Y.2ya 0((arg1);
-      var v6 = new [8X6+.Color(arg0);
+      var v6 = new flash.Color(arg0);
       var v7 = {'_': null};
       v7.ra = 100;
       v7.ga = 100;
@@ -1237,7 +1237,7 @@ for ($somevar in v2) {
       if (arg4 == null) {
         arg4 = false;
       }
-      var v7 = new [8X6+.3[4k{.GlowFilter();
+      var v7 = new flash.3[4k{.GlowFilter();
       v7.blurX = arg1;
       v7.blurY = arg1;
       v7.strength = arg2;
@@ -1255,7 +1255,7 @@ for ($somevar in v2) {
       if (arg2 == null) {
         arg2 = 0;
       }
-      var v5 = new [8X6+.3[4k{.BlurFilter();
+      var v5 = new flash.3[4k{.BlurFilter();
       v5.blurX = arg1;
       v5.blurY = arg2;
       var v6 = arg0.filters;
@@ -1288,7 +1288,7 @@ for ($somevar in v2) {
         var v11 = v9;
         v8[v11] = v7[v11] * (1 - arg1) + arg4[v11] * arg1;
       }
-      v9 = new [8X6+.3[4k{.ColorMatrixFilter();
+      v9 = new flash.3[4k{.ColorMatrixFilter();
       v9.matrix = v8;
       v10 = arg0.filters;
       v10.push(v9);
@@ -1338,8 +1338,8 @@ for ($somevar in v2) {
     };
 
     9K.53kZ-(.}*X.__name__ = ['9K', '53kZ-(', '}*X'];
-    9K.53kZ-(.}*X.__super__ = [8X6+.}ZF-m.BitmapData;
-    9K.53kZ-(.}*X extends [8X6+.}ZF-m.BitmapData;
+    9K.53kZ-(.}*X.__super__ = flash.}ZF-m.BitmapData;
+    9K.53kZ-(.}*X extends flash.}ZF-m.BitmapData;
     v1 = 9K.53kZ-(.}*X.prototype;
     v1.__class__ = 9K.53kZ-(.}*X;
     v1.+Hp() = null;
@@ -1350,12 +1350,12 @@ for ($somevar in v2) {
       if (arg2 == null) {
         arg2 = 0;
       }
-      var v6 = new [8X6+.0000.Matrix();
+      var v6 = new flash.0000.Matrix();
       v6.scale((arg0._xscale / 100) * this.,R, (arg0._yscale / 100) * this.,R);
       v6.rotate(arg0._rotation * 0.0174);
       v6.translate(arg0._x * this.,R + arg1, arg0._y * this.,R + arg2);
       if (arg3 == null) {
-        arg3 = new [8X6+.0000.ColorTransform(1, 1, 1, 1, 0, 0, 0, -255 + arg0._alpha * 2.55);
+        arg3 = new flash.0000.ColorTransform(1, 1, 1, 1, 0, 0, 0, -255 + arg0._alpha * 2.55);
       }
       var v7 = arg0.blendMode;
       this.draw(arg0, v6, arg3, v7, null, false);
@@ -1379,9 +1379,9 @@ for ($somevar in v2) {
         var v12 = v10;
         v9.push(v4[v12] * (1 - arg0) + v8[v12] * arg0);
       }
-      v10 = new [8X6+.3[4k{.ColorMatrixFilter();
+      v10 = new flash.3[4k{.ColorMatrixFilter();
       v10.matrix = v9;
-      this.applyFilter(this, this.rectangle, new [8X6+.0000.Point(0, 0), v10);
+      this.applyFilter(this, this.rectangle, new flash.0000.Point(0, 0), v10);
     };
 
     v1.-{rzg = function () {
@@ -1400,7 +1400,7 @@ for ($somevar in v2) {
 
     v1.,R = null;
     v1.3+YQ} = function () {
-      this.draw(this.+Hp(), new [8X6+.0000.Matrix());
+      this.draw(this.+Hp(), new flash.0000.Matrix());
     };
 
     v1.-iB= = null;
@@ -1417,7 +1417,7 @@ for ($somevar in v2) {
       if (9K.53kZ-(.-wDX[.(,JNq) {
         var v7 = 2;
         this.fillRect(this.rectangle, -65536);
-        this.fillRect(new [8X6+.0000.Rectangle(v7, v7, arg1 - 2 * v7, arg2 - 2 * v7), 0);
+        this.fillRect(new flash.0000.Rectangle(v7, v7, arg1 - 2 * v7, arg2 - 2 * v7), 0);
       }
     };
 
@@ -1454,7 +1454,7 @@ for ($somevar in v2) {
       while (v2 < v3.length) {
         var v4 = v3[v2];
         ++v2;
-        this.applyFilter(this, this.rectangle, new [8X6+.0000.Point(0, 0), v4);
+        this.applyFilter(this, this.rectangle, new flash.0000.Point(0, 0), v4);
       }
       if (this.2VhU6 != null) {
         this.2VhU6 -= 9K.{-kxL.-V;B;
@@ -2135,18 +2135,18 @@ for ($somevar in v2) {
 
     v1.[b = null;
     v1.]b = null;
-    [8X6+.7]AJ.__init(this);
-    [8X6+.MovieClip = _global.MovieClip;
-    [8X6+.TextField = _global.TextField;
-    [8X6+.text.StyleSheet = _global.TextField.StyleSheet;
+    flash.7]AJ.__init(this);
+    flash.MovieClip = _global.MovieClip;
+    flash.TextField = _global.TextField;
+    flash.text.StyleSheet = _global.TextField.StyleSheet;
     __eval = function (arg0) {
       return eval(arg0);
     };
 
-    [8X6+.Color = _global.Color;
-    [8X6+.TextFormat = _global.TextFormat;
-    [8X6+.Stage = _global.Stage;
-    [8X6+.TextSnapshot = _global.TextSnapshot;
+    flash.Color = _global.Color;
+    flash.TextFormat = _global.TextFormat;
+    flash.Stage = _global.Stage;
+    flash.TextSnapshot = _global.TextSnapshot;
     try {
       9K.53kZ-(.-0]rl.*5oz7( = new Array();
       *r.=OA = 300;
@@ -2169,8 +2169,8 @@ for ($somevar in v2) {
       44{N.=RMp1 = 2;
       44{N.5;OW; = 3;
     }
-    catch ([8X6+.7]AJ) {
-      [8X6+.7]AJ.__exc([8X6+.7]AJ);
+    catch (flash.7]AJ) {
+      flash.7]AJ.__exc(flash.7]AJ);
     }
   }
 }

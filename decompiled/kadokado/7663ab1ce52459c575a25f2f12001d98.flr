@@ -202,18 +202,18 @@ movie '7663ab1ce52459c575a25f2f12001d98.swf' {
 
     frame 1 {
       )PVyX = function () {
-        return [8X6+.7]AJ.__string_rec(this, '-g');
+        return flash.7]AJ.__string_rec(this, '-g');
       };
 
       var v1 = new Object();
-      [8X6+ = v1;
+      flash = v1;
       var v2 = _global.flash;
       // Loop counter not found
 for ($somevar in v2) {
         v1[enumerate v2] = v2[enumerate v2];
       }
       v1 = new Object();
-      [8X6+.}ZF-m = v1;
+      flash.}ZF-m = v1;
       v2 = _global.flash.display;
       // Loop counter not found
 for ($somevar in v2) {
@@ -299,12 +299,12 @@ for ($somevar in v2) {
 
       v1.(( = null;
       v1.)( = null;
-      [8X6+.7]AJ = function () {};
+      flash.7]AJ = function () {};
 
-      [8X6+.7]AJ.__name__ = ['[8X6+', '7]AJ'];
-      v1 = [8X6+.7]AJ.prototype;
-      v1.__class__ = [8X6+.7]AJ;
-      [8X6+.7]AJ.__string_rec = function (arg0, arg1) {
+      flash.7]AJ.__name__ = ['flash', '7]AJ'];
+      v1 = flash.7]AJ.prototype;
+      v1.__class__ = flash.7]AJ;
+      flash.7]AJ.__string_rec = function (arg0, arg1) {
         if (arg1.length >= 20) {
           return '<...>';
         }
@@ -335,9 +335,9 @@ for ($somevar in v2) {
                     ++v7;
                     var v9 = v7;
                     if (v9 == 2) {
-                      v6 += [8X6+.7]AJ.__string_rec(arg0[v9], arg1);
+                      v6 += flash.7]AJ.__string_rec(arg0[v9], arg1);
                     } else {
-                      v6 += ',' + [8X6+.7]AJ.__string_rec(arg0[v9], arg1);
+                      v6 += ',' + flash.7]AJ.__string_rec(arg0[v9], arg1);
                     }
                   }
                   return v6 + ')';
@@ -349,7 +349,7 @@ for ($somevar in v2) {
                 while (v9 < v6) {
                   ++v9;
                   var v10 = v9;
-                  v8 += (v10 > 0 ? ',' : '') + [8X6+.7]AJ.__string_rec(arg0[v10], arg1);
+                  v8 += (v10 > 0 ? ',' : '') + flash.7]AJ.__string_rec(arg0[v10], arg1);
                 }
                 v8 += ']';
                 return v8;
@@ -378,7 +378,7 @@ for ($somevar in arg0) {
                 if (v8.length != 2) {
                   v8 += ',\n';
                 }
-                v8 += arg1 + v11 + ' : ' + [8X6+.7]AJ.__string_rec(arg0[v11], arg1);
+                v8 += arg1 + v11 + ' : ' + flash.7]AJ.__string_rec(arg0[v11], arg1);
               }
               arg1 = arg1.substring(4);
               if (v8.length != 2) {
@@ -395,7 +395,7 @@ for ($somevar in arg0) {
         }
       };
 
-      [8X6+.7]AJ.__closure = function (arg0, arg1) {
+      flash.7]AJ.__closure = function (arg0, arg1) {
         var v4 = arg1[arg0];
         if (v4 == null) {
           return null;
@@ -410,7 +410,7 @@ for ($somevar in arg0) {
         return v5;
       };
 
-      [8X6+.7]AJ.__instanceof = function (arg0, arg1) {
+      flash.7]AJ.__instanceof = function (arg0, arg1) {
         if (!arg1) {
           return false;
         }
@@ -444,12 +444,12 @@ for ($somevar in arg0) {
         }
       };
 
-      [8X6+.7]AJ.9vIf=( = function () {
-        var v2 = [8X6+.1ni.0]Ss);
+      flash.7]AJ.9vIf=( = function () {
+        var v2 = flash.1ni.0]Ss);
         var v3 = v2.__trace_txt;
         if (v3 == null) {
-          var v4 = [8X6+.Stage.width;
-          var v5 = [8X6+.Stage.height;
+          var v4 = flash.Stage.width;
+          var v5 = flash.Stage.height;
           if (v4 == 0) {
             v4 = 800;
           }
@@ -462,47 +462,47 @@ for ($somevar in arg0) {
           v6.font = '_sans';
           v3.setNewTextFormat(v6);
           v3.selectable = false;
-          v3.textColor = [8X6+.7]AJ. p)sT;
+          v3.textColor = flash.7]AJ. p)sT;
           v2.__trace_lines = new Array();
         }
         return v3;
       };
 
-      [8X6+.7]AJ.__set_trace_color = function (arg0) {
-        ([8X6+.7]AJ.9vIf=(()).textColor = arg0;
-        [8X6+.7]AJ. p)sT = arg0;
+      flash.7]AJ.__set_trace_color = function (arg0) {
+        (flash.7]AJ.9vIf=(()).textColor = arg0;
+        flash.7]AJ. p)sT = arg0;
       };
 
-      [8X6+.7]AJ.__trace = function (arg0, arg1) {
-        var v4 = [8X6+.1ni.0]Ss);
-        var v5 = [8X6+.7]AJ.9vIf=(();
-        var v6 = arg1.fileName + ((arg1.lineNumber == null) ? '' : ':' + arg1.lineNumber) + ': ' + [8X6+.7]AJ.__string_rec(arg0, '');
+      flash.7]AJ.__trace = function (arg0, arg1) {
+        var v4 = flash.1ni.0]Ss);
+        var v5 = flash.7]AJ.9vIf=(();
+        var v6 = arg1.fileName + ((arg1.lineNumber == null) ? '' : ':' + arg1.lineNumber) + ': ' + flash.7]AJ.__string_rec(arg0, '');
         var v7 = v4.__trace_lines.concat(v6.split('\n'));
         v5.text = v7.join('\n');
         for (;;) {
-          if (!(v7.length > 1 && v5.textHeight > [8X6+.Stage.height)) break;
+          if (!(v7.length > 1 && v5.textHeight > flash.Stage.height)) break;
           v7.shift();
           v5.text = v7.join('\n');
         }
         v4.__trace_lines = v7;
       };
 
-      [8X6+.7]AJ.__exc = function (arg0) {
+      flash.7]AJ.__exc = function (arg0) {
         var v3 = '';
-        if ([8X6+.1ni.)2I7S == null) {
-          [8X6+.7]AJ.__trace([8X6+.7]AJ.__string_rec(arg0, '') + v3, {'fileName': '(uncaught exception)'});
+        if (flash.1ni.)2I7S == null) {
+          flash.7]AJ.__trace(flash.7]AJ.__string_rec(arg0, '') + v3, {'fileName': '(uncaught exception)'});
         } else {
-          [8X6+.1ni.)2I7S([8X6+.7]AJ.__string_rec(arg0, ''), []);
+          flash.1ni.)2I7S(flash.7]AJ.__string_rec(arg0, ''), []);
         }
       };
 
-      [8X6+.7]AJ.__clear_trace = function () {
-        var v2 = [8X6+.1ni.0]Ss);
+      flash.7]AJ.__clear_trace = function () {
+        var v2 = flash.1ni.0]Ss);
         v2.__trace_txt.removeTextField();
         v2.__trace_lines = null;
       };
 
-      [8X6+.7]AJ.__init = function (arg0) {
+      flash.7]AJ.__init = function (arg0) {
         var v3 = _global;
         if (!v3.=w 0[) {
           v3.=w 0[ = true;
@@ -548,11 +548,11 @@ for ($somevar in arg0) {
             _global.flash = {};
           }
         }
-        arg0.[8X6+.1ni._global = _global;
-        arg0.[8X6+.1ni._root = _root;
-        arg0.[8X6+.1ni.0]Ss) = arg0;
-        arg0.1Z;X+ = [8X6+.7]AJ.__instanceof;
-        arg0.]6=8H( = [8X6+.7]AJ.__closure;
+        arg0.flash.1ni._global = _global;
+        arg0.flash.1ni._root = _root;
+        arg0.flash.1ni.0]Ss) = arg0;
+        arg0.1Z;X+ = flash.7]AJ.__instanceof;
+        arg0.]6=8H( = flash.7]AJ.__closure;
         if (_global.Stage.align != '') {
           null;
         } else {
@@ -690,7 +690,7 @@ for ($somevar in arg0) {
       };
 
       v1 = new Object();
-      [8X6+._MovieClip = v1;
+      flash._MovieClip = v1;
       v2 = _global.flash._MovieClip;
       // Loop counter not found
 for ($somevar in v2) {
@@ -991,7 +991,7 @@ for ($somevar in arg0) {
       };
 
       v1 = new Object();
-      [8X6+.text = v1;
+      flash.text = v1;
       v2 = _global.flash.text;
       // Loop counter not found
 for ($somevar in v2) {
@@ -1010,19 +1010,19 @@ for ($somevar in v2) {
       v1 = haxe.]{i.prototype;
       v1.__class__ = haxe.]{i;
       haxe.]{i.-[Ra6 = function (arg0, arg1) {
-        [8X6+.7]AJ.__trace(arg0, arg1);
+        flash.7]AJ.__trace(arg0, arg1);
       };
 
       haxe.]{i.+tq5) = function () {
-        [8X6+.7]AJ.__clear_trace();
+        flash.7]AJ.__clear_trace();
       };
 
       haxe.]{i.(H5 S = function (arg0) {
-        [8X6+.7]AJ.__set_trace_color(arg0);
+        flash.7]AJ.__set_trace_color(arg0);
       };
 
       v1 = new Object();
-      [8X6+.3[4k{ = v1;
+      flash.3[4k{ = v1;
       v2 = _global.flash.filters;
       // Loop counter not found
 for ($somevar in v2) {
@@ -1051,7 +1051,7 @@ for ($somevar in v2) {
       };
 
       v1 = new Object();
-      [8X6+.0000 = v1;
+      flash.0000 = v1;
       v2 = _global.flash.geom;
       // Loop counter not found
 for ($somevar in v2) {
@@ -1241,11 +1241,11 @@ for ($somevar in v2) {
       v1 = 3Wt.prototype;
       v1.__class__ = 3Wt;
       v1.__class__.=B = function (arg0, arg1) {
-        return [8X6+.7]AJ.__instanceof(arg0, arg1);
+        return flash.7]AJ.__instanceof(arg0, arg1);
       };
 
       v1.__class__.+_PpF = function (arg0) {
-        return [8X6+.7]AJ.__string_rec(arg0, '');
+        return flash.7]AJ.__string_rec(arg0, '');
       };
 
       v1.__class__.9n6 = function (arg0) {
@@ -1731,7 +1731,7 @@ for ($somevar in v2) {
           v7 *= v4._yscale * 0.01;
           v6 += v4._x;
           v7 += v4._y;
-          if (v4 == arg1 || v4 == [8X6+.1ni._root) {
+          if (v4 == arg1 || v4 == flash.1ni._root) {
             return {'((': v6, ')(': v7};
           }
           arg0 = v4;
@@ -1770,7 +1770,7 @@ for ($somevar in v2) {
           arg3 = 0;
         }
         var v6 = 9K.53kZ-(.0[Y.{SXC{(arg2);
-        var v7 = new [8X6+.Color(arg0);
+        var v7 = new flash.Color(arg0);
         var v8 = arg1 / 100;
         var v9 = {'_': null};
         var v10 = 3Wt.9n6(100 - arg1);
@@ -1790,7 +1790,7 @@ for ($somevar in v2) {
           arg2 = -255;
         }
         var v5 = 9K.53kZ-(.0[Y.2ya 0((arg1);
-        var v6 = new [8X6+.Color(arg0);
+        var v6 = new flash.Color(arg0);
         var v7 = {'_': null};
         v7.ra = 100;
         v7.ga = 100;
@@ -1947,7 +1947,7 @@ for ($somevar in v2) {
         if (arg4 == null) {
           arg4 = false;
         }
-        var v7 = new [8X6+.3[4k{.GlowFilter();
+        var v7 = new flash.3[4k{.GlowFilter();
         v7.blurX = arg1;
         v7.blurY = arg1;
         v7.strength = arg2;
@@ -1965,7 +1965,7 @@ for ($somevar in v2) {
         if (arg2 == null) {
           arg2 = 0;
         }
-        var v5 = new [8X6+.3[4k{.BlurFilter();
+        var v5 = new flash.3[4k{.BlurFilter();
         v5.blurX = arg1;
         v5.blurY = arg2;
         var v6 = arg0.filters;
@@ -1998,7 +1998,7 @@ for ($somevar in v2) {
           var v11 = v9;
           v8[v11] = v7[v11] * (1 - arg1) + arg4[v11] * arg1;
         }
-        v9 = new [8X6+.3[4k{.ColorMatrixFilter();
+        v9 = new flash.3[4k{.ColorMatrixFilter();
         v9.matrix = v8;
         v10 = arg0.filters;
         v10.push(v9);
@@ -2023,49 +2023,49 @@ for ($somevar in v2) {
 
       v1.+Y = null;
       v1.,Y = null;
-      [8X6+.1ni = function () {};
+      flash.1ni = function () {};
 
-      [8X6+.1ni.__name__ = ['[8X6+', '1ni'];
-      v1 = [8X6+.1ni.prototype;
-      v1.__class__ = [8X6+.1ni;
-      [8X6+.1ni._global = null;
-      [8X6+.1ni._root = null;
-      [8X6+.1ni.0]Ss) = null;
-      [8X6+.1ni.)2I7S = null;
-      [8X6+.1ni.-[Ra6 = function (arg0) {
+      flash.1ni.__name__ = ['flash', '1ni'];
+      v1 = flash.1ni.prototype;
+      v1.__class__ = flash.1ni;
+      flash.1ni._global = null;
+      flash.1ni._root = null;
+      flash.1ni.0]Ss) = null;
+      flash.1ni.)2I7S = null;
+      flash.1ni.-[Ra6 = function (arg0) {
         trace(arg0);
       };
 
-      [8X6+.1ni.[8N, = function (arg0) {
+      flash.1ni.[8N, = function (arg0) {
         return eval(arg0);
       };
 
-      [8X6+.1ni.9jX3L = function (arg0, arg1) {
+      flash.1ni.9jX3L = function (arg0, arg1) {
         getURL(arg0, (arg1 == null) ? '_self' : arg1);
       };
 
-      [8X6+.1ni.;AI]A = function (arg0, arg1) {
+      flash.1ni.;AI]A = function (arg0, arg1) {
         fscommand('' + arg0, (arg1 == null) ? '' : arg1);
       };
 
-      [8X6+.1ni.0oxy3 = function (arg0, arg1) {
+      flash.1ni.0oxy3 = function (arg0, arg1) {
         arg1 = (arg1 == 'bframe' || arg1 == 'bmax') ? 'print:#' + arg1 : 'print:';
         getURL(arg1, arg0);
       };
 
-      [8X6+.1ni.6{1o=( = function () {
+      flash.1ni.6{1o=( = function () {
         return getTimer();
       };
 
-      [8X6+.1ni.6vCsj = function () {
-        return [8X6+.1ni._root.$version;
+      flash.1ni.6vCsj = function () {
+        return flash.1ni._root.$version;
       };
 
-      [8X6+.1ni.}0fUr = function (arg0, arg1) {
-        [8X6+.1ni._global.Object.registerClass(arg0, arg1);
+      flash.1ni.}0fUr = function (arg0, arg1) {
+        flash.1ni._global.Object.registerClass(arg0, arg1);
       };
 
-      [8X6+.1ni.4x-4 = function (arg0) {
+      flash.1ni.4x-4 = function (arg0) {
         var v3 = new Array();
         // Loop counter not found
 for ($somevar in arg0) {
@@ -2074,8 +2074,8 @@ for ($somevar in arg0) {
         return v3;
       };
 
-      [8X6+.1ni.4}6gG( = function (arg0) {
-        [8X6+.1ni.)2I7S = arg0;
+      flash.1ni.4}6gG( = function (arg0) {
+        flash.1ni.)2I7S = arg0;
       };
 
       v1 = new Object();
@@ -2170,35 +2170,35 @@ for ($somevar in v2) {
       v1.][(,H( = null;
       v1.505t0 = function () {
         var v2 = null;
-        if ([8X6+.Key.isDown([8X6+.Key.RIGHT)) {
+        if (flash.Key.isDown(flash.Key.RIGHT)) {
           v2 = 0;
         }
-        if ([8X6+.Key.isDown([8X6+.Key.DOWN)) {
+        if (flash.Key.isDown(flash.Key.DOWN)) {
           v2 = 1;
         }
-        if ([8X6+.Key.isDown([8X6+.Key.LEFT)) {
+        if (flash.Key.isDown(flash.Key.LEFT)) {
           v2 = 2;
         }
-        if ([8X6+.Key.isDown([8X6+.Key.UP)) {
+        if (flash.Key.isDown(flash.Key.UP)) {
           v2 = 3;
         }
         if (44{N.)=R;3) {
-          if ([8X6+.Key.isDown(109)) {
+          if (flash.Key.isDown(109)) {
             this.2ZB=l = [1];
           }
-          if ([8X6+.Key.isDown(107)) {
+          if (flash.Key.isDown(107)) {
             this.2ZB=l = [this.[R*C)[0] - 1];
           }
-          if ([8X6+.Key.isDown([8X6+.Key.ENTER)) {
+          if (flash.Key.isDown(flash.Key.ENTER)) {
             this.(AtqE((this.+Hp());
           }
-          if ([8X6+.Key.isDown([8X6+.Key.CONTROL)) {
+          if (flash.Key.isDown(flash.Key.CONTROL)) {
             this.4Kb}8(();
           }
-          if ([8X6+.Key.isDown([8X6+.Key.BACKSPACE)) {
+          if (flash.Key.isDown(flash.Key.BACKSPACE)) {
             this.6qoiQ();
           }
-          if ([8X6+.Key.isDown(80)) {
+          if (flash.Key.isDown(80)) {
             this.=-f0+( = [];
           }
         }
@@ -2337,7 +2337,7 @@ for ($somevar in v2) {
           this. p[2,([v4] = [];
         }
         this.(KA.)6(YK( = this.32.18wU*(44{N.(h4SU);
-        this.(KA.)6(YK(.9I* = new [8X6+.}ZF-m.BitmapData(44{N.=OA, 44{N.=OA, true, 0);
+        this.(KA.)6(YK(.9I* = new flash.}ZF-m.BitmapData(44{N.=OA, 44{N.=OA, true, 0);
         this.(KA.)6(YK(.attachBitmap(this.(KA.)6(YK(.9I*, 1);
         v2 = this.32.*=_p_('mcSquare', 44{N.(h4SU);
         9K.53kZ-(.0[Y.;CYOh(this.(KA.)6(YK(, 3Wt.random(20), 16750848);
@@ -2393,7 +2393,7 @@ for ($somevar in v2) {
                     v11.gotoAndStop(v9 + this.=S7A * 20 + 11);
                     v11._yscale = (44{N.-Wa[ / 30) * 100;
                     v11._xscale = v11._yscale;
-                    this.(KA.)6(YK(.9I*.fillRect(new [8X6+.0000.Rectangle(v8 * 44{N.-Wa[, v5 * 44{N.-Wa[ - 2, 44{N.-Wa[, 44{N.-Wa[ + 2), 0);
+                    this.(KA.)6(YK(.9I*.fillRect(new flash.0000.Rectangle(v8 * 44{N.-Wa[, v5 * 44{N.-Wa[ - 2, 44{N.-Wa[, 44{N.-Wa[ + 2), 0);
                     v11.smc.stop();
                     this.6Yoj1 = v11;
                     this.32.08M8(this.(KA.)6(YK();
@@ -2416,7 +2416,7 @@ for ($somevar in v2) {
             v2.smc.gotoAndStop(v10);
             v2.smc.smc.gotoAndStop(3Wt.random(v2.smc.smc._totalframes) + 1);
             v2.smc.smc.smc.gotoAndStop(3Wt.random(v2.smc.smc.smc._totalframes) + 1);
-            v11 = new [8X6+.0000.Matrix();
+            v11 = new flash.0000.Matrix();
             v11.scale(44{N.-Wa[ / 30, 44{N.-Wa[ / 30);
             v11.translate(v8 * 44{N.-Wa[, v5 * 44{N.-Wa[);
             this.(KA.)6(YK(.9I*.draw(v2, v11);
@@ -3089,7 +3089,7 @@ for ($somevar in v2) {
           while (v5 < v4.length) {
             var v6 = v4[v5];
             ++v5;
-            var v7 = new [8X6+.0000.Matrix();
+            var v7 = new flash.0000.Matrix();
             v7.scale(v6._xscale / 100, v6._yscale / 100);
             v7.translate(v6._x, v6._y);
             this.(KA.)6(YK(.9I*.draw(v6, v7);
@@ -3352,28 +3352,28 @@ for ($somevar in v2) {
         var v2 = Math.cos(this.*6Ugv * 0.01);
         if (this.,Ewgv == null) {
           this.,Ewgv = this.6QA.18wU*(44{N.841,4);
-          this.,Ewgv.9I* = new [8X6+.}ZF-m.BitmapData(44{N.=OA * 2, 44{N.*OA, false, 16711680);
+          this.,Ewgv.9I* = new flash.}ZF-m.BitmapData(44{N.=OA * 2, 44{N.*OA, false, 16711680);
           this.,Ewgv.attachBitmap(this.,Ewgv.9I*, 0);
           this.,Ewgv._x = 0;
         }
         this.,Ewgv.9I*.fillRect(this.,Ewgv.9I*.rectangle, 16711680);
-        var v3 = new [8X6+.0000.Matrix();
+        var v3 = new flash.0000.Matrix();
         v3.translate(44{N.=OA, 0);
         this.,Ewgv.9I*.draw(this.(KA, v3);
         var v4 = this.6QA.*=_p_('mcDisplacement', 0);
-        var v5 = new [8X6+.}ZF-m.BitmapData(44{N.=OA, 44{N.*OA, false, 0);
-        v5.draw(v4, new [8X6+.0000.Matrix());
+        var v5 = new flash.}ZF-m.BitmapData(44{N.=OA, 44{N.*OA, false, 0);
+        v5.draw(v4, new flash.0000.Matrix());
         v4.removeMovieClip();
-        var v6 = new [8X6+.3[4k{.DisplacementMapFilter();
+        var v6 = new flash.3[4k{.DisplacementMapFilter();
         v6.componentX = 2;
         v6.componentY = 1;
         var v7 = 160;
         v6.scaleX = 44{N.=OA * 2 + 4;
         v6.scaleY = v7 + v2 * v7;
-        v6.mapPoint = new [8X6+.0000.Point(0, 0);
+        v6.mapPoint = new flash.0000.Point(0, 0);
         v6.mapBitmap = v5;
         v6.mode = 'clamp';
-        this.,Ewgv.9I*.applyFilter(this.,Ewgv.9I*, new [8X6+.0000.Rectangle(0, 0, 44{N.=OA, 44{N.*OA), new [8X6+.0000.Point(0, 0), v6);
+        this.,Ewgv.9I*.applyFilter(this.,Ewgv.9I*, new flash.0000.Rectangle(0, 0, 44{N.=OA, 44{N.*OA), new flash.0000.Point(0, 0), v6);
       };
 
       v1.([z;n = function () {
@@ -3632,7 +3632,7 @@ for ($somevar in v2) {
         if (;ndCG.(kJ+1(() != true) {
           return undefined;
         }
-        980Sb._main = new 44{N([8X6+.1ni.0]Ss));
+        980Sb._main = new 44{N(flash.1ni.0]Ss));
       };
 
       v1.__class__.0D 6 = function () {
@@ -3640,14 +3640,14 @@ for ($somevar in v2) {
         980Sb._main.87vE7(();
       };
 
-      [8X6+.7]AJ.__init(this);
-      [8X6+.MovieClip = _global.MovieClip;
-      [8X6+.TextField = _global.TextField;
-      [8X6+.text.StyleSheet = _global.TextField.StyleSheet;
-      [8X6+.Key = _global.Key;
-      [8X6+.Key.addListener([8X6+.Key);
-      [8X6+.Color = _global.Color;
-      [8X6+.TextFormat = _global.TextFormat;
+      flash.7]AJ.__init(this);
+      flash.MovieClip = _global.MovieClip;
+      flash.TextField = _global.TextField;
+      flash.text.StyleSheet = _global.TextField.StyleSheet;
+      flash.Key = _global.Key;
+      flash.Key.addListener(flash.Key);
+      flash.Color = _global.Color;
+      flash.TextFormat = _global.TextFormat;
       var 0 = _global;
       0.Int = {'__name__': ['Int']};
       0.Bool = {'__ename__': ['Bool']};
@@ -3662,7 +3662,7 @@ for ($somevar in v2) {
       String.prototype.__class__ = String;
       String.__name__ = ['String'];
       0.ASSetPropFlags(Array.prototype, null, 7);
-      [8X6+.Stage = _global.Stage;
+      flash.Stage = _global.Stage;
       Math.__name__ = ['Math'];
       Math.NaN = Number.NaN;
       Math.NEGATIVE_INFINITY = Number.NEGATIVE_INFINITY;
@@ -3675,11 +3675,11 @@ for ($somevar in v2) {
         return _global.isNaN(arg0);
       };
 
-      [8X6+.TextSnapshot = _global.TextSnapshot;
+      flash.TextSnapshot = _global.TextSnapshot;
       try {
         9K.53kZ-(.-0]rl.*5oz7( = new Array();
-        [8X6+.7]AJ. p)sT = 0;
-        [8X6+.7]AJ.)Sdm5( = null;
+        flash.7]AJ. p)sT = 0;
+        flash.7]AJ.)Sdm5( = null;
         9K.+7U K.}Sgx4 = 0;
         9K.{-kxL.6GI,F = 32;
         9K.{-kxL.;y}-6( = 0.5;
@@ -3730,8 +3730,8 @@ for ($somevar in v2) {
         44{N.0a+N(( = 5;
         44{N.+5LL+ = 3;
       }
-      catch ([8X6+.7]AJ) {
-        [8X6+.7]AJ.__exc([8X6+.7]AJ);
+      catch (flash.7]AJ) {
+        flash.7]AJ.__exc(flash.7]AJ);
       }
     }
   }

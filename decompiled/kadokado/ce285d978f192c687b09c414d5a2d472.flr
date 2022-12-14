@@ -37,13 +37,13 @@ movie 'ce285d978f192c687b09c414d5a2d472.swf' {
   movieClip 32 90D* {
 
     frame 1 {
-      if (![8X6+) {
-        [8X6+ = new Object();
+      if (!flash) {
+        flash = new Object();
       }
-      if (![8X6+.3[4k{) {
-        [8X6+.3[4k{ = new Object();
+      if (!flash.3[4k{) {
+        flash.3[4k{ = new Object();
       }
-      [8X6+.3[4k{.{lN=R = function () {};
+      flash.3[4k{.{lN=R = function () {};
 
       *r = function () {};
 
@@ -617,7 +617,7 @@ movie 'ce285d978f192c687b09c414d5a2d472.swf' {
         *r.+-(0 = this;
         this.(W3 = new +7U K(}J);
         this.(KA = this.(W3.*=_p_('-V3oG', 1);
-        var v3 = new [8X6+.3[4k{.*svPM();
+        var v3 = new flash.3[4k{.*svPM();
         v3.color = 3767292;
         v3.6x9p = 1;
         v3.4y=T( = 30;
