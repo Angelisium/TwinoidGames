@@ -1396,26 +1396,26 @@ for ($somevar in v2) {
       v1[enumerate v2] = v2[enumerate v2];
     }
     v1 = new Object();
-     D(1 = v1;
-    v2 = _global. D(1;
+    haxe = v1;
+    v2 = _global.haxe;
     // Loop counter not found
 for ($somevar in v2) {
       v1[enumerate v2] = v2[enumerate v2];
     }
-     D(1.]{i = function () {};
+    haxe.]{i = function () {};
 
-     D(1.]{i.__name__ = [' D(1', ']{i'];
-    v1 =  D(1.]{i.prototype;
-    v1.__class__ =  D(1.]{i;
-     D(1.]{i.-[Ra6 = function (arg0, arg1) {
+    haxe.]{i.__name__ = ['haxe', ']{i'];
+    v1 = haxe.]{i.prototype;
+    v1.__class__ = haxe.]{i;
+    haxe.]{i.-[Ra6 = function (arg0, arg1) {
       [8X6+.7]AJ.__trace(arg0, arg1);
     };
 
-     D(1.]{i.+tq5) = function () {
+    haxe.]{i.+tq5) = function () {
       [8X6+.7]AJ.__clear_trace();
     };
 
-     D(1.]{i.(H5 S = function (arg0) {
+    haxe.]{i.(H5 S = function (arg0) {
       [8X6+.7]AJ.__set_trace_color(arg0);
     };
 
@@ -1540,7 +1540,7 @@ for ($somevar in v2) {
 
     9K.53kZ-(.73m.)GiA = function (arg0, arg1) {
       if (arg1 == 0 || (arg1 == null || arg0 == null)) {
-         D(1.]{i.-[Ra6('sMod ERROR! (' + arg0 + ',' + arg1 + ')', {'methodName': 'sMod', 'className': 'mt.bumdum.Num', 'lineNumber': 11, 'fileName': 'Lib.hx'});
+        haxe.]{i.-[Ra6('sMod ERROR! (' + arg0 + ',' + arg1 + ')', {'methodName': 'sMod', 'className': 'mt.bumdum.Num', 'lineNumber': 11, 'fileName': 'Lib.hx'});
         return arg0;
       }
       while (arg0 >= arg1) {
@@ -1776,40 +1776,40 @@ for ($somevar in arg0) {
       [8X6+.1ni.)2I7S = arg0;
     };
 
-     D(1.=6k = function () {};
+    haxe.=6k = function () {};
 
-     D(1.=6k.__name__ = [' D(1', '=6k'];
-    v1 =  D(1.=6k.prototype;
-    v1.__class__ =  D(1.=6k;
-     D(1.=6k.=Z(MN = function (arg0) {
-      return  D(1.=6k.__jsflash_encode(arg0);
+    haxe.=6k.__name__ = ['haxe', '=6k'];
+    v1 = haxe.=6k.prototype;
+    v1.__class__ = haxe.=6k;
+    haxe.=6k.=Z(MN = function (arg0) {
+      return haxe.=6k.__jsflash_encode(arg0);
     };
 
-     D(1.=6k.[Q=Q( = function (arg0, arg1) {
+    haxe.=6k.[Q=Q( = function (arg0, arg1) {
       var v4 = arg0 & 1 | arg1 & 1;
       var v5 = arg0 >>> 1 | arg1 >>> 1;
       return v5 << 1 | v4;
     };
 
-     D(1.=6k.+JYb{ = function (arg0, arg1) {
+    haxe.=6k.+JYb{ = function (arg0, arg1) {
       var v4 = arg0 & 1 ^ arg1 & 1;
       var v5 = arg0 >>> 1 ^ arg1 >>> 1;
       return v5 << 1 | v4;
     };
 
-     D(1.=6k.112b{ = function (arg0, arg1) {
+    haxe.=6k.112b{ = function (arg0, arg1) {
       var v4 = arg0 & 1 & (arg1 & 1);
       var v5 = arg0 >>> 1 & arg1 >>> 1;
       return v5 << 1 | v4;
     };
 
-     D(1.=6k.03 h = function (arg0, arg1) {
+    haxe.=6k.03 h = function (arg0, arg1) {
       var v4 = (arg0 & 65535) + (arg1 & 65535);
       var v5 = (arg0 >> 16) + (arg1 >> 16) + (v4 >> 16);
       return v5 << 16 | v4 & 65535;
     };
 
-     D(1.=6k.8)3= = function (arg0) {
+    haxe.=6k.8)3= = function (arg0) {
       var v3 = '';
       var v4 = '0123456789abcdef';
       var v5 = 0;
@@ -1822,7 +1822,7 @@ for ($somevar in arg0) {
       return v3;
     };
 
-     D(1.=6k.5qhUO = function (arg0) {
+    haxe.=6k.5qhUO = function (arg0) {
       var v3 = (arg0.length + 8 >> 6) + 1;
       var v4 = new Array();
       var v5 = 0;
@@ -1846,32 +1846,32 @@ for ($somevar in arg0) {
       return v4;
     };
 
-     D(1.=6k.1;I = function (arg0, arg1) {
+    haxe.=6k.1;I = function (arg0, arg1) {
       return arg0 << arg1 | arg0 >>> 32 - arg1;
     };
 
-     D(1.=6k.9q+ = function (arg0, arg1, arg2, arg3, arg4, arg5) {
-      return  D(1.=6k.03 h( D(1.=6k.1;I( D(1.=6k.03 h( D(1.=6k.03 h(arg1, arg0),  D(1.=6k.03 h(arg3, arg5)), arg4), arg2);
+    haxe.=6k.9q+ = function (arg0, arg1, arg2, arg3, arg4, arg5) {
+      return haxe.=6k.03 h(haxe.=6k.1;I(haxe.=6k.03 h(haxe.=6k.03 h(arg1, arg0), haxe.=6k.03 h(arg3, arg5)), arg4), arg2);
     };
 
-     D(1.=6k.66 = function (arg0, arg1, arg2, arg3, arg4, arg5, arg6) {
-      return  D(1.=6k.9q+( D(1.=6k.[Q=Q(( D(1.=6k.112b{(arg1, arg2),  D(1.=6k.112b{(arg1 ^ -1, arg3)), arg0, arg1, arg4, arg5, arg6);
+    haxe.=6k.66 = function (arg0, arg1, arg2, arg3, arg4, arg5, arg6) {
+      return haxe.=6k.9q+(haxe.=6k.[Q=Q((haxe.=6k.112b{(arg1, arg2), haxe.=6k.112b{(arg1 ^ -1, arg3)), arg0, arg1, arg4, arg5, arg6);
     };
 
-     D(1.=6k.[8 = function (arg0, arg1, arg2, arg3, arg4, arg5, arg6) {
-      return  D(1.=6k.9q+( D(1.=6k.[Q=Q(( D(1.=6k.112b{(arg1, arg3),  D(1.=6k.112b{(arg2, arg3 ^ -1)), arg0, arg1, arg4, arg5, arg6);
+    haxe.=6k.[8 = function (arg0, arg1, arg2, arg3, arg4, arg5, arg6) {
+      return haxe.=6k.9q+(haxe.=6k.[Q=Q((haxe.=6k.112b{(arg1, arg3), haxe.=6k.112b{(arg2, arg3 ^ -1)), arg0, arg1, arg4, arg5, arg6);
     };
 
-     D(1.=6k.)= = function (arg0, arg1, arg2, arg3, arg4, arg5, arg6) {
-      return  D(1.=6k.9q+( D(1.=6k.+JYb{( D(1.=6k.+JYb{(arg1, arg2), arg3), arg0, arg1, arg4, arg5, arg6);
+    haxe.=6k.)= = function (arg0, arg1, arg2, arg3, arg4, arg5, arg6) {
+      return haxe.=6k.9q+(haxe.=6k.+JYb{(haxe.=6k.+JYb{(arg1, arg2), arg3), arg0, arg1, arg4, arg5, arg6);
     };
 
-     D(1.=6k.1B = function (arg0, arg1, arg2, arg3, arg4, arg5, arg6) {
-      return  D(1.=6k.9q+( D(1.=6k.+JYb{(arg2,  D(1.=6k.[Q=Q((arg1, arg3 ^ -1)), arg0, arg1, arg4, arg5, arg6);
+    haxe.=6k.1B = function (arg0, arg1, arg2, arg3, arg4, arg5, arg6) {
+      return haxe.=6k.9q+(haxe.=6k.+JYb{(arg2, haxe.=6k.[Q=Q((arg1, arg3 ^ -1)), arg0, arg1, arg4, arg5, arg6);
     };
 
-     D(1.=6k.__jsflash_encode = function (arg0) {
-      var v3 =  D(1.=6k.5qhUO(arg0);
+    haxe.=6k.__jsflash_encode = function (arg0) {
+      var v3 = haxe.=6k.5qhUO(arg0);
       var v4 = 1732584193;
       var v5 = -271733879;
       var v6 = -1732584194;
@@ -1883,77 +1883,77 @@ for ($somevar in arg0) {
         var v12 = v6;
         var v13 = v7;
         var v8 = 0;
-        v4 =  D(1.=6k.66(v4, v5, v6, v7, v3[v9 + 0], 7, -680876936);
-        v7 =  D(1.=6k.66(v7, v4, v5, v6, v3[v9 + 1], 12, -389564586);
-        v6 =  D(1.=6k.66(v6, v7, v4, v5, v3[v9 + 2], 17, 606105819);
-        v5 =  D(1.=6k.66(v5, v6, v7, v4, v3[v9 + 3], 22, -1044525330);
-        v4 =  D(1.=6k.66(v4, v5, v6, v7, v3[v9 + 4], 7, -176418897);
-        v7 =  D(1.=6k.66(v7, v4, v5, v6, v3[v9 + 5], 12, 1200080426);
-        v6 =  D(1.=6k.66(v6, v7, v4, v5, v3[v9 + 6], 17, -1473231341);
-        v5 =  D(1.=6k.66(v5, v6, v7, v4, v3[v9 + 7], 22, -45705983);
-        v4 =  D(1.=6k.66(v4, v5, v6, v7, v3[v9 + 8], 7, 1770035416);
-        v7 =  D(1.=6k.66(v7, v4, v5, v6, v3[v9 + 9], 12, -1958414417);
-        v6 =  D(1.=6k.66(v6, v7, v4, v5, v3[v9 + 10], 17, -42063);
-        v5 =  D(1.=6k.66(v5, v6, v7, v4, v3[v9 + 11], 22, -1990404162);
-        v4 =  D(1.=6k.66(v4, v5, v6, v7, v3[v9 + 12], 7, 1804603682);
-        v7 =  D(1.=6k.66(v7, v4, v5, v6, v3[v9 + 13], 12, -40341101);
-        v6 =  D(1.=6k.66(v6, v7, v4, v5, v3[v9 + 14], 17, -1502002290);
-        v5 =  D(1.=6k.66(v5, v6, v7, v4, v3[v9 + 15], 22, 1236535329);
-        v4 =  D(1.=6k.[8(v4, v5, v6, v7, v3[v9 + 1], 5, -165796510);
-        v7 =  D(1.=6k.[8(v7, v4, v5, v6, v3[v9 + 6], 9, -1069501632);
-        v6 =  D(1.=6k.[8(v6, v7, v4, v5, v3[v9 + 11], 14, 643717713);
-        v5 =  D(1.=6k.[8(v5, v6, v7, v4, v3[v9 + 0], 20, -373897302);
-        v4 =  D(1.=6k.[8(v4, v5, v6, v7, v3[v9 + 5], 5, -701558691);
-        v7 =  D(1.=6k.[8(v7, v4, v5, v6, v3[v9 + 10], 9, 38016083);
-        v6 =  D(1.=6k.[8(v6, v7, v4, v5, v3[v9 + 15], 14, -660478335);
-        v5 =  D(1.=6k.[8(v5, v6, v7, v4, v3[v9 + 4], 20, -405537848);
-        v4 =  D(1.=6k.[8(v4, v5, v6, v7, v3[v9 + 9], 5, 568446438);
-        v7 =  D(1.=6k.[8(v7, v4, v5, v6, v3[v9 + 14], 9, -1019803690);
-        v6 =  D(1.=6k.[8(v6, v7, v4, v5, v3[v9 + 3], 14, -187363961);
-        v5 =  D(1.=6k.[8(v5, v6, v7, v4, v3[v9 + 8], 20, 1163531501);
-        v4 =  D(1.=6k.[8(v4, v5, v6, v7, v3[v9 + 13], 5, -1444681467);
-        v7 =  D(1.=6k.[8(v7, v4, v5, v6, v3[v9 + 2], 9, -51403784);
-        v6 =  D(1.=6k.[8(v6, v7, v4, v5, v3[v9 + 7], 14, 1735328473);
-        v5 =  D(1.=6k.[8(v5, v6, v7, v4, v3[v9 + 12], 20, -1926607734);
-        v4 =  D(1.=6k.)=(v4, v5, v6, v7, v3[v9 + 5], 4, -378558);
-        v7 =  D(1.=6k.)=(v7, v4, v5, v6, v3[v9 + 8], 11, -2022574463);
-        v6 =  D(1.=6k.)=(v6, v7, v4, v5, v3[v9 + 11], 16, 1839030562);
-        v5 =  D(1.=6k.)=(v5, v6, v7, v4, v3[v9 + 14], 23, -35309556);
-        v4 =  D(1.=6k.)=(v4, v5, v6, v7, v3[v9 + 1], 4, -1530992060);
-        v7 =  D(1.=6k.)=(v7, v4, v5, v6, v3[v9 + 4], 11, 1272893353);
-        v6 =  D(1.=6k.)=(v6, v7, v4, v5, v3[v9 + 7], 16, -155497632);
-        v5 =  D(1.=6k.)=(v5, v6, v7, v4, v3[v9 + 10], 23, -1094730640);
-        v4 =  D(1.=6k.)=(v4, v5, v6, v7, v3[v9 + 13], 4, 681279174);
-        v7 =  D(1.=6k.)=(v7, v4, v5, v6, v3[v9 + 0], 11, -358537222);
-        v6 =  D(1.=6k.)=(v6, v7, v4, v5, v3[v9 + 3], 16, -722521979);
-        v5 =  D(1.=6k.)=(v5, v6, v7, v4, v3[v9 + 6], 23, 76029189);
-        v4 =  D(1.=6k.)=(v4, v5, v6, v7, v3[v9 + 9], 4, -640364487);
-        v7 =  D(1.=6k.)=(v7, v4, v5, v6, v3[v9 + 12], 11, -421815835);
-        v6 =  D(1.=6k.)=(v6, v7, v4, v5, v3[v9 + 15], 16, 530742520);
-        v5 =  D(1.=6k.)=(v5, v6, v7, v4, v3[v9 + 2], 23, -995338651);
-        v4 =  D(1.=6k.1B(v4, v5, v6, v7, v3[v9 + 0], 6, -198630844);
-        v7 =  D(1.=6k.1B(v7, v4, v5, v6, v3[v9 + 7], 10, 1126891415);
-        v6 =  D(1.=6k.1B(v6, v7, v4, v5, v3[v9 + 14], 15, -1416354905);
-        v5 =  D(1.=6k.1B(v5, v6, v7, v4, v3[v9 + 5], 21, -57434055);
-        v4 =  D(1.=6k.1B(v4, v5, v6, v7, v3[v9 + 12], 6, 1700485571);
-        v7 =  D(1.=6k.1B(v7, v4, v5, v6, v3[v9 + 3], 10, -1894986606);
-        v6 =  D(1.=6k.1B(v6, v7, v4, v5, v3[v9 + 10], 15, -1051523);
-        v5 =  D(1.=6k.1B(v5, v6, v7, v4, v3[v9 + 1], 21, -2054922799);
-        v4 =  D(1.=6k.1B(v4, v5, v6, v7, v3[v9 + 8], 6, 1873313359);
-        v7 =  D(1.=6k.1B(v7, v4, v5, v6, v3[v9 + 15], 10, -30611744);
-        v6 =  D(1.=6k.1B(v6, v7, v4, v5, v3[v9 + 6], 15, -1560198380);
-        v5 =  D(1.=6k.1B(v5, v6, v7, v4, v3[v9 + 13], 21, 1309151649);
-        v4 =  D(1.=6k.1B(v4, v5, v6, v7, v3[v9 + 4], 6, -145523070);
-        v7 =  D(1.=6k.1B(v7, v4, v5, v6, v3[v9 + 11], 10, -1120210379);
-        v6 =  D(1.=6k.1B(v6, v7, v4, v5, v3[v9 + 2], 15, 718787259);
-        v5 =  D(1.=6k.1B(v5, v6, v7, v4, v3[v9 + 9], 21, -343485551);
-        v4 =  D(1.=6k.03 h(v4, v10);
-        v5 =  D(1.=6k.03 h(v5, v11);
-        v6 =  D(1.=6k.03 h(v6, v12);
-        v7 =  D(1.=6k.03 h(v7, v13);
+        v4 = haxe.=6k.66(v4, v5, v6, v7, v3[v9 + 0], 7, -680876936);
+        v7 = haxe.=6k.66(v7, v4, v5, v6, v3[v9 + 1], 12, -389564586);
+        v6 = haxe.=6k.66(v6, v7, v4, v5, v3[v9 + 2], 17, 606105819);
+        v5 = haxe.=6k.66(v5, v6, v7, v4, v3[v9 + 3], 22, -1044525330);
+        v4 = haxe.=6k.66(v4, v5, v6, v7, v3[v9 + 4], 7, -176418897);
+        v7 = haxe.=6k.66(v7, v4, v5, v6, v3[v9 + 5], 12, 1200080426);
+        v6 = haxe.=6k.66(v6, v7, v4, v5, v3[v9 + 6], 17, -1473231341);
+        v5 = haxe.=6k.66(v5, v6, v7, v4, v3[v9 + 7], 22, -45705983);
+        v4 = haxe.=6k.66(v4, v5, v6, v7, v3[v9 + 8], 7, 1770035416);
+        v7 = haxe.=6k.66(v7, v4, v5, v6, v3[v9 + 9], 12, -1958414417);
+        v6 = haxe.=6k.66(v6, v7, v4, v5, v3[v9 + 10], 17, -42063);
+        v5 = haxe.=6k.66(v5, v6, v7, v4, v3[v9 + 11], 22, -1990404162);
+        v4 = haxe.=6k.66(v4, v5, v6, v7, v3[v9 + 12], 7, 1804603682);
+        v7 = haxe.=6k.66(v7, v4, v5, v6, v3[v9 + 13], 12, -40341101);
+        v6 = haxe.=6k.66(v6, v7, v4, v5, v3[v9 + 14], 17, -1502002290);
+        v5 = haxe.=6k.66(v5, v6, v7, v4, v3[v9 + 15], 22, 1236535329);
+        v4 = haxe.=6k.[8(v4, v5, v6, v7, v3[v9 + 1], 5, -165796510);
+        v7 = haxe.=6k.[8(v7, v4, v5, v6, v3[v9 + 6], 9, -1069501632);
+        v6 = haxe.=6k.[8(v6, v7, v4, v5, v3[v9 + 11], 14, 643717713);
+        v5 = haxe.=6k.[8(v5, v6, v7, v4, v3[v9 + 0], 20, -373897302);
+        v4 = haxe.=6k.[8(v4, v5, v6, v7, v3[v9 + 5], 5, -701558691);
+        v7 = haxe.=6k.[8(v7, v4, v5, v6, v3[v9 + 10], 9, 38016083);
+        v6 = haxe.=6k.[8(v6, v7, v4, v5, v3[v9 + 15], 14, -660478335);
+        v5 = haxe.=6k.[8(v5, v6, v7, v4, v3[v9 + 4], 20, -405537848);
+        v4 = haxe.=6k.[8(v4, v5, v6, v7, v3[v9 + 9], 5, 568446438);
+        v7 = haxe.=6k.[8(v7, v4, v5, v6, v3[v9 + 14], 9, -1019803690);
+        v6 = haxe.=6k.[8(v6, v7, v4, v5, v3[v9 + 3], 14, -187363961);
+        v5 = haxe.=6k.[8(v5, v6, v7, v4, v3[v9 + 8], 20, 1163531501);
+        v4 = haxe.=6k.[8(v4, v5, v6, v7, v3[v9 + 13], 5, -1444681467);
+        v7 = haxe.=6k.[8(v7, v4, v5, v6, v3[v9 + 2], 9, -51403784);
+        v6 = haxe.=6k.[8(v6, v7, v4, v5, v3[v9 + 7], 14, 1735328473);
+        v5 = haxe.=6k.[8(v5, v6, v7, v4, v3[v9 + 12], 20, -1926607734);
+        v4 = haxe.=6k.)=(v4, v5, v6, v7, v3[v9 + 5], 4, -378558);
+        v7 = haxe.=6k.)=(v7, v4, v5, v6, v3[v9 + 8], 11, -2022574463);
+        v6 = haxe.=6k.)=(v6, v7, v4, v5, v3[v9 + 11], 16, 1839030562);
+        v5 = haxe.=6k.)=(v5, v6, v7, v4, v3[v9 + 14], 23, -35309556);
+        v4 = haxe.=6k.)=(v4, v5, v6, v7, v3[v9 + 1], 4, -1530992060);
+        v7 = haxe.=6k.)=(v7, v4, v5, v6, v3[v9 + 4], 11, 1272893353);
+        v6 = haxe.=6k.)=(v6, v7, v4, v5, v3[v9 + 7], 16, -155497632);
+        v5 = haxe.=6k.)=(v5, v6, v7, v4, v3[v9 + 10], 23, -1094730640);
+        v4 = haxe.=6k.)=(v4, v5, v6, v7, v3[v9 + 13], 4, 681279174);
+        v7 = haxe.=6k.)=(v7, v4, v5, v6, v3[v9 + 0], 11, -358537222);
+        v6 = haxe.=6k.)=(v6, v7, v4, v5, v3[v9 + 3], 16, -722521979);
+        v5 = haxe.=6k.)=(v5, v6, v7, v4, v3[v9 + 6], 23, 76029189);
+        v4 = haxe.=6k.)=(v4, v5, v6, v7, v3[v9 + 9], 4, -640364487);
+        v7 = haxe.=6k.)=(v7, v4, v5, v6, v3[v9 + 12], 11, -421815835);
+        v6 = haxe.=6k.)=(v6, v7, v4, v5, v3[v9 + 15], 16, 530742520);
+        v5 = haxe.=6k.)=(v5, v6, v7, v4, v3[v9 + 2], 23, -995338651);
+        v4 = haxe.=6k.1B(v4, v5, v6, v7, v3[v9 + 0], 6, -198630844);
+        v7 = haxe.=6k.1B(v7, v4, v5, v6, v3[v9 + 7], 10, 1126891415);
+        v6 = haxe.=6k.1B(v6, v7, v4, v5, v3[v9 + 14], 15, -1416354905);
+        v5 = haxe.=6k.1B(v5, v6, v7, v4, v3[v9 + 5], 21, -57434055);
+        v4 = haxe.=6k.1B(v4, v5, v6, v7, v3[v9 + 12], 6, 1700485571);
+        v7 = haxe.=6k.1B(v7, v4, v5, v6, v3[v9 + 3], 10, -1894986606);
+        v6 = haxe.=6k.1B(v6, v7, v4, v5, v3[v9 + 10], 15, -1051523);
+        v5 = haxe.=6k.1B(v5, v6, v7, v4, v3[v9 + 1], 21, -2054922799);
+        v4 = haxe.=6k.1B(v4, v5, v6, v7, v3[v9 + 8], 6, 1873313359);
+        v7 = haxe.=6k.1B(v7, v4, v5, v6, v3[v9 + 15], 10, -30611744);
+        v6 = haxe.=6k.1B(v6, v7, v4, v5, v3[v9 + 6], 15, -1560198380);
+        v5 = haxe.=6k.1B(v5, v6, v7, v4, v3[v9 + 13], 21, 1309151649);
+        v4 = haxe.=6k.1B(v4, v5, v6, v7, v3[v9 + 4], 6, -145523070);
+        v7 = haxe.=6k.1B(v7, v4, v5, v6, v3[v9 + 11], 10, -1120210379);
+        v6 = haxe.=6k.1B(v6, v7, v4, v5, v3[v9 + 2], 15, 718787259);
+        v5 = haxe.=6k.1B(v5, v6, v7, v4, v3[v9 + 9], 21, -343485551);
+        v4 = haxe.=6k.03 h(v4, v10);
+        v5 = haxe.=6k.03 h(v5, v11);
+        v6 = haxe.=6k.03 h(v6, v12);
+        v7 = haxe.=6k.03 h(v7, v13);
         v9 += 16;
       }
-      return  D(1.=6k.8)3=(v4) +  D(1.=6k.8)3=(v5) +  D(1.=6k.8)3=(v6) +  D(1.=6k.8)3=(v7);
+      return haxe.=6k.8)3=(v4) + haxe.=6k.8)3=(v5) + haxe.=6k.8)3=(v6) + haxe.=6k.8)3=(v7);
     };
 
     9K.]ETZ8 = function (arg0, arg1) {
@@ -2044,7 +2044,7 @@ for ($somevar in arg0) {
       }
       if (!44{N.)=R;3) {
         v5 = 96nT}.+Da3+([8X6+.1ni._root, 'k');
-        var v6 = ( D(1.=6k.=Z(MN(this.) B2.1AF + ';' + this.) B2. n6 + ';' + this.) B2.9CL + ';' + this.) B2.]MJ + ';' + this.) B2.3r0 + ';' + this.) B2.)v+)).substr(0, 5);
+        var v6 = (haxe.=6k.=Z(MN(this.) B2.1AF + ';' + this.) B2. n6 + ';' + this.) B2.9CL + ';' + this.) B2.]MJ + ';' + this.) B2.3r0 + ';' + this.) B2.)v+)).substr(0, 5);
         if (v5 != v6) {
           9K.53kZ-(.0[Y.(H5 S(this.-iB=, 16777215, -50);
         }
@@ -2784,7 +2784,7 @@ for ($somevar in arg0) {
     v1.2h7+L( = function () {};
 
     v1.{L 35 = function (arg0) {
-       D(1.]{i.+tq5)();
+      haxe.]{i.+tq5)();
       var v3 = this.6p5aQ.iterator();
       while (v3.1ll a()) {
         var v4 = v3.7Y-7();
@@ -2859,8 +2859,8 @@ for ($somevar in arg0) {
     };
 
     v1.5DQUA( = function () {
-       D(1.]{i.+tq5)();
-       D(1.]{i.-[Ra6(this.) B2.1AF, {'methodName': 'tracePop', 'className': 'Game', 'lineNumber': 1242, 'fileName': 'Game.hx'});
+      haxe.]{i.+tq5)();
+      haxe.]{i.-[Ra6(this.) B2.1AF, {'methodName': 'tracePop', 'className': 'Game', 'lineNumber': 1242, 'fileName': 'Game.hx'});
     };
 
     v1.87vE7( = function () {

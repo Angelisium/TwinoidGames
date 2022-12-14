@@ -998,26 +998,26 @@ for ($somevar in v2) {
         v1[enumerate v2] = v2[enumerate v2];
       }
       v1 = new Object();
-       D(1 = v1;
-      v2 = _global. D(1;
+      haxe = v1;
+      v2 = _global.haxe;
       // Loop counter not found
 for ($somevar in v2) {
         v1[enumerate v2] = v2[enumerate v2];
       }
-       D(1.]{i = function () {};
+      haxe.]{i = function () {};
 
-       D(1.]{i.__name__ = [' D(1', ']{i'];
-      v1 =  D(1.]{i.prototype;
-      v1.__class__ =  D(1.]{i;
-       D(1.]{i.-[Ra6 = function (arg0, arg1) {
+      haxe.]{i.__name__ = ['haxe', ']{i'];
+      v1 = haxe.]{i.prototype;
+      v1.__class__ = haxe.]{i;
+      haxe.]{i.-[Ra6 = function (arg0, arg1) {
         [8X6+.7]AJ.__trace(arg0, arg1);
       };
 
-       D(1.]{i.+tq5) = function () {
+      haxe.]{i.+tq5) = function () {
         [8X6+.7]AJ.__clear_trace();
       };
 
-       D(1.]{i.(H5 S = function (arg0) {
+      haxe.]{i.(H5 S = function (arg0) {
         [8X6+.7]AJ.__set_trace_color(arg0);
       };
 
@@ -1174,18 +1174,18 @@ for ($somevar in v2) {
       v1.[b = null;
       v1.]b = null;
       v1.(KpGn = null;
-       D(1.{-kxL = function (arg0) {
+      haxe.{-kxL = function (arg0) {
         var (K = this;
         this.*B = _global.setInterval(function () {
           (K.;LI();
         }, arg0);
       };
 
-       D(1.{-kxL.__name__ = [' D(1', '{-kxL'];
-      v1 =  D(1.{-kxL.prototype;
-      v1.__class__ =  D(1.{-kxL;
-       D(1.{-kxL.,Hwi) = function (-, arg1) {
-        var ] = new  D(1.{-kxL(arg1);
+      haxe.{-kxL.__name__ = ['haxe', '{-kxL'];
+      v1 = haxe.{-kxL.prototype;
+      v1.__class__ = haxe.{-kxL;
+      haxe.{-kxL.,Hwi) = function (-, arg1) {
+        var ] = new haxe.{-kxL(arg1);
         ].;LI = function () {
           ].stop();
           -();
@@ -1194,14 +1194,14 @@ for ($somevar in v2) {
         return ];
       };
 
-       D(1.{-kxL.1HBsv = function (arg0, arg1) {
-        var v4 =  D(1.{-kxL.7MX}5();
+      haxe.{-kxL.1HBsv = function (arg0, arg1) {
+        var v4 = haxe.{-kxL.7MX}5();
         var v5 = arg0();
-         D(1.]{i.-[Ra6( D(1.{-kxL.7MX}5() - v4 + 's', arg1);
+        haxe.]{i.-[Ra6(haxe.{-kxL.7MX}5() - v4 + 's', arg1);
         return v5;
       };
 
-       D(1.{-kxL.7MX}5 = function () {
+      haxe.{-kxL.7MX}5 = function () {
         return getTimer() / 1000;
       };
 
@@ -1613,7 +1613,7 @@ for ($somevar in v2) {
           v3 = 3Wt.random(44{N.(K.-Y9G);
           ++v4;
           if (v4 > 100) {
-             D(1.]{i.-[Ra6('noFreePos!', {'fileName': 'Ghost.hx', 'lineNumber': 131, 'className': 'Ghost', 'methodName': 'getFreePos'});
+            haxe.]{i.-[Ra6('noFreePos!', {'fileName': 'Ghost.hx', 'lineNumber': 131, 'className': 'Ghost', 'methodName': 'getFreePos'});
             break;
           }
         } while (!44{N.77ldJ((v2, v3));
@@ -1737,7 +1737,7 @@ for ($somevar in v2) {
           arg0 = v4;
           ++v5;
           if (v5 > 20) {
-             D(1.]{i.-[Ra6('GET PARENT COORD ERROR', {'fileName': 'Lib.hx', 'lineNumber': 82, 'className': 'mt.bumdum.Geom', 'methodName': 'getParentCoord'});
+            haxe.]{i.-[Ra6('GET PARENT COORD ERROR', {'fileName': 'Lib.hx', 'lineNumber': 82, 'className': 'mt.bumdum.Geom', 'methodName': 'getParentCoord'});
             break;
           }
         }
@@ -2483,7 +2483,7 @@ for ($somevar in v2) {
         this.)_().-iB=.gotoAndPlay('go');
         this.}SC6.}2D* = 0;
         this.=kIA = _Game.)qF[.,=ya;
-         D(1.{-kxL.,Hwi)(]6=8H(('{szoF(', this), 700);
+        haxe.{-kxL.,Hwi)(]6=8H(('{szoF(', this), 700);
         this.6Yoj1.smc.gotoAndPlay(2);
         if (44{N.;Gzw*( && this.7NRL,( == null) {
           v2 = 0;
@@ -2773,7 +2773,7 @@ for ($somevar in v2) {
           }
           ++v4;
           if (v4 > 200) {
-             D(1.]{i.-[Ra6('PIOOOOOOOOOOU ! getRandomPos ERROR', {'fileName': 'Game.hx', 'lineNumber': 1574, 'className': 'Game', 'methodName': 'getRandomPos'});
+            haxe.]{i.-[Ra6('PIOOOOOOOOOOU ! getRandomPos ERROR', {'fileName': 'Game.hx', 'lineNumber': 1574, 'className': 'Game', 'methodName': 'getRandomPos'});
             return null;
           }
         }
@@ -2979,7 +2979,7 @@ for ($somevar in v2) {
             return v6;
           }
         }
-         D(1.]{i.-[Ra6('getTeleport ERROR', {'fileName': 'Game.hx', 'lineNumber': 518, 'className': 'Game', 'methodName': 'getTeleportPos'});
+        haxe.]{i.-[Ra6('getTeleport ERROR', {'fileName': 'Game.hx', 'lineNumber': 518, 'className': 'Game', 'methodName': 'getTeleportPos'});
         return null;
       };
 
@@ -3055,7 +3055,7 @@ for ($somevar in v2) {
 
       v1.2DWWK( = function () {
         this.=kIA = _Game.)qF[.5+H2)(;
-         D(1.{-kxL.,Hwi)(]6=8H(('9i[3(', this), 500);
+        haxe.{-kxL.,Hwi)(]6=8H(('9i[3(', this), 500);
       };
 
       v1.3E*}A( = null;

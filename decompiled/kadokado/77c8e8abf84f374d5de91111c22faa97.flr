@@ -635,26 +635,26 @@ for ($somevar in v2) {
         v1[enumerate v2] = v2[enumerate v2];
       }
       v1 = new Object();
-       D(1 = v1;
-      v2 = _global. D(1;
+      haxe = v1;
+      v2 = _global.haxe;
       // Loop counter not found
 for ($somevar in v2) {
         v1[enumerate v2] = v2[enumerate v2];
       }
-       D(1.]{i = function () {};
+      haxe.]{i = function () {};
 
-       D(1.]{i.__name__ = [' D(1', ']{i'];
-      v1 =  D(1.]{i.prototype;
-      v1.__class__ =  D(1.]{i;
-       D(1.]{i.-[Ra6 = function (arg0, arg1) {
+      haxe.]{i.__name__ = ['haxe', ']{i'];
+      v1 = haxe.]{i.prototype;
+      v1.__class__ = haxe.]{i;
+      haxe.]{i.-[Ra6 = function (arg0, arg1) {
         [8X6+.7]AJ.__trace(arg0, arg1);
       };
 
-       D(1.]{i.+tq5) = function () {
+      haxe.]{i.+tq5) = function () {
         [8X6+.7]AJ.__clear_trace();
       };
 
-       D(1.]{i.(H5 S = function (arg0) {
+      haxe.]{i.(H5 S = function (arg0) {
         [8X6+.7]AJ.__set_trace_color(arg0);
       };
 
@@ -1062,7 +1062,7 @@ for ($somevar in v2) {
 
       9K.53kZ-(.73m.)GiA = function (arg0, arg1) {
         if (arg1 == 0 || (arg1 == null || arg0 == null)) {
-           D(1.]{i.-[Ra6('sMod ERROR! (' + arg0 + ',' + arg1 + ')', {'fileName': 'Lib.hx', 'lineNumber': 11, 'className': 'mt.bumdum.Num', 'methodName': 'sMod'});
+          haxe.]{i.-[Ra6('sMod ERROR! (' + arg0 + ',' + arg1 + ')', {'fileName': 'Lib.hx', 'lineNumber': 11, 'className': 'mt.bumdum.Num', 'methodName': 'sMod'});
           return arg0;
         }
         while (arg0 >= arg1) {
@@ -1506,7 +1506,7 @@ for ($somevar in v2) {
       ['6U)[', 0].toString = )PVyX;
       _Game.)qF[.6U)[ = ['6U)[', 0];
       44{N = function (arg0) {
-         D(1.]{i.(H5 S(16777215);
+        haxe.]{i.(H5 S(16777215);
         this.-iB= = arg0;
         44{N.(K = this;
         this.6QA = new 9K.+7U K(this.-iB=);
@@ -1536,7 +1536,7 @@ for ($somevar in v2) {
             return v6;
           }
         }
-         D(1.]{i.-[Ra6('generator not found at ' + arg0 + ',' + arg1 + '!', {'fileName': 'Game.hx', 'lineNumber': 1061, 'className': 'Game', 'methodName': 'getGenerator'});
+        haxe.]{i.-[Ra6('generator not found at ' + arg0 + ',' + arg1 + '!', {'fileName': 'Game.hx', 'lineNumber': 1061, 'className': 'Game', 'methodName': 'getGenerator'});
         return null;
       };
 
@@ -1669,7 +1669,7 @@ for ($somevar in v2) {
             break;
           }
         }
-         D(1.]{i.-[Ra6('can\'t find pos', {'fileName': 'Game.hx', 'lineNumber': 769, 'className': 'Game', 'methodName': 'getEmptyPos'});
+        haxe.]{i.-[Ra6('can\'t find pos', {'fileName': 'Game.hx', 'lineNumber': 769, 'className': 'Game', 'methodName': 'getEmptyPos'});
         return null;
       };
 
@@ -1701,7 +1701,7 @@ for ($somevar in v2) {
           ++v6;
         }
         if (v6 == 4) {
-           D(1.]{i.-[Ra6('-- (' + v4 + ',' + v5 + ') --', {'fileName': 'Game.hx', 'lineNumber': 1030, 'className': 'Game', 'methodName': 'getTargetDir'});
+          haxe.]{i.-[Ra6('-- (' + v4 + ',' + v5 + ') --', {'fileName': 'Game.hx', 'lineNumber': 1030, 'className': 'Game', 'methodName': 'getTargetDir'});
           return 0;
         }
         return v6;
@@ -2172,8 +2172,8 @@ for ($somevar in v2) {
       v1.3[ = null;
       v1.87vE7( = function () {
         if (44{N.)=R;3 && [8X6+.Key.isDown(84)) {
-           D(1.]{i.+tq5)();
-           D(1.]{i.(H5 S(16777215);
+          haxe.]{i.+tq5)();
+          haxe.]{i.(H5 S(16777215);
           var v2 = '';
           var v3 = 0;
           var v4 = this.{Y5KB;
@@ -2186,8 +2186,8 @@ for ($somevar in v2) {
             }
             v2 = v2 + '-' + v6;
           }
-           D(1.]{i.-[Ra6('', {'fileName': 'Game.hx', 'lineNumber': 175, 'className': 'Game', 'methodName': 'update'});
-           D(1.]{i.-[Ra6(v2, {'fileName': 'Game.hx', 'lineNumber': 176, 'className': 'Game', 'methodName': 'update'});
+          haxe.]{i.-[Ra6('', {'fileName': 'Game.hx', 'lineNumber': 175, 'className': 'Game', 'methodName': 'update'});
+          haxe.]{i.-[Ra6(v2, {'fileName': 'Game.hx', 'lineNumber': 176, 'className': 'Game', 'methodName': 'update'});
         }
         v2 = this.=kIA;
         v3 = v2[1];
