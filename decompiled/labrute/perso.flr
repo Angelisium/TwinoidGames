@@ -1,0 +1,1501 @@
+movie 'perso.swf' {
+// flash 9, total frames: 1, frame rate: 40 fps, 550x400 px, compressed
+  
+  // unknown tag 88 length 79
+
+  movieClip 9 palette {
+  }
+
+  frame 1 {
+    function decode62(n) {
+      if (n >= 48 && n <= 58) {
+        return n - 48;
+      }
+      if (n >= 65 && n <= 90) {
+        return n - 65 + 10;
+      }
+      if (n >= 97 && n <= 122) {
+        return n - 97 + 36;
+      }
+      return 63;
+    }
+
+    function _init(data, ch) {
+      cl = data.split(';');
+      var v3 = 0;
+      var v1 = 0;
+      while (v1 < cl.length) {
+        var v2 = int(cl[v1]);
+        v3 = (v3 * 11 ^ v2) & 131071;
+        cl[v1] = v2;
+        ++v1;
+      }
+      if (ch !== -1 && v3 != ch) {
+        return undefined;
+      }
+      initPalette();
+      apply();
+      if (_anim == false) {
+        _p0b.smc.gotoAndStop(1);
+      }
+    }
+
+    function initPalette() {
+      var v7 = this.attachMovie('palette', 'palinst', 0);
+      if (v7 == null) {
+        return undefined;
+      }
+      v7.gotoAndStop(cl[0] % v7._totalframes + 1);
+      var v9 = v7.getBounds(v7);
+      var v6 = new flash.display.BitmapData(v9.xMax, v9.yMax);
+      v6.draw(v7);
+      v7.removeMovieClip();
+      var v8 = palette.length;
+      palette = new Array();
+      var v4 = 0;
+      while (v4 < v8) {
+        var v3 = new Array();
+        var v5 = v4 * 15 + 7;
+        while (!false) {
+          var v2 = v6.getPixel32(v3.length * 15 + 7, v5);
+          if (v2 == 0 || v2 == -1) {
+            break;
+          }
+          v3.push(v2 & 16777215);
+        }
+        palette.push(v3);
+        ++v4;
+      }
+      v6.dispose();
+    }
+
+    function apply() {
+      applyRec(this);
+    }
+
+    function applyRec(mc) {
+      for (var v7 in mc) {
+        var v1 = mc[v7];
+        if (typeof v1 == 'movieclip') {
+          if (v1._name.substr(0, 2) == '_p') {
+            var v2 = parseInt(v1._name.substr(2));
+            var v5 = cl[v2] % v1._totalframes;
+            v1.gotoAndStop(v5 + 1);
+          } else {
+            if (v1._name.substr(0, 4) == '_col') {
+              var v3 = parseInt(v1._name.substr(4));
+              var v4 = palette[v3];
+              setColor(v1, v4[cl[pMax + v3] % v4.length]);
+            }
+          }
+          applyRec(v1, storedv2);
+        }
+      }
+    }
+
+    function setColor(mc, col) {
+      var v1 = {'r': col >> 16, 'g': col >> 8 & 255, 'b': col & 255};
+      var v2 = new Color(mc);
+      var v3 = {'ra': 100, 'ga': 100, 'ba': 100, 'aa': 100, 'rb': v1.r - 255, 'gb': v1.g - 255, 'bb': v1.b - 255, 'ab': 0};
+      v2.setTransform(v3);
+    }
+
+    pMax = 11;
+    var defpal = [16773855, 16764025, 16755230, 15531993, 13369239, 14019327, 9948159, 9151447, 14646839, 12082973, 13834264, 16775598, 15785113];
+    palette = [defpal, defpal, defpal, defpal, defpal];
+    _init(_root.data, _root.chk);
+    if (_root.flip != null) {
+      body._xscale = -100;
+    }
+    if (_root.alpha != null) {
+      _root._alpha = int(_root.alpha);
+      _root.blendMode = 'layer';
+    }
+  }
+
+  movieClip 12  {
+  }
+
+  movieClip 14  {
+  }
+
+  movieClip 15  {
+  }
+
+  movieClip 17  {
+  }
+
+  movieClip 18  {
+  }
+
+  movieClip 19  {
+  }
+
+  movieClip 20  {
+  }
+
+  movieClip 22  {
+  }
+
+  movieClip 24  {
+  }
+
+  movieClip 26  {
+  }
+
+  movieClip 28  {
+  }
+
+  movieClip 30  {
+  }
+
+  movieClip 33  {
+  }
+
+  movieClip 34  {
+  }
+
+  movieClip 35  {
+  }
+
+  movieClip 36  {
+  }
+
+  movieClip 37  {
+  }
+
+  movieClip 39  {
+  }
+
+  movieClip 41  {
+  }
+
+  movieClip 42  {
+  }
+
+  movieClip 44  {
+  }
+
+  movieClip 45  {
+  }
+
+  movieClip 58  {
+
+    frame 1 {
+      var wid = _parent._parent._parent._wid;
+      if (wid == null) {
+        wid = _parent._parent._parent._parent._wid;
+      }
+      gotoAndStop(wid + 1);
+      stop();
+    }
+  }
+
+  movieClip 60  {
+  }
+
+  movieClip 62  {
+  }
+
+  movieClip 63  {
+  }
+
+  movieClip 64  {
+  }
+
+  movieClip 65  {
+  }
+
+  movieClip 67  {
+  }
+
+  movieClip 68  {
+  }
+
+  movieClip 69  {
+  }
+
+  movieClip 70  {
+  }
+
+  movieClip 72  {
+  }
+
+  movieClip 75  {
+  }
+
+  movieClip 77  {
+  }
+
+  movieClip 79  {
+  }
+
+  movieClip 81  {
+  }
+
+  movieClip 83  {
+  }
+
+  movieClip 85  {
+  }
+
+  movieClip 86  {
+  }
+
+  movieClip 88  {
+  }
+
+  movieClip 90  {
+  }
+
+  movieClip 91  {
+  }
+
+  movieClip 92  {
+  }
+
+  movieClip 93  {
+  }
+
+  movieClip 94  {
+  }
+
+  movieClip 95  {
+  }
+
+  movieClip 97  {
+  }
+
+  movieClip 98  {
+  }
+
+  movieClip 100  {
+  }
+
+  movieClip 103  {
+  }
+
+  movieClip 105  {
+  }
+
+  movieClip 107  {
+  }
+
+  movieClip 109  {
+  }
+
+  movieClip 110  {
+  }
+
+  movieClip 111  {
+  }
+
+  movieClip 112  {
+  }
+
+  movieClip 114  {
+  }
+
+  movieClip 116  {
+  }
+
+  movieClip 118  {
+  }
+
+  movieClip 120  {
+  }
+
+  movieClip 123  {
+  }
+
+  movieClip 125  {
+  }
+
+  movieClip 127  {
+  }
+
+  movieClip 129  {
+  }
+
+  movieClip 132  {
+  }
+
+  movieClip 133  {
+  }
+
+  movieClip 135  {
+  }
+
+  movieClip 136  {
+  }
+
+  movieClip 137  {
+  }
+
+  movieClip 138  {
+  }
+
+  movieClip 139  {
+  }
+
+  movieClip 141  {
+  }
+
+  movieClip 143  {
+  }
+
+  movieClip 145  {
+  }
+
+  movieClip 146  {
+  }
+
+  movieClip 148  {
+  }
+
+  movieClip 151  {
+  }
+
+  movieClip 153  {
+  }
+
+  movieClip 155  {
+  }
+
+  movieClip 157  {
+  }
+
+  movieClip 160  {
+  }
+
+  movieClip 162  {
+  }
+
+  movieClip 163  {
+  }
+
+  movieClip 164  {
+  }
+
+  movieClip 165  {
+  }
+
+  movieClip 166  {
+  }
+
+  movieClip 168  {
+  }
+
+  movieClip 170  {
+  }
+
+  movieClip 173  {
+  }
+
+  movieClip 175  {
+  }
+
+  movieClip 178  {
+  }
+
+  movieClip 179  {
+  }
+
+  movieClip 180  {
+  }
+
+  movieClip 181  {
+  }
+
+  movieClip 183  {
+  }
+
+  movieClip 185  {
+  }
+
+  movieClip 188  {
+  }
+
+  movieClip 190  {
+  }
+
+  movieClip 192  {
+  }
+
+  movieClip 194  {
+  }
+
+  movieClip 196  {
+  }
+
+  movieClip 197  {
+  }
+
+  movieClip 198  {
+  }
+
+  movieClip 199  {
+  }
+
+  movieClip 201  {
+  }
+
+  movieClip 203  {
+  }
+
+  movieClip 204  {
+  }
+
+  movieClip 205  {
+  }
+
+  movieClip 206  {
+  }
+
+  movieClip 207  {
+  }
+
+  movieClip 208  {
+  }
+
+  movieClip 210  {
+  }
+
+  movieClip 212  {
+  }
+
+  movieClip 214  {
+  }
+
+  movieClip 215  {
+  }
+
+  movieClip 217  {
+  }
+
+  movieClip 220  {
+  }
+
+  movieClip 222  {
+  }
+
+  movieClip 224  {
+  }
+
+  movieClip 226  {
+  }
+
+  movieClip 228  {
+  }
+
+  movieClip 229  {
+  }
+
+  movieClip 230  {
+  }
+
+  movieClip 231  {
+  }
+
+  movieClip 232  {
+  }
+
+  movieClip 234  {
+  }
+
+  movieClip 236  {
+  }
+
+  movieClip 238  {
+  }
+
+  movieClip 240  {
+  }
+
+  movieClip 243  {
+  }
+
+  movieClip 246  {
+  }
+
+  movieClip 248  {
+  }
+
+  movieClip 249  {
+  }
+
+  movieClip 251  {
+  }
+
+  movieClip 253  {
+  }
+
+  movieClip 255  {
+  }
+
+  movieClip 257  {
+  }
+
+  movieClip 259  {
+  }
+
+  movieClip 262  {
+  }
+
+  movieClip 263  {
+  }
+
+  movieClip 264  {
+  }
+
+  movieClip 265  {
+  }
+
+  movieClip 266  {
+  }
+
+  movieClip 267  {
+  }
+
+  movieClip 269  {
+  }
+
+  movieClip 271  {
+  }
+
+  movieClip 273  {
+  }
+
+  movieClip 274  {
+  }
+
+  movieClip 275  {
+  }
+
+  movieClip 277  {
+  }
+
+  movieClip 280  {
+  }
+
+  movieClip 282  {
+  }
+
+  movieClip 284  {
+  }
+
+  movieClip 286  {
+  }
+
+  movieClip 287  {
+  }
+
+  movieClip 289  {
+  }
+
+  movieClip 292  {
+  }
+
+  movieClip 294  {
+  }
+
+  movieClip 296  {
+  }
+
+  movieClip 298  {
+  }
+
+  movieClip 300  {
+  }
+
+  movieClip 302  {
+  }
+
+  movieClip 304  {
+  }
+
+  movieClip 306  {
+  }
+
+  movieClip 308  {
+  }
+
+  movieClip 310  {
+  }
+
+  movieClip 314  {
+  }
+
+  movieClip 316  {
+  }
+
+  movieClip 318  {
+  }
+
+  movieClip 321  {
+  }
+
+  movieClip 323  {
+  }
+
+  movieClip 325  {
+  }
+
+  movieClip 327  {
+  }
+
+  movieClip 328  {
+  }
+
+  movieClip 329  {
+  }
+
+  movieClip 330  {
+  }
+
+  movieClip 331  {
+  }
+
+  movieClip 332  {
+  }
+
+  movieClip 334  {
+  }
+
+  movieClip 337  {
+  }
+
+  movieClip 339  {
+
+    frame 1 {
+      stop();
+    }
+  }
+
+  movieClip 341  {
+
+    frame 1 {
+      if (_parent._parent._parent._parent._parent._parent._parent.moveTo == null) {
+        gotoAndStop(1);
+      }
+    }
+  }
+
+  movieClip 344  {
+
+    frame 1 {
+      stop();
+    }
+  }
+
+  movieClip 346  {
+
+    frame 1 {
+      stop();
+    }
+  }
+
+  movieClip 348  {
+
+    frame 1 {
+      if (_parent._parent._parent._parent._parent._parent._parent.moveTo == null) {
+        gotoAndStop(1);
+      }
+    }
+  }
+
+  movieClip 349  {
+
+    frame 1 {
+      stop();
+    }
+  }
+
+  movieClip 350  {
+  }
+
+  movieClip 352  {
+  }
+
+  movieClip 355  {
+  }
+
+  movieClip 357  {
+  }
+
+  movieClip 360  {
+  }
+
+  movieClip 362  {
+  }
+
+  movieClip 364  {
+  }
+
+  movieClip 365  {
+  }
+
+  movieClip 367  {
+  }
+
+  movieClip 369  {
+  }
+
+  movieClip 372  {
+  }
+
+  movieClip 374  {
+  }
+
+  movieClip 376  {
+  }
+
+  movieClip 378  {
+  }
+
+  movieClip 380  {
+  }
+
+  movieClip 383  {
+
+    frame 1 {
+      stop();
+    }
+  }
+
+  movieClip 386  {
+  }
+
+  movieClip 388  {
+  }
+
+  movieClip 391  {
+  }
+
+  movieClip 393  {
+  }
+
+  movieClip 395  {
+  }
+
+  movieClip 397  {
+  }
+
+  movieClip 399  {
+  }
+
+  movieClip 400  {
+  }
+
+  movieClip 401  {
+  }
+
+  movieClip 403  {
+  }
+
+  movieClip 405  {
+  }
+
+  movieClip 406  {
+  }
+
+  movieClip 408  {
+  }
+
+  movieClip 409  {
+  }
+
+  movieClip 410  {
+  }
+
+  movieClip 411  {
+  }
+
+  movieClip 412  {
+  }
+
+  movieClip 413  {
+  }
+
+  movieClip 414  {
+  }
+
+  movieClip 415  {
+  }
+
+  movieClip 416  {
+  }
+
+  movieClip 418  {
+  }
+
+  movieClip 420  {
+  }
+
+  movieClip 422  {
+  }
+
+  movieClip 426  {
+  }
+
+  movieClip 428  {
+  }
+
+  movieClip 430  {
+  }
+
+  movieClip 431  {
+  }
+
+  movieClip 432  {
+  }
+
+  movieClip 433  {
+  }
+
+  movieClip 434  {
+  }
+
+  movieClip 436  {
+  }
+
+  movieClip 438  {
+  }
+
+  movieClip 440  {
+  }
+
+  movieClip 442  {
+  }
+
+  movieClip 444  {
+  }
+
+  movieClip 446  {
+  }
+
+  movieClip 448  {
+  }
+
+  movieClip 450  {
+  }
+
+  movieClip 452  {
+  }
+
+  movieClip 454  {
+  }
+
+  movieClip 456  {
+  }
+
+  movieClip 457  {
+  }
+
+  movieClip 458  {
+  }
+
+  movieClip 459  {
+  }
+
+  movieClip 460  {
+  }
+
+  movieClip 461  {
+
+    frame 1 {
+      if (_parent._parent.moveTo == null) {
+        gotoAndStop(1);
+      }
+    }
+  }
+
+  movieClip 463  {
+  }
+
+  movieClip 465  {
+  }
+
+  movieClip 468  {
+  }
+
+  movieClip 470  {
+  }
+
+  movieClip 471  {
+  }
+
+  movieClip 472  {
+  }
+
+  movieClip 473  {
+  }
+
+  movieClip 474  {
+  }
+
+  movieClip 476  {
+  }
+
+  movieClip 478  {
+  }
+
+  movieClip 479  {
+  }
+
+  movieClip 481  {
+  }
+
+  movieClip 482  {
+  }
+
+  movieClip 483  {
+  }
+
+  movieClip 484  {
+  }
+
+  movieClip 485  {
+  }
+
+  movieClip 486  {
+  }
+
+  movieClip 487  {
+  }
+
+  movieClip 488  {
+  }
+
+  movieClip 489  {
+  }
+
+  movieClip 491  {
+  }
+
+  movieClip 492  {
+  }
+
+  movieClip 493  {
+  }
+
+  movieClip 495  {
+  }
+
+  movieClip 497  {
+  }
+
+  movieClip 498  {
+  }
+
+  movieClip 499  {
+  }
+
+  movieClip 500  {
+  }
+
+  movieClip 501  {
+  }
+
+  movieClip 502  {
+  }
+
+  movieClip 503  {
+  }
+
+  movieClip 504  {
+  }
+
+  movieClip 506  {
+  }
+
+  movieClip 508  {
+  }
+
+  movieClip 510  {
+  }
+
+  movieClip 511  {
+  }
+
+  movieClip 512  {
+  }
+
+  movieClip 513  {
+  }
+
+  movieClip 514  {
+  }
+
+  movieClip 515  {
+  }
+
+  movieClip 516  {
+  }
+
+  movieClip 518  {
+  }
+
+  movieClip 519  {
+  }
+
+  movieClip 521  {
+  }
+
+  movieClip 523  {
+  }
+
+  movieClip 524  {
+  }
+
+  movieClip 526  {
+  }
+
+  movieClip 528  {
+  }
+
+  movieClip 530  {
+  }
+
+  movieClip 531  {
+  }
+
+  movieClip 532  {
+  }
+
+  movieClip 533  {
+  }
+
+  movieClip 534  {
+  }
+
+  movieClip 535  {
+  }
+
+  movieClip 537  {
+  }
+
+  movieClip 539  {
+  }
+
+  movieClip 541  {
+  }
+
+  movieClip 542  {
+  }
+
+  movieClip 544  {
+  }
+
+  movieClip 547  {
+  }
+
+  movieClip 549  {
+  }
+
+  movieClip 551  {
+  }
+
+  movieClip 552  {
+  }
+
+  movieClip 553  {
+  }
+
+  movieClip 554  {
+  }
+
+  movieClip 555  {
+  }
+
+  movieClip 557  {
+  }
+
+  movieClip 559  {
+  }
+
+  movieClip 561  {
+  }
+
+  movieClip 563  {
+  }
+
+  movieClip 565  {
+  }
+
+  movieClip 566  {
+  }
+
+  movieClip 567  {
+  }
+
+  movieClip 568  {
+  }
+
+  movieClip 569  {
+  }
+
+  movieClip 570  {
+  }
+
+  movieClip 571  {
+  }
+
+  movieClip 573  {
+  }
+
+  movieClip 575  {
+  }
+
+  movieClip 576  {
+  }
+
+  movieClip 578  {
+  }
+
+  movieClip 580  {
+  }
+
+  movieClip 583  {
+  }
+
+  movieClip 584  {
+  }
+
+  movieClip 585  {
+  }
+
+  movieClip 586  {
+  }
+
+  movieClip 587  {
+  }
+
+  movieClip 588  {
+  }
+
+  movieClip 589  {
+  }
+
+  movieClip 590  {
+  }
+
+  movieClip 592  {
+  }
+
+  movieClip 594  {
+  }
+
+  movieClip 595  {
+  }
+
+  movieClip 596  {
+  }
+
+  movieClip 597  {
+  }
+
+  movieClip 598  {
+  }
+
+  movieClip 599  {
+  }
+
+  movieClip 600  {
+  }
+
+  movieClip 603  {
+  }
+
+  movieClip 604  {
+  }
+
+  movieClip 605  {
+  }
+
+  movieClip 606  {
+  }
+
+  movieClip 607  {
+  }
+
+  movieClip 608  {
+  }
+
+  movieClip 610  {
+  }
+
+  movieClip 613  {
+  }
+
+  movieClip 615  {
+  }
+
+  movieClip 617  {
+  }
+
+  movieClip 619  {
+  }
+
+  movieClip 622  {
+  }
+
+  movieClip 623  {
+  }
+
+  movieClip 625  {
+  }
+
+  movieClip 628  {
+  }
+
+  movieClip 630  {
+  }
+
+  movieClip 632  {
+  }
+
+  movieClip 634  {
+  }
+
+  movieClip 635  {
+  }
+
+  movieClip 636  {
+  }
+
+  movieClip 637  {
+  }
+
+  movieClip 638  {
+  }
+
+  movieClip 639  {
+  }
+
+  movieClip 640  {
+  }
+
+  movieClip 642  {
+  }
+
+  movieClip 645  {
+  }
+
+  movieClip 647  {
+  }
+
+  movieClip 649  {
+  }
+
+  movieClip 650  {
+  }
+
+  movieClip 652  {
+  }
+
+  movieClip 654  {
+  }
+
+  movieClip 655  {
+  }
+
+  movieClip 657  {
+  }
+
+  movieClip 658  {
+  }
+
+  movieClip 660  {
+  }
+
+  movieClip 664  {
+  }
+
+  movieClip 666  {
+  }
+
+  movieClip 667  {
+  }
+
+  movieClip 669  {
+  }
+
+  movieClip 672  {
+  }
+
+  movieClip 674  {
+  }
+
+  movieClip 675  {
+  }
+
+  movieClip 676  {
+  }
+
+  movieClip 677  {
+  }
+
+  movieClip 678  {
+  }
+
+  movieClip 679  {
+  }
+
+  movieClip 681  {
+  }
+
+  movieClip 682  {
+
+    frame 1 {
+      stop();
+    }
+  }
+
+  movieClip 683  {
+  }
+
+  movieClip 685  {
+  }
+
+  movieClip 687  {
+  }
+
+  movieClip 689  {
+  }
+
+  movieClip 691  {
+  }
+
+  movieClip 693  {
+  }
+
+  movieClip 694  {
+  }
+
+  movieClip 696  {
+  }
+
+  movieClip 698  {
+  }
+
+  movieClip 700  {
+  }
+
+  movieClip 701  {
+  }
+
+  movieClip 703  {
+  }
+
+  movieClip 705  {
+  }
+
+  movieClip 707  {
+  }
+
+  movieClip 709  {
+  }
+
+  movieClip 711  {
+  }
+
+  movieClip 712  {
+  }
+
+  movieClip 713  {
+  }
+
+  movieClip 715  {
+  }
+
+  movieClip 717  {
+  }
+
+  movieClip 718  {
+  }
+
+  movieClip 720  {
+  }
+
+  movieClip 721  {
+  }
+
+  movieClip 722  {
+  }
+
+  movieClip 723  {
+  }
+
+  movieClip 724  {
+  }
+
+  movieClip 725  {
+  }
+
+  movieClip 726  {
+  }
+
+  movieClip 727  {
+  }
+
+  movieClip 729  {
+  }
+
+  movieClip 730  {
+  }
+
+  movieClip 732  {
+  }
+
+  movieClip 734  {
+  }
+
+  movieClip 735  {
+  }
+
+  movieClip 736  {
+  }
+
+  movieClip 737  {
+  }
+
+  movieClip 738  {
+  }
+
+  movieClip 741  {
+  }
+
+  movieClip 743  {
+  }
+
+  movieClip 745  {
+  }
+
+  movieClip 747  {
+  }
+
+  movieClip 748  {
+  }
+
+  movieClip 749  {
+  }
+
+  movieClip 750  {
+  }
+
+  movieClip 751  {
+  }
+
+  movieClip 752  {
+
+    frame 1 {
+      if (_parent._parent.moveTo == null) {
+        gotoAndStop(1);
+      }
+    }
+  }
+
+  movieClip 753  {
+  }
+}
