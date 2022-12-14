@@ -933,10 +933,10 @@ for ($somevar in v2) {
 for ($somevar in v2) {
       v1[enumerate v2] = v2[enumerate v2];
     }
-    ;JYPN = function (arg0) {
+    Loader = function (arg0) {
       this.-iB= = arg0;
       this.32 = new 9K.+7U K(this.-iB=);
-      this.2W}C = ;JYPN.64TL._v;
+      this.2W}C = Loader.64TL._v;
       this.,0Qk5( = new [8X6+.Sound();
       this.{vF)8 = [];
       this.68)K= = [];
@@ -947,7 +947,7 @@ for ($somevar in v2) {
         var v5 = v3;
         this.=SA.push([]);
       }
-      if (([8X6+.1ni._root._url.split(;JYPN.4N{jH)).length != 2) {
+      if (([8X6+.1ni._root._url.split(Loader.4N{jH)).length != 2) {
         return undefined;
       }
       v3 = {};
@@ -955,7 +955,7 @@ for ($somevar in v2) {
       [8X6+.1ni._global.frusion = v3;
       v3.gameclient = v4;
       v4.GameClient = ,f {P;
-      if (!;JYPN.64TL._sound) {
+      if (!Loader.64TL._sound) {
         this.=h2h_(false);
       }
       this.+-(0 = this.32.18wU*(1);
@@ -974,20 +974,20 @@ for ($somevar in v2) {
       this.[wBA,.onLoadInit = this.[wBA,.onLoadComplete;
       this.[wBA,.onLoadProgress = function (arg0, arg1, arg2) {};
 
-      this.[wBA,.loadClip(;JYPN.64TL._swf, this.+-(0);
+      this.[wBA,.loadClip(Loader.64TL._swf, this.+-(0);
       v5 = new  D(1.0JleF.+pHi9();
       v5.1Pi3n('api', {'_setSound': ]6=8H(('=h2h_', this), '_reset': ]6=8H(('{L 35', this)});
       var v6 =  D(1.0JleF.8ZAwM.]YRz6(('cnx', v5);
     };
 
-    ;JYPN.__name__ = [';JYPN'];
-    v1 = ;JYPN.prototype;
-    v1.__class__ = ;JYPN;
+    Loader.__name__ = ['Loader'];
+    v1 = Loader.prototype;
+    v1.__class__ = Loader;
     v1.__class__.*KB2 = null;
     v1.__class__.64TL = null;
     v1.__class__.0D 6 = function () {
-      ;JYPN.64TL = *hr_A.8;0{_('data');
-      ;JYPN.*KB2 = new ;JYPN([8X6+.1ni.0]Ss));
+      Loader.64TL = *hr_A.8;0{_('data');
+      Loader.*KB2 = new Loader([8X6+.1ni.0]Ss));
     };
 
     v1.68)K= = null;
@@ -1078,9 +1078,9 @@ for ($somevar in v2) {
     v1.=SA = null;
     v1.}FLHZ = function () {
       this.+-(0._visible = true;
-      if (;JYPN.64TL._g == 'mb2') {
+      if (Loader.64TL._g == 'mb2') {
         var v2 = this.32.*=_p_('mb2Frame', 1);
-        v2.gotoAndStop(;JYPN.64TL._w ? 2 : 1);
+        v2.gotoAndStop(Loader.64TL._w ? 2 : 1);
       }
       if (this.2W}C.length > 0) {
         v2 = this.2W}C.shift();
@@ -1123,7 +1123,7 @@ for ($somevar in v2) {
         v2.push(v4.*);
       }
       this.+r)6j = null;
-      *hr_A.{}B5(;JYPN.64TL._url, v2, function (arg0) {
+      *hr_A.{}B5(Loader.64TL._url, v2, function (arg0) {
         var v3 = 0;
         var v4 = +0.length;
         while (v3 < v4) {
@@ -2491,9 +2491,9 @@ for ($somevar in v2) {
 
     ,f {P = function () {
       null;
-      this.[wBA, = ;JYPN.*KB2;
+      this.[wBA, = Loader.*KB2;
       this.[wBA,.frusion = this;
-      this._d = ;JYPN.64TL;
+      this._d = Loader.64TL;
       this.dailyData = this._d._today;
       this.slots = (this._d._slots == null) ? [] :  D(1.5QGZh.;LI(this._d._slots);
     };
@@ -3413,9 +3413,9 @@ for ($somevar in v2) {
       [8X6+.7]AJ. p)sT = 0;
       [8X6+.7]AJ.)Sdm5( = null;
       9K.+7U K.}Sgx4 = 0;
-      ;JYPN.4N{jH = '.muxxu.com/';
-      ;JYPN.;9VQ = 5700284;
-      ;JYPN.6lVL = 3.5;
+      Loader.4N{jH = '.muxxu.com/';
+      Loader.;9VQ = 5700284;
+      Loader.6lVL = 3.5;
        D(1.0JleF.8ZAwM.5xf4)( = new 19{O();
       *hr_A.8cSN = false;
       *hr_A.8nG,E = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-_';
@@ -3428,7 +3428,7 @@ for ($somevar in v2) {
        D(1.*_bc9.}VCyQ = false;
        D(1.*_bc9.(SkV ( = false;
        D(1.*_bc9.9tEy4( = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789%:';
-      ;JYPN.0D 6();
+      Loader.0D 6();
     }
     catch ([8X6+.7]AJ) {
       [8X6+.7]AJ.__exc([8X6+.7]AJ);

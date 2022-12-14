@@ -4,7 +4,7 @@ movie 'loader.swf' compressed // flash 8, total frames: 5, frame rate: 40 fps, 6
   defineMovieClip 1 // total frames: 1
 
     frame 0
-      constants 'flash', 'Object', 'filters', '{lN=R', ';JYPN', 'Stage', 'align', '$LT', 'substring', '2;dS5', '8,-h5', '$data', '3Wt', '9HH5a', '6{X3L', '2', '}-gW1(', '}Yx*k', '00ME4', '{4U=+(', '1N59{', '0qCp', '$swf', '8W 5', '$lang', '$en', '$mode', 'Game mode error', '0QyZ*', '8PSfr', ']{i', '(H5 S', 'prototype', '$redirect', 'LoadVars', '$mid', '8T5p', 'POST', '_self', 'send', '+-(0', '-4*l((', '3K4}n', ')3 =h', '_url', 'length', 'substr', 'Le serveur de fichiers n\'as pas été trouvé.', '(K', 'MovieClipLoader', 'onLoadError', 'Loading error : ', 'onLoadInit', ')9Uid', 'loadClip', 'Loading init error', '4[=)_', '6{VYR', '3Wr3K(', '(x5W-(', '(,3G,(', ',{nF;', '=FDiF(', '980Sb', '}-B2', '+0vHq', '', '5nD)Y', '0D 6', '(30Y2', 'removeMovieClip', '(R6pe', '6b,A', 'onData', 'XML', 'ignoreWhite', 'firstChild', 'nextSibling', 'get', '{z9p', '$playId', '5N2p', '$key', '}mMDB', '$loadUrl', 'load', '*hr_A', 'data', '$pid', '=Z(MN', '$endUrl', 'sendAndLoad', '$saveUrl', '$act', '$saveAct', '4qXr8', ',lfT2', '+*1*E', '52L;r', ',hR]y', '.', '$YY', '}wUHz', ':', '$XX', '/', '_', '$vs', '1', '(LU{2', 'error() : ', 'trace', 'text', 'SharedObject', 'getLocal', '$v', 'random', '9tEy4(', 'charAt', ' VgbI', '7bSH*', '_x', '[MqDO', '_y', '*sd+;(', 'gotoAndStop', '$fr', '$es', '3', '8VNE8(', '_currentframe', '_totalframes', 'split', 'join', 'indexOf', '$RJrjk05eeJrzp5Pazre7z9an788baz61kBKJ1EZ4', '$xNOpZUjm:AeNLIAOTqZhMxyRY4bCkE_MMUj', '$xNOpZUjm:_wKLIAOTqZhMxyRY4bCkElD5hR', '$xNOpZUjm:AaPpI3VZsWqWDvaYiv:bF95c3qB', '(WBt)', ']}Ou;(', '3I0pG', '{;7F4', '8U(wu', '}[cpB', '9xv]A', '{yQ=Q', '+,W', '2y+dV', '(tBee', '3)i[=', ' J3IC', '[6jRc', ')8Fyj', '*V9', '(U82', 'charCodeAt', ')S9MP', '0}+', ')h79', '=rJ', '1qeUg', ',vS*E', '95O)C(', '67lKi', '}NmjN', '}(W8p', ']S-Di', '*{MXp', '8', '9ss9+', ',Gmip', 'Array', '-jONz', ')goHJ(', 'string', 'number', 'boolean', 'isNaN', '=Pn1n', 'Math', 'abs', '61HqS', 'push', '0y51k', '$uasxIintfo', ':_abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'  
+      constants 'flash', 'Object', 'filters', '{lN=R', 'Loader', 'Stage', 'align', '$LT', 'substring', '2;dS5', '8,-h5', '$data', '3Wt', '9HH5a', '6{X3L', '2', '}-gW1(', '}Yx*k', '00ME4', '{4U=+(', '1N59{', '0qCp', '$swf', '8W 5', '$lang', '$en', '$mode', 'Game mode error', '0QyZ*', '8PSfr', ']{i', '(H5 S', 'prototype', '$redirect', 'LoadVars', '$mid', '8T5p', 'POST', '_self', 'send', '+-(0', '-4*l((', '3K4}n', ')3 =h', '_url', 'length', 'substr', 'Le serveur de fichiers n\'as pas été trouvé.', '(K', 'MovieClipLoader', 'onLoadError', 'Loading error : ', 'onLoadInit', ')9Uid', 'loadClip', 'Loading init error', '4[=)_', '6{VYR', '3Wr3K(', '(x5W-(', '(,3G,(', ',{nF;', '=FDiF(', '980Sb', '}-B2', '+0vHq', '', '5nD)Y', '0D 6', '(30Y2', 'removeMovieClip', '(R6pe', '6b,A', 'onData', 'XML', 'ignoreWhite', 'firstChild', 'nextSibling', 'get', '{z9p', '$playId', '5N2p', '$key', '}mMDB', '$loadUrl', 'load', '*hr_A', 'data', '$pid', '=Z(MN', '$endUrl', 'sendAndLoad', '$saveUrl', '$act', '$saveAct', '4qXr8', ',lfT2', '+*1*E', '52L;r', ',hR]y', '.', '$YY', '}wUHz', ':', '$XX', '/', '_', '$vs', '1', '(LU{2', 'error() : ', 'trace', 'text', 'SharedObject', 'getLocal', '$v', 'random', '9tEy4(', 'charAt', ' VgbI', '7bSH*', '_x', '[MqDO', '_y', '*sd+;(', 'gotoAndStop', '$fr', '$es', '3', '8VNE8(', '_currentframe', '_totalframes', 'split', 'join', 'indexOf', '$RJrjk05eeJrzp5Pazre7z9an788baz61kBKJ1EZ4', '$xNOpZUjm:AeNLIAOTqZhMxyRY4bCkE_MMUj', '$xNOpZUjm:_wKLIAOTqZhMxyRY4bCkElD5hR', '$xNOpZUjm:AaPpI3VZsWqWDvaYiv:bF95c3qB', '(WBt)', ']}Ou;(', '3I0pG', '{;7F4', '8U(wu', '}[cpB', '9xv]A', '{yQ=Q', '+,W', '2y+dV', '(tBee', '3)i[=', ' J3IC', '[6jRc', ')8Fyj', '*V9', '(U82', 'charCodeAt', ')S9MP', '0}+', ')h79', '=rJ', '1qeUg', ',vS*E', '95O)C(', '67lKi', '}NmjN', '}(W8p', ']S-Di', '*{MXp', '8', '9ss9+', ',Gmip', 'Array', '-jONz', ')goHJ(', 'string', 'number', 'boolean', 'isNaN', '=Pn1n', 'Math', 'abs', '61HqS', 'push', '0y51k', '$uasxIintfo', ':_abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'  
       push 'flash'
       getVariable
       not
@@ -37,7 +37,7 @@ movie 'loader.swf' compressed // flash 8, total frames: 5, frame rate: 40 fps, 6
 
       setRegister r:0
       setMember
-      push ';JYPN'
+      push 'Loader'
       function2 (r:2='}J') (r:1='this')
         push 'Stage'
         getVariable
@@ -62,9 +62,9 @@ movie 'loader.swf' compressed // flash 8, total frames: 5, frame rate: 40 fps, 6
         equals
         not
         branchIfTrue label3
-        push ';JYPN'
+        push 'Loader'
         getVariable
-        push '}-gW1(', ';JYPN'
+        push '}-gW1(', 'Loader'
         getVariable
         push '}Yx*k'
         getMember
@@ -219,7 +219,7 @@ movie 'loader.swf' compressed // flash 8, total frames: 5, frame rate: 40 fps, 6
         getMember
         setRegister r:2
         pop
-        push ';JYPN'
+        push 'Loader'
         getVariable
         push '}-gW1('
         getMember
@@ -227,7 +227,7 @@ movie 'loader.swf' compressed // flash 8, total frames: 5, frame rate: 40 fps, 6
         getMember
         push 0, 2, r:2, 'substr'
         callMethod
-        push ';JYPN'
+        push 'Loader'
         getVariable
         push '}-gW1('
         getMember
@@ -269,7 +269,7 @@ movie 'loader.swf' compressed // flash 8, total frames: 5, frame rate: 40 fps, 6
         end // of function 
 
         setMember
-        push ';JYPN'
+        push 'Loader'
         getVariable
         push '}-gW1('
         getMember
@@ -344,7 +344,7 @@ movie 'loader.swf' compressed // flash 8, total frames: 5, frame rate: 40 fps, 6
         push '}-B2'
         callMethod
         pop
-        push ';JYPN'
+        push 'Loader'
         getVariable
         push '+0vHq'
         getMember
@@ -466,7 +466,7 @@ movie 'loader.swf' compressed // flash 8, total frames: 5, frame rate: 40 fps, 6
         end // of function 
 
         setMember
-        push ';JYPN'
+        push 'Loader'
         getVariable
         push '+0vHq'
         getMember
@@ -584,7 +584,7 @@ movie 'loader.swf' compressed // flash 8, total frames: 5, frame rate: 40 fps, 6
       setMember
       push r:1, '+*1*E'
       function2 (r:2='url') (r:1='this')
-        push ';JYPN'
+        push 'Loader'
         getVariable
         push '52L;r'
         getMember
@@ -621,7 +621,7 @@ movie 'loader.swf' compressed // flash 8, total frames: 5, frame rate: 40 fps, 6
       setMember
       push r:1, '{4U=+('
       function2 () (r:1='this')
-        push ';JYPN'
+        push 'Loader'
         getVariable
         push '+0vHq'
         getMember
@@ -629,7 +629,7 @@ movie 'loader.swf' compressed // flash 8, total frames: 5, frame rate: 40 fps, 6
         equals
         not
         branchIfTrue label15
-        push ';JYPN'
+        push 'Loader'
         getVariable
         push '+0vHq', ''
         setMember
@@ -651,40 +651,40 @@ movie 'loader.swf' compressed // flash 8, total frames: 5, frame rate: 40 fps, 6
         equals
         not
         branchIfTrue label16
-        push ';JYPN'
+        push 'Loader'
         getVariable
-        push '+0vHq', ';JYPN'
+        push '+0vHq', 'Loader'
         getVariable
         push '(LU{2'
         getMember
         setMember
-        push ';JYPN'
+        push 'Loader'
         getVariable
-        push '}-gW1(', ';JYPN'
+        push '}-gW1(', 'Loader'
         getVariable
         push '(LU{2'
         getMember
         setMember
        label16:
-        push ';JYPN'
+        push 'Loader'
         getVariable
-        push '+0vHq', ';JYPN'
+        push '+0vHq', 'Loader'
         getVariable
         push '+0vHq'
         getMember
         push 1, r:this, '+*1*E'
         callMethod
         setMember
-        push ';JYPN'
+        push 'Loader'
         getVariable
-        push '}-gW1(', ';JYPN'
+        push '}-gW1(', 'Loader'
         getVariable
         push '}-gW1('
         getMember
         push 1, r:this, '+*1*E'
         callMethod
         setMember
-        push ';JYPN'
+        push 'Loader'
         getVariable
         push '+0vHq'
         getMember
@@ -788,7 +788,7 @@ movie 'loader.swf' compressed // flash 8, total frames: 5, frame rate: 40 fps, 6
         setMember
         push r:this, ')3 =h'
         getMember
-        push '_x', ';JYPN'
+        push '_x', 'Loader'
         getVariable
         push '[MqDO'
         getMember
@@ -797,7 +797,7 @@ movie 'loader.swf' compressed // flash 8, total frames: 5, frame rate: 40 fps, 6
         setMember
         push r:this, ')3 =h'
         getMember
-        push '_y', ';JYPN'
+        push '_y', 'Loader'
         getVariable
         push '*sd+;('
         getMember
@@ -3460,7 +3460,7 @@ movie 'loader.swf' compressed // flash 8, total frames: 5, frame rate: 40 fps, 6
     getVariable
     push 1, '90D*'
     getVariable
-    push ';JYPN'
+    push 'Loader'
     newMethod
     setVariable
   end // of frame 1

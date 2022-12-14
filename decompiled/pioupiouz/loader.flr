@@ -12,12 +12,12 @@ movie 'loader.swf' {
       }
       flash.filters.{lN=R = function () {};
 
-      ;JYPN = function (}J) {
+      Loader = function (}J) {
         Stage.align = '$LT'.substring(1);
         this.2;dS5 = 0;
         this.8,-h5 = }J;
         if (3Wt.6{X3L(3Wt.9HH5a(), '$data'.substring(1)) == '2') {
-          ;JYPN.}-gW1( = ;JYPN.}Yx*k;
+          Loader.}-gW1( = Loader.}Yx*k;
         }
         this.00ME4();
         if (this.{4U=+(() == false) {
@@ -39,7 +39,7 @@ movie 'loader.swf' {
         ]{i.(H5 S(16711680);
       };
 
-      var v1 = ;JYPN.prototype;
+      var v1 = Loader.prototype;
       v1.1N59{ = function ([wH) {
         var v3 = 3Wt.9HH5a();
         if ([wH == null) {
@@ -58,7 +58,7 @@ movie 'loader.swf' {
         this.+-(0 = 3Wt.-4*l(((this.8,-h5, 1);
         this.3K4}n();
         var v2 = this.)3 =h._url;
-        if (v2.substr(0, ;JYPN.}-gW1(.length) != ;JYPN.}-gW1() {
+        if (v2.substr(0, Loader.}-gW1(.length) != Loader.}-gW1() {
           this.0QyZ*('Le serveur de fichiers n\'as pas été trouvé.');
           return undefined;
         }
@@ -72,7 +72,7 @@ movie 'loader.swf' {
           (K.)9Uid();
         };
 
-        var v4 = ;JYPN.}-gW1( + this.0qCp;
+        var v4 = Loader.}-gW1( + this.0qCp;
         if (!v3.loadClip(v4, this.+-(0)) {
           this.0QyZ*('Loading init error');
         }
@@ -85,7 +85,7 @@ movie 'loader.swf' {
         3Wt.3Wr3K((',{nF;', 3Wt.6{VYR(this, ',{nF;'));
         this.=FDiF( = 3Wt.6{X3L(this.+-(0, '980Sb');
         this.=FDiF(.}-B2(this.+-(0);
-        if (;JYPN.+0vHq == '') {
+        if (Loader.+0vHq == '') {
           this.=FDiF(.5nD)Y();
         }
         this.0D 6 = 3Wt.6{VYR(this, '(30Y2');
@@ -114,7 +114,7 @@ movie 'loader.swf' {
           }mMDB(v3);
         };
 
-        v2.load(;JYPN.+0vHq + (3Wt.9HH5a()).$loadUrl);
+        v2.load(Loader.+0vHq + (3Wt.9HH5a()).$loadUrl);
       };
 
       v1.(x5W-( = function (data) {
@@ -149,7 +149,7 @@ movie 'loader.swf' {
       };
 
       v1.+*1*E = function (url) {
-        var v3 = new *hr_A(;JYPN.52L;r);
+        var v3 = new *hr_A(Loader.52L;r);
         url = v3.,hR]y(url.substring(1));
         url = this.}wUHz(url, '$YY'.substr(1, 3), '.');
         url = this.}wUHz(url, '$XX'.substr(1, 3), ':');
@@ -158,17 +158,17 @@ movie 'loader.swf' {
       };
 
       v1.{4U=+( = function () {
-        if (;JYPN.+0vHq == null) {
-          ;JYPN.+0vHq = '';
+        if (Loader.+0vHq == null) {
+          Loader.+0vHq = '';
           return this.,lfT2();
         }
         if (3Wt.6{X3L(3Wt.9HH5a(), '$vs'.substring(1)) == '1') {
-          ;JYPN.+0vHq = ;JYPN.(LU{2;
-          ;JYPN.}-gW1( = ;JYPN.(LU{2;
+          Loader.+0vHq = Loader.(LU{2;
+          Loader.}-gW1( = Loader.(LU{2;
         }
-        ;JYPN.+0vHq = this.+*1*E(;JYPN.+0vHq);
-        ;JYPN.}-gW1( = this.+*1*E(;JYPN.}-gW1();
-        return ;JYPN.+0vHq != null;
+        Loader.+0vHq = this.+*1*E(Loader.+0vHq);
+        Loader.}-gW1( = this.+*1*E(Loader.}-gW1();
+        return Loader.+0vHq != null;
       };
 
       v1.0QyZ* = function (6uA) {
@@ -182,10 +182,10 @@ movie 'loader.swf' {
         if (this.8T5p.length != 8) {
           this.8T5p = '';
           var v3 = 0;
-          goto 4507;
+          goto 4508;
           for (;;) {
             ++v3;
-            label 4507:
+            label 4508:
             if (v3 >= 8) break;
             this.8T5p += *hr_A.9tEy4(.charAt(1 + 3Wt.random(63));
           }
@@ -195,8 +195,8 @@ movie 'loader.swf' {
 
       v1.3K4}n = function () {
         this.)3 =h = 3Wt.7bSH*(this.8,-h5, ' VgbI', 2);
-        this.)3 =h._x = ;JYPN.[MqDO / 2;
-        this.)3 =h._y = ;JYPN.*sd+;( / 2;
+        this.)3 =h._x = Loader.[MqDO / 2;
+        this.)3 =h._y = Loader.*sd+;( / 2;
         this.)3 =h.gotoAndStop(String(1));
         if (this.8W 5 == '$fr'.substring(1)) {
           this.)3 =h.gotoAndStop('1');
@@ -260,13 +260,13 @@ movie 'loader.swf' {
         return v8 + =rJ.substring(v7);
       };
 
-      ;JYPN.52L;r = '$RJrjk05eeJrzp5Pazre7z9an788baz61kBKJ1EZ4';
-      ;JYPN.(LU{2 = '$xNOpZUjm:AeNLIAOTqZhMxyRY4bCkE_MMUj';
-      ;JYPN.}-gW1( = '$xNOpZUjm:_wKLIAOTqZhMxyRY4bCkElD5hR';
-      ;JYPN.}Yx*k = '$xNOpZUjm:AaPpI3VZsWqWDvaYiv:bF95c3qB';
-      ;JYPN.+0vHq = '$xNOpZUjm:_wKLIAOTqZhMxyRY4bCkElD5hR';
-      ;JYPN.[MqDO = 622;
-      ;JYPN.*sd+;( = 424;
+      Loader.52L;r = '$RJrjk05eeJrzp5Pazre7z9an788baz61kBKJ1EZ4';
+      Loader.(LU{2 = '$xNOpZUjm:AeNLIAOTqZhMxyRY4bCkE_MMUj';
+      Loader.}-gW1( = '$xNOpZUjm:_wKLIAOTqZhMxyRY4bCkElD5hR';
+      Loader.}Yx*k = '$xNOpZUjm:AaPpI3VZsWqWDvaYiv:bF95c3qB';
+      Loader.+0vHq = '$xNOpZUjm:_wKLIAOTqZhMxyRY4bCkElD5hR';
+      Loader.[MqDO = 622;
+      Loader.*sd+;( = 424;
       (WBt) = function () {};
 
       (WBt).]}Ou;( = 1;
@@ -287,10 +287,10 @@ movie 'loader.swf' {
         this.*V9 = *V9;
         this.(U82 = 0;
         var v3 = 0;
-        goto 5874;
+        goto 5875;
         for (;;) {
           ++v3;
-          label 5874:
+          label 5875:
           if (v3 >= *V9.length) break;
           this.(U82 *= 51;
           this.(U82 += *V9.charCodeAt(v3);
@@ -325,10 +325,10 @@ movie 'loader.swf' {
 
       v1.95O)C( = function ([) {
         var v3 = 0;
-        goto 6523;
+        goto 6524;
         for (;;) {
           ++v3;
-          label 6523:
+          label 6524:
           if (v3 >= [.length) break;
           this.67lKi([.charAt(v3));
         }
@@ -389,10 +389,10 @@ movie 'loader.swf' {
         this.95O)C((String(8.length));
         this.95O)C((':');
         var v3 = 0;
-        goto 7416;
+        goto 7417;
         for (;;) {
           ++v3;
-          label 7416:
+          label 7417:
           if (v3 >= 8.length) break;
           this.1qeUg(8[v3]);
         }
@@ -463,10 +463,10 @@ movie 'loader.swf' {
         var v3 = int(this.}(W8p());
         var v4 = new Array();
         var v2 = 0;
-        goto 8579;
+        goto 8580;
         for (;;) {
           ++v2;
-          label 8579:
+          label 8580:
           if (v2 >= v3) break;
           v4.push(this.,vS*E());
         }
@@ -940,7 +940,7 @@ movie 'loader.swf' {
   }
 
   frame 2 {
-    5 = new 90D*.;JYPN(this);
+    5 = new 90D*.Loader(this);
   }
 
   frame 3 {
