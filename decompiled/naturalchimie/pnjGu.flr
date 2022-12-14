@@ -1,0 +1,170 @@
+movie 'pnjGu.swf' {
+// flash 8, total frames: 1, frame rate: 12 fps, 500x300 px, compressed
+
+  movieClip 1 vanish {
+
+    frame 41 {
+      stop();
+    }
+  }
+
+  movieClip 5  {
+  }
+
+  movieClip 9  {
+  }
+
+  movieClip 12  {
+  }
+
+  movieClip 13  {
+  }
+  
+  // unknown tag 88 length 72
+
+  movieClip 22  {
+  }
+
+  movieClip 23  {
+  }
+
+  movieClip 24  {
+  }
+
+  movieClip 27  {
+  }
+
+  movieClip 32  {
+  }
+
+  movieClip 34  {
+  }
+
+  movieClip 36  {
+  }
+
+  movieClip 37  {
+  }
+
+  movieClip 39  {
+  }
+
+  movieClip 41  {
+  }
+
+  movieClip 44  {
+  }
+
+  movieClip 45  {
+  }
+
+  movieClip 47  {
+  }
+
+  movieClip 49  {
+  }
+
+  movieClip 50  {
+  }
+
+  movieClip 51  {
+
+    frame 76 {
+      stop();
+      _parent._parent._parent._next();
+    }
+  }
+
+  movieClip 54  {
+  }
+
+  movieClip 57  {
+  }
+
+  movieClip 60  {
+  }
+
+  movieClip 63  {
+  }
+
+  movieClip 64  {
+  }
+
+  movieClip 68  {
+  }
+
+  movieClip 71  {
+  }
+
+  movieClip 75  {
+  }
+
+  movieClip 79  {
+  }
+
+  movieClip 83  {
+  }
+
+  movieClip 87  {
+  }
+
+  movieClip 89  {
+  }
+
+  movieClip 94  {
+  }
+
+  movieClip 98  {
+  }
+
+  movieClip 102  {
+  }
+
+  movieClip 106  {
+  }
+
+  movieClip 108  {
+  }
+
+  movieClip 111  {
+  }
+
+  movieClip 121  {
+  }
+
+  movieClip 126  {
+  }
+
+  movieClip 130  {
+  }
+
+  movieClip 131 pnj {
+  }
+
+  movieClip 132 loadPnj {
+  }
+
+  frame 1 {
+    function _setPnj(s) {
+      var v2 = s.split(';');
+      apply(this, v2);
+    }
+
+    function apply(mc, infos) {
+      for (var v5 in mc) {
+        var v1 = mc[v5];
+        if (typeof v1 == 'movieclip') {
+          var v3 = 'smc';
+          if (v1._name == v3) {
+            v1.gotoAndStop(infos[0]);
+            infos.shift();
+            if (infos.length > 0) {
+              apply(v1, infos);
+            }
+          }
+        }
+      }
+    }
+
+  }
+}

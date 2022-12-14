@@ -1,0 +1,392 @@
+movie 'objectMc.swf' {
+// flash 8, total frames: 1, frame rate: 12 fps, 48x55 px, compressed
+
+  movieClip 2 part_0 {
+  }
+  
+  // unknown tag 88 length 72
+
+  movieClip 5 mcQty {
+  }
+
+  movieClip 7  {
+  }
+
+  movieClip 10  {
+  }
+
+  movieClip 12  {
+  }
+
+  movieClip 16  {
+  }
+
+  movieClip 18  {
+  }
+
+  movieClip 20  {
+  }
+
+  movieClip 22  {
+  }
+
+  movieClip 24  {
+  }
+
+  movieClip 25  {
+  }
+
+  movieClip 30  {
+  }
+
+  movieClip 31  {
+  }
+
+  movieClip 34  {
+  }
+
+  movieClip 35 couivre {
+  }
+
+  movieClip 39  {
+  }
+
+  movieClip 40 mercurule {
+  }
+
+  movieClip 42  {
+  }
+
+  movieClip 43  {
+  }
+
+  movieClip 45  {
+  }
+
+  movieClip 47  {
+  }
+
+  movieClip 49  {
+  }
+
+  movieClip 51  {
+  }
+
+  movieClip 52  {
+  }
+
+  movieClip 55  {
+  }
+
+  movieClip 56  {
+  }
+
+  movieClip 59  {
+  }
+
+  movieClip 60  {
+  }
+
+  movieClip 63  {
+  }
+
+  movieClip 65  {
+  }
+
+  movieClip 68  {
+  }
+
+  movieClip 70  {
+  }
+
+  movieClip 72  {
+  }
+
+  movieClip 74  {
+  }
+
+  movieClip 77  {
+  }
+
+  movieClip 78  {
+  }
+
+  movieClip 79  {
+  }
+
+  movieClip 82  {
+  }
+
+  movieClip 84  {
+  }
+
+  movieClip 85  {
+  }
+
+  movieClip 87  {
+  }
+
+  movieClip 89  {
+  }
+
+  movieClip 90 elem {
+  }
+
+  movieClip 91 element {
+  }
+
+  movieClip 97  {
+  }
+
+  movieClip 100  {
+  }
+
+  movieClip 105  {
+  }
+
+  movieClip 108  {
+  }
+
+  movieClip 111  {
+  }
+
+  movieClip 127  {
+  }
+
+  movieClip 129  {
+  }
+
+  movieClip 134  {
+  }
+
+  movieClip 137  {
+  }
+
+  movieClip 139  {
+  }
+
+  movieClip 142  {
+  }
+
+  movieClip 144  {
+  }
+
+  movieClip 146  {
+  }
+
+  movieClip 148  {
+  }
+
+  movieClip 150  {
+  }
+
+  movieClip 152  {
+  }
+
+  movieClip 154  {
+  }
+
+  movieClip 155  {
+  }
+
+  movieClip 156  {
+  }
+
+  movieClip 157  {
+  }
+
+  movieClip 161  {
+  }
+
+  movieClip 164  {
+  }
+
+  movieClip 167  {
+  }
+
+  movieClip 172  {
+  }
+
+  movieClip 173  {
+  }
+
+  movieClip 177  {
+  }
+
+  movieClip 180  {
+  }
+
+  movieClip 184  {
+  }
+
+  movieClip 190  {
+  }
+
+  movieClip 194  {
+  }
+
+  movieClip 196  {
+  }
+
+  movieClip 198  {
+  }
+
+  movieClip 202  {
+  }
+
+  movieClip 206  {
+  }
+
+  movieClip 207  {
+  }
+
+  movieClip 209  {
+  }
+
+  movieClip 212  {
+  }
+
+  movieClip 215  {
+  }
+
+  movieClip 223  {
+  }
+
+  movieClip 226  {
+  }
+
+  movieClip 227  {
+  }
+
+  movieClip 229  {
+  }
+
+  movieClip 231  {
+  }
+
+  movieClip 235  {
+  }
+
+  movieClip 237  {
+  }
+
+  movieClip 242  {
+  }
+
+  movieClip 244  {
+  }
+
+  movieClip 247  {
+  }
+
+  movieClip 259  {
+
+    frame 6 {
+      gotoAndPlay(7);
+    }
+  }
+
+  movieClip 263  {
+  }
+
+  movieClip 270  {
+  }
+
+  movieClip 275  {
+  }
+
+  movieClip 278  {
+  }
+
+  movieClip 282  {
+  }
+
+  movieClip 286  {
+  }
+
+  movieClip 288  {
+  }
+
+  movieClip 290  {
+  }
+
+  movieClip 297  {
+  }
+
+  movieClip 300  {
+  }
+
+  movieClip 303  {
+  }
+
+  movieClip 316  {
+  }
+  
+  // unknown tag 88 length 66
+
+  movieClip 328  {
+  }
+
+  movieClip 330  {
+  }
+
+  movieClip 334  {
+  }
+
+  movieClip 335 art {
+  }
+
+  movieClip 336 artefact {
+
+    frame 1 {
+      function _set(s) {
+        var v2 = s.split(';');
+        apply(this, v2);
+      }
+
+      function apply(mc, infos) {
+        for (var v5 in mc) {
+          var v1 = mc[v5];
+          if (typeof v1 == 'movieclip') {
+            var v3 = 'smc';
+            if (v1._name == v3) {
+              v1.gotoAndStop(infos[0]);
+              infos.shift();
+              if (infos.length > 0) {
+                apply(v1, infos);
+              }
+            }
+          }
+        }
+      }
+
+    }
+  }
+
+  movieClip 337 object {
+  }
+
+  frame 1 {
+    function _set(s) {
+      var v2 = s.split(';');
+      apply(this, v2);
+    }
+
+    function apply(mc, infos) {
+      for (var v5 in mc) {
+        var v1 = mc[v5];
+        if (typeof v1 == 'movieclip') {
+          var v3 = 'smc';
+          if (v1._name == v3) {
+            v1.gotoAndStop(infos[0]);
+            infos.shift();
+            if (infos.length > 0) {
+              apply(v1, infos);
+            }
+          }
+        }
+      }
+    }
+
+  }
+}

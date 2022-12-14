@@ -1,0 +1,118 @@
+movie 'pnjGm.swf' {
+// flash 8, total frames: 1, frame rate: 12 fps, 500x300 px, compressed
+
+  movieClip 2  {
+  }
+
+  movieClip 4  {
+  }
+
+  movieClip 6  {
+  }
+
+  movieClip 7 vanish {
+
+    frame 41 {
+      stop();
+    }
+  }
+
+  movieClip 11  {
+  }
+
+  movieClip 14  {
+  }
+
+  movieClip 17  {
+  }
+
+  movieClip 23  {
+  }
+
+  movieClip 27  {
+  }
+
+  movieClip 31  {
+  }
+
+  movieClip 35  {
+  }
+
+  movieClip 38  {
+  }
+
+  movieClip 40  {
+  }
+
+  movieClip 42  {
+  }
+
+  movieClip 44  {
+  }
+
+  movieClip 47  {
+  }
+
+  movieClip 49  {
+  }
+
+  movieClip 56  {
+  }
+
+  movieClip 59  {
+  }
+
+  movieClip 61  {
+  }
+
+  movieClip 63  {
+  }
+
+  movieClip 65  {
+  }
+
+  movieClip 67  {
+  }
+
+  movieClip 69  {
+  }
+
+  movieClip 71  {
+  }
+
+  movieClip 73  {
+  }
+
+  movieClip 83  {
+  }
+
+  movieClip 84 pnj {
+  }
+
+  movieClip 85 loadPnj {
+  }
+
+  frame 1 {
+    function _setPnj(s) {
+      var v2 = s.split(';');
+      apply(this, v2);
+    }
+
+    function apply(mc, infos) {
+      for (var v5 in mc) {
+        var v1 = mc[v5];
+        if (typeof v1 == 'movieclip') {
+          var v3 = 'smc';
+          if (v1._name == v3) {
+            v1.gotoAndStop(infos[0]);
+            infos.shift();
+            if (infos.length > 0) {
+              apply(v1, infos);
+            }
+          }
+        }
+      }
+    }
+
+  }
+}
