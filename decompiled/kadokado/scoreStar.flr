@@ -1,0 +1,765 @@
+movie 'scoreStar.swf' {
+// flash 8, total frames: 3, frame rate: 60 fps, 300x320 px, compressed
+
+  movieClip 2  {
+  }
+
+  movieClip 4  {
+  }
+
+  movieClip 5 hero {
+  }
+
+  movieClip 6 mcChrono {
+  }
+
+  movieClip 8  {
+  }
+
+  movieClip 9 quarterAnim {
+  }
+  
+  // unknown tag 88 length 311
+
+  movieClip 12  {
+
+    frame 1 {
+      field.text = _root.text[12];
+    }
+  }
+
+  movieClip 13  {
+  }
+
+  movieClip 15  {
+
+    frame 1 {
+      field.text = _root.text[13];
+    }
+  }
+
+  movieClip 16  {
+  }
+
+  movieClip 17 best {
+  }
+
+  movieClip 19  {
+  }
+
+  movieClip 20  {
+  }
+
+  movieClip 24 panScore {
+  }
+
+  movieClip 26  {
+  }
+
+  movieClip 29  {
+  }
+
+  movieClip 30 anim {
+  }
+
+  movieClip 31  {
+  }
+
+  movieClip 33  {
+  }
+
+  movieClip 35  {
+  }
+
+  movieClip 36 stars {
+
+    frame 1 {
+      stop();
+    }
+  }
+
+  movieClip 38  {
+  }
+
+  movieClip 41  {
+  }
+
+  movieClip 45 shield {
+
+    frame 1 {
+      stop();
+    }
+  }
+
+  movieClip 49 TextQual {
+  }
+
+  frame 1 {
+    function txtStar(enCoef, ro) {
+      var v5 = 'Vous n\'avez pas encore l\'étoile ';
+      var v4 = 'Vous avez presque atteint l\'étoile ';
+      var v3 = 'Vous passez à quelques points de l\'étoile ';
+      var v6 = ['verte', 'orange', 'rouge'];
+      var v7 = ' !';
+      if (_root.lang == 'en') {
+        v5 = 'You didn\'t get the ';
+        v4 = 'You nearly got the ';
+        v3 = 'Only a few more points were necessary to get the ';
+        v6 = ['green', 'orange', 'red'];
+        v7 = ' star!';
+      }
+      if (_root.lang == 'es') {
+        v5 = '¡No has conseguido la estrella ';
+        v4 = '¡Casi consigues la estrella ';
+        v3 = 'Un poquito más, ¡y casi consigues la estrella ';
+        v6 = ['verde', 'naranja', 'roja'];
+        v7 = '!';
+      }
+      if (_root.lang == 'de') {
+        v5 = 'Ein erster Schritt zum ';
+        v4 = 'Gleich hast du den ';
+        v3 = 'Nur noch wenige Punkte bis zum ';
+        v6 = ['grünen', 'orangenen', 'roten'];
+        v7 = ' Stern!';
+      }
+      var v2 = v5;
+      if (enCoef > 0.8) {
+        v2 = v4;
+      }
+      if (enCoef > 0.95) {
+        v2 = v3;
+      }
+      v2 += v6[ro];
+      v2 += v7;
+      return v2;
+    }
+
+    function txtMissionCountered() {
+      if (_root.lang == 'en') {
+        return 'Congratulations, you completed this mission step!';
+        return 'Félicitions ! Vous avez sauvé cette étape de la mission !';
+      }
+      if (_root.lang == 'es') {
+        return 'Enhorabuena, ¡has superado esta etapa de la misión!';
+        return 'Félicitions ! Vous avez sauvé cette étape de la mission !';
+      }
+      if (_root.lang == 'de') {
+        return 'Glückwunsch, du hast diesen Missionsschritt abgeschlossen!';
+      }
+      return 'Félicitions ! Vous avez sauvé cette étape de la mission !';
+    }
+
+    function txtMissionNotCountered() {
+      if (_root.lang == 'en') {
+        return 'You failed to complete this mission step. Try again...';
+        return 'Vous ne parvenez pas à passer cette étape de la mission. Ré-essayez !';
+      }
+      if (_root.lang == 'es') {
+        return 'Has fracasado en completar esta etapa de la misión.';
+        return 'Vous ne parvenez pas à passer cette étape de la mission. Ré-essayez !';
+      }
+      if (_root.lang == 'de') {
+        return 'Du konntest diesen Missionsschritt nicht abschließen.';
+      }
+      return 'Vous ne parvenez pas à passer cette étape de la mission. Ré-essayez !';
+    }
+
+    function txtAttackCountered(clan) {
+      if (_root.mission != null) {
+        return txtMissionCountered();
+      }
+      if (_root.lang == 'en') {
+        return 'Congratulations, you countered the attack of the <b>' + clan + '</b> clan!';
+        return 'Vous avez repoussé l\'attaque du clan <b>' + clan + '</b>. Félicitations !';
+      }
+      if (_root.lang == 'es') {
+        return 'Enhorabuena, ¡has superado el ataque del clan <b>' + clan + '</b>!';
+        return 'Vous avez repoussé l\'attaque du clan <b>' + clan + '</b>. Félicitations !';
+      }
+      if (_root.lang == 'de') {
+        return 'Glückwunsch, du konntest den Angriff von Klan <b>' + clan + '</b> kontern!';
+      }
+      return 'Vous avez repoussé l\'attaque du clan <b>' + clan + '</b>. Félicitations !';
+    }
+
+    function txtAttackNotCountered(clan) {
+      if (_root.mission != null) {
+        return txtMissionNotCountered();
+      }
+      if (_root.lang == 'en') {
+        return 'You failed to counter the attack of the <b>' + clan + '</b> clan.';
+        return 'Vous ne parvenez pas a repousser l\'attaque du clan <b>' + clan + '</b>.';
+      }
+      if (_root.lang == 'es') {
+        return 'Has fracasado en tu intento de contraatacar el desafío del clan <b>' + clan + '</b>.';
+        return 'Vous ne parvenez pas a repousser l\'attaque du clan <b>' + clan + '</b>.';
+      }
+      if (_root.lang == 'de') {
+        return 'Du konntest den Angriff von Klan <b>' + clan + '</b> nicht kontern.';
+      }
+      return 'Vous ne parvenez pas a repousser l\'attaque du clan <b>' + clan + '</b>.';
+    }
+
+    function txtAttackLaunched(clan, score) {
+      if (_root.lang == 'en') {
+        return 'You launched an attack of <b>' + score + '</b> against the <b>' + clan + '</b> clan!';
+        return 'Vous avez lancé une attaque de <b>' + score + '</b> contre le clan <b>' + clan + '</b> !';
+      }
+      if (_root.lang == 'es') {
+        return 'Has lanzado un desafío de <b>' + score + '</b> contra el clan <b>' + clan + '</b>.';
+        return 'Vous avez lancé une attaque de <b>' + score + '</b> contre le clan <b>' + clan + '</b> !';
+      }
+      if (_root.lang == 'de') {
+        return 'Du hast einen Angriff mit <b>' + score + '</b> gegen <b>' + clan + '</b> gestartet.';
+      }
+      return 'Vous avez lancé une attaque de <b>' + score + '</b> contre le clan <b>' + clan + '</b> !';
+    }
+
+    function txtPlayersToOvertake(n) {
+      if (_root.lang == 'en') {
+        return 'You still have ' + n + ' players to overtake!';
+        return 'Il y a encore ' + n + ' joueurs à dépasser !';
+      }
+      if (_root.lang == 'es') {
+        return '¡Todavía tienes que superar a ' + n + ' jugadores!';
+        return 'Il y a encore ' + n + ' joueurs à dépasser !';
+      }
+      if (_root.lang == 'de') {
+        return 'Du hast noch ' + n + ' Spieler vor dir!';
+      }
+      return 'Il y a encore ' + n + ' joueurs à dépasser !';
+    }
+
+    function init() {
+      if (_root.url == null) {
+        trace('coucou');
+        _root.mission = 1;
+        _root.lang = 'de';
+        _root.url = 'coucou';
+        _root.score = '96280';
+        _root.best = '2';
+        _root.contrat = '15454';
+        _root.tokens = '47';
+        _root.multi = '2';
+        _root.olds = '104';
+        _root.news = '804 ';
+        _root.pos = '290';
+        _root.tot = '1130';
+        _root.qual = '300';
+        _root.clan = 'best killer';
+        _root.att = '198280';
+      }
+      text = textFr;
+      if (_root.lang == 'en') {
+        text = textEn;
+      }
+      if (_root.lang == 'es') {
+        text = textEs;
+      }
+      if (_root.lang == 'de') {
+        text = textDe;
+      }
+      if (_root.oldPos == null) {
+        _root.oldPos = _root.tot;
+      }
+      o = parseInt(_root.olds);
+      n = parseInt(_root.news);
+      op = parseInt(_root.oldPos);
+      p = parseInt(_root.pos);
+      t = parseInt(_root.tot);
+      q = parseInt(_root.qual);
+      if (t < q) {
+        t = q;
+      }
+      if (n < o) {
+        n = o;
+      }
+      initScore();
+      barPos._visible = false;
+      panContrat._visible = false;
+      clic._visible = false;
+      replay.onPress = redirect;
+      main();
+    }
+
+    function main() {
+      switch (sstep) {
+        case 0:
+          updateScore();
+          break;
+        case 1:
+          updateProgression();
+          break;
+        case 2:
+          updateContrat();
+      }
+      if (float != null) {
+        float = (float + 23) % 628;
+        barPos.cursor._y = Math.cos(float * 0.01) * 4 - 1;
+        barPos.cursor._rotation += 5;
+        var v2 = 4 + Math.cos(float * 0.01) * 3;
+        var v1 = new flash.filters.GlowFilter();
+        v1.blurX = v2;
+        v1.blurY = v2;
+        v1.color = 16777215;
+        v1.strength = 2;
+        barPos.cursor.filters = [v1];
+      }
+    }
+
+    function initScore() {
+      sstep = 0;
+      step = 0;
+      cc = 0;
+      var v2 = 1;
+      if (_root.best != null) {
+        v2 = 2;
+      }
+      panScore.gotoAndStop(v2);
+      panScore.textBest.gotoAndStop(parseInt(_root.best));
+      panScore.fieldTitle.text = text[11];
+      panScore.fieldScore.text = score;
+      textBest._visible = _root.best != null;
+      textBest.gotoAndStop(parseInt(_root.best) + 1);
+      size = 200;
+      panScore._x = 150;
+      panScore._y = 150;
+    }
+
+    function updateScore() {
+      switch (step) {
+        case 0:
+          size *= 0.5;
+          panScore._yscale = 100 + size;
+          panScore._xscale = panScore._yscale;
+          cc += 0.03;
+          if (cc > 1) {
+            cc = 0;
+            ++step;
+          }
+          break;
+        case 1:
+          cc += 0.05;
+          if (cc > 1) {
+            cc = 1;
+          }
+          panScore._y = 150 * (1 - cc) + 46 * cc;
+          if (cc == 1) {
+            initProgression();
+          }
+      }
+    }
+
+    function initProgression() {
+      cc = 0;
+      sstep = 1;
+      step = -1;
+      barPos._visible = true;
+      barPos._alpha = 0;
+      if (_root.contrat == null && getRank(o) >= 3) {
+        barPos._y = 175;
+      }
+      var v2 = 205;
+      stPos = (1 - (op - q) / (t - q)) * v2;
+      enPos = (1 - (p - q) / (t - q)) * v2;
+      if (stPos >= v2) {
+        stPos = v2 + 20;
+      }
+      if (enPos >= v2) {
+        enPos = v2 + 20;
+      }
+      barPos.cursor.stop();
+      updateProgression();
+    }
+
+    function updateProgression() {
+      switch (step) {
+        case -1:
+          cc += 0.03;
+          movePiou(0);
+          barPos._alpha = cc * 4 * 100;
+          if (cc >= 1) {
+            cc = 0;
+            ++step;
+            barPos.cursor.play();
+            if (enPos == stPos) {
+              cc = 1;
+            }
+          }
+          break;
+        case 0:
+          cc += 0.02;
+          if (cc > 1) {
+            cc = 1;
+          }
+          var v1 = (1 - Math.cos(cc * 3.14)) * 0.5;
+          movePiou(v1);
+          if (cc == 1) {
+            if (p <= q) {
+              float = 0;
+              barPos.cursor.gotoAndPlay('float');
+              barPos.cursor._y = 3;
+            } else {
+              barPos.cursor.gotoAndStop(1);
+            }
+            initContrat();
+            step = 99;
+          }
+      }
+    }
+
+    function movePiou(ccc) {
+      var v1 = stPos * (1 - ccc) + enPos * ccc;
+      barPos.cursor._x = v1;
+      barPos.shade._x = v1;
+      var v4 = Math.floor(op * (1 - ccc) + p * ccc - q);
+      var v2 = v1 < 205;
+      barPos.textQual.field.text = v2 ? txtPlayersToOvertake(v4) : text[2];
+      barPos.textQual.fieldQual.text = v2 ? text[1] : text[0];
+    }
+
+    function initContrat() {
+      var v3 = getRank(o);
+      var v6 = getRank(n);
+      if (_root.contrat == null && _root.clan == null && v3 >= 3) {
+        clic._visible = true;
+        return undefined;
+      }
+      cc = 0;
+      sstep = 2;
+      var v4 = 0;
+      var v2 = null;
+      panContrat._visible = true;
+      panContrat._y = 368;
+      panContrat.wait = 80;
+      panContrat.compt = 0;
+      if (_root.clan != null) {
+        ++v4;
+        v2 = 'contrat';
+        panContrat.compt = -100;
+        if (_root.att != null) {
+          var v5 = int(_root.score) / int(_root.att);
+          if (v5 > 1 || v5 == 1 && _root.mission != null) {
+            panContrat.contrat.gotoAndStop(2);
+            if (_root.mission == null) {
+              panContrat.contrat.fieldTitle.text = text[4];
+            } else {
+              panContrat.contrat.fieldTitle.text = text[17];
+            }
+            goldText(panContrat.contrat.fieldTitle);
+            panContrat.contrat.field.htmlText = txtAttackCountered(_root.clan);
+            panContrat.contrat.shield.field._visible = false;
+          } else {
+            panContrat.contrat.gotoAndStop(3);
+            if (_root.mission == null) {
+              panContrat.contrat.fieldTitle.text = text[5];
+            } else {
+              panContrat.contrat.fieldTitle.text = text[18];
+            }
+            panContrat.contrat.field.htmlText = txtAttackNotCountered(_root.clan);
+            panContrat.contrat.shield.bar._yscale = v5 * 100;
+            panContrat.contrat.shield.field.text = Math.floor(v5 * 100 - 1.0e-007) + '%';
+            clic.gotoAndStop('2');
+          }
+        } else {
+          panContrat.contrat.gotoAndStop(4);
+          panContrat.contrat.fieldTitle.text = text[6];
+          goldText(panContrat.contrat.fieldTitle);
+          panContrat.contrat.field.htmlText = txtAttackLaunched(_root.clan, _root.score);
+          clic.gotoAndStop('3');
+        }
+      } else {
+        if (_root.contrat != null) {
+          panContrat.contrat.gotoAndStop(1);
+          panContrat.contrat.fieldTitle.text = text[3];
+          goldText(panContrat.contrat.fieldTitle);
+          ++v4;
+          if (_root.multi != null) {
+            panContrat.contrat.tokens.htmlText = _root.tokens + ' <font color=\'#FF0000\'>x' + _root.multi + '</font> = ' + int(_root.tokens) * int(_root.multi);
+          } else {
+            panContrat.contrat.tokens.htmlText = _root.tokens;
+          }
+          panContrat.contrat.k._x = 150 + panContrat.contrat.tokens.textWidth * 0.5 + 4;
+          panContrat.contrat.score.text = _root.contrat;
+          panContrat.contrat.fieldContrat.text = text[7];
+          panContrat.contrat.fieldPoints.text = text[8];
+          v2 = 'contrat';
+        }
+      }
+      if (v3 < 3) {
+        ++v4;
+        if (v6 > v3) {
+          panContrat.panStar.gotoAndStop(2);
+          panContrat.panStar.s.star.gotoAndStop(v6 + 1);
+          panContrat.panStar.s.starB.gotoAndStop(v6 + 1);
+          v2 = 'star';
+        } else {
+          panContrat.panStar.gotoAndStop(1);
+          panContrat.panStar.barStar.gotoAndStop(v3 + 1);
+          switch (v3) {
+            case 0:
+              stCoef = o / 1000;
+              enCoef = n / 1000;
+              break;
+            case 1:
+              stCoef = (o - 1000) / 100;
+              enCoef = (n - 1000) / 100;
+              break;
+            case 2:
+              stCoef = (o - 1100) / 50;
+              enCoef = (n - 1100) / 50;
+          }
+          panContrat.panStar.fieldTitle.text = text[9];
+          goldText(panContrat.panStar.fieldTitle);
+          panContrat.panStar.comment.text = txtStar(enCoef, v3);
+          panContrat.panStar.barStar.bar._xscale = stCoef * 100;
+          if (v2 == null) {
+            v2 = 'star';
+          }
+        }
+      }
+      if (v4 == 1) {
+        panContrat.gotoAndStop(v2);
+      }
+      if (v4 == 2) {
+        panContrat.gotoAndPlay(v2);
+      }
+    }
+
+    function updateContrat() {
+      cc += 0.1;
+      if (cc > 1) {
+        cc = 1;
+        clic._visible = true;
+      }
+      panContrat._y = 368 * (1 - cc) + 248 * cc;
+      panContrat.panStar.barStar.bar._xscale = enCoef * cc * 100;
+    }
+
+    function redirect() {
+      getURL(_root.url, '_self');
+    }
+
+    function goldText(field) {
+      field.textColor = 16763904;
+      var v1 = new flash.filters.GlowFilter();
+      v1.blurX = 2;
+      v1.blurY = 2;
+      v1.strength = 4;
+      v1.color = 16737792;
+      field.filters = [v1];
+    }
+
+    function getRank(n) {
+      if (n >= 1150) {
+        return 3;
+      }
+      if (n >= 1100) {
+        return 2;
+      }
+      if (n >= 1000) {
+        return 1;
+      }
+      return 0;
+    }
+
+    function blur(mc, x, y) {
+      fl = new flash.filters.BlurFilter();
+      fl.blurX = x;
+      fl.blurY = y;
+      mc.filters = [fl];
+    }
+
+    text = [];
+    textFr = ['VOUS ETES QUALIFIE !', 'VOUS N\'ETES PAS QUALIFIE', 'Attention a ne pas perdre votre place!', 'CONTRAT REUSSI !', 'DEFENSE REUSSIE !', 'DEFENSE RATEE !', 'ATTAQUE LANCEE !', 'SCORE BATTU', 'POINTS', 'ETOILE', 'NOUVELLE ETOILE', 'VOTRE SCORE', 'NOUVEAU RECORD', 'RECORD DE LA PERIODE', 'Cliquez pour rejouer', 'Cliquez pour défendre à nouveau', 'Cliquez pour retenter une attaque', 'ETAPE MISSION OK !', 'ETAPE MISSION RATEE !'];
+    textEn = ['YOU ARE QUALIFIED!', 'YOU ARE NOT QUALIFIED', 'Pay attention and do not lose your position!', 'CONTRACT SUCCESS!', 'DEFENSE SUCCESS!', 'DEFENSE FAILED!', 'ATTACK LAUNCHED!', 'SCORE BEATEN', 'POINTS', 'STAR', 'NEW STAR', 'YOUR SCORE', 'NEW RECORD', 'PERIOD RECORD', 'Click here to play again', 'Click here to defend again', 'Click here to relaunch your attack', 'MISSION STEP OK!', 'MISSION STEP FAILED!'];
+    textEs = ['¡ESTÁS CLASIFICADO!', 'NO TE HAS CLASIFICADO', '¡Presta atención y no pierdas tu posición!', '¡CONTRATO CUMPLIDO!', '¡DEFENSA CONSEGUIDA!', '¡DEFENSA FRACASADA!', '¡DESAFÍO LANZADO!', 'PTS. SUPERADOS', 'PTS.', 'ESTRELLA', 'NUEVA ESTRELLA', 'TU PUNTUACIÓN', 'NUEVO RÉCORD', 'RÉCORD DEL PERIODO', 'Haz clic aquí para jugar de nuevo', 'Haz clic aquí para defender de nuevo', 'Haz clic aquí para reintentar el desafío', '¡ETAPA DE MISIÓN SUPERADA CON ÉXITO!', '¡ETAPA DE MISIÓN FRACASADA!'];
+    textDe = ['DU BIST QUALIFIZIERT!', 'DU BIST NICHT QUALIFIZIERT\t', 'Pass auf und halte deinen Platz in der Rangliste!', 'AUFGABE ERFÜLLT!', 'VERTEIDIGUNG ERFOLGREICH!', 'VERTEIDIGUNG FEHLGESCHLAGEN!', 'ANGRIFF GESTARTET!', 'REKORD GESCHLAGEN', 'PUNKTE', 'STERN', 'NEUER STERN', 'DEINE PUNKTE', 'NEUER REKORD', 'SAISONREKORD', 'Klick hier, um nochmal zu spielen', 'Klick hier, um nochmal zu verteidigen', 'Klick hier, um nochmal anzugreifen', 'MISSIONSSCHRITT OK!', 'MISSIONSSCHRITT FEHLGESCHLAGEN!'];
+    init();
+  }
+
+  movieClip 56  {
+  }
+
+  movieClip 58  {
+  }
+
+  movieClip 60  {
+  }
+
+  movieClip 62  {
+  }
+
+  movieClip 64  {
+  }
+
+  movieClip 66  {
+  }
+
+  movieClip 68  {
+
+    frame 17 {
+      gotoAndPlay(1);
+    }
+
+    frame 36 {
+      gotoAndPlay('float');
+    }
+  }
+
+  movieClip 70  {
+  }
+
+  movieClip 72  {
+  }
+
+  movieClip 80  {
+  }
+
+  movieClip 85  {
+  }
+
+  movieClip 87  {
+  }
+
+  movieClip 89  {
+  }
+
+  movieClip 90  {
+  }
+
+  movieClip 96  {
+
+    frame 1 {
+      stop();
+    }
+
+    frame 35 {
+      gotoAndPlay('loop');
+    }
+  }
+
+  movieClip 102  {
+
+    frame 1 {
+      stop();
+    }
+
+    frame 35 {
+      gotoAndPlay('loop');
+    }
+  }
+
+  movieClip 108  {
+
+    frame 1 {
+      stop();
+    }
+
+    frame 35 {
+      gotoAndPlay('loop');
+    }
+  }
+
+  movieClip 109  {
+  }
+
+  movieClip 113  {
+
+    frame 1 {
+      field.text = _root.text[10];
+    }
+  }
+
+  movieClip 115  {
+  }
+
+  movieClip 116  {
+
+    frame 1 {
+      stop();
+    }
+  }
+
+  movieClip 118  {
+  }
+
+  movieClip 119  {
+  }
+
+  movieClip 120  {
+  }
+
+  movieClip 121  {
+  }
+
+  movieClip 122  {
+
+    frame 2 {
+      if (compt++ > wait) {
+        compt = 0;
+      } else {
+        gotoAndPlay(_currentframe - 1);
+      }
+    }
+
+    frame 19 {
+      if (compt++ > wait) {
+        compt = 0;
+      } else {
+        gotoAndPlay(_currentframe - 1);
+      }
+    }
+  }
+
+  movieClip 124  {
+  }
+
+  movieClip 125  {
+  }
+
+  movieClip 127  {
+
+    frame 1 {
+      field.text = _root.text[14];
+    }
+  }
+
+  movieClip 128  {
+  }
+
+  movieClip 130  {
+
+    frame 1 {
+      field.text = _root.text[15];
+    }
+  }
+
+  movieClip 131  {
+  }
+
+  movieClip 133  {
+
+    frame 1 {
+      field.text = _root.text[16];
+    }
+  }
+
+  movieClip 134  {
+  }
+
+  movieClip 135  {
+
+    frame 1 {
+      stop();
+    }
+  }
+
+  frame 2 {
+    main();
+  }
+
+  frame 3 {
+    gotoAndPlay(_currentframe - 1);
+  }
+}
