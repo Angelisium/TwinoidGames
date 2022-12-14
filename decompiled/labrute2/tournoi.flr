@@ -1739,7 +1739,7 @@ for ($somevar in this.1) {
     v1.*V9 = null;
     v1.[ = null;
     v1. aNDa = function (arg0, arg1) {
-      var v4 = new haxe.*_bc9();
+      var v4 = new haxe.Serializer();
       v4.3 yU+( = true;
       if (!arg1) {
         v4. aNDa(arg0);
@@ -2495,20 +2495,20 @@ for ($somevar in this.1) {
       ++this.4AF;
     };
 
-    haxe.*_bc9 = function () {
+    haxe.Serializer = function () {
       this. [* = new [vXe-();
       this.+Hp() = new Array();
-      this.)[;[g = haxe.*_bc9.}VCyQ;
-      this.3 yU+( = haxe.*_bc9.(SkV (;
+      this.)[;[g = haxe.Serializer.}VCyQ;
+      this.3 yU+( = haxe.Serializer.(SkV (;
       this.1xYp5 = new 19{O();
       this.5V{L6 = 0;
     };
 
-    haxe.*_bc9.__name__ = ['haxe', '*_bc9'];
-    v1 = haxe.*_bc9.prototype;
-    v1.__class__ = haxe.*_bc9;
-    haxe.*_bc9.;LI = function (arg0) {
-      var v3 = new haxe.*_bc9();
+    haxe.Serializer.__name__ = ['haxe', 'Serializer'];
+    v1 = haxe.Serializer.prototype;
+    v1.__class__ = haxe.Serializer;
+    haxe.Serializer.;LI = function (arg0) {
+      var v3 = new haxe.Serializer();
       v3. aNDa(arg0);
       return v3.toString();
     };
@@ -2647,7 +2647,7 @@ for ($somevar in this.1) {
                       v7 = 0;
                       v8 = v6.length - 2;
                       var v9 = '';
-                      var v10 = haxe.*_bc9.9tEy4(;
+                      var v10 = haxe.Serializer.9tEy4(;
                       while (v7 < v8) {
                         ++v7;
                         var v11 = v6.)[v7];
@@ -4061,9 +4061,9 @@ for ($somevar in this.1) {
       haxe.5QGZh.9LccS = ]RN];
       haxe.5QGZh.9tEy4( = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789%:';
       haxe.5QGZh.+BH{A = null;
-      haxe.*_bc9.}VCyQ = false;
-      haxe.*_bc9.(SkV ( = false;
-      haxe.*_bc9.9tEy4( = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789%:';
+      haxe.Serializer.}VCyQ = false;
+      haxe.Serializer.(SkV ( = false;
+      haxe.Serializer.9tEy4( = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789%:';
       5-OQ1(.[MqDO = 800;
       5-OQ1(.*sd+;( = 600;
       5-OQ1(.={OXb = 6;

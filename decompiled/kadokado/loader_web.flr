@@ -1827,7 +1827,7 @@ for ($somevar in v2) {
     };
 
     v1.=Z(MN = function (arg0) {
-      var v3 = haxe.*_bc9.;LI(arg0);
+      var v3 = haxe.Serializer.;LI(arg0);
       var v4 = this.*.;LI(v3);
       v4 += haxe.=6k.=Z(MN(v3 + [wBA,.{_nEU.)));
       return v4;
@@ -3450,20 +3450,20 @@ for ($somevar in v2) {
       return v2.);
     };
 
-    haxe.*_bc9 = function () {
+    haxe.Serializer = function () {
       this. [* = new [vXe-();
       this.+Hp() = new Array();
-      this.)[;[g = haxe.*_bc9.}VCyQ;
-      this.3 yU+( = haxe.*_bc9.(SkV (;
+      this.)[;[g = haxe.Serializer.}VCyQ;
+      this.3 yU+( = haxe.Serializer.(SkV (;
       this.1xYp5 = new 19{O();
       this.5V{L6 = 0;
     };
 
-    haxe.*_bc9.__name__ = ['haxe', '*_bc9'];
-    v1 = haxe.*_bc9.prototype;
-    v1.__class__ = haxe.*_bc9;
-    haxe.*_bc9.;LI = function (arg0) {
-      var v3 = new haxe.*_bc9();
+    haxe.Serializer.__name__ = ['haxe', 'Serializer'];
+    v1 = haxe.Serializer.prototype;
+    v1.__class__ = haxe.Serializer;
+    haxe.Serializer.;LI = function (arg0) {
+      var v3 = new haxe.Serializer();
       v3. aNDa(arg0);
       return v3.toString();
     };
@@ -3594,7 +3594,7 @@ for ($somevar in v2) {
                       v7 = 0;
                       v8 = v6.length - 2;
                       var v9 = '';
-                      var v10 = haxe.*_bc9.9tEy4(;
+                      var v10 = haxe.Serializer.9tEy4(;
                       while (v7 < v8) {
                         ++v7;
                         var v11 = v6.)[v7];
@@ -4846,9 +4846,9 @@ for ($somevar in this.1) {
       haxe.5QGZh.9LccS = ]RN];
       haxe.5QGZh.9tEy4( = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789%:';
       haxe.5QGZh.+BH{A = null;
-      haxe.*_bc9.}VCyQ = false;
-      haxe.*_bc9.(SkV ( = false;
-      haxe.*_bc9.9tEy4( = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789%:';
+      haxe.Serializer.}VCyQ = false;
+      haxe.Serializer.(SkV ( = false;
+      haxe.Serializer.9tEy4( = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789%:';
       haxe.;G][.-vFG9( = '0123456789abcdef';
       [wBA,.{_nEU.)) = haxe.;G][.=Z(MN('Start Game');
       haxe.=6k.*KB2 = new haxe.=6k();
