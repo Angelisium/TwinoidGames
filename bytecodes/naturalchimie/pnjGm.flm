@@ -1,0 +1,172 @@
+movie 'pnjGm.swf' compressed // flash 8, total frames: 1, frame rate: 12 fps, 500x300 px
+
+
+  defineMovieClip 2 // total frames: 1
+  end // of defineMovieClip 2
+
+  defineMovieClip 4 // total frames: 1
+  end // of defineMovieClip 4
+
+  defineMovieClip 6 // total frames: 1
+  end // of defineMovieClip 6
+
+  defineMovieClip 7 // total frames: 41
+
+    frame 40
+      stop
+    end // of frame 40
+  end // of defineMovieClip 7
+  
+  exportAssets
+    7 as 'vanish'
+  end // of exportAssets
+
+  defineMovieClip 11 // total frames: 3
+  end // of defineMovieClip 11
+
+  defineMovieClip 14 // total frames: 1
+  end // of defineMovieClip 14
+
+  defineMovieClip 17 // total frames: 1
+  end // of defineMovieClip 17
+
+  defineMovieClip 23 // total frames: 3
+  end // of defineMovieClip 23
+
+  defineMovieClip 27 // total frames: 3
+  end // of defineMovieClip 27
+
+  defineMovieClip 31 // total frames: 3
+  end // of defineMovieClip 31
+
+  defineMovieClip 35 // total frames: 3
+  end // of defineMovieClip 35
+
+  defineMovieClip 38 // total frames: 1
+  end // of defineMovieClip 38
+
+  defineMovieClip 40 // total frames: 1
+  end // of defineMovieClip 40
+
+  defineMovieClip 42 // total frames: 1
+  end // of defineMovieClip 42
+
+  defineMovieClip 44 // total frames: 1
+  end // of defineMovieClip 44
+
+  defineMovieClip 47 // total frames: 1
+  end // of defineMovieClip 47
+
+  defineMovieClip 49 // total frames: 1
+  end // of defineMovieClip 49
+
+  defineMovieClip 56 // total frames: 5
+  end // of defineMovieClip 56
+
+  defineMovieClip 59 // total frames: 1
+  end // of defineMovieClip 59
+
+  defineMovieClip 61 // total frames: 1
+  end // of defineMovieClip 61
+
+  defineMovieClip 63 // total frames: 1
+  end // of defineMovieClip 63
+
+  defineMovieClip 65 // total frames: 1
+  end // of defineMovieClip 65
+
+  defineMovieClip 67 // total frames: 1
+  end // of defineMovieClip 67
+
+  defineMovieClip 69 // total frames: 1
+  end // of defineMovieClip 69
+
+  defineMovieClip 71 // total frames: 1
+  end // of defineMovieClip 71
+
+  defineMovieClip 73 // total frames: 1
+  end // of defineMovieClip 73
+
+  defineMovieClip 83 // total frames: 6
+  end // of defineMovieClip 83
+
+  defineMovieClip 84 // total frames: 9
+  end // of defineMovieClip 84
+  
+  exportAssets
+    84 as 'pnj'
+  end // of exportAssets
+
+  defineMovieClip 85 // total frames: 1
+  end // of defineMovieClip 85
+  
+  exportAssets
+    85 as 'loadPnj'
+  end // of exportAssets
+
+  frame 0
+    constants ';', 'split', 'apply', 'movieclip', 'smc', '_name', 'gotoAndStop', 'shift', 'length'  
+    function2 _setPnj (r:3='s') (r:1='this')
+      push ';', 1, r:s, 'split'
+      callMethod
+      setRegister r:2
+      pop
+      push r:2, r:this, 2, 'apply'
+      callFunction
+      pop
+    end // of function _setPnj
+
+    function2 apply (r:4='mc', r:2='infos') ()
+      push r:mc
+      enumerateValue
+     label1:
+      setRegister r:0
+      push NULL
+      equals
+      branchIfTrue label3
+      push r:0
+      setRegister r:5
+      pop
+      push r:mc, r:5
+      getMember
+      setRegister r:1
+      pop
+      push r:1
+      typeof
+      push 'movieclip'
+      equals
+      not
+      branchIfTrue label2
+      push 'smc'
+      setRegister r:3
+      pop
+      push r:1, '_name'
+      getMember
+      push r:3
+      equals
+      not
+      branchIfTrue label2
+      push r:infos, 0.0
+      getMember
+      push 1, r:1, 'gotoAndStop'
+      callMethod
+      pop
+      push 0.0, r:infos, 'shift'
+      callMethod
+      pop
+      push r:infos, 'length'
+      getMember
+      push 0.0
+      greaterThan
+      not
+      branchIfTrue label2
+      push r:infos, r:1, 2, 'apply'
+      callFunction
+      pop
+     label2:
+      branch label1
+     label3:
+    end // of function apply
+
+  end // of frame 0
+end

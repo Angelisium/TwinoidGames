@@ -1,0 +1,233 @@
+movie 'pnjGu.swf' compressed // flash 8, total frames: 1, frame rate: 12 fps, 500x300 px
+
+
+  defineMovieClip 1 // total frames: 41
+
+    frame 40
+      stop
+    end // of frame 40
+  end // of defineMovieClip 1
+  
+  exportAssets
+    1 as 'vanish'
+  end // of exportAssets
+
+  defineMovieClip 5 // total frames: 3
+  end // of defineMovieClip 5
+
+  defineMovieClip 9 // total frames: 1
+  end // of defineMovieClip 9
+
+  defineMovieClip 12 // total frames: 1
+  end // of defineMovieClip 12
+
+  defineMovieClip 13 // total frames: 3
+  end // of defineMovieClip 13
+  
+  // unknown tag 88 length 72
+
+  defineMovieClip 22 // total frames: 1
+  end // of defineMovieClip 22
+
+  defineMovieClip 23 // total frames: 1
+  end // of defineMovieClip 23
+
+  defineMovieClip 24 // total frames: 1
+  end // of defineMovieClip 24
+
+  defineMovieClip 27 // total frames: 3
+  end // of defineMovieClip 27
+
+  defineMovieClip 32 // total frames: 3
+  end // of defineMovieClip 32
+
+  defineMovieClip 34 // total frames: 1
+  end // of defineMovieClip 34
+
+  defineMovieClip 36 // total frames: 1
+  end // of defineMovieClip 36
+
+  defineMovieClip 37 // total frames: 1
+  end // of defineMovieClip 37
+
+  defineMovieClip 39 // total frames: 1
+  end // of defineMovieClip 39
+
+  defineMovieClip 41 // total frames: 1
+  end // of defineMovieClip 41
+
+  defineMovieClip 44 // total frames: 1
+  end // of defineMovieClip 44
+
+  defineMovieClip 45 // total frames: 1
+  end // of defineMovieClip 45
+
+  defineMovieClip 47 // total frames: 1
+  end // of defineMovieClip 47
+
+  defineMovieClip 49 // total frames: 1
+  end // of defineMovieClip 49
+
+  defineMovieClip 50 // total frames: 17
+  end // of defineMovieClip 50
+
+  defineMovieClip 51 // total frames: 76
+
+    frame 75
+      constants '_parent', '_next'  
+      stop
+      push 0.0, '_parent'
+      getVariable
+      push '_parent'
+      getMember
+      push '_parent'
+      getMember
+      push '_next'
+      callMethod
+      pop
+    end // of frame 75
+  end // of defineMovieClip 51
+
+  defineMovieClip 54 // total frames: 1
+  end // of defineMovieClip 54
+
+  defineMovieClip 57 // total frames: 3
+  end // of defineMovieClip 57
+
+  defineMovieClip 60 // total frames: 1
+  end // of defineMovieClip 60
+
+  defineMovieClip 63 // total frames: 1
+  end // of defineMovieClip 63
+
+  defineMovieClip 64 // total frames: 2
+  end // of defineMovieClip 64
+
+  defineMovieClip 68 // total frames: 3
+  end // of defineMovieClip 68
+
+  defineMovieClip 71 // total frames: 1
+  end // of defineMovieClip 71
+
+  defineMovieClip 75 // total frames: 3
+  end // of defineMovieClip 75
+
+  defineMovieClip 79 // total frames: 3
+  end // of defineMovieClip 79
+
+  defineMovieClip 83 // total frames: 3
+  end // of defineMovieClip 83
+
+  defineMovieClip 87 // total frames: 3
+  end // of defineMovieClip 87
+
+  defineMovieClip 89 // total frames: 1
+  end // of defineMovieClip 89
+
+  defineMovieClip 94 // total frames: 4
+  end // of defineMovieClip 94
+
+  defineMovieClip 98 // total frames: 3
+  end // of defineMovieClip 98
+
+  defineMovieClip 102 // total frames: 3
+  end // of defineMovieClip 102
+
+  defineMovieClip 106 // total frames: 1
+  end // of defineMovieClip 106
+
+  defineMovieClip 108 // total frames: 3
+  end // of defineMovieClip 108
+
+  defineMovieClip 111 // total frames: 1
+  end // of defineMovieClip 111
+
+  defineMovieClip 121 // total frames: 5
+  end // of defineMovieClip 121
+
+  defineMovieClip 126 // total frames: 4
+  end // of defineMovieClip 126
+
+  defineMovieClip 130 // total frames: 3
+  end // of defineMovieClip 130
+
+  defineMovieClip 131 // total frames: 22
+  end // of defineMovieClip 131
+  
+  exportAssets
+    131 as 'pnj'
+  end // of exportAssets
+
+  defineMovieClip 132 // total frames: 1
+  end // of defineMovieClip 132
+  
+  exportAssets
+    132 as 'loadPnj'
+  end // of exportAssets
+
+  frame 0
+    constants ';', 'split', 'apply', 'movieclip', 'smc', '_name', 'gotoAndStop', 'shift', 'length'  
+    function2 _setPnj (r:3='s') (r:1='this')
+      push ';', 1, r:s, 'split'
+      callMethod
+      setRegister r:2
+      pop
+      push r:2, r:this, 2, 'apply'
+      callFunction
+      pop
+    end // of function _setPnj
+
+    function2 apply (r:4='mc', r:2='infos') ()
+      push r:mc
+      enumerateValue
+     label1:
+      setRegister r:0
+      push NULL
+      equals
+      branchIfTrue label3
+      push r:0
+      setRegister r:5
+      pop
+      push r:mc, r:5
+      getMember
+      setRegister r:1
+      pop
+      push r:1
+      typeof
+      push 'movieclip'
+      equals
+      not
+      branchIfTrue label2
+      push 'smc'
+      setRegister r:3
+      pop
+      push r:1, '_name'
+      getMember
+      push r:3
+      equals
+      not
+      branchIfTrue label2
+      push r:infos, 0.0
+      getMember
+      push 1, r:1, 'gotoAndStop'
+      callMethod
+      pop
+      push 0.0, r:infos, 'shift'
+      callMethod
+      pop
+      push r:infos, 'length'
+      getMember
+      push 0.0
+      greaterThan
+      not
+      branchIfTrue label2
+      push r:infos, r:1, 2, 'apply'
+      callFunction
+      pop
+     label2:
+      branch label1
+     label3:
+    end // of function apply
+
+  end // of frame 0
+end
