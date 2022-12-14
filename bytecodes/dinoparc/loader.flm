@@ -1,0 +1,132 @@
+movie 'loader.swf' compressed // flash 7, total frames: 1, frame rate: 40 fps, 300x300 px
+
+  frame 0
+    constants 'Stage', 'align', 'LT', 'doLoad', 'mc', 'createEmptyMovieClip', 'count', 'l', 'MovieClipLoader', 'tid', 'onLoadError', 'clearInterval', 'lastT', 'lastP', 'checkProgress', 'setInterval', 'onLoadComplete', 'onLoadProgress', 'swf_url', '', ';_r=', 'loadClip'  
+    push 'Stage'
+    getVariable
+    push 'align', 'LT'
+    setMember
+    push 'doLoad'
+    function2 ('count') (r:1='_root')
+      push 0.0, 'mc', 2, r:_root, 'createEmptyMovieClip'
+      callMethod
+      pop
+      push 'count'
+      getVariable
+      push 3
+      equals
+      not
+      branchIfTrue label1
+      push UNDEF
+      return
+     label1:
+      push 'l', 0.0, 'MovieClipLoader'
+      new
+      varEquals
+      push 'tid'
+      var
+      push 'l'
+      getVariable
+      push 'onLoadError'
+      function ()
+        push 'tid'
+        getVariable
+        push 1, 'clearInterval'
+        callFunction
+        pop
+        push 'count'
+        getVariable
+        push 1
+        add
+        push 1, 'doLoad'
+        callFunction
+        pop
+      end // of function 
+
+      setMember
+      push 'lastT'
+      getTimer
+      varEquals
+      push 'lastP', 0.0
+      varEquals
+      push 'checkProgress'
+      function ()
+        getTimer
+        push 'lastT'
+        getVariable
+        subtract
+        push 10000
+        greaterThan
+        not
+        branchIfTrue label2
+        push 0.0, 'l'
+        getVariable
+        push 'onLoadError'
+        callMethod
+        pop
+       label2:
+      end // of function 
+
+      setVariable
+      push 'tid', 1000, 'checkProgress', 2, 'setInterval'
+      callFunction
+      setVariable
+      push 'l'
+      getVariable
+      push 'onLoadComplete'
+      function ()
+        push 'tid'
+        getVariable
+        push 1, 'clearInterval'
+        callFunction
+        pop
+      end // of function 
+
+      setMember
+      push 'l'
+      getVariable
+      push 'onLoadProgress'
+      function2 ('a', 'b', r:1='c') ()
+        push r:c, 'lastP'
+        getVariable
+        equals
+        not
+        not
+        branchIfTrue label3
+        push 'lastP', r:c
+        setVariable
+        push 'lastT'
+        getTimer
+        setVariable
+       label3:
+      end // of function 
+
+      setMember
+      push r:_root, 'mc'
+      getMember
+      push r:_root, 'swf_url'
+      getMember
+      push 'count'
+      getVariable
+      branchIfTrue label4
+      push ''
+      branch label5
+     label4:
+      push ';_r=', 'count'
+      getVariable
+      add
+     label5:
+      add
+      push 2, 'l'
+      getVariable
+      push 'loadClip'
+      callMethod
+      pop
+    end // of function 
+
+    setVariable
+    push 0.0, 1, 'doLoad'
+    callFunction
+    pop
+  end // of frame 0
+end

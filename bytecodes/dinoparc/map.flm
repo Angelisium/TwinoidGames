@@ -1,0 +1,944 @@
+movie 'map.swf' compressed // flash 7, total frames: 1, frame rate: 30 fps, 400x250 px
+
+  frame 0
+    constants '_root', 'lang', 'DEFAULT', 'Error: null lang', 'fr', 'LOADING', 'Chargement...', 'CANCEL', 'annuler le déplacement', '', 'DEFAULT_CHOOSE', 'Choisissez votre destination...', 'PLACES', 'Cratère du grand Tout-chaud', 'Hutte du vieux sage', 'Caverne de l\'anomalie', 'Source chantante', 'Bordeciel', 'Jungle des Ouistitis', 'Marais collant', 'Bazar de Ter\'Magik', 'Crédit Arboricole', 'Ruines Mayinca', 'L\'Ile de la Pitié', 'Port de la Prune', 'Temple Bouddhiste', 'Forêt Millénaire', 'Chemin des Gredins', 'Porte de Granit', 'Mont Dino', 'Falaises de l\'Ermite', 'Barrage Routier', 'Dinoplage', 'Clairière', 'Caverne d\'Irma', 'Dinoville', 'sp', 'Cargando...', 'anular el desplazamiento', 'Elige un destino...', 'Cráter del Gran Señor-Todo-Quema', 'Casucha del viejo sabio', 'Caverna de la Anomalí', 'Fuente Cantante', 'Burdecielo', 'Jungla de los Wistitis', 'Pantano Pegajoso', 'Mercado de la Isla de Jazz', 'Instituto de Crédito Olímpico', 'Ruinas Mayinca', 'Isla de la Piedad', 'Puerto de Santa Moría', 'Templo Budista', 'Bosque Milenario', 'Camino de los Bribones', 'Puerta de Granito', 'Monte Dino', 'Acantilados de la Ermita', 'Barrera de Caminos', 'Dinoplaya', 'Claro del Bosque', 'Caverna de Lola', 'Dinovilla', 'en', 'Loading...', 'cancel your trip', 'Choose your destination...', 'Crater of the Great Lord Burn-All', 'Wise Old Man\'s shack', 'Anomaly Cavern', 'Singing Fountain', 'Bordesky', 'Wistitis Jungle', 'Sticky swamp', 'Jazz island Market', 'Institute of Olimpic Credit', 'Mayinca Ruins', 'Pity Island', 'Port of Saint Berry', 'Buddhist Temple', 'Ancient Wood', 'Bandits Road', 'Granite Door', 'Mount Dinoz', 'Hermitage Cliffs', 'Check Point', 'Dinobeach', 'Clearing in the Wood', 'Sparky\'s Cave', 'Dinotown', 'POP_OFFSET', 'i', 'visits', 'v', 'cur', 'p', '_nexts', ':', 'n', 'split', 'nexts', 'length', '0', 'bouncer', '_visible', 'path', 'dbg', 'placeName', 'text', '_alpha', 'zones', '_xscale', '_yscale', 'filter', 'fl_disable', 'moved', 'true', 'bg', 'onRelease', '_self', 'goto', 'go', 'move', 'mc', 'gotoAndStop', 'cursor', '_x', '_y', 'onPress', 'back', 'useHandCursor', 'onRollOver', 'gotoAndPlay', '- ', ' -', 'sub', 'SP', 'unk', '_height', '_width', 'onRollOut', 'hide', 'p22', '~ ', '\n', 'loadingField', 'url', 'init'  
+    function init ()
+      push '_root'
+      getVariable
+      push 'lang'
+      getMember
+      push NULL
+      equals
+      not
+      branchIfTrue label1
+      push 'DEFAULT', 'Error: null lang'
+      setVariable
+     label1:
+      push '_root'
+      getVariable
+      push 'lang'
+      getMember
+      push 'fr'
+      equals
+      not
+      branchIfTrue label2
+      push 'LOADING', 'Chargement...'
+      setVariable
+      push 'CANCEL', 'annuler le déplacement'
+      setVariable
+      push 'DEFAULT', ''
+      setVariable
+      push 'DEFAULT_CHOOSE', 'Choisissez votre destination...'
+      setVariable
+      push 'PLACES', 'Cratère du grand Tout-chaud', 'Hutte du vieux sage', 'Caverne de l\'anomalie', 'Source chantante', 'Bordeciel', 'Jungle des Ouistitis', 'Marais collant', 'Bazar de Ter\'Magik', 'Crédit Arboricole', 'Ruines Mayinca', 'L\'Ile de la Pitié', 'Port de la Prune', 'Temple Bouddhiste', 'Forêt Millénaire', 'Chemin des Gredins', 'Porte de Granit', 'Mont Dino', 'Falaises de l\'Ermite', 'Barrage Routier', 'Dinoplage', 'Clairière', 'Caverne d\'Irma', 'Dinoville', 23
+      initArray
+      setVariable
+     label2:
+      push '_root'
+      getVariable
+      push 'lang'
+      getMember
+      push 'sp'
+      equals
+      not
+      branchIfTrue label3
+      push 'LOADING', 'Cargando...'
+      setVariable
+      push 'CANCEL', 'anular el desplazamiento'
+      setVariable
+      push 'DEFAULT', ''
+      setVariable
+      push 'DEFAULT_CHOOSE', 'Elige un destino...'
+      setVariable
+      push 'PLACES', 'Cráter del Gran Señor-Todo-Quema', 'Casucha del viejo sabio', 'Caverna de la Anomalí', 'Fuente Cantante', 'Burdecielo', 'Jungla de los Wistitis', 'Pantano Pegajoso', 'Mercado de la Isla de Jazz', 'Instituto de Crédito Olímpico', 'Ruinas Mayinca', 'Isla de la Piedad', 'Puerto de Santa Moría', 'Templo Budista', 'Bosque Milenario', 'Camino de los Bribones', 'Puerta de Granito', 'Monte Dino', 'Acantilados de la Ermita', 'Barrera de Caminos', 'Dinoplaya', 'Claro del Bosque', 'Caverna de Lola', 'Dinovilla', 23
+      initArray
+      setVariable
+     label3:
+      push '_root'
+      getVariable
+      push 'lang'
+      getMember
+      push 'en'
+      equals
+      not
+      branchIfTrue label4
+      push 'LOADING', 'Loading...'
+      setVariable
+      push 'CANCEL', 'cancel your trip'
+      setVariable
+      push 'DEFAULT', ''
+      setVariable
+      push 'DEFAULT_CHOOSE', 'Choose your destination...'
+      setVariable
+      push 'PLACES', 'Crater of the Great Lord Burn-All', 'Wise Old Man\'s shack', 'Anomaly Cavern', 'Singing Fountain', 'Bordesky', 'Wistitis Jungle', 'Sticky swamp', 'Jazz island Market', 'Institute of Olimpic Credit', 'Mayinca Ruins', 'Pity Island', 'Port of Saint Berry', 'Buddhist Temple', 'Ancient Wood', 'Bandits Road', 'Granite Door', 'Mount Dinoz', 'Hermitage Cliffs', 'Check Point', 'Dinobeach', 'Clearing in the Wood', 'Sparky\'s Cave', 'Dinotown', 23
+      initArray
+      setVariable
+     label4:
+      push 'POP_OFFSET', 10
+      setVariable
+      push 'i'
+      var
+      push 'visits', '_root'
+      getVariable
+      push 'v'
+      getMember
+      int
+      varEquals
+      push 'cur', '_root'
+      getVariable
+      push 'p'
+      getMember
+      int
+      varEquals
+      push '_nexts', ':', 1, '_root'
+      getVariable
+      push 'n'
+      getMember
+      push 'split'
+      callMethod
+      varEquals
+      push 'nexts', 0.0
+      initArray
+      varEquals
+      push '_nexts'
+      getVariable
+      push 'length'
+      getMember
+      push 1
+      equals
+      dup
+      not
+      branchIfTrue label5
+      pop
+      push '_nexts'
+      getVariable
+      push 0.0
+      getMember
+      int
+      push 0.0
+      equals
+     label5:
+      dup
+      not
+      branchIfTrue label6
+      pop
+      push '_root'
+      getVariable
+      push 'n'
+      getMember
+      push '0'
+      equals
+      not
+     label6:
+      not
+      branchIfTrue label7
+      push '_nexts', NULL
+      setVariable
+      push 'bouncer'
+      getVariable
+      push '_visible', FALSE
+      setMember
+      push 'path'
+      getVariable
+      push '_visible', FALSE
+      setMember
+     label7:
+      push 'i', 0.0
+      setVariable
+     label8:
+      push 'i'
+      getVariable
+      push '_nexts'
+      getVariable
+      push 'length'
+      getMember
+      lessThan
+      not
+      branchIfTrue label9
+      push 'nexts'
+      getVariable
+      push '_nexts'
+      getVariable
+      push 'i'
+      getVariable
+      getMember
+      int
+      push TRUE
+      setMember
+      push 'i', 'i'
+      getVariable
+      increment
+      setVariable
+      branch label8
+     label9:
+      push '_root'
+      getVariable
+      push 'dbg', ''
+      setMember
+      push '_nexts'
+      getVariable
+      push NULL
+      equals
+      not
+      not
+      branchIfTrue label10
+      push 'DEFAULT', 'DEFAULT_CHOOSE'
+      getVariable
+      setVariable
+     label10:
+      push 'placeName'
+      getVariable
+      push 'text', 'DEFAULT'
+      getVariable
+      setMember
+      push 'placeName'
+      getVariable
+      push '_alpha', 80
+      setMember
+      push 'zones'
+      getVariable
+      push '_xscale', 'zones'
+      getVariable
+      push '_yscale', 40
+      setRegister r:0
+      setMember
+      push r:0
+      setMember
+      push 'filter'
+      getVariable
+      push '_visible', FALSE
+      setMember
+      push 'fl_disable', FALSE
+      varEquals
+      push '_root'
+      getVariable
+      push 'moved'
+      getMember
+      push 'true'
+      equals
+      not
+      dup
+      not
+      branchIfTrue label11
+      pop
+      push '_nexts'
+      getVariable
+      push NULL
+      equals
+     label11:
+      not
+      branchIfTrue label12
+      push 'bg'
+      getVariable
+      push 'onRelease'
+      function2 () (r:1='_root')
+        push '_self', r:_root, 'goto'
+        getMember
+        push 'go'
+        add
+        push 2, 'move'
+        callFunction
+        pop
+      end // of function 
+
+      setMember
+     label12:
+      push 'i', 0.0
+      setVariable
+     label13:
+      push 'i'
+      getVariable
+      push 22
+      greaterThan
+      not
+      not
+      branchIfTrue label38
+      push 'mc', 'p', 'i'
+      getVariable
+      add
+      getVariable
+      varEquals
+      push 'mc'
+      getVariable
+      push 'n', 'i'
+      getVariable
+      setMember
+      push 'i'
+      getVariable
+      push 'cur'
+      getVariable
+      equals
+      not
+      branchIfTrue label20
+      push 3, 1, 'mc'
+      getVariable
+      push 'gotoAndStop'
+      callMethod
+      pop
+      push 'cursor'
+      getVariable
+      push '_x', 'mc'
+      getVariable
+      push '_x'
+      getMember
+      setMember
+      push 'cursor'
+      getVariable
+      push '_y', 'mc'
+      getVariable
+      push '_y'
+      getMember
+      setMember
+      push '_nexts'
+      getVariable
+      push NULL
+      equals
+      not
+      not
+      branchIfTrue label14
+      push 'cursor'
+      getVariable
+      push '_visible', FALSE
+      setMember
+      push 'bouncer'
+      getVariable
+      push '_x', 'mc'
+      getVariable
+      push '_x'
+      getMember
+      setMember
+      push 'bouncer'
+      getVariable
+      push '_y', 'mc'
+      getVariable
+      push '_y'
+      getMember
+      setMember
+     label14:
+      push '_root'
+      getVariable
+      push 'moved'
+      getMember
+      push 'true'
+      equals
+      not
+      not
+      branchIfTrue label18
+      push 'mc'
+      getVariable
+      push 'onPress'
+      function2 () (r:1='_root')
+        push 'fl_disable'
+        getVariable
+        not
+        branchIfTrue label15
+        push UNDEF
+        return
+       label15:
+        push '_nexts'
+        getVariable
+        push NULL
+        equals
+        not
+        branchIfTrue label16
+        push '_self', r:_root, 'goto'
+        getMember
+        push 'go'
+        add
+        push 2, 'move'
+        callFunction
+        pop
+        branch label17
+       label16:
+        push '_self', r:_root, 'goto'
+        getMember
+        push 'back'
+        add
+        push 2, 'move'
+        callFunction
+        pop
+       label17:
+      end // of function 
+
+      setMember
+      branch label19
+     label18:
+      push 'mc'
+      getVariable
+      push 'useHandCursor', FALSE
+      setMember
+     label19:
+      branch label24
+     label20:
+      push 'nexts'
+      getVariable
+      push 'i'
+      getVariable
+      getMember
+      not
+      branchIfTrue label22
+      push 4, 1, 'mc'
+      getVariable
+      push 'gotoAndStop'
+      callMethod
+      pop
+      push 'mc'
+      getVariable
+      push 'onPress'
+      function2 () (r:1='this', r:2='_root')
+        push 'fl_disable'
+        getVariable
+        not
+        branchIfTrue label21
+        push UNDEF
+        return
+       label21:
+        push '_self', r:_root, 'goto'
+        getMember
+        push r:this, 'n'
+        getMember
+        add
+        push 2, 'move'
+        callFunction
+        pop
+      end // of function 
+
+      setMember
+      branch label24
+     label22:
+      push '_nexts'
+      getVariable
+      push NULL
+      equals
+      not
+      branchIfTrue label23
+      push 'mc'
+      getVariable
+      push 'onRelease'
+      function2 () (r:1='_root')
+        push '_self', r:_root, 'goto'
+        getMember
+        push 'go'
+        add
+        push 2, 'move'
+        callFunction
+        pop
+      end // of function 
+
+      setMember
+      push 1, 1, 'mc'
+      getVariable
+      push 'gotoAndStop'
+      callMethod
+      pop
+      branch label24
+     label23:
+      push 2, 1, 'mc'
+      getVariable
+      push 'gotoAndStop'
+      callMethod
+      pop
+     label24:
+      push 'mc'
+      getVariable
+      push 'onRollOver'
+      function2 () (r:1='this', r:2='_root')
+        push 'fl_disable'
+        getVariable
+        not
+        branchIfTrue label25
+        push UNDEF
+        return
+       label25:
+        push 'zones'
+        getVariable
+        push '_visible', TRUE
+        setMember
+        push 'zones'
+        getVariable
+        push '_x', r:this, '_x'
+        getMember
+        push 'POP_OFFSET'
+        getVariable
+        add
+        setMember
+        push 'zones'
+        getVariable
+        push '_y', r:this, '_y'
+        getMember
+        push 'POP_OFFSET'
+        getVariable
+        add
+        setMember
+        push 1, 1, 'zones'
+        getVariable
+        push 'gotoAndPlay'
+        callMethod
+        pop
+        push 'visits'
+        getVariable
+        push 1, r:this, 'n'
+        getMember
+        shiftLeft
+        bitwiseAnd
+        not
+        branchIfTrue label29
+        push '_nexts'
+        getVariable
+        push NULL
+        equals
+        not
+        dup
+        not
+        branchIfTrue label26
+        pop
+        push 'cur'
+        getVariable
+        push r:this, 'n'
+        getMember
+        equals
+       label26:
+        not
+        branchIfTrue label27
+        push 'placeName'
+        getVariable
+        push 'text', '- ', 'CANCEL'
+        getVariable
+        add
+        push ' -'
+        add
+        setMember
+        branch label28
+       label27:
+        push 'placeName'
+        getVariable
+        push 'text', 'PLACES'
+        getVariable
+        push r:this, 'n'
+        getMember
+        getMember
+        setMember
+       label28:
+        push r:this, 'n'
+        getMember
+        push 1
+        add
+        push 1, 'zones'
+        getVariable
+        push 'sub'
+        getMember
+        push 'gotoAndStop'
+        callMethod
+        pop
+        push 'zones'
+        getVariable
+        push 'sub'
+        getMember
+        push 'sp'
+        getMember
+        push '_visible', r:_root, 'lang'
+        getMember
+        push 'SP'
+        equals
+        setMember
+        branch label30
+       label29:
+        push 'placeName'
+        getVariable
+        push 'text', 'PLACES'
+        getVariable
+        push r:this, 'n'
+        getMember
+        getMember
+        setMember
+        push 'unk', 1, 'zones'
+        getVariable
+        push 'sub'
+        getMember
+        push 'gotoAndStop'
+        callMethod
+        pop
+       label30:
+        push 'placeName'
+        getVariable
+        push '_alpha', 100
+        setMember
+        push 'zones'
+        getVariable
+        push '_y'
+        getMember
+        push 250, 'zones'
+        getVariable
+        push '_height'
+        getMember
+        subtract
+        push 15
+        subtract
+        lessThan
+        not
+        not
+        branchIfTrue label31
+        push 'zones'
+        getVariable
+        push '_y', r:this, '_y'
+        getMember
+        push 'POP_OFFSET'
+        getVariable
+        subtract
+        push 'zones'
+        getVariable
+        push '_height'
+        getMember
+        subtract
+        setMember
+       label31:
+        push 'zones'
+        getVariable
+        push '_x'
+        getMember
+        push 400, 'zones'
+        getVariable
+        push '_width'
+        getMember
+        subtract
+        lessThan
+        not
+        not
+        branchIfTrue label32
+        push 'zones'
+        getVariable
+        push '_x', r:this, '_x'
+        getMember
+        push 'POP_OFFSET'
+        getVariable
+        subtract
+        push 'zones'
+        getVariable
+        push '_width'
+        getMember
+        subtract
+        setMember
+       label32:
+        push r:this, 'n'
+        getMember
+        push 'cur'
+        getVariable
+        equals
+        not
+        dup
+        not
+        branchIfTrue label33
+        pop
+        push 'nexts'
+        getVariable
+        push r:this, 'n'
+        getMember
+        getMember
+        not
+       label33:
+        not
+        branchIfTrue label34
+        push 2, 1, r:this, 'gotoAndStop'
+        callMethod
+        pop
+       label34:
+      end // of function 
+
+      setMember
+      push 'mc'
+      getVariable
+      push 'onRollOut'
+      function2 () (r:1='this')
+        push 'placeName'
+        getVariable
+        push 'text', 'DEFAULT'
+        getVariable
+        setMember
+        push 'placeName'
+        getVariable
+        push '_alpha', 80
+        setMember
+        push 'hide', 1, 'zones'
+        getVariable
+        push 'gotoAndPlay'
+        callMethod
+        pop
+        push r:this, 'n'
+        getMember
+        push 'cur'
+        getVariable
+        equals
+        not
+        dup
+        not
+        branchIfTrue label35
+        pop
+        push 'nexts'
+        getVariable
+        push r:this, 'n'
+        getMember
+        getMember
+        not
+       label35:
+        dup
+        not
+        branchIfTrue label36
+        pop
+        push '_nexts'
+        getVariable
+        push NULL
+        equals
+       label36:
+        not
+        branchIfTrue label37
+        push 1, 1, r:this, 'gotoAndStop'
+        callMethod
+        pop
+       label37:
+      end // of function 
+
+      setMember
+      push 'i', 'i'
+      getVariable
+      increment
+      setVariable
+      branch label13
+     label38:
+      push 'cur'
+      getVariable
+      push 14
+      greaterThan
+      not
+      dup
+      branchIfTrue label39
+      pop
+      push 'cur'
+      getVariable
+      push 22
+      lessThan
+      not
+     label39:
+      not
+      branchIfTrue label43
+      push 1, 1, 'path'
+      getVariable
+      push 'gotoAndStop'
+      callMethod
+      pop
+      push 1, 1, 'bg'
+      getVariable
+      push 'gotoAndStop'
+      callMethod
+      pop
+      push 'i', 15
+      varEquals
+     label40:
+      push 'i'
+      getVariable
+      push 22
+      lessThan
+      not
+      branchIfTrue label41
+      push 'p', 'i'
+      getVariable
+      add
+      getVariable
+      push '_visible', FALSE
+      setMember
+      push 'i', 'i'
+      getVariable
+      increment
+      setVariable
+      branch label40
+     label41:
+      push 'cur'
+      getVariable
+      push 22
+      equals
+      not
+      not
+      branchIfTrue label42
+      push 'p22'
+      getVariable
+      push '_visible', FALSE
+      setMember
+     label42:
+      branch label46
+     label43:
+      push 2, 1, 'path'
+      getVariable
+      push 'gotoAndStop'
+      callMethod
+      pop
+      push 2, 1, 'bg'
+      getVariable
+      push 'gotoAndStop'
+      callMethod
+      pop
+      push 'i', 0.0
+      varEquals
+     label44:
+      push 'i'
+      getVariable
+      push 15
+      lessThan
+      not
+      branchIfTrue label45
+      push 'p', 'i'
+      getVariable
+      add
+      getVariable
+      push '_visible', FALSE
+      setMember
+      push 'i', 'i'
+      getVariable
+      increment
+      setVariable
+      branch label44
+     label45:
+      push 'p22'
+      getVariable
+      push '_visible', FALSE
+      setMember
+     label46:
+    end // of function init
+
+    function2 DEBUG (r:2='txt') (r:1='_root')
+      push r:_root, 'dbg', r:_root, 'dbg'
+      getMember
+      push '~ ', r:txt
+      add
+      push '\n'
+      add
+      add
+      setMember
+    end // of function DEBUG
+
+    function move ('url')
+      push 'i', 0.0
+      varEquals
+     label47:
+      push 'i'
+      getVariable
+      push 14
+      greaterThan
+      not
+      not
+      branchIfTrue label48
+      push 'mc', 'p', 'i'
+      getVariable
+      add
+      getVariable
+      varEquals
+      push 1, 1, 'mc'
+      getVariable
+      push 'gotoAndStop'
+      callMethod
+      pop
+      push 'i', 'i'
+      getVariable
+      increment
+      setVariable
+      branch label47
+     label48:
+      push 'fl_disable', TRUE
+      setVariable
+      push 'zones'
+      getVariable
+      push '_visible', FALSE
+      setMember
+      push 'filter'
+      getVariable
+      push '_visible', TRUE
+      setMember
+      push 'filter'
+      getVariable
+      push 'loadingField'
+      getMember
+      push 'text', 'LOADING'
+      getVariable
+      setMember
+      push 'filter'
+      getVariable
+      push 'onRelease'
+      function ()
+      end // of function 
+
+      setMember
+      push 'filter'
+      getVariable
+      push 'useHandCursor', TRUE
+      setMember
+      push 'bouncer'
+      getVariable
+      push '_visible', FALSE
+      setMember
+      push 'cursor'
+      getVariable
+      push '_visible', FALSE
+      setMember
+      push 'url'
+      getVariable
+      push ''
+      getURL2
+    end // of function move
+
+    push 0.0, 'init'
+    callFunction
+    pop
+  end // of frame 0
+
+  defineMovieClip 5 // total frames: 2
+  end // of defineMovieClip 5
+
+  defineMovieClip 8 // total frames: 2
+  end // of defineMovieClip 8
+
+  defineMovieClip 17 // total frames: 1
+  end // of defineMovieClip 17
+
+  defineMovieClip 18 // total frames: 4
+  end // of defineMovieClip 18
+
+  defineMovieClip 22 // total frames: 1
+  end // of defineMovieClip 22
+
+  defineMovieClip 23 // total frames: 25
+
+    frame 24
+      gotoFrame 0
+      play
+    end // of frame 24
+  end // of defineMovieClip 23
+
+  defineMovieClip 25 // total frames: 1
+  end // of defineMovieClip 25
+
+  defineMovieClip 26 // total frames: 16
+  end // of defineMovieClip 26
+
+  defineMovieClip 35 // total frames: 1
+  end // of defineMovieClip 35
+
+  defineMovieClip 58 // total frames: 1
+  end // of defineMovieClip 58
+
+  defineMovieClip 82 // total frames: 50
+  end // of defineMovieClip 82
+
+  defineMovieClip 83 // total frames: 13
+
+    frame 5
+      stop
+    end // of frame 5
+
+    frame 12
+      stop
+      push '', 7, FALSE
+      setProperty
+    end // of frame 12
+  end // of defineMovieClip 83
+
+  defineMovieClip 85 // total frames: 1
+  end // of defineMovieClip 85
+end

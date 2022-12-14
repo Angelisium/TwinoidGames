@@ -1,0 +1,713 @@
+movie 'banner.swf' compressed // flash 7, total frames: 1, frame rate: 40 fps, 760x100 px
+
+  defineMovieClip 27 // total frames: 29
+
+    frame 12
+      gotoFrame 0
+      play
+    end // of frame 12
+
+    frame 28
+      gotoLabel 'loop'
+      play
+    end // of frame 28
+  end // of defineMovieClip 27
+
+  defineMovieClip 34 // total frames: 8
+  end // of defineMovieClip 34
+
+  defineMovieClip 42 // total frames: 131
+
+    frame 0
+      push 'compt', 1500
+      random
+      push 200
+      add
+      setVariable
+    end // of frame 0
+
+    frame 1
+      constants 'compt', ''  
+      push 'compt', 'compt'
+      getVariable
+      decrement
+      setVariable
+      push 'compt'
+      getVariable
+      push 0.0
+      greaterThan
+      not
+      not
+      branchIfTrue label1
+      push '', 4
+      getProperty
+      push 2
+      add
+      gotoAndPlay
+     label1:
+    end // of frame 1
+
+    frame 2
+      push '', 4
+      getProperty
+      push 1
+      subtract
+      gotoAndPlay
+    end // of frame 2
+
+    frame 61
+      push 'up', 1, 'c'
+      getVariable
+      push 'gotoAndPlay'
+      callMethod
+      pop
+    end // of frame 61
+
+    frame 91
+      push 'loop', 1, 'c'
+      getVariable
+      push 'gotoAndPlay'
+      callMethod
+      pop
+    end // of frame 91
+  end // of defineMovieClip 42
+  
+  exportAssets
+    42 as 'cloud1'
+  end // of exportAssets
+
+  defineMovieClip 45 // total frames: 1
+  end // of defineMovieClip 45
+  
+  exportAssets
+    45 as 'collines'
+  end // of exportAssets
+
+  defineMovieClip 48 // total frames: 1
+  end // of defineMovieClip 48
+
+  defineMovieClip 50 // total frames: 1
+  end // of defineMovieClip 50
+
+  defineMovieClip 52 // total frames: 1
+  end // of defineMovieClip 52
+
+  defineMovieClip 81 // total frames: 100
+  end // of defineMovieClip 81
+
+  defineMovieClip 84 // total frames: 1
+  end // of defineMovieClip 84
+
+  defineMovieClip 96 // total frames: 11
+  end // of defineMovieClip 96
+
+  defineMovieClip 108 // total frames: 11
+  end // of defineMovieClip 108
+
+  defineMovieClip 109 // total frames: 2
+
+    frame 0
+      stop
+    end // of frame 0
+  end // of defineMovieClip 109
+
+  defineMovieClip 110 // total frames: 3
+
+    frame 0
+      push 'compt', 2000
+      random
+      push 500
+      add
+      setVariable
+    end // of frame 0
+
+    frame 1
+      constants 'compt', 'this', '_rotation', 'vit', 'd', 'gotoAndStop', '_parent', 'shake'  
+      push 'compt', 'compt'
+      getVariable
+      decrement
+      setVariable
+      push 'compt'
+      getVariable
+      push 0.0
+      greaterThan
+      not
+      not
+      branchIfTrue label1
+      push 'this'
+      getVariable
+      push '_rotation', 'this'
+      getVariable
+      push '_rotation'
+      getMember
+      push 'vit'
+      getVariable
+      add
+      setMember
+      push 'vit', 3
+      random
+      push 1
+      add
+      push 3
+      divide
+      setVariable
+     label1:
+      push 'this'
+      getVariable
+      push '_rotation'
+      getMember
+      push 111
+      lessThan
+      not
+      not
+      branchIfTrue label2
+      push 2, 1, 'd'
+      getVariable
+      push 'gotoAndStop'
+      callMethod
+      pop
+      push '_parent'
+      getVariable
+      push 'shake', TRUE
+      setMember
+     label2:
+      push 'this'
+      getVariable
+      push '_rotation'
+      getMember
+      push 166
+      lessThan
+      not
+      not
+      branchIfTrue label3
+      push 1, 1, 'd'
+      getVariable
+      push 'gotoAndStop'
+      callMethod
+      pop
+      push 'this'
+      getVariable
+      push '_rotation', 0.0
+      setMember
+      push 'compt', 2000
+      random
+      push 500
+      add
+      setVariable
+     label3:
+    end // of frame 1
+
+    frame 2
+      push '', 4
+      getProperty
+      push 1
+      subtract
+      gotoAndPlay
+    end // of frame 2
+  end // of defineMovieClip 110
+
+  defineMovieClip 155 // total frames: 117
+
+    frame 0
+      push 'shake', FALSE
+      setVariable
+    end // of frame 0
+
+    frame 1
+      push 'shake'
+      getVariable
+      not
+      branchIfTrue label1
+      push '', 4
+      getProperty
+      push 2
+      add
+      gotoAndPlay
+     label1:
+    end // of frame 1
+
+    frame 2
+      push '', 4
+      getProperty
+      push 1
+      subtract
+      gotoAndPlay
+    end // of frame 2
+  end // of defineMovieClip 155
+  
+  exportAssets
+    155 as 'arbres'
+  end // of exportAssets
+
+  defineMovieClip 157 // total frames: 1
+  end // of defineMovieClip 157
+
+  defineMovieClip 159 // total frames: 1
+  end // of defineMovieClip 159
+
+  defineMovieClip 161 // total frames: 1
+  end // of defineMovieClip 161
+
+  defineMovieClip 163 // total frames: 1
+  end // of defineMovieClip 163
+
+  defineMovieClip 164 // total frames: 91
+  end // of defineMovieClip 164
+
+  defineMovieClip 165 // total frames: 1
+  end // of defineMovieClip 165
+
+  defineMovieClip 172 // total frames: 18
+  end // of defineMovieClip 172
+
+  defineMovieClip 191 // total frames: 8
+  end // of defineMovieClip 191
+
+  defineMovieClip 198 // total frames: 6
+  end // of defineMovieClip 198
+
+  defineMovieClip 211 // total frames: 12
+  end // of defineMovieClip 211
+
+  defineMovieClip 215 // total frames: 1
+  end // of defineMovieClip 215
+
+  defineMovieClip 217 // total frames: 1
+  end // of defineMovieClip 217
+
+  defineMovieClip 221 // total frames: 1
+  end // of defineMovieClip 221
+
+  defineMovieClip 229 // total frames: 1
+  end // of defineMovieClip 229
+
+  defineMovieClip 241 // total frames: 388
+
+    frame 1
+      constants 'compt', ''  
+      push 'compt', 6000
+      random
+      setVariable
+      push 'compt'
+      getVariable
+      push 1
+      equals
+      not
+      branchIfTrue label1
+      push '', 4
+      getProperty
+      push 2
+      add
+      gotoAndPlay
+     label1:
+    end // of frame 1
+
+    frame 2
+      push '', 4
+      getProperty
+      push 1
+      subtract
+      gotoAndPlay
+    end // of frame 2
+  end // of defineMovieClip 241
+  
+  exportAssets
+    241 as 'piknik'
+  end // of exportAssets
+
+  defineMovieClip 244 // total frames: 1
+  end // of defineMovieClip 244
+  
+  exportAssets
+    244 as 'fond'
+  end // of exportAssets
+
+  defineMovieClip 247 // total frames: 1
+  end // of defineMovieClip 247
+  
+  exportAssets
+    244 as 'fond'
+  end // of exportAssets
+
+  defineMovieClip 250 // total frames: 1
+  end // of defineMovieClip 250
+  
+  exportAssets
+    241 as 'piknik'
+  end // of exportAssets
+
+  defineMovieClip 252 // total frames: 23
+  end // of defineMovieClip 252
+
+  defineMovieClip 253 // total frames: 4
+
+    frame 0
+      constants 'vit', 'amp', 'fly', 'compt', 'fq', 'c', '_x', 'Math', 'sin', '_y', '_width'  
+      function init ()
+        push 'vit', 1
+        setVariable
+        push 'amp', 60
+        setVariable
+        push 'fly', FALSE
+        setVariable
+        push 'compt', 1500
+        random
+        push 200
+        add
+        setVariable
+      end // of function init
+
+      function main ()
+        push 'fq', 'c'
+        getVariable
+        push '_x'
+        getMember
+        push 0.1
+        multiply
+        push 1, 'Math'
+        getVariable
+        push 'sin'
+        callMethod
+        push 7
+        multiply
+        setVariable
+        push 'compt', 'compt'
+        getVariable
+        decrement
+        setVariable
+        push 'compt'
+        getVariable
+        push 0.0
+        greaterThan
+        not
+        not
+        branchIfTrue label1
+        push 'fly', TRUE
+        setVariable
+       label1:
+        push 'fly'
+        getVariable
+        not
+        branchIfTrue label2
+        push 'c'
+        getVariable
+        push '_x', 'c'
+        getVariable
+        push '_x'
+        getMember
+        push 'vit'
+        getVariable
+        add
+        setMember
+        push 'c'
+        getVariable
+        push '_y', 'fq'
+        getVariable
+        push 70
+        add
+        setMember
+        push 'c'
+        getVariable
+        push '_x'
+        getMember
+        push 'c'
+        getVariable
+        push '_width'
+        getMember
+        push 2
+        divide
+        subtract
+        push 760
+        lessThan
+        not
+        not
+        branchIfTrue label2
+        push 'c'
+        getVariable
+        push '_x', 0.0, 'c'
+        getVariable
+        push '_width'
+        getMember
+        push 2
+        divide
+        subtract
+        setMember
+        push 'compt', 1000
+        random
+        push 500
+        add
+        setVariable
+        push 'fly', FALSE
+        setVariable
+       label2:
+      end // of function main
+
+    end // of frame 0
+
+    frame 1
+      push 0.0, 'init'
+      callFunction
+      pop
+    end // of frame 1
+
+    frame 2
+      push 0.0, 'main'
+      callFunction
+      pop
+    end // of frame 2
+
+    frame 3
+      push '', 4
+      getProperty
+      push 1
+      subtract
+      gotoAndPlay
+    end // of frame 3
+  end // of defineMovieClip 253
+  
+  exportAssets
+    155 as 'arbres'
+  end // of exportAssets
+  
+  exportAssets
+    45 as 'collines'
+  end // of exportAssets
+
+  defineMovieClip 255 // total frames: 1
+  end // of defineMovieClip 255
+
+  defineMovieClip 257 // total frames: 1
+  end // of defineMovieClip 257
+
+  defineMovieClip 258 // total frames: 40
+  end // of defineMovieClip 258
+
+  defineMovieClip 259 // total frames: 120
+  end // of defineMovieClip 259
+
+  defineMovieClip 263 // total frames: 1
+  end // of defineMovieClip 263
+
+  defineMovieClip 265 // total frames: 1
+  end // of defineMovieClip 265
+
+  defineMovieClip 266 // total frames: 24
+  end // of defineMovieClip 266
+
+  defineMovieClip 267 // total frames: 60
+  end // of defineMovieClip 267
+
+  defineMovieClip 280 // total frames: 14
+
+    frame 0
+      stop
+    end // of frame 0
+  end // of defineMovieClip 280
+
+  defineMovieClip 288 // total frames: 1
+  end // of defineMovieClip 288
+
+  defineMovieClip 301 // total frames: 1
+  end // of defineMovieClip 301
+
+  defineMovieClip 303 // total frames: 32
+
+    frame 0
+      stop
+    end // of frame 0
+
+    frame 5
+      play
+    end // of frame 5
+
+    frame 31
+      stop
+    end // of frame 31
+  end // of defineMovieClip 303
+
+  defineMovieClip 304 // total frames: 5
+
+    frame 0
+      stop
+    end // of frame 0
+  end // of defineMovieClip 304
+
+  defineButton 306
+
+    on overUpToOverDown
+      constants 'o', 'egg', '_currentframe', 'gotoAndPlay', 'part', 'play', 'nextFrame'  
+      push 'o'
+      getVariable
+      push 'egg'
+      getMember
+      push '_currentframe'
+      getMember
+      push 6
+      greaterThan
+      not
+      not
+      branchIfTrue label1
+      push 2, 1, 'o'
+      getVariable
+      push 'gotoAndPlay'
+      callMethod
+      pop
+      push 0.0, 'o'
+      getVariable
+      push 'egg'
+      getMember
+      push 'part'
+      getMember
+      push 'play'
+      callMethod
+      pop
+      push 0.0, 'o'
+      getVariable
+      push 'egg'
+      getMember
+      push 'nextFrame'
+      callMethod
+      pop
+     label1:
+    end
+  end // of defineButton 306
+
+  defineMovieClip 307 // total frames: 3
+
+    frame 0
+      push 'compt', 500
+      random
+      setVariable
+    end // of frame 0
+
+    frame 1
+      constants 'compt', 'o', 'egg', '_currentframe', 'gotoAndPlay'  
+      push 'compt', 'compt'
+      getVariable
+      decrement
+      setVariable
+      push 'compt'
+      getVariable
+      push 0.0
+      greaterThan
+      not
+      not
+      branchIfTrue label2
+      push 'o'
+      getVariable
+      push 'egg'
+      getMember
+      push '_currentframe'
+      getMember
+      push 6
+      greaterThan
+      not
+      not
+      branchIfTrue label1
+      push 2, 1, 'o'
+      getVariable
+      push 'gotoAndPlay'
+      callMethod
+      pop
+     label1:
+      push 'compt', 500
+      random
+      setVariable
+     label2:
+    end // of frame 1
+
+    frame 2
+      push '', 4
+      getProperty
+      push 1
+      subtract
+      gotoAndPlay
+    end // of frame 2
+  end // of defineMovieClip 307
+  
+  exportAssets
+    42 as 'cloud1'
+  end // of exportAssets
+  
+  exportAssets
+    244 as 'fond'
+  end // of exportAssets
+  
+  exportAssets
+    241 as 'piknik'
+  end // of exportAssets
+  
+  exportAssets
+    155 as 'arbres'
+  end // of exportAssets
+  
+  exportAssets
+    45 as 'collines'
+  end // of exportAssets
+  
+  exportAssets
+    42 as 'cloud1'
+  end // of exportAssets
+  
+  exportAssets
+    244 as 'fond'
+  end // of exportAssets
+  
+  exportAssets
+    241 as 'piknik'
+  end // of exportAssets
+  
+  exportAssets
+    155 as 'arbres'
+  end // of exportAssets
+  
+  exportAssets
+    45 as 'collines'
+  end // of exportAssets
+  
+  exportAssets
+    42 as 'cloud1'
+  end // of exportAssets
+  
+  exportAssets
+    244 as 'fond'
+  end // of exportAssets
+  
+  exportAssets
+    241 as 'piknik'
+  end // of exportAssets
+  
+  exportAssets
+    155 as 'arbres'
+  end // of exportAssets
+  
+  exportAssets
+    45 as 'collines'
+  end // of exportAssets
+  
+  exportAssets
+    42 as 'cloud1'
+  end // of exportAssets
+
+  defineMovieClip 310 // total frames: 4
+
+    frame 0
+    end // of frame 0
+
+    frame 1
+    end // of frame 1
+
+    frame 2
+    end // of frame 2
+
+    frame 3
+    end // of frame 3
+  end // of defineMovieClip 310
+
+  defineButton 312
+
+    on overDownToOverUp
+      getURL '/' '_self'
+    end
+  end // of defineButton 312
+end

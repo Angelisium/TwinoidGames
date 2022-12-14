@@ -1,0 +1,124 @@
+movie 'adtk.swf' compressed // flash 7, total frames: 1, frame rate: 40 fps, 1x1 px
+
+  frame 0
+    constants '-]A', '', '1_', 'ureg', '2', '4', 'adtk', 'SharedObject', 'getLocal', 'data', ';q(', 'length', '}', 'LoadVars', 'onData', 'url', '_root', 'load'  
+    push '-]A', ''
+    varEquals
+    push '1_', 'ureg'
+    varEquals
+    push '2', 0.0
+    setVariable
+   label1:
+    push '2'
+    getVariable
+    push 32
+    lessThan
+    not
+    branchIfTrue label5
+    push '4', 62
+    random
+    varEquals
+    push '4'
+    getVariable
+    push 10
+    lessThan
+    not
+    branchIfTrue label2
+    push '-]A', '-]A'
+    getVariable
+    push '4'
+    getVariable
+    add
+    setVariable
+    branch label4
+   label2:
+    push '4'
+    getVariable
+    push 36
+    lessThan
+    not
+    branchIfTrue label3
+    push '-]A', '-]A'
+    getVariable
+    push 55, '4'
+    getVariable
+    add
+    chr
+    add
+    setVariable
+    branch label4
+   label3:
+    push '-]A', '-]A'
+    getVariable
+    push 61, '4'
+    getVariable
+    add
+    chr
+    add
+    setVariable
+   label4:
+    push '2', '2'
+    getVariable
+    increment
+    setVariable
+    branch label1
+   label5:
+    push '4', 'adtk', 1, 'SharedObject'
+    getVariable
+    push 'getLocal'
+    callMethod
+    push 'data'
+    getMember
+    varEquals
+    push '4'
+    getVariable
+    push ';q('
+    getMember
+    push 'length'
+    getMember
+    push 32
+    equals
+    not
+    branchIfTrue label6
+    push '-]A', '4'
+    getVariable
+    push ';q('
+    getMember
+    setVariable
+    branch label7
+   label6:
+    push '4'
+    getVariable
+    push ';q(', '-]A'
+    getVariable
+    setMember
+   label7:
+    push '}', 0.0, 'LoadVars'
+    new
+    varEquals
+    push '}'
+    getVariable
+    push 'onData'
+    function2 (';)') (r:1='_root')
+      push r:_root, 'url'
+      getMember
+      push ''
+      getURL2
+    end // of function 
+
+    setMember
+    push '_root'
+    getVariable
+    push '1_'
+    getVariable
+    getMember
+    push '-]A'
+    getVariable
+    add
+    push 1, '}'
+    getVariable
+    push 'load'
+    callMethod
+    pop
+  end // of frame 0
+end
