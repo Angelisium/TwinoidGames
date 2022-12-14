@@ -1,0 +1,2067 @@
+movie 'perso.swf' compressed // flash 9, total frames: 1, frame rate: 40 fps, 90x175 px
+
+  
+  // unknown tag 88 length 79
+
+  defineMovieClip 9 // total frames: 2
+  end // of defineMovieClip 9
+  
+  exportAssets
+    9 as 'palette'
+  end // of exportAssets
+
+  frame 0
+    constants 'alert', 'flash', 'external', 'ExternalInterface', 'call', 'cl', ';', 'split', 'length', '', 'palette', 'paletteIndex', 'initPalette', 'applyRec', 'palinst', 'attachMovie', '_totalframes', 'gotoAndStop', 'getBounds', 'yMax', 'xMax', 'display', 'BitmapData', 'draw', 'removeMovieClip', 'Array', 'cMax', 'getPixel32', 'push', 'dispose', 'movieclip', '_name', 'substr', '_p', 'parseInt', '_col', 'pMax', 'setColor', 'r', 'g', 'b', 'Color', 'ra', 'ga', 'ba', 'aa', 'rb', 'gb', 'bb', 'ab', 'setTransform', 'charCodeAt', 'toLowerCase', 'javascript:', '_root', 'data', 'chk', 'Stage', 'align', 'TL', '_init', 'flip', '1', '_p0b', '_xscale', '_x', 'stop', 'sub', 'clic', 'onPress', 'sec', '_self', 'head', '_yscale', '_y'  
+    function2 log (r:1='text') ()
+      push r:text, 'alert', 2, 'flash'
+      getVariable
+      push 'external'
+      getMember
+      push 'ExternalInterface'
+      getMember
+      push 'call'
+      callMethod
+      pop
+    end // of function log
+
+    function2 decode62 (r:1='n') ()
+      push r:n, 48
+      lessThan
+      not
+      dup
+      not
+      branchIfTrue label1
+      pop
+      push r:n, 58
+      greaterThan
+      not
+     label1:
+      not
+      branchIfTrue label2
+      push r:n, 48
+      subtract
+      return
+     label2:
+      push r:n, 65
+      lessThan
+      not
+      dup
+      not
+      branchIfTrue label3
+      pop
+      push r:n, 90
+      greaterThan
+      not
+     label3:
+      not
+      branchIfTrue label4
+      push r:n, 65
+      subtract
+      push 10
+      add
+      return
+     label4:
+      push r:n, 97
+      lessThan
+      not
+      dup
+      not
+      branchIfTrue label5
+      pop
+      push r:n, 122
+      greaterThan
+      not
+     label5:
+      not
+      branchIfTrue label6
+      push r:n, 97
+      subtract
+      push 36
+      add
+      return
+     label6:
+      push 63
+      return
+    end // of function decode62
+
+    function2 _init (r:6='data', r:5='ch') (r:1='this')
+      push 'cl', ';', 1, r:'data', 'split'
+      callMethod
+      setVariable
+      push 1
+      setRegister r:4
+      pop
+      push 0.0
+      setRegister r:2
+      pop
+     label7:
+      push r:2, 'cl'
+      getVariable
+      push 'length'
+      getMember
+      lessThan
+      not
+      branchIfTrue label8
+      push 'cl'
+      getVariable
+      push r:2
+      getMember
+      int
+      setRegister r:3
+      pop
+      push r:4, 11
+      multiply
+      push r:3
+      bitwiseXor
+      push 2097151
+      modulo
+      setRegister r:4
+      pop
+      push 'cl'
+      getVariable
+      push r:2, r:3
+      setMember
+      push r:2
+      increment
+      setRegister r:2
+      pop
+      branch label7
+     label8:
+      push r:ch, NULL
+      equals
+      not
+      dup
+      not
+      branchIfTrue label9
+      pop
+      push '', r:4
+      add
+      push r:ch
+      equals
+      not
+     label9:
+      not
+      branchIfTrue label10
+      push UNDEF
+      return
+     label10:
+      push 'palette'
+      getVariable
+      push NULL
+      equals
+      dup
+      branchIfTrue label11
+      pop
+      push 'paletteIndex'
+      getVariable
+      push 'cl'
+      getVariable
+      push 0.0
+      getMember
+      equals
+      not
+     label11:
+      not
+      branchIfTrue label12
+      push 0.0, 'initPalette'
+      callFunction
+      pop
+     label12:
+      push r:this, 1, 'applyRec'
+      callFunction
+      pop
+    end // of function _init
+
+    function2 initPalette () (r:1='this')
+      push 0.0, 'palinst', 'palette', 3, r:this, 'attachMovie'
+      callMethod
+      setRegister r:7
+      pop
+      push r:7, NULL
+      equals
+      not
+      branchIfTrue label13
+      push UNDEF
+      return
+     label13:
+      push 'paletteIndex', 'cl'
+      getVariable
+      push 0.0
+      getMember
+      setVariable
+      push 'cl'
+      getVariable
+      push 0.0
+      getMember
+      push r:7, '_totalframes'
+      getMember
+      modulo
+      push 1
+      add
+      push 1, r:7, 'gotoAndStop'
+      callMethod
+      pop
+      push r:7, 1, r:7, 'getBounds'
+      callMethod
+      setRegister r:8
+      pop
+      push r:8, 'yMax'
+      getMember
+      push r:8, 'xMax'
+      getMember
+      push 2, 'flash'
+      getVariable
+      push 'display'
+      getMember
+      push 'BitmapData'
+      newMethod
+      setRegister r:6
+      pop
+      push r:7, 1, r:6, 'draw'
+      callMethod
+      pop
+      push 0.0, r:7, 'removeMovieClip'
+      callMethod
+      pop
+      push 'palette', 0.0, 'Array'
+      new
+      setVariable
+      push 0.0
+      setRegister r:4
+      pop
+     label14:
+      push r:4, 'cMax'
+      getVariable
+      lessThan
+      not
+      branchIfTrue label19
+      push 0.0, 'Array'
+      new
+      setRegister r:3
+      pop
+      push r:4, 15
+      multiply
+      push 7
+      add
+      setRegister r:5
+      pop
+     label15:
+      push FALSE
+      branchIfTrue label18
+      push r:5, r:3, 'length'
+      getMember
+      push 15
+      multiply
+      push 7
+      add
+      push 2, r:6, 'getPixel32'
+      callMethod
+      setRegister r:2
+      pop
+      push r:2, 0.0
+      equals
+      dup
+      branchIfTrue label16
+      pop
+      push r:2, -1
+      equals
+     label16:
+      not
+      branchIfTrue label17
+      branch label18
+     label17:
+      push r:2, 16777215
+      bitwiseAnd
+      push 1, r:3, 'push'
+      callMethod
+      pop
+      branch label15
+     label18:
+      push r:3, 1, 'palette'
+      getVariable
+      push 'push'
+      callMethod
+      pop
+      push r:4
+      increment
+      setRegister r:4
+      pop
+      branch label14
+     label19:
+      push 0.0, r:6, 'dispose'
+      callMethod
+      pop
+    end // of function initPalette
+
+    function2 applyRec (r:6='mc') ()
+      push r:mc
+      enumerateValue
+     label20:
+      setRegister r:0
+      push NULL
+      equals
+      branchIfTrue label24
+      push r:0
+      setRegister r:7
+      pop
+      push r:mc, r:7
+      getMember
+      setRegister r:1
+      pop
+      push r:1
+      typeof
+      push 'movieclip'
+      equals
+      not
+      branchIfTrue label23
+      push 2, 0.0, 2, r:1, '_name'
+      getMember
+      push 'substr'
+      callMethod
+      push '_p'
+      equals
+      not
+      branchIfTrue label21
+      push 2, 1, r:1, '_name'
+      getMember
+      push 'substr'
+      callMethod
+      push 1, 'parseInt'
+      callFunction
+      setRegister r:2
+      pop
+      push 'cl'
+      getVariable
+      push r:2
+      getMember
+      push r:1, '_totalframes'
+      getMember
+      modulo
+      setRegister r:5
+      pop
+      push r:5, 1
+      add
+      push 1, r:1, 'gotoAndStop'
+      callMethod
+      pop
+      branch label22
+     label21:
+      push 4, 0.0, 2, r:1, '_name'
+      getMember
+      push 'substr'
+      callMethod
+      push '_col'
+      equals
+      not
+      branchIfTrue label22
+      push 4, 1, r:1, '_name'
+      getMember
+      push 'substr'
+      callMethod
+      push 1, 'parseInt'
+      callFunction
+      setRegister r:3
+      pop
+      push 'palette'
+      getVariable
+      push r:3
+      getMember
+      setRegister r:4
+      pop
+      push r:4, 'cl'
+      getVariable
+      push 'pMax'
+      getVariable
+      push r:3
+      add
+      getMember
+      push r:4, 'length'
+      getMember
+      modulo
+      getMember
+      push r:1, 2, 'setColor'
+      callFunction
+      pop
+     label22:
+      push r:2, r:1, 2, 'applyRec'
+      callFunction
+      pop
+     label23:
+      branch label20
+     label24:
+    end // of function applyRec
+
+    function2 setColor (r:16='mc', r:4='col') ()
+      push 'r', r:col, 16
+      shiftRight
+      push 'g', r:col, 8
+      shiftRight
+      push 255
+      bitwiseAnd
+      push 'b', r:col, 255
+      bitwiseAnd
+      push 3
+      initObject
+      setRegister r:1
+      pop
+      push r:mc, 1, 'Color'
+      new
+      setRegister r:2
+      pop
+      push 'ra', 100, 'ga', 100, 'ba', 100, 'aa', 100, 'rb', r:1, 'r'
+      getMember
+      push 255
+      subtract
+      push 'gb', r:1, 'g'
+      getMember
+      push 255
+      subtract
+      push 'bb', r:1, 'b'
+      getMember
+      push 255
+      subtract
+      push 'ab', 0.0, 8
+      initObject
+      setRegister r:3
+      pop
+      push r:3, 1, r:2, 'setTransform'
+      callMethod
+      pop
+    end // of function setColor
+
+    function2 sec (r:2='u') ()
+     label25:
+      push FALSE
+      branchIfTrue label31
+      push 0.0, 1, r:u, 'charCodeAt'
+      callMethod
+      setRegister r:1
+      pop
+      push r:1, 13
+      equals
+      dup
+      branchIfTrue label26
+      pop
+      push r:1, 10
+      equals
+     label26:
+      dup
+      branchIfTrue label27
+      pop
+      push r:1, 32
+      equals
+     label27:
+      dup
+      branchIfTrue label28
+      pop
+      push r:1, 9
+      equals
+     label28:
+      not
+      branchIfTrue label29
+      push 1, 1, r:u, 'substr'
+      callMethod
+      setRegister r:u
+      pop
+      branch label30
+     label29:
+      branch label31
+     label30:
+      branch label25
+     label31:
+      push 11, 0.0, 2, 0.0, r:u, 'toLowerCase'
+      callMethod
+      push 'substr'
+      callMethod
+      push 'javascript:'
+      equals
+      not
+      branchIfTrue label32
+      push NULL
+      return
+     label32:
+      push r:u
+      return
+    end // of function sec
+
+    push 'cMax', 5
+    setVariable
+    push 'pMax', 11
+    setVariable
+    push '_root'
+    getVariable
+    push 'data'
+    getMember
+    push NULL
+    equals
+    not
+    dup
+    not
+    branchIfTrue label33
+    pop
+    push '_root'
+    getVariable
+    push 'chk'
+    getMember
+    push NULL
+    equals
+    not
+   label33:
+    not
+    branchIfTrue label37
+    push 'Stage'
+    getVariable
+    push 'align', 'TL'
+    setMember
+    push '_root'
+    getVariable
+    push 'chk'
+    getMember
+    push '_root'
+    getVariable
+    push 'data'
+    getMember
+    push 2, '_init'
+    callFunction
+    pop
+    push '_root'
+    getVariable
+    push 'flip'
+    getMember
+    push '1'
+    equals
+    not
+    branchIfTrue label34
+    push '_p0b'
+    getVariable
+    push '_xscale', '_p0b'
+    getVariable
+    push '_xscale'
+    getMember
+    push -1
+    multiply
+    setMember
+    push '_p0b'
+    getVariable
+    push '_x', 95
+    setMember
+   label34:
+    push '_root'
+    getVariable
+    push 'stop'
+    getMember
+    push '1'
+    equals
+    not
+    branchIfTrue label35
+    push 0.0, '_p0b'
+    getVariable
+    push 'sub'
+    getMember
+    push 'stop'
+    callMethod
+    pop
+   label35:
+    push '_root'
+    getVariable
+    push 'clic'
+    getMember
+    push NULL
+    equals
+    not
+    not
+    branchIfTrue label36
+    push '_p0b'
+    getVariable
+    push 'onPress'
+    function2 () (r:1='_root')
+      push r:_root, 'clic'
+      getMember
+      push 1, 'sec'
+      callFunction
+      push '_self'
+      getURL2
+    end // of function 
+
+    setMember
+   label36:
+    push '_root'
+    getVariable
+    push 'head'
+    getMember
+    push NULL
+    equals
+    not
+    not
+    branchIfTrue label37
+    push '_p0b'
+    getVariable
+    push '_xscale', '_p0b'
+    getVariable
+    push '_xscale'
+    getMember
+    push 0.5
+    multiply
+    setMember
+    push '_p0b'
+    getVariable
+    push '_yscale', '_p0b'
+    getVariable
+    push '_yscale'
+    getMember
+    push 0.5
+    multiply
+    setMember
+    push '_p0b'
+    getVariable
+    push '_x', '_p0b'
+    getVariable
+    push '_x'
+    getMember
+    push 50
+    subtract
+    setMember
+    push '_p0b'
+    getVariable
+    push '_y', '_p0b'
+    getVariable
+    push '_y'
+    getMember
+    push 8
+    subtract
+    setMember
+   label37:
+  end // of frame 0
+
+  defineMovieClip 11 // total frames: 1
+  end // of defineMovieClip 11
+
+  defineMovieClip 13 // total frames: 1
+  end // of defineMovieClip 13
+
+  defineMovieClip 14 // total frames: 2
+  end // of defineMovieClip 14
+
+  defineMovieClip 16 // total frames: 1
+  end // of defineMovieClip 16
+
+  defineMovieClip 17 // total frames: 2
+  end // of defineMovieClip 17
+
+  defineMovieClip 18 // total frames: 7
+  end // of defineMovieClip 18
+
+  defineMovieClip 19 // total frames: 1
+  end // of defineMovieClip 19
+
+  defineMovieClip 21 // total frames: 1
+  end // of defineMovieClip 21
+
+  defineMovieClip 23 // total frames: 1
+  end // of defineMovieClip 23
+
+  defineMovieClip 25 // total frames: 1
+  end // of defineMovieClip 25
+
+  defineMovieClip 27 // total frames: 1
+  end // of defineMovieClip 27
+
+  defineMovieClip 29 // total frames: 1
+  end // of defineMovieClip 29
+
+  defineMovieClip 32 // total frames: 1
+  end // of defineMovieClip 32
+
+  defineMovieClip 33 // total frames: 2
+  end // of defineMovieClip 33
+
+  defineMovieClip 34 // total frames: 7
+  end // of defineMovieClip 34
+
+  defineMovieClip 35 // total frames: 8
+  end // of defineMovieClip 35
+
+  defineMovieClip 36 // total frames: 1
+  end // of defineMovieClip 36
+
+  defineMovieClip 38 // total frames: 1
+  end // of defineMovieClip 38
+
+  defineMovieClip 40 // total frames: 1
+  end // of defineMovieClip 40
+
+  defineMovieClip 41 // total frames: 2
+  end // of defineMovieClip 41
+
+  defineMovieClip 43 // total frames: 7
+  end // of defineMovieClip 43
+
+  defineMovieClip 44 // total frames: 1
+  end // of defineMovieClip 44
+
+  defineMovieClip 57 // total frames: 16
+
+    frame 0
+      constants 'wid', '_parent', '_wid'  
+      push 'wid', '_parent'
+      getVariable
+      push '_parent'
+      getMember
+      push '_parent'
+      getMember
+      push '_wid'
+      getMember
+      varEquals
+      push 'wid'
+      getVariable
+      push NULL
+      equals
+      not
+      branchIfTrue label1
+      push 'wid', '_parent'
+      getVariable
+      push '_parent'
+      getMember
+      push '_parent'
+      getMember
+      push '_parent'
+      getMember
+      push '_wid'
+      getMember
+      setVariable
+     label1:
+      push 'wid'
+      getVariable
+      push 1
+      add
+      gotoAndStop
+      stop
+    end // of frame 0
+  end // of defineMovieClip 57
+
+  defineMovieClip 59 // total frames: 1
+  end // of defineMovieClip 59
+
+  defineMovieClip 61 // total frames: 1
+  end // of defineMovieClip 61
+
+  defineMovieClip 62 // total frames: 2
+  end // of defineMovieClip 62
+
+  defineMovieClip 63 // total frames: 2
+  end // of defineMovieClip 63
+
+  defineMovieClip 64 // total frames: 7
+  end // of defineMovieClip 64
+
+  defineMovieClip 66 // total frames: 1
+  end // of defineMovieClip 66
+
+  defineMovieClip 67 // total frames: 2
+  end // of defineMovieClip 67
+
+  defineMovieClip 68 // total frames: 8
+  end // of defineMovieClip 68
+
+  defineMovieClip 69 // total frames: 1
+  end // of defineMovieClip 69
+
+  defineMovieClip 71 // total frames: 1
+  end // of defineMovieClip 71
+
+  defineMovieClip 74 // total frames: 1
+  end // of defineMovieClip 74
+
+  defineMovieClip 76 // total frames: 2
+  end // of defineMovieClip 76
+
+  defineMovieClip 78 // total frames: 1
+  end // of defineMovieClip 78
+
+  defineMovieClip 80 // total frames: 2
+  end // of defineMovieClip 80
+
+  defineMovieClip 82 // total frames: 1
+  end // of defineMovieClip 82
+
+  defineMovieClip 84 // total frames: 1
+  end // of defineMovieClip 84
+
+  defineMovieClip 85 // total frames: 2
+  end // of defineMovieClip 85
+
+  defineMovieClip 87 // total frames: 1
+  end // of defineMovieClip 87
+
+  defineMovieClip 89 // total frames: 1
+  end // of defineMovieClip 89
+
+  defineMovieClip 90 // total frames: 2
+  end // of defineMovieClip 90
+
+  defineMovieClip 91 // total frames: 7
+  end // of defineMovieClip 91
+
+  defineMovieClip 92 // total frames: 2
+  end // of defineMovieClip 92
+
+  defineMovieClip 93 // total frames: 8
+  end // of defineMovieClip 93
+
+  defineMovieClip 94 // total frames: 1
+  end // of defineMovieClip 94
+
+  defineMovieClip 96 // total frames: 1
+  end // of defineMovieClip 96
+
+  defineMovieClip 97 // total frames: 7
+  end // of defineMovieClip 97
+
+  defineMovieClip 99 // total frames: 1
+  end // of defineMovieClip 99
+
+  defineMovieClip 102 // total frames: 1
+  end // of defineMovieClip 102
+
+  defineMovieClip 104 // total frames: 2
+  end // of defineMovieClip 104
+
+  defineMovieClip 106 // total frames: 1
+  end // of defineMovieClip 106
+
+  defineMovieClip 108 // total frames: 1
+  end // of defineMovieClip 108
+
+  defineMovieClip 109 // total frames: 7
+  end // of defineMovieClip 109
+
+  defineMovieClip 110 // total frames: 5
+  end // of defineMovieClip 110
+
+  defineMovieClip 111 // total frames: 12
+  end // of defineMovieClip 111
+
+  defineMovieClip 113 // total frames: 1
+  end // of defineMovieClip 113
+
+  defineMovieClip 115 // total frames: 1
+  end // of defineMovieClip 115
+
+  defineMovieClip 117 // total frames: 1
+  end // of defineMovieClip 117
+
+  defineMovieClip 119 // total frames: 1
+  end // of defineMovieClip 119
+
+  defineMovieClip 122 // total frames: 1
+  end // of defineMovieClip 122
+
+  defineMovieClip 124 // total frames: 1
+  end // of defineMovieClip 124
+
+  defineMovieClip 126 // total frames: 2
+  end // of defineMovieClip 126
+
+  defineMovieClip 128 // total frames: 1
+  end // of defineMovieClip 128
+
+  defineMovieClip 131 // total frames: 1
+  end // of defineMovieClip 131
+
+  defineMovieClip 132 // total frames: 7
+  end // of defineMovieClip 132
+
+  defineMovieClip 134 // total frames: 1
+  end // of defineMovieClip 134
+
+  defineMovieClip 135 // total frames: 2
+  end // of defineMovieClip 135
+
+  defineMovieClip 136 // total frames: 8
+  end // of defineMovieClip 136
+
+  defineMovieClip 137 // total frames: 1
+  end // of defineMovieClip 137
+
+  defineMovieClip 138 // total frames: 1
+  end // of defineMovieClip 138
+
+  defineMovieClip 140 // total frames: 1
+  end // of defineMovieClip 140
+
+  defineMovieClip 142 // total frames: 1
+  end // of defineMovieClip 142
+
+  defineMovieClip 144 // total frames: 1
+  end // of defineMovieClip 144
+
+  defineMovieClip 145 // total frames: 2
+  end // of defineMovieClip 145
+
+  defineMovieClip 147 // total frames: 1
+  end // of defineMovieClip 147
+
+  defineMovieClip 150 // total frames: 1
+  end // of defineMovieClip 150
+
+  defineMovieClip 152 // total frames: 2
+  end // of defineMovieClip 152
+
+  defineMovieClip 154 // total frames: 1
+  end // of defineMovieClip 154
+
+  defineMovieClip 156 // total frames: 1
+  end // of defineMovieClip 156
+
+  defineMovieClip 159 // total frames: 1
+  end // of defineMovieClip 159
+
+  defineMovieClip 161 // total frames: 2
+  end // of defineMovieClip 161
+
+  defineMovieClip 162 // total frames: 7
+  end // of defineMovieClip 162
+
+  defineMovieClip 163 // total frames: 2
+  end // of defineMovieClip 163
+
+  defineMovieClip 164 // total frames: 8
+  end // of defineMovieClip 164
+
+  defineMovieClip 165 // total frames: 1
+  end // of defineMovieClip 165
+
+  defineMovieClip 167 // total frames: 7
+  end // of defineMovieClip 167
+
+  defineMovieClip 169 // total frames: 1
+  end // of defineMovieClip 169
+
+  defineMovieClip 172 // total frames: 1
+  end // of defineMovieClip 172
+
+  defineMovieClip 174 // total frames: 2
+  end // of defineMovieClip 174
+
+  defineMovieClip 177 // total frames: 1
+  end // of defineMovieClip 177
+
+  defineMovieClip 178 // total frames: 7
+  end // of defineMovieClip 178
+
+  defineMovieClip 179 // total frames: 1
+  end // of defineMovieClip 179
+
+  defineMovieClip 180 // total frames: 1
+  end // of defineMovieClip 180
+
+  defineMovieClip 182 // total frames: 1
+  end // of defineMovieClip 182
+
+  defineMovieClip 184 // total frames: 1
+  end // of defineMovieClip 184
+
+  defineMovieClip 187 // total frames: 1
+  end // of defineMovieClip 187
+
+  defineMovieClip 189 // total frames: 1
+  end // of defineMovieClip 189
+
+  defineMovieClip 191 // total frames: 2
+  end // of defineMovieClip 191
+
+  defineMovieClip 193 // total frames: 1
+  end // of defineMovieClip 193
+
+  defineMovieClip 195 // total frames: 7
+  end // of defineMovieClip 195
+
+  defineMovieClip 196 // total frames: 2
+  end // of defineMovieClip 196
+
+  defineMovieClip 197 // total frames: 8
+  end // of defineMovieClip 197
+
+  defineMovieClip 198 // total frames: 1
+  end // of defineMovieClip 198
+
+  defineMovieClip 200 // total frames: 1
+  end // of defineMovieClip 200
+
+  defineMovieClip 202 // total frames: 1
+  end // of defineMovieClip 202
+
+  defineMovieClip 203 // total frames: 2
+  end // of defineMovieClip 203
+
+  defineMovieClip 204 // total frames: 7
+  end // of defineMovieClip 204
+
+  defineMovieClip 205 // total frames: 2
+  end // of defineMovieClip 205
+
+  defineMovieClip 206 // total frames: 8
+  end // of defineMovieClip 206
+
+  defineMovieClip 207 // total frames: 1
+  end // of defineMovieClip 207
+
+  defineMovieClip 209 // total frames: 1
+  end // of defineMovieClip 209
+
+  defineMovieClip 211 // total frames: 1
+  end // of defineMovieClip 211
+
+  defineMovieClip 213 // total frames: 1
+  end // of defineMovieClip 213
+
+  defineMovieClip 214 // total frames: 2
+  end // of defineMovieClip 214
+
+  defineMovieClip 216 // total frames: 1
+  end // of defineMovieClip 216
+
+  defineMovieClip 219 // total frames: 2
+  end // of defineMovieClip 219
+
+  defineMovieClip 221 // total frames: 1
+  end // of defineMovieClip 221
+
+  defineMovieClip 223 // total frames: 1
+  end // of defineMovieClip 223
+
+  defineMovieClip 225 // total frames: 1
+  end // of defineMovieClip 225
+
+  defineMovieClip 227 // total frames: 2
+  end // of defineMovieClip 227
+
+  defineMovieClip 228 // total frames: 7
+  end // of defineMovieClip 228
+
+  defineMovieClip 229 // total frames: 2
+  end // of defineMovieClip 229
+
+  defineMovieClip 230 // total frames: 8
+  end // of defineMovieClip 230
+
+  defineMovieClip 231 // total frames: 1
+  end // of defineMovieClip 231
+
+  defineMovieClip 233 // total frames: 1
+  end // of defineMovieClip 233
+
+  defineMovieClip 235 // total frames: 2
+  end // of defineMovieClip 235
+
+  defineMovieClip 237 // total frames: 1
+  end // of defineMovieClip 237
+
+  defineMovieClip 239 // total frames: 1
+  end // of defineMovieClip 239
+
+  defineMovieClip 242 // total frames: 1
+  end // of defineMovieClip 242
+
+  defineMovieClip 245 // total frames: 1
+  end // of defineMovieClip 245
+
+  defineMovieClip 247 // total frames: 1
+  end // of defineMovieClip 247
+
+  defineMovieClip 248 // total frames: 2
+  end // of defineMovieClip 248
+
+  defineMovieClip 250 // total frames: 1
+  end // of defineMovieClip 250
+
+  defineMovieClip 252 // total frames: 1
+  end // of defineMovieClip 252
+
+  defineMovieClip 254 // total frames: 2
+  end // of defineMovieClip 254
+
+  defineMovieClip 256 // total frames: 1
+  end // of defineMovieClip 256
+
+  defineMovieClip 258 // total frames: 1
+  end // of defineMovieClip 258
+
+  defineMovieClip 261 // total frames: 1
+  end // of defineMovieClip 261
+
+  defineMovieClip 262 // total frames: 2
+  end // of defineMovieClip 262
+
+  defineMovieClip 263 // total frames: 7
+  end // of defineMovieClip 263
+
+  defineMovieClip 264 // total frames: 2
+  end // of defineMovieClip 264
+
+  defineMovieClip 265 // total frames: 8
+  end // of defineMovieClip 265
+
+  defineMovieClip 266 // total frames: 1
+  end // of defineMovieClip 266
+
+  defineMovieClip 268 // total frames: 1
+  end // of defineMovieClip 268
+
+  defineMovieClip 270 // total frames: 1
+  end // of defineMovieClip 270
+
+  defineMovieClip 272 // total frames: 1
+  end // of defineMovieClip 272
+
+  defineMovieClip 273 // total frames: 2
+  end // of defineMovieClip 273
+
+  defineMovieClip 274 // total frames: 7
+  end // of defineMovieClip 274
+
+  defineMovieClip 276 // total frames: 1
+  end // of defineMovieClip 276
+
+  defineMovieClip 279 // total frames: 2
+  end // of defineMovieClip 279
+
+  defineMovieClip 281 // total frames: 1
+  end // of defineMovieClip 281
+
+  defineMovieClip 283 // total frames: 1
+  end // of defineMovieClip 283
+
+  defineMovieClip 285 // total frames: 1
+  end // of defineMovieClip 285
+
+  defineMovieClip 286 // total frames: 2
+  end // of defineMovieClip 286
+
+  defineMovieClip 288 // total frames: 1
+  end // of defineMovieClip 288
+
+  defineMovieClip 291 // total frames: 1
+  end // of defineMovieClip 291
+
+  defineMovieClip 293 // total frames: 1
+  end // of defineMovieClip 293
+
+  defineMovieClip 295 // total frames: 1
+  end // of defineMovieClip 295
+
+  defineMovieClip 297 // total frames: 1
+  end // of defineMovieClip 297
+
+  defineMovieClip 299 // total frames: 1
+  end // of defineMovieClip 299
+
+  defineMovieClip 301 // total frames: 1
+  end // of defineMovieClip 301
+
+  defineMovieClip 303 // total frames: 1
+  end // of defineMovieClip 303
+
+  defineMovieClip 305 // total frames: 1
+  end // of defineMovieClip 305
+
+  defineMovieClip 307 // total frames: 2
+  end // of defineMovieClip 307
+
+  defineMovieClip 309 // total frames: 1
+  end // of defineMovieClip 309
+
+  defineMovieClip 313 // total frames: 1
+  end // of defineMovieClip 313
+
+  defineMovieClip 315 // total frames: 1
+  end // of defineMovieClip 315
+
+  defineMovieClip 317 // total frames: 2
+  end // of defineMovieClip 317
+
+  defineMovieClip 320 // total frames: 1
+  end // of defineMovieClip 320
+
+  defineMovieClip 322 // total frames: 1
+  end // of defineMovieClip 322
+
+  defineMovieClip 324 // total frames: 1
+  end // of defineMovieClip 324
+
+  defineMovieClip 326 // total frames: 1
+  end // of defineMovieClip 326
+
+  defineMovieClip 327 // total frames: 2
+  end // of defineMovieClip 327
+
+  defineMovieClip 328 // total frames: 7
+  end // of defineMovieClip 328
+
+  defineMovieClip 329 // total frames: 2
+  end // of defineMovieClip 329
+
+  defineMovieClip 330 // total frames: 8
+  end // of defineMovieClip 330
+
+  defineMovieClip 331 // total frames: 1
+  end // of defineMovieClip 331
+
+  defineMovieClip 333 // total frames: 1
+  end // of defineMovieClip 333
+
+  defineMovieClip 336 // total frames: 1
+  end // of defineMovieClip 336
+
+  defineMovieClip 338 // total frames: 2
+
+    frame 0
+      stop
+    end // of frame 0
+  end // of defineMovieClip 338
+
+  defineMovieClip 340 // total frames: 59
+
+    frame 0
+      push '_root'
+      getVariable
+      push 'stop'
+      getMember
+      push '1'
+      equals
+      not
+      branchIfTrue label1
+      gotoFrame 0
+     label1:
+    end // of frame 0
+  end // of defineMovieClip 340
+
+  defineMovieClip 343 // total frames: 2
+
+    frame 0
+      stop
+    end // of frame 0
+  end // of defineMovieClip 343
+
+  defineMovieClip 345 // total frames: 2
+
+    frame 0
+      stop
+    end // of frame 0
+  end // of defineMovieClip 345
+
+  defineMovieClip 347 // total frames: 59
+
+    frame 0
+      push '_root'
+      getVariable
+      push 'stop'
+      getMember
+      push '1'
+      equals
+      not
+      branchIfTrue label1
+      gotoFrame 0
+     label1:
+    end // of frame 0
+  end // of defineMovieClip 347
+
+  defineMovieClip 348 // total frames: 2
+
+    frame 0
+      stop
+    end // of frame 0
+  end // of defineMovieClip 348
+
+  defineMovieClip 349 // total frames: 2
+  end // of defineMovieClip 349
+
+  defineMovieClip 351 // total frames: 1
+  end // of defineMovieClip 351
+
+  defineMovieClip 354 // total frames: 1
+  end // of defineMovieClip 354
+
+  defineMovieClip 356 // total frames: 1
+  end // of defineMovieClip 356
+
+  defineMovieClip 359 // total frames: 1
+  end // of defineMovieClip 359
+
+  defineMovieClip 361 // total frames: 1
+  end // of defineMovieClip 361
+
+  defineMovieClip 363 // total frames: 1
+  end // of defineMovieClip 363
+
+  defineMovieClip 364 // total frames: 9
+  end // of defineMovieClip 364
+
+  defineMovieClip 366 // total frames: 1
+  end // of defineMovieClip 366
+
+  defineMovieClip 368 // total frames: 1
+  end // of defineMovieClip 368
+
+  defineMovieClip 371 // total frames: 1
+  end // of defineMovieClip 371
+
+  defineMovieClip 373 // total frames: 1
+  end // of defineMovieClip 373
+
+  defineMovieClip 375 // total frames: 1
+  end // of defineMovieClip 375
+
+  defineMovieClip 377 // total frames: 1
+  end // of defineMovieClip 377
+
+  defineMovieClip 379 // total frames: 1
+  end // of defineMovieClip 379
+
+  defineMovieClip 382 // total frames: 2
+
+    frame 0
+      stop
+    end // of frame 0
+  end // of defineMovieClip 382
+
+  defineMovieClip 385 // total frames: 1
+  end // of defineMovieClip 385
+
+  defineMovieClip 387 // total frames: 1
+  end // of defineMovieClip 387
+
+  defineMovieClip 390 // total frames: 1
+  end // of defineMovieClip 390
+
+  defineMovieClip 392 // total frames: 1
+  end // of defineMovieClip 392
+
+  defineMovieClip 394 // total frames: 1
+  end // of defineMovieClip 394
+
+  defineMovieClip 396 // total frames: 1
+  end // of defineMovieClip 396
+
+  defineMovieClip 398 // total frames: 1
+  end // of defineMovieClip 398
+
+  defineMovieClip 399 // total frames: 12
+  end // of defineMovieClip 399
+
+  defineMovieClip 400 // total frames: 1
+  end // of defineMovieClip 400
+
+  defineMovieClip 402 // total frames: 1
+  end // of defineMovieClip 402
+
+  defineMovieClip 404 // total frames: 1
+  end // of defineMovieClip 404
+
+  defineMovieClip 405 // total frames: 2
+  end // of defineMovieClip 405
+
+  defineMovieClip 407 // total frames: 1
+  end // of defineMovieClip 407
+
+  defineMovieClip 408 // total frames: 7
+  end // of defineMovieClip 408
+
+  defineMovieClip 409 // total frames: 1
+  end // of defineMovieClip 409
+
+  defineMovieClip 410 // total frames: 1
+  end // of defineMovieClip 410
+
+  defineMovieClip 411 // total frames: 2
+  end // of defineMovieClip 411
+
+  defineMovieClip 412 // total frames: 7
+  end // of defineMovieClip 412
+
+  defineMovieClip 413 // total frames: 2
+  end // of defineMovieClip 413
+
+  defineMovieClip 414 // total frames: 8
+  end // of defineMovieClip 414
+
+  defineMovieClip 415 // total frames: 1
+  end // of defineMovieClip 415
+
+  defineMovieClip 417 // total frames: 1
+  end // of defineMovieClip 417
+
+  defineMovieClip 419 // total frames: 1
+  end // of defineMovieClip 419
+
+  defineMovieClip 421 // total frames: 1
+  end // of defineMovieClip 421
+
+  defineMovieClip 425 // total frames: 1
+  end // of defineMovieClip 425
+
+  defineMovieClip 427 // total frames: 1
+  end // of defineMovieClip 427
+
+  defineMovieClip 429 // total frames: 2
+  end // of defineMovieClip 429
+
+  defineMovieClip 430 // total frames: 7
+  end // of defineMovieClip 430
+
+  defineMovieClip 431 // total frames: 1
+  end // of defineMovieClip 431
+
+  defineMovieClip 432 // total frames: 8
+  end // of defineMovieClip 432
+
+  defineMovieClip 433 // total frames: 1
+  end // of defineMovieClip 433
+
+  defineMovieClip 435 // total frames: 1
+  end // of defineMovieClip 435
+
+  defineMovieClip 437 // total frames: 2
+  end // of defineMovieClip 437
+
+  defineMovieClip 439 // total frames: 1
+  end // of defineMovieClip 439
+
+  defineMovieClip 441 // total frames: 1
+  end // of defineMovieClip 441
+
+  defineMovieClip 443 // total frames: 2
+  end // of defineMovieClip 443
+
+  defineMovieClip 445 // total frames: 1
+  end // of defineMovieClip 445
+
+  defineMovieClip 447 // total frames: 1
+  end // of defineMovieClip 447
+
+  defineMovieClip 449 // total frames: 2
+  end // of defineMovieClip 449
+
+  defineMovieClip 451 // total frames: 1
+  end // of defineMovieClip 451
+
+  defineMovieClip 453 // total frames: 2
+  end // of defineMovieClip 453
+
+  defineMovieClip 455 // total frames: 1
+  end // of defineMovieClip 455
+
+  defineMovieClip 456 // total frames: 7
+  end // of defineMovieClip 456
+
+  defineMovieClip 457 // total frames: 2
+  end // of defineMovieClip 457
+
+  defineMovieClip 458 // total frames: 8
+  end // of defineMovieClip 458
+
+  defineMovieClip 459 // total frames: 1
+  end // of defineMovieClip 459
+
+  defineMovieClip 460 // total frames: 70
+  end // of defineMovieClip 460
+
+  defineMovieClip 462 // total frames: 1
+  end // of defineMovieClip 462
+
+  defineMovieClip 464 // total frames: 1
+  end // of defineMovieClip 464
+
+  defineMovieClip 467 // total frames: 1
+  end // of defineMovieClip 467
+
+  defineMovieClip 469 // total frames: 1
+  end // of defineMovieClip 469
+
+  defineMovieClip 470 // total frames: 12
+  end // of defineMovieClip 470
+
+  defineMovieClip 471 // total frames: 1
+  end // of defineMovieClip 471
+
+  defineMovieClip 472 // total frames: 1
+  end // of defineMovieClip 472
+
+  defineMovieClip 473 // total frames: 1
+  end // of defineMovieClip 473
+
+  defineMovieClip 475 // total frames: 1
+  end // of defineMovieClip 475
+
+  defineMovieClip 477 // total frames: 1
+  end // of defineMovieClip 477
+
+  defineMovieClip 478 // total frames: 2
+  end // of defineMovieClip 478
+
+  defineMovieClip 480 // total frames: 2
+  end // of defineMovieClip 480
+
+  defineMovieClip 481 // total frames: 7
+  end // of defineMovieClip 481
+
+  defineMovieClip 482 // total frames: 1
+  end // of defineMovieClip 482
+
+  defineMovieClip 483 // total frames: 1
+  end // of defineMovieClip 483
+
+  defineMovieClip 484 // total frames: 7
+  end // of defineMovieClip 484
+
+  defineMovieClip 485 // total frames: 1
+  end // of defineMovieClip 485
+
+  defineMovieClip 486 // total frames: 2
+  end // of defineMovieClip 486
+
+  defineMovieClip 487 // total frames: 8
+  end // of defineMovieClip 487
+
+  defineMovieClip 488 // total frames: 1
+  end // of defineMovieClip 488
+
+  defineMovieClip 490 // total frames: 1
+  end // of defineMovieClip 490
+
+  defineMovieClip 491 // total frames: 1
+  end // of defineMovieClip 491
+
+  defineMovieClip 492 // total frames: 2
+  end // of defineMovieClip 492
+
+  defineMovieClip 494 // total frames: 1
+  end // of defineMovieClip 494
+
+  defineMovieClip 496 // total frames: 1
+  end // of defineMovieClip 496
+
+  defineMovieClip 497 // total frames: 2
+  end // of defineMovieClip 497
+
+  defineMovieClip 498 // total frames: 7
+  end // of defineMovieClip 498
+
+  defineMovieClip 499 // total frames: 2
+  end // of defineMovieClip 499
+
+  defineMovieClip 500 // total frames: 8
+  end // of defineMovieClip 500
+
+  defineMovieClip 501 // total frames: 1
+  end // of defineMovieClip 501
+
+  defineMovieClip 502 // total frames: 7
+  end // of defineMovieClip 502
+
+  defineMovieClip 503 // total frames: 1
+  end // of defineMovieClip 503
+
+  defineMovieClip 505 // total frames: 1
+  end // of defineMovieClip 505
+
+  defineMovieClip 507 // total frames: 1
+  end // of defineMovieClip 507
+
+  defineMovieClip 509 // total frames: 1
+  end // of defineMovieClip 509
+
+  defineMovieClip 510 // total frames: 2
+  end // of defineMovieClip 510
+
+  defineMovieClip 511 // total frames: 7
+  end // of defineMovieClip 511
+
+  defineMovieClip 512 // total frames: 5
+  end // of defineMovieClip 512
+
+  defineMovieClip 513 // total frames: 12
+  end // of defineMovieClip 513
+
+  defineMovieClip 514 // total frames: 1
+  end // of defineMovieClip 514
+
+  defineMovieClip 515 // total frames: 1
+  end // of defineMovieClip 515
+
+  defineMovieClip 517 // total frames: 1
+  end // of defineMovieClip 517
+
+  defineMovieClip 518 // total frames: 2
+  end // of defineMovieClip 518
+
+  defineMovieClip 520 // total frames: 1
+  end // of defineMovieClip 520
+
+  defineMovieClip 522 // total frames: 1
+  end // of defineMovieClip 522
+
+  defineMovieClip 523 // total frames: 2
+  end // of defineMovieClip 523
+
+  defineMovieClip 525 // total frames: 2
+  end // of defineMovieClip 525
+
+  defineMovieClip 527 // total frames: 1
+  end // of defineMovieClip 527
+
+  defineMovieClip 529 // total frames: 1
+  end // of defineMovieClip 529
+
+  defineMovieClip 530 // total frames: 2
+  end // of defineMovieClip 530
+
+  defineMovieClip 531 // total frames: 7
+  end // of defineMovieClip 531
+
+  defineMovieClip 532 // total frames: 2
+  end // of defineMovieClip 532
+
+  defineMovieClip 533 // total frames: 8
+  end // of defineMovieClip 533
+
+  defineMovieClip 534 // total frames: 1
+  end // of defineMovieClip 534
+
+  defineMovieClip 536 // total frames: 1
+  end // of defineMovieClip 536
+
+  defineMovieClip 538 // total frames: 1
+  end // of defineMovieClip 538
+
+  defineMovieClip 540 // total frames: 1
+  end // of defineMovieClip 540
+
+  defineMovieClip 541 // total frames: 2
+  end // of defineMovieClip 541
+
+  defineMovieClip 543 // total frames: 2
+  end // of defineMovieClip 543
+
+  defineMovieClip 546 // total frames: 1
+  end // of defineMovieClip 546
+
+  defineMovieClip 548 // total frames: 1
+  end // of defineMovieClip 548
+
+  defineMovieClip 550 // total frames: 2
+  end // of defineMovieClip 550
+
+  defineMovieClip 551 // total frames: 7
+  end // of defineMovieClip 551
+
+  defineMovieClip 552 // total frames: 2
+  end // of defineMovieClip 552
+
+  defineMovieClip 553 // total frames: 8
+  end // of defineMovieClip 553
+
+  defineMovieClip 554 // total frames: 1
+  end // of defineMovieClip 554
+
+  defineMovieClip 556 // total frames: 7
+  end // of defineMovieClip 556
+
+  defineMovieClip 558 // total frames: 1
+  end // of defineMovieClip 558
+
+  defineMovieClip 560 // total frames: 1
+  end // of defineMovieClip 560
+
+  defineMovieClip 562 // total frames: 1
+  end // of defineMovieClip 562
+
+  defineMovieClip 564 // total frames: 1
+  end // of defineMovieClip 564
+
+  defineMovieClip 565 // total frames: 2
+  end // of defineMovieClip 565
+
+  defineMovieClip 566 // total frames: 7
+  end // of defineMovieClip 566
+
+  defineMovieClip 567 // total frames: 1
+  end // of defineMovieClip 567
+
+  defineMovieClip 568 // total frames: 1
+  end // of defineMovieClip 568
+
+  defineMovieClip 570 // total frames: 1
+  end // of defineMovieClip 570
+
+  defineMovieClip 571 // total frames: 2
+  end // of defineMovieClip 571
+
+  defineMovieClip 573 // total frames: 1
+  end // of defineMovieClip 573
+
+  defineMovieClip 575 // total frames: 1
+  end // of defineMovieClip 575
+
+  defineMovieClip 576 // total frames: 2
+  end // of defineMovieClip 576
+
+  defineMovieClip 578 // total frames: 2
+  end // of defineMovieClip 578
+
+  defineMovieClip 580 // total frames: 1
+  end // of defineMovieClip 580
+
+  defineMovieClip 583 // total frames: 1
+  end // of defineMovieClip 583
+
+  defineMovieClip 584 // total frames: 2
+  end // of defineMovieClip 584
+
+  defineMovieClip 585 // total frames: 7
+  end // of defineMovieClip 585
+
+  defineMovieClip 586 // total frames: 2
+  end // of defineMovieClip 586
+
+  defineMovieClip 587 // total frames: 8
+  end // of defineMovieClip 587
+
+  defineMovieClip 588 // total frames: 1
+  end // of defineMovieClip 588
+
+  defineMovieClip 589 // total frames: 1
+  end // of defineMovieClip 589
+
+  defineMovieClip 590 // total frames: 1
+  end // of defineMovieClip 590
+
+  defineMovieClip 592 // total frames: 1
+  end // of defineMovieClip 592
+
+  defineMovieClip 594 // total frames: 1
+  end // of defineMovieClip 594
+
+  defineMovieClip 595 // total frames: 7
+  end // of defineMovieClip 595
+
+  defineMovieClip 596 // total frames: 2
+  end // of defineMovieClip 596
+
+  defineMovieClip 597 // total frames: 8
+  end // of defineMovieClip 597
+
+  defineMovieClip 598 // total frames: 1
+  end // of defineMovieClip 598
+
+  defineMovieClip 599 // total frames: 2
+  end // of defineMovieClip 599
+
+  defineMovieClip 600 // total frames: 2
+  end // of defineMovieClip 600
+
+  defineMovieClip 603 // total frames: 2
+  end // of defineMovieClip 603
+
+  defineMovieClip 604 // total frames: 7
+  end // of defineMovieClip 604
+
+  defineMovieClip 605 // total frames: 2
+  end // of defineMovieClip 605
+
+  defineMovieClip 606 // total frames: 8
+  end // of defineMovieClip 606
+
+  defineMovieClip 607 // total frames: 1
+  end // of defineMovieClip 607
+
+  defineMovieClip 608 // total frames: 1
+  end // of defineMovieClip 608
+
+  defineMovieClip 610 // total frames: 2
+  end // of defineMovieClip 610
+
+  defineMovieClip 613 // total frames: 1
+  end // of defineMovieClip 613
+
+  defineMovieClip 615 // total frames: 1
+  end // of defineMovieClip 615
+
+  defineMovieClip 617 // total frames: 1
+  end // of defineMovieClip 617
+
+  defineMovieClip 619 // total frames: 1
+  end // of defineMovieClip 619
+
+  defineMovieClip 622 // total frames: 1
+  end // of defineMovieClip 622
+
+  defineMovieClip 623 // total frames: 2
+  end // of defineMovieClip 623
+
+  defineMovieClip 625 // total frames: 1
+  end // of defineMovieClip 625
+
+  defineMovieClip 628 // total frames: 1
+  end // of defineMovieClip 628
+
+  defineMovieClip 630 // total frames: 1
+  end // of defineMovieClip 630
+
+  defineMovieClip 632 // total frames: 1
+  end // of defineMovieClip 632
+
+  defineMovieClip 634 // total frames: 1
+  end // of defineMovieClip 634
+
+  defineMovieClip 635 // total frames: 7
+  end // of defineMovieClip 635
+
+  defineMovieClip 636 // total frames: 2
+  end // of defineMovieClip 636
+
+  defineMovieClip 637 // total frames: 8
+  end // of defineMovieClip 637
+
+  defineMovieClip 638 // total frames: 1
+  end // of defineMovieClip 638
+
+  defineMovieClip 639 // total frames: 2
+  end // of defineMovieClip 639
+
+  defineMovieClip 640 // total frames: 7
+  end // of defineMovieClip 640
+
+  defineMovieClip 642 // total frames: 1
+  end // of defineMovieClip 642
+
+  defineMovieClip 645 // total frames: 1
+  end // of defineMovieClip 645
+
+  defineMovieClip 647 // total frames: 1
+  end // of defineMovieClip 647
+
+  defineMovieClip 649 // total frames: 1
+  end // of defineMovieClip 649
+
+  defineMovieClip 650 // total frames: 2
+  end // of defineMovieClip 650
+
+  defineMovieClip 652 // total frames: 1
+  end // of defineMovieClip 652
+
+  defineMovieClip 654 // total frames: 1
+  end // of defineMovieClip 654
+
+  defineMovieClip 655 // total frames: 2
+  end // of defineMovieClip 655
+
+  defineMovieClip 657 // total frames: 1
+  end // of defineMovieClip 657
+
+  defineMovieClip 658 // total frames: 2
+  end // of defineMovieClip 658
+
+  defineMovieClip 660 // total frames: 1
+  end // of defineMovieClip 660
+
+  defineMovieClip 664 // total frames: 1
+  end // of defineMovieClip 664
+
+  defineMovieClip 666 // total frames: 1
+  end // of defineMovieClip 666
+
+  defineMovieClip 667 // total frames: 2
+  end // of defineMovieClip 667
+
+  defineMovieClip 669 // total frames: 1
+  end // of defineMovieClip 669
+
+  defineMovieClip 672 // total frames: 1
+  end // of defineMovieClip 672
+
+  defineMovieClip 674 // total frames: 1
+  end // of defineMovieClip 674
+
+  defineMovieClip 675 // total frames: 2
+  end // of defineMovieClip 675
+
+  defineMovieClip 676 // total frames: 7
+  end // of defineMovieClip 676
+
+  defineMovieClip 677 // total frames: 2
+  end // of defineMovieClip 677
+
+  defineMovieClip 678 // total frames: 8
+  end // of defineMovieClip 678
+
+  defineMovieClip 679 // total frames: 1
+  end // of defineMovieClip 679
+
+  defineMovieClip 681 // total frames: 1
+  end // of defineMovieClip 681
+
+  defineMovieClip 682 // total frames: 1
+
+    frame 0
+      stop
+    end // of frame 0
+  end // of defineMovieClip 682
+
+  defineMovieClip 683 // total frames: 2
+  end // of defineMovieClip 683
+
+  defineMovieClip 685 // total frames: 1
+  end // of defineMovieClip 685
+
+  defineMovieClip 687 // total frames: 1
+  end // of defineMovieClip 687
+
+  defineMovieClip 689 // total frames: 1
+  end // of defineMovieClip 689
+
+  defineMovieClip 691 // total frames: 1
+  end // of defineMovieClip 691
+
+  defineMovieClip 693 // total frames: 1
+  end // of defineMovieClip 693
+
+  defineMovieClip 694 // total frames: 3
+  end // of defineMovieClip 694
+
+  defineMovieClip 696 // total frames: 1
+  end // of defineMovieClip 696
+
+  defineMovieClip 698 // total frames: 1
+  end // of defineMovieClip 698
+
+  defineMovieClip 700 // total frames: 1
+  end // of defineMovieClip 700
+
+  defineMovieClip 701 // total frames: 2
+  end // of defineMovieClip 701
+
+  defineMovieClip 703 // total frames: 1
+  end // of defineMovieClip 703
+
+  defineMovieClip 705 // total frames: 1
+  end // of defineMovieClip 705
+
+  defineMovieClip 707 // total frames: 1
+  end // of defineMovieClip 707
+
+  defineMovieClip 709 // total frames: 1
+  end // of defineMovieClip 709
+
+  defineMovieClip 711 // total frames: 1
+  end // of defineMovieClip 711
+
+  defineMovieClip 712 // total frames: 12
+  end // of defineMovieClip 712
+
+  defineMovieClip 713 // total frames: 1
+  end // of defineMovieClip 713
+
+  defineMovieClip 715 // total frames: 1
+  end // of defineMovieClip 715
+
+  defineMovieClip 717 // total frames: 1
+  end // of defineMovieClip 717
+
+  defineMovieClip 718 // total frames: 2
+  end // of defineMovieClip 718
+
+  defineMovieClip 720 // total frames: 1
+  end // of defineMovieClip 720
+
+  defineMovieClip 721 // total frames: 2
+  end // of defineMovieClip 721
+
+  defineMovieClip 722 // total frames: 7
+  end // of defineMovieClip 722
+
+  defineMovieClip 723 // total frames: 1
+  end // of defineMovieClip 723
+
+  defineMovieClip 724 // total frames: 7
+  end // of defineMovieClip 724
+
+  defineMovieClip 725 // total frames: 1
+  end // of defineMovieClip 725
+
+  defineMovieClip 726 // total frames: 1
+  end // of defineMovieClip 726
+
+  defineMovieClip 727 // total frames: 1
+  end // of defineMovieClip 727
+
+  defineMovieClip 729 // total frames: 1
+  end // of defineMovieClip 729
+
+  defineMovieClip 730 // total frames: 2
+  end // of defineMovieClip 730
+
+  defineMovieClip 732 // total frames: 1
+  end // of defineMovieClip 732
+
+  defineMovieClip 734 // total frames: 2
+  end // of defineMovieClip 734
+
+  defineMovieClip 735 // total frames: 7
+  end // of defineMovieClip 735
+
+  defineMovieClip 736 // total frames: 1
+  end // of defineMovieClip 736
+
+  defineMovieClip 737 // total frames: 8
+  end // of defineMovieClip 737
+
+  defineMovieClip 738 // total frames: 1
+  end // of defineMovieClip 738
+
+  defineMovieClip 741 // total frames: 2
+  end // of defineMovieClip 741
+
+  defineMovieClip 743 // total frames: 1
+  end // of defineMovieClip 743
+
+  defineMovieClip 745 // total frames: 1
+  end // of defineMovieClip 745
+
+  defineMovieClip 747 // total frames: 2
+  end // of defineMovieClip 747
+
+  defineMovieClip 748 // total frames: 7
+  end // of defineMovieClip 748
+
+  defineMovieClip 749 // total frames: 2
+  end // of defineMovieClip 749
+
+  defineMovieClip 750 // total frames: 1
+  end // of defineMovieClip 750
+
+  defineMovieClip 751 // total frames: 1
+  end // of defineMovieClip 751
+
+  defineMovieClip 752 // total frames: 64
+
+    frame 0
+      constants '_parent', 'moveTo'  
+      push '_parent'
+      getVariable
+      push '_parent'
+      getMember
+      push 'moveTo'
+      getMember
+      push NULL
+      equals
+      not
+      branchIfTrue label1
+      gotoFrame 0
+     label1:
+    end // of frame 0
+  end // of defineMovieClip 752
+
+  defineMovieClip 753 // total frames: 3
+  end // of defineMovieClip 753
+end
