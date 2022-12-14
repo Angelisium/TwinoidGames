@@ -1,0 +1,7627 @@
+movie 'ferme.swf' compressed // flash 8, total frames: 1, frame rate: 20 fps, 1x1 px
+
+
+  defineMovieClip 4 // total frames: 1
+  end // of defineMovieClip 4
+
+  defineMovieClip 5 // total frames: 1
+  end // of defineMovieClip 5
+
+  defineMovieClip 6 // total frames: 3
+
+    frame 0
+      push '6h', -300
+      setVariable
+      push '2q(', 0.0
+      setVariable
+      push '; O', 1
+      setVariable
+      push ' 2'
+      getVariable
+      push '_alpha', 0.0
+      setMember
+    end // of frame 0
+
+    frame 1
+      constants ' 2', '_x', '; O', '_alpha', '2q(', '6h'  
+      push ' 2'
+      getVariable
+      push '_x', ' 2'
+      getVariable
+      push '_x'
+      getMember
+      push '; O'
+      getVariable
+      add
+      setMember
+      push ' 2'
+      getVariable
+      push '_alpha', '2q('
+      getVariable
+      setMember
+      push '2q('
+      getVariable
+      push 100
+      lessThan
+      not
+      branchIfTrue label1
+      push '2q(', '2q('
+      getVariable
+      push 8
+      add
+      setVariable
+      push '2q('
+      getVariable
+      push 100
+      greaterThan
+      not
+      branchIfTrue label1
+      push '2q(', 100
+      setVariable
+     label1:
+      push ' 2'
+      getVariable
+      push '_x'
+      getMember
+      push 300
+      lessThan
+      not
+      not
+      branchIfTrue label2
+      push ' 2'
+      getVariable
+      push '_x', '6h'
+      getVariable
+      setMember
+     label2:
+    end // of frame 1
+
+    frame 2
+      gotoFrame 1
+      play
+    end // of frame 2
+  end // of defineMovieClip 6
+
+  defineMovieClip 8 // total frames: 1
+  end // of defineMovieClip 8
+  
+  exportAssets
+    8 as 'invisible'
+  end // of exportAssets
+
+  defineMovieClip 12 // total frames: 1
+  end // of defineMovieClip 12
+
+  defineMovieClip 27 // total frames: 16
+  end // of defineMovieClip 27
+  
+  exportAssets
+    27 as 'square'
+  end // of exportAssets
+
+  defineMovieClip 30 // total frames: 1
+  end // of defineMovieClip 30
+
+  defineMovieClip 43 // total frames: 16
+
+    frame 15
+      stop
+    end // of frame 15
+  end // of defineMovieClip 43
+
+  defineMovieClip 45 // total frames: 1
+  end // of defineMovieClip 45
+
+  defineMovieClip 46 // total frames: 68
+
+    frame 65
+      stop
+    end // of frame 65
+  end // of defineMovieClip 46
+
+  defineMovieClip 47 // total frames: 1
+  end // of defineMovieClip 47
+  
+  exportAssets
+    47 as 'points'
+  end // of exportAssets
+
+  defineMovieClip 49 // total frames: 1
+  end // of defineMovieClip 49
+
+  defineMovieClip 50 // total frames: 56
+
+    frame 55
+      gotoFrame 0
+      play
+    end // of frame 55
+  end // of defineMovieClip 50
+
+  defineMovieClip 51 // total frames: 5
+  end // of defineMovieClip 51
+  
+  exportAssets
+    51 as 'glow'
+  end // of exportAssets
+
+  defineMovieClip 53 // total frames: 1
+  end // of defineMovieClip 53
+  
+  exportAssets
+    53 as 'partDust'
+  end // of exportAssets
+
+  defineMovieClip 54 // total frames: 1
+  end // of defineMovieClip 54
+  
+  exportAssets
+    54 as 'partDustGFX'
+  end // of exportAssets
+
+  defineMovieClip 55 // total frames: 1
+  end // of defineMovieClip 55
+  
+  exportAssets
+    55 as 'partDirt'
+  end // of exportAssets
+
+  defineMovieClip 57 // total frames: 1
+  end // of defineMovieClip 57
+
+  defineMovieClip 59 // total frames: 1
+  end // of defineMovieClip 59
+
+  defineMovieClip 61 // total frames: 1
+  end // of defineMovieClip 61
+
+  defineMovieClip 62 // total frames: 37
+
+    frame 36
+      push ''
+      removeClip
+    end // of frame 36
+  end // of defineMovieClip 62
+
+  defineMovieClip 63 // total frames: 5
+  end // of defineMovieClip 63
+  
+  exportAssets
+    63 as 'fall'
+  end // of exportAssets
+
+  defineMovieClip 65 // total frames: 1
+  end // of defineMovieClip 65
+  
+  exportAssets
+    65 as 'ghost'
+  end // of exportAssets
+
+  defineMovieClip 78 // total frames: 10
+  end // of defineMovieClip 78
+  
+  exportAssets
+    78 as 'scoreBill'
+  end // of exportAssets
+
+  defineMovieClip 80 // total frames: 1
+  end // of defineMovieClip 80
+  
+  exportAssets
+    80 as 'playerScore'
+  end // of exportAssets
+
+  defineMovieClip 82 // total frames: 1
+  end // of defineMovieClip 82
+  
+  exportAssets
+    82 as 'scoreCard'
+  end // of exportAssets
+
+  defineMovieClip 91 // total frames: 9
+  end // of defineMovieClip 91
+  
+  exportAssets
+    91 as 'score'
+  end // of exportAssets
+
+  defineMovieClip 93 // total frames: 1
+  end // of defineMovieClip 93
+  
+  exportAssets
+    93 as 'red'
+  end // of exportAssets
+
+  defineMovieClip 95 // total frames: 1
+  end // of defineMovieClip 95
+  
+  exportAssets
+    95 as 'blue'
+  end // of exportAssets
+
+  defineMovieClip 97 // total frames: 1
+  end // of defineMovieClip 97
+
+  defineMovieClip 98 // total frames: 15
+
+    frame 14
+      gotoFrame 0
+      play
+    end // of frame 14
+  end // of defineMovieClip 98
+
+  defineMovieClip 99 // total frames: 5
+  end // of defineMovieClip 99
+  
+  exportAssets
+    99 as 'select'
+  end // of exportAssets
+
+  defineMovieClip 102 // total frames: 1
+  end // of defineMovieClip 102
+
+  defineMovieClip 103 // total frames: 12
+
+    frame 11
+      stop
+    end // of frame 11
+  end // of defineMovieClip 103
+
+  defineMovieClip 104 // total frames: 3
+  end // of defineMovieClip 104
+
+  defineMovieClip 105 // total frames: 16
+  end // of defineMovieClip 105
+  
+  exportAssets
+    105 as 'grass'
+  end // of exportAssets
+
+  defineMovieClip 108 // total frames: 4
+
+    frame 0
+      stop
+    end // of frame 0
+  end // of defineMovieClip 108
+  
+  exportAssets
+    108 as 'trees'
+  end // of exportAssets
+
+  defineMovieClip 113 // total frames: 5
+  end // of defineMovieClip 113
+  
+  exportAssets
+    113 as 'hand'
+  end // of exportAssets
+
+  defineMovieClip 115 // total frames: 1
+  end // of defineMovieClip 115
+
+  defineMovieClip 116 // total frames: 33
+
+    frame 1
+      push '5t 9)', 100
+      random
+      push 100
+      add
+      setVariable
+    end // of frame 1
+
+    frame 2
+      constants '5t 9)', ''  
+      push '5t 9)'
+      getVariable
+      push 150
+      equals
+      not
+      branchIfTrue label1
+      push '', 4
+      getProperty
+      push 2
+      add
+      gotoAndPlay
+      branch label2
+     label1:
+      push '', 4
+      getProperty
+      push 1
+      subtract
+      gotoAndPlay
+     label2:
+    end // of frame 2
+
+    frame 19
+      push '5t 9)', 100
+      random
+      push 100
+      add
+      setVariable
+    end // of frame 19
+
+    frame 20
+      constants '5t 9)', ''  
+      push '5t 9)'
+      getVariable
+      push 150
+      equals
+      not
+      branchIfTrue label1
+      push '', 4
+      getProperty
+      push 2
+      add
+      gotoAndPlay
+      branch label2
+     label1:
+      push '', 4
+      getProperty
+      push 1
+      subtract
+      gotoAndPlay
+     label2:
+    end // of frame 20
+  end // of defineMovieClip 116
+
+  defineMovieClip 118 // total frames: 1
+  end // of defineMovieClip 118
+
+  defineMovieClip 119 // total frames: 29
+
+    frame 2
+      push '5t 9)', 100
+      random
+      push 100
+      add
+      setVariable
+    end // of frame 2
+
+    frame 3
+      constants '5t 9)', ''  
+      push '5t 9)'
+      getVariable
+      push 150
+      equals
+      not
+      branchIfTrue label1
+      push '', 4
+      getProperty
+      push 2
+      add
+      gotoAndPlay
+      branch label2
+     label1:
+      push '', 4
+      getProperty
+      push 1
+      subtract
+      gotoAndPlay
+     label2:
+    end // of frame 3
+  end // of defineMovieClip 119
+
+  defineMovieClip 121 // total frames: 1
+  end // of defineMovieClip 121
+
+  defineMovieClip 122 // total frames: 42
+  end // of defineMovieClip 122
+
+  defineMovieClip 123 // total frames: 2
+  end // of defineMovieClip 123
+  
+  exportAssets
+    123 as 'meumeu'
+  end // of exportAssets
+
+  defineMovieClip 125 // total frames: 1
+  end // of defineMovieClip 125
+
+  defineMovieClip 126 // total frames: 106
+
+    frame 0
+    end // of frame 0
+
+    frame 28
+      push '5t 9)', 100
+      random
+      push 100
+      add
+      setVariable
+    end // of frame 28
+
+    frame 29
+      constants '5t 9)', ''  
+      push '5t 9)'
+      getVariable
+      push 150
+      equals
+      not
+      branchIfTrue label1
+      push '', 4
+      getProperty
+      push 2
+      add
+      gotoAndPlay
+      branch label2
+     label1:
+      push '', 4
+      getProperty
+      push 1
+      subtract
+      gotoAndPlay
+     label2:
+    end // of frame 29
+
+    frame 53
+      push '5t 9)', 100
+      random
+      push 100
+      add
+      setVariable
+    end // of frame 53
+
+    frame 54
+      constants '5t 9)', ''  
+      push '5t 9)'
+      getVariable
+      push 150
+      equals
+      not
+      branchIfTrue label1
+      push '', 4
+      getProperty
+      push 2
+      add
+      gotoAndPlay
+      branch label2
+     label1:
+      push '', 4
+      getProperty
+      push 1
+      subtract
+      gotoAndPlay
+     label2:
+    end // of frame 54
+
+    frame 80
+      push '5t 9)', 100
+      random
+      push 100
+      add
+      setVariable
+    end // of frame 80
+
+    frame 81
+      constants '5t 9)', ''  
+      push '5t 9)'
+      getVariable
+      push 150
+      equals
+      not
+      branchIfTrue label1
+      push '', 4
+      getProperty
+      push 2
+      add
+      gotoAndPlay
+      branch label2
+     label1:
+      push '', 4
+      getProperty
+      push 1
+      subtract
+      gotoAndPlay
+     label2:
+    end // of frame 81
+
+    frame 101
+      push '5t 9)', 100
+      random
+      push 100
+      add
+      setVariable
+    end // of frame 101
+
+    frame 102
+      constants '5t 9)', ''  
+      push '5t 9)'
+      getVariable
+      push 150
+      equals
+      not
+      branchIfTrue label1
+      push '', 4
+      getProperty
+      push 2
+      add
+      gotoAndPlay
+      branch label2
+     label1:
+      push '', 4
+      getProperty
+      push 1
+      subtract
+      gotoAndPlay
+     label2:
+    end // of frame 102
+
+    frame 105
+      gotoFrame 1
+      play
+    end // of frame 105
+  end // of defineMovieClip 126
+  
+  exportAssets
+    126 as 'bebeh'
+  end // of exportAssets
+
+  defineMovieClip 128 // total frames: 1
+  end // of defineMovieClip 128
+  
+  exportAssets
+    128 as 'cocot'
+  end // of exportAssets
+
+  defineMovieClip 132 // total frames: 1
+  end // of defineMovieClip 132
+
+  defineMovieClip 135 // total frames: 1
+  end // of defineMovieClip 135
+
+  defineMovieClip 136 // total frames: 4
+
+    frame 0
+      stop
+    end // of frame 0
+  end // of defineMovieClip 136
+  
+  exportAssets
+    136 as 'bground'
+  end // of exportAssets
+
+  frame 0
+    constants ')PVyX', '-g', '[8X6+', '7]AJ', '__string_rec', 'Object', '_global', 'flash', '}ZF-m', 'display', '_MovieClip', '9K', 'text', 'text', ' D(1', '[vXe-', ')', '', '__name__', 'prototype', '__class__', '*](', '5b)fM', 'String', 'fromCharCode', ']}gvR', 'substr', 'toString', '[Zk', '__ename__', '__constructs__', 'UpdateCell', 'Init', '-5;Q', '__enum__', ')62y)(', '=(,aA', '0000', 'geom', '(GEO', '0', '+4o6D(', 'Array', ']bj0', '+YrpN', '9HmF,(', '[TS6F(', '=', '[YyD-(', ']', '5', '}[R4,(', '((', ')(', 'push', '{HRP1', 'length', '3Wt', 'random', 'fileName', 'Grid.hx', 'lineNumber', 'className', 'Grid', 'methodName', 'closeBorders', 'no more element', ']{i', '-[Ra6', 'iterator', '1ll a', '7Y-7', '6Kr1)', '={ S-', 'splice', '{c;;4(', '+V+K', '} fcO', '4rER-', '*PHg6(', '+-(0', '1N-', '4AF', '-vFG', '4', '4bqds', '9n6', '}J', '5 fLh', 'square', '32', '*=_p_', '_xscale', '5DZk5', '_yscale', '_x', ',aR;-', '_y', '8;cxI', '}-VbH', '+4Z+[', 'onPress', 'onPress', ']6=8H(', 'stop', ')mQw+', '8gjh4', 'grass', 'smc', 'gotoAndStop', '-Mw39', ')kFdY', '1TsWo', 'bebeh', 'meumeu', '}omcH', ',ZHvt', '_rotation', '_totalframes', 'gotoAndPlay', '4[-(J(', '0=[m5', '=SfXp', 'points', '+Da3+', '+_PpF', ' tq5)', 'removeMovieClip', ';5zsB', '8F]xi', '5P(l((', '8VH{D(', '[uD*]', '9UeAW', '115(A(', '*0FF-(', '8+C5', '[=h9J(', '_xmouse', '_ymouse', '1Tqf3', '}C]J (', '2QF=}', '-6*]J(', 'Matrix', 'scale', 'translate', '856=F(', 'draw', '}xMhF', '9G56', '4mok0', ')lJut', 'Cell (', ',', ') [t:', ' r:', ' b:', ' l:', '] [t:', ']', '{-kxL', '(K', '*B', ';LI', 'setInterval', '+TOS,(', '5U4B', 'stop', '-', '0{lc4', '-_d +', 'shift', '7MX}5', '1ni', '6{1o=(', 'clearInterval', '-UHXC', '9]A', '2KA', '0d2T', 'length', '1', ';', '+tq5)', '8UMQ(', '5qt3+', '6k9+D', 'iterator', ',QC3', '0f 5', '(KA', '1AF', 'push', '0ENPA', '{', ', ', '}', '3[4k{', 'filters', '44{N', '8lpZD(', '21zZJ(', '-iB=', '23ri)(', '=yTeD', ' QiB8(', ']Z}nw', '+}B(', '+7U K', '0o*6', '4MvcB', 'bground', 'cacheAsBitmap', '*HfMs', 'select', '2uAcM', '+2+bb', 'trees', '[MqDO', 'BitmapData', ']TP8q', '18wU*', 'attachBitmap', '=zw9C', 'fall', '_visible', '}StDC', 'glow', '2{cEC', 'hand', ';hbMC', ',KBLC', 'invisible', '5nwDR', '__interfaces__', '7Pm20(', '24LA-', ')C2+F(', '(hET+', '994N=(', '4[K{k', 'dispose', '7UQBd', '-R*x6(', ';AH0', '73[+j', '{9,B', '}[gVn', '13=z)', '6p5aQ', '[L2', '(,XVr', ',WWC+(', '7iP=3', '1SExH', ',0Kly', '7;IrI', ';6aj0(', '0D 6', 'play', '031zE', '-*Nt4(', '3Usn[', ';ptpb', ',XIj,', '6qHSI(', '3CfVp', ')Kw3;', '7T4cF(', '+oD9l', '}A)SZ', '{A)SZ', '0UN5I', ']eyEY', '+Du}V', 'onRelease', 'useHandCursor', '4fHu{', '}Wl0n', '8Z[e,(', '<div class="score0">', ' </div>', '<div class="score1">', '</div>', '<p>', 'A vous de jouer , $me !', 'Tour de votre adversaire : $other', '</p>', '+*[ W', '4+=I', '7-,', '-V;B', 'this', '__init', '__res', 'MovieClip', 'TextField', 'StyleSheet', '__eval', 'TextFormat', 'Stage', 'TextSnapshot', 'Mouse', 'addListener', '5oMNO', '{6KbC', '__exc'  
+    push ')PVyX'
+    function2 () (r:1='this')
+      push '-g', r:this, 2, '[8X6+'
+      getVariable
+      push '7]AJ'
+      getMember
+      push '__string_rec'
+      callMethod
+      return
+    end // of function 
+
+    setVariable
+    push '[8X6+', 0, 'Object'
+    new
+    setRegister r:1
+    setVariable
+    push '_global'
+    getVariable
+    push 'flash'
+    getMember
+    setRegister r:2
+    enumerateValue
+   label1:
+    setRegister r:0
+    push NULL
+    equals
+    branchIfTrue label2
+    push r:1, r:0, r:2, r:0
+    getMember
+    setMember
+    branch label1
+   label2:
+    pop
+    push '[8X6+'
+    getVariable
+    push '}ZF-m', 0, 'Object'
+    new
+    setRegister r:1
+    setMember
+    push '_global'
+    getVariable
+    push 'flash'
+    getMember
+    push 'display'
+    getMember
+    setRegister r:2
+    enumerateValue
+   label3:
+    setRegister r:0
+    push NULL
+    equals
+    branchIfTrue label4
+    push r:1, r:0, r:2, r:0
+    getMember
+    setMember
+    branch label3
+   label4:
+    pop
+    push '[8X6+'
+    getVariable
+    push '_MovieClip', 0, 'Object'
+    new
+    setRegister r:1
+    setMember
+    push '_global'
+    getVariable
+    push 'flash'
+    getMember
+    push '_MovieClip'
+    getMember
+    setRegister r:2
+    enumerateValue
+   label5:
+    setRegister r:0
+    push NULL
+    equals
+    branchIfTrue label6
+    push r:1, r:0, r:2, r:0
+    getMember
+    setMember
+    branch label5
+   label6:
+    pop
+    push '9K', 0, 'Object'
+    new
+    setRegister r:1
+    setVariable
+    push '_global'
+    getVariable
+    push '9K'
+    getMember
+    setRegister r:2
+    enumerateValue
+   label7:
+    setRegister r:0
+    push NULL
+    equals
+    branchIfTrue label8
+    push r:1, r:0, r:2, r:0
+    getMember
+    setMember
+    branch label7
+   label8:
+    pop
+    push '[8X6+'
+    getVariable
+    push 'text', 0, 'Object'
+    new
+    setRegister r:1
+    setMember
+    push '_global'
+    getVariable
+    push 'flash'
+    getMember
+    push 'text'
+    getMember
+    setRegister r:2
+    enumerateValue
+   label9:
+    setRegister r:0
+    push NULL
+    equals
+    branchIfTrue label10
+    push r:1, r:0, r:2, r:0
+    getMember
+    setMember
+    branch label9
+   label10:
+    pop
+    push ' D(1', 0, 'Object'
+    new
+    setRegister r:1
+    setVariable
+    push '_global'
+    getVariable
+    push ' D(1'
+    getMember
+    setRegister r:2
+    enumerateValue
+   label11:
+    setRegister r:0
+    push NULL
+    equals
+    branchIfTrue label12
+    push r:1, r:0, r:2, r:0
+    getMember
+    setMember
+    branch label11
+   label12:
+    pop
+    push '[vXe-'
+    function2 () (r:1='this')
+      push r:this, ')', ''
+      setMember
+    end // of function 
+
+    setRegister r:0
+    setVariable
+    push r:0, '__name__', '[vXe-', 1
+    initArray
+    setMember
+    push r:0, 'prototype'
+    getMember
+    setRegister r:1
+    pop
+    push r:1, '__class__', r:0
+    setMember
+    push r:1, '*]('
+    function2 (r:2='') (r:1='this')
+      push r:this, ')', r:this, ')'
+      getMember
+      push r:2
+      add
+      setMember
+    end // of function 
+
+    setMember
+    push r:1, '5b)fM'
+    function2 (r:2='') (r:1='this')
+      push r:this, ')', r:this, ')'
+      getMember
+      push r:2, 1, 'String'
+      getVariable
+      push 'fromCharCode'
+      callMethod
+      add
+      setMember
+    end // of function 
+
+    setMember
+    push r:1, ']}gvR'
+    function2 (r:2='', r:3='', r:4='') (r:1='this')
+      push r:this, ')', r:this, ')'
+      getMember
+      push r:4, r:3, 2, r:2, 'substr'
+      callMethod
+      add
+      setMember
+    end // of function 
+
+    setMember
+    push r:1, ')', NULL
+    setMember
+    push r:1, 'toString'
+    function2 () (r:1='this')
+      push r:this, ')'
+      getMember
+      return
+    end // of function 
+
+    setMember
+    push '[Zk', 0, 'Object'
+    new
+    setRegister r:0
+    setVariable
+    push r:0, '__ename__', '[Zk', 1
+    initArray
+    setMember
+    push r:0, '__constructs__', 'UpdateCell', 'Init', 2
+    initArray
+    setMember
+    push r:0, '-5;Q'
+    function2 (r:2='') (r:1='this')
+      push r:2, 0, '-5;Q', 3
+      initArray
+      dup
+      dup
+      push '__enum__', r:this
+      setMember
+      push 'toString', ')PVyX'
+      getVariable
+      setMember
+      return
+    end // of function 
+
+    setMember
+    push r:0, ')62y)('
+    function2 (r:2='', r:3='', r:4='') (r:1='this')
+      push r:4, r:3, r:2, 1, ')62y)(', 5
+      initArray
+      dup
+      dup
+      push '__enum__', r:this
+      setMember
+      push 'toString', ')PVyX'
+      getVariable
+      setMember
+      return
+    end // of function 
+
+    setMember
+    push '=(,aA'
+    function2 () (r:1='this', r:2='super')
+    end // of function 
+
+    setRegister r:0
+    setVariable
+    push r:0, '__name__', '=(,aA', 1
+    initArray
+    setMember
+    push r:0, 'prototype'
+    getMember
+    setRegister r:1
+    pop
+    push r:1, '__class__', r:0
+    setMember
+    push '[8X6+'
+    getVariable
+    push '0000', 0, 'Object'
+    new
+    setRegister r:1
+    setMember
+    push '_global'
+    getVariable
+    push 'flash'
+    getMember
+    push 'geom'
+    getMember
+    setRegister r:2
+    enumerateValue
+   label13:
+    setRegister r:0
+    push NULL
+    equals
+    branchIfTrue label14
+    push r:1, r:0, r:2, r:0
+    getMember
+    setMember
+    branch label13
+   label14:
+    pop
+    push '(GEO'
+    function2 () (r:1='this', r:2='super')
+    end // of function 
+
+    setRegister r:0
+    setVariable
+    push r:0, '__name__', '(GEO', 1
+    initArray
+    setMember
+    push r:0, 'prototype'
+    getMember
+    setRegister r:1
+    pop
+    push r:1, '__class__', r:0
+    setMember
+    push r:0, '0', NULL
+    setMember
+    push r:0, '+4o6D('
+    function2 () (r:1='this')
+      push '(GEO'
+      getVariable
+      push '0', 0, 'Array'
+      new
+      setMember
+      push 0, '(GEO'
+      getVariable
+      push ']bj0'
+      callMethod
+      pop
+      push 0, '(GEO'
+      getVariable
+      push '+YrpN'
+      callMethod
+      pop
+      push 0, '(GEO'
+      getVariable
+      push '9HmF,('
+      callMethod
+      pop
+      push '(GEO'
+      getVariable
+      push '0'
+      getMember
+      return
+    end // of function 
+
+    setMember
+    push r:0, '[TS6F('
+    function2 (r:2='', r:3='') (r:1='this')
+      push r:2, 0
+      equals
+      dup
+      not
+      branchIfTrue label15
+      pop
+      push r:3, 0
+      equals
+     label15:
+      not
+      branchIfTrue label16
+      push 100
+      return
+     label16:
+      push 0
+      setRegister r:4
+      pop
+      push '(GEO'
+      getVariable
+      push '0'
+      getMember
+      push r:2
+      getMember
+      push r:3
+      getMember
+      setRegister r:5
+      pop
+      push r:5, ')'
+      getMember
+      not
+      branchIfTrue label17
+      push r:4
+      increment
+      setRegister r:4
+      pop
+     label17:
+      push r:5, '='
+      getMember
+      not
+      branchIfTrue label18
+      push r:4
+      increment
+      setRegister r:4
+      pop
+     label18:
+      push '(GEO'
+      getVariable
+      push '0'
+      getMember
+      push r:2, 1
+      subtract
+      getMember
+      push r:3
+      getMember
+      push '='
+      getMember
+      not
+      branchIfTrue label19
+      push r:4
+      increment
+      setRegister r:4
+      pop
+     label19:
+      push '(GEO'
+      getVariable
+      push '0'
+      getMember
+      push r:2
+      getMember
+      push r:3, 1
+      subtract
+      getMember
+      push ')'
+      getMember
+      not
+      branchIfTrue label20
+      push r:4
+      increment
+      setRegister r:4
+      pop
+     label20:
+      push r:4
+      return
+    end // of function 
+
+    setMember
+    push r:0, ']bj0'
+    function2 () (r:1='this')
+      push '=(,aA'
+      getVariable
+      push '[YyD-('
+      getMember
+      push 1
+      add
+      setRegister r:2
+      pop
+      push 0, 'Array'
+      new
+      setRegister r:3
+      pop
+      push 0
+      setRegister r:4
+      pop
+      push r:2
+      setRegister r:5
+      pop
+     label21:
+      push r:4, r:5
+      lessThan
+      not
+      branchIfTrue label24
+      push r:4
+      setRegister r:6
+      pop
+      push r:4
+      increment
+      setRegister r:4
+      pop
+      push '(GEO'
+      getVariable
+      push '0'
+      getMember
+      push r:6, 0, 'Array'
+      new
+      setMember
+      push 0
+      setRegister r:7
+      pop
+      push r:2
+      setRegister r:8
+      pop
+     label22:
+      push r:7, r:8
+      lessThan
+      not
+      branchIfTrue label23
+      push r:7
+      setRegister r:9
+      pop
+      push r:7
+      increment
+      setRegister r:7
+      pop
+      push ']', FALSE, '=', FALSE, ')', FALSE, '5', FALSE, '}[R4,(', 0, 5
+      initObject
+      setRegister r:10
+      pop
+      push '(GEO'
+      getVariable
+      push '0'
+      getMember
+      push r:6
+      getMember
+      push r:9, r:10
+      setMember
+      push '((', r:6, ')(', r:9, 2
+      initObject
+      push 1, r:3, 'push'
+      callMethod
+      pop
+      branch label22
+     label23:
+      branch label21
+     label24:
+      push 1, 0, 2
+      initArray
+      push 0, 1, 2
+      initArray
+      push 2
+      initArray
+      push 0, 1, 2
+      initArray
+      push 1, 0, 2
+      initArray
+      push 2
+      initArray
+      push 2
+      initArray
+      setRegister r:4
+      pop
+      push 0
+      setRegister r:5
+      pop
+      push 0
+      setRegister r:6
+      pop
+     label25:
+      push r:5, '=(,aA'
+      getVariable
+      push '{HRP1'
+      getMember
+      lessThan
+      dup
+      not
+      branchIfTrue label26
+      pop
+      push r:6, r:6
+      increment
+      setRegister r:6
+      pop
+      push 500
+      lessThan
+     label26:
+      not
+      branchIfTrue label41
+      push r:3, 'length'
+      getMember
+      push 1, '3Wt'
+      getVariable
+      push 'random'
+      callMethod
+      setRegister r:7
+      pop
+      push r:3, 'length'
+      getMember
+      push 0
+      greaterThan
+      not
+      not
+      branchIfTrue label27
+      push 'fileName', 'Grid.hx', 'lineNumber', 61, 'className', 'Grid', 'methodName', 'closeBorders', 4
+      initObject
+      push 'no more element', 2, ' D(1'
+      getVariable
+      push ']{i'
+      getMember
+      push '-[Ra6'
+      callMethod
+      pop
+      push UNDEF
+      return
+     label27:
+      push r:3, r:7
+      getMember
+      setRegister r:8
+      pop
+      push r:8, '(('
+      getMember
+      setRegister r:9
+      pop
+      push r:8, ')('
+      getMember
+      setRegister r:10
+      pop
+      push '(GEO'
+      getVariable
+      push '0'
+      getMember
+      push r:9
+      getMember
+      push r:10
+      getMember
+      setRegister r:11
+      pop
+      push r:10, r:9, 2, '(GEO'
+      getVariable
+      push '[TS6F('
+      callMethod
+      push 2
+      lessThan
+      not
+      not
+      branchIfTrue label28
+      branch label25
+     label28:
+      push 0
+      initArray
+      setRegister r:12
+      pop
+      push 2, 1, '3Wt'
+      getVariable
+      push 'random'
+      callMethod
+      setRegister r:13
+      pop
+      push r:13, 1
+      equals
+      branchIfTrue label31
+      push r:11, ')'
+      getMember
+      not
+      not
+      branchIfTrue label29
+      push 1, 0, 2
+      initArray
+      push 1, r:12, 'push'
+      callMethod
+      pop
+     label29:
+      push r:11, '='
+      getMember
+      not
+      not
+      branchIfTrue label30
+      push 0, 1, 2
+      initArray
+      push 1, r:12, 'push'
+      callMethod
+      pop
+     label30:
+      branch label33
+     label31:
+      push r:11, '='
+      getMember
+      not
+      not
+      branchIfTrue label32
+      push 0, 1, 2
+      initArray
+      push 1, r:12, 'push'
+      callMethod
+      pop
+     label32:
+      push r:11, ')'
+      getMember
+      not
+      not
+      branchIfTrue label33
+      push 1, 0, 2
+      initArray
+      push 1, r:12, 'push'
+      callMethod
+      pop
+     label33:
+      push NULL
+      setRegister r:14
+      pop
+      push 0, r:12, 'iterator'
+      callMethod
+      setRegister r:15
+      pop
+     label34:
+      push 0, r:15, '1ll a'
+      callMethod
+      not
+      branchIfTrue label40
+      push 0, r:15, '7Y-7'
+      callMethod
+      setRegister r:16
+      pop
+      push r:9, r:16, 0
+      getMember
+      add
+      setRegister r:17
+      pop
+      push r:10, r:16, 1
+      getMember
+      add
+      setRegister r:18
+      pop
+      push '(GEO'
+      getVariable
+      push '0'
+      getMember
+      push r:17
+      getMember
+      push r:18
+      getMember
+      setRegister r:14
+      pop
+      push r:18, r:17, 2, '(GEO'
+      getVariable
+      push '[TS6F('
+      callMethod
+      push 2
+      lessThan
+      not
+      not
+      branchIfTrue label35
+      branch label34
+     label35:
+      push r:9, 0
+      equals
+      setRegister r:19
+      pop
+      push r:10, 0
+      equals
+      setRegister r:20
+      pop
+      push r:16, 0
+      getMember
+      push 1
+      equals
+      setRegister r:21
+      pop
+      push r:16, 0
+      getMember
+      push 0
+      equals
+      setRegister r:22
+      pop
+      push r:21
+      dup
+      not
+      branchIfTrue label36
+      pop
+      push r:20
+      not
+     label36:
+      not
+      branchIfTrue label37
+      push r:11, '=', TRUE
+      setMember
+      push r:5
+      increment
+      setRegister r:5
+      pop
+      push r:3, r:10, r:9, 3, '(GEO'
+      getVariable
+      push '6Kr1)'
+      callMethod
+      pop
+      push r:3, r:10, r:9, 1
+      add
+      push 3, '(GEO'
+      getVariable
+      push '6Kr1)'
+      callMethod
+      pop
+      branch label40
+     label37:
+      push r:22
+      dup
+      not
+      branchIfTrue label38
+      pop
+      push r:19
+      not
+     label38:
+      not
+      branchIfTrue label39
+      push r:11, ')', TRUE
+      setMember
+      push r:5
+      increment
+      setRegister r:5
+      pop
+      push r:3, r:10, r:9, 3, '(GEO'
+      getVariable
+      push '6Kr1)'
+      callMethod
+      pop
+      push r:3, r:10, 1
+      add
+      push r:9, 3, '(GEO'
+      getVariable
+      push '6Kr1)'
+      callMethod
+      pop
+      branch label40
+     label39:
+      branch label34
+     label40:
+      branch label25
+     label41:
+      push 0, 'Array'
+      new
+      setRegister r:7
+      pop
+      push 0
+      setRegister r:8
+      pop
+      push '=(,aA'
+      getVariable
+      push '[YyD-('
+      getMember
+      setRegister r:9
+      pop
+     label42:
+      push r:8, r:9
+      lessThan
+      not
+      branchIfTrue label49
+      push r:8
+      setRegister r:10
+      pop
+      push r:8
+      increment
+      setRegister r:8
+      pop
+      push r:7, r:10, 0, 'Array'
+      new
+      setMember
+      push 0
+      setRegister r:11
+      pop
+      push '=(,aA'
+      getVariable
+      push '[YyD-('
+      getMember
+      setRegister r:12
+      pop
+     label43:
+      push r:11, r:12
+      lessThan
+      not
+      branchIfTrue label48
+      push r:11
+      setRegister r:13
+      pop
+      push r:11
+      increment
+      setRegister r:11
+      pop
+      push '(GEO'
+      getVariable
+      push '0'
+      getMember
+      push r:10, 1
+      add
+      getMember
+      push r:13, 1
+      add
+      getMember
+      setRegister r:14
+      pop
+      push r:10, 0
+      equals
+      not
+      branchIfTrue label45
+      push '(GEO'
+      getVariable
+      push '0'
+      getMember
+      push 0
+      getMember
+      push r:13, 1
+      add
+      getMember
+      setRegister r:15
+      pop
+      push r:15, '='
+      getMember
+      not
+      branchIfTrue label44
+      push r:14, '5', TRUE
+      setMember
+      push r:7, r:10
+      getMember
+      push r:13, r:14
+      setMember
+      branch label43
+     label44:
+      push r:7, r:10
+      getMember
+      push r:13, r:14
+      setMember
+      branch label43
+     label45:
+      push r:13, 0
+      equals
+      not
+      branchIfTrue label47
+      push '(GEO'
+      getVariable
+      push '0'
+      getMember
+      push r:10, 1
+      add
+      getMember
+      push 0
+      getMember
+      setRegister r:15
+      pop
+      push r:15, ')'
+      getMember
+      not
+      branchIfTrue label46
+      push r:14, ']', TRUE
+      setMember
+      push r:7, r:10
+      getMember
+      push r:13, r:14
+      setMember
+      branch label43
+     label46:
+      push r:7, r:10
+      getMember
+      push r:13, r:14
+      setMember
+      branch label43
+     label47:
+      push r:7, r:10
+      getMember
+      push r:13, r:14
+      setMember
+      branch label43
+     label48:
+      branch label42
+     label49:
+      push '(GEO'
+      getVariable
+      push '0', 0
+      initArray
+      setMember
+      push '(GEO'
+      getVariable
+      push '0', r:7
+      setMember
+    end // of function 
+
+    setMember
+    push r:0, '6Kr1)'
+    function2 (r:2='', r:3='', r:4='') (r:1='this')
+      push '(GEO'
+      getVariable
+      push '0'
+      getMember
+      push r:2
+      getMember
+      push r:3
+      getMember
+      setRegister r:5
+      pop
+      push r:3, r:2, 2, '(GEO'
+      getVariable
+      push '[TS6F('
+      callMethod
+      setRegister r:6
+      pop
+      push r:6, 2
+      lessThan
+      not
+      not
+      branchIfTrue label50
+      push r:4, r:3, r:2, 3, '(GEO'
+      getVariable
+      push '={ S-'
+      callMethod
+      setRegister r:7
+      pop
+      push r:7, NULL
+      equals
+      not
+      not
+      branchIfTrue label50
+      push 1, r:7, 2, r:4, 'splice'
+      callMethod
+      pop
+     label50:
+    end // of function 
+
+    setMember
+    push r:0, '={ S-'
+    function2 (r:2='', r:3='', r:4='') (r:1='this')
+      push 0
+      setRegister r:5
+      pop
+      push r:4, 'length'
+      getMember
+      setRegister r:6
+      pop
+     label51:
+      push r:5, r:6
+      lessThan
+      not
+      branchIfTrue label54
+      push r:5
+      setRegister r:7
+      pop
+      push r:5
+      increment
+      setRegister r:5
+      pop
+      push r:4, r:7
+      getMember
+      setRegister r:8
+      pop
+      push r:8, '(('
+      getMember
+      push r:2
+      equals
+      dup
+      not
+      branchIfTrue label52
+      pop
+      push r:8, ')('
+      getMember
+      push r:3
+      equals
+     label52:
+      not
+      branchIfTrue label53
+      push r:7
+      return
+     label53:
+      branch label51
+     label54:
+      push NULL
+      return
+    end // of function 
+
+    setMember
+    push r:0, '9HmF,('
+    function2 () (r:1='this')
+      push '=(,aA'
+      getVariable
+      push '{c;;4('
+      getMember
+      not
+      not
+      branchIfTrue label55
+      push UNDEF
+      return
+     label55:
+      push '=(,aA'
+      getVariable
+      push '[YyD-('
+      getMember
+      push 1, '3Wt'
+      getVariable
+      push 'random'
+      callMethod
+      setRegister r:2
+      pop
+      push '=(,aA'
+      getVariable
+      push '[YyD-('
+      getMember
+      push 1, '3Wt'
+      getVariable
+      push 'random'
+      callMethod
+      setRegister r:3
+      pop
+      push '(GEO'
+      getVariable
+      push '0'
+      getMember
+      push r:2
+      getMember
+      push r:3
+      getMember
+      setRegister r:4
+      pop
+      push r:4, '}[R4,(', 5
+      setMember
+      push 3, 4, 1, '3Wt'
+      getVariable
+      push 'random'
+      callMethod
+      add
+      setRegister r:5
+      pop
+      push 0
+      setRegister r:6
+      pop
+      push r:5
+      setRegister r:7
+      pop
+     label56:
+      push r:6, r:7
+      lessThan
+      not
+      branchIfTrue label58
+      push r:6
+      setRegister r:8
+      pop
+      push r:6
+      increment
+      setRegister r:6
+      pop
+      push '=(,aA'
+      getVariable
+      push '[YyD-('
+      getMember
+      push 1, '3Wt'
+      getVariable
+      push 'random'
+      callMethod
+      setRegister r:9
+      pop
+      push '=(,aA'
+      getVariable
+      push '[YyD-('
+      getMember
+      push 1, '3Wt'
+      getVariable
+      push 'random'
+      callMethod
+      setRegister r:10
+      pop
+      push '(GEO'
+      getVariable
+      push '0'
+      getMember
+      push r:9
+      getMember
+      push r:10
+      getMember
+      setRegister r:11
+      pop
+      push r:11, '}[R4,('
+      getMember
+      push 0
+      greaterThan
+      not
+      not
+      branchIfTrue label57
+      push r:11, '}[R4,(', 2
+      setMember
+     label57:
+      branch label56
+     label58:
+    end // of function 
+
+    setMember
+    push r:0, '+YrpN'
+    function2 () (r:1='this')
+      push 0
+      setRegister r:2
+      pop
+      push '=(,aA'
+      getVariable
+      push '[YyD-('
+      getMember
+      setRegister r:3
+      pop
+     label59:
+      push r:2, r:3
+      lessThan
+      not
+      branchIfTrue label66
+      push r:2
+      setRegister r:4
+      pop
+      push r:2
+      increment
+      setRegister r:2
+      pop
+      push 0
+      setRegister r:5
+      pop
+      push '=(,aA'
+      getVariable
+      push '[YyD-('
+      getMember
+      setRegister r:6
+      pop
+     label60:
+      push r:5, r:6
+      lessThan
+      not
+      branchIfTrue label65
+      push r:5
+      setRegister r:7
+      pop
+      push r:5
+      increment
+      setRegister r:5
+      pop
+      push '(GEO'
+      getVariable
+      push '0'
+      getMember
+      push r:4
+      getMember
+      push r:7
+      getMember
+      setRegister r:8
+      pop
+      push '(GEO'
+      getVariable
+      push '0'
+      getMember
+      push r:4, 1
+      subtract
+      getMember
+      push r:7
+      getMember
+      setRegister r:9
+      pop
+      push '(GEO'
+      getVariable
+      push '0'
+      getMember
+      push r:4
+      getMember
+      push r:7, 1
+      subtract
+      getMember
+      setRegister r:10
+      pop
+      push r:9, '='
+      getMember
+      not
+      branchIfTrue label61
+      push r:8, '5', TRUE
+      setMember
+     label61:
+      push r:10, ')'
+      getMember
+      not
+      branchIfTrue label62
+      push r:8, ']', TRUE
+      setMember
+     label62:
+      push r:8, '5'
+      getMember
+      not
+      branchIfTrue label63
+      push r:9, '=', TRUE
+      setMember
+     label63:
+      push r:8, ']'
+      getMember
+      not
+      branchIfTrue label64
+      push r:10, ')', TRUE
+      setMember
+     label64:
+      branch label60
+     label65:
+      branch label59
+     label66:
+    end // of function 
+
+    setMember
+    push '+V+K'
+    function2 (r:2='', r:3='', r:4='', r:5='', r:6='') (r:1='this')
+      push r:this, '} fcO', FALSE
+      setMember
+      push r:this, '}[R4,(', r:5, '}[R4,('
+      getMember
+      setMember
+      push r:this, '((', r:3
+      setMember
+      push r:this, ')(', r:4
+      setMember
+      push r:this, '4rER-', FALSE
+      setMember
+      push r:this, '*PHg6(', FALSE
+      setMember
+      push r:this, '+-(0', r:2
+      setMember
+      push r:this, '1N-', r:6
+      setMember
+      push r:this, '4AF', r:5
+      setMember
+      push r:this, '-vFG', FALSE
+      setMember
+      push r:this, '4', '((', '=(,aA'
+      getVariable
+      push '4bqds'
+      getMember
+      push 2
+      divide
+      push 1, '3Wt'
+      getVariable
+      push '9n6'
+      callMethod
+      push ')(', '=(,aA'
+      getVariable
+      push '4bqds'
+      getMember
+      push 2
+      divide
+      push 1, '3Wt'
+      getVariable
+      push '9n6'
+      callMethod
+      push 2
+      initObject
+      setMember
+      push r:this, '}J', '=(,aA'
+      getVariable
+      push '5 fLh'
+      getMember
+      push 'square', 2, r:this, '+-(0'
+      getMember
+      push '32'
+      getMember
+      push '*=_p_'
+      callMethod
+      setMember
+      push r:this, '}J'
+      getMember
+      push '_xscale', r:this, '+-(0'
+      getMember
+      push '5DZk5'
+      getMember
+      setMember
+      push r:this, '}J'
+      getMember
+      push '_yscale', r:this, '+-(0'
+      getMember
+      push '5DZk5'
+      getMember
+      setMember
+      push r:this, '}J'
+      getMember
+      push '_x', 0, r:this, ',aR;-'
+      callMethod
+      setMember
+      push r:this, '}J'
+      getMember
+      push '_y', 0, r:this, '8;cxI'
+      callMethod
+      setMember
+      push 0, '}-VbH'
+      getVariable
+      push '+4Z+['
+      callMethod
+      not
+      branchIfTrue label67
+      push r:this, '}J'
+      getMember
+      push 'onPress', r:this, 'onPress', 2, ']6=8H('
+      callFunction
+      setMember
+     label67:
+      push 0, r:this, '}J'
+      getMember
+      push 'stop'
+      callMethod
+      pop
+      push r:this, ')mQw+', '=(,aA'
+      getVariable
+      push '8gjh4'
+      getMember
+      push 'grass', 2, r:this, '+-(0'
+      getMember
+      push '32'
+      getMember
+      push '*=_p_'
+      callMethod
+      setMember
+      push r:this, ')mQw+'
+      getMember
+      push '_xscale', r:this, '+-(0'
+      getMember
+      push '5DZk5'
+      getMember
+      setMember
+      push r:this, ')mQw+'
+      getMember
+      push '_yscale', r:this, '+-(0'
+      getMember
+      push '5DZk5'
+      getMember
+      setMember
+      push r:this, ')mQw+'
+      getMember
+      push '_x', 0, r:this, ',aR;-'
+      callMethod
+      setMember
+      push r:this, ')mQw+'
+      getMember
+      push '_y', 0, r:this, '8;cxI'
+      callMethod
+      setMember
+      push 1, 1, r:this, ')mQw+'
+      getMember
+      push 'smc'
+      getMember
+      push 'gotoAndStop'
+      callMethod
+      pop
+      push 0, r:this, '-Mw39'
+      callMethod
+      pop
+      push r:this, '}ZF-m', 2, ']6=8H('
+      callFunction
+      pop
+    end // of function 
+
+    setRegister r:0
+    setVariable
+    push r:0, '__name__', '+V+K', 1
+    initArray
+    setMember
+    push r:0, 'prototype'
+    getMember
+    setRegister r:1
+    pop
+    push r:1, '__class__', r:0
+    setMember
+    push r:1, '*PHg6(', NULL
+    setMember
+    push r:1, '-Mw39'
+    function2 () (r:1='this')
+      push r:this, '}[R4,('
+      getMember
+      push 1
+      subtract
+      setRegister r:2
+      push 1
+      equals
+      branchIfTrue label68
+      push r:2, 4
+      equals
+      branchIfTrue label69
+      branch label70
+     label68:
+      push r:this, ')kFdY', '=(,aA'
+      getVariable
+      push '1TsWo'
+      getMember
+      push 'bebeh', 2, r:this, '+-(0'
+      getMember
+      push '32'
+      getMember
+      push '*=_p_'
+      callMethod
+      setMember
+      branch label70
+     label69:
+      push r:this, ')kFdY', '=(,aA'
+      getVariable
+      push '1TsWo'
+      getMember
+      push 'meumeu', 2, r:this, '+-(0'
+      getMember
+      push '32'
+      getMember
+      push '*=_p_'
+      callMethod
+      setMember
+      branch label70
+     label70:
+      push r:this, ')kFdY'
+      getMember
+      push NULL
+      equals
+      not
+      not
+      branchIfTrue label75
+      push r:this, ')kFdY'
+      getMember
+      push '_x', 0, r:this, ',aR;-'
+      callMethod
+      push r:this, ')kFdY'
+      getMember
+      push 1, r:this, '}omcH'
+      callMethod
+      add
+      setMember
+      push r:this, ')kFdY'
+      getMember
+      push '_y', 0, r:this, '8;cxI'
+      callMethod
+      push r:this, ')kFdY'
+      getMember
+      push 1, r:this, ',ZHvt'
+      callMethod
+      add
+      setMember
+      push 2, 1, '3Wt'
+      getVariable
+      push 'random'
+      callMethod
+      setRegister r:2
+      pop
+      push r:this, ')kFdY'
+      getMember
+      push '_xscale', r:this, '+-(0'
+      getMember
+      push '5DZk5'
+      getMember
+      push r:2, 0
+      equals
+      branchIfTrue label71
+      push -1
+      branch label72
+     label71:
+      push 1
+     label72:
+      multiply
+      setMember
+      push r:this, ')kFdY'
+      getMember
+      push '_yscale', r:this, '+-(0'
+      getMember
+      push '5DZk5'
+      getMember
+      push r:2, 0
+      equals
+      branchIfTrue label73
+      push -1
+      branch label74
+     label73:
+      push 1
+     label74:
+      multiply
+      setMember
+      push r:this, ')kFdY'
+      getMember
+      push '_rotation', 361, 1, '3Wt'
+      getVariable
+      push 'random'
+      callMethod
+      setMember
+      push r:this, ')kFdY'
+      getMember
+      push '_totalframes'
+      getMember
+      push 1, '3Wt'
+      getVariable
+      push 'random'
+      callMethod
+      push 1
+      add
+      push 1, r:this, ')kFdY'
+      getMember
+      push 'gotoAndPlay'
+      callMethod
+      pop
+     label75:
+    end // of function 
+
+    setMember
+    push r:1, '4[-(J('
+    function2 () (r:1='this')
+      push r:this, '0=[m5', '=(,aA'
+      getVariable
+      push '=SfXp'
+      getMember
+      push 'points', 2, r:this, '+-(0'
+      getMember
+      push '32'
+      getMember
+      push '*=_p_'
+      callMethod
+      setMember
+      push r:this, '0=[m5'
+      getMember
+      push '_xscale', r:this, '+-(0'
+      getMember
+      push '5DZk5'
+      getMember
+      setMember
+      push r:this, '0=[m5'
+      getMember
+      push '_yscale', r:this, '+-(0'
+      getMember
+      push '5DZk5'
+      getMember
+      setMember
+      push r:this, '0=[m5'
+      getMember
+      push '_x', 0, r:this, ',aR;-'
+      callMethod
+      push r:this, '0=[m5'
+      getMember
+      push 1, r:this, '}omcH'
+      callMethod
+      add
+      setMember
+      push r:this, '0=[m5'
+      getMember
+      push '_y', 0, r:this, '8;cxI'
+      callMethod
+      push r:this, '0=[m5'
+      getMember
+      push 1, r:this, ',ZHvt'
+      callMethod
+      add
+      setMember
+      push r:this, '0=[m5'
+      getMember
+      push 'smc'
+      getMember
+      push 'smc'
+      getMember
+      push '+Da3+'
+      getMember
+      setRegister r:2
+      pop
+      push r:2, 'text', r:this, '}[R4,('
+      getMember
+      push 1
+      add
+      push 1, '3Wt'
+      getVariable
+      push '+_PpF'
+      callMethod
+      setMember
+    end // of function 
+
+    setMember
+    push r:1, ')kFdY', NULL
+    setMember
+    push r:1, ' tq5)'
+    function2 () (r:1='this')
+      push 0, r:this, '}J'
+      getMember
+      push 'removeMovieClip'
+      callMethod
+      pop
+      push r:this, '}J', NULL
+      setMember
+      push 0, r:this, ')mQw+'
+      getMember
+      push 'removeMovieClip'
+      callMethod
+      pop
+      push r:this, ')mQw+', NULL
+      setMember
+      push 0, r:this, '0=[m5'
+      getMember
+      push 'removeMovieClip'
+      callMethod
+      pop
+      push r:this, '0=[m5', NULL
+      setMember
+      push 0, r:this, ')kFdY'
+      getMember
+      push 'removeMovieClip'
+      callMethod
+      pop
+      push r:this, ')kFdY', NULL
+      setMember
+    end // of function 
+
+    setMember
+    push r:1, ';5zsB'
+    function2 () (r:1='this')
+      push r:this, '4AF'
+      getMember
+      push ')', TRUE
+      setMember
+      push r:this, '1N-'
+      getMember
+      push ')', TRUE
+      setMember
+    end // of function 
+
+    setMember
+    push r:1, '8F]xi'
+    function2 () (r:1='this')
+      push r:this, '4AF'
+      getMember
+      push '5', TRUE
+      setMember
+      push r:this, '1N-'
+      getMember
+      push '5', TRUE
+      setMember
+    end // of function 
+
+    setMember
+    push r:1, '5P(l(('
+    function2 () (r:1='this')
+      push r:this, '4AF'
+      getMember
+      push '=', TRUE
+      setMember
+      push r:this, '1N-'
+      getMember
+      push '=', TRUE
+      setMember
+    end // of function 
+
+    setMember
+    push r:1, '8VH{D('
+    function2 () (r:1='this')
+      push r:this, '4AF'
+      getMember
+      push ']', TRUE
+      setMember
+      push r:this, '1N-'
+      getMember
+      push ']', TRUE
+      setMember
+    end // of function 
+
+    setMember
+    push r:1, '[uD*]'
+    function2 () (r:1='this')
+      push r:this, '4rER-', TRUE
+      setMember
+      push 3, 1, r:this, ')mQw+'
+      getMember
+      push 'smc'
+      getMember
+      push 'gotoAndStop'
+      callMethod
+      pop
+      push 0, '}-VbH'
+      getVariable
+      push '9UeAW'
+      callMethod
+      not
+      branchIfTrue label76
+      push r:this, ')mQw+'
+      getMember
+      push 'smc'
+      getMember
+      push 'smc'
+      getMember
+      push '_totalframes'
+      getMember
+      push 1, r:this, ')mQw+'
+      getMember
+      push 'smc'
+      getMember
+      push 'smc'
+      getMember
+      push 'gotoAndStop'
+      callMethod
+      pop
+      push UNDEF
+      return
+     label76:
+      push r:this, ')kFdY'
+      getMember
+      push NULL
+      equals
+      not
+      not
+      branchIfTrue label77
+      push 0, r:this, '4[-(J('
+      callMethod
+      pop
+     label77:
+    end // of function 
+
+    setMember
+    push r:1, '115(A('
+    function2 () (r:1='this')
+      push r:this, '4rER-', TRUE
+      setMember
+      push 2, 1, r:this, ')mQw+'
+      getMember
+      push 'smc'
+      getMember
+      push 'gotoAndStop'
+      callMethod
+      pop
+      push 0, '}-VbH'
+      getVariable
+      push '9UeAW'
+      callMethod
+      not
+      branchIfTrue label78
+      push r:this, ')mQw+'
+      getMember
+      push 'smc'
+      getMember
+      push 'smc'
+      getMember
+      push '_totalframes'
+      getMember
+      push 1, r:this, ')mQw+'
+      getMember
+      push 'smc'
+      getMember
+      push 'smc'
+      getMember
+      push 'gotoAndStop'
+      callMethod
+      pop
+      push UNDEF
+      return
+     label78:
+      push r:this, ')kFdY'
+      getMember
+      push NULL
+      equals
+      not
+      not
+      branchIfTrue label79
+      push 0, r:this, '4[-(J('
+      callMethod
+      pop
+     label79:
+    end // of function 
+
+    setMember
+    push r:1, '4rER-', NULL
+    setMember
+    push r:1, '}ZF-m'
+    function2 () (r:1='this')
+      push r:this, '} fcO'
+      getMember
+      not
+      branchIfTrue label80
+      push UNDEF
+      return
+     label80:
+      push r:this, '1N-'
+      getMember
+      push ']'
+      getMember
+      dup
+      not
+      branchIfTrue label81
+      pop
+      push r:this, '1N-'
+      getMember
+      push '='
+      getMember
+      dup
+      not
+      branchIfTrue label81
+      pop
+      push r:this, '1N-'
+      getMember
+      push ')'
+      getMember
+      dup
+      not
+      branchIfTrue label81
+      pop
+      push r:this, '1N-'
+      getMember
+      push '5'
+      getMember
+     label81:
+      not
+      branchIfTrue label82
+      push 1, 1, r:this, '}J'
+      getMember
+      push 'gotoAndStop'
+      callMethod
+      pop
+      push UNDEF
+      return
+     label82:
+      push r:this, '1N-'
+      getMember
+      push '='
+      getMember
+      dup
+      not
+      branchIfTrue label83
+      pop
+      push r:this, '1N-'
+      getMember
+      push ')'
+      getMember
+      dup
+      not
+      branchIfTrue label83
+      pop
+      push r:this, '1N-'
+      getMember
+      push '5'
+      getMember
+     label83:
+      not
+      branchIfTrue label84
+      push 2, 1, r:this, '}J'
+      getMember
+      push 'gotoAndStop'
+      callMethod
+      pop
+      push UNDEF
+      return
+     label84:
+      push r:this, '1N-'
+      getMember
+      push ']'
+      getMember
+      dup
+      not
+      branchIfTrue label85
+      pop
+      push r:this, '1N-'
+      getMember
+      push '='
+      getMember
+      dup
+      not
+      branchIfTrue label85
+      pop
+      push r:this, '1N-'
+      getMember
+      push '5'
+      getMember
+     label85:
+      not
+      branchIfTrue label86
+      push 3, 1, r:this, '}J'
+      getMember
+      push 'gotoAndStop'
+      callMethod
+      pop
+      push UNDEF
+      return
+     label86:
+      push r:this, '1N-'
+      getMember
+      push ']'
+      getMember
+      dup
+      not
+      branchIfTrue label87
+      pop
+      push r:this, '1N-'
+      getMember
+      push ')'
+      getMember
+      dup
+      not
+      branchIfTrue label87
+      pop
+      push r:this, '1N-'
+      getMember
+      push '5'
+      getMember
+     label87:
+      not
+      branchIfTrue label88
+      push 4, 1, r:this, '}J'
+      getMember
+      push 'gotoAndStop'
+      callMethod
+      pop
+      push UNDEF
+      return
+     label88:
+      push r:this, '1N-'
+      getMember
+      push ']'
+      getMember
+      dup
+      not
+      branchIfTrue label89
+      pop
+      push r:this, '1N-'
+      getMember
+      push ')'
+      getMember
+      dup
+      not
+      branchIfTrue label89
+      pop
+      push r:this, '1N-'
+      getMember
+      push '='
+      getMember
+     label89:
+      not
+      branchIfTrue label90
+      push 5, 1, r:this, '}J'
+      getMember
+      push 'gotoAndStop'
+      callMethod
+      pop
+      push UNDEF
+      return
+     label90:
+      push r:this, '1N-'
+      getMember
+      push ']'
+      getMember
+      dup
+      not
+      branchIfTrue label91
+      pop
+      push r:this, '1N-'
+      getMember
+      push ')'
+      getMember
+     label91:
+      not
+      branchIfTrue label92
+      push 6, 1, r:this, '}J'
+      getMember
+      push 'gotoAndStop'
+      callMethod
+      pop
+      push UNDEF
+      return
+     label92:
+      push r:this, '1N-'
+      getMember
+      push ')'
+      getMember
+      dup
+      not
+      branchIfTrue label93
+      pop
+      push r:this, '1N-'
+      getMember
+      push '='
+      getMember
+     label93:
+      not
+      branchIfTrue label96
+      push 7, 1, r:this, '}J'
+      getMember
+      push 'gotoAndStop'
+      callMethod
+      pop
+      push 0, r:this, '*0FF-('
+      callMethod
+      dup
+      not
+      branchIfTrue label94
+      pop
+      push r:this, '(('
+      getMember
+      push '=(,aA'
+      getVariable
+      push '[YyD-('
+      getMember
+      push 1
+      subtract
+      equals
+      dup
+      not
+      branchIfTrue label94
+      pop
+      push r:this, ')('
+      getMember
+      push '=(,aA'
+      getVariable
+      push '[YyD-('
+      getMember
+      push 1
+      subtract
+      equals
+     label94:
+      not
+      branchIfTrue label95
+      push 0, r:this, '8+C5'
+      callMethod
+      pop
+     label95:
+      push UNDEF
+      return
+     label96:
+      push r:this, '1N-'
+      getMember
+      push ')'
+      getMember
+      dup
+      not
+      branchIfTrue label97
+      pop
+      push r:this, '1N-'
+      getMember
+      push '5'
+      getMember
+     label97:
+      not
+      branchIfTrue label100
+      push 8, 1, r:this, '}J'
+      getMember
+      push 'gotoAndStop'
+      callMethod
+      pop
+      push 0, r:this, '*0FF-('
+      callMethod
+      dup
+      not
+      branchIfTrue label98
+      pop
+      push r:this, '(('
+      getMember
+      push 0
+      equals
+      dup
+      not
+      branchIfTrue label98
+      pop
+      push r:this, ')('
+      getMember
+      push '=(,aA'
+      getVariable
+      push '[YyD-('
+      getMember
+      push 1
+      subtract
+      equals
+     label98:
+      not
+      branchIfTrue label99
+      push 0, r:this, '8+C5'
+      callMethod
+      pop
+     label99:
+      push UNDEF
+      return
+     label100:
+      push r:this, '1N-'
+      getMember
+      push ']'
+      getMember
+      dup
+      not
+      branchIfTrue label101
+      pop
+      push r:this, '1N-'
+      getMember
+      push '='
+      getMember
+     label101:
+      not
+      branchIfTrue label104
+      push 9, 1, r:this, '}J'
+      getMember
+      push 'gotoAndStop'
+      callMethod
+      pop
+      push 0, r:this, '*0FF-('
+      callMethod
+      dup
+      not
+      branchIfTrue label102
+      pop
+      push r:this, '(('
+      getMember
+      push '=(,aA'
+      getVariable
+      push '[YyD-('
+      getMember
+      push 1
+      subtract
+      equals
+      dup
+      not
+      branchIfTrue label102
+      pop
+      push r:this, ')('
+      getMember
+      push 0
+      equals
+     label102:
+      not
+      branchIfTrue label103
+      push 0, r:this, '8+C5'
+      callMethod
+      pop
+     label103:
+      push UNDEF
+      return
+     label104:
+      push r:this, '1N-'
+      getMember
+      push ']'
+      getMember
+      dup
+      not
+      branchIfTrue label105
+      pop
+      push r:this, '1N-'
+      getMember
+      push '5'
+      getMember
+     label105:
+      not
+      branchIfTrue label108
+      push 10, 1, r:this, '}J'
+      getMember
+      push 'gotoAndStop'
+      callMethod
+      pop
+      push 0, r:this, '*0FF-('
+      callMethod
+      dup
+      not
+      branchIfTrue label106
+      pop
+      push r:this, '(('
+      getMember
+      push 0
+      equals
+      dup
+      not
+      branchIfTrue label106
+      pop
+      push r:this, ')('
+      getMember
+      push 0
+      equals
+     label106:
+      not
+      branchIfTrue label107
+      push 0, r:this, '8+C5'
+      callMethod
+      pop
+     label107:
+      push UNDEF
+      return
+     label108:
+      push r:this, '1N-'
+      getMember
+      push '5'
+      getMember
+      dup
+      not
+      branchIfTrue label109
+      pop
+      push r:this, '1N-'
+      getMember
+      push '='
+      getMember
+     label109:
+      not
+      branchIfTrue label110
+      push 11, 1, r:this, '}J'
+      getMember
+      push 'gotoAndStop'
+      callMethod
+      pop
+      push UNDEF
+      return
+     label110:
+      push r:this, '1N-'
+      getMember
+      push ']'
+      getMember
+      not
+      branchIfTrue label113
+      push 12, 1, r:this, '}J'
+      getMember
+      push 'gotoAndStop'
+      callMethod
+      pop
+      push 0, r:this, '*0FF-('
+      callMethod
+      dup
+      not
+      branchIfTrue label111
+      pop
+      push r:this, ')('
+      getMember
+      push 0
+      equals
+     label111:
+      not
+      branchIfTrue label112
+      push 0, r:this, '8+C5'
+      callMethod
+      pop
+     label112:
+      push UNDEF
+      return
+     label113:
+      push r:this, '1N-'
+      getMember
+      push ')'
+      getMember
+      not
+      branchIfTrue label116
+      push 13, 1, r:this, '}J'
+      getMember
+      push 'gotoAndStop'
+      callMethod
+      pop
+      push 0, r:this, '*0FF-('
+      callMethod
+      dup
+      not
+      branchIfTrue label114
+      pop
+      push r:this, ')('
+      getMember
+      push '=(,aA'
+      getVariable
+      push '[YyD-('
+      getMember
+      push 1
+      subtract
+      equals
+     label114:
+      not
+      branchIfTrue label115
+      push 0, r:this, '8+C5'
+      callMethod
+      pop
+     label115:
+      push UNDEF
+      return
+     label116:
+      push r:this, '1N-'
+      getMember
+      push '='
+      getMember
+      not
+      branchIfTrue label119
+      push 14, 1, r:this, '}J'
+      getMember
+      push 'gotoAndStop'
+      callMethod
+      pop
+      push 0, r:this, '*0FF-('
+      callMethod
+      dup
+      not
+      branchIfTrue label117
+      pop
+      push r:this, '(('
+      getMember
+      push '=(,aA'
+      getVariable
+      push '[YyD-('
+      getMember
+      push 1
+      subtract
+      equals
+     label117:
+      not
+      branchIfTrue label118
+      push 0, r:this, '8+C5'
+      callMethod
+      pop
+     label118:
+      push UNDEF
+      return
+     label119:
+      push r:this, '1N-'
+      getMember
+      push '5'
+      getMember
+      not
+      branchIfTrue label122
+      push 15, 1, r:this, '}J'
+      getMember
+      push 'gotoAndStop'
+      callMethod
+      pop
+      push 0, r:this, '*0FF-('
+      callMethod
+      dup
+      not
+      branchIfTrue label120
+      pop
+      push r:this, '(('
+      getMember
+      push 0
+      equals
+     label120:
+      not
+      branchIfTrue label121
+      push 0, r:this, '8+C5'
+      callMethod
+      pop
+     label121:
+      push UNDEF
+      return
+     label122:
+      push 16, 1, r:this, '}J'
+      getMember
+      push 'gotoAndStop'
+      callMethod
+      pop
+      push 0, r:this, '*0FF-('
+      callMethod
+      not
+      branchIfTrue label123
+      push 0, r:this, '8+C5'
+      callMethod
+      pop
+      push UNDEF
+      return
+     label123:
+      push UNDEF
+      return
+    end // of function 
+
+    setMember
+    push r:1, '1N-', NULL
+    setMember
+    push r:1, '+-(0', NULL
+    setMember
+    push r:1, '[=h9J('
+    function2 () (r:1='this')
+      push 0, r:this, '*0FF-('
+      callMethod
+      not
+      branchIfTrue label124
+      push 1
+      return
+     label124:
+      push '((', 0, ')(', 0, 2
+      initObject
+      setRegister r:2
+      pop
+      push '((', '=(,aA'
+      getVariable
+      push '4bqds'
+      getMember
+      push ')(', 0, 2
+      initObject
+      setRegister r:3
+      pop
+      push '((', '=(,aA'
+      getVariable
+      push '4bqds'
+      getMember
+      push ')(', '=(,aA'
+      getVariable
+      push '4bqds'
+      getMember
+      push 2
+      initObject
+      setRegister r:4
+      pop
+      push '((', 0, ')(', '=(,aA'
+      getVariable
+      push '4bqds'
+      getMember
+      push 2
+      initObject
+      setRegister r:5
+      pop
+      push '((', r:this, '}J'
+      getMember
+      push '_xmouse'
+      getMember
+      push 1, '3Wt'
+      getVariable
+      push '9n6'
+      callMethod
+      push ')(', r:this, '}J'
+      getMember
+      push '_ymouse'
+      getMember
+      push 1, '3Wt'
+      getVariable
+      push '9n6'
+      callMethod
+      push 2
+      initObject
+      setRegister r:6
+      pop
+      push r:6, '(('
+      getMember
+      push 0
+      greaterThan
+      not
+      dup
+      not
+      branchIfTrue label125
+      pop
+      push r:6, '(('
+      getMember
+      push '=(,aA'
+      getVariable
+      push '4bqds'
+      getMember
+      push 1
+      subtract
+      greaterThan
+     label125:
+      not
+      branchIfTrue label126
+      push 1
+      return
+     label126:
+      push r:6, ')('
+      getMember
+      push 0
+      greaterThan
+      not
+      dup
+      not
+      branchIfTrue label127
+      pop
+      push r:6, ')('
+      getMember
+      push '=(,aA'
+      getVariable
+      push '4bqds'
+      getMember
+      push 1
+      subtract
+      greaterThan
+     label127:
+      not
+      branchIfTrue label128
+      push 1
+      return
+     label128:
+      push r:6, r:this, '4'
+      getMember
+      push r:3, r:2, 4, r:this, '1Tqf3'
+      callMethod
+      dup
+      not
+      branchIfTrue label129
+      pop
+      push r:this, '4AF'
+      getMember
+      push ']'
+      getMember
+      not
+     label129:
+      not
+      branchIfTrue label130
+      push 2
+      return
+     label130:
+      push r:6, r:this, '4'
+      getMember
+      push r:4, r:3, 4, r:this, '1Tqf3'
+      callMethod
+      dup
+      not
+      branchIfTrue label131
+      pop
+      push r:this, '4AF'
+      getMember
+      push '='
+      getMember
+      not
+     label131:
+      not
+      branchIfTrue label132
+      push 3
+      return
+     label132:
+      push r:6, r:this, '4'
+      getMember
+      push r:5, r:4, 4, r:this, '1Tqf3'
+      callMethod
+      dup
+      not
+      branchIfTrue label133
+      pop
+      push r:this, '4AF'
+      getMember
+      push ')'
+      getMember
+      not
+     label133:
+      not
+      branchIfTrue label134
+      push 4
+      return
+     label134:
+      push r:6, r:this, '4'
+      getMember
+      push r:2, r:5, 4, r:this, '1Tqf3'
+      callMethod
+      dup
+      not
+      branchIfTrue label135
+      pop
+      push r:this, '4AF'
+      getMember
+      push '5'
+      getMember
+      not
+     label135:
+      not
+      branchIfTrue label136
+      push 5
+      return
+     label136:
+      push 1
+      return
+    end // of function 
+
+    setMember
+    push r:1, '}C]J ('
+    function2 () (r:1='this')
+      push r:this, '}[R4,('
+      getMember
+      push 1
+      add
+      return
+    end // of function 
+
+    setMember
+    push r:1, ',aR;-'
+    function2 () (r:1='this')
+      push r:this, '(('
+      getMember
+      push '=(,aA'
+      getVariable
+      push '4bqds'
+      getMember
+      multiply
+      push r:this, '+-(0'
+      getMember
+      push '5DZk5'
+      getMember
+      multiply
+      push 100
+      divide
+      push '=(,aA'
+      getVariable
+      push '2QF=}'
+      getMember
+      add
+      return
+    end // of function 
+
+    setMember
+    push r:1, '8;cxI'
+    function2 () (r:1='this')
+      push r:this, ')('
+      getMember
+      push '=(,aA'
+      getVariable
+      push '4bqds'
+      getMember
+      multiply
+      push r:this, '+-(0'
+      getMember
+      push '5DZk5'
+      getMember
+      multiply
+      push 100
+      divide
+      push '=(,aA'
+      getVariable
+      push '2QF=}'
+      getMember
+      add
+      return
+    end // of function 
+
+    setMember
+    push r:1, ')mQw+', NULL
+    setMember
+    push r:1, '*0FF-('
+    function2 () (r:1='this')
+      push r:this, '4AF'
+      getMember
+      push ']'
+      getMember
+      dup
+      not
+      branchIfTrue label137
+      pop
+      push r:this, '4AF'
+      getMember
+      push '='
+      getMember
+      dup
+      not
+      branchIfTrue label137
+      pop
+      push r:this, '4AF'
+      getMember
+      push ')'
+      getMember
+      dup
+      not
+      branchIfTrue label137
+      pop
+      push r:this, '4AF'
+      getMember
+      push '5'
+      getMember
+     label137:
+      return
+    end // of function 
+
+    setMember
+    push r:1, '1Tqf3'
+    function2 (r:2='', r:3='', r:4='', r:5='') (r:1='this')
+      push r:5, r:2, r:4, 3, r:this, '-6*]J('
+      callMethod
+      dup
+      not
+      branchIfTrue label138
+      pop
+      push r:5, r:4, r:3, 3, r:this, '-6*]J('
+      callMethod
+      dup
+      not
+      branchIfTrue label138
+      pop
+      push r:5, r:2, r:3, 3, r:this, '-6*]J('
+      callMethod
+      not
+     label138:
+      not
+      branchIfTrue label139
+      push TRUE
+      return
+     label139:
+      push FALSE
+      return
+    end // of function 
+
+    setMember
+    push r:1, '-6*]J('
+    function2 (r:2='', r:3='', r:4='') (r:1='this')
+      push r:3, '(('
+      getMember
+      push r:2, '(('
+      getMember
+      subtract
+      push r:4, ')('
+      getMember
+      push r:2, ')('
+      getMember
+      subtract
+      multiply
+      push r:4, '(('
+      getMember
+      push r:2, '(('
+      getMember
+      subtract
+      push r:3, ')('
+      getMember
+      push r:2, ')('
+      getMember
+      subtract
+      multiply
+      subtract
+      push 0
+      greaterThan
+      return
+    end // of function 
+
+    setMember
+    push r:1, '} fcO', NULL
+    setMember
+    push r:1, '-vFG', NULL
+    setMember
+    push r:1, '4', NULL
+    setMember
+    push r:1, '8+C5'
+    function2 () (r:1='this')
+      push 0, 0, 1, 0, 0, 1, 6, '[8X6+'
+      getVariable
+      push '0000'
+      getMember
+      push 'Matrix'
+      newMethod
+      setRegister r:2
+      pop
+      push r:this, '}J'
+      getMember
+      push '_yscale'
+      getMember
+      push 100
+      divide
+      push r:this, '}J'
+      getMember
+      push '_xscale'
+      getMember
+      push 100
+      divide
+      push 2, r:2, 'scale'
+      callMethod
+      pop
+      push r:this, '}J'
+      getMember
+      push '_y'
+      getMember
+      push r:this, '}J'
+      getMember
+      push '_x'
+      getMember
+      push 2, r:2, 'translate'
+      callMethod
+      pop
+      push r:2, r:this, '}J'
+      getMember
+      push 2, r:this, '+-(0'
+      getMember
+      push '856=F('
+      getMember
+      push 'draw'
+      callMethod
+      pop
+      push 0, r:this, '}J'
+      getMember
+      push 'removeMovieClip'
+      callMethod
+      pop
+      push r:this, '}J', NULL
+      setMember
+      push r:this, '} fcO', TRUE
+      setMember
+    end // of function 
+
+    setMember
+    push r:1, '}xMhF'
+    function2 () (r:1='this')
+      push r:this, '-vFG'
+      getMember
+      not
+      branchIfTrue label140
+      push UNDEF
+      return
+     label140:
+      push r:this, ')kFdY'
+      getMember
+      push NULL
+      equals
+      not
+      branchIfTrue label141
+      push UNDEF
+      return
+     label141:
+      push 0, r:this, ')kFdY'
+      getMember
+      push 'stop'
+      callMethod
+      pop
+      push 0, 0, 1, 0, 0, 1, 6, '[8X6+'
+      getVariable
+      push '0000'
+      getMember
+      push 'Matrix'
+      newMethod
+      setRegister r:2
+      pop
+      push r:this, ')kFdY'
+      getMember
+      push '_yscale'
+      getMember
+      push 100
+      divide
+      push r:this, ')kFdY'
+      getMember
+      push '_xscale'
+      getMember
+      push 100
+      divide
+      push 2, r:2, 'scale'
+      callMethod
+      pop
+      push r:this, ')kFdY'
+      getMember
+      push '_y'
+      getMember
+      push r:this, ')kFdY'
+      getMember
+      push '_x'
+      getMember
+      push 2, r:2, 'translate'
+      callMethod
+      pop
+      push r:2, r:this, ')kFdY'
+      getMember
+      push 2, r:this, '+-(0'
+      getMember
+      push '856=F('
+      getMember
+      push 'draw'
+      callMethod
+      pop
+      push 0, r:this, ')kFdY'
+      getMember
+      push 'removeMovieClip'
+      callMethod
+      pop
+      push r:this, ')kFdY', NULL
+      setMember
+      push r:this, '-vFG', TRUE
+      setMember
+    end // of function 
+
+    setMember
+    push r:1, '}J', NULL
+    setMember
+    push r:1, '0=[m5', NULL
+    setMember
+    push r:1, '9G56', NULL
+    setMember
+    push r:1, 'onPress'
+    function2 () (r:1='this')
+      push 0, '}-VbH'
+      getVariable
+      push '4mok0'
+      callMethod
+      not
+      dup
+      not
+      branchIfTrue label142
+      pop
+      push r:this, '+-(0'
+      getMember
+      push '8+C5'
+      getMember
+      not
+     label142:
+      not
+      branchIfTrue label143
+      push UNDEF
+      return
+     label143:
+      push '((', 0, ')(', 0, 2
+      initObject
+      setRegister r:2
+      pop
+      push '((', '=(,aA'
+      getVariable
+      push '4bqds'
+      getMember
+      push ')(', 0, 2
+      initObject
+      setRegister r:3
+      pop
+      push '((', '=(,aA'
+      getVariable
+      push '4bqds'
+      getMember
+      push ')(', '=(,aA'
+      getVariable
+      push '4bqds'
+      getMember
+      push 2
+      initObject
+      setRegister r:4
+      pop
+      push '((', 0, ')(', '=(,aA'
+      getVariable
+      push '4bqds'
+      getMember
+      push 2
+      initObject
+      setRegister r:5
+      pop
+      push '((', r:this, '}J'
+      getMember
+      push '_xmouse'
+      getMember
+      push 1, '3Wt'
+      getVariable
+      push '9n6'
+      callMethod
+      push ')(', r:this, '}J'
+      getMember
+      push '_ymouse'
+      getMember
+      push 1, '3Wt'
+      getVariable
+      push '9n6'
+      callMethod
+      push 2
+      initObject
+      setRegister r:6
+      pop
+      push ']', FALSE, '=', FALSE, ')', FALSE, '5', FALSE, '}[R4,(', r:this, '}[R4,('
+      getMember
+      push 5
+      initObject
+      setRegister r:7
+      pop
+      push r:6, r:this, '4'
+      getMember
+      push r:3, r:2, 4, r:this, '1Tqf3'
+      callMethod
+      dup
+      not
+      branchIfTrue label144
+      pop
+      push r:this, '4AF'
+      getMember
+      push ']'
+      getMember
+      not
+     label144:
+      not
+      branchIfTrue label145
+      push r:7, ']', TRUE
+      setMember
+     label145:
+      push r:6, r:this, '4'
+      getMember
+      push r:4, r:3, 4, r:this, '1Tqf3'
+      callMethod
+      dup
+      not
+      branchIfTrue label146
+      pop
+      push r:this, '4AF'
+      getMember
+      push '='
+      getMember
+      not
+     label146:
+      not
+      branchIfTrue label147
+      push r:7, '=', TRUE
+      setMember
+     label147:
+      push r:6, r:this, '4'
+      getMember
+      push r:5, r:4, 4, r:this, '1Tqf3'
+      callMethod
+      dup
+      not
+      branchIfTrue label148
+      pop
+      push r:this, '4AF'
+      getMember
+      push ')'
+      getMember
+      not
+     label148:
+      not
+      branchIfTrue label149
+      push r:7, ')', TRUE
+      setMember
+     label149:
+      push r:6, r:this, '4'
+      getMember
+      push r:2, r:5, 4, r:this, '1Tqf3'
+      callMethod
+      dup
+      not
+      branchIfTrue label150
+      pop
+      push r:this, '4AF'
+      getMember
+      push '5'
+      getMember
+      not
+     label150:
+      not
+      branchIfTrue label151
+      push r:7, '5', TRUE
+      setMember
+     label151:
+      push r:7, ']'
+      getMember
+      not
+      dup
+      not
+      branchIfTrue label152
+      pop
+      push r:7, '='
+      getMember
+      not
+      dup
+      not
+      branchIfTrue label152
+      pop
+      push r:7, ')'
+      getMember
+      not
+      dup
+      not
+      branchIfTrue label152
+      pop
+      push r:7, '5'
+      getMember
+      not
+     label152:
+      not
+      branchIfTrue label153
+      push UNDEF
+      return
+     label153:
+      push r:7, r:this, ')('
+      getMember
+      push r:this, '(('
+      getMember
+      push 3, r:this, '+-(0'
+      getMember
+      push ')lJut'
+      callMethod
+      pop
+    end // of function 
+
+    setMember
+    push r:1, '}[R4,(', NULL
+    setMember
+    push r:1, '4AF', NULL
+    setMember
+    push r:1, '}omcH'
+    function2 (r:2='') (r:1='this')
+      push '=(,aA'
+      getVariable
+      push '4bqds'
+      getMember
+      push r:this, '+-(0'
+      getMember
+      push '5DZk5'
+      getMember
+      multiply
+      push 100
+      divide
+      push 2
+      divide
+      return
+    end // of function 
+
+    setMember
+    push r:1, ',ZHvt'
+    function2 (r:2='') (r:1='this')
+      push '=(,aA'
+      getVariable
+      push '4bqds'
+      getMember
+      push r:this, '+-(0'
+      getMember
+      push '5DZk5'
+      getMember
+      multiply
+      push 100
+      divide
+      push 2
+      divide
+      return
+    end // of function 
+
+    setMember
+    push r:1, 'toString'
+    function2 () (r:1='this')
+      push 'Cell (', r:this, '(('
+      getMember
+      add
+      push ','
+      add
+      push r:this, ')('
+      getMember
+      add
+      push ') [t:'
+      add
+      push r:this, '4AF'
+      getMember
+      push ']'
+      getMember
+      add
+      push ' r:'
+      add
+      push r:this, '4AF'
+      getMember
+      push '='
+      getMember
+      add
+      push ' b:'
+      add
+      push r:this, '4AF'
+      getMember
+      push ')'
+      getMember
+      add
+      push ' l:'
+      add
+      push r:this, '4AF'
+      getMember
+      push '5'
+      getMember
+      add
+      push '] [t:'
+      add
+      push r:this, '1N-'
+      getMember
+      push ']'
+      getMember
+      add
+      push ' r:'
+      add
+      push r:this, '1N-'
+      getMember
+      push '='
+      getMember
+      add
+      push ' b:'
+      add
+      push r:this, '1N-'
+      getMember
+      push ')'
+      getMember
+      add
+      push ' l:'
+      add
+      push r:this, '1N-'
+      getMember
+      push '5'
+      getMember
+      add
+      push ']'
+      add
+      return
+    end // of function 
+
+    setMember
+    push r:1, '((', NULL
+    setMember
+    push r:1, ')(', NULL
+    setMember
+    push ' D(1'
+    getVariable
+    push '{-kxL'
+    function2 (r:2='') (r:1='this')
+      push '(K', r:this
+      varEquals
+      push r:this, '*B', r:2
+      function2 () (r:1='this')
+        push 0, '(K'
+        getVariable
+        push ';LI'
+        callMethod
+        pop
+      end // of function 
+
+      push 2, '_global'
+      getVariable
+      push 'setInterval'
+      callMethod
+      setMember
+    end // of function 
+
+    setRegister r:0
+    setMember
+    push r:0, '__name__', '{-kxL', ' D(1', 2
+    initArray
+    setMember
+    push r:0, 'prototype'
+    getMember
+    setRegister r:1
+    pop
+    push r:1, '__class__', r:0
+    setMember
+    push r:0, '+TOS,('
+    function2 ('-', '5U4B') (r:1='this')
+      function2 () (r:1='this')
+        push ']', '5U4B'
+        getVariable
+        push 1, ' D(1'
+        getVariable
+        push '{-kxL'
+        newMethod
+        varEquals
+        push ']'
+        getVariable
+        push ';LI'
+        function2 () (r:1='this')
+          push 0, ']'
+          getVariable
+          push 'stop'
+          callMethod
+          pop
+          push 0, '-'
+          callFunction
+          pop
+        end // of function 
+
+        setMember
+      end // of function 
+
+      return
+    end // of function 
+
+    setMember
+    push r:0, '0{lc4'
+    function2 (r:2='', r:3='') (r:1='this')
+      push r:2, 1, ' D(1'
+      getVariable
+      push '{-kxL'
+      getMember
+      push '-_d +'
+      getMember
+      push 'push'
+      callMethod
+      pop
+      push 0, r:3, NULL
+      equals
+      branchIfTrue label154
+      push r:3
+      branch label155
+     label154:
+      push 0
+     label155:
+      function2 () (r:1='this')
+        push 0, 0, ' D(1'
+        getVariable
+        push '{-kxL'
+        getMember
+        push '-_d +'
+        getMember
+        push 'shift'
+        callMethod
+        push UNDEF
+        callMethod
+        pop
+      end // of function 
+
+      push 2, ' D(1'
+      getVariable
+      push '{-kxL'
+      getMember
+      push '+TOS,('
+      callMethod
+      push UNDEF
+      callMethod
+      pop
+    end // of function 
+
+    setMember
+    push r:0, '7MX}5'
+    function2 () (r:1='this')
+      push 0, '[8X6+'
+      getVariable
+      push '1ni'
+      getMember
+      push '6{1o=('
+      callMethod
+      push 1000
+      divide
+      return
+    end // of function 
+
+    setMember
+    push r:1, '*B', NULL
+    setMember
+    push r:1, ';LI'
+    function2 () (r:1='this')
+    end // of function 
+
+    setMember
+    push r:1, 'stop'
+    function2 () (r:1='this')
+      push r:this, '*B'
+      getMember
+      push NULL
+      equals
+      not
+      branchIfTrue label156
+      push UNDEF
+      return
+     label156:
+      push r:this, '*B'
+      getMember
+      push 1, '_global'
+      getVariable
+      push 'clearInterval'
+      callMethod
+      pop
+      push r:this, '*B', NULL
+      setMember
+    end // of function 
+
+    setMember
+    push '-UHXC'
+    function2 (r:2='', r:3='') (r:1='this')
+      push r:this, '9]A', r:2
+      setMember
+      push r:this, '2KA', r:3
+      setMember
+    end // of function 
+
+    setRegister r:0
+    setVariable
+    push r:0, '__name__', '-UHXC', 1
+    initArray
+    setMember
+    push r:0, 'prototype'
+    getMember
+    setRegister r:1
+    pop
+    push r:1, '__class__', r:0
+    setMember
+    push r:1, '1ll a'
+    function2 () (r:1='this')
+      push r:this, '9]A'
+      getMember
+      push r:this, '2KA'
+      getMember
+      lessThan
+      return
+    end // of function 
+
+    setMember
+    push r:1, '2KA', NULL
+    setMember
+    push r:1, '9]A', NULL
+    setMember
+    push r:1, '7Y-7'
+    function2 () (r:1='this')
+      push r:this, '9]A'
+      getMember
+      push r:this, '9]A', r:this, '9]A'
+      getMember
+      increment
+      setMember
+      return
+    end // of function 
+
+    setMember
+    push '0d2T'
+    function2 () (r:1='this')
+      push r:this, 'length', 0
+      setMember
+    end // of function 
+
+    setRegister r:0
+    setVariable
+    push r:0, '__name__', '0d2T', 1
+    initArray
+    setMember
+    push r:0, 'prototype'
+    getMember
+    setRegister r:1
+    pop
+    push r:1, '__class__', r:0
+    setMember
+    push r:1, '*]('
+    function2 (r:2='') (r:1='this')
+      push NULL, r:2, 2
+      initArray
+      setRegister r:3
+      pop
+      push r:this, '1'
+      getMember
+      push NULL
+      equals
+      branchIfTrue label157
+      push r:this, ';'
+      getMember
+      push 1, r:3
+      setMember
+      branch label158
+     label157:
+      push r:this, '1', r:3
+      setMember
+     label158:
+      push r:this, ';', r:3
+      setMember
+      push r:this, 'length', r:this, 'length'
+      getMember
+      increment
+      setMember
+    end // of function 
+
+    setMember
+    push r:1, '+tq5)'
+    function2 () (r:1='this')
+      push r:this, '1', NULL
+      setMember
+      push r:this, 'length', 0
+      setMember
+    end // of function 
+
+    setMember
+    push r:1, '8UMQ('
+    function2 (r:2='') (r:1='this')
+      push 0, '0d2T'
+      new
+      setRegister r:3
+      pop
+      push r:this, '1'
+      getMember
+      setRegister r:4
+      pop
+     label159:
+      push r:4, NULL
+      equals
+      not
+      not
+      branchIfTrue label161
+      push r:4, 0
+      getMember
+      setRegister r:5
+      pop
+      push r:4, 1
+      getMember
+      setRegister r:4
+      pop
+      push r:5, 1, r:2, UNDEF
+      callMethod
+      not
+      branchIfTrue label160
+      push r:5, 1, r:3, '*]('
+      callMethod
+      pop
+     label160:
+      branch label159
+     label161:
+      push r:3
+      return
+    end // of function 
+
+    setMember
+    push r:1, '5qt3+'
+    function2 () (r:1='this')
+      push r:this, '1'
+      getMember
+      push NULL
+      equals
+      branchIfTrue label162
+      push r:this, '1'
+      getMember
+      push 0
+      getMember
+      branch label163
+     label162:
+      push NULL
+     label163:
+      return
+    end // of function 
+
+    setMember
+    push r:1, '1', NULL
+    setMember
+    push r:1, '6k9+D'
+    function2 () (r:1='this')
+      push r:this, '1'
+      getMember
+      push NULL
+      equals
+      return
+    end // of function 
+
+    setMember
+    push r:1, 'iterator'
+    function2 () (r:1='this')
+      push '1', r:this, '1'
+      getMember
+      push '1ll a'
+      function2 () (r:1='this')
+        push r:this, '1'
+        getMember
+        push NULL
+        equals
+        not
+        return
+      end // of function 
+
+      push '7Y-7'
+      function2 () (r:1='this')
+        push r:this, '1'
+        getMember
+        push NULL
+        equals
+        not
+        branchIfTrue label164
+        push NULL
+        return
+       label164:
+        push r:this, '1'
+        getMember
+        push 0
+        getMember
+        setRegister r:2
+        pop
+        push r:this, '1', r:this, '1'
+        getMember
+        push 1
+        getMember
+        setMember
+        push r:2
+        return
+      end // of function 
+
+      push 3
+      initObject
+      return
+    end // of function 
+
+    setMember
+    push r:1, ',QC3'
+    function2 (r:2='') (r:1='this')
+      push 0, '[vXe-'
+      new
+      setRegister r:3
+      pop
+      push TRUE
+      setRegister r:4
+      pop
+      push r:this, '1'
+      getMember
+      setRegister r:5
+      pop
+     label165:
+      push r:5, NULL
+      equals
+      not
+      not
+      branchIfTrue label168
+      push r:4
+      branchIfTrue label166
+      push r:2, 1, r:3, '*]('
+      callMethod
+      pop
+      branch label167
+     label166:
+      push FALSE
+      setRegister r:4
+      pop
+     label167:
+      push r:5, 0
+      getMember
+      push 1, r:3, '*]('
+      callMethod
+      pop
+      push r:5, 1
+      getMember
+      setRegister r:5
+      pop
+      branch label165
+     label168:
+      push 0, r:3, 'toString'
+      callMethod
+      return
+    end // of function 
+
+    setMember
+    push r:1, '0f 5'
+    function2 () (r:1='this')
+      push r:this, ';'
+      getMember
+      push NULL
+      equals
+      branchIfTrue label169
+      push r:this, ';'
+      getMember
+      push 0
+      getMember
+      branch label170
+     label169:
+      push NULL
+     label170:
+      return
+    end // of function 
+
+    setMember
+    push r:1, 'length', NULL
+    setMember
+    push r:1, '(KA'
+    function2 (r:2='') (r:1='this')
+      push 0, '0d2T'
+      new
+      setRegister r:3
+      pop
+      push r:this, '1'
+      getMember
+      setRegister r:4
+      pop
+     label171:
+      push r:4, NULL
+      equals
+      not
+      not
+      branchIfTrue label172
+      push r:4, 0
+      getMember
+      setRegister r:5
+      pop
+      push r:4, 1
+      getMember
+      setRegister r:4
+      pop
+      push r:5, 1, r:2, UNDEF
+      callMethod
+      push 1, r:3, '*]('
+      callMethod
+      pop
+      branch label171
+     label172:
+      push r:3
+      return
+    end // of function 
+
+    setMember
+    push r:1, '1AF'
+    function2 () (r:1='this')
+      push r:this, '1'
+      getMember
+      push NULL
+      equals
+      not
+      branchIfTrue label173
+      push NULL
+      return
+     label173:
+      push r:this, '1'
+      getMember
+      push 0
+      getMember
+      setRegister r:2
+      pop
+      push r:this, '1', r:this, '1'
+      getMember
+      push 1
+      getMember
+      setMember
+      push r:this, '1'
+      getMember
+      push NULL
+      equals
+      not
+      branchIfTrue label174
+      push r:this, ';', NULL
+      setMember
+     label174:
+      push r:this, 'length', r:this, 'length'
+      getMember
+      decrement
+      setMember
+      push r:2
+      return
+    end // of function 
+
+    setMember
+    push r:1, 'push'
+    function2 (r:2='') (r:1='this')
+      push r:this, '1'
+      getMember
+      push r:2, 2
+      initArray
+      setRegister r:3
+      pop
+      push r:this, '1', r:3
+      setMember
+      push r:this, ';'
+      getMember
+      push NULL
+      equals
+      not
+      branchIfTrue label175
+      push r:this, ';', r:3
+      setMember
+     label175:
+      push r:this, 'length', r:this, 'length'
+      getMember
+      increment
+      setMember
+    end // of function 
+
+    setMember
+    push r:1, ';', NULL
+    setMember
+    push r:1, '0ENPA'
+    function2 (r:2='') (r:1='this')
+      push NULL
+      setRegister r:3
+      pop
+      push r:this, '1'
+      getMember
+      setRegister r:4
+      pop
+     label176:
+      push r:4, NULL
+      equals
+      not
+      not
+      branchIfTrue label181
+      push r:4, 0
+      getMember
+      push r:2
+      equals
+      not
+      branchIfTrue label180
+      push r:3, NULL
+      equals
+      branchIfTrue label177
+      push r:3, 1, r:4, 1
+      getMember
+      setMember
+      branch label178
+     label177:
+      push r:this, '1', r:4, 1
+      getMember
+      setMember
+     label178:
+      push r:this, ';'
+      getMember
+      push r:4
+      equals
+      not
+      branchIfTrue label179
+      push r:this, ';', r:3
+      setMember
+     label179:
+      push r:this, 'length', r:this, 'length'
+      getMember
+      decrement
+      setMember
+      push TRUE
+      return
+     label180:
+      push r:4
+      setRegister r:3
+      pop
+      push r:4, 1
+      getMember
+      setRegister r:4
+      pop
+      branch label176
+     label181:
+      push FALSE
+      return
+    end // of function 
+
+    setMember
+    push r:1, 'toString'
+    function2 () (r:1='this')
+      push 0, '[vXe-'
+      new
+      setRegister r:2
+      pop
+      push TRUE
+      setRegister r:3
+      pop
+      push r:this, '1'
+      getMember
+      setRegister r:4
+      pop
+      push '{', 1, r:2, '*]('
+      callMethod
+      pop
+     label182:
+      push r:4, NULL
+      equals
+      not
+      not
+      branchIfTrue label185
+      push r:3
+      branchIfTrue label183
+      push ', ', 1, r:2, '*]('
+      callMethod
+      pop
+      branch label184
+     label183:
+      push FALSE
+      setRegister r:3
+      pop
+     label184:
+      push r:4, 0
+      getMember
+      push 1, r:2, '*]('
+      callMethod
+      pop
+      push r:4, 1
+      getMember
+      setRegister r:4
+      pop
+      branch label182
+     label185:
+      push '}', 1, r:2, '*]('
+      callMethod
+      pop
+      push 0, r:2, 'toString'
+      callMethod
+      return
+    end // of function 
+
+    setMember
+    push '[8X6+'
+    getVariable
+    push '3[4k{', 0, 'Object'
+    new
+    setRegister r:1
+    setMember
+    push '_global'
+    getVariable
+    push 'flash'
+    getMember
+    push 'filters'
+    getMember
+    setRegister r:2
+    enumerateValue
+   label186:
+    setRegister r:0
+    push NULL
+    equals
+    branchIfTrue label187
+    push r:1, r:0, r:2, r:0
+    getMember
+    setMember
+    branch label186
+   label187:
+    pop
+    push '44{N'
+    function2 (r:2='') (r:1='this')
+      push r:this, '8lpZD(', 2
+      setMember
+      push r:this, '21zZJ(', FALSE
+      setMember
+      push r:this, '-iB=', r:2
+      setMember
+      push r:this, '23ri)(', 0
+      setMember
+      push r:this, '=yTeD', 0
+      setMember
+      push r:this, ' QiB8(', 0
+      setMember
+      push r:this, ']Z}nw', TRUE
+      setMember
+      push r:this, '8+C5', FALSE
+      setMember
+      push r:this, '+}B(', 0, '0d2T'
+      new
+      setMember
+      push r:this, '32', r:2, 1, '9K'
+      getVariable
+      push '+7U K'
+      newMethod
+      setMember
+      push r:this, '0o*6', '=(,aA'
+      getVariable
+      push '4MvcB'
+      getMember
+      push 'bground', 2, r:this, '32'
+      getMember
+      push '*=_p_'
+      callMethod
+      setMember
+      push r:this, '0o*6'
+      getMember
+      push 'cacheAsBitmap', TRUE
+      setMember
+      push r:this, '8lpZD('
+      getMember
+      push 1, r:this, '0o*6'
+      getMember
+      push 'gotoAndStop'
+      callMethod
+      pop
+      push r:this, '*HfMs', '=(,aA'
+      getVariable
+      push '=SfXp'
+      getMember
+      push 'select', 2, r:this, '32'
+      getMember
+      push '*=_p_'
+      callMethod
+      setMember
+      push 0, r:this, '*HfMs'
+      getMember
+      push 'stop'
+      callMethod
+      pop
+      push r:this, '2uAcM', '=(,aA'
+      getVariable
+      push '+2+bb'
+      getMember
+      push 'trees', 2, r:this, '32'
+      getMember
+      push '*=_p_'
+      callMethod
+      setMember
+      push r:this, '2uAcM'
+      getMember
+      push 'cacheAsBitmap', TRUE
+      setMember
+      push r:this, '8lpZD('
+      getMember
+      push 1, r:this, '2uAcM'
+      getMember
+      push 'gotoAndStop'
+      callMethod
+      pop
+      push r:this, '856=F(', 4095, TRUE, '=(,aA'
+      getVariable
+      push '[MqDO'
+      getMember
+      push '=(,aA'
+      getVariable
+      push '[MqDO'
+      getMember
+      push 4, '[8X6+'
+      getVariable
+      push '}ZF-m'
+      getMember
+      push 'BitmapData'
+      newMethod
+      setMember
+      push r:this, ']TP8q', '=(,aA'
+      getVariable
+      push '1TsWo'
+      getMember
+      push 1, r:this, '32'
+      getMember
+      push '18wU*'
+      callMethod
+      setMember
+      push '=(,aA'
+      getVariable
+      push '1TsWo'
+      getMember
+      push r:this, '856=F('
+      getMember
+      push 2, r:this, ']TP8q'
+      getMember
+      push 'attachBitmap'
+      callMethod
+      pop
+      push r:this, '=zw9C', '=(,aA'
+      getVariable
+      push '=SfXp'
+      getMember
+      push 'fall', 2, r:this, '32'
+      getMember
+      push '*=_p_'
+      callMethod
+      setMember
+      push r:this, '=zw9C'
+      getMember
+      push '_visible', FALSE
+      setMember
+      push r:this, '}StDC', '=(,aA'
+      getVariable
+      push '1TsWo'
+      getMember
+      push 'glow', 2, r:this, '32'
+      getMember
+      push '*=_p_'
+      callMethod
+      setMember
+      push r:this, '}StDC'
+      getMember
+      push '_visible', FALSE
+      setMember
+      push r:this, '2{cEC', '=(,aA'
+      getVariable
+      push '=SfXp'
+      getMember
+      push 'hand', 2, r:this, '32'
+      getMember
+      push '*=_p_'
+      callMethod
+      setMember
+      push r:this, '2{cEC'
+      getMember
+      push '_visible', FALSE
+      setMember
+      push r:this, ';hbMC', '=(,aA'
+      getVariable
+      push ',KBLC'
+      getMember
+      push 'invisible', 2, r:this, '32'
+      getMember
+      push '*=_p_'
+      callMethod
+      setMember
+      push r:this, ';hbMC'
+      getMember
+      push '_visible', FALSE
+      setMember
+      push FALSE, 1, '}-VbH'
+      getVariable
+      push '5nwDR'
+      callMethod
+      pop
+    end // of function 
+
+    setRegister r:0
+    setVariable
+    push r:0, '__name__', '44{N', 1
+    initArray
+    setMember
+    push r:0, '__interfaces__', '7Pm20('
+    getVariable
+    push 1
+    initArray
+    setMember
+    push '7Pm20('
+    getVariable
+    push 1, r:0
+    implements
+    push r:0, 'prototype'
+    getMember
+    setRegister r:1
+    pop
+    push r:1, '__class__', r:0
+    setMember
+    push r:1, '24LA-', NULL
+    setMember
+    push r:1, '+}B(', NULL
+    setMember
+    push r:1, ']TP8q', NULL
+    setMember
+    push r:1, '856=F(', NULL
+    setMember
+    push r:1, ')C2+F(', NULL
+    setMember
+    push r:1, '(hET+'
+    function2 (r:2='') (r:1='this')
+      push r:2, ']'
+      getMember
+      dup
+      branchIfTrue label188
+      pop
+      push r:2, ')'
+      getMember
+      dup
+      branchIfTrue label188
+      pop
+      push r:2, '='
+      getMember
+      dup
+      branchIfTrue label188
+      pop
+      push r:2, '5'
+      getMember
+     label188:
+      return
+    end // of function 
+
+    setMember
+    push r:1, '994N=('
+    function2 () (r:1='this')
+      push '=(,aA'
+      getVariable
+      push '{c;;4('
+      getMember
+      not
+      branchIfTrue label190
+      push r:this, '23ri)('
+      getMember
+      push r:this, '=yTeD'
+      getMember
+      add
+      push r:this, ' QiB8('
+      getMember
+      lessThan
+      not
+      branchIfTrue label189
+      push UNDEF
+      return
+     label189:
+      branch label191
+     label190:
+      push r:this, '23ri)('
+      getMember
+      push r:this, '=yTeD'
+      getMember
+      add
+      push '=(,aA'
+      getVariable
+      push '[YyD-('
+      getMember
+      push '=(,aA'
+      getVariable
+      push '[YyD-('
+      getMember
+      multiply
+      lessThan
+      not
+      branchIfTrue label191
+      push UNDEF
+      return
+     label191:
+      push r:this, '23ri)('
+      getMember
+      push r:this, '=yTeD'
+      getMember
+      equals
+      branchIfTrue label192
+      push r:this, '23ri)('
+      getMember
+      push r:this, '=yTeD'
+      getMember
+      greaterThan
+      push 1, r:this, '4[K{k'
+      callMethod
+      pop
+      branch label193
+     label192:
+      push NULL, 1, r:this, '4[K{k'
+      callMethod
+      pop
+     label193:
+    end // of function 
+
+    setMember
+    push r:1, ' tq5)'
+    function2 () (r:1='this')
+      push 0, r:this, '856=F('
+      getMember
+      push 'dispose'
+      callMethod
+      pop
+      push 0, r:this, '0o*6'
+      getMember
+      push 'removeMovieClip'
+      callMethod
+      pop
+      push 0, r:this, '2uAcM'
+      getMember
+      push 'removeMovieClip'
+      callMethod
+      pop
+      push 0, r:this, '7UQBd'
+      callMethod
+      pop
+    end // of function 
+
+    setMember
+    push r:1, '-R*x6('
+    function2 (r:2='', r:3='', r:4='') (r:1='this')
+      push r:2, '(('
+      getMember
+      setRegister r:5
+      pop
+      push r:2, ')('
+      getMember
+      setRegister r:6
+      pop
+      push r:3, ']'
+      getMember
+      not
+      branchIfTrue label196
+      push r:this, ';AH0'
+      getMember
+      push r:5
+      getMember
+      push r:6, 1
+      subtract
+      getMember
+      setRegister r:7
+      pop
+      push r:7, NULL
+      equals
+      not
+      dup
+      not
+      branchIfTrue label194
+      pop
+      push r:7, '4AF'
+      getMember
+      push ')'
+      getMember
+      not
+      dup
+      not
+      branchIfTrue label194
+      pop
+      push r:2, '4AF'
+      getMember
+      push ']'
+      getMember
+     label194:
+      not
+      branchIfTrue label196
+      push 0, r:7, ';5zsB'
+      callMethod
+      pop
+      push 0, r:7, '*0FF-('
+      callMethod
+      not
+      branchIfTrue label195
+      push r:4, r:7, 2, r:this, '73[+j'
+      callMethod
+      pop
+     label195:
+      push UNDEF
+      return
+     label196:
+      push r:3, '5'
+      getMember
+      not
+      branchIfTrue label199
+      push r:this, ';AH0'
+      getMember
+      push r:5, 1
+      subtract
+      getMember
+      push r:6
+      getMember
+      setRegister r:7
+      pop
+      push r:7, NULL
+      equals
+      not
+      dup
+      not
+      branchIfTrue label197
+      pop
+      push r:7, '4AF'
+      getMember
+      push '='
+      getMember
+      not
+      dup
+      not
+      branchIfTrue label197
+      pop
+      push r:2, '4AF'
+      getMember
+      push '5'
+      getMember
+     label197:
+      not
+      branchIfTrue label199
+      push 0, r:7, '5P(l(('
+      callMethod
+      pop
+      push 0, r:7, '*0FF-('
+      callMethod
+      not
+      branchIfTrue label198
+      push r:4, r:7, 2, r:this, '73[+j'
+      callMethod
+      pop
+     label198:
+      push UNDEF
+      return
+     label199:
+      push r:3, '='
+      getMember
+      not
+      branchIfTrue label202
+      push r:this, ';AH0'
+      getMember
+      push r:5, 1
+      add
+      getMember
+      push r:6
+      getMember
+      setRegister r:7
+      pop
+      push r:7, NULL
+      equals
+      not
+      dup
+      not
+      branchIfTrue label200
+      pop
+      push r:7, '4AF'
+      getMember
+      push '5'
+      getMember
+      not
+      dup
+      not
+      branchIfTrue label200
+      pop
+      push r:2, '4AF'
+      getMember
+      push '='
+      getMember
+     label200:
+      not
+      branchIfTrue label202
+      push 0, r:7, '8F]xi'
+      callMethod
+      pop
+      push 0, r:7, '*0FF-('
+      callMethod
+      not
+      branchIfTrue label201
+      push r:4, r:7, 2, r:this, '73[+j'
+      callMethod
+      pop
+     label201:
+      push UNDEF
+      return
+     label202:
+      push r:3, ')'
+      getMember
+      not
+      branchIfTrue label205
+      push r:this, ';AH0'
+      getMember
+      push r:5
+      getMember
+      push r:6, 1
+      add
+      getMember
+      setRegister r:7
+      pop
+      push r:7, NULL
+      equals
+      not
+      dup
+      not
+      branchIfTrue label203
+      pop
+      push r:7, '4AF'
+      getMember
+      push ']'
+      getMember
+      not
+      dup
+      not
+      branchIfTrue label203
+      pop
+      push r:2, '4AF'
+      getMember
+      push ')'
+      getMember
+     label203:
+      not
+      branchIfTrue label205
+      push 0, r:7, '8VH{D('
+      callMethod
+      pop
+      push 0, r:7, '*0FF-('
+      callMethod
+      not
+      branchIfTrue label204
+      push r:4, r:7, 2, r:this, '73[+j'
+      callMethod
+      pop
+     label204:
+      push UNDEF
+      return
+     label205:
+    end // of function 
+
+    setMember
+    push r:1, '73[+j'
+    function2 (r:2='', r:3='') (r:1='this')
+      push r:2, '9G56', r:3
+      setMember
+      push r:3
+      not
+      branchIfTrue label208
+      push r:this, '{9,B'
+      getMember
+      branchIfTrue label206
+      push 0, r:2, '115(A('
+      callMethod
+      pop
+      branch label207
+     label206:
+      push 0, r:2, '[uD*]'
+      callMethod
+      pop
+     label207:
+      push r:this, '23ri)(', r:this, '23ri)('
+      getMember
+      push 0, r:2, '}C]J ('
+      callMethod
+      add
+      setMember
+      branch label211
+     label208:
+      push r:this, '{9,B'
+      getMember
+      branchIfTrue label209
+      push 0, r:2, '[uD*]'
+      callMethod
+      pop
+      branch label210
+     label209:
+      push 0, r:2, '115(A('
+      callMethod
+      pop
+     label210:
+      push r:this, '=yTeD', r:this, '=yTeD'
+      getMember
+      push 0, r:2, '}C]J ('
+      callMethod
+      add
+      setMember
+     label211:
+    end // of function 
+
+    setMember
+    push r:1, '}[gVn', NULL
+    setMember
+    push r:1, '13=z)', NULL
+    setMember
+    push r:1, '8lpZD(', NULL
+    setMember
+    push r:1, '6p5aQ'
+    function2 () (r:1='this')
+      push FALSE
+      setRegister r:2
+      pop
+      push 0, '9K'
+      getVariable
+      push '{-kxL'
+      getMember
+      push '[L2'
+      callMethod
+      push 15
+      lessThan
+      not
+      branchIfTrue label212
+      push TRUE
+      setRegister r:2
+      pop
+     label212:
+      push 0
+      setRegister r:3
+      pop
+      push '=(,aA'
+      getVariable
+      push '[YyD-('
+      getMember
+      setRegister r:4
+      pop
+     label213:
+      push r:3, r:4
+      lessThan
+      not
+      branchIfTrue label242
+      push r:3
+      setRegister r:5
+      pop
+      push r:3
+      increment
+      setRegister r:3
+      pop
+      push 0
+      setRegister r:6
+      pop
+      push '=(,aA'
+      getVariable
+      push '[YyD-('
+      getMember
+      setRegister r:7
+      pop
+     label214:
+      push r:6, r:7
+      lessThan
+      not
+      branchIfTrue label241
+      push r:6
+      setRegister r:8
+      pop
+      push r:6
+      increment
+      setRegister r:6
+      pop
+      push r:this, ';AH0'
+      getMember
+      push r:5
+      getMember
+      push r:8
+      getMember
+      setRegister r:9
+      pop
+      push r:9, '} fcO'
+      getMember
+      not
+      branchIfTrue label215
+      branch label214
+     label215:
+      push r:this, ';AH0'
+      getMember
+      push r:5
+      getMember
+      push r:8, 1
+      add
+      getMember
+      setRegister r:10
+      pop
+      push r:this, ';AH0'
+      getMember
+      push r:5, 1
+      add
+      getMember
+      push r:8
+      getMember
+      setRegister r:11
+      pop
+      push 0, r:9, '*0FF-('
+      callMethod
+      dup
+      not
+      branchIfTrue label216
+      pop
+      push 0, r:10, '*0FF-('
+      callMethod
+     label216:
+      not
+      branchIfTrue label217
+      push r:9, '9G56'
+      getMember
+      push r:10, '9G56'
+      getMember
+      equals
+      not
+      branchIfTrue label217
+      push r:9, '1N-'
+      getMember
+      push ')', FALSE
+      setMember
+      push r:10, '1N-'
+      getMember
+      push ']', FALSE
+      setMember
+     label217:
+      push 0, r:9, '*0FF-('
+      callMethod
+      dup
+      not
+      branchIfTrue label218
+      pop
+      push 0, r:11, '*0FF-('
+      callMethod
+     label218:
+      not
+      branchIfTrue label219
+      push r:9, '9G56'
+      getMember
+      push r:11, '9G56'
+      getMember
+      equals
+      not
+      branchIfTrue label219
+      push r:9, '1N-'
+      getMember
+      push '=', FALSE
+      setMember
+      push r:11, '1N-'
+      getMember
+      push '5', FALSE
+      setMember
+     label219:
+      push r:2
+      dup
+      not
+      branchIfTrue label220
+      pop
+      push r:9, '-vFG'
+      getMember
+      not
+     label220:
+      not
+      branchIfTrue label221
+      push 0, r:9, '}xMhF'
+      callMethod
+      pop
+     label221:
+      push r:this, ';AH0'
+      getMember
+      push r:5
+      getMember
+      push r:8, 1
+      subtract
+      getMember
+      setRegister r:12
+      pop
+      push r:this, ';AH0'
+      getMember
+      push r:5, 1
+      subtract
+      getMember
+      push r:8
+      getMember
+      setRegister r:13
+      pop
+      push 0, r:9, '}ZF-m'
+      callMethod
+      pop
+      push 0, r:9, '*0FF-('
+      callMethod
+      not
+      not
+      branchIfTrue label222
+      branch label214
+     label222:
+      push 0, r:13, '*0FF-('
+      callMethod
+      dup
+      not
+      branchIfTrue label223
+      pop
+      push 0, r:12, '*0FF-('
+      callMethod
+      dup
+      not
+      branchIfTrue label223
+      pop
+      push 0, r:11, '*0FF-('
+      callMethod
+      dup
+      not
+      branchIfTrue label223
+      pop
+      push 0, r:10, '*0FF-('
+      callMethod
+     label223:
+      not
+      branchIfTrue label224
+      push 0, r:9, '8+C5'
+      callMethod
+      pop
+      branch label214
+     label224:
+      push r:8, 0
+      equals
+      dup
+      not
+      branchIfTrue label225
+      pop
+      push 0, r:13, '*0FF-('
+      callMethod
+      dup
+      not
+      branchIfTrue label225
+      pop
+      push 0, r:10, '*0FF-('
+      callMethod
+      dup
+      not
+      branchIfTrue label225
+      pop
+      push 0, r:11, '*0FF-('
+      callMethod
+     label225:
+      not
+      branchIfTrue label226
+      push 0, r:9, '8+C5'
+      callMethod
+      pop
+      branch label214
+     label226:
+      push r:8, '=(,aA'
+      getVariable
+      push '[YyD-('
+      getMember
+      push 1
+      subtract
+      equals
+      dup
+      not
+      branchIfTrue label227
+      pop
+      push 0, r:13, '*0FF-('
+      callMethod
+      dup
+      not
+      branchIfTrue label227
+      pop
+      push 0, r:12, '*0FF-('
+      callMethod
+      dup
+      not
+      branchIfTrue label227
+      pop
+      push 0, r:11, '*0FF-('
+      callMethod
+     label227:
+      not
+      branchIfTrue label228
+      push 0, r:9, '8+C5'
+      callMethod
+      pop
+      branch label214
+     label228:
+      push r:5, '=(,aA'
+      getVariable
+      push '[YyD-('
+      getMember
+      push 1
+      subtract
+      equals
+      dup
+      not
+      branchIfTrue label229
+      pop
+      push 0, r:13, '*0FF-('
+      callMethod
+      dup
+      not
+      branchIfTrue label229
+      pop
+      push 0, r:12, '*0FF-('
+      callMethod
+      dup
+      not
+      branchIfTrue label229
+      pop
+      push 0, r:10, '*0FF-('
+      callMethod
+     label229:
+      not
+      branchIfTrue label230
+      push 0, r:9, '8+C5'
+      callMethod
+      pop
+      branch label214
+     label230:
+      push r:5, 0
+      equals
+      dup
+      not
+      branchIfTrue label231
+      pop
+      push 0, r:11, '*0FF-('
+      callMethod
+      dup
+      not
+      branchIfTrue label231
+      pop
+      push 0, r:12, '*0FF-('
+      callMethod
+      dup
+      not
+      branchIfTrue label231
+      pop
+      push 0, r:10, '*0FF-('
+      callMethod
+     label231:
+      not
+      branchIfTrue label232
+      push 0, r:9, '8+C5'
+      callMethod
+      pop
+      branch label214
+     label232:
+      push r:5, 0
+      equals
+      dup
+      not
+      branchIfTrue label233
+      pop
+      push r:8, 0
+      equals
+      dup
+      not
+      branchIfTrue label233
+      pop
+      push 0, r:11, '*0FF-('
+      callMethod
+      dup
+      not
+      branchIfTrue label233
+      pop
+      push 0, r:10, '*0FF-('
+      callMethod
+     label233:
+      not
+      branchIfTrue label234
+      push 0, r:9, '8+C5'
+      callMethod
+      pop
+      branch label214
+     label234:
+      push r:5, '=(,aA'
+      getVariable
+      push '[YyD-('
+      getMember
+      push 1
+      subtract
+      equals
+      dup
+      not
+      branchIfTrue label235
+      pop
+      push r:8, 0
+      equals
+      dup
+      not
+      branchIfTrue label235
+      pop
+      push 0, r:13, '*0FF-('
+      callMethod
+      dup
+      not
+      branchIfTrue label235
+      pop
+      push 0, r:10, '*0FF-('
+      callMethod
+     label235:
+      not
+      branchIfTrue label236
+      push 0, r:9, '8+C5'
+      callMethod
+      pop
+      branch label214
+     label236:
+      push r:5, '=(,aA'
+      getVariable
+      push '[YyD-('
+      getMember
+      push 1
+      subtract
+      equals
+      dup
+      not
+      branchIfTrue label237
+      pop
+      push r:8, '=(,aA'
+      getVariable
+      push '[YyD-('
+      getMember
+      push 1
+      subtract
+      equals
+      dup
+      not
+      branchIfTrue label237
+      pop
+      push 0, r:13, '*0FF-('
+      callMethod
+      dup
+      not
+      branchIfTrue label237
+      pop
+      push 0, r:12, '*0FF-('
+      callMethod
+     label237:
+      not
+      branchIfTrue label238
+      push 0, r:9, '8+C5'
+      callMethod
+      pop
+      branch label214
+     label238:
+      push r:5, 0
+      equals
+      dup
+      not
+      branchIfTrue label239
+      pop
+      push r:8, '=(,aA'
+      getVariable
+      push '[YyD-('
+      getMember
+      push 1
+      subtract
+      equals
+      dup
+      not
+      branchIfTrue label239
+      pop
+      push 0, r:11, '*0FF-('
+      callMethod
+      dup
+      not
+      branchIfTrue label239
+      pop
+      push 0, r:12, '*0FF-('
+      callMethod
+     label239:
+      not
+      branchIfTrue label240
+      push 0, r:9, '8+C5'
+      callMethod
+      pop
+      branch label214
+     label240:
+      branch label214
+     label241:
+      branch label213
+     label242:
+    end // of function 
+
+    setMember
+    push r:1, '32', NULL
+    setMember
+    push r:1, '(,XVr'
+    function2 (r:2='', r:3='', r:4='') (r:1='this')
+      push r:this, '2{cEC'
+      getMember
+      push '_visible', FALSE
+      setMember
+      push '=(,aA'
+      getVariable
+      push '4bqds'
+      getMember
+      push r:this, '5DZk5'
+      getMember
+      multiply
+      push 100
+      divide
+      setRegister r:5
+      pop
+      push 1
+      setRegister r:6
+      pop
+      push r:4, ']'
+      getMember
+      branchIfTrue label248
+      push r:4, '='
+      getMember
+      branchIfTrue label246
+      push r:4, ')'
+      getMember
+      branchIfTrue label244
+      push r:4, '5'
+      getMember
+      not
+      branchIfTrue label243
+      push 5
+      setRegister r:6
+      pop
+     label243:
+      branch label245
+     label244:
+      push 4
+      setRegister r:6
+      pop
+     label245:
+      branch label247
+     label246:
+      push 3
+      setRegister r:6
+      pop
+     label247:
+      branch label249
+     label248:
+      push 2
+      setRegister r:6
+      pop
+     label249:
+      push r:this, '}StDC'
+      getMember
+      push '_visible', FALSE
+      setMember
+      push r:this, '}StDC'
+      getMember
+      push '_x', r:2, '=(,aA'
+      getVariable
+      push '4bqds'
+      getMember
+      multiply
+      push r:this, '5DZk5'
+      getMember
+      multiply
+      push 100
+      divide
+      push '=(,aA'
+      getVariable
+      push '2QF=}'
+      getMember
+      add
+      setMember
+      push r:this, '}StDC'
+      getMember
+      push '_y', r:3, '=(,aA'
+      getVariable
+      push '4bqds'
+      getMember
+      multiply
+      push r:this, '5DZk5'
+      getMember
+      multiply
+      push 100
+      divide
+      push '=(,aA'
+      getVariable
+      push '2QF=}'
+      getMember
+      add
+      setMember
+      push r:this, '}StDC'
+      getMember
+      push '_xscale', r:this, '5DZk5'
+      getMember
+      setMember
+      push r:this, '}StDC'
+      getMember
+      push '_yscale', r:this, '5DZk5'
+      getMember
+      setMember
+      push r:6, 1, r:this, '}StDC'
+      getMember
+      push 'gotoAndStop'
+      callMethod
+      pop
+      push r:this, '=zw9C'
+      getMember
+      push '_x', r:2, '=(,aA'
+      getVariable
+      push '4bqds'
+      getMember
+      multiply
+      push r:this, '5DZk5'
+      getMember
+      multiply
+      push 100
+      divide
+      push '=(,aA'
+      getVariable
+      push '2QF=}'
+      getMember
+      add
+      setMember
+      push r:this, '=zw9C'
+      getMember
+      push '_y', r:3, '=(,aA'
+      getVariable
+      push '4bqds'
+      getMember
+      multiply
+      push r:this, '5DZk5'
+      getMember
+      multiply
+      push 100
+      divide
+      push '=(,aA'
+      getVariable
+      push '2QF=}'
+      getMember
+      add
+      setMember
+      push r:6, r:this, '=zw9C'
+      getMember
+      push 2, ',WWC+('
+      new
+      setRegister r:7
+      pop
+      push r:7, '7iP=3', r:this, '1SExH', 2, ']6=8H('
+      callFunction
+      setMember
+      push r:7, ',0Kly', r:this, '7;IrI', 2, ']6=8H('
+      callFunction
+      setMember
+      push r:7, 1, r:this, '+}B('
+      getMember
+      push '*]('
+      callMethod
+      pop
+    end // of function 
+
+    setMember
+    push r:1, '7UQBd'
+    function2 () (r:1='this')
+      push 0
+      setRegister r:2
+      pop
+      push '=(,aA'
+      getVariable
+      push '[YyD-('
+      getMember
+      setRegister r:3
+      pop
+     label250:
+      push r:2, r:3
+      lessThan
+      not
+      branchIfTrue label253
+      push r:2
+      setRegister r:4
+      pop
+      push r:2
+      increment
+      setRegister r:2
+      pop
+      push 0
+      setRegister r:5
+      pop
+      push '=(,aA'
+      getVariable
+      push '[YyD-('
+      getMember
+      setRegister r:6
+      pop
+     label251:
+      push r:5, r:6
+      lessThan
+      not
+      branchIfTrue label252
+      push r:5
+      setRegister r:7
+      pop
+      push r:5
+      increment
+      setRegister r:5
+      pop
+      push 0, r:this, ';AH0'
+      getMember
+      push r:4
+      getMember
+      push r:7
+      getMember
+      push ' tq5)'
+      callMethod
+      pop
+      branch label251
+     label252:
+      branch label250
+     label253:
+    end // of function 
+
+    setMember
+    push r:1, ';AH0', NULL
+    setMember
+    push r:1, ' QiB8(', NULL
+    setMember
+    push r:1, ';6aj0('
+    function2 () (r:1='this')
+      push 0, '(GEO'
+      getVariable
+      push '+4o6D('
+      callMethod
+      push 1, '[Zk'
+      getVariable
+      push '-5;Q'
+      callMethod
+      return
+    end // of function 
+
+    setMember
+    push r:1, '21zZJ(', NULL
+    setMember
+    push r:1, '8+C5', NULL
+    setMember
+    push r:1, '0D 6'
+    function2 () (r:1='this')
+      push r:this, '+}B('
+      getMember
+      push 'length'
+      getMember
+      push 0
+      greaterThan
+      not
+      branchIfTrue label257
+      push 0, r:this, '+}B('
+      getMember
+      push 'iterator'
+      callMethod
+      setRegister r:2
+      pop
+     label254:
+      push 0, r:2, '1ll a'
+      callMethod
+      not
+      branchIfTrue label256
+      push 0, r:2, '7Y-7'
+      callMethod
+      setRegister r:3
+      pop
+      push 0, r:3, 'play'
+      callMethod
+      not
+      branchIfTrue label255
+      push 0, r:3, '7iP=3'
+      callMethod
+      pop
+      push r:3, 1, r:this, '+}B('
+      getMember
+      push '0ENPA'
+      callMethod
+      pop
+     label255:
+      branch label254
+     label256:
+      push UNDEF
+      return
+     label257:
+      push 0, '}-VbH'
+      getVariable
+      push '4mok0'
+      callMethod
+      not
+      dup
+      branchIfTrue label258
+      pop
+      push 0, '}-VbH'
+      getVariable
+      push '+4Z+['
+      callMethod
+      not
+     label258:
+      not
+      branchIfTrue label259
+      push UNDEF
+      return
+     label259:
+      push r:this, '8+C5'
+      getMember
+      not
+      branchIfTrue label260
+      push UNDEF
+      return
+     label260:
+      push r:this, '0o*6'
+      getMember
+      push '_xmouse'
+      getMember
+      push '=(,aA'
+      getVariable
+      push '2QF=}'
+      getMember
+      lessThan
+      dup
+      branchIfTrue label261
+      pop
+      push r:this, '0o*6'
+      getMember
+      push '_xmouse'
+      getMember
+      push '=(,aA'
+      getVariable
+      push '[MqDO'
+      getMember
+      push '=(,aA'
+      getVariable
+      push '2QF=}'
+      getMember
+      subtract
+      greaterThan
+     label261:
+      not
+      branchIfTrue label262
+      push r:this, '2{cEC'
+      getMember
+      push '_visible', FALSE
+      setMember
+      push r:this, '*HfMs'
+      getMember
+      push '_visible', FALSE
+      setMember
+      push UNDEF
+      return
+     label262:
+      push r:this, '0o*6'
+      getMember
+      push '_ymouse'
+      getMember
+      push '=(,aA'
+      getVariable
+      push '2QF=}'
+      getMember
+      lessThan
+      dup
+      branchIfTrue label263
+      pop
+      push r:this, '0o*6'
+      getMember
+      push '_ymouse'
+      getMember
+      push '=(,aA'
+      getVariable
+      push '[MqDO'
+      getMember
+      push '=(,aA'
+      getVariable
+      push '2QF=}'
+      getMember
+      subtract
+      greaterThan
+     label263:
+      not
+      branchIfTrue label264
+      push r:this, '2{cEC'
+      getMember
+      push '_visible', FALSE
+      setMember
+      push r:this, '*HfMs'
+      getMember
+      push '_visible', FALSE
+      setMember
+      push UNDEF
+      return
+     label264:
+      push r:this, '2{cEC'
+      getMember
+      push '_x', r:this, '0o*6'
+      getMember
+      push '_xmouse'
+      getMember
+      setMember
+      push r:this, '2{cEC'
+      getMember
+      push '_y', r:this, '0o*6'
+      getMember
+      push '_ymouse'
+      getMember
+      setMember
+      push r:this, '2{cEC'
+      getMember
+      push '_visible', TRUE
+      setMember
+      push r:this, '0o*6'
+      getMember
+      push '_xmouse'
+      getMember
+      push '=(,aA'
+      getVariable
+      push '2QF=}'
+      getMember
+      subtract
+      push '=(,aA'
+      getVariable
+      push '4bqds'
+      getMember
+      push r:this, '5DZk5'
+      getMember
+      multiply
+      push 100
+      divide
+      divide
+      push 1, '3Wt'
+      getVariable
+      push '9n6'
+      callMethod
+      setRegister r:2
+      pop
+      push r:this, '0o*6'
+      getMember
+      push '_ymouse'
+      getMember
+      push '=(,aA'
+      getVariable
+      push '2QF=}'
+      getMember
+      subtract
+      push '=(,aA'
+      getVariable
+      push '4bqds'
+      getMember
+      push r:this, '5DZk5'
+      getMember
+      multiply
+      push 100
+      divide
+      divide
+      push 1, '3Wt'
+      getVariable
+      push '9n6'
+      callMethod
+      setRegister r:3
+      pop
+      push r:this, ';AH0'
+      getMember
+      push r:2
+      getMember
+      push r:3
+      getMember
+      setRegister r:4
+      pop
+      push r:4, NULL
+      equals
+      not
+      branchIfTrue label265
+      push r:this, '*HfMs'
+      getMember
+      push '_visible', FALSE
+      setMember
+      push r:this, '2{cEC'
+      getMember
+      push '_visible', FALSE
+      setMember
+      push UNDEF
+      return
+     label265:
+      push 0, r:4, '*0FF-('
+      callMethod
+      not
+      branchIfTrue label266
+      push UNDEF
+      return
+     label266:
+      push r:this, '*HfMs'
+      getMember
+      push '_visible', TRUE
+      setMember
+      push r:4, '(('
+      getMember
+      push '=(,aA'
+      getVariable
+      push '4bqds'
+      getMember
+      multiply
+      push r:this, '5DZk5'
+      getMember
+      multiply
+      push 100
+      divide
+      push '=(,aA'
+      getVariable
+      push '2QF=}'
+      getMember
+      add
+      setRegister r:5
+      pop
+      push r:4, ')('
+      getMember
+      push '=(,aA'
+      getVariable
+      push '4bqds'
+      getMember
+      multiply
+      push r:this, '5DZk5'
+      getMember
+      multiply
+      push 100
+      divide
+      push '=(,aA'
+      getVariable
+      push '2QF=}'
+      getMember
+      add
+      setRegister r:6
+      pop
+      push r:this, '*HfMs'
+      getMember
+      push '_xscale', r:this, '5DZk5'
+      getMember
+      setMember
+      push r:this, '*HfMs'
+      getMember
+      push '_yscale', r:this, '5DZk5'
+      getMember
+      setMember
+      push r:this, '*HfMs'
+      getMember
+      push '_x', r:5
+      setMember
+      push r:this, '*HfMs'
+      getMember
+      push '_y', r:6
+      setMember
+      push 0, r:4, '[=h9J('
+      callMethod
+      setRegister r:7
+      pop
+      push r:7, 1, r:this, '*HfMs'
+      getMember
+      push 'gotoAndStop'
+      callMethod
+      pop
+      push r:this, '*HfMs'
+      getMember
+      push '_visible', TRUE
+      setMember
+      push r:7, 1
+      equals
+      branchIfTrue label267
+      push r:7
+      branch label268
+     label267:
+      push 2
+     label268:
+      push 1, r:this, '2{cEC'
+      getMember
+      push 'gotoAndStop'
+      callMethod
+      pop
+    end // of function 
+
+    setMember
+    push r:1, '=zw9C', NULL
+    setMember
+    push r:1, '0o*6', NULL
+    setMember
+    push r:1, '}StDC', NULL
+    setMember
+    push r:1, '2{cEC', NULL
+    setMember
+    push r:1, ';hbMC', NULL
+    setMember
+    push r:1, '*HfMs', NULL
+    setMember
+    push r:1, '2uAcM', NULL
+    setMember
+    push r:1, '031zE', NULL
+    setMember
+    push r:1, '23ri)(', NULL
+    setMember
+    push r:1, ']Z}nw', NULL
+    setMember
+    push r:1, ')lJut'
+    function2 (r:2='', r:3='', r:4='') (r:1='this')
+      push r:this, '8+C5'
+      getMember
+      not
+      branchIfTrue label269
+      push UNDEF
+      return
+     label269:
+      push r:this, '*HfMs'
+      getMember
+      push '_visible', FALSE
+      setMember
+      push r:this, '8+C5', TRUE
+      setMember
+      push r:this, ';AH0'
+      getMember
+      push r:2
+      getMember
+      push r:3
+      getMember
+      setRegister r:5
+      pop
+      push r:4, r:5, 2, r:this, '-*Nt4('
+      callMethod
+      not
+      dup
+      not
+      branchIfTrue label270
+      pop
+      push r:4, r:3, r:2, 3, r:this, '3Usn['
+      callMethod
+      not
+     label270:
+      not
+      branchIfTrue label271
+      push r:4, r:3, r:2, 3, '[Zk'
+      getVariable
+      push ')62y)('
+      callMethod
+      push 1, '}-VbH'
+      getVariable
+      push ';ptpb'
+      callMethod
+      pop
+      push UNDEF
+      return
+     label271:
+      push r:4, r:3, r:2, 3, '[Zk'
+      getVariable
+      push ')62y)('
+      callMethod
+      push 1, '}-VbH'
+      getVariable
+      push ',XIj,'
+      callMethod
+      pop
+    end // of function 
+
+    setMember
+    push r:1, '6qHSI('
+    function2 () (r:1='this')
+      push 0, r:this, '6p5aQ'
+      callMethod
+      pop
+      push r:this, ']Z}nw', FALSE
+      setMember
+    end // of function 
+
+    setMember
+    push r:1, '1SExH'
+    function2 () (r:1='this')
+      push r:this, '}StDC'
+      getMember
+      push '_visible', TRUE
+      setMember
+      push 0, '}-VbH'
+      getVariable
+      push '4mok0'
+      callMethod
+      not
+      branchIfTrue label272
+      push r:this, '2{cEC'
+      getMember
+      push '_visible', TRUE
+      setMember
+     label272:
+      push 0, r:this, '3CfVp'
+      callMethod
+      pop
+      push r:this, '8+C5', FALSE
+      setMember
+      push FALSE, 1, '}-VbH'
+      getVariable
+      push '5nwDR'
+      callMethod
+      pop
+    end // of function 
+
+    setMember
+    push r:1, ')Kw3;'
+    function2 () (r:1='this')
+      push 0, '}-VbH'
+      getVariable
+      push '7T4cF('
+      callMethod
+      pop
+      push 0, r:this, ' tq5)'
+      callMethod
+      pop
+    end // of function 
+
+    setMember
+    push r:1, '+oD9l'
+    function2 (r:2='', r:3='') (r:1='this')
+      push r:3
+      setRegister r:4
+      push 1
+      getMember
+      setRegister r:5
+      push 0
+      strictEquals
+      branchIfTrue label273
+      push r:5, 1
+      strictEquals
+      branchIfTrue label280
+      branch label282
+     label273:
+      push r:4, 2
+      getMember
+      setRegister r:5
+      pop
+      push r:this, '{9,B', r:2
+      not
+      setMember
+      push r:this, '{9,B'
+      getMember
+      branchIfTrue label274
+      push '=(,aA'
+      getVariable
+      push '}A)SZ'
+      getMember
+      push '=(,aA'
+      getVariable
+      push '{A)SZ'
+      getMember
+      push 2, '}-VbH'
+      getVariable
+      push '0UN5I'
+      callMethod
+      pop
+      branch label275
+     label274:
+      push '=(,aA'
+      getVariable
+      push '{A)SZ'
+      getMember
+      push '=(,aA'
+      getVariable
+      push '}A)SZ'
+      getMember
+      push 2, '}-VbH'
+      getVariable
+      push '0UN5I'
+      callMethod
+      pop
+     label275:
+      push '=(,aA'
+      getVariable
+      push '[MqDO'
+      getMember
+      push '=(,aA'
+      getVariable
+      push '2QF=}'
+      getMember
+      push 2
+      multiply
+      subtract
+      setRegister r:6
+      pop
+      push '=(,aA'
+      getVariable
+      push '[YyD-('
+      getMember
+      push '=(,aA'
+      getVariable
+      push '4bqds'
+      getMember
+      multiply
+      setRegister r:7
+      pop
+      push r:this, '5DZk5', r:6, r:7
+      divide
+      push 100
+      multiply
+      setMember
+      push r:this, '2{cEC'
+      getMember
+      push '_xscale', r:this, '5DZk5'
+      getMember
+      setMember
+      push r:this, '2{cEC'
+      getMember
+      push '_yscale', r:this, '5DZk5'
+      getMember
+      setMember
+      push r:this, '=zw9C'
+      getMember
+      push '_xscale', r:this, '5DZk5'
+      getMember
+      setMember
+      push r:this, '=zw9C'
+      getMember
+      push '_yscale', r:this, '5DZk5'
+      getMember
+      setMember
+      push r:this, ';AH0', 0, 'Array'
+      new
+      setMember
+      push 0
+      setRegister r:8
+      pop
+      push '=(,aA'
+      getVariable
+      push '[YyD-('
+      getMember
+      setRegister r:9
+      pop
+     label276:
+      push r:8, r:9
+      lessThan
+      not
+      branchIfTrue label279
+      push r:8
+      setRegister r:10
+      pop
+      push r:8
+      increment
+      setRegister r:8
+      pop
+      push r:this, ';AH0'
+      getMember
+      push r:10, 0, 'Array'
+      new
+      setMember
+      push 0
+      setRegister r:11
+      pop
+      push '=(,aA'
+      getVariable
+      push '[YyD-('
+      getMember
+      setRegister r:12
+      pop
+     label277:
+      push r:11, r:12
+      lessThan
+      not
+      branchIfTrue label278
+      push r:11
+      setRegister r:13
+      pop
+      push r:11
+      increment
+      setRegister r:11
+      pop
+      push r:5, r:10
+      getMember
+      push r:13
+      getMember
+      setRegister r:14
+      pop
+      push ']', r:14, ']'
+      getMember
+      push '=', r:14, '='
+      getMember
+      push ')', r:14, ')'
+      getMember
+      push '5', r:14, '5'
+      getMember
+      push '}[R4,(', r:14, '}[R4,('
+      getMember
+      push 5
+      initObject
+      setRegister r:15
+      pop
+      push r:15, r:14, r:13, r:10, r:this, 5, '+V+K'
+      new
+      setRegister r:16
+      pop
+      push r:this, ';AH0'
+      getMember
+      push r:10
+      getMember
+      push r:13, r:16
+      setMember
+      push r:this, ' QiB8(', r:this, ' QiB8('
+      getMember
+      push 0, r:16, '}C]J ('
+      callMethod
+      add
+      setMember
+      push 0, r:16, '}ZF-m'
+      callMethod
+      pop
+      branch label277
+     label278:
+      branch label276
+     label279:
+      branch label282
+     label280:
+      push r:4, 2
+      getMember
+      setRegister r:5
+      pop
+      push r:4, 3
+      getMember
+      setRegister r:6
+      pop
+      push r:4, 4
+      getMember
+      setRegister r:7
+      pop
+      push TRUE, 1, '}-VbH'
+      getVariable
+      push '5nwDR'
+      callMethod
+      pop
+      push r:this, ']Z}nw', TRUE
+      setMember
+      push r:this, '031zE', r:this, ';AH0'
+      getMember
+      push r:5
+      getMember
+      push r:6
+      getMember
+      setMember
+      push r:this, '21zZJ(', r:2
+      setMember
+      push r:this, '24LA-', r:7
+      setMember
+      push 0, r:this, ']eyEY'
+      callMethod
+      pop
+      push 0, '}-VbH'
+      getVariable
+      push '9UeAW'
+      callMethod
+      not
+      branchIfTrue label281
+      push 0, r:this, '994N=('
+      callMethod
+      pop
+     label281:
+      push r:7, r:6, r:5, 3, r:this, '(,XVr'
+      callMethod
+      pop
+      branch label282
+     label282:
+    end // of function 
+
+    setMember
+    push r:1, '+Du}V'
+    function2 () (r:1='this')
+      push 0, r:this, '3CfVp'
+      callMethod
+      pop
+      push 0, '}-VbH'
+      getVariable
+      push '+4Z+['
+      callMethod
+      not
+      not
+      branchIfTrue label283
+      push UNDEF
+      return
+     label283:
+      push 0, '}-VbH'
+      getVariable
+      push '4mok0'
+      callMethod
+      not
+      branchIfTrue label284
+      push r:this, '2{cEC'
+      getMember
+      push '_visible', TRUE
+      setMember
+      push r:this, '2{cEC'
+      getMember
+      push '_xscale', r:this, '5DZk5'
+      getMember
+      setMember
+      push r:this, '2{cEC'
+      getMember
+      push '_yscale', r:this, '5DZk5'
+      getMember
+      setMember
+      push r:this, ';hbMC'
+      getMember
+      push '_visible', FALSE
+      setMember
+      branch label285
+     label284:
+      push r:this, '2{cEC'
+      getMember
+      push '_visible', FALSE
+      setMember
+      push r:this, ';hbMC'
+      getMember
+      push '_visible', TRUE
+      setMember
+      push 1, 1, r:this, ';hbMC'
+      getMember
+      push 'gotoAndStop'
+      callMethod
+      pop
+      push r:this, ';hbMC'
+      getMember
+      push 'onRelease'
+      function2 () (r:1='this')
+      end // of function 
+
+      setMember
+      push r:this, ';hbMC'
+      getMember
+      push 'useHandCursor', FALSE
+      setMember
+     label285:
+    end // of function 
+
+    setMember
+    push r:1, '4fHu{'
+    function2 () (r:1='this')
+      push 0, r:this, '3CfVp'
+      callMethod
+      pop
+      push 0, '}-VbH'
+      getVariable
+      push '+4Z+['
+      callMethod
+      not
+      dup
+      branchIfTrue label286
+      pop
+      push 0, '}-VbH'
+      getVariable
+      push '9UeAW'
+      callMethod
+     label286:
+      not
+      branchIfTrue label287
+      push UNDEF
+      return
+     label287:
+      push 0, '}-VbH'
+      getVariable
+      push '4mok0'
+      callMethod
+      not
+      branchIfTrue label288
+      push r:this, '2{cEC'
+      getMember
+      push '_visible', FALSE
+      setMember
+      push r:this, '2{cEC'
+      getMember
+      push '_xscale', r:this, '5DZk5'
+      getMember
+      setMember
+      push r:this, '2{cEC'
+      getMember
+      push '_yscale', r:this, '5DZk5'
+      getMember
+      setMember
+      push r:this, ';hbMC'
+      getMember
+      push '_visible', FALSE
+      setMember
+      branch label289
+     label288:
+      push r:this, '2{cEC'
+      getMember
+      push '_visible', FALSE
+      setMember
+      push 1, 1, r:this, ';hbMC'
+      getMember
+      push 'gotoAndStop'
+      callMethod
+      pop
+      push r:this, ';hbMC'
+      getMember
+      push '_visible', TRUE
+      setMember
+      push r:this, ';hbMC'
+      getMember
+      push 'onRelease'
+      function2 () (r:1='this')
+      end // of function 
+
+      setMember
+      push r:this, ';hbMC'
+      getMember
+      push 'useHandCursor', FALSE
+      setMember
+     label289:
+    end // of function 
+
+    setMember
+    push r:1, '7;IrI'
+    function2 (r:2='', r:3='') (r:1='this')
+      push r:3, 18
+      lessThan
+      not
+      not
+      branchIfTrue label290
+      push r:this, ']Z}nw'
+      getMember
+      not
+      branchIfTrue label290
+      push 0, r:this, '}Wl0n'
+      callMethod
+      pop
+      push 0, r:this, '994N=('
+      callMethod
+      pop
+      push 0, r:this, '6p5aQ'
+      callMethod
+      pop
+      push r:this, ']Z}nw', FALSE
+      setMember
+     label290:
+    end // of function 
+
+    setMember
+    push r:1, '8Z[e,('
+    function2 (r:2='') (r:1='this')
+      push 0, 2000, r:this, ')Kw3;', 2, ']6=8H('
+      callFunction
+      push 2, ' D(1'
+      getVariable
+      push '{-kxL'
+      getMember
+      push '+TOS,('
+      callMethod
+      push UNDEF
+      callMethod
+      pop
+    end // of function 
+
+    setMember
+    push r:1, '=yTeD', NULL
+    setMember
+    push r:1, '-iB=', NULL
+    setMember
+    push r:1, '5DZk5', NULL
+    setMember
+    push r:1, '{9,B', NULL
+    setMember
+    push r:1, '}Wl0n'
+    function2 () (r:1='this')
+      push r:this, '031zE'
+      getMember
+      setRegister r:2
+      pop
+      push r:this, '24LA-'
+      getMember
+      push ']'
+      getMember
+      not
+      branchIfTrue label291
+      push 0, r:2, '8VH{D('
+      callMethod
+      pop
+     label291:
+      push r:this, '24LA-'
+      getMember
+      push '='
+      getMember
+      not
+      branchIfTrue label292
+      push 0, r:2, '5P(l(('
+      callMethod
+      pop
+     label292:
+      push r:this, '24LA-'
+      getMember
+      push ')'
+      getMember
+      not
+      branchIfTrue label293
+      push 0, r:2, ';5zsB'
+      callMethod
+      pop
+     label293:
+      push r:this, '24LA-'
+      getMember
+      push '5'
+      getMember
+      not
+      branchIfTrue label294
+      push 0, r:2, '8F]xi'
+      callMethod
+      pop
+     label294:
+      push 0, r:2, '*0FF-('
+      callMethod
+      not
+      branchIfTrue label299
+      push r:this, '21zZJ('
+      getMember
+      not
+      branchIfTrue label297
+      push r:2, '9G56', TRUE
+      setMember
+      push r:this, '{9,B'
+      getMember
+      branchIfTrue label295
+      push 0, r:2, '115(A('
+      callMethod
+      pop
+      branch label296
+     label295:
+      push 0, r:2, '[uD*]'
+      callMethod
+      pop
+     label296:
+      branch label299
+     label297:
+      push r:2, '9G56', FALSE
+      setMember
+      push r:this, '{9,B'
+      getMember
+      branchIfTrue label298
+      push 0, r:2, '[uD*]'
+      callMethod
+      pop
+      branch label299
+     label298:
+      push 0, r:2, '115(A('
+      callMethod
+      pop
+     label299:
+      push r:this, '21zZJ('
+      getMember
+      branchIfTrue label300
+      push FALSE
+      branch label301
+     label300:
+      push TRUE
+     label301:
+      push r:this, '24LA-'
+      getMember
+      push r:2, 3, r:this, '-R*x6('
+      callMethod
+      pop
+    end // of function 
+
+    setMember
+    push r:1, '3CfVp'
+    function2 () (r:1='this')
+      push ''
+      setRegister r:2
+      pop
+      push r:this, '23ri)('
+      getMember
+      push NULL
+      equals
+      not
+      dup
+      not
+      branchIfTrue label302
+      pop
+      push r:this, '=yTeD'
+      getMember
+      push NULL
+      equals
+      not
+     label302:
+      not
+      branchIfTrue label303
+      push r:2, '<div class="score0">', r:this, '23ri)('
+      getMember
+      add
+      push ' </div>'
+      add
+      add
+      setRegister r:2
+      pop
+      push r:2, '<div class="score1">', r:this, '=yTeD'
+      getMember
+      add
+      push '</div>'
+      add
+      add
+      setRegister r:2
+      pop
+     label303:
+      push r:2, '<p>'
+      add
+      setRegister r:2
+      pop
+      push 0, '}-VbH'
+      getVariable
+      push '+4Z+['
+      callMethod
+      dup
+      not
+      branchIfTrue label304
+      pop
+      push 0, '}-VbH'
+      getVariable
+      push '9UeAW'
+      callMethod
+      not
+     label304:
+      not
+      branchIfTrue label307
+      push r:2, 0, '}-VbH'
+      getVariable
+      push '4mok0'
+      callMethod
+      not
+      branchIfTrue label305
+      push 'A vous de jouer , $me !'
+      branch label306
+     label305:
+      push 'Tour de votre adversaire : $other'
+     label306:
+      add
+      setRegister r:2
+      pop
+     label307:
+      push r:2, '</p>'
+      add
+      setRegister r:2
+      pop
+      push r:2, 1, '}-VbH'
+      getVariable
+      push '+*[ W'
+      callMethod
+      pop
+    end // of function 
+
+    setMember
+    push r:1, ']eyEY'
+    function2 () (r:1='this')
+      push r:this, '031zE'
+      getMember
+      setRegister r:2
+      pop
+      push ']', r:2, '4AF'
+      getMember
+      push ']'
+      getMember
+      push '=', r:2, '4AF'
+      getMember
+      push '='
+      getMember
+      push ')', r:2, '4AF'
+      getMember
+      push ')'
+      getMember
+      push '5', r:2, '4AF'
+      getMember
+      push '5'
+      getMember
+      push '}[R4,(', 0, r:2, '}C]J ('
+      callMethod
+      push 5
+      initObject
+      setRegister r:3
+      pop
+      push r:this, '24LA-'
+      getMember
+      push ']'
+      getMember
+      not
+      branchIfTrue label308
+      push r:3, ']', TRUE
+      setMember
+     label308:
+      push r:this, '24LA-'
+      getMember
+      push '='
+      getMember
+      not
+      branchIfTrue label309
+      push r:3, '=', TRUE
+      setMember
+     label309:
+      push r:this, '24LA-'
+      getMember
+      push ')'
+      getMember
+      not
+      branchIfTrue label310
+      push r:3, ')', TRUE
+      setMember
+     label310:
+      push r:this, '24LA-'
+      getMember
+      push '5'
+      getMember
+      not
+      branchIfTrue label311
+      push r:3, '5', TRUE
+      setMember
+     label311:
+      push r:3, ']'
+      getMember
+      dup
+      not
+      branchIfTrue label312
+      pop
+      push r:3, '='
+      getMember
+      dup
+      not
+      branchIfTrue label312
+      pop
+      push r:3, '5'
+      getMember
+      dup
+      not
+      branchIfTrue label312
+      pop
+      push r:3, ')'
+      getMember
+     label312:
+      not
+      branchIfTrue label314
+      push r:this, '21zZJ('
+      getMember
+      not
+      branchIfTrue label313
+      push r:this, '23ri)(', r:this, '23ri)('
+      getMember
+      push r:3, '}[R4,('
+      getMember
+      add
+      setMember
+      branch label314
+     label313:
+      push r:this, '=yTeD', r:this, '=yTeD'
+      getMember
+      push r:3, '}[R4,('
+      getMember
+      add
+      setMember
+     label314:
+    end // of function 
+
+    setMember
+    push r:1, '4[K{k'
+    function2 (r:2='') (r:1='this')
+      push 0, r:this, '}StDC'
+      getMember
+      push 'removeMovieClip'
+      callMethod
+      pop
+      push 0, r:this, '2{cEC'
+      getMember
+      push 'removeMovieClip'
+      callMethod
+      pop
+      push 0, r:this, ';hbMC'
+      getMember
+      push 'removeMovieClip'
+      callMethod
+      pop
+      push 0, r:this, '=zw9C'
+      getMember
+      push 'removeMovieClip'
+      callMethod
+      pop
+      push 0, r:this, '*HfMs'
+      getMember
+      push 'removeMovieClip'
+      callMethod
+      pop
+      push r:2, 1, '}-VbH'
+      getVariable
+      push '4[K{k'
+      callMethod
+      pop
+    end // of function 
+
+    setMember
+    push r:1, '3Usn['
+    function2 (r:2='', r:3='', r:4='') (r:1='this')
+      push r:4, ']'
+      getMember
+      not
+      branchIfTrue label317
+      push r:this, ';AH0'
+      getMember
+      push r:2
+      getMember
+      push r:3, 1
+      subtract
+      getMember
+      setRegister r:5
+      pop
+      push r:5, '4AF'
+      getMember
+      push ')'
+      getMember
+      not
+      not
+      branchIfTrue label316
+      push r:5, '4AF'
+      getMember
+      push ']'
+      getMember
+      dup
+      not
+      branchIfTrue label315
+      pop
+      push r:5, '4AF'
+      getMember
+      push '5'
+      getMember
+      dup
+      not
+      branchIfTrue label315
+      pop
+      push r:5, '4AF'
+      getMember
+      push '='
+      getMember
+     label315:
+      not
+      branchIfTrue label316
+      push TRUE
+      return
+     label316:
+      push FALSE
+      return
+     label317:
+      push r:4, '5'
+      getMember
+      not
+      branchIfTrue label320
+      push r:this, ';AH0'
+      getMember
+      push r:2, 1
+      subtract
+      getMember
+      push r:3
+      getMember
+      setRegister r:5
+      pop
+      push r:5, '4AF'
+      getMember
+      push '='
+      getMember
+      not
+      not
+      branchIfTrue label319
+      push r:5, '4AF'
+      getMember
+      push ']'
+      getMember
+      dup
+      not
+      branchIfTrue label318
+      pop
+      push r:5, '4AF'
+      getMember
+      push ')'
+      getMember
+      dup
+      not
+      branchIfTrue label318
+      pop
+      push r:5, '4AF'
+      getMember
+      push '5'
+      getMember
+     label318:
+      not
+      branchIfTrue label319
+      push TRUE
+      return
+     label319:
+      push FALSE
+      return
+     label320:
+      push r:4, '='
+      getMember
+      not
+      branchIfTrue label323
+      push r:this, ';AH0'
+      getMember
+      push r:2, 1
+      add
+      getMember
+      push r:3
+      getMember
+      setRegister r:5
+      pop
+      push r:5, '4AF'
+      getMember
+      push '5'
+      getMember
+      not
+      not
+      branchIfTrue label322
+      push r:5, '4AF'
+      getMember
+      push '='
+      getMember
+      dup
+      not
+      branchIfTrue label321
+      pop
+      push r:5, '4AF'
+      getMember
+      push ')'
+      getMember
+      dup
+      not
+      branchIfTrue label321
+      pop
+      push r:5, '4AF'
+      getMember
+      push ']'
+      getMember
+     label321:
+      not
+      branchIfTrue label322
+      push TRUE
+      return
+     label322:
+      push FALSE
+      return
+     label323:
+      push r:4, ')'
+      getMember
+      not
+      branchIfTrue label326
+      push r:this, ';AH0'
+      getMember
+      push r:2
+      getMember
+      push r:3, 1
+      add
+      getMember
+      setRegister r:5
+      pop
+      push r:5, '4AF'
+      getMember
+      push ']'
+      getMember
+      not
+      not
+      branchIfTrue label325
+      push r:5, '4AF'
+      getMember
+      push '='
+      getMember
+      dup
+      not
+      branchIfTrue label324
+      pop
+      push r:5, '4AF'
+      getMember
+      push ')'
+      getMember
+      dup
+      not
+      branchIfTrue label324
+      pop
+      push r:5, '4AF'
+      getMember
+      push '5'
+      getMember
+     label324:
+      not
+      branchIfTrue label325
+      push TRUE
+      return
+     label325:
+      push FALSE
+      return
+     label326:
+      push FALSE
+      return
+    end // of function 
+
+    setMember
+    push r:1, '-*Nt4('
+    function2 (r:2='', r:3='') (r:1='this')
+      push r:2, '4AF'
+      getMember
+      push ']'
+      getMember
+      not
+      dup
+      not
+      branchIfTrue label327
+      pop
+      push r:3, ']'
+      getMember
+      not
+     label327:
+      not
+      branchIfTrue label328
+      push FALSE
+      return
+     label328:
+      push r:2, '4AF'
+      getMember
+      push ')'
+      getMember
+      not
+      dup
+      not
+      branchIfTrue label329
+      pop
+      push r:3, ')'
+      getMember
+      not
+     label329:
+      not
+      branchIfTrue label330
+      push FALSE
+      return
+     label330:
+      push r:2, '4AF'
+      getMember
+      push '='
+      getMember
+      not
+      dup
+      not
+      branchIfTrue label331
+      pop
+      push r:3, '='
+      getMember
+      not
+     label331:
+      not
+      branchIfTrue label332
+      push FALSE
+      return
+     label332:
+      push r:2, '4AF'
+      getMember
+      push '5'
+      getMember
+      not
+      dup
+      not
+      branchIfTrue label333
+      pop
+      push r:3, '5'
+      getMember
+      not
+     label333:
+      not
+      branchIfTrue label334
+      push FALSE
+      return
+     label334:
+      push TRUE
+      return
+    end // of function 
+
+    setMember
+    push '4+=I'
+    function2 () (r:1='this', r:2='super')
+    end // of function 
+
+    setRegister r:0
+    setVariable
+    push r:0, '__name__', '4+=I', 1
+    initArray
+    setMember
+    push r:0, 'prototype'
+    getMember
+    setRegister r:1
+    pop
+    push r:1, '__class__', r:0
+    setMember
+    push r:1, '}J', NULL
+    setMember
+    push r:1, '7iP=3', NULL
+    setMember
+    push r:1, ',0Kly', NULL
+    setMember
+    push r:1, 'play', NULL
+    setMember
+    push ',WWC+('
+    function2 (r:2='', r:3='') (r:1='this')
+      push r:this, '}J', r:2
+      setMember
+      push r:this, '}J'
+      getMember
+      push '_visible', TRUE
+      setMember
+      push r:3, 1, r:this, '}J'
+      getMember
+      push 'gotoAndStop'
+      callMethod
+      pop
+      push r:this, '7-,', 0
+      setMember
+    end // of function 
+
+    setRegister r:0
+    setVariable
+    push r:0, '__name__', ',WWC+(', 1
+    initArray
+    setMember
+    push r:0, '__interfaces__', '4+=I'
+    getVariable
+    push 1
+    initArray
+    setMember
+    push '4+=I'
+    getVariable
+    push 1, r:0
+    implements
+    push r:0, 'prototype'
+    getMember
+    setRegister r:1
+    pop
+    push r:1, '__class__', r:0
+    setMember
+    push r:1, '7-,', NULL
+    setMember
+    push r:1, '}J', NULL
+    setMember
+    push r:1, '7iP=3', NULL
+    setMember
+    push r:1, ',0Kly', NULL
+    setMember
+    push r:1, 'play'
+    function2 () (r:1='this')
+      push '9K'
+      getVariable
+      push '{-kxL'
+      getMember
+      push '-V;B'
+      getMember
+      setRegister r:2
+      pop
+      push r:this, '7-,', r:this, '7-,'
+      getMember
+      push r:2
+      add
+      setMember
+      push r:this, '7-,'
+      getMember
+      push 1, '3Wt'
+      getVariable
+      push '9n6'
+      callMethod
+      push 1, r:this, '}J'
+      getMember
+      push 'smc'
+      getMember
+      push 'gotoAndStop'
+      callMethod
+      pop
+      push r:this, '7-,'
+      getMember
+      push r:this, '}J'
+      getMember
+      push 2, r:this, ',0Kly'
+      callMethod
+      pop
+      push r:this, '7-,'
+      getMember
+      push r:this, '}J'
+      getMember
+      push 'smc'
+      getMember
+      push '_totalframes'
+      getMember
+      push 1
+      subtract
+      lessThan
+      not
+      not
+      branchIfTrue label335
+      push r:this, '}J'
+      getMember
+      push '_visible', FALSE
+      setMember
+      push TRUE
+      return
+     label335:
+      push FALSE
+      return
+    end // of function 
+
+    setMember
+    push '[8X6+'
+    getVariable
+    push '7]AJ'
+    getMember
+    setRegister r:0
+    pop
+    push 'this'
+    getVariable
+    push 1, r:0, '__init'
+    callMethod
+    pop
+    push r:0, '__res', 0
+    initObject
+    setMember
+    try r:0
+      push '[8X6+'
+      getVariable
+      push 'MovieClip', '_global'
+      getVariable
+      push 'MovieClip'
+      getMember
+      setMember
+      push '[8X6+'
+      getVariable
+      push 'TextField', '_global'
+      getVariable
+      push 'TextField'
+      getMember
+      setMember
+      push '[8X6+'
+      getVariable
+      push 'text'
+      getMember
+      push 'StyleSheet', '_global'
+      getVariable
+      push 'TextField'
+      getMember
+      push 'StyleSheet'
+      getMember
+      setMember
+      push '__eval'
+      function2 (r:2='') (r:1='this')
+        push r:2
+        getVariable
+        return
+      end // of function 
+
+      setVariable
+      push '[8X6+'
+      getVariable
+      push 'TextFormat', '_global'
+      getVariable
+      push 'TextFormat'
+      getMember
+      setMember
+      push '[8X6+'
+      getVariable
+      push 'Stage', '_global'
+      getVariable
+      push 'Stage'
+      getMember
+      setMember
+      push '[8X6+'
+      getVariable
+      push 'TextSnapshot', '_global'
+      getVariable
+      push 'TextSnapshot'
+      getMember
+      setMember
+      push '[8X6+'
+      getVariable
+      push 'Mouse', '_global'
+      getVariable
+      push 'Mouse'
+      getMember
+      setMember
+      push '[8X6+'
+      getVariable
+      push 'Mouse'
+      getMember
+      push 1, '[8X6+'
+      getVariable
+      push 'Mouse'
+      getMember
+      push 'addListener'
+      callMethod
+      pop
+      push '=(,aA'
+      getVariable
+      push '[YyD-(', 6
+      setMember
+      push '=(,aA'
+      getVariable
+      push '2QF=}', 25
+      setMember
+      push '=(,aA'
+      getVariable
+      push '{HRP1', '=(,aA'
+      getVariable
+      push '[YyD-('
+      getMember
+      push '=(,aA'
+      getVariable
+      push '[YyD-('
+      getMember
+      multiply
+      push 1
+      subtract
+      setMember
+      push '=(,aA'
+      getVariable
+      push '[MqDO', 300
+      setMember
+      push '=(,aA'
+      getVariable
+      push '5oMNO', 12
+      setMember
+      push '=(,aA'
+      getVariable
+      push '{6KbC', 6
+      setMember
+      push '=(,aA'
+      getVariable
+      push '4bqds', 40
+      setMember
+      push '=(,aA'
+      getVariable
+      push '4MvcB', 0
+      setMember
+      push '=(,aA'
+      getVariable
+      push '8gjh4', 1
+      setMember
+      push '=(,aA'
+      getVariable
+      push '5 fLh', 2
+      setMember
+      push '=(,aA'
+      getVariable
+      push '1TsWo', 3
+      setMember
+      push '=(,aA'
+      getVariable
+      push '=SfXp', 4
+      setMember
+      push '=(,aA'
+      getVariable
+      push '+2+bb', 5
+      setMember
+      push '=(,aA'
+      getVariable
+      push ',KBLC', 6
+      setMember
+      push '=(,aA'
+      getVariable
+      push '{c;;4(', TRUE
+      setMember
+      push '=(,aA'
+      getVariable
+      push '}A)SZ', 16108323
+      setMember
+      push '=(,aA'
+      getVariable
+      push '{A)SZ', 13003825
+      setMember
+      push ' D(1'
+      getVariable
+      push '{-kxL'
+      getMember
+      push '-_d +', 0, 'Array'
+      new
+      setMember
+      branch label336
+    catch
+      push r:0, 1, '[8X6+'
+      getVariable
+      push '7]AJ'
+      getMember
+      push '__exc'
+      callMethod
+      pop
+     label336:
+    end // of try
+  end // of frame 0
+end

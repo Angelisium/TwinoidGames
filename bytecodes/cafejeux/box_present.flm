@@ -1,0 +1,4283 @@
+movie 'box_present.swf' compressed // flash 8, total frames: 16, frame rate: 40 fps, 230x200 px
+
+
+  defineMovieClip 2 // total frames: 1
+  end // of defineMovieClip 2
+  
+  exportAssets
+    2 as 'mcHole'
+  end // of exportAssets
+
+  defineMovieClip 3 // total frames: 1
+  end // of defineMovieClip 3
+  
+  exportAssets
+    3 as 'empty'
+  end // of exportAssets
+
+  defineMovieClip 5 // total frames: 1
+  end // of defineMovieClip 5
+  
+  exportAssets
+    5 as 'partDirt'
+  end // of exportAssets
+
+  defineMovieClip 7 // total frames: 1
+  end // of defineMovieClip 7
+  
+  exportAssets
+    7 as 'mcTache'
+  end // of exportAssets
+
+  frame 0
+    constants 'b', '_xscale', 'getBytesLoaded', 'getBytesTotal', 'bar'  
+    push 'b'
+    getVariable
+    push '_xscale', 100, 0.0, 'getBytesLoaded'
+    callFunction
+    multiply
+    push 0.0, 'getBytesTotal'
+    callFunction
+    divide
+    setMember
+    ifFrameLoaded 15
+      gotoLabel 'init'
+      play
+    end // of ifFrameLoaded 15
+
+    push 'bar'
+    getVariable
+    push '_xscale', 0.0, 'getBytesLoaded'
+    callFunction
+    push 0.0, 'getBytesTotal'
+    callFunction
+    divide
+    push 100
+    multiply
+    setMember
+  end // of frame 0
+
+  defineMovieClip 10 // total frames: 1
+  end // of defineMovieClip 10
+
+  frame 1
+    push '', 4
+    getProperty
+    push 1
+    subtract
+    gotoAndPlay
+  end // of frame 1
+
+  defineMovieClip 15 // total frames: 1
+  end // of defineMovieClip 15
+
+  defineMovieClip 16 // total frames: 1
+  end // of defineMovieClip 16
+  
+  exportAssets
+    16 as 'base4'
+  end // of exportAssets
+
+  defineMovieClip 20 // total frames: 1
+  end // of defineMovieClip 20
+
+  defineMovieClip 21 // total frames: 1
+  end // of defineMovieClip 21
+
+  defineMovieClip 23 // total frames: 30
+
+    frame 29
+      gotoFrame 0
+      play
+    end // of frame 29
+  end // of defineMovieClip 23
+
+  defineMovieClip 25 // total frames: 1
+  end // of defineMovieClip 25
+
+  defineMovieClip 26 // total frames: 4
+  end // of defineMovieClip 26
+
+  defineMovieClip 30 // total frames: 4
+  end // of defineMovieClip 30
+  
+  exportAssets
+    30 as 'mcMagmaxElement'
+  end // of exportAssets
+
+  defineMovieClip 32 // total frames: 1
+  end // of defineMovieClip 32
+  
+  exportAssets
+    32 as 'partGoutte'
+  end // of exportAssets
+
+  defineMovieClip 33 // total frames: 1
+  end // of defineMovieClip 33
+  
+  exportAssets
+    33 as 'mcRound'
+  end // of exportAssets
+
+  defineMovieClip 35 // total frames: 1
+  end // of defineMovieClip 35
+  
+  exportAssets
+    35 as 'mcCadre'
+  end // of exportAssets
+
+  defineMovieClip 37 // total frames: 1
+  end // of defineMovieClip 37
+  
+  exportAssets
+    37 as 'base5'
+  end // of exportAssets
+
+  defineMovieClip 44 // total frames: 5
+  end // of defineMovieClip 44
+
+  defineMovieClip 60 // total frames: 16
+  end // of defineMovieClip 60
+
+  defineMovieClip 68 // total frames: 16
+  end // of defineMovieClip 68
+  
+  exportAssets
+    68 as 'mcExpSquare'
+  end // of exportAssets
+
+  defineMovieClip 71 // total frames: 1
+  end // of defineMovieClip 71
+
+  defineMovieClip 72 // total frames: 11
+
+    frame 10
+      push ''
+      removeClip
+    end // of frame 10
+  end // of defineMovieClip 72
+  
+  exportAssets
+    72 as 'mcTwinkle'
+  end // of exportAssets
+
+  defineMovieClip 74 // total frames: 1
+  end // of defineMovieClip 74
+  
+  exportAssets
+    74 as 'base6'
+  end // of exportAssets
+
+  defineMovieClip 76 // total frames: 1
+  end // of defineMovieClip 76
+
+  defineMovieClip 77 // total frames: 1
+  end // of defineMovieClip 77
+  
+  exportAssets
+    77 as 'mcMap'
+  end // of exportAssets
+
+  defineMovieClip 79 // total frames: 1
+  end // of defineMovieClip 79
+  
+  exportAssets
+    79 as 'mcPod'
+  end // of exportAssets
+
+  defineMovieClip 81 // total frames: 1
+  end // of defineMovieClip 81
+
+  defineMovieClip 82 // total frames: 1
+  end // of defineMovieClip 82
+  
+  exportAssets
+    82 as 'mcWeapon'
+  end // of exportAssets
+
+  defineMovieClip 84 // total frames: 1
+  end // of defineMovieClip 84
+
+  defineMovieClip 85 // total frames: 1
+  end // of defineMovieClip 85
+  
+  exportAssets
+    85 as 'mcCosmo'
+  end // of exportAssets
+
+  defineMovieClip 87 // total frames: 1
+  end // of defineMovieClip 87
+  
+  exportAssets
+    87 as 'mcCross'
+  end // of exportAssets
+
+  defineMovieClip 89 // total frames: 1
+  end // of defineMovieClip 89
+  
+  exportAssets
+    89 as 'mcShot'
+  end // of exportAssets
+
+  defineMovieClip 96 // total frames: 7
+
+    frame 6
+      push ''
+      removeClip
+    end // of frame 6
+  end // of defineMovieClip 96
+  
+  exportAssets
+    96 as 'mcSphereBlink'
+  end // of exportAssets
+
+  defineMovieClip 98 // total frames: 1
+  end // of defineMovieClip 98
+  
+  exportAssets
+    98 as 'mcBaseMask'
+  end // of exportAssets
+
+  frame 13
+    constants 'onPress', 'leave', 'snum', 'initStep', 'mcCadre', 'attachMovie', 'url', '_self', 'step', 'initFader', 'base', 'depth', 'timer', 'pList', 'initMagmax', 'initExpanz', 'initWorms', 'fader', 'mask', 'glow', 'setMask', 'updateTitle', 'updateCafe', 'updateBoisson', 'updateTransition', 'updateMagmax', 'updateExpanz', 'updateWorms', 'shake', 'Math', 'abs', '_y', 'updatePhys', 'updateFader', 'updateScope', 'decor', 'cs', 'MAGMAX_CS', 'mx', 'my', 'elements', 'anims', 'animIndex', 'mcGround', 'empty', 'getMc', 'blendMode', 'layer', '_alpha', 'i', 'MAGMAX_SG', 'length', 'mcMagmaxElement', 'getPhys', 'x', 'getX', 'y', 'getY', 'type', 'gotoAndStop', 'side', 'smc', 'bhl', 'push', 'setSloganUp', 'removeSlogans', 'MAGMAX_MSG', 'launchNextAnim', 'updateAnims', 'mc', 'c', 'sx', 'sy', 'ex', 'DIR', 'ey', 'mis', '_x', 'd', 'trg', 'sortElements', 'min', 'splice', 'mcTache', 'setScale', 'random', 'updatePos', 'fadeType', 'removeMovieClip', 'explodeBlob', 'sort', 'swapDepths', 'partGoutte', 'cos', 'sin', 'z', 'vx', 'vy', 'vz', 'wz', 'EXPANZ_CS', 'grid', 'mcExpSquare', '_xscale', '_yscale', 'stop', 'cid', 'EXPANZ_COLOR', 'setColor', 'blobs', 'bl', 'bmp', 'mch', 'mcw', 'flash', 'display', 'BitmapData', 'attachBitmap', 'filters', 'DropShadowFilter', 'distance', 'blurX', 'blurY', 'color', 'strength', 'clone', 'inner', 'knockout', 'id', 'displayBlob', 'current', 'transfo', 'expandBlob', 'willDisplay', 'n', 'mcTwinkle', 'size', '_visible', 'pow', 'geom', 'Matrix', 'scale', 'translate', 'draw', 'initMap', 'worms', 'mcMap', 'mcCosmo', '_rotation', 'focus', 'mcCross', 'angle', 'angleTrg', 'sstep', 'mcBg', 'mcMap2', 'mcMapMask', 'mcBaseMask', 'scope', 'hMod', 'mm', 'head', 'weapon', 'fire', 'mcSmoke', 'vr', 'frictRot', 'alpha', 'add', 'atan2', 'getPixel32', 'boum', 'updateMap', 'tx', 'ty', 'mcShot', 'weight', 'mcRound', 'erase', 'sqrt', 'speed', 'mcSphereBlink', 'partDirt', 'frict', 'createEmptyMovieClip', 'mcMask', 'rounds', 'lastBase', 'mcBmp', 'PQ', 'inc', 'ColorTransform', 'rectangle', 'colorTransform', 'BlurFilter', 'Point', 'applyFilter', 'scroll', 'bh', 'decal', 'vdec', 'ecart', 'maxTimer', 'removePhys', 'duplicate', 'movePhys', 'a', 'r', 'g', 'b', 'depthList', 'initPhys', 'colFrict', 'removeFromList', 'Array', 'max', 'Color', 'ra', 'ga', 'ba', 'aa', 'rb', 'gb', 'bb', 'ab', 'setTransform', 'GlowFilter', 'init'  
+    function2 init () (r:1='_root')
+      push r:_root, 'onPress', 'leave'
+      getVariable
+      setMember
+      push 'snum', 0.0
+      setVariable
+      push 4, 1, 'initStep'
+      callFunction
+      pop
+      push 156, 'mcCadre', 'mcCadre', 3, 'attachMovie'
+      callFunction
+      pop
+    end // of function init
+
+    function2 leave () (r:1='_root')
+      push r:_root, 'url'
+      getMember
+      push '_self'
+      getURL2
+    end // of function leave
+
+    function2 initStep (r:2='n', r:1='fadeType') ()
+      push 'step', r:n
+      setVariable
+      push r:fadeType, 1, 'initFader'
+      callFunction
+      pop
+      push 1, 'base', 'base', 'step'
+      getVariable
+      add
+      push 3, 'attachMovie'
+      callFunction
+      pop
+      push 'base'
+      getVariable
+      push 'depth', 0.0
+      setMember
+      push 'base'
+      getVariable
+      push 'timer', 0.0
+      setMember
+      push 'base'
+      getVariable
+      push 'pList', 0.0
+      initArray
+      setMember
+      push 'step'
+      getVariable
+      setRegister r:0
+      push 4
+      strictEquals
+      branchIfTrue label1
+      push r:0, 5
+      strictEquals
+      branchIfTrue label2
+      push r:0, 6
+      strictEquals
+      branchIfTrue label3
+      branch label4
+     label1:
+      push 0.0, 'initMagmax'
+      callFunction
+      pop
+      branch label4
+     label2:
+      push 0.0, 'initExpanz'
+      callFunction
+      pop
+      branch label4
+     label3:
+      push 0.0, 'initWorms'
+      callFunction
+      pop
+      branch label4
+     label4:
+      push 'fader'
+      getVariable
+      push NULL
+      equals
+      not
+      not
+      branchIfTrue label5
+      push 16777215, 5, 50, 'fader'
+      getVariable
+      push 'mask'
+      getMember
+      push 4, 'glow'
+      callFunction
+      pop
+      push 'fader'
+      getVariable
+      push 'mask'
+      getMember
+      push 1, 'base'
+      getVariable
+      push 'setMask'
+      callMethod
+      pop
+     label5:
+    end // of function initStep
+
+    function main ()
+      push 'base'
+      getVariable
+      push 'timer', 'base'
+      getVariable
+      push 'timer'
+      getMember
+      increment
+      setMember
+      push 'step'
+      getVariable
+      setRegister r:0
+      push 0.0
+      strictEquals
+      branchIfTrue label6
+      push r:0, 1
+      strictEquals
+      branchIfTrue label7
+      push r:0, 2
+      strictEquals
+      branchIfTrue label8
+      push r:0, 3
+      strictEquals
+      branchIfTrue label9
+      push r:0, 4
+      strictEquals
+      branchIfTrue label10
+      push r:0, 5
+      strictEquals
+      branchIfTrue label11
+      push r:0, 6
+      strictEquals
+      branchIfTrue label12
+      branch label13
+     label6:
+      push 0.0, 'updateTitle'
+      callFunction
+      pop
+      branch label13
+     label7:
+      push 0.0, 'updateCafe'
+      callFunction
+      pop
+      branch label13
+     label8:
+      push 0.0, 'updateBoisson'
+      callFunction
+      pop
+      branch label13
+     label9:
+      push 0.0, 'updateTransition'
+      callFunction
+      pop
+      branch label13
+     label10:
+      push 0.0, 'updateMagmax'
+      callFunction
+      pop
+      branch label13
+     label11:
+      push 0.0, 'updateExpanz'
+      callFunction
+      pop
+      branch label13
+     label12:
+      push 0.0, 'updateWorms'
+      callFunction
+      pop
+      branch label13
+     label13:
+      push 'shake'
+      getVariable
+      push NULL
+      equals
+      not
+      not
+      branchIfTrue label15
+      push 'shake', 'shake'
+      getVariable
+      push -0.6
+      multiply
+      setVariable
+      push 'shake'
+      getVariable
+      push 1, 'Math'
+      getVariable
+      push 'abs'
+      callMethod
+      push 1
+      lessThan
+      not
+      branchIfTrue label14
+      push 'shake', 0.0
+      setVariable
+     label14:
+      push 'base'
+      getVariable
+      push '_y', 'shake'
+      getVariable
+      setMember
+      push 'shake'
+      getVariable
+      push 0.0
+      equals
+      not
+      branchIfTrue label15
+      push 'shake', NULL
+      setVariable
+     label15:
+      push 0.0, 'updatePhys'
+      callFunction
+      pop
+      push 0.0, 'updateFader'
+      callFunction
+      pop
+      push 0.0, 'updateScope'
+      callFunction
+      pop
+    end // of function main
+
+    function2 initMagmax () ()
+      push 'base'
+      getVariable
+      push 'decor'
+      getMember
+      push 'depth', 0.0
+      setMember
+      push 'cs', 'MAGMAX_CS'
+      getVariable
+      setVariable
+      push 'mx', 36
+      setVariable
+      push 'my', 0.0
+      setVariable
+      push 'elements', 0.0
+      initArray
+      setVariable
+      push 'anims', 0.0
+      initArray
+      setVariable
+      push 'animIndex', 0.0
+      setVariable
+      push 'mcGround', 'base'
+      getVariable
+      push 'decor'
+      getMember
+      push 'empty', 2, 'getMc'
+      callFunction
+      setVariable
+      push 'mcGround'
+      getVariable
+      push 'depth', 0.0
+      setMember
+      push 'mcGround'
+      getVariable
+      push 'blendMode', 'layer'
+      setMember
+      push 'mcGround'
+      getVariable
+      push '_alpha', 30
+      setMember
+      push 'i', 0.0
+      setVariable
+     label16:
+      push 'i'
+      getVariable
+      push 'MAGMAX_SG'
+      getVariable
+      push 'length'
+      getMember
+      lessThan
+      not
+      branchIfTrue label17
+      push 'MAGMAX_SG'
+      getVariable
+      push 'i'
+      getVariable
+      getMember
+      setRegister r:2
+      pop
+      push 'base'
+      getVariable
+      push 'decor'
+      getMember
+      push 'mcMagmaxElement', 2, 'getPhys'
+      callFunction
+      setRegister r:1
+      pop
+      push r:1, 'x', r:2, 'x'
+      getMember
+      push 1, 'getX'
+      callFunction
+      setMember
+      push r:1, 'y', r:2, 'y'
+      getMember
+      push 1, 'getY'
+      callFunction
+      setMember
+      push r:2, 'type'
+      getMember
+      push 1
+      add
+      push 1, r:1, 'gotoAndStop'
+      callMethod
+      pop
+      push r:2, 'side'
+      getMember
+      push 1
+      add
+      push 1, r:1, 'smc'
+      getMember
+      push 'gotoAndStop'
+      callMethod
+      pop
+      push r:1, 'bhl', 1, 1
+      initArray
+      setMember
+      push r:1, 'type', r:2, 'type'
+      getMember
+      setMember
+      push r:1, 1, 'elements'
+      getVariable
+      push 'push'
+      callMethod
+      pop
+      push 'i', 'i'
+      getVariable
+      increment
+      setVariable
+      branch label16
+     label17:
+    end // of function initMagmax
+
+    function updateMagmax ()
+      push 'base'
+      getVariable
+      push 'timer'
+      getMember
+      push 5
+      equals
+      not
+      branchIfTrue label18
+      push 3, 1, 'setSloganUp'
+      callFunction
+      pop
+     label18:
+      push 'base'
+      getVariable
+      push 'timer'
+      getMember
+      push 90
+      equals
+      not
+      branchIfTrue label19
+      push 0.0, 'removeSlogans'
+      callFunction
+      pop
+     label19:
+      push 'base'
+      getVariable
+      push 'timer'
+      getMember
+      push 100
+      equals
+      not
+      branchIfTrue label20
+      push 0.0, 5, 2, 'initStep'
+      callFunction
+      pop
+     label20:
+      push 'anims'
+      getVariable
+      push 'length'
+      getMember
+      push 0.0
+      equals
+      not
+      branchIfTrue label21
+      push 'animIndex'
+      getVariable
+      push 'MAGMAX_MSG'
+      getVariable
+      push 'length'
+      getMember
+      lessThan
+      not
+      branchIfTrue label21
+      push 0.0, 'launchNextAnim'
+      callFunction
+      pop
+     label21:
+      push 0.0, 'updateAnims'
+      callFunction
+      pop
+    end // of function updateMagmax
+
+    function2 launchNextAnim () ()
+      push 'MAGMAX_MSG'
+      getVariable
+      push 'animIndex'
+      getVariable
+      getMember
+      setRegister r:1
+      pop
+      push r:1, 1
+      getMember
+      setRegister r:3
+      pop
+      push 'i', 0.0
+      setVariable
+     label22:
+      push 'i'
+      getVariable
+      push r:3, 'length'
+      getMember
+      lessThan
+      not
+      branchIfTrue label26
+      push 'elements'
+      getVariable
+      push r:3, 'i'
+      getVariable
+      getMember
+      getMember
+      setRegister r:5
+      pop
+      push r:1, 0.0
+      getMember
+      setRegister r:0
+      push 0.0
+      strictEquals
+      branchIfTrue label23
+      push r:0, 1
+      strictEquals
+      branchIfTrue label24
+      branch label25
+     label23:
+      push 'type', 0.0, 'mc', r:5, 'c', 0.0, 'sx', r:5, 'x'
+      getMember
+      push 'sy', r:5, 'y'
+      getMember
+      push 'ex', r:5, 'x'
+      getMember
+      push 'DIR'
+      getVariable
+      push r:1, 2
+      getMember
+      getMember
+      push 0.0
+      getMember
+      push 'cs'
+      getVariable
+      multiply
+      add
+      push 'ey', r:5, 'y'
+      getMember
+      push 'DIR'
+      getVariable
+      push r:1, 2
+      getMember
+      getMember
+      push 1
+      getMember
+      push 'cs'
+      getVariable
+      multiply
+      add
+      push 7
+      initObject
+      setRegister r:2
+      pop
+      push r:2, 1, 'anims'
+      getVariable
+      push 'push'
+      callMethod
+      pop
+      push r:1, 2
+      getMember
+      push 1
+      add
+      push 1, r:5, 'smc'
+      getMember
+      push 'gotoAndStop'
+      callMethod
+      pop
+      branch label25
+     label24:
+      push 'mis', 'base'
+      getVariable
+      push 'decor'
+      getMember
+      push 'mcMagmaxElement', 2, 'getMc'
+      callFunction
+      setVariable
+      push 'DIR'
+      getVariable
+      push r:1, 2
+      getMember
+      getMember
+      setRegister r:6
+      pop
+      push 'mis'
+      getVariable
+      push '_x', r:5, 'x'
+      getMember
+      push r:6, 0.0
+      getMember
+      push 'cs'
+      getVariable
+      multiply
+      push 0.5
+      multiply
+      add
+      setMember
+      push 'mis'
+      getVariable
+      push '_y', r:5, 'y'
+      getMember
+      push r:6, 1
+      getMember
+      push 'cs'
+      getVariable
+      multiply
+      push 0.5
+      multiply
+      add
+      setMember
+      push 4, 1, 'mis'
+      getVariable
+      push 'gotoAndStop'
+      callMethod
+      pop
+      push 'type', 1, 'mc', 'mis'
+      getVariable
+      push 'd', r:6, 'trg', 'elements'
+      getVariable
+      push r:1, 3
+      getMember
+      getMember
+      push 4
+      initObject
+      setRegister r:2
+      pop
+      push r:2, 1, 'anims'
+      getVariable
+      push 'push'
+      callMethod
+      pop
+      branch label25
+     label25:
+      push 'i', 'i'
+      getVariable
+      increment
+      setVariable
+      branch label22
+     label26:
+      push 0.0, 'sortElements'
+      callFunction
+      pop
+      push 'animIndex', 'animIndex'
+      getVariable
+      increment
+      setVariable
+    end // of function launchNextAnim
+
+    function2 updateAnims () ()
+      push 'i', 0.0
+      setVariable
+     label27:
+      push 'i'
+      getVariable
+      push 'anims'
+      getVariable
+      push 'length'
+      getMember
+      lessThan
+      not
+      branchIfTrue label34
+      push 'anims'
+      getVariable
+      push 'i'
+      getVariable
+      getMember
+      setRegister r:1
+      pop
+      push r:1, 'type'
+      getMember
+      setRegister r:0
+      push 0.0
+      strictEquals
+      branchIfTrue label28
+      push r:0, 1
+      strictEquals
+      branchIfTrue label30
+      branch label33
+     label28:
+      push r:1, 'c', 1, r:1, 'c'
+      getMember
+      push 0.15
+      add
+      push 2, 'Math'
+      getVariable
+      push 'min'
+      callMethod
+      setMember
+      push r:1, 'mc'
+      getMember
+      push 'x', r:1, 'sx'
+      getMember
+      push 1, r:1, 'c'
+      getMember
+      subtract
+      multiply
+      push r:1, 'ex'
+      getMember
+      push r:1, 'c'
+      getMember
+      multiply
+      add
+      setMember
+      push r:1, 'mc'
+      getMember
+      push 'y', r:1, 'sy'
+      getMember
+      push 1, r:1, 'c'
+      getMember
+      subtract
+      multiply
+      push r:1, 'ey'
+      getMember
+      push r:1, 'c'
+      getMember
+      multiply
+      add
+      setMember
+      push r:1, 'c'
+      getMember
+      push 1
+      equals
+      not
+      branchIfTrue label29
+      push 1, 'i'
+      getVariable
+      push 'i', 'i'
+      getVariable
+      decrement
+      setVariable
+      push 2, 'anims'
+      getVariable
+      push 'splice'
+      callMethod
+      pop
+     label29:
+      push 'mcGround'
+      getVariable
+      push 'mcTache', 2, 'getPhys'
+      callFunction
+      setRegister r:2
+      pop
+      push 20, 30
+      random
+      add
+      push r:2, 2, 'setScale'
+      callFunction
+      pop
+      push r:2, 'x', r:1, 'mc'
+      getMember
+      push 'x'
+      getMember
+      push 0.0, 'Math'
+      getVariable
+      push 'random'
+      callMethod
+      push 2
+      multiply
+      push 1
+      subtract
+      push 4
+      multiply
+      add
+      setMember
+      push r:2, 'y', r:1, 'mc'
+      getMember
+      push 'y'
+      getMember
+      push 0.0, 'Math'
+      getVariable
+      push 'random'
+      callMethod
+      push 2
+      multiply
+      push 1
+      subtract
+      push 4
+      multiply
+      add
+      setMember
+      push r:2, 'cs', 1.01
+      setMember
+      push r:2, 'bhl', 2, 1
+      initArray
+      setMember
+      push r:2, 'timer', 10, 40
+      random
+      add
+      setMember
+      push 0.0, r:2, 'updatePos'
+      callMethod
+      pop
+      push r:2, 'fadeType', 0.0
+      setMember
+      branch label33
+     label30:
+      push 8
+      setRegister r:3
+      pop
+      push r:1, 'mc'
+      getMember
+      push '_x', r:1, 'mc'
+      getMember
+      push '_x'
+      getMember
+      push r:1, 'd'
+      getMember
+      push 0.0
+      getMember
+      push r:3
+      multiply
+      add
+      setMember
+      push r:1, 'mc'
+      getMember
+      push '_y', r:1, 'mc'
+      getMember
+      push '_y'
+      getMember
+      push r:1, 'd'
+      getMember
+      push 1
+      getMember
+      push r:3
+      multiply
+      add
+      setMember
+      push r:1, 'mc'
+      getMember
+      push '_x'
+      getMember
+      push r:1, 'trg'
+      getMember
+      push '_x'
+      getMember
+      subtract
+      setRegister r:5
+      pop
+      push r:1, 'mc'
+      getMember
+      push '_y'
+      getMember
+      push r:1, 'trg'
+      getMember
+      push '_y'
+      getMember
+      subtract
+      setRegister r:4
+      pop
+      push r:5, 1, 'Math'
+      getVariable
+      push 'abs'
+      callMethod
+      push 5
+      lessThan
+      dup
+      not
+      branchIfTrue label31
+      pop
+      push r:4, 1, 'Math'
+      getVariable
+      push 'abs'
+      callMethod
+      push 5
+      lessThan
+     label31:
+      not
+      branchIfTrue label32
+      push 0.0, r:1, 'mc'
+      getMember
+      push 'removeMovieClip'
+      callMethod
+      pop
+      push r:1, 'trg'
+      getMember
+      push 1, 'explodeBlob'
+      callFunction
+      pop
+      push 1, 'i'
+      getVariable
+      push 'i', 'i'
+      getVariable
+      decrement
+      setVariable
+      push 2, 'anims'
+      getVariable
+      push 'splice'
+      callMethod
+      pop
+     label32:
+      branch label33
+     label33:
+      push 'i', 'i'
+      getVariable
+      increment
+      setVariable
+      branch label27
+     label34:
+    end // of function updateAnims
+
+    function2 sortElements () ()
+      push 0.0
+      initArray
+      setRegister r:2
+      pop
+      push 0.0
+      setRegister r:1
+      pop
+     label35:
+      push r:1, 'elements'
+      getVariable
+      push 'length'
+      getMember
+      lessThan
+      not
+      branchIfTrue label36
+      push 'elements'
+      getVariable
+      push r:1
+      getMember
+      push 1, r:2, 'push'
+      callMethod
+      pop
+      push r:1
+      increment
+      setRegister r:1
+      pop
+      branch label35
+     label36:
+      function2 (r:2='a', r:1='b') ()
+        push r:a, 'y'
+        getMember
+        push r:a, 'type'
+        getMember
+        subtract
+        push r:b, 'y'
+        getMember
+        push r:b, 'type'
+        getMember
+        subtract
+        greaterThan
+        not
+        branchIfTrue label37
+        push 1
+        return
+       label37:
+        push -1
+        return
+      end // of function 
+
+      setRegister r:4
+      pop
+      push r:4, 1, r:2, 'sort'
+      callMethod
+      pop
+      push 0.0
+      setRegister r:1
+      pop
+     label38:
+      push r:1, r:2, 'length'
+      getMember
+      lessThan
+      not
+      branchIfTrue label39
+      push 'base'
+      getVariable
+      push 'decor'
+      getMember
+      push 'depth', 'base'
+      getVariable
+      push 'decor'
+      getMember
+      push 'depth'
+      getMember
+      increment
+      setMember
+      push r:2, r:1
+      getMember
+      setRegister r:3
+      pop
+      push 'base'
+      getVariable
+      push 'decor'
+      getMember
+      push 'depth'
+      getMember
+      push 1, r:3, 'swapDepths'
+      callMethod
+      pop
+      push r:1
+      increment
+      setRegister r:1
+      pop
+      branch label38
+     label39:
+    end // of function sortElements
+
+    function2 explodeBlob (r:9='blob') ()
+      push 32
+      setRegister r:7
+      pop
+      push 6000
+      setRegister r:10
+      pop
+      push 4
+      setRegister r:8
+      pop
+      push 0.0
+      setRegister r:3
+      pop
+     label40:
+      push r:3, r:7
+      lessThan
+      not
+      branchIfTrue label41
+      push 'partGoutte', 1, 'getPhys'
+      callFunction
+      setRegister r:1
+      pop
+      push r:3, 0.0, 'Math'
+      getVariable
+      push 'random'
+      callMethod
+      add
+      push r:7
+      divide
+      push 6.28
+      multiply
+      setRegister r:4
+      pop
+      push r:4, 1, 'Math'
+      getVariable
+      push 'cos'
+      callMethod
+      setRegister r:6
+      pop
+      push r:4, 1, 'Math'
+      getVariable
+      push 'sin'
+      callMethod
+      setRegister r:5
+      pop
+      push 0.0, 'Math'
+      getVariable
+      push 'random'
+      callMethod
+      push 2
+      multiply
+      setRegister r:2
+      pop
+      push r:1, 'x', r:blob, 'x'
+      getMember
+      push r:6, 6, r:8, r:2
+      multiply
+      add
+      multiply
+      add
+      setMember
+      push r:1, 'y', r:blob, 'y'
+      getMember
+      push r:5, 6, r:8, r:2
+      multiply
+      add
+      multiply
+      add
+      setMember
+      push r:1, 'z', 0.0
+      setMember
+      push r:1, 'vx', r:6, r:2
+      multiply
+      setMember
+      push r:1, 'vy', r:5, r:2
+      multiply
+      setMember
+      push r:1, 'vz', 0.0, 0.0, 'Math'
+      getVariable
+      push 'random'
+      callMethod
+      subtract
+      push 5
+      multiply
+      setMember
+      push r:1, 'wz', 0.1, 0.0, 'Math'
+      getVariable
+      push 'random'
+      callMethod
+      push 0.1
+      multiply
+      add
+      setMember
+      push r:1, 'timer', 10, 0.0, 'Math'
+      getVariable
+      push 'random'
+      callMethod
+      push 30
+      multiply
+      add
+      setMember
+      push r:1, 'bhl', 1, 1
+      initArray
+      setMember
+      push 0.0, r:1, 'updatePos'
+      callMethod
+      pop
+      push r:3
+      increment
+      setRegister r:3
+      pop
+      branch label40
+     label41:
+      push 0.0, r:blob, 'removeMovieClip'
+      callMethod
+      pop
+    end // of function explodeBlob
+
+    function2 initExpanz () ()
+      push 'cs', 'EXPANZ_CS'
+      getVariable
+      setVariable
+      push 'mx', 0.0
+      setVariable
+      push 'my', 0.0
+      setVariable
+      push 'cs'
+      getVariable
+      push 30
+      divide
+      push 100
+      multiply
+      setRegister r:3
+      pop
+      push 'grid', 0.0
+      initArray
+      setVariable
+      push 'x', 0.0
+      setVariable
+     label42:
+      push 'x'
+      getVariable
+      push 12
+      lessThan
+      not
+      branchIfTrue label45
+      push 'grid'
+      getVariable
+      push 'x'
+      getVariable
+      push 0.0
+      initArray
+      setMember
+      push 'y', 0.0
+      setVariable
+     label43:
+      push 'y'
+      getVariable
+      push 10
+      lessThan
+      not
+      branchIfTrue label44
+      push 'mcExpSquare', 1, 'getMc'
+      callFunction
+      setRegister r:4
+      pop
+      push r:4, '_xscale', r:4, '_yscale', r:3
+      setRegister r:0
+      setMember
+      push r:0
+      setMember
+      push r:4, '_x', 'x'
+      getVariable
+      push 1, 'getX'
+      callFunction
+      setMember
+      push r:4, '_y', 'y'
+      getVariable
+      push 1, 'getY'
+      callFunction
+      setMember
+      push 'grid'
+      getVariable
+      push 'x'
+      getVariable
+      getMember
+      push 'y'
+      getVariable
+      push r:4
+      setMember
+      push 0.0, r:4, 'stop'
+      callMethod
+      pop
+      push 0.0, r:4, 'smc'
+      getMember
+      push 'stop'
+      callMethod
+      pop
+      push r:4, 'cid', 5
+      random
+      setMember
+      push r:4, 'cid'
+      getMember
+      push 1
+      add
+      push 1, r:4, 'smc'
+      getMember
+      push 'smc'
+      getMember
+      push 'gotoAndStop'
+      callMethod
+      pop
+      push 'EXPANZ_COLOR'
+      getVariable
+      push r:4, 'cid'
+      getMember
+      getMember
+      push r:4, 'smc'
+      getMember
+      push 2, 'setColor'
+      callFunction
+      pop
+      push 'y', 'y'
+      getVariable
+      increment
+      setVariable
+      branch label43
+     label44:
+      push 'x', 'x'
+      getVariable
+      increment
+      setVariable
+      branch label42
+     label45:
+      push 'blobs', 0.0
+      initArray
+      setVariable
+      push 'i', 0.0
+      setVariable
+     label46:
+      push 'i'
+      getVariable
+      push 2
+      lessThan
+      not
+      branchIfTrue label47
+      push 'bl', 'cid', 5
+      random
+      push 'bmp', 0.0, TRUE, 'mch'
+      getVariable
+      push 'mcw'
+      getVariable
+      push 4, 'flash'
+      getVariable
+      push 'display'
+      getMember
+      push 'BitmapData'
+      newMethod
+      push 'mc', 'empty', 1, 'getMc'
+      callFunction
+      push 3
+      initObject
+      setVariable
+      push 'bl'
+      getVariable
+      push 1, 'blobs'
+      getVariable
+      push 'push'
+      callMethod
+      pop
+      push 0.0, 'bl'
+      getVariable
+      push 'bmp'
+      getMember
+      push 2, 'bl'
+      getVariable
+      push 'mc'
+      getMember
+      push 'attachBitmap'
+      callMethod
+      pop
+      push 0.0, 'flash'
+      getVariable
+      push 'filters'
+      getMember
+      push 'DropShadowFilter'
+      newMethod
+      setRegister r:1
+      pop
+      push r:1, 'distance', 0.0
+      setMember
+      push r:1, 'blurX', 8
+      setMember
+      push r:1, 'blurY', 8
+      setMember
+      push r:1, 'color', 16777215
+      setMember
+      push r:1, 'strength', 2
+      setMember
+      push 0.0, r:1, 'clone'
+      callMethod
+      setRegister r:2
+      pop
+      push r:2, 'inner', TRUE
+      setMember
+      push r:1, 'strength', 1.5
+      setMember
+      push r:1, 'blurX', r:1, 'blurY', 12
+      setRegister r:0
+      setMember
+      push r:0
+      setMember
+      push r:2, 'knockout', TRUE
+      setMember
+      push 'bl'
+      getVariable
+      push 'mc'
+      getMember
+      push 'filters', r:1, r:2, 2
+      initArray
+      setMember
+      push 'i', 'i'
+      getVariable
+      increment
+      setVariable
+      branch label46
+     label47:
+      push 'grid'
+      getVariable
+      push 4
+      getMember
+      push 4
+      getMember
+      push 'id', 0.0
+      setMember
+      push 'grid'
+      getVariable
+      push 3
+      getMember
+      push 4
+      getMember
+      push 'id', 0.0
+      setMember
+      push 'grid'
+      getVariable
+      push 3
+      getMember
+      push 5
+      getMember
+      push 'id', 0.0
+      setMember
+      push 'grid'
+      getVariable
+      push 7
+      getMember
+      push 4
+      getMember
+      push 'id', 1
+      setMember
+      push 'grid'
+      getVariable
+      push 7
+      getMember
+      push 3
+      getMember
+      push 'id', 1
+      setMember
+      push 'grid'
+      getVariable
+      push 6
+      getMember
+      push 4
+      getMember
+      push 'id', 1
+      setMember
+      push 'grid'
+      getVariable
+      push 6
+      getMember
+      push 5
+      getMember
+      push 'id', 1
+      setMember
+      push 0.0, 1, 'displayBlob'
+      callFunction
+      pop
+      push 1, 1, 'displayBlob'
+      callFunction
+      pop
+      push 'current', 0.0
+      setVariable
+      push 'transfo', 0.0
+      setVariable
+    end // of function initExpanz
+
+    function2 updateExpanz () ()
+      push 'base'
+      getVariable
+      push 'timer'
+      getMember
+      push 5
+      equals
+      dup
+      not
+      branchIfTrue label48
+      pop
+      push 'transfo'
+      getVariable
+      push 0.0
+      equals
+     label48:
+      not
+      branchIfTrue label49
+      push 4, 1, 'setSloganUp'
+      callFunction
+      pop
+     label49:
+      push 'transfo'
+      getVariable
+      push 10
+      equals
+      not
+      branchIfTrue label50
+      push 0.0, 'removeSlogans'
+      callFunction
+      pop
+     label50:
+      push 'base'
+      getVariable
+      push 'timer'
+      getMember
+      push 6
+      equals
+      not
+      branchIfTrue label51
+      push 'current'
+      getVariable
+      push 1, 'displayBlob'
+      callFunction
+      pop
+      push 'current', 'current'
+      getVariable
+      push 1
+      add
+      push 2
+      modulo
+      setVariable
+     label51:
+      push 'base'
+      getVariable
+      push 'timer'
+      getMember
+      push 8
+      equals
+      not
+      branchIfTrue label55
+      push 0.0
+      setRegister r:1
+      pop
+     label52:
+      push 'current'
+      getVariable
+      push 1, 'expandBlob'
+      callFunction
+      not
+      dup
+      not
+      branchIfTrue label53
+      pop
+      push r:1, r:1
+      increment
+      setRegister r:1
+      pop
+      push 5
+      lessThan
+     label53:
+      not
+      branchIfTrue label54
+      branch label52
+     label54:
+      push 'willDisplay', 6
+      setVariable
+      push 'base'
+      getVariable
+      push 'timer', 0.0
+      setMember
+      push 'transfo', 'transfo'
+      getVariable
+      increment
+      setVariable
+     label55:
+      push 'transfo'
+      getVariable
+      push 11
+      greaterThan
+      not
+      branchIfTrue label56
+      push 0.0, 6, 2, 'initStep'
+      callFunction
+      pop
+     label56:
+    end // of function updateExpanz
+
+    function2 expandBlob (r:10='id') ()
+      push 'blobs'
+      getVariable
+      push r:id
+      getMember
+      setRegister r:9
+      pop
+      push 0.0
+      initArray
+      setRegister r:7
+      pop
+      push 'i', 0.0
+      setVariable
+     label57:
+      push 'i'
+      getVariable
+      push 5
+      lessThan
+      not
+      branchIfTrue label58
+      push r:7, 'i'
+      getVariable
+      push 'i'
+      getVariable
+      setMember
+      push 'i', 'i'
+      getVariable
+      increment
+      setVariable
+      branch label57
+     label58:
+      push 'i', 0.0
+      setVariable
+     label59:
+      push 'i'
+      getVariable
+      push 2
+      lessThan
+      not
+      branchIfTrue label60
+      push r:7, 'blobs'
+      getVariable
+      push 'i'
+      getVariable
+      getMember
+      push 'cid'
+      getMember
+      push NULL
+      setMember
+      push 'i', 'i'
+      getVariable
+      increment
+      setVariable
+      branch label59
+     label60:
+      push 'i', 0.0
+      setVariable
+     label61:
+      push 'i'
+      getVariable
+      push r:7, 'length'
+      getMember
+      lessThan
+      not
+      branchIfTrue label63
+      push r:7, 'i'
+      getVariable
+      getMember
+      push NULL
+      equals
+      not
+      branchIfTrue label62
+      push 1, 'i'
+      getVariable
+      push 'i', 'i'
+      getVariable
+      decrement
+      setVariable
+      push 2, r:7, 'splice'
+      callMethod
+      pop
+     label62:
+      push 'i', 'i'
+      getVariable
+      increment
+      setVariable
+      branch label61
+     label63:
+      push r:9, 'cid', r:7, r:7, 'length'
+      getMember
+      random
+      getMember
+      setMember
+      push r:id, 1, 'displayBlob'
+      callFunction
+      pop
+      push 0.0
+      initArray
+      setRegister r:8
+      pop
+      push 'x', 0.0
+      setVariable
+     label64:
+      push 'x'
+      getVariable
+      push 12
+      lessThan
+      not
+      branchIfTrue label71
+      push 'y', 0.0
+      setVariable
+     label65:
+      push 'y'
+      getVariable
+      push 10
+      lessThan
+      not
+      branchIfTrue label70
+      push 'grid'
+      getVariable
+      push 'x'
+      getVariable
+      getMember
+      push 'y'
+      getVariable
+      getMember
+      setRegister r:5
+      pop
+      push r:5, 'id'
+      getMember
+      push r:id
+      equals
+      not
+      branchIfTrue label69
+      push 'n', 0.0
+      setVariable
+     label66:
+      push 'n'
+      getVariable
+      push 'DIR'
+      getVariable
+      push 'length'
+      getMember
+      lessThan
+      not
+      branchIfTrue label69
+      push 'DIR'
+      getVariable
+      push 'n'
+      getVariable
+      getMember
+      setRegister r:1
+      pop
+      push 'x'
+      getVariable
+      push r:1, 0.0
+      getMember
+      add
+      setRegister r:4
+      pop
+      push 'y'
+      getVariable
+      push r:1, 1
+      getMember
+      add
+      setRegister r:2
+      pop
+      push 'grid'
+      getVariable
+      push r:4
+      getMember
+      push r:2
+      getMember
+      setRegister r:3
+      pop
+      push r:3, 'cid'
+      getMember
+      push r:9, 'cid'
+      getMember
+      equals
+      dup
+      not
+      branchIfTrue label67
+      pop
+      push r:3, 'id'
+      getMember
+      push NULL
+      equals
+     label67:
+      not
+      branchIfTrue label68
+      push r:2, r:4, 2
+      initArray
+      push 1, r:8, 'push'
+      callMethod
+      pop
+     label68:
+      push 'n', 'n'
+      getVariable
+      increment
+      setVariable
+      branch label66
+     label69:
+      push 'y', 'y'
+      getVariable
+      increment
+      setVariable
+      branch label65
+     label70:
+      push 'x', 'x'
+      getVariable
+      increment
+      setVariable
+      branch label64
+     label71:
+      push r:8, 'length'
+      getMember
+      push 0.0
+      equals
+      not
+      branchIfTrue label72
+      push FALSE
+      return
+     label72:
+      push 'i', 0.0
+      setVariable
+     label73:
+      push 'i'
+      getVariable
+      push r:8, 'length'
+      getMember
+      lessThan
+      not
+      branchIfTrue label74
+      push r:8, 'i'
+      getVariable
+      getMember
+      setRegister r:6
+      pop
+      push 'grid'
+      getVariable
+      push r:6, 0.0
+      getMember
+      getMember
+      push r:6, 1
+      getMember
+      getMember
+      push 'id', r:id
+      setMember
+      push 'mcTwinkle', 1, 'getMc'
+      callFunction
+      setRegister r:5
+      pop
+      push r:5, '_x', r:6, 0.0
+      getMember
+      push 1, 'getX'
+      callFunction
+      setMember
+      push r:5, '_y', r:6, 1
+      getMember
+      push 1, 'getY'
+      callFunction
+      setMember
+      push r:5, '_xscale', r:5, '_xscale', 20, 'size'
+      getVariable
+      divide
+      push 100
+      multiply
+      setRegister r:0
+      setMember
+      push r:0
+      setMember
+      push 'i', 'i'
+      getVariable
+      increment
+      setVariable
+      branch label73
+     label74:
+      push TRUE
+      return
+    end // of function expandBlob
+
+    function2 displayBlob (r:8='id') ()
+      push 'blobs'
+      getVariable
+      push r:id
+      getMember
+      setRegister r:9
+      pop
+      push 'x', 0.0
+      setVariable
+     label75:
+      push 'x'
+      getVariable
+      push 12
+      lessThan
+      not
+      branchIfTrue label82
+      push 'y', 0.0
+      setVariable
+     label76:
+      push 'y'
+      getVariable
+      push 10
+      lessThan
+      not
+      branchIfTrue label81
+      push 'grid'
+      getVariable
+      push 'x'
+      getVariable
+      getMember
+      push 'y'
+      getVariable
+      getMember
+      setRegister r:1
+      pop
+      push r:1, 'id'
+      getMember
+      push r:id
+      equals
+      not
+      branchIfTrue label80
+      push r:1, 'smc'
+      getMember
+      push 'smc'
+      getMember
+      push '_visible', FALSE
+      setMember
+      push 1
+      setRegister r:3
+      pop
+      push 'n', 0.0
+      setVariable
+     label77:
+      push 'n'
+      getVariable
+      push 'DIR'
+      getVariable
+      push 'length'
+      getMember
+      lessThan
+      not
+      branchIfTrue label79
+      push 'DIR'
+      getVariable
+      push 'n'
+      getVariable
+      getMember
+      setRegister r:2
+      pop
+      push 'grid'
+      getVariable
+      push 'x'
+      getVariable
+      push r:2, 0.0
+      getMember
+      add
+      getMember
+      push 'y'
+      getVariable
+      push r:2, 1
+      getMember
+      add
+      getMember
+      setRegister r:5
+      pop
+      push 'n'
+      getVariable
+      push 1
+      add
+      push 4
+      modulo
+      setRegister r:6
+      pop
+      push r:5, 'id'
+      getMember
+      push r:id
+      equals
+      not
+      branchIfTrue label78
+      push r:3, r:6, 2, 2, 'Math'
+      getVariable
+      push 'pow'
+      callMethod
+      add
+      setRegister r:3
+      pop
+     label78:
+      push 'n', 'n'
+      getVariable
+      increment
+      setVariable
+      branch label77
+     label79:
+      push r:3, 1, r:1, 'gotoAndStop'
+      callMethod
+      pop
+      push r:3, 1, r:1, 'smc'
+      getMember
+      push 'gotoAndStop'
+      callMethod
+      pop
+      push -200, 'EXPANZ_COLOR'
+      getVariable
+      push r:9, 'cid'
+      getMember
+      getMember
+      push r:1, 'smc'
+      getMember
+      push 3, 'setColor'
+      callFunction
+      pop
+      push 0.0, 'flash'
+      getVariable
+      push 'geom'
+      getMember
+      push 'Matrix'
+      newMethod
+      setRegister r:4
+      pop
+      push r:1, '_xscale'
+      getMember
+      push 0.01
+      multiply
+      setRegister r:7
+      pop
+      push r:7, r:7, 2, r:4, 'scale'
+      callMethod
+      pop
+      push r:1, '_y'
+      getMember
+      push r:1, '_x'
+      getMember
+      push 2, r:4, 'translate'
+      callMethod
+      pop
+      push r:4, r:1, 2, r:9, 'bmp'
+      getMember
+      push 'draw'
+      callMethod
+      pop
+     label80:
+      push 'y', 'y'
+      getVariable
+      increment
+      setVariable
+      branch label76
+     label81:
+      push 'x', 'x'
+      getVariable
+      increment
+      setVariable
+      branch label75
+     label82:
+    end // of function displayBlob
+
+    function2 initWorms () ()
+      push 0.0, 'initMap'
+      callFunction
+      pop
+      push 0.0, -1, 113, 658, 4
+      initArray
+      push 0.0, -1, 130, 587, 4
+      initArray
+      push -30, -1, 178, 502, 4
+      initArray
+      push 0.0, 1, 62, 124, 4
+      initArray
+      push 4
+      initArray
+      setRegister r:3
+      pop
+      push 'worms', 0.0
+      initArray
+      setVariable
+      push 'i', 0.0
+      setVariable
+     label83:
+      push 'i'
+      getVariable
+      push r:3, 'length'
+      getMember
+      lessThan
+      not
+      branchIfTrue label85
+      push r:3, 'i'
+      getVariable
+      getMember
+      setRegister r:2
+      pop
+      push 'mcMap'
+      getVariable
+      push 'mcCosmo', 2, 'getPhys'
+      callFunction
+      setRegister r:1
+      pop
+      push r:1, 'x', r:2, 0.0
+      getMember
+      setMember
+      push r:1, 'y', r:2, 1
+      getMember
+      setMember
+      push 'z'
+      getVariable
+      pop
+      push r:1, '_xscale', 100, r:2, 2
+      getMember
+      multiply
+      setMember
+      push r:1, '_rotation', r:2, 3
+      getMember
+      setMember
+      push r:1, 1, 'worms'
+      getVariable
+      push 'push'
+      callMethod
+      pop
+      push 'i'
+      getVariable
+      push 0.0
+      equals
+      not
+      branchIfTrue label84
+      push 'focus', r:1
+      setVariable
+     label84:
+      push 'i', 'i'
+      getVariable
+      increment
+      setVariable
+      branch label83
+     label85:
+      push 0.0, 4, 2, 'mcMap'
+      getVariable
+      push 4, 'glow'
+      callFunction
+      pop
+      push 'mcCross', 'mcMap'
+      getVariable
+      push 'mcCross', 2, 'getMc'
+      callFunction
+      setVariable
+      push 'angle', 0.0
+      setVariable
+      push 'angleTrg', -0.6
+      setVariable
+      push 'sstep', 0.0
+      setVariable
+    end // of function initWorms
+
+    function2 initMap () ()
+      push 'mcBg', 'empty', 1, 'getMc'
+      callFunction
+      setVariable
+      push 'mcMap', 'empty', 1, 'getMc'
+      callFunction
+      setVariable
+      push 'mcMap2', 'empty', 1, 'getMc'
+      callFunction
+      setVariable
+      push 'mcBg'
+      getVariable
+      push 'depth', 10
+      setMember
+      push 'mcMap'
+      getVariable
+      push 'depth', 10
+      setMember
+      push 'mcMap2'
+      getVariable
+      push 'depth', 10
+      setMember
+      push 'mcMap'
+      getVariable
+      push 'bmp', 0.0, TRUE, 600, 1000, 4, 'flash'
+      getVariable
+      push 'display'
+      getMember
+      push 'BitmapData'
+      newMethod
+      setMember
+      push 5, 'mcMap'
+      getVariable
+      push 'bmp'
+      getMember
+      push 2, 'mcMap'
+      getVariable
+      push 'attachBitmap'
+      callMethod
+      pop
+      push 'mcMap', 1, 'getMc'
+      callFunction
+      setRegister r:1
+      pop
+      push 0.0, 'flash'
+      getVariable
+      push 'geom'
+      getMember
+      push 'Matrix'
+      newMethod
+      push r:1, 2, 'mcMap'
+      getVariable
+      push 'bmp'
+      getMember
+      push 'draw'
+      callMethod
+      pop
+      push 0.0, r:1, 'removeMovieClip'
+      callMethod
+      pop
+      push 'mcMapMask', 'mcBaseMask', 1, 'getMc'
+      callFunction
+      setVariable
+      push 'mcMapMask'
+      getVariable
+      push 1, 'mcMap'
+      getVariable
+      push 'setMask'
+      callMethod
+      pop
+      push 'i', 0.0
+      setVariable
+     label86:
+      push 'i'
+      getVariable
+      push 50
+      lessThan
+      not
+      branchIfTrue label87
+      push 'i', 'i'
+      getVariable
+      increment
+      setVariable
+      branch label86
+     label87:
+    end // of function initMap
+
+    function2 updateWorms () ()
+      push 'base'
+      getVariable
+      push 'timer'
+      getMember
+      push 5
+      equals
+      not
+      branchIfTrue label88
+      push 5, 1, 'setSloganUp'
+      callFunction
+      pop
+     label88:
+      push 'base'
+      getVariable
+      push 'timer'
+      getMember
+      push 105
+      equals
+      not
+      branchIfTrue label89
+      push 0.0, 'removeSlogans'
+      callFunction
+      pop
+     label89:
+      push 'base'
+      getVariable
+      push 'timer'
+      getMember
+      push 115
+      equals
+      not
+      branchIfTrue label91
+      push 0.0
+      setRegister r:4
+      pop
+      push 'scope'
+      getVariable
+      push '_visible'
+      getMember
+      not
+      not
+      branchIfTrue label90
+      push 4
+      setRegister r:4
+      pop
+     label90:
+      push 0.0, r:4, 2, 'initStep'
+      callFunction
+      pop
+     label91:
+      push 'sstep'
+      getVariable
+      setRegister r:0
+      push 0.0
+      strictEquals
+      branchIfTrue label92
+      push r:0, 1
+      strictEquals
+      branchIfTrue label96
+      branch label98
+     label92:
+      push 3.14, 'angleTrg'
+      getVariable
+      push 'angle'
+      getVariable
+      subtract
+      push 2, 'hMod'
+      callFunction
+      setRegister r:7
+      pop
+      push 1
+      setRegister r:5
+      pop
+      push 'angle', 'angle'
+      getVariable
+      push r:5, r:7, 0.1
+      multiply
+      push 0.0, r:5
+      subtract
+      push 3, 'mm'
+      callFunction
+      add
+      setVariable
+      push 'angle'
+      getVariable
+      push 0.0174
+      divide
+      setRegister r:3
+      pop
+      push 'focus'
+      getVariable
+      push 'head'
+      getMember
+      push '_rotation', r:3
+      setMember
+      push 'focus'
+      getVariable
+      push 'weapon'
+      getMember
+      push '_rotation', 'focus'
+      getVariable
+      push 'weapon'
+      getMember
+      push '_rotation'
+      getMember
+      push r:3, 'focus'
+      getVariable
+      push 'weapon'
+      getMember
+      push '_rotation'
+      getMember
+      subtract
+      push 0.15
+      multiply
+      add
+      setMember
+      push 'base'
+      getVariable
+      push 'timer'
+      getMember
+      push 10
+      equals
+      not
+      branchIfTrue label93
+      push 'angleTrg', 'angleTrg'
+      getVariable
+      push 0.3
+      add
+      setVariable
+     label93:
+      push 'base'
+      getVariable
+      push 'timer'
+      getMember
+      push 35
+      equals
+      not
+      branchIfTrue label94
+      push 'angleTrg', 'angleTrg'
+      getVariable
+      push 0.2
+      subtract
+      setVariable
+     label94:
+      push 'base'
+      getVariable
+      push 'timer'
+      getMember
+      push 50
+      equals
+      not
+      branchIfTrue label95
+      push 10, 1, 'fire'
+      callFunction
+      pop
+     label95:
+      push 50
+      setRegister r:6
+      pop
+      push 'mcCross'
+      getVariable
+      push '_x', 'focus'
+      getVariable
+      push 'x'
+      getMember
+      push 'angle'
+      getVariable
+      push 1, 'Math'
+      getVariable
+      push 'cos'
+      callMethod
+      push r:6
+      multiply
+      add
+      setMember
+      push 'mcCross'
+      getVariable
+      push '_y', 'focus'
+      getVariable
+      push 'y'
+      getMember
+      push 'angle'
+      getVariable
+      push 1, 'Math'
+      getVariable
+      push 'sin'
+      callMethod
+      push r:6
+      multiply
+      add
+      setMember
+      branch label98
+     label96:
+      push 0.1
+      setRegister r:2
+      pop
+      push 'mcMap2'
+      getVariable
+      push 'mcSmoke', 2, 'getPhys'
+      callFunction
+      setRegister r:1
+      pop
+      push r:1, 'x', 'mis'
+      getVariable
+      push 'x'
+      getMember
+      push 'mis'
+      getVariable
+      push 'vx'
+      getMember
+      subtract
+      setMember
+      push r:1, 'y', 'mis'
+      getVariable
+      push 'y'
+      getMember
+      push 'mis'
+      getVariable
+      push 'vy'
+      getMember
+      subtract
+      setMember
+      push r:1, 'vx', 'mis'
+      getVariable
+      push 'vx'
+      getMember
+      push r:2
+      multiply
+      setMember
+      push r:1, 'vy', 'mis'
+      getVariable
+      push 'vy'
+      getMember
+      push r:2
+      multiply
+      setMember
+      push r:1, 'vr', 0.0, 'Math'
+      getVariable
+      push 'random'
+      callMethod
+      push 2
+      multiply
+      push 1
+      subtract
+      push 20
+      multiply
+      setMember
+      push r:1, 'frictRot', 0.9
+      setMember
+      push r:1, 'fadeType', 0.0
+      setMember
+      push r:1, 'scale', r:1, '_xscale', r:1, '_yscale', 20, 0.0, 'Math'
+      getVariable
+      push 'random'
+      callMethod
+      push 20
+      multiply
+      add
+      setRegister r:0
+      setMember
+      push r:0
+      setRegister r:0
+      setMember
+      push r:0
+      setMember
+      push r:1, 'alpha', r:1, '_alpha', 60
+      setRegister r:0
+      setMember
+      push r:0
+      setMember
+      push r:1, 'timer', 10, 0.0, 'Math'
+      getVariable
+      push 'random'
+      callMethod
+      push 10
+      multiply
+      add
+      setMember
+      push r:1, 'blendMode', 'add'
+      setMember
+      push 'mis'
+      getVariable
+      push '_rotation', 'mis'
+      getVariable
+      push 'vx'
+      getMember
+      push 'mis'
+      getVariable
+      push 'vy'
+      getMember
+      push 2, 'Math'
+      getVariable
+      push 'atan2'
+      callMethod
+      push 0.0174
+      divide
+      setMember
+      push 'mis'
+      getVariable
+      push 'y'
+      getMember
+      int
+      push 'mis'
+      getVariable
+      push 'x'
+      getMember
+      int
+      push 2, 'mcMap'
+      getVariable
+      push 'bmp'
+      getMember
+      push 'getPixel32'
+      callMethod
+      push 0.0
+      equals
+      not
+      not
+      branchIfTrue label97
+      push 0.0, 'boum'
+      callFunction
+      pop
+     label97:
+      branch label98
+     label98:
+      push 0.0, 'updateMap'
+      callFunction
+      pop
+    end // of function updateWorms
+
+    function updateMap ()
+      push 'tx', 'mcw'
+      getVariable
+      push 0.5
+      multiply
+      push 'focus'
+      getVariable
+      push 'x'
+      getMember
+      subtract
+      setVariable
+      push 'ty', 'mcw'
+      getVariable
+      push 0.5
+      multiply
+      push 'focus'
+      getVariable
+      push 'y'
+      getMember
+      push 10
+      add
+      subtract
+      setVariable
+      push 'mcMap'
+      getVariable
+      push '_x', 'mcMap'
+      getVariable
+      push '_x'
+      getMember
+      push 'tx'
+      getVariable
+      push 'mcMap'
+      getVariable
+      push '_x'
+      getMember
+      subtract
+      push 0.5
+      multiply
+      add
+      setMember
+      push 'mcMap'
+      getVariable
+      push '_y', 'mcMap'
+      getVariable
+      push '_y'
+      getMember
+      push 'ty'
+      getVariable
+      push 'mcMap'
+      getVariable
+      push '_y'
+      getMember
+      subtract
+      push 0.5
+      multiply
+      add
+      setMember
+      push 'mcMap2'
+      getVariable
+      push '_x', 'mcMap'
+      getVariable
+      push '_x'
+      getMember
+      setMember
+      push 'mcMap2'
+      getVariable
+      push '_y', 'mcMap'
+      getVariable
+      push '_y'
+      getMember
+      setMember
+    end // of function updateMap
+
+    function2 fire (r:1='power') ()
+      push 0.0, 'mcCross'
+      getVariable
+      push 'removeMovieClip'
+      callMethod
+      pop
+      push 'sstep', 1
+      setVariable
+      push 'mis', 'mcMap'
+      getVariable
+      push 'mcShot', 2, 'getPhys'
+      callFunction
+      setVariable
+      push 'mis'
+      getVariable
+      push 'x', 'focus'
+      getVariable
+      push 'x'
+      getMember
+      push 6
+      add
+      setMember
+      push 'mis'
+      getVariable
+      push 'y', 'focus'
+      getVariable
+      push 'y'
+      getMember
+      push 6
+      subtract
+      setMember
+      push 'mis'
+      getVariable
+      push '_rotation', 'angle'
+      getVariable
+      push 0.0174
+      divide
+      setMember
+      push 'mis'
+      getVariable
+      push 'vx', 'angle'
+      getVariable
+      push 1, 'Math'
+      getVariable
+      push 'cos'
+      callMethod
+      push r:power
+      multiply
+      setMember
+      push 'mis'
+      getVariable
+      push 'vy', 'angle'
+      getVariable
+      push 1, 'Math'
+      getVariable
+      push 'sin'
+      callMethod
+      push r:power
+      multiply
+      setMember
+      push 'mis'
+      getVariable
+      push 'weight', 0.25
+      setMember
+      push 0.0, 'mis'
+      getVariable
+      push 'updatePos'
+      callMethod
+      pop
+      push 'focus', 'mis'
+      getVariable
+      setVariable
+    end // of function fire
+
+    function2 boum () ()
+      push 'mcRound', 1, 'getMc'
+      callFunction
+      setRegister r:10
+      pop
+      push 0.0, 'flash'
+      getVariable
+      push 'geom'
+      getMember
+      push 'Matrix'
+      newMethod
+      setRegister r:11
+      pop
+      push 'mis'
+      getVariable
+      push 'y'
+      getMember
+      push 'mis'
+      getVariable
+      push 'x'
+      getMember
+      push 2, r:11, 'translate'
+      callMethod
+      pop
+      push 'erase', NULL, r:11, r:10, 4, 'mcMap'
+      getVariable
+      push 'bmp'
+      getMember
+      push 'draw'
+      callMethod
+      pop
+      push 0.0, r:10, 'removeMovieClip'
+      callMethod
+      pop
+      push 'i', 0.0
+      setVariable
+     label99:
+      push 'i'
+      getVariable
+      push 'worms'
+      getVariable
+      push 'length'
+      getMember
+      lessThan
+      not
+      branchIfTrue label101
+      push 'worms'
+      getVariable
+      push 'i'
+      getVariable
+      getMember
+      setRegister r:10
+      pop
+      push r:10, 'x'
+      getMember
+      push 'mis'
+      getVariable
+      push 'x'
+      getMember
+      subtract
+      setRegister r:4
+      pop
+      push r:10, 'y'
+      getMember
+      push 'mis'
+      getVariable
+      push 'y'
+      getMember
+      subtract
+      setRegister r:3
+      pop
+      push r:4, r:4
+      multiply
+      push r:3, r:3
+      multiply
+      add
+      push 1, 'Math'
+      getVariable
+      push 'sqrt'
+      callMethod
+      setRegister r:8
+      pop
+      push r:8, 60
+      lessThan
+      not
+      branchIfTrue label100
+      push 'speed', 10
+      setVariable
+      push r:4, r:3, 2, 'Math'
+      getVariable
+      push 'atan2'
+      callMethod
+      setRegister r:5
+      pop
+      push r:10, 'vx', r:5, 1, 'Math'
+      getVariable
+      push 'cos'
+      callMethod
+      push 'speed'
+      getVariable
+      multiply
+      setMember
+      push r:10, 'vy', r:5, 1, 'Math'
+      getVariable
+      push 'sin'
+      callMethod
+      push 'speed'
+      getVariable
+      multiply
+      setMember
+      push r:10, 'vr', 30
+      setMember
+      push r:10, 'frictRot', 1
+      setMember
+     label100:
+      push 'i', 'i'
+      getVariable
+      increment
+      setVariable
+      branch label99
+     label101:
+      push 'mcSphereBlink', 1, 'getMc'
+      callFunction
+      setRegister r:10
+      pop
+      push r:10, '_x', 'mis'
+      getVariable
+      push 'x'
+      getMember
+      push 'mcMap'
+      getVariable
+      push '_x'
+      getMember
+      add
+      setMember
+      push r:10, '_y', 'mis'
+      getVariable
+      push 'y'
+      getMember
+      push 'mcMap'
+      getVariable
+      push '_y'
+      getMember
+      add
+      setMember
+      push 16777215, 2, 10, r:10, 4, 'glow'
+      callFunction
+      pop
+      push r:10, '_xscale', r:10, '_yscale', 85
+      setRegister r:0
+      setMember
+      push r:0
+      setMember
+      push 10
+      setRegister r:9
+      pop
+      push 'i', 0.0
+      varEquals
+     label102:
+      push 'i'
+      getVariable
+      push 40
+      lessThan
+      not
+      branchIfTrue label103
+      push 0.0, 'Math'
+      getVariable
+      push 'random'
+      callMethod
+      push 6.28
+      multiply
+      setRegister r:5
+      pop
+      push r:5, 1, 'Math'
+      getVariable
+      push 'cos'
+      callMethod
+      setRegister r:7
+      pop
+      push r:5, 1, 'Math'
+      getVariable
+      push 'sin'
+      callMethod
+      setRegister r:6
+      pop
+      push 0.0, 'Math'
+      getVariable
+      push 'random'
+      callMethod
+      push 4
+      multiply
+      setRegister r:2
+      pop
+      push 'mcMap'
+      getVariable
+      push 'partDirt', 2, 'getPhys'
+      callFunction
+      setRegister r:1
+      pop
+      push r:1, 'x', 'mis'
+      getVariable
+      push 'x'
+      getMember
+      push r:7, r:2
+      multiply
+      push r:9
+      multiply
+      add
+      setMember
+      push r:1, 'y', 'mis'
+      getVariable
+      push 'y'
+      getMember
+      push r:6, r:2
+      multiply
+      push r:9
+      multiply
+      add
+      setMember
+      push r:1, 'vx', r:7, r:2
+      multiply
+      setMember
+      push r:1, 'vy', r:6, r:2
+      multiply
+      setMember
+      push r:1, 'weight', 0.1, 0.0, 'Math'
+      getVariable
+      push 'random'
+      callMethod
+      push 0.1
+      multiply
+      add
+      setMember
+      push r:1, 'timer', 10, 0.0, 'Math'
+      getVariable
+      push 'random'
+      callMethod
+      push 30
+      multiply
+      add
+      setMember
+      push r:1, 'frict', 0.98
+      setMember
+      push 10, 0.0, 'Math'
+      getVariable
+      push 'random'
+      callMethod
+      push 40
+      multiply
+      add
+      push r:1, 2, 'setScale'
+      callFunction
+      pop
+      push 'i', 'i'
+      getVariable
+      increment
+      setVariable
+      branch label102
+     label103:
+      push 0.0, 'mis'
+      getVariable
+      push 'removeMovieClip'
+      callMethod
+      pop
+    end // of function boum
+
+    function2 getX (r:1='x') ()
+      push 'mx'
+      getVariable
+      push r:x, 0.5
+      add
+      push 'cs'
+      getVariable
+      multiply
+      add
+      return
+    end // of function getX
+
+    function2 getY (r:1='y') ()
+      push 'my'
+      getVariable
+      push r:y, 0.5
+      add
+      push 'cs'
+      getVariable
+      multiply
+      add
+      return
+    end // of function getY
+
+    function2 initFader (r:3='fadeType') ()
+      push r:fadeType, NULL
+      equals
+      not
+      branchIfTrue label104
+      push UNDEF
+      return
+     label104:
+      push 'fader', 0.0, 'fader', 2, 'createEmptyMovieClip'
+      callFunction
+      setVariable
+      push 'fader'
+      getVariable
+      push 'type', r:fadeType
+      setMember
+      push 'fader'
+      getVariable
+      push 'bmp', 0.0, FALSE, 'mch'
+      getVariable
+      push 'mcw'
+      getVariable
+      push 4, 'flash'
+      getVariable
+      push 'display'
+      getMember
+      push 'BitmapData'
+      newMethod
+      setMember
+      push NULL, NULL, NULL, NULL, 0.0, 'flash'
+      getVariable
+      push 'geom'
+      getMember
+      push 'Matrix'
+      newMethod
+      push 'base'
+      getVariable
+      push 6, 'fader'
+      getVariable
+      push 'bmp'
+      getMember
+      push 'draw'
+      callMethod
+      pop
+      push 0.0, 'fader'
+      getVariable
+      push 'bmp'
+      getMember
+      push 2, 'fader'
+      getVariable
+      push 'attachBitmap'
+      callMethod
+      pop
+      push 'fader'
+      getVariable
+      push 'mask', 2, 'mcMask', 2, 'createEmptyMovieClip'
+      callFunction
+      setMember
+      push 'fader'
+      getVariable
+      push 'mask'
+      getMember
+      push 'depth', 0.0
+      setMember
+      push 'fader'
+      getVariable
+      push 'rounds', 0.0
+      initArray
+      setMember
+      push 'i', 0.0
+      setVariable
+     label105:
+      push 'i'
+      getVariable
+      push 10
+      lessThan
+      not
+      branchIfTrue label107
+      push 'fader'
+      getVariable
+      push 'mask'
+      getMember
+      push 'mcRound', 2, 'getMc'
+      callFunction
+      setRegister r:1
+      pop
+      push 1, 0.0, 'Math'
+      getVariable
+      push 'random'
+      callMethod
+      push 2
+      multiply
+      add
+      setRegister r:2
+      pop
+      push r:1, '_x', 'mcw'
+      getVariable
+      random
+      setMember
+      push r:1, '_y', 'mch'
+      getVariable
+      random
+      setMember
+      push r:1, 'cs', 1.2
+      setMember
+      push 'i'
+      getVariable
+      push 0.0
+      equals
+      not
+      branchIfTrue label106
+      push r:1, '_x', 'mcw'
+      getVariable
+      push 0.5
+      multiply
+      setMember
+      push r:1, '_y', 'mch'
+      getVariable
+      push 0.5
+      multiply
+      setMember
+     label106:
+      push r:1, '_xscale', r:1, '_yscale', r:2
+      setRegister r:0
+      setMember
+      push r:0
+      setMember
+      push r:1, 1, 'fader'
+      getVariable
+      push 'rounds'
+      getMember
+      push 'push'
+      callMethod
+      pop
+      push 'i', 'i'
+      getVariable
+      increment
+      setVariable
+      branch label105
+     label107:
+    end // of function initFader
+
+    function2 updateFader () ()
+      push 'fader'
+      getVariable
+      push NULL
+      equals
+      not
+      branchIfTrue label108
+      push UNDEF
+      return
+     label108:
+      push 'i', 0.0
+      setVariable
+     label109:
+      push 'i'
+      getVariable
+      push 'fader'
+      getVariable
+      push 'rounds'
+      getMember
+      push 'length'
+      getMember
+      lessThan
+      not
+      branchIfTrue label112
+      push 'fader'
+      getVariable
+      push 'rounds'
+      getMember
+      push 'i'
+      getVariable
+      getMember
+      setRegister r:1
+      pop
+      push r:1, '_xscale', r:1, '_xscale'
+      getMember
+      push r:1, 'cs'
+      getMember
+      multiply
+      setMember
+      push r:1, '_yscale', r:1, '_xscale'
+      getMember
+      setMember
+      push 'i'
+      getVariable
+      push 0.0
+      equals
+      dup
+      not
+      branchIfTrue label110
+      pop
+      push r:1, '_xscale'
+      getMember
+      push 300
+      greaterThan
+     label110:
+      not
+      branchIfTrue label111
+      push 0.0, 'fader'
+      getVariable
+      push 'mask'
+      getMember
+      push 'removeMovieClip'
+      callMethod
+      pop
+      push 0.0, 'fader'
+      getVariable
+      push 'removeMovieClip'
+      callMethod
+      pop
+      push 'fader', NULL
+      setVariable
+     label111:
+      push 'i', 'i'
+      getVariable
+      increment
+      setVariable
+      branch label109
+     label112:
+    end // of function updateFader
+
+    function initPlasma ()
+      push 'base'
+      getVariable
+      push 'bmp', 'lastBase'
+      getVariable
+      setMember
+      push 'base'
+      getVariable
+      push 'depth'
+      getMember
+      push 'base'
+      getVariable
+      push 'depth', 'base'
+      getVariable
+      push 'depth'
+      getMember
+      increment
+      setMember
+      push 'mcBmp', 2, 'base'
+      getVariable
+      push 'createEmptyMovieClip'
+      callMethod
+      pop
+      push 0.0, 'base'
+      getVariable
+      push 'bmp'
+      getMember
+      push 2, 'base'
+      getVariable
+      push 'mcBmp'
+      getMember
+      push 'attachBitmap'
+      callMethod
+      pop
+      push 'base'
+      getVariable
+      push 'mcBmp'
+      getMember
+      push '_xscale', 'base'
+      getVariable
+      push 'mcBmp'
+      getMember
+      push '_yscale', 100, 'PQ'
+      getVariable
+      divide
+      setRegister r:0
+      setMember
+      push r:0
+      setMember
+    end // of function initPlasma
+
+    function2 updatePlasma (r:3='da', r:4='sy') ()
+      push r:da, NULL
+      equals
+      not
+      branchIfTrue label113
+      push -2
+      setRegister r:da
+      pop
+     label113:
+      push 'inc', -1
+      setVariable
+      push 'c', 1
+      setVariable
+      push r:da, 'inc'
+      getVariable
+      push 3
+      multiply
+      push 'inc'
+      getVariable
+      push 2
+      multiply
+      push 1, 1, 'c'
+      getVariable
+      push 'c'
+      getVariable
+      push 'c'
+      getVariable
+      push 8, 'flash'
+      getVariable
+      push 'geom'
+      getMember
+      push 'ColorTransform'
+      newMethod
+      setRegister r:2
+      pop
+      push r:2, 'base'
+      getVariable
+      push 'bmp'
+      getMember
+      push 'rectangle'
+      getMember
+      push 2, 'base'
+      getVariable
+      push 'bmp'
+      getMember
+      push 'colorTransform'
+      callMethod
+      pop
+      push 0.0, 'flash'
+      getVariable
+      push 'filters'
+      getMember
+      push 'BlurFilter'
+      newMethod
+      setRegister r:1
+      pop
+      push r:1, 'blurX', 8, 'PQ'
+      getVariable
+      multiply
+      setMember
+      push r:1, 'blurY', 8, 'PQ'
+      getVariable
+      multiply
+      setMember
+      push r:1, 0.0, 'flash'
+      getVariable
+      push 'geom'
+      getMember
+      push 'Point'
+      newMethod
+      push 'base'
+      getVariable
+      push 'bmp'
+      getMember
+      push 'rectangle'
+      getMember
+      push 'base'
+      getVariable
+      push 'bmp'
+      getMember
+      push 4, 'base'
+      getVariable
+      push 'bmp'
+      getMember
+      push 'applyFilter'
+      callMethod
+      pop
+      push r:sy, NULL
+      equals
+      not
+      not
+      branchIfTrue label114
+      push r:sy, 'PQ'
+      getVariable
+      multiply
+      push 0.0, 2, 'base'
+      getVariable
+      push 'bmp'
+      getMember
+      push 'scroll'
+      callMethod
+      pop
+     label114:
+    end // of function updatePlasma
+
+    function2 movePhys (r:1='mc') ()
+      push 'i', 0.0
+      setVariable
+     label115:
+      push 'i'
+      getVariable
+      push r:mc, 'bhl'
+      getMember
+      push 'length'
+      getMember
+      lessThan
+      not
+      branchIfTrue label122
+      push 'bh', r:mc, 'bhl'
+      getMember
+      push 'i'
+      getVariable
+      getMember
+      setVariable
+      push 'bh'
+      getVariable
+      setRegister r:0
+      push 0.0
+      strictEquals
+      branchIfTrue label116
+      push r:0, 1
+      strictEquals
+      branchIfTrue label118
+      push r:0, 2
+      strictEquals
+      branchIfTrue label120
+      branch label121
+     label116:
+      push r:mc, '_alpha'
+      getMember
+      push r:mc, 'alpha'
+      getMember
+      lessThan
+      not
+      branchIfTrue label117
+      push r:mc, '_alpha', r:mc, '_alpha'
+      getMember
+      push 5
+      add
+      setMember
+     label117:
+      push r:mc, 'decal', r:mc, 'decal'
+      getMember
+      push r:mc, 'vdec'
+      getMember
+      add
+      push 628
+      modulo
+      setMember
+      push r:mc, 'vx', r:mc, 'decal'
+      getMember
+      push 0.01
+      multiply
+      push 1, 'Math'
+      getVariable
+      push 'cos'
+      callMethod
+      push r:mc, 'ecart'
+      getMember
+      multiply
+      setMember
+      push r:mc, '_xscale', r:mc, '_xscale'
+      getMember
+      push 1
+      add
+      setMember
+      push r:mc, '_yscale', r:mc, '_xscale'
+      getMember
+      setMember
+      branch label121
+     label118:
+      push r:mc, 'vz', r:mc, 'vz'
+      getMember
+      push r:mc, 'wz'
+      getMember
+      add
+      setMember
+      push r:mc, 'vz', r:mc, 'vz'
+      getMember
+      push 0.98
+      multiply
+      setMember
+      push r:mc, 'z', r:mc, 'z'
+      getMember
+      push r:mc, 'vz'
+      getMember
+      add
+      setMember
+      push r:mc, 'z'
+      getMember
+      push 0.0
+      greaterThan
+      not
+      branchIfTrue label119
+      push r:mc, 'vz', r:mc, 'vz'
+      getMember
+      push -0.7
+      multiply
+      setMember
+      push r:mc, 'z', 0.0
+      setMember
+     label119:
+      branch label121
+     label120:
+      push r:mc, 'scale', r:mc, 'scale'
+      getMember
+      push r:mc, 'cs'
+      getMember
+      multiply
+      setMember
+      push r:mc, 'scale'
+      getMember
+      push r:mc, 2, 'setScale'
+      callFunction
+      pop
+      branch label121
+     label121:
+      push 'i', 'i'
+      getVariable
+      increment
+      setVariable
+      branch label115
+     label122:
+      push r:mc, 'weight'
+      getMember
+      push NULL
+      equals
+      not
+      not
+      branchIfTrue label123
+      push r:mc, 'vy', r:mc, 'vy'
+      getMember
+      push r:mc, 'weight'
+      getMember
+      add
+      setMember
+     label123:
+      push r:mc, 'vr'
+      getMember
+      push NULL
+      equals
+      not
+      not
+      branchIfTrue label124
+      push r:mc, 'vr', r:mc, 'vr'
+      getMember
+      push r:mc, 'frictRot'
+      getMember
+      multiply
+      setMember
+      push r:mc, '_rotation', r:mc, '_rotation'
+      getMember
+      push r:mc, 'vr'
+      getMember
+      add
+      setMember
+     label124:
+      push r:mc, 'vx', r:mc, 'vx'
+      getMember
+      push r:mc, 'frict'
+      getMember
+      multiply
+      setMember
+      push r:mc, 'vy', r:mc, 'vy'
+      getMember
+      push r:mc, 'frict'
+      getMember
+      multiply
+      setMember
+      push r:mc, 'x', r:mc, 'x'
+      getMember
+      push r:mc, 'vx'
+      getMember
+      add
+      setMember
+      push r:mc, 'y', r:mc, 'y'
+      getMember
+      push r:mc, 'vy'
+      getMember
+      add
+      setMember
+      push r:mc, '_x', r:mc, 'x'
+      getMember
+      setMember
+      push r:mc, '_y', r:mc, 'y'
+      getMember
+      setMember
+      push r:mc, 'z'
+      getMember
+      push NULL
+      equals
+      not
+      not
+      branchIfTrue label125
+      push r:mc, '_y', r:mc, '_y'
+      getMember
+      push r:mc, 'z'
+      getMember
+      add
+      setMember
+     label125:
+      push r:mc, 'timer'
+      getMember
+      push NULL
+      equals
+      not
+      not
+      branchIfTrue label131
+      push r:mc, 'timer', r:mc, 'timer'
+      getMember
+      decrement
+      setMember
+      push r:mc, 'timer'
+      getMember
+      push 10
+      lessThan
+      dup
+      branchIfTrue label126
+      pop
+      push r:mc, 'timer'
+      getMember
+      push r:mc, 'maxTimer'
+      getMember
+      push 10
+      subtract
+      greaterThan
+     label126:
+      not
+      branchIfTrue label131
+      push r:mc, 'timer'
+      getMember
+      push 10
+      divide
+      setRegister r:2
+      pop
+      push r:mc, 'timer'
+      getMember
+      push 10
+      greaterThan
+      not
+      branchIfTrue label127
+      push r:mc, 'maxTimer'
+      getMember
+      push r:mc, 'timer'
+      getMember
+      subtract
+      push 10
+      divide
+      setRegister r:2
+      pop
+     label127:
+      push r:mc, 'fadeType'
+      getMember
+      setRegister r:0
+      push 0.0
+      strictEquals
+      branchIfTrue label128
+      branch label129
+     label128:
+      push r:mc, '_alpha', r:2, r:mc, 'alpha'
+      getMember
+      multiply
+      setMember
+      branch label130
+     label129:
+      push r:mc, '_xscale', r:mc, 'scale'
+      getMember
+      push r:2
+      multiply
+      setMember
+      push r:mc, '_yscale', r:mc, 'scale'
+      getMember
+      push r:2
+      multiply
+      setMember
+      branch label130
+     label130:
+      push r:mc, 'timer'
+      getMember
+      push 0.0
+      lessThan
+      not
+      branchIfTrue label131
+      push r:mc, 1, 'removePhys'
+      callFunction
+      pop
+     label131:
+    end // of function movePhys
+
+    function2 updatePhys () ()
+      push 'base'
+      getVariable
+      push 'pList'
+      getMember
+      push 1, 'duplicate'
+      callFunction
+      setRegister r:2
+      pop
+      push 0.0
+      setRegister r:1
+      pop
+     label132:
+      push r:1, r:2, 'length'
+      getMember
+      lessThan
+      not
+      branchIfTrue label133
+      push r:2, r:1
+      getMember
+      push 1, 'movePhys'
+      callFunction
+      pop
+      push r:1
+      increment
+      setRegister r:1
+      pop
+      branch label132
+     label133:
+    end // of function updatePhys
+
+    function2 colToObj32 (r:1='col') ()
+      push 'a', r:col, 24
+      shiftRight2
+      push 'r', r:col, 16
+      shiftRight
+      push 255
+      bitwiseAnd
+      push 'g', r:col, 8
+      shiftRight
+      push 255
+      bitwiseAnd
+      push 'b', r:col, 255
+      bitwiseAnd
+      push 4
+      initObject
+      return
+    end // of function colToObj32
+
+    function2 objToCol (r:1='o') ()
+      push r:o, 'r'
+      getMember
+      push 16
+      shiftLeft
+      push r:o, 'g'
+      getMember
+      push 8
+      shiftLeft
+      bitwiseOr
+      push r:o, 'b'
+      getMember
+      bitwiseOr
+      return
+    end // of function objToCol
+
+    function2 getMc (r:4='link', r:2='root') ()
+      push r:root, NULL
+      equals
+      not
+      branchIfTrue label134
+      push 'base'
+      getVariable
+      setRegister r:root
+      pop
+     label134:
+      push r:root, 'depth'
+      getMember
+      push r:root, 'depth', r:root, 'depth'
+      getMember
+      increment
+      setMember
+      setRegister r:1
+      pop
+      push r:1, 'mc', r:1
+      add
+      push r:link, 3, r:root, 'attachMovie'
+      callMethod
+      setRegister r:3
+      pop
+      push r:3
+      return
+    end // of function getMc
+
+    function2 getDepthMc (r:4='link') ()
+      push 'depthList'
+      getVariable
+      push 'length'
+      getMember
+      random
+      setRegister r:3
+      pop
+      push 'depthList'
+      getVariable
+      push r:3
+      getMember
+      setRegister r:1
+      pop
+      push 1, r:3, 2, 'depthList'
+      getVariable
+      push 'splice'
+      callMethod
+      pop
+      push r:1, 'mc', r:1
+      add
+      push r:link, 3, 'base'
+      getVariable
+      push 'attachMovie'
+      callMethod
+      setRegister r:2
+      pop
+      push r:2, 'depth', r:1
+      setMember
+      push r:2, 1, 'initPhys'
+      callFunction
+      pop
+      push r:2
+      return
+    end // of function getDepthMc
+
+    function2 getPhys (r:2='link', r:3='root') ()
+      push r:root, r:link, 2, 'getMc'
+      callFunction
+      setRegister r:1
+      pop
+      push r:1, 1, 'initPhys'
+      callFunction
+      pop
+      push r:1
+      return
+    end // of function getPhys
+
+    function2 initPhys (r:1='mc') ()
+      push r:mc, 'step', 0.0
+      setMember
+      push r:mc, 'vx', 0.0
+      setMember
+      push r:mc, 'vy', 0.0
+      setMember
+      push r:mc, 'x', 0.0
+      setMember
+      push r:mc, 'y', 0.0
+      setMember
+      push r:mc, 'scale', 100
+      setMember
+      push r:mc, 'colFrict', 1
+      setMember
+      push r:mc, 'frict', 1
+      setMember
+      push r:mc, 'alpha', 100
+      setMember
+      push r:mc, '_y', -100
+      setMember
+      push r:mc, 1, 'base'
+      getVariable
+      push 'pList'
+      getMember
+      push 'push'
+      callMethod
+      pop
+    end // of function initPhys
+
+    function2 setScale (r:1='mc', r:2='sc') ()
+      push r:mc, '_xscale', r:mc, '_yscale', r:mc, 'scale', r:sc
+      setRegister r:0
+      setMember
+      push r:0
+      setRegister r:0
+      setMember
+      push r:0
+      setMember
+    end // of function setScale
+
+    function2 removePhys (r:1='mc') ()
+      push 'base'
+      getVariable
+      push 'pList'
+      getMember
+      push r:mc, 2, 'removeFromList'
+      callFunction
+      pop
+      push 0.0, r:mc, 'removeMovieClip'
+      callMethod
+      pop
+    end // of function removePhys
+
+    function2 removeFromList (r:3='mc', r:2='list') ()
+      push 0.0
+      setRegister r:1
+      pop
+     label135:
+      push r:1, r:list, 'length'
+      getMember
+      lessThan
+      not
+      branchIfTrue label137
+      push r:list, r:1
+      getMember
+      push r:mc
+      equals
+      not
+      branchIfTrue label136
+      push 1, r:1, 2, r:list, 'splice'
+      callMethod
+      pop
+      push UNDEF
+      return
+     label136:
+      push r:1
+      increment
+      setRegister r:1
+      pop
+      branch label135
+     label137:
+    end // of function removeFromList
+
+    function2 duplicate (r:2='list') ()
+      push 0.0, 'Array'
+      new
+      setRegister r:3
+      pop
+      push 0.0
+      setRegister r:1
+      pop
+     label138:
+      push r:1, r:list, 'length'
+      getMember
+      lessThan
+      not
+      branchIfTrue label139
+      push r:list, r:1
+      getMember
+      push 1, r:3, 'push'
+      callMethod
+      pop
+      push r:1
+      increment
+      setRegister r:1
+      pop
+      branch label138
+     label139:
+      push r:3
+      return
+    end // of function duplicate
+
+    function2 mm (r:3='a', r:2='b', r:1='c') ()
+      push r:c, r:b, r:a, 2, 'Math'
+      getVariable
+      push 'max'
+      callMethod
+      push 2, 'Math'
+      getVariable
+      push 'min'
+      callMethod
+      return
+    end // of function mm
+
+    function2 hMod (r:1='n', r:2='mod') ()
+      push r:n, 0.0, r:mod
+      subtract
+      greaterThan
+      not
+      not
+      branchIfTrue label140
+      push r:n, 2, r:mod
+      multiply
+      add
+      setRegister r:n
+      pop
+     label140:
+      push r:n, r:mod
+      greaterThan
+      not
+      branchIfTrue label141
+      push r:n, 2, r:mod
+      multiply
+      subtract
+      setRegister r:n
+      pop
+     label141:
+      push r:n
+      return
+    end // of function hMod
+
+    function2 setPercentColor (r:18='mc', r:3='prc', r:6='col') ()
+      push 'r', r:col, 16
+      shiftRight
+      push 'g', r:col, 8
+      shiftRight
+      push 255
+      bitwiseAnd
+      push 'b', r:col, 255
+      bitwiseAnd
+      push 3
+      initObject
+      setRegister r:2
+      pop
+      push r:mc, 1, 'Color'
+      new
+      setRegister r:4
+      pop
+      push r:prc, 100
+      divide
+      setRegister r:1
+      pop
+      push 'ra', 100, r:prc
+      subtract
+      int
+      push 'ga', 100, r:prc
+      subtract
+      int
+      push 'ba', 100, r:prc
+      subtract
+      int
+      push 'aa', 100, 'rb', r:1, r:2, 'r'
+      getMember
+      multiply
+      int
+      push 'gb', r:1, r:2, 'g'
+      getMember
+      multiply
+      int
+      push 'bb', r:1, r:2, 'b'
+      getMember
+      multiply
+      int
+      push 'ab', 0.0, 8
+      initObject
+      setRegister r:5
+      pop
+      push r:5, 1, r:4, 'setTransform'
+      callMethod
+      pop
+    end // of function setPercentColor
+
+    function2 setColor (r:17='mc', r:5='col', r:2='inc') ()
+      push r:inc, NULL
+      equals
+      not
+      branchIfTrue label142
+      push -255
+      setRegister r:inc
+      pop
+     label142:
+      push 'r', r:col, 16
+      shiftRight
+      push 'g', r:col, 8
+      shiftRight
+      push 255
+      bitwiseAnd
+      push 'b', r:col, 255
+      bitwiseAnd
+      push 3
+      initObject
+      setRegister r:1
+      pop
+      push r:mc, 1, 'Color'
+      new
+      setRegister r:3
+      pop
+      push 'ra', 100, 'ga', 100, 'ba', 100, 'aa', 100, 'rb', r:1, 'r'
+      getMember
+      push r:inc
+      add
+      push 'gb', r:1, 'g'
+      getMember
+      push r:inc
+      add
+      push 'bb', r:1, 'b'
+      getMember
+      push r:inc
+      add
+      push 'ab', 0.0, 8
+      initObject
+      setRegister r:4
+      pop
+      push r:4, 1, r:3, 'setTransform'
+      callMethod
+      pop
+    end // of function setColor
+
+    function2 glow (r:3='mc', r:4='b', r:6='s', r:5='c') ()
+      push 0.0, 'flash'
+      getVariable
+      push 'filters'
+      getMember
+      push 'GlowFilter'
+      newMethod
+      setRegister r:1
+      pop
+      push r:1, 'blurX', r:b
+      setMember
+      push r:1, 'blurY', r:b
+      setMember
+      push r:1, 'strength', r:s
+      setMember
+      push r:1, 'color', r:c
+      setMember
+      push r:mc, 'filters'
+      getMember
+      setRegister r:2
+      pop
+      push r:1, 1, r:2, 'push'
+      callMethod
+      pop
+      push r:mc, 'filters', r:2
+      setMember
+    end // of function glow
+
+    push 'mcw', 230
+    setVariable
+    push 'mch', 200
+    setVariable
+    push 'PQ', 0.5
+    setVariable
+    push 'DIR', -1, 0.0, 2
+    initArray
+    push 0.0, -1, 2
+    initArray
+    push 1, 0.0, 2
+    initArray
+    push 0.0, 1, 2
+    initArray
+    push 4
+    initArray
+    setVariable
+    push 'MAGMAX_CS', 32
+    setVariable
+    push 'EXPANZ_CS', 20
+    setVariable
+    push 'EXPANZ_COLOR', 8978431, 16777096, 8947967, 8978312, 16746632, 5
+    initArray
+    setVariable
+    push 'MAGMAX_SG', 'type', 2, 'x', 2, 'y', 6, 'side', 3, 4
+    initObject
+    push 'type', 2, 'x', 3, 'y', 3, 'side', 3, 4
+    initObject
+    push 'type', 2, 'x', 1, 'y', 2, 'side', 3, 4
+    initObject
+    push 'type', 2, 'x', 5, 'y', 3, 'side', 3, 4
+    initObject
+    push 'type', 1, 'x', 5, 'y', 5, 'side', 3, 4
+    initObject
+    push 'type', 1, 'x', 4, 'y', 5, 'side', 3, 4
+    initObject
+    push 'type', 1, 'x', 3, 'y', 5, 'side', 3, 4
+    initObject
+    push 'type', 0.0, 'x', 2, 'y', 1, 'side', 0.0, 4
+    initObject
+    push 'type', 0.0, 'x', 1, 'y', 0.0, 'side', 1, 4
+    initObject
+    push 'type', 0.0, 'x', 0.0, 'y', 1, 'side', 1, 4
+    initObject
+    push 10
+    initArray
+    setVariable
+    push 'MAGMAX_MSG', 3, 4, 1
+    initArray
+    push 0.0, 3
+    initArray
+    push 2, 4, 1
+    initArray
+    push 0.0, 3
+    initArray
+    push 2, 4, 1
+    initArray
+    push 0.0, 3
+    initArray
+    push 0.0, 3, 4, 1
+    initArray
+    push 1, 4
+    initArray
+    push 3, 4, 1
+    initArray
+    push 0.0, 3
+    initArray
+    push 2, 4, 1
+    initArray
+    push 0.0, 3
+    initArray
+    push 3, 1, 0.0, 1
+    initArray
+    push 1, 4
+    initArray
+    push 5, 1, 2, 1
+    initArray
+    push 1, 4
+    initArray
+    push 1, 2, 0.0, 2
+    initArray
+    push 0.0, 3
+    initArray
+    push 0.0, 2, 0.0, 2
+    initArray
+    push 0.0, 3
+    initArray
+    push 1, 3, 3, 1
+    initArray
+    push 1, 4
+    initArray
+    push 3, 3, 1
+    initArray
+    push 0.0, 3
+    initArray
+    push 2, 5, 4, 3, 3
+    initArray
+    push 0.0, 3
+    initArray
+    push 0.0, 2, 1, 0.0, 3
+    initArray
+    push 0.0, 3
+    initArray
+    push 1, 2, 1
+    initArray
+    push 0.0, 3
+    initArray
+    push 15
+    initArray
+    setVariable
+    push 0.0, 'init'
+    callFunction
+    pop
+  end // of frame 13
+
+  frame 14
+    push 0.0, 'main'
+    callFunction
+    pop
+  end // of frame 14
+
+  frame 15
+    push '', 4
+    getProperty
+    push 1
+    subtract
+    gotoAndPlay
+  end // of frame 15
+end
