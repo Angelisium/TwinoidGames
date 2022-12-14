@@ -1,0 +1,47 @@
+movie 'name_subscribe.swf' {
+// flash 8, total frames: 2, frame rate: 40 fps, 200x200 px, compressed
+
+  frame 1 {
+    var text = flash.external.ExternalInterface.call('getCityName');
+    temp1 = text;
+    if (text == 'null' || text == null) {
+      g.sub.field.text = _root.defaultName;
+    } else {
+      g.sub.field.text = text.toUpperCase();
+    }
+    if (temp1 != temp2) {
+      r = random(2) + 1;
+      if (r == 1) {
+        g.gotoAndPlay('s1');
+      }
+      if (r >= 2) {
+        g.gotoAndPlay('s2');
+      }
+    }
+    temp2 = text;
+  }
+  
+  // unknown tag 88 length 150
+
+  movieClip 5  {
+  }
+
+  movieClip 6  {
+
+    frame 1 {
+      stop();
+    }
+
+    frame 7 {
+      gotoAndStop(1);
+    }
+
+    frame 15 {
+      gotoAndStop(1);
+    }
+  }
+
+  frame 2 {
+    gotoAndPlay(1);
+  }
+}

@@ -1,0 +1,71 @@
+movie 'name.swf' {
+// flash 8, total frames: 5, frame rate: 12 fps, 210x120 px, compressed
+
+  frame 1 {
+    mc.onRelease = function () {};
+
+    tot = env * (1 - pol / 100);
+    if (pop >= 200) {
+      gotoAndStop(2);
+    }
+    if (pop >= 200 && tot >= 100) {
+      gotoAndStop(3);
+    }
+    if (crim >= 40 && tot < 100) {
+      gotoAndStop(4);
+    }
+    if (crim >= 40 && tot >= 100) {
+      gotoAndStop(5);
+      if (pop < 200) {
+        gotoAndStop(4);
+      }
+    }
+    field.text = text.toUpperCase();
+    stop();
+  }
+
+  movieClip 6  {
+  }
+
+  movieClip 12  {
+  }
+
+  movieClip 13  {
+  }
+
+  movieClip 14  {
+
+    frame 1 {
+      if (_root.tot >= 100 && _root.tot < 1000) {
+        gotoAndStop(1);
+      } else {
+        if (_root.tot >= 1000 && _root.tot < 5000) {
+          gotoAndStop(2);
+        } else {
+          if (_root.tot >= 5000 && _root.tot < 10000) {
+            gotoAndStop(3);
+          } else {
+            if (_root.tot >= 10000) {
+              gotoAndStop(4);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  movieClip 21  {
+  }
+
+  movieClip 24  {
+
+    frame 1 {
+      if (_root.crim >= 34 && _root.crim < 90) {
+        gotoAndStop(1);
+      }
+      if (_root.crim >= 90) {
+        gotoAndStop(2);
+      }
+    }
+  }
+}

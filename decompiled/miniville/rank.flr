@@ -1,0 +1,161 @@
+movie 'rank.swf' {
+// flash 8, total frames: 1, frame rate: 12 fps, 130x260 px, compressed
+
+  movieClip 2 rhones-alpes {
+  }
+
+  movieClip 4 limousin {
+  }
+
+  movieClip 9 mcSlot {
+  }
+
+  movieClip 11 bg {
+  }
+
+  frame 1 {
+    function init() {
+      select = defaultSelection;
+      rList = [];
+      var v1 = 0;
+      while (v1 < 22) {
+        var v2 = carte['r' + v1];
+        rList.push(v2);
+        v2.id = v1;
+        v2.name = REGION_NAMES[v1];
+        var v3 = 1793987;
+        if (select == v1) {
+          v3 = 16711680;
+        }
+        setPercentColor(v2, 100, v3);
+        ++v1;
+      }
+      title.field.text = REGION_NAMES[select];
+      initRanking();
+    }
+
+    function initRanking() {
+      var v9 = ranking.split('|');
+      var v6 = 156;
+      var v3 = 0;
+      while (v3 < v9.length) {
+        var v7 = v9[v3];
+        var v2 = v7.split(',');
+        var v1 = attachMovie('mcSlot', 'slot' + v3, v3);
+        v1._x = 0;
+        v1._y = v6;
+        var v5 = 1793987;
+        var v4 = 13;
+        if (v2[2] != null) {
+          v5 = 16711680;
+          var v8 = 1.5;
+          v1.field.textColor = 16763071;
+          v1._yscale = 100 * v8;
+          v1._xscale = v1._yscale;
+          v1._x = -32.5;
+          v6 += 9;
+          v4 = 11;
+        }
+        v4 -= v2[0].length;
+        v1.field.text = v2[0] + ' - ' + v2[1].substr(0, v4);
+        v1.but.onRelease = clickOut;
+        v1.url = 'http://' + v2[1] + '.miniville.fr';
+        glow(v1, 2, 6, v5);
+        v6 += 12;
+        ++v3;
+      }
+    }
+
+    function clickOut() {
+      getURL(this._parent.url, '_self');
+    }
+
+    function setPercentColor(mc, prc, col) {
+      var v2 = {'r': col >> 16, 'g': col >> 8 & 255, 'b': col & 255};
+      var v4 = new Color(mc);
+      var v1 = prc / 100;
+      var v5 = {'ra': int(100 - prc), 'ga': int(100 - prc), 'ba': int(100 - prc), 'aa': 100, 'rb': int(v1 * v2.r), 'gb': int(v1 * v2.g), 'bb': int(v1 * v2.b), 'ab': 0};
+      v4.setTransform(v5);
+    }
+
+    function glow(mc, b, s, c) {
+      var v1 = new flash.filters.GlowFilter();
+      v1.blurX = b;
+      v1.blurY = b;
+      v1.strength = s;
+      v1.color = c;
+      var v2 = mc.filters;
+      v2.push(v1);
+      mc.filters = v2;
+    }
+
+    REGION_NAMES = ['Nord Pas-de-Calais', 'Haute-Normandie', 'Picardie', 'Champagne-Ardenne', 'Lorraine', 'Alsace', 'Basse-Normandie', 'Ile-de-France', 'Bretagne', 'Pays de la Loire', 'Centre', 'Bourgogne', 'Franche-Comte', 'Poitou-Charente', 'Limousin', 'Auvergne', 'Rhones-Alpes', 'Aquitaine', 'Midi-Pyrenées', 'Languedoc Roussillon', 'Provence Côte d\'Azur', 'Corse'];
+    init();
+  }
+
+  movieClip 13  {
+  }
+
+  movieClip 15  {
+  }
+
+  movieClip 17  {
+  }
+
+  movieClip 19  {
+  }
+
+  movieClip 21  {
+  }
+
+  movieClip 23  {
+  }
+
+  movieClip 25  {
+  }
+
+  movieClip 27  {
+  }
+
+  movieClip 29  {
+  }
+
+  movieClip 31  {
+  }
+
+  movieClip 33  {
+  }
+
+  movieClip 35  {
+  }
+
+  movieClip 37  {
+  }
+
+  movieClip 39  {
+  }
+
+  movieClip 41  {
+  }
+
+  movieClip 43  {
+  }
+
+  movieClip 45  {
+  }
+
+  movieClip 47  {
+  }
+
+  movieClip 49  {
+  }
+
+  movieClip 51  {
+  }
+
+  movieClip 52  {
+  }
+
+  movieClip 57  {
+  }
+}

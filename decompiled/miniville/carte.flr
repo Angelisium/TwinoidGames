@@ -1,0 +1,210 @@
+movie 'carte.swf' {
+// flash 8, total frames: 3, frame rate: 40 fps, 242x284 px, compressed
+
+  movieClip 3 mcFieldName {
+  }
+
+  movieClip 5 rhones-alpes {
+  }
+
+  movieClip 7 limousin {
+  }
+
+  frame 1 {
+    function init() {
+      flInit = true;
+      select = defaultSelection;
+      rList = [];
+      var v2 = 0;
+      while (v2 < 22) {
+        var v1 = carte['r' + v2];
+        rList.push(v1);
+        v1.id = v2;
+        v1.name = REGION_NAMES[v2];
+        v1.onPress = selectRegion;
+        v1.onRollOver = rOverRegion;
+        v1.onRollOut = rOutRegion;
+        v1.onDragOut = rOutRegion;
+        if (select == v2) {
+          v1.onPress();
+        }
+        ++v2;
+      }
+      mcNames = createEmptyMovieClip('mcNames', 0);
+      mcNames._x = 120;
+      mcNames._y = 268;
+      mcNames.depth = 0;
+      nList = [];
+      flInit = false;
+    }
+
+    function main() {
+      updateNames();
+    }
+
+    function selectRegion() {
+      setPercentColor(this, 100, 16711680);
+      old = select;
+      select = this.id;
+      if (old != null) {
+        var v2 = rList[old];
+        v2.onRollOut(true);
+      }
+      lastName.vs = -50;
+      if (!flInit) {
+        if (url == null) {
+          getURL('javascript:js.App.setField(\'idRegion\',' + this.id + ')', '');
+        } else {
+          getURL(url + this.id, '');
+        }
+      }
+    }
+
+    function rOverRegion() {
+      if (this.id != select) {
+        setPercentColor(this, 100, 10733822);
+        setName(this.name);
+      }
+    }
+
+    function rOutRegion(flSelect) {
+      if (this.id != select) {
+        setPercentColor(this, 0, 0);
+        if (flSelect != true) {
+          var v2 = '';
+          if (select != null) {
+            v2 = rList[select].name;
+          }
+          setName(v2);
+        }
+      }
+    }
+
+    function setName(name) {
+      if (lastName != null) {
+        lastName.flGo = true;
+      }
+      var v2 = mcNames.depth++;
+      var v1 = mcNames.attachMovie('mcFieldName', 'field' + v2, v2);
+      v1._x = -100;
+      v1._alpha = 0;
+      v1.fieldName.text = name;
+      nList.push(v1);
+      lastName = v1;
+    }
+
+    function updateNames() {
+      var v2 = 0;
+      while (v2 < nList.length) {
+        var v1 = nList[v2];
+        if (v1.flGo) {
+          v1._x += 20;
+          v1._alpha -= 20;
+          if (v1._alpha <= 0) {
+            v1.removeMovieClip();
+            nList.splice(v2--, 1);
+          }
+        } else {
+          v1._x *= 0.5;
+          v1._alpha = Math.min(v1._alpha + 20, 100);
+        }
+        if (lastName.vs != null) {
+          var v3 = 100 - lastName._xscale;
+          lastName.vs += v3 * 0.5;
+          lastName.vs *= 0.5;
+          lastName._xscale += lastName.vs;
+          lastName._yscale = lastName._xscale;
+        }
+        ++v2;
+      }
+    }
+
+    function setPercentColor(mc, prc, col) {
+      var v2 = {'r': col >> 16, 'g': col >> 8 & 255, 'b': col & 255};
+      var v4 = new Color(mc);
+      var v1 = prc / 100;
+      var v5 = {'ra': int(100 - prc), 'ga': int(100 - prc), 'ba': int(100 - prc), 'aa': 100, 'rb': int(v1 * v2.r), 'gb': int(v1 * v2.g), 'bb': int(v1 * v2.b), 'ab': 0};
+      v4.setTransform(v5);
+    }
+
+    REGION_NAMES = ['Nord Pas-de-Calais', 'Haute-Normandie', 'Picardie', 'Champagne-Ardenne', 'Lorraine', 'Alsace', 'Basse-Normandie', 'Ile-de-France', 'Bretagne', 'Pays de la Loire', 'Centre', 'Bourgogne', 'Franche-Comte', 'Poitou-Charente', 'Limousin', 'Auvergne', 'Rhones-Alpes', 'Aquitaine', 'Midi-Pyrenées', 'Languedoc Rousillon', 'Provence Côte d\'Azur', 'Corse'];
+    init();
+  }
+
+  movieClip 9  {
+  }
+
+  movieClip 11  {
+  }
+
+  movieClip 13  {
+  }
+
+  movieClip 15  {
+  }
+
+  movieClip 17  {
+  }
+
+  movieClip 19  {
+  }
+
+  movieClip 21  {
+  }
+
+  movieClip 23  {
+  }
+
+  movieClip 25  {
+  }
+
+  movieClip 27  {
+  }
+
+  movieClip 29  {
+  }
+
+  movieClip 31  {
+  }
+
+  movieClip 33  {
+  }
+
+  movieClip 35  {
+  }
+
+  movieClip 37  {
+  }
+
+  movieClip 39  {
+  }
+
+  movieClip 41  {
+  }
+
+  movieClip 43  {
+  }
+
+  movieClip 45  {
+  }
+
+  movieClip 47  {
+  }
+
+  movieClip 49  {
+  }
+
+  movieClip 51  {
+  }
+
+  movieClip 52  {
+  }
+
+  frame 2 {
+    main();
+  }
+
+  frame 3 {
+    gotoAndPlay(2);
+  }
+}
