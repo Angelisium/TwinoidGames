@@ -1448,7 +1448,7 @@ movie 'fight.swf' {
     };
 
     )NLWx = function (arg0) {
-      7IzT.(K.7ogOI( = this;
+      Main.(K.7ogOI( = this;
       this.2KA = arg0._max;
       this.5955 = arg0._life;
       if (arg0._ground > 0) {
@@ -2433,7 +2433,7 @@ movie 'fight.swf' {
         return undefined;
       }
       this.9Egfb = true;
-      this.}SYp5 = 7IzT.(K.0Eck5.32.*=_p_('mcShade', [re7L.5NraA);
+      this.}SYp5 = Main.(K.0Eck5.32.*=_p_('mcShade', [re7L.5NraA);
       this.}SYp5._alpha = 40;
       this.9;7io();
       this.}SYp5._x = -10000;
@@ -2590,8 +2590,8 @@ movie 'fight.swf' {
     v1.{b = null;
     v1.(KpGn = null;
     7j(Mv = function (arg0) {
-      7IzT.(K.1cUTb.push(this);
-      super(7IzT.(K.0Eck5.32.18wU*([re7L.[xE[J));
+      Main.(K.1cUTb.push(this);
+      super(Main.(K.0Eck5.32.18wU*([re7L.[xE[J));
       this.8+C5 = false;
       this.872 = arg0._fid;
       this.)b-}=((arg0._side);
@@ -2668,7 +2668,7 @@ movie 'fight.swf' {
       }
       var v2 = 4;
       var v3 = 10;
-      if (this.(( < v2 + this.]oH || this.(( > [re7L.[MqDO - (this.]oH + v2 + 7IzT.64TL._mright)) {
+      if (this.(( < v2 + this.]oH || this.(( > [re7L.[MqDO - (this.]oH + v2 + Main.64TL._mright)) {
         var v4 = ,v0X.2K(v2 + this.]oH + v3, this.((, [re7L.[MqDO - (v2 + this.]oH + v3)) - this.((;
         this.(( += v4 * 0.3 * 9K.{-kxL.-V;B;
         this.[b = 0;
@@ -3210,7 +3210,7 @@ movie 'fight.swf' {
     };
 
     v1.5,l6b = function () {
-      var v2 = (7IzT.(K.7Jgn1( != null) ? 7IzT.(K.7Jgn1( : this.}[3;
+      var v2 = (Main.(K.7Jgn1( != null) ? Main.(K.7Jgn1( : this.}[3;
       this.}[3 = v2;
       if (!this.]-yfJ() {
         this.=S7A._p0.stop();
@@ -3232,7 +3232,7 @@ movie 'fight.swf' {
     };
 
     v1.9T54 = function () {
-      7IzT.(K.1cUTb.remove(this);
+      Main.(K.1cUTb.remove(this);
       super.9T54();
     };
 
@@ -3492,7 +3492,7 @@ movie 'fight.swf' {
 
       v2.onLoadInit = v3;
       v2.onLoadComplete = v3;
-      var v4 = this.]-yfJ( ? 7IzT.64TL._sdino : 7IzT.64TL._smonster;
+      var v4 = this.]-yfJ( ? Main.64TL._sdino : Main.64TL._smonster;
       v2.loadClip(v4, this.=S7A);
       this.}T-cy = 0;
       this.=S7A._x = this.26do5 * 20;
@@ -4287,10 +4287,10 @@ for ($somevar in this.1) {
     ['756X', 1].__enum__ = [',,=T', 0].__enum__;
     ['756X', 1].toString = )PVyX;
     [',,=T', 0].__enum__.756X = ['756X', 1];
-    7IzT = function (arg0) {
+    Main = function (arg0) {
       this.=irKO = false;
       this.-iB= = arg0;
-      7IzT.(K = this;
+      Main.(K = this;
       this.4Bu2, = 0;
       this.3xBA, = false;
       this.(rs{a = false;
@@ -4299,12 +4299,12 @@ for ($somevar in this.1) {
       if (v3 == null) {
         var v4 = new 0d2T();
         var v5 = '../../../';
-        7IzT.64TL = {'_sdino': v5 + 'dev/swf/sdino.swf', '_smonster': v5 + 'dev/swf/smonster.swf', '_dino': v5 + 'dev/swf/dino.swf', '_bg': v5 + 'stable/img/fight/castle_plain.jpg', '_dojo': null, '_equip': v5 + 'stable/img/objs/::id::.gif', '_mtop': 140, '_mbottom': 20, '_mright': 0, '_ground': null, '_history': v4, '_debrief': null, '_check': null, '_debug': null};
+        Main.64TL = {'_sdino': v5 + 'dev/swf/sdino.swf', '_smonster': v5 + 'dev/swf/smonster.swf', '_dino': v5 + 'dev/swf/dino.swf', '_bg': v5 + 'stable/img/fight/castle_plain.jpg', '_dojo': null, '_equip': v5 + 'stable/img/objs/::id::.gif', '_mtop': 140, '_mbottom': 20, '_mright': 0, '_ground': null, '_history': v4, '_debrief': null, '_check': null, '_debug': null};
         this. ,Z8l(v4);
         this.2O2It = true;
       } else {
         try {
-          7IzT.64TL =  D(1.5QGZh.;LI(v3);
+          Main.64TL =  D(1.5QGZh.;LI(v3);
           this.40LIt();
         }
         catch (v0) {
@@ -4313,17 +4313,17 @@ for ($somevar in this.1) {
           return undefined;
         }
       }
-      [re7L.[MqDO -= 7IzT.64TL._mright;
+      [re7L.[MqDO -= Main.64TL._mright;
       this.0Eck5 = new [re7L(this.-iB=);
-      this.0Eck5.6FOZv = 7IzT.64TL._ground;
+      this.0Eck5.6FOZv = Main.64TL._ground;
       this.0P Zp = new ;BuQ (([re7L.(K.32.18wU*(0));
       this.0Eck5.3U*}=(();
       this.*4F*4();
     };
 
-    7IzT.__name__ = ['7IzT'];
-    v1 = 7IzT.prototype;
-    v1.__class__ = 7IzT;
+    Main.__name__ = ['Main'];
+    v1 = Main.prototype;
+    v1.__class__ = Main;
     v1.__class__.64TL = null;
     v1.__class__.(K = null;
     v1.__class__. T9z) = null;
@@ -4331,7 +4331,7 @@ for ($somevar in this.1) {
     v1.6Kr1) = null;
     v1.40LIt = function () {
       var (K = this;
-      this.6Kr1) = new  D(1.6UHP(7IzT.64TL._check);
+      this.6Kr1) = new  D(1.6UHP(Main.64TL._check);
       this.6Kr1).7dK]g = ]6=8H(('+o71G(', this);
       this.6Kr1).413{B( = function (arg0) {
         if (arg0 == 'OK') {
@@ -4408,12 +4408,12 @@ for ($somevar in this.1) {
         case 10:
           v6 = v5[2];
           var v7 = v5[3];
-          if (7IzT. T9z) != null) {
-            7IzT. T9z).-YK-m();
+          if (Main. T9z) != null) {
+            Main. T9z).-YK-m();
           }
           if (v7 == false) {
-            7IzT. T9z) = new 17.9W](v6);
-            v4 = 7IzT. T9z);
+            Main. T9z) = new 17.9W](v6);
+            v4 = Main. T9z);
           }
           break;
         case 0:
@@ -4574,12 +4574,12 @@ for ($somevar in this.1) {
     v1.3xBA, = null;
     v1.[KAR = null;
     v1.(D{Hk = function () {
-      if (7IzT.64TL._debug == null) {
+      if (Main.64TL._debug == null) {
         return undefined;
       }
-      var v2 = 1oO;1(.toString(7IzT.64TL._history);
+      var v2 = 1oO;1(.toString(Main.64TL._history);
       var v3 = this;
-      this.6Kr1) = new  D(1.6UHP(7IzT.64TL._debug);
+      this.6Kr1) = new  D(1.6UHP(Main.64TL._debug);
       this.6Kr1).7dK]g = ]6=8H(('+o71G(', this);
       this.6Kr1).413{B( = function (arg0) {};
 
@@ -4590,7 +4590,7 @@ for ($somevar in this.1) {
     v1.0P Zp = null;
     v1.]r_cX = function () {
       var _g = this;
-      var v2 = 7IzT.64TL._history.1AF();
+      var v2 = Main.64TL._history.1AF();
       var v3 = null;
       try {
         var v4 = v2;
@@ -4920,7 +4920,7 @@ for ($somevar in this.1) {
     v1.__class__ = 980Sb;
     v1.__class__._main = null;
     v1.__class__.0D 6 = function () {
-      980Sb._main = new 7IzT([8X6+.1ni._root);
+      980Sb._main = new Main([8X6+.1ni._root);
       var {wH = ]6=8H(('onEnterFrame', [8X6+.1ni._root);
       [8X6+.1ni._root.onEnterFrame = function () {
         if ({wH != null) {
@@ -4987,7 +4987,7 @@ for ($somevar in this.1) {
       var v3 = new [8X6+.MovieClipLoader();
       v3.onLoadInit = ]6=8H(('}T-cy', this);
       v3.onLoadComplete = ]6=8H(('}T-cy', this);
-      v3.loadClip(7IzT.64TL._dino, this.,Czm));
+      v3.loadClip(Main.64TL._dino, this.,Czm));
       this.3xBA, = 0;
     };
 
@@ -5190,11 +5190,11 @@ for ($somevar in arg0) {
     v1.__class__ = [re7L;
     v1.__class__.(K = null;
     v1.__class__.(B00 = function (arg0) {
-      return 7IzT.64TL._mtop + arg0 * 0.5;
+      return Main.64TL._mtop + arg0 * 0.5;
     };
 
     v1.__class__.5yrj+ = function (arg0) {
-      return (arg0 - 7IzT.64TL._mtop) * 2;
+      return (arg0 - Main.64TL._mtop) * 2;
     };
 
     v1.__class__.,*b1X = function () {
@@ -5202,7 +5202,7 @@ for ($somevar in arg0) {
     };
 
     v1.__class__.=VRld = function () {
-      return ([re7L.*sd+;( - (7IzT.64TL._mtop + 7IzT.64TL._mbottom)) * 2;
+      return ([re7L.*sd+;( - (Main.64TL._mtop + Main.64TL._mbottom)) * 2;
     };
 
     v1.__class__.*nW4Q = function (arg0) {
@@ -5245,7 +5245,7 @@ for ($somevar in arg0) {
       if (arg2 == null) {
         arg2 = 1.0;
       }
-      if (!7IzT.(K.=irKO) {
+      if (!Main.(K.=irKO) {
         return undefined;
       }
       this.4fYp5 = arg0;
@@ -5359,11 +5359,11 @@ for ($somevar in arg0) {
       v2.onLoadInit = ]6=8H(('}T-cy', this);
       v2.onLoadComplete = ]6=8H(('}T-cy', this);
       v2.onLoadError = ]6=8H(('=tZs2(', this);
-      if (7IzT.64TL._dojo == null) {
-        v2.loadClip(7IzT.64TL._bg, v3);
+      if (Main.64TL._dojo == null) {
+        v2.loadClip(Main.64TL._bg, v3);
       } else {
         v3 = this.*i Oz;
-        v2.loadClip(7IzT.64TL._dojo, v3);
+        v2.loadClip(Main.64TL._dojo, v3);
       }
       v3._x = -[re7L.2QF=};
       v3._y = -[re7L.2QF=};
@@ -5485,7 +5485,7 @@ for ($somevar in arg0) {
       this.*B = arg0;
       this.(v+ = [re7L.(K.-(9X-[arg0];
       this.-iB= = this.(v+.32.*=_p_('mcSlotDinoz', 0);
-      this.-iB=._visible = 7IzT.(K.=irKO;
+      this.-iB=._visible = Main.(K.=irKO;
       this.-iB=._x = -(arg0 * 2 - 1) * ((arg1.26do5 == 1) ? 3 : 10);
       this.-iB=._y = 3 + 40 * this.(v+. Iqt5.length;
       9K.53kZ-(.+43N.1U;0(this.-iB=, 2, 8, 6967078);
@@ -5493,7 +5493,7 @@ for ($somevar in arg0) {
       this.-iB=.-o()._visible = false;
       this.6g,A = 1;
       if (arg1 == null) {
-        this.9m,-A((7IzT.(K.7ogOI(.5955 / 7IzT.(K.7ogOI(.2KA);
+        this.9m,-A((Main.(K.7ogOI(.5955 / Main.(K.7ogOI(.2KA);
         var v4 = (new 9K.+7U K(this.-iB=.=S7A)).*=_p_('mcCastle', 0);
         v4._x = 28;
         v4._y = -15;
@@ -5517,8 +5517,8 @@ for ($somevar in arg0) {
       } else {
         v4 = 10;
         v5 = 36;
-        7IzT.(K.0P Zp.3U*}=((this.)YQB)(.}[3);
-        var v6 = 7IzT.(K.0P Zp.;LEeH((v5, v4);
+        Main.(K.0P Zp.3U*}=((this.)YQB)(.}[3);
+        var v6 = Main.(K.0P Zp.;LEeH((v5, v4);
         this.-iB=.=S7A.attachBitmap(v6, 0);
         var v7 = -this.)YQB)(.26do5;
         this.-iB=.=S7A._x = -v4 + (this.)YQB)(.26do5 + 1) * 0.5 * (v5 + 2 * v4);
@@ -5600,7 +5600,7 @@ for ($somevar in arg0) {
     };
 
     +6[ML = function () {
-      7IzT.(K.0be]F.push(this);
+      Main.(K.0be]F.push(this);
       this.}2D* = 0;
       this.-iJ = 0.1;
       this.8Gq_+ = true;
@@ -5644,7 +5644,7 @@ for ($somevar in arg0) {
     v1.}-B2 = function () {};
 
     v1.9T54 = function () {
-      7IzT.(K.0be]F.remove(this);
+      Main.(K.0be]F.remove(this);
       if (this.4-QmW != null && this.4-QmW.length > 0) {
         this.)aQIU();
       }
@@ -6305,8 +6305,8 @@ for ($somevar in v2) {
       this.70* = new 9K.+7U K(this.4N*);
       if (arg0.]-yfJ() {
         this.,Czm) = this.70*.18wU*(0);
-        7IzT.(K.0P Zp.3U*}=((arg0.}[3);
-        7IzT.(K.0P Zp.{hzh3(this.,Czm), 1).{=+e,.2K0WL);
+        Main.(K.0P Zp.3U*}=((arg0.}[3);
+        Main.(K.0P Zp.{hzh3(this.,Czm), 1).{=+e,.2K0WL);
         this.,Czm)._alpha = 0;
       }
     };
@@ -6473,7 +6473,7 @@ for ($somevar in v2) {
               var v5 = [re7L.(B00(this.(.)();
               var v6 = new [X.6rt7L(v4, [re7L.[MqDO, v5, this.*xQo+, null);
               this.-iJ = 0.1;
-              7IzT.(K.7ogOI(.*]Q5}(this.*xQo+, this.();
+              Main.(K.7ogOI(.*]Q5}(this.*xQo+, this.();
             }
           if (v3 != 2) {
             if (this.}2D* == 1) {
@@ -6902,7 +6902,7 @@ for ($somevar in v2) {
       this.,=* = arg0;
       this.-=* = arg1;
       var v5 = 0;
-      var v6 = 7IzT.(K.1cUTb;
+      var v6 = Main.(K.1cUTb;
       while (v5 < v6.length) {
         var v7 = v6[v5];
         ++v5;
@@ -6925,7 +6925,7 @@ for ($somevar in v2) {
     v1.}-B2 = function () {
       this.)aQIU();
       var v2 = 0;
-      var v3 = 7IzT.(K.1cUTb;
+      var v3 = Main.(K.1cUTb;
       while (v2 < v3.length) {
         var v4 = v3[v2];
         ++v2;
@@ -6968,13 +6968,13 @@ for ($somevar in v2) {
             v10.6d;{ = true;
         }
       }
-      if (7IzT.64TL._debrief != null) {
+      if (Main.64TL._debrief != null) {
         this.1N59{();
       }
     };
 
     v1.1N59{ = function () {
-      [8X6+.1ni.9jX3L(7IzT.64TL._debrief);
+      [8X6+.1ni.9jX3L(Main.64TL._debrief);
     };
 
     v1.87vE7( = function () {
@@ -7417,7 +7417,7 @@ for ($somevar in v2) {
       var v2 = new [8X6+.MovieClipLoader();
       v2.onLoadComplete = ]6=8H(('5igbG(', this);
       v2.onLoadInit = ]6=8H(('5igbG(', this);
-      v2.loadClip((7IzT.64TL._equip.split('::id::')).join(this.3ZD), this.(u*2.-iB=);
+      v2.loadClip((Main.64TL._equip.split('::id::')).join(this.3ZD), this.(u*2.-iB=);
       this.3xBA, = 0;
       this.(u*2.(( = this.-.(( - 20;
       this.(u*2.)( = [re7L.(B00(this.-.)() - 50;
@@ -7553,9 +7553,9 @@ for ($somevar in v2) {
     v1.87vE7( = function () {
       super.87vE7(();
       if ([re7L.(K.[5rLS()) {
-        7IzT.(K.=irKO = true;
+        Main.(K.=irKO = true;
         var v3 = 0;
-        var v4 = 7IzT.(K.1cUTb;
+        var v4 = Main.(K.1cUTb;
         while (v3 < v4.length) {
           var v5 = v4[v3];
           ++v3;
@@ -7593,7 +7593,7 @@ for ($somevar in v2) {
         this.;QSZ0((arg0);
       }
       var v5 = 0;
-      var v6 = 7IzT.(K.1cUTb;
+      var v6 = Main.(K.1cUTb;
       while (v5 < v6.length) {
         var v7 = v6[v5];
         ++v5;
@@ -7725,7 +7725,7 @@ for ($somevar in v2) {
       this.text = arg0;
       this.0p8q = false;
       var v4 = 0;
-      var v5 = 7IzT.(K.1cUTb;
+      var v5 = Main.(K.1cUTb;
       while (v4 < v5.length) {
         var v6 = v5[v4];
         ++v4;
