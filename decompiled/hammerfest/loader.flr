@@ -25481,7 +25481,7 @@ movie 'loader.swf' {
                 }, 10);
               };
 
-              this.]{i.+9L}b = function ([) {
+              this.]{i.traceString = function ([) {
                 if (!this.initdone) {
                   this.init();
                 }
@@ -25571,7 +25571,7 @@ movie 'loader.swf' {
                 var v4 = v3.length;
                 v2 = 0;
                 while (v2 < v4) {
-                  this.+9L}b(v3[v2]);
+                  this.traceString(v3[v2]);
                   ++v2;
                 }
               };
