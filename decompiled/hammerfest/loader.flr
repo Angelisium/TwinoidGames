@@ -6265,7 +6265,7 @@ movie 'loader.swf' {
         3Wt.7t4B ((this.)3 =h, 'onRelease');
         3Wt.setGlobal('7T4cF(', 3Wt.callback(this, '7T4cF('));
         3Wt.setGlobal('(x5W-(', 3Wt.callback(this, '(x5W-('));
-        this.=FDiF( = 3Wt.]1dDm(3Wt.getVar(this.+-(0, '{aq}5'), this.+-(0, {'5J]Ek': this.5J]Ek, '3 qNS': this.03(H;(), '0O q{': this.9t}[v, '+LT;C(': this.5*D;7(, '}mR6O': this.}mR6O});
+        this.=FDiF( = 3Wt.makeNew(3Wt.getVar(this.+-(0, '{aq}5'), this.+-(0, {'5J]Ek': this.5J]Ek, '3 qNS': this.03(H;(), '0O q{': this.9t}[v, '+LT;C(': this.5*D;7(, '}mR6O': this.}mR6O});
         this.0D 6 = 3Wt.callback(this, '(R6pe');
         this.3K4}n(6);
       };
@@ -25423,7 +25423,7 @@ movie 'loader.swf' {
                 }
               };
 
-              this.3Wt.]1dDm = function (8, 6+, 7+, 8+, 9+) {
+              this.3Wt.makeNew = function (8, 6+, 7+, 8+, 9+) {
                 return new 8(6+, 7+, 8+, 9+);
               };
 
