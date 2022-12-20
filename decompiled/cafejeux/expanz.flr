@@ -104,7 +104,7 @@ movie 'expanz.swf' {
 
   frame 1 {
     )PVyX = function () {
-      return flash.7]AJ.__string_rec(this, '-g');
+      return flash.Boot.__string_rec(this, '-g');
     };
 
     var v1 = new Object();
@@ -2425,7 +2425,7 @@ for ($somevar in v2) {
 
     v1.5DZk5 = null;
     v1.{5}D = null;
-    flash.7]AJ.__init(this);
+    flash.Boot.__init(this);
     flash.MovieClip = _global.MovieClip;
     flash.TextField = _global.TextField;
     flash.text.StyleSheet = _global.TextField.StyleSheet;
@@ -2463,8 +2463,8 @@ for ($somevar in v2) {
       44{N.=OA = 300;
       44{N.*OA = 300;
     }
-    catch (flash.7]AJ) {
-      flash.7]AJ.__exc(flash.7]AJ);
+    catch (flash.Boot) {
+      flash.Boot.__exc(flash.Boot);
     }
   }
 }

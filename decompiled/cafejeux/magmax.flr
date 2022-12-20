@@ -249,7 +249,7 @@ movie 'magmax.swf' {
 
   frame 1 {
     )PVyX = function () {
-      return flash.7]AJ.__string_rec(this, '-g');
+      return flash.Boot.__string_rec(this, '-g');
     };
 
     var v1 = new Object();
@@ -3551,8 +3551,8 @@ for ($somevar in v2) {
       44{N.(K.2a[b;(();
     };
 
-    flash.7]AJ.__init(this);
-    flash.7]AJ.__res = {};
+    flash.Boot.__init(this);
+    flash.Boot.__res = {};
     try {
       flash.MovieClip = _global.MovieClip;
       flash.TextField = _global.TextField;
@@ -3604,8 +3604,8 @@ for ($somevar in v2) {
       44{N.-G[dy = ['dans la lave', 'en enfer', 'hors du ring', 'au bord du gouffre', 'vers la mort'];
       =i{J.0v60- = 0;
     }
-    catch (flash.7]AJ) {
-      flash.7]AJ.__exc(flash.7]AJ);
+    catch (flash.Boot) {
+      flash.Boot.__exc(flash.Boot);
     }
   }
 }

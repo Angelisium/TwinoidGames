@@ -468,7 +468,7 @@ movie 'crumble.swf' {
 
   frame 1 {
     )PVyX = function () {
-      return flash.7]AJ.__string_rec(this, '-g');
+      return flash.Boot.__string_rec(this, '-g');
     };
 
     var v1 = new Object();
@@ -3396,8 +3396,8 @@ for ($somevar in v2) {
       }
     };
 
-    flash.7]AJ.__init(this);
-    flash.7]AJ.__res = {};
+    flash.Boot.__init(this);
+    flash.Boot.__res = {};
     try {
       flash.MovieClip = _global.MovieClip;
       flash.TextField = _global.TextField;
@@ -3465,8 +3465,8 @@ for ($somevar in v2) {
       =i{J.= g5I = ['Enclume', 'Relais', 'Voleur de biscuit', 'Renforts', 'Désordre mental', 'Pétrification', 'Pelle à tarte', 'Conversion', 'Double charge', 'Sieste', 'Solo', 'Piège'];
       =i{J.=,ZL = ['L\'enclume detruit la case ciblée et ce qui est dessus.', 'Vous pouvez jouer 2 fois pendant un tour.', 'Si votre adversaire joue un biscuit au prochain tour, annulez son effet et récupérez le biscuit.', 'Place au hasard jusqu\'à 3 alliés supplémentaires sur le gâteau.', 'Le prochain mouvement de votre adversaire sera inversé.', 'La cible se transforme en pierre.', 'Faites voler toute la colonne choisie grâce à cet outil magique.', 'La cible choisie change d\'équipe.', 'Votre prochain mouvement sera doublé.', 'Vous passez votre tour.', 'Seul l\'aliment ciblé se déplacera ce tour.', 'Posez un piège sur une case libre du gateau. La case se détruira si un aliment marche dessus.'];
     }
-    catch (flash.7]AJ) {
-      flash.7]AJ.__exc(flash.7]AJ);
+    catch (flash.Boot) {
+      flash.Boot.__exc(flash.Boot);
     }
   }
 }

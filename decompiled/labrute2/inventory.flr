@@ -358,7 +358,7 @@ movie 'inventory.swf' {
 
   frame 1 {
     )PVyX = function () {
-      return flash.7]AJ.__string_rec(this, '-g');
+      return flash.Boot.__string_rec(this, '-g');
     };
 
     var v1 = new Object();
@@ -375,12 +375,12 @@ for ($somevar in v2) {
 for ($somevar in v2) {
       v1[enumerate v2] = v2[enumerate v2];
     }
-    flash.7]AJ = function () {};
+    flash.Boot = function () {};
 
-    flash.7]AJ.__name__ = ['flash', '7]AJ'];
-    v1 = flash.7]AJ.prototype;
-    v1.__class__ = flash.7]AJ;
-    flash.7]AJ.__string_rec = function (arg0, arg1) {
+    flash.Boot.__name__ = ['flash', 'Boot'];
+    v1 = flash.Boot.prototype;
+    v1.__class__ = flash.Boot;
+    flash.Boot.__string_rec = function (arg0, arg1) {
       if (arg1.length >= 20) {
         return '<...>';
       }
@@ -411,9 +411,9 @@ for ($somevar in v2) {
                   ++v7;
                   var v9 = v7;
                   if (v9 == 2) {
-                    v6 += flash.7]AJ.__string_rec(arg0[v9], arg1);
+                    v6 += flash.Boot.__string_rec(arg0[v9], arg1);
                   } else {
-                    v6 += ',' + flash.7]AJ.__string_rec(arg0[v9], arg1);
+                    v6 += ',' + flash.Boot.__string_rec(arg0[v9], arg1);
                   }
                 }
                 return v6 + ')';
@@ -425,7 +425,7 @@ for ($somevar in v2) {
               while (v9 < v6) {
                 ++v9;
                 var v10 = v9;
-                v8 += (v10 > 0 ? ',' : '') + flash.7]AJ.__string_rec(arg0[v10], arg1);
+                v8 += (v10 > 0 ? ',' : '') + flash.Boot.__string_rec(arg0[v10], arg1);
               }
               v8 += ']';
               return v8;
@@ -454,7 +454,7 @@ for ($somevar in arg0) {
               if (v8.length != 2) {
                 v8 += ',\n';
               }
-              v8 += arg1 + v11 + ' : ' + flash.7]AJ.__string_rec(arg0[v11], arg1);
+              v8 += arg1 + v11 + ' : ' + flash.Boot.__string_rec(arg0[v11], arg1);
             }
             arg1 = arg1.substring(4);
             if (v8.length != 2) {
@@ -471,7 +471,7 @@ for ($somevar in arg0) {
       }
     };
 
-    flash.7]AJ.__closure = function (arg0, arg1) {
+    flash.Boot.__closure = function (arg0, arg1) {
       var v4 = arg1[super];
       if (v4 == null) {
         return null;
@@ -486,7 +486,7 @@ for ($somevar in arg0) {
       return v5;
     };
 
-    flash.7]AJ.__instanceof = function (arg0, arg1) {
+    flash.Boot.__instanceof = function (arg0, arg1) {
       if (!arg1) {
         return false;
       }
@@ -520,7 +520,7 @@ for ($somevar in arg0) {
       }
     };
 
-    flash.7]AJ.9vIf=( = function () {
+    flash.Boot.9vIf=( = function () {
       var v2 = flash.1ni.0]Ss);
       var v3 = v2.__trace_txt;
       if (v3 == null) {
@@ -538,21 +538,21 @@ for ($somevar in arg0) {
         v6.font = '_sans';
         v3.setNewTextFormat(v6);
         v3.selectable = false;
-        v3.textColor = flash.7]AJ. p)sT;
+        v3.textColor = flash.Boot. p)sT;
         v2.__trace_lines = new Array();
       }
       return v3;
     };
 
-    flash.7]AJ.__set_trace_color = function (arg0) {
-      (flash.7]AJ.9vIf=(()).textColor = arg0;
-      flash.7]AJ. p)sT = arg0;
+    flash.Boot.__set_trace_color = function (arg0) {
+      (flash.Boot.9vIf=(()).textColor = arg0;
+      flash.Boot. p)sT = arg0;
     };
 
-    flash.7]AJ.__trace = function (arg0, arg1) {
+    flash.Boot.__trace = function (arg0, arg1) {
       var v4 = flash.1ni.0]Ss);
-      var v5 = flash.7]AJ.9vIf=(();
-      var v6 = arg1.fileName + ((arg1.lineNumber == null) ? '' : ':' + arg1.lineNumber) + ': ' + flash.7]AJ.__string_rec(arg0, '');
+      var v5 = flash.Boot.9vIf=(();
+      var v6 = arg1.fileName + ((arg1.lineNumber == null) ? '' : ':' + arg1.lineNumber) + ': ' + flash.Boot.__string_rec(arg0, '');
       var v7 = v4.__trace_lines.concat(v6.split('\n'));
       v5.text = v7.join('\n');
       for (;;) {
@@ -563,22 +563,22 @@ for ($somevar in arg0) {
       v4.__trace_lines = v7;
     };
 
-    flash.7]AJ.__exc = function (arg0) {
+    flash.Boot.__exc = function (arg0) {
       var v3 = '';
       if (flash.1ni.)2I7S == null) {
-        flash.7]AJ.__trace(flash.7]AJ.__string_rec(arg0, '') + v3, {'fileName': '(uncaught exception)'});
+        flash.Boot.__trace(flash.Boot.__string_rec(arg0, '') + v3, {'fileName': '(uncaught exception)'});
       } else {
-        flash.1ni.)2I7S(flash.7]AJ.__string_rec(arg0, ''), []);
+        flash.1ni.)2I7S(flash.Boot.__string_rec(arg0, ''), []);
       }
     };
 
-    flash.7]AJ.__clear_trace = function () {
+    flash.Boot.__clear_trace = function () {
       var v2 = flash.1ni.0]Ss);
       v2.__trace_txt.removeTextField();
       v2.__trace_lines = null;
     };
 
-    flash.7]AJ.__init = function (arg0) {
+    flash.Boot.__init = function (arg0) {
       var v3 = _global;
       if (!v3.=w 0[) {
         v3.=w 0[ = true;
@@ -627,8 +627,8 @@ for ($somevar in arg0) {
       arg0.flash.1ni._global = _global;
       arg0.flash.1ni._root = _root;
       arg0.flash.1ni.0]Ss) = arg0;
-      arg0.1Z;X+ = flash.7]AJ.__instanceof;
-      arg0.]6=8H( = flash.7]AJ.__closure;
+      arg0.1Z;X+ = flash.Boot.__instanceof;
+      arg0.]6=8H( = flash.Boot.__closure;
       if (_global.Stage.align == '') {
         _global.Stage.align = 'LT';
       }
@@ -2732,11 +2732,11 @@ for ($somevar in this.1) {
     v1 = 3Wt.prototype;
     v1.__class__ = 3Wt;
     v1.__class__.=B = function (arg0, arg1) {
-      return flash.7]AJ.__instanceof(arg0, arg1);
+      return flash.Boot.__instanceof(arg0, arg1);
     };
 
     v1.__class__.+_PpF = function (arg0) {
-      return flash.7]AJ.__string_rec(arg0, '');
+      return flash.Boot.__string_rec(arg0, '');
     };
 
     v1.__class__.9n6 = function (arg0) {
@@ -4411,7 +4411,7 @@ for ($somevar in this.1) {
     };
 
     try {
-      flash.7]AJ.__init(this);
+      flash.Boot.__init(this);
       flash.MovieClip = _global.MovieClip;
       flash.TextField = _global.TextField;
       flash.text.StyleSheet = _global.TextField.StyleSheet;
@@ -4500,8 +4500,8 @@ for ($somevar in this.1) {
       }]zS.de = {'8iAmf': ['Kraft', 'Flinkheit', 'Geschwindigkeit', 'Ausdauer'], '}ccy+(': ['Dieb', 'Wilde Bestie', 'Tragischer Trank', 'Netz', 'Bombe', 'Dampfhammer', 'Höllenschrei', 'Hypnose', 'Sintflut', 'Dompteur'], '=jUe4(': ['Herkulische Kräfte', 'Katzenflinkheit', 'Blitzschlag', 'Vitalität', 'Unsterblichkeit', 'Waffenmeister', 'Kampfkunst', 'Sechster Sinn', 'Kämpfernatur', 'Schlaggewitter', 'Schild', 'Rüstung', 'Elefantenhaut', 'Unberührbarkeit', 'Sabotage', 'Schock', 'Mächtiger Arm', 'Gnadenlos', 'Überleben', 'Bleiskelett', 'Ballettschuhe', 'Entschlossenheit', 'Erstschlag', 'Resistenz', 'Kampfsinn', 'Konterangriff', 'Eisenschädel'], ' CPR8(': ['Hände', 'Messer', 'Breitschwert', 'Lanze', 'Stock', 'Dreizack', 'Beil', 'Krummsäbel', 'Hammer', 'Schwert', 'Fächer', 'Shuriken', 'Stoßzahn', 'Keule', 'Morgenstern', 'Mammutknochen', 'Dreschflegel', 'Peitsche', 'Sai', 'Porree', 'Tasse', 'Pfanne', 'Piou Piou', 'Hallebarde', 'Posaune', 'Klavier', 'Nudelschale', 'Schläger'], '}vJt3(': ['Hund A', 'Hund B', 'Hund C', 'Panther', 'Bär'], '7nNg+(': ['Regeneration', 'Chef', 'Spion', 'Saboteur', 'Backup'], '((bU': ['HIER EINGEBEN', 'Das Aussehen ändern', 'Die Farben ändern', 'Es ist ein Fehler aufgetreten, versuche es bitte noch einmal.', 'Wähle bitte einen Namen\nfür deinen Brutalo.', 'Leben', 'Super', 'Spezialfähigkeiten', ' hat gewonnen!', 'Trage hier die unten\nangezeigten Zeichen ein.', 'Deine Eingabe war nicht korrekt. Versuche es bitte noch einmal!', 'Habe bitte etwas Geduld...'], '3S0YH': ['Du bist so stark, du kannst sogar Berge verschieben! Im Moment hast du aber noch einen Gegner vor dir.', 'Du hast gerade keinen Wollknäuel zum Spielen, aber vielleicht willst du ja den Brutalo vor dir ärgern.', 'Deine Schläge landen schneller bei deinem Gegner als dieser überhaupt blinzeln kann.', 'Deine Lebenserwartung ist soeben gestiegen! Du wirst ab sofort länger in der Arena durchhalten.', 'Du bist so gesund wie noch nie zuvor! Wer soll DICH jetzt im Kampf noch schlagen?!', 'Du hast deine Waffenkunst perfektioniert. Ab sofort fügst du deinem Gegner mit deinen Hieb- und Stichwaffen noch mehr Schaden zu.', 'Chuck Norris\' Nachhilfestunden zahlen sich so langsam aus! Deine Schläge landen dort, wo du sie haben willst - im Gesicht deines Gegners!', 'Dank deines geschärften Kampfsinns bist du in der Lage, die miesen Tricks deines Gegners zu erahnen und ihm zuvorzukommen.', 'Du bist in der Arena nicht gerade zimperlich... Sobald du einsteckst, teilst du sofort wieder aus - und das nicht zu knapp!', '... du drischst, drischst, drischst und drischst auf deinen Gegner ein und vergisst alles um dich herum. Hurrikan Katrina ist ein Witz gegen dich!', 'Mit einem Schild kannst du Schläge abwehren. Na, wer\'s braucht...', 'Das ist eine Rüstung, Kleiner. So\'n Ding ziehst du dir übers T-Shirt, damit es nicht schmutzig wird. Außerdem hilft es dir, Angriffe abzuwehren.', 'Durch das ganze Prügeln wirst du zwangsläufig irgendwann mal stärker. Dein Brutalo hat sich eine lederne dicke Haut angekämpft!', 'Es fällt dir immer einfacher, den Schlägen deines Gegners auszuweichen. Das geht dem mächtig auf den Senkel.', 'Manche Brutalos lieben es, Straßenzüge zu verwüsten, doch du verwüstet lieber die Waffen deines Gegners. He he!', 'Deine Schläge kommen derart überraschend, dass dein Gegner vor lauter Schreck seine Waffe fallen lässt... Nutze diese Gelegenheit!', 'Deine kräftigen Oberarme schwingen deine Waffen so kinderleicht wie ein Mikro. Du bist der Thomas Gottschalk der Keulenschwinger!', 'Keine Ahnung wie du das machst, aber deine Ohrfeigen finden immer ihr Ziel. Niemand kann sich ihnen entziehen. Dein Gegner schon mal gar nicht.', 'Zahlreiche Jahre harter Kämpfe haben dich fast unverwundbar gemacht. Selbst nach normalerweise tödlichen Schlägen bleibt dir noch ein Lebenspunkt übrig.', 'Auch wenn es extrem viel wiegt, ein Bleiskelett ist nötig, es schwächt Schaden durch stumpfe Waffen erheblich ab.', 'Du hast den Tanz des Schwans erlernt. Solange dein Gegner ihn nicht ebenfalls beherrscht, kann er nicht nahe an dich rankommen.', 'Nichts kann dich aufhalten! Jede Niederlage macht dich nur stärker. Geht einer deiner Schläge mal daneben, haust du sofort erneut zu.', 'Deine Gegner betreten gemächlich die Arena. Aber du kommst lieber direkt zur Sache! Der erste Angriff gehört immer dir!', 'Dein Gegner muss endlos auf dich einschlagen, um dich k.o. zu hauen. Du musst mindestens 5 Schläge einstecken, ehe du überhaupt etwas spürst.', 'Du nimmst dir von nun an die Zeit, die Schwachstellen deines Gegners herauszufinden. Wenn du dann loslegst, wird dich nichts aufhalten können.', 'Die beste Art anzugreifen? Durch Verteidigung natürlich! Du schlägst sofort zurück, sobald du einen Schlag deines Gegners abgeblockt hast.', 'Dein Gegner wird durch seine eigenen Schläge verletzt!', 'Mit dieser Fähigkeit kannst du dir die Waffe deines Gegners ausleihen und sie an ihm ausprobieren.', 'Du bist jetzt ein richtiger Brutalo! Noch viel brutaler und grausamer als vorher. In deinen Kämpfen lässt du richtig dicke Schlagladungen von dir.', 'Komm her, ich schenk dir ein! Austeilen macht dir so richtig Spaß! Jupp, das weckt Lebenskräfte.', 'Ein Kampfnetz - ist zwar nicht ganz so cool wie das von Spiderman, aber es hilft: Dein Gegner verheddert sich und kann dann von dir vermöbelt werden.', 'Das Ding hier ist \'ne Art Wasserbombe - nur noch fieser.', 'Der Dampfhammer! Wer kennt ihn nicht? Eine klassische Catchtechnik. Spring mit deinem Gegner in die Luft und fall mit ihm danach auf den Boden!', 'Wilde Bestien?! Das da? Pffff... Du musst nur ein wenig schreien, dann ergreifen sie schon die Flucht! Dass ich nicht lache!', 'Im Haustiere zähmen macht dir keiner so schnell was vor. Die Viecher gehorchen dir aufs Wort.', '100 Kilo Waffen mit sich herumzuschleppen ist auf die Dauer etwa mühsam... aber du hast dir etwas Geniales einfallen lassen.', 'Recycling! Mach es zum Teil deines Lebens! Du sammelst alle Leichen in der Arena ein.', 'Dank deiner außergewöhnlichen Selbstheilungskräfte verlierst du nie einen Kampf!', 'Jeder Brutalo weiß - die größten Kämpfe werden nicht in der Arena ausgetragen, sondern in der Kantine.', 'Durch Schärfen deiner Sinne vor dem Kampf vermeidest du lange Krankenhausaufenthalte.', 'Von Schwamm-Hämmern bis zu Plastik-Schwertern, du bist der König der Waffen-Attrappen! Bis deine Gegner das merken, ist es schon zu spät für sie.', 'Bei Freundschaft geht es um\'s Teilen. Gut dass du gelernt hast, Schläge auszuteilen. So haben deine Gegner auch was davon.']};
       }]zS.6Q;-A(('fr');
       flash.LoadVars = _global.LoadVars;
-      flash.7]AJ. p)sT = 0;
-      flash.7]AJ.)Sdm5( = null;
+      flash.Boot. p)sT = 0;
+      flash.Boot.)Sdm5( = null;
       5e{K. CPR8( = [{'*B': _Weapons.7y64E, '}_BB': 10, ';0-': 5, '{DiQ6': 120, ',+I': 0, ']mAH': 0, '4oH': 20, '=K-': 10, '-zE': 0, '2qE': -25, '*;-': 5, '-R 9)': 0, '6MQB': 5cw)M.08t}=, '+}B(':  a-TA.9H3N, ';2': 0}, {'*B': _Weapons.+rpFG, '}_BB': 5, ';0-': 7, '{DiQ6': 60, ',+I': 0, ']mAH': 0, '4oH': 50, '=K-': 10, '-zE': 0, '2qE': 0, '*;-': 0, '-R 9)': 30, '6MQB': 5cw)M.08t}=, '+}B(':  a-TA.=s()C, ';2': 1}, {'*B': _Weapons.63HnL, '}_BB': 5, ';0-': 10, '{DiQ6': 120, ',+I': 10, ']mAH': 1, '4oH': 0, '=K-': 0, '-zE': 0, '2qE': 15, '*;-': 15, '-R 9)': 0, '6MQB': 5cw)M.08t}=, '+}B(':  a-TA.7*]EL, ';2': 1}, {'*B': _Weapons.4wsoG, '}_BB': 2, ';0-': 12, '{DiQ6': 120, ',+I': -10, ']mAH': 3, '4oH': 0, '=K-': 0, '-zE': 0, '2qE': 0, '*;-': 10, '-R 9)': 0, '6MQB': 5cw)M.08t}=, '+}B(':  a-TA.=s()C, ';2': 2}, {'*B': _Weapons.=1;kL, '}_BB': 3, ';0-': 6, '{DiQ6': 100, ',+I': 30, ']mAH': 3, '4oH': 0, '=K-': 5, '-zE': 0, '2qE': 25, '*;-': 25, '-R 9)': 10, '6MQB': 5cw)M.08t}=, '+}B(':  a-TA.=s()C, ';2': 2}, {'*B': _Weapons.7c WC, '}_BB': 3, ';0-': 14, '{DiQ6': 140, ',+I': 5, ']mAH': 3, '4oH': 0, '=K-': 0, '-zE': 0, '2qE': 0, '*;-': 20, '-R 9)': 0, '6MQB': 5cw)M.08t}=, '+}B(':  a-TA.=s()C, ';2': 2}, {'*B': _Weapons.6bW, '}_BB': 3, ';0-': 17, '{DiQ6': 150, ',+I': 0, ']mAH': 1, '4oH': 0, '=K-': 0, '-zE': 0, '2qE': -10, '*;-': 0, '-R 9)': 0, '6MQB': 5cw)M.08t}=, '+}B(':  a-TA.7*]EL, ';2': 3}, {'*B': _Weapons.=HI(1(, '}_BB': 3, ';0-': 10, '{DiQ6': 80, ',+I': 0, ']mAH': 1, '4oH': 20, '=K-': 0, '-zE': 0, '2qE': 10, '*;-': 0, '-R 9)': 15, '6MQB': 5cw)M.08t}=, '+}B(':  a-TA.7*]EL, ';2': 1}, {'*B': _Weapons.0SBeA(, '}_BB': 5, ';0-': 55, '{DiQ6': 230, ',+I': -20, ']mAH': 1, '4oH': -30, '=K-': -40, '-zE': 50, '2qE': -50, '*;-': 10, '-R 9)': -40, '6MQB': 5cw)M.08t}=, '+}B(':  a-TA.7*]EL, ';2': 4}, {'*B': _Weapons.42DaH, '}_BB': 5, ';0-': 28, '{DiQ6': 180, ',+I': 0, ']mAH': 2, '4oH': -10, '=K-': -20, '-zE': -20, '2qE': 0, '*;-': 10, '-R 9)': 0, '6MQB': 5cw)M.08t}=, '+}B(':  a-TA.7*]EL, ';2': 1}, {'*B': _Weapons.2Na, '}_BB': 5, ';0-': 4, '{DiQ6': 28, ',+I': 50, ']mAH': 0, '4oH': 50, '=K-': 60, '-zE': 0, '2qE': -50, '*;-': -50, '-R 9)': 45, '6MQB': 5cw)M.08t}=, '+}B(':  a-TA.7*]EL, ';2': 5}, {'*B': _Weapons.-KI_r, '}_BB': 5, ';0-': 3, '{DiQ6': 12, ',+I': 0, ']mAH': 0, '4oH': 0, '=K-': 15, '-zE': 0, '2qE': -10, '*;-': -50, '-R 9)': 30, '6MQB': 5cw)M.0xrwL, '+}B(':  a-TA.9H3N, ';2': 6}, {'*B': _Weapons.{VGnC, '}_BB': 10, ';0-': 3, '{DiQ6': 100, ',+I': 0, ']mAH': 0, '4oH': 0, '=K-': 0, '-zE': 0, '2qE': 0, '*;-': 0, '-R 9)': 10, '6MQB': 5cw)M.08t}=, '+}B(':  a-TA.9H3N, ';2': 0}, {'*B': _Weapons.}-Y19, '}_BB': 5, ';0-': 30, '{DiQ6': 200, ',+I': -30, ']mAH': 1, '4oH': -35, '=K-': -30, '-zE': 30, '2qE': -30, '*;-': 10, '-R 9)': -60, '6MQB': 5cw)M.08t}=, '+}B(':  a-TA.7*]EL, ';2': 4}, {'*B': _Weapons.+d[1s, '}_BB': 5, ';0-': 20, '{DiQ6': 150, ',+I': 0, ']mAH': 1, '4oH': -5, '=K-': -10, '-zE': 30, '2qE': 0, '*;-': 10, '-R 9)': 0, '6MQB': 5cw)M.08t}=, '+}B(':  a-TA.7*]EL, ';2': 4}, {'*B': _Weapons.;mQeH(, '}_BB': 5, ';0-': 14, '{DiQ6': 160, ',+I': 0, ']mAH': 1, '4oH': 0, '=K-': 0, '-zE': 50, '2qE': 0, '*;-': 10, '-R 9)': -10, '6MQB': 5cw)M.08t}=, '+}B(':  a-TA.7*]EL, ';2': 4}, {'*B': _Weapons.9 ,yC, '}_BB': 5, ';0-': 36, '{DiQ6': 220, ',+I': 0, ']mAH': 1, '4oH': -10, '=K-': -30, '-zE': 150, '2qE': -50, '*;-': -20, '-R 9)': 30, '6MQB': 5cw)M.08t}=, '+}B(':  a-TA.7*]EL, ';2': 4}, {'*B': _Weapons.91]b, '}_BB': 5, ';0-': 10, '{DiQ6': 150, ',+I': -10, ']mAH': 5, '4oH': 30, '=K-': 30, '-zE': -20, '2qE': -20, '*;-': 30, '-R 9)': 35, '6MQB': 5cw)M.08t}=, '+}B(':  a-TA.8b-b, ';2': 7}, {'*B': _Weapons.0kt, '}_BB': 5, ';0-': 8, '{DiQ6': 60, ',+I': 0, ']mAH': 0, '4oH': 25, '=K-': 10, '-zE': 0, '2qE': 30, '*;-': 100, '-R 9)': 30, '6MQB': 5cw)M.08t}=, '+}B(':  a-TA.=s()C, ';2': 2}, {'*B': _Weapons.4Hd,O, '}_BB': 2, ';0-': 5, '{DiQ6': 110, ',+I': 100, ']mAH': 1, '4oH': 100, '=K-': 0, '-zE': 200, '2qE': -50, '*;-': 0, '-R 9)': 200, '6MQB': 5cw)M.08t}=, '+}B(':  a-TA.7*]EL, ';2': 4}, {'*B': _Weapons.(Nl, '}_BB': 2, ';0-': 8, '{DiQ6': 90, ',+I': 0, ']mAH': 0, '4oH': 30, '=K-': 15, '-zE': 0, '2qE': -10, '*;-': 0, '-R 9)': 40, '6MQB': 5cw)M.08t}=, '+}B(':  a-TA.=s()C, ';2': 0}, {'*B': _Weapons.3;KeJ, '}_BB': 2, ';0-': 17, '{DiQ6': 120, ',+I': 0, ']mAH': 1, '4oH': 0, '=K-': 0, '-zE': 0, '2qE': 40, '*;-': 0, '-R 9)': -40, '6MQB': 5cw)M.08t}=, '+}B(':  a-TA.7*]EL, ';2': 4}, {'*B': _Weapons.0JE(G, '}_BB': 2, ';0-': 5, '{DiQ6': 32, ',+I': 0, ']mAH': 0, '4oH': 0, '=K-': 0, '-zE': 0, '2qE': -10, '*;-': 0, '-R 9)': 0, '6MQB': 5cw)M.0xrwL, '+}B(':  a-TA.9H3N, ';2': 6}, {'*B': _Weapons.[j[34, '}_BB': 2, ';0-': 24, '{DiQ6': 180, ',+I': 0, ']mAH': 4, '4oH': -40, '=K-': 0, '-zE': 0, '2qE': 0, '*;-': 10, '-R 9)': 0, '6MQB': 5cw)M.08t}=, '+}B(':  a-TA.7*]EL, ';2': 1}, {'*B': _Weapons.8n*1, '}_BB': 2, ';0-': 20, '{DiQ6': 250, ',+I': 0, ']mAH': 2, '4oH': -10, '=K-': 0, '-zE': 20, '2qE': 20, '*;-': 50, '-R 9)': 30, '6MQB': 5cw)M.08t}=, '+}B(':  a-TA.7*]EL, ';2': 4}, {'*B': _Weapons.4u[MY, '}_BB': 2, ';0-': 7, '{DiQ6': 100, ',+I': 0, ']mAH': 1, '4oH': 20, '=K-': 10, '-zE': 0, '2qE': 0, '*;-': 0, '-R 9)': 50, '6MQB': 5cw)M.08t}=, '+}B(':  a-TA.7*]EL, ';2': 4}, {'*B': _Weapons.7FuzF(, '}_BB': 2, ';0-': 10, '{DiQ6': 45, ',+I': 0, ']mAH': 0, '4oH': 0, '=K-': 10, '-zE': 0, '2qE': -10, '*;-': 0, '-R 9)': 30, '6MQB': 5cw)M.0xrwL, '+}B(':  a-TA.9H3N, ';2': 6}, {'*B': _Weapons.9k59O, '}_BB': 2, ';0-': 6, '{DiQ6': 80, ',+I': 100, ']mAH': 1, '4oH': 0, '=K-': 10, '-zE': 0, '2qE': 20, '*;-': 0, '-R 9)': 0, '6MQB': 5cw)M.08t}=, '+}B(':  a-TA.7*]EL, ';2': 4}];
       5e{K.}vJt3( = [{' fs9+': 6, ')6,yz': 5, '}Yax5': 3, ',Ie8Z': -6, '2;dS5': 0, '-9U])': 0, '-R 9)': 10, '==4i3': 0, '0Rjs)': 0, 'init': 10, ']2': _Weapons.{VGnC}, {' fs9+': 6, ')6,yz': 5, '}Yax5': 3, ',Ie8Z': -6, '2;dS5': 0, '-9U])': 0, '-R 9)': 10, '==4i3': 0, '0Rjs)': 0, 'init': 10, ']2': _Weapons.{VGnC}, {' fs9+': 6, ')6,yz': 5, '}Yax5': 3, ',Ie8Z': -6, '2;dS5': 0, '-9U])': 0, '-R 9)': 10, '==4i3': 0, '0Rjs)': 0, 'init': 10, ']2': _Weapons.{VGnC}, {' fs9+': 23, ')6,yz': 16, '}Yax5': 24, ',Ie8Z': -4, '2;dS5': 0, '-9U])': 0, '-R 9)': 60, '==4i3': 0, '0Rjs)': 20, 'init': 60, ']2': _Weapons.{VGnC}, {' fs9+': 40, ')6,yz': 2, '}Yax5': 1, ',Ie8Z': 10, '2;dS5': 0, '-9U])': 0, '-R 9)': -20, '==4i3': 0, '0Rjs)': 0, 'init': 360, ']2': _Weapons.7y64E}];
       5e{K.}ccy+( = [{'*B': _Super.}k5CM, '}_BB': 8, '+nM': 2}, {'*B': _Super.3LjHA, '}_BB': 5, '+nM': 1}, {'*B': _Super.3 sE,(, '}_BB': 5, '+nM': 1}, {'*B': _Super.,Pm, '}_BB': 5, '+nM': 1}, {'*B': _Super.3 lJ, '}_BB': 2, '+nM': 2}, {'*B': _Super.-XoO, '}_BB': 2, '+nM': 1}, {'*B': _Super.2wI]L, '}_BB': 8, '+nM': 2}, {'*B': _Super.,U7QE, '}_BB': 3, '+nM': 1}, {'*B': _Super.061s((, '}_BB': 2, '+nM': 1}, {'*B': _Super.1LnG9, '}_BB': 20, '+nM': 4}];
@@ -4525,8 +4525,8 @@ for ($somevar in this.1) {
       7 (EQ.*sd+;( = 600;
       7 (EQ.0D 6();
     }
-    catch (flash.7]AJ) {
-      flash.7]AJ.__exc(flash.7]AJ);
+    catch (flash.Boot) {
+      flash.Boot.__exc(flash.Boot);
     }
   }
 }
