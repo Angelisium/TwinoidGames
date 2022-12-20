@@ -6223,7 +6223,7 @@ movie 'temple.swf' {
                 if (1 == undefined) {
                   1 = Stage.height;
                 }
-                this.[VAKp = 1 - 30;
+                this.maxHeight = 1 - 30;
                 this.initdone = true;
                 this.ttrace = this.+rJ.createTextField(}J, 99999);
                 this.tprint = this.+rJ.createTextField(}J, 99998);
@@ -6252,7 +6252,7 @@ movie 'temple.swf' {
                   this.init();
                 }
                 this.ttrace.text += ((([.split('\n')).join('\\n')).split('\r')).join('\\r') + '\n';
-                while (this.ttrace.textHeight > this.[VAKp) {
+                while (this.ttrace.textHeight > this.maxHeight) {
                   var v2 = this.ttrace.text.indexOf('\r', 0);
                   var v3 = this.ttrace.text.substr(v2 + 1);
                   this.ttrace.text = v3;
