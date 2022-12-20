@@ -161,8 +161,8 @@ movie '28b357c4b63ea29f9502e69e4d43a2db.swf' {
 
       -[m(M.,Hwi) = function (-, 5U4B) {
         var *B;
-        *B = (3Wt.16(VU('setInterval'))(function () {
-          (3Wt.16(VU('clearInterval'))(*B);
+        *B = (3Wt.getGlobal('setInterval'))(function () {
+          (3Wt.getGlobal('clearInterval'))(*B);
           -();
         }, 5U4B);
       };

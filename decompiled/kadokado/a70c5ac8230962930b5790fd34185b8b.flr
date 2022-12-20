@@ -1174,8 +1174,8 @@ movie 'a70c5ac8230962930b5790fd34185b8b.swf' {
 
       -[m(M.,Hwi) = function (-, 5U4B) {
         var *B;
-        *B = (3Wt.16(VU('setInterval'))(function () {
-          (3Wt.16(VU('clearInterval'))(*B);
+        *B = (3Wt.getGlobal('setInterval'))(function () {
+          (3Wt.getGlobal('clearInterval'))(*B);
           -();
         }, 5U4B);
       };

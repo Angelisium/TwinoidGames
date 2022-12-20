@@ -255,8 +255,8 @@ movie '3d45c1bc1d5c179b1d68cb37c9d4718d.swf' {
 
       -[m(M.,Hwi) = function (-, 5U4B) {
         var *B;
-        *B = (3Wt.16(VU('setInterval'))(function () {
-          (3Wt.16(VU('clearInterval'))(*B);
+        *B = (3Wt.getGlobal('setInterval'))(function () {
+          (3Wt.getGlobal('clearInterval'))(*B);
           -();
         }, 5U4B);
       };

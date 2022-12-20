@@ -3379,8 +3379,8 @@ movie '1b231b4ad4c7e00ab5ebb9524ac1036a.swf' {
 
       -[m(M.,Hwi) = function (-, 5U4B) {
         var *B;
-        *B = (3Wt.16(VU('setInterval'))(function () {
-          (3Wt.16(VU('clearInterval'))(*B);
+        *B = (3Wt.getGlobal('setInterval'))(function () {
+          (3Wt.getGlobal('clearInterval'))(*B);
           -();
         }, 5U4B);
       };

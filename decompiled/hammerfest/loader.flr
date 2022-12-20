@@ -20,8 +20,8 @@ movie 'loader.swf' {
 
       -[m(M.,Hwi) = function (-, 5U4B) {
         var *B;
-        *B = (3Wt.16(VU('setInterval'))(function () {
-          (3Wt.16(VU('clearInterval'))(*B);
+        *B = (3Wt.getGlobal('setInterval'))(function () {
+          (3Wt.getGlobal('clearInterval'))(*B);
           -();
         }, 5U4B);
       };
@@ -4784,7 +4784,7 @@ movie 'loader.swf' {
         if (v3.length > 1) {
           return undefined;
         }
-        (3Wt.16(VU('7T4cF('))(this.;tDTD[0], null, {'$reachedLevel': this.3Q_JH([0].-BBEO, '$item2': this.5[8R+((), '$data': this.+(WHk.3X]M5});
+        (3Wt.getGlobal('7T4cF('))(this.;tDTD[0], null, {'$reachedLevel': this.3Q_JH([0].-BBEO, '$item2': this.5[8R+((), '$data': this.+(WHk.3X]M5});
       };
 
       v1.(RRw* = function (*B) {
@@ -5013,7 +5013,7 @@ movie 'loader.swf' {
           if (v3 >= this.3VhU6.length) break;
           v2 += this.3VhU6[v3];
         }
-        (3Wt.16(VU('7T4cF('))(v2, this.-)uG5, {'$reachedLevel': 0, '$item2': null, '$data': null});
+        (3Wt.getGlobal('7T4cF('))(v2, this.-)uG5, {'$reachedLevel': 0, '$item2': null, '$data': null});
       };
 
       v1.*HvkI( = function () {
@@ -5413,7 +5413,7 @@ movie 'loader.swf' {
 
       v1.1N59{ = function (url, *feM7() {
         this.0]Ss).8+C5();
-        (3Wt.16(VU('(x5W-('))(url, *feM7();
+        (3Wt.getGlobal('(x5W-('))(url, *feM7();
       };
 
       v1.;(Pvr = function (=rJ) {
@@ -6342,7 +6342,7 @@ movie 'loader.swf' {
                   ]{i.trace('Pour éviter ce genre de problème à l\'avenir, faites un clic droit sur le jeu, choisissez Paramètres, puis l\'icone du Dossier dans la nouvelle fenetre. Décochez "Jamais" et assurez-vous d\'autoriser au moins 100ko de données (en déplaçant la petite barre).');
                 }
                 (K.)2fr3.stop();
-                (3Wt.16(VU('clearInterval'))((K.0CaDf);
+                (3Wt.getGlobal('clearInterval'))((K.0CaDf);
               }
             }
             ++(K.}P9Uy;
@@ -6350,7 +6350,7 @@ movie 'loader.swf' {
           };
 
           this.8Qw0J();
-          this.0CaDf = (3Wt.16(VU('setInterval'))(this.8Qw0J, Loader.3[M_w);
+          this.0CaDf = (3Wt.getGlobal('setInterval'))(this.8Qw0J, Loader.3[M_w);
         }
       };
 
@@ -6371,14 +6371,14 @@ movie 'loader.swf' {
             var v2 = SharedObject.getLocal('$hd');
             v2.clear();
             (K.)2fr3.stop();
-            (3Wt.16(VU('clearInterval'))((K.0CaDf);
+            (3Wt.getGlobal('clearInterval'))((K.0CaDf);
           }
           ++(K.}P9Uy;
           (K.=Lq7B.load((K.{[*77( + '&retry=' + (K.}P9Uy);
         };
 
         this.8Qw0J();
-        this.0CaDf = (3Wt.16(VU('setInterval'))(this.8Qw0J, Loader.3[M_w);
+        this.0CaDf = (3Wt.getGlobal('setInterval'))(this.8Qw0J, Loader.3[M_w);
       };
 
       v1.(x5W-( = function (url, *feM7() {
@@ -6624,7 +6624,7 @@ movie 'loader.swf' {
           if (v3 != null && !this.},Iin) {
             var v4 = SharedObject.getLocal('$hd');
             v4.clear();
-            (3Wt.16(VU('clearInterval'))(this.0CaDf);
+            (3Wt.getGlobal('clearInterval'))(this.0CaDf);
             this.)3 =h.bottom.text = this.5vneu(73);
             this.)3 =h.[cs8B(.text = '';
             this.6I = new LoadVars();
@@ -7858,7 +7858,7 @@ movie 'loader.swf' {
 
       v1.}(Rc5 = function () {
         var v2 = this.;uMMG(();
-        (3Wt.16(VU('7T4cF('))(-1, null, {'$reachedLevel': this.3Q_JH([0].-BBEO, '$item2': this.5[8R+((), '$data': {'$s0': this.;tDTD[0], '$s1': this.;tDTD[1]}});
+        (3Wt.getGlobal('7T4cF('))(-1, null, {'$reachedLevel': this.3Q_JH([0].-BBEO, '$item2': this.5[8R+((), '$data': {'$s0': this.;tDTD[0], '$s1': this.;tDTD[1]}});
       };
 
       }zL1)( = function (0) {
@@ -17895,9 +17895,9 @@ movie 'loader.swf' {
         if (!)) {
           var (K = this;
           var *B;
-          *B = (3Wt.16(VU('setInterval'))(function () {
+          *B = (3Wt.getGlobal('setInterval'))(function () {
             (K.[.connect(2JBP*(.*UkP, 2JBP*(.2ZjX);
-            (3Wt.16(VU('clearInterval'))(*B);
+            (3Wt.getGlobal('clearInterval'))(*B);
           }, 40);
         } else {
           var v3 = 0;
@@ -18295,7 +18295,7 @@ movie 'loader.swf' {
           }
           v4 += String.fromCharCode(v5);
         }
-        return (3Wt.16(VU('parseFloat'))(v4);
+        return (3Wt.getGlobal('parseFloat'))(v4);
       };
 
       v1.]3ByN = function (8) {
@@ -25336,7 +25336,7 @@ movie 'loader.swf' {
                 return _root;
               };
 
-              this.3Wt.16(VU = function (}) {
+              this.3Wt.getGlobal = function (}) {
                 return _global[}];
               };
 

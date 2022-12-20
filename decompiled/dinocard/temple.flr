@@ -3209,7 +3209,7 @@ movie 'temple.swf' {
           }
           v4 += String.fromCharCode(v5);
         }
-        return (3Wt.16(VU('parseFloat'))(v4);
+        return (3Wt.getGlobal('parseFloat'))(v4);
       };
 
       v1.]3ByN = function (8) {
@@ -6102,7 +6102,7 @@ movie 'temple.swf' {
                 return _root;
               };
 
-              this.3Wt.16(VU = function (}) {
+              this.3Wt.getGlobal = function (}) {
                 return _global[}];
               };
 

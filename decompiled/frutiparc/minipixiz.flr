@@ -1569,7 +1569,7 @@ movie 'minipixiz.swf' {
                 return _root;
               };
 
-              this.3Wt.16(VU = function (}) {
+              this.3Wt.getGlobal = function (}) {
                 return _global[}];
               };
 
@@ -2236,8 +2236,8 @@ movie 'minipixiz.swf' {
 
     -[m(M.,Hwi) = function (-, 5U4B) {
       var *B;
-      *B = (3Wt.16(VU('setInterval'))(function () {
-        (3Wt.16(VU('clearInterval'))(*B);
+      *B = (3Wt.getGlobal('setInterval'))(function () {
+        (3Wt.getGlobal('clearInterval'))(*B);
         -();
       }, 5U4B);
     };
@@ -10979,7 +10979,7 @@ movie 'minipixiz.swf' {
       980Sb.log('[CLIENT] serviceConnect()');
       if (;kTEq.8P793() {
         this.slots = [];
-        this.2h+ = (3Wt.16(VU('setInterval'))(this, 'onServiceConnect', 500);
+        this.2h+ = (3Wt.getGlobal('setInterval'))(this, 'onServiceConnect', 500);
         return undefined;
       }
       frusion.gameclient.GameClient.prototype.serviceConnect.call(this);
@@ -10994,7 +10994,7 @@ movie 'minipixiz.swf' {
       980Sb.log('[CLIENT] Date > ' + this.startTime.toString());
       980Sb.connected();
       if (;kTEq.8P793() {
-        (3Wt.16(VU('clearInterval'))(this.2h+);
+        (3Wt.getGlobal('clearInterval'))(this.2h+);
       }
     };
 

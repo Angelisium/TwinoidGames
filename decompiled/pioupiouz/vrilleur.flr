@@ -138,7 +138,7 @@ movie 'vrilleur.swf' {
                 return _root;
               };
 
-              this.3Wt.16(VU = function (}) {
+              this.3Wt.getGlobal = function (}) {
                 return _global[}];
               };
 
@@ -958,7 +958,7 @@ movie 'vrilleur.swf' {
               this.[Y )2( = this.6QA.*=_p_('+GAgU', 44{N.841,4);
               this.[Y )2(.+Da3+.text = 'Décompression du niveau';
             } else {
-              this.,aJ = (3Wt.16(VU('(,3G,('))(3Wt.6{VYR(this, ',dJzU'));
+              this.,aJ = (3Wt.getGlobal('(,3G,('))(3Wt.6{VYR(this, ',dJzU'));
             }
             this.;xt-2( = 0;
             this.6s1e2( = 0;
@@ -3390,7 +3390,7 @@ movie 'vrilleur.swf' {
           }
           v4 += String.fromCharCode(v5);
         }
-        return (3Wt.16(VU('parseFloat'))(v4);
+        return (3Wt.getGlobal('parseFloat'))(v4);
       };
 
       v1.]3ByN = function (8) {
@@ -4787,10 +4787,10 @@ movie 'vrilleur.swf' {
       =mp+= = function () {};
 
       =mp+=.}-B2 = function () {
-        =mp+=.4[=)_ = 3Wt.16(VU('4[=)_');
-        =mp+=.(,3G,( = 3Wt.16(VU('(,3G,(');
-        =mp+=.(x5W-( = 3Wt.16(VU('(x5W-(');
-        =mp+=.,{nF; = 3Wt.16(VU(',{nF;');
+        =mp+=.4[=)_ = 3Wt.getGlobal('4[=)_');
+        =mp+=.(,3G,( = 3Wt.getGlobal('(,3G,(');
+        =mp+=.(x5W-( = 3Wt.getGlobal('(x5W-(');
+        =mp+=.,{nF; = 3Wt.getGlobal(',{nF;');
       };
 
       if (![X) {
