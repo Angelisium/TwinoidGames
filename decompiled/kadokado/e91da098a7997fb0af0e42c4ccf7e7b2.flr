@@ -264,7 +264,7 @@ for ($somevar in arg0) {
               v9 = v10;
               v10 = v9.iterator();
               while (v10.hasNext()) {
-                var v11 = v10.7Y-7();
+                var v11 = v10.next();
                 if (v11 == 'prototype' || (v11 == '__class__' || (v11 == '__super__' || v11 == '__interfaces__'))) {
                   continue;
                 }
@@ -420,7 +420,7 @@ for ($somevar in arg0) {
           Array.prototype.iterator = function () {
             return {'7-,': 0, '=()': this, 'hasNext': function () {
               return this.7-, < this.=().length;
-            }, '7Y-7': function () {
+            }, 'next': function () {
               ++this.7-,;
               return this.=()[this.7-,];
             }};
@@ -1111,7 +1111,7 @@ for ($somevar in v2) {
 
       v1.2KA = null;
       v1.9]A = null;
-      v1.7Y-7 = function () {
+      v1.next = function () {
         ++this.9]A;
         return this.9]A;
       };
@@ -2110,7 +2110,7 @@ for ($somevar in v2) {
         while (true) {
           v4 = this.9ABE.iterator();
           while (v4.hasNext()) {
-            v5 = v4.7Y-7();
+            v5 = v4.next();
             v5.setColor();
           }
           if (this.6zqE)((v2) == 0) {
@@ -2261,7 +2261,7 @@ for ($somevar in v2) {
         this.]y T( = 0;
         var v2 = this.9ABE.iterator();
         while (v2.hasNext()) {
-          var v3 = v2.7Y-7();
+          var v3 = v2.next();
           this.32.08M8(v3.-iB=);
         }
         this.;tZmt = [this.9ABE.length];
@@ -2332,7 +2332,7 @@ for ($somevar in v2) {
         this.+I;}1 = [0];
         var v2 = this.9ABE.iterator();
         while (v2.hasNext()) {
-          var v3 = v2.7Y-7();
+          var v3 = v2.next();
           v3.--m8U();
         }
       };
@@ -2395,7 +2395,7 @@ for ($somevar in v2) {
         var v3 = 0;
         var v4 = this.;Csp6(.iterator();
         while (v4.hasNext()) {
-          var v5 = v4.7Y-7();
+          var v5 = v4.next();
           if (this.2S56[0] <= v3) {
             v5.gotoAndStop(1);
           } else {
@@ -2424,7 +2424,7 @@ for ($somevar in v2) {
         var v3 = ;ndCG.-Q)9)(0);
         var v4 = this.9ABE.iterator();
         while (v4.hasNext()) {
-          var v5 = v4.7Y-7();
+          var v5 = v4.next();
           var v6 = Math.max(0, this.}2D* * 200 - 100);
           9K.53kZ-(.0[Y.;CYOh(v5.-iB=, v6, 16777215);
           v5.-iB=.filters = [];
@@ -2465,7 +2465,7 @@ for ($somevar in v2) {
         }
         v2 = this.9ABE.iterator();
         while (v2.hasNext()) {
-          v3 = v2.7Y-7();
+          v3 = v2.next();
           v3.display(v3.5R, v3.6R - this.}2D*);
         }
         if (this.9ABE.length == 0) {
@@ -2479,7 +2479,7 @@ for ($somevar in v2) {
         this.}2D* = Math.min(this.}2D* + 0.1, 1);
         var v2 = this.9ABE.iterator();
         while (v2.hasNext()) {
-          var v3 = v2.7Y-7();
+          var v3 = v2.next();
           v3.+Lmba(true);
           v3.-iB=._yscale = this.}2D* * 100;
           v3.-iB=._xscale = v3.-iB=._yscale;
@@ -2570,7 +2570,7 @@ for ($somevar in v2) {
         if (44{N.7aj=S == 1) {
           v4 = this.9ABE.iterator();
           while (v4.hasNext()) {
-            v5 = v4.7Y-7();
+            v5 = v4.next();
             this.32.08M8(v5.-iB=);
           }
         }
@@ -2583,7 +2583,7 @@ for ($somevar in v2) {
         this.[U,,A((this.2S56[0] - 1);
         var v2 = this.9ABE.iterator();
         while (v2.hasNext()) {
-          var v3 = v2.7Y-7();
+          var v3 = v2.next();
           v3.(yH5D(();
         }
         this.9,s0b();

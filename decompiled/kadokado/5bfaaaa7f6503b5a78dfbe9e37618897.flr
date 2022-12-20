@@ -918,7 +918,7 @@ for ($somevar in arg0) {
               v9 = v10;
               v10 = v9.iterator();
               while (v10.hasNext()) {
-                var v11 = v10.7Y-7();
+                var v11 = v10.next();
                 if (v11 == 'prototype' || (v11 == '__class__' || (v11 == '__super__' || v11 == '__interfaces__'))) {
                   continue;
                 }
@@ -1076,7 +1076,7 @@ for ($somevar in arg0) {
           Array.prototype.iterator = function () {
             return {'7-,': 0, '=()': this, 'hasNext': function () {
               return this.7-, < this.=().length;
-            }, '7Y-7': function () {
+            }, 'next': function () {
               return this.=()[this.7-,++];
             }};
           };
@@ -1656,7 +1656,7 @@ for ($somevar in v2) {
 
       v1.2KA = null;
       v1.9]A = null;
-      v1.7Y-7 = function () {
+      v1.next = function () {
         return this.9]A++;
       };
 

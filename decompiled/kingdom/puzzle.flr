@@ -120,7 +120,7 @@ for ($somevar in arg0) {
             v9 = v10;
             v10 = v9.iterator();
             while (v10.hasNext()) {
-              var v11 = v10.7Y-7();
+              var v11 = v10.next();
               if (v11 == 'prototype' || (v11 == '__class__' || (v11 == '__super__' || v11 == '__interfaces__'))) {
                 continue;
               }
@@ -276,7 +276,7 @@ for ($somevar in arg0) {
         Array.prototype.iterator = function () {
           return {'7-,': 0, '=()': this, 'hasNext': function () {
             return this.7-, < this.=().length;
-          }, '7Y-7': function () {
+          }, 'next': function () {
             ++this.7-,;
             return this.=()[this.7-,];
           }};
@@ -1056,7 +1056,7 @@ for ($somevar in v2) {
 
     v1.2KA = null;
     v1.9]A = null;
-    v1.7Y-7 = function () {
+    v1.next = function () {
       ++this.9]A;
       return this.9]A;
     };
@@ -1196,7 +1196,7 @@ for ($somevar in v2) {
       9K.{-kxL.87vE7(();
       var v2 = this.9P-r.iterator();
       while (v2.hasNext()) {
-        var v3 = v2.7Y-7();
+        var v3 = v2.next();
         if (!v3.87vE7(()) {
           this.9P-r.remove(v3);
         }
@@ -1378,8 +1378,8 @@ for ($somevar in this.1) {
       }
       return {'{wH': this.1, '[B': v2.iterator(), 'hasNext': function () {
         return this.[B.hasNext();
-      }, '7Y-7': function () {
-        var v2 = this.[B.7Y-7();
+      }, 'next': function () {
+        var v2 = this.[B.next();
         return this.{wH[v2];
       }};
     };
@@ -1412,7 +1412,7 @@ for ($somevar in this.1) {
       var v3 = this.4x-4();
       var v4 = v3;
       while (v4.hasNext()) {
-        var v5 = v4.7Y-7();
+        var v5 = v4.next();
         v2.) += v5;
         v2.) += ' => ';
         v2.) += 3Wt.+_PpF(this.6Y3(v5));
@@ -2322,7 +2322,7 @@ for ($somevar in this.1) {
                       var v6 = arg0;
                       var v7 = v6.iterator();
                       while (v7.hasNext()) {
-                        var v8 = v7.7Y-7();
+                        var v8 = v7.next();
                         this. aNDa(v8);
                       }
                       this. [*.) += 'h';
@@ -2335,7 +2335,7 @@ for ($somevar in this.1) {
                       v6 = arg0;
                       v7 = v6.4x-4();
                       while (v7.hasNext()) {
-                        v8 = v7.7Y-7();
+                        v8 = v7.next();
                         this.6ez3F((v8);
                         this. aNDa(v6.6Y3(v8));
                       }
@@ -2345,7 +2345,7 @@ for ($somevar in this.1) {
                       v6 = arg0;
                       v7 = v6.4x-4();
                       while (v7.hasNext()) {
-                        v8 = v7.7Y-7();
+                        v8 = v7.next();
                         this. [*.) += ':';
                         this. [*.) += v8;
                         this. aNDa(v6.6Y3(v8));
@@ -2566,7 +2566,7 @@ for ($somevar in v2) {
     v1.iterator = function () {
       return {'1': this.1, 'hasNext': function () {
         return this.1 != null;
-      }, '7Y-7': function () {
+      }, 'next': function () {
         if (this.1 == null) {
           return null;
         }
@@ -2709,13 +2709,13 @@ for ($somevar in v2) {
       ASSetPropFlags(v3, 'onData', 7);
       var v4 = this. )84 (.4x-4();
       while (v4.hasNext()) {
-        var v5 = v4.7Y-7();
+        var v5 = v4.next();
         v3.addRequestHeader(v5, this. )84 (.6Y3(v5));
       }
       v4 = false;
       v5 = this.*feM7(.4x-4();
       while (v5.hasNext()) {
-        var v6 = v5.7Y-7();
+        var v6 = v5.next();
         v4 = true;
         v3[v6] = this.*feM7(.6Y3(v6);
       }
@@ -2846,14 +2846,14 @@ for ($somevar in v2) {
       }
       v3 = v2.iterator();
       while (v3.hasNext()) {
-        v4 = v3.7Y-7();
+        v4 = v3.next();
         v5 = 0;
         while (v5 < v4.length) {
           v6 = v4[v5];
           ++v5;
           v7 = v2.iterator();
           while (v7.hasNext()) {
-            v8 = v7.7Y-7();
+            v8 = v7.next();
             if (v8 != v4 && (v8.length <= v4.length && v8.remove(v6))) {
               v2.remove(v8);
             }
@@ -2898,7 +2898,7 @@ for ($somevar in v2) {
     v1.destroy = function (arg0) {
       var v3 = arg0.iterator();
       while (v3.hasNext()) {
-        var v4 = v3.7Y-7();
+        var v4 = v3.next();
         var v5 = 0;
         while (v5 < v4.length) {
           var v6 = v4[v5];
@@ -3123,8 +3123,8 @@ for ($somevar in arg0) {
     v1.iterator = function () {
       return {'{wH': this.1, '[B': this.4x-4(), 'hasNext': function () {
         return this.[B.hasNext();
-      }, '7Y-7': function () {
-        var v2 = this.[B.7Y-7();
+      }, 'next': function () {
+        var v2 = this.[B.next();
         return this.{wH[v2];
       }};
     };
@@ -3164,7 +3164,7 @@ for ($somevar in this.1) {
       var v3 = this.4x-4();
       var v4 = v3;
       while (v4.hasNext()) {
-        var v5 = v4.7Y-7();
+        var v5 = v4.next();
         v2.) += v5;
         v2.) += ' => ';
         v2.) += 3Wt.+_PpF(this.6Y3(v5));
@@ -3251,7 +3251,7 @@ for ($somevar in this.1) {
       v3.ba = v2;
       var v4 = this.*9byE(.iterator();
       while (v4.hasNext()) {
-        var v5 = v4.7Y-7();
+        var v5 = v4.next();
         var v6 = 0;
         while (v6 < v5.length) {
           var v7 = v5[v6];

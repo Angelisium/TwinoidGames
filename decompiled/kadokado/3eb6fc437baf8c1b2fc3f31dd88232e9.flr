@@ -263,7 +263,7 @@ for ($somevar in arg0) {
               v9 = v10;
               v10 = v9.iterator();
               while (v10.hasNext()) {
-                var v11 = v10.7Y-7();
+                var v11 = v10.next();
                 if (v11 == 'prototype' || (v11 == '__class__' || (v11 == '__super__' || v11 == '__interfaces__'))) {
                   continue;
                 }
@@ -419,7 +419,7 @@ for ($somevar in arg0) {
           Array.prototype.iterator = function () {
             return {'7-,': 0, '=()': this, 'hasNext': function () {
               return this.7-, < this.=().length;
-            }, '7Y-7': function () {
+            }, 'next': function () {
               ++this.7-,;
               return this.=()[this.7-,];
             }};
@@ -1299,7 +1299,7 @@ for ($somevar in v2) {
 
       v1.2KA = null;
       v1.9]A = null;
-      v1.7Y-7 = function () {
+      v1.next = function () {
         ++this.9]A;
         return this.9]A;
       };
@@ -2775,7 +2775,7 @@ for ($somevar in v2) {
         }
         var v4 = arg0.iterator();
         while (v4.hasNext()) {
-          var v5 = v4.7Y-7();
+          var v5 = v4.next();
           if (v5 == null) {
             continue;
           }
@@ -2819,7 +2819,7 @@ for ($somevar in v2) {
         var v3 = new Array();
         var v4 = arg0.iterator();
         while (v4.hasNext()) {
-          var v5 = v4.7Y-7();
+          var v5 = v4.next();
           if (!v5.init) {
             continue;
           }
@@ -2885,7 +2885,7 @@ for ($somevar in v2) {
         }
         var v3 = this.-]-I(.iterator();
         while (v3.hasNext()) {
-          var v4 = v3.7Y-7();
+          var v4 = v3.next();
           v4.}SC6(arg0);
           if (this.8aUd9) {
             if (=(,aA.565(v4.}J, this.7)3A.smc)) {
@@ -2925,7 +2925,7 @@ for ($somevar in v2) {
           if (v4.=Na*, && v4.}J.(( < =(,aA.[,Z0e) {
             v5 = this.}5{8[.iterator();
             while (v5.hasNext()) {
-              var v6 = v5.7Y-7();
+              var v6 = v5.next();
               if (!v6.-KheT()) {
                 continue;
               }
@@ -2942,7 +2942,7 @@ for ($somevar in v2) {
           if (!v4.=Na*, && v4.}J.(( > =(,aA.*sd+;( - =(,aA.[,Z0e) {
             v5 = this.{5{8[.iterator();
             while (v5.hasNext()) {
-              v6 = v5.7Y-7();
+              v6 = v5.next();
               if (!v6.-KheT()) {
                 continue;
               }
@@ -2963,7 +2963,7 @@ for ($somevar in v2) {
       v1.,yqaK = function (arg0) {
         var v3 = arg0.iterator();
         while (v3.hasNext()) {
-          var v4 = v3.7Y-7();
+          var v4 = v3.next();
           if (v4 == null) {
             continue;
           }
@@ -3060,7 +3060,7 @@ for ($somevar in v2) {
         if (this.+}B(.length > 0) {
           v3 = this.+}B(.iterator();
           while (v3.hasNext()) {
-            v4 = v3.7Y-7();
+            v4 = v3.next();
             if (v4.play()) {
               v4.7iP=3();
               v4. tq5)();
@@ -3094,7 +3094,7 @@ for ($somevar in v2) {
         }
         var v3 = arg0.iterator();
         while (v3.hasNext()) {
-          var v4 = v3.7Y-7();
+          var v4 = v3.next();
           v4.87vE7(();
         }
       };

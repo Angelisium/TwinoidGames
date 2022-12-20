@@ -286,7 +286,7 @@ for ($somevar in arg0) {
               v9 = v10;
               v10 = v9.iterator();
               while (v10.hasNext()) {
-                var v11 = v10.7Y-7();
+                var v11 = v10.next();
                 if (v11 == 'prototype' || (v11 == '__class__' || (v11 == '__super__' || v11 == '__interfaces__'))) {
                   continue;
                 }
@@ -442,7 +442,7 @@ for ($somevar in arg0) {
           Array.prototype.iterator = function () {
             return {'7-,': 0, '=()': this, 'hasNext': function () {
               return this.7-, < this.=().length;
-            }, '7Y-7': function () {
+            }, 'next': function () {
               ++this.7-,;
               return this.=()[this.7-,];
             }};
@@ -1250,13 +1250,13 @@ for ($somevar in v2) {
             44{N.=Lg 6.0gOTA();
           }
         } else {
-          44{N.=Lg 6.7Y-7(this);
+          44{N.=Lg 6.next(this);
         }
       };
 
       v1.4lga;( = function () {
         if (!44{N.}i3;,() && (this.{9 ]H((44{N.=Lg 6.0f 5()) && 44{N.=Lg 6.6Kr1)(this))) {
-          44{N.=Lg 6.7Y-7(this);
+          44{N.=Lg 6.next(this);
         }
       };
 
@@ -1313,7 +1313,7 @@ for ($somevar in v2) {
           }
         }
         if (v4 != null && 44{N.=Lg 6.6Kr1)(v4)) {
-          44{N.=Lg 6.7Y-7(v4);
+          44{N.=Lg 6.next(v4);
         }
       };
 
@@ -1333,7 +1333,7 @@ for ($somevar in v2) {
 
       v1.2KA = null;
       v1.9]A = null;
-      v1.7Y-7 = function () {
+      v1.next = function () {
         ++this.9]A;
         return this.9]A;
       };
@@ -1423,7 +1423,7 @@ for ($somevar in v2) {
       v1.iterator = function () {
         return {'1': this.1, 'hasNext': function () {
           return this.1 != null;
-        }, '7Y-7': function () {
+        }, 'next': function () {
           if (this.1 == null) {
             return null;
           }
@@ -2298,7 +2298,7 @@ for ($somevar in arg0) {
       v1.7ZoIC = null;
       v1.[EBxL = null;
       v1.,hDhR = null;
-      v1.7Y-7 = function (]P0*) {
+      v1.next = function (]P0*) {
         if (!this.6Kr1)(]P0*)) {
           return undefined;
         }
@@ -2735,7 +2735,7 @@ for ($somevar in arg0) {
         if (44{N.3t3IZ.length > 0) {
           var v2 = 44{N.3t3IZ.iterator();
           while (v2.hasNext()) {
-            var v3 = v2.7Y-7();
+            var v3 = v2.next();
             44{N.+}B(.push(v3);
           }
           44{N.3t3IZ = new 0d2T();
@@ -2754,7 +2754,7 @@ for ($somevar in arg0) {
           }
           v3 = v2.iterator();
           while (v3.hasNext()) {
-            v4 = v3.7Y-7();
+            v4 = v3.next();
             44{N.+}B(.remove(v4);
           }
           if (44{N.+}B(.length == 0 && 44{N.3t3IZ.length == 0) {

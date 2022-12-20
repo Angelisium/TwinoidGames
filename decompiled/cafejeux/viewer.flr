@@ -61,7 +61,7 @@ for ($somevar in v2) {
       $s.push('haxe.xml._Fast.NodeAccess::' + 'resolve');
       var v3 = $s.length;
       try {
-        var v4 = (this.__x.)H2q](arg0)).7Y-7();
+        var v4 = (this.__x.)H2q](arg0)).next();
         if (v4 == null) {
           var v5 = (this.__x.1Te]+ == 9l{.(VJkK) ? 'Document' : this.__x.]Scx3(();
           throw v5 + ' is missing element ' + arg0;
@@ -222,7 +222,7 @@ for ($somevar in v2) {
         var v4 = new 0d2T();
         var v5 = this.__x.)H2q](arg0);
         while (v5.hasNext()) {
-          var v6 = v5.7Y-7();
+          var v6 = v5.next();
           v4.*]((new haxe.30R. P{M(v6));
         }
         $s.pop();
@@ -270,11 +270,11 @@ for ($somevar in v2) {
       var v2 = $s.length;
       try {
         var [B = this.((. p[2,(();
-        var v3 = {'hasNext': ]6=8H(('hasNext', [B), '7Y-7': function () {
+        var v3 = {'hasNext': ]6=8H(('hasNext', [B), 'next': function () {
           $s.push('haxe.xml.Fast::' + 'getElements@163');
           var v2 = $s.length;
           try {
-            var v3 = [B.7Y-7();
+            var v3 = [B.next();
             if (v3 == null) {
               $s.pop();
               return null;
@@ -311,7 +311,7 @@ for ($somevar in v2) {
         if (!v3.hasNext()) {
           throw this.8u,1a() + ' does not have data';
         }
-        var v4 = v3.7Y-7();
+        var v4 = v3.next();
         if (v3.hasNext()) {
           throw this.8u,1a() + ' does not only have data';
         }
@@ -338,7 +338,7 @@ for ($somevar in v2) {
         var v3 = new [vXe-();
         var v4 = this.((.iterator();
         while (v4.hasNext()) {
-          var v5 = v4.7Y-7();
+          var v5 = v4.next();
           v3.) += v5.toString();
         }
         v4 = v3.);
@@ -1066,7 +1066,7 @@ for ($somevar in arg0) {
               v10 = v11;
               v11 = v10.iterator();
               while (v11.hasNext()) {
-                var v12 = v11.7Y-7();
+                var v12 = v11.next();
                 if (v12 == 'prototype' || (v12 == '__class__' || (v12 == '__super__' || v12 == '__interfaces__'))) {
                   continue;
                 }
@@ -1384,7 +1384,7 @@ for ($somevar in arg0) {
                   }
                   throw v0;
                 }
-              }, '7Y-7': function () {
+              }, 'next': function () {
                 $s.push('flash.Boot::' + '__init@238@245');
                 var v2 = $s.length;
                 try {
@@ -1729,7 +1729,7 @@ for ($somevar in this.__x.attributes) {
             }
             throw v0;
           }
-        }, '7Y-7': function () {
+        }, 'next': function () {
           $s.push('flash.FlashXml__::' + 'elements@180');
           var v2 = $s.length;
           try {
@@ -1796,7 +1796,7 @@ for ($somevar in this.__x.attributes) {
             }
             throw v0;
           }
-        }, '7Y-7': function () {
+        }, 'next': function () {
           $s.push('flash.FlashXml__::' + 'elementsNamed@206');
           var v2 = $s.length;
           try {
@@ -2014,7 +2014,7 @@ for ($somevar in this.__x.attributes) {
             }
             throw v0;
           }
-        }, '7Y-7': function () {
+        }, 'next': function () {
           $s.push('flash.FlashXml__::' + 'iterator@160');
           var v2 = $s.length;
           try {
@@ -2162,7 +2162,7 @@ for ($somevar in this.__x.attributes) {
           var v3 = '';
           var v4 = this.iterator();
           while (v4.hasNext()) {
-            var v5 = v4.7Y-7();
+            var v5 = v4.next();
             v3 += v5.toString();
           }
           $s.pop();
@@ -3467,13 +3467,13 @@ for ($somevar in v2) {
         this.+RNIo = new Array();
         v6 = ((v5.4rB7.]BUL}('comments')).,y}Y2.]BUL}('com')).iterator();
         while (v6.hasNext()) {
-          var v7 = v6.7Y-7();
+          var v7 = v6.next();
           this.+RNIo[3Wt.,Iq1+((v7.0-).]BUL}('id'))] = v7.0-).]BUL}('v');
         }
         this.(veZ)( = new Array();
         v6 = ((v5.4rB7.]BUL}('palettes')).,y}Y2.]BUL}('palette')).iterator();
         while (v6.hasNext()) {
-          v7 = v6.7Y-7();
+          v7 = v6.next();
           var v8 = 3Wt.,Iq1+((v7.0-).]BUL}('id'));
           this.(veZ)([v8] = {'9': new Array(), '0B}10': null};
           if (v7.;x4.]BUL}('comment')) {
@@ -3481,7 +3481,7 @@ for ($somevar in v2) {
           }
           var v9 = (v7.,y}Y2.]BUL}('col')).iterator();
           while (v9.hasNext()) {
-            var v10 = v9.7Y-7();
+            var v10 = v9.next();
             var v11 = 3Wt.,Iq1+((v10.0-).]BUL}('id'));
             var v12 = 3Wt.,Iq1+(('0x' + (v10.0-).]BUL}('c')).substr(1));
             this.(veZ)([v8].9[v11] = v12;
@@ -4957,7 +4957,7 @@ for ($somevar in v2) {
 
     v1.2KA = null;
     v1.9]A = null;
-    v1.7Y-7 = function () {
+    v1.next = function () {
       $s.push('IntIter::' + 'next');
       var v2 = $s.length;
       try {
@@ -5243,7 +5243,7 @@ for ($somevar in v2) {
             }
             throw v0;
           }
-        }, '7Y-7': function () {
+        }, 'next': function () {
           $s.push('List::' + 'iterator@196');
           var v2 = $s.length;
           try {

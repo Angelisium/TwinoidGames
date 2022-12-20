@@ -860,7 +860,7 @@ for ($somevar in arg0) {
             }
             v9 = v9.iterator();
             while (v9.hasNext()) {
-              v10 = v9.7Y-7();
+              v10 = v9.next();
               if (v10 == 'prototype' || (v10 == '__class__' || (v10 == '__super__' || v10 == '__interfaces__'))) {
                 continue;
               }
@@ -1013,7 +1013,7 @@ for ($somevar in arg0) {
         };
 
         Array.prototype.iterator = function () {
-          return {'7Y-7': function () {
+          return {'next': function () {
             return this.=()[this.7-,++];
           }, 'hasNext': function () {
             return this.7-, < this.=().length;
@@ -1161,7 +1161,7 @@ for ($somevar in arg0) {
       var v3 = 96nT}.18wU*();
       var v4 = (96nT}.6cXX((arg0)).iterator();
       while (v4.hasNext()) {
-        var v5 = v4.7Y-7();
+        var v5 = v4.next();
         96nT}.)BnwT(v3, v5, 96nT}.+Da3+(arg0, v5));
       }
       return v3;
@@ -1465,7 +1465,7 @@ for ($somevar in v2) {
 
     v1.2KA = null;
     v1.9]A = null;
-    v1.7Y-7 = function () {
+    v1.next = function () {
       return this.9]A++;
     };
 
@@ -2034,7 +2034,7 @@ for ($somevar in arg0) {
       this.) B2.(t}]( = [];
       var v4 = v3;
       while (v4.hasNext()) {
-        var v5 = v4.7Y-7();
+        var v5 = v4.next();
         this.) B2.(t}](.push(3Wt.,Iq1+((v5));
       }
       this.,D 7 = 96nT}.+Da3+(flash.1ni._root, 'name');
@@ -2163,10 +2163,10 @@ for ($somevar in arg0) {
       var v7 = this.0()C(([arg0];
       var v8 = v7.iterator();
       while (v8.hasNext()) {
-        var v9 = v8.7Y-7();
+        var v9 = v8.next();
         var v10 = v9.iterator();
         while (v10.hasNext()) {
-          var v11 = v10.7Y-7();
+          var v11 = v10.next();
           if (v4 + v11.9I*.width > *r.=OA) {
             v4 = 0;
             v5 = v6;
@@ -2418,7 +2418,7 @@ for ($somevar in arg0) {
           v11 = 0;
           v12 = *r.*e[.iterator();
           while (v12.hasNext()) {
-            v13 = v12.7Y-7();
+            v13 = v12.next();
             v11 += this.641C((.getPixel(arg0 + v13[0], arg1 + v13[1]);
           }
           if (!(v11 >= 2 && (v11 < 50 && !v7))) {
@@ -2444,7 +2444,7 @@ for ($somevar in arg0) {
             v14.sort(v15);
             v16 = v14.iterator();
             while (v16.hasNext()) {
-              v17 = v16.7Y-7();
+              v17 = v16.next();
               v18 = 0.5;
               if (v7) {
                 v18 += 1;
@@ -2522,7 +2522,7 @@ for ($somevar in arg0) {
       var v10 = 0;
       var v11 = v8.iterator();
       while (v11.hasNext()) {
-        var v12 = v11.7Y-7();
+        var v12 = v11.next();
         v10 += v12;
       }
       v11 = 3Wt.9n6(arg2.*s};() * v10);
@@ -2530,7 +2530,7 @@ for ($somevar in arg0) {
       v12 = 0;
       var v13 = v8.iterator();
       while (v13.hasNext()) {
-        var v14 = v13.7Y-7();
+        var v14 = v13.next();
         v10 += v14;
         if (v10 >= v11) {
           break;
@@ -2698,7 +2698,7 @@ for ($somevar in arg0) {
         var v3 = this.,D 7.split('');
         var v4 = v3.iterator();
         while (v4.hasNext()) {
-          var v5 = v4.7Y-7();
+          var v5 = v4.next();
           v2 += 3Wt.2qD(v5);
         }
         this.[b3Ye = v2;
@@ -2787,10 +2787,10 @@ for ($somevar in arg0) {
       haxe.]{i.+tq5)();
       var v3 = this.6p5aQ.iterator();
       while (v3.hasNext()) {
-        var v4 = v3.7Y-7();
+        var v4 = v3.next();
         var v5 = v4.iterator();
         while (v5.hasNext()) {
-          var v6 = v5.7Y-7();
+          var v6 = v5.next();
           v6.dispose();
         }
       }

@@ -9883,15 +9883,15 @@ movie 'minipixiz.swf' {
     7 (EQ.prototype.[AAbF = function (7) {
       this.1cPP0( = 7;
       var (K = this;
-      var 7Y-7 = (7 + 1) % 4;
-      this.2k-49(.+2NA.gotoAndStop(String(7Y-7 + 1));
+      var next = (7 + 1) % 4;
+      this.2k-49(.+2NA.gotoAndStop(String(next + 1));
       this.2k-49(.+2NA.onPress = function () {
         if ((K.=} 1 == null) {
-          (K.[AAbF(7Y-7);
+          (K.[AAbF(next);
         }
       };
 
-      this.7 IVj(this.2k-49(.+2NA, new [Zk(7 (EQ.,ZyIX[7Y-7]));
+      this.7 IVj(this.2k-49(.+2NA, new [Zk(7 (EQ.,ZyIX[next]));
       this.7}v2,(this.2k-49(.+2NA);
       this.2k-49(.+2NA.onRollOver();
       this.8]Aon(this.2k-49(.+2NA);

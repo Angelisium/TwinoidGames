@@ -587,9 +587,9 @@ movie '971b3df58bcce5b2bb39046abac42a38.swf' {
 
       v1.{3ESr = function () {
         this.( = new Array();
-        this.7Y-7 = new Array();
+        this.next = new Array();
         this.([0] = this.}O,A;
-        this.7Y-7[0] = 1;
+        this.next[0] = 1;
         var v2 = 1;
         goto 9683;
         for (;;) {
@@ -597,9 +597,9 @@ movie '971b3df58bcce5b2bb39046abac42a38.swf' {
           label 9683:
           if (v2 >= 9689) break;
           this.([v2] = int(69069 * this.([v2 - 1] + 1);
-          this.7Y-7[v2] = v2 + 1;
+          this.next[v2] = v2 + 1;
         }
-        this.7Y-7[9688] = 0;
+        this.next[9688] = 0;
         this.41,Ne = 9688;
         this.1Y4W8( = 9688 - 157;
         this.2Y4W8( = 9688 - 314;
@@ -611,10 +611,10 @@ movie '971b3df58bcce5b2bb39046abac42a38.swf' {
         if (!this.init) {
           this.{3ESr();
         }
-        this.41,Ne = this.7Y-7[this.41,Ne];
-        this.1Y4W8( = this.7Y-7[this.1Y4W8(];
-        this.2Y4W8( = this.7Y-7[this.2Y4W8(];
-        this.3Y4W8( = this.7Y-7[this.3Y4W8(];
+        this.41,Ne = this.next[this.41,Ne];
+        this.1Y4W8( = this.next[this.1Y4W8(];
+        this.2Y4W8( = this.next[this.2Y4W8(];
+        this.3Y4W8( = this.next[this.3Y4W8(];
         this.([this.41,Ne] ^= this.([this.1Y4W8(] ^ this.([this.2Y4W8(] ^ this.([this.3Y4W8(];
         return (this.([this.41,Ne] & 2147483647) % max;
       };

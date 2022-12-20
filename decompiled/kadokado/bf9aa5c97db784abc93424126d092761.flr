@@ -816,7 +816,7 @@ for ($somevar in arg0) {
               v9 = v10;
               v10 = v9.iterator();
               while (v10.hasNext()) {
-                var v11 = v10.7Y-7();
+                var v11 = v10.next();
                 if (v11 == 'prototype' || (v11 == '__class__' || (v11 == '__super__' || v11 == '__interfaces__'))) {
                   continue;
                 }
@@ -974,7 +974,7 @@ for ($somevar in arg0) {
           Array.prototype.iterator = function () {
             return {'7-,': 0, '=()': this, 'hasNext': function () {
               return this.7-, < this.=().length;
-            }, '7Y-7': function () {
+            }, 'next': function () {
               return this.=()[this.7-,++];
             }};
           };
@@ -2555,7 +2555,7 @@ for ($somevar in v2) {
 
       v1.2KA = null;
       v1.9]A = null;
-      v1.7Y-7 = function () {
+      v1.next = function () {
         return this.9]A++;
       };
 
@@ -3291,7 +3291,7 @@ for ($somevar in v2) {
       v1.9qS7a = function () {
         var v2 = 44{N.(K.,eiN,.iterator();
         while (v2.hasNext()) {
-          var v3 = v2.7Y-7();
+          var v3 = v2.next();
           if (v3 != this) {
             return v3;
           }
@@ -4400,23 +4400,23 @@ for ($somevar in v2) {
         v6 = new flash.0000.Matrix();
         var v7 = this.8K().iterator();
         while (v7.hasNext()) {
-          var v8 = v7.7Y-7();
+          var v8 = v7.next();
           v8.-iB=._visible = false;
         }
         v7 = this.-nqp5.iterator();
         while (v7.hasNext()) {
-          v8 = v7.7Y-7();
+          v8 = v7.next();
           v8.-iB=._visible = false;
         }
         this.+sA(M.9I*.draw(this.-iB=);
         v7 = this.8K().iterator();
         while (v7.hasNext()) {
-          v8 = v7.7Y-7();
+          v8 = v7.next();
           v8.-iB=._visible = true;
         }
         v7 = this.-nqp5.iterator();
         while (v7.hasNext()) {
-          v8 = v7.7Y-7();
+          v8 = v7.next();
           v8.-iB=._visible = true;
         }
         this.+sA(M.attachBitmap(this.+sA(M.9I*, 0);
@@ -4440,12 +4440,12 @@ for ($somevar in v2) {
         this.1dT{k = [];
         var v9 = this.8K().iterator();
         while (v9.hasNext()) {
-          var v10 = v9.7Y-7();
+          var v10 = v9.next();
           v10. 0}v=();
         }
         v9 = this.-nqp5.iterator();
         while (v9.hasNext()) {
-          v10 = v9.7Y-7();
+          v10 = v9.next();
           v10. 0}v=();
         }
         v9 = function (arg0, arg1) {
@@ -4519,7 +4519,7 @@ for ($somevar in v2) {
         var v3 = new =3+P(v2);
         var v4 = this.,eiN,.iterator();
         while (v4.hasNext()) {
-          var v5 = v4.7Y-7();
+          var v5 = v4.next();
           v5.5r7Q(();
         }
       };

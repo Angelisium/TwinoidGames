@@ -490,7 +490,7 @@ for ($somevar in v2) {
           var v14 = null;
           var v15 = v12.iterator();
           while (v15.hasNext()) {
-            var v16 = v15.7Y-7();
+            var v16 = v15.next();
             var v17 = v9 + v16[0];
             var v18 = v10 + v16[1];
             v14 = (GEO.0[v17][v18];
@@ -1049,7 +1049,7 @@ for ($somevar in v2) {
 
     v1.2KA = null;
     v1.9]A = null;
-    v1.7Y-7 = function () {
+    v1.next = function () {
       return this.9]A++;
     };
 
@@ -1101,7 +1101,7 @@ for ($somevar in v2) {
     v1.iterator = function () {
       return {'1': this.1, 'hasNext': function () {
         return this.1 != null;
-      }, '7Y-7': function () {
+      }, 'next': function () {
         if (this.1 == null) {
           return null;
         }
@@ -1495,7 +1495,7 @@ for ($somevar in v2) {
       if (this.+}B(.length > 0) {
         var v2 = this.+}B(.iterator();
         while (v2.hasNext()) {
-          var v3 = v2.7Y-7();
+          var v3 = v2.next();
           if (v3.play()) {
             v3.7iP=3();
             this.+}B(.remove(v3);
