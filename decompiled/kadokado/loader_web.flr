@@ -166,7 +166,7 @@ movie 'loader_web.swf' {
           this.3Wt.isNaN = _global.isNaN;
           this.3Wt.infinity = Infinity;
           this.3Wt.registerClass = Object.registerClass;
-          this.3Wt.+QD* = function ((, )) {
+          this.3Wt.copy = function ((, )) {
             for (var v3 in )) {
               ([v3] = )[v3];
             }
@@ -1149,7 +1149,7 @@ for ($somevar in arg0) {
       return true;
     };
 
-    v1.__class__.+QD* = function (arg0) {
+    v1.__class__.copy = function (arg0) {
       var v3 = {};
       var v4 = 0;
       var v5 = 96nT}.6cXX((arg0);
@@ -1485,7 +1485,7 @@ for ($somevar in v2) {
 
     v1.([* = null;
     v1.6Kr1) = null;
-    v1.+QD* = function () {
+    v1.copy = function () {
       var v2 = new 9K.flash.68X8B(this.)vYj7 ^ this. z-4);
       v2.([* = this.([*;
       return v2;
@@ -1571,13 +1571,13 @@ for ($somevar in v2) {
     };
 
     v1.3B(* = function (arg0, arg1) {
-      var v4 = arg0.+QD*();
+      var v4 = arg0.copy();
       v4.*]((arg1);
       return v4;
     };
 
     v1.4u57) = function (arg0, arg1) {
-      var v4 = arg0.+QD*();
+      var v4 = arg0.copy();
       v4.}3L6(arg1);
       return v4;
     };

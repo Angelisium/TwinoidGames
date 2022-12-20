@@ -1005,7 +1005,7 @@ for ($somevar in arg0) {
         return this.+HmVu == 100;
       };
 
-      v1.+QD* = function (arg0, arg1) {
+      v1.copy = function (arg0, arg1) {
         if (arg1 == null) {
           arg1 = 2;
         }
@@ -2676,7 +2676,7 @@ for ($somevar in arg0) {
         return true;
       };
 
-      v1.__class__.+QD* = function (arg0) {
+      v1.__class__.copy = function (arg0) {
         var v3 = {};
         var v4 = 0;
         var v5 = 96nT}.6cXX((arg0);
@@ -5593,7 +5593,7 @@ for ($somevar in v2) {
         this.2bnL,.push(arg0);
       };
 
-      v1.+QD* = function (arg0, arg1) {
+      v1.copy = function (arg0, arg1) {
         if (arg1 != null) {
           arg1 = arg1;
           var v4 = null;
@@ -5738,7 +5738,7 @@ while (!undefined) {
       }y*20(.(j]Nr extends 5v1vA;
       v1 = }y*20(.(j]Nr.prototype;
       v1.__class__ = }y*20(.(j]Nr;
-      v1.+QD* = function (arg0, arg1) {
+      v1.copy = function (arg0, arg1) {
         if (arg1 != null) {
           arg1 = arg1;
           var v4 = new }y*20(.(j]Nr(this.=HU11, arg0, arg1);
@@ -5933,7 +5933,7 @@ while (!undefined) {
               arg0.1UB_L._nb.text = 3Wt.+_PpF(arg3 + 1);
             }
           }
-          arg0.1UB_L._icon = (arg2.+QD*(arg0.{[mc9, 2)).-fD.}J;
+          arg0.1UB_L._icon = (arg2.copy(arg0.{[mc9, 2)).-fD.}J;
           9K.53kZ-(.+43N.1U;0(arg0.1UB_L._icon, 10, 10, 16777215);
           arg0.1UB_L._icon._x = 26;
           arg0.1UB_L._icon._y = 25;
@@ -6578,7 +6578,7 @@ while (!undefined) {
         var v3 = arg0.,Kwdh.iterator();
         while (v3.1ll a()) {
           var v4 = v3.7Y-7();
-          var v5 = v4.+QD*(this.32, 1);
+          var v5 = v4.copy(this.32, 1);
           v5.}Ams3(-10, -10, -100, -100);
           this.9mdE3.push(v5);
         }

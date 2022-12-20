@@ -3858,10 +3858,10 @@ movie 'temple.swf' {
           return undefined;
         }
         if (1).;Vk(.(TmwZ) {
-          this.+QD* = *r.+-(0.32.18wU*(44{N.-2Isb);
-          this.+QD*.9I* = new flash.display.BitmapData(*r.=OA, *r.*OA, true, 0);
-          this.+QD*.9I*.draw(*r.+-(0.}po*B, new flash.geom.Matrix(), null, null, null, null);
-          this.+QD*.attachBitmap(this.+QD*.9I*, 0);
+          this.copy = *r.+-(0.32.18wU*(44{N.-2Isb);
+          this.copy.9I* = new flash.display.BitmapData(*r.=OA, *r.*OA, true, 0);
+          this.copy.9I*.draw(*r.+-(0.}po*B, new flash.geom.Matrix(), null, null, null, null);
+          this.copy.attachBitmap(this.copy.9I*, 0);
           *r.+-(0.}po*B._visible = false;
         }
         *r.+-(0.2 VA7(();
@@ -4797,8 +4797,8 @@ movie 'temple.swf' {
 
       v1.9T54 = function () {
         if (1).;Vk(.(TmwZ) {
-          this.+QD*.9I*.dispose();
-          this.+QD*.removeMovieClip();
+          this.copy.9I*.dispose();
+          this.copy.removeMovieClip();
           *r.+-(0.}po*B._visible = true;
         }
          3H;}.call(this);
@@ -6150,7 +6150,7 @@ movie 'temple.swf' {
               this.3Wt.isNaN = _global.isNaN;
               this.3Wt.infinity = Infinity;
               this.3Wt.registerClass = Object.registerClass;
-              this.3Wt.+QD* = function ((, )) {
+              this.3Wt.copy = function ((, )) {
                 for (var v3 in )) {
                   ([v3] = )[v3];
                 }

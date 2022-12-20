@@ -2977,7 +2977,7 @@ for ($somevar in arg0) {
       }
     };
 
-    v1.__class__.+QD* = function (arg0) {
+    v1.__class__.copy = function (arg0) {
       $s.push('Reflect::' + 'copy');
       var v3 = $s.length;
       try {

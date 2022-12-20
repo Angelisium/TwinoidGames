@@ -2871,7 +2871,7 @@ for ($somevar in arg0) {
       return true;
     };
 
-    v1.__class__.+QD* = function (arg0) {
+    v1.__class__.copy = function (arg0) {
       var v3 = {};
       var v4 = 0;
       var v5 = 96nT}.6cXX((arg0);
@@ -4562,7 +4562,7 @@ for ($somevar in v2) {
       while (v6 < v7.length) {
         v8 = v7[v6];
         ++v6;
-        v5.push(96nT}.+QD*(5e{K.}ccy+([v8[1]]));
+        v5.push(96nT}.copy(5e{K.}ccy+([v8[1]]));
       }
       v7 = this.}O,A;
       v7.}O,A = v7.}O,A * 16807 % 2147483647;

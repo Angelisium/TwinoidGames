@@ -1347,7 +1347,7 @@ movie 'botGame.swf' {
             if (!]RN].;m,6N(v14._id, v11.[*NBK(())) {
               continue;
             }
-            var v15 = v11.+QD*(44{N.(K. vH, 4);
+            var v15 = v11.copy(44{N.(K. vH, 4);
             v15.-fD.}J._x = 44{N.(K.[;X}5.}J._x + v11.-fD.}J._x;
             v15.-fD.}J._y = 44{N.(K.[;X}5.}J._y + v11.-fD.}J._y;
             v3.push(v15);
@@ -1411,7 +1411,7 @@ movie 'botGame.swf' {
       while (v3 < v4.length) {
         var v5 = v4[v3];
         ++v3;
-        var v6 = v5.+QD*(this.32, 1);
+        var v6 = v5.copy(this.32, 1);
         v6.}Ams3(-10, -10, -100, -100);
         this.9mdE3.push(v6);
       }
@@ -2505,7 +2505,7 @@ for ($somevar in v2) {
       return this.+HmVu == 100;
     };
 
-    v1.+QD* = function (arg0, arg1) {
+    v1.copy = function (arg0, arg1) {
       if (arg1 == null) {
         arg1 = 2;
       }
@@ -5391,7 +5391,7 @@ for ($somevar in v2) {
       this.2bnL,.push(arg0);
     };
 
-    v1.+QD* = function (arg0, arg1) {
+    v1.copy = function (arg0, arg1) {
       arg1 = (arg1 == null) ? 2 : arg1;
       var v4 = null;
       v4 = new 9)DM2(this.*nJ9-[0], arg0, arg1, null, this.=);
@@ -5654,7 +5654,7 @@ while (!undefined) {
       return -1;
     };
 
-    v1.+QD* = function (arg0, arg1) {
+    v1.copy = function (arg0, arg1) {
       if (arg1 != null) {
         arg1 = arg1;
         var v4 = null;
@@ -8638,7 +8638,7 @@ for ($somevar in v2) {
       44{N.(K.]jyw5.play('dynamite');
     };
 
-    v1.+QD* = function (arg0, arg1) {
+    v1.copy = function (arg0, arg1) {
       arg1 = (arg1 == null) ? 2 : arg1;
       var v4 = new }y*20(.(j]Nr(this.=HU11, arg0, arg1, false, this.-fD.}J._b._m._p, this.-fD.{(2;Z);
       v4.[ko7C( = this.[ko7C(;
@@ -9927,7 +9927,7 @@ for ($somevar in arg0) {
       return true;
     };
 
-    v1.__class__.+QD* = function (arg0) {
+    v1.__class__.copy = function (arg0) {
       var v3 = {};
       var v4 = 0;
       var v5 = 96nT}.6cXX((arg0);
@@ -12833,7 +12833,7 @@ return undefined;
     }y*20(.7k1M( extends 5v1vA;
     v1 = }y*20(.7k1M(.prototype;
     v1.__class__ = }y*20(.7k1M(;
-    v1.+QD* = function (arg0, arg1) {
+    v1.copy = function (arg0, arg1) {
       arg1 = (arg1 == null) ? 2 : arg1;
       var v4 = new }y*20(.7k1M((arg0, arg1, false, this.-fD.}J._b._m._p, this.-fD.{(2;Z);
       v4.[ko7C( = this.[ko7C(;
@@ -18206,7 +18206,7 @@ for ($somevar in v2) {
     }y*20(.9VGi-( extends 5v1vA;
     v1 = }y*20(.9VGi-(.prototype;
     v1.__class__ = }y*20(.9VGi-(;
-    v1.+QD* = function (arg0, arg1) {
+    v1.copy = function (arg0, arg1) {
       arg1 = (arg1 == null) ? 2 : arg1;
       var v4 = new }y*20(.9VGi-((arg0, arg1, false, this.-fD.}J._b._m._p, this.-fD.{(2;Z);
       v4.[ko7C( = this.[ko7C(;

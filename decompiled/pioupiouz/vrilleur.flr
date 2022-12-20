@@ -186,7 +186,7 @@ movie 'vrilleur.swf' {
               this.3Wt.isNaN = _global.isNaN;
               this.3Wt.infinity = Infinity;
               this.3Wt.registerClass = Object.registerClass;
-              this.3Wt.+QD* = function ((, )) {
+              this.3Wt.copy = function ((, )) {
                 for (var v3 in )) {
                   ([v3] = )[v3];
                 }
