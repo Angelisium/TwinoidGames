@@ -1545,7 +1545,7 @@ movie 'minipixiz.swf' {
                 return }J[v2];
               };
 
-              this.3Wt.-4*l(( = function (}J, }p j)) {
+              this.3Wt.createEmptyMC = function (}J, }p j)) {
                 var v2 = 'empty@' + this.icounter++;
                 }J.createEmptyMovieClip(v2, }p j));
                 return }J[v2];
@@ -3412,7 +3412,7 @@ movie 'minipixiz.swf' {
       var v2 = new [X.9Q.{bw4k();
       v2.*({1A((96);
       v2.}-B2();
-      v2.5r7Q((3Wt.-4*l(((this.=S7A, 1));
+      v2.5r7Q((3Wt.createEmptyMC(this.=S7A, 1));
       v2.=S7A._yscale = 80;
       v2.=S7A._xscale = 80;
       v2.*;D).*;D).stop();
@@ -6865,7 +6865,7 @@ movie 'minipixiz.swf' {
 
     0o().2gdGV.prototype.5oT0} = function () {
       this.] lj1 = this.32.*=_p_('7Q]iK(', 7t{I.6gIob);
-      this.] lj1.*6nO6( = 3Wt.-4*l(((this.] lj1, 1);
+      this.] lj1.*6nO6( = 3Wt.createEmptyMC(this.] lj1, 1);
       var v6 = ]q.4d(*.$checkpoint + 1;
       var v7 = 8;
       var v5 = 8;
@@ -10605,13 +10605,13 @@ movie 'minipixiz.swf' {
         var v7 = this.;IF._currentframe - 1;
         if (v7 !== 1) {
         } else {
-          goto 235833;
+          goto 235840;
         }
         var v6 = 0.2;
         this.;IF._x = (this.;IF._x + v6 * {-kxL.-V;B) % 18;
         this.;IF._y = (this.;IF._y + v6 * {-kxL.-V;B) % 18;
       }
-      label 235833:
+      label 235840:
       if (this.;D}ex != null) {
         this.;D}ex *= Math.pow(0.95, {-kxL.-V;B);
         if (this.;D}ex < 0.1) {
@@ -10626,7 +10626,7 @@ movie 'minipixiz.swf' {
 
     -]e9-.]zzM.prototype.==n+f = function (index) {
       ++this.+cpFP;
-      var v7 = 3Wt.-4*l(((this.,XiKC.]mAH, 10 + this.+cpFP);
+      var v7 = 3Wt.createEmptyMC(this.,XiKC.]mAH, 10 + this.+cpFP);
       v7._x = 18;
       v7._y = 120;
       var v6 = this.0o().+-(0.{gbsy[index];
@@ -10634,7 +10634,7 @@ movie 'minipixiz.swf' {
       var v3 = 0;
       while (v3 < v6.length) {
         var v2 = v6[v3];
-        var v5 = 3Wt.-4*l(((v7, v3);
+        var v5 = 3Wt.createEmptyMC(v7, v3);
         v5._x = v2.(( * v4;
         v5._y = v2.)( * v4;
         v2.,.3U*}=((3Wt.attachMC(v5, v2.,.5P55, 1));
@@ -10830,7 +10830,7 @@ movie 'minipixiz.swf' {
         this.]bu40([-99);
         return this.18wU*([-99);
       }
-      var v4 = 3Wt.-4*l(((this.)2fr3, v2 + [-99 * 1000);
+      var v4 = 3Wt.createEmptyMC(this.)2fr3, v2 + [-99 * 1000);
       v6[v2] = v4;
       ++v3.7-,;
       return v4;
@@ -12545,7 +12545,7 @@ movie 'minipixiz.swf' {
           var v2 = new [X.9Q.{bw4k();
           v2.*({1A((this.96);
           v2.}-B2();
-          v2.5r7Q((3Wt.-4*l(((4,F.0tJ, 1));
+          v2.5r7Q((3Wt.createEmptyMC(4,F.0tJ, 1));
           v2.=S7A._xscale = 220;
           v2.=S7A._yscale = 220;
           v2.*;D).*;D).stop();
@@ -13273,7 +13273,7 @@ movie 'minipixiz.swf' {
       v4 = 0;
       while (v4 < this.list.length) {
         v2 = this.list[v4];
-        var v3 = 3Wt.-4*l(((this.0o(), v4);
+        var v3 = 3Wt.createEmptyMC(this.0o(), v4);
         v3._x = (v2.(( - this.9Qr+) * this.+-(0.+[;
         v3._y = (v2.)( - this.9Qr+) * this.+-(0.+[;
         v2.,.3U*}=((3Wt.attachMC(v3, v2.,.5P55, 1));

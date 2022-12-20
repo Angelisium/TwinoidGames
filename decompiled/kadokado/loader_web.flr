@@ -94,7 +94,7 @@ movie 'loader_web.swf' {
             return }J[v2];
           };
 
-          this.3Wt.-4*l(( = function (}J, }p j)) {
+          this.3Wt.createEmptyMC = function (}J, }p j)) {
             var v2 = 'empty@' + this.icounter++;
             }J.createEmptyMovieClip(v2, }p j));
             return }J[v2];

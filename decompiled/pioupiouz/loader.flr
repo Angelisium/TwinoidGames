@@ -55,7 +55,7 @@ movie 'loader.swf' {
       };
 
       v1.8PSfr = function () {
-        this.+-(0 = 3Wt.-4*l(((this.8,-h5, 1);
+        this.+-(0 = 3Wt.createEmptyMC(this.8,-h5, 1);
         this.3K4}n();
         var v2 = this.)3 =h._url;
         if (v2.substr(0, Loader.}-gW1(.length) != Loader.}-gW1() {
@@ -182,10 +182,10 @@ movie 'loader.swf' {
         if (this.8T5p.length != 8) {
           this.8T5p = '';
           var v3 = 0;
-          goto 4511;
+          goto 4518;
           for (;;) {
             ++v3;
-            label 4511:
+            label 4518:
             if (v3 >= 8) break;
             this.8T5p += *hr_A.9tEy4(.charAt(1 + 3Wt.random(63));
           }
@@ -287,10 +287,10 @@ movie 'loader.swf' {
         this.*V9 = *V9;
         this.(U82 = 0;
         var v3 = 0;
-        goto 5878;
+        goto 5885;
         for (;;) {
           ++v3;
-          label 5878:
+          label 5885:
           if (v3 >= *V9.length) break;
           this.(U82 *= 51;
           this.(U82 += *V9.charCodeAt(v3);
@@ -325,10 +325,10 @@ movie 'loader.swf' {
 
       v1.95O)C( = function ([) {
         var v3 = 0;
-        goto 6527;
+        goto 6534;
         for (;;) {
           ++v3;
-          label 6527:
+          label 6534:
           if (v3 >= [.length) break;
           this.67lKi([.charAt(v3));
         }
@@ -389,10 +389,10 @@ movie 'loader.swf' {
         this.95O)C((String(8.length));
         this.95O)C((':');
         var v3 = 0;
-        goto 7420;
+        goto 7427;
         for (;;) {
           ++v3;
-          label 7420:
+          label 7427:
           if (v3 >= 8.length) break;
           this.1qeUg(8[v3]);
         }
@@ -463,10 +463,10 @@ movie 'loader.swf' {
         var v3 = int(this.}(W8p());
         var v4 = new Array();
         var v2 = 0;
-        goto 8583;
+        goto 8590;
         for (;;) {
           ++v2;
-          label 8583:
+          label 8590:
           if (v2 >= v3) break;
           v4.push(this.,vS*E());
         }
@@ -642,7 +642,7 @@ movie 'loader.swf' {
                 return }J[v2];
               };
 
-              this.3Wt.-4*l(( = function (}J, }p j)) {
+              this.3Wt.createEmptyMC = function (}J, }p j)) {
                 var v2 = 'empty@' + this.icounter++;
                 }J.createEmptyMovieClip(v2, }p j));
                 return }J[v2];

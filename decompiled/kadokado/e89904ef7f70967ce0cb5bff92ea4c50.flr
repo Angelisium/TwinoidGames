@@ -384,10 +384,10 @@ movie 'e89904ef7f70967ce0cb5bff92ea4c50.swf' {
       *r.],pz1( = function (list, 6lA) {
         var v4 = 0;
         var v5 = 0;
-        goto 7302;
+        goto 7309;
         for (;;) {
           ++v5;
-          label 7302:
+          label 7309:
           if (v5 >= list.length) break;
           v4 += list[v5] / list.length;
         }
@@ -443,16 +443,16 @@ movie 'e89904ef7f70967ce0cb5bff92ea4c50.swf' {
         v7.removeMovieClip();
         var v8 = new flash.display.BitmapData(1Z 6.width, 1Z 6.height, true, 0);
         var v9 = 0;
-        goto 8521;
+        goto 8528;
         for (;;) {
           v9 += +[;
-          label 8521:
+          label 8528:
           if (v9 >= 1Z 6.width) break;
           var v10 = 0;
-          goto 8569;
+          goto 8576;
           for (;;) {
             v10 += +[;
-            label 8569:
+            label 8576:
             if (v10 >= 1Z 6.height) break;
             v8.copyPixels(v6, v5, new flash.geom.Point(v9, v10), null, null, null);
           }
@@ -561,10 +561,10 @@ movie 'e89904ef7f70967ce0cb5bff92ea4c50.swf' {
         var v7 = 0;
         var v8 = [-99 * 1000;
         var v6 = 0;
-        goto 10411;
+        goto 10418;
         for (;;) {
           ++v6;
-          label 10411:
+          label 10418:
           if (v6 >= v5) break;
           if (v4[v6]._name != null) {
             v4[v6].swapDepths(v8 + v7);
@@ -597,7 +597,7 @@ movie 'e89904ef7f70967ce0cb5bff92ea4c50.swf' {
           this.]bu40([-99);
           return this.18wU*([-99);
         }
-        var v6 = 3Wt.-4*l(((this.)2fr3, v5 + [-99 * 1000);
+        var v6 = 3Wt.createEmptyMC(this.)2fr3, v5 + [-99 * 1000);
         v4[v5] = v6;
         ++v3.7-,;
         return v6;
@@ -625,10 +625,10 @@ movie 'e89904ef7f70967ce0cb5bff92ea4c50.swf' {
         var v6 = v5.9oK;
         var v7 = v5.7-,;
         var v8 = 0;
-        goto 11248;
+        goto 11255;
         for (;;) {
           ++v8;
-          label 11248:
+          label 11255:
           if (v8 >= v7) break;
           if (v6[v8] == }J) {
             v6[v8] = null;
@@ -673,10 +673,10 @@ movie 'e89904ef7f70967ce0cb5bff92ea4c50.swf' {
         var v3 = this.-fC3a([-99);
         var v5 = v3.9oK;
         var v4 = 0;
-        goto 11873;
+        goto 11880;
         for (;;) {
           ++v4;
-          label 11873:
+          label 11880:
           if (v4 >= v3.7-,) break;
           v5[v4].removeMovieClip();
         }
@@ -689,10 +689,10 @@ movie 'e89904ef7f70967ce0cb5bff92ea4c50.swf' {
         var v5 = v3.7-,;
         var v8 = -99999999;
         var v6 = 0;
-        goto 12041;
+        goto 12048;
         for (;;) {
           ++v6;
-          label 12041:
+          label 12048:
           if (v6 >= v5) break;
           var v9 = v4[v6];
           var v10 = v9._y;
@@ -700,10 +700,10 @@ movie 'e89904ef7f70967ce0cb5bff92ea4c50.swf' {
             v8 = v10;
           } else {
             var v7 = v6;
-            goto 12137;
+            goto 12144;
             for (;;) {
               --v7;
-              label 12137:
+              label 12144:
               if (v7 <= 0) break;
               var v11 = v4[v7 - 1];
               if (v11._y > v10) {
@@ -723,10 +723,10 @@ movie 'e89904ef7f70967ce0cb5bff92ea4c50.swf' {
 
       v1.,}2X ( = function () {
         var v2 = 0;
-        goto 12327;
+        goto 12334;
         for (;;) {
           ++v2;
-          label 12327:
+          label 12334:
           if (v2 >= this.}Zms3.length) break;
           this.clear(v2);
         }
@@ -940,10 +940,10 @@ movie 'e89904ef7f70967ce0cb5bff92ea4c50.swf' {
 
       v1.;-[;H = function (max) {
         var v3 = 0;
-        goto 15865;
+        goto 15872;
         for (;;) {
           ++v3;
-          label 15865:
+          label 15872:
           if (v3 >= max) break;
           var v4 = *r.+-(0.{==W3(('-Ms=u');
           var v5 = (v3 / max) * 6.28;
@@ -964,10 +964,10 @@ movie 'e89904ef7f70967ce0cb5bff92ea4c50.swf' {
 
       v1.4600 = function (max) {
         var v3 = 0;
-        goto 16274;
+        goto 16281;
         for (;;) {
           ++v3;
-          label 16274:
+          label 16281:
           if (v3 >= max) break;
           var v4 = *r.+-(0.{==W3(('*NdbB(');
           var v5 = (v3 / max) * 6.28;
@@ -1029,10 +1029,10 @@ movie 'e89904ef7f70967ce0cb5bff92ea4c50.swf' {
       v1.[7qyn = function (]oH, max) {
         this.)gv94 = new Array();
         var v4 = 0;
-        goto 17370;
+        goto 17377;
         for (;;) {
           ++v4;
-          label 17370:
+          label 17377:
           if (v4 >= max) break;
           var v5 = (v4 / max) * 6.28;
           var v6 = Math.cos(v5);
@@ -1145,20 +1145,20 @@ movie 'e89904ef7f70967ce0cb5bff92ea4c50.swf' {
       v1.}Q)0u = function (4,, 5,, }},), ]oH) {
         var v6 = [[}},).((, }},).)(]];
         var v7 = 0;
-        goto 19658;
+        goto 19665;
         for (;;) {
           ++v7;
-          label 19658:
+          label 19665:
           if (v7 >= 2) break;
           var v8 = 4,;
           var v9 = 5,;
           var v10 = {'((': }},).((, ')(': }},).)(};
           var v11 = v7 * 2 - 1;
           var v12 = 0;
-          goto 19783;
+          goto 19790;
           for (;;) {
             ++v12;
-            label 19783:
+            label 19790:
             if (v12 >= ]oH) break;
             var v13 = this.(VKB(v10, v11);
             var v14 = v8 + v13.((;
@@ -1181,10 +1181,10 @@ movie 'e89904ef7f70967ce0cb5bff92ea4c50.swf' {
         var v16 = 0;
         var v17 = 0;
         var v18 = 0;
-        goto 20145;
+        goto 20152;
         for (;;) {
           ++v18;
-          label 20145:
+          label 20152:
           if (v18 >= v6.length) break;
           var v19 = v6[v18];
           v16 += v19[0];
@@ -1207,10 +1207,10 @@ movie 'e89904ef7f70967ce0cb5bff92ea4c50.swf' {
 
       v1.=)0hg = function (((, )() {
         var v4 = 0;
-        goto 20556;
+        goto 20563;
         for (;;) {
           ++v4;
-          label 20556:
+          label 20563:
           if (v4 >= this.)gv94.length) break;
           var v5 = this.)gv94[v4];
           var v6 = {'((': (( + v5.((, ')(': )( + v5.)(};
@@ -1248,7 +1248,7 @@ movie 'e89904ef7f70967ce0cb5bff92ea4c50.swf' {
         this.(W3 = new +7U K(}J);
         *r.32 = this.(W3;
         this.*6nO6( = this.(W3.18wU*(2);
-        this.(KA = 3Wt.-4*l(((this.*6nO6(, 0);
+        this.(KA = 3Wt.createEmptyMC(this.*6nO6(, 0);
         this.32 = new +7U K(this.(KA);
         this.7Qe;6 = new Array();
         this.+xiq* = new Array();
@@ -1301,10 +1301,10 @@ movie 'e89904ef7f70967ce0cb5bff92ea4c50.swf' {
             this. uK=F.60- = 0;
             var v3 = 48;
             var v4 = 0;
-            goto 22487;
+            goto 22494;
             for (;;) {
               ++v4;
-              label 22487:
+              label 22494:
               if (v4 >= v3) break;
               var v5 = *r.+-(0.{==W3(('-Ms=u');
               var v6 = (v4 / v3) * 6.28;
@@ -1345,10 +1345,10 @@ movie 'e89904ef7f70967ce0cb5bff92ea4c50.swf' {
       v1.]e9J, = function () {
         this.*tHy-(();
         var v2 = 0;
-        goto 23223;
+        goto 23230;
         for (;;) {
           ++v2;
-          label 23223:
+          label 23230:
           if (v2 >= this.2t*({.length) break;
           var v3 = this.2t*({[v2];
           var v4 = new 9)DM2(v3.((, v3.)(, *r.[=-gL[3Wt.random(*r.[=-gL.length)]);
@@ -1382,10 +1382,10 @@ movie 'e89904ef7f70967ce0cb5bff92ea4c50.swf' {
             while (this.3UE]s[0] < 0) {
               this.3UE]s = [this.3UE]s[0] + *r.6YA3F];
               var v3 = 0;
-              goto 24233;
+              goto 24240;
               for (;;) {
                 ++v3;
-                label 24233:
+                label 24240:
                 if (v3 >= this.3WUPC(.length) break;
                 ;ndCG.5b)bA((*r.)sbN[);
               }
@@ -1397,10 +1397,10 @@ movie 'e89904ef7f70967ce0cb5bff92ea4c50.swf' {
             }
             var v6 = this.7Qe;6.duplicate();
             var v7 = 0;
-            goto 24532;
+            goto 24539;
             for (;;) {
               ++v7;
-              label 24532:
+              label 24539:
               if (v7 >= v6.length) break;
               v6[v7].87vE7(();
             }
@@ -1531,10 +1531,10 @@ movie 'e89904ef7f70967ce0cb5bff92ea4c50.swf' {
           this.{_7eI(._x = *r.,KSpS * 0.5;
           this.{_7eI(._y = *r.,KSpS * 0.5;
           var v2 = 0;
-          goto 27767;
+          goto 27774;
           for (;;) {
             ++v2;
-            label 27767:
+            label 27774:
             if (v2 >= this.3WUPC(.length) break;
             var v3 = Math.random() * 6.28;
             var v4 = 10 + Math.random() * 80;
@@ -1547,10 +1547,10 @@ movie 'e89904ef7f70967ce0cb5bff92ea4c50.swf' {
         } else {
           this.{_7eI(.removeMovieClip();
           var v6 = 0;
-          goto 28082;
+          goto 28089;
           for (;;) {
             ++v6;
-            label 28082:
+            label 28089:
             if (v6 >= this.86{p(.length) break;
             var v7 = this.86{p([v6];
             if (v7.=kIA == 2) {
@@ -1612,10 +1612,10 @@ movie 'e89904ef7f70967ce0cb5bff92ea4c50.swf' {
         var v4 = this.)ZB3a(v3.((, v3.)(, v3.9;I);
         if (v4 != null) {
           var v5 = 0;
-          goto 29554;
+          goto 29561;
           for (;;) {
             ++v5;
-            label 29554:
+            label 29561:
             if (v5 >= v4.length) break;
             this.2t*({.push(v4[v5]);
           }
@@ -1627,10 +1627,10 @@ movie 'e89904ef7f70967ce0cb5bff92ea4c50.swf' {
         var v5 = this.[6l9t(((, )(, 9;I);
         var v6 = new Array();
         var v7 = 0;
-        goto 29737;
+        goto 29744;
         for (;;) {
           ++v7;
-          label 29737:
+          label 29744:
           if (v7 >= v5.list.length) break;
           var v8 = v5.list[v7];
           var v9 = -[m(M.localToGlobal(v5, v8._x, v8._y);
@@ -1643,10 +1643,10 @@ movie 'e89904ef7f70967ce0cb5bff92ea4c50.swf' {
         }
         var v11 = v5.getBounds(this.(KA);
         var v12 = 0;
-        goto 30073;
+        goto 30080;
         for (;;) {
           ++v12;
-          label 30073:
+          label 30080:
           if (v12 >= 1500) break;
           var v13 = int(v11.xMin + Math.random() * (v11.xMax - v11.xMin));
           var v14 = int(v11.yMin + Math.random() * (v11.yMax - v11.yMin));
@@ -1675,10 +1675,10 @@ movie 'e89904ef7f70967ce0cb5bff92ea4c50.swf' {
         v5.gotoAndStop(v6);
         v5.list = new Array();
         var v7 = 0;
-        goto 30652;
+        goto 30659;
         for (;;) {
           ++v7;
-          label 30652:
+          label 30659:
           if (v7 >= 7) break;
           var v8 = 3Wt.6{X3L(v5, '$a' + v7);
           if (v8 == null) {
@@ -1743,16 +1743,16 @@ movie 'e89904ef7f70967ce0cb5bff92ea4c50.swf' {
         var v4 = 0;
         var v5 = 0;
         var v6 = 0;
-        goto 31889;
+        goto 31896;
         for (;;) {
           ++v6;
-          label 31889:
+          label 31896:
           if (v6 >= 9I*._width) break;
           var v7 = 0;
-          goto 31936;
+          goto 31943;
           for (;;) {
             ++v7;
-            label 31936:
+            label 31943:
             if (v7 >= 9I*._height) break;
             if (!this.{eSu)(9I*, v6, v7)) {
               v4 = 0;
@@ -1836,10 +1836,10 @@ movie 'e89904ef7f70967ce0cb5bff92ea4c50.swf' {
 
       v1.87vE7( = function () {
         var v3 = 0;
-        goto 33411;
+        goto 33418;
         for (;;) {
           ++v3;
-          label 33411:
+          label 33418:
           if (v3 >= *r.+-(0.+xiq*.length) break;
           var v4 = *r.+-(0.+xiq*[v3];
           var v5 = this.(( - v4.((;
@@ -1873,10 +1873,10 @@ movie 'e89904ef7f70967ce0cb5bff92ea4c50.swf' {
       v1.2EGlI( = function (10) {
         var v3 = *r.2K(0, Math.sqrt(this.[b * this.[b + this.]b * this.]b) * 0.5 - 3, 8);
         var v4 = 0;
-        goto 34220;
+        goto 34227;
         for (;;) {
           ++v4;
-          label 34220:
+          label 34227:
           if (v4 >= v3) break;
           var v5 = *r.+-(0.{==W3(('-O_ y');
           var v6 = Math.random() * 6.28;
@@ -1903,10 +1903,10 @@ movie 'e89904ef7f70967ce0cb5bff92ea4c50.swf' {
         v3._xscale = }2D* * 100;
         v3._yscale = }2D* * 100;
         var v4 = 0;
-        goto 34877;
+        goto 34884;
         for (;;) {
           ++v4;
-          label 34877:
+          label 34884:
           if (v4 >= 10 + }2D*) break;
           var v5 = Math.random() * (2e{I.{Cs * }2D*);
           var v6 = Math.random() * 6.28;
@@ -1958,10 +1958,10 @@ movie 'e89904ef7f70967ce0cb5bff92ea4c50.swf' {
         var v5 = 0;
         var v6 = =rJ.length;
         var v3 = 0;
-        goto 35751;
+        goto 35758;
         for (;;) {
           ++v3;
-          label 35751:
+          label 35758:
           if (v3 >= v6) break;
           var v7 = =rJ.charCodeAt(v3);
           if (v7 == 10 || v7 == 13) {
@@ -1980,10 +1980,10 @@ movie 'e89904ef7f70967ce0cb5bff92ea4c50.swf' {
         var v4 = ;p(.duplicate();
         var v5 = v4.length;
         var v3 = 0;
-        goto 36068;
+        goto 36075;
         for (;;) {
           ++v3;
-          label 36068:
+          label 36075:
           if (v3 >= v5) break;
           var v6 = 3Wt.random(v5);
           var v7 = 3Wt.random(v5);
@@ -2016,10 +2016,10 @@ movie 'e89904ef7f70967ce0cb5bff92ea4c50.swf' {
       -[m(M.7g,ln = function (() {
         var v3 = 0;
         var v4 = (.length - 1;
-        goto 36480;
+        goto 36487;
         for (;;) {
           --v4;
-          label 36480:
+          label 36487:
           if (v4 < 0) break;
           v3 += ([v4];
         }
@@ -2071,10 +2071,10 @@ movie 'e89904ef7f70967ce0cb5bff92ea4c50.swf' {
         var v2 = ['$linear', '$radial', '$matrixType', '$box', '$x', '$y', '$w', '$h', '$r'];
         -[m(M.]cY[2 = new Array();
         var v3 = 0;
-        goto 37532;
+        goto 37539;
         for (;;) {
           ++v3;
-          label 37532:
+          label 37539:
           if (v3 >= v2.length) break;
           var v4 = v2[v3];
           -[m(M.]cY[2[v3] = v4.substring(1);
