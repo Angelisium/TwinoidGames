@@ -243,7 +243,7 @@ movie 'vrilleur.swf' {
 
               this.]{i = new Object();
               this.]{i.+rJ = this.3Wt;
-              this.]{i.;lvaa = false;
+              this.]{i.initdone = false;
               this.]{i.clear = function () {
                 this.{RuFi.text = '';
                 this.]AO l.text = '';
@@ -260,7 +260,7 @@ movie 'vrilleur.swf' {
                   1 = Stage.height;
                 }
                 this.[VAKp = 1 - 30;
-                this.;lvaa = true;
+                this.initdone = true;
                 this.]AO l = this.+rJ.createTextField(}J, 99999);
                 this.{RuFi = this.+rJ.createTextField(}J, 99998);
                 this.]AO l._x = 5;
@@ -284,7 +284,7 @@ movie 'vrilleur.swf' {
               };
 
               this.]{i.+9L}b = function ([) {
-                if (!this.;lvaa) {
+                if (!this.initdone) {
                   this.}-B2();
                 }
                 this.]AO l.text += ((([.split('\n')).join('\\n')).split('\r')).join('\\r') + '\n';
@@ -296,7 +296,7 @@ movie 'vrilleur.swf' {
               };
 
               this.]{i.(H5 S = function (*) {
-                if (!this.;lvaa) {
+                if (!this.initdone) {
                   this.}-B2();
                 }
                 this.]AO l.textColor = *;
@@ -304,7 +304,7 @@ movie 'vrilleur.swf' {
               };
 
               this.]{i.print = function (x) {
-                if (!this.;lvaa) {
+                if (!this.initdone) {
                   this.}-B2();
                 }
                 this.{RuFi.text += '~ ' + this.toString(x, '') + '\n';
@@ -312,7 +312,7 @@ movie 'vrilleur.swf' {
 
               this.]{i.,}2X ( = function () {
                 clearInterval(this.](L);
-                this.;lvaa = false;
+                this.initdone = false;
                 this.]AO l.removeMovieClip();
                 this.{RuFi.removeMovieClip();
               };
