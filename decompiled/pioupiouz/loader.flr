@@ -412,7 +412,7 @@ movie 'loader.swf' {
         if (8 == null) {
           this.95O)C((*hr_A.,Gmip.charAt(1));
         } else {
-          if (3Wt.-jONz(8, Array)) {
+          if (3Wt._instanceof(8, Array)) {
             this.95O)C((*hr_A.,Gmip.charAt(2));
             this.]S-Di(8);
           } else {
@@ -742,7 +742,7 @@ movie 'loader.swf' {
                 return typeof 8;
               };
 
-              this.3Wt.-jONz = function (8, 4) {
+              this.3Wt._instanceof = function (8, 4) {
                 return 8 instanceof 4;
               };
 

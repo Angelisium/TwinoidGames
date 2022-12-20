@@ -3217,7 +3217,7 @@ movie 'temple.swf' {
           this.blabla.+jMb8(4, 15);
           return true;
         }
-        if (3Wt.-jONz(8, Array)) {
+        if (3Wt._instanceof(8, Array)) {
           this.blabla.+jMb8(3, 4);
           this.3X3[b(8);
           return true;
@@ -3369,7 +3369,7 @@ movie 'temple.swf' {
           this.9GFJA = this.0Ch4z();
         } else {
           var v2 = this.+Hp()[0];
-          if (3Wt.-jONz(v2, Array)) {
+          if (3Wt._instanceof(v2, Array)) {
             if (!this.=u8K9((v2)) {
               this.+Hp().shift();
             }
@@ -6178,7 +6178,7 @@ movie 'temple.swf' {
                 return typeof 8;
               };
 
-              this.3Wt.-jONz = function (8, 4) {
+              this.3Wt._instanceof = function (8, 4) {
                 return 8 instanceof 4;
               };
 
