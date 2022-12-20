@@ -4,7 +4,7 @@ movie 'loader_web.swf' compressed // flash 8, total frames: 1, frame rate: 40 fp
   defineMovieClip 1 // total frames: 1
 
     frame 0
-      constants 'string', 'Array', 'prototype', 'remove', 'length', 'splice', 'insert', 'duplicate', 'slice', 'Color', 'reset', 'ra', 'rb', 'ba', 'bb', 'ga', 'gb', 'aa', 'ab', 'setTransform', 'XMLNode', 'get', 'attributes', 'set', 'exists', 'attributesIter', 'childrenIter', 'firstChild', 'nextSibling', 'XML', 'ASSetPropFlags', 'StyleSheet', 'TextField', '3Wt', 'Object', 'icounter', 'attachMC', '@', 'attachMovie', 'createEmptyMC', 'empty@', 'createEmptyMovieClip', 'duplicateMC', 'dup@', 'duplicateMovieClip', '_parent', 'getVar', 'setVar', 'getRoot', 'getGlobal', 'setGlobal', 'createTextField', 'text@', 'cast', 'hitTest', 'random', 'xmouse', '_xmouse', 'ymouse', '_ymouse', 'escape', 'unescape', 'parseInt', 'toString', 'toStringBase', 'isNaN', 'infinity', 'Infinity', 'registerClass', 'copy', 'callback', '8', '-', 'apply', '(', 'concat', 'getTimer', '_typeof', '_instanceof', 'forin', 'makeNew', 'deleteField', 'fscommand', 'FSCommand:', 'throw', ']{i', '+rJ', 'initdone', 'clear', '{RuFi', 'text', '', ']AO l', '}-B2', 'Stage', 'width', 'height', '[VAKp', '_x', '_y', '_width', '_height', 'wordWrap', 'selectable', '(K', '](L', 'setInterval', '+9L}b', '\\r', '\r', '\\n', '\n', 'split', 'join', 'textHeight', 'indexOf', 'substr', '(H5 S', 'textColor', 'print', '~ ', ',}2X (', 'clearInterval', 'removeMovieClip', '<...>', 'object', 'movieclip', 'function', '[', '    ', ',', 'substring', ']', '[object Object]', '{\n', 'MC(', '_name', ') ', ' : ', '}', '<fun>', 'trace', '19{O', '5uJ2', 'call'  
+      constants 'string', 'Array', 'prototype', 'remove', 'length', 'splice', 'insert', 'duplicate', 'slice', 'Color', 'reset', 'ra', 'rb', 'ba', 'bb', 'ga', 'gb', 'aa', 'ab', 'setTransform', 'XMLNode', 'get', 'attributes', 'set', 'exists', 'attributesIter', 'childrenIter', 'firstChild', 'nextSibling', 'XML', 'ASSetPropFlags', 'StyleSheet', 'TextField', '3Wt', 'Object', 'icounter', 'attachMC', '@', 'attachMovie', 'createEmptyMC', 'empty@', 'createEmptyMovieClip', 'duplicateMC', 'dup@', 'duplicateMovieClip', '_parent', 'getVar', 'setVar', 'getRoot', 'getGlobal', 'setGlobal', 'createTextField', 'text@', 'cast', 'hitTest', 'random', 'xmouse', '_xmouse', 'ymouse', '_ymouse', 'escape', 'unescape', 'parseInt', 'toString', 'toStringBase', 'isNaN', 'infinity', 'Infinity', 'registerClass', 'copy', 'callback', '8', '-', 'apply', '(', 'concat', 'getTimer', '_typeof', '_instanceof', 'forin', 'makeNew', 'deleteField', 'fscommand', 'FSCommand:', 'throw', ']{i', '+rJ', 'initdone', 'clear', 'tprint', 'text', '', ']AO l', '}-B2', 'Stage', 'width', 'height', '[VAKp', '_x', '_y', '_width', '_height', 'wordWrap', 'selectable', '(K', '](L', 'setInterval', '+9L}b', '\\r', '\r', '\\n', '\n', 'split', 'join', 'textHeight', 'indexOf', 'substr', '(H5 S', 'textColor', 'print', '~ ', ',}2X (', 'clearInterval', 'removeMovieClip', '<...>', 'object', 'movieclip', 'function', '[', '    ', ',', 'substring', ']', '[object Object]', '{\n', 'MC(', '_name', ') ', ' : ', '}', '<fun>', 'trace', '19{O', '5uJ2', 'call'  
       function2 '}-B2' (r:9='}J') (r:1='this', r:2='arguments', r:3='_root', r:4='_global')
         push r:'}J', 1
         function2 () (r:1='this', r:2='arguments', r:3='_root', r:4='_global')
@@ -771,7 +771,7 @@ movie 'loader_web.swf' compressed // flash 8, total frames: 1, frame rate: 40 fp
           getMember
           push 'clear'
           function2 () (r:1='this')
-            push r:this, '{RuFi'
+            push r:this, 'tprint'
             getMember
             push 'text', ''
             setMember
@@ -826,7 +826,7 @@ movie 'loader_web.swf' compressed // flash 8, total frames: 1, frame rate: 40 fp
             push 'createTextField'
             callMethod
             setMember
-            push r:this, '{RuFi', 99998, r:'}J', 2, r:this, '+rJ'
+            push r:this, 'tprint', 99998, r:'}J', 2, r:this, '+rJ'
             getMember
             push 'createTextField'
             callMethod
@@ -848,21 +848,21 @@ movie 'loader_web.swf' compressed // flash 8, total frames: 1, frame rate: 40 fp
             getMember
             push '_height', r:'1'
             setMember
-            push r:this, '{RuFi'
+            push r:this, 'tprint'
             getMember
             push '_x', r:' (', 2
             divide
             setMember
-            push r:this, '{RuFi'
+            push r:this, 'tprint'
             getMember
             push '_y', 20
             setMember
-            push r:this, '{RuFi'
+            push r:this, 'tprint'
             getMember
             push '_width', r:' (', 2
             divide
             setMember
-            push r:this, '{RuFi'
+            push r:this, 'tprint'
             getMember
             push '_height', r:'1', 30
             subtract
@@ -871,7 +871,7 @@ movie 'loader_web.swf' compressed // flash 8, total frames: 1, frame rate: 40 fp
             getMember
             push 'wordWrap', TRUE
             setMember
-            push r:this, '{RuFi'
+            push r:this, 'tprint'
             getMember
             push 'wordWrap', TRUE
             setMember
@@ -879,7 +879,7 @@ movie 'loader_web.swf' compressed // flash 8, total frames: 1, frame rate: 40 fp
             getMember
             push 'selectable', FALSE
             setMember
-            push r:this, '{RuFi'
+            push r:this, 'tprint'
             getMember
             push 'selectable', FALSE
             setMember
@@ -889,7 +889,7 @@ movie 'loader_web.swf' compressed // flash 8, total frames: 1, frame rate: 40 fp
             function ()
               push '(K'
               getVariable
-              push '{RuFi'
+              push 'tprint'
               getMember
               push 'text'
               getMember
@@ -900,7 +900,7 @@ movie 'loader_web.swf' compressed // flash 8, total frames: 1, frame rate: 40 fp
               branchIfTrue label18
               push '(K'
               getVariable
-              push '{RuFi'
+              push 'tprint'
               getMember
               push 'text', ''
               setMember
@@ -998,7 +998,7 @@ movie 'loader_web.swf' compressed // flash 8, total frames: 1, frame rate: 40 fp
             getMember
             push 'textColor', r:'*'
             setMember
-            push r:this, '{RuFi'
+            push r:this, 'tprint'
             getMember
             push 'textColor', r:'*'
             setMember
@@ -1018,9 +1018,9 @@ movie 'loader_web.swf' compressed // flash 8, total frames: 1, frame rate: 40 fp
             callMethod
             pop
            label23:
-            push r:this, '{RuFi'
+            push r:this, 'tprint'
             getMember
-            push 'text', r:this, '{RuFi'
+            push 'text', r:this, 'tprint'
             getMember
             push 'text'
             getMember
@@ -1050,7 +1050,7 @@ movie 'loader_web.swf' compressed // flash 8, total frames: 1, frame rate: 40 fp
             push 'removeMovieClip'
             callMethod
             pop
-            push 0.0, r:this, '{RuFi'
+            push 0.0, r:this, 'tprint'
             getMember
             push 'removeMovieClip'
             callMethod

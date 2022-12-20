@@ -6209,7 +6209,7 @@ movie 'temple.swf' {
               this.]{i.+rJ = this.3Wt;
               this.]{i.initdone = false;
               this.]{i.clear = function () {
-                this.{RuFi.text = '';
+                this.tprint.text = '';
                 this.]AO l.text = '';
               };
 
@@ -6226,23 +6226,23 @@ movie 'temple.swf' {
                 this.[VAKp = 1 - 30;
                 this.initdone = true;
                 this.]AO l = this.+rJ.createTextField(}J, 99999);
-                this.{RuFi = this.+rJ.createTextField(}J, 99998);
+                this.tprint = this.+rJ.createTextField(}J, 99998);
                 this.]AO l._x = 5;
                 this.]AO l._y = 20;
                 this.]AO l._width =  ( - 10;
                 this.]AO l._height = 1;
-                this.{RuFi._x =  ( / 2;
-                this.{RuFi._y = 20;
-                this.{RuFi._width =  ( / 2;
-                this.{RuFi._height = 1 - 30;
+                this.tprint._x =  ( / 2;
+                this.tprint._y = 20;
+                this.tprint._width =  ( / 2;
+                this.tprint._height = 1 - 30;
                 this.]AO l.wordWrap = true;
-                this.{RuFi.wordWrap = true;
+                this.tprint.wordWrap = true;
                 this.]AO l.selectable = false;
-                this.{RuFi.selectable = false;
+                this.tprint.selectable = false;
                 var (K = this;
                 this.](L = setInterval(function () {
-                  if ((K.{RuFi.text != '') {
-                    (K.{RuFi.text = '';
+                  if ((K.tprint.text != '') {
+                    (K.tprint.text = '';
                   }
                 }, 10);
               };
@@ -6264,21 +6264,21 @@ movie 'temple.swf' {
                   this.}-B2();
                 }
                 this.]AO l.textColor = *;
-                this.{RuFi.textColor = *;
+                this.tprint.textColor = *;
               };
 
               this.]{i.print = function (x) {
                 if (!this.initdone) {
                   this.}-B2();
                 }
-                this.{RuFi.text += '~ ' + this.toString(x, '') + '\n';
+                this.tprint.text += '~ ' + this.toString(x, '') + '\n';
               };
 
               this.]{i.,}2X ( = function () {
                 clearInterval(this.](L);
                 this.initdone = false;
                 this.]AO l.removeMovieClip();
-                this.{RuFi.removeMovieClip();
+                this.tprint.removeMovieClip();
               };
 
               this.]{i.toString = function (8, [) {
