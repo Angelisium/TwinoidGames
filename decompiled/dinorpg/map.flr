@@ -74,13 +74,13 @@ movie 'map.swf' {
       return flash.7]AJ.__string_rec(this, '-g');
     };
 
-    19{O = function () {
+    Hash = function () {
       this.1 = new _global.Object();
     };
 
-    19{O.__name__ = ['19{O'];
-    var v1 = 19{O.prototype;
-    v1.__class__ = 19{O;
+    Hash.__name__ = ['Hash'];
+    var v1 = Hash.prototype;
+    v1.__class__ = Hash;
     v1.exists = function (arg0) {
       return this.1.hasOwnProperty('$' + arg0);
     };
@@ -516,7 +516,7 @@ for ($somevar in this.1) {
         var v7 = 86x4G(;
         v7(v6);
       }
-      this.+BQB0( = new 19{O();
+      this.+BQB0( = new Hash();
       v5 = arg2._places.iterator();
       while (v5.1ll a()) {
         v6 = v5.7Y-7();
@@ -1940,8 +1940,8 @@ for ($somevar in v2) {
 
     haxe.6UHP = function (arg0) {
       this.-lM = arg0;
-      this. )84 ( = new 19{O();
-      this.*feM7( = new 19{O();
+      this. )84 ( = new Hash();
+      this.*feM7( = new Hash();
     };
 
     haxe.6UHP.__name__ = ['haxe', '6UHP'];
@@ -2266,7 +2266,7 @@ for ($somevar in v2) {
                                                       ++this.4AF;
                                                       return v3;
                                                 } else {
-                                                      v3 = new 19{O();
+                                                      v3 = new Hash();
                                                       this.+Hp().push(v3);
                                                       v4 = this. [*;
                                                       while (this. [*.cca(this.4AF) != 104) {

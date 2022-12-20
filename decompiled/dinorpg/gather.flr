@@ -662,13 +662,13 @@ for ($somevar in v2) {
     ['46MC4(', 7].__enum__ = [',Ps6t', 9].__enum__;
     ['46MC4(', 7].toString = )PVyX;
     [',Ps6t', 9].__enum__.46MC4( = ['46MC4(', 7];
-    19{O = function () {
+    Hash = function () {
       this.1 = new _global.Object();
     };
 
-    19{O.__name__ = ['19{O'];
-    v1 = 19{O.prototype;
-    v1.__class__ = 19{O;
+    Hash.__name__ = ['Hash'];
+    v1 = Hash.prototype;
+    v1.__class__ = Hash;
     v1.exists = function (arg0) {
       return this.1.hasOwnProperty('$' + arg0);
     };
@@ -1978,8 +1978,8 @@ for ($somevar in v2) {
     }
     haxe.6UHP = function (arg0) {
       this.-lM = arg0;
-      this. )84 ( = new 19{O();
-      this.*feM7( = new 19{O();
+      this. )84 ( = new Hash();
+      this.*feM7( = new Hash();
     };
 
     haxe.6UHP.__name__ = ['haxe', '6UHP'];
@@ -2074,7 +2074,7 @@ for ($somevar in v2) {
       this.+Hp() = new Array();
       this.)[;[g = haxe.Serializer.}VCyQ;
       this.3 yU+( = haxe.Serializer.(SkV (;
-      this.1xYp5 = new 19{O();
+      this.1xYp5 = new Hash();
       this.5V{L6 = 0;
     };
 
@@ -2150,7 +2150,7 @@ for ($somevar in v2) {
                         arg0.5s}UX(this);
                         this. [*.) += 3Wt.+_PpF('g');
                       }
-                if (v5 != 19{O) {
+                if (v5 != Hash) {
                       var v6 = 0;
                       this. [*.) += 3Wt.+_PpF('a');
                       var v7 = arg0.length;
@@ -2590,7 +2590,7 @@ for ($somevar in v2) {
                                                       ++this.4AF;
                                                       return v3;
                                                 } else {
-                                                      v3 = new 19{O();
+                                                      v3 = new Hash();
                                                       this.+Hp().push(v3);
                                                       v4 = this. [*;
                                                       while (this. [*.cca(this.4AF) != 104) {

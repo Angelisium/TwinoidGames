@@ -1801,34 +1801,34 @@ movie 'minipixiz.swf' {
                 }
               };
 
-              this.19{O = function () {};
+              this.Hash = function () {};
 
-              this.19{O.prototype.get = function (4) {
+              this.Hash.prototype.get = function (4) {
                 return this[4];
               };
 
-              this.19{O.prototype.set = function (4, 2) {
+              this.Hash.prototype.set = function (4, 2) {
                 this[4] = 2;
               };
 
-              this.19{O.prototype.remove = function (4) {
+              this.Hash.prototype.remove = function (4) {
                 var v2 = this[4] != undefined;
                 delete this[4];
                 return v2;
               };
 
-              this.19{O.prototype.exists = function (4) {
+              this.Hash.prototype.exists = function (4) {
                 return this[4] != undefined;
               };
 
-              this.19{O.prototype.5uJ2 = function (-) {
+              this.Hash.prototype.5uJ2 = function (-) {
                 var v2;
                 for (v2 in this) {
                   -(v2, this[v2]);
                 }
               };
 
-              _global.ASSetPropFlags(this.19{O.prototype, null, 1);
+              _global.ASSetPropFlags(this.Hash.prototype, null, 1);
             }.call(}J);
           }
         };
@@ -2359,7 +2359,7 @@ movie 'minipixiz.swf' {
     -[m(M.,[A( = '$x'.substring(1);
     -[m(M.-[A( = '$y'.substring(1);
     -[m(M.localToGlobal = function (}J, ((, )() {
-      var v1 = new 19{O();
+      var v1 = new Hash();
       v1.set(-[m(M.,[A(, (();
       v1.set(-[m(M.-[A(, )();
       }J.localToGlobal(v1);
@@ -2367,7 +2367,7 @@ movie 'minipixiz.swf' {
     };
 
     -[m(M.globalToLocal = function (}J, ((, )() {
-      var v1 = new 19{O();
+      var v1 = new Hash();
       v1.set(-[m(M.,[A(, (();
       v1.set(-[m(M.-[A(, )();
       }J. YZa*(v1);
@@ -2391,7 +2391,7 @@ movie 'minipixiz.swf' {
       if (-[m(M.]cY[2 == null) {
         -[m(M.{Gq]-();
       }
-      var v1 = new 19{O();
+      var v1 = new Hash();
       v1.set(-[m(M.]cY[2[2], -[m(M.]cY[2[3]);
       v1.set(-[m(M.]cY[2[4], ,96mA.(();
       v1.set(-[m(M.]cY[2[5], ,96mA.)();

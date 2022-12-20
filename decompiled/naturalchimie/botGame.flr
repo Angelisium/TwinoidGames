@@ -3661,13 +3661,13 @@ for ($somevar in v2) {
 for ($somevar in v2) {
       v1[enumerate v2] = v2[enumerate v2];
     }
-    19{O = function () {
+    Hash = function () {
       this.1 = new _global.Object();
     };
 
-    19{O.__name__ = ['19{O'];
-    v1 = 19{O.prototype;
-    v1.__class__ = 19{O;
+    Hash.__name__ = ['Hash'];
+    v1 = Hash.prototype;
+    v1.__class__ = Hash;
     v1.exists = function (arg0) {
       return this.1.hasOwnProperty('$' + arg0);
     };
@@ -9536,7 +9536,7 @@ while (!undefined) {
     v1.__class__.0OA = null;
     v1.__class__.-cbIJ( = function (arg0, arg1, arg2, arg3) {
       (1MEG(.}-gW1( = arg0;
-      (1MEG(.{ psJ( = new 19{O();
+      (1MEG(.{ psJ( = new Hash();
       (1MEG(.+Cs;B = arg1.18wU*(0);
       (1MEG(.+Cs;B._x = -1000;
       (1MEG(.+Cs;B._y = -1000;
@@ -12044,7 +12044,7 @@ return undefined;
       this.+Hp() = new Array();
       this.)[;[g = haxe.Serializer.}VCyQ;
       this.3 yU+( = haxe.Serializer.(SkV (;
-      this.1xYp5 = new 19{O();
+      this.1xYp5 = new Hash();
       this.5V{L6 = 0;
     };
 
@@ -12120,7 +12120,7 @@ return undefined;
                         arg0.5s}UX(this);
                         this. [*.) += 'g';
                       }
-                if (v5 != 19{O) {
+                if (v5 != Hash) {
                       var v6 = 0;
                       this. [*.) += 'a';
                       var v7 = arg0.length;
@@ -16005,7 +16005,7 @@ for ($somevar in v2) {
                                                       ++this.4AF;
                                                       return v3;
                                                 } else {
-                                                      v3 = new 19{O();
+                                                      v3 = new Hash();
                                                       this.+Hp().push(v3);
                                                       v4 = this. [*;
                                                       while (this. [*.cca(this.4AF) != 104) {
@@ -16716,8 +16716,8 @@ for ($somevar in v2) {
 
     haxe.6UHP = function (arg0) {
       this.-lM = arg0;
-      this. )84 ( = new 19{O();
-      this.*feM7( = new 19{O();
+      this. )84 ( = new Hash();
+      this.*feM7( = new Hash();
     };
 
     haxe.6UHP.__name__ = ['haxe', '6UHP'];
@@ -17333,7 +17333,7 @@ for ($somevar in v2) {
     v1.(bJB = null;
     v1.(tnd6 = null;
     4[FzE = function () {
-      this.[S0A = new 19{O();
+      this.[S0A = new Hash();
       this.1i4fO = new Array();
       this.;9(0; = new Array();
       this.3ek+i = new Array();
@@ -17640,7 +17640,7 @@ for ($somevar in v2) {
       this.-wh8s('transmutation_end2', v3);
       this.-wh8s('transmutation_end3', v3);
       this.-wh8s('transmutation_end4', v3);
-      this.3U+wh = new 19{O();
+      this.3U+wh = new Hash();
       this.3U+wh.7NJ('interface_in', 1);
       this.3U+wh.7NJ('interface_out', 1);
       this.3U+wh.7NJ('interface_endgame', 1);
@@ -18644,7 +18644,7 @@ for ($somevar in v2) {
       ]SqZ7.*hr_A.8cSN = false;
       ]SqZ7.*hr_A.8nG,E = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-_';
       ]SqZ7.*hr_A.;YXL8( = null;
-      ]SqZ7.*hr_A.87kh6 = new 19{O();
+      ]SqZ7.*hr_A.87kh6 = new Hash();
       ]SqZ7.*hr_A.0f 5 = null;
       44{N.0Qx)H( = new Array();
       haxe.Unserializer.9LccS = ]RN];

@@ -1464,7 +1464,7 @@ for ($somevar in v2) {
                                                       ++this.4AF;
                                                       return v3;
                                                   if (v2 != 118) {
-                                                      v3 = new 19{O();
+                                                      v3 = new Hash();
                                                       this.+Hp().push(v3);
                                                       v4 = this. [*;
                                                       while (this. [*.cca(this.4AF) != 104) {
@@ -7348,7 +7348,7 @@ for ($somevar in v2) {
 
       v1.=Z(MN = function (arg0) {
         this.75p8) = new 9K.+,ig2();
-        this.6cXX( = new 19{O();
+        this.6cXX( = new Hash();
         this.9lk;o = 0;
         this.+CVCJ = 1;
         this.]][oI = 0;
@@ -7850,13 +7850,13 @@ for ($somevar in v2) {
         flash.7]AJ.__set_trace_color(arg0);
       };
 
-      19{O = function () {
+      Hash = function () {
         this.1 = new _global.Object();
       };
 
-      19{O.__name__ = ['19{O'];
-      v1 = 19{O.prototype;
-      v1.__class__ = 19{O;
+      Hash.__name__ = ['Hash'];
+      v1 = Hash.prototype;
+      v1.__class__ = Hash;
       v1.exists = function (arg0) {
         return this.1.hasOwnProperty('$' + arg0);
       };

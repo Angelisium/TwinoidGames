@@ -4036,7 +4036,7 @@ movie 'game.swf' {
     };
 
     -[m(M.localToGlobal = function (}J, ((, )() {
-      var v5 = new 19{O();
+      var v5 = new Hash();
       v5.set(-[m(M.,[A(, (();
       v5.set(-[m(M.-[A(, )();
       }J.localToGlobal(v5);
@@ -4044,7 +4044,7 @@ movie 'game.swf' {
     };
 
     -[m(M.globalToLocal = function (}J, ((, )() {
-      var v5 = new 19{O();
+      var v5 = new Hash();
       v5.set(-[m(M.,[A(, (();
       v5.set(-[m(M.-[A(, )();
       }J.globalToLocal(v5);
@@ -4069,7 +4069,7 @@ movie 'game.swf' {
       if (-[m(M.]cY[2 == null) {
         -[m(M.{Gq]-();
       }
-      var v8 = new 19{O();
+      var v8 = new Hash();
       v8.set(-[m(M.]cY[2[2], -[m(M.]cY[2[3]);
       v8.set(-[m(M.]cY[2[4], matrix.(();
       v8.set(-[m(M.]cY[2[5], matrix.)();
@@ -7294,7 +7294,7 @@ movie 'game.swf' {
     };
 
     v1.{MocG( = function () {
-      this.)Xez) = new 19{O();
+      this.)Xez) = new Hash();
     };
 
     v1.}(Rc5 = function () {};
@@ -9452,7 +9452,7 @@ movie 'game.swf' {
     {aq}5.8pUQ2( = 50;
     {aq}5.;49QZ = null;
     {aq}5.+}h = 3Wt.random(999999) * 3Wt.random(999999);
-    {aq}5.] ( = new 19{O();
+    {aq}5.] ( = new Hash();
     {aq}5.{6X[ = null;
     if (!=2Vd4) {
       =2Vd4 = new Object();
@@ -10145,7 +10145,7 @@ movie 'game.swf' {
       this.3K4}n(3);
       3Wt.deleteField(this.)3 =h, 'onRelease');
       this.6I = new LoadVars();
-      var v3 = new 19{O();
+      var v3 = new Hash();
       v3.set('$qid'.substring(1), this. Q=p);
       v3.set('$mid'.substring(1), this.8T5p);
       v3.set('$mode'.substring(1), this. sTKX);
@@ -10181,7 +10181,7 @@ movie 'game.swf' {
         }
       }
       var v5 = [.split('&');
-      var v7 = new 19{O();
+      var v7 = new Hash();
       var v6 = 0;
       goto 140118;
       for (;;) {
@@ -10243,7 +10243,7 @@ movie 'game.swf' {
       var (K = this;
       var v5 = new *hr_A(this.5N2p);
       this.9UlYS = this.+4(tP(-_X}5.$item2);
-      var v7 = new 19{O();
+      var v7 = new Hash();
       v7.set('$swfsize'.substring(1), (this.0OA.getProgress(this.+-(0)).bytesTotal);
       v7.set('$lsize'.substring(1), (3Wt.getRoot()).getBytesTotal());
       v7.set('$score'.substring(1), (Erk5);
@@ -10253,7 +10253,7 @@ movie 'game.swf' {
       v7.set('$p'.substring(1), -_X}5);
       v7.set('$gid'.substring(1), this.*Z*p);
       v7.set('$mid'.substring(1), this.8T5p);
-      var v6 = new 19{O();
+      var v6 = new Hash();
       v6.set('$gid'.substring(1), this.*Z*p);
       v6.set('$score'.substring(1), v5.=Z(MN(v7));
       this.{[*77( = this.{FVDm(Loader.*5z X + this.{fCp, v6);
@@ -14031,7 +14031,7 @@ movie 'game.swf' {
     };
 
     5e{K. 0csu = function (=rJ) {
-      var v3 = new 19{O();
+      var v3 = new Hash();
       if (=rJ == null) {
         return v3;
       }
@@ -22292,7 +22292,7 @@ movie 'game.swf' {
     v1.,[rd8 = function (8) {
       this.9J(- = false;
       this.pou = new +,ig2();
-      this.6cXX( = new 19{O();
+      this.6cXX( = new Hash();
       this.9lk;o = 0;
       this.+CVCJ = 1;
       this.]][oI = 0;
@@ -25392,7 +25392,7 @@ movie 'game.swf' {
       if (3Wt.isNaN(this.1(F3L('$volume'))) {
         {aq}5.)oAPu('missing parameters');
       }
-      this.+LT;C( = new 19{O();
+      this.+LT;C( = new Hash();
       this.+8gXK = new Array();
       if (8mD.length > 0) {
         this.+8gXK = 8mD.split(',');
@@ -28496,7 +28496,7 @@ movie 'game.swf' {
       var v3 = this.+e]N7([[[4*];
       if (v3 == null) {
         var v4 = 3Wt.createEmptyMC(this.)2fr3, this.}p j)++);
-        v3 = {'}J': v4, '26wUC': new 19{O(), '96O': 100, '90pY1(': new Sound(v4), '*M': [[4*, 'enabled': true};
+        v3 = {'}J': v4, '26wUC': new Hash(), '96O': 100, '90pY1(': new Sound(v4), '*M': [[4*, 'enabled': true};
         this.+e]N7([[[4*] = v3;
       }
       return v3;

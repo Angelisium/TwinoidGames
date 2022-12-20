@@ -250,8 +250,8 @@ for ($somevar in v2) {
 
     haxe.6UHP = function (arg0) {
       this.-lM = arg0;
-      this. )84 ( = new 19{O();
-      this.*feM7( = new 19{O();
+      this. )84 ( = new Hash();
+      this.*feM7( = new Hash();
     };
 
     haxe.6UHP.__name__ = ['haxe', '6UHP'];
@@ -397,7 +397,7 @@ for ($somevar in v2) {
     0-I(H(.[sULp._PartyStarted = ['_PartyStarted', 0];
     0-I(H(.2F}HL = function () {
       this.]L,PR = false;
-      this.26wUC = new 19{O();
+      this.26wUC = new Hash();
     };
 
     0-I(H(.2F}HL.__name__ = ['0-I(H(', '2F}HL'];
@@ -844,7 +844,7 @@ for ($somevar in v2) {
       this.+Hp() = new Array();
       this.)[;[g = haxe.Serializer.}VCyQ;
       this.3 yU+( = haxe.Serializer.(SkV (;
-      this.1xYp5 = new 19{O();
+      this.1xYp5 = new Hash();
       this.5V{L6 = 0;
     };
 
@@ -920,7 +920,7 @@ for ($somevar in v2) {
                         arg0.5s}UX(this);
                         this. [*.) += 'g';
                       }
-                if (v5 != 19{O) {
+                if (v5 != Hash) {
                       var v6 = 0;
                       this. [*.) += 'a';
                       var v7 = arg0.length;
@@ -1894,13 +1894,13 @@ for ($somevar in this.1) {
     v1.__class__ = haxe.0JleF.0*I[X;
     v1.5T(* = null;
     v1.]BUL} = null;
-    19{O = function () {
+    Hash = function () {
       this.1 = new _global.Object();
     };
 
-    19{O.__name__ = ['19{O'];
-    v1 = 19{O.prototype;
-    v1.__class__ = 19{O;
+    Hash.__name__ = ['Hash'];
+    v1 = Hash.prototype;
+    v1.__class__ = Hash;
     v1.exists = function (arg0) {
       return this.1.hasOwnProperty('$' + arg0);
     };
@@ -2043,7 +2043,7 @@ for ($somevar in v2) {
       v1[enumerate v2] = v2[enumerate v2];
     }
     haxe.0JleF.+pHi9 = function () {
-      this.,Kwdh = new 19{O();
+      this.,Kwdh = new Hash();
     };
 
     haxe.0JleF.+pHi9.__name__ = ['haxe', '0JleF', '+pHi9'];
@@ -2491,8 +2491,8 @@ for ($somevar in v2) {
       this.1BCy- = (haxe.0JleF.8ZAwM.]YRz6(('cnx', v2)).]BUL}('inst');
       this. E = new 8)Xl3(this.1BCy-);
       this.}y( = new 0-I(H(.,bV(this);
-      this.7XvA5 = new 19{O();
-      this.)3SF7 = new 19{O();
+      this.7XvA5 = new Hash();
+      this.)3SF7 = new Hash();
       this.;D-u2( = false;
       this.6t;2K( = false;
       this.]jyw5 = new 0-I(H(.2F}HL();
@@ -4057,7 +4057,7 @@ for ($somevar in v2) {
                                                       ++this.4AF;
                                                       return v3;
                                                 } else {
-                                                      v3 = new 19{O();
+                                                      v3 = new Hash();
                                                       this.+Hp().push(v3);
                                                       v4 = this. [*;
                                                       while (this. [*.cca(this.4AF) != 104) {
@@ -4649,7 +4649,7 @@ return undefined;
       if ((Date.now()).getTime() - v3.0f 5.getTime() > 30000) {
         return undefined;
       }
-      var v4 = new 19{O();
+      var v4 = new Hash();
       v4.7NJ('room', this.,D 7);
       v4.7NJ('uid', 3Wt.+_PpF(arg0));
       v4.7NJ('history', this.3X]M5.join(''));
@@ -5475,7 +5475,7 @@ for ($somevar in arg0) {
       haxe.Serializer.}VCyQ = false;
       haxe.Serializer.(SkV ( = false;
       haxe.Serializer.9tEy4( = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789%:';
-      haxe.0JleF.8ZAwM.5xf4)( = new 19{O();
+      haxe.0JleF.8ZAwM.5xf4)( = new Hash();
       1KirH(.)qKXe = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
       haxe.=6k.*KB2 = new haxe.=6k();
       haxe.Unserializer.9LccS = ]RN];
@@ -5484,11 +5484,11 @@ for ($somevar in arg0) {
       0-I(H(.2d1K.=cKzE( = [0];
       0-I(H(.2d1K.,yg5D = new =j{VC();
       0-I(H(.2d1K.2r2PJ = [{'{': _ChatCommand._Lol, '=rJ': ['lol', 'mdr']}, {'{': _ChatCommand._Yes, '=rJ': ['yes', 'oui', 'vi']}, {'{': _ChatCommand._No, '=rJ': ['no', 'non']}, {'{': _ChatCommand._Love, '=rJ': ['love', 'aime']}, {'{': _ChatCommand._Cry, '=rJ': ['cry', 'pleure']}, {'{': _ChatCommand._Out, '=rJ': ['out', 'sort', 'sors']}, {'{': _ChatCommand._Jump, '=rJ': ['jump', 'saute', 'hop']}, {'{': _ChatCommand._Happy, '=rJ': ['cool', 'content']}, {'{': _ChatCommand._Puke, '=rJ': ['puke', 'vomi']}, {'{': _ChatCommand._Fight, '=rJ': ['play', 'duel', 'defi', 'jouer']}, {'{': _ChatCommand._Angry, '=rJ': ['angry', 'enerve']}, {'{': _ChatCommand._Token, '=rJ': ['token', 'sucre']}];
-      0-I(H(.2d1K.{j2qE = new 19{O();
+      0-I(H(.2d1K.{j2qE = new Hash();
       0-I(H(.2d1K.00{h; = false;
       flash.7]AJ. p)sT = 0;
       flash.7]AJ.)Sdm5( = null;
-      haxe.0JleF. Iy}Z.5xf4)( = new 19{O();
+      haxe.0JleF. Iy}Z.5xf4)( = new Hash();
       ;T2LY.init = ;kTEq.0D 6();
     }
     catch (flash.7]AJ) {

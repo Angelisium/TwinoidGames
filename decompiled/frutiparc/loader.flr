@@ -1237,13 +1237,13 @@ for ($somevar in v2) {
     v1.__class__ = haxe.0JleF.0*I[X;
     v1.5T(* = null;
     v1.]BUL} = null;
-    19{O = function () {
+    Hash = function () {
       this.1 = new _global.Object();
     };
 
-    19{O.__name__ = ['19{O'];
-    v1 = 19{O.prototype;
-    v1.__class__ = 19{O;
+    Hash.__name__ = ['Hash'];
+    v1 = Hash.prototype;
+    v1.__class__ = Hash;
     v1.exists = function (arg0) {
       return this.1.hasOwnProperty('$' + arg0);
     };
@@ -2235,7 +2235,7 @@ for ($somevar in v2) {
                                                       ++this.4AF;
                                                       return v3;
                                                 } else {
-                                                      v3 = new 19{O();
+                                                      v3 = new Hash();
                                                       this.+Hp().push(v3);
                                                       v4 = this. [*;
                                                       while (this. [*.cca(this.4AF) != 104) {
@@ -2401,7 +2401,7 @@ for ($somevar in v2) {
     };
 
     haxe.0JleF.+pHi9 = function () {
-      this.,Kwdh = new 19{O();
+      this.,Kwdh = new Hash();
     };
 
     haxe.0JleF.+pHi9.__name__ = ['haxe', '0JleF', '+pHi9'];
@@ -2648,7 +2648,7 @@ for ($somevar in v2) {
       this.+Hp() = new Array();
       this.)[;[g = haxe.Serializer.}VCyQ;
       this.3 yU+( = haxe.Serializer.(SkV (;
-      this.1xYp5 = new 19{O();
+      this.1xYp5 = new Hash();
       this.5V{L6 = 0;
     };
 
@@ -2724,7 +2724,7 @@ for ($somevar in v2) {
                         arg0.5s}UX(this);
                         this. [*.) += 'g';
                       }
-                if (v5 != 19{O) {
+                if (v5 != Hash) {
                       var v6 = 0;
                       this. [*.) += 'a';
                       var v7 = arg0.length;
@@ -3078,8 +3078,8 @@ for ($somevar in v2) {
 
     haxe.6UHP = function (arg0) {
       this.-lM = arg0;
-      this. )84 ( = new 19{O();
-      this.*feM7( = new 19{O();
+      this. )84 ( = new Hash();
+      this.*feM7( = new Hash();
     };
 
     haxe.6UHP.__name__ = ['haxe', '6UHP'];
@@ -3416,11 +3416,11 @@ for ($somevar in v2) {
       Loader.4N{jH = '.muxxu.com/';
       Loader.;9VQ = 5700284;
       Loader.6lVL = 3.5;
-      haxe.0JleF.8ZAwM.5xf4)( = new 19{O();
+      haxe.0JleF.8ZAwM.5xf4)( = new Hash();
       *hr_A.8cSN = false;
       *hr_A.8nG,E = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-_';
       *hr_A.;YXL8( = null;
-      *hr_A.87kh6 = new 19{O();
+      *hr_A.87kh6 = new Hash();
       *hr_A.0f 5 = null;
       haxe.Unserializer.9LccS = ]RN];
       haxe.Unserializer.9tEy4( = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789%:';
