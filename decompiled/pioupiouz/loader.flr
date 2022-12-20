@@ -770,7 +770,7 @@ movie 'loader.swf' {
               this.]{i.initdone = false;
               this.]{i.clear = function () {
                 this.tprint.text = '';
-                this.]AO l.text = '';
+                this.ttrace.text = '';
               };
 
               this.]{i.}-B2 = function (}J,  (, 1) {
@@ -785,19 +785,19 @@ movie 'loader.swf' {
                 }
                 this.[VAKp = 1 - 30;
                 this.initdone = true;
-                this.]AO l = this.+rJ.createTextField(}J, 99999);
+                this.ttrace = this.+rJ.createTextField(}J, 99999);
                 this.tprint = this.+rJ.createTextField(}J, 99998);
-                this.]AO l._x = 5;
-                this.]AO l._y = 20;
-                this.]AO l._width =  ( - 10;
-                this.]AO l._height = 1;
+                this.ttrace._x = 5;
+                this.ttrace._y = 20;
+                this.ttrace._width =  ( - 10;
+                this.ttrace._height = 1;
                 this.tprint._x =  ( / 2;
                 this.tprint._y = 20;
                 this.tprint._width =  ( / 2;
                 this.tprint._height = 1 - 30;
-                this.]AO l.wordWrap = true;
+                this.ttrace.wordWrap = true;
                 this.tprint.wordWrap = true;
-                this.]AO l.selectable = false;
+                this.ttrace.selectable = false;
                 this.tprint.selectable = false;
                 var (K = this;
                 this.](L = setInterval(function () {
@@ -811,11 +811,11 @@ movie 'loader.swf' {
                 if (!this.initdone) {
                   this.}-B2();
                 }
-                this.]AO l.text += ((([.split('\n')).join('\\n')).split('\r')).join('\\r') + '\n';
-                while (this.]AO l.textHeight > this.[VAKp) {
-                  var v2 = this.]AO l.text.indexOf('\r', 0);
-                  var v3 = this.]AO l.text.substr(v2 + 1);
-                  this.]AO l.text = v3;
+                this.ttrace.text += ((([.split('\n')).join('\\n')).split('\r')).join('\\r') + '\n';
+                while (this.ttrace.textHeight > this.[VAKp) {
+                  var v2 = this.ttrace.text.indexOf('\r', 0);
+                  var v3 = this.ttrace.text.substr(v2 + 1);
+                  this.ttrace.text = v3;
                 }
               };
 
@@ -823,7 +823,7 @@ movie 'loader.swf' {
                 if (!this.initdone) {
                   this.}-B2();
                 }
-                this.]AO l.textColor = *;
+                this.ttrace.textColor = *;
                 this.tprint.textColor = *;
               };
 
@@ -837,7 +837,7 @@ movie 'loader.swf' {
               this.]{i.,}2X ( = function () {
                 clearInterval(this.](L);
                 this.initdone = false;
-                this.]AO l.removeMovieClip();
+                this.ttrace.removeMovieClip();
                 this.tprint.removeMovieClip();
               };
 

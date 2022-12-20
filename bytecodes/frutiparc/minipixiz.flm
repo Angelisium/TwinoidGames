@@ -2811,7 +2811,7 @@ movie 'minipixiz.swf' compressed // flash 7, total frames: 34, frame rate: 40 fp
   end // of exportAssets
   
   initMovieClip 1563
-    constants '_global', ';7pIo', 'prototype', '}-B2', '}J', 'string', 'Array', 'remove', 'length', 'splice', 'insert', 'duplicate', 'slice', 'Color', 'reset', 'ra', 'rb', 'ba', 'bb', 'ga', 'gb', 'aa', 'ab', 'setTransform', 'XMLNode', 'get', 'attributes', 'set', 'exists', 'attributesIter', 'childrenIter', 'firstChild', 'nextSibling', 'XML', 'ASSetPropFlags', 'StyleSheet', 'TextField', '3Wt', 'Object', 'icounter', 'attachMC', '@', 'attachMovie', 'createEmptyMC', 'empty@', 'createEmptyMovieClip', 'duplicateMC', 'dup@', 'duplicateMovieClip', '_parent', 'getVar', 'setVar', 'getRoot', 'getGlobal', 'setGlobal', 'createTextField', 'text@', 'cast', 'hitTest', 'random', 'xmouse', '_xmouse', 'ymouse', '_ymouse', 'escape', 'unescape', 'parseInt', 'toString', 'toStringBase', 'isNaN', 'infinity', 'Infinity', 'registerClass', 'copy', 'callback', '8', '-', 'apply', '(', 'concat', 'getTimer', '_typeof', '_instanceof', 'forin', 'makeNew', 'deleteField', ']{i', '+rJ', 'initdone', 'clear', 'tprint', 'text', '', ']AO l', 'Stage', 'width', 'height', '[VAKp', '_x', '_y', '_width', '_height', 'wordWrap', 'selectable', '(K', '](L', 'setInterval', '+9L}b', '\\r', '\r', '\\n', '\n', 'split', 'join', 'textHeight', 'indexOf', 'substr', '(H5 S', 'textColor', 'print', '~ ', ',}2X (', 'clearInterval', 'removeMovieClip', '<...>', 'object', 'movieclip', 'function', '[', '    ', ',', 'substring', ']', '[object Object]', '{\n', 'MC(', '_name', ') ', ' : ', '}', '<fun>', 'trace', '19{O', '5uJ2', 'call'  
+    constants '_global', ';7pIo', 'prototype', '}-B2', '}J', 'string', 'Array', 'remove', 'length', 'splice', 'insert', 'duplicate', 'slice', 'Color', 'reset', 'ra', 'rb', 'ba', 'bb', 'ga', 'gb', 'aa', 'ab', 'setTransform', 'XMLNode', 'get', 'attributes', 'set', 'exists', 'attributesIter', 'childrenIter', 'firstChild', 'nextSibling', 'XML', 'ASSetPropFlags', 'StyleSheet', 'TextField', '3Wt', 'Object', 'icounter', 'attachMC', '@', 'attachMovie', 'createEmptyMC', 'empty@', 'createEmptyMovieClip', 'duplicateMC', 'dup@', 'duplicateMovieClip', '_parent', 'getVar', 'setVar', 'getRoot', 'getGlobal', 'setGlobal', 'createTextField', 'text@', 'cast', 'hitTest', 'random', 'xmouse', '_xmouse', 'ymouse', '_ymouse', 'escape', 'unescape', 'parseInt', 'toString', 'toStringBase', 'isNaN', 'infinity', 'Infinity', 'registerClass', 'copy', 'callback', '8', '-', 'apply', '(', 'concat', 'getTimer', '_typeof', '_instanceof', 'forin', 'makeNew', 'deleteField', ']{i', '+rJ', 'initdone', 'clear', 'tprint', 'text', '', 'ttrace', 'Stage', 'width', 'height', '[VAKp', '_x', '_y', '_width', '_height', 'wordWrap', 'selectable', '(K', '](L', 'setInterval', '+9L}b', '\\r', '\r', '\\n', '\n', 'split', 'join', 'textHeight', 'indexOf', 'substr', '(H5 S', 'textColor', 'print', '~ ', ',}2X (', 'clearInterval', 'removeMovieClip', '<...>', 'object', 'movieclip', 'function', '[', '    ', ',', 'substring', ']', '[object Object]', '{\n', 'MC(', '_name', ') ', ' : ', '}', '<fun>', 'trace', '19{O', '5uJ2', 'call'  
     push '_global'
     getVariable
     push ';7pIo'
@@ -3587,7 +3587,7 @@ movie 'minipixiz.swf' compressed // flash 7, total frames: 34, frame rate: 40 fp
             getMember
             push 'text', ''
             setMember
-            push r:this, ']AO l'
+            push r:this, 'ttrace'
             getMember
             push 'text', ''
             setMember
@@ -3633,7 +3633,7 @@ movie 'minipixiz.swf' compressed // flash 7, total frames: 34, frame rate: 40 fp
             setMember
             push r:this, 'initdone', TRUE
             setMember
-            push r:this, ']AO l', 99999, r:'}J', 2, r:this, '+rJ'
+            push r:this, 'ttrace', 99999, r:'}J', 2, r:this, '+rJ'
             getMember
             push 'createTextField'
             callMethod
@@ -3643,20 +3643,20 @@ movie 'minipixiz.swf' compressed // flash 7, total frames: 34, frame rate: 40 fp
             push 'createTextField'
             callMethod
             setMember
-            push r:this, ']AO l'
+            push r:this, 'ttrace'
             getMember
             push '_x', 5
             setMember
-            push r:this, ']AO l'
+            push r:this, 'ttrace'
             getMember
             push '_y', 20
             setMember
-            push r:this, ']AO l'
+            push r:this, 'ttrace'
             getMember
             push '_width', r:' (', 10
             subtract
             setMember
-            push r:this, ']AO l'
+            push r:this, 'ttrace'
             getMember
             push '_height', r:'1'
             setMember
@@ -3679,7 +3679,7 @@ movie 'minipixiz.swf' compressed // flash 7, total frames: 34, frame rate: 40 fp
             push '_height', r:'1', 30
             subtract
             setMember
-            push r:this, ']AO l'
+            push r:this, 'ttrace'
             getMember
             push 'wordWrap', TRUE
             setMember
@@ -3687,7 +3687,7 @@ movie 'minipixiz.swf' compressed // flash 7, total frames: 34, frame rate: 40 fp
             getMember
             push 'wordWrap', TRUE
             setMember
-            push r:this, ']AO l'
+            push r:this, 'ttrace'
             getMember
             push 'selectable', FALSE
             setMember
@@ -3738,9 +3738,9 @@ movie 'minipixiz.swf' compressed // flash 7, total frames: 34, frame rate: 40 fp
             callMethod
             pop
            label19:
-            push r:this, ']AO l'
+            push r:this, 'ttrace'
             getMember
-            push 'text', r:this, ']AO l'
+            push 'text', r:this, 'ttrace'
             getMember
             push 'text'
             getMember
@@ -3757,7 +3757,7 @@ movie 'minipixiz.swf' compressed // flash 7, total frames: 34, frame rate: 40 fp
             add
             setMember
            label20:
-            push r:this, ']AO l'
+            push r:this, 'ttrace'
             getMember
             push 'textHeight'
             getMember
@@ -3766,7 +3766,7 @@ movie 'minipixiz.swf' compressed // flash 7, total frames: 34, frame rate: 40 fp
             greaterThan
             not
             branchIfTrue label21
-            push 0.0, '\r', 2, r:this, ']AO l'
+            push 0.0, '\r', 2, r:this, 'ttrace'
             getMember
             push 'text'
             getMember
@@ -3776,7 +3776,7 @@ movie 'minipixiz.swf' compressed // flash 7, total frames: 34, frame rate: 40 fp
             pop
             push r:2, 1
             add
-            push 1, r:this, ']AO l'
+            push 1, r:this, 'ttrace'
             getMember
             push 'text'
             getMember
@@ -3784,7 +3784,7 @@ movie 'minipixiz.swf' compressed // flash 7, total frames: 34, frame rate: 40 fp
             callMethod
             setRegister r:3
             pop
-            push r:this, ']AO l'
+            push r:this, 'ttrace'
             getMember
             push 'text', r:3
             setMember
@@ -3806,7 +3806,7 @@ movie 'minipixiz.swf' compressed // flash 7, total frames: 34, frame rate: 40 fp
             callMethod
             pop
            label22:
-            push r:this, ']AO l'
+            push r:this, 'ttrace'
             getMember
             push 'textColor', r:'*'
             setMember
@@ -3857,7 +3857,7 @@ movie 'minipixiz.swf' compressed // flash 7, total frames: 34, frame rate: 40 fp
             pop
             push r:this, 'initdone', FALSE
             setMember
-            push 0.0, r:this, ']AO l'
+            push 0.0, r:this, 'ttrace'
             getMember
             push 'removeMovieClip'
             callMethod
