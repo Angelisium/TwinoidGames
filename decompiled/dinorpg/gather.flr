@@ -1753,7 +1753,7 @@ for ($somevar in arg0) {
         if (v4 != Float) {
         } else {
           if (v4 != Bool) {
-                return arg0.__enum__ == arg1 || arg1 == Class && arg0.__name__ != null || arg1 == [y;M && arg0.__ename__ != null;
+                return arg0.__enum__ == arg1 || arg1 == Class && arg0.__name__ != null || arg1 == Enum && arg0.__ename__ != null;
           } else {
                 return typeof arg0 == 'number' && Math.ceil(arg0) === arg0 % 2147483648.0 && !(arg0 === true || arg0 === false);
             if (v4 != String) {
@@ -3265,7 +3265,7 @@ for ($somevar in v2) {
     0.Bool = {'__ename__': ['Bool']};
     0.Dynamic = {'__name__': ['Dynamic']};
     0.Class = {'__name__': ['Class']};
-    0.[y;M = {};
+    0.Enum = {};
     0.06;a = {'__ename__': ['06;a']};
     0.Float = _global.Number;
     0.Float.__name__ = ['Float'];
