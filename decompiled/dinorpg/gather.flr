@@ -585,7 +585,7 @@ for ($somevar in v2) {
     v1 =  y.prototype;
     v1.__class__ =  y;
     v1.0-I(H( = null;
-    v1.,}2X ( = function () {
+    v1.destroy = function () {
       this.}J.removeMovieClip();
       this.}J = null;
     };
@@ -619,7 +619,7 @@ for ($somevar in v2) {
       this.}J._yscale += this.0iJ * 3;
       this.}J._alpha -= this.0iJ;
       if (this.}J._alpha <= 0) {
-        this.,}2X (();
+        this.destroy();
       }
     };
 
@@ -3030,7 +3030,7 @@ for ($somevar in v2) {
       v3.7-, = v5;
     };
 
-    v1.,}2X ( = function () {
+    v1.destroy = function () {
       var v2 = 0;
       var v3 = this.}Zms3.length;
       while (v2 < v3) {

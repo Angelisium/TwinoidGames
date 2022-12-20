@@ -199,7 +199,7 @@ for ($somevar in v2) {
        y.__name__ = [' y'];
       v1 =  y.prototype;
       v1.__class__ =  y;
-      v1.,}2X ( = function () {
+      v1.destroy = function () {
         this.}J.removeMovieClip();
         this.}J = null;
       };
@@ -233,7 +233,7 @@ for ($somevar in v2) {
         this.}J._x += this.{2;
         this.}J._y += this.}2;
         if (this.}J._y >= =(,aA.6m_O + 5) {
-          this.,}2X (();
+          this.destroy();
         }
       };
 
@@ -788,7 +788,7 @@ for ($somevar in v2) {
         v3.7-, = v5;
       };
 
-      v1.,}2X ( = function () {
+      v1.destroy = function () {
         var v2 = 0;
         var v3 = this.}Zms3.length;
         while (v2 < v3) {
@@ -1243,7 +1243,7 @@ for ($somevar in v2) {
         this.}J._y += this.}2;
         this.}J._alpha -= 9K.{-kxL.-V;B * 2;
         if (this.}J._alpha <= 0) {
-          this.,}2X (();
+          this.destroy();
         }
       };
 
@@ -1265,9 +1265,9 @@ for ($somevar in v2) {
       v1.__class__ = -Y[IL;
       v1.3u( = null;
       v1.*]5FI = null;
-      v1.,}2X ( = function () {
+      v1.destroy = function () {
         this.+-(0.-360.)Up-1 = 1;
-        super.,}2X (();
+        super.destroy();
       };
 
       v1.[X = null;
@@ -1291,7 +1291,7 @@ for ($somevar in v2) {
           this.*]5FI += 0.01 * 9K.{-kxL.-V;B;
         }
         if (this.}J._y <= v4) {
-          this.,}2X (();
+          this.destroy();
         }
         this.}J._rotation = this.3u( * 180 / Math.PI;
         this.}J._x += Math.cos(this.3u() * this.[X;
@@ -3591,7 +3591,7 @@ for ($somevar in arg0) {
         this.}J._x += this.{2;
         this.}J._y += this.}2;
         if (this.}J._alpha <= 0) {
-          this.,}2X (();
+          this.destroy();
         }
       };
 

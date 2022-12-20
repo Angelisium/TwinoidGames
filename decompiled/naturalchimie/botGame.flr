@@ -581,7 +581,7 @@ movie 'botGame.swf' {
     };
 
     v1.+DK{J( = null;
-    v1.,}2X ( = function () {
+    v1.destroy = function () {
       if (this.-OqH_.length == 0) {
         return false;
       }
@@ -7583,7 +7583,7 @@ for ($somevar in arg0) {
                     }
                   }
               if (v2 != 4) {
-                  if (!this.[;X}5.,}2X (()) {
+                  if (!this.[;X}5.destroy()) {
                     this.-P*=B( = [this.-P*=B([0] + 1];
                     this.5D-vh();
                     this. m uY = this.[;X}5.]*53L();
@@ -10793,7 +10793,7 @@ for ($somevar in v2) {
           }
           break;
         case 5:
-          if (!this.[;X}5.,}2X (()) {
+          if (!this.[;X}5.destroy()) {
             this.[;X}5.[T=*_();
           }
           break;
@@ -11900,7 +11900,7 @@ return undefined;
       v3.7-, = v5;
     };
 
-    v1.,}2X ( = function () {
+    v1.destroy = function () {
       var v2 = 0;
       var v3 = this.}Zms3.length;
       while (v2 < v3) {
@@ -13551,7 +13551,7 @@ for ($somevar in v2) {
                 var v3 = 8.0;
                 this.+HmVu = Math.max(this.+HmVu - v3 * 9K.{-kxL.-V;B, 0);
                 this.3I.}J._alpha = this.+HmVu;
-                44{N.(K.[;X}5.,}2X (();
+                44{N.(K.[;X}5.destroy();
                 if (this.]macu()) {
                   this.(( = this.7Y-7.((;
                   this.)( = this.7Y-7.)(;
@@ -15135,7 +15135,7 @@ for ($somevar in v2) {
           }
           break;
         case 5:
-          if (!this.[;X}5.,}2X (()) {
+          if (!this.[;X}5.destroy()) {
             this.[;X}5.[T=*_();
           }
           break;

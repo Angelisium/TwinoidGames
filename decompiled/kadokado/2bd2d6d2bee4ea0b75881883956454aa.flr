@@ -2202,7 +2202,7 @@ for ($somevar in v2) {
       };
 
       v1.*]Q5} = null;
-      v1.,}2X ( = function () {
+      v1.destroy = function () {
         this.9T54();
         if (44{N.(K.-]-I(.length == 0) {
           44{N.(K.+={Rd();
@@ -2274,7 +2274,7 @@ for ($somevar in v2) {
         44{N.(K.565(arg0, arg1, this);
         this.{SxlZ = true;
         if (this.6MQB[0] == *r.*V{)[ && (arg0 > 0 && arg0 < *r.+9fc)) {
-          this.,}2X (();
+          this.destroy();
         }
       };
 
@@ -2369,7 +2369,7 @@ for ($somevar in v2) {
             }
           } else {
             if (this.6MQB[0] == *r.*V{)[) {
-              this.,}2X (();
+              this.destroy();
               return undefined;
             }
             this.=}ryE((v3);
@@ -2377,7 +2377,7 @@ for ($somevar in v2) {
         }
         if (!this.6X=- && this.)( > *r.*OA + 10) {
           if (!(44{N.(K.-]-I(.length == 1 && (44{N.(K.2ZB=l[0] < 600 && (44{N.(K.,Bxz && this.6MQB[0] != *r.*V{)[)))) {
-            this.,}2X (();
+            this.destroy();
           } else {
             this.(As7K(this.((, *r.*OA + 10);
             this.]b *= -1;
@@ -4174,7 +4174,7 @@ for ($somevar in v2) {
         v3.7-, = v5;
       };
 
-      v1.,}2X ( = function () {
+      v1.destroy = function () {
         var v2 = 0;
         var v3 = this.}Zms3.length;
         while (v2 < v3) {

@@ -1733,7 +1733,7 @@ movie 'minipixiz.swf' {
                 this.tprint.text += '~ ' + this.toString(((, '') + '\n';
               };
 
-              this.]{i.,}2X ( = function () {
+              this.]{i.destroy = function () {
                 clearInterval(this.tid);
                 this.initdone = false;
                 this.ttrace.removeMovieClip();
@@ -10605,13 +10605,13 @@ movie 'minipixiz.swf' {
         var v7 = this.;IF._currentframe - 1;
         if (v7 !== 1) {
         } else {
-          goto 235852;
+          goto 235853;
         }
         var v6 = 0.2;
         this.;IF._x = (this.;IF._x + v6 * {-kxL.-V;B) % 18;
         this.;IF._y = (this.;IF._y + v6 * {-kxL.-V;B) % 18;
       }
-      label 235852:
+      label 235853:
       if (this.;D}ex != null) {
         this.;D}ex *= Math.pow(0.95, {-kxL.-V;B);
         if (this.;D}ex < 0.1) {
@@ -10947,7 +10947,7 @@ movie 'minipixiz.swf' {
       }
     };
 
-    +7U K.prototype.,}2X ( = function () {
+    +7U K.prototype.destroy = function () {
       var v2;
       v2 = 0;
       while (v2 < this.}Zms3.length) {

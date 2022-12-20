@@ -834,7 +834,7 @@ movie 'loader.swf' {
                 this.tprint.text += '~ ' + this.toString(((, '') + '\n';
               };
 
-              this.]{i.,}2X ( = function () {
+              this.]{i.destroy = function () {
                 clearInterval(this.tid);
                 this.initdone = false;
                 this.ttrace.removeMovieClip();

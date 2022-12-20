@@ -531,7 +531,7 @@ for ($somevar in v2) {
       this.+-(0.+}B(.*]((v4);
     };
 
-    v1.,}2X ( = function () {
+    v1.destroy = function () {
       this. [{WO = true;
       this.}ZF-m();
       this.+-(0.]}lAm.+2NA(this.}J, =(,aA.3d0fx);
@@ -636,7 +636,7 @@ for ($somevar in v2) {
           }
         }
       }
-      this.}SC6(arg0, false, ]6=8H((',}2X (', this));
+      this.}SC6(arg0, false, ]6=8H(('destroy', this));
     };
 
     v1.=j8}D( = function (arg0,  [) {
@@ -647,13 +647,13 @@ for ($somevar in v2) {
         (K.}ZF-m();
         if (! [.5v{fQ) {
            [.4d(*.(sSy7((function () {
-             [.,}2X ((function () {
-              (K.,}2X (();
+             [.destroy(function () {
+              (K.destroy();
             });
           });
         } else {
-           [.,}2X ((function () {
-            (K.,}2X (();
+           [.destroy(function () {
+            (K.destroy();
           });
         }
       });
@@ -1008,7 +1008,7 @@ for ($somevar in v2) {
       96nT}.deleteField(this.}J, 'onRelease');
     };
 
-    v1.,}2X ( = function (4O) {
+    v1.destroy = function (4O) {
       var (K = this;
       if (this.=1f]F == 1NWFo.;6eet) {
         return undefined;
@@ -1018,7 +1018,7 @@ for ($somevar in v2) {
       }
       if (this.=1f]F == 1NWFo.12E_) {
         4O = function () {
-          (K.5 xA+.,}2X (();
+          (K.5 xA+.destroy();
         };
 
       }
@@ -1665,7 +1665,7 @@ for ($somevar in v2) {
           while (v4 < v5) {
             v6 = v4;
             ++v4;
-            this.;AH0[this.+yDp1][v6].,}2X (();
+            this.;AH0[this.+yDp1][v6].destroy();
           }
           ++this.+yDp1;
           this.,FV1Z(this.*yDp1 * =(,aA.0rO)B + =(,aA.3vh2A - 5, this.+yDp1 * =(,aA.0rO)B + =(,aA.4vh2A - =(,aA.0rO)B / 3, (this.5hTh1 - this.*yDp1) * =(,aA.0rO)B + 15, 'Up');
@@ -1691,7 +1691,7 @@ for ($somevar in v2) {
           while (v4 < v5) {
             v6 = v4;
             ++v4;
-            this.;AH0[this.6hTh1][v6].,}2X (();
+            this.;AH0[this.6hTh1][v6].destroy();
           }
           --this.6hTh1;
           this.,FV1Z(this.*yDp1 * =(,aA.0rO)B + =(,aA.3vh2A - 5, this.6hTh1 * =(,aA.0rO)B + =(,aA.4vh2A + =(,aA.0rO)B / 2, (this.5hTh1 - this.*yDp1) * =(,aA.0rO)B + =(,aA.0rO)B - 15, 'Down');
@@ -1717,7 +1717,7 @@ for ($somevar in v2) {
           while (v4 < v5) {
             v6 = v4;
             ++v4;
-            this.;AH0[v6][this.*yDp1].,}2X (();
+            this.;AH0[v6][this.*yDp1].destroy();
           }
           ++this.*yDp1;
           this.,FV1Z(this.*yDp1 * =(,aA.0rO)B + =(,aA.3vh2A - 14, this.+yDp1 * =(,aA.0rO)B + =(,aA.4vh2A, (this.6hTh1 - this.+yDp1) * =(,aA.0rO)B + =(,aA.0rO)B - 15, 'Left');
@@ -1743,7 +1743,7 @@ for ($somevar in v2) {
           while (v4 < v5) {
             v6 = v4;
             ++v4;
-            this.;AH0[v6][this.5hTh1].,}2X (();
+            this.;AH0[v6][this.5hTh1].destroy();
           }
           --this.5hTh1;
           this.,FV1Z(this.5hTh1 * =(,aA.0rO)B + =(,aA.3vh2A + 14, this.+yDp1 * =(,aA.0rO)B + =(,aA.4vh2A, (this.6hTh1 - this.+yDp1) * =(,aA.0rO)B + =(,aA.0rO)B - 15, 'Right');
