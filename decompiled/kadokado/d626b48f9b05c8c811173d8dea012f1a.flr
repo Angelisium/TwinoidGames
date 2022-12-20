@@ -1304,7 +1304,7 @@ for ($somevar in v2) {
       };
 
       v1.5+mmJ( = function (arg0) {
-        44{N.(K.36I51.0ENPA(this);
+        44{N.(K.36I51.remove(this);
         this.8]X}5 =  -1C[.}ix-t;
         return this.97zLo(arg0, true);
       };
@@ -1340,7 +1340,7 @@ for ($somevar in v2) {
 
       v1.;-[;H = function (arg0) {
         ++44{N.(K.}]l)+[this.4AF.((];
-        44{N.(K.36I51.0ENPA(this);
+        44{N.(K.36I51.remove(this);
         44{N.(K.*TnQC.]XX}5 += 100;
         44{N.}D4i3(this.((, this.)();
         this.}J._visible = false;
@@ -2108,7 +2108,7 @@ for ($somevar in v2) {
       };
 
       v1.; = null;
-      v1.0ENPA = function (arg0) {
+      v1.remove = function (arg0) {
         var v3 = null;
         var v4 = this.1;
         while (v4 != null) {

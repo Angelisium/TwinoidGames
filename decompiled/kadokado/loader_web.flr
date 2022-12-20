@@ -12,7 +12,7 @@ movie 'loader_web.swf' {
             };
 
           }
-          Array.prototype.0ENPA = function (+KD) {
+          Array.prototype.remove = function (+KD) {
             var v2;
             var v3 = this.length;
             v2 = 0;
@@ -73,7 +73,7 @@ movie 'loader_web.swf' {
             return this.attributes[((] != null;
           };
 
-          _global.ASSetPropFlags(Array.prototype, '0ENPA', 1);
+          _global.ASSetPropFlags(Array.prototype, 'remove', 1);
           _global.ASSetPropFlags(Array.prototype, '4]GSJ(', 1);
           _global.ASSetPropFlags(Array.prototype, '],lYS', 1);
           _global.ASSetPropFlags(Color.prototype, '{L 35', 1);
@@ -368,7 +368,7 @@ movie 'loader_web.swf' {
             this[4] = 2;
           };
 
-          this.19{O.prototype.0ENPA = function (4) {
+          this.19{O.prototype.remove = function (4) {
             var v2 = this[4] != undefined;
             delete this[4];
             return v2;
@@ -3410,7 +3410,7 @@ for ($somevar in v2) {
     };
 
     v1.; = null;
-    v1.0ENPA = function (arg0) {
+    v1.remove = function (arg0) {
       var v3 = null;
       var v4 = this.1;
       while (v4 != null) {
@@ -4382,7 +4382,7 @@ for ($somevar in this.1) {
       return v2.iterator();
     };
 
-    v1.0ENPA = function (arg0) {
+    v1.remove = function (arg0) {
       if (!this.1.hasOwnProperty(arg0)) {
         return false;
       }
@@ -4650,7 +4650,7 @@ for ($somevar in this.1) {
       return v2.iterator();
     };
 
-    v1.0ENPA = function (arg0) {
+    v1.remove = function (arg0) {
       arg0 = '$' + arg0;
       if (!this.1.hasOwnProperty(arg0)) {
         return false;

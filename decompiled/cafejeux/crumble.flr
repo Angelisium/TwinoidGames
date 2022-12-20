@@ -575,7 +575,7 @@ for ($somevar in v2) {
     v1.]}lAm = null;
     v1.=)*i*( = function () {
       if (this.+}MsQ != null) {
-        this.+-(0.4oIy{.0ENPA(this.+}MsQ);
+        this.+-(0.4oIy{.remove(this.+}MsQ);
         this.+}MsQ = null;
         if (!this.,3XmF) {
           this.}J.5 xA+.gotoAndStop(1);
@@ -728,7 +728,7 @@ for ($somevar in v2) {
 
     v1.;PX}p = function () {
       if (this.2TZi2 != null && !this. [{WO) {
-        this.+-(0.4oIy{.0ENPA(this.2TZi2);
+        this.+-(0.4oIy{.remove(this.2TZi2);
         if (!this.,3XmF) {
           this.}J.5 xA+.gotoAndStop(1);
         }
@@ -1014,7 +1014,7 @@ for ($somevar in v2) {
         return undefined;
       }
       if (this.4d(* != null) {
-        this.4d(*.0ENPA();
+        this.4d(*.remove();
       }
       if (this.=1f]F == 1NWFo.12E_) {
         4O = function () {
@@ -1038,7 +1038,7 @@ for ($somevar in v2) {
         return undefined;
       }
       if (this.4d(* != null) {
-        this.4d(*.0ENPA();
+        this.4d(*.remove();
       }
       this.=1f]F = 1NWFo.;6eet;
       this.+-(0.+}B(.*]((new ]YKP](this.}J, +V+K.1[6tm, 0, ]6=8H(('9T54', this)));
@@ -1303,7 +1303,7 @@ return undefined;
     };
 
     v1.; = null;
-    v1.0ENPA = function (arg0) {
+    v1.remove = function (arg0) {
       var v3 = null;
       var v4 = this.1;
       while (v4 != null) {
@@ -2077,7 +2077,7 @@ for ($somevar in v2) {
         while (v2.1ll a()) {
           var v3 = v2.7Y-7();
           if (v3.play()) {
-            this.+}B(.0ENPA(v3);
+            this.+}B(.remove(v3);
           }
         }
         if (this.+}B(.length == 0) {
@@ -2089,7 +2089,7 @@ for ($somevar in v2) {
         while (v2.1ll a()) {
           v3 = v2.7Y-7();
           if (v3.play()) {
-            this.4oIy{.0ENPA(v3);
+            this.4oIy{.remove(v3);
           }
         }
       }
@@ -2276,14 +2276,14 @@ for ($somevar in v2) {
             this.0q]hS.5+mmJ( = null;
           }
           if (this.0q]hS.5D2-*( != null && 9G56) {
-            this.0q]hS.5D2-*(.4d(*.0ENPA();
+            this.0q]hS.5D2-*(.4d(*.remove();
             this.0q]hS.5D2-*( = null;
           }
           if (this.0q]hS.2*B-* != null && !9G56) {
             var ]k,N1 = this.0q]hS.2*B-*.4d(*;
             var (K = this;
             ]k,N1.(sSy7((function () {
-              ]k,N1.0ENPA();
+              ]k,N1.remove();
               (K.+oD9l(9G56, [Zk.-Y=U(+));
             });
             this.0q]hS.2*B-* = null;
@@ -2386,7 +2386,7 @@ for ($somevar in v2) {
           v4 = v3[2];
           var v5 = (this.,X2)).splice(v4, 1))[0];
           var v6 = v5.6MQB;
-          v5.0ENPA();
+          v5.remove();
           if (!9G56) {
             this.,lQTD.push(new =i{J(false, this, v6, this.,lQTD.length, false));
           } else {
@@ -2433,7 +2433,7 @@ for ($somevar in v2) {
               this.}Euw)([v4].*fk=3(9G56, v5, v6);
             }
           } else {
-            this.0q]hS.8_JAc.4d(*.0ENPA();
+            this.0q]hS.8_JAc.4d(*.remove();
             v7 = 9G56 ? this.}Euw)([v4] : this.,lQTD[v4];
             v7.4AF = this.0q]hS.8_JAc.4d(*.4AF;
             v7.9G56 = !v7.9G56;
@@ -2497,7 +2497,7 @@ for ($somevar in v2) {
       if (this.0q]hS.8_JAc != null) {
         if (this.0q]hS.8_JAc.{8(}Q == }-VbH.4mok0()) {
           this.0q]hS.8_JAc.4d(*.;JKkc();
-          this.0q]hS.8_JAc.4d(*.0ENPA();
+          this.0q]hS.8_JAc.4d(*.remove();
           this.0q]hS.8_JAc = null;
         }
       }
@@ -3065,7 +3065,7 @@ for ($somevar in v2) {
                 if (v2 != =i{J.{Xt4d) {
                 } else {
                   if (v2 != =i{J.{v9hq) {
-                              this.0ENPA();
+                              this.remove();
                               var 0 = this.+-(0.;AH0[)(][((];
                               this.(sSy7((function () {
                                 0.0B(ha();
@@ -3087,7 +3087,7 @@ for ($somevar in v2) {
 // An attempt to read a value from empty stack
                               var eval(undefined) = '+';
                               var 0 = this.+-(0;
-                              this.0ENPA();
+                              this.remove();
                               if (9G56) {
                                 0.+oD9l(9G56, [Zk.-Y=U(+));
                               } else {
@@ -3112,11 +3112,11 @@ for ($somevar in v2) {
                               if (!(9G56 && }-VbH.+4Z+[())) {
                                 }-VbH.5nwDR(false);
                               } else {
-                                this.0ENPA();
+                                this.remove();
                                 this.(sSy7((null);
                               }
                     } else {
-                              this.0ENPA();
+                              this.remove();
                               this.(sSy7((function () {
                                 (K.*Kzwx(9G56, (();
                               });
@@ -3124,7 +3124,7 @@ for ($somevar in v2) {
                               if (9G56) {
                                 if (}-VbH.+4Z+[()) {
                                   this.+-(0.0q]hS.{3Z5G = true;
-                                  this.0ENPA();
+                                  this.remove();
                                   this.(sSy7((function () {
                                     var v2 = 44{N.9CGI6((K.+-(0.1j+9R);
                                     var v3 = (K.+-(0.;AH0.iterator();
@@ -3149,19 +3149,19 @@ for ($somevar in v2) {
                                 }-VbH.5nwDR(false);
                               }
                       } else {
-                              this.0ENPA();
+                              this.remove();
                               this.(sSy7((function () {
                                 (K.+-(0.;AH0[)(][((].5 xA+.6Bp}5();
                               });
                         if (v2 != =i{J.]DD{K) {
-                              this.0ENPA();
+                              this.remove();
                               this.(sSy7((function () {
                                 (K.6C71j((();
                               });
                         } else {
                               var - = this.+-(0.;AH0[)(][((].5 xA+;
                               var 9K = this.+-(0.1j+9R;
-                              this.0ENPA();
+                              this.remove();
                               this.(sSy7((function () {
                                 -.-_uu0();
                                 if (}-VbH.4mok0()) {
@@ -3176,7 +3176,7 @@ for ($somevar in v2) {
                               if (9G56) {
                                 this.+-(0.0q]hS.5+mmJ( = true;
                               }
-                              this.0ENPA();
+                              this.remove();
                               var ] = 9G56 ? this.+-(0.1j+9R : 44{N.9CGI6(this.+-(0.1j+9R);
                               this.(sSy7((function () {
                                 var v2 = (K.+-(0.;AH0.iterator();
@@ -3192,7 +3192,7 @@ for ($somevar in v2) {
                                 }
                               });
                           } else {
-                              this.0ENPA();
+                              this.remove();
                               this.(sSy7((null);
                               v3 = 9G56 ? this.+-(0.1j+9R : 44{N.9CGI6(this.+-(0.1j+9R);
                               var v4 = 0;
@@ -3226,7 +3226,7 @@ for ($somevar in v2) {
                                   }
                                 }
                               }
-                              this.0ENPA();
+                              this.remove();
                               this.(sSy7((null);
                             } else {
                               var 0 = this.+-(0.;AH0[)(][((];
@@ -3234,7 +3234,7 @@ for ($somevar in v2) {
                                 0.9G56(false, this);
                                 }-VbH.5nwDR(false);
                               } else {
-                                this.0ENPA();
+                                this.remove();
                                 this.(sSy7((function () {
                                   0.9G56(true, (K);
                                 });
@@ -3254,7 +3254,7 @@ for ($somevar in v2) {
     };
 
     v1.4AF = null;
-    v1.0ENPA = function () {
+    v1.remove = function () {
       if (this.}J != null) {
         this.}J.removeMovieClip();
         this.}J = null;
@@ -3332,7 +3332,7 @@ for ($somevar in v2) {
                     this.+-(0.0q]hS.{eak5( = this;
                     this.+-(0.0q]hS. *GYS = true;
                     this.+-(0.8z2AH();
-                    this.0ENPA();
+                    this.remove();
                     var ] = this.+-(0.1j+9R;
                     var (K = this;
                     this.(sSy7((function () {

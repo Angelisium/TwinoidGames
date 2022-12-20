@@ -2047,7 +2047,7 @@ for ($somevar in this.__x.attributes) {
     v1.1Te]+ = null;
     v1.;u,cE = null;
     v1.5g]M7( = null;
-    v1.0ENPA = function (arg0) {
+    v1.remove = function (arg0) {
       $s.push('flash.FlashXml__::' + 'remove');
       var v3 = $s.length;
       try {
@@ -5393,7 +5393,7 @@ for ($somevar in v2) {
     };
 
     v1.; = null;
-    v1.0ENPA = function (arg0) {
+    v1.remove = function (arg0) {
       $s.push('List::' + 'remove');
       var v3 = $s.length;
       try {

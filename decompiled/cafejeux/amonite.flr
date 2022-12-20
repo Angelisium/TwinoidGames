@@ -530,7 +530,7 @@ for ($somevar in v2) {
     };
 
     v1.; = null;
-    v1.0ENPA = function (arg0) {
+    v1.remove = function (arg0) {
       var v3 = null;
       var v4 = this.1;
       while (v4 != null) {
@@ -893,7 +893,7 @@ for ($somevar in v2) {
         while (v2.1ll a()) {
           var v3 = v2.7Y-7();
           if (v3.play()) {
-            this.4oIy{.0ENPA(v3);
+            this.4oIy{.remove(v3);
           }
         }
       }
@@ -902,7 +902,7 @@ for ($somevar in v2) {
         while (v2.1ll a()) {
           v3 = v2.7Y-7();
           if (v3.play()) {
-            this.+}B(.0ENPA(v3);
+            this.+}B(.remove(v3);
           }
         }
         if (this.+}B(.length == 0) {
@@ -1276,7 +1276,7 @@ for ($somevar in v2) {
 
     v1.]tfwc = function () {
       if (this.(rbnA != null) {
-        this.+-(0.4oIy{.0ENPA(this.(rbnA);
+        this.+-(0.4oIy{.remove(this.(rbnA);
         this.(rbnA = null;
         this.}StDC.removeMovieClip();
         this.}StDC = null;

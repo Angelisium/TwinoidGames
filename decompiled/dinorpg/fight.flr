@@ -3420,7 +3420,7 @@ movie 'fight.swf' {
               v6 = v5[2];
               this.)HD*.colorTransform = new flash.0000.ColorTransform(1, 1, 1, 1, 0, 0, 0, 0);
           }
-          this.=1f]F.0ENPA(v4);
+          this.=1f]F.remove(v4);
         }
       }
       this.(tfNs();
@@ -3828,7 +3828,7 @@ for ($somevar in this.1) {
       return v2.iterator();
     };
 
-    v1.0ENPA = function (arg0) {
+    v1.remove = function (arg0) {
       arg0 = '$' + arg0;
       if (!this.1.hasOwnProperty(arg0)) {
         return false;
@@ -3901,7 +3901,7 @@ for ($somevar in this.1) {
       return v2.iterator();
     };
 
-    v1.0ENPA = function (arg0) {
+    v1.remove = function (arg0) {
       if (!this.1.hasOwnProperty(arg0)) {
         return false;
       }
@@ -4235,7 +4235,7 @@ for ($somevar in this.1) {
     };
 
     v1.; = null;
-    v1.0ENPA = function (arg0) {
+    v1.remove = function (arg0) {
       var v3 = null;
       var v4 = this.1;
       while (v4 != null) {
@@ -8961,7 +8961,7 @@ for ($somevar in v2) {
     17.,8Y73 = function (arg0, arg1) {
       super();
       this.- = arg0;
-      this.0ENPA = arg1;
+      this.remove = arg1;
       this.;QSZ0((arg0);
     };
 
@@ -8973,7 +8973,7 @@ for ($somevar in v2) {
     v1.- = null;
     v1.}-B2 = function () {
       super.}-B2();
-      if (!this.0ENPA) {
+      if (!this.remove) {
         this.-. aWKC(();
       } else {
         this.-. ](P+();
@@ -8981,7 +8981,7 @@ for ($somevar in v2) {
       haxe.{-kxL.,Hwi)(]6=8H(('8q0', this), 1000);
     };
 
-    v1.0ENPA = null;
+    v1.remove = null;
     17.,hK9z = function (arg0, arg1, arg2) {
       super(arg0, null);
       this. IWA+ = arg1;
@@ -11784,7 +11784,7 @@ for ($somevar in v2) {
       }
     };
 
-    v1.0ENPA = function (arg0) {
+    v1.remove = function (arg0) {
       var v3 = null;
       var v4 = this.0Y-1;
       while (v4 != null) {
@@ -13450,7 +13450,7 @@ for ($somevar in v2) {
     };
 
     9K.+S2OH.,kOM,( = function (arg0) {
-      while (arg0.0ENPA(null)) {
+      while (arg0.remove(null)) {
       }
       return arg0;
     };

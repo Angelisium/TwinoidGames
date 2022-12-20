@@ -1463,7 +1463,7 @@ movie 'minipixiz.swf' {
                 };
 
               }
-              Array.prototype.0ENPA = function (+KD) {
+              Array.prototype.remove = function (+KD) {
                 var v2;
                 var v3 = this.length;
                 v2 = 0;
@@ -1524,7 +1524,7 @@ movie 'minipixiz.swf' {
                 return this.attributes[((] != null;
               };
 
-              _global.ASSetPropFlags(Array.prototype, '0ENPA', 1);
+              _global.ASSetPropFlags(Array.prototype, 'remove', 1);
               _global.ASSetPropFlags(Array.prototype, '4]GSJ(', 1);
               _global.ASSetPropFlags(Array.prototype, '],lYS', 1);
               _global.ASSetPropFlags(Color.prototype, '{L 35', 1);
@@ -1811,7 +1811,7 @@ movie 'minipixiz.swf' {
                 this[4] = 2;
               };
 
-              this.19{O.prototype.0ENPA = function (4) {
+              this.19{O.prototype.remove = function (4) {
                 var v2 = this[4] != undefined;
                 delete this[4];
                 return v2;
@@ -2459,13 +2459,13 @@ movie 'minipixiz.swf' {
     [lax5.7t{I.prototype.}}lgv = function () {
       this.8_gOI(.81=BW = null;
       this.-GIj = false;
-      *r.+-(0.7Qe;6.0ENPA(this);
+      *r.+-(0.7Qe;6.remove(this);
     };
 
     [lax5.7t{I.prototype.+Khz*( = function () {
       this.96.{Xb25(}]zS.4u8Zn);
       this.;Pzj = false;
-      *r.+-(0.,hrI5.0ENPA(this);
+      *r.+-(0.,hrI5.remove(this);
     };
 
     [lax5.7t{I.prototype.}DB*-( = function () {
@@ -3214,7 +3214,7 @@ movie 'minipixiz.swf' {
     -0]rl.prototype.9T54 = function () {
       var v2 = 0;
       while (v2 < this.(N=.length) {
-        this.(N=[v2].0ENPA(this);
+        this.(N=[v2].remove(this);
         ++v2;
       }
       this.=S7A.removeMovieClip();
@@ -7506,7 +7506,7 @@ movie 'minipixiz.swf' {
       ,qE.gotoAndStop(String(*B + 1));
       var (K = this;
       ,qE.onPress = function () {
-        (K. Q0sr.0ENPA(,qE);
+        (K. Q0sr.remove(,qE);
         ,qE.removeMovieClip();
       };
 
@@ -10605,13 +10605,13 @@ movie 'minipixiz.swf' {
         var v7 = this.;IF._currentframe - 1;
         if (v7 !== 1) {
         } else {
-          goto 235825;
+          goto 235826;
         }
         var v6 = 0.2;
         this.;IF._x = (this.;IF._x + v6 * {-kxL.-V;B) % 18;
         this.;IF._y = (this.;IF._y + v6 * {-kxL.-V;B) % 18;
       }
-      label 235825:
+      label 235826:
       if (this.;D}ex != null) {
         this.;D}ex *= Math.pow(0.95, {-kxL.-V;B);
         if (this.;D}ex < 0.1) {
@@ -13000,7 +13000,7 @@ movie 'minipixiz.swf' {
       this.]oH.=S7A._yscale *= 0.8;
       this.]oH.=S7A._xscale += [X.74.1r].*]*4[;
       if (this.)_().)( < -60) {
-        *r.+-(0.*hC7A(.0ENPA(this);
+        *r.+-(0.*hC7A(.remove(this);
         this.]oH.9T54();
         this.]oH = null;
       }
@@ -14128,7 +14128,7 @@ movie 'minipixiz.swf' {
     };
 
     [X.[9 9.2C0[.prototype.9T54 = function () {
-      *r.+-(0.2xEr8.0ENPA(this);
+      *r.+-(0.2xEr8.remove(this);
       [X.*DzW.prototype.9T54.call(this);
     };
 

@@ -1166,7 +1166,7 @@ for ($somevar in v2) {
     };
 
     v1.; = null;
-    v1.0ENPA = function (arg0) {
+    v1.remove = function (arg0) {
       var v3 = null;
       var v4 = this.1;
       while (v4 != null) {
@@ -1498,7 +1498,7 @@ for ($somevar in v2) {
           var v3 = v2.7Y-7();
           if (v3.play()) {
             v3.7iP=3();
-            this.+}B(.0ENPA(v3);
+            this.+}B(.remove(v3);
           }
         }
         return undefined;

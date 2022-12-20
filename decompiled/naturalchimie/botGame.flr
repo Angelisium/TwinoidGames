@@ -697,7 +697,7 @@ movie 'botGame.swf' {
           if (v8 == null) {
             continue;
           }
-          this.0ENPA(v8);
+          this.remove(v8);
         }
       }
     };
@@ -1381,7 +1381,7 @@ movie 'botGame.swf' {
       44{N.(K.({B6.onRelease();
     };
 
-    v1.0ENPA = function (arg0, arg1) {
+    v1.remove = function (arg0, arg1) {
       if (arg1 == null) {
         arg1 = false;
       }
@@ -2720,7 +2720,7 @@ for ($somevar in v2) {
       44{N.(K.[;X}5.-OqH_.remove(this);
       this. OKd] = null;
       if (this.]*3Y ( == null) {
-        44{N.(K.[;X}5.0ENPA(this);
+        44{N.(K.[;X}5.remove(this);
       } else {
         this.]*3Y (();
       }
@@ -3223,7 +3223,7 @@ for ($somevar in v2) {
         }
       }
       if (this.23DVy()) {
-        44{N.(K.[;X}5.0ENPA(this);
+        44{N.(K.[;X}5.remove(this);
         return false;
       }
       return true;
@@ -3251,7 +3251,7 @@ for ($somevar in v2) {
         }
       }
       if (this.23DVy()) {
-        44{N.(K.[;X}5.0ENPA(this);
+        44{N.(K.[;X}5.remove(this);
         return false;
       }
       return true;
@@ -3323,7 +3323,7 @@ for ($somevar in v2) {
               this.-fD.}J._alpha = this.+HmVu;
               if (this.+HmVu == 0) {
                 this.=GAJV = 1;
-                44{N.(K.[;X}5.0ENPA(this, true);
+                44{N.(K.[;X}5.remove(this, true);
                 this.}]l)+ = new Array();
                 var v3 = 0;
                 var v4 = [0, 1mZML.[MqDO - 1];
@@ -3355,7 +3355,7 @@ for ($somevar in v2) {
                 ++v4;
                 v6.8.-fD.}J._y = v6.1Z + v3 * }y*20(.[TtjH(.,82v9;
                 if (this.+HmVu == 100) {
-                  44{N.(K.[;X}5.0ENPA(v6.8);
+                  44{N.(K.[;X}5.remove(v6.8);
                 }
               }
               if (this.+HmVu != 100) {
@@ -3494,7 +3494,7 @@ for ($somevar in v2) {
     };
 
     v1.; = null;
-    v1.0ENPA = function (arg0) {
+    v1.remove = function (arg0) {
       var v3 = null;
       var v4 = this.1;
       while (v4 != null) {
@@ -3596,7 +3596,7 @@ for ($somevar in v2) {
           this.-fD.}J._alpha = this.+HmVu;
           if (this.+HmVu == 0) {
             this.=GAJV = 1;
-            44{N.(K.[;X}5.0ENPA(this);
+            44{N.(K.[;X}5.remove(this);
           }
         } else {
           var v3 = 9K.{-kxL.-V;B;
@@ -3700,7 +3700,7 @@ for ($somevar in this.1) {
       return v2.iterator();
     };
 
-    v1.0ENPA = function (arg0) {
+    v1.remove = function (arg0) {
       arg0 = '$' + arg0;
       if (!this.1.hasOwnProperty(arg0)) {
         return false;
@@ -3787,7 +3787,7 @@ for ($somevar in this.1) {
       this.3I.}-B2();
       this.3I.(As7K(this.(();
       this.3I.=dSG-((]6=8H((']668C(', this));
-      44{N.(K.[;X}5.0ENPA(this, true);
+      44{N.(K.[;X}5.remove(this, true);
       return true;
     };
 
@@ -3835,7 +3835,7 @@ for ($somevar in this.1) {
         while (v6 >= 0) {
           if (v5.,Kwdh[v6] != null) {
             var v7 = v5.,Kwdh[v6];
-            44{N.(K.[;X}5.0ENPA(v7, true);
+            44{N.(K.[;X}5.remove(v7, true);
             if (v4 != 1) {
               v7.,bL_H(1mZML.*sd+;( + 1);
             } else {
@@ -4069,7 +4069,7 @@ for ($somevar in this.1) {
       return v2.iterator();
     };
 
-    v1.0ENPA = function (arg0) {
+    v1.remove = function (arg0) {
       if (!this.1.hasOwnProperty(arg0)) {
         return false;
       }
@@ -5487,7 +5487,7 @@ for ($somevar in v2) {
       var v3 = 5v1vA.6Y3(arg0, this.[wE, 2, true);
       var v4 = {'((': this.-fD.}J._x, ')(': this.-fD.}J._y};
       var v5 = {'((': this.((, ')(': this.)(};
-      44{N.(K.[;X}5.0ENPA(this, true);
+      44{N.(K.[;X}5.remove(this, true);
       v3.[79o7(this.-fD);
       if (this.=zw9C != null) {
         this.=zw9C.removeMovieClip();
@@ -5604,7 +5604,7 @@ while (!undefined) {
         }
       }
       if (this.23DVy()) {
-        44{N.(K.[;X}5.0ENPA(this);
+        44{N.(K.[;X}5.remove(this);
         return false;
       }
       return true;
@@ -6896,7 +6896,7 @@ for ($somevar in arg0) {
           this.-fD.}J._alpha = this.+HmVu;
           if (this.+HmVu == 0) {
             this.=GAJV = 1;
-            44{N.(K.[;X}5.0ENPA(this, true);
+            44{N.(K.[;X}5.remove(this, true);
           }
         } else {
           this.-fD.}J._x = -1000;
@@ -7822,7 +7822,7 @@ for ($somevar in arg0) {
                     this.-fD.}J._alpha = this.+HmVu;
                     if (this.+HmVu == 0) {
                       this.=GAJV = 2;
-                      44{N.(K.[;X}5.0ENPA(this, false);
+                      44{N.(K.[;X}5.remove(this, false);
                       this.3I.-Sbj9(true);
                       44{N.(K.1,gj;(this.3I.4);
                     }
@@ -7987,7 +7987,7 @@ while (!undefined) {
         }
       }
       if (this.23DVy()) {
-        44{N.(K.[;X}5.0ENPA(this);
+        44{N.(K.[;X}5.remove(this);
         return false;
       }
       return true;
@@ -8057,7 +8057,7 @@ while (!undefined) {
         }
       }
       if (this.23DVy()) {
-        44{N.(K.[;X}5.0ENPA(this);
+        44{N.(K.[;X}5.remove(this);
         return false;
       }
       return true;
@@ -8134,7 +8134,7 @@ while (!undefined) {
         }
       }
       if (this.23DVy()) {
-        44{N.(K.[;X}5.0ENPA(this);
+        44{N.(K.[;X}5.remove(this);
         return false;
       }
       return true;
@@ -8247,7 +8247,7 @@ while (!undefined) {
         if (v3 == null || 44{N.(K.[QiVk() || 44{N.(K.=kIA != -mO-{.756X) {
           return undefined;
         }
-        var v4 = 44{N.(K.+yU7W.0ENPA(4AF);
+        var v4 = 44{N.(K.+yU7W.remove(4AF);
         if (v4 == null) {
           return undefined;
         }
@@ -8286,7 +8286,7 @@ while (!undefined) {
 
     v1.}J = null;
     v1.,Kwdh = null;
-    v1.0ENPA = function (arg0) {
+    v1.remove = function (arg0) {
       var v3 = this.,Kwdh[arg0];
       if (v3 != null) {
         this.,Kwdh[arg0] = null;
@@ -8366,7 +8366,7 @@ while (!undefined) {
         }
       }
       if (this.23DVy()) {
-        44{N.(K.[;X}5.0ENPA(this);
+        44{N.(K.[;X}5.remove(this);
         return false;
       }
       return true;
@@ -8501,7 +8501,7 @@ for ($somevar in v2) {
           this.-fD.}J._alpha = this.+HmVu;
           if (this.+HmVu == 0) {
             this.=GAJV = 1;
-            44{N.(K.[;X}5.0ENPA(this, true);
+            44{N.(K.[;X}5.remove(this, true);
           }
         } else {
           this.-fD.}J._x = -1000;
@@ -8761,7 +8761,7 @@ for ($somevar in v2) {
       }
       if (this.=HU11 == 2) {
         44{N.(K.3=s{=((-mO-{.,0t*1, this);
-        44{N.(K.[;X}5.0ENPA(this, true);
+        44{N.(K.[;X}5.remove(this, true);
         this.*3)wU = this. v3p((();
         this.+HmVu = 100;
         this.=GAJV = -5;
@@ -9265,7 +9265,7 @@ while (!undefined) {
       }
       if (this.23DVy()) {
         44{N.(K.7D=.=h59)(this.[*NBK(());
-        44{N.(K.[;X}5.0ENPA(this);
+        44{N.(K.[;X}5.remove(this);
         return false;
       }
       return true;
@@ -9319,7 +9319,7 @@ while (!undefined) {
       }
       if (this.23DVy()) {
         44{N.(K.7D=.=h59)(this.[*NBK(());
-        44{N.(K.[;X}5.0ENPA(this);
+        44{N.(K.[;X}5.remove(this);
         return false;
       }
       return true;
@@ -11171,7 +11171,7 @@ for ($somevar in v2) {
               } else {
                 44{N.(K. 2Z(W(this);
                 44{N.(K.3=s{=((-mO-{.,I[I8);
-                44{N.(K.[;X}5.0ENPA(this);
+                44{N.(K.[;X}5.remove(this);
               }
             }
           }
@@ -11279,7 +11279,7 @@ for ($somevar in v2) {
           this.-fD.}J._alpha = this.+HmVu;
           if (this.+HmVu == 0) {
             this.=GAJV = 1;
-            44{N.(K.[;X}5.0ENPA(this, true);
+            44{N.(K.[;X}5.remove(this, true);
           }
         } else {
           this.-fD.}J._x = -1000;
@@ -11725,7 +11725,7 @@ return undefined;
                         this.-fD.}J._alpha = this.+HmVu;
                         if (this.+HmVu == 0) {
                           this.=GAJV = 2;
-                          44{N.(K.[;X}5.0ENPA(this, false);
+                          44{N.(K.[;X}5.remove(this, false);
                           this.3I.-Sbj9(true);
                           44{N.(K.1,gj;(this.3I.4);
                         }
@@ -11796,7 +11796,7 @@ return undefined;
                           while (v4 < v5.length) {
                             v6 = v5[v4];
                             ++v4;
-                            44{N.(K.[;X}5.0ENPA(v6, true);
+                            44{N.(K.[;X}5.remove(v6, true);
                             v6.}Ams3(v6.((, 1mZML.*sd+;( - }y*20(.56wq7.{QRSG, 1mZML.+) + v6.(( * =(,aA.}18*w, this.4MB,);
                             44{N.(K.[;X}5.*]((v6);
                           }
@@ -12534,7 +12534,7 @@ while (!undefined) {
         }
       }
       if (this.23DVy()) {
-        44{N.(K.[;X}5.0ENPA(this);
+        44{N.(K.[;X}5.remove(this);
         return false;
       }
       return true;
@@ -13465,7 +13465,7 @@ for ($somevar in v2) {
       this.3I.{8b,U();
       this.]XX}5 = {'((': -1, ')(': this.3I.]Ee;6};
       this.7O4+A((0, this.]XX}5.)();
-      44{N.(K.[;X}5.0ENPA(this, true);
+      44{N.(K.[;X}5.remove(this, true);
       this.4rSk8 = this.[wE.*=_p_('wAnim', 2);
       this.4rSk8._x = 1mZML.+) + this.]XX}5.(( * =(,aA.}18*w;
       this.4rSk8._y = =(,aA.*sd+;( - (1mZML.0q + (this.]XX}5.)( + 1) * =(,aA.}18*w);
@@ -13543,7 +13543,7 @@ for ($somevar in v2) {
                 this.-fD.}J._alpha = this.+HmVu;
                 if (this.+HmVu == 0) {
                   this.=GAJV = 2;
-                  44{N.(K.[;X}5.0ENPA(this, false);
+                  44{N.(K.[;X}5.remove(this, false);
                   this.3I.-Sbj9(true);
                   44{N.(K.1,gj;(this.3I.4);
                 }
@@ -14057,7 +14057,7 @@ for ($somevar in v2) {
           while (v5 < v6.length) {
             var v7 = v6[v5];
             ++v5;
-            44{N.(K.[;X}5.0ENPA(v7, true);
+            44{N.(K.[;X}5.remove(v7, true);
           }
           v5 = 0;
           v6 = this.}QNv1;
@@ -14095,7 +14095,7 @@ for ($somevar in v2) {
           while (v5 < v6.length) {
             var v7 = v6[v5];
             ++v5;
-            44{N.(K.[;X}5.0ENPA(v7, true);
+            44{N.(K.[;X}5.remove(v7, true);
           }
           v5 = 0;
           v6 = this.}QNv1;
@@ -14410,7 +14410,7 @@ for ($somevar in v2) {
                       this.-fD.}J._alpha = this.+HmVu;
                       if (this.+HmVu == 0) {
                         this.=GAJV = 2;
-                        44{N.(K.[;X}5.0ENPA(this, false);
+                        44{N.(K.[;X}5.remove(this, false);
                         this.3I.-Sbj9(true);
                         44{N.(K.1,gj;(this.3I.4);
                       }
@@ -14593,7 +14593,7 @@ for ($somevar in v2) {
           this.-fD.}J._alpha = this.+HmVu;
           if (this.+HmVu == 0) {
             this.=GAJV = 1;
-            44{N.(K.[;X}5.0ENPA(this, true);
+            44{N.(K.[;X}5.remove(this, true);
           }
         } else {
           this.-fD.}J._x = -1000;
@@ -16851,7 +16851,7 @@ for ($somevar in v2) {
             this.-fD.}J._alpha = this.+HmVu * 100;
             if (this.+HmVu == 0) {
               this.=GAJV = 1;
-              44{N.(K.[;X}5.0ENPA(this);
+              44{N.(K.[;X}5.remove(this);
               if (this.=HU11 != 0) {
                 44{N.(K.]jyw5.play('inversion_chorus');
               } else {

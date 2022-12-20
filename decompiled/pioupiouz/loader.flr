@@ -560,7 +560,7 @@ movie 'loader.swf' {
                 };
 
               }
-              Array.prototype.0ENPA = function (+KD) {
+              Array.prototype.remove = function (+KD) {
                 var v2;
                 var v3 = this.length;
                 v2 = 0;
@@ -621,7 +621,7 @@ movie 'loader.swf' {
                 return this.attributes[((] != null;
               };
 
-              _global.ASSetPropFlags(Array.prototype, '0ENPA', 1);
+              _global.ASSetPropFlags(Array.prototype, 'remove', 1);
               _global.ASSetPropFlags(Array.prototype, '4]GSJ(', 1);
               _global.ASSetPropFlags(Array.prototype, '],lYS', 1);
               _global.ASSetPropFlags(Color.prototype, '{L 35', 1);
@@ -912,7 +912,7 @@ movie 'loader.swf' {
                 this[4] = 2;
               };
 
-              this.19{O.prototype.0ENPA = function (4) {
+              this.19{O.prototype.remove = function (4) {
                 var v2 = this[4] != undefined;
                 delete this[4];
                 return v2;

@@ -564,7 +564,7 @@ for ($somevar in v2) {
     };
 
     v1.; = null;
-    v1.0ENPA = function (arg0) {
+    v1.remove = function (arg0) {
       var v3 = null;
       var v4 = this.1;
       while (v4 != null) {
@@ -1857,7 +1857,7 @@ for ($somevar in this.1) {
       return v2.iterator();
     };
 
-    v1.0ENPA = function (arg0) {
+    v1.remove = function (arg0) {
       if (!this.1.hasOwnProperty(arg0)) {
         return false;
       }
@@ -1933,7 +1933,7 @@ for ($somevar in this.1) {
       return v2.iterator();
     };
 
-    v1.0ENPA = function (arg0) {
+    v1.remove = function (arg0) {
       arg0 = '$' + arg0;
       if (!this.1.hasOwnProperty(arg0)) {
         return false;
@@ -2026,7 +2026,7 @@ for ($somevar in this.1) {
     };
 
     v1.2C+6) = function () {
-      haxe.0JleF.8ZAwM.5xf4)(.0ENPA(this.__data.,D 7);
+      haxe.0JleF.8ZAwM.5xf4)(.remove(this.__data.,D 7);
     };
 
     v1.]BUL} = function (arg0) {
@@ -2672,7 +2672,7 @@ for ($somevar in v2) {
     };
 
     v1._removeFromBlacklist = function (arg0) {
-      0-I(H(.2d1K.,yg5D.0ENPA(arg0);
+      0-I(H(.2d1K.,yg5D.remove(arg0);
     };
 
     v1._resumeParty = function () {
@@ -2830,7 +2830,7 @@ for ($somevar in v2) {
         return false;
       }
       v3.2C+6)();
-      this.7XvA5.0ENPA(arg0);
+      this.7XvA5.remove(arg0);
       return true;
     };
 
@@ -5243,7 +5243,7 @@ for ($somevar in arg0) {
     };
 
     v1.2C+6) = function () {
-      haxe.0JleF. Iy}Z.5xf4)(.0ENPA(this.__data.,D 7);
+      haxe.0JleF. Iy}Z.5xf4)(.remove(this.__data.,D 7);
     };
 
     v1.]BUL} = function (arg0) {
