@@ -2558,7 +2558,7 @@ movie '1b231b4ad4c7e00ab5ebb9524ac1036a.swf' {
             }
             ++v6;
           }
-          v2.4]GSJ((v6, {'6': v4, '+': v5});
+          v2.insert(v6, {'6': v4, '+': v5});
         }
         return v2;
       };

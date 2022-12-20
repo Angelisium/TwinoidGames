@@ -5900,7 +5900,7 @@ movie 'loader.swf' {
       };
 
       v1.2dy[k = function () {
-        this.]=[]8.4]GSJ((this.0]Ss), new =2Vd4.5e{K());
+        this.]=[]8.insert(this.0]Ss), new =2Vd4.5e{K());
         var v2 = this.0]Ss);
         goto 132855;
         for (;;) {
@@ -5955,7 +5955,7 @@ movie 'loader.swf' {
         if (this.0]Ss) == this.]=[]8.=2Vd4.length - 1) {
           this.]=[]8.push(new =2Vd4.5e{K());
         } else {
-          this.]=[]8.4]GSJ((this.0]Ss) + 1, new =2Vd4.5e{K());
+          this.]=[]8.insert(this.0]Ss) + 1, new =2Vd4.5e{K());
         }
         var v2 = this.0]Ss) + 1;
         goto 133805;
@@ -6915,7 +6915,7 @@ movie 'loader.swf' {
         this.[8_on = false;
       };
 
-      v1.4]GSJ( = function ()) {
+      v1.insert = function ()) {
         ).scale(this.scale);
         var v3 = this.6Ph,s + ).width * this.scale + 6)4. *x3n.2QF=};
         if (v3 > this.width) {
@@ -7096,10 +7096,10 @@ movie 'loader.swf' {
         this.[ZMun.splice(*B, 1);
       };
 
-      v1.4]GSJ( = function (*B, data) {
-        this.=oH.4]GSJ((*B, this.)6r=(data));
-        this.=2Vd4.4]GSJ((*B, data);
-        this.[ZMun.4]GSJ((*B, true);
+      v1.insert = function (*B, data) {
+        this.=oH.insert(*B, this.)6r=(data));
+        this.=2Vd4.insert(*B, data);
+        this.[ZMun.insert(*B, true);
       };
 
       v1.push = function (data) {
@@ -8321,7 +8321,7 @@ movie 'loader.swf' {
       v1.}-B2 = function (*, 5) {
         this.4XS+} = *;
         this.,(EqX(5);
-        var v4 = this.4XS+}.4]GSJ((this);
+        var v4 = this.4XS+}.insert(this);
         this._x = v4.((;
         this._y = v4.)(;
       };
@@ -20400,7 +20400,7 @@ movie 'loader.swf' {
           v4 -= 3;
           label 399803:
           if (v4 < 0) break;
-          v3.4]GSJ((v4, ' ');
+          v3.insert(v4, ' ');
         }
         return v3.join('');
       };
@@ -25244,7 +25244,7 @@ movie 'loader.swf' {
                 return false;
               };
 
-              Array.prototype.4]GSJ( = function (2, (() {
+              Array.prototype.insert = function (2, (() {
                 this.splice(2, 0, (();
               };
 
@@ -25292,7 +25292,7 @@ movie 'loader.swf' {
               };
 
               _global.ASSetPropFlags(Array.prototype, 'remove', 1);
-              _global.ASSetPropFlags(Array.prototype, '4]GSJ(', 1);
+              _global.ASSetPropFlags(Array.prototype, 'insert', 1);
               _global.ASSetPropFlags(Array.prototype, '],lYS', 1);
               _global.ASSetPropFlags(Color.prototype, '{L 35', 1);
               _global.ASSetPropFlags(XMLNode.prototype, 'get', 1);

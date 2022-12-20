@@ -1477,7 +1477,7 @@ movie 'minipixiz.swf' {
                 return false;
               };
 
-              Array.prototype.4]GSJ( = function (2, (() {
+              Array.prototype.insert = function (2, (() {
                 this.splice(2, 0, (();
               };
 
@@ -1525,7 +1525,7 @@ movie 'minipixiz.swf' {
               };
 
               _global.ASSetPropFlags(Array.prototype, 'remove', 1);
-              _global.ASSetPropFlags(Array.prototype, '4]GSJ(', 1);
+              _global.ASSetPropFlags(Array.prototype, 'insert', 1);
               _global.ASSetPropFlags(Array.prototype, '],lYS', 1);
               _global.ASSetPropFlags(Color.prototype, '{L 35', 1);
               _global.ASSetPropFlags(XMLNode.prototype, 'get', 1);
@@ -14625,7 +14625,7 @@ movie 'minipixiz.swf' {
         while (v3[v2].6R > v4.6R) {
           ++v2;
         }
-        v3.4]GSJ((v2, v4);
+        v3.insert(v2, v4);
         ++v5;
       }
       v5 = 0;

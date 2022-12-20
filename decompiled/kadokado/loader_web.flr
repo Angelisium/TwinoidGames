@@ -26,7 +26,7 @@ movie 'loader_web.swf' {
             return false;
           };
 
-          Array.prototype.4]GSJ( = function (2, (() {
+          Array.prototype.insert = function (2, (() {
             this.splice(2, 0, (();
           };
 
@@ -74,7 +74,7 @@ movie 'loader_web.swf' {
           };
 
           _global.ASSetPropFlags(Array.prototype, 'remove', 1);
-          _global.ASSetPropFlags(Array.prototype, '4]GSJ(', 1);
+          _global.ASSetPropFlags(Array.prototype, 'insert', 1);
           _global.ASSetPropFlags(Array.prototype, '],lYS', 1);
           _global.ASSetPropFlags(Color.prototype, '{L 35', 1);
           _global.ASSetPropFlags(XMLNode.prototype, 'get', 1);

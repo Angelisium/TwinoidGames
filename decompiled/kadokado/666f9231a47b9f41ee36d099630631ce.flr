@@ -4577,7 +4577,7 @@ for ($somevar in v2) {
       v1.__class__ = 9K.flash.{sRCQ;
       9K.flash.{sRCQ.5La)] = function () {
         var v2 = 9K.flash.{sRCQ.prototype;
-        v2.insert = v2.4]GSJ(;
+        v2.insert = v2.insert;
         v2.pop = v2.1AF;
         v2.push = v2.push;
         v2.shift = v2.;Qhp5;
@@ -4599,7 +4599,7 @@ for ($somevar in v2) {
         return this.5Gr1);
       };
 
-      v1.4]GSJ( = function (arg0, arg1) {
+      v1.insert = function (arg0, arg1) {
         Array.prototype.splice.call(this, arg0, 0, arg1);
         this.9w+x0( = [this.9w+x0([0] + 1];
         if (this.9w+x0([0] != this.length) {

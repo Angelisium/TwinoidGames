@@ -1925,7 +1925,7 @@ for ($somevar in v2) {
       v1.__class__ = 9K.flash.{sRCQ;
       9K.flash.{sRCQ.5La)] = function () {
         var v2 = 9K.flash.{sRCQ.prototype;
-        v2.insert = v2.4]GSJ(;
+        v2.insert = v2.insert;
         v2.pop = v2.1AF;
         v2.push = v2.push;
         v2.shift = v2.;Qhp5;
@@ -1947,7 +1947,7 @@ for ($somevar in v2) {
         return this.5Gr1);
       };
 
-      v1.4]GSJ( = function (arg0, arg1) {
+      v1.insert = function (arg0, arg1) {
         Array.prototype.splice.call(this, arg0, 0, arg1);
         this.9w+x0( = [this.9w+x0([0] + 1];
         if (this.9w+x0([0] != this.length) {
@@ -2204,7 +2204,7 @@ for ($somevar in arg0) {
         return null;
       };
 
-      v1.4]GSJ( = function (arg0, arg1) {
+      v1.insert = function (arg0, arg1) {
         var v4 = arg1.[fQ2H(();
         if (arg1.(v+[0] != 4) {
           if (9K.53kZ-(.73m.0Yj1(arg1.+M4yZ() - arg0.+M4yZ(), 3.14) > 0) {
@@ -3042,7 +3042,7 @@ for ($somevar in arg0) {
         }
         if (v3 != null) {
           if (this. XH- == null || Math.abs(this. XH- - v3.4AF) > 0.1) {
-            v3.8]l1).4]GSJ((this, v3);
+            v3.8]l1).insert(this, v3);
             this.[ZNXy((this.(( + v3.(() * 0.5, (this.)( + v3.)() * 0.5);
           }
         }
