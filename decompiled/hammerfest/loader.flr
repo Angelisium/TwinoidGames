@@ -4848,7 +4848,7 @@ movie 'loader.swf' {
         -uc)L(.call(this);
         this.+(WHk.([y+)(('$t=' + Math.round(this.duration / 5e{K.]q-,w));
         var v3 = (this.+(WHk.3X]M5.join('|')).indexOf('!', 0) >= 0;
-        this.+(WHk.3X]M5 = ['F=' + (3Wt.9HH5a()).$version, 'T=' + this.8qkdA.get()];
+        this.+(WHk.3X]M5 = ['F=' + (3Wt.getRoot()).$version, 'T=' + this.8qkdA.get()];
         if (v3) {
           this.+(WHk.3X]M5.push('$illegal'.substring(1));
         }
@@ -5257,7 +5257,7 @@ movie 'loader.swf' {
             +l53,.0O q{ = '0,7,1000,1001,1002,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19';
           }
         }
-        {aq}5.;49QZ = new [Y}l](3Wt.9HH5a(), this, +l53,.0O q{, +l53,.+LT;C();
+        {aq}5.;49QZ = new [Y}l](3Wt.getRoot(), this, +l53,.0O q{, +l53,.+LT;C();
         if (this.3 qNS) {
           this.2;RwE( = new [v_9o(this);
         }
@@ -5267,7 +5267,7 @@ movie 'loader.swf' {
         ]{i.{RuFi.textColor = 16776960;
         this.2ahFP = new +7U K(this.-iB=);
         this.;-KQ6( = this.*n;wX && this.3 qNS;
-        var v4 = (3Wt.9HH5a()).$version;
+        var v4 = (3Wt.getRoot()).$version;
         this.5aj8K( = 3Wt.parseInt(((v4.split(' '))[1].split(','))[0], 10);
         this.+=Pr3 = this.5aj8K( != null && !3Wt.isNaN(this.5aj8K() && this.5aj8K( >= 8;
         if (!this.+=Pr3) {
@@ -5507,7 +5507,7 @@ movie 'loader.swf' {
       };
 
       v1.(RqZJ( = function (0Ut*J) {
-        return 3Wt.getVar(3Wt.9HH5a(), '$mode') == 0Ut*J.substring(1);
+        return 3Wt.getVar(3Wt.getRoot(), '$mode') == 0Ut*J.substring(1);
       };
 
       v1.;e_m ( = function () {
@@ -5543,7 +5543,7 @@ movie 'loader.swf' {
           this. UP4_(new mode.4(IJ0((this, 0));
           return undefined;
         }
-        {aq}5.}7x)+('Invalid mode \'' + 3Wt.getVar(3Wt.9HH5a(), '$mode') + '\' found.');
+        {aq}5.}7x)+('Invalid mode \'' + 3Wt.getVar(3Wt.getRoot(), '$mode') + '\' found.');
       };
 
       v1.0D 6 = function () {
@@ -6015,19 +6015,19 @@ movie 'loader.swf' {
         this.}P9Uy = 0;
         this.}kOb+( = 0;
         this.,EsGk = 0;
-        var v3 = (3Wt.9HH5a()).$version;
+        var v3 = (3Wt.getRoot()).$version;
         this.5aj8K( = 3Wt.parseInt(((v3.split(' '))[1].split(','))[0], 10);
         this.+=Pr3 = this.5aj8K( != null && !3Wt.isNaN(this.5aj8K() && this.5aj8K( >= 8;
         var v4 = '$' + this.)2fr3.$lang;
         switch (v4) {
           case '$fr':
-            this.5J]Ek = 3Wt.getVar(3Wt.9HH5a(), '}vdVv');
+            this.5J]Ek = 3Wt.getVar(3Wt.getRoot(), '}vdVv');
             break;
           case '$es':
-            this.5J]Ek = 3Wt.getVar(3Wt.9HH5a(), '=tdVv');
+            this.5J]Ek = 3Wt.getVar(3Wt.getRoot(), '=tdVv');
             break;
           case '$en':
-            this.5J]Ek = 3Wt.getVar(3Wt.9HH5a(), '6tdVv');
+            this.5J]Ek = 3Wt.getVar(3Wt.getRoot(), '6tdVv');
         }
         this.,uc;] = (new XML(this.5J]Ek)).firstChild.firstChild;
         for (;;) {
@@ -6051,7 +6051,7 @@ movie 'loader.swf' {
           this.0QyZ*('base init error');
           return undefined;
         }
-        var v5 = 3Wt.9HH5a();
+        var v5 = 3Wt.getRoot();
         var v6 = 3Wt.getVar(v5, '$redirect'.substring(1));
         if (v6 != null) {
           this.6I = new LoadVars();
@@ -6059,8 +6059,8 @@ movie 'loader.swf' {
           this.6I.send(v6, '_self', 'POST');
           return undefined;
         }
-        this.0qCp = 3Wt.getVar(3Wt.9HH5a(), '$swf'.substring(1));
-        this.{fCp = 3Wt.getVar(3Wt.9HH5a(), '$srv'.substring(1));
+        this.0qCp = 3Wt.getVar(3Wt.getRoot(), '$swf'.substring(1));
+        this.{fCp = 3Wt.getVar(3Wt.getRoot(), '$srv'.substring(1));
         this.-[R7*( = ['music.mp3', 'boss.mp3', 'hurryUp.mp3'];
         this.8,*V2 = 0;
         this.}mR6O = new Array();
@@ -6303,7 +6303,7 @@ movie 'loader.swf' {
         this.9UlYS = this.+4(tP(-_X}5.$item2);
         var v7 = new 19{O();
         v7.set('$swfsize'.substring(1), (this.0OA.getProgress(this.+-(0)).bytesTotal);
-        v7.set('$lsize'.substring(1), (3Wt.9HH5a()).getBytesTotal());
+        v7.set('$lsize'.substring(1), (3Wt.getRoot()).getBytesTotal());
         v7.set('$score'.substring(1), (Erk5);
         if (-)uG5 != null) {
           v7.set('$runid', -)uG5);
@@ -6678,7 +6678,7 @@ movie 'loader.swf' {
 
       v1.;Clib = function () {
         this.8+C5();
-        var v2 = 3Wt.getVar(3Wt.9HH5a(), '$out');
+        var v2 = 3Wt.getVar(3Wt.getRoot(), '$out');
         this.+(WHk.1N59{(v2, null);
       };
 
@@ -17102,7 +17102,7 @@ movie 'loader.swf' {
       };
 
       v1.;Clib = function () {
-        var v2 = 3Wt.getVar(3Wt.9HH5a(), '$out');
+        var v2 = 3Wt.getVar(3Wt.getRoot(), '$out');
         this.+(WHk.1N59{(v2, null);
       };
 
@@ -17852,7 +17852,7 @@ movie 'loader.swf' {
 
       v1 = 2JBP*(.prototype;
       2JBP*(.4qZ3b = function () {
-        var v2 = ((3Wt.9HH5a())._url.split('\\')).join('/');
+        var v2 = ((3Wt.getRoot())._url.split('\\')).join('/');
         var v3 = v2.lastIndexOf('/', v2.length);
         return v2.substr(0, v3 + 1);
       };
@@ -21388,7 +21388,7 @@ movie 'loader.swf' {
       v1.)Kw3; = function () {
         this.6NDsC( = true;
         this.8+C5();
-        var v2 = 3Wt.getVar(3Wt.9HH5a(), '$out');
+        var v2 = 3Wt.getVar(3Wt.getRoot(), '$out');
         this.+(WHk.1N59{(v2, null);
       };
 
@@ -21556,7 +21556,7 @@ movie 'loader.swf' {
 
       v1.{[+xB = function () {
         this. 7ewn = false;
-        (3Wt.9HH5a())._quality = '$medium'.substring(1);
+        (3Wt.getRoot())._quality = '$medium'.substring(1);
         5e{K.2HuF} = Math.ceil(5e{K.2HuF} * 0.5);
       };
 
@@ -23615,7 +23615,7 @@ movie 'loader.swf' {
       }
       mode.;VX*S = function (6, 6SP) {
         super(6);
-        var v5 = 3Wt.parseInt(3Wt.getVar(3Wt.9HH5a(), '$time'), 10);
+        var v5 = 3Wt.parseInt(3Wt.getVar(3Wt.getRoot(), '$time'), 10);
         if (3Wt.isNaN(v5)) {
           v5 = 30;
         }
@@ -25332,7 +25332,7 @@ movie 'loader.swf' {
                 }J[}] = ,DLD;
               };
 
-              this.3Wt.9HH5a = function () {
+              this.3Wt.getRoot = function () {
                 return _root;
               };
 

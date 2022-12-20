@@ -514,8 +514,8 @@ movie 'temple.swf' {
         this.-iB= = }J;
         var v3 = '';
         var v4 = null;
-        var v5 = (3Wt.9HH5a()).$dm;
-        var v6 = (3Wt.9HH5a()).$info;
+        var v5 = (3Wt.getRoot()).$dm;
+        var v6 = (3Wt.getRoot()).$info;
         if (v6 == null) {
           v4 = 123;
           v4 = 114;
@@ -6098,7 +6098,7 @@ movie 'temple.swf' {
                 }J[}] = ,DLD;
               };
 
-              this.3Wt.9HH5a = function () {
+              this.3Wt.getRoot = function () {
                 return _root;
               };
 

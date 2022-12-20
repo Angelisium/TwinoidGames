@@ -134,7 +134,7 @@ movie 'vrilleur.swf' {
                 }J[}] = ,DLD;
               };
 
-              this.3Wt.9HH5a = function () {
+              this.3Wt.getRoot = function () {
                 return _root;
               };
 
@@ -925,7 +925,7 @@ movie 'vrilleur.swf' {
         this.6QA = new +7U K(}J);
         this.-iB= = }J;
         1ni.}Bz}=((this.6QA.18wU*(44{N.8YOq4));
-        this.]hCeF( = int((3Wt.9HH5a()).$mode);
+        this.]hCeF( = int((3Wt.getRoot()).$mode);
         if (this.]hCeF( == 2) {
           *r.=OA = Stage.width;
           *r.*OA = Stage.height;
@@ -1074,7 +1074,7 @@ movie 'vrilleur.swf' {
         }
         var v7 = v3.get('$piouz'.substring(1));
         this.5,F = v3.get('$id'.substring(1));
-        this.5b1p = (3Wt.9HH5a()).$help == '1';
+        this.5b1p = (3Wt.getRoot()).$help == '1';
         this.(OAXB( = int(v7);
         if (this.=HU11 == null) {
           this.6QA.*=_p_('[e5s+(', 44{N.[V{(6);
@@ -4531,7 +4531,7 @@ movie 'vrilleur.swf' {
       *r = function () {};
 
       *r.}-B2 = function () {
-        var v2 = (3Wt.9HH5a()).$lang;
+        var v2 = (3Wt.getRoot()).$lang;
         switch (v2) {
           case 'en':
             }]zS = 9[d=E;
