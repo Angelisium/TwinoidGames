@@ -329,7 +329,7 @@ for ($somevar in v2) {
         v1[enumerate v2] = v2[enumerate v2];
       }
       v1 = new Object();
-      flash.}ZF-m = v1;
+      flash.display = v1;
       v2 = _global.flash.display;
       // Loop counter not found
 for ($somevar in v2) {
@@ -2320,7 +2320,7 @@ for ($somevar in arg0) {
         this.[*kJI( = this.32.18wU*(*56X.-EW1G);
         this.[*kJI(._x = 0;
         this.[*kJI(._y = 0;
-        var v7 = new flash.}ZF-m.BitmapData(this.}FGV8[0] + 20, *r.*OA, true, 0);
+        var v7 = new flash.display.BitmapData(this.}FGV8[0] + 20, *r.*OA, true, 0);
         this.[*kJI(.attachBitmap(v7, 0);
         this.[*kJI(.9I* = v7;
         var v8 = arg3;

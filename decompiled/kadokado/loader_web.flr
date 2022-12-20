@@ -469,7 +469,7 @@ for ($somevar in v2) {
       v1[enumerate v2] = v2[enumerate v2];
     }
     v1 = new Object();
-    flash.}ZF-m = v1;
+    flash.display = v1;
     v2 = _global.flash.display;
     // Loop counter not found
 for ($somevar in v2) {
@@ -2315,7 +2315,7 @@ for ($somevar in v2) {
         this.0o()._visible = true;
         this.+EAND(._visible = false;
       } else {
-        this.9I* = new flash.}ZF-m.BitmapData(300, 320, false, 16777215);
+        this.9I* = new flash.display.BitmapData(300, 320, false, 16777215);
         this.-iB=._xscale = 200;
         this.-iB=._yscale = 200;
         this.-iB=.attachBitmap(this.9I*, 2);

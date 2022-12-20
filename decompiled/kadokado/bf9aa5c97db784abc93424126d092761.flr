@@ -384,7 +384,7 @@ for ($somevar in v2) {
         v1[enumerate v2] = v2[enumerate v2];
       }
       v1 = new Object();
-      flash.}ZF-m = v1;
+      flash.display = v1;
       v2 = _global.flash.display;
       // Loop counter not found
 for ($somevar in v2) {
@@ -2441,7 +2441,7 @@ for ($somevar in v2) {
         v7 = -=MhB(.)bX * this. x8LA((v6.}2D*);
         var v8 = v6.1 / v7;
         var v9 = 3Wt.9n6(Math.min(-=MhB(.78A 9(, v7 - v6.1));
-        var v10 = new flash.}ZF-m.BitmapData(*r.=OA, v9, true, v5);
+        var v10 = new flash.display.BitmapData(*r.=OA, v9, true, v5);
         var v11 = v6.32.18wU*(0);
         v11._y = v6.1;
         v11.attachBitmap(v10, 0);
@@ -4396,7 +4396,7 @@ for ($somevar in v2) {
         v4 = arg0.((;
         v5 = arg0.)(;
         this.+sA(M = this.32.18wU*(44{N.841,4);
-        this.+sA(M.9I* = new flash.}ZF-m.BitmapData(*r.=OA, *r.*OA, false, 16711680);
+        this.+sA(M.9I* = new flash.display.BitmapData(*r.=OA, *r.*OA, false, 16711680);
         v6 = new flash.0000.Matrix();
         var v7 = this.8K().iterator();
         while (v7.1ll a()) {
@@ -4791,7 +4791,7 @@ for ($somevar in v2) {
           return undefined;
         }
         if (this.*Vq7F( == null) {
-          this.*Vq7F( = new flash.}ZF-m.BitmapData(*r.+9fc, *r.70fd, false, 0);
+          this.*Vq7F( = new flash.display.BitmapData(*r.+9fc, *r.70fd, false, 0);
           var v3 = this.32.18wU*(44{N.4MvcB);
           v3.attachBitmap(this.*Vq7F(, 0);
           v3.blendMode = 'add';

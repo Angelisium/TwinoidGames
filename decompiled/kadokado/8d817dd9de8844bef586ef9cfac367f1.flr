@@ -960,7 +960,7 @@ for ($somevar in v2) {
         v1[enumerate v2] = v2[enumerate v2];
       }
       v1 = new Object();
-      flash.}ZF-m = v1;
+      flash.display = v1;
       v2 = _global.flash.display;
       // Loop counter not found
 for ($somevar in v2) {
@@ -1707,7 +1707,7 @@ for ($somevar in v2) {
       v1.46BWC( = function () {
         if (this.5a93H == null) {
           this.5a93H = this.32.18wU*(44{N.1Cnv7);
-          this.0R6+) = new flash.}ZF-m.BitmapData(*r.=OA, *r.*OA, true, 0);
+          this.0R6+) = new flash.display.BitmapData(*r.=OA, *r.*OA, true, 0);
           this.5a93H.attachBitmap(this.0R6+), 0);
         }
         var v2 = new 9K.3xyY(this.1T=[0]);
@@ -1930,7 +1930,7 @@ for ($somevar in v2) {
       v1.(HbIJ( = function () {
         var v2 = this.6QA.*=_p_('mcBg', 0);
         this.;+ = this.6QA.18wU*(44{N.4MvcB);
-        var v3 = new flash.}ZF-m.BitmapData(*r.=OA, *r.*OA, false, 65280);
+        var v3 = new flash.display.BitmapData(*r.=OA, *r.*OA, false, 65280);
         this.;+.attachBitmap(v3, 0);
         v3.draw(v2);
         var v4 = 15;
@@ -1946,7 +1946,7 @@ for ($somevar in v2) {
         v2.removeMovieClip();
         v6 = 0.5;
         v7 = this.32.18wU*(44{N.4MvcB);
-        v8 = new flash.}ZF-m.BitmapData(*r.=OA, *r.*OA, true, 0);
+        v8 = new flash.display.BitmapData(*r.=OA, *r.*OA, true, 0);
         v7.attachBitmap(v8, 0);
         v9 = this.32.*=_p_('mcTiles', 0);
         v9.stop();
@@ -1967,7 +1967,7 @@ for ($somevar in v2) {
           }
         }
         v9.removeMovieClip();
-        v12 = new flash.}ZF-m.BitmapData(*r.=OA, *r.*OA, false, 4456448);
+        v12 = new flash.display.BitmapData(*r.=OA, *r.*OA, false, 4456448);
         v13 = this.32.*=_p_('mcSquare', 0);
         v13.gotoAndStop(2);
         v13.}m9[7._visible = false;

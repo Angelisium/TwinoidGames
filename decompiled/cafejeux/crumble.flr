@@ -479,7 +479,7 @@ for ($somevar in v2) {
       v1[enumerate v2] = v2[enumerate v2];
     }
     v1 = new Object();
-    flash.}ZF-m = v1;
+    flash.display = v1;
     v2 = _global.flash.display;
     // Loop counter not found
 for ($somevar in v2) {
@@ -523,7 +523,7 @@ for ($somevar in v2) {
       var v3 = function (arg0, arg1, arg2) {
         if (arg1 >= 12 && !].+) {
           ].+ = true;
-          (K.}ZF-m();
+          (K.display();
         }
       };
 
@@ -533,7 +533,7 @@ for ($somevar in v2) {
 
     v1.destroy = function () {
       this. [{WO = true;
-      this.}ZF-m();
+      this.display();
       this.+-(0.]}lAm.+2NA(this.}J, =(,aA.3d0fx);
       this.+-(0.+}B(.*]((new ]YKP](this.}J.5 xA+, (YzdC.{SdlA(, 0, ]6=8H(('9T54', this)));
       var *_,t3 = this.+-(0.]}lAm.*=_p_('plouf', =(,aA.5VHqb);
@@ -547,7 +547,7 @@ for ($somevar in v2) {
     };
 
     v1. [{WO = null;
-    v1.}ZF-m = function () {
+    v1.display = function () {
       var v2 = this.4AF.(( * =(,aA.0rO)B + =(,aA.3vh2A;
       var v3 = this.4AF.)( * =(,aA.0rO)B + =(,aA.4vh2A;
       if (this.}J == null) {
@@ -594,7 +594,7 @@ for ($somevar in v2) {
       ++this.+-(0.08SqT;
       this.;PX}p();
       if (arg2 == null) {
-        arg2 = ]6=8H(('}ZF-m', this);
+        arg2 = ]6=8H(('display', this);
       }
       var v6 = arg0;
       if (v6 != [sx1E.{J() {
@@ -644,7 +644,7 @@ for ($somevar in v2) {
       this.4AF =  [;
       var (K = this;
       this.}SC6(arg0, false, function () {
-        (K.}ZF-m();
+        (K.display();
         if (! [.5v{fQ) {
            [.4d(*.(sSy7((function () {
              [.destroy(function () {
@@ -714,7 +714,7 @@ for ($somevar in v2) {
     v1.,3XmF = null;
     v1.{9,B = null;
     v1.6C71j = function (arg0) {
-      this.}ZF-m();
+      this.display();
       var v3 = (3Wt.random(2) == 0) ? 20 : -20;
       var v4 = {']XX}5': {'((': this.}J._x, ')(': this.}J._y}, '8q0': {'((': this.}J._x + v3, ')(': this.}J._y - 80}};
       var v5 = function (arg0, arg1, arg2) {
@@ -985,7 +985,7 @@ for ($somevar in v2) {
       }
       this.=1f]F = 1NWFo.12E_;
       this.5 xA+ = new (YzdC(this.+-(0, arg0, this);
-      this.5 xA+.}ZF-m();
+      this.5 xA+.display();
     };
 
     v1.4d(* = null;
@@ -1044,7 +1044,7 @@ for ($somevar in v2) {
       this.+-(0.+}B(.*]((new ]YKP](this.}J, +V+K.1[6tm, 0, ]6=8H(('9T54', this)));
     };
 
-    v1.}ZF-m = function () {
+    v1.display = function () {
       if (this.}J == null) {
         this.}J = this.+-(0.-EvF,(.*=_p_('cell', 0);
         this.}J.stop();
@@ -1111,7 +1111,7 @@ return undefined;
       this.=1f]F = 1NWFo.+nEAH;
       this.4d(* = arg1;
       this.5v{fQ = arg0;
-      this.}ZF-m();
+      this.display();
     };
 
     v1.}SC6 = function (arg0, arg1) {
@@ -1827,8 +1827,8 @@ for ($somevar in v2) {
         while (v5 < v6) {
           var v7 = v5;
           ++v5;
-          this.;AH0[v4][v7].}ZF-m();
-          this.;AH0[v4][v7].5 xA+.}ZF-m();
+          this.;AH0[v4][v7].display();
+          this.;AH0[v4][v7].5 xA+.display();
         }
       }
       if (}-VbH.+4Z+[()) {
@@ -1841,12 +1841,12 @@ for ($somevar in v2) {
         var v2 = this.}Euw)(.iterator();
         while (v2.1ll a()) {
           var v3 = v2.7Y-7();
-          v3.}ZF-m();
+          v3.display();
         }
         v2 = this.,lQTD.iterator();
         while (v2.1ll a()) {
           v3 = v2.7Y-7();
-          v3.}ZF-m();
+          v3.display();
         }
       } else {
         var v2 = 0;
@@ -1854,7 +1854,7 @@ for ($somevar in v2) {
         while (v3.1ll a()) {
           var v4 = v3.7Y-7();
           v4.4AF = v2++;
-          v4.}ZF-m();
+          v4.display();
         }
         this.}UDcA(();
       }
@@ -2443,7 +2443,7 @@ for ($somevar in v2) {
             } else {
               this.,lQTD[v7.4AF] = v7;
             }
-            v7.}ZF-m(!9G56);
+            v7.display(!9G56);
             if (v7.9G56) {
               v7.=)*i*(();
             }
@@ -2872,7 +2872,7 @@ for ($somevar in v2) {
       }
     };
 
-    v1.}ZF-m = function (arg0) {
+    v1.display = function (arg0) {
       if (arg0 == null) {
         arg0 = this.9G56;
       }

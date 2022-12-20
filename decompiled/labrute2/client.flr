@@ -362,7 +362,7 @@ for ($somevar in v2) {
       v1[enumerate v2] = v2[enumerate v2];
     }
     v1 = new Object();
-    flash.}ZF-m = v1;
+    flash.display = v1;
     v2 = _global.flash.display;
     // Loop counter not found
 for ($somevar in v2) {
@@ -6294,7 +6294,7 @@ for ($somevar in v2) {
       this.length = arg3;
       this.}FGV8 = 3Wt.9n6(arg0.-iB=._width);
       this.9Cw4q = 3Wt.9n6(arg0.-iB=._height);
-      this.9I* = new flash.}ZF-m.BitmapData(this.}FGV8, this.9Cw4q, true, 16711680);
+      this.9I* = new flash.display.BitmapData(this.}FGV8, this.9Cw4q, true, 16711680);
       var v8 = arg0.-iB=.getBounds(arg0.-iB=);
       var v9 = new flash.0000.Matrix();
       v9.translate(-v8.xMin, -v8.yMin);
@@ -6823,8 +6823,8 @@ for ($somevar in v2) {
     };
 
     9K.53kZ-(.}*X.__name__ = ['9K', '53kZ-(', '}*X'];
-    9K.53kZ-(.}*X.__super__ = flash.}ZF-m.BitmapData;
-    9K.53kZ-(.}*X extends flash.}ZF-m.BitmapData;
+    9K.53kZ-(.}*X.__super__ = flash.display.BitmapData;
+    9K.53kZ-(.}*X extends flash.display.BitmapData;
     v1 = 9K.53kZ-(.}*X.prototype;
     v1.__class__ = 9K.53kZ-(.}*X;
     v1.+Hp() = null;
@@ -8079,7 +8079,7 @@ for ($somevar in v2) {
       var v3 = (new 9K.+7U K(this.7w;Sm)).18wU*(0);
       v3._x = -v2;
       v3._y = -v2;
-      var v4 = new flash.}ZF-m.BitmapData(v2 * 2, v2 * 2, true, 822018048);
+      var v4 = new flash.display.BitmapData(v2 * 2, v2 * 2, true, 822018048);
       v3.attachBitmap(v4, 0);
       var v5 = 44{N.(K.32.*=_p_('mcLineSpiral', 0);
       var v6 = v2 * 1.0;

@@ -73,7 +73,7 @@ for ($somevar in v2) {
         v1[enumerate v2] = v2[enumerate v2];
       }
       v1 = new Object();
-      flash.}ZF-m = v1;
+      flash.display = v1;
       v2 = _global.flash.display;
       // Loop counter not found
 for ($somevar in v2) {
@@ -2765,7 +2765,7 @@ for ($somevar in v2) {
         if (arg7 == null) {
           arg7 = 10;
         }
-        this.1Zms3 = new flash.}ZF-m.BitmapData(arg1, arg2, true, 255);
+        this.1Zms3 = new flash.display.BitmapData(arg1, arg2, true, 255);
         arg0.attachBitmap(this.1Zms3, 0, 'Never', false);
         this.,QD+ = new 9K.flash.{sRCQ();
         this.}foq5 = 0;

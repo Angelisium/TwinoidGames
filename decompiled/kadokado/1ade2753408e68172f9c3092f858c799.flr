@@ -128,7 +128,7 @@ for ($somevar in v2) {
         v1[enumerate v2] = v2[enumerate v2];
       }
       v1 = new Object();
-      flash.}ZF-m = v1;
+      flash.display = v1;
       v2 = _global.flash.display;
       // Loop counter not found
 for ($somevar in v2) {
@@ -1138,7 +1138,7 @@ for ($somevar in v2) {
       };
 
       v1.,fyRI = null;
-      v1.}ZF-m = function () {
+      v1.display = function () {
         if (this.1NpQB( == null) {
           this.1NpQB( = 44{N.32.*=_p_('cell', 44{N.]GCsb);
         }
@@ -2239,7 +2239,7 @@ for ($somevar in arg0) {
       };
 
       v1.7-, = null;
-      v1.}ZF-m = function () {
+      v1.display = function () {
         this.7ZoIC = new Array();
         var v2 = 0;
         var v3 = this. ]55.length;
@@ -2689,10 +2689,10 @@ for ($somevar in arg0) {
           while (v7 < v6.length) {
             v8 = v6[v7];
             ++v7;
-            v8.}ZF-m();
+            v8.display();
           }
         }
-        44{N.=Lg 6.}ZF-m();
+        44{N.=Lg 6.display();
       };
 
       v1.=;4[w = null;

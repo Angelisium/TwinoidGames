@@ -191,7 +191,7 @@ for ($somevar in v2) {
       v1[enumerate v2] = v2[enumerate v2];
     }
     v1 = new Object();
-    flash.}ZF-m = v1;
+    flash.display = v1;
     v2 = _global.flash.display;
     // Loop counter not found
 for ($somevar in v2) {
@@ -845,7 +845,7 @@ for ($somevar in v2) {
       this.,XiKC = null;
     };
 
-    v1.}ZF-m = function () {
+    v1.display = function () {
       this.,XiKC._visible = true;
       this.0=[m5._visible = true;
       this.}J._visible = true;
@@ -868,7 +868,7 @@ for ($somevar in v2) {
     };
 
     v1.,93A = function () {
-      this.}ZF-m();
+      this.display();
     };
 
     v1.{JTQ6 = null;
@@ -922,7 +922,7 @@ for ($somevar in v2) {
       this.+-(0.8[I17.*]((v5);
     };
 
-    v1.}ZF-m = function () {
+    v1.display = function () {
       if (this.}J == null) {
         this.}J = this.+-(0.32.*=_p_('mcHex', =(,aA.8j3F2);
         this.}J._x = this.,aR;-();
@@ -1264,7 +1264,7 @@ for ($somevar in v2) {
     };
 
     v1.}TEE ( = null;
-    v1.}ZF-m = function (arg0) {
+    v1.display = function (arg0) {
       this.8T47D( = arg0;
       this.}J.gotoAndStop(arg0);
       this.}J._visible = true;
@@ -2218,8 +2218,8 @@ for ($somevar in this.1) {
     };
 
     9K.53kZ-(.}*X.__name__ = ['9K', '53kZ-(', '}*X'];
-    9K.53kZ-(.}*X.__super__ = flash.}ZF-m.BitmapData;
-    9K.53kZ-(.}*X extends flash.}ZF-m.BitmapData;
+    9K.53kZ-(.}*X.__super__ = flash.display.BitmapData;
+    9K.53kZ-(.}*X extends flash.display.BitmapData;
     v1 = 9K.53kZ-(.}*X.prototype;
     v1.__class__ = 9K.53kZ-(.}*X;
     v1.+Hp() = null;
@@ -2682,12 +2682,12 @@ for ($somevar in this.1) {
         ++v3;
         v5 = v3;
         v6 = this.+LT;C([v5];
-        v6.}ZF-m(v6.8T47D();
+        v6.display(v6.8T47D();
       }
     };
 
     v1.(RvaQ = function (arg0) {
-      this.774e0(.}ZF-m(arg0);
+      this.774e0(.display(arg0);
     };
 
     v1.32 = null;
@@ -3064,7 +3064,7 @@ for ($somevar in this.1) {
         while (v6 < v7) {
           ++v6;
           v8 = v6;
-          this.;AH0[v8][v5].}ZF-m();
+          this.;AH0[v8][v5].display();
           if (=(,aA.=2AUB) {
             this.;AH0[v8][v5].=4Ihs();
           }
@@ -3079,11 +3079,11 @@ for ($somevar in this.1) {
       if (!this.{9,B) {
         this.6WPi, = new )Tqw((this, false);
         this.6WPi,.4PUH1(this.6K[*y[0], this.6K[*y[1]);
-        this.6WPi,.}ZF-m();
+        this.6WPi,.display();
       } else {
         this.9-0n; = new )Tqw((this, true);
         this.9-0n;.4PUH1(this.6K[*y[0], this.6K[*y[1]);
-        this.9-0n;.}ZF-m();
+        this.9-0n;.display();
       }
       var v3 = 0;
       var v4 = =(,aA.[yyxY;
@@ -3103,7 +3103,7 @@ for ($somevar in this.1) {
       while (v3 < v4) {
         ++v3;
         v5 = v3;
-        this.+LT;C([v5].}ZF-m(this. y[BL([v5]);
+        this.+LT;C([v5].display(this. y[BL([v5]);
       }
       v3 = 47;
       this.+LT;C([0].}SC6(v3, 257);
@@ -4608,7 +4608,7 @@ for ($somevar in this.1) {
       this.}J = null;
     };
 
-    v1.}ZF-m = function (arg0) {
+    v1.display = function (arg0) {
       if (arg0 < 100) {
         var v3 = arg0;
         var v4 = }]zS.*A368([v3];

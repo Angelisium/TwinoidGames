@@ -299,7 +299,7 @@ for ($somevar in v2) {
         v1[enumerate v2] = v2[enumerate v2];
       }
       v1 = new Object();
-      flash.}ZF-m = v1;
+      flash.display = v1;
       v2 = _global.flash.display;
       // Loop counter not found
 for ($somevar in v2) {
@@ -870,7 +870,7 @@ for ($somevar in v2) {
           this.4t_q5.push(v6);
         }
         this.2UT;k = this.32.18wU*(44{N.4MvcB);
-        this.2UT;k.9I* = new flash.}ZF-m.BitmapData(*r.=OA, *r.*OA, false, 0);
+        this.2UT;k.9I* = new flash.display.BitmapData(*r.=OA, *r.*OA, false, 0);
         this.2UT;k.attachBitmap(this.2UT;k.9I*, 0);
         this.2UT;k._x = -*r.=OA;
         this.;+ = this.32.*=_p_('mcBg', 0);
@@ -1020,7 +1020,7 @@ for ($somevar in v2) {
         var v2 = 3Wt.random(2) == 0;
         var v3 = 3Wt.random(2) == 0 && v2;
         var v4 = 1 + 3 / (this.1T=[0] + 1);
-        var v5 = new flash.}ZF-m.BitmapData(*r.+9fc, *r.70fd, false, 0);
+        var v5 = new flash.display.BitmapData(*r.+9fc, *r.70fd, false, 0);
         var v6 = this.32.*=_p_('mcShape', 0);
         var v7 = 0.05;
         var v8 = -2;
@@ -1170,7 +1170,7 @@ for ($somevar in v2) {
 
       v1.*s)HE = function () {
         var v2 = *r.*)d[[0];
-        this.[uBY = new flash.}ZF-m.BitmapData(*r.+9fc, *r.70fd, false, v2.)I());
+        this.[uBY = new flash.display.BitmapData(*r.+9fc, *r.70fd, false, v2.)I());
         var v3 = this.32.*=_p_('mcBrush', 0);
         var v4 = 0.1;
         var v5 = -2;
@@ -1430,7 +1430,7 @@ for ($somevar in v2) {
 
       v1.1qJE5 = function () {
         this.+sAv7 = this.32.18wU*(44{N.]Y[5d);
-        this.+sAv7.9I* = new flash.}ZF-m.BitmapData(3Wt.9n6(*r.=OA * *r. A(), 3Wt.9n6(*r.*OA * *r. A(), true, 0);
+        this.+sAv7.9I* = new flash.display.BitmapData(3Wt.9n6(*r.=OA * *r. A(), 3Wt.9n6(*r.*OA * *r. A(), true, 0);
         this.+sAv7._yscale = 100 / *r. A(;
         this.+sAv7._xscale = this.+sAv7._yscale;
         this.+sAv7.attachBitmap(this.+sAv7.9I*, 0);
@@ -3437,8 +3437,8 @@ for ($somevar in v2) {
       };
 
       9K.53kZ-(.}*X.__name__ = ['9K', '53kZ-(', '}*X'];
-      9K.53kZ-(.}*X.__super__ = flash.}ZF-m.BitmapData;
-      9K.53kZ-(.}*X extends flash.}ZF-m.BitmapData;
+      9K.53kZ-(.}*X.__super__ = flash.display.BitmapData;
+      9K.53kZ-(.}*X extends flash.display.BitmapData;
       v1 = 9K.53kZ-(.}*X.prototype;
       v1.__class__ = 9K.53kZ-(.}*X;
       v1.+Hp() = null;

@@ -213,7 +213,7 @@ for ($somevar in v2) {
         v1[enumerate v2] = v2[enumerate v2];
       }
       v1 = new Object();
-      flash.}ZF-m = v1;
+      flash.display = v1;
       v2 = _global.flash.display;
       // Loop counter not found
 for ($somevar in v2) {
@@ -2337,7 +2337,7 @@ for ($somevar in v2) {
           this. p[2,([v4] = [];
         }
         this.(KA.)6(YK( = this.32.18wU*(44{N.(h4SU);
-        this.(KA.)6(YK(.9I* = new flash.}ZF-m.BitmapData(44{N.=OA, 44{N.=OA, true, 0);
+        this.(KA.)6(YK(.9I* = new flash.display.BitmapData(44{N.=OA, 44{N.=OA, true, 0);
         this.(KA.)6(YK(.attachBitmap(this.(KA.)6(YK(.9I*, 1);
         v2 = this.32.*=_p_('mcSquare', 44{N.(h4SU);
         9K.53kZ-(.0[Y.;CYOh(this.(KA.)6(YK(, 3Wt.random(20), 16750848);
@@ -3352,7 +3352,7 @@ for ($somevar in v2) {
         var v2 = Math.cos(this.*6Ugv * 0.01);
         if (this.,Ewgv == null) {
           this.,Ewgv = this.6QA.18wU*(44{N.841,4);
-          this.,Ewgv.9I* = new flash.}ZF-m.BitmapData(44{N.=OA * 2, 44{N.*OA, false, 16711680);
+          this.,Ewgv.9I* = new flash.display.BitmapData(44{N.=OA * 2, 44{N.*OA, false, 16711680);
           this.,Ewgv.attachBitmap(this.,Ewgv.9I*, 0);
           this.,Ewgv._x = 0;
         }
@@ -3361,7 +3361,7 @@ for ($somevar in v2) {
         v3.translate(44{N.=OA, 0);
         this.,Ewgv.9I*.draw(this.(KA, v3);
         var v4 = this.6QA.*=_p_('mcDisplacement', 0);
-        var v5 = new flash.}ZF-m.BitmapData(44{N.=OA, 44{N.*OA, false, 0);
+        var v5 = new flash.display.BitmapData(44{N.=OA, 44{N.*OA, false, 0);
         v5.draw(v4, new flash.0000.Matrix());
         v4.removeMovieClip();
         var v6 = new flash.3[4k{.DisplacementMapFilter();

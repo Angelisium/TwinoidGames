@@ -270,7 +270,7 @@ for ($somevar in v2) {
       v1[enumerate v2] = v2[enumerate v2];
     }
     v1 = new Object();
-    flash.}ZF-m = v1;
+    flash.display = v1;
     v2 = _global.flash.display;
     // Loop counter not found
 for ($somevar in v2) {
@@ -1338,8 +1338,8 @@ for ($somevar in v2) {
     };
 
     9K.53kZ-(.}*X.__name__ = ['9K', '53kZ-(', '}*X'];
-    9K.53kZ-(.}*X.__super__ = flash.}ZF-m.BitmapData;
-    9K.53kZ-(.}*X extends flash.}ZF-m.BitmapData;
+    9K.53kZ-(.}*X.__super__ = flash.display.BitmapData;
+    9K.53kZ-(.}*X extends flash.display.BitmapData;
     v1 = 9K.53kZ-(.}*X.prototype;
     v1.__class__ = 9K.53kZ-(.}*X;
     v1.+Hp() = null;

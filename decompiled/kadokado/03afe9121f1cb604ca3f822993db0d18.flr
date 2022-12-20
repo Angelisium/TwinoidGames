@@ -643,7 +643,7 @@ for ($somevar in v2) {
         v1[enumerate v2] = v2[enumerate v2];
       }
       v1 = new Object();
-      flash.}ZF-m = v1;
+      flash.display = v1;
       v2 = _global.flash.display;
       // Loop counter not found
 for ($somevar in v2) {
@@ -2689,7 +2689,7 @@ for ($somevar in v2) {
         44{N.(K = this;
         this.6QA = new 9K.+7U K(this.-iB=);
         var v3 = this.6QA.18wU*(0);
-        var v4 = new flash.}ZF-m.BitmapData(10, 10, false, 0);
+        var v4 = new flash.display.BitmapData(10, 10, false, 0);
         var v5 = this.6QA.*=_p_('mcBg', 0);
         v4.draw(v5);
         v5.removeMovieClip();
@@ -2729,7 +2729,7 @@ for ($somevar in v2) {
       v1.0R6+) = null;
       v1.90rd*( = null;
       v1.69- = null;
-      v1.}ZF-m = function () {
+      v1.display = function () {
         var v2 = 1;
         this.90rd*(.fillRect(this.90rd*(.rectangle, 0);
         var v3 = 1;
@@ -2813,7 +2813,7 @@ for ($somevar in v2) {
 
       v1.*n9Y9( = function () {
         this.}O,A = new 9K.3xyY(0);
-        this.0R6+) = new flash.}ZF-m.BitmapData(*r.7I, *r.}H, true, 0);
+        this.0R6+) = new flash.display.BitmapData(*r.7I, *r.}H, true, 0);
         var v2 = this.32.18wU*(44{N.(h4SU);
         v2.attachBitmap(this.0R6+), 0);
         this.;-W+L();
@@ -3097,7 +3097,7 @@ for ($somevar in v2) {
       };
 
       v1.9TNL1( = function () {
-        this.90rd*( = new flash.}ZF-m.BitmapData(*r.=OA, *r.*OA, true, 0);
+        this.90rd*( = new flash.display.BitmapData(*r.=OA, *r.*OA, true, 0);
         var v2 = 44{N.(K.6QA.18wU*(1);
         v2.attachBitmap(this.90rd*(, 0);
       };
@@ -3202,7 +3202,7 @@ for ($somevar in v2) {
         this.3tTGL();
         this.,{r-w();
         this.,nLdZ();
-        this.}ZF-m();
+        this.display();
       };
 
       v1.2xRdZ = function () {
@@ -3293,7 +3293,7 @@ for ($somevar in v2) {
           return undefined;
         }
         if (this.*Vq7F( == null) {
-          this.*Vq7F( = new flash.}ZF-m.BitmapData(*r.+9fc, *r.70fd, false, 0);
+          this.*Vq7F( = new flash.display.BitmapData(*r.+9fc, *r.70fd, false, 0);
           var v3 = this.32.18wU*(12);
           v3.attachBitmap(this.*Vq7F(, 0);
           v3.blendMode = 'add';

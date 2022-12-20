@@ -2316,7 +2316,7 @@ for ($somevar in v2) {
       v1[enumerate v2] = v2[enumerate v2];
     }
     v1 = new Object();
-    flash.}ZF-m = v1;
+    flash.display = v1;
     v2 = _global.flash.display;
     // Loop counter not found
 for ($somevar in v2) {
@@ -2347,8 +2347,8 @@ for ($somevar in v2) {
     };
 
     9K.53kZ-(.}*X.__name__ = ['9K', '53kZ-(', '}*X'];
-    9K.53kZ-(.}*X.__super__ = flash.}ZF-m.BitmapData;
-    9K.53kZ-(.}*X extends flash.}ZF-m.BitmapData;
+    9K.53kZ-(.}*X.__super__ = flash.display.BitmapData;
+    9K.53kZ-(.}*X extends flash.display.BitmapData;
     v1 = 9K.53kZ-(.}*X.prototype;
     v1.__class__ = 9K.53kZ-(.}*X;
     v1.+Hp() = null;
@@ -2638,7 +2638,7 @@ for ($somevar in v2) {
       super.init();
       1X 7.(L-6.=MS78.(K = this;
       this.;+ = this.32.18wU*(0);
-      this.=c4U( = new flash.}ZF-m.BitmapData(*r.=OA, *r.*OA, false, 17408);
+      this.=c4U( = new flash.display.BitmapData(*r.=OA, *r.*OA, false, 17408);
       this.;+.attachBitmap(this.=c4U(, 0);
       var v3 = 21760;
       var v4 = 8;
@@ -6278,7 +6278,7 @@ for ($somevar in v2) {
     v1.8Oqc2( = null;
     v1.=n-(( = null;
     v1.)gBsK( = function (arg0) {
-      var v3 = new flash.}ZF-m.BitmapData(*r.=OA, *r.*OA, false, arg0);
+      var v3 = new flash.display.BitmapData(*r.=OA, *r.*OA, false, arg0);
       var v4 = new ]ETZ8(this.(e * 1000 + this.)e);
       var v5 = this.32.*=_p_('mcLuz', 0);
       var v6 = 6;
@@ -12055,7 +12055,7 @@ for ($somevar in v2) {
         v19.translate((v16.4AF[0] - 1X 7.0,k.}G() * 1X 7.0,k.,q, (v16.4AF[1] - 1X 7.0,k. H() * 1X 7.0,k.6p);
         this.=c4U(.draw(v12, v19);
       }
-      v13 = new flash.}ZF-m.BitmapData(1X 7.0,k.=P(, 1X 7.0,k.] (, true, 0);
+      v13 = new flash.display.BitmapData(1X 7.0,k.=P(, 1X 7.0,k.] (, true, 0);
       v14 = 822083583;
       v15 = 0;
       v16 = 1X 7.0,k.+9fc;
@@ -12333,7 +12333,7 @@ for ($somevar in v2) {
       this.*[PqO = 0;
       this.6BZ+1 = this.32.18wU*(1X 7.0,k.*8sr7);
       this.6BZ+1.9I* = this.=c4U(.clone();
-      this.6BZ+1.(KA = new flash.}ZF-m.BitmapData(*r.=OA, *r.*OA, false, 16777215);
+      this.6BZ+1.(KA = new flash.display.BitmapData(*r.=OA, *r.*OA, false, 16777215);
       this.6BZ+1.5QA = this.=c4U(.clone();
       this.6BZ+1.onPress = function () {};
 
@@ -12461,8 +12461,8 @@ for ($somevar in v2) {
       if (*r.]Q.)x*_Q(} q4X.( Qo;()) {
         v2 = 5242952;
       }
-      this.=c4U( = new flash.}ZF-m.BitmapData(1X 7.0,k.=P(, 1X 7.0,k.] (, false, v2);
-      this.0BvB(( = new flash.}ZF-m.BitmapData(1X 7.0,k.=P(, 1X 7.0,k.] (, true, 0);
+      this.=c4U( = new flash.display.BitmapData(1X 7.0,k.=P(, 1X 7.0,k.] (, false, v2);
+      this.0BvB(( = new flash.display.BitmapData(1X 7.0,k.=P(, 1X 7.0,k.] (, true, 0);
       this.;+ = this.6QA.18wU*(1X 7.0,k.4MvcB);
       this.;+.attachBitmap(this.=c4U(, 0);
       this.;+.useHandCursor = false;
@@ -12864,7 +12864,7 @@ for ($somevar in v2) {
       var v7 = arg1 + 1X 7.0,k. H(;
       this.+-(0.8z6ta(v6, v7, this.*UdK(([arg0][arg1], arg2, arg3);
       this.2UT;k = this.6QA.18wU*(1X 7.0,k.7[us5);
-      var v8 = new flash.}ZF-m.BitmapData(*r.=OA, *r.*OA, false, 0);
+      var v8 = new flash.display.BitmapData(*r.=OA, *r.*OA, false, 0);
       var v9 = new flash.0000.Matrix();
       v9.scale(1.001, 1.001);
       v8.draw(this.=+dDC, v9);
@@ -14309,7 +14309,7 @@ for ($somevar in v2) {
     };
 
     v1.;30Z*( = function () {
-      var v2 = new flash.}ZF-m.BitmapData(7w;Q7.44{N.[MqDO, this. R.9Cj0, true, 0);
+      var v2 = new flash.display.BitmapData(7w;Q7.44{N.[MqDO, this. R.9Cj0, true, 0);
       var v3 = this.32.18wU*(0);
       v3.beginFill(16711680, 100);
       var v4 = this. R.9Cj0 - 7w;Q7.44{N.)IhO;
@@ -14331,7 +14331,7 @@ for ($somevar in v2) {
       v2.draw(v3, new flash.0000.Matrix());
       v3.removeMovieClip();
       var v7 = 100;
-      var v8 = new flash.}ZF-m.BitmapData(v7, v7, false, 0);
+      var v8 = new flash.display.BitmapData(v7, v7, false, 0);
       var v9 = this.32.*=_p_('groundText', 0);
       v9.gotoAndStop(this.=HU11.2yT + 1);
       v8.draw(v9, new flash.0000.Matrix());
@@ -14453,12 +14453,12 @@ for ($somevar in v2) {
         var v9 = this.70*.18wU*(7w;Q7.44{N.(h4SU);
         9K.53kZ-(.+43N.1U;0(v9, 2, 2, 0);
         this.(W3 = new 9K.+7U K(v9);
-        this.28PHg = new flash.}ZF-m.BitmapData(7w;Q7.44{N.[MqDO, this. R.9Cj0, true, 16711680);
-        this.3+b,v = new flash.}ZF-m.BitmapData(7w;Q7.44{N.[MqDO, this. R.2_j+, true, 16711680);
+        this.28PHg = new flash.display.BitmapData(7w;Q7.44{N.[MqDO, this. R.9Cj0, true, 16711680);
+        this.3+b,v = new flash.display.BitmapData(7w;Q7.44{N.[MqDO, this. R.2_j+, true, 16711680);
         this.;30Z*(();
         var v10 = this.(W3.18wU*(7w;Q7.44{N.;C*X2);
         v10._y = 7w;Q7.44{N.*sd+;( - this. R.2_j+;
-        this.{QxM0 = new flash.}ZF-m.BitmapData(7w;Q7.44{N.[MqDO, this. R.2_j+, true, 16711680);
+        this.{QxM0 = new flash.display.BitmapData(7w;Q7.44{N.[MqDO, this. R.2_j+, true, 16711680);
         v10.attachBitmap(this.{QxM0, 0);
         this.]6T69(();
         if (this. ;K(x == null) {
@@ -14520,7 +14520,7 @@ for ($somevar in v2) {
     v1.2]Qc] = function () {
       this.=kIA = 7w;Q7.)qF[.6BBjI;
       this.(s)WV = 0;
-      this.90rd*( = new flash.}ZF-m.BitmapData(*r.=OA, *r.*OA, false, 16711680);
+      this.90rd*( = new flash.display.BitmapData(*r.=OA, *r.*OA, false, 16711680);
       this.90rd*(.draw(this.-iB=);
       this.32.destroy();
       this.]RWm,( = this.32.18wU*(0);
@@ -16279,7 +16279,7 @@ for ($somevar in v2) {
 
     v1.(HbIJ( = function () {
       this.;+ = this.32.18wU*(0);
-      var v2 = new flash.}ZF-m.BitmapData(*r.=OA, *r.*OA, false, 4420);
+      var v2 = new flash.display.BitmapData(*r.=OA, *r.*OA, false, 4420);
       this.;+.attachBitmap(v2, 0);
       this.;+.onPress = ]6=8H((']HU}A(', this);
       var v3 = 8806;
@@ -16328,7 +16328,7 @@ for ($somevar in v2) {
       v3 = 0;
       v4 = 980Sb.5VIv7;
       this. }wxE(.dispose();
-      this. }wxE( = new flash.}ZF-m.BitmapData(*r.=OA, *r.*OA, true, 0);
+      this. }wxE( = new flash.display.BitmapData(*r.=OA, *r.*OA, true, 0);
       v5 = 0;
       v6 = =BjP7(. ]55;
       while (v5 < v6.length) {
@@ -16914,13 +16914,13 @@ for ($somevar in v2) {
       var v9 = 1;
       var v10 = 9K.53kZ-(.0[Y.{SXC{(this.6Bp{2);
       var v11 = new flash.0000.ColorTransform(v9, v9, v9, 1, v10.= * (1 - v9), v10.0 * (1 - v9), v10.) * (1 - v9), 0);
-      var v12 = new flash.}ZF-m.BitmapData(*r.=OA, *r.*OA, true, 0);
+      var v12 = new flash.display.BitmapData(*r.=OA, *r.*OA, true, 0);
       v12.draw(arg1, v8, v11);
       var v13 = new flash.3[4k{.BlurFilter();
       v13.blurX = 8;
       v13.blurY = 8;
       v12.applyFilter(v12, v12.rectangle, new flash.0000.Point(0, 0), v13);
-      var v14 = new flash.}ZF-m.BitmapData(*r.=OA, *r.*OA, false, 0);
+      var v14 = new flash.display.BitmapData(*r.=OA, *r.*OA, false, 0);
       var v15 = new 9K.28xol(this.=HU11.(e * 10000 + this.=HU11.)e);
       v14.perlinNoise(*r.=OA, *r.*OA, 4, v15.random(1000), false, false, null, true);
       var v16 = new flash.0000.ColorTransform(1, 1, 1, 0.4, 0, 0, 0, 0);
@@ -17348,7 +17348,7 @@ for ($somevar in v2) {
 
     v1.1qJE5 = function () {
       this.+sAv7 = this.32.18wU*(44{N.]Y[5d);
-      this.+sAv7.9I* = new flash.}ZF-m.BitmapData(3Wt.9n6(*r.=OA * *r. A(), 3Wt.9n6(*r.*OA * *r. A(), true, 0);
+      this.+sAv7.9I* = new flash.display.BitmapData(3Wt.9n6(*r.=OA * *r. A(), 3Wt.9n6(*r.*OA * *r. A(), true, 0);
       this.+sAv7._yscale = 100 / *r. A(;
       this.+sAv7._xscale = this.+sAv7._yscale;
       this.+sAv7.attachBitmap(this.+sAv7.9I*, 0);
@@ -19280,7 +19280,7 @@ for ($somevar in v2) {
       if (this.2yT != null) {
         v2 = =BjP7(. ]55[this.2yT];
       }
-      this.[uBY = new flash.}ZF-m.BitmapData(*r.+9fc, *r.70fd, false, v2.(v+);
+      this.[uBY = new flash.display.BitmapData(*r.+9fc, *r.70fd, false, v2.(v+);
       var v3 = 44{N.(K.32.*=_p_('mcBrush', 0);
       var v4 = 0.1;
       var v5 = -2;
@@ -19306,7 +19306,7 @@ for ($somevar in v2) {
       var v2 = this.}O,A.random(2) == 0;
       var v3 = this.}O,A.random(2) == 0 && v2;
       var v4 = 1 + 3 / (this.1T= + 1);
-      var v5 = new flash.}ZF-m.BitmapData(*r.+9fc, *r.70fd, false, 0);
+      var v5 = new flash.display.BitmapData(*r.+9fc, *r.70fd, false, 0);
       var v6 = 980Sb.32.*=_p_('mcShape', 0);
       var v7 = 0.06;
       var v8 = -2;
@@ -20190,7 +20190,7 @@ for ($somevar in v2) {
       }
       var v4 = 3Wt.9n6(*r.=OA * arg0);
       var v5 = 3Wt.9n6(*r.*OA * arg0);
-      var v6 = new flash.}ZF-m.BitmapData(v4, v5, false, 0);
+      var v6 = new flash.display.BitmapData(v4, v5, false, 0);
       var v7 = 1X 7.0,k.(K.32.*=_p_('mcBlock', 0);
       var v8 = 0;
       var v9 = *r.+9fc;
@@ -20901,7 +20901,7 @@ for ($somevar in v2) {
 
     v1.(HbIJ( = function () {
       this.;+ = this.32.18wU*(0);
-      this.=c4U( = new flash.}ZF-m.BitmapData(*r.=OA, *r.*OA, false, 17408);
+      this.=c4U( = new flash.display.BitmapData(*r.=OA, *r.*OA, false, 17408);
       this.;+.attachBitmap(this.=c4U(, 0);
       var v2 = 21760;
       var v3 = 0;

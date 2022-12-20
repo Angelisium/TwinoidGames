@@ -4997,7 +4997,7 @@ for ($somevar in this.1) {
     v1.,Czm) = null;
     v1.;LEeH( = function (arg0, arg1) {
       this.{wH._visible = false;
-      var v4 = new flash.}ZF-m.BitmapData(arg0 + 2 * arg1, arg0 + 2 * arg1, true, 0);
+      var v4 = new flash.display.BitmapData(arg0 + 2 * arg1, arg0 + 2 * arg1, true, 0);
       var v5 = arg0 / this.{wH._width;
       var v6 = arg1 + arg0 * 0.5 - this.4vH * v5;
       var v7 = arg1 + arg0 * 0.5 - this.5vH * v5;
@@ -5016,7 +5016,7 @@ for ($somevar in this.1) {
       var v4 = this.,Czm).getBounds(this.,Czm));
       var v5 = Math.ceil((v4.xMax - v4.xMin) * arg1);
       var v6 = Math.ceil((v4.yMax - v4.yMin) * arg1);
-      var v7 = new flash.}ZF-m.BitmapData(v5, v6, true, 0);
+      var v7 = new flash.display.BitmapData(v5, v6, true, 0);
       var v8 = -v4.xMin * arg1;
       var v9 = -v4.yMin * arg1;
       var v10 = new flash.0000.Matrix();
@@ -5376,7 +5376,7 @@ for ($somevar in arg0) {
     v1.}T-cy = function (arg0) {
       ++this.3xBA,;
       if (this.3xBA, == 2) {
-        this.=c4U( = new flash.}ZF-m.BitmapData(*r.=OA, *r.*OA, false, 0);
+        this.=c4U( = new flash.display.BitmapData(*r.=OA, *r.*OA, false, 0);
         var v3 = new flash.0000.Matrix();
         v3.translate(-[re7L.2QF=}, -[re7L.2QF=});
         this.=c4U(.draw(this.;+, v3);
@@ -8148,7 +8148,7 @@ for ($somevar in v2) {
       v1[enumerate v2] = v2[enumerate v2];
     }
     v1 = new Object();
-    flash.}ZF-m = v1;
+    flash.display = v1;
     v2 = _global.flash.display;
     // Loop counter not found
 for ($somevar in v2) {
@@ -13563,8 +13563,8 @@ for ($somevar in v2) {
     };
 
     9K.53kZ-(.}*X.__name__ = ['9K', '53kZ-(', '}*X'];
-    9K.53kZ-(.}*X.__super__ = flash.}ZF-m.BitmapData;
-    9K.53kZ-(.}*X extends flash.}ZF-m.BitmapData;
+    9K.53kZ-(.}*X.__super__ = flash.display.BitmapData;
+    9K.53kZ-(.}*X extends flash.display.BitmapData;
     v1 = 9K.53kZ-(.}*X.prototype;
     v1.__class__ = 9K.53kZ-(.}*X;
     v1.+Hp() = null;
@@ -15512,7 +15512,7 @@ for ($somevar in v2) {
       this.length = arg3;
       this.}FGV8 = 3Wt.9n6(arg0.-iB=._width);
       this.9Cw4q = 3Wt.9n6(arg0.-iB=._height);
-      this.9I* = new flash.}ZF-m.BitmapData(this.}FGV8, this.9Cw4q, true, 16711680);
+      this.9I* = new flash.display.BitmapData(this.}FGV8, this.9Cw4q, true, 16711680);
       var v8 = arg0.-iB=.getBounds(arg0.-iB=);
       var v9 = new flash.0000.Matrix();
       v9.translate(-v8.xMin, -v8.yMin);

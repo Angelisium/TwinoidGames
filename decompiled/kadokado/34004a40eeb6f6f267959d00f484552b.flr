@@ -231,7 +231,7 @@ for ($somevar in v2) {
         v1[enumerate v2] = v2[enumerate v2];
       }
       v1 = new Object();
-      flash.}ZF-m = v1;
+      flash.display = v1;
       v2 = _global.flash.display;
       // Loop counter not found
 for ($somevar in v2) {
@@ -1169,7 +1169,7 @@ for ($somevar in v2) {
       v1.__class__ = 2e{I;
       v1.}2D* = null;
       v1.*J}8) = null;
-      v1.}ZF-m = function (arg0, arg1) {
+      v1.display = function (arg0, arg1) {
         this.-iB=._x = *r.85( + arg0 * *r.-s;
         this.-iB=._y = *r.95( + arg1 * *r.-s;
       };
@@ -1281,7 +1281,7 @@ for ($somevar in v2) {
         this.5R = arg0;
         this.6R = arg1;
         this.6f_Ry();
-        this.}ZF-m(this.5R, this.6R);
+        this.display(this.5R, this.6R);
       };
 
       v1.=S7A = null;
@@ -1349,7 +1349,7 @@ for ($somevar in v2) {
         }
         if (Math.abs(this.0P) > 0.1) {
           this.0P *= 0.5;
-          this.}ZF-m(this.5R + this.0P, this.6R);
+          this.display(this.5R + this.0P, this.6R);
           return undefined;
         }
         this.;8,PR = ]6=8H(('+}B(', this);
@@ -1361,7 +1361,7 @@ for ($somevar in v2) {
         this.0v--(v2);
         this.}SC6(0, 1);
         this.0P = 0;
-        this.}ZF-m(this.5R, this.6R);
+        this.display(this.5R, this.6R);
         44{N.(K.6i[ b();
       };
 
@@ -1375,7 +1375,7 @@ for ($somevar in v2) {
         this.=S7A.smc.gotoAndPlay('swallow');
         this.=S7A.smc.smc.gotoAndStop(arg1.*J}8) + 1);
         this.=S7A.smc.smc._xscale = arg0 * 100;
-        this.}ZF-m(this.5R, this.6R);
+        this.display(this.5R, this.6R);
         44{N.(K.6i[ b();
       };
 
@@ -1463,7 +1463,7 @@ for ($somevar in v2) {
         }
         if (Math.abs(this.0P) > 0.1) {
           this.0P *= 0.5;
-          this.}ZF-m(this.5R + this.0P, this.6R);
+          this.display(this.5R + this.0P, this.6R);
           return undefined;
         }
         var v3 = 44{N.(K.;AH0[this.5R][this.6R - 1];
@@ -1480,7 +1480,7 @@ for ($somevar in v2) {
         this.=S7A.smc.gotoAndPlay('initEatUp');
         this.(8xOI((]6=8H(('6rk{}', this));
         this.0P = 0;
-        this.}ZF-m(this.5R, this.6R);
+        this.display(this.5R, this.6R);
       };
 
       v1.}Vr3b = function () {
@@ -1497,7 +1497,7 @@ for ($somevar in v2) {
       v1.0P = null;
       v1.,zB9 = function () {
         this.}SC6(0, -1);
-        this.}ZF-m(this.5R, this.6R);
+        this.display(this.5R, this.6R);
         var v2 = this.*H]X4.pop();
         var v3 = new 2e{I(this.5R, this.6R + 1);
         v3.setColor(v2);
@@ -1572,7 +1572,7 @@ for ($somevar in v2) {
             }
           }
         }
-        this.}ZF-m(this.5R + this.0P, this.6R);
+        this.display(this.5R + this.0P, this.6R);
         if (this.=S7A.smc._currentframe < 10 && v3) {
           this. IWA+ = (this. IWA+ + 1) % 8;
           this.=S7A.smc.gotoAndStop(this. IWA+ + 1);
@@ -2298,7 +2298,7 @@ for ($somevar in v2) {
         this.32 = new 9K.+7U K(this.(KA);
         var v2 = this.6QA.*=_p_('mcTile', 0);
         var v3 = 32;
-        var v4 = new flash.}ZF-m.BitmapData(*r.=OA, 200);
+        var v4 = new flash.display.BitmapData(*r.=OA, 200);
         var v5 = Math.ceil(v4.width / v3);
         var v6 = Math.ceil(v4.height / v3);
         var v7 = 0;
@@ -2395,7 +2395,7 @@ for ($somevar in v2) {
               break;
             }
           }
-          v6.}ZF-m(v6.5R, v6.6R + 1);
+          v6.display(v6.5R, v6.6R + 1);
           if (v2) {
             break;
           }
@@ -2508,7 +2508,7 @@ for ($somevar in v2) {
         while (v3 < v2.length) {
           var v4 = v2[v3];
           ++v3;
-          v4.}ZF-m(v4.5R, v4.6R + this.}2D*[0]);
+          v4.display(v4.5R, v4.6R + this.}2D*[0]);
           if (this.}2D*[0] >= 1) {
             --v4.3}3=D;
             v4.}SC6(0, 1);
@@ -2541,7 +2541,7 @@ for ($somevar in v2) {
         var v2 = this.-]-I(.iterator();
         while (v2.1ll a()) {
           var v3 = v2.7Y-7();
-          v3.}ZF-m(v3.5R, v3.6R + 1 - this.}2D*[0]);
+          v3.display(v3.5R, v3.6R + 1 - this.}2D*[0]);
         }
         if (this.}2D*[0] == 1) {
           if (this.;s3q6[0] <= 0) {

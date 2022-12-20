@@ -749,7 +749,7 @@ for ($somevar in v2) {
         v1[enumerate v2] = v2[enumerate v2];
       }
       v1 = new Object();
-      flash.}ZF-m = v1;
+      flash.display = v1;
       v2 = _global.flash.display;
       // Loop counter not found
 for ($somevar in v2) {
@@ -2553,7 +2553,7 @@ for ($somevar in v2) {
 
       v1.__class__.+GGS)( = function (arg0, arg1) {
         var v4 = 5tTEL.+-(0.32.18wU*(=(,aA.4MvcB);
-        v4.9I* = new flash.}ZF-m.BitmapData(=(,aA.*sd+;(, arg1, false, 0);
+        v4.9I* = new flash.display.BitmapData(=(,aA.*sd+;(, arg1, false, 0);
         v4.attachBitmap(v4.9I*, =(,aA.4MvcB);
         v4.9I*.draw(arg0, =(,aA.7(VdK(arg0));
         return v4;
@@ -4142,8 +4142,8 @@ for ($somevar in v2) {
       };
 
       9K.53kZ-(.}*X.__name__ = ['9K', '53kZ-(', '}*X'];
-      9K.53kZ-(.}*X.__super__ = flash.}ZF-m.BitmapData;
-      9K.53kZ-(.}*X extends flash.}ZF-m.BitmapData;
+      9K.53kZ-(.}*X.__super__ = flash.display.BitmapData;
+      9K.53kZ-(.}*X extends flash.display.BitmapData;
       v1 = 9K.53kZ-(.}*X.prototype;
       v1.__class__ = 9K.53kZ-(.}*X;
       v1.+Hp() = null;
@@ -4661,7 +4661,7 @@ for ($somevar in v2) {
       v1.__class__.init = function (arg0) {
         6)Azm.+-(0 = arg0;
         6)Azm.0m6L)();
-        6)Azm.}ZF-m();
+        6)Azm.display();
       };
 
       v1.__class__.58rO6 = function (arg0) {
@@ -4696,7 +4696,7 @@ for ($somevar in v2) {
           if (v5.9U6 == 0 && (v5._y >= -=(,aA.[T7DO && !6)Azm.6{iph)) {
             6)Azm.-jwyV = false;
             v5.9U6 = -1;
-            6)Azm.}ZF-m(v5._y);
+            6)Azm.display(v5._y);
           }
           if (v5._y > =(,aA.*sd+;( + =(,aA.[T7DO) {
             v5.+ = true;
@@ -4738,7 +4738,7 @@ for ($somevar in v2) {
         }
       };
 
-      v1.__class__.}ZF-m = function (arg0) {
+      v1.__class__.display = function (arg0) {
         if (arg0 == null) {
           arg0 = 0;
         }

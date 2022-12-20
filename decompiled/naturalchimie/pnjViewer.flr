@@ -135,7 +135,7 @@ for ($somevar in v2) {
       v1[enumerate v2] = v2[enumerate v2];
     }
     v1 = new Object();
-    flash.}ZF-m = v1;
+    flash.display = v1;
     v2 = _global.flash.display;
     // Loop counter not found
 for ($somevar in v2) {
@@ -3966,7 +3966,7 @@ for ($somevar in v2) {
           (1MEG(.+Cs;B.smc._y = (1MEG(.1p,yC * this.{(2;Z * (1MEG(.*pt / 100;
         }
         var v5 = this.{(2;Z > 100 ? this.{(2;Z : 100;
-        var v6 = new flash.}ZF-m.BitmapData(3Wt.9n6((1MEG(.5-MuQ * v5 / 100), 3Wt.9n6((1MEG(.34FP- * v5 / 100), true, 16777215);
+        var v6 = new flash.display.BitmapData(3Wt.9n6((1MEG(.5-MuQ * v5 / 100), 3Wt.9n6((1MEG(.34FP- * v5 / 100), true, 16777215);
         v6.draw((1MEG(.+Cs;B);
         (1MEG(.+Cs;B._xscale = 100;
         (1MEG(.+Cs;B._yscale = (1MEG(.+Cs;B._xscale;
@@ -3978,7 +3978,7 @@ for ($somevar in v2) {
       }
       if (v4 == null) {
         (1MEG(.+Cs;B._set(v3);
-        v5 = new flash.}ZF-m.BitmapData((1MEG(.5-MuQ, (1MEG(.34FP-, true, 16777215);
+        v5 = new flash.display.BitmapData((1MEG(.5-MuQ, (1MEG(.34FP-, true, 16777215);
         v5.draw((1MEG(.+Cs;B);
         (1MEG(.{ psJ(.7NJ(v3, v5);
         v4 = v5;

@@ -154,7 +154,7 @@ for ($somevar in v2) {
         v1[enumerate v2] = v2[enumerate v2];
       }
       v1 = new Object();
-      flash.}ZF-m = v1;
+      flash.display = v1;
       v2 = _global.flash.display;
       // Loop counter not found
 for ($somevar in v2) {
@@ -1090,7 +1090,7 @@ for ($somevar in v2) {
         v5 = 3Wt.9n6(*r.+9fc * *r.-Wa[);
         v6 = 3Wt.9n6((v4 - v3) * *r.-Wa[);
         v7 = new flash.0000.Rectangle(0, v3 * *r.-Wa[, v5, v6);
-        this.9I* = new flash.}ZF-m.BitmapData(v5, v6, true, 0);
+        this.9I* = new flash.display.BitmapData(v5, v6, true, 0);
         this.9I*.copyPixels(44{N.(K.(pqV(, v7, new flash.0000.Point(0, 0));
         44{N.(K.(pqV(.fillRect(v7, 0);
         this.38cMC = 44{N.(K.32.18wU*(44{N.5;OW;);
@@ -2574,8 +2574,8 @@ for ($somevar in v2) {
       };
 
       9K.53kZ-(.}*X.__name__ = ['9K', '53kZ-(', '}*X'];
-      9K.53kZ-(.}*X.__super__ = flash.}ZF-m.BitmapData;
-      9K.53kZ-(.}*X extends flash.}ZF-m.BitmapData;
+      9K.53kZ-(.}*X.__super__ = flash.display.BitmapData;
+      9K.53kZ-(.}*X extends flash.display.BitmapData;
       v1 = 9K.53kZ-(.}*X.prototype;
       v1.__class__ = 9K.53kZ-(.}*X;
       v1.+Hp() = null;
@@ -3016,7 +3016,7 @@ for ($somevar in v2) {
       };
 
       v1.9+=-a = function (arg0) {
-        var v3 = new flash.}ZF-m.BitmapData(3Wt.9n6(*r.+9fc * *r.-Wa[), *r.-Wa[, true, 0);
+        var v3 = new flash.display.BitmapData(3Wt.9n6(*r.+9fc * *r.-Wa[), *r.-Wa[, true, 0);
         var v4 = new flash.0000.Rectangle(0, arg0 * *r.-Wa[, *r.+9fc * *r.-Wa[, *r.-Wa[);
         v3.copyPixels(this.(pqV(, v4, new flash.0000.Point(0, 0));
         this.(pqV(.fillRect(v4, 0);
@@ -3123,7 +3123,7 @@ for ($somevar in v2) {
       v1.4pw(b = function () {
         var v2 = 3Wt.9n6(*r.+9fc * *r.-Wa[);
         var v3 = 3Wt.9n6(*r.70fd * *r.-Wa[);
-        this.(pqV( = new flash.}ZF-m.BitmapData(v2, v3, true, 0);
+        this.(pqV( = new flash.display.BitmapData(v2, v3, true, 0);
         var v4 = this.32.18wU*(44{N.7j3H1);
         v4._x = *r.85(;
         v4._y = *r.95(;

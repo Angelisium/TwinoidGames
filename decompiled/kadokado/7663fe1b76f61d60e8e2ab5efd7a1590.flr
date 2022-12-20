@@ -99,7 +99,7 @@ for ($somevar in v2) {
         v1[enumerate v2] = v2[enumerate v2];
       }
       v1 = new Object();
-      flash.}ZF-m = v1;
+      flash.display = v1;
       v2 = _global.flash.display;
       // Loop counter not found
 for ($somevar in v2) {
@@ -189,7 +189,7 @@ for ($somevar in v2) {
       )p]RG = function () {
         this.-iB= = 44{N.(K.32.18wU*(44{N.}G{4));
         this.32 = new 9K.+7U K(this.-iB=);
-        this.9I* = new flash.}ZF-m.BitmapData(*r.=OA, *r.*OA, true, 0);
+        this.9I* = new flash.display.BitmapData(*r.=OA, *r.*OA, true, 0);
         this.}CL = this.32.18wU*(10);
         this.}CL.attachBitmap(this.9I*, 1);
         this.1U;0 = new flash.3[4k{.GlowFilter();
@@ -2198,7 +2198,7 @@ for ($somevar in v2) {
           return undefined;
         }
         if (this.*Vq7F( == null) {
-          this.*Vq7F( = new flash.}ZF-m.BitmapData(*r.+9fc, *r.70fd, false, 0);
+          this.*Vq7F( = new flash.display.BitmapData(*r.+9fc, *r.70fd, false, 0);
           var v3 = this.32.18wU*(44{N.4MvcB);
           v3.attachBitmap(this.*Vq7F(, 0);
           v3.blendMode = 'add';

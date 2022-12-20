@@ -635,7 +635,7 @@ movie '666f9231a47b9f41ee36d099630631ce.swf' {
       };
 
       v1.},[Jf = null;
-      v1.}ZF-m = function () {
+      v1.display = function () {
         if (this.-iB= != null) {
           this.-iB=.removeMovieClip();
         }
@@ -662,7 +662,7 @@ movie '666f9231a47b9f41ee36d099630631ce.swf' {
       v1.floor = null;
       v1.6o_Q+ = function () {
         this.)joMK = true;
-        this.}ZF-m();
+        this.display();
       };
 
       v1.+ABUU = function (arg0) {
@@ -818,7 +818,7 @@ movie '666f9231a47b9f41ee36d099630631ce.swf' {
         var v4 = this.floor.;AH0[this.]X.(( + v3[0]][this.]X.)( + v3[1]];
         this.5tRcA((v4);
         if (arg0 == 1) {
-          this.}ZF-m();
+          this.display();
           this.-iB=._y -= *r.-s;
         }
         if (this.(0Zw4(() <= 44{N.(K.+8k=-) {
@@ -855,7 +855,7 @@ movie '666f9231a47b9f41ee36d099630631ce.swf' {
         }
         this.+}B(.gotoAndStop(v6);
         if (arg1 == 1) {
-          this.}ZF-m();
+          this.display();
           this.(( = [this.]X.((];
           this.)( = [this.]X.)(];
           this.(8xOI((null);
@@ -946,7 +946,7 @@ for ($somevar in v2) {
         v1[enumerate v2] = v2[enumerate v2];
       }
       v1 = new Object();
-      flash.}ZF-m = v1;
+      flash.display = v1;
       v2 = _global.flash.display;
       // Loop counter not found
 for ($somevar in v2) {
@@ -1101,7 +1101,7 @@ for ($somevar in v2) {
           }
           v5 = v4[3Wt.random(v4.length)];
           v3.(j;o7(v5.((, v5.)();
-          v3.}ZF-m();
+          v3.display();
           44{N.(K.)b+.58rO6(v3);
           this.9T54();
           v5.5,kPP();
@@ -2118,8 +2118,8 @@ for ($somevar in v2) {
         }
       };
 
-      v1.}ZF-m = function () {
-        super.}ZF-m();
+      v1.display = function () {
+        super.display();
         this.=S7A.stop();
         this.{hzh3();
       };
@@ -2327,7 +2327,7 @@ for ($somevar in v2) {
           var v15 = v6.getBounds(v6);
           if (v15.yMin < 0) {
             var v16 = Math.ceil(-v15.yMin);
-            this.text = new flash.}ZF-m.BitmapData(*r.-s, v16 + 15, true, 0);
+            this.text = new flash.display.BitmapData(*r.-s, v16 + 15, true, 0);
             var v17 = new flash.0000.Matrix();
             v17.translate(0, v16);
             this.text.draw(v6, v17);
@@ -2992,7 +2992,7 @@ for ($somevar in v2) {
         this.-iJ = 0.035;
         this.3mF+D = 44{N.(K.32.18wU*(44{N.-Ovp3);
         this.32 = new 9K.+7U K(this.3mF+D);
-        this.9I* = new flash.}ZF-m.BitmapData(*r.=OA, *r.*OA, true, 0);
+        this.9I* = new flash.display.BitmapData(*r.=OA, *r.*OA, true, 0);
         this.5}Xj1 = this.32.18wU*(1);
         this.6I- = new 9K.+7U K(this.5}Xj1);
         (this.6I-.18wU*(0)).attachBitmap(this.9I*, 0);
@@ -3622,7 +3622,7 @@ for ($somevar in v2) {
         this.{[w{T = true;
         this.2Fw9{ =  RGsK.}ga)K(0.7);
         this.]X.[tfcE();
-        this.}ZF-m();
+        this.display();
       };
 
       v1.5u}zT = function (arg0) {
@@ -4202,7 +4202,7 @@ for ($somevar in arg0) {
         while (v3 < v4.length) {
           var v5 = v4[v3];
           ++v3;
-          v5.}ZF-m();
+          v5.display();
         }
         this.1]51();
       };
@@ -4232,7 +4232,7 @@ for ($somevar in arg0) {
 
       v1.32 = null;
       v1.5JH+ = function () {
-        this.5(,lT = new flash.}ZF-m.BitmapData(*r.+9fc * *r.-s, *r.70fd * *r.-s, false, *r.3 ]RZ);
+        this.5(,lT = new flash.display.BitmapData(*r.+9fc * *r.-s, *r.70fd * *r.-s, false, *r.3 ]RZ);
         var v2 = this.32.18wU*(*Sr[C.(h4SU);
         v2.attachBitmap(this.5(,lT, 0);
         this.4C=Z( = this.32.*=_p_('mcSquare', 0);
@@ -4761,7 +4761,7 @@ for ($somevar in v2) {
             var v3 = this.]-LJX.pop();
             v3.5u}zT(this.)b+);
             v3.(j;o7(this.4,[0], this.5,[0]);
-            v3.}ZF-m();
+            v3.display();
           }
         }
         this.0=;u = false;
@@ -4986,7 +4986,7 @@ for ($somevar in v2) {
         var v4 = new 1r0.[eW(arg0);
         v4.5u}zT(this.)b+);
         v4.(j;o7(arg1.(([0], arg1.)([0]);
-        v4.}ZF-m();
+        v4.display();
         arg1. ,5H+(16755200);
         arg1. ,5H+(16711680);
       };
@@ -4999,7 +4999,7 @@ for ($somevar in v2) {
         this.4,01.(j;o7(this.4,01.(([0], this.4,01.)([0]);
         this.4, = [this.4,01.(([0]];
         this.5, = [this.4,01.)([0]];
-        this.4,01.}ZF-m();
+        this.4,01.display();
         this.)b+.58rO6(this.4,01);
       };
 
@@ -5192,7 +5192,7 @@ for ($somevar in v2) {
         }
         this.--Z6I = [arg0];
         this.4,01.[+*qB(();
-        this.4,01.}ZF-m();
+        this.4,01.display();
       };
 
       v1. BFI4 = function (arg0) {
@@ -5208,7 +5208,7 @@ for ($somevar in v2) {
         }
         this.-hA} ( = [arg0];
         this.4,01.[+*qB(();
-        this.4,01.}ZF-m();
+        this.4,01.display();
       };
 
       v1.,cqp5 = function () {
@@ -5651,8 +5651,8 @@ for ($somevar in v2) {
       };
 
       9K.53kZ-(.}*X.__name__ = ['9K', '53kZ-(', '}*X'];
-      9K.53kZ-(.}*X.__super__ = flash.}ZF-m.BitmapData;
-      9K.53kZ-(.}*X extends flash.}ZF-m.BitmapData;
+      9K.53kZ-(.}*X.__super__ = flash.display.BitmapData;
+      9K.53kZ-(.}*X extends flash.display.BitmapData;
       v1 = 9K.53kZ-(.}*X.prototype;
       v1.__class__ = 9K.53kZ-(.}*X;
       v1.+Hp() = null;

@@ -213,7 +213,7 @@ movie 'viewer.swf' {
       }
       v4 = 3Wt.9n6(arg0._width);
       v5 = 3Wt.9n6(arg0._height);
-      v6 = new flash.}ZF-m.BitmapData(v4, v5, false, 16777215);
+      v6 = new flash.display.BitmapData(v4, v5, false, 16777215);
       v6.draw(arg0);
       arg0.removeMovieClip();
       3Lkxu.[+U0q = new Array();
@@ -238,7 +238,7 @@ movie 'viewer.swf' {
 
     v1.__class__.6]3(A( = function (arg0) {
       var v3 = 3Wt.,Iq1+((arg0.-W0EI.text);
-      var v4 = new flash.}ZF-m.BitmapData(10 * v3, 10, false, 16777215);
+      var v4 = new flash.display.BitmapData(10 * v3, 10, false, 16777215);
       v4.draw(arg0);
       3Lkxu.2CT4)( = new Array();
       var v5 = 0;
@@ -340,7 +340,7 @@ movie 'viewer.swf' {
       return this.(9;LL != v2;
     };
 
-    v1.}ZF-m = function () {
+    v1.display = function () {
       var v2 = this.6MQB;
       var v3 = v2[1];
       switch (v3) {
@@ -398,7 +398,7 @@ movie 'viewer.swf' {
       this.)cZ_0._x = -1000;
       this.)cZ_0._y = 0;
       this.)cZ_0._visible = false;
-      var v6 = new flash.}ZF-m.BitmapData(*r.*N)9L(, *r.=N)9L(, true, 0);
+      var v6 = new flash.display.BitmapData(*r.*N)9L(, *r.=N)9L(, true, 0);
       this.2eMBM = this.32.18wU*(*r.-f6FB);
       this.2eMBM._x = arg0 - *r.*N)9L( / 2;
       this.2eMBM._y = arg1 - *r.=N)9L(;
@@ -434,7 +434,7 @@ movie 'viewer.swf' {
             }
           }
           (K.38peO = true;
-          (K.}ZF-m();
+          (K.display();
           if ((K.6MQB == ,[tn4(.6rLCM) {
             (K.3 ZFP();
           }
@@ -532,12 +532,12 @@ movie 'viewer.swf' {
             this.)cZ_0._alpha += 10;
           }
           if (this.38peO && !this.4wOwP) {
-            this.}ZF-m();
+            this.display();
           }
           break;
         case 1:
           if (this.38peO && !this.4wOwP) {
-            this.}ZF-m();
+            this.display();
           }
           if (this.38peO && this.4wOwP) {
             if (!this.9oOcD) {
@@ -2757,7 +2757,7 @@ for ($somevar in v2) {
       v1[enumerate v2] = v2[enumerate v2];
     }
     v1 = new Object();
-    flash.}ZF-m = v1;
+    flash.display = v1;
     v2 = _global.flash.display;
     // Loop counter not found
 for ($somevar in v2) {

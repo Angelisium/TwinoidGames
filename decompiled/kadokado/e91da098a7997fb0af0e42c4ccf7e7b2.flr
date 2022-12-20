@@ -106,7 +106,7 @@ for ($somevar in v2) {
         v1[enumerate v2] = v2[enumerate v2];
       }
       v1 = new Object();
-      flash.}ZF-m = v1;
+      flash.display = v1;
       v2 = _global.flash.display;
       // Loop counter not found
 for ($somevar in v2) {
@@ -2127,7 +2127,7 @@ for ($somevar in v2) {
         while (v4 < v5.length) {
           v6 = v5[v4];
           ++v4;
-          v6.}ZF-m(v6.5R, v6.6R);
+          v6.display(v6.5R, v6.6R);
         }
       };
 
@@ -2466,7 +2466,7 @@ for ($somevar in v2) {
         v2 = this.9ABE.iterator();
         while (v2.1ll a()) {
           v3 = v2.7Y-7();
-          v3.}ZF-m(v3.5R, v3.6R - this.}2D*);
+          v3.display(v3.5R, v3.6R - this.}2D*);
         }
         if (this.9ABE.length == 0) {
           this.(GmgN();
@@ -2500,7 +2500,7 @@ for ($somevar in v2) {
           var v3 = v2;
           var v4 = *r.*e[[v3];
           var v5 = this.9ABE[v3];
-          v5.}ZF-m(v5.5R + v4[0] * this.}2D*, v5.6R + v4[1] * this.}2D*);
+          v5.display(v5.5R + v4[0] * this.}2D*, v5.6R + v4[1] * this.}2D*);
           if (this.}2D* == 1) {
             v5.(j;o7(v5.5R + v4[0], v5.6R + v4[1]);
           }
@@ -2611,7 +2611,7 @@ for ($somevar in v2) {
       v1 = 2e{I.prototype;
       v1.__class__ = 2e{I;
       v1.*J}8) = null;
-      v1.}ZF-m = function (arg0, arg1) {
+      v1.display = function (arg0, arg1) {
         this.-iB=._x = *r.85( + arg0 * *r.-s;
         this.-iB=._y = *r.*OA - (*r.95( + arg1 * *r.-s);
         this.9lBrL._x = this.-iB=._x + 5;
@@ -2718,7 +2718,7 @@ for ($somevar in v2) {
         this.5R = arg0;
         this.6R = arg1;
         this.6f_Ry();
-        this.}ZF-m(this.5R, this.6R);
+        this.display(this.5R, this.6R);
       };
 
       v1.+Lmba = function (arg0) {

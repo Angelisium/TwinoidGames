@@ -315,7 +315,7 @@ for ($somevar in v2) {
       v1[enumerate v2] = v2[enumerate v2];
     }
     v1 = new Object();
-    flash.}ZF-m = v1;
+    flash.display = v1;
     v2 = _global.flash.display;
     // Loop counter not found
 for ($somevar in v2) {
@@ -664,7 +664,7 @@ for ($somevar in v2) {
       this.)mQw+._y = this.8;cxI();
       this.)mQw+.smc.gotoAndStop(1);
       this.-Mw39();
-      ]6=8H(('}ZF-m', this);
+      ]6=8H(('display', this);
     };
 
     +V+K.__name__ = ['+V+K'];
@@ -759,7 +759,7 @@ for ($somevar in v2) {
     };
 
     v1.4rER- = null;
-    v1.}ZF-m = function () {
+    v1.display = function () {
       if (this.} fcO) {
         return undefined;
       }
@@ -1232,7 +1232,7 @@ for ($somevar in v2) {
       this.2uAcM = this.32.*=_p_('trees', =(,aA.+2+bb);
       this.2uAcM.cacheAsBitmap = true;
       this.2uAcM.gotoAndStop(this.8lpZD();
-      this.856=F( = new flash.}ZF-m.BitmapData(=(,aA.[MqDO, =(,aA.[MqDO, true, 4095);
+      this.856=F( = new flash.display.BitmapData(=(,aA.[MqDO, =(,aA.[MqDO, true, 4095);
       this.]TP8q = this.32.18wU*(=(,aA.1TsWo);
       this.]TP8q.attachBitmap(this.856=F(, =(,aA.1TsWo);
       this.=zw9C = this.32.*=_p_('fall', =(,aA.=SfXp);
@@ -1389,7 +1389,7 @@ for ($somevar in v2) {
           }
           var v12 = this.;AH0[v5][v8 - 1];
           var v13 = this.;AH0[v5 - 1][v8];
-          v9.}ZF-m();
+          v9.display();
           if (!v9.*0FF-(()) {
             continue;
           }
@@ -1626,7 +1626,7 @@ for ($somevar in v2) {
               var v16 = new +V+K(this, v10, v13, v14, v15);
               this.;AH0[v10][v13] = v16;
               this. QiB8( += v16.}C]J (();
-              v16.}ZF-m();
+              v16.display();
             }
           }
           break;

@@ -782,7 +782,7 @@ for ($somevar in v2) {
       v1[enumerate v2] = v2[enumerate v2];
     }
     v1 = new Object();
-    flash.}ZF-m = v1;
+    flash.display = v1;
     v2 = _global.flash.display;
     // Loop counter not found
 for ($somevar in v2) {
@@ -2155,7 +2155,7 @@ for ($somevar in arg0) {
     v1. D[hF = null;
     v1.6p5aQ = null;
     v1.2X g-( = function (arg0) {
-      var v3 = new flash.}ZF-m.BitmapData(*r.=OA, *r.*OA, false, 4473924);
+      var v3 = new flash.display.BitmapData(*r.=OA, *r.*OA, false, 4473924);
       this.32.;_dAm(v3, 44{N.4z(X2);
       var v4 = 0;
       var v5 = 0;
@@ -2237,7 +2237,7 @@ for ($somevar in arg0) {
     v1.;kvZH = null;
     v1.}x*A5( = null;
     v1.=0n=3 = function () {
-      this.641C(( = new flash.}ZF-m.BitmapData(*r.4u_[, *r.4u_[, false, 0);
+      this.641C(( = new flash.display.BitmapData(*r.4u_[, *r.4u_[, false, 0);
       this.9(c6b();
       this.(+vo5 = [];
       var v2 = 0;
@@ -2266,7 +2266,7 @@ for ($somevar in arg0) {
           this.(+vo5[v6][v7] = this.}O,A.*s};();
         }
       }
-      this.*_w{E( = new flash.}ZF-m.BitmapData(*r.4u_[, *r.4u_[, false, 0);
+      this.*_w{E( = new flash.display.BitmapData(*r.4u_[, *r.4u_[, false, 0);
       v3 = 35;
       v4 = this.32.*=_p_('brushWood', 0);
       v5 = 0;
@@ -2629,7 +2629,7 @@ for ($somevar in arg0) {
         while (v13 < v14) {
           var v15 = v13;
           ++v13;
-          this.6p5aQ[v12][v15] = new flash.}ZF-m.BitmapData(v7, v7, true, 0);
+          this.6p5aQ[v12][v15] = new flash.display.BitmapData(v7, v7, true, 0);
         }
       }
     };
@@ -2989,7 +2989,7 @@ for ($somevar in arg0) {
           var v11 = v7.getBounds(v7);
           var v12 = Math.ceil(v2._width);
           var v13 = Math.ceil(v2._height);
-          var v14 = new flash.}ZF-m.BitmapData(v12, v13, true, 16777215);
+          var v14 = new flash.display.BitmapData(v12, v13, true, 16777215);
           var v15 = Math.floor(v11.xMin);
           var v16 = Math.floor(v11.yMin);
           var v17 = new flash.0000.Matrix();

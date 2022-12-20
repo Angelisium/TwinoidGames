@@ -66,7 +66,7 @@ for ($somevar in v2) {
         v1[enumerate v2] = v2[enumerate v2];
       }
       v1 = new Object();
-      flash.}ZF-m = v1;
+      flash.display = v1;
       v2 = _global.flash.display;
       // Loop counter not found
 for ($somevar in v2) {
@@ -1512,7 +1512,7 @@ for ($somevar in v2) {
             }
             v4.*63vl();
             v4.=;0gT(this. ,);
-            v4.}ZF-m(v4.(( - this.((, v4.)( - this.)();
+            v4.display(v4.(( - this.((, v4.)( - this.)();
           }
           v2 = this. ,.7LxWY(function (arg0, arg1) {
             return arg0.*B == arg1.*B;
@@ -1806,7 +1806,7 @@ for ($somevar in v2) {
         v5.]b = Math.sin(v3) * v4;
         this.-iB=._rotation = (Math.random() * 2 - 1) * 9;
         var v6 = 300;
-        var v7 = new flash.}ZF-m.BitmapData(v6, v6, true, 0);
+        var v7 = new flash.display.BitmapData(v6, v6, true, 0);
         var v8 = new flash.0000.Matrix();
         v8.translate(v6 * 0.5, v6 * 0.5);
         v7.draw(this.-iB=, v8);
@@ -1839,7 +1839,7 @@ for ($somevar in v2) {
           738J.-7ftN[v6] = true;
           this.8T47D( = v6;
         }
-        this.}ZF-m(arg0, arg1);
+        this.display(arg0, arg1);
       };
 
       738J.__name__ = ['738J'];
@@ -1885,7 +1885,7 @@ for ($somevar in v2) {
         this.-iB=.removeMovieClip();
       };
 
-      v1.}ZF-m = function (arg0, arg1) {
+      v1.display = function (arg0, arg1) {
         this.-iB= = this. ,.32.*=_p_('mcBloc', 0);
         this.-iB=.gotoAndStop(this.*B + 1);
         this.32 = new 9K.+7U K(this.-iB=);

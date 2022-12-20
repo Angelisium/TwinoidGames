@@ -118,7 +118,7 @@ for ($somevar in v2) {
         v1[enumerate v2] = v2[enumerate v2];
       }
       v1 = new Object();
-      flash.}ZF-m = v1;
+      flash.display = v1;
       v2 = _global.flash.display;
       // Loop counter not found
 for ($somevar in v2) {
@@ -2095,8 +2095,8 @@ for ($somevar in v2) {
       };
 
       9K.53kZ-(.}*X.__name__ = ['9K', '53kZ-(', '}*X'];
-      9K.53kZ-(.}*X.__super__ = flash.}ZF-m.BitmapData;
-      9K.53kZ-(.}*X extends flash.}ZF-m.BitmapData;
+      9K.53kZ-(.}*X.__super__ = flash.display.BitmapData;
+      9K.53kZ-(.}*X extends flash.display.BitmapData;
       v1 = 9K.53kZ-(.}*X.prototype;
       v1.__class__ = 9K.53kZ-(.}*X;
       v1.+Hp() = null;
@@ -2328,7 +2328,7 @@ for ($somevar in v2) {
 
       v1.(HbIJ( = function () {
         this.;+ = this.32.18wU*(44{N.4MvcB);
-        var v2 = new flash.}ZF-m.BitmapData(*r.=OA, *r.*OA, false, 0);
+        var v2 = new flash.display.BitmapData(*r.=OA, *r.*OA, false, 0);
         this.;+.attachBitmap(v2, 0);
         var v3 = this.32.*=_p_('mcBg', 0);
         v2.draw(v3);
@@ -2352,7 +2352,7 @@ for ($somevar in v2) {
       v1.-zx=g = function () {
         this.0H2tM = this.32.*=_p_('queueMissile', 44{N.(h4SU);
         this.0H2tM._visible = false;
-        this.28PHg = new flash.}ZF-m.BitmapData(*r.=OA, 44{N.8{, true, 0);
+        this.28PHg = new flash.display.BitmapData(*r.=OA, 44{N.8{, true, 0);
         var v2 = this.32.18wU*(44{N.(h4SU);
         var v3 = new 9K.+7U K(v2);
         v2._y = 44{N.2};

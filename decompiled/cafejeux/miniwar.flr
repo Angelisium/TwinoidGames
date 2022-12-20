@@ -482,7 +482,7 @@ for ($somevar in v2) {
       v1[enumerate v2] = v2[enumerate v2];
     }
     v1 = new Object();
-    flash.}ZF-m = v1;
+    flash.display = v1;
     v2 = _global.flash.display;
     // Loop counter not found
 for ($somevar in v2) {
@@ -3971,7 +3971,7 @@ for ($somevar in v2) {
       this.37cRH( = v5.}FGV8;
       this.7WC+N = v5.9Cw4q;
       this.]RLMi = v5.6MQB;
-      this.]bJiA = new flash.}ZF-m.BitmapData(this.37cRH(, this.7WC+N, true, 0);
+      this.]bJiA = new flash.display.BitmapData(this.37cRH(, this.7WC+N, true, 0);
       v6 = this.32.*=_p_('mcLevel', 0);
       v6.gotoAndStop(arg0 + 1);
       this.]bJiA.draw(v6, new flash.0000.Matrix());
@@ -3981,7 +3981,7 @@ for ($somevar in v2) {
       (this.4{;.18wU*(1)).attachBitmap(this.]bJiA, 0);
       9K.53kZ-(.+43N.1U;0(v7, 2, 2, 0);
       this.{sl3G = {']bJiA': this.]bJiA.clone()};
-      this.-m]p{ = new flash.}ZF-m.BitmapData(this.37cRH(, this.7WC+N, true, 0);
+      this.-m]p{ = new flash.display.BitmapData(this.37cRH(, this.7WC+N, true, 0);
       var v8 = this.32.*=_p_('mcGlue', 0);
       v8.gotoAndStop(arg0 + 1);
       this.-m]p{.draw(v8, new flash.0000.Matrix());

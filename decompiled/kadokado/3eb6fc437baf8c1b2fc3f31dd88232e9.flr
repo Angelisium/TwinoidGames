@@ -105,7 +105,7 @@ for ($somevar in v2) {
         v1[enumerate v2] = v2[enumerate v2];
       }
       v1 = new Object();
-      flash.}ZF-m = v1;
+      flash.display = v1;
       v2 = _global.flash.display;
       // Loop counter not found
 for ($somevar in v2) {
@@ -1699,7 +1699,7 @@ for ($somevar in v2) {
       };
 
       v1. [{WO = null;
-      v1.}ZF-m = function () {
+      v1.display = function () {
         this.}J._visible = true;
       };
 
@@ -2383,8 +2383,8 @@ for ($somevar in v2) {
       };
 
       9K.53kZ-(.}*X.__name__ = ['9K', '53kZ-(', '}*X'];
-      9K.53kZ-(.}*X.__super__ = flash.}ZF-m.BitmapData;
-      9K.53kZ-(.}*X extends flash.}ZF-m.BitmapData;
+      9K.53kZ-(.}*X.__super__ = flash.display.BitmapData;
+      9K.53kZ-(.}*X extends flash.display.BitmapData;
       v1 = 9K.53kZ-(.}*X.prototype;
       v1.__class__ = 9K.53kZ-(.}*X;
       v1.+Hp() = null;
@@ -2974,7 +2974,7 @@ for ($somevar in v2) {
             continue;
           }
           v4.4e{0_ = true;
-          v4.}ZF-m();
+          v4.display();
           var v5 = new ;vUHR(v4);
           v5.7iP=3 = ]6=8H(('0m6L)', v4);
           this.+}B(.push(v5);

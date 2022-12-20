@@ -54,7 +54,7 @@ for ($somevar in v2) {
       v1[enumerate v2] = v2[enumerate v2];
     }
     v1 = new Object();
-    flash.}ZF-m = v1;
+    flash.display = v1;
     v2 = _global.flash.display;
     // Loop counter not found
 for ($somevar in v2) {
@@ -3813,7 +3813,7 @@ for ($somevar in this.1) {
           continue;
         }
         this.6E=Z(._init.apply(this.6E=Z(, [v5._gfx]);
-        var v6 = new flash.}ZF-m.BitmapData(100, 160, true, 0);
+        var v6 = new flash.display.BitmapData(100, 160, true, 0);
         v6.draw(this.6E=Z();
         this.8oCe+(.7NJ(v5._gfx, v6);
         if (--v2 == 0) {

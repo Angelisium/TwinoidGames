@@ -260,7 +260,7 @@ for ($somevar in v2) {
       v1[enumerate v2] = v2[enumerate v2];
     }
     v1 = new Object();
-    flash.}ZF-m = v1;
+    flash.display = v1;
     v2 = _global.flash.display;
     // Loop counter not found
 for ($somevar in v2) {
@@ -285,7 +285,7 @@ for ($somevar in v2) {
     v1.__class__ = 9)DM2;
     v1.6x9p = null;
     v1.+y2a0( = null;
-    v1.}ZF-m = function () {
+    v1.display = function () {
       if (this.2Gr]U) {
         return undefined;
       }
@@ -398,7 +398,7 @@ for ($somevar in v2) {
             } else {
               this.5R += v9;
               this.0P -= v9 * *r.-Wa[;
-              this.}ZF-m();
+              this.display();
             }
           }
           if (v10 != null) {
@@ -410,7 +410,7 @@ for ($somevar in v2) {
             } else {
               this.6R += v10;
               this.1P -= v10 * *r.-Wa[;
-              this.}ZF-m();
+              this.display();
             }
           }
         }
@@ -451,9 +451,9 @@ for ($somevar in v2) {
     74.*DzW extends 9)DM2;
     v1 = 74.*DzW.prototype;
     v1.__class__ = 74.*DzW;
-    v1.}ZF-m = function () {
+    v1.display = function () {
       var v3 = this.-iB=._rotation;
-      super.}ZF-m();
+      super.display();
       this.-iB=.gotoAndStop(5);
       this.-iB=.smc.gotoAndStop(this.)9E_l);
       this.-iB=._rotation = v3;
@@ -949,7 +949,7 @@ for ($somevar in v2) {
       this.*B = 44{N.(K.+[5u5.length;
       44{N.(K.+[5u5.push(this);
       this.,D 7 = 44{N.(K.8u,1a(this.5q6i);
-      this.}ZF-m();
+      this.display();
       this.87vE7(();
     };
 
@@ -1050,7 +1050,7 @@ for ($somevar in v2) {
         v6.(KpGn = 0.2 + Math.random() * 0.3;
         v6.4]xy = true;
         v6.6b = (Math.random() * 2 - 1) * 24;
-        v6.}ZF-m();
+        v6.display();
         v6.]Qi__(6);
         v6.-iB=._rotation = Math.random() * 360;
         v6.-iB=._x = v6.0P;
@@ -1598,7 +1598,7 @@ for ($somevar in v2) {
       }
       super(arg0, arg1);
       this.6MQB = *r.]baBA;
-      this.}ZF-m();
+      this.display();
       this.87vE7(();
     };
 
@@ -1633,7 +1633,7 @@ for ($somevar in v2) {
         v7.4]xy = true;
         v7.3BjX_(50 + Math.random() * 60);
         v7.6b = (Math.random() * 2 - 1) * 24;
-        v7.}ZF-m();
+        v7.display();
         v7.]Qi__(10 * (v7.5DZk5 / 100));
         v7.-iB=._rotation = Math.random() * 360;
         v7.-iB=._x = v7.0P;
@@ -1877,7 +1877,7 @@ for ($somevar in v2) {
       var v7 = *r.*e[[this.6g,A];
       this.[b = v7[0] * 74.)KdMx.[c4gL;
       this.]b = v7[1] * 74.)KdMx.[c4gL;
-      this.}ZF-m();
+      this.display();
     };
 
     74.)KdMx.__name__ = ['74', ')KdMx'];
@@ -1954,7 +1954,7 @@ for ($somevar in v2) {
                 v11.)9E_l = 5;
                 v11.=utrs = 1;
                 v11.+{eA+ = 0.98;
-                v11.}ZF-m();
+                v11.display();
                 v11.1Wq9n();
               }
               this.9T54();
@@ -2587,7 +2587,7 @@ for ($somevar in v2) {
         v4.6R = 3;
         v4.[b = Math.cos(v3) * v2;
         v4.]b = Math.sin(v3) * v2;
-        v4.}ZF-m();
+        v4.display();
       }
     };
 

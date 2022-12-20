@@ -247,7 +247,7 @@ for ($somevar in v2) {
         v1[enumerate v2] = v2[enumerate v2];
       }
       v1 = new Object();
-      flash.}ZF-m = v1;
+      flash.display = v1;
       v2 = _global.flash.display;
       // Loop counter not found
 for ($somevar in v2) {
@@ -2522,7 +2522,7 @@ for ($somevar in arg0) {
           while (v10 < v4) {
             ++v10;
             var v11 = v10;
-            var v12 = new flash.}ZF-m.BitmapData(*r.;[H) * 2, *r.;[H) * 2, true, 0);
+            var v12 = new flash.display.BitmapData(*r.;[H) * 2, *r.;[H) * 2, true, 0);
             v2.smc._x = (v11 / v4) * v5 - 60;
             v12.draw(v2, v6);
             this.9zm 0([v9][v11] = v12;
@@ -2704,7 +2704,7 @@ for ($somevar in arg0) {
         44{N.(K.-]-I(.push(this);
         this.-iB= = 44{N.(K.70*.*=_p_('mcBall2', 44{N.86Itb);
         var v3 = (new 9K.+7U K(this.-iB=.smc)).18wU*(0);
-        this.9I* = new flash.}ZF-m.BitmapData(*r.;[H) * 2, *r.;[H) * 2, true, 0);
+        this.9I* = new flash.display.BitmapData(*r.;[H) * 2, *r.;[H) * 2, true, 0);
         v3.attachBitmap(this.9I*, 0);
         v3._x = -*r.;[H);
         v3._y = -*r.;[H);
