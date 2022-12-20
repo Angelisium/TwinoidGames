@@ -1204,7 +1204,7 @@ movie '058a881c5c7b9e12c708e6596b27ec26.swf' {
         var ( = new Array();
         3Wt.9ss9+(}J, function (4) {
           var v3 = }J[4];
-          if (3Wt.)goHJ((v3) == 'movieclip' && v3._parent == }J) {
+          if (3Wt._typeof(v3) == 'movieclip' && v3._parent == }J) {
             (.push(v3);
           }
         });

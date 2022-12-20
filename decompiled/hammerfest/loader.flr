@@ -138,7 +138,7 @@ movie 'loader.swf' {
         var ( = new Array();
         3Wt.9ss9+(}J, function (4) {
           var v3 = }J[4];
-          if (3Wt.)goHJ((v3) == 'movieclip' && v3._parent == }J) {
+          if (3Wt._typeof(v3) == 'movieclip' && v3._parent == }J) {
             (.push(v3);
           }
         });
@@ -13231,7 +13231,7 @@ movie 'loader.swf' {
             this.95O)C((*hr_A.,Gmip.charAt(2));
             this.]S-Di(8);
           } else {
-            switch (3Wt.)goHJ((8)) {
+            switch (3Wt._typeof(8)) {
               case 'string':
                 this.95O)C((*hr_A.,Gmip.charAt(3));
                 this.95O)C((8);
@@ -18104,7 +18104,7 @@ movie 'loader.swf' {
       };
 
       v1.[ w3] = function (4, +) {
-        if (3Wt.)goHJ((+) != 'function' && + != null) {
+        if (3Wt._typeof(+) != 'function' && + != null) {
           if (this.;vh = && 4.charAt(0) == '$') {
             4 = 4.substring(1);
           }
@@ -18308,7 +18308,7 @@ movie 'loader.swf' {
           this.3X3[b(8);
           return true;
         }
-        switch (3Wt.)goHJ((8)) {
+        switch (3Wt._typeof(8)) {
           case 'string':
             this.pou.+jMb8(4, 14);
             this.*6rfZ(8);
@@ -25408,7 +25408,7 @@ movie 'loader.swf' {
                 return getTimer();
               };
 
-              this.3Wt.)goHJ( = function (8) {
+              this.3Wt._typeof = function (8) {
                 return typeof 8;
               };
 

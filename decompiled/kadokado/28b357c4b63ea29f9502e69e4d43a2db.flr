@@ -279,7 +279,7 @@ movie '28b357c4b63ea29f9502e69e4d43a2db.swf' {
         var ( = new Array();
         3Wt.9ss9+(}J, function (4) {
           var v3 = }J[4];
-          if (3Wt.)goHJ((v3) == 'movieclip' && v3._parent == }J) {
+          if (3Wt._typeof(v3) == 'movieclip' && v3._parent == }J) {
             (.push(v3);
           }
         });

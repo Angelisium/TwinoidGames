@@ -1260,7 +1260,7 @@ movie '5e3f3dfb6d7004ac9d0334b5a3a9ff8b.swf' {
         var ( = new Array();
         3Wt.9ss9+(}J, function (4) {
           var v3 = }J[4];
-          if (3Wt.)goHJ((v3) == 'movieclip' && v3._parent == }J) {
+          if (3Wt._typeof(v3) == 'movieclip' && v3._parent == }J) {
             (.push(v3);
           }
         });

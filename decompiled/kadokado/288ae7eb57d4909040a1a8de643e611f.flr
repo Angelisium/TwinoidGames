@@ -576,7 +576,7 @@ movie '288ae7eb57d4909040a1a8de643e611f.swf' {
         var ( = new Array();
         3Wt.9ss9+(}J, function (4) {
           var v3 = }J[4];
-          if (3Wt.)goHJ((v3) == 'movieclip' && v3._parent == }J) {
+          if (3Wt._typeof(v3) == 'movieclip' && v3._parent == }J) {
             (.push(v3);
           }
         });

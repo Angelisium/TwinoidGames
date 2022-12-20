@@ -416,7 +416,7 @@ movie 'loader.swf' {
             this.95O)C((*hr_A.,Gmip.charAt(2));
             this.]S-Di(8);
           } else {
-            switch (3Wt.)goHJ((8)) {
+            switch (3Wt._typeof(8)) {
               case 'string':
                 this.95O)C((*hr_A.,Gmip.charAt(3));
                 this.95O)C((8);
@@ -738,7 +738,7 @@ movie 'loader.swf' {
                 return getTimer();
               };
 
-              this.3Wt.)goHJ( = function (8) {
+              this.3Wt._typeof = function (8) {
                 return typeof 8;
               };
 
