@@ -561,7 +561,7 @@ movie '2f363a3dc669589001dde4a996872ef8.swf' {
         }
         switch (this.8]X}5) {
           case 44{N.4-ZS3(:
-            this.9O*r = Math.atan2(3Wt.8p1P5() - this.7)3A.)(, 3Wt.xmouse() - this.7)3A.(();
+            this.9O*r = Math.atan2(3Wt.ymouse() - this.7)3A.)(, 3Wt.xmouse() - this.7)3A.(();
             var v6 = this.9O*r - (this.7)3A.}J._rotation / 180) * Math.PI;
             while (v6 > Math.PI) {
               v6 -= 2 * Math.PI;
