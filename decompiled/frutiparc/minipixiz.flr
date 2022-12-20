@@ -1718,7 +1718,7 @@ movie 'minipixiz.swf' {
                 }
               };
 
-              this.]{i.(H5 S = function (*) {
+              this.]{i.setColor = function (*) {
                 if (!this.initdone) {
                   this.init();
                 }
@@ -3018,7 +3018,7 @@ movie 'minipixiz.swf' {
       }J.6Kg]D.(v+.setTransform(v7);
     };
 
-    73(.(H5 S = function (}J, (v+) {
+    73(.setColor = function (}J, (v+) {
       var v1 = }J;
       if (v1.6Kg]D == null) {
         73(.0yflg(v1);
@@ -3061,14 +3061,14 @@ movie 'minipixiz.swf' {
     73(.(Y;o7 = function (}J, =S7A) {
       var v1 = }J;
       v1.gotoAndStop(String(=S7A.1PC + 1));
-      73(.(H5 S(v1.-.9H, =S7A.6ID*);
-      73(.(H5 S(v1.-.;H, =S7A.6ID*);
-      73(.(H5 S(v1.-.=H, =S7A.6ID*);
-      73(.(H5 S(v1.-.6Q.9, =S7A.7ID*);
-      73(.(H5 S(v1.-.7Q.9, =S7A.7ID*);
-      73(.(H5 S(v1.-.;E+6), =S7A.7ID*);
-      73(.(H5 S(v1.-.0f, =S7A.8ID*);
-      73(.(H5 S(v1.-.1f, =S7A.8ID*);
+      73(.setColor(v1.-.9H, =S7A.6ID*);
+      73(.setColor(v1.-.;H, =S7A.6ID*);
+      73(.setColor(v1.-.=H, =S7A.6ID*);
+      73(.setColor(v1.-.6Q.9, =S7A.7ID*);
+      73(.setColor(v1.-.7Q.9, =S7A.7ID*);
+      73(.setColor(v1.-.;E+6), =S7A.7ID*);
+      73(.setColor(v1.-.0f, =S7A.8ID*);
+      73(.setColor(v1.-.1f, =S7A.8ID*);
     };
 
     73(.(mcVC( = function (}J, [QL,  () {
@@ -4526,7 +4526,7 @@ movie 'minipixiz.swf' {
 
     [X.9Q.7e mL.prototype.4(5}C = function () {
       if (this.+-(0.6a)p) {
-        ]{i.(H5 S(16777215);
+        ]{i.setColor(16777215);
         var v2 = this.]ua3b();
         if (v2.length > 0) {
           var v4 = Math.floor(Math.random() * v2.length / this.96.]P2))[*r.]e8}E]);
@@ -4582,18 +4582,18 @@ movie 'minipixiz.swf' {
     [X.9Q.7e mL.prototype.3U*}=( = function (}J) {
       [X.9jq+c.prototype.3U*}=(.call(this, }J);
       this.*;D) = this.32.*=_p_('}]pv-', [X.9jq+c.}D7cb);
-      this.(H5 S();
+      this.setColor();
       if (this.96.+nmA[*r.6S7v0(]) {
         this.*;D)._alpha = 40;
       }
     };
 
-    [X.9Q.7e mL.prototype.(H5 S = function () {
-      73(.(H5 S(this.*;D).*;D).9k,B.)a 4, this.96.=S7A.6ID*);
-      73(.(H5 S(this.*;D).*;D).{F19).6, this.96.=S7A.7ID*);
-      73(.(H5 S(this.*;D).*;D).(f*0M.6, this.96.=S7A.7ID*);
-      73(.(H5 S(this.*;D).0f. (, this.96.=S7A.8ID*);
-      73(.(H5 S(this.*;D).1f. (, this.96.=S7A.8ID*);
+    [X.9Q.7e mL.prototype.setColor = function () {
+      73(.setColor(this.*;D).*;D).9k,B.)a 4, this.96.=S7A.6ID*);
+      73(.setColor(this.*;D).*;D).{F19).6, this.96.=S7A.7ID*);
+      73(.setColor(this.*;D).*;D).(f*0M.6, this.96.=S7A.7ID*);
+      73(.setColor(this.*;D).0f. (, this.96.=S7A.8ID*);
+      73(.setColor(this.*;D).1f. (, this.96.=S7A.8ID*);
     };
 
     [X.9Q.7e mL.prototype.*({1A( = function () B2) {
@@ -4642,15 +4642,15 @@ movie 'minipixiz.swf' {
 
     [X.9Q.7e mL.prototype.,xCA = function () {
       [X.9jq+c.prototype.,xCA.call(this);
-      73(.(H5 S(this.*;D).9k,B.)a 4, this.96.=S7A.6ID*);
-      73(.(H5 S(this.*;D).*;D).(v+, this.96.=S7A.7ID*);
-      73(.(H5 S(this.*;D).0f. (, this.96.=S7A.8ID*);
-      73(.(H5 S(this.*;D).1f. (, this.96.=S7A.8ID*);
+      73(.setColor(this.*;D).9k,B.)a 4, this.96.=S7A.6ID*);
+      73(.setColor(this.*;D).*;D).(v+, this.96.=S7A.7ID*);
+      73(.setColor(this.*;D).0f. (, this.96.=S7A.8ID*);
+      73(.setColor(this.*;D).1f. (, this.96.=S7A.8ID*);
     };
 
     [X.9Q.7e mL.prototype.;Ek-d = function () {
       [X.9jq+c.prototype.;Ek-d.call(this);
-      this.(H5 S();
+      this.setColor();
     };
 
     [X.9Q.7e mL.prototype.1j]NX = function () {
@@ -4737,7 +4737,7 @@ movie 'minipixiz.swf' {
         v2.*lCo = true;
         v2.2VhU6 = 5 + Math.random() * 15;
         v2.init();
-        73(.(H5 S(v2.=S7A, this.96.=S7A.6ID*);
+        73(.setColor(v2.=S7A, this.96.=S7A.6ID*);
         73(.6oFnY(v2.=S7A, 1, 180);
       }
     };
@@ -5492,7 +5492,7 @@ movie 'minipixiz.swf' {
             v2.;T4D = 4 * (Math.random() * 2 - 1);
             v2.=T4D = -(1 + Math.random() * 2);
             var v4 = v2.=S7A.(v+;
-            73(.(H5 S(v4, *r.*B;6][this.[NuT)[v3]]);
+            73(.setColor(v4, *r.*B;6][this.[NuT)[v3]]);
             73(.6oFnY(v4, 1, 220);
             this.)gv94.push(v2);
             v2.init();
@@ -8311,7 +8311,7 @@ movie 'minipixiz.swf' {
               v2.5R -= v4;
               *r.+-(0.6f_Ry(v2);
             }
-            73(.(H5 S(v2.=S7A, 16777215);
+            73(.setColor(v2.=S7A, 16777215);
             73(.6oFnY(v2.=S7A, 1, 157 - this.]xii));
             ++v3;
           }
@@ -8603,11 +8603,11 @@ movie 'minipixiz.swf' {
       var v2 = this.*;D);
       var v3 = *r.;uwlO[this.=HU11][0];
       var v4 = *r.;uwlO[this.=HU11][1];
-      73(.(H5 S(v2.*;D).9k,B.(v+, v3);
-      73(.(H5 S(v2.*;D).{F19).(v+, v3);
-      73(.(H5 S(v2.*;D).(f*0M.(v+, v3);
-      73(.(H5 S(v2.0f. (, v4);
-      73(.(H5 S(v2.1f. (, v4);
+      73(.setColor(v2.*;D).9k,B.(v+, v3);
+      73(.setColor(v2.*;D).{F19).(v+, v3);
+      73(.setColor(v2.*;D).(f*0M.(v+, v3);
+      73(.setColor(v2.0f. (, v4);
+      73(.setColor(v2.1f. (, v4);
     };
 
     [X.9Q.6Qe.prototype.,cqp5 = function () {
@@ -9060,7 +9060,7 @@ movie 'minipixiz.swf' {
     [X.74.+Og(M.prototype.]ZsEn = function () {
       [X.9)DM2.prototype.]ZsEn.call(this);
       var v2 = this.=S7A.=S7A;
-      73(.(H5 S(v2, *r.*B;6][this.type]);
+      73(.setColor(v2, *r.*B;6][this.type]);
       73(.6oFnY(v2, 1, 25);
       this.=S7A.stop();
       this.=S7A.=S7A.stop();
@@ -9145,7 +9145,7 @@ movie 'minipixiz.swf' {
         v2.5DZk5 = 20 + Math.random() * 50;
         v2.init();
         v2.=S7A._rotation = Math.random() * 360;
-        73(.(H5 S(v2.=S7A, *r.*B;6][this.type]);
+        73(.setColor(v2.=S7A, *r.*B;6][this.type]);
         73(.6oFnY(v2.=S7A, 1, 60);
         ++v5;
       }
@@ -10167,7 +10167,7 @@ movie 'minipixiz.swf' {
                     var v2 = *r.+-(0.{==W3(('=209I(', null);
                     var v4 = v2.=S7A.(v+;
                     var v5 = v2.)153L(v3);
-                    73(.(H5 S(v4, *r.*B;6][this.2h+]);
+                    73(.setColor(v4, *r.*B;6][this.2h+]);
                     73(.6oFnY(v4, 1, 150);
                     v2.(( = v3.((;
                     v2.)( = v3.)(;
@@ -10605,13 +10605,13 @@ movie 'minipixiz.swf' {
         var v7 = this.;IF._currentframe - 1;
         if (v7 !== 1) {
         } else {
-          goto 235849;
+          goto 235852;
         }
         var v6 = 0.2;
         this.;IF._x = (this.;IF._x + v6 * {-kxL.-V;B) % 18;
         this.;IF._y = (this.;IF._y + v6 * {-kxL.-V;B) % 18;
       }
-      label 235849:
+      label 235852:
       if (this.;D}ex != null) {
         this.;D}ex *= Math.pow(0.95, {-kxL.-V;B);
         if (this.;D}ex < 0.1) {
@@ -10656,7 +10656,7 @@ movie 'minipixiz.swf' {
       }
     };
 
-    -]e9-.]zzM.prototype.(H5 S = function (}J, (v+) {
+    -]e9-.]zzM.prototype.setColor = function (}J, (v+) {
       var v1 = {'=': (v+ >> 16, '0': (v+ >> 8 & 255, ')': (v+ & 255};
       var v2 = new Color(}J);
       var v3 = {'ra': 100, 'ga': 100, 'ba': 100, 'aa': 100, 'rb': v1.= - 255, 'gb': v1.0 - 255, 'bb': v1.) - 255, 'ab': 0};
@@ -12329,7 +12329,7 @@ movie 'minipixiz.swf' {
     [B.Color.prototype.*CP3L = function (32, 62) {
       var v2 = 4)(.prototype.*CP3L.call(this, 32, 62);
       v2.gotoAndStop(String(this.*B + 1));
-      73(.(H5 S(v2.(v+, [B.Color. QT{A[this.*B]);
+      73(.setColor(v2.(v+, [B.Color. QT{A[this.*B]);
       return v2;
     };
 
@@ -12956,7 +12956,7 @@ movie 'minipixiz.swf' {
     [X.74.1r].prototype.init = function () {
       [X.9)DM2.prototype.init.call(this);
       this.color = *r.+-(0.[3r2L(();
-      73(.(H5 S(this.=S7A.(v+, *r.*B;6][this.color]);
+      73(.setColor(this.=S7A.(v+, *r.*B;6][this.color]);
       this.center = this.=S7A.center;
       this.,d951 = 0;
       this.-vG4u();
@@ -13026,7 +13026,7 @@ movie 'minipixiz.swf' {
       this.)_().5cBEm = 1;
       this.)_().init();
       this.)_().{BxJE(();
-      73(.(H5 S(this.)_().=S7A.(v+, *r.*B;6][this.color]);
+      73(.setColor(this.)_().=S7A.(v+, *r.*B;6][this.color]);
       var v3 = 0;
       while (v3 < 12) {
         var v2 = *r.+-(0.{==W3((',+TFu', 44{N.};OW;);
@@ -13071,7 +13071,7 @@ movie 'minipixiz.swf' {
         v2.5DZk5 = 30 + Math.random() * 30;
         v2.init();
         v2.=S7A._rotation = Math.random() * 360;
-        73(.(H5 S(v2.=S7A, *r.*B;6][this.color]);
+        73(.setColor(v2.=S7A, *r.*B;6][this.color]);
         73(.6oFnY(v2.=S7A, 1, 60);
         ++v5;
       }
@@ -13487,8 +13487,8 @@ movie 'minipixiz.swf' {
     [X.74.}mkJ8.prototype.9FeuX = function (7) {
       this.=HU11 = 7;
       var v2 = this.=S7A;
-      73(.(H5 S(v2.)_(), *r.;uwlO[this.=HU11][0]);
-      73(.(H5 S(v2.6,, *r.;uwlO[this.=HU11][1]);
+      73(.setColor(v2.)_(), *r.;uwlO[this.=HU11][0]);
+      73(.setColor(v2.6,, *r.;uwlO[this.=HU11][1]);
     };
 
     [X.74.}mkJ8.prototype.87vE7( = function () {
@@ -16146,7 +16146,7 @@ movie 'minipixiz.swf' {
       v2.*lCo = true;
       v2.2VhU6 = 5 + Math.random() * 15;
       v2.init();
-      73(.(H5 S(v2.=S7A, 3Wt.random(16777215));
+      73(.setColor(v2.=S7A, 3Wt.random(16777215));
       73(.6oFnY(v2.=S7A, 1, 180);
       if (this.)( < -20) {
         *r.0o().{(H0(this.type);

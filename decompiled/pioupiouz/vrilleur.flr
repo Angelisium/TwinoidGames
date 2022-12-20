@@ -295,7 +295,7 @@ movie 'vrilleur.swf' {
                 }
               };
 
-              this.]{i.(H5 S = function (*) {
+              this.]{i.setColor = function (*) {
                 if (!this.initdone) {
                   this.init();
                 }
@@ -548,10 +548,10 @@ movie 'vrilleur.swf' {
         if (this.{)59.3-,WU == ,12X.3,-ZI( && 1).,12X.(J7rc == null) {
           1).,12X.(J7rc = new Array();
           var v3 = 0;
-          goto 14069;
+          goto 14072;
           for (;;) {
             ++v3;
-            label 14069:
+            label 14072:
             if (v3 >= *r.+-(0.)gv94.length) break;
             var v4 = *r.+-(0.)gv94[v3];
             if (v4.3-,WU == ,12X.3,-ZI( && v4 != this.{)59) {
@@ -559,10 +559,10 @@ movie 'vrilleur.swf' {
             }
           }
           var v5 = 0;
-          goto 14244;
+          goto 14247;
           for (;;) {
             ++v5;
-            label 14244:
+            label 14247:
             if (v5 >= 1).,12X.(J7rc.length) break;
             var v6 = 1).,12X.(J7rc[v5];
             var v7 = =5haE.*zDec(=5haE.2h+);
@@ -595,10 +595,10 @@ movie 'vrilleur.swf' {
         var v4 = 62=;
         var v5 = 0;
         var v6 = 0;
-        goto 14965;
+        goto 14968;
         for (;;) {
           ++v6;
-          label 14965:
+          label 14968:
           if (v6 >= *r.+-(0.)gv94.length) break;
           var v7 = *r.+-(0.)gv94[v6];
           var v8 = v7.x - this.2[;
@@ -651,10 +651,10 @@ movie 'vrilleur.swf' {
           + = 0;
         }
         var v4 = -6;
-        goto 15608;
+        goto 15611;
         for (;;) {
           ++v4;
-          label 15608:
+          label 15611:
           if (v4 >= 6) break;
           if (!0vWVG.77ldJ((int(this.{)59.x + v4 + +), int(this.{)59.y + 1))) {
             return true;
@@ -758,10 +758,10 @@ movie 'vrilleur.swf' {
             this.9T54();
           }
           var v3 = 0;
-          goto 17158;
+          goto 17161;
           for (;;) {
             ++v3;
-            label 17158:
+            label 17161:
             if (v3 >= 3) break;
             var v4 = this.{)59.x + (Math.random() * 2 - 1) * 4;
             var v5 = this.{)59.y + 1;
@@ -808,10 +808,10 @@ movie 'vrilleur.swf' {
         }
         var v3 = Math.abs(this.{)59.[b);
         var v4 = 0;
-        goto 17968;
+        goto 17971;
         for (;;) {
           ++v4;
-          label 17968:
+          label 17971:
           if (v4 >= v3) break;
           var v5 = this.{)59.x + Math.random() * ,12X.{Cs * 1.2;
           var v6 = this.{)59.y - Math.random() * 2 * ,12X.{Cs * 1.2;
@@ -1150,10 +1150,10 @@ movie 'vrilleur.swf' {
             } else {
               this.+rfwt();
               var v2 = 0;
-              goto 25069;
+              goto 25072;
               for (;;) {
                 ++v2;
-                label 25069:
+                label 25072:
                 if (v2 >= this.86{p(.length) break;
                 this.86{p([v2].87vE7(();
               }
@@ -1202,7 +1202,7 @@ movie 'vrilleur.swf' {
             v4.}a = 8 + Math.random() * 10;
             v4.,4 = 0.1 + Math.random() * 0.6;
             this.0dAEJ.push(v4);
-            *r.(H5 S(v4.-iB=, *r.{mMU7(({'=': 3Wt.random(255), '0': 3Wt.random(255), ')': 3Wt.random(255), '(': 255}), 0);
+            *r.setColor(v4.-iB=, *r.{mMU7(({'=': 3Wt.random(255), '0': 3Wt.random(255), ')': 3Wt.random(255), '(': 255}), 0);
             var v5 = new flash.filters.GlowFilter();
             v5.blurX = 8;
             v5.blurY = 8;
@@ -1211,10 +1211,10 @@ movie 'vrilleur.swf' {
             v4.-iB=.filters = [v5];
           }
           var v6 = 0;
-          goto 26424;
+          goto 26427;
           for (;;) {
             ++v6;
-            label 26424:
+            label 26427:
             if (v6 >= this.0dAEJ.length) break;
             var v7 = this.0dAEJ[v6];
             v7.87vE7(();
@@ -1267,10 +1267,10 @@ movie 'vrilleur.swf' {
       v1.+rfwt = function () {
         var v2 = this.7Qe;6.duplicate();
         var v3 = 0;
-        goto 27448;
+        goto 27451;
         for (;;) {
           ++v3;
-          label 27448:
+          label 27451:
           if (v3 >= v2.length) break;
           v2[v3].87vE7(();
         }
@@ -1280,10 +1280,10 @@ movie 'vrilleur.swf' {
         switch (this.;v9G=) {
           case 0:
             var v2 = 0;
-            goto 27618;
+            goto 27621;
             for (;;) {
               ++v2;
-              label 27618:
+              label 27621:
               if (v2 >= 44{N.(Emsl) break;
               if (this.]w9I(( >= this.=HU11.1*gU6.length) {
                 ++this.;v9G=;
@@ -1303,10 +1303,10 @@ movie 'vrilleur.swf' {
             break;
           case 1:
             var v4 = 0;
-            goto 28047;
+            goto 28050;
             for (;;) {
               ++v4;
-              label 28047:
+              label 28050:
               if (v4 >= 44{N.6N]Z_) break;
               if (this.]w9I(( == this.=HU11.7=joK.length) {
                 ++this.;v9G=;
@@ -1330,19 +1330,19 @@ movie 'vrilleur.swf' {
             break;
           case 2:
             var v6 = 0;
-            goto 28537;
+            goto 28540;
             for (;;) {
               ++v6;
-              label 28537:
+              label 28540:
               if (v6 >= 44{N.(Emsl) break;
               if (this.]w9I(( >= this.=HU11.1*gU6.length) {
                 if (this.]hCeF( == 2) {
                   this.9TNL1(();
                   var v7 = 0;
-                  goto 28662;
+                  goto 28665;
                   for (;;) {
                     ++v7;
-                    label 28662:
+                    label 28665:
                     if (v7 >= this.=HU11.{)59.length) break;
                     var v8 = this.=HU11.{)59[v7];
                     var v9 = this.32.*=_p_('6m NH', 44{N.841,4);
@@ -1350,10 +1350,10 @@ movie 'vrilleur.swf' {
                     v9._y = v8[1];
                   }
                   var v10 = 0;
-                  goto 28821;
+                  goto 28824;
                   for (;;) {
                     ++v10;
-                    label 28821:
+                    label 28824:
                     if (v10 >= this.=HU11.;xD.length) break;
                     var v11 = this.=HU11.;xD[v10];
                     var v12 = this.32.*=_p_('6[U05(', 44{N.841,4);
@@ -1384,10 +1384,10 @@ movie 'vrilleur.swf' {
             }
             =5haE.init();
             var v14 = 0;
-            goto 29347;
+            goto 29350;
             for (;;) {
               ++v14;
-              label 29347:
+              label 29350:
               if (v14 >= this.=HU11.;xD.length) break;
               var v15 = this.=HU11.;xD[v14];
               var v16 = this.32.*=_p_('6Yoj1', 44{N.;s}E2);
@@ -1397,10 +1397,10 @@ movie 'vrilleur.swf' {
               0vWVG. sn Z(v15[0], v15[1], 24);
             }
             var v17 = 0;
-            goto 29577;
+            goto 29580;
             for (;;) {
               ++v17;
-              label 29577:
+              label 29580:
               if (v17 >= this.=HU11.{)59.length) break;
               var v18 = this.=HU11.{)59[v17];
               var v19 = new ,12X(null);
@@ -1412,10 +1412,10 @@ movie 'vrilleur.swf' {
               }
             }
             var v20 = 0;
-            goto 29793;
+            goto 29796;
             for (;;) {
               ++v20;
-              label 29793:
+              label 29796:
               if (v20 >= this.=HU11.9cgEI(.length) break;
               var v21 = this.=HU11.9cgEI([v20];
               var v22 = new  ZLdx(null);
@@ -1429,10 +1429,10 @@ movie 'vrilleur.swf' {
             }
             this.{IQB8( = new Array();
             var v23 = 0;
-            goto 30042;
+            goto 30045;
             for (;;) {
               ++v23;
-              label 30042:
+              label 30045:
               if (v23 >= this.=HU11.;8,PR.length) break;
               var v24 = this.=HU11.;8,PR[v23];
               this.{IQB8(.push(v24[0]);
@@ -1469,7 +1469,7 @@ movie 'vrilleur.swf' {
           v5.2VhU6 = 10 + Math.random() * 10;
           v5.849kV = 0;
           v5.(KpGn = 0.1 + Math.random() * 0.1;
-          *r.(H5 S(v5.-iB=, v4, -255);
+          *r.setColor(v5.-iB=, v4, -255);
           return v5;
         }
         return null;
@@ -1477,10 +1477,10 @@ movie 'vrilleur.swf' {
 
       v1.88rS( = function (}J) {
         var v3 = 0;
-        goto 30836;
+        goto 30839;
         for (;;) {
           ++v3;
-          label 30836:
+          label 30839:
           if (v3 >= this.=T]lo.length) break;
           var v4 = this.=T]lo[v3];
           var v5 = {'x': v4.x, 'y': v4.y};
@@ -1567,10 +1567,10 @@ movie 'vrilleur.swf' {
         }
         this.*WH]_ = !this.*WH]_;
         var v2 = 0;
-        goto 32900;
+        goto 32903;
         for (;;) {
           ++v2;
-          label 32900:
+          label 32903:
           if (v2 >= this.)gv94.length) break;
           var v3 = this.)gv94[v2];
           if (this.*WH]_) {
@@ -1580,10 +1580,10 @@ movie 'vrilleur.swf' {
           }
         }
         var v4 = 0;
-        goto 33048;
+        goto 33051;
         for (;;) {
           ++v4;
-          label 33048:
+          label 33051:
           if (v4 >= this.6H99,(.length) break;
           var v5 = this.6H99,([v4];
           if (this.*WH]_) {
@@ -1620,10 +1620,10 @@ movie 'vrilleur.swf' {
           this.-SPn._y = *r.*OA * 0.5 + 4;
           this.-SPn.}3sU6.gotoAndStop(String(}]zS.*B + 1));
           var v2 = 0;
-          goto 33744;
+          goto 33747;
           for (;;) {
             ++v2;
-            label 33744:
+            label 33747:
             if (v2 >= 4) break;
             var v3 = 3Wt.getVar(this.-SPn, '$field' + v2);
             v3.text = }]zS.*pEHG[v2];
@@ -1632,10 +1632,10 @@ movie 'vrilleur.swf' {
           var v5 = 0;
           var v6 = 0;
           var v7 = 0;
-          goto 33912;
+          goto 33915;
           for (;;) {
             ++v7;
-            label 33912:
+            label 33915:
             if (v7 >= =5haE.{IQB8(.length) break;
             var v8 = =5haE.{IQB8([v7].*B;
             var v9 = v4.*=_p_('4BQP5', 0);
@@ -1765,10 +1765,10 @@ movie 'vrilleur.swf' {
           return undefined;
         }
         var v2 = 0;
-        goto 36303;
+        goto 36306;
         for (;;) {
           ++v2;
-          label 36303:
+          label 36306:
           if (v2 >= this.)tJAS.length) break;
           var v3 = this.)tJAS[v2];
           v3.* = *r.2K(0, v3.* + 0.34 * v3.6g,A, 1);
@@ -1811,10 +1811,10 @@ movie 'vrilleur.swf' {
           }
           var v4 = [];
           var v5 = 0;
-          goto 37125;
+          goto 37128;
           for (;;) {
             ++v5;
-            label 37125:
+            label 37128:
             if (v5 >= *r.9ZpS[.length) break;
             v4[v5] = *r.3Xy1A[v5] * v2 + *r.9ZpS[[v5] * (1 - v2);
           }
@@ -2218,10 +2218,10 @@ movie 'vrilleur.swf' {
         }
         this.list = [this.{)59, v3];
         var v4 = 0;
-        goto 42976;
+        goto 42979;
         for (;;) {
           ++v4;
-          label 42976:
+          label 42979:
           if (v4 >= this.list.length) break;
           var v5 = this.list[v4];
           v5.5Hy6b(,12X.+fSN);
@@ -2235,10 +2235,10 @@ movie 'vrilleur.swf' {
       v1.87vE7( = function () {
         493Qs.call(this);
         var v3 = 0;
-        goto 43228;
+        goto 43231;
         for (;;) {
           ++v3;
-          label 43228:
+          label 43231:
           if (v3 >= this.list.length) break;
           var v4 = this.list[v3];
           v4.-iB=._rotation = v4.]b * 10 * v4.6g,A;
@@ -2287,10 +2287,10 @@ movie 'vrilleur.swf' {
               v3 = true;
             }
             var v7 = 0;
-            goto 44102;
+            goto 44105;
             for (;;) {
               ++v7;
-              label 44102:
+              label 44105:
               if (v7 >= 1) break;
               var v8 = (Math.random() * 2 - 1) * 14;
               var v9 = *r.+-(0.23c;](this.5L6x=(._x + v8, this.5L6x=(._y);
@@ -2312,10 +2312,10 @@ movie 'vrilleur.swf' {
               *r.+-(0.32.}oQA7(v14.-iB=);
             }
             var v15 = 0;
-            goto 44678;
+            goto 44681;
             for (;;) {
               ++v15;
-              label 44678:
+              label 44681:
               if (v15 >= 1) break;
               var v16 = (Math.random() * 2 - 1) * 14;
               var v17 = *r.+-(0.23c;](this.5L6x=(._x + v16, this.5L6x=(._y);
@@ -2400,10 +2400,10 @@ movie 'vrilleur.swf' {
               var v4 = int(this.{)59.y + 1).{)59.31(0b.;u);
               if (!0vWVG.77ldJ((v3, v4)) {
                 var v5 = 0;
-                goto 46347;
+                goto 46350;
                 for (;;) {
                   ++v5;
-                  label 46347:
+                  label 46350:
                   if (v5 >= 4) break;
                   var v6 = *r.+-(0.23c;](v3, v4);
                   v6.]b = (Math.random() * 2 - 1) * 1.5 - 1;
@@ -2610,10 +2610,10 @@ movie 'vrilleur.swf' {
         } else {
           var v4 = true;
           var v5 = 1;
-          goto 50192;
+          goto 50195;
           for (;;) {
             ++v5;
-            label 50192:
+            label 50195:
             if (v5 >= 7) break;
             if (0vWVG.77ldJ((this.5R, this.6R - v5)) {
               if (0vWVG.77ldJ((this.5R + this.{)59.6g,A, this.6R - v5)) {
@@ -2629,10 +2629,10 @@ movie 'vrilleur.swf' {
             this.{)59.reverse();
             var v6 = true;
             var v7 = 0;
-            goto 50428;
+            goto 50431;
             for (;;) {
               ++v7;
-              label 50428:
+              label 50431:
               if (v7 >= 5) break;
               if (0vWVG.77ldJ((this.5R + this.{)59.6g,A, this.6R)) {
                 v6 = false;
@@ -2720,10 +2720,10 @@ movie 'vrilleur.swf' {
           var v8 = Math.sin(v5) * 1).{)59.]Q3ZG.[c4gL;
           var v9 = 6;
           var v10 = 0;
-          goto 51899;
+          goto 51902;
           for (;;) {
             ++v10;
-            label 51899:
+            label 51902:
             if (v10 >= v9) break;
             this.x += v7 / v9;
             this.y += v8 / v9;
@@ -2746,10 +2746,10 @@ movie 'vrilleur.swf' {
           }
         }
         var v11 = 0;
-        goto 52243;
+        goto 52246;
         for (;;) {
           ++v11;
-          label 52243:
+          label 52246:
           if (v11 >= this.list.length) break;
           var v12 = this.list[v11];
           v12.nextFrame();
@@ -2830,10 +2830,10 @@ movie 'vrilleur.swf' {
         493Qs.call(this);
         if (this.=kIA == 2) {
           var v3 = 0;
-          goto 53460;
+          goto 53463;
           for (;;) {
             ++v3;
-            label 53460:
+            label 53463:
             if (v3 >= 50) break;
             this.index = (this.index + 1) % this.)gv94.length;
             var v4 = this.)gv94[this.index];
@@ -2857,10 +2857,10 @@ movie 'vrilleur.swf' {
               v5 = null;
             }
             var v7 = 0;
-            goto 53954;
+            goto 53957;
             for (;;) {
               ++v7;
-              label 53954:
+              label 53957:
               if (v7 >= v5.length) break;
               var v8 = v5[v7];
               var v9 = v4.x + v8[0];
@@ -2920,10 +2920,10 @@ movie 'vrilleur.swf' {
         [X.9T54();
         this.;AH0 = new Array();
         var v3 = 0;
-        goto 55030;
+        goto 55033;
         for (;;) {
           ++v3;
-          label 55030:
+          label 55033:
           if (v3 >= 0vWVG.9I*.width) break;
           this.;AH0[v3] = new Array();
         }
@@ -2935,10 +2935,10 @@ movie 'vrilleur.swf' {
 
       v1.; 9Yg = function () {
         var v2 = 0;
-        goto 55167;
+        goto 55170;
         for (;;) {
           ++v2;
-          label 55167:
+          label 55170:
           if (v2 >= this.)gv94.length) break;
           var v3 = this.)gv94[v2];
           v3.y = *r.7y3(v3.y);
@@ -3055,10 +3055,10 @@ movie 'vrilleur.swf' {
       v1.3X3[b = function (() {
         var v4 = 0;
         var v3 = 0;
-        goto 56963;
+        goto 56966;
         for (;;) {
           ++v3;
-          label 56963:
+          label 56966:
           if (v3 >= (.length) break;
           if (([v3] == null) {
             ++v4;
@@ -3121,10 +3121,10 @@ movie 'vrilleur.swf' {
         var v3 = true;
         var v4 = true;
         var v5 = 0;
-        goto 57814;
+        goto 57817;
         for (;;) {
           ++v5;
-          label 57814:
+          label 57817:
           if (v5 >= [.length) break;
           if ([.charCodeAt(v5) > 127) {
             v3 = false;
@@ -3143,20 +3143,20 @@ movie 'vrilleur.swf' {
         if (v3) {
           this.blabla.+jMb8(1, 0);
           v5 = 0;
-          goto 58066;
+          goto 58069;
           for (;;) {
             ++v5;
-            label 58066:
+            label 58069:
             if (v5 >= [.length) break;
             this.blabla.+jMb8(6, +,ig2.8f0([.charAt(v5)));
           }
         } else {
           this.blabla.+jMb8(2, !v4 ? 3 : 2);
           v5 = 0;
-          goto 58243;
+          goto 58246;
           for (;;) {
             ++v5;
-            label 58243:
+            label 58246:
             if (v5 >= [.length) break;
             this.blabla.+jMb8(!v4 ? 8 : 7, [.charCodeAt(v5));
           }
@@ -3169,10 +3169,10 @@ movie 'vrilleur.swf' {
         var v4 = '';
         if (v3) {
           var v5 = 0;
-          goto 58465;
+          goto 58468;
           for (;;) {
             ++v5;
-            label 58465:
+            label 58468:
             if (v5 >= v2) break;
             v4 += +,ig2.69-(this.blabla.8O,=(6));
           }
@@ -3180,10 +3180,10 @@ movie 'vrilleur.swf' {
         }
         var v6 = this.blabla.8O,=(1) == 0;
         v5 = 0;
-        goto 58611;
+        goto 58614;
         for (;;) {
           ++v5;
-          label 58611:
+          label 58614:
           if (v5 >= v2) break;
           v4 += +,ig2.chr(this.blabla.8O,=(!v6 ? 8 : 7));
         }
@@ -3335,10 +3335,10 @@ movie 'vrilleur.swf' {
         var v4 = v3.length;
         this.blabla.+jMb8(5, v4);
         var v5 = 0;
-        goto 61226;
+        goto 61229;
         for (;;) {
           ++v5;
-          label 61226:
+          label 61229:
           if (v5 >= v4) break;
           var v6 = v3.charCodeAt(v5);
           if (v6 >= 48 && v6 <= 58) {
@@ -3365,10 +3365,10 @@ movie 'vrilleur.swf' {
         var v2 = this.blabla.8O,=(5);
         var v4 = '';
         var v3 = 0;
-        goto 61632;
+        goto 61635;
         for (;;) {
           ++v3;
-          label 61632:
+          label 61635:
           if (v3 >= v2) break;
           var v5 = this.blabla.8O,=(4);
           if (v5 < 10) {
@@ -3649,10 +3649,10 @@ movie 'vrilleur.swf' {
         var v11 = 2 +  ( * 0.2;
         var v12 = Math.min( ( * 0.1, 80);
         var v13 = 0;
-        goto 65706;
+        goto 65709;
         for (;;) {
           ++v13;
-          label 65706:
+          label 65709:
           if (v13 >= v11) break;
           var v14 = v10.*=_p_(' 5yCC', 0);
           v14._rotation = v7.*s};() * 360;
@@ -3688,16 +3688,16 @@ movie 'vrilleur.swf' {
         v21.removeMovieClip();
         var v25 = new flash.display.BitmapData(v17, v18, true, 0);
         var v26 = 0;
-        goto 66671;
+        goto 66674;
         for (;;) {
           v26 += v22;
-          label 66671:
+          label 66674:
           if (v26 >= v17) break;
           var v27 = 0;
-          goto 66716;
+          goto 66719;
           for (;;) {
             v27 += v22;
-            label 66716:
+            label 66719:
             if (v27 >= v18) break;
             v25.copyPixels(v24, v23, new flash.geom.Point(v26, v27), null, null, null);
           }
@@ -3706,10 +3706,10 @@ movie 'vrilleur.swf' {
         var v28 = Math.sqrt(v17 * v18) * 0.05;
         var v29 = new Array();
         var v30 = 0;
-        goto 66892;
+        goto 66895;
         for (;;) {
           ++v30;
-          label 66892:
+          label 66895:
           if (v30 >= v28) break;
           var v31 = 1ni.32.*=_p_('(PyE}', 0);
           v31.gotoAndStop(String(49- + 1));
@@ -3725,10 +3725,10 @@ movie 'vrilleur.swf' {
           v20.translate(v35, v36);
           var v37 = true;
           var v38 = 0;
-          goto 67316;
+          goto 67319;
           for (;;) {
             ++v38;
-            label 67316:
+            label 67319:
             if (v38 >= v29.length) break;
             var v39 = v29[v38];
             if (Math.abs(v35 - v39.x) < v39.[K + v33 && Math.abs(v36 - v39.y) < v39.+K + v34) {
@@ -3757,10 +3757,10 @@ movie 'vrilleur.swf' {
         v7.unshift([0, 0]);
         var v8 = null;
         var v9 = 0;
-        goto 67936;
+        goto 67939;
         for (;;) {
           ++v9;
-          label 67936:
+          label 67939:
           if (v9 >= v7.length) break;
           var v10 = v7[v9];
           var v11 = 3Wt.attachMC(v6, '+m)u)(', v9);
@@ -3811,18 +3811,18 @@ movie 'vrilleur.swf' {
         var v7 = 0;
         var v8 = new Array();
         var v9 = 0;
-        goto 68937;
+        goto 68940;
         for (;;) {
           ++v9;
-          label 68937:
+          label 68940:
           if (v9 >= 9I*.width) break;
           var v10 = v9 == 9I*.width - 1;
           var v11 = null;
           var v12 = v7;
-          goto 69019;
+          goto 69022;
           for (;;) {
             v12 += 1;
-            label 69019:
+            label 69022:
             if (v12 >= 9I*.height) break;
             if (9I*.hitTest(new flash.geom.Point(0, 0), 80, new flash.geom.Point(v9, v12), null, null)) {
               v11 = v12;
@@ -3870,16 +3870,16 @@ movie 'vrilleur.swf' {
         v9.4CDwp(8OA, 0, 0);
         var v10 = new flash.display.BitmapData(v4, v5, true, 0);
         var v11 = 0;
-        goto 70038;
+        goto 70041;
         for (;;) {
           v11 += v6;
-          label 70038:
+          label 70041:
           if (v11 >= v4) break;
           var v12 = 0;
-          goto 70083;
+          goto 70086;
           for (;;) {
             v12 += v7;
-            label 70083:
+            label 70086:
             if (v12 >= v5) break;
             v10.copyPixels(v9, v8, new flash.geom.Point(v11, v12), null, null, null);
           }
@@ -4120,20 +4120,20 @@ movie 'vrilleur.swf' {
       v1.}Q)0u = function (4,, 5,, }},), ]oH) {
         var v6 = [[}},).x, }},).y]];
         var v7 = 0;
-        goto 74539;
+        goto 74542;
         for (;;) {
           ++v7;
-          label 74539:
+          label 74542:
           if (v7 >= 2) break;
           var v8 = 4,;
           var v9 = 5,;
           var v10 = {'x': }},).x, 'y': }},).y};
           var v11 = v7 * 2 - 1;
           var v12 = 0;
-          goto 74664;
+          goto 74667;
           for (;;) {
             ++v12;
-            label 74664:
+            label 74667:
             if (v12 >= ]oH) break;
             var v13 = this.(VKB(v10, v11);
             var v14 = v8 + v13.x;
@@ -4156,10 +4156,10 @@ movie 'vrilleur.swf' {
         var v16 = 0;
         var v17 = 0;
         var v18 = 0;
-        goto 75014;
+        goto 75017;
         for (;;) {
           ++v18;
-          label 75014:
+          label 75017:
           if (v18 >= v6.length) break;
           var v19 = v6[v18];
           v16 += v19[0];
@@ -4182,10 +4182,10 @@ movie 'vrilleur.swf' {
 
       v1.=)0hg = function (x, y) {
         var v4 = 0;
-        goto 75429;
+        goto 75432;
         for (;;) {
           ++v4;
-          label 75429:
+          label 75432:
           if (v4 >= this.)gv94.length) break;
           var v5 = this.)gv94[v4];
           var v6 = {'x': x + v5.x, 'y': y + v5.y};
@@ -4295,10 +4295,10 @@ movie 'vrilleur.swf' {
         if (this.2VhU6 < 0) {
           var v3 = 50;
           var v4 = 0;
-          goto 77409;
+          goto 77412;
           for (;;) {
             ++v4;
-            label 77409:
+            label 77412:
             if (v4 >= v3) break;
             var v5 = (v4 / v3) * 6.28;
             var v6 = Math.cos(v5);
@@ -4326,10 +4326,10 @@ movie 'vrilleur.swf' {
           var v14 = this.]oH * 2 / 100;
           0vWVG.[kWXP(',jxEC', this.x, this.y, v14, v14, 0, 1);
           var v15 = 0;
-          goto 78109;
+          goto 78112;
           for (;;) {
             ++v15;
-            label 78109:
+            label 78112:
             if (v15 >= *r.+-(0.)gv94.length) break;
             var v16 = *r.+-(0.)gv94[v15];
             var v17 = {'x': v16.x, 'y': v16.y - 5};
@@ -4390,10 +4390,10 @@ movie 'vrilleur.swf' {
               this.96qYw();
             } else {
               var v3 = 0;
-              goto 79305;
+              goto 79308;
               for (;;) {
                 ++v3;
-                label 79305:
+                label 79308:
                 if (v3 >= 2) break;
                 if (Math.random() * this.2VhU6 < 10) {
                   var v4 = new *DzW(*r.+-(0.32.*=_p_('6sQ72(', 44{N.]-O(Z));
@@ -4424,10 +4424,10 @@ movie 'vrilleur.swf' {
               this.96qYw();
             }
             var v8 = 0;
-            goto 80147;
+            goto 80150;
             for (;;) {
               ++v8;
-              label 80147:
+              label 80150:
               if (v8 >= this.)gv94.length) break;
               var v9 = this.)gv94[v8];
               v9.{*Kuf(v9.)153L(this.{)59), 0.2, 1);
@@ -4440,10 +4440,10 @@ movie 'vrilleur.swf' {
             this.,cM(._yscale = this.,cM(._xscale;
             this.,cM(._alpha *= 0.3;
             var v10 = 0;
-            goto 80431;
+            goto 80434;
             for (;;) {
               ++v10;
-              label 80431:
+              label 80434:
               if (v10 >= this.)gv94.length) break;
               var v11 = this.)gv94[v10];
               --v11.2VhU6;
@@ -4476,10 +4476,10 @@ movie 'vrilleur.swf' {
         this.{)59.]b = -1.5;
         this.=kIA = 1;
         var v2 = 0;
-        goto 81073;
+        goto 81076;
         for (;;) {
           ++v2;
-          label 81073:
+          label 81076:
           if (v2 >= this.)gv94.length) break;
           var v3 = this.)gv94[v2];
           var v4 = this.{)59.)153L(v3);
@@ -4604,7 +4604,7 @@ movie 'vrilleur.swf' {
         v6.setTransform(v8);
       };
 
-      *r.(H5 S = function (}J, (v+, 60-) {
+      *r.setColor = function (}J, (v+, 60-) {
         if (60- == null) {
           60- = -255;
         }
@@ -4618,10 +4618,10 @@ movie 'vrilleur.swf' {
         if (60- != null) {
           6 = 6.duplicate();
           var v5 = 0;
-          goto 83622;
+          goto 83625;
           for (;;) {
             ++v5;
-            label 83622:
+            label 83625:
             if (v5 >= 3) break;
             6[4 + 5 * v5] = 60-;
           }
@@ -4858,10 +4858,10 @@ movie 'vrilleur.swf' {
             this.9O*r = v3;
             v2 = true;
             var v4 = 2;
-            goto 88158;
+            goto 88161;
             for (;;) {
               ++v4;
-              label 88158:
+              label 88161:
               if (v4 >= 5) break;
               if (!0vWVG.77ldJ((this.x - this.6g,A, this.y - v4)) {
                 --this.y;
@@ -4954,16 +4954,16 @@ movie 'vrilleur.swf' {
         this.9I* = new flash.display.BitmapData(1).{)59.2PAxA.=P(, 1).{)59.2PAxA.] (, true, 16711680);
         this.9I*.copyPixels(0vWVG.9I*, new flash.geom.Rectangle(v2, v3, 1).{)59.2PAxA.=P(, 1).{)59.2PAxA.] (), new flash.geom.Point(0, 0), this.1Z 6, new flash.geom.Point(0, 0), true);
         var v5 = 0;
-        goto 90238;
+        goto 90241;
         for (;;) {
           ++v5;
-          label 90238:
+          label 90241:
           if (v5 >= 1).{)59.2PAxA.] () break;
           var v6 = 0;
-          goto 90302;
+          goto 90305;
           for (;;) {
             ++v6;
-            label 90302:
+            label 90305:
             if (v6 >= 1).{)59.2PAxA.=P() break;
             var v7 = *r.2ya 0((this.9I*.getPixel32(int(v6), int(v5)));
             if (v7.( > 0vWVG.72}8I() {
@@ -4987,10 +4987,10 @@ movie 'vrilleur.swf' {
         var v3 = int(this.{)59.x - 1).{)59.2PAxA.=P( * 0.5);
         var v4 = int(this.{)59.y - 1).{)59.2PAxA.] ( * 0.5);
         var v5 = 0;
-        goto 90752;
+        goto 90755;
         for (;;) {
           ++v5;
-          label 90752:
+          label 90755:
           if (v5 >= *r.+-(0.+xiq*.length) break;
           var v6 = *r.+-(0.+xiq*[v5];
           if (v6.=kIA == 1 && Math.abs(this.{)59.x - v6.x) < 1).{)59.2PAxA.=P( * 0.5 && Math.abs(this.{)59.y - v6.y) < 1).{)59.2PAxA.] ( * 0.5) {
@@ -5008,10 +5008,10 @@ movie 'vrilleur.swf' {
         --v4;
         0vWVG.9I*.copyPixels(this.9I*, new flash.geom.Rectangle(0, 0, 1).{)59.2PAxA.=P(, 1).{)59.2PAxA.] (), new flash.geom.Point(v3, v4), this.9I*, new flash.geom.Point(0, 0), true);
         var v7 = 0;
-        goto 91447;
+        goto 91450;
         for (;;) {
           ++v7;
-          label 91447:
+          label 91450:
           if (v7 >= *r.+-(0.)gv94.length) break;
           var v8 = *r.+-(0.)gv94[v7];
           if (Math.abs(this.{)59.x - v8.x) < 1).{)59.2PAxA.=P( * 0.5 && Math.abs(this.{)59.y - v8.y) < 1).{)59.2PAxA.] ( * 0.5) {
@@ -5154,10 +5154,10 @@ movie 'vrilleur.swf' {
             break;
           case 1:
             var v6 = 0;
-            goto 94444;
+            goto 94447;
             for (;;) {
               ++v6;
-              label 94444:
+              label 94447:
               if (v6 >= 1).{)59.5a+s((.[c4gL) break;
               this.)9 9 += this.6g,A;
               this.en._x = this.)9 9;
@@ -5185,10 +5185,10 @@ movie 'vrilleur.swf' {
                 if (this.)9 9 > 16) {
                   var v12 = 10;
                   var v13 = 0;
-                  goto 95180;
+                  goto 95183;
                   for (;;) {
                     ++v13;
-                    label 95180:
+                    label 95183:
                     if (v13 >= 10) break;
                     var v14 = Math.random() * 6.28;
                     var v15 = Math.cos(v14);
@@ -5396,10 +5396,10 @@ movie 'vrilleur.swf' {
             this.8PD).removeMovieClip();
           }
           var v7 = 0;
-          goto 99003;
+          goto 99006;
           for (;;) {
             ++v7;
-            label 99003:
+            label 99006:
             if (v7 >= 3) break;
             var v8 = *r.+-(0.23c;](int(v3.x), int(v3.y));
             v8.]b = Math.random() * 3;
@@ -5418,10 +5418,10 @@ movie 'vrilleur.swf' {
         }
         this.)gv94.unshift(v3);
         var v9 = 0;
-        goto 99408;
+        goto 99411;
         for (;;) {
           ++v9;
-          label 99408:
+          label 99411:
           if (v9 >= this.)gv94.length - 1) break;
           var v10 = this.)gv94[v9];
           var v11 = this.)gv94[v9 + 1];
@@ -5464,10 +5464,10 @@ movie 'vrilleur.swf' {
       980Sb.0D 6 = function () {
         {-kxL.87vE7(();
         var v2 = 0;
-        goto 100144;
+        goto 100147;
         for (;;) {
           ++v2;
-          label 100144:
+          label 100147:
           if (v2 >= 980Sb.}Yax5) break;
           980Sb.({B6.0D 6();
         }
@@ -5564,16 +5564,16 @@ movie 'vrilleur.swf' {
         --this.(_A(;
         var v3 = [0];
         var v4 = 0;
-        goto 102028;
+        goto 102031;
         for (;;) {
           ++v4;
-          label 102028:
+          label 102031:
           if (v4 >= 4) break;
           var v5 = 0;
-          goto 102074;
+          goto 102077;
           for (;;) {
             ++v5;
-            label 102074:
+            label 102077:
             if (v5 >= 2) break;
             v3.push(v4 * (v5 * 2 - 1));
           }
@@ -5583,17 +5583,17 @@ movie 'vrilleur.swf' {
           var v7 = int(this.{)59.y);
           var v8 = false;
           var v9 = 0;
-          goto 102240;
+          goto 102243;
           for (;;) {
             ++v9;
-            label 102240:
+            label 102243:
             if (v9 >= this.maxHeight) break;
             v7 -= this.19;
             var v10 = 0;
-            goto 102303;
+            goto 102306;
             for (;;) {
               ++v10;
-              label 102303:
+              label 102306:
               if (v10 >= v3.length) break;
               var v11 = v3[v10];
               if (0vWVG.77ldJ((v6 + v11, v7)) {
@@ -5707,10 +5707,10 @@ movie 'vrilleur.swf' {
         var v7 = 0;
         var v8 = [-99 * 1000;
         var v6 = 0;
-        goto 104057;
+        goto 104060;
         for (;;) {
           ++v6;
-          label 104057:
+          label 104060:
           if (v6 >= v5) break;
           if (v4[v6]._name != null) {
             v4[v6].swapDepths(v8 + v7);
@@ -5771,10 +5771,10 @@ movie 'vrilleur.swf' {
         var v6 = v5.9oK;
         var v7 = v5.7-,;
         var v8 = 0;
-        goto 104927;
+        goto 104930;
         for (;;) {
           ++v8;
-          label 104927:
+          label 104930:
           if (v8 >= v7) break;
           if (v6[v8] == }J) {
             v6[v8] = null;
@@ -5819,10 +5819,10 @@ movie 'vrilleur.swf' {
         var v3 = this.-fC3a([-99);
         var v5 = v3.9oK;
         var v4 = 0;
-        goto 105577;
+        goto 105580;
         for (;;) {
           ++v4;
-          label 105577:
+          label 105580:
           if (v4 >= v3.7-,) break;
           v5[v4].removeMovieClip();
         }
@@ -5835,10 +5835,10 @@ movie 'vrilleur.swf' {
         var v5 = v3.7-,;
         var v8 = -99999999;
         var v6 = 0;
-        goto 105751;
+        goto 105754;
         for (;;) {
           ++v6;
-          label 105751:
+          label 105754:
           if (v6 >= v5) break;
           var v9 = v4[v6];
           var v10 = v9._y;
@@ -5846,10 +5846,10 @@ movie 'vrilleur.swf' {
             v8 = v10;
           } else {
             var v7 = v6;
-            goto 105847;
+            goto 105850;
             for (;;) {
               --v7;
-              label 105847:
+              label 105850:
               if (v7 <= 0) break;
               var v11 = v4[v7 - 1];
               if (v11._y > v10) {
@@ -5869,10 +5869,10 @@ movie 'vrilleur.swf' {
 
       v1.,}2X ( = function () {
         var v2 = 0;
-        goto 106039;
+        goto 106042;
         for (;;) {
           ++v2;
-          label 106039:
+          label 106042:
           if (v2 >= this.}Zms3.length) break;
           this.clear(v2);
         }
@@ -6090,10 +6090,10 @@ movie 'vrilleur.swf' {
           }
         }
         var v3 = 0;
-        goto 109730;
+        goto 109733;
         for (;;) {
           ++v3;
-          label 109730:
+          label 109733:
           if (v3 >= *r.+-(0.[NuT).length) break;
           var v4 = *r.+-(0.[NuT)[v3];
           if (this.}1A{_(v4) < 14) {
@@ -6127,10 +6127,10 @@ movie 'vrilleur.swf' {
         if (this.5)z1{ < 0) {
           this.5)z1{ = 200;
           var v2 = 0;
-          goto 110262;
+          goto 110265;
           for (;;) {
             ++v2;
-            label 110262:
+            label 110265:
             if (v2 >= *r.+-(0.2t*({.length) break;
             var v3 = *r.+-(0.2t*({[v2];
             var v4 = {'x': int(v3._x), 'y': int(v3._y)};
@@ -6165,10 +6165,10 @@ movie 'vrilleur.swf' {
           if (!0vWVG.77ldJ((this.5R, this.6R)) {
             var v2 = true;
             var v3 = 1;
-            goto 110884;
+            goto 110887;
             for (;;) {
               ++v3;
-              label 110884:
+              label 110887:
               if (v3 > ,12X.0BPxA) break;
               if (0vWVG.77ldJ((this.5R, this.6R - v3)) {
                 this.6R -= v3;
@@ -6188,10 +6188,10 @@ movie 'vrilleur.swf' {
             if (0vWVG.77ldJ((this.5R, this.6R + 1)) {
               var v4 = true;
               var v5 = 1;
-              goto 111256;
+              goto 111259;
               for (;;) {
                 ++v5;
-                label 111256:
+                label 111259:
                 if (v5 > ,12X.0BPxA) break;
                 if (!0vWVG.77ldJ((this.5R, this.6R + v5 + 1)) {
                   this.6R += v5;
@@ -6246,10 +6246,10 @@ movie 'vrilleur.swf' {
           if (!0vWVG.77ldJ((this.5R, this.6R)) {
             var v7 = true;
             var v8 = 1;
-            goto 112344;
+            goto 112347;
             for (;;) {
               ++v8;
-              label 112344:
+              label 112347:
               if (v8 > v6) break;
               if (0vWVG.77ldJ((this.5R + v4[0] * v8, this.6R + v4[1] * v8)) {
                 this.5R += v4[0] * v8;
@@ -6274,10 +6274,10 @@ movie 'vrilleur.swf' {
             if (0vWVG.77ldJ((this.5R + v5[0], this.6R + v5[1])) {
               var v9 = true;
               var v10 = 1;
-              goto 112851;
+              goto 112854;
               for (;;) {
                 ++v10;
-                label 112851:
+                label 112854:
                 if (v10 > v6) break;
                 if (!0vWVG.77ldJ((this.5R + v5[0] * v10, this.6R + v5[1] * v10 + 1)) {
                   this.5R += v5[0] * v10;
@@ -6360,10 +6360,10 @@ movie 'vrilleur.swf' {
 
       v1.]zpu5 = function () {
         var v2 = 0;
-        goto 114584;
+        goto 114587;
         for (;;) {
           ++v2;
-          label 114584:
+          label 114587:
           if (v2 >= 5) break;
           var v3 = (Math.random() * 2 - 1) * 14;
           var v4 = *r.+-(0.{==W3(('*4adI');
@@ -6405,10 +6405,10 @@ movie 'vrilleur.swf' {
         }
         this.19Y0{(this.-iB=);
         var v3 = 0;
-        goto 115262;
+        goto 115265;
         for (;;) {
           ++v3;
-          label 115262:
+          label 115265:
           if (v3 >= 12) break;
           var v4 = *r.+-(0.{==W3(('=209I(');
           var v5 = Math.random() * 6.28;
@@ -6457,10 +6457,10 @@ movie 'vrilleur.swf' {
           max *= 40 / v7;
         }
         var v8 = 0;
-        goto 116241;
+        goto 116244;
         for (;;) {
           ++v8;
-          label 116241:
+          label 116244:
           if (v8 >= max) break;
           var v9 = ba + (Math.random() * 2 - 1) * ra;
           var v10 = Math.cos(v9);
@@ -6481,7 +6481,7 @@ movie 'vrilleur.swf' {
         v4.3BjX_(40 + Math.random() * 80);
         v4.2VhU6 = 10 + Math.random() * 30;
         v4.849kV = 0;
-        *r.(H5 S(v4.-iB=, 16761281, -255);
+        *r.setColor(v4.-iB=, 16761281, -255);
         v4.1o8jJ = new ] ktA(v4);
         if (!0vWVG.77ldJ((int(v4.x), int(v4.y))) {
           v4.9T54();
@@ -6701,10 +6701,10 @@ movie 'vrilleur.swf' {
         var v4 = 14;
         var v5 = 4;
         var v6 = 0;
-        goto 120431;
+        goto 120434;
         for (;;) {
           ++v6;
-          label 120431:
+          label 120434:
           if (v6 >= v4) break;
           var v7 = (v6 / v4) * 6.28;
           var v8 = Math.cos(v7);
@@ -6881,10 +6881,10 @@ movie 'vrilleur.swf' {
         }
         ]{i.print(0vWVG.(d67=);
         var v2 = 0;
-        goto 124717;
+        goto 124720;
         for (;;) {
           ++v2;
-          label 124717:
+          label 124720:
           if (v2 >= *r.+-(0.)gv94.length) break;
           var v3 = *r.+-(0.)gv94[v2];
           var v4 = 0vWVG.0gbOj.getPixel(int(v3.x), int(v3.y));
@@ -6927,10 +6927,10 @@ movie 'vrilleur.swf' {
         v2.draw(0vWVG.9I*, v3, null, null, null, null);
         0vWVG.;B6Ar(v2);
         var v4 = 0;
-        goto 125514;
+        goto 125517;
         for (;;) {
           ++v4;
-          label 125514:
+          label 125517:
           if (v4 >= *r.+-(0.7Qe;6.length) break;
           var v5 = *r.+-(0.7Qe;6[v4];
           v5.y = *r.7y3(v5.y);
@@ -6940,45 +6940,45 @@ movie 'vrilleur.swf' {
           }
         }
         var v6 = 0;
-        goto 125689;
+        goto 125692;
         for (;;) {
           ++v6;
-          label 125689:
+          label 125692:
           if (v6 >= *r.+-(0.2t*({.length) break;
           var v7 = *r.+-(0.2t*({[v6];
           v7._y = *r.7y3(v7._y);
         }
         *r.+-(0.(KA._y = *r.*OA - (0vWVG.9I*.height + *r.+-(0.(KA._y);
         var v8 = 0;
-        goto 125893;
+        goto 125896;
         for (;;) {
           ++v8;
-          label 125893:
+          label 125896:
           if (v8 >= *r.+-(0.=T]lo.length) break;
           var v9 = *r.+-(0.=T]lo[v8];
           v9.}MDUe(0, 0);
         }
         var v10 = 0;
-        goto 126014;
+        goto 126017;
         for (;;) {
           ++v10;
-          label 126014:
+          label 126017:
           if (v10 >= *r.+-(0.86{p(.length) break;
           *r.+-(0.86{p([v10].; 9Yg();
         }
         var v11 = [*r.+-(0.70*, *r.+-(0.*4M)];
         var v12 = 0;
-        goto 126167;
+        goto 126170;
         for (;;) {
           ++v12;
-          label 126167:
+          label 126170:
           if (v12 >= v11.length) break;
           var v13 = v11[v12].}Zms3[0].9oK;
           var v14 = 0;
-          goto 126249;
+          goto 126252;
           for (;;) {
             ++v14;
-            label 126249:
+            label 126252:
             if (v14 >= v13.length) break;
             var v15 = v13[v14];
             v15._y = *r.7y3(v15._y);
@@ -6997,16 +6997,16 @@ movie 'vrilleur.swf' {
 
       0vWVG.)NS(L( = function (xMin, xMax, yMin, yMax) {
         var v6 = xMin;
-        goto 126577;
+        goto 126580;
         for (;;) {
           ++v6;
-          label 126577:
+          label 126580:
           if (v6 > xMax) break;
           var v7 = yMin;
-          goto 126618;
+          goto 126621;
           for (;;) {
             ++v7;
-            label 126618:
+            label 126621:
             if (v7 > yMax) break;
             if (!0vWVG.77ldJ((v6, v7)) {
               return false;
@@ -7075,10 +7075,10 @@ movie 'vrilleur.swf' {
           v3.stop();
         }
         var v6 = 0;
-        goto 127824;
+        goto 127827;
         for (;;) {
           ++v6;
-          label 127824:
+          label 127827:
           if (v6 >= this.list.length) break;
           var v7 = this.list[v6];
           v7.nextFrame();
@@ -7130,10 +7130,10 @@ movie 'vrilleur.swf' {
       v1.(s3]*( = function () {
         var v2 = 20;
         var v3 = 0;
-        goto 128804;
+        goto 128807;
         for (;;) {
           ++v3;
-          label 128804:
+          label 128807:
           if (v3 >= v2) break;
           var v4 = (v3 / v2) * 6.28;
           var v5 = Math.cos(v4);
@@ -7180,10 +7180,10 @@ movie 'vrilleur.swf' {
 
       =5haE.87vE7( = function () {
         var v2 = 0;
-        goto 129728;
+        goto 129731;
         for (;;) {
           ++v2;
-          label 129728:
+          label 129731:
           if (v2 >= =5haE.4m4kR.length) break;
           var v3 = =5haE.4m4kR[v2];
           var v4 = v3.*B == 0 && =5haE.)HS7+;
@@ -7253,10 +7253,10 @@ movie 'vrilleur.swf' {
         var v2 = =5haE.-iB=;
         var v3 = [v2.2{qqR, v2.-T;oR, v2.1CWoW];
         var v4 = 0;
-        goto 131150;
+        goto 131153;
         for (;;) {
           ++v4;
-          label 131150:
+          label 131153:
           if (v4 >= v3.length) break;
           var v5 = v3[v4];
           v5.*B = v4;
@@ -7306,10 +7306,10 @@ movie 'vrilleur.swf' {
 
       =5haE.;PsSD( = function (}J) {
         var v3 = 0;
-        goto 132068;
+        goto 132071;
         for (;;) {
           ++v3;
-          label 132068:
+          label 132071:
           if (v3 >= =5haE.4m4kR.length) break;
           if (}J == =5haE.4m4kR[v3]) {
             return undefined;
@@ -7353,10 +7353,10 @@ movie 'vrilleur.swf' {
 
       =5haE.*zDec = function (*B) {
         var v3 = 0;
-        goto 133021;
+        goto 133024;
         for (;;) {
           ++v3;
-          label 133021:
+          label 133024:
           if (v3 >= =5haE.{IQB8(.length) break;
           var v4 = =5haE.{IQB8([v3];
           if (v4.*B == *B) {
@@ -7384,10 +7384,10 @@ movie 'vrilleur.swf' {
 
       =5haE.3dSYr = function () {
         var v2 = 0;
-        goto 133405;
+        goto 133408;
         for (;;) {
           ++v2;
-          label 133405:
+          label 133408:
           if (v2 >= =5haE.{IQB8(.length) break;
           var v3 = =5haE.{IQB8([v2];
           v3.}J._y = 51 + v2 * *r.3RH3d;
@@ -7411,10 +7411,10 @@ movie 'vrilleur.swf' {
         *r.,YKW+((=5haE.}HYs8, v3, 50);
         =5haE.2h+ = 8.*B;
         var v4 = 0;
-        goto 133949;
+        goto 133952;
         for (;;) {
           ++v4;
-          label 133949:
+          label 133952:
           if (v4 >= =5haE.{IQB8(.length) break;
           if (8 == =5haE.{IQB8([v4] && v4 == =5haE.;*xQ}.*B) {
             =5haE.}iWm6();
@@ -7426,10 +7426,10 @@ movie 'vrilleur.swf' {
 
       =5haE.}0S-X = function (*B) {
         var v3 = 0;
-        goto 134151;
+        goto 134154;
         for (;;) {
           ++v3;
-          label 134151:
+          label 134154:
           if (v3 >= =5haE.{IQB8(.length) break;
           var v4 = =5haE.{IQB8([v3];
           if (v4.*B == *B) {
@@ -7523,10 +7523,10 @@ movie 'vrilleur.swf' {
 
       =5haE.}iWm6 = function () {
         var v2 = 0;
-        goto 135882;
+        goto 135885;
         for (;;) {
           ++v2;
-          label 135882:
+          label 135885:
           if (v2 >= *r.+-(0.)gv94.length) break;
           *r.+-(0.)gv94[v2]. 5yv3();
         }

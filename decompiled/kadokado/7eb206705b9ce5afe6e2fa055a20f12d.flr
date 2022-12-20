@@ -1052,7 +1052,7 @@ for ($somevar in v2) {
         flash.7]AJ.__clear_trace();
       };
 
-      haxe.]{i.(H5 S = function (arg0) {
+      haxe.]{i.setColor = function (arg0) {
         flash.7]AJ.__set_trace_color(arg0);
       };
 
@@ -1667,7 +1667,7 @@ for ($somevar in v2) {
         v7.setTransform(v9);
       };
 
-      9K.53kZ-(.0[Y.(H5 S = function (arg0, arg1, arg2) {
+      9K.53kZ-(.0[Y.setColor = function (arg0, arg1, arg2) {
         if (arg2 == null) {
           arg2 = -255;
         }
@@ -2392,7 +2392,7 @@ for ($somevar in arg0) {
       ['756X', 0].toString = )PVyX;
       [';IL3{', 1].__enum__.756X = ['756X', 0];
       44{N = function (arg0) {
-        haxe.]{i.(H5 S(16777215);
+        haxe.]{i.setColor(16777215);
         *r.init();
         this.-iB= = arg0;
         44{N.(K = this;
@@ -2767,7 +2767,7 @@ for ($somevar in arg0) {
           if (v7 / v4 < 0.5) {
             v13 = *r.2Viba;
           }
-          9K.53kZ-(.0[Y.(H5 S(v12.-iB=.smc, v13[this.(v+[0]]);
+          9K.53kZ-(.0[Y.setColor(v12.-iB=.smc, v13[this.(v+[0]]);
           v12.4u=dZ();
         }
         this.9T54();
@@ -2915,7 +2915,7 @@ for ($somevar in arg0) {
           this.4C2 = 0;
         }
         this.4C2 = Math.min(this.4C2 + arg0, 1);
-        9K.53kZ-(.0[Y.(H5 S(this.-iB=, 0, 3Wt.9n6(this.4C2 * 255));
+        9K.53kZ-(.0[Y.setColor(this.-iB=, 0, 3Wt.9n6(this.4C2 * 255));
         if (this.4C2 > 0.5) {
           this.[)t[w = false;
         }
@@ -2953,7 +2953,7 @@ for ($somevar in arg0) {
             this.4C2 = null;
             v2 = 0;
           }
-          9K.53kZ-(.0[Y.(H5 S(this.-iB=, 0, 3Wt.9n6(v2 * 255));
+          9K.53kZ-(.0[Y.setColor(this.-iB=, 0, 3Wt.9n6(v2 * 255));
           this.-iB=.filters = [];
           if (v2 > 0) {
             9K.53kZ-(.+43N.1U;0(this.-iB=, 12 * v2, 1 + 2 * v2, 16777215);

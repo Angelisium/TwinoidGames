@@ -654,7 +654,7 @@ for ($somevar in v2) {
         flash.7]AJ.__clear_trace();
       };
 
-      haxe.]{i.(H5 S = function (arg0) {
+      haxe.]{i.setColor = function (arg0) {
         flash.7]AJ.__set_trace_color(arg0);
       };
 
@@ -1142,7 +1142,7 @@ for ($somevar in v2) {
         v7.setTransform(v9);
       };
 
-      9K.53kZ-(.0[Y.(H5 S = function (arg0, arg1, arg2) {
+      9K.53kZ-(.0[Y.setColor = function (arg0, arg1, arg2) {
         if (arg2 == null) {
           arg2 = -255;
         }
@@ -1285,7 +1285,7 @@ for ($somevar in v2) {
         this.6MQB = arg1;
         this.3BjX_(44{N.(K.{ 5A);
         this.5t[W1 = 44{N.(K.1p(wU;
-        9K.53kZ-(.0[Y.(H5 S(this.-iB=.smc, 44{N. QT{A[this.6MQB]);
+        9K.53kZ-(.0[Y.setColor(this.-iB=.smc, 44{N. QT{A[this.6MQB]);
         this.-iB=.smc.blendMode = 'add';
         this.-iB=.stop();
       };
@@ -1303,7 +1303,7 @@ for ($somevar in v2) {
       v1.,d951 = function () {
         this.-iB=.gotoAndStop(2);
         this.-iB=.smc.blendMode = 'add';
-        9K.53kZ-(.0[Y.(H5 S(this.-iB=.smc, 44{N. QT{A[this.6MQB]);
+        9K.53kZ-(.0[Y.setColor(this.-iB=.smc, 44{N. QT{A[this.6MQB]);
       };
 
       v1.5R = null;
@@ -1319,7 +1319,7 @@ for ($somevar in v2) {
       v1.0DyU ( = function () {
         this.-iB=.gotoAndStop(1);
         this.-iB=.smc.blendMode = 'add';
-        9K.53kZ-(.0[Y.(H5 S(this.-iB=.smc, 44{N. QT{A[this.6MQB]);
+        9K.53kZ-(.0[Y.setColor(this.-iB=.smc, 44{N. QT{A[this.6MQB]);
       };
 
       v1.87vE7( = function () {
@@ -1506,7 +1506,7 @@ for ($somevar in v2) {
       ['6U)[', 0].toString = )PVyX;
       _Game.)qF[.6U)[ = ['6U)[', 0];
       44{N = function (arg0) {
-        haxe.]{i.(H5 S(16777215);
+        haxe.]{i.setColor(16777215);
         this.-iB= = arg0;
         44{N.(K = this;
         this.6QA = new 9K.+7U K(this.-iB=);
@@ -1779,7 +1779,7 @@ for ($somevar in v2) {
               v10.translate(v6 * this.{ 5A, v9 * this.{ 5A);
               var v11 = null;
               var v12 = 20;
-              9K.53kZ-(.0[Y.(H5 S(v2.smc, 9K.53kZ-(.0[Y.4bfMH(({'=': 3Wt.random(v12), '0': 3Wt.random(v12), ')': 3Wt.random(v12)}), -20);
+              9K.53kZ-(.0[Y.setColor(v2.smc, 9K.53kZ-(.0[Y.4bfMH(({'=': 3Wt.random(v12), '0': 3Wt.random(v12), ')': 3Wt.random(v12)}), -20);
               v2.gotoAndStop(3Wt.random(v2._totalframes) + 1);
               this.5(,lT.draw(v2, v10, v11);
             }
@@ -2173,7 +2173,7 @@ for ($somevar in v2) {
       v1.87vE7( = function () {
         if (44{N.)=R;3 && flash.Key.isDown(84)) {
           haxe.]{i.+tq5)();
-          haxe.]{i.(H5 S(16777215);
+          haxe.]{i.setColor(16777215);
           var v2 = '';
           var v3 = 0;
           var v4 = this.{Y5KB;

@@ -901,7 +901,7 @@ for ($somevar in v2) {
         flash.7]AJ.__clear_trace();
       };
 
-      haxe.]{i.(H5 S = function (arg0) {
+      haxe.]{i.setColor = function (arg0) {
         flash.7]AJ.__set_trace_color(arg0);
       };
 
@@ -1541,7 +1541,7 @@ for ($somevar in v2) {
         v7.setTransform(v9);
       };
 
-      9K.53kZ-(.0[Y.(H5 S = function (arg0, arg1, arg2) {
+      9K.53kZ-(.0[Y.setColor = function (arg0, arg1, arg2) {
         if (arg2 == null) {
           arg2 = -255;
         }
@@ -2633,7 +2633,7 @@ for ($somevar in arg0) {
           v6.6b = (Math.random() * 2 - 1) * 50;
           v6.-iB=.gotoAndPlay(3Wt.random(v6.-iB=._totalframes) + 1);
           v6.-iB=.smc.gotoAndStop(3Wt.random(v6.-iB=.smc._totalframes) + 1);
-          9K.53kZ-(.0[Y.(H5 S(v6.-iB=.smc, 2e{I.1B)SZ[this.(v+[0]], -200);
+          9K.53kZ-(.0[Y.setColor(v6.-iB=.smc, 2e{I.1B)SZ[this.(v+[0]], -200);
         }
         v4 = 8;
         v5 = 6;

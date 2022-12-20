@@ -2700,7 +2700,7 @@ for ($somevar in v2) {
     };
 
     v1._setChatColor = function (arg0, arg1) {
-      (this.7XvA5.6Y3(arg0)).(H5 S(arg1);
+      (this.7XvA5.6Y3(arg0)).setColor(arg1);
     };
 
     v1._startChatReport = function (arg0) {
@@ -3372,7 +3372,7 @@ return undefined;
       flash.7]AJ.__clear_trace();
     };
 
-    haxe.]{i.(H5 S = function (arg0) {
+    haxe.]{i.setColor = function (arg0) {
       flash.7]AJ.__set_trace_color(arg0);
     };
 
@@ -4671,7 +4671,7 @@ return undefined;
       }
     };
 
-    v1.(H5 S = function (arg0) {
+    v1.setColor = function (arg0) {
       var v3 = 0;
       var v4 = 0-I(H(.2d1K.=cKzE(;
       while (v3 < v4.length) {

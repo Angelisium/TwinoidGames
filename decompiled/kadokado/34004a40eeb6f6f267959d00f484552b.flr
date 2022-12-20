@@ -919,7 +919,7 @@ for ($somevar in v2) {
         flash.7]AJ.__clear_trace();
       };
 
-      haxe.]{i.(H5 S = function (arg0) {
+      haxe.]{i.setColor = function (arg0) {
         flash.7]AJ.__set_trace_color(arg0);
       };
 
@@ -1161,7 +1161,7 @@ for ($somevar in v2) {
         this.=S7A = this.32.*=_p_('mcBall', 0);
         44{N.(K.-]-I(.push(this);
         this.(j;o7(arg0, arg1);
-        this.(H5 S(arg2);
+        this.setColor(arg2);
       };
 
       2e{I.__name__ = ['2e{I'];
@@ -1253,7 +1253,7 @@ for ($somevar in v2) {
       };
 
       v1.-iB= = null;
-      v1.(H5 S = function (arg0) {
+      v1.setColor = function (arg0) {
         if (arg0 == null) {
           arg0 = 3Wt.random(*r.7XNo);
           if (44{N.(K.1T=[0] > 1) {
@@ -1500,7 +1500,7 @@ for ($somevar in v2) {
         this.}ZF-m(this.5R, this.6R);
         var v2 = this.*H]X4.pop();
         var v3 = new 2e{I(this.5R, this.6R + 1);
-        v3.(H5 S(v2);
+        v3.setColor(v2);
         44{N.(K.4 tRF();
         this.=S7A.gotoAndStop(1);
         this.=S7A.gotoAndStop(21);
@@ -1762,7 +1762,7 @@ for ($somevar in v2) {
         v7.setTransform(v9);
       };
 
-      9K.53kZ-(.0[Y.(H5 S = function (arg0, arg1, arg2) {
+      9K.53kZ-(.0[Y.setColor = function (arg0, arg1, arg2) {
         if (arg2 == null) {
           arg2 = -255;
         }
@@ -2389,7 +2389,7 @@ for ($somevar in v2) {
             if (v8) {
               break;
             }
-            v6.(H5 S(null);
+            v6.setColor(null);
             if (v7++ > 100) {
               v2 = true;
               break;

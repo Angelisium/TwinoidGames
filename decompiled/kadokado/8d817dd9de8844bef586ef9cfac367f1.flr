@@ -1615,7 +1615,7 @@ for ($somevar in v2) {
       };
 
       44{N = function (arg0) {
-        haxe.]{i.(H5 S(16777215);
+        haxe.]{i.setColor(16777215);
         this.-iB= = arg0;
         44{N.(K = this;
         this.6QA = new 9K.+7U K(this.-iB=);
@@ -1729,7 +1729,7 @@ for ($somevar in v2) {
             var v11 = new flash.0000.Matrix();
             v11.translate(v6 * *r.-s + *r.2QF=}, v9 * *r.-s + *r.2QF=});
             *r.)_0x_(v3.smc);
-            9K.53kZ-(.0[Y.(H5 S(v3.smc, 0, -30);
+            9K.53kZ-(.0[Y.setColor(v3.smc, 0, -30);
             this.0R6+).draw(v3, v11);
           }
         }
@@ -1796,7 +1796,7 @@ for ($somevar in v2) {
               v13.-iB=.gotoAndStop(v12 + 1);
               v13.6b = (Math.random() * 2 - 1) * 8;
               v13.]oH = 0.15;
-              9K.53kZ-(.0[Y.(H5 S(v13.-iB=, 0, -30);
+              9K.53kZ-(.0[Y.setColor(v13.-iB=, 0, -30);
               v13.849kV = 0;
               v13.,DBRf = 15;
               v13.2VhU6 += 30;
@@ -1813,7 +1813,7 @@ for ($somevar in v2) {
               v13.-iB=.gotoAndStop(v12 + 1);
               v13.6b = (Math.random() * 2 - 1) * 8;
               v13.]oH = 0.15;
-              9K.53kZ-(.0[Y.(H5 S(v13.-iB=, 0, -30);
+              9K.53kZ-(.0[Y.setColor(v13.-iB=, 0, -30);
               v13.849kV = 0;
               v13.,DBRf = 15;
               v13.2VhU6 += 30;
@@ -2432,7 +2432,7 @@ for ($somevar in v2) {
               ++v4;
               var v5 = v4;
               var v6 = this. uK=F.32.*=_p_('mcBlinkPix', 5);
-              9K.53kZ-(.0[Y.(H5 S(v6.smc, *r.4Qec*[this. _zRY]);
+              9K.53kZ-(.0[Y.setColor(v6.smc, *r.4Qec*[this. _zRY]);
               *r.)_0x_(v6);
               v6.play();
               var v7 = new 9K.53kZ-(.,v0X(v6);
@@ -5338,7 +5338,7 @@ for ($somevar in v2) {
       ['=52Bs', 8].toString = )PVyX;
       ['-9l7M', 3].__enum__.=52Bs = ['=52Bs', 8];
       =3+P = function () {
-        haxe.]{i.(H5 S(16777215);
+        haxe.]{i.setColor(16777215);
         var v3 = 44{N.(K.32.*=_p_('mcHero', 44{N.*z7F2);
         v3.stop();
         super(v3);
@@ -5360,7 +5360,7 @@ for ($somevar in v2) {
         this.[b = 0;
         if (this.6kC1 != null) {
           haxe.]{i.-[Ra6('double hold ->airGrab()', {'fileName': 'Hero.hx', 'lineNumber': 442, 'className': 'Hero', 'methodName': 'airGrab'});
-          9K.53kZ-(.0[Y.(H5 S(this.6kC1.-iB=, 65280);
+          9K.53kZ-(.0[Y.setColor(this.6kC1.-iB=, 65280);
         }
         this.6kC1 = arg0;
         this. E=60();
@@ -5555,7 +5555,7 @@ for ($somevar in v2) {
       v1.=Akvf = function (arg0) {
         if (this.6kC1 != null) {
           haxe.]{i.-[Ra6('double hold -> grapple()', {'fileName': 'Hero.hx', 'lineNumber': 621, 'className': 'Hero', 'methodName': 'grapple'});
-          9K.53kZ-(.0[Y.(H5 S(this.6kC1.-iB=, 65280);
+          9K.53kZ-(.0[Y.setColor(this.6kC1.-iB=, 65280);
         }
         if (arg0.8]X}5 == +6[ML.42)62) {
           if (arg0.]b > 0) {
@@ -5690,7 +5690,7 @@ for ($somevar in v2) {
       v1.,a3xt = function (arg0) {
         if (this.6kC1 != null) {
           haxe.]{i.-[Ra6('double hold -> kneeGrab()', {'fileName': 'Hero.hx', 'lineNumber': 803, 'className': 'Hero', 'methodName': 'kneeGrab'});
-          9K.53kZ-(.0[Y.(H5 S(this.6kC1.-iB=, 65280);
+          9K.53kZ-(.0[Y.setColor(this.6kC1.-iB=, 65280);
         }
         this.1P = 1 / *r.-s;
         this.6kC1 = arg0;
@@ -6734,7 +6734,7 @@ for ($somevar in v2) {
         v7.setTransform(v9);
       };
 
-      9K.53kZ-(.0[Y.(H5 S = function (arg0, arg1, arg2) {
+      9K.53kZ-(.0[Y.setColor = function (arg0, arg1, arg2) {
         if (arg2 == null) {
           arg2 = -255;
         }
@@ -7846,7 +7846,7 @@ for ($somevar in v2) {
         flash.7]AJ.__clear_trace();
       };
 
-      haxe.]{i.(H5 S = function (arg0) {
+      haxe.]{i.setColor = function (arg0) {
         flash.7]AJ.__set_trace_color(arg0);
       };
 

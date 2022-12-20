@@ -936,7 +936,7 @@ for ($somevar in v2) {
       v7.setTransform(v9);
     };
 
-    9K.53kZ-(.0[Y.(H5 S = function (arg0, arg1, arg2) {
+    9K.53kZ-(.0[Y.setColor = function (arg0, arg1, arg2) {
       if (arg2 == null) {
         arg2 = -255;
       }
@@ -1258,7 +1258,7 @@ for ($somevar in v2) {
     [',=ya', 1].toString = )PVyX;
     ['756X', 0].__enum__.,=ya = [',=ya', 1];
     44{N = function (arg0) {
-      haxe.]{i.(H5 S(16777215);
+      haxe.]{i.setColor(16777215);
       44{N.(K = this;
       this.-iB= = arg0;
       this.32 = new 9K.+7U K(arg0);
@@ -1302,7 +1302,7 @@ for ($somevar in v2) {
       v4._x = v5 + (v5 - (10 + this.-nvL6[arg0] * 10)) * v3;
       v4._y = *r.*OA - 7;
       v4._visible = }-VbH.9UeAW();
-      9K.53kZ-(.0[Y.(H5 S(v4.smc, this.=cKzE([arg0], -180);
+      9K.53kZ-(.0[Y.setColor(v4.smc, this.=cKzE([arg0], -180);
       9K.53kZ-(.+43N.1U;0(v4, 2, 4, 3689833);
       ++this.-nvL6[arg0];
       if (this.-nvL6[arg0] == *r.*Um=H() {
@@ -1361,7 +1361,7 @@ for ($somevar in v2) {
           v9 = 3;
           this.4,01 = v8;
         }
-        v8.(H5 S(v9);
+        v8.setColor(v9);
         ++v5;
       }
       v6 = this.{p39.9Z(8.iterator();
@@ -1484,7 +1484,7 @@ for ($somevar in v2) {
             ++v8;
             v9 += Math.abs(v12[0] - v11.(() + Math.abs(v12[1] - v11.)();
             if (v9 > 2) {
-              9K.53kZ-(.0[Y.(H5 S(this.-iB=, 16711680, -100);
+              9K.53kZ-(.0[Y.setColor(this.-iB=, 16711680, -100);
             }
           }
           if (v9 > 0) {
@@ -1621,8 +1621,8 @@ for ($somevar in v2) {
         var v5 = 44{N.(K.32.*=_p_('mcBallExplode', 44{N.5;OW;);
         v5._x = this.((;
         v5._y = this.)(;
-        9K.53kZ-(.0[Y.(H5 S(v5.1F;A, 44{N.(K.=cKzE([this.*J}8) - 1]);
-        9K.53kZ-(.0[Y.(H5 S(v5.2F;A, 44{N.(K.=cKzE([this.*J}8) - 1]);
+        9K.53kZ-(.0[Y.setColor(v5.1F;A, 44{N.(K.=cKzE([this.*J}8) - 1]);
+        9K.53kZ-(.0[Y.setColor(v5.2F;A, 44{N.(K.=cKzE([this.*J}8) - 1]);
         var v6 = 10;
         var v7 = 2;
         var v8 = 0;
@@ -1674,14 +1674,14 @@ for ($somevar in v2) {
     v1.)gv94 = null;
     v1.= = null;
     v1.-iB= = null;
-    v1.(H5 S = function (arg0) {
+    v1.setColor = function (arg0) {
       this.*J}8) = arg0;
       this.-iB=.gotoAndStop(arg0 + 1);
     };
 
     v1.}SYp5 = null;
     v1.[W(XN = function (arg0) {
-      this.(H5 S(arg0);
+      this.setColor(arg0);
       if (!}-VbH.9UeAW()) {
         var v3 = this.32.*=_p_('mcBallBlink', 1);
       }

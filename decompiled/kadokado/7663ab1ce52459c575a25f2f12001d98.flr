@@ -1017,7 +1017,7 @@ for ($somevar in v2) {
         flash.7]AJ.__clear_trace();
       };
 
-      haxe.]{i.(H5 S = function (arg0) {
+      haxe.]{i.setColor = function (arg0) {
         flash.7]AJ.__set_trace_color(arg0);
       };
 
@@ -1785,7 +1785,7 @@ for ($somevar in v2) {
         v7.setTransform(v9);
       };
 
-      9K.53kZ-(.0[Y.(H5 S = function (arg0, arg1, arg2) {
+      9K.53kZ-(.0[Y.setColor = function (arg0, arg1, arg2) {
         if (arg2 == null) {
           arg2 = -255;
         }
@@ -3126,7 +3126,7 @@ for ($somevar in v2) {
           }
         }
         this.7rBB0 = 255;
-        9K.53kZ-(.0[Y.(H5 S(this.)_().-iB=, 0, 3Wt.9n6(this.7rBB0));
+        9K.53kZ-(.0[Y.setColor(this.)_().-iB=, 0, 3Wt.9n6(this.7rBB0));
         v3 = 0;
         while (v3 < 3) {
           ++v3;
@@ -3263,7 +3263,7 @@ for ($somevar in v2) {
           if (this.7rBB0 < 2) {
             this.7rBB0 = 0;
           }
-          9K.53kZ-(.0[Y.(H5 S(this.)_().-iB=, 0, 3Wt.9n6(this.7rBB0));
+          9K.53kZ-(.0[Y.setColor(this.)_().-iB=, 0, 3Wt.9n6(this.7rBB0));
           if (this.7rBB0 <= 0) {
             this.7rBB0 = null;
           }
@@ -3434,7 +3434,7 @@ for ($somevar in v2) {
                   v15.+{eA+ = 0.95;
                 }
                 this.7rBB0 = 5000;
-                9K.53kZ-(.0[Y.(H5 S(this.)_().-iB=, 0, 3Wt.9n6(this.7rBB0));
+                9K.53kZ-(.0[Y.setColor(this.)_().-iB=, 0, 3Wt.9n6(this.7rBB0));
                 break;
               }
             }

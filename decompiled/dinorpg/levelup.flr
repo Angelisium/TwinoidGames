@@ -869,7 +869,7 @@ for ($somevar in v2) {
       flash.7]AJ.__clear_trace();
     };
 
-    haxe.]{i.(H5 S = function (arg0) {
+    haxe.]{i.setColor = function (arg0) {
       flash.7]AJ.__set_trace_color(arg0);
     };
 
@@ -1486,7 +1486,7 @@ for ($somevar in v2) {
       v7.setTransform(v9);
     };
 
-    9K.53kZ-(.0[Y.(H5 S = function (arg0, arg1, arg2) {
+    9K.53kZ-(.0[Y.setColor = function (arg0, arg1, arg2) {
       if (arg2 == null) {
         arg2 = -255;
       }
@@ -2078,10 +2078,10 @@ for ($somevar in arg0) {
         ++v4;
         v6.,d951 = null;
         if (arg0 == 0) {
-          9K.53kZ-(.0[Y.(H5 S(v6, 0, 0);
+          9K.53kZ-(.0[Y.setColor(v6, 0, 0);
           v3 = v6;
         } else {
-          9K.53kZ-(.0[Y.(H5 S(v6, 0, -60);
+          9K.53kZ-(.0[Y.setColor(v6, 0, -60);
         }
         --arg0;
       }
@@ -2157,7 +2157,7 @@ for ($somevar in arg0) {
         if (v4.,d951 != null) {
           v4.,d951 *= 0.8;
           v4.,d951 = Math.max(v4.,d951 - 2, 0);
-          9K.53kZ-(.0[Y.(H5 S(v4, 16777215, 3Wt.9n6(v4.,d951 * 2 - 255));
+          9K.53kZ-(.0[Y.setColor(v4, 16777215, 3Wt.9n6(v4.,d951 * 2 - 255));
           if (v4.,d951 == 0) {
             v4.,d951 = null;
           }

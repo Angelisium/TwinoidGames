@@ -1425,7 +1425,7 @@ for ($somevar in v2) {
       flash.7]AJ.__clear_trace();
     };
 
-    haxe.]{i.(H5 S = function (arg0) {
+    haxe.]{i.setColor = function (arg0) {
       flash.7]AJ.__set_trace_color(arg0);
     };
 
@@ -3318,7 +3318,7 @@ for ($somevar in v2) {
       v7.setTransform(v9);
     };
 
-    9K.53kZ-(.0[Y.(H5 S = function (arg0, arg1, arg2) {
+    9K.53kZ-(.0[Y.setColor = function (arg0, arg1, arg2) {
       if (arg2 == null) {
         arg2 = -255;
       }
@@ -4055,7 +4055,7 @@ for ($somevar in v2) {
       v3.(( = 180;
       v3.)( = 330;
       this.{p39.9Z(8.push(v3);
-      v3.(H5 S(10);
+      v3.setColor(10);
       v3.87vE7(();
       this.4,01 = v3;
       var v4 = [];
@@ -4114,7 +4114,7 @@ for ($somevar in v2) {
           v11.*IB9+(();
         } else {
           --v8;
-          v11.(H5 S(11);
+          v11.setColor(11);
         }
       }
       v9 = function (arg0, arg1) {
@@ -4152,7 +4152,7 @@ for ($somevar in v2) {
           var v18 = new 2e{I();
           v18.(( = v17.((;
           v18.)( = v17.)(;
-          v18.(H5 S(4);
+          v18.setColor(4);
           this.{p39.9Z(8.push(v18);
           v18.87vE7(();
           v18.(qiPp();
@@ -4174,7 +4174,7 @@ for ($somevar in v2) {
         v16 = new 2e{I();
         v16.(( = v15.((;
         v16.)( = v15.)(;
-        v16.(H5 S(5);
+        v16.setColor(5);
         this.{p39.9Z(8.push(v16);
         v16.87vE7(();
         v16.(qiPp();
@@ -4483,7 +4483,7 @@ for ($somevar in v2) {
             ++v5;
             if (v7.*J}8) == 4) {
               v7.)vYj7 = 0;
-              v7.(H5 S(1);
+              v7.setColor(1);
               var v8 = v7.32.*=_p_('fxBlink', 3);
             }
           }
@@ -4542,7 +4542,7 @@ for ($somevar in v2) {
       var v4 = 44{N.(K.32.*=_p_('mcBallExplode', 44{N.5;OW;);
       v4._x = this.((;
       v4._y = this.)(;
-      9K.53kZ-(.0[Y.(H5 S(v4.1F;A, 65280);
+      9K.53kZ-(.0[Y.setColor(v4.1F;A, 65280);
       var v5 = 10;
       var v6 = 2;
       var v7 = 0;
@@ -4671,7 +4671,7 @@ for ($somevar in v2) {
     };
 
     v1.7BD8 = function () {
-      this.(H5 S(this.)vYj7 + 1);
+      this.setColor(this.)vYj7 + 1);
       this.)iWy3((0);
       this.5fxvK = 10;
       var v2 = this.32.*=_p_('mcLightOpen', 10);
@@ -4682,7 +4682,7 @@ for ($somevar in v2) {
     v1.-iB= = null;
     v1.9;I = null;
     v1.6g,A = null;
-    v1.(H5 S = function (arg0) {
+    v1.setColor = function (arg0) {
       this.*J}8) = arg0;
       this.-iB=.gotoAndStop(arg0 + 1);
       var v3 = this.*J}8);
@@ -4708,7 +4708,7 @@ for ($somevar in v2) {
 
     v1.*IB9+( = function () {
       this.)vYj7 = 0;
-      this.(H5 S(0);
+      this.setColor(0);
     };
 
     v1.}SYp5 = null;

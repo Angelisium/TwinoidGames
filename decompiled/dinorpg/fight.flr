@@ -3700,7 +3700,7 @@ movie 'fight.swf' {
             break;
           case 11:
             v5 = new 9K.53kZ-(.-0]rl(this.70*.*=_p_('fxFlameche', 1));
-            9K.53kZ-(.0[Y.(H5 S(v5.-iB=, 9K.53kZ-(.0[Y.*HC0}(0, 100));
+            9K.53kZ-(.0[Y.setColor(v5.-iB=, 9K.53kZ-(.0[Y.*HC0}(0, 100));
             v5.(( = (Math.random() * 2 - 1) * 15;
             v5.)( = -Math.random() * 20;
             v5.4u=dZ();
@@ -5297,7 +5297,7 @@ for ($somevar in arg0) {
         var v11 = 3Wt.9n6([re7L.(B00(arg1));
         v9.4u=dZ();
         9K.53kZ-(.+43N.1U;0(v9.-iB=, 2, 4, 11184810);
-        9K.53kZ-(.0[Y.(H5 S(v9.-iB=, this.=c4U(.getPixel(v10, v11), -200);
+        9K.53kZ-(.0[Y.setColor(v9.-iB=, this.=c4U(.getPixel(v10, v11), -200);
         return v9;
       }
       return null;
@@ -5538,7 +5538,7 @@ for ($somevar in arg0) {
     v1.)YQB)( = null;
     v1.+ABUU = function () {
       this.[l4}E( = 15;
-      9K.53kZ-(.0[Y.(H5 S(this.-iB=.=S7A, 16711680);
+      9K.53kZ-(.0[Y.setColor(this.-iB=.=S7A, 16711680);
       this.-iB=.-o()._visible = true;
     };
 
@@ -5594,7 +5594,7 @@ for ($somevar in arg0) {
         }
         if (this.[l4}E( == 0) {
           this.[l4}E( = null;
-          9K.53kZ-(.0[Y.(H5 S(this.-iB=.=S7A, 0, 0);
+          9K.53kZ-(.0[Y.setColor(this.-iB=.=S7A, 0, 0);
         }
       }
     };
@@ -8477,7 +8477,7 @@ for ($somevar in v2) {
         v7.-iB=.gotoAndStop(this.6MQB + 1);
         v7.,wJ = (3 + Math.random() * 10) * this.8_gOI(.26do5;
         if (this.*J}8) != null) {
-          9K.53kZ-(.0[Y.(H5 S(v7.-iB=, this.*J}8), 3Wt.random(50) - 255);
+          9K.53kZ-(.0[Y.setColor(v7.-iB=, this.*J}8), 3Wt.random(50) - 255);
         }
         v7.4u=dZ();
         var v8 = this.6MQB;
@@ -9534,15 +9534,15 @@ for ($somevar in v2) {
     v1.__class__ = 17.09.{=GwF;
     v1.=w - = function (arg0) {
       var v3 = 3Wt.9n6(17.09.{=GwF.[Z-]L * arg0);
-      9K.53kZ-(.0[Y.(H5 S([re7L.(K.-iB=, 0, -v3);
+      9K.53kZ-(.0[Y.setColor([re7L.(K.-iB=, 0, -v3);
       this.-Z AC._y = -17.09.{=GwF.[Z-]L * (1 - arg0);
-      9K.53kZ-(.0[Y.(H5 S(this.8_gOI(.-iB=, 0, v3);
+      9K.53kZ-(.0[Y.setColor(this.8_gOI(.-iB=, 0, v3);
       var v4 = 0;
       var v5 = this. ]55;
       while (v4 < v5.length) {
         var v6 = v5[v4];
         ++v4;
-        9K.53kZ-(.0[Y.(H5 S(v6.].-iB=, 0, v3);
+        9K.53kZ-(.0[Y.setColor(v6.].-iB=, 0, v3);
       }
     };
 
@@ -9566,7 +9566,7 @@ for ($somevar in v2) {
         v6.32 = new 9K.+7U K(v6.-iB=);
         v6.] = v5.];
         v6.5955 = v5.5955;
-        9K.53kZ-(.0[Y.(H5 S(v6.-iB=, 0, 3Wt.9n6(17.09.{=GwF.[Z-]L));
+        9K.53kZ-(.0[Y.setColor(v6.-iB=, 0, 3Wt.9n6(17.09.{=GwF.[Z-]L));
         this.8mhM-(.push(v6);
         v6.4u=dZ();
       }
@@ -10154,7 +10154,7 @@ for ($somevar in v2) {
     v1.+}B( = null;
     v1.=w - = function (arg0) {
       var v3 = 3Wt.9n6(17.09.4NkaE.[Z-]L * arg0);
-      9K.53kZ-(.0[Y.(H5 S(this.}rh9-.-iB=, 0, v3);
+      9K.53kZ-(.0[Y.setColor(this.}rh9-.-iB=, 0, v3);
     };
 
     v1.*uyE] = function (arg0) {
@@ -11901,7 +11901,7 @@ for ($somevar in v2) {
       flash.7]AJ.__clear_trace();
     };
 
-    haxe.]{i.(H5 S = function (arg0) {
+    haxe.]{i.setColor = function (arg0) {
       flash.7]AJ.__set_trace_color(arg0);
     };
 
@@ -13774,7 +13774,7 @@ for ($somevar in v2) {
       v8.setTransform(v10);
     };
 
-    9K.53kZ-(.0[Y.(H5 S = function (arg0, arg1, arg2) {
+    9K.53kZ-(.0[Y.setColor = function (arg0, arg1, arg2) {
       if (arg2 == null) {
         arg2 = -255;
       }

@@ -991,7 +991,7 @@ for ($somevar in v2) {
         flash.7]AJ.__clear_trace();
       };
 
-      haxe.]{i.(H5 S = function (arg0) {
+      haxe.]{i.setColor = function (arg0) {
         flash.7]AJ.__set_trace_color(arg0);
       };
 
@@ -1451,7 +1451,7 @@ for ($somevar in v2) {
             } else {
               v14 = (3Wt.random(2) == 0) ? *r.(N+fD : *r.(lgJ;
             }
-            9K.53kZ-(.0[Y.(H5 S(v13, v14);
+            9K.53kZ-(.0[Y.setColor(v13, v14);
             v13.blendMode = 'add';
             var v15 = new 9K.53kZ-(.,v0X(v13);
             v15.(( = v5;
@@ -2525,7 +2525,7 @@ for ($somevar in v2) {
         v7.setTransform(v9);
       };
 
-      9K.53kZ-(.0[Y.(H5 S = function (arg0, arg1, arg2) {
+      9K.53kZ-(.0[Y.setColor = function (arg0, arg1, arg2) {
         if (arg2 == null) {
           arg2 = -255;
         }
@@ -2870,7 +2870,7 @@ for ($somevar in arg0) {
           var v10 = 20 + 3Wt.random(4) * 10;
           v9._xscale = v10;
           v9._yscale = v10;
-          9K.53kZ-(.0[Y.(H5 S(v9, 16777215);
+          9K.53kZ-(.0[Y.setColor(v9, 16777215);
           v9.blendMode = 'add';
           var v11 = new 9K.53kZ-(.,v0X(v9);
           v11.(( = arg0 + (Math.random() * 2 - 1) * v5;
@@ -3483,7 +3483,7 @@ for ($somevar in arg0) {
           var v8 = this.32.*=_p_('part1', 44{N.)WvcB);
           v8._xscale = 40;
           v8._yscale = 40;
-          9K.53kZ-(.0[Y.(H5 S(v8, 2800086);
+          9K.53kZ-(.0[Y.setColor(v8, 2800086);
           v8.blendMode = 'add';
           var v9 = new 9K.53kZ-(.,v0X(v8);
           v9.(( = v5.((;

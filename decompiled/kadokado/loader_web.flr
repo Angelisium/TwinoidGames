@@ -275,7 +275,7 @@ movie 'loader_web.swf' {
             }
           };
 
-          this.]{i.(H5 S = function (*) {
+          this.]{i.setColor = function (*) {
             if (!this.initdone) {
               this.init();
             }
@@ -968,7 +968,7 @@ for ($somevar in v2) {
       }
       arg0._alpha = 100;
       arg0.filters = [];
-      9K.53kZ-(.0[Y.(H5 S(arg0, 0, 0);
+      9K.53kZ-(.0[Y.setColor(arg0, 0, 0);
       arg0._x = 0;
     };
 
@@ -1065,7 +1065,7 @@ for ($somevar in v2) {
           9K.53kZ-(.+43N.-A=)(v2, (1 - v4) * 200, 0);
           v2._x = -(1 - v4) * 50;
         } else {
-          9K.53kZ-(.0[Y.(H5 S(v2, 0, 3Wt.9n6((1 - v4) * 255));
+          9K.53kZ-(.0[Y.setColor(v2, 0, 3Wt.9n6((1 - v4) * 255));
         }
       }
       if (v2.] <= 0) {
@@ -1410,7 +1410,7 @@ for ($somevar in v2) {
       flash.7]AJ.__clear_trace();
     };
 
-    haxe.]{i.(H5 S = function (arg0) {
+    haxe.]{i.setColor = function (arg0) {
       flash.7]AJ.__set_trace_color(arg0);
     };
 
@@ -1667,7 +1667,7 @@ for ($somevar in v2) {
       } else {
         if (v4 != 1) {
         } else {
-            9K.53kZ-(.0[Y.(H5 S(this.[wBA,.{xJ, 0, 3Wt.9n6(v3 * 255));
+            9K.53kZ-(.0[Y.setColor(this.[wBA,.{xJ, 0, 3Wt.9n6(v3 * 255));
           if (v4 != 2) {
             var v5 = Math.min(this.2VhU6 / (v2 - 40), 1);
             this.[wBA,.{xJ.filters = [];
@@ -4047,7 +4047,7 @@ for ($somevar in v2) {
       v7.setTransform(v9);
     };
 
-    9K.53kZ-(.0[Y.(H5 S = function (arg0, arg1, arg2) {
+    9K.53kZ-(.0[Y.setColor = function (arg0, arg1, arg2) {
       if (arg2 == null) {
         arg2 = -255;
       }

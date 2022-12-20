@@ -1274,7 +1274,7 @@ for ($somevar in v2) {
         flash.7]AJ.__clear_trace();
       };
 
-      haxe.]{i.(H5 S = function (arg0) {
+      haxe.]{i.setColor = function (arg0) {
         flash.7]AJ.__set_trace_color(arg0);
       };
 
@@ -1372,7 +1372,7 @@ for ($somevar in v2) {
         v7.setTransform(v9);
       };
 
-      9K.53kZ-(.0[Y.(H5 S = function (arg0, arg1, arg2) {
+      9K.53kZ-(.0[Y.setColor = function (arg0, arg1, arg2) {
         if (arg2 == null) {
           arg2 = -255;
         }
@@ -3173,7 +3173,7 @@ for ($somevar in this.1) {
           v4.,X,)w = 0;
           v4.9HbII( = true;
           var v5 = 9K.53kZ-(.0[Y.-v2lh(=(,aA.1B]FW[this.,S+XB][3Wt.random(=(,aA.3rM,,[this.,S+XB].length)], 80);
-          9K.53kZ-(.0[Y.(H5 S(v4, v5);
+          9K.53kZ-(.0[Y.setColor(v4, v5);
           this.,Kwdh.push(v4);
           var v6 = v4.(( + v4._width * 1.1;
           this.9mQ+1 = v6;
@@ -3190,7 +3190,7 @@ for ($somevar in this.1) {
           v3.5, = v3.)(;
           v4 = =(,aA.1B]FW[this.,S+XB][3Wt.random(=(,aA.3rM,,[this.,S+XB].length)];
           v3.*J}8) = v4;
-          9K.53kZ-(.0[Y.(H5 S(v3, v4);
+          9K.53kZ-(.0[Y.setColor(v3, v4);
           v3.4B1W( = true;
           this.13AgQ.push(v3);
           this.9mQ+1 = v3.(( + 5;
@@ -3219,7 +3219,7 @@ for ($somevar in this.1) {
         v3.)( = v3._y;
         v3.,X,)w = (3Wt.random(2) == 0) ? -1 - this.9HbII([0] % 2 : 1 + this.9HbII([0] % 2;
         v4 = 9K.53kZ-(.0[Y.-v2lh(=(,aA.1B]FW[this.,S+XB][3Wt.random(=(,aA.3rM,,[this.,S+XB].length)], 80);
-        9K.53kZ-(.0[Y.(H5 S(v3, v4);
+        9K.53kZ-(.0[Y.setColor(v3, v4);
         this.,Kwdh.push(v3);
         v5 = v3.(( + v3._width * 1.1;
         this.9mQ+1 = v5;
@@ -3293,7 +3293,7 @@ for ($somevar in this.1) {
             ++v10;
             var v11 = v10;
             var v12 = this.32.*=_p_('mcPart', =(,aA. N9F2);
-            9K.53kZ-(.0[Y.(H5 S(v12.smc, arg2);
+            9K.53kZ-(.0[Y.setColor(v12.smc, arg2);
             var v13 = v7 * v11;
             v12._x = arg0 + 9K.[sNU8.75+O.cos(v13) * (v5 * v9);
             v12._y = arg1 + 9K.[sNU8.75+O.sin(v13) * (v5 * v9);
@@ -3450,7 +3450,7 @@ for ($somevar in this.1) {
           ++v8;
           var v9 = v8;
           var v10 = this.32.*=_p_('mcBonusParts', =(,aA.(8LH1);
-          9K.53kZ-(.0[Y.(H5 S(v10, arg1.*J}8));
+          9K.53kZ-(.0[Y.setColor(v10, arg1.*J}8));
           v10.gotoAndStop(v9 + 1);
           v10._x = arg0._x + arg1._x;
           v10._y = arg0._y + arg1._y;

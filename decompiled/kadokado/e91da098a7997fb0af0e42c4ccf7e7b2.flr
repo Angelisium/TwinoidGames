@@ -905,7 +905,7 @@ for ($somevar in v2) {
         flash.7]AJ.__clear_trace();
       };
 
-      haxe.]{i.(H5 S = function (arg0) {
+      haxe.]{i.setColor = function (arg0) {
         flash.7]AJ.__set_trace_color(arg0);
       };
 
@@ -1550,7 +1550,7 @@ for ($somevar in v2) {
         v7.setTransform(v9);
       };
 
-      9K.53kZ-(.0[Y.(H5 S = function (arg0, arg1, arg2) {
+      9K.53kZ-(.0[Y.setColor = function (arg0, arg1, arg2) {
         if (arg2 == null) {
           arg2 = -255;
         }
@@ -2111,7 +2111,7 @@ for ($somevar in v2) {
           v4 = this.9ABE.iterator();
           while (v4.1ll a()) {
             v5 = v4.7Y-7();
-            v5.(H5 S();
+            v5.setColor();
           }
           if (this.6zqE)((v2) == 0) {
             break;
@@ -2156,7 +2156,7 @@ for ($somevar in v2) {
             while (v7 < v6.length) {
               v8 = v6[v7];
               ++v7;
-              v8.(H5 S();
+              v8.setColor();
             }
             v7 = this.7LxWY(this.;AH0);
             v8 = true;
@@ -2604,7 +2604,7 @@ for ($somevar in v2) {
         this.9lBrL = 44{N.(K.)LJ.*=_p_('mcShade', 0);
         44{N.(K.-]-I(.push(this);
         this.(j;o7(arg0, arg1);
-        this.(H5 S(arg2);
+        this.setColor(arg2);
       };
 
       2e{I.__name__ = ['2e{I'];
@@ -2700,11 +2700,11 @@ for ($somevar in v2) {
       v1.==Uf7 = function () {
         9K.53kZ-(.+43N.1U;0(this.-iB=, 2, 4, 16777215, true);
         9K.53kZ-(.+43N.1U;0(this.-iB=, 4, 2, 16777215, true);
-        9K.53kZ-(.0[Y.(H5 S(this.-iB=, 0, 20);
+        9K.53kZ-(.0[Y.setColor(this.-iB=, 0, 20);
         44{N.(K.32.08M8(this.-iB=);
       };
 
-      v1.(H5 S = function (arg0) {
+      v1.setColor = function (arg0) {
         if (arg0 == null) {
           arg0 = 3Wt.random(*r.7XNo);
         }
@@ -2736,7 +2736,7 @@ for ($somevar in v2) {
             9K.53kZ-(.+43N.1U;0(this.-iB=, 2, 4, 0, true);
             9K.53kZ-(.0[Y.;CYOh(this.-iB=, 0, 0);
             this.(j;o7(this.5R, v2);
-            this.(H5 S(10);
+            this.setColor(10);
             break;
           }
           ++v2;

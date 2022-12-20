@@ -1330,7 +1330,7 @@ for ($somevar in v2) {
         flash.7]AJ.__clear_trace();
       };
 
-      haxe.]{i.(H5 S = function (arg0) {
+      haxe.]{i.setColor = function (arg0) {
         flash.7]AJ.__set_trace_color(arg0);
       };
 
@@ -2465,7 +2465,7 @@ for ($somevar in v2) {
         v7.setTransform(v9);
       };
 
-      9K.53kZ-(.0[Y.(H5 S = function (arg0, arg1, arg2) {
+      9K.53kZ-(.0[Y.setColor = function (arg0, arg1, arg2) {
         if (arg2 == null) {
           arg2 = -255;
         }
@@ -3364,7 +3364,7 @@ for ($somevar in v2) {
           var v8 = this.32.*=_p_('part1', 44{N.5;OW;);
           v8._xscale = 40 + Math.random() * 10;
           v8._yscale = 40;
-          9K.53kZ-(.0[Y.(H5 S(v8, 16750848);
+          9K.53kZ-(.0[Y.setColor(v8, 16750848);
           v8.blendMode = 'add';
           var v9 = new 9K.53kZ-(.,v0X(v8);
           v9.(( = 6 + v7 * (v5.(( / v4);

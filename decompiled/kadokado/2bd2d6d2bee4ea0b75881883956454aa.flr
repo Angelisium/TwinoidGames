@@ -851,7 +851,7 @@ for ($somevar in v2) {
       [')Uf4d', 0].toString = )PVyX;
       [';IL3{', 3].__enum__.)Uf4d = [')Uf4d', 0];
       44{N = function (arg0) {
-        haxe.]{i.(H5 S(16777215);
+        haxe.]{i.setColor(16777215);
         *r.init();
         this.-iB= = arg0;
         44{N.(K = this;
@@ -2649,7 +2649,7 @@ for ($somevar in v2) {
           v3._xscale = this.-iB=._xscale;
           v3._yscale = this.-iB=._yscale;
           if (this.*J}8) != null) {
-            9K.53kZ-(.0[Y.(H5 S(v3, this.*J}8));
+            9K.53kZ-(.0[Y.setColor(v3, this.*J}8));
           }
           var v4 = 0;
           while (v4 < v2) {
@@ -2660,7 +2660,7 @@ for ($somevar in v2) {
             v6.1o8jJ.(j;o7(v6.((, v6.)();
             v6.4u=dZ();
             if (this.*J}8) != null) {
-              9K.53kZ-(.0[Y.(H5 S(v6.-iB=, this.*J}8));
+              9K.53kZ-(.0[Y.setColor(v6.-iB=, this.*J}8));
             }
           }
           if (Math.random() < *r.+dKC)( && 44{N.(K.+LT;C(.length < *r.;}8+L) {
@@ -2758,9 +2758,9 @@ for ($somevar in v2) {
       v1.5955 = null;
       v1.-iB= = null;
       v1.(Erk5 = null;
-      v1.(H5 S = function (arg0) {
+      v1.setColor = function (arg0) {
         this.*J}8) = arg0;
-        9K.53kZ-(.0[Y.(H5 S(this.-iB=.smc.smc, this.*J}8));
+        9K.53kZ-(.0[Y.setColor(this.-iB=.smc.smc, this.*J}8));
       };
 
       v1.9m,-A( = function (arg0) {
@@ -2769,7 +2769,7 @@ for ($somevar in v2) {
           this.-iB=.smc.gotoAndStop(3Wt.9n6(this.5955) + 1);
         }
         if (this.*J}8) != null) {
-          this.(H5 S(this.*J}8));
+          this.setColor(this.*J}8));
         }
       };
 
@@ -2787,7 +2787,7 @@ for ($somevar in v2) {
         if (arg0.smc != null) {
           arg0.smc.gotoAndStop(3Wt.9n6(this.5955) + 1);
         }
-        9K.53kZ-(.0[Y.(H5 S(arg0.smc.smc, this.*J}8));
+        9K.53kZ-(.0[Y.setColor(arg0.smc.smc, this.*J}8));
       };
 
       v1.8[kz=( = function (arg0) {
@@ -3707,7 +3707,7 @@ for ($somevar in v2) {
         v7.setTransform(v9);
       };
 
-      9K.53kZ-(.0[Y.(H5 S = function (arg0, arg1, arg2) {
+      9K.53kZ-(.0[Y.setColor = function (arg0, arg1, arg2) {
         if (arg2 == null) {
           arg2 = -255;
         }
@@ -4022,7 +4022,7 @@ for ($somevar in v2) {
         flash.7]AJ.__clear_trace();
       };
 
-      haxe.]{i.(H5 S = function (arg0) {
+      haxe.]{i.setColor = function (arg0) {
         flash.7]AJ.__set_trace_color(arg0);
       };
 
@@ -4767,8 +4767,8 @@ for ($somevar in arg0) {
         this.*B = arg0;
         this.=S7A.58rO6.+Da3+.text = (String.fromCharCode(65 + arg0)).toUpperCase();
         var v3 = (izm (.9183L(this.*B);
-        9K.53kZ-(.0[Y.(H5 S(this.=S7A.smc, v3);
-        9K.53kZ-(.0[Y.(H5 S(this.=S7A.58rO6.smc, v3);
+        9K.53kZ-(.0[Y.setColor(this.=S7A.smc, v3);
+        9K.53kZ-(.0[Y.setColor(this.=S7A.58rO6.smc, v3);
         var v4 = 9K.53kZ-(.0[Y.{SXC{(v3);
         var v5 = -200;
         v4.= = 3Wt.9n6(Math.max(v4.= + v5, 0));

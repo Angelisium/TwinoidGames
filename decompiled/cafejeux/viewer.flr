@@ -3221,7 +3221,7 @@ for ($somevar in v2) {
           v6 = this.[+U0q[0];
         }
         arg1 += this.8Q;m2 + this.+vRV1(;
-        9K.53kZ-(.0[Y.(H5 S(arg0, v6[this.=S7A[arg1] % v6.length]);
+        9K.53kZ-(.0[Y.setColor(arg0, v6[this.=S7A[arg1] % v6.length]);
         $s.pop();
       }
       catch (v0) {
@@ -3645,7 +3645,7 @@ for ($somevar in v2) {
       }
     };
 
-    haxe.]{i.(H5 S = function (arg0) {
+    haxe.]{i.setColor = function (arg0) {
       $s.push('haxe.Log::' + 'setColor');
       var v3 = $s.length;
       try {
@@ -5741,7 +5741,7 @@ for ($somevar in v2) {
       }
     };
 
-    9K.53kZ-(.0[Y.(H5 S = function (arg0, arg1, arg2) {
+    9K.53kZ-(.0[Y.setColor = function (arg0, arg1, arg2) {
       $s.push('mt.bumdum.Col::' + 'setColor');
       var v5 = $s.length;
       try {
@@ -6262,7 +6262,7 @@ for ($somevar in v2) {
       $s.push('Manager::' + 'new');
       var v3 = $s.length;
       try {
-        haxe.]{i.(H5 S(16777215);
+        haxe.]{i.setColor(16777215);
         if (!haxe.6z7-o.-WfKy()) {
           haxe.]{i.-[Ra6 = function (arg0, arg1) {
             $s.push('Manager::' + 'new@33');
