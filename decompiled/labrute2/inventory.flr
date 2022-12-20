@@ -601,11 +601,11 @@ for ($somevar in arg0) {
         };
 
         Array.prototype.iterator = function () {
-          return {'7-,': 0, '=()': this, 'hasNext': function () {
-            return this.7-, < this.=().length;
+          return {'cur': 0, '=()': this, 'hasNext': function () {
+            return this.cur < this.=().length;
           }, 'next': function () {
-            ++this.7-,;
-            return this.=()[this.7-,];
+            ++this.cur;
+            return this.=()[this.cur];
           }};
         };
 
@@ -1354,7 +1354,7 @@ for ($somevar in arg0) {
     v1.*=_p_ = function (arg0, arg1) {
       var v4 = this.-fC3a(arg1);
       var v5 = v4.9oK;
-      var v6 = v4.7-,;
+      var v6 = v4.cur;
       if (v6 == 1000) {
         this.]bu40(arg1);
         return this.*=_p_(arg0, arg1);
@@ -1363,14 +1363,14 @@ for ($somevar in arg0) {
       var v7 = arg0 + '@' + 9K.+7U K.}Sgx4;
       var v8 = this.)2fr3.attachMovie(arg0, v7, v6 + arg1 * 1000, null);
       v5[v6] = v8;
-      v4.7-, = v6 + 1;
+      v4.cur = v6 + 1;
       return v8;
     };
 
     v1.;_dAm = function (arg0, arg1) {
       var v4 = this.-fC3a(arg1);
       var v5 = v4.9oK;
-      var v6 = v4.7-,;
+      var v6 = v4.cur;
       if (v6 == 1000) {
         this.]bu40(arg1);
         this.;_dAm(arg0, arg1);
@@ -1378,20 +1378,20 @@ for ($somevar in arg0) {
       }
       this.)2fr3.attachBitmap(arg0, v6 + arg1 * 1000);
       v5[v6] = null;
-      v4.7-, = v6 + 1;
+      v4.cur = v6 + 1;
     };
 
     v1.+tq5) = function (arg0) {
       var v3 = this.-fC3a(arg0);
       var v4 = v3.9oK;
       var v5 = 0;
-      var v6 = v3.7-,;
+      var v6 = v3.cur;
       while (v5 < v6) {
         ++v5;
         var v7 = v5;
         v4[v7].removeMovieClip();
       }
-      v3.7-, = 0;
+      v3.cur = 0;
     };
 
     v1.]bu40 = function (arg0) {
@@ -1400,7 +1400,7 @@ for ($somevar in arg0) {
       var v5 = 0;
       var v6 = arg0 * 1000;
       var v7 = 0;
-      var v8 = v3.7-,;
+      var v8 = v3.cur;
       while (v7 < v8) {
         ++v7;
         var v9 = v7;
@@ -1410,7 +1410,7 @@ for ($somevar in arg0) {
           ++v5;
         }
       }
-      v3.7-, = v5;
+      v3.cur = v5;
     };
 
     v1.destroy = function () {
@@ -1426,7 +1426,7 @@ for ($somevar in arg0) {
     v1.18wU* = function (arg0) {
       var v3 = this.-fC3a(arg0);
       var v4 = v3.9oK;
-      var v5 = v3.7-,;
+      var v5 = v3.cur;
       if (v5 == 1000) {
         this.]bu40(arg0);
         return this.18wU*(arg0);
@@ -1435,7 +1435,7 @@ for ($somevar in arg0) {
       var v6 = 'empty@' + 9K.+7U K.}Sgx4;
       var v7 = this.)2fr3.createEmptyMovieClip(v6, v5 + arg0 * 1000);
       v4[v5] = v7;
-      v3.7-, = v5 + 1;
+      v3.cur = v5 + 1;
       return v7;
     };
 
@@ -1446,7 +1446,7 @@ for ($somevar in arg0) {
     v1.-fC3a = function (arg0) {
       var v3 = this.}Zms3[arg0];
       if (v3 == null) {
-        v3 = {'9oK': new Array(), '7-,': 0};
+        v3 = {'9oK': new Array(), 'cur': 0};
         this.}Zms3[arg0] = v3;
       }
       return v3;
@@ -1460,11 +1460,11 @@ for ($somevar in arg0) {
       var v7 = v3 % 1000;
       if (v6[v7] == arg0) {
         v6[v7] = null;
-        if (v5.7-, == 1000) {
+        if (v5.cur == 1000) {
           this.]bu40(v4);
         }
-        v3 = v5.7-,;
-        ++v5.7-,;
+        v3 = v5.cur;
+        ++v5.cur;
         arg0.swapDepths(v3 + v4 * 1000);
         v6[v3] = arg0;
       }
@@ -1474,13 +1474,13 @@ for ($somevar in arg0) {
     v1.(GbB} = function (arg0, arg1) {
       var v4 = this.-fC3a(arg1);
       var v5 = v4.9oK;
-      var v6 = v4.7-,;
+      var v6 = v4.cur;
       if (v6 == 1000) {
         this.]bu40(arg1);
         return this.(GbB}(arg0, arg1);
       }
       v5[v6] = arg0;
-      v4.7-, = v6 + 1;
+      v4.cur = v6 + 1;
       return v6 + arg1 * 1000;
     };
 
@@ -1493,7 +1493,7 @@ for ($somevar in arg0) {
       var v5 = this.-fC3a(v4);
       var v6 = v5.9oK;
       var v7 = 0;
-      var v8 = v5.7-,;
+      var v8 = v5.cur;
       while (v7 < v8) {
         ++v7;
         var v9 = v7;
@@ -1514,7 +1514,7 @@ for ($somevar in arg0) {
       if (v6[v7] == arg0) {
         v6[v7] = null;
         v6.unshift(arg0);
-        ++v5.7-,;
+        ++v5.cur;
         this.]bu40(v4);
       }
     };
@@ -1522,7 +1522,7 @@ for ($somevar in arg0) {
     v1.9(K ; = function (arg0) {
       var v3 = this.-fC3a(arg0);
       var v4 = v3.9oK;
-      var v5 = v3.7-,;
+      var v5 = v3.cur;
       var v6 = -99999999;
       var v7 = 0;
       while (v7 < v5) {

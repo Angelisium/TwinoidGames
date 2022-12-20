@@ -2352,7 +2352,7 @@ for ($somevar in v2) {
     v1.play = null;
     }C{z8 = function (arg0) {
       this.}+ = arg0;
-      this.7-, = 0;
+      this.cur = 0;
     };
 
     }C{z8.__name__ = ['}C{z8'];
@@ -2361,13 +2361,13 @@ for ($somevar in v2) {
     v1 = }C{z8.prototype;
     v1.__class__ = }C{z8;
     v1.}+ = null;
-    v1.7-, = null;
+    v1.cur = null;
     v1.}J = null;
     v1.7iP=3 = null;
     v1.,0Kly = null;
     v1.play = function () {
-      this.7-, = (this.7-, + 66 * 9K.{-kxL.-V;B) % 628;
-      var v2 = 1 + Math.sin(this.7-, * 0.01);
+      this.cur = (this.cur + 66 * 9K.{-kxL.-V;B) % 628;
+      var v2 = 1 + Math.sin(this.cur * 0.01);
       9K.53kZ-(.0[Y.;CYOh(this.}+.-iB=, v2 * 30, 16711680);
       if (this.}+.-iB=.filters.length > 2) {
         var v3 = this.}+.-iB=.filters;
@@ -2391,7 +2391,7 @@ for ($somevar in v2) {
       this.}J = arg0;
       this.26;mF( = arg1;
       this.{5}D = 0;
-      this.7-, = 0;
+      this.cur = 0;
       this.length = this.{5}D + this.26;mF(;
       this.}J._xscale = 0;
       this.}J._yscale = 0;
@@ -2403,7 +2403,7 @@ for ($somevar in v2) {
     [{yUM implements 4+=I;
     v1 = [{yUM.prototype;
     v1.__class__ = [{yUM;
-    v1.7-, = null;
+    v1.cur = null;
     v1.26;mF( = null;
     v1.length = null;
     v1.}J = null;
@@ -2411,12 +2411,12 @@ for ($somevar in v2) {
     v1.,0Kly = null;
     v1.play = function () {
       var v2 = 9K.{-kxL.-V;B;
-      this.7-, += v2;
-      if (this.7-, >= this.{5}D) {
-        this.}J._xscale = this.5DZk5 * (this.7-, - this.{5}D) / this.26;mF(;
-        this.}J._yscale = this.5DZk5 * (this.7-, - this.{5}D) / this.26;mF(;
+      this.cur += v2;
+      if (this.cur >= this.{5}D) {
+        this.}J._xscale = this.5DZk5 * (this.cur - this.{5}D) / this.26;mF(;
+        this.}J._yscale = this.5DZk5 * (this.cur - this.{5}D) / this.26;mF(;
       }
-      var v3 = this.7-, >= this.length;
+      var v3 = this.cur >= this.length;
       if (v3) {
         this.}J.removeMovieClip();
       }

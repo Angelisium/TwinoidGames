@@ -4974,11 +4974,11 @@ for ($somevar in arg0) {
         };
 
         Array.prototype.iterator = function () {
-          return {'7-,': 0, '=()': this, 'hasNext': function () {
-            return this.7-, < this.=().length;
+          return {'cur': 0, '=()': this, 'hasNext': function () {
+            return this.cur < this.=().length;
           }, 'next': function () {
-            ++this.7-,;
-            return this.=()[this.7-,];
+            ++this.cur;
+            return this.=()[this.cur];
           }};
         };
 

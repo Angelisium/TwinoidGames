@@ -10783,7 +10783,7 @@ movie 'minipixiz.swf' {
     +7U K.prototype.-fC3a = function (59F) {
       var v2 = this.}Zms3[59F];
       if (v2 == null) {
-        v2 = {'9oK': new Array(), '7-,': 0};
+        v2 = {'9oK': new Array(), 'cur': 0};
         this.}Zms3[59F] = v2;
       }
       return v2;
@@ -10792,7 +10792,7 @@ movie 'minipixiz.swf' {
     +7U K.prototype.]bu40 = function ([-99) {
       var v7 = this.}Zms3[[-99];
       var v3 = v7.9oK;
-      var v6 = v7.7-,;
+      var v6 = v7.cur;
       var v2;
       var v4 = 0;
       var v5 = [-99 * 1000;
@@ -10805,47 +10805,47 @@ movie 'minipixiz.swf' {
         }
         ++v2;
       }
-      v7.7-, = v4;
+      v7.cur = v4;
     };
 
     +7U K.prototype.*=_p_ = function (*KB2, [-99) {
       var v3 = this.-fC3a([-99);
       var v6 = v3.9oK;
-      var v2 = v3.7-,;
+      var v2 = v3.cur;
       if (v2 == 1000) {
         this.]bu40([-99);
         return this.*=_p_(*KB2, [-99);
       }
       var v4 = 3Wt.attachMC(this.)2fr3, *KB2, v2 + [-99 * 1000);
       v6[v2] = v4;
-      ++v3.7-,;
+      ++v3.cur;
       return v4;
     };
 
     +7U K.prototype.18wU* = function ([-99) {
       var v3 = this.-fC3a([-99);
       var v6 = v3.9oK;
-      var v2 = v3.7-,;
+      var v2 = v3.cur;
       if (v2 == 1000) {
         this.]bu40([-99);
         return this.18wU*([-99);
       }
       var v4 = 3Wt.createEmptyMC(this.)2fr3, v2 + [-99 * 1000);
       v6[v2] = v4;
-      ++v3.7-,;
+      ++v3.cur;
       return v4;
     };
 
     +7U K.prototype.(GbB} = function (}J, [-99) {
       var v3 = this.-fC3a([-99);
       var v5 = v3.9oK;
-      var v2 = v3.7-,;
+      var v2 = v3.cur;
       if (v2 == 1000) {
         this.]bu40([-99);
         return this.(GbB}(}J, [-99);
       }
       v5[v2] = }J;
-      ++v3.7-,;
+      ++v3.cur;
       return v2 + [-99 * 1000;
     };
 
@@ -10856,7 +10856,7 @@ movie 'minipixiz.swf' {
       }
       var v7 = this.-fC3a(v6);
       var v3 = v7.9oK;
-      var v5 = v7.7-,;
+      var v5 = v7.cur;
       var v2;
       v2 = 0;
       while (v2 < v5) {
@@ -10878,7 +10878,7 @@ movie 'minipixiz.swf' {
       if (v2[v4] == }J) {
         v2[v4] = null;
         v2.unshift(}J);
-        ++v6.7-,;
+        ++v6.cur;
         this.]bu40(v5);
       }
     };
@@ -10891,11 +10891,11 @@ movie 'minipixiz.swf' {
       var v7 = v2 % 1000;
       if (v4[v7] == }J) {
         v4[v7] = null;
-        if (v3.7-, == 1000) {
+        if (v3.cur == 1000) {
           this.]bu40(v5);
         }
-        v2 = v3.7-,;
-        ++v3.7-,;
+        v2 = v3.cur;
+        ++v3.cur;
         }J.swapDepths(v2 + v5 * 1000);
         v4[v2] = }J;
       }
@@ -10906,17 +10906,17 @@ movie 'minipixiz.swf' {
       var v2;
       var v4 = v3.9oK;
       v2 = 0;
-      while (v2 < v3.7-,) {
+      while (v2 < v3.cur) {
         v4[v2].removeMovieClip();
         ++v2;
       }
-      v3.7-, = 0;
+      v3.cur = 0;
     };
 
     +7U K.prototype.9(K ; = function ([-99) {
       var v10 = this.-fC3a([-99);
       var v4 = v10.9oK;
-      var v9 = v10.7-,;
+      var v9 = v10.cur;
       var v6;
       var v2;
       var v8 = -99999999;

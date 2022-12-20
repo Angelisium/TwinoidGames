@@ -440,11 +440,11 @@ for ($somevar in arg0) {
           };
 
           Array.prototype.iterator = function () {
-            return {'7-,': 0, '=()': this, 'hasNext': function () {
-              return this.7-, < this.=().length;
+            return {'cur': 0, '=()': this, 'hasNext': function () {
+              return this.cur < this.=().length;
             }, 'next': function () {
-              ++this.7-,;
-              return this.=()[this.7-,];
+              ++this.cur;
+              return this.=()[this.cur];
             }};
           };
 
@@ -709,7 +709,7 @@ for ($somevar in arg0) {
       v1.*=_p_ = function (arg0, arg1) {
         var v4 = this.-fC3a(arg1);
         var v5 = v4.9oK;
-        var v6 = v4.7-,;
+        var v6 = v4.cur;
         if (v6 == 1000) {
           this.]bu40(arg1);
           return this.*=_p_(arg0, arg1);
@@ -718,14 +718,14 @@ for ($somevar in arg0) {
         var v7 = arg0 + '@' + 9K.+7U K.}Sgx4;
         var v8 = this.)2fr3.attachMovie(arg0, v7, v6 + arg1 * 1000, null);
         v5[v6] = v8;
-        v4.7-, = v6 + 1;
+        v4.cur = v6 + 1;
         return v8;
       };
 
       v1.;_dAm = function (arg0, arg1) {
         var v4 = this.-fC3a(arg1);
         var v5 = v4.9oK;
-        var v6 = v4.7-,;
+        var v6 = v4.cur;
         if (v6 == 1000) {
           this.]bu40(arg1);
           this.;_dAm(arg0, arg1);
@@ -733,20 +733,20 @@ for ($somevar in arg0) {
         }
         this.)2fr3.attachBitmap(arg0, v6 + arg1 * 1000);
         v5[v6] = null;
-        v4.7-, = v6 + 1;
+        v4.cur = v6 + 1;
       };
 
       v1.+tq5) = function (arg0) {
         var v3 = this.-fC3a(arg0);
         var v4 = v3.9oK;
         var v5 = 0;
-        var v6 = v3.7-,;
+        var v6 = v3.cur;
         while (v5 < v6) {
           ++v5;
           var v7 = v5;
           v4[v7].removeMovieClip();
         }
-        v3.7-, = 0;
+        v3.cur = 0;
       };
 
       v1.]bu40 = function (arg0) {
@@ -755,7 +755,7 @@ for ($somevar in arg0) {
         var v5 = 0;
         var v6 = arg0 * 1000;
         var v7 = 0;
-        var v8 = v3.7-,;
+        var v8 = v3.cur;
         while (v7 < v8) {
           ++v7;
           var v9 = v7;
@@ -765,7 +765,7 @@ for ($somevar in arg0) {
             ++v5;
           }
         }
-        v3.7-, = v5;
+        v3.cur = v5;
       };
 
       v1.destroy = function () {
@@ -781,7 +781,7 @@ for ($somevar in arg0) {
       v1.18wU* = function (arg0) {
         var v3 = this.-fC3a(arg0);
         var v4 = v3.9oK;
-        var v5 = v3.7-,;
+        var v5 = v3.cur;
         if (v5 == 1000) {
           this.]bu40(arg0);
           return this.18wU*(arg0);
@@ -790,7 +790,7 @@ for ($somevar in arg0) {
         var v6 = 'empty@' + 9K.+7U K.}Sgx4;
         var v7 = this.)2fr3.createEmptyMovieClip(v6, v5 + arg0 * 1000);
         v4[v5] = v7;
-        v3.7-, = v5 + 1;
+        v3.cur = v5 + 1;
         return v7;
       };
 
@@ -801,7 +801,7 @@ for ($somevar in arg0) {
       v1.-fC3a = function (arg0) {
         var v3 = this.}Zms3[arg0];
         if (v3 == null) {
-          v3 = {'9oK': new Array(), '7-,': 0};
+          v3 = {'9oK': new Array(), 'cur': 0};
           this.}Zms3[arg0] = v3;
         }
         return v3;
@@ -815,11 +815,11 @@ for ($somevar in arg0) {
         var v7 = v3 % 1000;
         if (v6[v7] == arg0) {
           v6[v7] = null;
-          if (v5.7-, == 1000) {
+          if (v5.cur == 1000) {
             this.]bu40(v4);
           }
-          v3 = v5.7-,;
-          ++v5.7-,;
+          v3 = v5.cur;
+          ++v5.cur;
           arg0.swapDepths(v3 + v4 * 1000);
           v6[v3] = arg0;
         }
@@ -829,13 +829,13 @@ for ($somevar in arg0) {
       v1.(GbB} = function (arg0, arg1) {
         var v4 = this.-fC3a(arg1);
         var v5 = v4.9oK;
-        var v6 = v4.7-,;
+        var v6 = v4.cur;
         if (v6 == 1000) {
           this.]bu40(arg1);
           return this.(GbB}(arg0, arg1);
         }
         v5[v6] = arg0;
-        v4.7-, = v6 + 1;
+        v4.cur = v6 + 1;
         return v6 + arg1 * 1000;
       };
 
@@ -848,7 +848,7 @@ for ($somevar in arg0) {
         var v5 = this.-fC3a(v4);
         var v6 = v5.9oK;
         var v7 = 0;
-        var v8 = v5.7-,;
+        var v8 = v5.cur;
         while (v7 < v8) {
           ++v7;
           var v9 = v7;
@@ -869,7 +869,7 @@ for ($somevar in arg0) {
         if (v6[v7] == arg0) {
           v6[v7] = null;
           v6.unshift(arg0);
-          ++v5.7-,;
+          ++v5.cur;
           this.]bu40(v4);
         }
       };
@@ -877,7 +877,7 @@ for ($somevar in arg0) {
       v1.9(K ; = function (arg0) {
         var v3 = this.-fC3a(arg0);
         var v4 = v3.9oK;
-        var v5 = v3.7-,;
+        var v5 = v3.cur;
         var v6 = -99999999;
         var v7 = 0;
         while (v7 < v5) {
@@ -2201,7 +2201,7 @@ for ($somevar in arg0) {
       0ziNL = function () {
         this. ]55 = new Array();
         this.(gy5+ = new Array();
-        this.7-, = [0];
+        this.cur = [0];
         this.]UiRF( = 0;
       };
 
@@ -2217,7 +2217,7 @@ for ($somevar in arg0) {
         if (arg0.,fyRI) {
           return false;
         }
-        return this. ]55[this.7-,[0]].9+y1J == arg0.9+y1J;
+        return this. ]55[this.cur[0]].9+y1J == arg0.9+y1J;
       };
 
       v1. tq5) = function () {
@@ -2238,7 +2238,7 @@ for ($somevar in arg0) {
         }
       };
 
-      v1.7-, = null;
+      v1.cur = null;
       v1.display = function () {
         this.7ZoIC = new Array();
         var v2 = 0;
@@ -2263,7 +2263,7 @@ for ($somevar in arg0) {
       };
 
       v1.1)MO; = function () {
-        44{N.*KB2.)Mpgp(this.7ZoIC[this.7-,[0] - 1], }{3]G.0n7+E();
+        44{N.*KB2.)Mpgp(this.7ZoIC[this.cur[0] - 1], }{3]G.0n7+E();
       };
 
       v1.1D3-Z = function () {
@@ -2321,9 +2321,9 @@ for ($somevar in arg0) {
         }
         ]P0*.,fyRI = true;
         ;ndCG.5b)bA((=(,aA.582dG[]P0*.9+y1J]);
-        this.7ZoIC[this.7-,[0]].gotoAndStop(1);
+        this.7ZoIC[this.cur[0]].gotoAndStop(1);
         this.]UiRF( = 0;
-        this.7-, = [this.7-,[0] + 1];
+        this.cur = [this.cur[0] + 1];
       };
 
       v1.0gOTA = function () {
@@ -2340,7 +2340,7 @@ for ($somevar in arg0) {
           v4.33}j0(();
         }
         this.(gy5+ = new Array();
-        this.7-, = [0];
+        this.cur = [0];
         v2 = 0;
         v3 = this.7ZoIC;
         while (v2 < v3.length) {
@@ -2354,7 +2354,7 @@ for ($somevar in arg0) {
 
       v1.9;I = null;
       v1.417sB = function () {
-        return this.7-,[0] > 0;
+        return this.cur[0] > 0;
       };
 
       v1.(gy5+ = null;
@@ -2366,7 +2366,7 @@ for ($somevar in arg0) {
       };
 
       v1.87vE7( = function () {
-        var v2 = this.7ZoIC[this.7-,[0]];
+        var v2 = this.7ZoIC[this.cur[0]];
         if (v2 != null) {
           this.]UiRF( += 9K.{-kxL.-V;B;
           v2.gotoAndStop(3Wt.9n6(=(,aA.}HF}.]XX}5 + this.]UiRF( % (=(,aA.}HF}.8q0 - =(,aA.}HF}.]XX}5)));
@@ -2799,7 +2799,7 @@ for ($somevar in arg0) {
         this.]XX}5 = arg1.]XX}5;
         this.8q0 = arg1.8q0;
         this.{5}D = (arg2 == null) ? 0 : arg2;
-        this.7-, = 0;
+        this.cur = 0;
         this.length = this.8q0 - this.]XX}5 + this.{5}D;
         this.7iP=3 = arg3;
         this.,0Kly = arg5;
@@ -2815,7 +2815,7 @@ for ($somevar in arg0) {
       ]YKP] implements 4+=I;
       v1 = ]YKP].prototype;
       v1.__class__ = ]YKP];
-      v1.7-, = null;
+      v1.cur = null;
       v1.8q0 = null;
       v1.0P;- = null;
       v1.length = null;
@@ -2825,14 +2825,14 @@ for ($somevar in arg0) {
       v1.,0Kly = null;
       v1.play = function () {
         var v2 = 9K.{-kxL.-V;B;
-        this.7-, += v2;
-        if (this.7-, >= this.{5}D) {
-          this.}J.gotoAndStop(3Wt.9n6(this.]XX}5 + this.7-, - this.{5}D));
+        this.cur += v2;
+        if (this.cur >= this.{5}D) {
+          this.}J.gotoAndStop(3Wt.9n6(this.]XX}5 + this.cur - this.{5}D));
           if (this.,0Kly != null) {
             this.,0Kly(this.}J, v2 / (this.8q0 - this.]XX}5));
           }
         }
-        var v3 = this.7-, >= this.length;
+        var v3 = this.cur >= this.length;
         if (!(v3 && this.4MC5)) {
           if (v3 && this.7iP=3 != null) {
             this.7iP=3();
@@ -2842,7 +2842,7 @@ for ($somevar in arg0) {
           }
           return v3;
         } else {
-          this.7-, -= this.length;
+          this.cur -= this.length;
           return false;
         }
       };
@@ -2855,7 +2855,7 @@ for ($somevar in arg0) {
         this.8q0 = arg1.8q0;
         this.26;mF( = arg2;
         this.{5}D = (arg3 == null) ? 0 : arg3;
-        this.7-, = 0;
+        this.cur = 0;
         this.length = this.{5}D + this.26;mF(;
         this.7iP=3 = arg4;
         this.,0Kly = arg5;
@@ -2866,7 +2866,7 @@ for ($somevar in arg0) {
       5{PM] implements 4+=I;
       v1 = 5{PM].prototype;
       v1.__class__ = 5{PM];
-      v1.7-, = null;
+      v1.cur = null;
       v1.26;mF( = null;
       v1.8q0 = null;
       v1.length = null;
@@ -2875,15 +2875,15 @@ for ($somevar in arg0) {
       v1.,0Kly = null;
       v1.play = function () {
         var v2 = 9K.{-kxL.-V;B;
-        this.7-, += v2;
-        if (this.7-, >= this.{5}D) {
-          this.}J._x = this.]XX}5.(( + (this.8q0.(( - this.]XX}5.(() * ((this.7-, - this.{5}D) / this.26;mF();
-          this.}J._y = this.]XX}5.)( + (this.8q0.)( - this.]XX}5.)() * ((this.7-, - this.{5}D) / this.26;mF();
+        this.cur += v2;
+        if (this.cur >= this.{5}D) {
+          this.}J._x = this.]XX}5.(( + (this.8q0.(( - this.]XX}5.(() * ((this.cur - this.{5}D) / this.26;mF();
+          this.}J._y = this.]XX}5.)( + (this.8q0.)( - this.]XX}5.)() * ((this.cur - this.{5}D) / this.26;mF();
           if (this.,0Kly != null) {
             this.,0Kly(this.}J, v2 / this.26;mF();
           }
         }
-        var v3 = this.7-, >= this.length;
+        var v3 = this.cur >= this.length;
         if (v3) {
           this.}J._x = this.8q0.((;
           this.}J._y = this.8q0.)(;
@@ -2898,7 +2898,7 @@ for ($somevar in arg0) {
       v1.{5}D = null;
       ,,cZF( = function (arg0, arg1, arg2) {
         this.{5}D = arg0;
-        this.7-, = 0;
+        this.cur = 0;
         this.length = arg2;
         this.7iP=3 = arg1;
         this.6ldV* = false;
@@ -2909,22 +2909,22 @@ for ($somevar in arg0) {
       ,,cZF( implements 4+=I;
       v1 = ,,cZF(.prototype;
       v1.__class__ = ,,cZF(;
-      v1.7-, = null;
+      v1.cur = null;
       v1.6ldV* = null;
       v1.length = null;
       v1.}J = null;
       v1.7iP=3 = null;
       v1.,0Kly = null;
       v1.play = function () {
-        this.7-, += 9K.{-kxL.-V;B;
-        var v2 = this.7-, >= this.{5}D;
+        this.cur += 9K.{-kxL.-V;B;
+        var v2 = this.cur >= this.{5}D;
         if (v2 && !this.6ldV*) {
           this.6ldV* = true;
           if (this.7iP=3 != null) {
             this.7iP=3();
           }
         }
-        v2 = this.7-, >= this.{5}D + this.length;
+        v2 = this.cur >= this.{5}D + this.length;
         return v2;
       };
 

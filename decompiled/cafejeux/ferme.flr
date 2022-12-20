@@ -1856,7 +1856,7 @@ for ($somevar in v2) {
       this.}J = arg0;
       this.}J._visible = true;
       this.}J.gotoAndStop(arg1);
-      this.7-, = 0;
+      this.cur = 0;
     };
 
     ,WWC+(.__name__ = [',WWC+('];
@@ -1864,16 +1864,16 @@ for ($somevar in v2) {
     ,WWC+( implements 4+=I;
     v1 = ,WWC+(.prototype;
     v1.__class__ = ,WWC+(;
-    v1.7-, = null;
+    v1.cur = null;
     v1.}J = null;
     v1.7iP=3 = null;
     v1.,0Kly = null;
     v1.play = function () {
       var v2 = 9K.{-kxL.-V;B;
-      this.7-, += v2;
-      this.}J.smc.gotoAndStop(3Wt.9n6(this.7-,));
-      this.,0Kly(this.}J, this.7-,);
-      if (this.7-, >= this.}J.smc._totalframes - 1) {
+      this.cur += v2;
+      this.}J.smc.gotoAndStop(3Wt.9n6(this.cur));
+      this.,0Kly(this.}J, this.cur);
+      if (this.cur >= this.}J.smc._totalframes - 1) {
         this.}J._visible = false;
         return true;
       }

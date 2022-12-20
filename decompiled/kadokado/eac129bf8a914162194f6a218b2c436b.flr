@@ -510,7 +510,7 @@ for ($somevar in v2) {
           if (this.[;X}5.}]l)+ != null && this.[;X}5.}]l)+.36}9L(()) {
             return true;
           }
-          if (this.[;X}5.7-,lT != null && this.[;X}5.7-,lT.36}9L(()) {
+          if (this.[;X}5.curlT != null && this.[;X}5.curlT.36}9L(()) {
             return true;
           }
           if (this.[;X}5.162  ( != null && this.[;X}5.162  (.36}9L(()) {
@@ -5065,7 +5065,7 @@ for ($somevar in v2) {
       v1.*=_p_ = function (arg0, arg1) {
         var v4 = this.-fC3a(arg1);
         var v5 = v4.9oK;
-        var v6 = v4.7-,;
+        var v6 = v4.cur;
         if (v6 == 1000) {
           this.]bu40(arg1);
           return this.*=_p_(arg0, arg1);
@@ -5074,14 +5074,14 @@ for ($somevar in v2) {
         var v7 = arg0 + '@' + 9K.+7U K.}Sgx4;
         var v8 = this.)2fr3.attachMovie(arg0, v7, v6 + arg1 * 1000, null);
         v5[v6] = v8;
-        v4.7-, = v6 + 1;
+        v4.cur = v6 + 1;
         return v8;
       };
 
       v1.;_dAm = function (arg0, arg1) {
         var v4 = this.-fC3a(arg1);
         var v5 = v4.9oK;
-        var v6 = v4.7-,;
+        var v6 = v4.cur;
         if (v6 == 1000) {
           this.]bu40(arg1);
           this.;_dAm(arg0, arg1);
@@ -5089,20 +5089,20 @@ for ($somevar in v2) {
         }
         this.)2fr3.attachBitmap(arg0, v6 + arg1 * 1000);
         v5[v6] = null;
-        v4.7-, = v6 + 1;
+        v4.cur = v6 + 1;
       };
 
       v1.+tq5) = function (arg0) {
         var v3 = this.-fC3a(arg0);
         var v4 = v3.9oK;
         var v5 = 0;
-        var v6 = v3.7-,;
+        var v6 = v3.cur;
         while (v5 < v6) {
           ++v5;
           var v7 = v5;
           v4[v7].removeMovieClip();
         }
-        v3.7-, = 0;
+        v3.cur = 0;
       };
 
       v1.]bu40 = function (arg0) {
@@ -5111,7 +5111,7 @@ for ($somevar in v2) {
         var v5 = 0;
         var v6 = arg0 * 1000;
         var v7 = 0;
-        var v8 = v3.7-,;
+        var v8 = v3.cur;
         while (v7 < v8) {
           ++v7;
           var v9 = v7;
@@ -5121,7 +5121,7 @@ for ($somevar in v2) {
             ++v5;
           }
         }
-        v3.7-, = v5;
+        v3.cur = v5;
       };
 
       v1.destroy = function () {
@@ -5137,7 +5137,7 @@ for ($somevar in v2) {
       v1.18wU* = function (arg0) {
         var v3 = this.-fC3a(arg0);
         var v4 = v3.9oK;
-        var v5 = v3.7-,;
+        var v5 = v3.cur;
         if (v5 == 1000) {
           this.]bu40(arg0);
           return this.18wU*(arg0);
@@ -5146,7 +5146,7 @@ for ($somevar in v2) {
         var v6 = 'empty@' + 9K.+7U K.}Sgx4;
         var v7 = this.)2fr3.createEmptyMovieClip(v6, v5 + arg0 * 1000);
         v4[v5] = v7;
-        v3.7-, = v5 + 1;
+        v3.cur = v5 + 1;
         return v7;
       };
 
@@ -5157,7 +5157,7 @@ for ($somevar in v2) {
       v1.-fC3a = function (arg0) {
         var v3 = this.}Zms3[arg0];
         if (v3 == null) {
-          v3 = {'9oK': new Array(), '7-,': 0};
+          v3 = {'9oK': new Array(), 'cur': 0};
           this.}Zms3[arg0] = v3;
         }
         return v3;
@@ -5171,11 +5171,11 @@ for ($somevar in v2) {
         var v7 = v3 % 1000;
         if (v6[v7] == arg0) {
           v6[v7] = null;
-          if (v5.7-, == 1000) {
+          if (v5.cur == 1000) {
             this.]bu40(v4);
           }
-          v3 = v5.7-,;
-          ++v5.7-,;
+          v3 = v5.cur;
+          ++v5.cur;
           arg0.swapDepths(v3 + v4 * 1000);
           v6[v3] = arg0;
         }
@@ -5185,13 +5185,13 @@ for ($somevar in v2) {
       v1.(GbB} = function (arg0, arg1) {
         var v4 = this.-fC3a(arg1);
         var v5 = v4.9oK;
-        var v6 = v4.7-,;
+        var v6 = v4.cur;
         if (v6 == 1000) {
           this.]bu40(arg1);
           return this.(GbB}(arg0, arg1);
         }
         v5[v6] = arg0;
-        v4.7-, = v6 + 1;
+        v4.cur = v6 + 1;
         return v6 + arg1 * 1000;
       };
 
@@ -5204,7 +5204,7 @@ for ($somevar in v2) {
         var v5 = this.-fC3a(v4);
         var v6 = v5.9oK;
         var v7 = 0;
-        var v8 = v5.7-,;
+        var v8 = v5.cur;
         while (v7 < v8) {
           ++v7;
           var v9 = v7;
@@ -5225,7 +5225,7 @@ for ($somevar in v2) {
         if (v6[v7] == arg0) {
           v6[v7] = null;
           v6.unshift(arg0);
-          ++v5.7-,;
+          ++v5.cur;
           this.]bu40(v4);
         }
       };
@@ -5233,7 +5233,7 @@ for ($somevar in v2) {
       v1.9(K ; = function (arg0) {
         var v3 = this.-fC3a(arg0);
         var v4 = v3.9oK;
-        var v5 = v3.7-,;
+        var v5 = v3.cur;
         var v6 = -99999999;
         var v7 = 0;
         while (v7 < v5) {
@@ -5877,7 +5877,7 @@ while (!undefined) {
         this.;AH0 = new 9K.flash.{sRCQ();
         this.]BMP2 = new 0d2T();
         this.}]l)+ = new 9K.flash.{sRCQ();
-        this.7-,lT = new 9K.flash.{sRCQ();
+        this.curlT = new 9K.flash.{sRCQ();
         this.-OqH_ = new 9K.flash.{sRCQ();
         var v2 = 0;
         var v3 = 1mZML.[MqDO;
@@ -6342,7 +6342,7 @@ while (!undefined) {
 
       v1. ,r20( = function () {
         var v2 = new Array();
-        this.7-,lT.push(v2);
+        this.curlT.push(v2);
         return v2;
       };
 
@@ -6409,7 +6409,7 @@ while (!undefined) {
       };
 
       v1.;AH0 = null;
-      v1.7-,lT = null;
+      v1.curlT = null;
       v1.(UAKG( = function (arg0) {
         var v3 = [];
         var v4 = 0;
@@ -6603,7 +6603,7 @@ while (!undefined) {
             v8.9DRDz();
           }
         }
-        this.7-,lT = new 9K.flash.{sRCQ();
+        this.curlT = new 9K.flash.{sRCQ();
         this.162  ( = new 9K.flash.{sRCQ();
         this.{kQly = new 9K.flash.{sRCQ();
       };
@@ -6699,7 +6699,7 @@ while (!undefined) {
 
       v1.];Lz9( = function () {
         this.{kQly = new 9K.flash.{sRCQ();
-        var v2 = this.7-,lT.iterator();
+        var v2 = this.curlT.iterator();
         while (v2.hasNext()) {
           var v3 = v2.next();
           if (!1mZML.,h7vD(v3)) {
@@ -7301,11 +7301,11 @@ for ($somevar in arg0) {
           };
 
           Array.prototype.iterator = function () {
-            return {'7-,': 0, '=()': this, 'hasNext': function () {
-              return this.7-, < this.=().length;
+            return {'cur': 0, '=()': this, 'hasNext': function () {
+              return this.cur < this.=().length;
             }, 'next': function () {
-              ++this.7-,;
-              return this.=()[this.7-,];
+              ++this.cur;
+              return this.=()[this.cur];
             }};
           };
 

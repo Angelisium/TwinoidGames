@@ -1369,11 +1369,11 @@ for ($somevar in arg0) {
             $s.push('flash.Boot::' + '__init@238');
             var v2 = $s.length;
             try {
-              var v3 = {'7-,': 0, '=()': this, 'hasNext': function () {
+              var v3 = {'cur': 0, '=()': this, 'hasNext': function () {
                 $s.push('flash.Boot::' + '__init@238@242');
                 var v2 = $s.length;
                 try {
-                  var v3 = this.7-, < this.=().length;
+                  var v3 = this.cur < this.=().length;
                   $s.pop();
                   return v3;
                   $s.pop();
@@ -1388,7 +1388,7 @@ for ($somevar in arg0) {
                 $s.push('flash.Boot::' + '__init@238@245');
                 var v2 = $s.length;
                 try {
-                  var v3 = this.=()[this.7-,++];
+                  var v3 = this.=()[this.cur++];
                   $s.pop();
                   return v3;
                   $s.pop();
@@ -1708,16 +1708,16 @@ for ($somevar in this.__x.attributes) {
         if (this.1Te]+ != 9l{.(VJkK && this.1Te]+ != 9l{.9)DM2) {
           throw 'bad nodeType';
         }
-        var v3 = {'7-,': this.__x.firstChild, 'hasNext': function () {
+        var v3 = {'cur': this.__x.firstChild, 'hasNext': function () {
           $s.push('flash.FlashXml__::' + 'elements@173');
           var v2 = $s.length;
           try {
-            var v3 = this.7-,;
+            var v3 = this.cur;
             for (;;) {
               if (!(v3 != null && v3.nodeType != 1)) break;
               v3 = v3.nextSibling;
             }
-            this.7-, = v3;
+            this.cur = v3;
             var v4 = v3 != null;
             $s.pop();
             return v4;
@@ -1733,17 +1733,17 @@ for ($somevar in this.__x.attributes) {
           $s.push('flash.FlashXml__::' + 'elements@180');
           var v2 = $s.length;
           try {
-            var v3 = this.7-,;
+            var v3 = this.cur;
             for (;;) {
               if (!(v3 != null && v3.nodeType != 1)) break;
               v3 = v3.nextSibling;
             }
             if (v3 == null) {
-              this.7-, = null;
+              this.cur = null;
               $s.pop();
               return null;
             }
-            this.7-, = v3.nextSibling;
+            this.cur = v3.nextSibling;
             var v4 = flash.[og8Q.-_uu0(v3);
             $s.pop();
             return v4;
@@ -1775,16 +1775,16 @@ for ($somevar in this.__x.attributes) {
         if (this.1Te]+ != 9l{.(VJkK && this.1Te]+ != 9l{.9)DM2) {
           throw 'bad nodeType';
         }
-        var v3 = {'7-,': this.__x.firstChild, 'hasNext': function () {
+        var v3 = {'cur': this.__x.firstChild, 'hasNext': function () {
           $s.push('flash.FlashXml__::' + 'elementsNamed@199');
           var v2 = $s.length;
           try {
-            var v3 = this.7-,;
+            var v3 = this.cur;
             for (;;) {
               if (!(v3 != null && (v3.nodeType != 1 || v3.nodeName !=  K;V+))) break;
               v3 = v3.nextSibling;
             }
-            this.7-, = v3;
+            this.cur = v3;
             var v4 = v3 != null;
             $s.pop();
             return v4;
@@ -1800,17 +1800,17 @@ for ($somevar in this.__x.attributes) {
           $s.push('flash.FlashXml__::' + 'elementsNamed@206');
           var v2 = $s.length;
           try {
-            var v3 = this.7-,;
+            var v3 = this.cur;
             for (;;) {
               if (!(v3 != null && (v3.nodeType != 1 || v3.nodeName !=  K;V+))) break;
               v3 = v3.nextSibling;
             }
             if (v3 == null) {
-              this.7-, = null;
+              this.cur = null;
               $s.pop();
               return null;
             }
-            this.7-, = v3.nextSibling;
+            this.cur = v3.nextSibling;
             var v4 = flash.[og8Q.-_uu0(v3);
             $s.pop();
             return v4;
@@ -1999,11 +1999,11 @@ for ($somevar in this.__x.attributes) {
         if (this.1Te]+ != 9l{.(VJkK && this.1Te]+ != 9l{.9)DM2) {
           throw 'bad nodeType';
         }
-        var v3 = {'7-,': this.__x.firstChild, 'hasNext': function () {
+        var v3 = {'cur': this.__x.firstChild, 'hasNext': function () {
           $s.push('flash.FlashXml__::' + 'iterator@157');
           var v2 = $s.length;
           try {
-            var v3 = this.7-, != null;
+            var v3 = this.cur != null;
             $s.pop();
             return v3;
             $s.pop();
@@ -2018,8 +2018,8 @@ for ($somevar in this.__x.attributes) {
           $s.push('flash.FlashXml__::' + 'iterator@160');
           var v2 = $s.length;
           try {
-            var v3 = flash.[og8Q.-_uu0(this.7-,);
-            this.7-, = this.7-,.nextSibling;
+            var v3 = flash.[og8Q.-_uu0(this.cur);
+            this.cur = this.cur.nextSibling;
             $s.pop();
             return v3;
             $s.pop();

@@ -1303,7 +1303,7 @@ for ($somevar in v2) {
       this.]XX}5 = arg1.]XX}5;
       this.8q0 = arg1.8q0;
       this.{5}D = (arg2 == null) ? 0 : arg2;
-      this.7-, = 0;
+      this.cur = 0;
       this.length = this.8q0 - this.]XX}5 + this.{5}D;
       this.7iP=3 = arg3;
       this.,0Kly = arg5;
@@ -1319,7 +1319,7 @@ for ($somevar in v2) {
     ]YKP] implements 4+=I;
     v1 = ]YKP].prototype;
     v1.__class__ = ]YKP];
-    v1.7-, = null;
+    v1.cur = null;
     v1.8q0 = null;
     v1.0P;- = null;
     v1.length = null;
@@ -1329,14 +1329,14 @@ for ($somevar in v2) {
     v1.,0Kly = null;
     v1.play = function () {
       var v2 = 9K.{-kxL.-V;B;
-      this.7-, += v2;
-      if (this.7-, >= this.{5}D) {
-        this.}J.gotoAndStop(3Wt.9n6(this.]XX}5 + this.7-, - this.{5}D));
+      this.cur += v2;
+      if (this.cur >= this.{5}D) {
+        this.}J.gotoAndStop(3Wt.9n6(this.]XX}5 + this.cur - this.{5}D));
         if (]6=8H((',0Kly', this) != null) {
           this.,0Kly(this.}J, v2 / (this.8q0 - this.]XX}5));
         }
       }
-      var v3 = this.7-, >= this.length;
+      var v3 = this.cur >= this.length;
       if (!(v3 && this.4MC5)) {
         if (v3 && ]6=8H(('7iP=3', this) != null) {
           this.7iP=3();
@@ -1346,7 +1346,7 @@ for ($somevar in v2) {
         }
         return v3;
       } else {
-        this.7-, -= this.length;
+        this.cur -= this.length;
         return false;
       }
     };
@@ -1359,7 +1359,7 @@ for ($somevar in v2) {
       this.8q0 = arg1.8q0;
       this.26;mF( = arg2;
       this.{5}D = (arg3 == null) ? 0 : arg3;
-      this.7-, = 0;
+      this.cur = 0;
       this.length = this.{5}D + this.26;mF(;
       this.7iP=3 = arg4;
       this.,0Kly = arg5;
@@ -1370,7 +1370,7 @@ for ($somevar in v2) {
     5{PM] implements 4+=I;
     v1 = 5{PM].prototype;
     v1.__class__ = 5{PM];
-    v1.7-, = null;
+    v1.cur = null;
     v1.26;mF( = null;
     v1.8q0 = null;
     v1.length = null;
@@ -1379,15 +1379,15 @@ for ($somevar in v2) {
     v1.,0Kly = null;
     v1.play = function () {
       var v2 = 9K.{-kxL.-V;B;
-      this.7-, += v2;
-      if (this.7-, >= this.{5}D) {
-        this.}J._x = this.]XX}5.(( + (this.8q0.(( - this.]XX}5.(() * ((this.7-, - this.{5}D) / this.26;mF();
-        this.}J._y = this.]XX}5.)( + (this.8q0.)( - this.]XX}5.)() * ((this.7-, - this.{5}D) / this.26;mF();
+      this.cur += v2;
+      if (this.cur >= this.{5}D) {
+        this.}J._x = this.]XX}5.(( + (this.8q0.(( - this.]XX}5.(() * ((this.cur - this.{5}D) / this.26;mF();
+        this.}J._y = this.]XX}5.)( + (this.8q0.)( - this.]XX}5.)() * ((this.cur - this.{5}D) / this.26;mF();
         if (]6=8H((',0Kly', this) != null) {
           this.,0Kly(this.}J, v2 / this.26;mF();
         }
       }
-      var v3 = this.7-, >= this.length;
+      var v3 = this.cur >= this.length;
       if (v3 && ]6=8H(('7iP=3', this) != null) {
         this.7iP=3();
       }
@@ -1398,7 +1398,7 @@ for ($somevar in v2) {
     v1.{5}D = null;
     {}LG] = function (arg0, arg1) {
       this.}J = arg0;
-      this.7-, = 0;
+      this.cur = 0;
       this.}Yax5 = arg1;
       if (this.}Yax5 == null) {
         this.}Yax5 = 5;
@@ -1411,14 +1411,14 @@ for ($somevar in v2) {
     {}LG] implements 4+=I;
     v1 = {}LG].prototype;
     v1.__class__ = {}LG];
-    v1.7-, = null;
+    v1.cur = null;
     v1.}J = null;
     v1.7iP=3 = null;
     v1.,0Kly = null;
     v1.play = function () {
       var v2 = 9K.{-kxL.-V;B;
-      this.7-, += v2;
-      var v3 = 5 + 5 * Math.sin(this.7-, / this.}Yax5);
+      this.cur += v2;
+      var v3 = 5 + 5 * Math.sin(this.cur / this.}Yax5);
       this.}J._alpha = v3;
       return false;
     };
@@ -1427,7 +1427,7 @@ for ($somevar in v2) {
     +7{HI( = function (arg0, arg1, arg2) {
       this.}J = arg0;
       this. [ = arg2;
-      this.7-, = 0;
+      this.cur = 0;
       this.}J._x = arg1._x;
       this.}J._y = arg1._y;
       this.3pAH = 0;
@@ -1440,24 +1440,24 @@ for ($somevar in v2) {
     +7{HI( implements 4+=I;
     v1 = +7{HI(.prototype;
     v1.__class__ = +7{HI(;
-    v1.7-, = null;
+    v1.cur = null;
     v1.length = null;
     v1.}J = null;
     v1.7iP=3 = null;
     v1.,0Kly = null;
     v1.play = function () {
       var v2 = 9K.{-kxL.-V;B * 8;
-      this.7-, += v2;
-      if (this.7-, <= this.length / 2) {
+      this.cur += v2;
+      if (this.cur <= this.length / 2) {
         this.3pAH += (v2 / this.length) * 40;
       } else {
         this.3pAH -= (v2 / this.length) * 40;
       }
-      this.}J._x = this.]XX}5.(( + (this. [._x - this.]XX}5.(() * (this.7-, / this.length);
-      this.}J._y = this.]XX}5.)( + (this. [._y - this.]XX}5.)() * (this.7-, / this.length) - this.3pAH / 4;
+      this.}J._x = this.]XX}5.(( + (this. [._x - this.]XX}5.(() * (this.cur / this.length);
+      this.}J._y = this.]XX}5.)( + (this. [._y - this.]XX}5.)() * (this.cur / this.length) - this.3pAH / 4;
       this.}J._xscale = 100 + this.3pAH;
       this.}J._yscale = 100 + this.3pAH;
-      if (this.7-, >= this.length) {
+      if (this.cur >= this.length) {
         this.7iP=3();
         return true;
       }
