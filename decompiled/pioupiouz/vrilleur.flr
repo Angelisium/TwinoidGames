@@ -398,7 +398,7 @@ movie 'vrilleur.swf' {
                 return this[4] != undefined;
               };
 
-              this.Hash.prototype.5uJ2 = function (-) {
+              this.Hash.prototype.iter = function (-) {
                 var v2;
                 for (v2 in this) {
                   -(v2, this[v2]);

@@ -4040,7 +4040,7 @@ for ($somevar in this.1) {
       return true;
     };
 
-    v1.__class__.5uJ2 = function (arg0, arg1) {
+    v1.__class__.iter = function (arg0, arg1) {
       var v4 = arg0.iterator();
       while (v4.1ll a()) {
         var v5 = v4.7Y-7();
@@ -12633,7 +12633,7 @@ for ($somevar in v2) {
     haxe.*dF_.__name__ = ['haxe', '*dF_'];
     v1 = haxe.*dF_.prototype;
     v1.__class__ = haxe.*dF_;
-    haxe.*dF_.5uJ2 = function (arg0, arg1) {
+    haxe.*dF_.iter = function (arg0, arg1) {
       var v4 = 0;
       var v5 = arg0.length;
       while (v4 < v5) {
@@ -13490,7 +13490,7 @@ for ($somevar in v2) {
 
     9K.8b;e-.+LslI( = function (arg0) {
       var 3XYj7 = true;
-      haxe.*dF_.5uJ2(arg0, function (arg0) {
+      haxe.*dF_.iter(arg0, function (arg0) {
         if (!9K.8b;e-.0LcmS.exists(arg0)) {
           3XYj7 = false;
         }
