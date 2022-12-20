@@ -1649,7 +1649,7 @@ movie 'minipixiz.swf' {
                 return 8 instanceof 4;
               };
 
-              this.3Wt.9ss9+ = function (8, -) {
+              this.3Wt.forin = function (8, -) {
                 var v1;
                 for (v1 in 8) {
                   -(v1);
@@ -2347,7 +2347,7 @@ movie 'minipixiz.swf' {
 
     -[m(M.16KA = function (}J) {
       var ( = new Array();
-      3Wt.9ss9+(}J, function (4) {
+      3Wt.forin(}J, function (4) {
         var v1 = }J[4];
         if (3Wt._typeof(v1) == 'movieclip' && v1._parent == }J) {
           (.push(v1);

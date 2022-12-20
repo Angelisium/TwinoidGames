@@ -400,7 +400,7 @@ movie 'loader.swf' {
 
       v1.*{MXp = function (8) {
         var (K = this;
-        3Wt.9ss9+(8, function (4) {
+        3Wt.forin(8, function (4) {
           (K.95O)C((4);
           (K.95O)C((':');
           (K.1qeUg(8[4]);
@@ -746,7 +746,7 @@ movie 'loader.swf' {
                 return 8 instanceof 4;
               };
 
-              this.3Wt.9ss9+ = function (8, -) {
+              this.3Wt.forin = function (8, -) {
                 var v1;
                 for (v1 in 8) {
                   -(v1);

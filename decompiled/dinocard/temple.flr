@@ -3011,7 +3011,7 @@ movie 'temple.swf' {
 
       v1.] p2A = function (8) {
         var (K = this;
-        3Wt.9ss9+(8, function (4) {
+        3Wt.forin(8, function (4) {
           (K.[ w3](4, 8[4]);
         });
         this.blabla.+jMb8(2, 3);
@@ -6182,7 +6182,7 @@ movie 'temple.swf' {
                 return 8 instanceof 4;
               };
 
-              this.3Wt.9ss9+ = function (8, -) {
+              this.3Wt.forin = function (8, -) {
                 var v1;
                 for (v1 in 8) {
                   -(v1);
