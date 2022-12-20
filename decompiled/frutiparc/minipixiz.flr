@@ -1557,7 +1557,7 @@ movie 'minipixiz.swf' {
                 return }J._parent[v2];
               };
 
-              this.3Wt.6{X3L = function (}J, }) {
+              this.3Wt.getVar = function (}J, }) {
                 return }J[}];
               };
 
@@ -6577,7 +6577,7 @@ movie 'minipixiz.swf' {
       var v7 = v9.(v+i3;
       var v10 = [{'GomolaDontLikePotatoes': v7._xscale, '((': v7._x, ')(': v7._y, '}J': v7}];
       do {
-        var v2 = 3Wt.6{X3L(v9, '$f' + v3);
+        var v2 = 3Wt.getVar(v9, '$f' + v3);
         if (v2 != null) {
           ++v3;
           v10.push({'GomolaDontLikePotatoes': v2._xscale, '((': v2._x, ')(': v2._y, '}J': v2});

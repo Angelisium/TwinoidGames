@@ -126,7 +126,7 @@ movie 'vrilleur.swf' {
                 return }J._parent[v2];
               };
 
-              this.3Wt.6{X3L = function (}J, }) {
+              this.3Wt.getVar = function (}J, }) {
                 return }J[}];
               };
 
@@ -1625,7 +1625,7 @@ movie 'vrilleur.swf' {
             ++v2;
             label 33715:
             if (v2 >= 4) break;
-            var v3 = 3Wt.6{X3L(this.-SPn, '$field' + v2);
+            var v3 = 3Wt.getVar(this.-SPn, '$field' + v2);
             v3.text = }]zS.*pEHG[v2];
           }
           var v4 = new +7U K(this.-SPn);

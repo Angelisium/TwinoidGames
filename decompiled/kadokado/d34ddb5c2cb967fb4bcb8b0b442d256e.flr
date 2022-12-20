@@ -1571,7 +1571,7 @@ movie 'd34ddb5c2cb967fb4bcb8b0b442d256e.swf' {
 
       *r.{AdLP = function (}J, *V9, )7) {
         var v2 = function (=rJ) {
-          var v3 = 3Wt.6{X3L(}J, =rJ);
+          var v3 = 3Wt.getVar(}J, =rJ);
           if (v3._visible) {
             if (=rJ.substr(0, *V9.length) == *V9) {
               v3.gotoAndStop(String()7));

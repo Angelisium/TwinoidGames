@@ -16,7 +16,7 @@ movie 'loader.swf' {
         Stage.align = '$LT'.substring(1);
         this.2;dS5 = 0;
         this.8,-h5 = }J;
-        if (3Wt.6{X3L(3Wt.9HH5a(), '$data'.substring(1)) == '2') {
+        if (3Wt.getVar(3Wt.9HH5a(), '$data'.substring(1)) == '2') {
           Loader.}-gW1( = Loader.}Yx*k;
         }
         this.00ME4();
@@ -26,12 +26,12 @@ movie 'loader.swf' {
         if (this.1N59{(null) == true) {
           return undefined;
         }
-        this.0qCp = 3Wt.6{X3L(3Wt.9HH5a(), '$swf'.substring(1));
-        this.8W 5 = 3Wt.6{X3L(3Wt.9HH5a(), '$lang');
+        this.0qCp = 3Wt.getVar(3Wt.9HH5a(), '$swf'.substring(1));
+        this.8W 5 = 3Wt.getVar(3Wt.9HH5a(), '$lang');
         if (this.8W 5 == null) {
           this.8W 5 = '$en'.substring(1);
         }
-        if (3Wt.6{X3L(3Wt.9HH5a(), '$mode') == null) {
+        if (3Wt.getVar(3Wt.9HH5a(), '$mode') == null) {
           this.0QyZ*('Game mode error');
           return undefined;
         }
@@ -43,7 +43,7 @@ movie 'loader.swf' {
       v1.1N59{ = function ([wH) {
         var v3 = 3Wt.9HH5a();
         if ([wH == null) {
-          [wH = 3Wt.6{X3L(v3, '$redirect'.substring(1));
+          [wH = 3Wt.getVar(v3, '$redirect'.substring(1));
         }
         if ([wH != null) {
           var v4 = new LoadVars();
@@ -83,7 +83,7 @@ movie 'loader.swf' {
         3Wt.3Wr3K(('(x5W-(', 3Wt.6{VYR(this, '(x5W-('));
         3Wt.3Wr3K(('(,3G,(', 3Wt.6{VYR(this, '(,3G,('));
         3Wt.3Wr3K((',{nF;', 3Wt.6{VYR(this, ',{nF;'));
-        this.=FDiF( = 3Wt.6{X3L(this.+-(0, '980Sb');
+        this.=FDiF( = 3Wt.getVar(this.+-(0, '980Sb');
         this.=FDiF(.}-B2(this.+-(0);
         if (Loader.+0vHq == '') {
           this.=FDiF(.5nD)Y();
@@ -102,7 +102,7 @@ movie 'loader.swf' {
         v2.onData = function (data) {
           var v3 = new XML(data);
           v3.ignoreWhite = true;
-          if (3Wt.6{X3L(3Wt.9HH5a(), '$mode') != v3.firstChild.nextSibling.get('$mode'.substring(1))) {
+          if (3Wt.getVar(3Wt.9HH5a(), '$mode') != v3.firstChild.nextSibling.get('$mode'.substring(1))) {
             6b,A.0QyZ*('Game mode error');
             return undefined;
           }
@@ -162,7 +162,7 @@ movie 'loader.swf' {
           Loader.+0vHq = '';
           return this.,lfT2();
         }
-        if (3Wt.6{X3L(3Wt.9HH5a(), '$vs'.substring(1)) == '1') {
+        if (3Wt.getVar(3Wt.9HH5a(), '$vs'.substring(1)) == '1') {
           Loader.+0vHq = Loader.(LU{2;
           Loader.}-gW1( = Loader.(LU{2;
         }
@@ -654,7 +654,7 @@ movie 'loader.swf' {
                 return }J._parent[v2];
               };
 
-              this.3Wt.6{X3L = function (}J, }) {
+              this.3Wt.getVar = function (}J, }) {
                 return }J[}];
               };
 

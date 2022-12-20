@@ -5381,7 +5381,7 @@ movie 'loader.swf' {
       };
 
       v1.4pA6_ = function (7) {
-        var v3 = 3Wt.6{X3L(this.-iB=, 7);
+        var v3 = 3Wt.getVar(this.-iB=, 7);
         return v3 != null;
       };
 
@@ -5507,7 +5507,7 @@ movie 'loader.swf' {
       };
 
       v1.(RqZJ( = function (0Ut*J) {
-        return 3Wt.6{X3L(3Wt.9HH5a(), '$mode') == 0Ut*J.substring(1);
+        return 3Wt.getVar(3Wt.9HH5a(), '$mode') == 0Ut*J.substring(1);
       };
 
       v1.;e_m ( = function () {
@@ -5543,7 +5543,7 @@ movie 'loader.swf' {
           this. UP4_(new mode.4(IJ0((this, 0));
           return undefined;
         }
-        {aq}5.}7x)+('Invalid mode \'' + 3Wt.6{X3L(3Wt.9HH5a(), '$mode') + '\' found.');
+        {aq}5.}7x)+('Invalid mode \'' + 3Wt.getVar(3Wt.9HH5a(), '$mode') + '\' found.');
       };
 
       v1.0D 6 = function () {
@@ -6021,13 +6021,13 @@ movie 'loader.swf' {
         var v4 = '$' + this.)2fr3.$lang;
         switch (v4) {
           case '$fr':
-            this.5J]Ek = 3Wt.6{X3L(3Wt.9HH5a(), '}vdVv');
+            this.5J]Ek = 3Wt.getVar(3Wt.9HH5a(), '}vdVv');
             break;
           case '$es':
-            this.5J]Ek = 3Wt.6{X3L(3Wt.9HH5a(), '=tdVv');
+            this.5J]Ek = 3Wt.getVar(3Wt.9HH5a(), '=tdVv');
             break;
           case '$en':
-            this.5J]Ek = 3Wt.6{X3L(3Wt.9HH5a(), '6tdVv');
+            this.5J]Ek = 3Wt.getVar(3Wt.9HH5a(), '6tdVv');
         }
         this.,uc;] = (new XML(this.5J]Ek)).firstChild.firstChild;
         for (;;) {
@@ -6052,15 +6052,15 @@ movie 'loader.swf' {
           return undefined;
         }
         var v5 = 3Wt.9HH5a();
-        var v6 = 3Wt.6{X3L(v5, '$redirect'.substring(1));
+        var v6 = 3Wt.getVar(v5, '$redirect'.substring(1));
         if (v6 != null) {
           this.6I = new LoadVars();
           this.6I['$mid'.substring(1)] = this.8T5p;
           this.6I.send(v6, '_self', 'POST');
           return undefined;
         }
-        this.0qCp = 3Wt.6{X3L(3Wt.9HH5a(), '$swf'.substring(1));
-        this.{fCp = 3Wt.6{X3L(3Wt.9HH5a(), '$srv'.substring(1));
+        this.0qCp = 3Wt.getVar(3Wt.9HH5a(), '$swf'.substring(1));
+        this.{fCp = 3Wt.getVar(3Wt.9HH5a(), '$srv'.substring(1));
         this.-[R7*( = ['music.mp3', 'boss.mp3', 'hurryUp.mp3'];
         this.8,*V2 = 0;
         this.}mR6O = new Array();
@@ -6068,7 +6068,7 @@ movie 'loader.swf' {
           this.0QyZ*(this.5vneu(15) + '\n\nhttp://www.macromedia.com/go/getflash');
         } else {
           var v7 = SharedObject.getLocal('$hd');
-          this.{[*77( = 3Wt.6{X3L(v7.data, 'data');
+          this.{[*77( = 3Wt.getVar(v7.data, 'data');
           if (this.{[*77( != null) {
             this.*1LdF();
           } else {
@@ -6135,7 +6135,7 @@ movie 'loader.swf' {
       };
 
       v1.};l3I = function () {
-        if ((3Wt.6{X3L(this.+-(0, '{aq}5')).8pUQ2( == null) {
+        if ((3Wt.getVar(this.+-(0, '{aq}5')).8pUQ2( == null) {
           this.0QyZ*(this.5vneu(70));
           return undefined;
         } else {
@@ -6265,7 +6265,7 @@ movie 'loader.swf' {
         3Wt.7t4B ((this.)3 =h, 'onRelease');
         3Wt.3Wr3K(('7T4cF(', 3Wt.6{VYR(this, '7T4cF('));
         3Wt.3Wr3K(('(x5W-(', 3Wt.6{VYR(this, '(x5W-('));
-        this.=FDiF( = 3Wt.]1dDm(3Wt.6{X3L(this.+-(0, '{aq}5'), this.+-(0, {'5J]Ek': this.5J]Ek, '3 qNS': this.03(H;(), '0O q{': this.9t}[v, '+LT;C(': this.5*D;7(, '}mR6O': this.}mR6O});
+        this.=FDiF( = 3Wt.]1dDm(3Wt.getVar(this.+-(0, '{aq}5'), this.+-(0, {'5J]Ek': this.5J]Ek, '3 qNS': this.03(H;(), '0O q{': this.9t}[v, '+LT;C(': this.5*D;7(, '}mR6O': this.}mR6O});
         this.0D 6 = 3Wt.6{VYR(this, '(R6pe');
         this.3K4}n(6);
       };
@@ -6315,10 +6315,10 @@ movie 'loader.swf' {
         v6.set('$gid'.substring(1), this.*Z*p);
         v6.set('$score'.substring(1), v5.=Z(MN(v7));
         this.{[*77( = this.{FVDm(Loader.*5z X + this.{fCp, v6);
-        if ('$' + 5e{K. gyH6(((3Wt.6{X3L(this.+-(0, '5e{K')).9YE*p) != '$0e76f8e2c8b1b225b2e843b90d600d06') {
+        if ('$' + 5e{K. gyH6(((3Wt.getVar(this.+-(0, '5e{K')).9YE*p) != '$0e76f8e2c8b1b225b2e843b90d600d06') {
           return undefined;
         }
-        if ('$' + 5e{K. gyH6(((3Wt.6{X3L(this.+-(0, '5e{K')). D-QI() != '$ffc9db3b419c9ebf8a7e3ff852b7ce19') {
+        if ('$' + 5e{K. gyH6(((3Wt.getVar(this.+-(0, '5e{K')). D-QI() != '$ffc9db3b419c9ebf8a7e3ff852b7ce19') {
           return undefined;
         }
         if (this.03(H;()) {
@@ -6678,7 +6678,7 @@ movie 'loader.swf' {
 
       v1.;Clib = function () {
         this.8+C5();
-        var v2 = 3Wt.6{X3L(3Wt.9HH5a(), '$out');
+        var v2 = 3Wt.getVar(3Wt.9HH5a(), '$out');
         this.+(WHk.1N59{(v2, null);
       };
 
@@ -6962,9 +6962,9 @@ movie 'loader.swf' {
         this. h;+A( = [;
         this.}DbC4 = new Array();
         this.77{Jc = new Array();
-        var v4 = 3Wt.6{X3L(this.+(WHk.-iB=, this. h;+A();
+        var v4 = 3Wt.getVar(this.+(WHk.-iB=, this. h;+A();
         this.=oH = v4.split(':');
-        if (3Wt.6{X3L(this.+(WHk.-iB=, this. h;+A( + ';_=dR') == null) {
+        if (3Wt.getVar(this.+(WHk.-iB=, this. h;+A( + ';_=dR') == null) {
           3Wt.4BHo7(this.+(WHk.-iB=, this. h;+A( + ';_=dR', this.=oH.join(':'));
         }
         this.)XJ* = 0;
@@ -7001,7 +7001,7 @@ movie 'loader.swf' {
       };
 
       v1.;N0rB = function (5MZl5) {
-        if (3Wt.6{X3L(this.+(WHk.-iB=, this. h;+A( + '(AA=X') == null) {
+        if (3Wt.getVar(this.+(WHk.-iB=, this. h;+A( + '(AA=X') == null) {
           3Wt.4BHo7(this.+(WHk.-iB=, this. h;+A( + '(AA=X', this.=oH.join(':'));
         }
         this.=oH = 5MZl5.split(':');
@@ -7009,15 +7009,15 @@ movie 'loader.swf' {
       };
 
       v1.;(gdF = function () {
-        if (3Wt.6{X3L(this.+(WHk.-iB=, this. h;+A( + '(AA=X') != null) {
-          var v2 = 3Wt.6{X3L(this.+(WHk.-iB=, this. h;+A( + '(AA=X');
+        if (3Wt.getVar(this.+(WHk.-iB=, this. h;+A( + '(AA=X') != null) {
+          var v2 = 3Wt.getVar(this.+(WHk.-iB=, this. h;+A( + '(AA=X');
           3Wt.4BHo7(this.+(WHk.-iB=, this. h;+A(, v2);
           this.=oH = v2.split(':');
         }
       };
 
       v1.5Nbsa = function () {
-        var v2 = 3Wt.6{X3L(this.+(WHk.-iB=, this. h;+A( + ';_=dR');
+        var v2 = 3Wt.getVar(this.+(WHk.-iB=, this. h;+A( + ';_=dR');
         3Wt.4BHo7(this.+(WHk.-iB=, this. h;+A(, v2);
         this.=oH = v2.split(':');
       };
@@ -9833,7 +9833,7 @@ movie 'loader.swf' {
 
       5e{K.*IsJ=( = function () {
         var v2 = new Array();
-        var v3 = 3Wt.6{X3L(5e{K.+(WHk.-iB=, ']B({t');
+        var v3 = 3Wt.getVar(5e{K.+(WHk.-iB=, ']B({t');
         var v4 = (new XML(v3)).firstChild;
         if (v4.nodeName != '$items'.substring(1)) {
           {aq}5.}7x)+('XML error: invalid node \'' + v4.nodeName + '\'');
@@ -9878,7 +9878,7 @@ movie 'loader.swf' {
 
       5e{K.1Brx* = function (84d8]) {
         var v3 = new Array();
-        var v4 = 3Wt.6{X3L(5e{K.+(WHk.-iB=, 84d8]);
+        var v4 = 3Wt.getVar(5e{K.+(WHk.-iB=, 84d8]);
         var v5 = (new XML(v4)).firstChild;
         if (v5.nodeName != '$items'.substring(1)) {
           {aq}5.}7x)+('XML error (' + 84d8] + ' @ ' + 5e{K.+(WHk.-iB=._name + '): invalid node \'' + v5.nodeName + '\'');
@@ -10052,7 +10052,7 @@ movie 'loader.swf' {
 
       5e{K.8ofTE( = function () {
         var v2 = new Array();
-        var v3 = 3Wt.6{X3L(5e{K.+(WHk.-iB=, '=tt;U');
+        var v3 = 3Wt.getVar(5e{K.+(WHk.-iB=, '=tt;U');
         var v4 = new XML(null);
         v4.ignoreWhite = true;
         v4.parseXML(v3);
@@ -17102,7 +17102,7 @@ movie 'loader.swf' {
       };
 
       v1.;Clib = function () {
-        var v2 = 3Wt.6{X3L(3Wt.9HH5a(), '$out');
+        var v2 = 3Wt.getVar(3Wt.9HH5a(), '$out');
         this.+(WHk.1N59{(v2, null);
       };
 
@@ -17564,7 +17564,7 @@ movie 'loader.swf' {
       };
 
       v1.=ZV8p = function (name) {
-        return 3Wt.6{X3L(this.data, name);
+        return 3Wt.getVar(this.data, name);
       };
 
       [v_9o.6oRV = '$hammerfest_data';
@@ -20035,7 +20035,7 @@ movie 'loader.swf' {
             this.+sPYD[v8[v9].*B] = v8[v9].=;
           }
         }
-        var v10 = 3Wt.6{X3L(this.+(WHk.-iB=, ';T45)');
+        var v10 = 3Wt.getVar(this.+(WHk.-iB=, ';T45)');
         this.1Ge Y = (new XML(v10)).firstChild;
         this.3W0+ = 3Wt.createTextField(this.}J, this.+(WHk.(i=C++);
         this.3W0+._x = 0;
@@ -21388,7 +21388,7 @@ movie 'loader.swf' {
       v1.)Kw3; = function () {
         this.6NDsC( = true;
         this.8+C5();
-        var v2 = 3Wt.6{X3L(3Wt.9HH5a(), '$out');
+        var v2 = 3Wt.getVar(3Wt.9HH5a(), '$out');
         this.+(WHk.1N59{(v2, null);
       };
 
@@ -21543,15 +21543,15 @@ movie 'loader.swf' {
 
       v1 = [Y}l].prototype;
       v1.3,U3L = function (7) {
-        return 3Wt.6{X3L(this.-iB=, 7);
+        return 3Wt.getVar(this.-iB=, 7);
       };
 
       v1.1(F3L = function (7) {
-        return 3Wt.parseInt(3Wt.6{X3L(this.-iB=, 7), 10);
+        return 3Wt.parseInt(3Wt.getVar(this.-iB=, 7), 10);
       };
 
       v1.24Jy_ = function (7) {
-        return 3Wt.6{X3L(this.-iB=, 7) != '0' && 3Wt.6{X3L(this.-iB=, 7) != null;
+        return 3Wt.getVar(this.-iB=, 7) != '0' && 3Wt.getVar(this.-iB=, 7) != null;
       };
 
       v1.{[+xB = function () {
@@ -23615,7 +23615,7 @@ movie 'loader.swf' {
       }
       mode.;VX*S = function (6, 6SP) {
         super(6);
-        var v5 = 3Wt.parseInt(3Wt.6{X3L(3Wt.9HH5a(), '$time'), 10);
+        var v5 = 3Wt.parseInt(3Wt.getVar(3Wt.9HH5a(), '$time'), 10);
         if (3Wt.isNaN(v5)) {
           v5 = 30;
         }
@@ -23630,14 +23630,14 @@ movie 'loader.swf' {
           this.)JJ.gotoAndStop('1');
         }
         this.5yDPI = SharedObject.getLocal('$fjv_data');
-        this.2VhU6 = 3Wt.parseInt(3Wt.6{X3L(this.5yDPI.data, '2VhU6'), 10);
-        var v6 = 3Wt.6{X3L(this.5yDPI.data, 'list');
-        var v7 = 3Wt.6{X3L(this.5yDPI.data, 'name');
+        this.2VhU6 = 3Wt.parseInt(3Wt.getVar(this.5yDPI.data, '2VhU6'), 10);
+        var v6 = 3Wt.getVar(this.5yDPI.data, 'list');
+        var v7 = 3Wt.getVar(this.5yDPI.data, 'name');
         if (v6 == null) {
           v6 = new Array();
         }
         if (v7 != null) {
-          var v8 = 3Wt.parseInt(3Wt.6{X3L(this.5yDPI.data, '(Erk5'), 10);
+          var v8 = 3Wt.parseInt(3Wt.getVar(this.5yDPI.data, '(Erk5'), 10);
           v6.push({'name': v7, '6SP': this. ,H9(, '(Erk5': v8});
           3Wt.4BHo7(this.5yDPI.data, 'name', null);
         }
@@ -25324,7 +25324,7 @@ movie 'loader.swf' {
                 return }J._parent[v2];
               };
 
-              this.3Wt.6{X3L = function (}J, }) {
+              this.3Wt.getVar = function (}J, }) {
                 return }J[}];
               };
 

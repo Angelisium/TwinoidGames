@@ -1680,7 +1680,7 @@ movie 'e89904ef7f70967ce0cb5bff92ea4c50.swf' {
           ++v7;
           label 30659:
           if (v7 >= 7) break;
-          var v8 = 3Wt.6{X3L(v5, '$a' + v7);
+          var v8 = 3Wt.getVar(v5, '$a' + v7);
           if (v8 == null) {
             break;
           }

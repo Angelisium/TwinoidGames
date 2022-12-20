@@ -2092,7 +2092,7 @@ movie 'play.swf' {
           ++v2;
           label 28535:
           if (v2 >= 4) break;
-          var v3 = 3Wt.6{X3L(this.-SPn, '$field' + v2);
+          var v3 = 3Wt.getVar(this.-SPn, '$field' + v2);
           v3.text = }]zS.*pEHG[v2];
         }
         var v4 = new +7U K(this.-SPn);
