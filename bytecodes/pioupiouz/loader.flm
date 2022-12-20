@@ -2030,7 +2030,7 @@ movie 'loader.swf' compressed // flash 8, total frames: 5, frame rate: 40 fps, 6
   end // of exportAssets
   
   initMovieClip 10
-    constants '_global', ';7pIo', 'prototype', '}-B2', '}J', 'string', 'Array', 'remove', 'length', 'splice', 'insert', 'duplicate', 'slice', 'Color', 'reset', 'ra', 'rb', 'ba', 'bb', 'ga', 'gb', 'aa', 'ab', 'setTransform', 'XMLNode', 'get', 'attributes', 'set', 'exists', 'attributesIter', '2s=h5(', 'firstChild', 'nextSibling', 'XML', 'ASSetPropFlags', '1cEQH', 'TextField', '3Wt', 'Object', '{XfS6', '7bSH*', '@', 'attachMovie', '-4*l((', 'empty@', 'createEmptyMovieClip', '5jHJK(', 'dup@', 'duplicateMovieClip', '_parent', '6{X3L', '4BHo7', '9HH5a', '16(VU', '3Wr3K(', 'createTextField', 'text@', '2g(*', 'hitTest', 'random', ',))hC', '_xmouse', '8p1P5', '_ymouse', 'escape', 'unescape', 'parseInt', 'toString', '}0=HF(', 'isNaN', '=Pn1n', 'Infinity', 'registerClass', '+QD*', '6{VYR', '8', '-', 'apply', '(', 'concat', 'getTimer', ')goHJ(', '-jONz', '9ss9+', ']1dDm', '7t4B (', '=JpT6', ']{i', '+rJ', ';lvaa', 'clear', '{RuFi', 'text', '', ']AO l', 'Stage', 'width', 'height', '[VAKp', '_x', '_y', '_width', '_height', 'wordWrap', 'selectable', '(K', '](L', 'setInterval', '+9L}b', '\\r', '\r', '\\n', '\n', 'split', 'join', 'textHeight', 'indexOf', 'substr', '(H5 S', 'textColor', 'print', '~ ', ',}2X (', 'clearInterval', 'removeMovieClip', '<...>', 'object', 'movieclip', 'function', '[', '    ', ',', 'substring', ']', '[object Object]', '{\n', 'MC(', '_name', ') ', ' : ', '}', '<fun>', 'trace', '19{O', '5uJ2', 'call'  
+    constants '_global', ';7pIo', 'prototype', '}-B2', '}J', 'string', 'Array', 'remove', 'length', 'splice', 'insert', 'duplicate', 'slice', 'Color', 'reset', 'ra', 'rb', 'ba', 'bb', 'ga', 'gb', 'aa', 'ab', 'setTransform', 'XMLNode', 'get', 'attributes', 'set', 'exists', 'attributesIter', 'childrenIter', 'firstChild', 'nextSibling', 'XML', 'ASSetPropFlags', '1cEQH', 'TextField', '3Wt', 'Object', '{XfS6', '7bSH*', '@', 'attachMovie', '-4*l((', 'empty@', 'createEmptyMovieClip', '5jHJK(', 'dup@', 'duplicateMovieClip', '_parent', '6{X3L', '4BHo7', '9HH5a', '16(VU', '3Wr3K(', 'createTextField', 'text@', '2g(*', 'hitTest', 'random', ',))hC', '_xmouse', '8p1P5', '_ymouse', 'escape', 'unescape', 'parseInt', 'toString', '}0=HF(', 'isNaN', '=Pn1n', 'Infinity', 'registerClass', '+QD*', '6{VYR', '8', '-', 'apply', '(', 'concat', 'getTimer', ')goHJ(', '-jONz', '9ss9+', ']1dDm', '7t4B (', '=JpT6', ']{i', '+rJ', ';lvaa', 'clear', '{RuFi', 'text', '', ']AO l', 'Stage', 'width', 'height', '[VAKp', '_x', '_y', '_width', '_height', 'wordWrap', 'selectable', '(K', '](L', 'setInterval', '+9L}b', '\\r', '\r', '\\n', '\n', 'split', 'join', 'textHeight', 'indexOf', 'substr', '(H5 S', 'textColor', 'print', '~ ', ',}2X (', 'clearInterval', 'removeMovieClip', '<...>', 'object', 'movieclip', 'function', '[', '    ', ',', 'substring', ']', '[object Object]', '{\n', 'MC(', '_name', ') ', ' : ', '}', '<fun>', 'trace', '19{O', '5uJ2', 'call'  
     push '_global'
     getVariable
     push ';7pIo'
@@ -2231,7 +2231,7 @@ movie 'loader.swf' compressed // flash 8, total frames: 5, frame rate: 40 fps, 6
           getVariable
           push 'prototype'
           getMember
-          push '2s=h5('
+          push 'childrenIter'
           function2 (r:3='-') (r:1='this')
             push r:this, 'firstChild'
             getMember
@@ -2355,7 +2355,7 @@ movie 'loader.swf' compressed // flash 8, total frames: 5, frame rate: 40 fps, 6
           push 3, r:_global, 'ASSetPropFlags'
           callMethod
           pop
-          push 1, '2s=h5(', 'XMLNode'
+          push 1, 'childrenIter', 'XMLNode'
           getVariable
           push 'prototype'
           getMember

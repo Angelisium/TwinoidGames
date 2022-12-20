@@ -25271,7 +25271,7 @@ movie 'loader.swf' {
                 }
               };
 
-              XMLNode.prototype.2s=h5( = function (-) {
+              XMLNode.prototype.childrenIter = function (-) {
                 var v2 = this.firstChild;
                 while (v2 != null) {
                   -(v2);
@@ -25299,7 +25299,7 @@ movie 'loader.swf' {
               _global.ASSetPropFlags(XMLNode.prototype, 'set', 1);
               _global.ASSetPropFlags(XMLNode.prototype, 'exists', 1);
               _global.ASSetPropFlags(XMLNode.prototype, 'attributesIter', 1);
-              _global.ASSetPropFlags(XMLNode.prototype, '2s=h5(', 1);
+              _global.ASSetPropFlags(XMLNode.prototype, 'childrenIter', 1);
               _global.ASSetPropFlags(XML.prototype, 'get', 1);
               _global.ASSetPropFlags(XML.prototype, 'set', 1);
               _global.ASSetPropFlags(XML.prototype, 'exists', 1);
