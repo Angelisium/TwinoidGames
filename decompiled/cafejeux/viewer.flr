@@ -2359,11 +2359,11 @@ for ($somevar in arg0) {
       }
     };
 
-    4rH6a = function () {};
+    StringTools = function () {};
 
-    4rH6a.__name__ = ['4rH6a'];
-    v1 = 4rH6a.prototype;
-    v1.__class__ = 4rH6a;
+    StringTools.__name__ = ['StringTools'];
+    v1 = StringTools.prototype;
+    v1.__class__ = StringTools;
     v1.__class__.;Bkn9 = function (arg0) {
       $s.push('StringTools::' + 'urlEncode');
       var v3 = $s.length;
@@ -2493,7 +2493,7 @@ for ($somevar in arg0) {
         var v4 = arg0.length;
         var v5 = 0;
         for (;;) {
-          if (!(v5 < v4 && 4rH6a.9LZa5(arg0, v5))) break;
+          if (!(v5 < v4 && StringTools.9LZa5(arg0, v5))) break;
           ++v5;
         }
         if (v5 <= 0) {
@@ -2521,7 +2521,7 @@ for ($somevar in arg0) {
         var v4 = arg0.length;
         var v5 = 0;
         for (;;) {
-          if (!(v5 < v4 && 4rH6a.9LZa5(arg0, v4 - v5 - 1))) break;
+          if (!(v5 < v4 && StringTools.9LZa5(arg0, v4 - v5 - 1))) break;
           ++v5;
         }
         if (v5 <= 0) {
@@ -2546,7 +2546,7 @@ for ($somevar in arg0) {
       $s.push('StringTools::' + 'trim');
       var v3 = $s.length;
       try {
-        var v4 = 4rH6a.]oME1(4rH6a.{GzF5(arg0));
+        var v4 = StringTools.]oME1(StringTools.{GzF5(arg0));
         $s.pop();
         return v4;
         $s.pop();
@@ -4906,7 +4906,7 @@ for ($somevar in v2) {
           v6 += '????';
         }
         v6 = (((((((v6.split('\\')).join('\\\\')).split('\'')).join('\\\'')).split('\n')).join('\\n')).split('\r')).join('\\r');
-        v6 = 4rH6a.;Bkn9(v6);
+        v6 = StringTools.;Bkn9(v6);
         v7 = 'javascript:console.' + v5 + '(\'' + v6 + '\');';
         flash.1ni.9jX3L(v7);
         $s.pop();

@@ -586,11 +586,11 @@ for ($somevar in arg0) {
         }
       };
 
-      4rH6a = function () {};
+      StringTools = function () {};
 
-      4rH6a.__name__ = ['4rH6a'];
-      v1 = 4rH6a.prototype;
-      v1.__class__ = 4rH6a;
+      StringTools.__name__ = ['StringTools'];
+      v1 = StringTools.prototype;
+      v1.__class__ = StringTools;
       v1.__class__.;Bkn9 = function (arg0) {
         return _global.escape(arg0);
       };
@@ -626,7 +626,7 @@ for ($somevar in arg0) {
         var v3 = arg0.length;
         var v4 = 0;
         for (;;) {
-          if (!(v4 < v3 && 4rH6a.9LZa5(arg0, v4))) break;
+          if (!(v4 < v3 && StringTools.9LZa5(arg0, v4))) break;
           ++v4;
         }
         if (v4 <= 0) {
@@ -640,7 +640,7 @@ for ($somevar in arg0) {
         var v3 = arg0.length;
         var v4 = 0;
         for (;;) {
-          if (!(v4 < v3 && 4rH6a.9LZa5(arg0, v3 - v4 - 1))) break;
+          if (!(v4 < v3 && StringTools.9LZa5(arg0, v3 - v4 - 1))) break;
           ++v4;
         }
         if (v4 <= 0) {
@@ -651,7 +651,7 @@ for ($somevar in arg0) {
       };
 
       v1.__class__.=mFB = function (arg0) {
-        return 4rH6a.]oME1(4rH6a.{GzF5(arg0));
+        return StringTools.]oME1(StringTools.{GzF5(arg0));
       };
 
       v1.__class__.7nC= = function (arg0, arg1, arg2) {
@@ -1732,7 +1732,7 @@ for ($somevar in v2) {
       };
 
       9K.53kZ-(.0[Y.[YZ3L = function (arg0) {
-        return '#' + 4rH6a.[+5(arg0);
+        return '#' + StringTools.[+5(arg0);
       };
 
       9K.53kZ-(.0[Y.+0Un*( = function (arg0, arg1, arg2, arg3) {

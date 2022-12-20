@@ -1105,7 +1105,7 @@ for ($somevar in v2) {
       ++this.5V{L6;
       this.1xYp5.7NJ(arg0, this.5V{L6);
       this. [*.) += 'y';
-      arg0 = 4rH6a.;Bkn9(arg0);
+      arg0 = StringTools.;Bkn9(arg0);
       this. [*.) += arg0.length;
       this. [*.) += ':';
       this. [*.) += arg0;
@@ -3261,16 +3261,16 @@ for ($somevar in v2) {
                                                 } else {
                                                   if (v4 != 'Y') {
                                                   } else {}
-                                                  4rH6a. SD5(3Wt.+_PpF(3Wt.9n6(arg0.getFullYear() / 100)), '0', 2);
+                                                  StringTools. SD5(3Wt.+_PpF(3Wt.9n6(arg0.getFullYear() / 100)), '0', 2);
                                                   1KirH(.__format(arg0, '%m/%d/%y');
-                                                  4rH6a. SD5(3Wt.+_PpF(arg0.getHours()), (arg1 == 'H') ? '0' : ' ', 2);
-                                                  4rH6a. SD5(3Wt.+_PpF(arg0.getMonth() + 1), '0', 2);
+                                                  StringTools. SD5(3Wt.+_PpF(arg0.getHours()), (arg1 == 'H') ? '0' : ' ', 2);
+                                                  StringTools. SD5(3Wt.+_PpF(arg0.getMonth() + 1), '0', 2);
                                                   '\n';
                                                   1KirH(.__format(arg0, '%I:%M:%S %p');
                                                   3Wt.+_PpF(3Wt.9n6(arg0.getTime() / 1000));
                                                   '\t';
                                                   (v5 == 0) ? '7' : 3Wt.+_PpF(v5);
-                                                  4rH6a. SD5(3Wt.+_PpF(arg0.getFullYear() % 100), '0', 2);
+                                                  StringTools. SD5(3Wt.+_PpF(arg0.getFullYear() % 100), '0', 2);
                                                 }
                                               }
                                             }
@@ -3781,7 +3781,7 @@ for ($somevar in v2) {
       }
       catch (v0) {
         var v5 = v0;
-        var v6 = 3Wt.+_PpF(v5) + ' (in ' + 4rH6a.;Bkn9(arg0) + ')';
+        var v6 = 3Wt.+_PpF(v5) + ' (in ' + StringTools.;Bkn9(arg0) + ')';
         this.__data.0QyZ*(v6);
         return undefined;
       }
@@ -3970,7 +3970,7 @@ for ($somevar in v2) {
                                                       }
                                                       var v4 = this. [*.substr(this.4AF, v3);
                                                       this.4AF += v3;
-                                                      v4 = 4rH6a.+M;(j(v4);
+                                                      v4 = StringTools.+M;(j(v4);
                                                       this.{3b96.push(v4);
                                                       return v4;
                                     } else {
@@ -4313,7 +4313,7 @@ for ($somevar in v2) {
 
     0-I(H(.2d1K.4=MnU = function (arg0) {
       0-I(H(.2d1K.init();
-      arg0 = 4rH6a.2*3q(arg0);
+      arg0 = StringTools.2*3q(arg0);
       var v3 = 0-I(H(.2d1K.{j2qE.4x-4();
       while (v3.hasNext()) {
         var v4 = v3.next();
@@ -5256,11 +5256,11 @@ for ($somevar in arg0) {
       this.__data.0QyZ* = arg0;
     };
 
-    4rH6a = function () {};
+    StringTools = function () {};
 
-    4rH6a.__name__ = ['4rH6a'];
-    v1 = 4rH6a.prototype;
-    v1.__class__ = 4rH6a;
+    StringTools.__name__ = ['StringTools'];
+    v1 = StringTools.prototype;
+    v1.__class__ = StringTools;
     v1.__class__.;Bkn9 = function (arg0) {
       return _global.escape(arg0);
     };
@@ -5296,7 +5296,7 @@ for ($somevar in arg0) {
       var v3 = arg0.length;
       var v4 = 0;
       for (;;) {
-        if (!(v4 < v3 && 4rH6a.9LZa5(arg0, v4))) break;
+        if (!(v4 < v3 && StringTools.9LZa5(arg0, v4))) break;
         ++v4;
       }
       if (v4 <= 0) {
@@ -5310,7 +5310,7 @@ for ($somevar in arg0) {
       var v3 = arg0.length;
       var v4 = 0;
       for (;;) {
-        if (!(v4 < v3 && 4rH6a.9LZa5(arg0, v3 - v4 - 1))) break;
+        if (!(v4 < v3 && StringTools.9LZa5(arg0, v3 - v4 - 1))) break;
         ++v4;
       }
       if (v4 <= 0) {
@@ -5321,7 +5321,7 @@ for ($somevar in arg0) {
     };
 
     v1.__class__.=mFB = function (arg0) {
-      return 4rH6a.]oME1(4rH6a.{GzF5(arg0));
+      return StringTools.]oME1(StringTools.{GzF5(arg0));
     };
 
     v1.__class__.7nC= = function (arg0, arg1, arg2) {
