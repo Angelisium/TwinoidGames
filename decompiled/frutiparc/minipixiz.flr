@@ -1481,7 +1481,7 @@ movie 'minipixiz.swf' {
                 this.splice(2, 0, (();
               };
 
-              Array.prototype.],lYS = Array.prototype.slice;
+              Array.prototype.duplicate = Array.prototype.slice;
               Color.prototype.{L 35 = function () {
                 this.setTransform({'ra': 100, 'rb': 0, 'ba': 100, 'bb': 0, 'ga': 100, 'gb': 0, 'aa': 100, 'ab': 0});
               };
@@ -1526,7 +1526,7 @@ movie 'minipixiz.swf' {
 
               _global.ASSetPropFlags(Array.prototype, 'remove', 1);
               _global.ASSetPropFlags(Array.prototype, 'insert', 1);
-              _global.ASSetPropFlags(Array.prototype, '],lYS', 1);
+              _global.ASSetPropFlags(Array.prototype, 'duplicate', 1);
               _global.ASSetPropFlags(Color.prototype, '{L 35', 1);
               _global.ASSetPropFlags(XMLNode.prototype, 'get', 1);
               _global.ASSetPropFlags(XMLNode.prototype, 'set', 1);
@@ -2287,7 +2287,7 @@ movie 'minipixiz.swf' {
 
     -[m(M.,JBe0 = function (;p() {
       var v5;
-      var v1 = ;p(.],lYS();
+      var v1 = ;p(.duplicate();
       var v4 = v1.length;
       v5 = 0;
       while (v5 < v4) {
@@ -2824,7 +2824,7 @@ movie 'minipixiz.swf' {
           break;
         case 1:
           this.+xiq* = new Array();
-          var v4 = -[m(M.,JBe0(*r.+-(0.+xiq*.],lYS());
+          var v4 = -[m(M.,JBe0(*r.+-(0.+xiq*.duplicate());
           var v5 = Math.pow(this.0l6.=HU11, 2);
           while (this.+xiq*.length < v5) {
             if (v4.length == 0) {
@@ -10605,13 +10605,13 @@ movie 'minipixiz.swf' {
         var v7 = this.;IF._currentframe - 1;
         if (v7 !== 1) {
         } else {
-          goto 235826;
+          goto 235830;
         }
         var v6 = 0.2;
         this.;IF._x = (this.;IF._x + v6 * {-kxL.-V;B) % 18;
         this.;IF._y = (this.;IF._y + v6 * {-kxL.-V;B) % 18;
       }
-      label 235826:
+      label 235830:
       if (this.;D}ex != null) {
         this.;D}ex *= Math.pow(0.95, {-kxL.-V;B);
         if (this.;D}ex < 0.1) {
@@ -11415,7 +11415,7 @@ movie 'minipixiz.swf' {
     [lax5.5P=V.prototype.*VCyE = function () {
       this.]oH = 65;
       this.center = {'((': *r.+-(0.width * 0.5, ')(': *r.*OA - this.]oH};
-      this.+xiq* = *r.+-(0.+xiq*.],lYS();
+      this.+xiq* = *r.+-(0.+xiq*.duplicate();
       this. eo6* = new Array();
       var v7 = *r.+-(0.+[ * 0.5;
       var v6 = {'((': this.center.(( - v7, ')(': this.center.)( - v7};
@@ -13592,7 +13592,7 @@ movie 'minipixiz.swf' {
     };
 
     [lax5.0VedZ.prototype.*VCyE = function () {
-      var v2 = *r.+-(0.0Q42F.],lYS();
+      var v2 = *r.+-(0.0Q42F.duplicate();
       var v1 = 0;
       while (v1 < v2.length) {
         if (v2[v1].status[*r.;w*5F(]) {
@@ -13894,7 +13894,7 @@ movie 'minipixiz.swf' {
     };
 
     [lax5.66Nr).prototype.*VCyE = function () {
-      this.=g]u6 = *r.+-(0.+xiq*.],lYS();
+      this.=g]u6 = *r.+-(0.+xiq*.duplicate();
       var v2 = 0;
       while (v2 < this.=g]u6.length) {
         var v3 = this.=g]u6[v2];
@@ -15243,8 +15243,8 @@ movie 'minipixiz.swf' {
 
     [Gc h.prototype.[Zu(Q = function (-) {
       this.*7 = -;
-      this.]P2)) = this.*7.$carac.],lYS();
-      this.[lax5 = this.*7.$spell.],lYS();
+      this.]P2)) = this.*7.$carac.duplicate();
+      this.[lax5 = this.*7.$spell.duplicate();
       this.+nmA = new Array();
       this.=S7A = {'1PC': this.*7.$skin[0], '6ID*': this.*7.$skin[1], '7ID*': this.*7.$skin[2], '8ID*': this.*7.$skin[3]};
       this.)REfc();
@@ -15609,7 +15609,7 @@ movie 'minipixiz.swf' {
     };
 
     [Gc h.prototype.;J-9( = function () {
-      var v2 = this.*7.$carac.],lYS();
+      var v2 = this.*7.$carac.duplicate();
       this.*7.$carac[0] = v2[3];
       this.*7.$carac[1] = v2[4];
       this.*7.$carac[2] = v2[5];
@@ -15631,7 +15631,7 @@ movie 'minipixiz.swf' {
       var v7 = -[m(M.}wUHz(=rJ, '$other', '-');
       if (v7.length != =rJ.length) {
         if (]q.4d(*.$faerie.length > 1) {
-          var v5 = ]q.4d(*.$faerie.],lYS();
+          var v5 = ]q.4d(*.$faerie.duplicate();
           v5 = -[m(M.,JBe0(v5);
           var v2 = 0;
           while (v2 < v5.length) {
@@ -15998,8 +15998,8 @@ movie 'minipixiz.swf' {
         case 0:
           this.86{p( = new Array();
           var v9 = 1 + this.96.]P2))[*r.7Iq**];
-          var v8 = *r.+-(0.0Q42F.],lYS();
-          var v6 = *r.+-(0.+xiq*.],lYS();
+          var v8 = *r.+-(0.0Q42F.duplicate();
+          var v6 = *r.+-(0.+xiq*.duplicate();
           var v4 = 0;
           while (v4 < v9) {
             var v2 = *r.+-(0.{==W3(('1d=uK(', null);
