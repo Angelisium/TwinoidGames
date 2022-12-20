@@ -1165,7 +1165,7 @@ for ($somevar in arg0) {
           if (v5 != Float) {
           } else {
             if (v5 != Bool) {
-                  var v6 = arg0.__enum__ == arg1 || (arg1 == 0(oZA && arg0.__name__ != null || arg1 == [y;M && arg0.__ename__ != null);
+                  var v6 = arg0.__enum__ == arg1 || (arg1 == Class && arg0.__name__ != null || arg1 == [y;M && arg0.__ename__ != null);
                   $s.pop();
                   return v6;
             } else {
@@ -6467,7 +6467,7 @@ for ($somevar in v2) {
       v3.Int = {'__name__': ['Int']};
       v3.Bool = {'__ename__': ['Bool']};
       v3.Dynamic = {'__name__': ['Dynamic']};
-      v3.0(oZA = {'__name__': ['0(oZA']};
+      v3.Class = {'__name__': ['Class']};
       v3.[y;M = {};
       v3.06;a = {'__ename__': ['06;a']};
       v3.Float = _global.Number;
