@@ -1413,13 +1413,13 @@ for ($somevar in arg0) {
           };
 
           _global.ASSetPropFlags(Array.prototype, null, 7);
-          var }W+ = String.prototype.charCodeAt;
-          String.prototype.cca = }W+;
+          var cca = String.prototype.charCodeAt;
+          String.prototype.cca = cca;
           String.prototype.charCodeAt = function (arg0) {
             $s.push('flash.Boot::' + '__init@253');
             var v3 = $s.length;
             try {
-              var v4 = }W+.call(this, arg0);
+              var v4 = cca.call(this, arg0);
               if (v4 <= 0) {
                 $s.pop();
                 return null;

@@ -556,9 +556,9 @@ for ($somevar in arg0) {
           _global.ASSetPropFlags(Array.prototype, null, 7);
           String.prototype.__class__ = String;
           String.__name__ = ['String'];
-          var }W+ = String.prototype.charCodeAt;
+          var cca = String.prototype.charCodeAt;
           String.prototype.charCodeAt = function (arg0) {
-            var v3 = }W+.call(this, arg0);
+            var v3 = cca.call(this, arg0);
             if (v3 <= 0) {
               return null;
             }

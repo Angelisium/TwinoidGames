@@ -730,10 +730,10 @@ for ($somevar in arg0) {
           };
 
           _global.ASSetPropFlags(Array.prototype, null, 7);
-          var }W+ = String.prototype.charCodeAt;
-          String.prototype.cca = }W+;
+          var cca = String.prototype.charCodeAt;
+          String.prototype.cca = cca;
           String.prototype.charCodeAt = function (arg0) {
-            var v3 = }W+.call(this, arg0);
+            var v3 = cca.call(this, arg0);
             if (v3 <= 0) {
               return null;
             }
