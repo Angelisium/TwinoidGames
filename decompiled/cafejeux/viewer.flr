@@ -2432,7 +2432,7 @@ for ($somevar in arg0) {
       }
     };
 
-    v1.__class__.[qvZt = function (arg0, arg1) {
+    v1.__class__.startsWith = function (arg0, arg1) {
       $s.push('StringTools::' + 'startsWith');
       var v4 = $s.length;
       try {

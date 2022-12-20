@@ -528,7 +528,7 @@ for ($somevar in arg0) {
         return (((((arg0.split('&gt;')).join('>')).split('&lt;')).join('<')).split('&amp;')).join('&');
       };
 
-      v1.__class__.[qvZt = function (arg0, arg1) {
+      v1.__class__.startsWith = function (arg0, arg1) {
         return arg0.length >= arg1.length && arg0.substr(0, arg1.length) == arg1;
       };
 
