@@ -6031,7 +6031,7 @@ movie 'temple.swf' {
                 return this.attributes[x] != null;
               };
 
-              XMLNode.prototype.}}{7B = function (-) {
+              XMLNode.prototype.attributesIter = function (-) {
                 for (var v2 in this.attributes) {
                   -(v2, this.attributes[v2]);
                 }
@@ -6064,7 +6064,7 @@ movie 'temple.swf' {
               _global.ASSetPropFlags(XMLNode.prototype, 'get', 1);
               _global.ASSetPropFlags(XMLNode.prototype, 'set', 1);
               _global.ASSetPropFlags(XMLNode.prototype, 'exists', 1);
-              _global.ASSetPropFlags(XMLNode.prototype, '}}{7B', 1);
+              _global.ASSetPropFlags(XMLNode.prototype, 'attributesIter', 1);
               _global.ASSetPropFlags(XMLNode.prototype, '2s=h5(', 1);
               _global.ASSetPropFlags(XML.prototype, 'get', 1);
               _global.ASSetPropFlags(XML.prototype, 'set', 1);
