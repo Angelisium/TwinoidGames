@@ -6332,7 +6332,7 @@ movie 'loader.swf' {
                 (K.)3 =h.[cs8B(.text = (K.5vneu(72);
                 var v2 = SharedObject.getLocal('$hd');
                 v2.clear();
-                3Wt.4BHo7(v2.data, 'data', (K.{[*77();
+                3Wt.setVar(v2.data, 'data', (K.{[*77();
                 var v3 = v2.flush();
                 if (v3) {
                   ]{i.trace('Suivez les instructions de la page Support technique (en bas du site) pour VIDER VOTRE CACHE.');
@@ -6965,7 +6965,7 @@ movie 'loader.swf' {
         var v4 = 3Wt.getVar(this.+(WHk.-iB=, this. h;+A();
         this.=oH = v4.split(':');
         if (3Wt.getVar(this.+(WHk.-iB=, this. h;+A( + ';_=dR') == null) {
-          3Wt.4BHo7(this.+(WHk.-iB=, this. h;+A( + ';_=dR', this.=oH.join(':'));
+          3Wt.setVar(this.+(WHk.-iB=, this. h;+A( + ';_=dR', this.=oH.join(':'));
         }
         this.)XJ* = 0;
         var v5 = v4.split('0');
@@ -7002,23 +7002,23 @@ movie 'loader.swf' {
 
       v1.;N0rB = function (5MZl5) {
         if (3Wt.getVar(this.+(WHk.-iB=, this. h;+A( + '(AA=X') == null) {
-          3Wt.4BHo7(this.+(WHk.-iB=, this. h;+A( + '(AA=X', this.=oH.join(':'));
+          3Wt.setVar(this.+(WHk.-iB=, this. h;+A( + '(AA=X', this.=oH.join(':'));
         }
         this.=oH = 5MZl5.split(':');
-        3Wt.4BHo7(this.+(WHk.-iB=, this. h;+A(, 5MZl5);
+        3Wt.setVar(this.+(WHk.-iB=, this. h;+A(, 5MZl5);
       };
 
       v1.;(gdF = function () {
         if (3Wt.getVar(this.+(WHk.-iB=, this. h;+A( + '(AA=X') != null) {
           var v2 = 3Wt.getVar(this.+(WHk.-iB=, this. h;+A( + '(AA=X');
-          3Wt.4BHo7(this.+(WHk.-iB=, this. h;+A(, v2);
+          3Wt.setVar(this.+(WHk.-iB=, this. h;+A(, v2);
           this.=oH = v2.split(':');
         }
       };
 
       v1.5Nbsa = function () {
         var v2 = 3Wt.getVar(this.+(WHk.-iB=, this. h;+A( + ';_=dR');
-        3Wt.4BHo7(this.+(WHk.-iB=, this. h;+A(, v2);
+        3Wt.setVar(this.+(WHk.-iB=, this. h;+A(, v2);
         this.=oH = v2.split(':');
       };
 
@@ -17559,7 +17559,7 @@ movie 'loader.swf' {
       };
 
       v1.1x,5= = function (name, =oH) {
-        3Wt.4BHo7(this.data, name, =oH);
+        3Wt.setVar(this.data, name, =oH);
         this.flush();
       };
 
@@ -18633,14 +18633,14 @@ movie 'loader.swf' {
       };
 
       v1.;Clib = function () {
-        3Wt.4BHo7(this.5yDPI.data, '(Erk5', (this.;uMMG(())[0].(Erk5);
+        3Wt.setVar(this.5yDPI.data, '(Erk5', (this.;uMMG(())[0].(Erk5);
         this.7v4;b();
         this.+(WHk.7f{x](new mode.;VX*S(this.+(WHk, false));
       };
 
       v1.4kDh_ = function (5,F, ,) {
         this.7v4;b();
-        3Wt.4BHo7(this.5yDPI.data, '(Erk5', (this.;uMMG(())[0].(Erk5);
+        3Wt.setVar(this.5yDPI.data, '(Erk5', (this.;uMMG(())[0].(Erk5);
         this.+(WHk.7f{x](new mode.;VX*S(this.+(WHk, true));
         return true;
       };
@@ -23639,12 +23639,12 @@ movie 'loader.swf' {
         if (v7 != null) {
           var v8 = 3Wt.parseInt(3Wt.getVar(this.5yDPI.data, '(Erk5'), 10);
           v6.push({'name': v7, '6SP': this. ,H9(, '(Erk5': v8});
-          3Wt.4BHo7(this.5yDPI.data, 'name', null);
+          3Wt.setVar(this.5yDPI.data, 'name', null);
         }
         while (v6.length > 50) {
           v6.splice(0, 1);
         }
-        3Wt.4BHo7(this.5yDPI.data, 'list', v6);
+        3Wt.setVar(this.5yDPI.data, 'list', v6);
         var v9 = '';
         var v10 = 0;
         goto 458340;
@@ -23707,7 +23707,7 @@ movie 'loader.swf' {
         }
         if (!this.2OHqn) {
           this.2VhU6 -= {-kxL.-V;B;
-          3Wt.4BHo7(this.5yDPI.data, '2VhU6', this.2VhU6);
+          3Wt.setVar(this.5yDPI.data, '2VhU6', this.2VhU6);
           var v6 = Math.ceil(this.2VhU6 / 5e{K.]q-,w);
           if (v6 >= 60) {
             var v7 = Math.floor(v6 / 60);
@@ -23725,7 +23725,7 @@ movie 'loader.swf' {
           v8 = -[m(M.}wUHz(v8, '\n', '');
           v8 = 5e{K.+2DkZ(v8);
           if (v8.length > 0 && Key.isDown(Key.ENTER)) {
-            3Wt.4BHo7(this.5yDPI.data, 'name', v8);
+            3Wt.setVar(this.5yDPI.data, 'name', v8);
             this.+(WHk. UP4_(new mode.{v_(this.+(WHk, 0));
           }
         }
@@ -25328,7 +25328,7 @@ movie 'loader.swf' {
                 return }J[}];
               };
 
-              this.3Wt.4BHo7 = function (}J, }, ,DLD) {
+              this.3Wt.setVar = function (}J, }, ,DLD) {
                 }J[}] = ,DLD;
               };
 
