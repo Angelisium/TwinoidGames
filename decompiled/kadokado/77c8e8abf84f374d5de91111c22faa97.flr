@@ -345,9 +345,9 @@ for ($somevar in arg0) {
 
       flash.Boot.__init = function (arg0) {
         var v3 = _global;
-        if (!v3.=w 0[) {
+        if (!v3.haxeInitDone) {
           var v4 = _global.Object;
-          v3.=w 0[ = true;
+          v3.haxeInitDone = true;
           v3.}Se = new v4();
           v3.-]AJ = new v4();
           v3.Dynamic = new v4();

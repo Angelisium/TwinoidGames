@@ -1321,8 +1321,8 @@ for ($somevar in arg0) {
       var v3 = $s.length;
       try {
         var v4 = _global;
-        if (!v4.=w 0[) {
-          v4.=w 0[ = true;
+        if (!v4.haxeInitDone) {
+          v4.haxeInitDone = true;
           Array.prototype.copy = Array.prototype.slice;
           Array.prototype.insert = function (arg0, arg1) {
             $s.push('flash.Boot::' + '__init@223');

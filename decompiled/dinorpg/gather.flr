@@ -1831,8 +1831,8 @@ for ($somevar in arg0) {
 
     flash.Boot.__init = function (arg0) {
       var v3 = _global;
-      if (!v3.=w 0[) {
-        v3.=w 0[ = true;
+      if (!v3.haxeInitDone) {
+        v3.haxeInitDone = true;
         Array.prototype.copy = Array.prototype.slice;
         Array.prototype.insert = function (arg0, arg1) {
           this.splice(arg0, 0, arg1);
