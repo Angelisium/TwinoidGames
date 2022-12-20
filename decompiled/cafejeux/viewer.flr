@@ -147,7 +147,7 @@ for ($somevar in v2) {
         if (this.__x.1Te]+ == 9l{.(VJkK) {
           throw 'Cannot access document attribute ' + arg0;
         }
-        var v4 = this.__x. Ff_G(arg0);
+        var v4 = this.__x.exists(arg0);
         $s.pop();
         return v4;
         $s.pop();
@@ -1835,7 +1835,7 @@ for ($somevar in this.__x.attributes) {
       }
     };
 
-    v1. Ff_G = function (arg0) {
+    v1.exists = function (arg0) {
       $s.push('flash.FlashXml__::' + 'exists');
       var v3 = $s.length;
       try {

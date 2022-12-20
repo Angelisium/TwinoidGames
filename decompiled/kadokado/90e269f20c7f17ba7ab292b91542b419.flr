@@ -1933,7 +1933,7 @@ for ($somevar in v2) {
         return false;
       };
 
-      v1.__class__. Ff_G = function (arg0, arg1) {
+      v1.__class__.exists = function (arg0, arg1) {
         var v4 = arg0.iterator();
         while (v4.1ll a()) {
           var v5 = v4.7Y-7();
@@ -3020,7 +3020,7 @@ for ($somevar in v2) {
       =j{VC.__name__ = ['=j{VC'];
       v1 = =j{VC.prototype;
       v1.__class__ = =j{VC;
-      v1. Ff_G = function (arg0) {
+      v1.exists = function (arg0) {
         return this.1.hasOwnProperty(arg0);
       };
 

@@ -2128,7 +2128,7 @@ for ($somevar in v2) {
     =j{VC.__name__ = ['=j{VC'];
     v1 = =j{VC.prototype;
     v1.__class__ = =j{VC;
-    v1. Ff_G = function (arg0) {
+    v1.exists = function (arg0) {
       return this.1.hasOwnProperty(arg0);
     };
 
@@ -2849,7 +2849,7 @@ for ($somevar in this.1) {
             var v6 = 3Wt.random(=(,aA.-7ftN.length);
             var v7 = =(,aA.-7ftN[v6];
             var v8 = v7[1] + 1;
-            if (!v2. Ff_G(v8)) {
+            if (!v2.exists(v8)) {
               v2.7NJ(v8, 1);
             } else {
               var v9 = false;

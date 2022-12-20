@@ -1370,7 +1370,7 @@ for ($somevar in v2) {
             var v8 = (this.4AF.(( == 0) ? 0 : 1;
             44{N.(K.-wQt+[v8][this.4AF.)(].5+mmJ(();
           }
-          if (2RY;E. Ff_G(44{N.(K.36I51, function (7vqA,() {
+          if (2RY;E.exists(44{N.(K.36I51, function (7vqA,() {
             return function (arg0) {
               return arg0 == 7vqA,([0];
             };
@@ -1929,7 +1929,7 @@ for ($somevar in v2) {
         return false;
       };
 
-      v1.__class__. Ff_G = function (arg0, arg1) {
+      v1.__class__.exists = function (arg0, arg1) {
         var v4 = arg0.iterator();
         while (v4.1ll a()) {
           var v5 = v4.7Y-7();
@@ -3239,7 +3239,7 @@ for ($somevar in arg0) {
           while (v7 < v6.length) {
             var v8 = [v6[v7]];
             ++v7;
-            if (!2RY;E. Ff_G(this.3vY[*(, function (7) {
+            if (!2RY;E.exists(this.3vY[*(, function (7) {
               return function (arg0) {
                 return arg0.] == 7[0].];
               };

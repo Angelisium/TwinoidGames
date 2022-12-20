@@ -1494,7 +1494,7 @@ movie 'minipixiz.swf' {
                 this.attributes[((] = )(;
               };
 
-              XMLNode.prototype. Ff_G = function ((() {
+              XMLNode.prototype.exists = function ((() {
                 return this.attributes[((] != null;
               };
 
@@ -1520,7 +1520,7 @@ movie 'minipixiz.swf' {
                 this.attributes[((] = )(;
               };
 
-              XML.prototype. Ff_G = function ((() {
+              XML.prototype.exists = function ((() {
                 return this.attributes[((] != null;
               };
 
@@ -1530,12 +1530,12 @@ movie 'minipixiz.swf' {
               _global.ASSetPropFlags(Color.prototype, 'reset', 1);
               _global.ASSetPropFlags(XMLNode.prototype, 'get', 1);
               _global.ASSetPropFlags(XMLNode.prototype, 'set', 1);
-              _global.ASSetPropFlags(XMLNode.prototype, ' Ff_G', 1);
+              _global.ASSetPropFlags(XMLNode.prototype, 'exists', 1);
               _global.ASSetPropFlags(XMLNode.prototype, '}}{7B', 1);
               _global.ASSetPropFlags(XMLNode.prototype, '2s=h5(', 1);
               _global.ASSetPropFlags(XML.prototype, 'get', 1);
               _global.ASSetPropFlags(XML.prototype, 'set', 1);
-              _global.ASSetPropFlags(XML.prototype, ' Ff_G', 1);
+              _global.ASSetPropFlags(XML.prototype, 'exists', 1);
               _global.1cEQH = _global.TextField.1cEQH;
               this.3Wt = new Object();
               this.3Wt.{XfS6 = 0;
@@ -1817,7 +1817,7 @@ movie 'minipixiz.swf' {
                 return v2;
               };
 
-              this.19{O.prototype. Ff_G = function (4) {
+              this.19{O.prototype.exists = function (4) {
                 return this[4] != undefined;
               };
 

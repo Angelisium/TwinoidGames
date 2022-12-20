@@ -63,7 +63,7 @@ movie 'vrilleur.swf' {
                 this.attributes[x] = y;
               };
 
-              XMLNode.prototype. Ff_G = function (x) {
+              XMLNode.prototype.exists = function (x) {
                 return this.attributes[x] != null;
               };
 
@@ -89,7 +89,7 @@ movie 'vrilleur.swf' {
                 this.attributes[x] = y;
               };
 
-              XML.prototype. Ff_G = function (x) {
+              XML.prototype.exists = function (x) {
                 return this.attributes[x] != null;
               };
 
@@ -99,12 +99,12 @@ movie 'vrilleur.swf' {
               _global.ASSetPropFlags(Color.prototype, 'reset', 1);
               _global.ASSetPropFlags(XMLNode.prototype, 'get', 1);
               _global.ASSetPropFlags(XMLNode.prototype, 'set', 1);
-              _global.ASSetPropFlags(XMLNode.prototype, ' Ff_G', 1);
+              _global.ASSetPropFlags(XMLNode.prototype, 'exists', 1);
               _global.ASSetPropFlags(XMLNode.prototype, '}}{7B', 1);
               _global.ASSetPropFlags(XMLNode.prototype, '2s=h5(', 1);
               _global.ASSetPropFlags(XML.prototype, 'get', 1);
               _global.ASSetPropFlags(XML.prototype, 'set', 1);
-              _global.ASSetPropFlags(XML.prototype, ' Ff_G', 1);
+              _global.ASSetPropFlags(XML.prototype, 'exists', 1);
               _global.1cEQH = _global.TextField.1cEQH;
               this.3Wt = new Object();
               this.3Wt.{XfS6 = 0;
@@ -394,7 +394,7 @@ movie 'vrilleur.swf' {
                 return v2;
               };
 
-              this.19{O.prototype. Ff_G = function (4) {
+              this.19{O.prototype.exists = function (4) {
                 return this[4] != undefined;
               };
 

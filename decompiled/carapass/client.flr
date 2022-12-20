@@ -3663,7 +3663,7 @@ for ($somevar in arg0) {
     =j{VC.__name__ = ['=j{VC'];
     v1 = =j{VC.prototype;
     v1.__class__ = =j{VC;
-    v1. Ff_G = function (arg0) {
+    v1.exists = function (arg0) {
       return this.1.hasOwnProperty(arg0);
     };
 
@@ -4808,7 +4808,7 @@ for ($somevar in v2) {
     19{O.__name__ = ['19{O'];
     v1 = 19{O.prototype;
     v1.__class__ = 19{O;
-    v1. Ff_G = function (arg0) {
+    v1.exists = function (arg0) {
       return this.1.hasOwnProperty('$' + arg0);
     };
 
