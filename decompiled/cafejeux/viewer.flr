@@ -1206,7 +1206,7 @@ for ($somevar in arg0) {
       $s.push('flash.Boot::' + 'getTrace');
       var v2 = $s.length;
       try {
-        var v3 = flash.1ni.0]Ss);
+        var v3 = flash.1ni.current;
         var v4 = v3.__trace_txt;
         if (v4 == null) {
           v3.createTextField('__trace_txt', 1048500, 0, 0, flash.Stage.width, flash.Stage.height + 30);
@@ -1250,7 +1250,7 @@ for ($somevar in arg0) {
       $s.push('flash.Boot::' + '__trace');
       var v4 = $s.length;
       try {
-        var v5 = flash.1ni.0]Ss);
+        var v5 = flash.1ni.current;
         var v6 = flash.Boot.getTrace();
         var v7 = arg1.fileName + ((arg1.lineNumber == null) ? '' : ':' + arg1.lineNumber) + ': ' + flash.Boot.__string_rec(arg0, '');
         var v8 = v5.__trace_lines.concat(v7.split('\n'));
@@ -1303,7 +1303,7 @@ for ($somevar in arg0) {
       $s.push('flash.Boot::' + '__clear_trace');
       var v2 = $s.length;
       try {
-        var v3 = flash.1ni.0]Ss);
+        var v3 = flash.1ni.current;
         v3.__trace_txt.removeTextField();
         v3.__trace_lines = null;
         $s.pop();
@@ -1442,7 +1442,7 @@ for ($somevar in arg0) {
         }
         arg0.flash.1ni._global = _global;
         arg0.flash.1ni._root = _root;
-        arg0.flash.1ni.0]Ss) = arg0;
+        arg0.flash.1ni.current = arg0;
         arg0.1Z;X+ = flash.Boot.__instanceof;
         arg0.]6=8H( = flash.Boot.__closure;
         if (_global.Stage.align != '') {
@@ -2193,7 +2193,7 @@ for ($somevar in this.__x.attributes) {
     v1.__class__ = flash.1ni;
     flash.1ni._global = null;
     flash.1ni._root = null;
-    flash.1ni.0]Ss) = null;
+    flash.1ni.current = null;
     flash.1ni.)2I7S = null;
     flash.1ni.-[Ra6 = function (arg0) {
       $s.push('flash.Lib::' + 'trace');
@@ -3750,9 +3750,9 @@ for ($somevar in v2) {
       $s.push('Boot::' + 'main');
       var v2 = $s.length;
       try {
-        var v3 = flash.1ni.0]Ss).createEmptyMovieClip('mc', 1);
+        var v3 = flash.1ni.current.createEmptyMovieClip('mc', 1);
         var v4 = new 980Sb(v3);
-        flash.1ni.0]Ss).onEnterFrame = ]6=8H(('0D 6', v4);
+        flash.1ni.current.onEnterFrame = ]6=8H(('0D 6', v4);
         $s.pop();
       }
       catch (v0) {
@@ -6446,7 +6446,7 @@ for ($somevar in v2) {
     flash.Boot.__init(this);
     try {
       9l{ = flash.[og8Q;
-      flash.1ni.0]Ss).Xml = 9l{;
+      flash.1ni.current.Xml = 9l{;
       9l{.__name__ = ['Xml'];
       9l{.9)DM2 = 'element';
       9l{.;R{lO = 'pcdata';

@@ -4356,7 +4356,7 @@ for ($somevar in this.1) {
     };
 
     v1.-pTyE( = null;
-    v1.0]Ss) = null;
+    v1.current = null;
     v1.,_(+ = null;
     v1. ,Z8l = function (arg0) {
       arg0.*]((_History._HAdd({'_props': [], '_dino': true, '_life': 73, '_name': 'camelCase', '_side': true, '_size': 210, '_fid': 0, '_gfx': 'K9MGXKOsJdSt7000'}, null));
@@ -7971,7 +7971,7 @@ for ($somevar in arg0) {
     };
 
     flash.Boot.getTrace = function () {
-      var v2 = flash.1ni.0]Ss);
+      var v2 = flash.1ni.current;
       var v3 = v2.__trace_txt;
       if (v3 == null) {
         var v4 = flash.Stage.width;
@@ -8000,7 +8000,7 @@ for ($somevar in arg0) {
     };
 
     flash.Boot.__trace = function (arg0, arg1) {
-      var v4 = flash.1ni.0]Ss);
+      var v4 = flash.1ni.current;
       var v5 = flash.Boot.getTrace();
       var v6 = arg1.fileName + ((arg1.lineNumber == null) ? '' : ':' + arg1.lineNumber) + ': ' + flash.Boot.__string_rec(arg0, '');
       var v7 = v4.__trace_lines.concat(v6.split('\n'));
@@ -8023,7 +8023,7 @@ for ($somevar in arg0) {
     };
 
     flash.Boot.__clear_trace = function () {
-      var v2 = flash.1ni.0]Ss);
+      var v2 = flash.1ni.current;
       v2.__trace_txt.removeTextField();
       v2.__trace_lines = null;
     };
@@ -8076,7 +8076,7 @@ for ($somevar in arg0) {
       }
       arg0.flash.1ni._global = _global;
       arg0.flash.1ni._root = _root;
-      arg0.flash.1ni.0]Ss) = arg0;
+      arg0.flash.1ni.current = arg0;
       arg0.1Z;X+ = flash.Boot.__instanceof;
       arg0.]6=8H( = flash.Boot.__closure;
       if (_global.Stage.align == '') {
@@ -8092,7 +8092,7 @@ for ($somevar in arg0) {
     v1.__class__ = flash.1ni;
     flash.1ni._global = null;
     flash.1ni._root = null;
-    flash.1ni.0]Ss) = null;
+    flash.1ni.current = null;
     flash.1ni.)2I7S = null;
     flash.1ni.-[Ra6 = function (arg0) {
       trace(arg0);

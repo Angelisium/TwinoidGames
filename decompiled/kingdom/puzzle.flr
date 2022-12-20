@@ -194,7 +194,7 @@ for ($somevar in arg0) {
     };
 
     flash.Boot.getTrace = function () {
-      var v2 = flash.1ni.0]Ss);
+      var v2 = flash.1ni.current;
       var v3 = v2.__trace_txt;
       if (v3 == null) {
         var v4 = flash.Stage.width;
@@ -223,7 +223,7 @@ for ($somevar in arg0) {
     };
 
     flash.Boot.__trace = function (arg0, arg1) {
-      var v4 = flash.1ni.0]Ss);
+      var v4 = flash.1ni.current;
       var v5 = flash.Boot.getTrace();
       var v6 = arg1.fileName + ((arg1.lineNumber == null) ? '' : ':' + arg1.lineNumber) + ': ' + flash.Boot.__string_rec(arg0, '');
       var v7 = v4.__trace_lines.concat(v6.split('\n'));
@@ -246,7 +246,7 @@ for ($somevar in arg0) {
     };
 
     flash.Boot.__clear_trace = function () {
-      var v2 = flash.1ni.0]Ss);
+      var v2 = flash.1ni.current;
       v2.__trace_txt.removeTextField();
       v2.__trace_lines = null;
     };
@@ -299,7 +299,7 @@ for ($somevar in arg0) {
       }
       arg0.flash.1ni._global = _global;
       arg0.flash.1ni._root = _root;
-      arg0.flash.1ni.0]Ss) = arg0;
+      arg0.flash.1ni.current = arg0;
       arg0.1Z;X+ = flash.Boot.__instanceof;
       arg0.]6=8H( = flash.Boot.__closure;
       if (_global.Stage.align != '') {
@@ -1106,8 +1106,8 @@ for ($somevar in v2) {
     v1.__class__.*KB2 = null;
     v1.__class__.0D 6 = function () {
       --t7U.64TL = *hr_A.8;0{_('data');
-      --t7U.*KB2 = new --t7U(flash.1ni.0]Ss));
-      flash.1ni.0]Ss).onEnterFrame = ]6=8H(('4MC5', --t7U.*KB2);
+      --t7U.*KB2 = new --t7U(flash.1ni.current);
+      flash.1ni.current.onEnterFrame = ]6=8H(('4MC5', --t7U.*KB2);
     };
 
     v1.9P-r = null;
@@ -3056,7 +3056,7 @@ for ($somevar in v2) {
     v1.__class__ = flash.1ni;
     flash.1ni._global = null;
     flash.1ni._root = null;
-    flash.1ni.0]Ss) = null;
+    flash.1ni.current = null;
     flash.1ni.)2I7S = null;
     flash.1ni.-[Ra6 = function (arg0) {
       trace(arg0);
@@ -3284,7 +3284,7 @@ for ($somevar in this.1) {
       v5._y = (v6._y + v7._y) / 2;
       v5.smc.(u*2.gotoAndStop(v4[0].4[1] + 1);
       v5.smc.)vYj7.text = 3Wt.+_PpF(this.51NqE(.shift());
-      var v8 = v5.getBounds(flash.1ni.0]Ss));
+      var v8 = v5.getBounds(flash.1ni.current);
       if (v8.xMin < 0) {
         v5._x += -v8.xMin;
       }

@@ -403,7 +403,7 @@ for ($somevar in this.1) {
     v1 = Loader.prototype;
     v1.__class__ = Loader;
     v1.__class__.0D 6 = function () {
-      new Loader(flash.1ni.0]Ss));
+      new Loader(flash.1ni.current);
     };
 
     v1.=h59) = null;
@@ -414,7 +414,7 @@ for ($somevar in this.1) {
       this.58rO6._visible = true;
       this.)3 =h.removeMovieClip();
       var v2 = new 0,k(this.58rO6, this.(KA, this.,Cq_i);
-      flash.1ni.0]Ss).onEnterFrame = ]6=8H(('4MC5', v2);
+      flash.1ni.current.onEnterFrame = ]6=8H(('4MC5', v2);
     };
 
     v1.+slid = function () {
@@ -523,10 +523,10 @@ for ($somevar in this.1) {
         v7 = new 4ooDJ(this, v6);
         this.+BQB0(.7NJ(v7.*B, v7);
         if (v7.*B == arg2._cur) {
-          this.0]Ss) = v7;
+          this.current = v7;
         }
       }
-      v5 = {'2[hF': this.0]Ss).5R, ')JhF': this.0]Ss).5R, '[RhG': this.0]Ss).6R, '5AhG': this.0]Ss).6R};
+      v5 = {'2[hF': this.current.5R, ')JhF': this.current.5R, '[RhG': this.current.6R, '5AhG': this.current.6R};
       v6 = arg2._nexts.iterator();
       while (v6.hasNext()) {
         v7 = v6.next();
@@ -545,7 +545,7 @@ for ($somevar in this.1) {
           v5.5AhG = v8.6R;
         }
         this.)n6.lineStyle(5, 16777215, 40);
-        this.)n6.moveTo(this.0]Ss).5R, this.0]Ss).6R);
+        this.)n6.moveTo(this.current.5R, this.current.6R);
         this.)n6.lineTo(v8.5R, v8.6R);
         this.)n6.endFill();
       }
@@ -599,12 +599,12 @@ for ($somevar in this.1) {
         v5.5AhG = v7 + 0,k.0 g[;
       }
       this.{Gn7R = v5;
-      this.0]Ss).)vrmS();
+      this.current.)vrmS();
       if (arg2._nexts.length == 0) {
-        this.+vaT (.push({'}J': this.0]Ss).}J, ']': 0});
+        this.+vaT (.push({'}J': this.current.}J, ']': 0});
         this.)Se02 = false;
       }
-      this.text = flash.1ni.0]Ss).attachMovie('infos', 'infos', 1);
+      this.text = flash.1ni.current.attachMovie('infos', 'infos', 1);
       this.text._y = 0,k.*sd+;( + 0,k.=GqZH(;
       this.+aDob(0);
       this.5U4B = getTimer();
@@ -617,7 +617,7 @@ for ($somevar in this.1) {
     v1.+vaT ( = null;
     v1.+Hp() = null;
     v1.1J f0 = null;
-    v1.0]Ss) = null;
+    v1.current = null;
     v1.]}lAm = null;
     v1.,QD+ = null;
     v1.*WsDm = function (arg0) {
@@ -632,9 +632,9 @@ for ($somevar in this.1) {
       if (arg0 == null) {
         return undefined;
       }
-      v3 = this.0]Ss).5R;
-      v4 = this.0]Ss).6R;
-      v5 = Math.atan2(arg0.6R - this.0]Ss).6R, arg0.5R - this.0]Ss).5R);
+      v3 = this.current.5R;
+      v4 = this.current.6R;
+      v5 = Math.atan2(arg0.6R - this.current.6R, arg0.5R - this.current.5R);
       var v6 = 0;
       do {
         v6 = Math.sqrt(Math.pow(arg0.5R - v3, 2) + Math.pow(arg0.6R - v4, 2));
@@ -700,7 +700,7 @@ for ($somevar in this.1) {
     v1.8W 5 = null;
     v1.8+C5 = function () {
       this.[8_on = true;
-      this.+Hp() = flash.1ni.0]Ss).attachMovie('cache', 'cache', 2);
+      this.+Hp() = flash.1ni.current.attachMovie('cache', 'cache', 2);
       this.+Hp()._alpha = 50;
       96nT}.deleteField(this.;+, 'onMouseDown');
     };
@@ -786,10 +786,10 @@ for ($somevar in this.1) {
     };
 
     v1.*1VJ1 = function (arg0) {
-      this.+Hp() = flash.1ni.0]Ss).attachMovie('cache', 'cache', 2);
+      this.+Hp() = flash.1ni.current.attachMovie('cache', 'cache', 2);
       this.+Hp()._alpha = 50;
       this.1J f0.removeMovieClip();
-      this.1J f0 = flash.1ni.0]Ss).attachMovie('confirm', 'confirm', 5);
+      this.1J f0 = flash.1ni.current.attachMovie('confirm', 'confirm', 5);
       this.1J f0._x = 0,k.[MqDO * 0.5;
       this.1J f0._y = 0,k.*sd+;( * 0.5;
       this.1J f0.+Da3+.text = arg0;
@@ -1643,7 +1643,7 @@ for ($somevar in arg0) {
     };
 
     flash.Boot.getTrace = function () {
-      var v2 = flash.1ni.0]Ss);
+      var v2 = flash.1ni.current;
       var v3 = v2.__trace_txt;
       if (v3 == null) {
         var v4 = flash.Stage.width;
@@ -1672,7 +1672,7 @@ for ($somevar in arg0) {
     };
 
     flash.Boot.__trace = function (arg0, arg1) {
-      var v4 = flash.1ni.0]Ss);
+      var v4 = flash.1ni.current;
       var v5 = flash.Boot.getTrace();
       var v6 = arg1.fileName + ((arg1.lineNumber == null) ? '' : ':' + arg1.lineNumber) + ': ' + flash.Boot.__string_rec(arg0, '');
       var v7 = v4.__trace_lines.concat(v6.split('\n'));
@@ -1695,7 +1695,7 @@ for ($somevar in arg0) {
     };
 
     flash.Boot.__clear_trace = function () {
-      var v2 = flash.1ni.0]Ss);
+      var v2 = flash.1ni.current;
       v2.__trace_txt.removeTextField();
       v2.__trace_lines = null;
     };
@@ -1748,7 +1748,7 @@ for ($somevar in arg0) {
       }
       arg0.flash.1ni._global = _global;
       arg0.flash.1ni._root = _root;
-      arg0.flash.1ni.0]Ss) = arg0;
+      arg0.flash.1ni.current = arg0;
       arg0.1Z;X+ = flash.Boot.__instanceof;
       arg0.]6=8H( = flash.Boot.__closure;
       if (_global.Stage.align == '') {
@@ -1764,7 +1764,7 @@ for ($somevar in arg0) {
     v1.__class__ = flash.1ni;
     flash.1ni._global = null;
     flash.1ni._root = null;
-    flash.1ni.0]Ss) = null;
+    flash.1ni.current = null;
     flash.1ni.)2I7S = null;
     flash.1ni.-[Ra6 = function (arg0) {
       trace(arg0);

@@ -1979,7 +1979,7 @@ for ($somevar in v2) {
       this.+-(0 = new 44{N(arg0, this);
       this.+-(0.}TM = flash.1ni._root.ui;
       this.+-(0.+slid();
-      flash.1ni.0]Ss).onEnterFrame = ]6=8H(('4MC5', this.+-(0);
+      flash.1ni.current.onEnterFrame = ]6=8H(('4MC5', this.+-(0);
     };
 
     Loader.__name__ = ['Loader'];
@@ -1989,7 +1989,7 @@ for ($somevar in v2) {
     v1.__class__ = Loader;
     v1.__class__.{Xa = null;
     v1.__class__.0D 6 = function () {
-      new Loader(flash.1ni.0]Ss));
+      new Loader(flash.1ni.current);
     };
 
     v1.[) = null;
@@ -6740,7 +6740,7 @@ for ($somevar in arg0) {
     };
 
     flash.Boot.getTrace = function () {
-      var v2 = flash.1ni.0]Ss);
+      var v2 = flash.1ni.current;
       var v3 = v2.__trace_txt;
       if (v3 == null) {
         var v4 = flash.Stage.width;
@@ -6769,7 +6769,7 @@ for ($somevar in arg0) {
     };
 
     flash.Boot.__trace = function (arg0, arg1) {
-      var v4 = flash.1ni.0]Ss);
+      var v4 = flash.1ni.current;
       var v5 = flash.Boot.getTrace();
       var v6 = arg1.fileName + ((arg1.lineNumber == null) ? '' : ':' + arg1.lineNumber) + ': ' + flash.Boot.__string_rec(arg0, '');
       var v7 = v4.__trace_lines.concat(v6.split('\n'));
@@ -6792,7 +6792,7 @@ for ($somevar in arg0) {
     };
 
     flash.Boot.__clear_trace = function () {
-      var v2 = flash.1ni.0]Ss);
+      var v2 = flash.1ni.current;
       v2.__trace_txt.removeTextField();
       v2.__trace_lines = null;
     };
@@ -6845,7 +6845,7 @@ for ($somevar in arg0) {
       }
       arg0.flash.1ni._global = _global;
       arg0.flash.1ni._root = _root;
-      arg0.flash.1ni.0]Ss) = arg0;
+      arg0.flash.1ni.current = arg0;
       arg0.1Z;X+ = flash.Boot.__instanceof;
       arg0.]6=8H( = flash.Boot.__closure;
       if (_global.Stage.align == '') {
@@ -7302,7 +7302,7 @@ for ($somevar in v2) {
     v1.__class__ = flash.1ni;
     flash.1ni._global = null;
     flash.1ni._root = null;
-    flash.1ni.0]Ss) = null;
+    flash.1ni.current = null;
     flash.1ni.)2I7S = null;
     flash.1ni.-[Ra6 = function (arg0) {
       trace(arg0);
@@ -9179,7 +9179,7 @@ for ($somevar in v2) {
     4W_*B( = function (arg0) {
       super(arg0);
       this.-z76K = new =4jEB(arg0, this);
-      flash.1ni.0]Ss).onEnterFrame = ]6=8H(('4MC5', this.-z76K);
+      flash.1ni.current.onEnterFrame = ]6=8H(('4MC5', this.-z76K);
     };
 
     4W_*B(.__name__ = ['4W_*B('];
@@ -9188,7 +9188,7 @@ for ($somevar in v2) {
     v1 = 4W_*B(.prototype;
     v1.__class__ = 4W_*B(;
     v1.__class__.0D 6 = function () {
-      new 4W_*B((flash.1ni.0]Ss));
+      new 4W_*B((flash.1ni.current);
     };
 
     v1.-z76K = null;
