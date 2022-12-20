@@ -209,7 +209,7 @@ movie 'loader_web.swf' {
             return new 8(6+, 7+, 8+, 9+);
           };
 
-          this.3Wt.7t4B ( = function (8, 4) {
+          this.3Wt.deleteField = function (8, 4) {
             delete 8[4];
           };
 
@@ -1022,7 +1022,7 @@ for ($somevar in v2) {
       this.4N*._visible = true;
       this.4N*.gotoAndStop('waitserver');
       this.4N*.62CD_.text = [wBA,.Loader.6NX].{[y**;
-      96nT}.7t4B ((this.4N*, 'onPress');
+      96nT}.deleteField(this.4N*, 'onPress');
       this.;+.onPress = null;
       this.;+.useHandCursor = false;
       this.[wBA,.7vdL6((this.;+);
@@ -1141,7 +1141,7 @@ for ($somevar in arg0) {
       return v3 == 'string' || (v3 == 'object' && !arg0.__enum__ || v3 == 'function' && arg0.__name__ != null);
     };
 
-    v1.__class__.7t4B ( = function (arg0, arg1) {
+    v1.__class__.deleteField = function (arg0, arg1) {
       if (this.hasOwnProperty.call(arg0, arg1) != true) {
         return false;
       }

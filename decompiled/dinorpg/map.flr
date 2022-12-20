@@ -656,7 +656,7 @@ for ($somevar in this.1) {
       var v3 = this.+BQB0(.iterator();
       while (v3.1ll a()) {
         var v4 = v3.7Y-7();
-        96nT}.7t4B ((v4, 'onRelease');
+        96nT}.deleteField(v4, 'onRelease');
       }
       flash.1ni.9jX3L(3Wt.+_PpF(flash.1ni._root.goto) + arg0.*B);
     };
@@ -702,7 +702,7 @@ for ($somevar in this.1) {
       this.[8_on = true;
       this.+Hp() = flash.1ni.0]Ss).attachMovie('cache', 'cache', 2);
       this.+Hp()._alpha = 50;
-      96nT}.7t4B ((this.;+, 'onMouseDown');
+      96nT}.deleteField(this.;+, 'onMouseDown');
     };
 
     v1.4MC5 = function () {
@@ -1016,7 +1016,7 @@ for ($somevar in arg0) {
       return v3 == 'string' || v3 == 'object' && !arg0.__enum__ || v3 == 'function' && arg0.__name__ != null;
     };
 
-    v1.__class__.7t4B ( = function (arg0, arg1) {
+    v1.__class__.deleteField = function (arg0, arg1) {
       if (this.hasOwnProperty.call(arg0, arg1) != true) {
         return false;
       }

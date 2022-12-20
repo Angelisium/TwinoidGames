@@ -1149,7 +1149,7 @@ for ($somevar in arg0) {
       return v3 == 'string' || (v3 == 'object' && !arg0.__enum__ || v3 == 'function' && arg0.__name__ != null);
     };
 
-    v1.__class__.7t4B ( = function (arg0, arg1) {
+    v1.__class__.deleteField = function (arg0, arg1) {
       if (this.hasOwnProperty.call(arg0, arg1) != true) {
         return false;
       }

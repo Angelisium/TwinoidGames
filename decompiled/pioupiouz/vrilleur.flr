@@ -229,7 +229,7 @@ movie 'vrilleur.swf' {
                 return new 8(6+, 7+, 8+, 9+);
               };
 
-              this.3Wt.7t4B ( = function (8, 4) {
+              this.3Wt.deleteField = function (8, 4) {
                 delete 8[4];
               };
 
@@ -3556,7 +3556,7 @@ movie 'vrilleur.swf' {
             }
           } else {
             if (!this.*={{8((v2)) {
-              3Wt.7t4B ((v2, '4AF');
+              3Wt.deleteField(v2, '4AF');
               this.+Hp().shift();
             }
           }

@@ -2054,7 +2054,7 @@ for ($somevar in this.__x.attributes) {
         if (this.1Te]+ != 9l{.9)DM2) {
           throw 'bad nodeType';
         }
-        96nT}.7t4B ((this.__x.attributes, arg0);
+        96nT}.deleteField(this.__x.attributes, arg0);
         $s.pop();
       }
       catch (v0) {
@@ -2956,7 +2956,7 @@ for ($somevar in arg0) {
       }
     };
 
-    v1.__class__.7t4B ( = function (arg0, arg1) {
+    v1.__class__.deleteField = function (arg0, arg1) {
       $s.push('Reflect::' + 'deleteField');
       var v4 = $s.length;
       try {

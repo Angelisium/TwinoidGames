@@ -807,7 +807,7 @@ for ($somevar in arg0) {
       return v3 == 'string' || (v3 == 'object' && !arg0.__enum__ || v3 == 'function' && arg0.__name__ != null);
     };
 
-    v1.__class__.7t4B ( = function (arg0, arg1) {
+    v1.__class__.deleteField = function (arg0, arg1) {
       if (this.hasOwnProperty.call(arg0, arg1) != true) {
         return false;
       }
@@ -1003,9 +1003,9 @@ for ($somevar in v2) {
 
     v1.7)Gu7 = function () {
       this.6qyf0();
-      96nT}.7t4B ((this.}J, 'onRollOver');
-      96nT}.7t4B ((this.}J, 'onRollOut');
-      96nT}.7t4B ((this.}J, 'onRelease');
+      96nT}.deleteField(this.}J, 'onRollOver');
+      96nT}.deleteField(this.}J, 'onRollOut');
+      96nT}.deleteField(this.}J, 'onRelease');
     };
 
     v1.,}2X ( = function (4O) {
@@ -2577,10 +2577,10 @@ for ($somevar in v2) {
       if (!}-VbH.+4Z+[()) {
         return undefined;
       }
-      96nT}.7t4B ((this.4yK*.[B-5, 'onRelease');
-      96nT}.7t4B ((this.4yK*.-7k65, 'onRelease');
-      96nT}.7t4B ((this.4yK*.-_, 'onRelease');
-      96nT}.7t4B ((this.4yK*.8WD+, 'onRelease');
+      96nT}.deleteField(this.4yK*.[B-5, 'onRelease');
+      96nT}.deleteField(this.4yK*.-7k65, 'onRelease');
+      96nT}.deleteField(this.4yK*.-_, 'onRelease');
+      96nT}.deleteField(this.4yK*.8WD+, 'onRelease');
       this.4yK*.gotoAndStop(2);
     };
 
@@ -2886,10 +2886,10 @@ for ($somevar in v2) {
         this.}J._y = 295;
         if (!(arg0 && }-VbH.+4Z+[())) {
           this.}J.gotoAndStop(1);
-          96nT}.7t4B ((this.}J, 'onRollOver');
-          96nT}.7t4B ((this.}J, 'onDragOut');
-          96nT}.7t4B ((this.}J, 'onRollOut');
-          96nT}.7t4B ((this.}J, 'onRelease');
+          96nT}.deleteField(this.}J, 'onRollOver');
+          96nT}.deleteField(this.}J, 'onDragOut');
+          96nT}.deleteField(this.}J, 'onRollOut');
+          96nT}.deleteField(this.}J, 'onRelease');
           this.}J._alpha = 100;
         } else {
           this.}J.gotoAndStop(this.6MQB + 10);
