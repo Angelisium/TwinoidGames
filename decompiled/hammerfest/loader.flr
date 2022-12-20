@@ -25305,21 +25305,21 @@ movie 'loader.swf' {
               _global.ASSetPropFlags(XML.prototype, 'exists', 1);
               _global.StyleSheet = _global.TextField.StyleSheet;
               this.3Wt = new Object();
-              this.3Wt.{XfS6 = 0;
+              this.3Wt.icounter = 0;
               this.3Wt.7bSH* = function (}J, 5P55, }p j)) {
-                var v2 = 5P55 + '@' + this.{XfS6++;
+                var v2 = 5P55 + '@' + this.icounter++;
                 }J.attachMovie(5P55, v2, }p j));
                 return }J[v2];
               };
 
               this.3Wt.-4*l(( = function (}J, }p j)) {
-                var v2 = 'empty@' + this.{XfS6++;
+                var v2 = 'empty@' + this.icounter++;
                 }J.createEmptyMovieClip(v2, }p j));
                 return }J[v2];
               };
 
               this.3Wt.5jHJK( = function (}J, }p j)) {
-                var v2 = 'dup@' + this.{XfS6++;
+                var v2 = 'dup@' + this.icounter++;
                 }J.duplicateMovieClip(v2, }p j));
                 return }J._parent[v2];
               };
@@ -25345,7 +25345,7 @@ movie 'loader.swf' {
               };
 
               this.3Wt.createTextField = function (}J, }p j)) {
-                var v2 = 'text@' + this.{XfS6++;
+                var v2 = 'text@' + this.icounter++;
                 }J.createTextField(v2, }p j), 0, 0, 100, 20);
                 return }J[v2];
               };

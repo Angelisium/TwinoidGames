@@ -25299,7 +25299,7 @@ movie 'temple.swf' compressed // flash 8, total frames: 4, frame rate: 40 fps, 6
   end // of exportAssets
   
   initMovieClip 395
-    constants '_global', ';7pIo', 'prototype', '}-B2', '}J', 'string', 'Array', 'remove', 'length', 'splice', 'insert', 'duplicate', 'slice', 'Color', 'reset', 'ra', 'rb', 'ba', 'bb', 'ga', 'gb', 'aa', 'ab', 'setTransform', 'XMLNode', 'get', 'attributes', 'set', 'exists', 'attributesIter', 'childrenIter', 'firstChild', 'nextSibling', 'XML', 'ASSetPropFlags', 'StyleSheet', 'TextField', '3Wt', 'Object', '{XfS6', '7bSH*', '@', 'attachMovie', '-4*l((', 'empty@', 'createEmptyMovieClip', '5jHJK(', 'dup@', 'duplicateMovieClip', '_parent', '6{X3L', '4BHo7', '9HH5a', '16(VU', '3Wr3K(', 'createTextField', 'text@', '2g(*', 'hitTest', 'random', ',))hC', '_xmouse', '8p1P5', '_ymouse', 'escape', 'unescape', 'parseInt', 'toString', '}0=HF(', 'isNaN', '=Pn1n', 'Infinity', 'registerClass', '+QD*', '6{VYR', '8', '-', 'apply', '(', 'concat', 'getTimer', ')goHJ(', '-jONz', '9ss9+', ']1dDm', '7t4B (', 'fscommand', 'FSCommand:', '=JpT6', ']{i', '+rJ', ';lvaa', 'clear', '{RuFi', 'text', '', ']AO l', 'Stage', 'width', 'height', '[VAKp', '_x', '_y', '_width', '_height', 'wordWrap', 'selectable', '(K', '](L', 'setInterval', '+9L}b', '\\r', '\r', '\\n', '\n', 'split', 'join', 'textHeight', 'indexOf', 'substr', '(H5 S', 'textColor', 'print', '~ ', ',}2X (', 'clearInterval', 'removeMovieClip', '<...>', 'object', 'movieclip', 'function', '[', '    ', ',', 'substring', ']', '[object Object]', '{\n', 'MC(', '_name', ') ', ' : ', '}', '<fun>', 'trace', '19{O', '5uJ2', 'call'  
+    constants '_global', ';7pIo', 'prototype', '}-B2', '}J', 'string', 'Array', 'remove', 'length', 'splice', 'insert', 'duplicate', 'slice', 'Color', 'reset', 'ra', 'rb', 'ba', 'bb', 'ga', 'gb', 'aa', 'ab', 'setTransform', 'XMLNode', 'get', 'attributes', 'set', 'exists', 'attributesIter', 'childrenIter', 'firstChild', 'nextSibling', 'XML', 'ASSetPropFlags', 'StyleSheet', 'TextField', '3Wt', 'Object', 'icounter', '7bSH*', '@', 'attachMovie', '-4*l((', 'empty@', 'createEmptyMovieClip', '5jHJK(', 'dup@', 'duplicateMovieClip', '_parent', '6{X3L', '4BHo7', '9HH5a', '16(VU', '3Wr3K(', 'createTextField', 'text@', '2g(*', 'hitTest', 'random', ',))hC', '_xmouse', '8p1P5', '_ymouse', 'escape', 'unescape', 'parseInt', 'toString', '}0=HF(', 'isNaN', '=Pn1n', 'Infinity', 'registerClass', '+QD*', '6{VYR', '8', '-', 'apply', '(', 'concat', 'getTimer', ')goHJ(', '-jONz', '9ss9+', ']1dDm', '7t4B (', 'fscommand', 'FSCommand:', '=JpT6', ']{i', '+rJ', ';lvaa', 'clear', '{RuFi', 'text', '', ']AO l', 'Stage', 'width', 'height', '[VAKp', '_x', '_y', '_width', '_height', 'wordWrap', 'selectable', '(K', '](L', 'setInterval', '+9L}b', '\\r', '\r', '\\n', '\n', 'split', 'join', 'textHeight', 'indexOf', 'substr', '(H5 S', 'textColor', 'print', '~ ', ',}2X (', 'clearInterval', 'removeMovieClip', '<...>', 'object', 'movieclip', 'function', '[', '    ', ',', 'substring', ']', '[object Object]', '{\n', 'MC(', '_name', ') ', ' : ', '}', '<fun>', 'trace', '19{O', '5uJ2', 'call'  
     push '_global'
     getVariable
     push ';7pIo'
@@ -25662,7 +25662,7 @@ movie 'temple.swf' compressed // flash 8, total frames: 4, frame rate: 40 fps, 6
           setMember
           push r:this, '3Wt'
           getMember
-          push '{XfS6', 0.0
+          push 'icounter', 0.0
           setMember
           push r:this, '3Wt'
           getMember
@@ -25670,9 +25670,9 @@ movie 'temple.swf' compressed // flash 8, total frames: 4, frame rate: 40 fps, 6
           function2 (r:3='}J', r:4='5P55', r:5='}p j)') (r:1='this')
             push r:'5P55', '@'
             add
-            push r:this, '{XfS6'
+            push r:this, 'icounter'
             getMember
-            push r:this, '{XfS6', r:this, '{XfS6'
+            push r:this, 'icounter', r:this, 'icounter'
             getMember
             increment
             setMember
@@ -25692,9 +25692,9 @@ movie 'temple.swf' compressed // flash 8, total frames: 4, frame rate: 40 fps, 6
           getMember
           push '-4*l(('
           function2 (r:3='}J', r:4='}p j)') (r:1='this')
-            push 'empty@', r:this, '{XfS6'
+            push 'empty@', r:this, 'icounter'
             getMember
-            push r:this, '{XfS6', r:this, '{XfS6'
+            push r:this, 'icounter', r:this, 'icounter'
             getMember
             increment
             setMember
@@ -25714,9 +25714,9 @@ movie 'temple.swf' compressed // flash 8, total frames: 4, frame rate: 40 fps, 6
           getMember
           push '5jHJK('
           function2 (r:3='}J', r:4='}p j)') (r:1='this')
-            push 'dup@', r:this, '{XfS6'
+            push 'dup@', r:this, 'icounter'
             getMember
-            push r:this, '{XfS6', r:this, '{XfS6'
+            push r:this, 'icounter', r:this, 'icounter'
             getMember
             increment
             setMember
@@ -25785,9 +25785,9 @@ movie 'temple.swf' compressed // flash 8, total frames: 4, frame rate: 40 fps, 6
           getMember
           push 'createTextField'
           function2 (r:3='}J', r:4='}p j)') (r:1='this')
-            push 'text@', r:this, '{XfS6'
+            push 'text@', r:this, 'icounter'
             getMember
-            push r:this, '{XfS6', r:this, '{XfS6'
+            push r:this, 'icounter', r:this, 'icounter'
             getMember
             increment
             setMember
