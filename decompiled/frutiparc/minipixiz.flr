@@ -1551,7 +1551,7 @@ movie 'minipixiz.swf' {
                 return }J[v2];
               };
 
-              this.3Wt.5jHJK( = function (}J, }p j)) {
+              this.3Wt.duplicateMC = function (}J, }p j)) {
                 var v2 = 'dup@' + this.icounter++;
                 }J.duplicateMovieClip(v2, }p j));
                 return }J._parent[v2];
