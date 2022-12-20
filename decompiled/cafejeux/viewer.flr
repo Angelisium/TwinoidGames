@@ -2415,7 +2415,7 @@ for ($somevar in arg0) {
       }
     };
 
-    v1.__class__.{+M,2 = function (arg0) {
+    v1.__class__.htmlUnescape = function (arg0) {
       $s.push('StringTools::' + 'htmlUnescape');
       var v3 = $s.length;
       try {

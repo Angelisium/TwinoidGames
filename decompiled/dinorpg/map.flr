@@ -1121,7 +1121,7 @@ for ($somevar in arg0) {
       return (((((arg0.split('&')).join('&amp;')).split('<')).join('&lt;')).split('>')).join('&gt;');
     };
 
-    v1.__class__.{+M,2 = function (arg0) {
+    v1.__class__.htmlUnescape = function (arg0) {
       return (((((arg0.split('&gt;')).join('>')).split('&lt;')).join('<')).split('&amp;')).join('&');
     };
 
