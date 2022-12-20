@@ -1962,7 +1962,7 @@ for ($somevar in v2) {
 
     v1.*B = null;
     v1.-B = null;
-    v1.}-B2 = function () {
+    v1.init = function () {
       this.-iB=._visible = true;
       this. BFI4(this.8m2E5.}vsMt);
       this.0POpX(this.;bY]F);
@@ -2073,7 +2073,7 @@ for ($somevar in v2) {
     v1.}T-cy = function (arg0) {
       ++this.3xBA,;
       if (this.3xBA, == 2) {
-        this.}-B2();
+        this.init();
       }
     };
 
@@ -3540,7 +3540,7 @@ for ($somevar in v2) {
       this.-R 9) = v3.-R 9);
       this.==4i3 = v3.==4i3;
       this.0Rjs) = v3.0Rjs);
-      this.9Z}}] = v3.}-B2;
+      this.9Z}}] = v3.init;
       this.2x,hv = 0;
       this.*)rG+ = 0;
       this.}vsMt = v3.]2;
@@ -4426,7 +4426,7 @@ for ($somevar in v2) {
       this.5+fG2 = arg0;
       this.;nv08( = [0, 0];
       this.}gzLO = [[], []];
-      this.}-B2();
+      this.init();
     };
 
     (a)G=.__name__ = ['(a)G='];
@@ -4449,8 +4449,8 @@ for ($somevar in v2) {
         this.2ITQ6[arg0.{9,B].4NG9._st = null;
         v4 = this.4*GWx(v3._s, arg0.{9,B, v3._gfx, v3._lvl, v3._bits, 'support', false);
         v4.-)2e{ = this.(=t]n + 280;
-        v4.}-B2 += this.(=t]n;
-        arg0.}-B2 += 100;
+        v4.init += this.(=t]n;
+        arg0.init += 100;
         return undefined;
       }
       v4 = this.29[OH((arg0, 10);
@@ -4483,7 +4483,7 @@ for ($somevar in v2) {
         if (v6) {
           arg0.1,gsi.remove(arg0.9d);
           arg0.9d = 5e{K. CPR8([arg0.(9.}vsMt[1]];
-          arg0.}-B2 += 100;
+          arg0.init += 100;
           arg0.]=0KD( = null;
           return undefined;
         }
@@ -4529,9 +4529,9 @@ for ($somevar in v2) {
       if (arg0.(9.1Jc8f && arg0.9d.;2 == 4) {
         v7 *= 0.75;
       }
-      arg0.}-B2 += v7;
-      if (arg0.-)2e{ != null && arg0.}-B2 >= arg0.-)2e{) {
-        arg0.}-B2 = this.(=t]n;
+      arg0.init += v7;
+      if (arg0.-)2e{ != null && arg0.init >= arg0.-)2e{) {
+        arg0.init = this.(=t]n;
         arg0.-)2e{ = 0;
       }
       if (arg0.=1f]F[0]) {
@@ -4566,7 +4566,7 @@ for ($somevar in v2) {
       }
       v7 = this.}O,A;
       v7.}O,A = v7.}O,A * 16807 % 2147483647;
-      v6 = {'10)s': false, ')uYq;': false, '2;dS5': false, '-)2e{': null, ']=0KD(': null, '6ztDK(': arg0.6ztDK(, '=1f]F': [], ' I-4': 0, '50': 0.25 + (20 / (10 + arg0.}Yax5)) * 0.75, '(9': arg0, '9d': 5e{K. CPR8([arg0.}vsMt[1]], '5955': arg0.}o;-a(), '}-B2': arg0.9Z}}] + (((v7.}O,A & 1073741823) % 10007) / 10007.0) * 10, '1,gsi': v4, '5BERG': v5, '{9,B': arg1, ' Pf8Z': []};
+      v6 = {'10)s': false, ')uYq;': false, '2;dS5': false, '-)2e{': null, ']=0KD(': null, '6ztDK(': arg0.6ztDK(, '=1f]F': [], ' I-4': 0, '50': 0.25 + (20 / (10 + arg0.}Yax5)) * 0.75, '(9': arg0, '9d': 5e{K. CPR8([arg0.}vsMt[1]], '5955': arg0.}o;-a(), 'init': arg0.9Z}}] + (((v7.}O,A & 1073741823) % 10007) / 10007.0) * 10, '1,gsi': v4, '5BERG': v5, '{9,B': arg1, ' Pf8Z': []};
       this.,)Rq+.push(v6);
       return v6;
     };
@@ -4845,7 +4845,7 @@ for ($somevar in v2) {
       while (v2 < v3.length) {
         var v4 = v3[v2];
         ++v2;
-        v4.}-B2 += this.;nv08([v4.{9,B];
+        v4.init += this.;nv08([v4.{9,B];
         if (v4.(9.0J2 == null && this.2ITQ6[v4.{9,B].4NG9._sab && v4.1,gsi.length > 0) {
           var v5 = this.}O,A;
           v5.}O,A = v5.}O,A * 16807 % 2147483647;
@@ -4857,7 +4857,7 @@ for ($somevar in v2) {
         ++v2;
         v3 = v2;
         this.(94C)();
-        this.(=t]n = this.,)Rq+[0].}-B2;
+        this.(=t]n = this.,)Rq+[0].init;
         this.;8,PR(this.,)Rq+[0]);
         this.8wU2m();
         if (this.)MBts != null) {
@@ -5019,7 +5019,7 @@ for ($somevar in v2) {
     };
 
     v1.3U6 = null;
-    v1.}-B2 = function () {
+    v1.init = function () {
       this.}O,A = new 9K.3xyY(this.5+fG2);
       this.3U6 = 0;
       this.,)Rq+ = [];
@@ -5061,7 +5061,7 @@ for ($somevar in v2) {
 
     v1.;i[Q8 = function (arg0) {
       this.-BcMC((arg0, 1, false);
-      arg0.}-B2 = this.(=t]n + 50;
+      arg0.init = this.(=t]n + 50;
     };
 
     v1.}O,A = null;
@@ -5078,7 +5078,7 @@ for ($somevar in v2) {
 
     v1.(94C) = function () {
       var v2 = function (arg0, arg1) {
-        if (arg0.}-B2 < arg1.}-B2) {
+        if (arg0.init < arg1.init) {
           return -1;
         }
         return 1;
@@ -5219,7 +5219,7 @@ for ($somevar in v2) {
           if (this.3X]M5 != null) {
             this.3X]M5.push(_Action.9YcML(arg1.(9.*B, v4.(9.*B));
           }
-          v4.}-B2 += 30 + v4.50;
+          v4.init += 30 + v4.50;
           break;
         case 1:
           if (arg1.=1f]F[0]) {
@@ -5237,11 +5237,11 @@ for ($somevar in v2) {
           }
           this.-BcMC((v4, 1, true);
           if (v4.(9.0J2 != null) {
-            v4.}-B2 += 100000;
+            v4.init += 100000;
           } else {
-            v4.}-B2 += 3Wt.9n6(Math.max(260 - Math.pow(v4.(9. fs9+, 0.5) * 10, 50));
+            v4.init += 3Wt.9n6(Math.max(260 - Math.pow(v4.(9. fs9+, 0.5) * 10, 50));
           }
-          arg1.}-B2 += 20 * arg1.50;
+          arg1.init += 20 * arg1.50;
           break;
         case 2:
           v6 = arg1.(9.}o;-a() - arg1.5955;
@@ -5255,7 +5255,7 @@ for ($somevar in v2) {
             this.3X]M5.push(_Action.{GD*t(arg1.(9.*B, v7));
           }
           arg1.5955 += v7;
-          arg1.}-B2 += 15;
+          arg1.init += 15;
           this.2ITQ6[arg1.{9,B].4NG9._poi = false;
           break;
         case 4:
@@ -5275,7 +5275,7 @@ for ($somevar in v2) {
             this.3X]M5.push(_Action.2WAJ(arg1.(9.*B, v6));
           }
           this.8wU2m();
-          arg1.}-B2 += 50 * arg1.50;
+          arg1.init += 50 * arg1.50;
           break;
         case 5:
           if (arg1.9d.*B != arg1.(9.}vsMt) {
@@ -5293,7 +5293,7 @@ for ($somevar in v2) {
             this.3X]M5.push(_Action.,0EO(arg1.(9.*B, v4.(9.*B, v6));
           }
           this.8wU2m();
-          arg1.}-B2 += 100 * arg1.50;
+          arg1.init += 100 * arg1.50;
           break;
         case 6:
           v6 = [];
@@ -5393,7 +5393,7 @@ for ($somevar in v2) {
               this.3X]M5.push(_Action.(6+Sw(arg1.(9.*B, v10, v11));
             }
             this.8wU2m();
-            arg1.}-B2 += 200 * arg1.50;
+            arg1.init += 200 * arg1.50;
           }
           break;
         case 9:
@@ -5420,7 +5420,7 @@ for ($somevar in v2) {
               v9 = v6 - arg1.5955;
             }
             arg1.5955 += v9;
-            arg1.}-B2 += 15;
+            arg1.init += 15;
             if (this.3X]M5 != null) {
               this.3X]M5.push(_Action.7Xgus(arg1.(9.*B, v7.(9.*B, -20));
             }
@@ -9222,7 +9222,7 @@ for ($somevar in arg0) {
       flash.7]AJ. p)sT = 0;
       flash.7]AJ.)Sdm5( = null;
       5e{K. CPR8( = [{'*B': _Weapons.7y64E, '}_BB': 10, ';0-': 5, '{DiQ6': 120, ',+I': 0, ']mAH': 0, '4oH': 20, '=K-': 10, '-zE': 0, '2qE': -25, '*;-': 5, '-R 9)': 0, '6MQB': 5cw)M.08t}=, '+}B(':  a-TA.9H3N, ';2': 0}, {'*B': _Weapons.+rpFG, '}_BB': 5, ';0-': 7, '{DiQ6': 60, ',+I': 0, ']mAH': 0, '4oH': 50, '=K-': 10, '-zE': 0, '2qE': 0, '*;-': 0, '-R 9)': 30, '6MQB': 5cw)M.08t}=, '+}B(':  a-TA.=s()C, ';2': 1}, {'*B': _Weapons.63HnL, '}_BB': 5, ';0-': 10, '{DiQ6': 120, ',+I': 10, ']mAH': 1, '4oH': 0, '=K-': 0, '-zE': 0, '2qE': 15, '*;-': 15, '-R 9)': 0, '6MQB': 5cw)M.08t}=, '+}B(':  a-TA.7*]EL, ';2': 1}, {'*B': _Weapons.4wsoG, '}_BB': 2, ';0-': 12, '{DiQ6': 120, ',+I': -10, ']mAH': 3, '4oH': 0, '=K-': 0, '-zE': 0, '2qE': 0, '*;-': 10, '-R 9)': 0, '6MQB': 5cw)M.08t}=, '+}B(':  a-TA.=s()C, ';2': 2}, {'*B': _Weapons.=1;kL, '}_BB': 3, ';0-': 6, '{DiQ6': 100, ',+I': 30, ']mAH': 3, '4oH': 0, '=K-': 5, '-zE': 0, '2qE': 25, '*;-': 25, '-R 9)': 10, '6MQB': 5cw)M.08t}=, '+}B(':  a-TA.=s()C, ';2': 2}, {'*B': _Weapons.7c WC, '}_BB': 3, ';0-': 14, '{DiQ6': 140, ',+I': 5, ']mAH': 3, '4oH': 0, '=K-': 0, '-zE': 0, '2qE': 0, '*;-': 20, '-R 9)': 0, '6MQB': 5cw)M.08t}=, '+}B(':  a-TA.=s()C, ';2': 2}, {'*B': _Weapons.6bW, '}_BB': 3, ';0-': 17, '{DiQ6': 150, ',+I': 0, ']mAH': 1, '4oH': 0, '=K-': 0, '-zE': 0, '2qE': -10, '*;-': 0, '-R 9)': 0, '6MQB': 5cw)M.08t}=, '+}B(':  a-TA.7*]EL, ';2': 3}, {'*B': _Weapons.=HI(1(, '}_BB': 3, ';0-': 10, '{DiQ6': 80, ',+I': 0, ']mAH': 1, '4oH': 20, '=K-': 0, '-zE': 0, '2qE': 10, '*;-': 0, '-R 9)': 15, '6MQB': 5cw)M.08t}=, '+}B(':  a-TA.7*]EL, ';2': 1}, {'*B': _Weapons.0SBeA(, '}_BB': 5, ';0-': 55, '{DiQ6': 230, ',+I': -20, ']mAH': 1, '4oH': -30, '=K-': -40, '-zE': 50, '2qE': -50, '*;-': 10, '-R 9)': -40, '6MQB': 5cw)M.08t}=, '+}B(':  a-TA.7*]EL, ';2': 4}, {'*B': _Weapons.42DaH, '}_BB': 5, ';0-': 28, '{DiQ6': 180, ',+I': 0, ']mAH': 2, '4oH': -10, '=K-': -20, '-zE': -20, '2qE': 0, '*;-': 10, '-R 9)': 0, '6MQB': 5cw)M.08t}=, '+}B(':  a-TA.7*]EL, ';2': 1}, {'*B': _Weapons.2Na, '}_BB': 5, ';0-': 4, '{DiQ6': 28, ',+I': 50, ']mAH': 0, '4oH': 50, '=K-': 60, '-zE': 0, '2qE': -50, '*;-': -50, '-R 9)': 45, '6MQB': 5cw)M.08t}=, '+}B(':  a-TA.7*]EL, ';2': 5}, {'*B': _Weapons.-KI_r, '}_BB': 5, ';0-': 3, '{DiQ6': 12, ',+I': 0, ']mAH': 0, '4oH': 0, '=K-': 15, '-zE': 0, '2qE': -10, '*;-': -50, '-R 9)': 30, '6MQB': 5cw)M.0xrwL, '+}B(':  a-TA.9H3N, ';2': 6}, {'*B': _Weapons.{VGnC, '}_BB': 10, ';0-': 3, '{DiQ6': 100, ',+I': 0, ']mAH': 0, '4oH': 0, '=K-': 0, '-zE': 0, '2qE': 0, '*;-': 0, '-R 9)': 10, '6MQB': 5cw)M.08t}=, '+}B(':  a-TA.9H3N, ';2': 0}, {'*B': _Weapons.}-Y19, '}_BB': 5, ';0-': 30, '{DiQ6': 200, ',+I': -30, ']mAH': 1, '4oH': -35, '=K-': -30, '-zE': 30, '2qE': -30, '*;-': 10, '-R 9)': -60, '6MQB': 5cw)M.08t}=, '+}B(':  a-TA.7*]EL, ';2': 4}, {'*B': _Weapons.+d[1s, '}_BB': 5, ';0-': 20, '{DiQ6': 150, ',+I': 0, ']mAH': 1, '4oH': -5, '=K-': -10, '-zE': 30, '2qE': 0, '*;-': 10, '-R 9)': 0, '6MQB': 5cw)M.08t}=, '+}B(':  a-TA.7*]EL, ';2': 4}, {'*B': _Weapons.;mQeH(, '}_BB': 5, ';0-': 14, '{DiQ6': 160, ',+I': 0, ']mAH': 1, '4oH': 0, '=K-': 0, '-zE': 50, '2qE': 0, '*;-': 10, '-R 9)': -10, '6MQB': 5cw)M.08t}=, '+}B(':  a-TA.7*]EL, ';2': 4}, {'*B': _Weapons.9 ,yC, '}_BB': 5, ';0-': 36, '{DiQ6': 220, ',+I': 0, ']mAH': 1, '4oH': -10, '=K-': -30, '-zE': 150, '2qE': -50, '*;-': -20, '-R 9)': 30, '6MQB': 5cw)M.08t}=, '+}B(':  a-TA.7*]EL, ';2': 4}, {'*B': _Weapons.91]b, '}_BB': 5, ';0-': 10, '{DiQ6': 150, ',+I': -10, ']mAH': 5, '4oH': 30, '=K-': 30, '-zE': -20, '2qE': -20, '*;-': 30, '-R 9)': 35, '6MQB': 5cw)M.08t}=, '+}B(':  a-TA.8b-b, ';2': 7}, {'*B': _Weapons.0kt, '}_BB': 5, ';0-': 8, '{DiQ6': 60, ',+I': 0, ']mAH': 0, '4oH': 25, '=K-': 10, '-zE': 0, '2qE': 30, '*;-': 100, '-R 9)': 30, '6MQB': 5cw)M.08t}=, '+}B(':  a-TA.=s()C, ';2': 2}, {'*B': _Weapons.4Hd,O, '}_BB': 2, ';0-': 5, '{DiQ6': 110, ',+I': 100, ']mAH': 1, '4oH': 100, '=K-': 0, '-zE': 200, '2qE': -50, '*;-': 0, '-R 9)': 200, '6MQB': 5cw)M.08t}=, '+}B(':  a-TA.7*]EL, ';2': 4}, {'*B': _Weapons.(Nl, '}_BB': 2, ';0-': 8, '{DiQ6': 90, ',+I': 0, ']mAH': 0, '4oH': 30, '=K-': 15, '-zE': 0, '2qE': -10, '*;-': 0, '-R 9)': 40, '6MQB': 5cw)M.08t}=, '+}B(':  a-TA.=s()C, ';2': 0}, {'*B': _Weapons.3;KeJ, '}_BB': 2, ';0-': 17, '{DiQ6': 120, ',+I': 0, ']mAH': 1, '4oH': 0, '=K-': 0, '-zE': 0, '2qE': 40, '*;-': 0, '-R 9)': -40, '6MQB': 5cw)M.08t}=, '+}B(':  a-TA.7*]EL, ';2': 4}, {'*B': _Weapons.0JE(G, '}_BB': 2, ';0-': 5, '{DiQ6': 32, ',+I': 0, ']mAH': 0, '4oH': 0, '=K-': 0, '-zE': 0, '2qE': -10, '*;-': 0, '-R 9)': 0, '6MQB': 5cw)M.0xrwL, '+}B(':  a-TA.9H3N, ';2': 6}, {'*B': _Weapons.[j[34, '}_BB': 2, ';0-': 24, '{DiQ6': 180, ',+I': 0, ']mAH': 4, '4oH': -40, '=K-': 0, '-zE': 0, '2qE': 0, '*;-': 10, '-R 9)': 0, '6MQB': 5cw)M.08t}=, '+}B(':  a-TA.7*]EL, ';2': 1}, {'*B': _Weapons.8n*1, '}_BB': 2, ';0-': 20, '{DiQ6': 250, ',+I': 0, ']mAH': 2, '4oH': -10, '=K-': 0, '-zE': 20, '2qE': 20, '*;-': 50, '-R 9)': 30, '6MQB': 5cw)M.08t}=, '+}B(':  a-TA.7*]EL, ';2': 4}, {'*B': _Weapons.4u[MY, '}_BB': 2, ';0-': 7, '{DiQ6': 100, ',+I': 0, ']mAH': 1, '4oH': 20, '=K-': 10, '-zE': 0, '2qE': 0, '*;-': 0, '-R 9)': 50, '6MQB': 5cw)M.08t}=, '+}B(':  a-TA.7*]EL, ';2': 4}, {'*B': _Weapons.7FuzF(, '}_BB': 2, ';0-': 10, '{DiQ6': 45, ',+I': 0, ']mAH': 0, '4oH': 0, '=K-': 10, '-zE': 0, '2qE': -10, '*;-': 0, '-R 9)': 30, '6MQB': 5cw)M.0xrwL, '+}B(':  a-TA.9H3N, ';2': 6}, {'*B': _Weapons.9k59O, '}_BB': 2, ';0-': 6, '{DiQ6': 80, ',+I': 100, ']mAH': 1, '4oH': 0, '=K-': 10, '-zE': 0, '2qE': 20, '*;-': 0, '-R 9)': 0, '6MQB': 5cw)M.08t}=, '+}B(':  a-TA.7*]EL, ';2': 4}];
-      5e{K.}vJt3( = [{' fs9+': 6, ')6,yz': 5, '}Yax5': 3, ',Ie8Z': -6, '2;dS5': 0, '-9U])': 0, '-R 9)': 10, '==4i3': 0, '0Rjs)': 0, '}-B2': 10, ']2': _Weapons.{VGnC}, {' fs9+': 6, ')6,yz': 5, '}Yax5': 3, ',Ie8Z': -6, '2;dS5': 0, '-9U])': 0, '-R 9)': 10, '==4i3': 0, '0Rjs)': 0, '}-B2': 10, ']2': _Weapons.{VGnC}, {' fs9+': 6, ')6,yz': 5, '}Yax5': 3, ',Ie8Z': -6, '2;dS5': 0, '-9U])': 0, '-R 9)': 10, '==4i3': 0, '0Rjs)': 0, '}-B2': 10, ']2': _Weapons.{VGnC}, {' fs9+': 23, ')6,yz': 16, '}Yax5': 24, ',Ie8Z': -4, '2;dS5': 0, '-9U])': 0, '-R 9)': 60, '==4i3': 0, '0Rjs)': 20, '}-B2': 60, ']2': _Weapons.{VGnC}, {' fs9+': 40, ')6,yz': 2, '}Yax5': 1, ',Ie8Z': 10, '2;dS5': 0, '-9U])': 0, '-R 9)': -20, '==4i3': 0, '0Rjs)': 0, '}-B2': 360, ']2': _Weapons.7y64E}];
+      5e{K.}vJt3( = [{' fs9+': 6, ')6,yz': 5, '}Yax5': 3, ',Ie8Z': -6, '2;dS5': 0, '-9U])': 0, '-R 9)': 10, '==4i3': 0, '0Rjs)': 0, 'init': 10, ']2': _Weapons.{VGnC}, {' fs9+': 6, ')6,yz': 5, '}Yax5': 3, ',Ie8Z': -6, '2;dS5': 0, '-9U])': 0, '-R 9)': 10, '==4i3': 0, '0Rjs)': 0, 'init': 10, ']2': _Weapons.{VGnC}, {' fs9+': 6, ')6,yz': 5, '}Yax5': 3, ',Ie8Z': -6, '2;dS5': 0, '-9U])': 0, '-R 9)': 10, '==4i3': 0, '0Rjs)': 0, 'init': 10, ']2': _Weapons.{VGnC}, {' fs9+': 23, ')6,yz': 16, '}Yax5': 24, ',Ie8Z': -4, '2;dS5': 0, '-9U])': 0, '-R 9)': 60, '==4i3': 0, '0Rjs)': 20, 'init': 60, ']2': _Weapons.{VGnC}, {' fs9+': 40, ')6,yz': 2, '}Yax5': 1, ',Ie8Z': 10, '2;dS5': 0, '-9U])': 0, '-R 9)': -20, '==4i3': 0, '0Rjs)': 0, 'init': 360, ']2': _Weapons.7y64E}];
       5e{K.}ccy+( = [{'*B': _Super.}k5CM, '}_BB': 8, '+nM': 2}, {'*B': _Super.3LjHA, '}_BB': 5, '+nM': 1}, {'*B': _Super.3 sE,(, '}_BB': 5, '+nM': 1}, {'*B': _Super.,Pm, '}_BB': 5, '+nM': 1}, {'*B': _Super.3 lJ, '}_BB': 2, '+nM': 2}, {'*B': _Super.-XoO, '}_BB': 2, '+nM': 1}, {'*B': _Super.2wI]L, '}_BB': 8, '+nM': 2}, {'*B': _Super.,U7QE, '}_BB': 3, '+nM': 1}, {'*B': _Super.061s((, '}_BB': 2, '+nM': 1}, {'*B': _Super.1LnG9, '}_BB': 20, '+nM': 4}];
       5e{K.}_GF6( = [{'*B': _Bonus.9BzmM(_Permanent.(ZQzA), ' (': 60}, {'*B': _Bonus.9BzmM(_Permanent.-8fMA(), ' (': 60}, {'*B': _Bonus.9BzmM(_Permanent.)ff=4), ' (': 60}, {'*B': _Bonus.9BzmM(_Permanent.(tFfk), ' (': 60}, {'*B': _Bonus.9BzmM(_Permanent.[BY_K), ' (': 1}, {'*B': _Bonus.9BzmM(_Permanent.9bOlw), ' (': 10}, {'*B': _Bonus.9BzmM(_Permanent.=CQYy), ' (': 10}, {'*B': _Bonus.9BzmM(_Permanent.[pK7A(), ' (': 20}, {'*B': _Bonus.9BzmM(_Permanent.5ww=Q), ' (': 4}, {'*B': _Bonus.9BzmM(_Permanent.57{-B), ' (': 10}, {'*B': _Bonus.9BzmM(_Permanent.9}b4y), ' (': 20}, {'*B': _Bonus.9BzmM(_Permanent.(1dd=), ' (': 4}, {'*B': _Bonus.9BzmM(_Permanent.2qY0z), ' (': 30}, {'*B': _Bonus.9BzmM(_Permanent.*rhkK(), ' (': 1}, {'*B': _Bonus.9BzmM(_Permanent.{H;02), ' (': 3}, {'*B': _Bonus.9BzmM(_Permanent.;VaK), ' (': 10}, {'*B': _Bonus.9BzmM(_Permanent.8fjjC(), ' (': 5}, {'*B': _Bonus.9BzmM(_Permanent.-n+*=), ' (': 1}, {'*B': _Bonus.9BzmM(_Permanent.,h*Y (), ' (': 4}, {'*B': _Bonus.9BzmM(_Permanent.4rcRL), ' (': 4}, {'*B': _Bonus.9BzmM(_Permanent.)qy]w), ' (': 4}, {'*B': _Bonus.9BzmM(_Permanent.*S40+(), ' (': 4}, {'*B': _Bonus.9BzmM(_Permanent.5I3-E(), ' (': 8}, {'*B': _Bonus.9BzmM(_Permanent.)U029(), ' (': 3}, {'*B': _Bonus.9BzmM(_Permanent.1XHN7), ' (': 1}, {'*B': _Bonus.9BzmM(_Permanent.0ORp (), ' (': 10}, {'*B': _Bonus.9BzmM(_Permanent.41P6s), ' (': 4}, {'*B': _Bonus.,ysNL(_Super.}k5CM), ' (': 10}, {'*B': _Bonus.,ysNL(_Super.3LjHA), ' (': 20}, {'*B': _Bonus.,ysNL(_Super.3 sE,(), ' (': 8}, {'*B': _Bonus.,ysNL(_Super.,Pm), ' (': 16}, {'*B': _Bonus.,ysNL(_Super.3 lJ), ' (': 6}, {'*B': _Bonus.,ysNL(_Super.-XoO), ' (': 1}, {'*B': _Bonus.,ysNL(_Super.2wI]L), ' (': 4}, {'*B': _Bonus.,ysNL(_Super.,U7QE), ' (': 2}, {'*B': _Bonus.,ysNL(_Super.061s((), ' (': 2}, {'*B': _Bonus.,ysNL(_Super.1LnG9), ' (': 4}, {'*B': _Bonus.5C)yP(_Followers.{vGbB), ' (': 20}, {'*B': _Bonus.5C)yP(_Followers.}vGbB), ' (': 8}, {'*B': _Bonus.5C)yP(_Followers. wGbB), ' (': 2}, {'*B': _Bonus.5C)yP(_Followers.8lYJ), ' (': 1}, {'*B': _Bonus.5C)yP(_Followers.2j+h-(), ' (': 1}, {'*B': _Bonus.[s4ir(_Weapons.+rpFG), ' (': 80}, {'*B': _Bonus.[s4ir(_Weapons.63HnL), ' (': 100}, {'*B': _Bonus.[s4ir(_Weapons.4wsoG), ' (': 40}, {'*B': _Bonus.[s4ir(_Weapons.=1;kL), ' (': 70}, {'*B': _Bonus.[s4ir(_Weapons.7c WC), ' (': 10}, {'*B': _Bonus.[s4ir(_Weapons.6bW), ' (': 40}, {'*B': _Bonus.[s4ir(_Weapons.=HI(1(), ' (': 6}, {'*B': _Bonus.[s4ir(_Weapons.0SBeA(), ' (': 3}, {'*B': _Bonus.[s4ir(_Weapons.42DaH), ' (': 4}, {'*B': _Bonus.[s4ir(_Weapons.2Na), ' (': 2}, {'*B': _Bonus.[s4ir(_Weapons.-KI_r), ' (': 8}, {'*B': _Bonus.[s4ir(_Weapons.}-Y19), ' (': 50}, {'*B': _Bonus.[s4ir(_Weapons.+d[1s), ' (': 6}, {'*B': _Bonus.[s4ir(_Weapons.;mQeH(), ' (': 20}, {'*B': _Bonus.[s4ir(_Weapons.9 ,yC), ' (': 4}, {'*B': _Bonus.[s4ir(_Weapons.91]b), ' (': 3}, {'*B': _Bonus.[s4ir(_Weapons.0kt), ' (': 6}, {'*B': _Bonus.[s4ir(_Weapons.4Hd,O), ' (': 2}, {'*B': _Bonus.[s4ir(_Weapons.(Nl), ' (': 2}, {'*B': _Bonus.[s4ir(_Weapons.3;KeJ), ' (': 2}, {'*B': _Bonus.[s4ir(_Weapons.0JE(G), ' (': 2}, {'*B': _Bonus.[s4ir(_Weapons.[j[34), ' (': 2}, {'*B': _Bonus.[s4ir(_Weapons.8n*1), ' (': 2}, {'*B': _Bonus.[s4ir(_Weapons.4u[MY), ' (': 2}, {'*B': _Bonus.[s4ir(_Weapons.7FuzF(), ' (': 2}, {'*B': _Bonus.[s4ir(_Weapons.9k59O), ' (': 2}, {'*B': _Bonus.{hnu0((_Talent.,KTQ)), ' (': 3}, {'*B': _Bonus.{hnu0((_Talent.9ykK), ' (': 3}, {'*B': _Bonus.{hnu0((_Talent.-9u), ' (': 3}, {'*B': _Bonus.{hnu0((_Talent.8Z;PE), ' (': 3}, {'*B': _Bonus.{hnu0((_Talent.0(6ig), ' (': 5}];
       980Sb.0D 6();

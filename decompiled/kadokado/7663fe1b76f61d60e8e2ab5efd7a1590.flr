@@ -957,7 +957,7 @@ for ($somevar in arg0) {
       *r.__name__ = ['*r'];
       v1 = *r.prototype;
       v1.__class__ = *r;
-      v1.__class__.}-B2 = function () {
+      v1.__class__.init = function () {
         *r.+9fc = Math.ceil(*r.=OA / *r.-s);
         *r.70fd = Math.ceil(*r.*OA / *r.-s);
       };
@@ -1849,7 +1849,7 @@ for ($somevar in v2) {
       v1.,Y = null;
       44{N = function (arg0) {
         haxe.]{i.(H5 S(16777215);
-        *r.}-B2();
+        *r.init();
         this.-iB= = arg0;
         44{N.(K = this;
         this.32 = new 9K.+7U K(this.-iB=);
@@ -2230,7 +2230,7 @@ for ($somevar in v2) {
       v1 = 980Sb.prototype;
       v1.__class__ = 980Sb;
       v1.__class__._main = null;
-      v1.__class__.}-B2 = function () {
+      v1.__class__.init = function () {
         if (;ndCG.(kJ+1(() != true) {
           return undefined;
         }

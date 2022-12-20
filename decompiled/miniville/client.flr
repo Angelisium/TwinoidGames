@@ -1438,7 +1438,7 @@ for ($somevar in v2) {
     *r.__name__ = ['*r'];
     v1 = *r.prototype;
     v1.__class__ = *r;
-    v1.__class__.}-B2 = function (arg0) {
+    v1.__class__.init = function (arg0) {
       *r.4s = *r.=P( * *r.{Luaw * *r.4u_[ * 0.5;
       *r.5s = *r.] ( * 0.5;
     };
@@ -2062,7 +2062,7 @@ for ($somevar in arg0) {
         *r.=OA = 400;
         *r.*OA = 266;
       }
-      *r.}-B2(this.) B2.1AF);
+      *r.init(this.) B2.1AF);
       this.9(c6b();
       this.]m{45 = [];
       v5 = *r.4u_[;
@@ -2080,7 +2080,7 @@ for ($somevar in arg0) {
           this.]m{45[v8][v11] = this.}O,A.random(100000);
         }
       }
-      this.}-B2();
+      this.init();
     };
 
     44{N.__name__ = ['44{N'];
@@ -2557,7 +2557,7 @@ for ($somevar in arg0) {
 
     v1.83XCJ( = null;
     v1.) B2 = null;
-    v1.}-B2 = function () {
+    v1.init = function () {
       this.;+ = this.32.*=_p_('mcBg', 44{N.4MvcB);
       this.;+.stop();
       this. VgbI = this.32.*=_p_('mcLoading', 44{N.[V{(6);
@@ -2798,7 +2798,7 @@ for ($somevar in arg0) {
         this.{J-DJ((arg0);
       }
       this.32.,}2X (();
-      this.}-B2();
+      this.init();
     };
 
     v1.]m{45 = null;
@@ -3126,7 +3126,7 @@ for ($somevar in arg0) {
       44{N.[V{(6 = 8;
       44{N.*8sr7 = 9;
       44{N.4z(X2 = 10;
-      ;T2LY.}-B2 = 980Sb.0D 6();
+      ;T2LY.init = 980Sb.0D 6();
     }
     catch (flash.7]AJ) {
       flash.7]AJ.__exc(flash.7]AJ);

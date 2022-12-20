@@ -3514,7 +3514,7 @@ for ($somevar in v2) {
     };
 
     v1.,_9t = function () {
-      this.}-B2();
+      this.init();
       return this;
     };
 
@@ -3746,12 +3746,12 @@ for ($somevar in v2) {
     };
 
     v1.*B = null;
-    v1.}-B2 = function () {
+    v1.init = function () {
       if (!this.00{h;) {
         var v2 = this.0cW=E(.iterator();
         while (v2.1ll a()) {
           var v3 = v2.7Y-7();
-          v3.}-B2(this.,_vrE();
+          v3.init(this.,_vrE();
         }
         this.00{h; = true;
       }
@@ -3874,7 +3874,7 @@ for ($somevar in v2) {
       if (!this.417sB || this.9]Vd () {
         this.417sB = true;
         this.9]Vd ( = false;
-        this.}-B2();
+        this.init();
         this.5U4B = 0;
         this.=h59) = 0;
         this.7F = 0;
@@ -3968,7 +3968,7 @@ for ($somevar in v2) {
     v1.__class__ = 9K.;PMnE(.;Ux5K.85T5r;
     v1.03+6) = null;
     v1.4AH- = null;
-    v1.}-B2 = null;
+    v1.init = null;
     v1.{}MC(( = null;
     v1.87vE7( = null;
     9K.;PMnE(.;Ux5K.471u-( = function (arg0, arg1, arg2) {
@@ -4004,7 +4004,7 @@ for ($somevar in v2) {
       9K.;PMnE(.;Ux5K.471u-(.3)Bu5.push(this);
     };
 
-    v1.}-B2 = function (arg0) {
+    v1.init = function (arg0) {
       if (!arg0) {
         this.]XX}5 = this._get();
       } else {

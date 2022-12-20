@@ -4,7 +4,7 @@ movie 'loader_web.swf' {
   movieClip 1 }ND*9 {
 
     frame 1 {
-      function }-B2(}J) {
+      function init(}J) {
         function () {
           if (_global.string == undefined) {
             _global.string = function ((() {
@@ -229,7 +229,7 @@ movie 'loader_web.swf' {
             this.ttrace.text = '';
           };
 
-          this.]{i.}-B2 = function (}J,  (, 1) {
+          this.]{i.init = function (}J,  (, 1) {
             if (}J == undefined) {
               }J = _root;
             }
@@ -265,7 +265,7 @@ movie 'loader_web.swf' {
 
           this.]{i.+9L}b = function ([) {
             if (!this.initdone) {
-              this.}-B2();
+              this.init();
             }
             this.ttrace.text += ((([.split('\n')).join('\\n')).split('\r')).join('\\r') + '\n';
             while (this.ttrace.textHeight > this.[VAKp) {
@@ -277,7 +277,7 @@ movie 'loader_web.swf' {
 
           this.]{i.(H5 S = function (*) {
             if (!this.initdone) {
-              this.}-B2();
+              this.init();
             }
             this.ttrace.textColor = *;
             this.tprint.textColor = *;
@@ -285,7 +285,7 @@ movie 'loader_web.swf' {
 
           this.]{i.print = function ((() {
             if (!this.initdone) {
-              this.}-B2();
+              this.init();
             }
             this.tprint.text += '~ ' + this.toString(((, '') + '\n';
           };
@@ -981,11 +981,11 @@ for ($somevar in v2) {
       this.[wBA,.47V44.8tw5).0*3+1.text = [wBA,.Loader.6NX].+;5So;
       this.[wBA,.47V44.8tw5).0*3+1.selectable = false;
       this.[wBA,.32.*=_p_('coin', [wBA,.Loader.6W-sb);
-      this.-Ov)K = this.[wBA,.}-B2._images.copy();
-      if (this.[wBA,.}-B2._artwork == null) {
+      this.-Ov)K = this.[wBA,.init._images.copy();
+      if (this.[wBA,.init._artwork == null) {
         this.]NN61(false);
       } else {
-        this.-Ov)K.unshift(this.[wBA,.}-B2._artwork);
+        this.-Ov)K.unshift(this.[wBA,.init._artwork);
         this.]NN61(true);
       }
     };
@@ -1598,7 +1598,7 @@ for ($somevar in v2) {
     };
 
     v1.}Mzy-( = function () {
-      return this.[wBA,.}-B2._periodId;
+      return this.[wBA,.init._periodId;
     };
 
     v1.{8}XA( = function () {
@@ -1634,7 +1634,7 @@ for ($somevar in v2) {
     };
 
     v1.] = function (arg0) {
-      var v3 = this.[wBA,.}-B2._texts.6Y3(arg0);
+      var v3 = this.[wBA,.init._texts.6Y3(arg0);
       return (v3 == null) ? arg0 : v3;
     };
 
@@ -1871,8 +1871,8 @@ for ($somevar in v2) {
       if (!this.}qJ{s()) {
         return undefined;
       }
-      this.}-B2 = this.75p8).,hR]y(arg0.data);
-      if (this.}-B2 == null) {
+      this.init = this.75p8).,hR]y(arg0.data);
+      if (this.init == null) {
         return undefined;
       }
       this.[_o(*(();
@@ -1958,7 +1958,7 @@ for ($somevar in v2) {
       var v3 = this.75p8).=Z(MN(v2);
       var v4 = new flash.LoadVars();
       v4.onData = ]6=8H((' Z)Pz', this);
-      var v5 = this.}-B2._startUrl + 4rH6a.;Bkn9(v3);
+      var v5 = this.init._startUrl + 4rH6a.;Bkn9(v3);
       if (!v4.load(v5)) {
         this.0QyZ*([wBA,.Loader.6NX].3]0_A);
       }
@@ -2050,7 +2050,7 @@ for ($somevar in v2) {
     };
 
     v1.[DepV = null;
-    v1.}-B2 = null;
+    v1.init = null;
     v1.*nBAe = function () {
       this.*tExE( = [];
       this.49U3,(.[kQJC(0);
@@ -2094,7 +2094,7 @@ for ($somevar in v2) {
       };
 
       if (this.=3E;2()) {
-        if (!v2.loadClip(this.}-B2._swfUrl, this.{xJ)) {
+        if (!v2.loadClip(this.init._swfUrl, this.{xJ)) {
           this.0QyZ*([wBA,.Loader.6NX].*-3ZO);
         }
       } else {
@@ -2128,7 +2128,7 @@ for ($somevar in v2) {
       this.49U3,(.3*Vcx();
       this.90D* = this.{xJ.attachMovie('90D*', '_c', 10);
       this.90D*.gotoAndStop(1);
-      this.)2=.}-B2.apply(this.)2=, [this.90D*]);
+      this.)2=.init.apply(this.)2=, [this.90D*]);
       this.)2=.removeMovieClip();
       flash.1ni._global.;ndCG = this.}y(;
     };
@@ -2319,7 +2319,7 @@ for ($somevar in v2) {
         this.-iB=._xscale = 200;
         this.-iB=._yscale = 200;
         this.-iB=.attachBitmap(this.9I*, 2);
-        this.0o()._visible = this.}-B2._useMouse;
+        this.0o()._visible = this.init._useMouse;
         this.+EAND(._visible = true;
       }
     };
@@ -2350,7 +2350,7 @@ for ($somevar in v2) {
       9K.{-kxL.;y}-6( = 1 / 0;
       this.71EzL.;y}-6( = 1 / 0;
       this.71EzL.3R,QM = getTimer();
-      this.90D*.980Sb.}-B2(this.90D*);
+      this.90D*.980Sb.init(this.90D*);
       this.71EzL.3R,QM = getTimer();
       this.71EzL.87vE7( = function () {};
 
@@ -4852,7 +4852,7 @@ for ($somevar in this.1) {
       haxe.;G][.-vFG9( = '0123456789abcdef';
       [wBA,.{_nEU.)) = haxe.;G][.=Z(MN('Start Game');
       haxe.=6k.*KB2 = new haxe.=6k();
-      ;T2LY.}-B2 = [wBA,.Loader.0D 6();
+      ;T2LY.init = [wBA,.Loader.0D 6();
     }
     catch (flash.7]AJ) {
       flash.7]AJ.__exc(flash.7]AJ);

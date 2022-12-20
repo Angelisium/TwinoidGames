@@ -138,7 +138,7 @@ movie 'b4dbb572527609a2e4e19077457afaf8.swf' {
 
       *r = function () {};
 
-      *r.}-B2 = function () {
+      *r.init = function () {
         *r.=P( = *r.{Cs * 2.25;
         *r.] ( = *r.{Cs * 1.25;
       };
@@ -213,7 +213,7 @@ movie 'b4dbb572527609a2e4e19077457afaf8.swf' {
       ,i0 [ = function () {};
 
       44{N = function (}J) {
-        *r.}-B2();
+        *r.init();
         *r.+-(0 = this;
         this.(W3 = new +7U K(}J);
         this.(KA = this.(W3.*=_p_('-l*WO', 1);
@@ -226,10 +226,10 @@ movie 'b4dbb572527609a2e4e19077457afaf8.swf' {
         this.)gv94 = new Array();
         this.;AH0 = new Array();
         var v3 = 0;
-        goto 3553;
+        goto 3556;
         for (;;) {
           ++v3;
-          label 3553:
+          label 3556:
           if (v3 >= 2 * *r.4Hh41( * 2) break;
           this.;AH0[v3] = new Array();
         }
@@ -252,10 +252,10 @@ movie 'b4dbb572527609a2e4e19077457afaf8.swf' {
         this.;8,t2 = new Array();
         this.;8,t2 = new Array();
         var v2 = 0;
-        goto 3913;
+        goto 3916;
         for (;;) {
           ++v2;
-          label 3913:
+          label 3916:
           if (v2 >= 3) break;
           var v3 = this.8q9h3(();
           this.;8,t2.push(v3);
@@ -325,10 +325,10 @@ movie 'b4dbb572527609a2e4e19077457afaf8.swf' {
           case *r.,Nwxx:
             this.2VhU6 = [25];
             var v3 = 1;
-            goto 5210;
+            goto 5213;
             for (;;) {
               ++v3;
-              label 5210:
+              label 5213:
               if (v3 >= this.86{p(.length) break;
               var v4 = this.86{p([v3];
               v4. [z_9( = v4.}1A{_({'((': 0, ')(': 0}) * 0.2;
@@ -379,10 +379,10 @@ movie 'b4dbb572527609a2e4e19077457afaf8.swf' {
           case *r.,il7z:
             var v2 = this.2VhU6[0] / 44{N.}FI;8;
             var v3 = 0;
-            goto 6248;
+            goto 6251;
             for (;;) {
               ++v3;
-              label 6248:
+              label 6251:
               if (v3 >= this.2W]+a.length) break;
               var v4 = this.2W]+a[v3];
               *r.;CYOh(v4.-iB=, (1 - v2) * 100, 16777215);
@@ -441,10 +441,10 @@ movie 'b4dbb572527609a2e4e19077457afaf8.swf' {
         this.[GH7r();
         var v10 = this.7Qe;6.duplicate();
         var v11 = 0;
-        goto 7447;
+        goto 7450;
         for (;;) {
           ++v11;
-          label 7447:
+          label 7450:
           if (v11 >= v10.length) break;
           v10[v11].87vE7(();
         }
@@ -469,10 +469,10 @@ movie 'b4dbb572527609a2e4e19077457afaf8.swf' {
         this.9O*r = *r.0Yj1(this.9O*r, Math.PI);
         this.(KA._rotation = -this.9O*r / (Math.PI / 180);
         var v7 = 0;
-        goto 8123;
+        goto 8126;
         for (;;) {
           ++v7;
-          label 8123:
+          label 8126:
           if (v7 >= this.86{p(.length) break;
           var v8 = this.86{p([v7];
           v8.-iB=.,d951._rotation = -(this.(KA._rotation + v8.-iB=._rotation);
@@ -481,10 +481,10 @@ movie 'b4dbb572527609a2e4e19077457afaf8.swf' {
 
       v1.[GH7r = function () {
         var v2 = 0;
-        goto 8270;
+        goto 8273;
         for (;;) {
           ++v2;
-          label 8270:
+          label 8273:
           if (v2 >= this.;8,t2.length) break;
           var v3 = this.;8,t2[v2];
           var v4 = *r.5NUOp + v2 * (*r.{Cs + 2.5) * 2;
@@ -526,16 +526,16 @@ movie 'b4dbb572527609a2e4e19077457afaf8.swf' {
         this.-[9S8( = {'7': ;ndCG.-Q)9)(0)};
         var v2 = new Array();
         var v3 = 0;
-        goto 9332;
+        goto 9335;
         for (;;) {
           ++v3;
-          label 9332:
+          label 9335:
           if (v3 >= *r.4Hh41( * 2) break;
           var v4 = 0;
-          goto 9391;
+          goto 9394;
           for (;;) {
             ++v4;
-            label 9391:
+            label 9394:
             if (v4 >= *r.4Hh41( * 2) break;
             var v5 = this.;AH0[v3][v4];
             if (v5 != null && !v5.+G97+ && v5.color != 20) {
@@ -544,10 +544,10 @@ movie 'b4dbb572527609a2e4e19077457afaf8.swf' {
                 v2.push([v5]);
               }
               var v6 = 0;
-              goto 9589;
+              goto 9592;
               for (;;) {
                 ++v6;
-                label 9589:
+                label 9592:
                 if (v6 >= 3) break;
                 var v7 = v3 + *r.*e[[v6][0];
                 var v8 = v4 + *r.*e[[v6][1];
@@ -562,10 +562,10 @@ movie 'b4dbb572527609a2e4e19077457afaf8.swf' {
                       var v10 = v9.;d3;
                       var v11 = v2[v10];
                       var v12 = 0;
-                      goto 9928;
+                      goto 9931;
                       for (;;) {
                         ++v12;
-                        label 9928:
+                        label 9931:
                         if (v12 >= v11.length) break;
                         var v13 = v11[v12];
                         v13.;d3 = v5.;d3;
@@ -581,10 +581,10 @@ movie 'b4dbb572527609a2e4e19077457afaf8.swf' {
         }
         this.2W]+a = new Array();
         var v14 = 0;
-        goto 10070;
+        goto 10073;
         for (;;) {
           ++v14;
-          label 10070:
+          label 10073:
           if (v14 >= v2.length) break;
           var v15 = v2[v14];
           if (v15.length > *r.5Xbvg - 1) {
@@ -608,10 +608,10 @@ movie 'b4dbb572527609a2e4e19077457afaf8.swf' {
         var v2 = false;
         var v3 = this.86{p(.duplicate();
         var v4 = 0;
-        goto 10658;
+        goto 10661;
         for (;;) {
           ++v4;
-          label 10658:
+          label 10661:
           if (v4 >= v3.length) break;
           var v5 = v3[v4];
           if (v5.;d3 == null) {
@@ -624,10 +624,10 @@ movie 'b4dbb572527609a2e4e19077457afaf8.swf' {
 
       v1.}b( X = function () {
         var v2 = 0;
-        goto 10790;
+        goto 10793;
         for (;;) {
           ++v2;
-          label 10790:
+          label 10793:
           if (v2 >= this.86{p(.length) break;
           var v3 = this.86{p([v2];
           v3.;d3 = null;
@@ -637,10 +637,10 @@ movie 'b4dbb572527609a2e4e19077457afaf8.swf' {
       v1.{(g}5 = function ()) {
         ).;d3 = 0;
         var v3 = 0;
-        goto 10910;
+        goto 10913;
         for (;;) {
           ++v3;
-          label 10910:
+          label 10913:
           if (v3 >= *r.*e[.length) break;
           var v4 = *r.*e[[v3];
           var v5 = ).5R + v4[0] + *r.4Hh41(;
@@ -808,7 +808,7 @@ movie 'b4dbb572527609a2e4e19077457afaf8.swf' {
       4RW6x = ,v0X.prototype.87vE7(;
       980Sb = function () {};
 
-      980Sb.}-B2 = function (}J) {
+      980Sb.init = function (}J) {
         if (!;ndCG.(kJ+1(()) {
           return undefined;
         }
@@ -849,10 +849,10 @@ movie 'b4dbb572527609a2e4e19077457afaf8.swf' {
         var v7 = 0;
         var v8 = [-99 * 1000;
         var v6 = 0;
-        goto 14155;
+        goto 14158;
         for (;;) {
           ++v6;
-          label 14155:
+          label 14158:
           if (v6 >= v5) break;
           if (v4[v6]._name != null) {
             v4[v6].swapDepths(v8 + v7);
@@ -913,10 +913,10 @@ movie 'b4dbb572527609a2e4e19077457afaf8.swf' {
         var v6 = v5.9oK;
         var v7 = v5.7-,;
         var v8 = 0;
-        goto 14992;
+        goto 14995;
         for (;;) {
           ++v8;
-          label 14992:
+          label 14995:
           if (v8 >= v7) break;
           if (v6[v8] == }J) {
             v6[v8] = null;
@@ -961,10 +961,10 @@ movie 'b4dbb572527609a2e4e19077457afaf8.swf' {
         var v3 = this.-fC3a([-99);
         var v5 = v3.9oK;
         var v4 = 0;
-        goto 15617;
+        goto 15620;
         for (;;) {
           ++v4;
-          label 15617:
+          label 15620:
           if (v4 >= v3.7-,) break;
           v5[v4].removeMovieClip();
         }
@@ -977,10 +977,10 @@ movie 'b4dbb572527609a2e4e19077457afaf8.swf' {
         var v5 = v3.7-,;
         var v8 = -99999999;
         var v6 = 0;
-        goto 15785;
+        goto 15788;
         for (;;) {
           ++v6;
-          label 15785:
+          label 15788:
           if (v6 >= v5) break;
           var v9 = v4[v6];
           var v10 = v9._y;
@@ -988,10 +988,10 @@ movie 'b4dbb572527609a2e4e19077457afaf8.swf' {
             v8 = v10;
           } else {
             var v7 = v6;
-            goto 15881;
+            goto 15884;
             for (;;) {
               --v7;
-              label 15881:
+              label 15884:
               if (v7 <= 0) break;
               var v11 = v4[v7 - 1];
               if (v11._y > v10) {
@@ -1011,10 +1011,10 @@ movie 'b4dbb572527609a2e4e19077457afaf8.swf' {
 
       v1.,}2X ( = function () {
         var v2 = 0;
-        goto 16071;
+        goto 16074;
         for (;;) {
           ++v2;
-          label 16071:
+          label 16074:
           if (v2 >= this.}Zms3.length) break;
           this.clear(v2);
         }
@@ -1089,10 +1089,10 @@ movie 'b4dbb572527609a2e4e19077457afaf8.swf' {
 
       v1.7yU(0 = function (7) {
         var v3 = 0;
-        goto 17478;
+        goto 17481;
         for (;;) {
           ++v3;
-          label 17478:
+          label 17481:
           if (v3 >= *r.+-(0.86{p(.length) break;
           var v4 = *r.+-(0.86{p([v3];
           if (v4 != this) {
@@ -1108,10 +1108,10 @@ movie 'b4dbb572527609a2e4e19077457afaf8.swf' {
       v1.6o_Q+ = function () {
         this.;357+ = false;
         var v2 = 0.02;
-        goto 17719;
+        goto 17722;
         for (;;) {
           if (!(this.7yU(0(0) || this.(El(0())) break;
-          label 17719:
+          label 17722:
           this.(( -= this.[b * v2;
           this.)( -= this.]b * v2;
           var v3 = *r.*QP3L(this.((, this.)();
@@ -1134,10 +1134,10 @@ movie 'b4dbb572527609a2e4e19077457afaf8.swf' {
 
       v1.16[0P = function (90, ;0) {
         var v4 = 0;
-        goto 18106;
+        goto 18109;
         for (;;) {
           ++v4;
-          label 18106:
+          label 18109:
           if (v4 >= *r.*e[.length) break;
           var v5 = *r.*e[[v4];
           var v6 = 90 + v5[0];
@@ -1152,25 +1152,25 @@ movie 'b4dbb572527609a2e4e19077457afaf8.swf' {
 
       v1.{biQC = function () {
         var v2 = 1;
-        goto 18328;
+        goto 18331;
         for (;;) {
           ++v2;
-          label 18328:
+          label 18331:
           if (v2 >= 10) break;
           var v3 = 0;
-          goto 18374;
+          goto 18377;
           for (;;) {
             ++v3;
-            label 18374:
+            label 18377:
             if (v3 >= *r.*e[.length) break;
             var v4 = *r.*e[[v3];
             var v5 = this.5R + v4[0] * v2;
             var v6 = this.6R + v4[1] * v2;
             var v7 = 0;
-            goto 18515;
+            goto 18518;
             for (;;) {
               ++v7;
-              label 18515:
+              label 18518:
               if (v7 >= v2) break;
               var v8 = *r.*e[[(v3 + 2) % *r.*e[.length];
               var v9 = v5 + v8[0] * v7;
@@ -1221,18 +1221,18 @@ movie 'b4dbb572527609a2e4e19077457afaf8.swf' {
 
       v1.;-[;H = function () {
         var v2 = 0;
-        goto 19537;
+        goto 19540;
         for (;;) {
           ++v2;
-          label 19537:
+          label 19540:
           if (v2 >= 20) break;
           this.+46i4(();
         }
         var v3 = 0;
-        goto 19603;
+        goto 19606;
         for (;;) {
           ++v3;
-          label 19603:
+          label 19606:
           if (v3 >= *r.*e[.length) break;
           var v4 = this.5R + *r.*e[[v3][0];
           var v5 = this.6R + *r.*e[[v3][1];
@@ -1287,10 +1287,10 @@ movie 'b4dbb572527609a2e4e19077457afaf8.swf' {
         this.]ZsEn();
         var v2 = 10;
         var v3 = 0;
-        goto 21025;
+        goto 21028;
         for (;;) {
           ++v3;
-          label 21025:
+          label 21028:
           if (v3 >= v2) break;
           var v4 = new *DzW(*r.+-(0.(W3.*=_p_(' gFFu', 10));
           var v5 = Math.random() * 6.28;

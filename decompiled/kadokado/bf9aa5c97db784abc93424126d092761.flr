@@ -477,7 +477,7 @@ for ($somevar in v2) {
       v1 = +Km]r.prototype;
       v1.__class__ = +Km]r;
       v1.) = null;
-      v1.}-B2 = function (arg0) {
+      v1.init = function (arg0) {
         this.) = arg0;
         arg0.6MxD0(.push(this);
       };
@@ -512,8 +512,8 @@ for ($somevar in v2) {
       v1.__class__ = =+.6]J2h;
       v1.(+- = null;
       v1.)+- = null;
-      v1.}-B2 = function (arg0) {
-        super.}-B2(arg0);
+      v1.init = function (arg0) {
+        super.init(arg0);
         this.(+- = (1 - arg0.(( / *r.=OA) * 314;
         this.)+- = 0;
       };
@@ -1378,8 +1378,8 @@ for ($somevar in arg0) {
         this.{9I.9O*r = v3;
       };
 
-      v1.}-B2 = function (arg0) {
-        super.}-B2(arg0);
+      v1.init = function (arg0) {
+        super.init(arg0);
         this.{9I = arg0.2IB=[0];
         this.{5}D = 0;
       };
@@ -1776,8 +1776,8 @@ for ($somevar in arg0) {
       =+.(t0e extends +Km]r;
       v1 = =+.(t0e.prototype;
       v1.__class__ = =+.(t0e;
-      v1.}-B2 = function (arg0) {
-        super.}-B2(arg0);
+      v1.init = function (arg0) {
+        super.init(arg0);
         var v4 = arg0.}O,A;
         v4.}O,A = v4.}O,A * 16807 % 2147483647;
         this.{5}D = (v4.}O,A & 1073741823) % 20;
@@ -1819,7 +1819,7 @@ for ($somevar in arg0) {
       *r.__name__ = ['*r'];
       v1 = *r.prototype;
       v1.__class__ = *r;
-      v1.__class__.}-B2 = function () {
+      v1.__class__.init = function () {
         *r.+9fc = Math.ceil(*r.=OA / *r.-s);
         *r.70fd = Math.ceil(*r.*OA / *r.-s);
       };
@@ -1891,8 +1891,8 @@ for ($somevar in arg0) {
       v1 = =+.)hp2p.prototype;
       v1.__class__ = =+.)hp2p;
       v1.40 = null;
-      v1.}-B2 = function (arg0) {
-        super.}-B2(arg0);
+      v1.init = function (arg0) {
+        super.init(arg0);
         this.(l+fi();
       };
 
@@ -1951,8 +1951,8 @@ for ($somevar in arg0) {
       v1.__class__ = =+.8B;a;
       v1.5+mmJ( = null;
       v1.}m6 = null;
-      v1.}-B2 = function (arg0) {
-        super.}-B2(arg0);
+      v1.init = function (arg0) {
+        super.init(arg0);
         this.5+mmJ( = 0;
         this.}D4i3 = 0;
       };
@@ -2004,8 +2004,8 @@ for ($somevar in arg0) {
       =+.55D9S extends +Km]r;
       v1 = =+.55D9S.prototype;
       v1.__class__ = =+.55D9S;
-      v1.}-B2 = function (arg0) {
-        super.}-B2(arg0);
+      v1.init = function (arg0) {
+        super.init(arg0);
         this.{5}D = 0;
       };
 
@@ -2754,7 +2754,7 @@ for ($somevar in v2) {
             break;
           case 15:
             v4 = v3[2];
-            v4.}-B2(this.9);
+            v4.init(this.9);
             break;
           case 16:
             v4 = v3[2];
@@ -4281,7 +4281,7 @@ for ($somevar in v2) {
       ['2WAJ', 1].__enum__.8RLI8 = ['8RLI8', 2];
       44{N = function (arg0) {
         haxe.]{i.(H5 S(16777215);
-        *r.}-B2();
+        *r.init();
         this.-iB= = arg0;
         44{N.(K = this;
         this.32 = new 9K.+7U K(this.-iB=);
@@ -4824,7 +4824,7 @@ for ($somevar in v2) {
       v1 = 980Sb.prototype;
       v1.__class__ = 980Sb;
       v1.__class__._main = null;
-      v1.__class__.}-B2 = function () {
+      v1.__class__.init = function () {
         if (;ndCG.(kJ+1(() != true) {
           return undefined;
         }

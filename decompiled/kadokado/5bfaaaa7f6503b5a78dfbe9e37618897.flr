@@ -1538,7 +1538,7 @@ for ($somevar in v2) {
       *r.__name__ = ['*r'];
       v1 = *r.prototype;
       v1.__class__ = *r;
-      v1.__class__.}-B2 = function () {
+      v1.__class__.init = function () {
         44{N.(K.0yYu6 = [];
         var v2 = 0;
         var v3 = 0;
@@ -1990,7 +1990,7 @@ for ($somevar in v2) {
       44{N = function (arg0) {
         44{N.(K = this;
         this.-iB= = arg0;
-        *r.}-B2();
+        *r.init();
         this.}t; = [0];
         this.-_X}5 = {'_ot': []};
         this.32 = new 9K.+7U K(this.-iB=);
@@ -2409,7 +2409,7 @@ for ($somevar in v2) {
       v1 = 980Sb.prototype;
       v1.__class__ = 980Sb;
       v1.__class__._main = null;
-      v1.__class__.}-B2 = function () {
+      v1.__class__.init = function () {
         if (;ndCG.(kJ+1(() != true) {
           return undefined;
         }

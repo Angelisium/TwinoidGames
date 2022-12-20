@@ -1354,7 +1354,7 @@ for ($somevar in arg0) {
       *r.__name__ = ['*r'];
       v1 = *r.prototype;
       v1.__class__ = *r;
-      v1.__class__.}-B2 = function () {
+      v1.__class__.init = function () {
         *r.91gX = 3Wt.9n6(*r.7I / *r.-A();
         *r.+9fc = Math.ceil(*r.7I / *r.-s);
         *r.70fd = Math.ceil(*r.}H / *r.-s);
@@ -2003,7 +2003,7 @@ for ($somevar in v2) {
         return Math.sqrt(this.[b * this.[b + this.]b * this.]b);
       };
 
-      v1.}-B2 = function () {
+      v1.init = function () {
         var v2 = 44{N.(K.-kms3[1];
         this.(( = v2.((;
         this.)( = v2.)(;
@@ -2684,7 +2684,7 @@ for ($somevar in v2) {
 
       44{N = function (arg0) {
         haxe.]{i.(H5 S(16777215);
-        *r.}-B2();
+        *r.init();
         this.-iB= = arg0;
         44{N.(K = this;
         this.6QA = new 9K.+7U K(this.-iB=);
@@ -3558,7 +3558,7 @@ for ($somevar in v2) {
       v1 = 980Sb.prototype;
       v1.__class__ = 980Sb;
       v1.__class__._main = null;
-      v1.__class__.}-B2 = function () {
+      v1.__class__.init = function () {
         if (;ndCG.(kJ+1(() != true) {
           return undefined;
         }

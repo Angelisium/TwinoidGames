@@ -1012,7 +1012,7 @@ for ($somevar in v2) {
       *r.__name__ = ['*r'];
       v1 = *r.prototype;
       v1.__class__ = *r;
-      v1.__class__.}-B2 = function () {
+      v1.__class__.init = function () {
         *r.85( += *r.-s * 0.5;
         *r.95( += *r.-s * 0.5;
       };
@@ -1310,7 +1310,7 @@ for ($somevar in v2) {
         this.}2D* += this.-iJ;
         if (this.}2D* >= 1) {
           this.=S7A.smc.gotoAndStop(1);
-          this.}-B2();
+          this.init();
         }
       };
 
@@ -1384,7 +1384,7 @@ for ($somevar in v2) {
           if (!(flash.Key.isDown(flash.Key.UP) && (44{N.(K.;AH0[this.5R][this.6R - 1].-o,3W && this.8OxJI(()))) {
             this.7o(aR = null;
             this.=S7A.smc.gotoAndPlay('endEatUp');
-            this.}-B2();
+            this.init();
           } else {
             this.3AV6m();
           }
@@ -1448,7 +1448,7 @@ for ($somevar in v2) {
         44{N.(K.4 tRF();
       };
 
-      v1.}-B2 = function () {
+      v1.init = function () {
         96nT}.)BnwT(this.=S7A.smc, '$big', this.*H]X4.length);
         if (this.*H]X4.length <= this.-1Cr[0]) {
           44{N.(K.,uX(0();
@@ -1509,7 +1509,7 @@ for ($somevar in v2) {
         if (this.*H]X4.length == 0 || this.6R <= 0) {
           44{N.(K.(GmgN();
           this.=S7A.smc.play();
-          this.}-B2();
+          this.init();
         }
       };
 
@@ -1999,7 +1999,7 @@ for ($somevar in v2) {
       };
 
       44{N = function (arg0) {
-        *r.}-B2();
+        *r.init();
         this.-iB= = arg0;
         44{N.(K = this;
         this.6QA = new 9K.+7U K(this.-iB=);
@@ -2546,7 +2546,7 @@ for ($somevar in v2) {
         if (this.}2D*[0] == 1) {
           if (this.;s3q6[0] <= 0) {
             this.(dm3b();
-            this.4,01.}-B2();
+            this.4,01.init();
           } else {
             this.4(-[3(();
           }
@@ -2585,7 +2585,7 @@ for ($somevar in v2) {
       v1 = 980Sb.prototype;
       v1.__class__ = 980Sb;
       v1.__class__._main = null;
-      v1.__class__.}-B2 = function () {
+      v1.__class__.init = function () {
         if (;ndCG.(kJ+1(() != true) {
           return undefined;
         }

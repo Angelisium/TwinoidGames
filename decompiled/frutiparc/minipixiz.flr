@@ -1454,7 +1454,7 @@ movie 'minipixiz.swf' {
         _global.;7pIo = function () {};
 
         var v1 = _global.;7pIo.prototype;
-        _global.;7pIo.}-B2 = function (}J) {
+        _global.;7pIo.init = function (}J) {
           with (}J) {
             function () {
               if (_global.string == undefined) {
@@ -1672,7 +1672,7 @@ movie 'minipixiz.swf' {
                 this.ttrace.text = '';
               };
 
-              this.]{i.}-B2 = function (}J,  (, 1) {
+              this.]{i.init = function (}J,  (, 1) {
                 if (}J == undefined) {
                   }J = _root;
                 }
@@ -1708,7 +1708,7 @@ movie 'minipixiz.swf' {
 
               this.]{i.+9L}b = function ([) {
                 if (!this.initdone) {
-                  this.}-B2();
+                  this.init();
                 }
                 this.ttrace.text += ((([.split('\n')).join('\\n')).split('\r')).join('\\r') + '\n';
                 while (this.ttrace.textHeight > this.[VAKp) {
@@ -1720,7 +1720,7 @@ movie 'minipixiz.swf' {
 
               this.]{i.(H5 S = function (*) {
                 if (!this.initdone) {
-                  this.}-B2();
+                  this.init();
                 }
                 this.ttrace.textColor = *;
                 this.tprint.textColor = *;
@@ -1728,7 +1728,7 @@ movie 'minipixiz.swf' {
 
               this.]{i.print = function ((() {
                 if (!this.initdone) {
-                  this.}-B2();
+                  this.init();
                 }
                 this.tprint.text += '~ ' + this.toString(((, '') + '\n';
               };
@@ -1839,7 +1839,7 @@ movie 'minipixiz.swf' {
   }
 
   frame 3 {
-    gotoAndPlay('}-B2');
+    gotoAndPlay('init');
   }
 
   movieClip 1547  {
@@ -1858,7 +1858,7 @@ movie 'minipixiz.swf' {
   }
 
   frame 31 {
-    ;7pIo.}-B2(this);
+    ;7pIo.init(this);
     ;;6[ = function () {
       this.32 = new +7U K(this);
       this.6H99,( = new Array();
@@ -1870,7 +1870,7 @@ movie 'minipixiz.swf' {
     ;;6[.prototype.__constructor__ = MovieClip;
     ;;6[.6t8nb = 51;
     ;;6[.]9AF2 = 30;
-    ;;6[.prototype.}-B2 = function () {};
+    ;;6[.prototype.init = function () {};
 
     ;;6[.prototype.-Z=dg = function () {};
 
@@ -1905,7 +1905,7 @@ movie 'minipixiz.swf' {
       this.4zkrA( = new [X.9Q.{bw4k();
       this.4zkrA(.359A = this;
       this.4zkrA(.*({1A((96);
-      this.4zkrA(.}-B2();
+      this.4zkrA(.init();
       this.4zkrA(.5r7Q((}J);
       this.4zkrA(.1j]NX();
     };
@@ -1914,7 +1914,7 @@ movie 'minipixiz.swf' {
       this.4zkrA( = new [X.9Q.{bw4k();
       this.4zkrA(.359A = this;
       this.4zkrA(.*({1A((96);
-      this.4zkrA(.}-B2();
+      this.4zkrA(.init();
       this.4zkrA(.5r7Q((}J);
       this.4zkrA(.1j]NX();
     };
@@ -2052,8 +2052,8 @@ movie 'minipixiz.swf' {
 
     (izm (.prototype.__proto__ = ;;6[.prototype;
     (izm (.prototype.__constructor__ = ;;6[;
-    (izm (.prototype.}-B2 = function () {
-      ;;6[.prototype.}-B2.call(this);
+    (izm (.prototype.init = function () {
+      ;;6[.prototype.init.call(this);
       this.-zx=g();
       this.4Fj,b();
       this.4wC-a();
@@ -2408,7 +2408,7 @@ movie 'minipixiz.swf' {
       this.;Pzj = false;
     };
 
-    [lax5.7t{I.prototype.}-B2 = function () {};
+    [lax5.7t{I.prototype.init = function () {};
 
     [lax5.7t{I.prototype.3Kp}5 = function () {
       *r.+-(0.,hrI5.push(this);
@@ -2555,7 +2555,7 @@ movie 'minipixiz.swf' {
       v2.5T4D = 30;
       v2.5DZk5 = 6;
       v2.+iLR( = [1];
-      v2.}-B2();
+      v2.init();
       return v2;
     };
 
@@ -2599,7 +2599,7 @@ movie 'minipixiz.swf' {
             var v4 = *r.+-(0.{==W3(('0v-HR', null);
             v4.(( = this.8_gOI(.((;
             v4.)( = this.8_gOI(.)(;
-            v4.}-B2();
+            v4.init();
             v4.=S7A.stop();
             this.86{p(.push({'9': v4, '2[': Math.random() * *r.+-(0.width});
             ++v2;
@@ -2658,7 +2658,7 @@ movie 'minipixiz.swf' {
               v2.(KpGn = 0.1;
               v2.*lCo = true;
               v2.2VhU6 = 10 + Math.random() * 10;
-              v2.}-B2();
+              v2.init();
               ++v5;
             }
             *r.+-(0.32.08M8(v3.=S7A);
@@ -2731,7 +2731,7 @@ movie 'minipixiz.swf' {
           this.)_() = *r.+-(0.{==W3((' r_qd', null);
           this.)_().(( = this.8_gOI(.((;
           this.)_().)( = this.8_gOI(.)(;
-          this.)_().}-B2();
+          this.)_().init();
           this.70* = new +7U K(this.)_().=S7A);
           break;
         case 2:
@@ -2792,7 +2792,7 @@ movie 'minipixiz.swf' {
       v1.2VhU6 = 4 + Math.random() * 10;
       v1.+iLR( = [0, 1, 2];
       v1.(X]Nl = 0;
-      v1.}-B2();
+      v1.init();
       return v1;
     };
 
@@ -2869,7 +2869,7 @@ movie 'minipixiz.swf' {
             v9.)( = this.8_gOI(.)(;
             v9.2VhU6 = 12;
             v9.+iLR( = [4];
-            v9.}-B2();
+            v9.init();
             v9.=S7A._xscale = v10;
             v9.=S7A._rotation = v8 / 0.0174;
             var v4 = 0;
@@ -2883,7 +2883,7 @@ movie 'minipixiz.swf' {
               v2.=T4D = v6 * v5;
               v2.2VhU6 = 16 + Math.random() * 10;
               v2.+iLR( = [1];
-              v2.}-B2();
+              v2.init();
               v2.=S7A._rotation = v8 / 0.0174;
               v2.=S7A._xscale = 100 + Math.random() * 50;
               ++v4;
@@ -2894,7 +2894,7 @@ movie 'minipixiz.swf' {
             v11.2VhU6 = 24;
             v11.+iLR( = [1];
             v11.5DZk5 = 150;
-            v11.}-B2();
+            v11.init();
           }
           if (this.+xiq*.length == 0) {
             this.}DB*-(();
@@ -2972,11 +2972,11 @@ movie 'minipixiz.swf' {
                 var v4 = 1 + Math.random() * 8;
                 v2.;T4D = Math.cos(v5) * v4;
                 v2.=T4D = Math.sin(v5) * v4;
-                v2.}-B2();
+                v2.init();
                 v2.}CL = {'((': *r.+-(0. B00(this.((), ')(': *r.+-(0.(B00(v7)};
                 v2.] = {'((': this.((, ')(': v7};
                 v2.5DZk5 = 250;
-                v2.}-B2();
+                v2.init();
                 this.)gv94.push(v2);
                 ++v7;
               }
@@ -3095,7 +3095,7 @@ movie 'minipixiz.swf' {
       this.type = ];
     };
 
-    4)(.prototype.}-B2 = function () {};
+    4)(.prototype.init = function () {};
 
     4)(.prototype.{(H0 = function () {};
 
@@ -3188,7 +3188,7 @@ movie 'minipixiz.swf' {
       this.2NGV-(();
     };
 
-    -0]rl.prototype.}-B2 = function () {
+    -0]rl.prototype.init = function () {
       this.=S7A._x = this.((;
       this.=S7A._y = this.)(;
     };
@@ -3259,8 +3259,8 @@ movie 'minipixiz.swf' {
 
     [X.*DzW.prototype.__proto__ = -0]rl.prototype;
     [X.*DzW.prototype.__constructor__ = -0]rl;
-    [X.*DzW.prototype.}-B2 = function () {
-      -0]rl.prototype.}-B2.call(this);
+    [X.*DzW.prototype.init = function () {
+      -0]rl.prototype.init.call(this);
       this.=S7A._xscale = this.5DZk5;
       this.=S7A._yscale = this.5DZk5;
       this.=S7A._alpha = this.6x9p;
@@ -3374,7 +3374,7 @@ movie 'minipixiz.swf' {
 
     [X.[9 9.31KW9(.prototype.__proto__ = [X.*DzW.prototype;
     [X.[9 9.31KW9(.prototype.__constructor__ = [X.*DzW;
-    [X.[9 9.31KW9(.prototype.}-B2 = function () {
+    [X.[9 9.31KW9(.prototype.init = function () {
       this.) = 3Wt.attachMC(this.=S7A, '}9x C', 2);
     };
 
@@ -3411,7 +3411,7 @@ movie 'minipixiz.swf' {
     [X.[9 9.31KW9(.prototype.}30uP = function (96) {
       var v2 = new [X.9Q.{bw4k();
       v2.*({1A((96);
-      v2.}-B2();
+      v2.init();
       v2.5r7Q((3Wt.createEmptyMC(this.=S7A, 1));
       v2.=S7A._yscale = 80;
       v2.=S7A._xscale = 80;
@@ -3461,7 +3461,7 @@ movie 'minipixiz.swf' {
           this.)SYt5.)( = this.;0;
           this.)SYt5.+iLR( = [1];
           this.)SYt5.2VhU6 = 10;
-          this.)SYt5.}-B2();
+          this.)SYt5.init();
           this.)SYt5.=S7A._xscale = *r.+-(0.width;
           this.8_gOI(.7Bpkf = false;
           var v3 = 0;
@@ -3557,8 +3557,8 @@ movie 'minipixiz.swf' {
     (_EN.prototype.__proto__ = ;;6[.prototype;
     (_EN.prototype.__constructor__ = ;;6[;
     (_EN.8y65d = 75;
-    (_EN.prototype.}-B2 = function () {
-      ;;6[.prototype.}-B2.call(this);
+    (_EN.prototype.init = function () {
+      ;;6[.prototype.init.call(this);
       this.96 = ]q.12TRg();
       this.}saF9.text = 'Salut,\n' + this.96.*7.$name + ' !\nDis-moi quels sont tes sorts préférés...';
       this.,W*yI(();
@@ -3639,8 +3639,8 @@ movie 'minipixiz.swf' {
     980Sb.(TbV3( = false;
     980Sb.2NJtA = 0;
     980Sb.0)9BH( = 90;
-    980Sb.}-B2 = function (=) {
-      =NJ[5.}-B2();
+    980Sb.init = function (=) {
+      =NJ[5.init();
       980Sb.-iB= = =;
       980Sb.}TFtE(();
       7zGQ.*c5_=(();
@@ -3679,7 +3679,7 @@ movie 'minipixiz.swf' {
 
     980Sb.[Ai4Z = function (5P55) {
       980Sb.359A = 980Sb.32.*=_p_(5P55, 10);
-      980Sb.359A.}-B2();
+      980Sb.359A.init();
     };
 
     980Sb.5uyiV = function (5P55, ((, )() {
@@ -3865,8 +3865,8 @@ movie 'minipixiz.swf' {
 
     [X.9)DM2.prototype.__proto__ = -0]rl.prototype;
     [X.9)DM2.prototype.__constructor__ = -0]rl;
-    [X.9)DM2.prototype.}-B2 = function () {
-      -0]rl.prototype.}-B2.call(this);
+    [X.9)DM2.prototype.init = function () {
+      -0]rl.prototype.init.call(this);
       var v2 = 44{N.]yP1i;
       if (this.[)z2W) {
         v2 = 44{N.737G];
@@ -3977,8 +3977,8 @@ movie 'minipixiz.swf' {
 
     [X.74.-O*aF.prototype.__proto__ = [X.9)DM2.prototype;
     [X.74.-O*aF.prototype.__constructor__ = [X.9)DM2;
-    [X.74.-O*aF.prototype.}-B2 = function () {
-      [X.9)DM2.prototype.}-B2.call(this);
+    [X.74.-O*aF.prototype.init = function () {
+      [X.9)DM2.prototype.init.call(this);
     };
 
     [X.74.-O*aF.prototype.87vE7( = function () {
@@ -3999,7 +3999,7 @@ movie 'minipixiz.swf' {
       v6.]oH = 6;
       v6.1O = 10 + Math.random() * 10;
       v6.-fRSr = true;
-      v6.}-B2();
+      v6.init();
       *r.0o().+J[lB((v6);
       var v3 = 0;
       while (v3 < 16) {
@@ -4016,7 +4016,7 @@ movie 'minipixiz.swf' {
         v9.5DZk5 = 50 + Math.random() * 50;
         v9.+iLR(.push(2);
         v9.(X]Nl = 16746496;
-        v9.}-B2();
+        v9.init();
         ++v3;
       }
       v9 = *r.+-(0.{==W3(('2FB2d', null);
@@ -4025,7 +4025,7 @@ movie 'minipixiz.swf' {
       v9.5T4D = 0.5;
       v9.2VhU6 = 16;
       v9.+iLR( = [1];
-      v9.}-B2();
+      v9.init();
       this.9T54();
     };
 
@@ -4056,8 +4056,8 @@ movie 'minipixiz.swf' {
     [X.9jq+c.=_Ubf = 6;
     [X.9jq+c.}D7cb = 5;
     [X.9jq+c.2C4ob = 2;
-    [X.9jq+c.prototype.}-B2 = function () {
-      -0]rl.prototype.}-B2.call(this);
+    [X.9jq+c.prototype.init = function () {
+      -0]rl.prototype.init.call(this);
     };
 
     [X.9jq+c.prototype.3U*}=( = function (}J) {
@@ -4447,8 +4447,8 @@ movie 'minipixiz.swf' {
 
     [X.9Q.7e mL.prototype.__proto__ = [X.9jq+c.prototype;
     [X.9Q.7e mL.prototype.__constructor__ = [X.9jq+c;
-    [X.9Q.7e mL.prototype.}-B2 = function () {
-      [X.9jq+c.prototype.}-B2.call(this);
+    [X.9Q.7e mL.prototype.init = function () {
+      [X.9jq+c.prototype.init.call(this);
       this.2[d64( = 50;
       this.5fxvK = 0;
       this.{Zno+( = 0;
@@ -4736,7 +4736,7 @@ movie 'minipixiz.swf' {
         v2.(KpGn = 0.1;
         v2.*lCo = true;
         v2.2VhU6 = 5 + Math.random() * 15;
-        v2.}-B2();
+        v2.init();
         73(.(H5 S(v2.=S7A, this.96.=S7A.6ID*);
         73(.6oFnY(v2.=S7A, 1, 180);
       }
@@ -4758,7 +4758,7 @@ movie 'minipixiz.swf' {
           v2.;T4D += Math.cos(v5) * v6;
           v2.=T4D += Math.sin(v5) * v6;
           v2.2VhU6 = 30 - v4 * 5;
-          v2.}-B2();
+          v2.init();
           ++v3;
         }
         ++v4;
@@ -5495,7 +5495,7 @@ movie 'minipixiz.swf' {
             73(.(H5 S(v4, *r.*B;6][this.[NuT)[v3]]);
             73(.6oFnY(v4, 1, 220);
             this.)gv94.push(v2);
-            v2.}-B2();
+            v2.init();
             ++v3;
           }
           this.8_gOI(.=T4D += 4;
@@ -5523,7 +5523,7 @@ movie 'minipixiz.swf' {
             v2.+iLR( = [2];
             v2.5DZk5 = 50 + Math.random() * 20;
             v2.(X]Nl = 3Wt.random(16777215);
-            v2.}-B2();
+            v2.init();
             ++v4;
           }
           this.2VhU6 -= {-kxL.-V;B;
@@ -5634,7 +5634,7 @@ movie 'minipixiz.swf' {
       v1.5DZk5 = 300 + (Math.random() * 2 - 1) * 100;
       v1.6x9p = 60;
       v1.2VhU6 = 2 + Math.random() * 10;
-      v1.}-B2();
+      v1.init();
     };
 
     [lax5.0l6.2VsFL.prototype.6)}KZ = function () {
@@ -5648,7 +5648,7 @@ movie 'minipixiz.swf' {
         v2.5DZk5 = Math.max(30, 120 - v3 * 10);
         v2.6x9p = 100;
         v2.=S7A.gotoAndPlay(String(3Wt.random(3) + 1));
-        v2.}-B2();
+        v2.init();
         ++v5;
       }
     };
@@ -5676,8 +5676,8 @@ movie 'minipixiz.swf' {
     [X.74.2WAJ.prototype.__proto__ = [X.9)DM2.prototype;
     [X.74.2WAJ.prototype.__constructor__ = [X.9)DM2;
     [X.74.2WAJ.{Cs = 64;
-    [X.74.2WAJ.prototype.}-B2 = function () {
-      [X.9)DM2.prototype.}-B2.call(this);
+    [X.74.2WAJ.prototype.init = function () {
+      [X.9)DM2.prototype.init.call(this);
     };
 
     [X.74.2WAJ.prototype.87vE7( = function () {
@@ -5719,13 +5719,13 @@ movie 'minipixiz.swf' {
         v12.5DZk5 = 100 + Math.random() * 100;
         v12.=S7A.gotoAndPlay(String(1 + int((1 - v4 / v11) * 6)));
         v12.+iLR( = [1];
-        v12.}-B2();
+        v12.init();
         ++v4;
       }
       v12 = *r.+-(0.{==W3(('-X+Il', null);
       v12.(( = this.(( + v9;
       v12.)( = this.)( + v9;
-      v12.}-B2();
+      v12.init();
       this.9T54();
     };
 
@@ -5918,7 +5918,7 @@ movie 'minipixiz.swf' {
           this.-,.)( = this.8_gOI(.)(;
           this.-,.5DZk5 = 1000;
           this.-,.6x9p = 0;
-          this.-,.}-B2();
+          this.-,.init();
           break;
         case 2:
           this.)gv94 = new Array();
@@ -5937,7 +5937,7 @@ movie 'minipixiz.swf' {
             v2.;T4D = Math.cos(v5) * v6;
             v2.=T4D = Math.sin(v5) * v6;
             v2.2VhU6 = 20 + Math.random() * 10;
-            v2.}-B2();
+            v2.init();
             ++v4;
           }
       }
@@ -6133,7 +6133,7 @@ movie 'minipixiz.swf' {
         v2.*E2Z2((12);
         v2.(-k9((4);
         v2.5cBEm = 1.05;
-        v2.}-B2();
+        v2.init();
         v2.9O*r = v2.)153L(this.}CL);
         v2.,43dZ();
       }
@@ -6172,8 +6172,8 @@ movie 'minipixiz.swf' {
     7t{I.6[s34( = 3;
     7t{I.6gIob = 2;
     7t{I.3Ot3R = 1;
-    7t{I.prototype.}-B2 = function () {
-      ;;6[.prototype.}-B2.call(this);
+    7t{I.prototype.init = function () {
+      ;;6[.prototype.init.call(this);
       this.8-zUj = new Array();
     };
 
@@ -6349,8 +6349,8 @@ movie 'minipixiz.swf' {
 
     0o().37KLI.prototype.__proto__ = 7t{I.prototype;
     0o().37KLI.prototype.__constructor__ = 7t{I;
-    0o().37KLI.prototype.}-B2 = function () {
-      7t{I.prototype.}-B2.call(this);
+    0o().37KLI.prototype.init = function () {
+      7t{I.prototype.init.call(this);
       this.=HU11 = 0;
     };
 
@@ -6370,7 +6370,7 @@ movie 'minipixiz.swf' {
         this.1Rok*(();
         this.)K = new [X.9Q.7e mL();
         this.)K.*({1A((this.96);
-        this.)K.}-B2();
+        this.)K.init();
       }
     };
 
@@ -6398,7 +6398,7 @@ movie 'minipixiz.swf' {
       switch (this.=kIA) {
         case 0:
           this.{b[(b();
-          this.+-(0.}-B2();
+          this.+-(0.init();
           this.3*3hG();
           this.2VhU6 = 40;
           break;
@@ -6544,11 +6544,11 @@ movie 'minipixiz.swf' {
 
     0o().37KLI.prototype.=KlRJ = function () {
       this.[fVb5 = new -]e9-.]zzM(this);
-      this.[fVb5.}-B2();
+      this.[fVb5.init();
       this.)=Vi5 = new -]e9-.*TzT(this);
-      this.)=Vi5.}-B2();
+      this.)=Vi5.init();
       this.=(eh5 = new -]e9-.[C2T(this);
-      this.=(eh5.}-B2();
+      this.=(eh5.init();
     };
 
     0o().37KLI.prototype.1Rok*( = function () {
@@ -6639,8 +6639,8 @@ movie 'minipixiz.swf' {
 
     0o().2gdGV.prototype.__proto__ = 0o().37KLI.prototype;
     0o().2gdGV.prototype.__constructor__ = 0o().37KLI;
-    0o().2gdGV.prototype.}-B2 = function () {
-      0o().37KLI.prototype.}-B2.call(this);
+    0o().2gdGV.prototype.init = function () {
+      0o().37KLI.prototype.init.call(this);
       if (]q.4d(*.$checkpoint > 0) {
         this.5oT0}();
       } else {
@@ -6901,7 +6901,7 @@ movie 'minipixiz.swf' {
 
     =NJ[5 = function () {};
 
-    =NJ[5.}-B2 = function () {
+    =NJ[5.init = function () {
       =NJ[5.13bT = new Array();
       var v1 = 0;
       v1 = 0;
@@ -6990,7 +6990,7 @@ movie 'minipixiz.swf' {
       v2.]oH = 10;
       v2.8+f25 = 3;
       v2.5DZk5 = 0;
-      v2.}-B2();
+      v2.init();
       v2.(-k9((2);
       v2.,4im_.push(5);
       v2. boya(20, 36, -0.6);
@@ -7018,7 +7018,7 @@ movie 'minipixiz.swf' {
         v1.=T4D = v5 * v2;
         v1.2VhU6 = 2 + Math.random() * 10;
         v1.5DZk5 = 100 + (Math.random() * 2 - 1) * 50;
-        v1.}-B2();
+        v1.init();
         v1.{BxJE(();
         ++v4;
       }
@@ -7041,7 +7041,7 @@ movie 'minipixiz.swf' {
       this.0o().66uw8(.push(this);
     };
 
-    =5haE.prototype.}-B2 = function () {
+    =5haE.prototype.init = function () {
       this.=S7A = this.0o().32.*=_p_(this.5P55, 7t{I.[V{(6);
     };
 
@@ -7074,9 +7074,9 @@ movie 'minipixiz.swf' {
 
     -]e9-.6rt7L.prototype.__proto__ = =5haE.prototype;
     -]e9-.6rt7L.prototype.__constructor__ = =5haE;
-    -]e9-.6rt7L.prototype.}-B2 = function () {
+    -]e9-.6rt7L.prototype.init = function () {
       this.5P55 = '*Erq6';
-      =5haE.prototype.}-B2.call(this);
+      =5haE.prototype.init.call(this);
     };
 
     -]e9-.6rt7L.prototype.}B)Y_ = function ((Erk5) {
@@ -7105,8 +7105,8 @@ movie 'minipixiz.swf' {
     1Q*U.)l6y3 = 15;
     1Q*U.5,5GB = 16;
     1Q*U.9uFmb = 17;
-    1Q*U.prototype.}-B2 = function () {
-      ;;6[.prototype.}-B2.call(this);
+    1Q*U.prototype.init = function () {
+      ;;6[.prototype.init.call(this);
       this.))E = this._xmouse;
       this.+M = ]q.0woZI(();
       this.*d = ]q.4d(*.$wind;
@@ -7700,14 +7700,14 @@ movie 'minipixiz.swf' {
           v2.2VhU6 = 10;
           v2.+iLR( = [1];
           v2.5T4D = 40;
-          v2.}-B2();
+          v2.init();
           v2 = *r.+-(0.{==W3((']}0 L(', 44{N.};OW;);
           v2.(( = this.8_gOI(.((;
           v2.)( = this.8_gOI(.)(;
           v2.+iLR( = [1];
           v2.,DBRf = 7;
           v2.2VhU6 = 8;
-          v2.}-B2();
+          v2.init();
           this.]oH = 0;
       }
     };
@@ -7741,7 +7741,7 @@ movie 'minipixiz.swf' {
                 v2.;T4D = v11 * v7;
                 v2.=T4D = v10 * v7;
                 v2.2VhU6 = 10 + Math.random() * 10;
-                v2.}-B2();
+                v2.init();
                 v2.=S7A._xscale = 300 - v3 * 10;
                 v2.=S7A._rotation = v8 / 0.0174;
                 ++v5;
@@ -7901,12 +7901,12 @@ movie 'minipixiz.swf' {
 
     0o().{r*4l.prototype.__proto__ = 0o().37KLI.prototype;
     0o().{r*4l.prototype.__constructor__ = 0o().37KLI;
-    0o().{r*4l.prototype.}-B2 = function () {
+    0o().{r*4l.prototype.init = function () {
       if (this.96.9k1)((()) {
         this.=KlRJ();
       }
       this.{oHRW();
-      0o().37KLI.prototype.}-B2.call(this);
+      0o().37KLI.prototype.init.call(this);
       this.6u*J7();
     };
 
@@ -7942,7 +7942,7 @@ movie 'minipixiz.swf' {
 
     0o().{r*4l.prototype.{oHRW = function () {
       this.(x4a= = new -]e9-.(+KxN(this);
-      this.(x4a=.}-B2();
+      this.(x4a=.init();
       this.(x4a=.9fG S(100);
       this.(x4a=.]K = 10;
       this.(x4a=.+32j[(]q.4d(*.$rainbow.$it);
@@ -7974,7 +7974,7 @@ movie 'minipixiz.swf' {
           this.06uZj.(( = this.0uJ2._x;
           this.06uZj.)( = this.0uJ2._y;
           this.06uZj.5DZk5 = 40;
-          this.06uZj.}-B2();
+          this.06uZj.init();
       }
     };
 
@@ -8011,7 +8011,7 @@ movie 'minipixiz.swf' {
                 v2.;T4D = -v5;
                 v2.=T4D = v5;
                 v2.2VhU6 = 10 + Math.random() * 10;
-                v2.}-B2();
+                v2.init();
                 v2.=S7A._xscale = 100 + Math.random() * 200;
                 v2.=S7A._rotation = -45;
                 ++v6;
@@ -8213,7 +8213,7 @@ movie 'minipixiz.swf' {
               v2.(( = this.8_gOI(.}CL.((;
               v2.)( = this.8_gOI(.}CL.)(;
               v2.5DZk5 = 50 + Math.random() * 40;
-              v2.}-B2();
+              v2.init();
               v2.=S7A._rotation = 20 * (Math.random() * 2 - 1) + v5 * 90;
               v2.=S7A.gotoAndPlay(String(3Wt.random(4) + 1));
               ++v3;
@@ -8463,7 +8463,7 @@ movie 'minipixiz.swf' {
               v2.+iLR( = [1];
               v2.=S7A._rotation = Math.random() * 360;
               v2.5DZk5 = *r.+-(0.+[;
-              v2.}-B2();
+              v2.init();
             }
             ++v4;
           }
@@ -8545,7 +8545,7 @@ movie 'minipixiz.swf' {
       v2.5U- = 20;
       v2.6U- = 8;
       v2.5cBEm = 0.9;
-      v2.}-B2();
+      v2.init();
       v2.9kWKJ(this. eo6*);
       return v2;
     };
@@ -8570,8 +8570,8 @@ movie 'minipixiz.swf' {
 
     [X.9Q.6Qe.prototype.__proto__ = [X.9jq+c.prototype;
     [X.9Q.6Qe.prototype.__constructor__ = [X.9jq+c;
-    [X.9Q.6Qe.prototype.}-B2 = function () {
-      [X.9jq+c.prototype.}-B2.call(this);
+    [X.9Q.6Qe.prototype.init = function () {
+      [X.9jq+c.prototype.init.call(this);
       this.[Z4cH( = *r.{bz[3 * 0.5;
     };
 
@@ -8624,7 +8624,7 @@ movie 'minipixiz.swf' {
         v2.9O*r += (Math.random() * 2 - 1) * 1.3;
         v2.,43dZ();
       }
-      v2.}-B2();
+      v2.init();
       v2.=S7A.gotoAndStop(String(1 + this.=HU11));
     };
 
@@ -8656,7 +8656,7 @@ movie 'minipixiz.swf' {
         v4.)( = this.)(;
         v4.5DZk5 = 100 + this.=HU11 * 20;
         v4.2VhU6 = 15;
-        v4.}-B2();
+        v4.init();
         var v3 = 0;
         while (v3 < 10 + this.=HU11 * 2) {
           var v2 = *r.+-(0.{==W3(('+BHFu', null);
@@ -8664,7 +8664,7 @@ movie 'minipixiz.swf' {
           v2.)( = this.)(;
           v2.=S7A._rotation = Math.random() * 360;
           v2.=S7A.gotoAndPlay(String(3Wt.random(12) + 1));
-          v2.}-B2();
+          v2.init();
           v2.=S7A._xscale = 50 + Math.random() * 50;
           ++v3;
         }
@@ -8844,8 +8844,8 @@ movie 'minipixiz.swf' {
 
     0o().6QpqZ.prototype.__proto__ = 0o().37KLI.prototype;
     0o().6QpqZ.prototype.__constructor__ = 0o().37KLI;
-    0o().6QpqZ.prototype.}-B2 = function () {
-      0o().37KLI.prototype.}-B2.call(this);
+    0o().6QpqZ.prototype.init = function () {
+      0o().37KLI.prototype.init.call(this);
       this.6u*J7();
     };
 
@@ -8894,7 +8894,7 @@ movie 'minipixiz.swf' {
               var v7 = this.+-(0.+[ * 0.5;
               var v5 = this.9XQrI((v4.(( + v7, v4.)( + v7, v7);
               v5.5DZk5 = 25 + Math.random() * 50;
-              v5.}-B2();
+              v5.init();
             }
             ++v3;
           }
@@ -8915,7 +8915,7 @@ movie 'minipixiz.swf' {
                 var v8 = this.+-(0.(B00(v6.)( + v2.)( + v2.;0 + 0.5);
                 var v5 = this.9XQrI((v9, v8, v7);
                 v5.5DZk5 = 25 + Math.random() * 50;
-                v5.}-B2();
+                v5.init();
               }
               ++v3;
             }
@@ -8966,7 +8966,7 @@ movie 'minipixiz.swf' {
       this.)K.*({1A((v4);
       this.)K.(( = this.-3iO-(.((;
       this.)K.)( = this.-3iO-(.)(;
-      this.)K.}-B2();
+      this.)K.init();
       this.)K.5r7Q((this.+-(0.32.18wU*(44{N.3i*c]));
       this.)K.;T4D = this.-3iO-(.;T4D * 0.8;
       this.)K.=T4D = this.-3iO-(.=T4D * 0.8;
@@ -8975,7 +8975,7 @@ movie 'minipixiz.swf' {
       var v2 = 0;
       while (v2 < 10) {
         var v3 = this.9XQrI((this.-3iO-(.((, this.-3iO-(.)(, 16);
-        v3.}-B2();
+        v3.init();
         ++v2;
       }
       this.-3iO-(.9T54();
@@ -8999,7 +8999,7 @@ movie 'minipixiz.swf' {
         this.-3iO-(.(( = *r.=OA * 0.5;
         this.-3iO-(.)( = *r.=OA * 0.5;
         this.-3iO-(.5955 = 5 + ]q.4d(*.$pond.$q * 3;
-        this.-3iO-(.}-B2();
+        this.-3iO-(.init();
       }
     };
 
@@ -9021,7 +9021,7 @@ movie 'minipixiz.swf' {
         var v2 = this.9XQrI((v6, v5, 5);
         v2.;)bt5 = 5 + Math.random() * 4;
         v2.=S7A._visible = false;
-        v2.}-B2();
+        v2.init();
         ++v3;
       }
     };
@@ -9053,8 +9053,8 @@ movie 'minipixiz.swf' {
 
     [X.74.+Og(M.prototype.__proto__ = [X.9)DM2.prototype;
     [X.74.+Og(M.prototype.__constructor__ = [X.9)DM2;
-    [X.74.+Og(M.prototype.}-B2 = function () {
-      [X.9)DM2.prototype.}-B2.call(this);
+    [X.74.+Og(M.prototype.init = function () {
+      [X.9)DM2.prototype.init.call(this);
     };
 
     [X.74.+Og(M.prototype.]ZsEn = function () {
@@ -9143,7 +9143,7 @@ movie 'minipixiz.swf' {
         v2.4T4D = (Math.random() * 2 - 1) * 10;
         v2.2VhU6 = 5 + Math.random() * 10;
         v2.5DZk5 = 20 + Math.random() * 50;
-        v2.}-B2();
+        v2.init();
         v2.=S7A._rotation = Math.random() * 360;
         73(.(H5 S(v2.=S7A, *r.*B;6][this.type]);
         73(.6oFnY(v2.=S7A, 1, 60);
@@ -9191,12 +9191,12 @@ movie 'minipixiz.swf' {
 
     0o().5Nn4c.prototype.__proto__ = 0o().37KLI.prototype;
     0o().5Nn4c.prototype.__constructor__ = 0o().37KLI;
-    0o().5Nn4c.prototype.}-B2 = function () {
+    0o().5Nn4c.prototype.init = function () {
       ]q.9b{CJ((-1);
       if (this.96.9k1)((()) {
         this.=KlRJ();
       }
-      0o().37KLI.prototype.}-B2.call(this);
+      0o().37KLI.prototype.init.call(this);
       this.6u*J7();
     };
 
@@ -9269,12 +9269,12 @@ movie 'minipixiz.swf' {
             this.0{5+.)( = -20;
             this.0{5+.=T4D = 0.5;
             this.0{5+.5cBEm = 1;
-            this.0{5+.}-B2();
+            this.0{5+.init();
             this.73CzJ( = this.+-(0.{==W3(('1d=uK(', 44{N.};OW;);
             this.73CzJ(.(( = this.0{5+.((;
             this.73CzJ(.)( = this.0{5+.)(;
             this.73CzJ(.5DZk5 = 40;
-            this.73CzJ(.}-B2();
+            this.73CzJ(.init();
             this.)K.}CL = this.0{5+;
             this.)K.7Bpkf = true;
             break;
@@ -9334,7 +9334,7 @@ movie 'minipixiz.swf' {
         v2.4T4D = (Math.random() * 2 - 1) * 10;
         v2.+iLR( = [4];
         v2.2VhU6 = 15 + Math.random() * 10;
-        v2.}-B2();
+        v2.init();
         v2.=S7A._rotation = Math.random() * 360;
         v2.=S7A._xscale = 20 + Math.random() * 100;
         ++v3;
@@ -9455,7 +9455,7 @@ movie 'minipixiz.swf' {
           this.++KB = *r.+-(0.{==W3(('1f2UR', 44{N.};OW;);
           this.++KB.(( = this.,.(( + *r.+-(0.+[ * 0.5;
           this.++KB.)( = this.,.)( + *r.+-(0.+[;
-          this.++KB.}-B2();
+          this.++KB.init();
           this.++KB.=S7A._yscale = this.,.)( + *r.+-(0.+[;
           this.++KB.=S7A._xscale = 0;
           break;
@@ -9485,7 +9485,7 @@ movie 'minipixiz.swf' {
           v2.)( = this.++KB.)( - Math.random() * this.++KB.=S7A._yscale;
           v2.=T4D = -(2 + Math.random() * 10);
           v2.2VhU6 = 10 + Math.random() * 20;
-          v2.}-B2();
+          v2.init();
           break;
         case 2:
           this.++KB.=S7A._xscale = Math.max(this.++KB.=S7A._xscale - 10 * {-kxL.-V;B, 0);
@@ -9552,8 +9552,8 @@ movie 'minipixiz.swf' {
     7 (EQ.)trd=( = 140;
     7 (EQ.,VDDf = [0, 2, 3, 4, 3];
     7 (EQ.,ZyIX = ['voir les caractéristiques', 'voir les sortilèges', 'voir l\'équipement', 'voir la santé'];
-    7 (EQ.prototype.}-B2 = function () {
-      ;;6[.prototype.}-B2.call(this);
+    7 (EQ.prototype.init = function () {
+      ;;6[.prototype.init.call(this);
       this.+im6b();
       this.-zx=g();
       this.-mw7O();
@@ -10031,7 +10031,7 @@ movie 'minipixiz.swf' {
             v2.=S7A.gotoAndStop(String(v9.*B + 1));
             var v4 = v2.=S7A.9;
             v4.gotoAndStop(String(3Wt.random(v4._totalframes) + 1));
-            v2.}-B2();
+            v2.init();
             ++v6;
           }
         }
@@ -10178,7 +10178,7 @@ movie 'minipixiz.swf' {
                     v2.2VhU6 = 10 + Math.random() * 10;
                     v2.*lCo = true;
                     v2.(KpGn = 0.35;
-                    v2.}-B2();
+                    v2.init();
                     ++v6;
                   }
                 }
@@ -10287,7 +10287,7 @@ movie 'minipixiz.swf' {
             var v2 = *r.+-(0.{==W3(('+E1TR', null);
             v2.(( = this.8_gOI(.((;
             v2.)( = this.8_gOI(.)(;
-            v2.}-B2();
+            v2.init();
             this.86{p(.push(v2);
             ++v3;
           }
@@ -10344,7 +10344,7 @@ movie 'minipixiz.swf' {
               v2.(KpGn = 0.1;
               v2.*lCo = true;
               v2.2VhU6 = 10 + Math.random() * 10;
-              v2.}-B2();
+              v2.init();
               ++v5;
             }
             *r.+-(0.32.08M8(v3.=S7A);
@@ -10441,7 +10441,7 @@ movie 'minipixiz.swf' {
           this. 7.(( = this.8_gOI(.((;
           this. 7.)( = this.8_gOI(.)(;
           this. 7.5DZk5 = 0;
-          this. 7.}-B2();
+          this. 7.init();
           break;
         case 2:
           *r.+-(0.*B;6].push(this.color);
@@ -10523,7 +10523,7 @@ movie 'minipixiz.swf' {
       v2.5DZk5 = 50;
       v2.6x9p = 50;
       v2.9kWKJ(this.)gv94);
-      v2.}-B2();
+      v2.init();
     };
 
     [lax5.0l6.}34]}.prototype.[vlf ( = function () {
@@ -10534,7 +10534,7 @@ movie 'minipixiz.swf' {
       v2.)( = this.8_gOI(.)( * v3 + this.48L.)( * (1 - v3);
       v2.=T4D = -(2 + Math.random() * 12);
       v2.2VhU6 = 8 + Math.random() * 10;
-      v2.}-B2();
+      v2.init();
       v2.=S7A._yscale = 100 + Math.random() * 200;
     };
 
@@ -10553,9 +10553,9 @@ movie 'minipixiz.swf' {
 
     -]e9-.]zzM.prototype.__proto__ = =5haE.prototype;
     -]e9-.]zzM.prototype.__constructor__ = =5haE;
-    -]e9-.]zzM.prototype.}-B2 = function () {
+    -]e9-.]zzM.prototype.init = function () {
       this.5P55 = '*Riq8(';
-      =5haE.prototype.}-B2.call(this);
+      =5haE.prototype.init.call(this);
       this.3-=1w();
     };
 
@@ -10605,13 +10605,13 @@ movie 'minipixiz.swf' {
         var v7 = this.;IF._currentframe - 1;
         if (v7 !== 1) {
         } else {
-          goto 235840;
+          goto 235849;
         }
         var v6 = 0.2;
         this.;IF._x = (this.;IF._x + v6 * {-kxL.-V;B) % 18;
         this.;IF._y = (this.;IF._y + v6 * {-kxL.-V;B) % 18;
       }
-      label 235840:
+      label 235849:
       if (this.;D}ex != null) {
         this.;D}ex *= Math.pow(0.95, {-kxL.-V;B);
         if (this.;D}ex < 0.1) {
@@ -10705,8 +10705,8 @@ movie 'minipixiz.swf' {
 
     [X.74.)prML.prototype.__proto__ = [X.9)DM2.prototype;
     [X.74.)prML.prototype.__constructor__ = [X.9)DM2;
-    [X.74.)prML.prototype.}-B2 = function () {
-      [X.9)DM2.prototype.}-B2.call(this);
+    [X.74.)prML.prototype.init = function () {
+      [X.9)DM2.prototype.init.call(this);
     };
 
     [X.74.)prML.prototype.9m,-A( = function (7) {
@@ -10725,7 +10725,7 @@ movie 'minipixiz.swf' {
             var v2 = this.-p,3a(Math.random() * 6.28);
             v2.=S7A.gotoAndStop(String(3Wt.random(10) + 1));
             v2.5DZk5 = 20 + Math.random() * 40;
-            v2.}-B2();
+            v2.init();
             ++v3;
           }
           this.=hfc4();
@@ -10766,7 +10766,7 @@ movie 'minipixiz.swf' {
         v2.;T4D = Math.cos(v3) * v5;
         v2.=T4D = (Math.sin(v3) - 0.5) * v5;
         v2.=S7A.gotoAndStop(String(1 + v4));
-        v2.}-B2();
+        v2.init();
         ++v4;
       }
     };
@@ -11036,7 +11036,7 @@ movie 'minipixiz.swf' {
         v2.5P55 = '=6Gg8';
         v2.*]Q5} = 8;
         v2.]oH = 3;
-        v2.}-B2();
+        v2.init();
         v2.9c}ow(4, 0.4, 0.08, 0);
         v2.*HvF[(';HPbt');
         v2.9O*r += (v3 - 1) * 0.6;
@@ -11324,7 +11324,7 @@ movie 'minipixiz.swf' {
           this.)_().(( = this.center.((;
           this.)_().)( = this.center.)(;
           this.)_().5DZk5 = 0;
-          this.)_().}-B2();
+          this.)_().init();
           this.size = 0;
           this.3okeQ = 1;
           break;
@@ -11368,7 +11368,7 @@ movie 'minipixiz.swf' {
               v2.;T4D = Math.cos(v3) * v5;
               v2.=T4D = Math.sin(v3) * v5;
               v2.2VhU6 = 7 + Math.random() * 10;
-              v2.}-B2();
+              v2.init();
               this.+xiq*.splice(v4, 1);
               this. eo6*.splice(v4, 1);
               --v4;
@@ -11381,7 +11381,7 @@ movie 'minipixiz.swf' {
             v3 = Math.random() * 6.28;
             v2.(( = this.center.(( + Math.cos(v3) * this.]oH;
             v2.)( = this.center.)( + Math.sin(v3) * this.]oH;
-            v2.}-B2();
+            v2.init();
             v2.=S7A._rotation = v3 / 0.0174;
             v2.=S7A._xscale = 60 + (Math.random() * 2 - 1) * 15;
             v2.=S7A._yscale = 60 + (Math.random() * 2 - 1) * 8;
@@ -11395,7 +11395,7 @@ movie 'minipixiz.swf' {
             v2.;T4D = this.8_gOI(.;T4D;
             v2.=T4D = this.8_gOI(.=T4D;
             v2.4T4D = (Math.random() * 2 - 1) * 10;
-            v2.}-B2();
+            v2.init();
             v2.=S7A._xscale = 10 + Math.random() * 30;
             v2.=S7A._rotation = Math.random() * 360;
             ++v4;
@@ -11548,7 +11548,7 @@ movie 'minipixiz.swf' {
       v2.9c}ow(3, 0.4, 0.25, 0);
       v2.*HvF[('0VNJH');
       v2.,4im_.push(7);
-      v2.}-B2();
+      v2.init();
     };
 
     [lax5.)93A.2Pn99(.prototype.8u,1a = function () {
@@ -11578,7 +11578,7 @@ movie 'minipixiz.swf' {
       v2.(-k9((4);
       v2.5cBEm = 1.01;
       v2.,4im_.push(1);
-      v2.}-B2();
+      v2.init();
     };
 
     [lax5.)93A.4VbMO.prototype.8u,1a = function () {
@@ -11720,9 +11720,9 @@ movie 'minipixiz.swf' {
 
     -]e9-.*TzT.prototype.__proto__ = =5haE.prototype;
     -]e9-.*TzT.prototype.__constructor__ = =5haE;
-    -]e9-.*TzT.prototype.}-B2 = function () {
+    -]e9-.*TzT.prototype.init = function () {
       this.5P55 = '2 ix8(';
-      =5haE.prototype.}-B2.call(this);
+      =5haE.prototype.init.call(this);
     };
 
     -]e9-.*TzT.prototype.6 [0b = function () {
@@ -11794,7 +11794,7 @@ movie 'minipixiz.swf' {
             v2.(KpGn = -0.1 + Math.random() * 0.2;
             v2.*lCo = true;
             v2.2VhU6 = 10 + Math.random() * 10;
-            v2.}-B2();
+            v2.init();
             ++v5;
           }
           if (v3.]O]t+ && !*r.+-(0.77ldJ((v7, v6 + 1)) {
@@ -11820,7 +11820,7 @@ movie 'minipixiz.swf' {
           this.6.(( = this.8_gOI(.((;
           this.6.)( = this.8_gOI(.)(;
           this.6.5DZk5 = 0;
-          this.6.}-B2();
+          this.6.init();
           this.3XA4m = 100;
           this.2_]-N = new Array();
           break;
@@ -11856,7 +11856,7 @@ movie 'minipixiz.swf' {
           var v8 = 36;
           v6.(( = this.6.(( + Math.cos(v7) * 36;
           v6.)( = this.6.)( + Math.sin(v7) * 36;
-          v6.}-B2();
+          v6.init();
           this.2_]-N.push(v6);
           var v3 = 0;
           while (v3 < this.2_]-N.length) {
@@ -11909,7 +11909,7 @@ movie 'minipixiz.swf' {
         v2.(KpGn = -0.1 + Math.random() * 0.2;
         v2.*lCo = true;
         v2.2VhU6 = 10 + Math.random() * 10;
-        v2.}-B2();
+        v2.init();
         this.3XA4m += 80;
       }
     };
@@ -11972,9 +11972,9 @@ movie 'minipixiz.swf' {
     -]e9-.(+KxN.prototype.__proto__ = =5haE.prototype;
     -]e9-.(+KxN.prototype.__constructor__ = =5haE;
     -]e9-.(+KxN.{Cs = 42;
-    -]e9-.(+KxN.prototype.}-B2 = function () {
+    -]e9-.(+KxN.prototype.init = function () {
       this.5P55 = '7SH[9';
-      =5haE.prototype.}-B2.call(this);
+      =5haE.prototype.init.call(this);
       this.32 = new +7U K(this.=S7A);
       this.5SHU8 = this.=S7A.5SHU8;
     };
@@ -12193,7 +12193,7 @@ movie 'minipixiz.swf' {
             v2.(( = this.8_gOI(.(( + Math.cos(v5) * v6;
             v2.)( = this.8_gOI(.)( + Math.sin(v5) * v6;
             v2.6x9p = 0;
-            v2.}-B2();
+            v2.init();
             v2.9kWKJ(this.[NuT));
             ++v4;
           }
@@ -12221,7 +12221,7 @@ movie 'minipixiz.swf' {
             v2.2VhU6 = 8 + Math.random() * 3;
             v2.5DZk5 = 100;
             v2.+iLR( = [1];
-            v2.}-B2();
+            v2.init();
             ++v4;
           }
       }
@@ -12351,8 +12351,8 @@ movie 'minipixiz.swf' {
     0o().]iC].8+Bc7 = 1000;
     0o().]iC].5faRB( = [0.15, 0.35, 0.5];
     0o().]iC].)}K=+ = [1, 5, 7, 8, 9, 10];
-    0o().]iC].prototype.}-B2 = function () {
-      0o().37KLI.prototype.}-B2.call(this);
+    0o().]iC].prototype.init = function () {
+      0o().37KLI.prototype.init.call(this);
       this.9uAZe = new Array();
       this.7Kxj-();
       this.2(q9Z();
@@ -12373,7 +12373,7 @@ movie 'minipixiz.swf' {
 
     0o().]iC].prototype.7Kxj- = function () {
       this.[fVb5 = new -]e9-.]zzM(this);
-      this.[fVb5.}-B2();
+      this.[fVb5.init();
       this.[fVb5.]K = 68;
       this.[fVb5.{K = 4;
       this.[fVb5.{y5GB();
@@ -12467,7 +12467,7 @@ movie 'minipixiz.swf' {
       v2.(KpGn = 1;
       v2.4T4D = 0;
       v2.=S7A._rotation = (Math.random() * 2 - 1) * 90;
-      v2.}-B2();
+      v2.init();
       v2.=S7A.gotoAndStop(String(this.+I;}1));
       this.32.}oQA7(v2.=S7A);
       this.9uAZe.push(v2);
@@ -12528,8 +12528,8 @@ movie 'minipixiz.swf' {
 
     [B.4kZ[C.prototype.__proto__ = 4)(.prototype;
     [B.4kZ[C.prototype.__constructor__ = 4)(;
-    [B.4kZ[C.prototype.}-B2 = function () {
-      4)(.prototype.}-B2.call(this);
+    [B.4kZ[C.prototype.init = function () {
+      4)(.prototype.init.call(this);
     };
 
     [B.4kZ[C.prototype.4-AdZ = function (4,F) {
@@ -12544,7 +12544,7 @@ movie 'minipixiz.swf' {
         } else {
           var v2 = new [X.9Q.{bw4k();
           v2.*({1A((this.96);
-          v2.}-B2();
+          v2.init();
           v2.5r7Q((3Wt.createEmptyMC(4,F.0tJ, 1));
           v2.=S7A._xscale = 220;
           v2.=S7A._yscale = 220;
@@ -12606,9 +12606,9 @@ movie 'minipixiz.swf' {
 
     -]e9-.7F}=N.prototype.__proto__ = =5haE.prototype;
     -]e9-.7F}=N.prototype.__constructor__ = =5haE;
-    -]e9-.7F}=N.prototype.}-B2 = function () {
+    -]e9-.7F}=N.prototype.init = function () {
       this.5P55 = ';Ypw7';
-      =5haE.prototype.}-B2.call(this);
+      =5haE.prototype.init.call(this);
       this.3_DN9 = this.=S7A.3_DN9;
       this.3;JT9 = this.=S7A.3;JT9;
     };
@@ -12631,8 +12631,8 @@ movie 'minipixiz.swf' {
 
     ]cgl7.prototype.__proto__ = ;;6[.prototype;
     ]cgl7.prototype.__constructor__ = ;;6[;
-    ]cgl7.prototype.}-B2 = function () {
-      ;;6[.prototype.}-B2.call(this);
+    ]cgl7.prototype.init = function () {
+      ;;6[.prototype.init.call(this);
       this.6SzPK( = 1;
       this.=kIA = 1;
       this.gotoAndStop('1');
@@ -12953,8 +12953,8 @@ movie 'minipixiz.swf' {
     [X.74.1r].prototype.__proto__ = [X.9)DM2.prototype;
     [X.74.1r].prototype.__constructor__ = [X.9)DM2;
     [X.74.1r].*]*4[ = 40;
-    [X.74.1r].prototype.}-B2 = function () {
-      [X.9)DM2.prototype.}-B2.call(this);
+    [X.74.1r].prototype.init = function () {
+      [X.9)DM2.prototype.init.call(this);
       this.color = *r.+-(0.[3r2L(();
       73(.(H5 S(this.=S7A.(v+, *r.*B;6][this.color]);
       this.center = this.=S7A.center;
@@ -13015,7 +13015,7 @@ movie 'minipixiz.swf' {
       this.]oH = *r.+-(0.{==W3(('}seIK(', null);
       this.]oH.(( = this.(( + *r.+-(0.+[ * 0.5;
       this.]oH.)( = this.)( + *r.+-(0.+[ * 0.5;
-      this.]oH.}-B2();
+      this.]oH.init();
       this.]oH.=S7A._xscale = 0;
       this.]oH.=S7A._rotation = this.3u( / 0.0174;
       this.)_() = *r.+-(0.{==W3(('0+-7M', null);
@@ -13024,7 +13024,7 @@ movie 'minipixiz.swf' {
       this.)_().;T4D = Math.cos(this.3u() * [X.74.1r].*]*4[;
       this.)_().=T4D = Math.sin(this.3u() * [X.74.1r].*]*4[;
       this.)_().5cBEm = 1;
-      this.)_().}-B2();
+      this.)_().init();
       this.)_().{BxJE(();
       73(.(H5 S(this.)_().=S7A.(v+, *r.*B;6][this.color]);
       var v3 = 0;
@@ -13035,7 +13035,7 @@ movie 'minipixiz.swf' {
         v2.4T4D = (Math.random() * 2 - 1) * 10;
         v2.+iLR( = [4];
         v2.2VhU6 = 15 + Math.random() * 10;
-        v2.}-B2();
+        v2.init();
         v2.=S7A._rotation = Math.random() * 360;
         v2.=S7A._xscale = 4 + Math.random() * 50;
         ++v3;
@@ -13056,7 +13056,7 @@ movie 'minipixiz.swf' {
       v6.5DZk5 = 20;
       v6.+iLR( = [1];
       v6.2VhU6 = 8;
-      v6.}-B2();
+      v6.init();
       var v5 = 0;
       while (v5 < 12) {
         var v2 = *r.+-(0.{==W3(('*]eth', null);
@@ -13069,7 +13069,7 @@ movie 'minipixiz.swf' {
         v2.4T4D = (Math.random() * 2 - 1) * 10;
         v2.2VhU6 = 8 + Math.random() * 12;
         v2.5DZk5 = 30 + Math.random() * 30;
-        v2.}-B2();
+        v2.init();
         v2.=S7A._rotation = Math.random() * 360;
         73(.(H5 S(v2.=S7A, *r.*B;6][this.color]);
         73(.6oFnY(v2.=S7A, 1, 60);
@@ -13115,7 +13115,7 @@ movie 'minipixiz.swf' {
           this.-3iO-( = *r.+-(0.{==W3(('-XlFB(', null);
           this.-3iO-(.(( = this.8_gOI(.((;
           this.-3iO-(.)( = this.8_gOI(.)(;
-          this.-3iO-(.}-B2();
+          this.-3iO-(.init();
           this.2VhU6 = 20;
       }
     };
@@ -13160,7 +13160,7 @@ movie 'minipixiz.swf' {
             var v3 = Math.random() * 6.28;
             v5.(( = this.8_gOI(.(( + Math.cos(v3) * v9;
             v5.)( = this.8_gOI(.)( + Math.sin(v3) * v9;
-            v5.}-B2();
+            v5.init();
             this.)gv94.push(v5);
           }
           var v2 = 0;
@@ -13252,7 +13252,7 @@ movie 'minipixiz.swf' {
       this.6b]aj = 0.75;
     };
 
-    51vAJ.prototype.}-B2 = function () {
+    51vAJ.prototype.init = function () {
       this.0o() = this.+-(0.32.18wU*(44{N.]yP1i);
       var v7 = 0;
       var v5 = 0;
@@ -13465,7 +13465,7 @@ movie 'minipixiz.swf' {
         v2.,.5R = this.(( + v2.((;
         v2.,.6R = this.)( + v2.)(;
         v2.,.+-(0 = this.+-(0;
-        v2.,.}-B2();
+        v2.,.init();
         ++v3;
       }
       this.+-(0.(H[(V();
@@ -13480,8 +13480,8 @@ movie 'minipixiz.swf' {
 
     [X.74.}mkJ8.prototype.__proto__ = [X.9)DM2.prototype;
     [X.74.}mkJ8.prototype.__constructor__ = [X.9)DM2;
-    [X.74.}mkJ8.prototype.}-B2 = function () {
-      [X.9)DM2.prototype.}-B2.call(this);
+    [X.74.}mkJ8.prototype.init = function () {
+      [X.9)DM2.prototype.init.call(this);
     };
 
     [X.74.}mkJ8.prototype.9FeuX = function (7) {
@@ -13505,7 +13505,7 @@ movie 'minipixiz.swf' {
         v5.)( = this.)( + v4;
         v5.+iLR( = [1];
         v5.2VhU6 = 16;
-        v5.}-B2();
+        v5.init();
         var v3 = 0;
         while (v3 < 10) {
           var v2 = *r.+-(0.{==W3((',+TFu', 44{N.};OW;);
@@ -13515,7 +13515,7 @@ movie 'minipixiz.swf' {
           v2.4T4D = Math.random() * 2;
           v2.=S7A._xscale = 20 + Math.random() * 300;
           v2.=S7A._rotation = Math.random() * 360;
-          v2.}-B2();
+          v2.init();
           ++v3;
         }
         *r.0o().flash();
@@ -13701,9 +13701,9 @@ movie 'minipixiz.swf' {
 
     -]e9-.[C2T.prototype.__proto__ = =5haE.prototype;
     -]e9-.[C2T.prototype.__constructor__ = =5haE;
-    -]e9-.[C2T.prototype.}-B2 = function () {
+    -]e9-.[C2T.prototype.init = function () {
       this.5P55 = ')mtw8(';
-      =5haE.prototype.}-B2.call(this);
+      =5haE.prototype.init.call(this);
     };
 
     -]e9-.[C2T.prototype. qCYd = function () {
@@ -13762,7 +13762,7 @@ movie 'minipixiz.swf' {
       v2.5P55 = '{_kFY';
       v2.*]Q5} = 35;
       v2.]oH = 5;
-      v2.}-B2();
+      v2.init();
       v2.(-k9((4.5);
       v2.{BxJE(();
     };
@@ -13837,7 +13837,7 @@ movie 'minipixiz.swf' {
             v2.(( = v3.(( + 0.5 * *r.+-(0.+[;
             v2.)( = v3.)( + 0.5 * *r.+-(0.+[;
             v2.5DZk5 = 150 + Math.random() * 100;
-            v2.}-B2();
+            v2.init();
             v2.=S7A.gotoAndPlay(String(3Wt.random(3) + 1));
             v2.=S7A._rotation = Math.random() * 360;
             v3.9T54();
@@ -13856,7 +13856,7 @@ movie 'minipixiz.swf' {
             var v2 = *r.+-(0.{==W3((';[3Z;', 44{N.};OW;);
             v2.(( = this.8_gOI(.((;
             v2.)( = this.8_gOI(.)(;
-            v2.}-B2();
+            v2.init();
             v2.=S7A._xscale = 50 + Math.random() * 100;
             v2.=S7A._rotation = Math.random() * 360;
             ++v4;
@@ -13874,7 +13874,7 @@ movie 'minipixiz.swf' {
               var v2 = *r.+-(0.{==W3(('=;6j+(', 44{N.};OW;);
               v2.(( = v3.(( + Math.random() * *r.+-(0.+[;
               v2.)( = v3.)( + Math.random() * *r.+-(0.+[;
-              v2.}-B2();
+              v2.init();
               v2.=S7A._rotation = Math.random() * 360;
             }
             73(.;CYOh(v3.=S7A, 100 - this.2VhU6, 16777215);
@@ -13938,8 +13938,8 @@ movie 'minipixiz.swf' {
 
     [X.[9 9.2C0[.prototype.__proto__ = [X.*DzW.prototype;
     [X.[9 9.2C0[.prototype.__constructor__ = [X.*DzW;
-    [X.[9 9.2C0[.prototype.}-B2 = function () {
-      [X.*DzW.prototype.}-B2.call(this);
+    [X.[9 9.2C0[.prototype.init = function () {
+      [X.*DzW.prototype.init.call(this);
       this.3U*}=((*r.+-(0.32.*=_p_(this.5P55, 44{N.{YJfb));
       this.]xii) = 0;
     };
@@ -14000,7 +14000,7 @@ movie 'minipixiz.swf' {
           case 1:
             var v8 = this.9h]c[(65535, Math.random() * this.]oH * 1.5);
             v8.2VhU6 = 20 + Math.random() * 20;
-            v8.}-B2();
+            v8.init();
             break;
           case 2:
             var v4 = this.3l]eY[0];
@@ -14063,7 +14063,7 @@ movie 'minipixiz.swf' {
           case 24:
             var v8 = this.9h]c[(16737792, Math.random() * this.]oH);
             v8.2VhU6 = this.1O + 5 + Math.random() * 10;
-            v8.}-B2();
+            v8.init();
             break;
           case 30:
             if (this.(( < this.]oH || this.(( > *r.+-(0.width - this.]oH) {
@@ -14154,7 +14154,7 @@ movie 'minipixiz.swf' {
       v2.(( = this.((;
       v2.)( = this.)(;
       v2.=S7A._rotation = v2.)153L(this.}O) / 0.0174;
-      v2.}-B2();
+      v2.init();
       v2.=S7A._xscale = v2.}1A{_(this.}O);
       this.}O = {'((': this.((, ')(': this.)(};
     };
@@ -14208,7 +14208,7 @@ movie 'minipixiz.swf' {
     44{N. =OW; = 6;
     44{N.5jj+C = 5;
     44{N.}CnAi = 1;
-    44{N.prototype.}-B2 = function () {
+    44{N.prototype.init = function () {
       980Sb.log('[Game] initialisation.');
       this.6a)p = false;
       this.4ojyQ = false;
@@ -14425,7 +14425,7 @@ movie 'minipixiz.swf' {
             this. Xsp3.list = this.*-GXI(;
             this.*-GXI( = null;
           }
-          this. Xsp3.}-B2();
+          this. Xsp3.init();
           this. Xsp3.3lXfD = this.2cxym;
           ++this.1ri80;
           break;
@@ -14720,7 +14720,7 @@ movie 'minipixiz.swf' {
               v3.)( = v2.)( + this.+[ * 0.5;
               v3.+iLR( = [1, 3];
               v3.2VhU6 = 12;
-              v3.}-B2();
+              v3.init();
               this.-[2}j(v2.type);
               this.*7.[HAwL = true;
             }
@@ -14761,7 +14761,7 @@ movie 'minipixiz.swf' {
             v2.+iLR( = [1];
             v2.2VhU6 = 2 + Math.random() * 10;
             v2.=T4D = -(1 + Math.random() * 6);
-            v2.}-B2();
+            v2.init();
             ++v4;
           }
         }
@@ -14941,7 +14941,7 @@ movie 'minipixiz.swf' {
 
     44{N.prototype.]tUvR = function (((, )(, =HU11) {
       var v2 = new [X.9Q.6Qe();
-      v2.}-B2();
+      v2.init();
       v2.9FeuX(=HU11);
       v2.5r7Q((this.32.18wU*(44{N.3i*c]));
       v2.(( = ((;
@@ -15159,7 +15159,7 @@ movie 'minipixiz.swf' {
       v2.+-(0 = this;
       v2.5R = ((;
       v2.6R = )(;
-      v2.}-B2();
+      v2.init();
       switch (}4) {
           return v2;
         case *r.,)jdl:
@@ -15259,7 +15259,7 @@ movie 'minipixiz.swf' {
         if (v4 != null) {
           var v3 = 7zGQ.);LP2(v4);
           v3.96 = this;
-          v3.}-B2();
+          v3.init();
           v3.8ob{y();
           this.{Z)xI(.push(v3);
         }
@@ -15270,7 +15270,7 @@ movie 'minipixiz.swf' {
         v4 = ]q.4d(*.$inv[v2];
         if (v4 != null) {
           v3 = 7zGQ.);LP2(v4);
-          v3.}-B2();
+          v3.init();
           v3.3ByH=(this);
         }
         ++v2;
@@ -15806,8 +15806,8 @@ movie 'minipixiz.swf' {
 
     8]*V.prototype.__proto__ = ;;6[.prototype;
     8]*V.prototype.__constructor__ = ;;6[;
-    8]*V.prototype.}-B2 = function () {
-      ;;6[.prototype.}-B2.call(this);
+    8]*V.prototype.init = function () {
+      ;;6[.prototype.init.call(this);
     };
 
     8]*V.prototype.5gqnN = function () {
@@ -15908,7 +15908,7 @@ movie 'minipixiz.swf' {
       v2.5P55 = ' b773(';
       v2.*]Q5} = 15;
       v2.]oH = 4;
-      v2.}-B2();
+      v2.init();
       v2.(-k9((4);
     };
 
@@ -16023,7 +16023,7 @@ movie 'minipixiz.swf' {
             var v5 = 3 + Math.random() * 4;
             v2.;T4D = -Math.cos(v3) * v5;
             v2.=T4D = -Math.sin(v3) * v5;
-            v2.}-B2();
+            v2.init();
             this.86{p(.push(v2);
             ++v4;
           }
@@ -16102,9 +16102,9 @@ movie 'minipixiz.swf' {
 
     [X.74.7zGQ.prototype.__proto__ = [X.9)DM2.prototype;
     [X.74.7zGQ.prototype.__constructor__ = [X.9)DM2;
-    [X.74.7zGQ.prototype.}-B2 = function () {
+    [X.74.7zGQ.prototype.init = function () {
       this.=T4D = 0;
-      [X.9)DM2.prototype.}-B2.call(this);
+      [X.9)DM2.prototype.init.call(this);
       this.32 = new +7U K(this.=S7A);
     };
 
@@ -16145,7 +16145,7 @@ movie 'minipixiz.swf' {
       v2.(KpGn = 0.1;
       v2.*lCo = true;
       v2.2VhU6 = 5 + Math.random() * 15;
-      v2.}-B2();
+      v2.init();
       73(.(H5 S(v2.=S7A, 3Wt.random(16777215));
       73(.6oFnY(v2.=S7A, 1, 180);
       if (this.)( < -20) {
@@ -16168,7 +16168,7 @@ movie 'minipixiz.swf' {
       v2.5P55 = ' CB73(';
       v2.*]Q5} = 15;
       v2.]oH = 2;
-      v2.}-B2();
+      v2.init();
       v2.(-k9((6);
       v2.{BxJE(();
     };
@@ -16245,7 +16245,7 @@ movie 'minipixiz.swf' {
       this.=S7A.32r()._x = -44;
     };
 
-    980Sb.}-B2(this);
+    980Sb.init(this);
   }
 
   frame 32 {

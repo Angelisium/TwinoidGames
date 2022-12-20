@@ -321,7 +321,7 @@ movie 'e89df3179f39c9b711c3b3b62919f844.swf' {
       v1.__class__.+-(0 = null;
       v1.__class__.6 Wsv = null;
       v1.__class__.-dP}M = null;
-      v1.__class__.}-B2 = function (arg0) {
+      v1.__class__.init = function (arg0) {
         ,,k.-dP}M = 1;
         ,,k.5HSGf = 20;
         ,,k.+-(0 = arg0;
@@ -1675,7 +1675,7 @@ for ($somevar in v2) {
       v1.__class__ = 6wK)H;
       v1.__class__.}J = null;
       v1.__class__.+-(0 = null;
-      v1.__class__.}-B2 = function (arg0) {
+      v1.__class__.init = function (arg0) {
         6wK)H.+-(0 = arg0;
         6wK)H.}J = 6wK)H.+-(0.32.*=_p_('mcLevier', =(,aA.[V{(6);
         6wK)H.}J._x = 5;
@@ -1769,7 +1769,7 @@ for ($somevar in v2) {
       v1.__class__.3(W- = null;
       v1.__class__.}J = null;
       v1.__class__.2aXj1 = null;
-      v1.__class__.}-B2 = function (arg0) {
+      v1.__class__.init = function (arg0) {
         *3=T.+-(0 = arg0;
         *3=T.+1DY9 = *3=T.+-(0.32.*=_p_('mc_ombre_train', =(,aA.{h0jb);
         *3=T.+1DY9._x = =(,aA.]VBF+(;
@@ -1935,7 +1935,7 @@ for ($somevar in v2) {
       v1.__class__ = 7ZF{,;
       v1.__class__.+-(0 = null;
       v1.__class__.({7K;( = null;
-      v1.__class__.}-B2 = function (arg0) {
+      v1.__class__.init = function (arg0) {
         7ZF{,.+-(0 = arg0;
         7ZF{,.({7K;( = [10];
         var v3 = 0;
@@ -2399,7 +2399,7 @@ for ($somevar in v2) {
       5tTEL.__name__ = ['5tTEL'];
       v1 = 5tTEL.prototype;
       v1.__class__ = 5tTEL;
-      v1.__class__.}-B2 = function (arg0) {
+      v1.__class__.init = function (arg0) {
         5tTEL.0V,TF = [-1];
         5tTEL.+-(0 = arg0;
         5tTEL.0m6L)();
@@ -3110,7 +3110,7 @@ for ($somevar in v2) {
       v1.__class__ = 5Ab;
       v1.__class__.+-(0 = null;
       v1.__class__.1Pi3n = null;
-      v1.__class__.}-B2 = function (arg0) {
+      v1.__class__.init = function (arg0) {
         5Ab.+-(0 = arg0;
         5Ab.1Pi3n = [;ndCG.8kN(=(,aA.3CiiN)];
       };
@@ -3805,7 +3805,7 @@ for ($somevar in v2) {
       v1.__class__.4jmG) = null;
       v1.__class__.+-(0 = null;
       v1.__class__.)0r)G( = null;
-      v1.__class__.}-B2 = function (arg0) {
+      v1.__class__.init = function (arg0) {
         4[y{4.+-(0 = arg0;
         4[y{4.}_G51 = 4[y{4.+-(0.32.*=_p_('mcLimite_station', =(,aA.;C*X2);
         4[y{4.}_G51._visible = false;
@@ -4289,14 +4289,14 @@ for ($somevar in v2) {
         this.-iB= = arg0;
         this.32 = new 9K.+7U K(this.-iB=);
         this.58rO6 = [1];
-        ,,k.}-B2(this);
-        5tTEL.}-B2(this);
-        6)Azm.}-B2(this);
-        *3=T.}-B2(this);
-        4[y{4.}-B2(this);
-        7ZF{,.}-B2(this);
-        5Ab.}-B2(this);
-        6wK)H.}-B2(this);
+        ,,k.init(this);
+        5tTEL.init(this);
+        6)Azm.init(this);
+        *3=T.init(this);
+        4[y{4.init(this);
+        7ZF{,.init(this);
+        5Ab.init(this);
+        6wK)H.init(this);
         this.9t1r1();
       };
 
@@ -4523,7 +4523,7 @@ for ($somevar in v2) {
         }
         if (,,k.*vSiJ(() && (v2 && !44{N.+-(0.7T4cF()) {
           v2 = false;
-          ,,k.}-B2(this);
+          ,,k.init(this);
           *3=T.}SC6 = false;
           6wK)H.,93A();
           if (=(,aA.[c4gL <= 0) {
@@ -4658,7 +4658,7 @@ for ($somevar in v2) {
       6)Azm.__name__ = ['6)Azm'];
       v1 = 6)Azm.prototype;
       v1.__class__ = 6)Azm;
-      v1.__class__.}-B2 = function (arg0) {
+      v1.__class__.init = function (arg0) {
         6)Azm.+-(0 = arg0;
         6)Azm.0m6L)();
         6)Azm.}ZF-m();
@@ -4777,7 +4777,7 @@ for ($somevar in v2) {
       v1 = 980Sb.prototype;
       v1.__class__ = 980Sb;
       v1.__class__._main = null;
-      v1.__class__.}-B2 = function () {
+      v1.__class__.init = function () {
         if (;ndCG.(kJ+1(() != true) {
           return undefined;
         }

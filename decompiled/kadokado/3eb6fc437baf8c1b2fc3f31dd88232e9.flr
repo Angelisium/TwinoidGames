@@ -1592,7 +1592,7 @@ for ($somevar in v2) {
         }
         this.-[Dd9 = arg4;
         this.4e{0_ = false;
-        this.}-B2 = false;
+        this.init = false;
         this.}i3;, = false;
         this.+-(0 = arg0;
         this.9U6 = arg3;
@@ -1635,7 +1635,7 @@ for ($somevar in v2) {
         if (!this.4e{0_) {
           return false;
         }
-        if (!this.}-B2) {
+        if (!this.init) {
           return false;
         }
         if (this. [{WO) {
@@ -1732,7 +1732,7 @@ for ($somevar in v2) {
       };
 
       v1.9U6 = null;
-      v1.}-B2 = null;
+      v1.init = null;
       v1.-oj b = function (+Q}B]) {
         if (this.}i3;,) {
           return undefined;
@@ -1803,7 +1803,7 @@ for ($somevar in v2) {
       v1.0m6L) = function () {
         var v2 = ;ndCG.8kN(=(,aA.{wNVC() / 10;
         this.({7K;( = v2 + 3Wt.random(Math.ceil(v2 / 2));
-        this.}-B2 = true;
+        this.init = true;
       };
 
       v1.+wfgF = function () {
@@ -2605,7 +2605,7 @@ for ($somevar in v2) {
         this.[;4B0(.50 = new flash.0000.ColorTransform(1, 1, 1, 1, 1, 1, 1, -50);
         this.[;4B0(.-iB=.blendMode = 'lighten';
         this.(yI)i = new Array();
-        this.}-B2();
+        this.init();
       };
 
       44{N.__name__ = ['44{N'];
@@ -2779,7 +2779,7 @@ for ($somevar in v2) {
           if (v5 == null) {
             continue;
           }
-          if (!v5.}-B2) {
+          if (!v5.init) {
             continue;
           }
           if (v5. [{WO) {
@@ -2820,7 +2820,7 @@ for ($somevar in v2) {
         var v4 = arg0.iterator();
         while (v4.1ll a()) {
           var v5 = v4.7Y-7();
-          if (!v5.}-B2) {
+          if (!v5.init) {
             continue;
           }
           if (v5 == null) {
@@ -2838,7 +2838,7 @@ for ($somevar in v2) {
         return v4;
       };
 
-      v1.}-B2 = function () {
+      v1.init = function () {
         this.(HQ+1 = new 6uSRG(this);
         var v2 = 0;
         var v3 = ;ndCG.8kN(=(,aA.*Te=Q);
@@ -2967,7 +2967,7 @@ for ($somevar in v2) {
           if (v4 == null) {
             continue;
           }
-          if (v4.}-B2) {
+          if (v4.init) {
             continue;
           }
           if (v4.4e{0_) {
@@ -3525,7 +3525,7 @@ for ($somevar in v2) {
       v1 = 980Sb.prototype;
       v1.__class__ = 980Sb;
       v1.__class__._main = null;
-      v1.__class__.}-B2 = function () {
+      v1.__class__.init = function () {
         if (;ndCG.(kJ+1(() != true) {
           return undefined;
         }

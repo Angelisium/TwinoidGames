@@ -937,7 +937,7 @@ movie 'ac7858a166cc1e462e824f4df9f82234.swf' {
       )GvR (.7yR,6( = [0, 0, 0, 0, 0, 1, 2, 2];
       *r = function () {};
 
-      *r.}-B2 = function () {
+      *r.init = function () {
         *r.*5( = (*r.=OA - *r.8G( * *r.+9fc) * 0.5;
       };
 
@@ -1452,7 +1452,7 @@ movie 'ac7858a166cc1e462e824f4df9f82234.swf' {
       (WBt).[6jRc = 13;
       (WBt).)8Fyj = 14;
       44{N = function (}J) {
-        *r.}-B2();
+        *r.init();
         *r.+-(0 = this;
         this.32 = new +7U K(}J);
         this.86{p( = new Array();
@@ -1935,7 +1935,7 @@ movie 'ac7858a166cc1e462e824f4df9f82234.swf' {
       44{N.;MXK = [[0, 1], [-1, 0]];
       980Sb = function () {};
 
-      980Sb.}-B2 = function (}J) {
+      980Sb.init = function (}J) {
         if (!;ndCG.(kJ+1(()) {
           return undefined;
         }

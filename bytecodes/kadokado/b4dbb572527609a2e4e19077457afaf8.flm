@@ -277,7 +277,7 @@ movie 'b4dbb572527609a2e4e19077457afaf8.swf' compressed // flash 8, total frames
   defineMovieClip 91 // total frames: 1
 
     frame 0
-      constants 'flash', 'Object', 'filters', '{lN=R', '*r', '}-B2', '=P(', '{Cs', '] (', ';CYOh', '=', '0', ')', 'Color', 'ra', 'ga', 'ba', 'aa', 'rb', 'gb', 'bb', 'ab', 'setTransform', '2K', 'Math', 'max', 'min', ')GiA', '0Yj1', '*QP3L', 'round', '((', ')(', '=OA', '*OA', '4Hh41(', '=q=1(', '5NUOp', '--DR}', ']cdn5', ',il7z', '3iWD8', '*(EIm', ',Nwxx', '*e[', '5Xbvg', '42jo6', '8C7;6', '{(HO5(', '+joze', '-Ju7B(', '6[u7B(', '(i(E6(', ']g1Pa', '8Dut5(', '1,ut5(', '}cl4B', ';ndCG', '-Q)9)', '2Xl5B', '-*MsG', '[FvXY', '2)F8[', '*G6KR', ',i0 [', '44{N', '+-(0', '(W3', '+7U K', '(KA', '-l*WO', '*=_p_', '_x', '_y', '32', ';+', '0o*6', '7Qe;6', 'Array', '86{p(', ')gv94', ';AH0', '=bA(A(', '(VKB', '-R 9)', ']Wz+ (', '3vnF5', '5Hy6b', '9O*r', '))E', '0+E', '0O', '60Q1j', '+Tm_D', 'prototype', ';8,t2', '8q9h3(', 'push', '9[d;C', '2e{I', 'random', '+G97+', ']ZsEn', 'color', '21', '-iB=', 'gotoAndStop', 'remove', '=kIA', 'onPress', '7{(s7(', '3Wt', 'callback', 'useHandCursor', ')R,vQ', '2VhU6', '}FI;8', '2W]+a', 'length', '9xqR3(', '{aw I', '_visible', 'removeMovieClip', '[QL', ' x', ' ', '7j3QZ', '*J(Bk', '3WUPC(', ']oH', ');-', '5T6+', ' [z_9(', '}1A{_', '5b)bA(', '+', '8kN', '*L6o7', '3B(*', '-_X}5', '$sp', '=} 1', '0D 6', '{-kxL', '-V;B', '}-9mm', 'Key', 'SPACE', 'isDown', '5GKtY', '_xscale', '_yscale', ';-[;H', '-[9S8(', '7', '86Itb', '(j;o7', 'abs', '7b', '7T4cF(', '[GH7r', 'duplicate', '87vE7(', '980Sb', ')2fr3', '_xmouse', '_ymouse', 'atan2', 'LEFT', 'RIGHT', 'pow', 'PI', '_rotation', ',d951', 'cos', 'sin', '2sngh', 'shift', '9T54', '[b', ']b', ';357+', '4u=dZ', '{a0(C', '}b( X', ';d3', 'pop', '08M8', '$c', '$s', '$t', '$sc', 'center', '{(g}5', '[5(-', '5R', '6R', '0d', '20', '6uA', ' kf;B', '{YJfb', '[VjD-', '-0]rl', '+KD', 'sqrt', ')153L', '[j0D-', ',v0X', '+{eA+', '1Jr-,(', 'call', '(KpGn', ';zS4((', '*DzW', ',DBRf', 'scale', '3V[D(', '3BjX_', '4RW6x', '6b', '849kV', '_alpha', '8I0t8(', '2u=W=', '(kJ+1(', 'mode', '}Zms3', ']1sj+', '-fC3a', '9oK', '7-,', ']bu40', '_name', 'swapDepths', 'attachMC', '18wU*', 'createEmptyMC', '(GbB}', '+2NA', 'getDepth', 'floor', '}oQA7', 'unshift', 'clear', '9(K ;', ',}2X (', '5P55', '7yU(0', '6o_Q+', '-O_ y', '}CL', ']OCkF(', '(El(0', '16[0P', '{biQC', '=jE}1', '6LME,(', '(nsSt', '+46i4(', '8t,B7', '7LeMK(', '0tJ', 'gotoAndPlay', '}PxyY', ' gFFu', '--m8U', '8HPUn', '3AYjk', '(WBt)', ']}Ou;(', '3I0pG', '{;7F4', '8U(wu', '}[cpB', '9xv]A', '{yQ=Q', '+,W', '2y+dV', '(tBee', '3)i[=', ' J3IC', '[6jRc', ')8Fyj', '4plQ5', 'getTimer', ';ILSy', '3R,QM', ';y}-6(', '-)Xd+', '[Ad;n', '6GI,F', 'fps'  
+      constants 'flash', 'Object', 'filters', '{lN=R', '*r', 'init', '=P(', '{Cs', '] (', ';CYOh', '=', '0', ')', 'Color', 'ra', 'ga', 'ba', 'aa', 'rb', 'gb', 'bb', 'ab', 'setTransform', '2K', 'Math', 'max', 'min', ')GiA', '0Yj1', '*QP3L', 'round', '((', ')(', '=OA', '*OA', '4Hh41(', '=q=1(', '5NUOp', '--DR}', ']cdn5', ',il7z', '3iWD8', '*(EIm', ',Nwxx', '*e[', '5Xbvg', '42jo6', '8C7;6', '{(HO5(', '+joze', '-Ju7B(', '6[u7B(', '(i(E6(', ']g1Pa', '8Dut5(', '1,ut5(', '}cl4B', ';ndCG', '-Q)9)', '2Xl5B', '-*MsG', '[FvXY', '2)F8[', '*G6KR', ',i0 [', '44{N', '+-(0', '(W3', '+7U K', '(KA', '-l*WO', '*=_p_', '_x', '_y', '32', ';+', '0o*6', '7Qe;6', 'Array', '86{p(', ')gv94', ';AH0', '=bA(A(', '(VKB', '-R 9)', ']Wz+ (', '3vnF5', '5Hy6b', '9O*r', '))E', '0+E', '0O', '60Q1j', '+Tm_D', 'prototype', ';8,t2', '8q9h3(', 'push', '9[d;C', '2e{I', 'random', '+G97+', ']ZsEn', 'color', '21', '-iB=', 'gotoAndStop', 'remove', '=kIA', 'onPress', '7{(s7(', '3Wt', 'callback', 'useHandCursor', ')R,vQ', '2VhU6', '}FI;8', '2W]+a', 'length', '9xqR3(', '{aw I', '_visible', 'removeMovieClip', '[QL', ' x', ' ', '7j3QZ', '*J(Bk', '3WUPC(', ']oH', ');-', '5T6+', ' [z_9(', '}1A{_', '5b)bA(', '+', '8kN', '*L6o7', '3B(*', '-_X}5', '$sp', '=} 1', '0D 6', '{-kxL', '-V;B', '}-9mm', 'Key', 'SPACE', 'isDown', '5GKtY', '_xscale', '_yscale', ';-[;H', '-[9S8(', '7', '86Itb', '(j;o7', 'abs', '7b', '7T4cF(', '[GH7r', 'duplicate', '87vE7(', '980Sb', ')2fr3', '_xmouse', '_ymouse', 'atan2', 'LEFT', 'RIGHT', 'pow', 'PI', '_rotation', ',d951', 'cos', 'sin', '2sngh', 'shift', '9T54', '[b', ']b', ';357+', '4u=dZ', '{a0(C', '}b( X', ';d3', 'pop', '08M8', '$c', '$s', '$t', '$sc', 'center', '{(g}5', '[5(-', '5R', '6R', '0d', '20', '6uA', ' kf;B', '{YJfb', '[VjD-', '-0]rl', '+KD', 'sqrt', ')153L', '[j0D-', ',v0X', '+{eA+', '1Jr-,(', 'call', '(KpGn', ';zS4((', '*DzW', ',DBRf', 'scale', '3V[D(', '3BjX_', '4RW6x', '6b', '849kV', '_alpha', '8I0t8(', '2u=W=', '(kJ+1(', 'mode', '}Zms3', ']1sj+', '-fC3a', '9oK', '7-,', ']bu40', '_name', 'swapDepths', 'attachMC', '18wU*', 'createEmptyMC', '(GbB}', '+2NA', 'getDepth', 'floor', '}oQA7', 'unshift', 'clear', '9(K ;', ',}2X (', '5P55', '7yU(0', '6o_Q+', '-O_ y', '}CL', ']OCkF(', '(El(0', '16[0P', '{biQC', '=jE}1', '6LME,(', '(nsSt', '+46i4(', '8t,B7', '7LeMK(', '0tJ', 'gotoAndPlay', '}PxyY', ' gFFu', '--m8U', '8HPUn', '3AYjk', '(WBt)', ']}Ou;(', '3I0pG', '{;7F4', '8U(wu', '}[cpB', '9xv]A', '{yQ=Q', '+,W', '2y+dV', '(tBee', '3)i[=', ' J3IC', '[6jRc', ')8Fyj', '4plQ5', 'getTimer', ';ILSy', '3R,QM', ';y}-6(', '-)Xd+', '[Ad;n', '6GI,F', 'fps'  
       push 'flash'
       getVariable
       not
@@ -316,7 +316,7 @@ movie 'b4dbb572527609a2e4e19077457afaf8.swf' compressed // flash 8, total frames
 
       setRegister r:0
       setVariable
-      push r:0, '}-B2'
+      push r:0, 'init'
       function2 () (r:1='this')
         push '*r'
         getVariable
@@ -605,7 +605,7 @@ movie 'b4dbb572527609a2e4e19077457afaf8.swf' compressed // flash 8, total frames
       function2 (r:2='}J') (r:1='this')
         push 0, '*r'
         getVariable
-        push '}-B2'
+        push 'init'
         callMethod
         pop
         push '*r'
@@ -3420,7 +3420,7 @@ movie 'b4dbb572527609a2e4e19077457afaf8.swf' compressed // flash 8, total frames
 
       setRegister r:0
       setVariable
-      push r:0, '}-B2'
+      push r:0, 'init'
       function2 (r:2='}J') (r:1='this')
         push 0, ';ndCG'
         getVariable
