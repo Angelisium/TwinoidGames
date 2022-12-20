@@ -792,7 +792,7 @@ for ($somevar in arg0) {
         }
       };
 
-      flash.Boot.9vIf=( = function () {
+      flash.Boot.getTrace = function () {
         var v2 = flash.1ni.0]Ss);
         var v3 = v2.__trace_txt;
         if (v3 == null) {
@@ -809,13 +809,13 @@ for ($somevar in arg0) {
       };
 
       flash.Boot.__set_trace_color = function (arg0) {
-        (flash.Boot.9vIf=(()).textColor = arg0;
+        (flash.Boot.getTrace()).textColor = arg0;
         flash.Boot. p)sT = arg0;
       };
 
       flash.Boot.__trace = function (arg0, arg1) {
         var v4 = flash.1ni.0]Ss);
-        var v5 = flash.Boot.9vIf=(();
+        var v5 = flash.Boot.getTrace();
         var v6 = arg1.fileName + ((arg1.lineNumber == null) ? '' : ':' + arg1.lineNumber) + ': ' + flash.Boot.__string_rec(arg0, '');
         var v7 = v4.__trace_lines.concat(v6.split('\n'));
         v5.text = v7.join('\n');
