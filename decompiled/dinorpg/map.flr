@@ -96,8 +96,8 @@ movie 'map.swf' {
 for ($somevar in this.1) {
         v2.push(enumerate this.1);
       }
-      return {'{wH': this.1, '[B': v2.iterator(), '1ll a': function () {
-        return this.[B.1ll a();
+      return {'{wH': this.1, '[B': v2.iterator(), 'hasNext': function () {
+        return this.[B.hasNext();
       }, '7Y-7': function () {
         var v2 = this.[B.7Y-7();
         return this.{wH[v2];
@@ -131,12 +131,12 @@ for ($somevar in this.1) {
       v2.) += '{';
       var v3 = this.4x-4();
       var v4 = v3;
-      while (v4.1ll a()) {
+      while (v4.hasNext()) {
         var v5 = v4.7Y-7();
         v2.) += 3Wt.+_PpF(v5);
         v2.) += ' => ';
         v2.) += 3Wt.+_PpF(3Wt.+_PpF(this.6Y3(v5)));
-        if (v3.1ll a()) {
+        if (v3.hasNext()) {
           v2.) += ', ';
         }
       }
@@ -161,8 +161,8 @@ for ($somevar in this.1) {
 
     v1.1 = null;
     v1.iterator = function () {
-      return {'{wH': this.1, '[B': this.4x-4(), '1ll a': function () {
-        return this.[B.1ll a();
+      return {'{wH': this.1, '[B': this.4x-4(), 'hasNext': function () {
+        return this.[B.hasNext();
       }, '7Y-7': function () {
         var v2 = this.[B.7Y-7();
         return this.{wH[v2];
@@ -203,12 +203,12 @@ for ($somevar in this.1) {
       v2.) += '{';
       var v3 = this.4x-4();
       var v4 = v3;
-      while (v4.1ll a()) {
+      while (v4.hasNext()) {
         var v5 = v4.7Y-7();
         v2.) += 3Wt.+_PpF(v5);
         v2.) += ' => ';
         v2.) += 3Wt.+_PpF(3Wt.+_PpF(this.6Y3(v5)));
-        if (v3.1ll a()) {
+        if (v3.hasNext()) {
           v2.) += ', ';
         }
       }
@@ -224,7 +224,7 @@ for ($somevar in this.1) {
     -UHXC.__name__ = ['-UHXC'];
     v1 = -UHXC.prototype;
     v1.__class__ = -UHXC;
-    v1.1ll a = function () {
+    v1.hasNext = function () {
       return this.9]A < this.2KA;
     };
 
@@ -282,7 +282,7 @@ for ($somevar in this.1) {
     };
 
     v1.iterator = function () {
-      return {'1': this.1, '1ll a': function () {
+      return {'1': this.1, 'hasNext': function () {
         return this.1 != null;
       }, '7Y-7': function () {
         if (this.1 == null) {
@@ -518,7 +518,7 @@ for ($somevar in this.1) {
       }
       this.+BQB0( = new Hash();
       v5 = arg2._places.iterator();
-      while (v5.1ll a()) {
+      while (v5.hasNext()) {
         v6 = v5.7Y-7();
         v7 = new 4ooDJ(this, v6);
         this.+BQB0(.7NJ(v7.*B, v7);
@@ -528,7 +528,7 @@ for ($somevar in this.1) {
       }
       v5 = {'2[hF': this.0]Ss).5R, ')JhF': this.0]Ss).5R, '[RhG': this.0]Ss).6R, '5AhG': this.0]Ss).6R};
       v6 = arg2._nexts.iterator();
-      while (v6.1ll a()) {
+      while (v6.hasNext()) {
         v7 = v6.7Y-7();
         var v8 = this.+BQB0(.6Y3(v7._id);
         v8.4ye15(v7._text, v7._conf);
@@ -654,7 +654,7 @@ for ($somevar in this.1) {
       this.1J f0.removeMovieClip();
       this.8+C5();
       var v3 = this.+BQB0(.iterator();
-      while (v3.1ll a()) {
+      while (v3.hasNext()) {
         var v4 = v3.7Y-7();
         96nT}.deleteField(v4, 'onRelease');
       }
@@ -1568,7 +1568,7 @@ for ($somevar in arg0) {
             }
             v9 = v10;
             v10 = v9.iterator();
-            while (v10.1ll a()) {
+            while (v10.hasNext()) {
               var v11 = v10.7Y-7();
               if (v11 == 'prototype' || v11 == '__class__' || v11 == '__super__' || v11 == '__interfaces__') {
                 continue;
@@ -1723,7 +1723,7 @@ for ($somevar in arg0) {
         };
 
         Array.prototype.iterator = function () {
-          return {'7-,': 0, '=()': this, '1ll a': function () {
+          return {'7-,': 0, '=()': this, 'hasNext': function () {
             return this.7-, < this.=().length;
           }, '7Y-7': function () {
             ++this.7-,;
@@ -1891,7 +1891,7 @@ for ($somevar in v2) {
 
     v1.iterator = function () {
       var 5 = this.0Y-1;
-      return {'1ll a': function () {
+      return {'hasNext': function () {
         return 5 != null;
       }, '7Y-7': function () {
         var v2 = 5;
@@ -1976,13 +1976,13 @@ for ($somevar in v2) {
       ASSetPropFlags(v3, 'onHTTPStatus', 7);
       ASSetPropFlags(v3, 'onData', 7);
       var v4 = this. )84 (.4x-4();
-      while (v4.1ll a()) {
+      while (v4.hasNext()) {
         var v5 = v4.7Y-7();
         v3.addRequestHeader(v5, this. )84 (.6Y3(v5));
       }
       v4 = false;
       v5 = this.*feM7(.4x-4();
-      while (v5.1ll a()) {
+      while (v5.hasNext()) {
         var v6 = v5.7Y-7();
         v4 = true;
         v3[v6] = this.*feM7(.6Y3(v6);
@@ -3543,7 +3543,7 @@ for ($somevar in v2) {
         v2.4]ym5(this.+Q}B], this.26;mF(, this._fx, this.-W5gE();
       }
       var v3 = this.0cW=E(.iterator();
-      while (v3.1ll a()) {
+      while (v3.hasNext()) {
         var v4 = v3.7Y-7();
         var v5 = v2.0cW=E(;
         v5.0Y-1 = new haxe.0WDKa(v4.03+6)(), v5.0Y-1);
@@ -3586,7 +3586,7 @@ for ($somevar in v2) {
       while (v3 != null) {
         v3.stop();
         var v4 = v3.0cW=E(.iterator();
-        while (v4.1ll a()) {
+        while (v4.hasNext()) {
           var v5 = v4.7Y-7();
           v5.4AH-();
         }
@@ -3749,7 +3749,7 @@ for ($somevar in v2) {
     v1.init = function () {
       if (!this.00{h;) {
         var v2 = this.0cW=E(.iterator();
-        while (v2.1ll a()) {
+        while (v2.hasNext()) {
           var v3 = v2.7Y-7();
           v3.init(this.,_vrE();
         }
@@ -3822,7 +3822,7 @@ for ($somevar in v2) {
       while (v3 != null) {
         v3.1CoKJ( = !v3.1CoKJ(;
         var v4 = v3.0cW=E(.iterator();
-        while (v4.1ll a()) {
+        while (v4.hasNext()) {
           var v5 = v4.7Y-7();
           v5.{}MC((();
         }
@@ -3918,7 +3918,7 @@ for ($somevar in v2) {
           }
           this.7F = this._ease(v4);
           var v5 = this.0cW=E(.iterator();
-          while (v5.1ll a()) {
+          while (v5.hasNext()) {
             var v6 = v5.7Y-7();
             v6.87vE7((this.7F, this._fx);
           }

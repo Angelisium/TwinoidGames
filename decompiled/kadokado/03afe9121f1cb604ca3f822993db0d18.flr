@@ -486,7 +486,7 @@ movie '03afe9121f1cb604ca3f822993db0d18.swf' {
         var v2 = null;
         var v3 = 9999.0;
         var v4 = 44{N.(K.1BCg*(.iterator();
-        while (v4.1ll a()) {
+        while (v4.hasNext()) {
           var v5 = v4.7Y-7();
           var v6 = Math.abs(this.(( - v5.(();
           if (v6 < v3 && v5 != this) {
@@ -718,7 +718,7 @@ for ($somevar in arg0) {
               }
               v9 = v10;
               v10 = v9.iterator();
-              while (v10.1ll a()) {
+              while (v10.hasNext()) {
                 var v11 = v10.7Y-7();
                 if (v11 == 'prototype' || (v11 == '__class__' || (v11 == '__super__' || v11 == '__interfaces__'))) {
                   continue;
@@ -864,7 +864,7 @@ for ($somevar in arg0) {
           };
 
           Array.prototype.iterator = function () {
-            return {'7-,': 0, '=()': this, '1ll a': function () {
+            return {'7-,': 0, '=()': this, 'hasNext': function () {
               return this.7-, < this.=().length;
             }, '7Y-7': function () {
               return this.=()[this.7-,++];
@@ -1671,7 +1671,7 @@ for ($somevar in v2) {
       -UHXC.__name__ = ['-UHXC'];
       v1 = -UHXC.prototype;
       v1.__class__ = -UHXC;
-      v1.1ll a = function () {
+      v1.hasNext = function () {
         return this.9]A < this.2KA;
       };
 
@@ -1877,7 +1877,7 @@ for ($somevar in v2) {
         v5._x = this.((;
         v5._y = this.)(;
         v6 = 44{N.(K.[ k9+.iterator();
-        while (v6.1ll a()) {
+        while (v6.hasNext()) {
           v7 = v6.7Y-7();
           v7.,D2();
           v7.{SxlZ = true;
@@ -2133,7 +2133,7 @@ for ($somevar in v2) {
         44{N.(K.6QA.+tq5)(8);
         var v2 = 0;
         var v3 = this.[ k9+.iterator();
-        while (v3.1ll a()) {
+        while (v3.hasNext()) {
           var v4 = v3.7Y-7();
           var v5 = 44{N.(K.6QA.*=_p_('mcCosmo', 8);
           v5._x = 2 + v2 * 14;
@@ -3217,7 +3217,7 @@ for ($somevar in v2) {
         if (3Wt.random(200) == 0) {
           var v3 = 0;
           var v4 = this.[ k9+.iterator();
-          while (v4.1ll a()) {
+          while (v4.hasNext()) {
             var v5 = v4.7Y-7();
             if (v5.=kIA == 1) {
               ++v3;

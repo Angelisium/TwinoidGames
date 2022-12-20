@@ -711,7 +711,7 @@ for ($somevar in v2) {
         var v3 = this.98L;
         if (v3 != null && !v3.,fyRI && v3.*J}8) == this.*J}8)) {
           var v4 = (v3.=QySK(()).iterator();
-          while (v4.1ll a()) {
+          while (v4.hasNext()) {
             var v5 = v4.7Y-7();
             v2.*]((v5);
           }
@@ -719,7 +719,7 @@ for ($somevar in v2) {
         v3 = this.[B-5;
         if (v3 != null && !v3.,fyRI && v3.*J}8) == this.*J}8)) {
           v4 = (v3.=QySK(()).iterator();
-          while (v4.1ll a()) {
+          while (v4.hasNext()) {
             v5 = v4.7Y-7();
             v2.*]((v5);
           }
@@ -727,7 +727,7 @@ for ($somevar in v2) {
         v3 = this.-7k65;
         if (v3 != null && !v3.,fyRI && v3.*J}8) == this.*J}8)) {
           v4 = (v3.=QySK(()).iterator();
-          while (v4.1ll a()) {
+          while (v4.hasNext()) {
             v5 = v4.7Y-7();
             v2.*]((v5);
           }
@@ -735,7 +735,7 @@ for ($somevar in v2) {
         v3 = this.7QUc)(;
         if (v3 != null && !v3.,fyRI && v3.*J}8) == this.*J}8)) {
           v4 = (v3.=QySK(()).iterator();
-          while (v4.1ll a()) {
+          while (v4.hasNext()) {
             v5 = v4.7Y-7();
             v2.*]((v5);
           }
@@ -745,7 +745,7 @@ for ($somevar in v2) {
       v3 = this.98L;
       if (v3 != null && !v3.,fyRI && v3.*J}8) != null) {
         v4 = (v3.=QySK(()).iterator();
-        while (v4.1ll a()) {
+        while (v4.hasNext()) {
           v5 = v4.7Y-7();
           v2.*]((v5);
         }
@@ -753,7 +753,7 @@ for ($somevar in v2) {
       v3 = this.[B-5;
       if (v3 != null && !v3.,fyRI && v3.*J}8) != null) {
         v4 = (v3.=QySK(()).iterator();
-        while (v4.1ll a()) {
+        while (v4.hasNext()) {
           v5 = v4.7Y-7();
           v2.*]((v5);
         }
@@ -761,7 +761,7 @@ for ($somevar in v2) {
       v3 = this.-7k65;
       if (v3 != null && !v3.,fyRI && v3.*J}8) != null) {
         v4 = (v3.=QySK(()).iterator();
-        while (v4.1ll a()) {
+        while (v4.hasNext()) {
           v5 = v4.7Y-7();
           v2.*]((v5);
         }
@@ -769,7 +769,7 @@ for ($somevar in v2) {
       v3 = this.7QUc)(;
       if (v3 != null && !v3.,fyRI && v3.*J}8) != null) {
         v4 = (v3.=QySK(()).iterator();
-        while (v4.1ll a()) {
+        while (v4.hasNext()) {
           v5 = v4.7Y-7();
           v2.*]((v5);
         }
@@ -831,7 +831,7 @@ for ($somevar in v2) {
     -UHXC.__name__ = ['-UHXC'];
     v1 = -UHXC.prototype;
     v1.__class__ = -UHXC;
-    v1.1ll a = function () {
+    v1.hasNext = function () {
       return this.9]A < this.2KA;
     };
 
@@ -889,7 +889,7 @@ for ($somevar in v2) {
     };
 
     v1.iterator = function () {
-      return {'1': this.1, '1ll a': function () {
+      return {'1': this.1, 'hasNext': function () {
         return this.1 != null;
       }, '7Y-7': function () {
         if (this.1 == null) {
@@ -1708,7 +1708,7 @@ for ($somevar in v2) {
 
     v1.70ttG( = function () {
       var v2 = this.5.iterator();
-      while (v2.1ll a()) {
+      while (v2.hasNext()) {
         var v3 = v2.7Y-7();
         v3.70ttG(();
       }
@@ -1755,10 +1755,10 @@ for ($somevar in v2) {
         v2[v5] = new Array();
       }
       v3 = this.5.iterator();
-      while (v3.1ll a()) {
+      while (v3.hasNext()) {
         v4 = v3.7Y-7();
         v5 = (v4.=QySK(()).iterator();
-        while (v5.1ll a()) {
+        while (v5.hasNext()) {
           var v6 = v5.7Y-7();
           v2[v6.*J}8)].push(v6);
         }
@@ -1770,7 +1770,7 @@ for ($somevar in v2) {
     v1.-iB= = null;
     v1.5BRv6 = function () {
       var v2 = this.5.iterator();
-      while (v2.1ll a()) {
+      while (v2.hasNext()) {
         var v3 = v2.7Y-7();
         v3.5BRv6();
       }
@@ -1779,7 +1779,7 @@ for ($somevar in v2) {
     v1.24Zy0( = function () {
       var v2 = new 0d2T();
       var v3 = this.5.iterator();
-      while (v3.1ll a()) {
+      while (v3.hasNext()) {
         var v4 = v3.7Y-7();
         v2.*](((v4.]Ik H()).0tJ);
       }
@@ -1796,7 +1796,7 @@ for ($somevar in v2) {
         this.+-(0.9h+T}(v5.((, v5.)();
       }
       v4 = this.5.iterator();
-      while (v4.1ll a()) {
+      while (v4.hasNext()) {
         v5 = v4.7Y-7();
         this.+-(0.9h+T}(v5.((, v5.)();
       }
@@ -2136,7 +2136,7 @@ for ($somevar in v2) {
       }
       if (this.+}B(.length > 0) {
         v2 = this.+}B(.iterator();
-        while (v2.1ll a()) {
+        while (v2.hasNext()) {
           v3 = v2.7Y-7();
           if (v3.play()) {
             this.+}B(.remove(v3);

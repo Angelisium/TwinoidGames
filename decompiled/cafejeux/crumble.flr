@@ -818,7 +818,7 @@ for ($somevar in arg0) {
     v1.__class__.copy = function (arg0) {
       var v3 = 96nT}.18wU*();
       var v4 = (96nT}.6cXX((arg0)).iterator();
-      while (v4.1ll a()) {
+      while (v4.hasNext()) {
         var v5 = v4.7Y-7();
         96nT}.)BnwT(v3, v5, 96nT}.+Da3+(arg0, v5));
       }
@@ -1180,7 +1180,7 @@ return undefined;
     -UHXC.__name__ = ['-UHXC'];
     v1 = -UHXC.prototype;
     v1.__class__ = -UHXC;
-    v1.1ll a = function () {
+    v1.hasNext = function () {
       return this.9]A < this.2KA;
     };
 
@@ -1236,7 +1236,7 @@ return undefined;
     };
 
     v1.iterator = function () {
-      return {'1': this.1, '1ll a': function () {
+      return {'1': this.1, 'hasNext': function () {
         return this.1 != null;
       }, '7Y-7': function () {
         if (this.1 == null) {
@@ -1626,7 +1626,7 @@ for ($somevar in v2) {
     v1.+}B( = null;
     v1.8z2AH = function () {
       var v2 = this.}Euw)(.iterator();
-      while (v2.1ll a()) {
+      while (v2.hasNext()) {
         var v3 = v2.7Y-7();
         v3.=)*i*(();
       }
@@ -1634,7 +1634,7 @@ for ($somevar in v2) {
 
     v1.(gTI8( = function () {
       var v2 = this.}Euw)(.iterator();
-      while (v2.1ll a()) {
+      while (v2.hasNext()) {
         var v3 = v2.7Y-7();
         v3.4+K9R();
       }
@@ -1839,19 +1839,19 @@ for ($somevar in v2) {
     v1. *[qE( = function () {
       if (this.,X2)).length <= 0) {
         var v2 = this.}Euw)(.iterator();
-        while (v2.1ll a()) {
+        while (v2.hasNext()) {
           var v3 = v2.7Y-7();
           v3.display();
         }
         v2 = this.,lQTD.iterator();
-        while (v2.1ll a()) {
+        while (v2.hasNext()) {
           v3 = v2.7Y-7();
           v3.display();
         }
       } else {
         var v2 = 0;
         var v3 = this.,X2)).iterator();
-        while (v3.1ll a()) {
+        while (v3.hasNext()) {
           var v4 = v3.7Y-7();
           v4.4AF = v2++;
           v4.display();
@@ -2074,7 +2074,7 @@ for ($somevar in v2) {
     v1.0D 6 = function () {
       if (this.+}B(.length > 0) {
         var v2 = this.+}B(.iterator();
-        while (v2.1ll a()) {
+        while (v2.hasNext()) {
           var v3 = v2.7Y-7();
           if (v3.play()) {
             this.+}B(.remove(v3);
@@ -2086,7 +2086,7 @@ for ($somevar in v2) {
       }
       if (this.4oIy{.length > 0) {
         v2 = this.4oIy{.iterator();
-        while (v2.1ll a()) {
+        while (v2.hasNext()) {
           v3 = v2.7Y-7();
           if (v3.play()) {
             this.4oIy{.remove(v3);
@@ -2237,7 +2237,7 @@ for ($somevar in v2) {
           }
           this.,X2)) = new Array();
           v7 = v6.iterator();
-          while (v7.1ll a()) {
+          while (v7.hasNext()) {
             v8 = v7.7Y-7();
             this.,X2)).push(new =i{J(true, this, v8, this.,X2)).length, null));
           }
@@ -2290,10 +2290,10 @@ for ($somevar in v2) {
             return undefined;
           }
           v5 = this.;AH0.iterator();
-          while (v5.1ll a()) {
+          while (v5.hasNext()) {
             v6 = v5.7Y-7();
             v7 = v6.iterator();
-            while (v7.1ll a()) {
+            while (v7.hasNext()) {
               v8 = v7.7Y-7();
               if (v8.5 xA+ != null) {
                 v8.5 xA+.=)*i*(();
@@ -2421,7 +2421,7 @@ for ($somevar in v2) {
           if (9G56) {
             this.0q]hS. *GYS = true;
             var v7 = this.}Euw)(.iterator();
-            while (v7.1ll a()) {
+            while (v7.hasNext()) {
               var v8 = v7.7Y-7();
               v8.=)*i*(();
             }
@@ -3094,10 +3094,10 @@ for ($somevar in v2) {
                                 var ] = 44{N.9CGI6(this.+-(0.1j+9R);
                                 this.(sSy7((function () {
                                   var v2 = (K.+-(0.;AH0.iterator();
-                                  while (v2.1ll a()) {
+                                  while (v2.hasNext()) {
                                     var v3 = v2.7Y-7();
                                     var v4 = v3.iterator();
-                                    while (v4.1ll a()) {
+                                    while (v4.hasNext()) {
                                       var v5 = v4.7Y-7();
                                       if (v5.5 xA+ != null && v5.5 xA+.{9,B == ]) {
                                         v5.5 xA+.; Yx5();
@@ -3128,10 +3128,10 @@ for ($somevar in v2) {
                                   this.(sSy7((function () {
                                     var v2 = 44{N.9CGI6((K.+-(0.1j+9R);
                                     var v3 = (K.+-(0.;AH0.iterator();
-                                    while (v3.1ll a()) {
+                                    while (v3.hasNext()) {
                                       var v4 = v3.7Y-7();
                                       var v5 = v4.iterator();
-                                      while (v5.1ll a()) {
+                                      while (v5.hasNext()) {
                                         var v6 = v5.7Y-7();
                                         if (v6.5 xA+ != null && v6.5 xA+.{9,B == v2) {
                                           v6.5 xA+.[XX}5();
@@ -3180,10 +3180,10 @@ for ($somevar in v2) {
                               var ] = 9G56 ? this.+-(0.1j+9R : 44{N.9CGI6(this.+-(0.1j+9R);
                               this.(sSy7((function () {
                                 var v2 = (K.+-(0.;AH0.iterator();
-                                while (v2.1ll a()) {
+                                while (v2.hasNext()) {
                                   var v3 = v2.7Y-7();
                                   var v4 = v3.iterator();
-                                  while (v4.1ll a()) {
+                                  while (v4.hasNext()) {
                                     var v5 = v4.7Y-7();
                                     if (v5.5 xA+ != null && v5.5 xA+.{9,B == ]) {
                                       v5.5 xA+.; Yx5();
@@ -3215,10 +3215,10 @@ for ($somevar in v2) {
                               this.+-(0.0q]hS.[VBA = {'((': ((, ')(': )(, '9G56': 9G56};
                               if (9G56) {
                                 var v3 = this.+-(0.;AH0.iterator();
-                                while (v3.1ll a()) {
+                                while (v3.hasNext()) {
                                   var v4 = v3.7Y-7();
                                   var v5 = v4.iterator();
-                                  while (v5.1ll a()) {
+                                  while (v5.hasNext()) {
                                     var v6 = v5.7Y-7();
                                     if (v6.5 xA+ != null && (v6.5 xA+.{9,B == this.+-(0.1j+9R && (v6.(( != (( || v6.)( != )())) {
                                       v6.5 xA+.=)*i*(();
@@ -3337,10 +3337,10 @@ for ($somevar in v2) {
                     var (K = this;
                     this.(sSy7((function () {
                       var v2 = (K.+-(0.;AH0.iterator();
-                      while (v2.1ll a()) {
+                      while (v2.hasNext()) {
                         var v3 = v2.7Y-7();
                         var v4 = v3.iterator();
-                        while (v4.1ll a()) {
+                        while (v4.hasNext()) {
                           var v5 = v4.7Y-7();
                           if (v5.5 xA+ != null && v5.5 xA+.{9,B == ]) {
                             v5.5 xA+.; Yx5();

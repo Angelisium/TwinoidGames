@@ -1215,7 +1215,7 @@ for ($somevar in v2) {
     -UHXC.__name__ = ['-UHXC'];
     v1 = -UHXC.prototype;
     v1.__class__ = -UHXC;
-    v1.1ll a = function () {
+    v1.hasNext = function () {
       return this.9]A < this.2KA;
     };
 
@@ -1392,7 +1392,7 @@ for ($somevar in v2) {
     };
 
     v1.iterator = function () {
-      return {'1': this.1, '1ll a': function () {
+      return {'1': this.1, 'hasNext': function () {
         return this.1 != null;
       }, '7Y-7': function () {
         if (this.1 == null) {
@@ -2138,8 +2138,8 @@ for ($somevar in v2) {
 
     v1.1 = null;
     v1.iterator = function () {
-      return {'{wH': this.1, '[B': this.4x-4(), '1ll a': function () {
-        return this.[B.1ll a();
+      return {'{wH': this.1, '[B': this.4x-4(), 'hasNext': function () {
+        return this.[B.hasNext();
       }, '7Y-7': function () {
         var v2 = this.[B.7Y-7();
         return this.{wH[v2];
@@ -2180,12 +2180,12 @@ for ($somevar in this.1) {
       v2.) += '{';
       var v3 = this.4x-4();
       var v4 = v3;
-      while (v4.1ll a()) {
+      while (v4.hasNext()) {
         var v5 = v4.7Y-7();
         v2.) += v5;
         v2.) += ' => ';
         v2.) += 3Wt.+_PpF(this.6Y3(v5));
-        if (v3.1ll a()) {
+        if (v3.hasNext()) {
           v2.) += ', ';
         }
       }
@@ -3299,7 +3299,7 @@ for ($somevar in this.1) {
       }
       if (this.+}B(.length > 0) {
         v3 = this.+}B(.iterator();
-        while (v3.1ll a()) {
+        while (v3.hasNext()) {
           var v4 = v3.7Y-7();
           if (v4.play()) {
             v4.7iP=3();

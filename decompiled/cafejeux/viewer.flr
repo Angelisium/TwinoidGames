@@ -183,7 +183,7 @@ for ($somevar in v2) {
       $s.push('haxe.xml._Fast.HasNodeAccess::' + 'resolve');
       var v3 = $s.length;
       try {
-        var v4 = (this.__x.)H2q](arg0)).1ll a();
+        var v4 = (this.__x.)H2q](arg0)).hasNext();
         $s.pop();
         return v4;
         $s.pop();
@@ -221,7 +221,7 @@ for ($somevar in v2) {
       try {
         var v4 = new 0d2T();
         var v5 = this.__x.)H2q](arg0);
-        while (v5.1ll a()) {
+        while (v5.hasNext()) {
           var v6 = v5.7Y-7();
           v4.*]((new haxe.30R. P{M(v6));
         }
@@ -270,7 +270,7 @@ for ($somevar in v2) {
       var v2 = $s.length;
       try {
         var [B = this.((. p[2,(();
-        var v3 = {'1ll a': ]6=8H(('1ll a', [B), '7Y-7': function () {
+        var v3 = {'hasNext': ]6=8H(('hasNext', [B), '7Y-7': function () {
           $s.push('haxe.xml.Fast::' + 'getElements@163');
           var v2 = $s.length;
           try {
@@ -308,11 +308,11 @@ for ($somevar in v2) {
       var v2 = $s.length;
       try {
         var v3 = this.((.iterator();
-        if (!v3.1ll a()) {
+        if (!v3.hasNext()) {
           throw this.8u,1a() + ' does not have data';
         }
         var v4 = v3.7Y-7();
-        if (v3.1ll a()) {
+        if (v3.hasNext()) {
           throw this.8u,1a() + ' does not only have data';
         }
         if (v4.1Te]+ != 9l{.;R{lO && v4.1Te]+ != 9l{.6 moA) {
@@ -337,7 +337,7 @@ for ($somevar in v2) {
       try {
         var v3 = new [vXe-();
         var v4 = this.((.iterator();
-        while (v4.1ll a()) {
+        while (v4.hasNext()) {
           var v5 = v4.7Y-7();
           v3.) += v5.toString();
         }
@@ -1065,7 +1065,7 @@ for ($somevar in arg0) {
               }
               v10 = v11;
               v11 = v10.iterator();
-              while (v11.1ll a()) {
+              while (v11.hasNext()) {
                 var v12 = v11.7Y-7();
                 if (v12 == 'prototype' || (v12 == '__class__' || (v12 == '__super__' || v12 == '__interfaces__'))) {
                   continue;
@@ -1369,7 +1369,7 @@ for ($somevar in arg0) {
             $s.push('flash.Boot::' + '__init@238');
             var v2 = $s.length;
             try {
-              var v3 = {'7-,': 0, '=()': this, '1ll a': function () {
+              var v3 = {'7-,': 0, '=()': this, 'hasNext': function () {
                 $s.push('flash.Boot::' + '__init@238@242');
                 var v2 = $s.length;
                 try {
@@ -1708,7 +1708,7 @@ for ($somevar in this.__x.attributes) {
         if (this.1Te]+ != 9l{.(VJkK && this.1Te]+ != 9l{.9)DM2) {
           throw 'bad nodeType';
         }
-        var v3 = {'7-,': this.__x.firstChild, '1ll a': function () {
+        var v3 = {'7-,': this.__x.firstChild, 'hasNext': function () {
           $s.push('flash.FlashXml__::' + 'elements@173');
           var v2 = $s.length;
           try {
@@ -1775,7 +1775,7 @@ for ($somevar in this.__x.attributes) {
         if (this.1Te]+ != 9l{.(VJkK && this.1Te]+ != 9l{.9)DM2) {
           throw 'bad nodeType';
         }
-        var v3 = {'7-,': this.__x.firstChild, '1ll a': function () {
+        var v3 = {'7-,': this.__x.firstChild, 'hasNext': function () {
           $s.push('flash.FlashXml__::' + 'elementsNamed@199');
           var v2 = $s.length;
           try {
@@ -1999,7 +1999,7 @@ for ($somevar in this.__x.attributes) {
         if (this.1Te]+ != 9l{.(VJkK && this.1Te]+ != 9l{.9)DM2) {
           throw 'bad nodeType';
         }
-        var v3 = {'7-,': this.__x.firstChild, '1ll a': function () {
+        var v3 = {'7-,': this.__x.firstChild, 'hasNext': function () {
           $s.push('flash.FlashXml__::' + 'iterator@157');
           var v2 = $s.length;
           try {
@@ -2161,7 +2161,7 @@ for ($somevar in this.__x.attributes) {
         if (this.1Te]+ == 9l{.(VJkK) {
           var v3 = '';
           var v4 = this.iterator();
-          while (v4.1ll a()) {
+          while (v4.hasNext()) {
             var v5 = v4.7Y-7();
             v3 += v5.toString();
           }
@@ -3466,13 +3466,13 @@ for ($somevar in v2) {
         }
         this.+RNIo = new Array();
         v6 = ((v5.4rB7.]BUL}('comments')).,y}Y2.]BUL}('com')).iterator();
-        while (v6.1ll a()) {
+        while (v6.hasNext()) {
           var v7 = v6.7Y-7();
           this.+RNIo[3Wt.,Iq1+((v7.0-).]BUL}('id'))] = v7.0-).]BUL}('v');
         }
         this.(veZ)( = new Array();
         v6 = ((v5.4rB7.]BUL}('palettes')).,y}Y2.]BUL}('palette')).iterator();
-        while (v6.1ll a()) {
+        while (v6.hasNext()) {
           v7 = v6.7Y-7();
           var v8 = 3Wt.,Iq1+((v7.0-).]BUL}('id'));
           this.(veZ)([v8] = {'9': new Array(), '0B}10': null};
@@ -3480,7 +3480,7 @@ for ($somevar in v2) {
             this.(veZ)([v8].0B}10 = v7.0-).]BUL}('comment');
           }
           var v9 = (v7.,y}Y2.]BUL}('col')).iterator();
-          while (v9.1ll a()) {
+          while (v9.hasNext()) {
             var v10 = v9.7Y-7();
             var v11 = 3Wt.,Iq1+((v10.0-).]BUL}('id'));
             var v12 = 3Wt.,Iq1+(('0x' + (v10.0-).]BUL}('c')).substr(1));
@@ -4938,7 +4938,7 @@ for ($somevar in v2) {
     -UHXC.__name__ = ['-UHXC'];
     v1 = -UHXC.prototype;
     v1.__class__ = -UHXC;
-    v1.1ll a = function () {
+    v1.hasNext = function () {
       $s.push('IntIter::' + 'hasNext');
       var v2 = $s.length;
       try {
@@ -5228,7 +5228,7 @@ for ($somevar in v2) {
       $s.push('List::' + 'iterator');
       var v2 = $s.length;
       try {
-        var v3 = {'1': this.1, '1ll a': function () {
+        var v3 = {'1': this.1, 'hasNext': function () {
           $s.push('List::' + 'iterator@193');
           var v2 = $s.length;
           try {

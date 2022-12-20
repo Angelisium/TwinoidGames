@@ -906,7 +906,7 @@ for ($somevar in arg0) {
               }
               v9 = v10;
               v10 = v9.iterator();
-              while (v10.1ll a()) {
+              while (v10.hasNext()) {
                 var v11 = v10.7Y-7();
                 if (v11 == 'prototype' || (v11 == '__class__' || (v11 == '__super__' || v11 == '__interfaces__'))) {
                   continue;
@@ -1053,7 +1053,7 @@ for ($somevar in arg0) {
           };
 
           Array.prototype.iterator = function () {
-            return {'7-,': 0, '=()': this, '1ll a': function () {
+            return {'7-,': 0, '=()': this, 'hasNext': function () {
               return this.7-, < this.=().length;
             }, '7Y-7': function () {
               ++this.7-,;
@@ -2287,7 +2287,7 @@ for ($somevar in v2) {
       };
 
       v1.iterator = function () {
-        return {'1': this.1, '1ll a': function () {
+        return {'1': this.1, 'hasNext': function () {
           return this.1 != null;
         }, '7Y-7': function () {
           if (this.1 == null) {
@@ -2423,7 +2423,7 @@ for ($somevar in v2) {
           return undefined;
         }
         var v3 = 5tTEL.57*.iterator();
-        while (v3.1ll a()) {
+        while (v3.hasNext()) {
           var v4 = v3.7Y-7();
           v4.)( += arg0;
           v4._y = v4.)(;
@@ -2435,7 +2435,7 @@ for ($somevar in v2) {
           return undefined;
         }
         var v2 = 5tTEL.57*.iterator();
-        while (v2.1ll a()) {
+        while (v2.hasNext()) {
           var v3 = v2.7Y-7();
           if (v3._y > =(,aA.*sd+;( && !v3.[=DV3() {
             var v4 = 5tTEL.57*.0f 5();
@@ -2568,7 +2568,7 @@ for ($somevar in v2) {
 
       v1.__class__.23zv9 = function (arg0) {
         var v3 = 5tTEL.57*.iterator();
-        while (v3.1ll a()) {
+        while (v3.hasNext()) {
           var v4 = v3.7Y-7();
           if (v4._y >= =(,aA.*sd+;() {
             continue;
@@ -2594,7 +2594,7 @@ for ($somevar in v2) {
       v1.__class__.1Rt{J( = function () {
         var v2 = false;
         var v3 = 5tTEL.57*.iterator();
-        while (v3.1ll a()) {
+        while (v3.hasNext()) {
           var v4 = v3.7Y-7();
           if (v4._y >= 0 && v4._y <= =(,aA.*sd+;() {
             continue;
@@ -2628,7 +2628,7 @@ for ($somevar in v2) {
         var v2 = false;
         var v3 = -1;
         var v4 = 5tTEL.57*.iterator();
-        while (v4.1ll a()) {
+        while (v4.hasNext()) {
           var v5 = v4.7Y-7();
           if (v5 == null) {
             continue;
@@ -2667,7 +2667,7 @@ for ($somevar in v2) {
           arg1 = false;
         }
         var v4 = 5tTEL.57*.iterator();
-        while (v4.1ll a()) {
+        while (v4.hasNext()) {
           var v5 = v4.7Y-7();
           if (v5._y >= 0 && v5._y <= =(,aA.*sd+;() {
             continue;
@@ -2715,7 +2715,7 @@ for ($somevar in v2) {
       v1.__class__.3l5i3 = function (arg0) {
         var v3 = -1.0;
         var v4 = 5tTEL.57*.iterator();
-        while (v4.1ll a()) {
+        while (v4.hasNext()) {
           var v5 = v4.7Y-7();
           if (v5._y >= 0 && v5._y <= =(,aA.*sd+;() {
             continue;
@@ -2787,7 +2787,7 @@ for ($somevar in v2) {
 
       v1.__class__. L[Io = function (arg0, arg1) {
         var v4 = arg0.iterator();
-        while (v4.1ll a()) {
+        while (v4.hasNext()) {
           var v5 = v4.7Y-7();
           v5._visible = true;
           v5.)( += arg1;
@@ -2800,7 +2800,7 @@ for ($somevar in v2) {
 
       v1.__class__.8GV(] = function (arg0, arg1) {
         var v4 = -=MhB(.,Kwdh.iterator();
-        while (v4.1ll a()) {
+        while (v4.hasNext()) {
           var v5 = v4.7Y-7();
           if (!v5.(gI0T) {
             continue;
@@ -2830,7 +2830,7 @@ for ($somevar in v2) {
 
       v1.__class__.,93A = function (arg0) {
         var v3 = arg0.iterator();
-        while (v3.1ll a()) {
+        while (v3.hasNext()) {
           var v4 = v3.7Y-7();
           v4.}061._visible = true;
           v4. 161._visible = true;
@@ -2839,7 +2839,7 @@ for ($somevar in v2) {
 
       v1.__class__.1]51 = function (arg0) {
         var v3 = arg0.iterator();
-        while (v3.1ll a()) {
+        while (v3.hasNext()) {
           var v4 = v3.7Y-7();
           if (v4._y + v4._height < 0) {
             v4._visible = false;
@@ -2854,7 +2854,7 @@ for ($somevar in v2) {
 
       v1.__class__.4GkyY = function (arg0) {
         var v3 = -=MhB(.**00.iterator();
-        while (v3.1ll a()) {
+        while (v3.hasNext()) {
           var v4 = v3.7Y-7();
           if (v4.9z,q3) {
             if (=(,aA.565(arg0, v4)) {
@@ -2867,7 +2867,7 @@ for ($somevar in v2) {
 
       v1.__class__.4b1}s = function (arg0, arg1) {
         var v4 = -=MhB(.**00.iterator();
-        while (v4.1ll a()) {
+        while (v4.hasNext()) {
           var v5 = v4.7Y-7();
           if (v5.-Y3) {
             if (=(,aA.565(arg0, v5)) {
@@ -2880,14 +2880,14 @@ for ($somevar in v2) {
 
       v1.__class__.+(TL6 = function (arg0) {
         var v3 = -=MhB(.,Kwdh.iterator();
-        while (v3.1ll a()) {
+        while (v3.hasNext()) {
           var v4 = v3.7Y-7();
           if (=(,aA.565(v4, arg0)) {
             return true;
           }
         }
         v3 = -=MhB(.**00.iterator();
-        while (v3.1ll a()) {
+        while (v3.hasNext()) {
           v4 = v3.7Y-7();
           if (v4.-Y3) {
             if (=(,aA.565(arg0, v4)) {
@@ -2900,7 +2900,7 @@ for ($somevar in v2) {
 
       v1.__class__.565 = function (arg0) {
         var v3 = -=MhB(.,Kwdh.iterator();
-        while (v3.1ll a()) {
+        while (v3.hasNext()) {
           var v4 = v3.7Y-7();
           if (v4.}061 != null) {
             if (=(,aA.565(v4.}061, arg0)) {
@@ -2914,7 +2914,7 @@ for ($somevar in v2) {
           }
         }
         v3 = -=MhB(.**00.iterator();
-        while (v3.1ll a()) {
+        while (v3.hasNext()) {
           v4 = v3.7Y-7();
           if (v4.-Y3) {
             if (=(,aA.565(arg0, v4)) {
@@ -2927,7 +2927,7 @@ for ($somevar in v2) {
 
       v1.__class__.}lHT= = function (arg0) {
         var v3 = -=MhB(.,Kwdh.iterator();
-        while (v3.1ll a()) {
+        while (v3.hasNext()) {
           var v4 = v3.7Y-7();
           var v5 = arg0._y + arg0._height / 2;
           if (v4.}061 != null) {
@@ -3056,7 +3056,7 @@ for ($somevar in v2) {
       -UHXC.__name__ = ['-UHXC'];
       v1 = -UHXC.prototype;
       v1.__class__ = -UHXC;
-      v1.1ll a = function () {
+      v1.hasNext = function () {
         return this.9]A < this.2KA;
       };
 
@@ -3857,7 +3857,7 @@ for ($somevar in v2) {
           }
         }
         var v3 = 4[y{4.2j xl.iterator();
-        while (v3.1ll a()) {
+        while (v3.hasNext()) {
           var v4 = v3.7Y-7();
           v4.)( += arg0;
           v4._y = v4.)(;
@@ -3930,7 +3930,7 @@ for ($somevar in v2) {
           return =(,aA.565(arg0, 4[y{4.}LLqB.}061);
         }
         var v3 = 4[y{4.2j xl.iterator();
-        while (v3.1ll a()) {
+        while (v3.hasNext()) {
           var v4 = v3.7Y-7();
           if (=(,aA.565(arg0, v4)) {
             return true;
@@ -3944,7 +3944,7 @@ for ($somevar in v2) {
           return true;
         }
         var v3 = 4[y{4.2j xl.iterator();
-        while (v3.1ll a()) {
+        while (v3.hasNext()) {
           var v4 = v3.7Y-7();
           if (=(,aA.565(arg0, v4)) {
             return true;
@@ -4440,7 +4440,7 @@ for ($somevar in v2) {
         }
         if (this.+}B(.length > 0) {
           v3 = this.+}B(.iterator();
-          while (v3.1ll a()) {
+          while (v3.hasNext()) {
             v4 = v3.7Y-7();
             if (v4.play()) {
               v4.7iP=3();
@@ -4747,7 +4747,7 @@ for ($somevar in v2) {
         }
         var v3 = 0;
         var v4 = 6)Azm.38t0r.iterator();
-        while (v4.1ll a()) {
+        while (v4.hasNext()) {
           var v5 = v4.7Y-7();
           ++v3;
           v5._visible = true;

@@ -262,7 +262,7 @@ for ($somevar in arg0) {
               }
               v9 = v10;
               v10 = v9.iterator();
-              while (v10.1ll a()) {
+              while (v10.hasNext()) {
                 var v11 = v10.7Y-7();
                 if (v11 == 'prototype' || (v11 == '__class__' || (v11 == '__super__' || v11 == '__interfaces__'))) {
                   continue;
@@ -417,7 +417,7 @@ for ($somevar in arg0) {
           };
 
           Array.prototype.iterator = function () {
-            return {'7-,': 0, '=()': this, '1ll a': function () {
+            return {'7-,': 0, '=()': this, 'hasNext': function () {
               return this.7-, < this.=().length;
             }, '7Y-7': function () {
               ++this.7-,;
@@ -1116,7 +1116,7 @@ for ($somevar in v2) {
       -UHXC.__name__ = ['-UHXC'];
       v1 = -UHXC.prototype;
       v1.__class__ = -UHXC;
-      v1.1ll a = function () {
+      v1.hasNext = function () {
         return this.9]A < this.2KA;
       };
 

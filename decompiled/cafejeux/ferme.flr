@@ -489,7 +489,7 @@ for ($somevar in v2) {
           }
           var v14 = null;
           var v15 = v12.iterator();
-          while (v15.1ll a()) {
+          while (v15.hasNext()) {
             var v16 = v15.7Y-7();
             var v17 = v9 + v16[0];
             var v18 = v10 + v16[1];
@@ -1043,7 +1043,7 @@ for ($somevar in v2) {
     -UHXC.__name__ = ['-UHXC'];
     v1 = -UHXC.prototype;
     v1.__class__ = -UHXC;
-    v1.1ll a = function () {
+    v1.hasNext = function () {
       return this.9]A < this.2KA;
     };
 
@@ -1099,7 +1099,7 @@ for ($somevar in v2) {
     };
 
     v1.iterator = function () {
-      return {'1': this.1, '1ll a': function () {
+      return {'1': this.1, 'hasNext': function () {
         return this.1 != null;
       }, '7Y-7': function () {
         if (this.1 == null) {
@@ -1494,7 +1494,7 @@ for ($somevar in v2) {
     v1.0D 6 = function () {
       if (this.+}B(.length > 0) {
         var v2 = this.+}B(.iterator();
-        while (v2.1ll a()) {
+        while (v2.hasNext()) {
           var v3 = v2.7Y-7();
           if (v3.play()) {
             v3.7iP=3();
