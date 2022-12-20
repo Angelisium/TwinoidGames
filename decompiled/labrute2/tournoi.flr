@@ -785,7 +785,7 @@ for ($somevar in arg0) {
       return _global.unescape(arg0);
     };
 
-    v1.__class__.2*3q = function (arg0) {
+    v1.__class__.htmlEscape = function (arg0) {
       return (((((arg0.split('&')).join('&amp;')).split('<')).join('&lt;')).split('>')).join('&gt;');
     };
 

@@ -3018,7 +3018,7 @@ for ($somevar in v2) {
         this.-iB=.+Da3+._x += this.-iB=.+Da3+.textWidth * v4;
       }
       var v5 = '';
-      v5 += this.9rO]K('(' + (arg0.8m2E5.1T= + 1) + ')' + StringTools.2*3q(arg0.8m2E5.,D 7)) + '<br/>';
+      v5 += this.9rO]K('(' + (arg0.8m2E5.1T= + 1) + ')' + StringTools.htmlEscape(arg0.8m2E5.,D 7)) + '<br/>';
       v5 += }]zS.8iAmf[0] + ' : ' + this.9rO]K('' + arg0.8m2E5. fs9+) + '<br/>';
       v5 += }]zS.8iAmf[1] + ' : ' + this.9rO]K('' + arg0.8m2E5.)6,yz) + '<br/>';
       v5 += }]zS.8iAmf[2] + ' : ' + this.9rO]K('' + arg0.8m2E5.}Yax5) + '<br/>';
@@ -8964,7 +8964,7 @@ for ($somevar in arg0) {
       return _global.unescape(arg0);
     };
 
-    v1.__class__.2*3q = function (arg0) {
+    v1.__class__.htmlEscape = function (arg0) {
       return (((((arg0.split('&')).join('&amp;')).split('<')).join('&lt;')).split('>')).join('&gt;');
     };
 
