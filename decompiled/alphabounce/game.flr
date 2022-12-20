@@ -5446,7 +5446,7 @@ for ($somevar in arg0) {
         v6.font = '_sans';
         v3.setNewTextFormat(v6);
         v3.selectable = false;
-        v3.textColor = flash.Boot. p)sT;
+        v3.textColor = flash.Boot.def_color;
         v2.__trace_lines = new Array();
       }
       return v3;
@@ -5454,7 +5454,7 @@ for ($somevar in arg0) {
 
     flash.Boot.__set_trace_color = function (arg0) {
       (flash.Boot.getTrace()).textColor = arg0;
-      flash.Boot. p)sT = arg0;
+      flash.Boot.def_color = arg0;
     };
 
     flash.Boot.__trace = function (arg0, arg1) {
@@ -21836,7 +21836,7 @@ for ($somevar in this.__x.attributes) {
       (5.+Sk9H.[c4gL = 1;
       1X 7.(L-6.,C0[.5CbA1( = [[39219, 8819717, 9270028, 2387729], [4290289, 1001678, 800926, 1231782, 1025157, 820588, 15218959, 11020555, 6822406, 15916053, 14463242, 14463242, 8214820, 6046235, 9265617, 5910174, 4202864, 8618791, 6842400, 5592346], [16251610, 15726004, 16639182, 16569773, 15523790, 14534826, 14540984, 14540984, 13752223], [16711680, 16746496, 17629, 3398912]];
       (5.0yrML.1=JJM = 0;
-      flash.Boot. p)sT = 0;
+      flash.Boot.def_color = 0;
       flash.Boot.)Sdm5( = null;
       ,bV.)=R;3 = false;
       ,bV.*4]6M = 0;

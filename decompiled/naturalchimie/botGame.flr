@@ -6757,7 +6757,7 @@ for ($somevar in arg0) {
         v6.font = '_sans';
         v3.setNewTextFormat(v6);
         v3.selectable = false;
-        v3.textColor = flash.Boot. p)sT;
+        v3.textColor = flash.Boot.def_color;
         v2.__trace_lines = new Array();
       }
       return v3;
@@ -6765,7 +6765,7 @@ for ($somevar in arg0) {
 
     flash.Boot.__set_trace_color = function (arg0) {
       (flash.Boot.getTrace()).textColor = arg0;
-      flash.Boot. p)sT = arg0;
+      flash.Boot.def_color = arg0;
     };
 
     flash.Boot.__trace = function (arg0, arg1) {
@@ -18565,7 +18565,7 @@ for ($somevar in v2) {
       ({B6.{1[d (.0LFp ( = {'((': 222.0, ')(': 118.0};
       ({B6.{1[d (.]EbB[ = 1.2;
       ({B6.{1[d (.8h58L = 1.3;
-      flash.Boot. p)sT = 0;
+      flash.Boot.def_color = 0;
       flash.Boot.)Sdm5( = null;
       ;Ge3B.=sQ=M = ['L\'alchimie c\'est comme le saucisson, difficile de ne pas en reprendre une petite tranche.', 'Aventure, réflexion, suspense, sales blagues... Tout ça dans un seul jeu ! ', 'Naturalchimie, le jeu de réflexion qui ne donne pas mal à la tête !', 'Faire du sport c\'est bon pour la santé, Naturalchimie aussi !', 'Depuis que j\'ai essayé Naturalchimie, la vie est belle, le soleil brille et je suis à l\'aise en société !', 'Quitte à passer le temps sur internet, autant jouer à Naturalchimie.', 'Naturalchimie, c\'est aussi 250 recettes à collectionner pour combiner les éléments du jeu !', 'Assembler les éléments 3 par 3 ? Mmmmh, ça a l\'air facile...', 'Elu meilleur jeu web de l\'année par ses créateurs ! Oui messieurs dames !', 'Ici, un bel exemple de partie en cours. Avec un magnifique décor dans le fond et des éléments à assembler de toute beauté...', 'On est plus de 40 personnages dans ce jeu ! Mais franchement, c\'est moi le plus beau...', 'Répétez après moi : NA - TU - RAL - CHI - MIE ! ', 'Chagrin d\'amour ? Stress au travail ? Une petite partie de Naturalchimie et ça repart ! ', 'Joueur occasionnel ou pro des classements, on a de quoi satisfaire tout le monde !', 'En plus, l\'inscription est gratuite et super rapide.', 'Ras le bol de sauver des princesses et de tuer des monstres ? Essayez Naturalchimie ! ', 'Mais ! Qu\'est-ce que c\'est que toutes ces citrouilles ! ? ', 'Naturalchimie est envahi par des courges ! On a besoin de vous ! ', 'En ce moment dans Naturalchimie, révélez la courge qui est en vous ! ', 'Venez me retrouver en jeu, c\'est la fête des Courgesprits ! ', 'L\'hiver est arrivé... C\'est pas trop tôt !', 'Joyeux Noël à tous les alchimistes ! ', 'Venez faire le plein de surprises, en ce moment c\'est Noël !', 'Envie de balancer des boules de neige ? On a ce qu\'il faut !', 'Dites donc... Ca caille par ici, non ? '];
       ;Ge3B.]7rT1 = [{' IWA+': 0, 'text': ;Ge3B.=sQ=M[0]}, {' IWA+': 0, 'text': ;Ge3B.=sQ=M[1]}, {' IWA+': 0, 'text': ;Ge3B.=sQ=M[2]}, {' IWA+': 0, 'text': ;Ge3B.=sQ=M[3]}, {' IWA+': 1, 'text': ;Ge3B.=sQ=M[4]}, {' IWA+': 1, 'text': ;Ge3B.=sQ=M[5]}, {' IWA+': 1, 'text': ;Ge3B.=sQ=M[6]}, {' IWA+': 2, 'text': ;Ge3B.=sQ=M[7]}, {' IWA+': 2, 'text': ;Ge3B.=sQ=M[8]}, {' IWA+': 2, 'text': ;Ge3B.=sQ=M[9]}, {' IWA+': 3, 'text': ;Ge3B.=sQ=M[10]}, {' IWA+': 3, 'text': ;Ge3B.=sQ=M[11]}, {' IWA+': 3, 'text': ;Ge3B.=sQ=M[12]}, {' IWA+': 4, 'text': ;Ge3B.=sQ=M[13]}, {' IWA+': 4, 'text': ;Ge3B.=sQ=M[14]}, {' IWA+': 4, 'text': ;Ge3B.=sQ=M[15]}];

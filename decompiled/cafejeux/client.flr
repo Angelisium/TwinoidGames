@@ -4911,7 +4911,7 @@ for ($somevar in arg0) {
         v6.font = '_sans';
         v3.setNewTextFormat(v6);
         v3.selectable = false;
-        v3.textColor = flash.Boot. p)sT;
+        v3.textColor = flash.Boot.def_color;
         v2.__trace_lines = new Array();
       }
       return v3;
@@ -4919,7 +4919,7 @@ for ($somevar in arg0) {
 
     flash.Boot.__set_trace_color = function (arg0) {
       (flash.Boot.getTrace()).textColor = arg0;
-      flash.Boot. p)sT = arg0;
+      flash.Boot.def_color = arg0;
     };
 
     flash.Boot.__trace = function (arg0, arg1) {
@@ -5486,7 +5486,7 @@ for ($somevar in arg0) {
       0-I(H(.2d1K.2r2PJ = [{'{': _ChatCommand._Lol, '=rJ': ['lol', 'mdr']}, {'{': _ChatCommand._Yes, '=rJ': ['yes', 'oui', 'vi']}, {'{': _ChatCommand._No, '=rJ': ['no', 'non']}, {'{': _ChatCommand._Love, '=rJ': ['love', 'aime']}, {'{': _ChatCommand._Cry, '=rJ': ['cry', 'pleure']}, {'{': _ChatCommand._Out, '=rJ': ['out', 'sort', 'sors']}, {'{': _ChatCommand._Jump, '=rJ': ['jump', 'saute', 'hop']}, {'{': _ChatCommand._Happy, '=rJ': ['cool', 'content']}, {'{': _ChatCommand._Puke, '=rJ': ['puke', 'vomi']}, {'{': _ChatCommand._Fight, '=rJ': ['play', 'duel', 'defi', 'jouer']}, {'{': _ChatCommand._Angry, '=rJ': ['angry', 'enerve']}, {'{': _ChatCommand._Token, '=rJ': ['token', 'sucre']}];
       0-I(H(.2d1K.{j2qE = new Hash();
       0-I(H(.2d1K.00{h; = false;
-      flash.Boot. p)sT = 0;
+      flash.Boot.def_color = 0;
       flash.Boot.)Sdm5( = null;
       haxe.0JleF. Iy}Z.5xf4)( = new Hash();
       ;T2LY.init = ;kTEq.0D 6();

@@ -7238,7 +7238,7 @@ for ($somevar in arg0) {
           v6.font = '_sans';
           v3.setNewTextFormat(v6);
           v3.selectable = false;
-          v3.textColor = flash.Boot. p)sT;
+          v3.textColor = flash.Boot.def_color;
           v2.__trace_lines = new Array();
         }
         return v3;
@@ -7246,7 +7246,7 @@ for ($somevar in arg0) {
 
       flash.Boot.__set_trace_color = function (arg0) {
         (flash.Boot.getTrace()).textColor = arg0;
-        flash.Boot. p)sT = arg0;
+        flash.Boot.def_color = arg0;
       };
 
       flash.Boot.__trace = function (arg0, arg1) {
@@ -7559,7 +7559,7 @@ for ($somevar in arg0) {
         1mZML.,) = 22;
         1mZML.0q = 5;
         1mZML.]x9sF = =(,aA.*sd+;( - (1mZML.0q + 1mZML.[gqwG * =(,aA.}18*w);
-        flash.Boot. p)sT = 0;
+        flash.Boot.def_color = 0;
         flash.Boot.)Sdm5( = null;
       }
       catch (flash.Boot) {
