@@ -1746,7 +1746,7 @@ movie '1b231b4ad4c7e00ab5ebb9524ac1036a.swf' {
         this.5Hy6b(=3+P.-ja);
         this.8D5}=((1);
         if (=3+P.3ya+7) {
-          var v4 = {'onMouseDown': 3Wt.6{VYR(this, '*Ri*3('), 'onMouseUp': null, 'onMouseWheel': null, 'onMouseMove': null};
+          var v4 = {'onMouseDown': 3Wt.callback(this, '*Ri*3('), 'onMouseUp': null, 'onMouseWheel': null, 'onMouseMove': null};
           Mouse.addListener(v4);
         }
         this.{+Sn=();
@@ -2698,7 +2698,7 @@ movie '1b231b4ad4c7e00ab5ebb9524ac1036a.swf' {
         this.=QK+A( = [this.(KA._x + 300];
         this.4,01 = new =3+P(this.6QA.*=_p_(')+jEC', 44{N.-hCnb));
         this.]4h9;(();
-        var v3 = {'onMouseDown': null, 'onMouseUp': null, 'onMouseWheel': null, 'onMouseMove': 3Wt.6{VYR(this, '5 drP')};
+        var v3 = {'onMouseDown': null, 'onMouseUp': null, 'onMouseWheel': null, 'onMouseMove': 3Wt.callback(this, '5 drP')};
         Mouse.addListener(v3);
         this.47i1Z(0, 270, 1000);
         this.47i1Z(*r.=OA * 2, 200, 1000);

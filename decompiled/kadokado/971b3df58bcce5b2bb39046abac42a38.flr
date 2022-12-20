@@ -153,8 +153,8 @@ movie '971b3df58bcce5b2bb39046abac42a38.swf' {
         this.8+C5 = false;
         this.;+ = this.]}lAm.*=_p_(';+', =(,aA.3d0fx);
         this.1oRh(( = this.]}lAm.*=_p_('1oRh((', =(,aA.0[lh]);
-        this.;+.onMouseMove = 3Wt.6{VYR(this, 'onMouseMove');
-        this.;+.onMouseDown = 3Wt.6{VYR(this, '}0J7f');
+        this.;+.onMouseMove = 3Wt.callback(this, 'onMouseMove');
+        this.;+.onMouseDown = 3Wt.callback(this, '}0J7f');
         this.;+.onRelease = function () {};
 
         this.;+.useHandCursor = false;

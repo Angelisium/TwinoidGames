@@ -173,7 +173,7 @@ movie 'loader_web.swf' {
             return (;
           };
 
-          this.3Wt.6{VYR = function (8, -) {
+          this.3Wt.callback = function (8, -) {
             if (arguments.length == 2) {
               return function () {
                 return 8[-].apply(8, arguments);

@@ -293,7 +293,7 @@ movie '7f0fdc05bec1dbd7342ea56d05df3da3.swf' {
           case 0:
             if (this.)( > *r.+-(0.9I) {
               this.1o8jJ = new (6IbI((this);
-              this.1o8jJ.*YT,T = 3Wt.6{VYR(this, '(v+');
+              this.1o8jJ.*YT,T = 3Wt.callback(this, '(v+');
               this.=kIA = 1;
             }
             var v3 = 3ZAK.{Cs * 2;
@@ -950,7 +950,7 @@ movie '7f0fdc05bec1dbd7342ea56d05df3da3.swf' {
             this.(KpGn = 0.5;
             this.(( = *r.2K(=3+P.{Cs + 3, this.((, *r.=OA - (=3+P.{Cs + 3));
             this.1o8jJ = new (6IbI((this);
-            this.1o8jJ.*YT,T = 3Wt.6{VYR(this, '(v+');
+            this.1o8jJ.*YT,T = 3Wt.callback(this, '(v+');
             this.-iB=.gotoAndStop('2');
             break;
           case 1:
@@ -2038,7 +2038,7 @@ movie '7f0fdc05bec1dbd7342ea56d05df3da3.swf' {
       };
 
       v1.9t1r1 = function () {
-        var v2 = {'onKeyDown': 3Wt.6{VYR(this, ']668C('), 'onKeyUp': 3Wt.6{VYR(this, '=(D=5')};
+        var v2 = {'onKeyDown': 3Wt.callback(this, ']668C('), 'onKeyUp': 3Wt.callback(this, '=(D=5')};
         Key.addListener(v2);
       };
 

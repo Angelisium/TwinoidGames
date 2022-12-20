@@ -1059,7 +1059,7 @@ movie '851d9b943a4b733ec5c03dd833c5f914.swf' {
       638J extends ,v0X;
       v1 = 638J.prototype;
       v1.4wC-a = function () {
-        var v2 = {'onMouseDown': 3Wt.6{VYR(this, ',+eiP'), 'onMouseUp': 3Wt.6{VYR(this, '7 +L'), 'onMouseMove': null, 'onMouseWheel': null};
+        var v2 = {'onMouseDown': 3Wt.callback(this, ',+eiP'), 'onMouseUp': 3Wt.callback(this, '7 +L'), 'onMouseMove': null, 'onMouseWheel': null};
         Mouse.addListener(v2);
       };
 

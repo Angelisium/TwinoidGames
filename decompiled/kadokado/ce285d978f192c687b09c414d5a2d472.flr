@@ -859,10 +859,10 @@ movie 'ce285d978f192c687b09c414d5a2d472.swf' {
               if (v11 != null) {
                 var v12 = v11._currentframe - 1;
                 this.-NJ[v12].push({'((': v9, ')(': v10});
-                v11.onPress = 3Wt.6{VYR(this, '==Uf7', v12);
-                v11.onRollOver = 3Wt.6{VYR(this, '{u+gg', v12);
-                v11.onRollOut = 3Wt.6{VYR(this, '{-nK,(', v12);
-                v11.onDragOut = 3Wt.6{VYR(this, '{-nK,(', v12);
+                v11.onPress = 3Wt.callback(this, '==Uf7', v12);
+                v11.onRollOver = 3Wt.callback(this, '{u+gg', v12);
+                v11.onRollOut = 3Wt.callback(this, '{-nK,(', v12);
+                v11.onDragOut = 3Wt.callback(this, '{-nK,(', v12);
                 v11.useHandCursor = true;
                 ;ndCG.7vdL6((v11);
               }

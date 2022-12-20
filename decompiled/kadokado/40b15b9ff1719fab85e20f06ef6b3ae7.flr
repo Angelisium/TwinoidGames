@@ -2913,7 +2913,7 @@ movie '40b15b9ff1719fab85e20f06ef6b3ae7.swf' {
 
       v1 = 44{N.prototype;
       v1.9t1r1 = function () {
-        var v2 = {'onKeyDown': 3Wt.6{VYR(this, ']668C('), 'onKeyUp': 3Wt.6{VYR(this, '=(D=5')};
+        var v2 = {'onKeyDown': 3Wt.callback(this, ']668C('), 'onKeyUp': 3Wt.callback(this, '=(D=5')};
         Key.addListener(v2);
       };
 

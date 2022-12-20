@@ -603,8 +603,8 @@ movie '3d45c1bc1d5c179b1d68cb37c9d4718d.swf' {
         v7._y = 150;
         v7.cacheAsBitmap = true;
         this.-_X}5 = {'$l': 0, '$s': 0, '$k': [0, 0, 0], '$m': [0, 0, 0], '$g': []};
-        -iB=.onRelease = 3Wt.6{VYR(this, ';8,PR', 3Wt.6{VYR(this, ' (sy3'), null);
-        -iB=.onMouseMove = 3Wt.6{VYR(this, ';8,PR', 3Wt.6{VYR(this, '6bFR)'), 3Wt.6{VYR(this, ',-VB}'));
+        -iB=.onRelease = 3Wt.callback(this, ';8,PR', 3Wt.callback(this, ' (sy3'), null);
+        -iB=.onMouseMove = 3Wt.callback(this, ';8,PR', 3Wt.callback(this, '6bFR)'), 3Wt.callback(this, ',-VB}'));
         -iB=.useHandCursor = false;
         ;ndCG.7vdL6((-iB=);
       };

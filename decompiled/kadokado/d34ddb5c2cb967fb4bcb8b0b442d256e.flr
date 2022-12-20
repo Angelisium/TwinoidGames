@@ -1352,9 +1352,9 @@ movie 'd34ddb5c2cb967fb4bcb8b0b442d256e.swf' {
         v2.6GhvX = 0.15;
         v2.-fRSr = true;
         v2.86{p( = [3];
-        v2.58I]G( = 3Wt.6{VYR(v2, '8CQie', 20, *r.=OA - 20, 30, 190);
+        v2.58I]G( = 3Wt.callback(v2, '8CQie', 20, *r.=OA - 20, 30, 190);
         v2.58I]G(();
-        v2.}h4kf = 3Wt.6{VYR(v2, ',Q]l*');
+        v2.}h4kf = 3Wt.callback(v2, ',Q]l*');
         ++ p3z=.{6(;
       };
 
@@ -3813,7 +3813,7 @@ movie 'd34ddb5c2cb967fb4bcb8b0b442d256e.swf' {
       };
 
       v1.9t1r1 = function () {
-        var v2 = {'onKeyDown': 3Wt.6{VYR(this, ']668C('), 'onKeyUp': 3Wt.6{VYR(this, '=(D=5')};
+        var v2 = {'onKeyDown': 3Wt.callback(this, ']668C('), 'onKeyUp': 3Wt.callback(this, '=(D=5')};
         Key.addListener(v2);
       };
 

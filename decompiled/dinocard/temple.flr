@@ -589,8 +589,8 @@ movie 'temple.swf' {
         v6._x = 394;
         v6._y = *r.*OA;
         this.,L1T0 = v6;
-        this.,L1T0.-_.onPress = 3Wt.6{VYR(this, '19Y}Y', -1);
-        this.,L1T0.8WD+.onPress = 3Wt.6{VYR(this, '19Y}Y', 1);
+        this.,L1T0.-_.onPress = 3Wt.callback(this, '19Y}Y', -1);
+        this.,L1T0.8WD+.onPress = 3Wt.callback(this, '19Y}Y', 1);
         this.}po*B = this.32.18wU*(44{N.-2Isb);
         this.9Z+ = new +7U K(this.}po*B);
       };
@@ -627,7 +627,7 @@ movie 'temple.swf' {
             *r.log('Chargement des données...', 4);
             this.,aJ = new LoadVars();
             this.,aJ.sendAndLoad(this.]}mv, this.,aJ, '_self');
-            this.,aJ.onData = 3Wt.6{VYR(this, ')eESI(');
+            this.,aJ.onData = 3Wt.callback(this, ')eESI(');
             this.},Dx- = 0;
             this.4[K{k = [0, 0];
             break;
@@ -1057,7 +1057,7 @@ movie 'temple.swf' {
       };
 
       v1.9t1r1 = function () {
-        this.{F = {'onKeyDown': 3Wt.6{VYR(this, ']668C('), 'onKeyUp': 3Wt.6{VYR(this, '=(D=5')};
+        this.{F = {'onKeyDown': 3Wt.callback(this, ']668C('), 'onKeyUp': 3Wt.callback(this, '=(D=5')};
         Key.addListener(this.{F);
       };
 
@@ -1102,7 +1102,7 @@ movie 'temple.swf' {
       v1.=(D=5 = function () {};
 
       v1.()Gin = function () {
-        this.1K = {'onMouseDown': 3Wt.6{VYR(this, '=*3Q3'), 'onMouseUp': 3Wt.6{VYR(this, '47B}+('), 'onMouseWheel': null, 'onMouseMove': null};
+        this.1K = {'onMouseDown': 3Wt.callback(this, '=*3Q3'), 'onMouseUp': 3Wt.callback(this, '47B}+('), 'onMouseWheel': null, 'onMouseMove': null};
         Mouse.addListener(this.1K);
       };
 
@@ -1121,7 +1121,7 @@ movie 'temple.swf' {
           if (!this.)w9v) {
             this.,L1T0.[PAv.stop();
           }
-          this.,L1T0.7[*.onPress = 3Wt.6{VYR(this, '={LqH');
+          this.,L1T0.7[*.onPress = 3Wt.callback(this, '={LqH');
         } else {
           this.,L1T0.gotoAndStop('1');
           var v2 = 0;
@@ -1141,8 +1141,8 @@ movie 'temple.swf' {
         }J.useHandCursor = false;
         var v6 = }J.onRollOver;
         var v7 = }J.onRollOut;
-        }J.onRollOver = 3Wt.6{VYR(this, '9sVu6', =rJ, +Y, ,Y, v6);
-        }J.onRollOut = 3Wt.6{VYR(this, '=fxsG(', v7);
+        }J.onRollOver = 3Wt.callback(this, '9sVu6', =rJ, +Y, ,Y, v6);
+        }J.onRollOut = 3Wt.callback(this, '=fxsG(', v7);
         }J.onDragOut = }J.onRollOut;
         }J.}_AQE( = v6;
         }J.+f3D3 = v7;
@@ -1380,7 +1380,7 @@ movie 'temple.swf' {
           var v11 = v2.*=_p_('=T2zQ', 0);
           v11._x = 145;
           v11._y = 348 + v10 * 18;
-          v11.7[*.onPress = 3Wt.6{VYR(this, '8j)96', v10);
+          v11.7[*.onPress = 3Wt.callback(this, '8j)96', v10);
           v11.+Da3+.text = v9[v10];
         }
       };
@@ -2082,7 +2082,7 @@ movie 'temple.swf' {
       };
 
       v1.[Yq*b = function () {
-        this.*oH(.onPress = 3Wt.6{VYR(this, '=lOt6');
+        this.*oH(.onPress = 3Wt.callback(this, '=lOt6');
         this.*oH(.useHandCursor = false;
       };
 
@@ -2099,7 +2099,7 @@ movie 'temple.swf' {
           return undefined;
         }
         *r.+-(0.7RmoT(50);
-        *r.+-(0.3mF+D.onPress = 3Wt.6{VYR(this, ']]qrG(');
+        *r.+-(0.3mF+D.onPress = 3Wt.callback(this, ']]qrG(');
         this.9ap4b = new =i{J(null);
         this.9ap4b.3BjX_(200);
         this.9ap4b. (zm5(this.*B);
@@ -2151,8 +2151,8 @@ movie 'temple.swf' {
           v11.8jbu6();
           this.9ap4b.4u=dZ();
           v11.3tVka();
-          v11.6u -.;+.onRollOver = 3Wt.6{VYR(this, ',U0[N', v11);
-          v11.6u -.;+.onRollOut = 3Wt.6{VYR(this, ' CMx*', v11);
+          v11.6u -.;+.onRollOver = 3Wt.callback(this, ',U0[N', v11);
+          v11.6u -.;+.onRollOut = 3Wt.callback(this, ' CMx*', v11);
           v11.6u -.;+.onDragOut = v11.6u -.;+.onRollOut;
           *r.+-(0.32.+2NA(v11.-iB=, 44{N.841,4);
           *r.+-(0.=)x1b.remove(this.9ap4b);
@@ -2190,9 +2190,9 @@ movie 'temple.swf' {
             var v19 = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 2];
             var v20 = ['ajouter à vos recherches', 'je veux cette carte!', 'j\'en rêve la nuit...'][v19[3Wt.random(v19.length)]];
             v18.+Da3+.text = ['voir la carte sur le site', v20][v17];
-            v18.7[*.onRelease = 3Wt.6{VYR(this, '18(5S');
+            v18.7[*.onRelease = 3Wt.callback(this, '18(5S');
             if (v17 == 1) {
-              v18.7[*.onRelease = 3Wt.6{VYR(this, '[-*}E', v18);
+              v18.7[*.onRelease = 3Wt.callback(this, '[-*}E', v18);
             }
             v18.filters = [v15];
             this.2L+nR.push(v18);
@@ -2251,7 +2251,7 @@ movie 'temple.swf' {
                   }
                   var v6 = '<a href="asfunction:catchLink,' + this.6bmV*([v4] + '">' + v5.$name + '</a>';
                   v2 += *r.2+Jy_(*r. EkTS(v6, '#880000'));
-                  this.6u -.catchLink = 3Wt.6{VYR(this, 'catchLink');
+                  this.6u -.catchLink = 3Wt.callback(this, 'catchLink');
                   break;
                 case 2:
                   if (v2 != '') {
@@ -4980,9 +4980,9 @@ movie 'temple.swf' {
 
       *r.=Yz ] = function (}J) {
         var v3 = new MovieClipLoader();
-        v3.onLoadComplete = 3Wt.6{VYR(*r, '6GIej');
-        v3.onLoadInit = 3Wt.6{VYR(*r, '6GIej');
-        v3.onLoadError = 3Wt.6{VYR(*r, '5OBI;(');
+        v3.onLoadComplete = 3Wt.callback(*r, '6GIej');
+        v3.onLoadInit = 3Wt.callback(*r, '6GIej');
+        v3.onLoadError = 3Wt.callback(*r, '5OBI;(');
         v3.loadClip('http://data.dinocard.net/swf/avatar.swf', }J.}CL);
       };
 
@@ -6157,7 +6157,7 @@ movie 'temple.swf' {
                 return (;
               };
 
-              this.3Wt.6{VYR = function (8, -) {
+              this.3Wt.callback = function (8, -) {
                 if (arguments.length == 2) {
                   return function () {
                     return 8[-].apply(8, arguments);

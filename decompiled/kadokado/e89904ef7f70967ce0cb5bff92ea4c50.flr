@@ -244,7 +244,7 @@ movie 'e89904ef7f70967ce0cb5bff92ea4c50.swf' {
         this.1o8jJ = new (6IbI((this);
         this.1o8jJ.+{eA+ = 0.5;
         this.1o8jJ.[7qyn(8A1t=.{Cs, 4);
-        this.1o8jJ.09uM1( = 3Wt.6{VYR(this, '09uM1(');
+        this.1o8jJ.09uM1( = 3Wt.callback(this, '09uM1(');
         this.9O*r = 0;
         this.=kIA = 1;
         this.]9xe=((5, 30);
@@ -1705,7 +1705,7 @@ movie 'e89904ef7f70967ce0cb5bff92ea4c50.swf' {
       };
 
       v1.9t1r1 = function () {
-        var v2 = {'onKeyDown': 3Wt.6{VYR(this, ']668C('), 'onKeyUp': 3Wt.6{VYR(this, '=(D=5')};
+        var v2 = {'onKeyDown': 3Wt.callback(this, ']668C('), 'onKeyUp': 3Wt.callback(this, '=(D=5')};
         Key.addListener(v2);
       };
 
@@ -1820,8 +1820,8 @@ movie 'e89904ef7f70967ce0cb5bff92ea4c50.swf' {
         this.1o8jJ = new (6IbI((this);
         this.1o8jJ.+{eA+ = 0.5;
         this.1o8jJ.[7qyn(2e{I.{Cs, 16);
-        this.1o8jJ.-w2c;( = 3Wt.6{VYR(this, '}1=G9');
-        this.1o8jJ.=Ua)Z = 3Wt.6{VYR(this, '2EGlI(');
+        this.1o8jJ.-w2c;( = 3Wt.callback(this, '}1=G9');
+        this.1o8jJ.=Ua)Z = 3Wt.callback(this, '2EGlI(');
         this.+h9IY();
       };
 

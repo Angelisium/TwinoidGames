@@ -79,21 +79,21 @@ movie 'loader.swf' {
       };
 
       v1.)9Uid = function () {
-        3Wt.setGlobal('4[=)_', 3Wt.6{VYR(this, '4[=)_'));
-        3Wt.setGlobal('(x5W-(', 3Wt.6{VYR(this, '(x5W-('));
-        3Wt.setGlobal('(,3G,(', 3Wt.6{VYR(this, '(,3G,('));
-        3Wt.setGlobal(',{nF;', 3Wt.6{VYR(this, ',{nF;'));
+        3Wt.setGlobal('4[=)_', 3Wt.callback(this, '4[=)_'));
+        3Wt.setGlobal('(x5W-(', 3Wt.callback(this, '(x5W-('));
+        3Wt.setGlobal('(,3G,(', 3Wt.callback(this, '(,3G,('));
+        3Wt.setGlobal(',{nF;', 3Wt.callback(this, ',{nF;'));
         this.=FDiF( = 3Wt.getVar(this.+-(0, '980Sb');
         this.=FDiF(.}-B2(this.+-(0);
         if (Loader.+0vHq == '') {
           this.=FDiF(.5nD)Y();
         }
-        this.0D 6 = 3Wt.6{VYR(this, '(30Y2');
+        this.0D 6 = 3Wt.callback(this, '(30Y2');
       };
 
       v1.4[=)_ = function () {
         this.)3 =h.removeMovieClip();
-        this.0D 6 = 3Wt.6{VYR(this, '(R6pe');
+        this.0D 6 = 3Wt.callback(this, '(R6pe');
       };
 
       v1.(,3G,( = function (}mMDB) {
@@ -721,7 +721,7 @@ movie 'loader.swf' {
                 return (;
               };
 
-              this.3Wt.6{VYR = function (8, -) {
+              this.3Wt.callback = function (8, -) {
                 if (arguments.length == 2) {
                   return function () {
                     return 8[-].apply(8, arguments);

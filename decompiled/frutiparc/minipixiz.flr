@@ -1624,7 +1624,7 @@ movie 'minipixiz.swf' {
                 return (;
               };
 
-              this.3Wt.6{VYR = function (8, -) {
+              this.3Wt.callback = function (8, -) {
                 if (arguments.length == 2) {
                   return function () {
                     return 8[-].apply(8, arguments);
@@ -1958,7 +1958,7 @@ movie 'minipixiz.swf' {
         }J.gotoAndStop('1');
       };
 
-      }J.7[*.onPress = 3Wt.6{VYR(this, '(]K;');
+      }J.7[*.onPress = 3Wt.callback(this, '(]K;');
       }J.7[*.onDragOut = }J.7[*.onRollOut;
       this.3mweR = }J;
     };
@@ -1972,7 +1972,7 @@ movie 'minipixiz.swf' {
       this.)4}]J(._y = *r.*OA * 0.5;
       this.)4}]J(.+Da3+.text = [QL;
       this.)4}]J(.+Da3+._y = -(10 + this.)4}]J(.+Da3+.textHeight * 0.5);
-      this.)4}]J(.9M.onPress = 3Wt.6{VYR(this, '+nd{O');
+      this.)4}]J(.9M.onPress = 3Wt.callback(this, '+nd{O');
     };
 
     ;;6[.prototype.+nd{O = function () {
@@ -2078,7 +2078,7 @@ movie 'minipixiz.swf' {
         v2._x = this.,qE._x;
         v2._y = this.,qE._y + v3 * 25;
         v2.3_DN9.text = v4[v3];
-        v2.7[*.onPress = 3Wt.6{VYR(this, '6MfSD(', v3);
+        v2.7[*.onPress = 3Wt.callback(this, '6MfSD(', v3);
         73(.(mcVC((v2.(,, }]zS.*[A_I[v3], 100);
         v2.(,.useHandCursor = false;
         this.,PDs0.push(v2);
@@ -2088,7 +2088,7 @@ movie 'minipixiz.swf' {
 
     (izm (.prototype.4wC-a = function () {
       this.,qE.}KMv1.stop();
-      this.,qE.}KMv1.onPress = 3Wt.6{VYR(this, ',F8dJ');
+      this.,qE.}KMv1.onPress = 3Wt.callback(this, ',F8dJ');
       73(.(mcVC((this.,qE.}KMv1, }]zS.*[A_I[5], 110);
     };
 
@@ -2207,7 +2207,7 @@ movie 'minipixiz.swf' {
         var v2 = this.,PDs0[2];
         v2.46BD9.text = '??? ';
         this.{F = new 25epF.5,__9(();
-        this.{F.onKeyDown = 3Wt.6{VYR(this, 'keyPress');
+        this.{F.onKeyDown = 3Wt.callback(this, 'keyPress');
         this.{F.onKeyUp = null;
         Key.addListener(this.{F);
       }
@@ -3595,11 +3595,11 @@ movie 'minipixiz.swf' {
           }
           var v5 = this.96.*7.$spellCoef[v3];
           v2.7[*._x = (_EN.8y65d + (v5 / 10 - 1) * 58;
-          v2.7[*.onRollOver = 3Wt.6{VYR(this, '2n,x5(', (1HdIL.7RY5h(v3)).8u,1a());
-          v2.7[*.onRollOut = 3Wt.6{VYR(this, '4)Xwk');
+          v2.7[*.onRollOver = 3Wt.callback(this, '2n,x5(', (1HdIL.7RY5h(v3)).8u,1a());
+          v2.7[*.onRollOut = 3Wt.callback(this, '4)Xwk');
           this.7Qe;6.push(v2);
           v6 += v8;
-          v2.+(*.onPress = 3Wt.6{VYR(this, ' }D}A(', v2);
+          v2.+(*.onPress = 3Wt.callback(this, ' }D}A(', v2);
         }
         ++v4;
       }
@@ -6878,7 +6878,7 @@ movie 'minipixiz.swf' {
         v2.+Da3+.text = v4;
         v2. 5(}1.text = }]zS.6 ss(([v3];
         v2.gotoAndStop(String(1 + v3));
-        v2.onPress = 3Wt.6{VYR(this, '0S2L;', v4 - 1);
+        v2.onPress = 3Wt.callback(this, '0S2L;', v4 - 1);
         v5 += 108;
         ++v3;
       }
@@ -7304,9 +7304,9 @@ movie 'minipixiz.swf' {
     };
 
     1Q*U.prototype.4FSEL( = function (}J, name) {
-      }J.onRollOver = 3Wt.6{VYR(this, ']1*Fa', name);
-      }J.onRollOut = 3Wt.6{VYR(this, '6E4aK', name);
-      }J.onDragOut = 3Wt.6{VYR(this, '6E4aK', name);
+      }J.onRollOver = 3Wt.callback(this, ']1*Fa', name);
+      }J.onRollOut = 3Wt.callback(this, '6E4aK', name);
+      }J.onDragOut = 3Wt.callback(this, '6E4aK', name);
     };
 
     1Q*U.prototype.1Y=AH( = function (}J, 5P55) {
@@ -7355,7 +7355,7 @@ movie 'minipixiz.swf' {
       this.)HQY2( = this.32.*=_p_('3Kh*', 1Q*U.9uFmb);
       this.)HQY2(.]xii) = 0;
       this.)HQY2(._x = *r.=OA;
-      this.)HQY2(.onPress = 3Wt.6{VYR(this, ']J g-(');
+      this.)HQY2(.onPress = 3Wt.callback(this, ']J g-(');
     };
 
     1Q*U.prototype.87vE7( = function () {
@@ -7464,7 +7464,7 @@ movie 'minipixiz.swf' {
         ++v4;
       }
       this.;3zP7(.+Da3+.htmlText = v6;
-      this.;3zP7(.;xD.onPress = 3Wt.6{VYR(this, '0OaQ8');
+      this.;3zP7(.;xD.onPress = 3Wt.callback(this, '0OaQ8');
       this.;3zP7(.*4MSJ(.onPress = function () {};
 
       this.;3zP7(.*4MSJ(.useHandCursor = false;
@@ -7537,7 +7537,7 @@ movie 'minipixiz.swf' {
       var v2 = 0;
       while (v2 < v4.length) {
         var v3 = this.-2.32.*=_p_('-*jk4(', 1);
-        v3.onPress = 3Wt.6{VYR(this, '0BjVW', v4[v2]);
+        v3.onPress = 3Wt.callback(this, '0BjVW', v4[v2]);
         v3.gotoAndStop(String(v4[v2] + 1));
         v3._x = 4 + v2 * 18;
         ++v2;
@@ -7639,7 +7639,7 @@ movie 'minipixiz.swf' {
               v5 = 0;
               ++v9;
             }
-            v2.onPress = 3Wt.6{VYR(this, ';TP*a', v3, v7);
+            v2.onPress = 3Wt.callback(this, ';TP*a', v3, v7);
           }
         }
         ++v3;
@@ -9642,7 +9642,7 @@ movie 'minipixiz.swf' {
 
     7 (EQ.prototype.7iag[ = function () {
       var }J = this.32.*=_p_('0*nk*(', 7 (EQ.841,4);
-      }J.onPress = 3Wt.6{VYR(this, ']+Sa6');
+      }J.onPress = 3Wt.callback(this, ']+Sa6');
       }J.onRollOver = function () {
         }J.gotoAndStop('2');
       };
@@ -9832,7 +9832,7 @@ movie 'minipixiz.swf' {
       this.2k-49( = this.32.*=_p_('+9K}6', 7 (EQ. D3fA);
       this.2k-49(._x = 200;
       this.2k-49(._y = 41;
-      this.2k-49(.4,F.onPress = 3Wt.6{VYR(this, 'giveItem');
+      this.2k-49(.4,F.onPress = 3Wt.callback(this, 'giveItem');
       var v2 = ]q.12TRg();
       this.3*qqP(v2);
       73(.(mcVC((this.2k-49(.4,F, 'Pour nourrir une fée, amenez des aliments ici', 100);
@@ -10057,7 +10057,7 @@ movie 'minipixiz.swf' {
     7 (EQ.prototype.4MZPC = function () {
       var v2 = ]q.12TRg();
       this.]uoe;(('Voulez vous rendre sa liberte a ' + v2.*7.$name + ' ?');
-      this.)4}]J(.)IS.onPress = 3Wt.6{VYR(this, '*COd;(');
+      this.)4}]J(.)IS.onPress = 3Wt.callback(this, '*COd;(');
     };
 
     7 (EQ.prototype.*COd;( = function () {
@@ -12873,11 +12873,11 @@ movie 'minipixiz.swf' {
         v2.3_DN9.text = this.}]pv-[v3].$name;
         v2.stop();
         v2.*B = v3;
-        v2.4N*.onPress = 3Wt.6{VYR(this, '9NyTh', v2);
+        v2.4N*.onPress = 3Wt.callback(this, '9NyTh', v2);
         this.[YX;N[v3] = false;
         ++v3;
       }
-      this.[-Z0+(.onPress = 3Wt.6{VYR(this, '(xu,m');
+      this.[-Z0+(.onPress = 3Wt.callback(this, '(xu,m');
     };
 
     ]cgl7.prototype.9NyTh = function (}J) {
@@ -15813,7 +15813,7 @@ movie 'minipixiz.swf' {
     8]*V.prototype.5gqnN = function () {
       ;;6[.prototype.5gqnN.call(this);
       this.4Q8gO();
-      this.3mweR.onPress = 3Wt.6{VYR(this, '3fQmK(');
+      this.3mweR.onPress = 3Wt.callback(this, '3fQmK(');
     };
 
     8]*V.prototype.87vE7( = function () {

@@ -118,9 +118,9 @@ movie 'd94d005c7885a1c7efc7f9626c3e7459.swf' {
       };
 
       *r.;_]M{ = function (}J) {
-        }J.onRollOut = 3Wt.6{VYR(}J, 'gotoAndStop', '1');
-        }J.onRollOver = 3Wt.6{VYR(}J, 'gotoAndStop', '2');
-        }J.onPress = 3Wt.6{VYR(}J, 'gotoAndStop', '3');
+        }J.onRollOut = 3Wt.callback(}J, 'gotoAndStop', '1');
+        }J.onRollOver = 3Wt.callback(}J, 'gotoAndStop', '2');
+        }J.onPress = 3Wt.callback(}J, 'gotoAndStop', '3');
         }J.onRelease = }J.onRollOver;
         }J.onReleaseOutside = }J.onRollOut;
         }J.onDragOver = }J.onRollOver;
@@ -278,7 +278,7 @@ movie 'd94d005c7885a1c7efc7f9626c3e7459.swf' {
             this.8}9dy = this.32.*=_p_('8}9dy', 4);
             this.8}9dy._alpha = 0;
             *r.;_]M{(this.8}9dy.7bJ);
-            this.8}9dy.7bJ.onPress = 3Wt.6{VYR(this, ']KUcb');
+            this.8}9dy.7bJ.onPress = 3Wt.callback(this, ']KUcb');
             ;ndCG.7vdL6((this.8}9dy.7bJ);
           } else {
             if (this.8}9dy._alpha < 100) {
@@ -423,7 +423,7 @@ movie 'd94d005c7885a1c7efc7f9626c3e7459.swf' {
         v8.(t}]((true);
         v8.-iB=._x = *r.=OA + 50;
         v8.-iB=._y = 44{N.-Wa[ * 2.5;
-        v8.-iB=.onPress = 3Wt.6{VYR(this, '9Q[dO', v8);
+        v8.-iB=.onPress = 3Wt.callback(this, '9Q[dO', v8);
         ;ndCG.7vdL6((v8.-iB=);
         this.4Smmb.push(v8);
       };
@@ -532,7 +532,7 @@ movie 'd94d005c7885a1c7efc7f9626c3e7459.swf' {
                 if (v7 >= v5.length) break;
                 var v8 = v5[v7];
                 v8.}J = this.}Spf3((v8.(( + v2, v8.)( + v3, v8.7, v8.[);
-                v8.}J.onPress = 3Wt.6{VYR(this, '0e}f8', v6);
+                v8.}J.onPress = 3Wt.callback(this, '0e}f8', v6);
                 ;ndCG.7vdL6((v8.}J);
                 v8.}J.26D- = v6;
               }
@@ -577,7 +577,7 @@ movie 'd94d005c7885a1c7efc7f9626c3e7459.swf' {
           if (v6 >= this.=} 1.list.length) break;
           var v7 = this.=} 1.list[v6];
           v7.}J = this.}Spf3((v7.(( + ((, v7.)( + )(, v7.7, v7.[);
-          v7.}J.onPress = 3Wt.6{VYR(this, '0e}f8', v5);
+          v7.}J.onPress = 3Wt.callback(this, '0e}f8', v5);
           ;ndCG.7vdL6((v7.}J);
           v7.}J.26D- = v5;
         }

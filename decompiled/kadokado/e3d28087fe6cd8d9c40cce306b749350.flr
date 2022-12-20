@@ -236,7 +236,7 @@ movie 'e3d28087fe6cd8d9c40cce306b749350.swf' {
         this.}2 = 2;
         this.(( = this.}J._x;
         this.)( = this.}J._y;
-        this.+-(0.[pTlo(3Wt.6{VYR(this, '87vE7('));
+        this.+-(0.[pTlo(3Wt.callback(this, '87vE7('));
       };
 
       v1.87vE7( = function () {
@@ -787,7 +787,7 @@ movie 'e3d28087fe6cd8d9c40cce306b749350.swf' {
           if (this.)( < -100) {
             this.}J.removeMovieClip();
           }
-          this.+-(0.[pTlo(3Wt.6{VYR(this, '  tMB'));
+          this.+-(0.[pTlo(3Wt.callback(this, '  tMB'));
           return false;
         }
         return true;
