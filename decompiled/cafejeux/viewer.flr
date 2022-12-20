@@ -1284,10 +1284,10 @@ for ($somevar in arg0) {
         }
         v6 = v5.slice(0, v5.length - 1);
         v5.splice(0, v5.length);
-        if (]6=8H((')2I7S', flash.1ni) == null) {
+        if (]6=8H(('onerror', flash.1ni) == null) {
           flash.Boot.__trace(flash.Boot.__string_rec(arg0, '') + v4, {'fileName': '(uncaught exception)'});
         } else {
-          flash.1ni.)2I7S(flash.Boot.__string_rec(arg0, ''), v6);
+          flash.1ni.onerror(flash.Boot.__string_rec(arg0, ''), v6);
         }
         $s.pop();
       }
@@ -2194,7 +2194,7 @@ for ($somevar in this.__x.attributes) {
     flash.1ni._global = null;
     flash.1ni._root = null;
     flash.1ni.current = null;
-    flash.1ni.)2I7S = null;
+    flash.1ni.onerror = null;
     flash.1ni.-[Ra6 = function (arg0) {
       $s.push('flash.Lib::' + 'trace');
       var v3 = $s.length;
@@ -2348,7 +2348,7 @@ for ($somevar in arg0) {
       $s.push('flash.Lib::' + 'setErrorHandler');
       var v3 = $s.length;
       try {
-        flash.1ni.)2I7S = arg0;
+        flash.1ni.onerror = arg0;
         $s.pop();
       }
       catch (v0) {

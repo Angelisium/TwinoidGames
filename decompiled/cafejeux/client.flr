@@ -326,7 +326,7 @@ for ($somevar in v2) {
     flash.1ni._global = null;
     flash.1ni._root = null;
     flash.1ni.current = null;
-    flash.1ni.)2I7S = null;
+    flash.1ni.onerror = null;
     flash.1ni.-[Ra6 = function (arg0) {
       trace(arg0);
     };
@@ -370,7 +370,7 @@ for ($somevar in arg0) {
     };
 
     flash.1ni.4}6gG( = function (arg0) {
-      flash.1ni.)2I7S = arg0;
+      flash.1ni.onerror = arg0;
     };
 
     v1 = new Object();
@@ -2983,7 +2983,7 @@ for ($somevar in v2) {
     haxe.0JleF.581a8(.9us*D( = function (arg0) {
       var v3 = new haxe.0JleF.581a8(([], arg0, {'0QyZ*': function (arg0) {
         throw arg0;
-      }, '4w5_B(': function (arg0, arg1) {}, ')2I7S': null, ']JSR0': null});
+      }, '4w5_B(': function (arg0, arg1) {}, 'onerror': null, ']JSR0': null});
       v3.*-1*8((function (arg0, arg1, arg2) {
         haxe.]{i.-[Ra6(arg0.join('.') + '(' + arg1.join(',') + ') = ERROR ' + 3Wt.+_PpF(arg2), {'fileName': 'AsyncDebugConnection.hx', 'lineNumber': 86, 'className': 'haxe.remoting.AsyncDebugConnection', 'methodName': 'create'});
       });
@@ -3000,7 +3000,7 @@ for ($somevar in v2) {
       var (K = this;
       this.__data.4w5_B((this.__path, *feM7();
       this.__cnx.4}6gG((function (arg0) {
-        (K.__data.)2I7S((K.__path, *feM7(, arg0);
+        (K.__data.onerror((K.__path, *feM7(, arg0);
         (K.__data.0QyZ*(arg0);
       });
       this.__cnx.5T(*(*feM7(, function (arg0) {
@@ -3022,7 +3022,7 @@ for ($somevar in v2) {
     };
 
     v1.*-1*8( = function (arg0) {
-      this.__data.)2I7S = arg0;
+      this.__data.onerror = arg0;
     };
 
     v1.4}6gG( = function (arg0) {
@@ -4938,10 +4938,10 @@ for ($somevar in arg0) {
 
     flash.Boot.__exc = function (arg0) {
       var v3 = '';
-      if (flash.1ni.)2I7S == null) {
+      if (flash.1ni.onerror == null) {
         flash.Boot.__trace(flash.Boot.__string_rec(arg0, '') + v3, {'fileName': '(uncaught exception)'});
       } else {
-        flash.1ni.)2I7S(flash.Boot.__string_rec(arg0, ''), []);
+        flash.1ni.onerror(flash.Boot.__string_rec(arg0, ''), []);
       }
     };
 

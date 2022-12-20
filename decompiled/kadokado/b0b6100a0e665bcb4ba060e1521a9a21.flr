@@ -430,10 +430,10 @@ for ($somevar in arg0) {
 
       flash.Boot.__exc = function (arg0) {
         var v3 = '';
-        if (flash.1ni.)2I7S == null) {
+        if (flash.1ni.onerror == null) {
           flash.Boot.__trace(flash.Boot.__string_rec(arg0, '') + v3, {'fileName': '(uncaught exception)'});
         } else {
-          flash.1ni.)2I7S(flash.Boot.__string_rec(arg0, ''), []);
+          flash.1ni.onerror(flash.Boot.__string_rec(arg0, ''), []);
         }
       };
 
@@ -1928,7 +1928,7 @@ for ($somevar in v2) {
       flash.1ni._global = null;
       flash.1ni._root = null;
       flash.1ni.current = null;
-      flash.1ni.)2I7S = null;
+      flash.1ni.onerror = null;
       flash.1ni.-[Ra6 = function (arg0) {
         trace(arg0);
       };
@@ -1972,7 +1972,7 @@ for ($somevar in arg0) {
       };
 
       flash.1ni.4}6gG( = function (arg0) {
-        flash.1ni.)2I7S = arg0;
+        flash.1ni.onerror = arg0;
       };
 
       v1 = new Object();
