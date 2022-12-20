@@ -182,10 +182,10 @@ movie 'loader.swf' {
         if (this.8T5p.length != 8) {
           this.8T5p = '';
           var v3 = 0;
-          goto 4508;
+          goto 4511;
           for (;;) {
             ++v3;
-            label 4508:
+            label 4511:
             if (v3 >= 8) break;
             this.8T5p += *hr_A.9tEy4(.charAt(1 + 3Wt.random(63));
           }
@@ -194,7 +194,7 @@ movie 'loader.swf' {
       };
 
       v1.3K4}n = function () {
-        this.)3 =h = 3Wt.7bSH*(this.8,-h5, ' VgbI', 2);
+        this.)3 =h = 3Wt.attachMC(this.8,-h5, ' VgbI', 2);
         this.)3 =h._x = Loader.[MqDO / 2;
         this.)3 =h._y = Loader.*sd+;( / 2;
         this.)3 =h.gotoAndStop(String(1));
@@ -287,10 +287,10 @@ movie 'loader.swf' {
         this.*V9 = *V9;
         this.(U82 = 0;
         var v3 = 0;
-        goto 5875;
+        goto 5878;
         for (;;) {
           ++v3;
-          label 5875:
+          label 5878:
           if (v3 >= *V9.length) break;
           this.(U82 *= 51;
           this.(U82 += *V9.charCodeAt(v3);
@@ -325,10 +325,10 @@ movie 'loader.swf' {
 
       v1.95O)C( = function ([) {
         var v3 = 0;
-        goto 6524;
+        goto 6527;
         for (;;) {
           ++v3;
-          label 6524:
+          label 6527:
           if (v3 >= [.length) break;
           this.67lKi([.charAt(v3));
         }
@@ -389,10 +389,10 @@ movie 'loader.swf' {
         this.95O)C((String(8.length));
         this.95O)C((':');
         var v3 = 0;
-        goto 7417;
+        goto 7420;
         for (;;) {
           ++v3;
-          label 7417:
+          label 7420:
           if (v3 >= 8.length) break;
           this.1qeUg(8[v3]);
         }
@@ -463,10 +463,10 @@ movie 'loader.swf' {
         var v3 = int(this.}(W8p());
         var v4 = new Array();
         var v2 = 0;
-        goto 8580;
+        goto 8583;
         for (;;) {
           ++v2;
-          label 8580:
+          label 8583:
           if (v2 >= v3) break;
           v4.push(this.,vS*E());
         }
@@ -636,7 +636,7 @@ movie 'loader.swf' {
               _global.StyleSheet = _global.TextField.StyleSheet;
               this.3Wt = new Object();
               this.3Wt.icounter = 0;
-              this.3Wt.7bSH* = function (}J, 5P55, }p j)) {
+              this.3Wt.attachMC = function (}J, 5P55, }p j)) {
                 var v2 = 5P55 + '@' + this.icounter++;
                 }J.attachMovie(5P55, v2, }p j));
                 return }J[v2];

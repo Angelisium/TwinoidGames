@@ -88,7 +88,7 @@ movie 'loader_web.swf' {
           _global.StyleSheet = _global.TextField.StyleSheet;
           this.3Wt = new Object();
           this.3Wt.icounter = 0;
-          this.3Wt.7bSH* = function (}J, 5P55, }p j)) {
+          this.3Wt.attachMC = function (}J, 5P55, }p j)) {
             var v2 = 5P55 + '@' + this.icounter++;
             }J.attachMovie(5P55, v2, }p j));
             return }J[v2];

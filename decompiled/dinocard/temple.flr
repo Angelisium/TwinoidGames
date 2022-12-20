@@ -411,10 +411,10 @@ movie 'temple.swf' {
       v1.00YK8 = function (list) {
         this.4pWeX = new Array();
         var v3 = 0;
-        goto 9049;
+        goto 9052;
         for (;;) {
           ++v3;
-          label 9049:
+          label 9052:
           if (v3 >= list.length) break;
           *r.+-(0.{qcv1(list[v3], this.4pWeX);
         }
@@ -571,10 +571,10 @@ movie 'temple.swf' {
         this.}Wge3( = [];
         var v2 = ['Début du round ' + (this.},Dx- + 1), 'Tour de ' + this.+5d3+.$player1.$name, 'Tour de ' + this.+5d3+.$player2.$name, 'Combat!'];
         var v3 = 0;
-        goto 11676;
+        goto 11679;
         for (;;) {
           ++v3;
-          label 11676:
+          label 11679:
           if (v3 >= v2.length) break;
           var v4 = v2[v3];
           var v5 = this.32.*=_p_('0[c17(', 44{N.4QvZJ);
@@ -605,10 +605,10 @@ movie 'temple.swf' {
         v3.+Da3+.textColor = 15133695;
         var v4 = [[0, 0], [1, 0], [0, 1], [2, 2]][7];
         var v5 = 0;
-        goto 12367;
+        goto 12370;
         for (;;) {
           ++v5;
-          label 12367:
+          label 12370:
           if (v5 >= this.0eG]w.length) break;
           this.0eG]w[v5].+272A((v4[v5]);
         }
@@ -641,10 +641,10 @@ movie 'temple.swf' {
             var v3 = [this.+5d3+.$player1, this.+5d3+.$player2];
             this.0eG]w = new Array();
             var v4 = 0;
-            goto 13057;
+            goto 13060;
             for (;;) {
               ++v4;
-              label 13057:
+              label 13060:
               if (v4 >= 2) break;
               if (this. *L8X == null && v4 == 0) {
                 this. *L8X = v3[v4].$id;
@@ -654,10 +654,10 @@ movie 'temple.swf' {
               v5.[n)p = v5.[Jqw) == 1;
             }
             var v6 = 0;
-            goto 13233;
+            goto 13236;
             for (;;) {
               ++v6;
-              label 13233:
+              label 13236:
               if (v6 >= 10) break;
               var v7 = this.{==W3(('0XV(M');
               v7.x = ;97X[.2QF=} + Math.random() * (*r.=OA - ;97X[.2QF=});
@@ -684,35 +684,35 @@ movie 'temple.swf' {
             this.{IQB8( = new Array();
             var v8 = [];
             var v9 = 0;
-            goto 13842;
+            goto 13845;
             for (;;) {
               ++v9;
-              label 13842:
+              label 13845:
               if (v9 >= this.round.$phases.length) break;
               this.{IQB8(.push({'name': 'Phase ' + (v9 + 1) + ' :', 'list': [], '*B': 100 + v9});
               var v10 = this.round.$phases[v9];
               var v11 = [v10.$turn1, v10.$turn2];
               var v12 = 0;
-              goto 14030;
+              goto 14033;
               for (;;) {
                 ++v12;
-                label 14030:
+                label 14033:
                 if (v12 >= v11.length) break;
                 v8 = new Array();
                 var v13 = v11[v12];
                 var v14 = [v13.$upkeep, v13.$actions, v13.$end];
                 var v15 = 0;
-                goto 14144;
+                goto 14147;
                 for (;;) {
                   ++v15;
-                  label 14144:
+                  label 14147:
                   if (v15 >= v14.length) break;
                   var v16 = v14[v15];
                   var v17 = 0;
-                  goto 14203;
+                  goto 14206;
                   for (;;) {
                     ++v17;
-                    label 14203:
+                    label 14206:
                     if (v17 >= v16.length) break;
                     this.{qcv1(v16[v17], v8);
                   }
@@ -721,10 +721,10 @@ movie 'temple.swf' {
               }
               v8 = new Array();
               var v18 = 0;
-              goto 14381;
+              goto 14384;
               for (;;) {
                 ++v18;
-                label 14381:
+                label 14384:
                 if (v18 >= v10.$combat.length) break;
                 this.{qcv1(v10.$combat[v18], v8);
               }
@@ -738,19 +738,19 @@ movie 'temple.swf' {
             break;
           case 3:
             var v19 = 0;
-            goto 14578;
+            goto 14581;
             for (;;) {
               ++v19;
-              label 14578:
+              label 14581:
               if (v19 >= this.=)x1b.length) break;
               var v20 = this.=)x1b[v19];
               v20.-=6b3 = (v20.x + v20.y) * 0.05;
             }
             var v21 = 0;
-            goto 14690;
+            goto 14693;
             for (;;) {
               ++v21;
-              label 14690:
+              label 14693:
               if (v21 >= this.0eG]w.length) break;
               var v22 = this.0eG]w[v21];
               v22.8ngoI( = 2;
@@ -802,10 +802,10 @@ movie 'temple.swf' {
             this.+rfwt();
             this.;Rc5s();
             var v2 = 0;
-            goto 15545;
+            goto 15548;
             for (;;) {
               ++v2;
-              label 15545:
+              label 15548:
               if (v2 >= this.0eG]w.length) break;
               this.0eG]w[v2].87vE7(();
             }
@@ -813,10 +813,10 @@ movie 'temple.swf' {
           case 3:
             this.+rfwt();
             var v3 = 0;
-            goto 15648;
+            goto 15651;
             for (;;) {
               ++v3;
-              label 15648:
+              label 15651:
               if (v3 >= this.0eG]w.length) break;
               var v4 = this.0eG]w[v3];
               v4.87vE7(();
@@ -874,10 +874,10 @@ movie 'temple.swf' {
       v1.+rfwt = function () {
         var v2 = this.7Qe;6.duplicate();
         var v3 = 0;
-        goto 16535;
+        goto 16538;
         for (;;) {
           ++v3;
-          label 16535:
+          label 16538:
           if (v3 >= v2.length) break;
           v2[v3].87vE7(();
         }
@@ -934,10 +934,10 @@ movie 'temple.swf' {
 
       v1.095S)( = function (*B) {
         var v3 = 0;
-        goto 17390;
+        goto 17393;
         for (;;) {
           ++v3;
-          label 17390:
+          label 17393:
           if (v3 >= this.0eG]w.length) break;
           if (this.0eG]w[v3].data.$id == *B) {
             return this.0eG]w[v3];
@@ -968,10 +968,10 @@ movie 'temple.swf' {
 
       v1.;Rc5s = function () {
         var v2 = 0;
-        goto 17998;
+        goto 18001;
         for (;;) {
           ++v2;
-          label 17998:
+          label 18001:
           if (v2 >= this.+sAv7.9T_)+.length) break;
           var v3 = this.+sAv7.9T_)+[v2];
           switch (v3[0]) {
@@ -1125,10 +1125,10 @@ movie 'temple.swf' {
         } else {
           this.,L1T0.gotoAndStop('1');
           var v2 = 0;
-          goto 21073;
+          goto 21076;
           for (;;) {
             ++v2;
-            label 21073:
+            label 21076:
             if (v2 >= this.0eG]w.length) break;
             this.0eG]w[v2]. Goh-();
           }
@@ -1289,10 +1289,10 @@ movie 'temple.swf' {
           }
         }
         var v4 = 0;
-        goto 24396;
+        goto 24399;
         for (;;) {
           ++v4;
-          label 24396:
+          label 24399:
           if (v4 >= v3.length) break;
           *r.;CYOh(v3[v4], v2, 16777215);
         }
@@ -1300,10 +1300,10 @@ movie 'temple.swf' {
 
       v1.];DQ} = function () {
         var v2 = 0;
-        goto 24501;
+        goto 24504;
         for (;;) {
           ++v2;
-          label 24501:
+          label 24504:
           if (v2 >= this.0eG]w.length) break;
           this.0eG]w[v2].9T54();
         }
@@ -1341,10 +1341,10 @@ movie 'temple.swf' {
         if (this.+5d3+.$newCard == null) {
           this.6Q682(.gotoAndStop('1');
           var v4 = 0;
-          goto 25097;
+          goto 25100;
           for (;;) {
             ++v4;
-            label 25097:
+            label 25100:
             if (v4 >= 2) break;
             var v5 = v4 * 2 - 1;
             var v6 = v2.*=_p_('0}e,g', 2);
@@ -1372,10 +1372,10 @@ movie 'temple.swf' {
         }
         var v9 = ['revoir la partie', 'retour au menu'];
         var v10 = 0;
-        goto 25665;
+        goto 25668;
         for (;;) {
           ++v10;
-          label 25665:
+          label 25668:
           if (v10 >= v9.length) break;
           var v11 = v2.*=_p_('=T2zQ', 0);
           v11._x = 145;
@@ -1672,10 +1672,10 @@ movie 'temple.swf' {
         this.x = 2[;
         this.y = 3[;
         var v4 = 0;
-        goto 30367;
+        goto 30370;
         for (;;) {
           ++v4;
-          label 30367:
+          label 30370:
           if (v4 >= this.[rLKw.length) break;
           var v5 = this.[c8(8(v4);
           var v6 = this.[rLKw[v4];
@@ -1861,10 +1861,10 @@ movie 'temple.swf' {
         if (*r.+-(0.[MR;S) {
           var v8 = [this.6u -.+yIL7, this.6u -.-Q]I9, this.6u -.]OXI9];
           var v9 = 0;
-          goto 34973;
+          goto 34976;
           for (;;) {
             ++v9;
-            label 34973:
+            label 34976:
             if (v9 >= v8.length) break;
             var v10 = v8[v9];
             v10.embedFonts = false;
@@ -1880,10 +1880,10 @@ movie 'temple.swf' {
         this.8}e3n();
         var v2 = new +7U K(this.6u -);
         var v3 = 0;
-        goto 35182;
+        goto 35185;
         for (;;) {
           ++v3;
-          label 35182:
+          label 35185:
           if (v3 >= this.data.$energy.length) break;
           var v4 = this.data.$energy.charAt(v3);
           var v5 = 7;
@@ -2002,33 +2002,33 @@ movie 'temple.swf' {
         this.-Ejp6 = false;
         var v2 = new Array();
         var v3 = 0;
-        goto 37070;
+        goto 37073;
         for (;;) {
           ++v3;
-          label 37070:
+          label 37073:
           if (v3 >= this.0,vXh.length) break;
           var v4 = this.0,vXh[v3];
           var v5 = 0;
-          goto 37143;
+          goto 37146;
           for (;;) {
             ++v5;
-            label 37143:
+            label 37146:
             if (v5 >= v4.length) break;
             v2.push(v4[v5]);
           }
         }
         var v6 = 0;
-        goto 37221;
+        goto 37224;
         for (;;) {
           ++v6;
-          label 37221:
+          label 37224:
           if (v6 >= v2.length) break;
           var v7 = v2[v6];
           var v8 = v6 + 1;
-          goto 37283;
+          goto 37286;
           for (;;) {
             ++v8;
-            label 37283:
+            label 37286:
             if (v8 >= v2.length) break;
             var v9 = v2[v8];
             var v10 = v7._x - v9._x;
@@ -2069,10 +2069,10 @@ movie 'temple.swf' {
 
       v1.;(hLW = function () {
         var v2 = 0;
-        goto 37972;
+        goto 37975;
         for (;;) {
           ++v2;
-          label 37972:
+          label 37975:
           if (v2 >= this.0,vXh.length) break;
           var v3 = this.0,vXh[v2];
           while (v3.length > 0) {
@@ -2137,10 +2137,10 @@ movie 'temple.swf' {
         }
         this.=cVoB( = [];
         var v9 = 0;
-        goto 39378;
+        goto 39381;
         for (;;) {
           ++v9;
-          label 39378:
+          label 39381:
           if (v9 >= this.[rLKw.length) break;
           var v10 = this.[rLKw[v9];
           var v11 = new =i{J(null);
@@ -2158,7 +2158,7 @@ movie 'temple.swf' {
           *r.+-(0.=)x1b.remove(this.9ap4b);
           this.=cVoB(.push(v11);
           var v12 = v9 * 3;
-          var v13 = 3Wt.7bSH*(this.9ap4b.-iB=, '-dEe2', v9);
+          var v13 = 3Wt.attachMC(this.9ap4b.-iB=, '-dEe2', v9);
           v13._x = 0;
           v13._y = -=i{J.] ( * 0.5;
           v13._xscale = (v11.x - this.9ap4b.x) * 0.5;
@@ -2178,10 +2178,10 @@ movie 'temple.swf' {
           v16 = 1;
         }
         var v17 = 0;
-        goto 40320;
+        goto 40323;
         for (;;) {
           ++v17;
-          label 40320:
+          label 40323:
           if (v17 >= 2) break;
           if (v17 != 1 || this.data.$wish && this.data.$range != 3) {
             var v18 = *r.+-(0.32.*=_p_(']u1X]', 44{N.841,4);
@@ -2231,16 +2231,16 @@ movie 'temple.swf' {
       v1.]46{_ = function () {
         var v2 = '';
         var v3 = 1;
-        goto 41413;
+        goto 41416;
         for (;;) {
           ++v3;
-          label 41413:
+          label 41416:
           if (v3 > 2) break;
           var v4 = 0;
-          goto 41460;
+          goto 41463;
           for (;;) {
             ++v4;
-            label 41460:
+            label 41463:
             if (v4 >= this.6bmV*(.length) break;
             var v5 = =i{J.}NTUS(this.6bmV*([v4]);
             if (v3 == v5.$display) {
@@ -2336,10 +2336,10 @@ movie 'temple.swf' {
         this.,cM(._xscale = this.scale;
         this.,cM(._yscale = this.scale;
         var v4 = 0;
-        goto 43063;
+        goto 43066;
         for (;;) {
           ++v4;
-          label 43063:
+          label 43066:
           if (v4 >= 14) break;
           var v5 = new -Y[IL(null);
           this.(;Ysq(v5);
@@ -2393,10 +2393,10 @@ movie 'temple.swf' {
 
       v1.+z1(E = function (max) {
         var v3 = 0;
-        goto 44422;
+        goto 44425;
         for (;;) {
           ++v3;
-          label 44422:
+          label 44425:
           if (v3 >= max) break;
           var v4 = *r.+-(0.{==W3(('),HaF(');
           this.(;Ysq(v4);
@@ -2452,10 +2452,10 @@ movie 'temple.swf' {
 
       =i{J.6}G*a = function (*B) {
         var v3 = 0;
-        goto 45506;
+        goto 45509;
         for (;;) {
           ++v3;
-          label 45506:
+          label 45509:
           if (v3 >= =i{J.4viQ.length) break;
           var v4 = =i{J.4viQ[v3];
           if (v4.$id == *B) {
@@ -2467,10 +2467,10 @@ movie 'temple.swf' {
 
       =i{J.00I7O = function (2h+) {
         var v3 = 0;
-        goto 45646;
+        goto 45649;
         for (;;) {
           ++v3;
-          label 45646:
+          label 45649:
           if (v3 >= =i{J.*5x{E.length) break;
           var v4 = =i{J.*5x{E[v3];
           if (v4.$id == 2h+) {
@@ -2483,10 +2483,10 @@ movie 'temple.swf' {
 
       =i{J.{C0z_ = function (*B) {
         var v3 = 0;
-        goto 45839;
+        goto 45842;
         for (;;) {
           ++v3;
-          label 45839:
+          label 45842:
           if (v3 >= *r.+-(0.=)x1b.length) break;
           var v4 = *r.+-(0.=)x1b[v3];
           if (v4.*B == *B) {
@@ -2498,10 +2498,10 @@ movie 'temple.swf' {
 
       =i{J.}NTUS = function (*B) {
         var v3 = 0;
-        goto 45990;
+        goto 45993;
         for (;;) {
           ++v3;
-          label 45990:
+          label 45993:
           if (v3 >= =i{J.+F{qK(.length) break;
           var v4 = =i{J.+F{qK([v3];
           if (v4.$id == *B) {
@@ -2638,10 +2638,10 @@ movie 'temple.swf' {
 
       v1.{C0z_ = function (*B) {
         var v3 = 0;
-        goto 48521;
+        goto 48524;
         for (;;) {
           ++v3;
-          label 48521:
+          label 48524:
           if (v3 >= this.list.length) break;
           if (this.list[v3] == *B) {
             this.list.splice(v3, 1);
@@ -2667,7 +2667,7 @@ movie 'temple.swf' {
 
       v1.-y5dZ = function () {
         if (this.4d(* == null) {
-          this.4d(* = new =i{J(3Wt.7bSH*(this.-iB=, ')cd=C', 10));
+          this.4d(* = new =i{J(3Wt.attachMC(this.-iB=, ')cd=C', 10));
           this.4d(*.3BjX_(70);
           this.4d(*.4u=dZ();
           *r.+-(0.=)x1b.remove(this.4d(*);
@@ -2791,10 +2791,10 @@ movie 'temple.swf' {
               v4 = =i{J.{C0z_(int(this.data.$value));
             }
             var v5 = 0;
-            goto 50892;
+            goto 50895;
             for (;;) {
               ++v5;
-              label 50892:
+              label 50895:
               if (v5 >= *r.+-(0.0eG]w.length) break;
               *r.+-(0.0eG]w[v5].06+IV(v4);
             }
@@ -2811,10 +2811,10 @@ movie 'temple.swf' {
             v3.,Czm) = new Array();
             var v6 = this.data.$value.split(',');
             var v7 = 0;
-            goto 51224;
+            goto 51227;
             for (;;) {
               ++v7;
-              label 51224:
+              label 51227:
               if (v7 >= v6.length) break;
               if (v6[v7] != '') {
                 var v8 = =i{J.{C0z_(int(v6[v7]));
@@ -2831,10 +2831,10 @@ movie 'temple.swf' {
       v1.87vE7( = function () {
         493Qs.call(this);
         var v3 = 0;
-        goto 51465;
+        goto 51468;
         for (;;) {
           ++v3;
-          label 51465:
+          label 51468:
           if (v3 >= this.*g=LP.length) break;
           if (this.*g=LP[v3].}CL == null) {
             this.*g=LP.splice(v3--, 1);
@@ -2874,10 +2874,10 @@ movie 'temple.swf' {
       v1.3X3[b = function (() {
         var v4 = 0;
         var v3 = 0;
-        goto 51967;
+        goto 51970;
         for (;;) {
           ++v3;
-          label 51967:
+          label 51970:
           if (v3 >= (.length) break;
           if (([v3] == null) {
             ++v4;
@@ -2940,10 +2940,10 @@ movie 'temple.swf' {
         var v3 = true;
         var v4 = true;
         var v5 = 0;
-        goto 52818;
+        goto 52821;
         for (;;) {
           ++v5;
-          label 52818:
+          label 52821:
           if (v5 >= [.length) break;
           if ([.charCodeAt(v5) > 127) {
             v3 = false;
@@ -2962,20 +2962,20 @@ movie 'temple.swf' {
         if (v3) {
           this.blabla.+jMb8(1, 0);
           v5 = 0;
-          goto 53070;
+          goto 53073;
           for (;;) {
             ++v5;
-            label 53070:
+            label 53073:
             if (v5 >= [.length) break;
             this.blabla.+jMb8(6, +,ig2.8f0([.charAt(v5)));
           }
         } else {
           this.blabla.+jMb8(2, !v4 ? 3 : 2);
           v5 = 0;
-          goto 53247;
+          goto 53250;
           for (;;) {
             ++v5;
-            label 53247:
+            label 53250:
             if (v5 >= [.length) break;
             this.blabla.+jMb8(!v4 ? 8 : 7, [.charCodeAt(v5));
           }
@@ -2988,10 +2988,10 @@ movie 'temple.swf' {
         var v4 = '';
         if (v3) {
           var v5 = 0;
-          goto 53468;
+          goto 53471;
           for (;;) {
             ++v5;
-            label 53468:
+            label 53471:
             if (v5 >= v2) break;
             v4 += +,ig2.69-(this.blabla.8O,=(6));
           }
@@ -2999,10 +2999,10 @@ movie 'temple.swf' {
         }
         var v6 = this.blabla.8O,=(1) == 0;
         v5 = 0;
-        goto 53614;
+        goto 53617;
         for (;;) {
           ++v5;
-          label 53614:
+          label 53617:
           if (v5 >= v2) break;
           v4 += +,ig2.chr(this.blabla.8O,=(!v6 ? 8 : 7));
         }
@@ -3154,10 +3154,10 @@ movie 'temple.swf' {
         var v4 = v3.length;
         this.blabla.+jMb8(5, v4);
         var v5 = 0;
-        goto 56229;
+        goto 56232;
         for (;;) {
           ++v5;
-          label 56229:
+          label 56232:
           if (v5 >= v4) break;
           var v6 = v3.charCodeAt(v5);
           if (v6 >= 48 && v6 <= 58) {
@@ -3184,10 +3184,10 @@ movie 'temple.swf' {
         var v2 = this.blabla.8O,=(5);
         var v4 = '';
         var v3 = 0;
-        goto 56634;
+        goto 56637;
         for (;;) {
           ++v3;
-          label 56634:
+          label 56637:
           if (v3 >= v2) break;
           var v5 = this.blabla.8O,=(4);
           if (v5 < 10) {
@@ -3479,12 +3479,12 @@ movie 'temple.swf' {
         *r.=Yz ](this.]0swa.-iB=.{k6);
         var v7 = *r.+-(0.4[K{k[this.[Jqw)];
         var v8 = 0;
-        goto 61241;
+        goto 61244;
         for (;;) {
           ++v8;
-          label 61241:
+          label 61244:
           if (v8 >= v7) break;
-          var v9 = 3Wt.7bSH*(this.]0swa.-iB=, '7+GvE', 20 + v8);
+          var v9 = 3Wt.attachMC(this.]0swa.-iB=, '7+GvE', 20 + v8);
           v9._x = -=i{J.=P( * 0.7 * 0.5;
           v9._y = 16 + v8 * 15 - =i{J.] ( * 0.7 * 0.5;
         }
@@ -3537,10 +3537,10 @@ movie 'temple.swf' {
             var v4 = true;
             var v5 = [this.+l}8, this.)YfUk];
             var v6 = 0;
-            goto 62458;
+            goto 62461;
             for (;;) {
               ++v6;
-              label 62458:
+              label 62461:
               if (v6 >= v5.length) break;
               var v7 = v5[v6];
               if (v7.list.length > 0) {
@@ -3607,10 +3607,10 @@ movie 'temple.swf' {
           (this.2qefA(()).+FoV,((-X);
         }
         var v4 = 0;
-        goto 63717;
+        goto 63720;
         for (;;) {
           ++v4;
-          label 63717:
+          label 63720:
           if (v4 >= this.,Czm).length) break;
           var v5 = this.,Czm)[v4];
           if (v5 != null) {
@@ -3624,10 +3624,10 @@ movie 'temple.swf' {
       ;97X[.=T8xA( = function () {
         ;97X[.{-oB* = 99999;
         var v2 = 0;
-        goto 63939;
+        goto 63942;
         for (;;) {
           ++v2;
-          label 63939:
+          label 63942:
           if (v2 >= *r.+-(0.0eG]w.length) break;
           var v3 = *r.+-(0.0eG]w[v2];
           var v4 = *r.=OA - (;97X[.2QF=} + ;97X[.5Bc * (v3.,Czm).length + 2) + v3.rightMargin);
@@ -3639,10 +3639,10 @@ movie 'temple.swf' {
         this.{,k1=();
         this.28Q**();
         var v2 = 0;
-        goto 64260;
+        goto 64263;
         for (;;) {
           ++v2;
-          label 64260:
+          label 64263:
           if (v2 >= *r.+-(0.0eG]w.length) break;
           var v3 = *r.+-(0.0eG]w[v2];
           v3.+FoV,((3);
@@ -3651,18 +3651,18 @@ movie 'temple.swf' {
 
       v1.1Pi3n = function (4d(*) {
         var v3 = 0;
-        goto 64402;
+        goto 64405;
         for (;;) {
           ++v3;
-          label 64402:
+          label 64405:
           if (v3 >= *r.+-(0.0eG]w.length) break;
           var v4 = *r.+-(0.0eG]w[v3];
           if (v4 != this) {
             var v5 = 0;
-            goto 64508;
+            goto 64511;
             for (;;) {
               ++v5;
-              label 64508:
+              label 64511:
               if (v5 >= v4.,Kwdh.length) break;
               if (v4.,Kwdh[v5] == 4d(*) {
                 v4.,Kwdh.splice(v5, 1);
@@ -3683,10 +3683,10 @@ movie 'temple.swf' {
           v5 = 0;
         }
         var v6 = 0;
-        goto 65017;
+        goto 65020;
         for (;;) {
           ++v6;
-          label 65017:
+          label 65020:
           if (v6 >= this.,Kwdh.length) break;
           var v7 = this.,Kwdh[v6];
           var v8 = *r.=OA - (v2 * =i{J.=P( * 0.5 + v3);
@@ -3708,10 +3708,10 @@ movie 'temple.swf' {
         }
         v2 = Math.min(v2, 5);
         var v3 = 0;
-        goto 65625;
+        goto 65628;
         for (;;) {
           ++v3;
-          label 65625:
+          label 65628:
           if (v3 >= this.6p i+.length) break;
           var v4 = this.6p i+[v3];
           var v5 = this.+wphC(v3, int(v2));
@@ -3760,7 +3760,7 @@ movie 'temple.swf' {
           return undefined;
         }
         if (this.8sfFC == null) {
-          this.8sfFC = 3Wt.7bSH*(this.]0swa.-iB=, '--bGv', 10);
+          this.8sfFC = 3Wt.attachMC(this.]0swa.-iB=, '--bGv', 10);
           this.8sfFC._x = =i{J.=P( * 0.5 * 0.7 - 8;
           this.8sfFC._y = =i{J.] ( * 0.5 * 0.7 - 8;
         }
@@ -3782,10 +3782,10 @@ movie 'temple.swf' {
 
       v1.2qefA( = function () {
         var v2 = 0;
-        goto 67314;
+        goto 67317;
         for (;;) {
           ++v2;
-          label 67314:
+          label 67317:
           if (v2 >= *r.+-(0.0eG]w.length) break;
           var v3 = *r.+-(0.0eG]w[v2];
           if (v3 != this) {
@@ -3878,10 +3878,10 @@ movie 'temple.swf' {
             break;
           default:
             var v4 = 0;
-            goto 68885;
+            goto 68888;
             for (;;) {
               ++v4;
-              label 68885:
+              label 68888:
               if (v4 >= this.data.$targets.length) break;
               this.}CL.push(=i{J.{C0z_(this.data.$targets[v4]));
             }
@@ -3982,10 +3982,10 @@ movie 'temple.swf' {
         var v3 = this. XH-.data.$element;
         if (this.data.$typeTarget != 2) {
           var v4 = 0;
-          goto 70254;
+          goto 70257;
           for (;;) {
             ++v4;
-            label 70254:
+            label 70257:
             if (v4 >= this.}CL.length) break;
             var v5 = this.}CL[v4];
             v5.4ERhG(1);
@@ -4022,10 +4022,10 @@ movie 'temple.swf' {
         var v13 = 0;
         var v14 = 0;
         var v15 = 0;
-        goto 71033;
+        goto 71036;
         for (;;) {
           ++v15;
-          label 71033:
+          label 71036:
           if (v15 >= max) break;
           var v16 = new ) *Vl(null);
           v16.*M95j(this. XH-);
@@ -4073,10 +4073,10 @@ movie 'temple.swf' {
       v1.8pZnw = function () {
         if (this.2VhU6 < 0 || *r.+-(0.2f,*U) {
           var v2 = 0;
-          goto 72173;
+          goto 72176;
           for (;;) {
             ++v2;
-            label 72173:
+            label 72176:
             if (v2 >= this.)gv94.length) break;
             var v3 = this.)gv94[v2];
             var v4 = v3.}CL;
@@ -4104,10 +4104,10 @@ movie 'temple.swf' {
           }
           if (this.data.$typeTarget != 2) {
             var v11 = 0;
-            goto 72926;
+            goto 72929;
             for (;;) {
               ++v11;
-              label 72926:
+              label 72929:
               if (v11 >= this.}CL.length) break;
               var v12 = this.}CL[v11];
               v12.4C2.6g,A = -2;
@@ -4125,10 +4125,10 @@ movie 'temple.swf' {
         if (v2 !== 0) {
         } else {}
         var v3 = 0;
-        goto 73208;
+        goto 73211;
         for (;;) {
           ++v3;
-          label 73208:
+          label 73211:
           if (v3 >= this.}CL.length) break;
           var v4 = new ) *Vl(null);
           v4.x = this. XH-.x;
@@ -4159,10 +4159,10 @@ movie 'temple.swf' {
 
       v1.+EoEn = function () {
         var v2 = 0;
-        goto 73697;
+        goto 73700;
         for (;;) {
           ++v2;
-          label 73697:
+          label 73700:
           if (v2 >= this.)gv94.length) break;
           var v3 = this.)gv94[v2];
           if (v3 == null) {
@@ -4173,10 +4173,10 @@ movie 'temple.swf' {
             var v5 = 10 + this.pow * 5;
             v4 = Math.max(10, v4 / this.}CL.length);
             var v6 = 0;
-            goto 74010;
+            goto 74013;
             for (;;) {
               ++v6;
-              label 74010:
+              label 74013:
               if (v6 >= v4) break;
               var v7 = new -Y[IL(null);
               var v8 = (v6 / v4) * 6.28;
@@ -4207,10 +4207,10 @@ movie 'temple.swf' {
 
       v1. l}ya = function () {
         var v2 = 0;
-        goto 74672;
+        goto 74675;
         for (;;) {
           ++v2;
-          label 74672:
+          label 74675:
           if (v2 >= this.}CL.length) break;
           this.}CL[v2].8NPl1(1).;Vk(.1B)SZ[this. XH-.data.$element]);
         }
@@ -4230,10 +4230,10 @@ movie 'temple.swf' {
           v3 = v2.)YfUk;
         }
         var v4 = 0;
-        goto 75020;
+        goto 75023;
         for (;;) {
           ++v4;
-          label 75020:
+          label 75023:
           if (v4 >= 64) break;
           var v5 = new 17.6U2T(*r.+-(0.32.*=_p_(';EQFu', 44{N.{YJfb));
           v5.x = v3.x + (Math.random() * 2 - 1) * =i{J.=P( * 0.4;
@@ -4256,17 +4256,17 @@ movie 'temple.swf' {
 
       v1.24d)b = function (max) {
         var v3 = 0;
-        goto 75609;
+        goto 75612;
         for (;;) {
           ++v3;
-          label 75609:
+          label 75612:
           if (v3 >= this.}CL.length) break;
           var v4 = Math.min(20, max / this.}CL.length);
           var v5 = 0;
-          goto 75708;
+          goto 75711;
           for (;;) {
             ++v5;
-            label 75708:
+            label 75711:
             if (v5 >= v4) break;
             var v6 = *r.+-(0.{==W3(('5rq;B(');
             *r.*M95j(v6, this.}CL[v3]);
@@ -4293,17 +4293,17 @@ movie 'temple.swf' {
         var v3 = int(this. XH-.}1A{_(v2) / 16);
         this.,I = {'{2': 0, '}2': -10, '[b': 0, ']b': -8, '*W0': (v2.x - this. XH-.x) / v3, '+W0': (v2.y - this. XH-.y) / v3, '(NJ': v3, ',2cO6': *r.+-(0.32.18wU*(44{N.{YJfb), ']J': []};
         var v4 = 0;
-        goto 76495;
+        goto 76498;
         for (;;) {
           ++v4;
-          label 76495:
+          label 76498:
           if (v4 >= 2) break;
           this.,I.]J.push([]);
           var v5 = 0;
-          goto 76578;
+          goto 76581;
           for (;;) {
             ++v5;
-            label 76578:
+            label 76581:
             if (v5 >= 3) break;
             var v6 = new ,v0X(null);
             var v7 = this.}CL[0];
@@ -4331,10 +4331,10 @@ movie 'temple.swf' {
         var v3 = [];
         var v4 = 14;
         var v5 = 0;
-        goto 77252;
+        goto 77255;
         for (;;) {
           ++v5;
-          label 77252:
+          label 77255:
           if (v5 >= this.,I.(NJ) break;
           var v6 = Math.sin((v5 / (this.,I.(NJ - 1)) * 3.14);
           var v7 = this. XH-.x + this.,I.*W0 * v5 + v6 * ((Math.random() * 2 - 1) * v4 + this.,I.{2);
@@ -4345,16 +4345,16 @@ movie 'temple.swf' {
         var v10 = =i{J.=P( * 0.5 * v9;
         var v11 = =i{J.] ( * 0.5 * v9;
         var v12 = 0;
-        goto 77723;
+        goto 77726;
         for (;;) {
           ++v12;
-          label 77723:
+          label 77726:
           if (v12 >= this.,I.]J.length) break;
           var v13 = 0;
-          goto 77783;
+          goto 77786;
           for (;;) {
             ++v13;
-            label 77783:
+            label 77786:
             if (v13 >= this.,I.]J[v12].length) break;
             var v14 = this.,I.]J[v12][v13];
             var v15 = this.}CL[0];
@@ -4374,10 +4374,10 @@ movie 'temple.swf' {
             var v20 = (v18.x - v14.x) / v19;
             var v21 = (v18.y - v14.y) / v19;
             var v22 = 0;
-            goto 78311;
+            goto 78314;
             for (;;) {
               ++v22;
-              label 78311:
+              label 78314:
               if (v22 >= v19) break;
               var v23 = Math.sin((v22 / (v19 - 1)) * 3.14);
               var v24 = v14.x + v20 * v22 + v23 * ((Math.random() * 2 - 1) * v4 * 0.5 + 0);
@@ -4390,10 +4390,10 @@ movie 'temple.swf' {
           }
         }
         var v26 = 0;
-        goto 78678;
+        goto 78681;
         for (;;) {
           ++v26;
-          label 78678:
+          label 78681:
           if (v26 >= 2) break;
           var v27 = (1 - v26) * 8;
           var v28 = 16777215;
@@ -4402,10 +4402,10 @@ movie 'temple.swf' {
           }
           this.,I.,2cO6.moveTo(this. XH-.x, this. XH-.y);
           var v29 = 0;
-          goto 78851;
+          goto 78854;
           for (;;) {
             ++v29;
-            label 78851:
+            label 78854:
             if (v29 >= v3.length) break;
             var v30 = v3[v29];
             if (v30[2] == null) {
@@ -4422,10 +4422,10 @@ movie 'temple.swf' {
           var v32 = 8;
           *r.+-(0.1sxYI([[2, v31, v31, v31, 1, v32, v32, v32, -12], [1, 6]]);
           var v33 = 0;
-          goto 79389;
+          goto 79392;
           for (;;) {
             ++v33;
-            label 79389:
+            label 79392:
             if (v33 >= this.,I.]J.length) break;
             while (this.,I.]J[v33].length > 0) {
               (this.,I.]J[v33].pop()).9T54();
@@ -4445,10 +4445,10 @@ movie 'temple.swf' {
         this.2VhU6 = 50;
         *r.+-(0.32.+2NA(*r.+-(0.+sAv7, 44{N.-2Isb);
         var v4 = 0;
-        goto 79828;
+        goto 79831;
         for (;;) {
           ++v4;
-          label 79828:
+          label 79831:
           if (v4 >= this.}CL.length) break;
           *r.+-(0.32.08M8(this.}CL[v4].-iB=);
         }
@@ -4472,10 +4472,10 @@ movie 'temple.swf' {
 
       v1.2SH;W = function () {
         var v2 = 0;
-        goto 80357;
+        goto 80360;
         for (;;) {
           ++v2;
-          label 80357:
+          label 80360:
           if (v2 >= this.0vts1(.length) break;
           var v3 = this.0vts1([v2];
           v3._rotation += v3.6b * {-kxL.-V;B;
@@ -4494,10 +4494,10 @@ movie 'temple.swf' {
           this.3Lb5h();
         }
         var v5 = 0;
-        goto 80850;
+        goto 80853;
         for (;;) {
           ++v5;
-          label 80850:
+          label 80853:
           if (v5 >= this.}CL.length) break;
           var v6 = this.}CL[v5];
           var v7 = new flash.filters.GlowFilter();
@@ -4515,10 +4515,10 @@ movie 'temple.swf' {
           *r.+-(0.32.+2NA(*r.+-(0.+sAv7, 44{N.{BENY);
           *r.+-(0.0D-x-(0);
           var v9 = 0;
-          goto 81297;
+          goto 81300;
           for (;;) {
             ++v9;
-            label 81297:
+            label 81300:
             if (v9 >= 32) break;
             var v10 = *r.+-(0.{==W3(('),HaF(');
             var v11 = this.}CL[3Wt.random(this.}CL.length)];
@@ -4535,10 +4535,10 @@ movie 'temple.swf' {
             v10.849kV = 0;
           }
           var v15 = 0;
-          goto 81768;
+          goto 81771;
           for (;;) {
             ++v15;
-            label 81768:
+            label 81771:
             if (v15 >= this.}CL.length) break;
             var v16 = this.}CL[v15];
             v16.-iB=.filters = [];
@@ -4551,10 +4551,10 @@ movie 'temple.swf' {
       v1.0XlhZ = function () {
         this.}Zms3 = [];
         var v2 = 0;
-        goto 81946;
+        goto 81949;
         for (;;) {
           ++v2;
-          label 81946:
+          label 81949:
           if (v2 >= 2) break;
           var v3 = *r.+-(0.32.18wU*(44{N.-2Isb);
           v3.9I* = new flash.display.BitmapData(*r.=OA, *r.*OA, true, 0);
@@ -4566,10 +4566,10 @@ movie 'temple.swf' {
         }
         this.4v9d0( = [];
         var v4 = 0;
-        goto 82220;
+        goto 82223;
         for (;;) {
           ++v4;
-          label 82220:
+          label 82223:
           if (v4 >= 10) break;
           var v5 = this.}CL[3Wt.random(this.}CL.length)];
           var v6 = =i{J.=P( * 0.5 * v5.scale / 100;
@@ -4583,10 +4583,10 @@ movie 'temple.swf' {
       v1.1oa*q = function () {
         var v2 = *r.+-(0.32.*=_p_(']gwOC', 44{N.841,4);
         var v3 = 0;
-        goto 82841;
+        goto 82844;
         for (;;) {
           ++v3;
-          label 82841:
+          label 82844:
           if (v3 >= this.4v9d0(.length) break;
           var v4 = this.4v9d0([v3];
           var v5 = v4.}Yax5 * {-kxL.-V;B;
@@ -4648,10 +4648,10 @@ movie 'temple.swf' {
 
       v1.5 }u4 = function () {
         var v2 = 0;
-        goto 84211;
+        goto 84214;
         for (;;) {
           ++v2;
-          label 84211:
+          label 84214:
           if (v2 >= *r.+-(0.6H99,(.length) break;
           var v3 = *r.+-(0.6H99,([v2];
           var v4 = v3.)153L(v3.center);
@@ -4664,10 +4664,10 @@ movie 'temple.swf' {
           v3.849kV = 0;
         }
         var v7 = 0;
-        goto 84604;
+        goto 84607;
         for (;;) {
           ++v7;
-          label 84604:
+          label 84607:
           if (v7 >= 16) break;
           var v8 = *r.+-(0.{==W3(('),HaF(');
           var v9 = this.}CL[3Wt.random(this.}CL.length)];
@@ -4684,10 +4684,10 @@ movie 'temple.swf' {
           v8.849kV = 0;
         }
         var v13 = 0;
-        goto 85075;
+        goto 85078;
         for (;;) {
           ++v13;
-          label 85075:
+          label 85078:
           if (v13 >= this.}CL.length) break;
           this.}CL[v13].4ERhG(1);
         }
@@ -4703,10 +4703,10 @@ movie 'temple.swf' {
         *r.+-(0.+sAv7.blendMode = (WBt).+,W;
         this.-w_0E( = [];
         var v2 = 0;
-        goto 85345;
+        goto 85348;
         for (;;) {
           ++v2;
-          label 85345:
+          label 85348:
           if (v2 >= 3) break;
           this.;A0P3(();
         }
@@ -4722,10 +4722,10 @@ movie 'temple.swf' {
         }
         var v2 = *r.+-(0.32.*=_p_(';Ay[y', 44{N.841,4);
         var v3 = 0;
-        goto 85656;
+        goto 85659;
         for (;;) {
           ++v3;
-          label 85656:
+          label 85659:
           if (v3 >= this.-w_0E(.length) break;
           var v4 = this.-w_0E([v3];
           var v5 = v4.}Yax5 * {-kxL.-V;B;
@@ -4776,10 +4776,10 @@ movie 'temple.swf' {
 
       v1.}R6QW = function () {
         var v2 = 0;
-        goto 87122;
+        goto 87125;
         for (;;) {
           ++v2;
-          label 87122:
+          label 87125:
           if (v2 >= 2) break;
           var v3 = this. XH-.32.*=_p_(';7nTC', 2);
           var v4 = v2 * 2 - 1;
@@ -4885,10 +4885,10 @@ movie 'temple.swf' {
         if (60- != null) {
           6 = 6.duplicate();
           var v5 = 0;
-          goto 88951;
+          goto 88954;
           for (;;) {
             ++v5;
-            label 88951:
+            label 88954:
             if (v5 >= 3) break;
             6[4 + 5 * v5] = 60-;
           }
@@ -5067,10 +5067,10 @@ movie 'temple.swf' {
             *r.log(v3.data.$name + ' défausse ' + v9 + ' car il n\'y a plus de d\'espace libre!', 3);
             var v10 = [];
             var v11 = 0;
-            goto 92552;
+            goto 92555;
             for (;;) {
               ++v11;
-              label 92552:
+              label 92555:
               if (v11 >= v3.,Czm).length) break;
               v10.push(v3.,Czm)[v11].-iB=);
             }
@@ -5084,10 +5084,10 @@ movie 'temple.swf' {
             *r.log(v3.data.$name + ' n\'a pas assez d\'energie pour lancer le sort ' + v9, 3);
             var v12 = [];
             var v13 = 0;
-            goto 92818;
+            goto 92821;
             for (;;) {
               ++v13;
-              label 92818:
+              label 92821:
               if (v13 >= v3.6p i+.length) break;
               v12.push(v3.6p i+[v13].-iB=);
             }
@@ -5116,10 +5116,10 @@ movie 'temple.swf' {
             *r.log(v3.data.$name + ' n\'a pas d\'energie ' + v14 + ' pour lancer le sort ' + v9, 3);
             var v15 = [];
             var v16 = 0;
-            goto 93445;
+            goto 93448;
             for (;;) {
               ++v16;
-              label 93445:
+              label 93448:
               if (v16 >= v3.6p i+.length) break;
               v15.push(v3.6p i+[v16].-iB=);
             }
@@ -5194,10 +5194,10 @@ movie 'temple.swf' {
           v7.draw(this.4d(*.-iB=, v8, null, null, null, null);
           var v9 = 12;
           var v10 = 0;
-          goto 95071;
+          goto 95074;
           for (;;) {
             ++v10;
-            label 95071:
+            label 95074:
             if (v10 >= v9) break;
             var v11 = *r.+-(0.32.18wU*(44{N.{YJfb);
             var v12 = new +7U K(v11);
@@ -5312,10 +5312,10 @@ movie 'temple.swf' {
 
       v1.-hbIJ( = function () {
         var v2 = 0;
-        goto 97462;
+        goto 97465;
         for (;;) {
           ++v2;
-          label 97462:
+          label 97465:
           if (v2 >= this.length) break;
           this.}O.push({'x': this.x, 'y': this.y, '*(': this.*(});
         }
@@ -5342,10 +5342,10 @@ movie 'temple.swf' {
         var v4 = =i{J.{C0z_(this.data.$from);
         v3.6p i+ = new Array();
         var v5 = 0;
-        goto 97882;
+        goto 97885;
         for (;;) {
           ++v5;
-          label 97882:
+          label 97885:
           if (v5 >= this.data.$list.length) break;
           var v6 = this.data.$list[v5];
           var v7 = =i{J.{C0z_(v6);
@@ -5371,10 +5371,10 @@ movie 'temple.swf' {
         493Qs.call(this);
         var v3 = true;
         var v4 = 0;
-        goto 98327;
+        goto 98330;
         for (;;) {
           ++v4;
-          label 98327:
+          label 98330:
           if (v4 >= this.list.length) break;
           if (this.list[v4].}CL != null) {
             v3 = false;
@@ -5423,10 +5423,10 @@ movie 'temple.swf' {
       980Sb.0D 6 = function () {
         {-kxL.87vE7(();
         var v2 = 0;
-        goto 98934;
+        goto 98937;
         for (;;) {
           ++v2;
-          label 98934:
+          label 98937:
           if (v2 >= 980Sb.}Yax5) break;
           980Sb.mode.0D 6();
         }
@@ -5448,10 +5448,10 @@ movie 'temple.swf' {
         this.4d(*.[Yq*b();
         var v3 = =i{J.{C0z_(this.data.$dinozId);
         var v4 = 0;
-        goto 99260;
+        goto 99263;
         for (;;) {
           ++v4;
-          label 99260:
+          label 99263:
           if (v4 >= v3.[rLKw.length) break;
           if (v3.[rLKw[v4] == this.4d(*) {
             this.9T54();
@@ -5463,10 +5463,10 @@ movie 'temple.swf' {
         v3.[rLKw.push(this.4d(*);
         this.4d(*.)sbcK = v3;
         var v6 = v3.[rLKw.length - 1;
-        goto 99526;
+        goto 99529;
         for (;;) {
           --v6;
-          label 99526:
+          label 99529:
           if (v6 < 0) break;
           v3.[rLKw[v6].);oA+();
         }
@@ -5565,10 +5565,10 @@ movie 'temple.swf' {
         var v7 = 0;
         var v8 = [-99 * 1000;
         var v6 = 0;
-        goto 100994;
+        goto 100997;
         for (;;) {
           ++v6;
-          label 100994:
+          label 100997:
           if (v6 >= v5) break;
           if (v4[v6]._name != null) {
             v4[v6].swapDepths(v8 + v7);
@@ -5587,7 +5587,7 @@ movie 'temple.swf' {
           this.]bu40([-99);
           return this.*=_p_(*KB2, [-99);
         }
-        var v7 = 3Wt.7bSH*(this.)2fr3, *KB2, v6 + [-99 * 1000);
+        var v7 = 3Wt.attachMC(this.)2fr3, *KB2, v6 + [-99 * 1000);
         v5[v6] = v7;
         ++v4.7-,;
         return v7;
@@ -5629,10 +5629,10 @@ movie 'temple.swf' {
         var v6 = v5.9oK;
         var v7 = v5.7-,;
         var v8 = 0;
-        goto 101864;
+        goto 101867;
         for (;;) {
           ++v8;
-          label 101864:
+          label 101867:
           if (v8 >= v7) break;
           if (v6[v8] == }J) {
             v6[v8] = null;
@@ -5677,10 +5677,10 @@ movie 'temple.swf' {
         var v3 = this.-fC3a([-99);
         var v5 = v3.9oK;
         var v4 = 0;
-        goto 102514;
+        goto 102517;
         for (;;) {
           ++v4;
-          label 102514:
+          label 102517:
           if (v4 >= v3.7-,) break;
           v5[v4].removeMovieClip();
         }
@@ -5693,10 +5693,10 @@ movie 'temple.swf' {
         var v5 = v3.7-,;
         var v8 = -99999999;
         var v6 = 0;
-        goto 102688;
+        goto 102691;
         for (;;) {
           ++v6;
-          label 102688:
+          label 102691:
           if (v6 >= v5) break;
           var v9 = v4[v6];
           var v10 = v9._y;
@@ -5704,10 +5704,10 @@ movie 'temple.swf' {
             v8 = v10;
           } else {
             var v7 = v6;
-            goto 102784;
+            goto 102787;
             for (;;) {
               --v7;
-              label 102784:
+              label 102787:
               if (v7 <= 0) break;
               var v11 = v4[v7 - 1];
               if (v11._y > v10) {
@@ -5727,10 +5727,10 @@ movie 'temple.swf' {
 
       v1.,}2X ( = function () {
         var v2 = 0;
-        goto 102976;
+        goto 102979;
         for (;;) {
           ++v2;
-          label 102976:
+          label 102979:
           if (v2 >= this.}Zms3.length) break;
           this.clear(v2);
         }
@@ -5753,10 +5753,10 @@ movie 'temple.swf' {
           this.;)bt5 -= {-kxL.-V;B;
         }
         var v3 = 0;
-        goto 103302;
+        goto 103305;
         for (;;) {
           ++v3;
-          label 103302:
+          label 103305:
           if (v3 >= this.86{p(.length) break;
           var v4 = this.86{p([v3];
           switch (v4[0]) {
@@ -6072,7 +6072,7 @@ movie 'temple.swf' {
               _global.StyleSheet = _global.TextField.StyleSheet;
               this.3Wt = new Object();
               this.3Wt.icounter = 0;
-              this.3Wt.7bSH* = function (}J, 5P55, }p j)) {
+              this.3Wt.attachMC = function (}J, 5P55, }p j)) {
                 var v2 = 5P55 + '@' + this.icounter++;
                 }J.attachMovie(5P55, v2, }p j));
                 return }J[v2];
