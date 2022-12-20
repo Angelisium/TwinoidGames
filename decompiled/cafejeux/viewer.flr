@@ -2364,7 +2364,7 @@ for ($somevar in arg0) {
     StringTools.__name__ = ['StringTools'];
     v1 = StringTools.prototype;
     v1.__class__ = StringTools;
-    v1.__class__.;Bkn9 = function (arg0) {
+    v1.__class__.urlEncode = function (arg0) {
       $s.push('StringTools::' + 'urlEncode');
       var v3 = $s.length;
       try {
@@ -4906,7 +4906,7 @@ for ($somevar in v2) {
           v6 += '????';
         }
         v6 = (((((((v6.split('\\')).join('\\\\')).split('\'')).join('\\\'')).split('\n')).join('\\n')).split('\r')).join('\\r');
-        v6 = StringTools.;Bkn9(v6);
+        v6 = StringTools.urlEncode(v6);
         v7 = 'javascript:console.' + v5 + '(\'' + v6 + '\');';
         flash.1ni.9jX3L(v7);
         $s.pop();

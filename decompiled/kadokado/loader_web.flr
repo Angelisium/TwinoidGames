@@ -741,7 +741,7 @@ for ($somevar in arg0) {
     StringTools.__name__ = ['StringTools'];
     v1 = StringTools.prototype;
     v1.__class__ = StringTools;
-    v1.__class__.;Bkn9 = function (arg0) {
+    v1.__class__.urlEncode = function (arg0) {
       return _global.escape(arg0);
     };
 
@@ -1958,7 +1958,7 @@ for ($somevar in v2) {
       var v3 = this.75p8).=Z(MN(v2);
       var v4 = new flash.LoadVars();
       v4.onData = ]6=8H((' Z)Pz', this);
-      var v5 = this.init._startUrl + StringTools.;Bkn9(v3);
+      var v5 = this.init._startUrl + StringTools.urlEncode(v3);
       if (!v4.load(v5)) {
         this.0QyZ*([wBA,.Loader.6NX].3]0_A);
       }
@@ -2298,7 +2298,7 @@ for ($somevar in v2) {
         v2._gtime = 3Wt.9n6(((Date.now()).getTime() - (K.5)Q8A() / 1000);
         ++v2._retry;
         =rJ = (K.75p8).=Z(MN(v2);
-        6I.load((K.]XX}5._saveUrl + StringTools.;Bkn9(=rJ));
+        6I.load((K.]XX}5._saveUrl + StringTools.urlEncode(=rJ));
       };
 
       this.;LI.(C)35.;LI();
@@ -3708,7 +3708,7 @@ for ($somevar in v2) {
       ++this.5V{L6;
       this.1xYp5.7NJ(arg0, this.5V{L6);
       this. [*.) += 'y';
-      arg0 = StringTools.;Bkn9(arg0);
+      arg0 = StringTools.urlEncode(arg0);
       this. [*.) += arg0.length;
       this. [*.) += ':';
       this. [*.) += arg0;

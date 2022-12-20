@@ -623,7 +623,7 @@ for ($somevar in v2) {
       ++this.5V{L6;
       this.1xYp5.7NJ(arg0, this.5V{L6);
       this. [*.) += 'y';
-      arg0 = StringTools.;Bkn9(arg0);
+      arg0 = StringTools.urlEncode(arg0);
       this. [*.) += arg0.length;
       this. [*.) += ':';
       this. [*.) += arg0;
@@ -1227,7 +1227,7 @@ for ($somevar in v2) {
         v5 += '????';
       }
       v5 = (((((((v5.split('\\')).join('\\\\')).split('\'')).join('\\\'')).split('\n')).join('\\n')).split('\r')).join('\\r');
-      v5 = StringTools.;Bkn9(v5);
+      v5 = StringTools.urlEncode(v5);
       v6 = 'javascript:console.' + v4 + '(\'' + v5 + '\');';
       flash.1ni.9jX3L(v6);
     };
@@ -4464,7 +4464,7 @@ for ($somevar in arg0) {
     StringTools.__name__ = ['StringTools'];
     v1 = StringTools.prototype;
     v1.__class__ = StringTools;
-    v1.__class__.;Bkn9 = function (arg0) {
+    v1.__class__.urlEncode = function (arg0) {
       return _global.escape(arg0);
     };
 
