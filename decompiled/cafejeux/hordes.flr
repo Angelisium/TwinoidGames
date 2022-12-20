@@ -1073,7 +1073,7 @@ for ($somevar in v2) {
         return undefined;
       }
       if (this.}[R4,( <= 0) {
-        this.{L 35();
+        this.reset();
         return undefined;
       }
       if (this.=W{QC != null && (!this.+YFB && this.=W{QC._visible)) {
@@ -1099,7 +1099,7 @@ for ($somevar in v2) {
       this.}J.smc.gotoAndStop(this.}[R4,( + 1);
     };
 
-    v1.{L 35 = function () {
+    v1.reset = function () {
       if (this.{y6)2( != null) {
         this.{y6)2(.removeMovieClip();
         this.{y6)2( = null;
@@ -3703,7 +3703,7 @@ for ($somevar in this.1) {
                 ]IH1+(.8[I17(function () {
                   (K.,+cN0((]IH1+(, -=(,aA.38;mB);
                   if (]IH1+(.}[R4,( < =(,aA.38;mB) {
-                    ]IH1+(.{L 35();
+                    ]IH1+(.reset();
                   } else {
                     ]IH1+(.4PUH1(]IH1+(.}[R4,( - =(,aA.38;mB);
                     ]IH1+(.=4Ihs();
@@ -3726,7 +3726,7 @@ for ($somevar in this.1) {
                 ]IH1+(.8[I17(function () {
                   (K.,+cN0((]IH1+(, -=(,aA.38;mB);
                   if (]IH1+(.}[R4,( < =(,aA.38;mB) {
-                    ]IH1+(.{L 35();
+                    ]IH1+(.reset();
                   } else {
                     ]IH1+(.4PUH1(]IH1+(.}[R4,( - =(,aA.38;mB);
                     ]IH1+(.=4Ihs();
@@ -3747,7 +3747,7 @@ for ($somevar in this.1) {
             });
           } else {
             ]IH1+(.8[I17(function () {
-              ]IH1+(.{L 35();
+              ]IH1+(.reset();
             });
           }
           this.)zftr(]IH1+();
@@ -3833,7 +3833,7 @@ for ($somevar in this.1) {
           } else {
             ]IH1+(.8[I17(function () {
               (K.,+cN0((]IH1+(, -9);
-              ]IH1+(.{L 35();
+              ]IH1+(.reset();
               (K.4fYp5(2);
             });
             v10 = 1;
@@ -3878,7 +3878,7 @@ for ($somevar in this.1) {
                   v17[0].8[I17(function (6UA, *) {
                     return function () {
                       6UA[0].,+cN0((*[0], -1);
-                      *[0].{L 35();
+                      *[0].reset();
                       *[0].=4Ihs();
                       6UA[0].4fYp5(1);
                     };
@@ -3898,7 +3898,7 @@ for ($somevar in this.1) {
                 v17[0].8[I17(function (6UA, *) {
                   return function () {
                     6UA[0].,+cN0((*[0], -1);
-                    *[0].{L 35();
+                    *[0].reset();
                     *[0].=4Ihs();
                     6UA[0].4fYp5(1);
                   };
@@ -3949,7 +3949,7 @@ for ($somevar in this.1) {
             var (K = this;
             ]IH1+(.8[I17(function () {
               (K.,+cN0((]IH1+(, -1);
-              ]IH1+(.{L 35();
+              ]IH1+(.reset();
             });
           }
           this.3CfVp();
@@ -4039,7 +4039,7 @@ for ($somevar in this.1) {
           } else {
             ]IH1+(.8[I17(function () {
               (K.,+cN0((]IH1+(, -]boDY);
-              ]IH1+(.{L 35();
+              ]IH1+(.reset();
               ]IH1+(.=4Ihs();
             });
           }
@@ -4353,7 +4353,7 @@ for ($somevar in this.1) {
             v13[0].8[I17(function ((K, *) {
               return function () {
                 (K[0].,+cN0((*[0], -1);
-                *[0].{L 35();
+                *[0].reset();
               };
             }(v14, v13));
           }
@@ -4364,7 +4364,7 @@ for ($somevar in this.1) {
           v13[0].8[I17(function ((K, *) {
             return function () {
               (K[0].,+cN0((*[0], -1);
-              *[0].{L 35();
+              *[0].reset();
             };
           }(v14, v13));
           continue;
@@ -4436,7 +4436,7 @@ for ($somevar in this.1) {
             v9[0].8[I17(function ((K, *) {
               return function () {
                 (K[0].,+cN0((*[0], -*[0].}[R4,();
-                *[0].{L 35();
+                *[0].reset();
               };
             }(v11, v9));
             continue;
@@ -4571,7 +4571,7 @@ for ($somevar in this.1) {
               =0.8[I17(function () {
                 (K.,+cN0((=0, -=(,aA.38;mB);
                 if (=0.}[R4,( < =(,aA.38;mB) {
-                  =0.{L 35();
+                  =0.reset();
                 } else {
                   =0.4PUH1(=0.}[R4,( - =(,aA.38;mB);
                   =0.=4Ihs();
@@ -4581,7 +4581,7 @@ for ($somevar in this.1) {
               var (K = this;
               =0.8[I17(function () {
                 (K.,+cN0((=0, -=0.}[R4,();
-                =0.{L 35();
+                =0.reset();
                 =0.=4Ihs();
               });
             }

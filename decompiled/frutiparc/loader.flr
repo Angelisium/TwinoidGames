@@ -976,7 +976,7 @@ for ($somevar in v2) {
 
       this.[wBA,.loadClip(Loader.64TL._swf, this.+-(0);
       v5 = new haxe.0JleF.+pHi9();
-      v5.1Pi3n('api', {'_setSound': ]6=8H(('=h2h_', this), '_reset': ]6=8H(('{L 35', this)});
+      v5.1Pi3n('api', {'_setSound': ]6=8H(('=h2h_', this), '_reset': ]6=8H(('reset', this)});
       var v6 = haxe.0JleF.8ZAwM.]YRz6(('cnx', v5);
     };
 
@@ -1096,7 +1096,7 @@ for ($somevar in v2) {
     };
 
     v1.+r)6j = null;
-    v1.{L 35 = function () {
+    v1.reset = function () {
       this.frusion.reseting = true;
       this.frusion.onGameReset();
     };

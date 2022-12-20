@@ -171,7 +171,7 @@ movie '1ab777cb081c647fb21deb78c8e870a9.swf' {
           this.22r*E( -= {-kxL.-V;B / 10;
           if (this.22r*E( < 0) {
             this.22r*E( = 0;
-            this.color.{L 35();
+            this.color.reset();
           } else {
             this.color.setTransform({'ra': 100, 'rb': int(100 * this.22r*E(), 'ga': 100, 'gb': 0, 'ba': 100, 'bb': 0, 'aa': 100, 'ab': 0});
           }

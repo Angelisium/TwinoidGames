@@ -579,7 +579,7 @@ movie 'loader.swf' {
               };
 
               Array.prototype.duplicate = Array.prototype.slice;
-              Color.prototype.{L 35 = function () {
+              Color.prototype.reset = function () {
                 this.setTransform({'ra': 100, 'rb': 0, 'ba': 100, 'bb': 0, 'ga': 100, 'gb': 0, 'aa': 100, 'ab': 0});
               };
 
@@ -624,7 +624,7 @@ movie 'loader.swf' {
               _global.ASSetPropFlags(Array.prototype, 'remove', 1);
               _global.ASSetPropFlags(Array.prototype, 'insert', 1);
               _global.ASSetPropFlags(Array.prototype, 'duplicate', 1);
-              _global.ASSetPropFlags(Color.prototype, '{L 35', 1);
+              _global.ASSetPropFlags(Color.prototype, 'reset', 1);
               _global.ASSetPropFlags(XMLNode.prototype, 'get', 1);
               _global.ASSetPropFlags(XMLNode.prototype, 'set', 1);
               _global.ASSetPropFlags(XMLNode.prototype, ' Ff_G', 1);

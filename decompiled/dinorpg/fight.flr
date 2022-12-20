@@ -14203,7 +14203,7 @@ for ($somevar in v2) {
       v1[enumerate v2] = v2[enumerate v2];
     }
     9K.flash.-kVnX = function () {
-      this.{L 35();
+      this.reset();
     };
 
     9K.flash.-kVnX.__name__ = ['9K', 'flash', '-kVnX'];
@@ -14327,7 +14327,7 @@ for ($somevar in v2) {
     };
 
     v1.,96mA = null;
-    v1.{L 35 = function () {
+    v1.reset = function () {
       this.,96mA = [1.0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0];
     };
 
@@ -14878,7 +14878,7 @@ for ($somevar in v2) {
       }
     };
 
-    v1.{L 35 = function () {
+    v1.reset = function () {
       var v2 = this.0cW=E(.iterator();
       while (v2.1ll a()) {
         var v3 = v2.7Y-7();

@@ -51,7 +51,7 @@ movie 'vrilleur.swf' {
               };
 
               Array.prototype.duplicate = Array.prototype.slice;
-              Color.prototype.{L 35 = function () {
+              Color.prototype.reset = function () {
                 this.setTransform({'ra': 100, 'rb': 0, 'ba': 100, 'bb': 0, 'ga': 100, 'gb': 0, 'aa': 100, 'ab': 0});
               };
 
@@ -96,7 +96,7 @@ movie 'vrilleur.swf' {
               _global.ASSetPropFlags(Array.prototype, 'remove', 1);
               _global.ASSetPropFlags(Array.prototype, 'insert', 1);
               _global.ASSetPropFlags(Array.prototype, 'duplicate', 1);
-              _global.ASSetPropFlags(Color.prototype, '{L 35', 1);
+              _global.ASSetPropFlags(Color.prototype, 'reset', 1);
               _global.ASSetPropFlags(XMLNode.prototype, 'get', 1);
               _global.ASSetPropFlags(XMLNode.prototype, 'set', 1);
               _global.ASSetPropFlags(XMLNode.prototype, ' Ff_G', 1);
@@ -1698,7 +1698,7 @@ movie 'vrilleur.swf' {
         this.2JUwU._x = (*r.=OA - *r.3RH3d) * 0.5;
         this.2JUwU._y = *r.*OA * 0.5 + 4;
         this.2JUwU.-(2.text = }]zS.-[=S3([0];
-        this.2JUwU.;-.onPress = 3Wt.6{VYR(this, '{L 35');
+        this.2JUwU.;-.onPress = 3Wt.6{VYR(this, 'reset');
         this.2JUwU.=-.onPress = 3Wt.6{VYR(this, '}gds{');
         this.2JUwU.7]*A).onPress = 3Wt.6{VYR(this, '-I]iO');
         var v3 = [1, 1, 2, 2];
@@ -1898,7 +1898,7 @@ movie 'vrilleur.swf' {
             this.5S6_;(null);
             break;
           case Key.ESCAPE:
-            this.{L 35();
+            this.reset();
             break;
           case Key.ENTER:
             break;
@@ -2109,7 +2109,7 @@ movie 'vrilleur.swf' {
 
       v1.[d7wC = function () {};
 
-      v1.{L 35 = function () {
+      v1.reset = function () {
         if (this.6a)p) {
           this.9npKF();
         }

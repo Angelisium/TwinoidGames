@@ -478,7 +478,7 @@ movie '3d45c1bc1d5c179b1d68cb37c9d4718d.swf' {
       v1.color = function ((v+) {
         var v3 = new Color(this.+-(0.5,4))[this.((][this.)(]);
         if ((v+ == null) {
-          v3.{L 35();
+          v3.reset();
         } else {
           var v4 = 75;
           v3.setTransform({'ra': 100 - v4, 'rb': int(((v+ >> 16) * v4 / 100), 'ga': 100 - v4, 'gb': int(((v+ >> 8 & 255) * v4 / 100), 'ba': 100 - v4, 'bb': int(((v+ & 255) * v4 / 100), 'aa': 100, 'ab': 0});

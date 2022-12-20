@@ -2125,7 +2125,7 @@ for ($somevar in arg0) {
           this.}x*A5( = false;
         } else {
           if (this.}x*A5( != true) {
-            this.{L 35(1);
+            this.reset(1);
             this.}x*A5( = true;
           }
         }
@@ -2783,7 +2783,7 @@ for ($somevar in arg0) {
 
     v1.2h7+L( = function () {};
 
-    v1.{L 35 = function (arg0) {
+    v1.reset = function (arg0) {
       haxe.]{i.+tq5)();
       var v3 = this.6p5aQ.iterator();
       while (v3.1ll a()) {

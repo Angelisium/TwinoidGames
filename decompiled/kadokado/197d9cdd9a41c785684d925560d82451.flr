@@ -416,7 +416,7 @@ movie '197d9cdd9a41c785684d925560d82451.swf' {
           var v2 = new Color(this.}J);
           this.22r*E( -= {-kxL.-V;B * 0.15;
           if (this.22r*E( < 0) {
-            v2.{L 35();
+            v2.reset();
           } else {
             var v3 = int(this.22r*E( * 250);
             v2.setTransform({'ra': 100, 'rb': v3, 'ba': 100, 'bb': v3, 'ga': 100, 'gb': v3, 'aa': 100, 'ab': 0});
