@@ -84936,10 +84936,10 @@ movie 'game.swf' compressed // flash 8, total frames: 1, frame rate: 40 fps, 700
 
     setMember
     push r:1, ';VYdQ'
-    function2 (r:2='](L') (r:1='this')
+    function2 (r:2='tid') (r:1='this')
       push r:this, '-nvL6'
       getMember
-      push r:'](L'
+      push r:'tid'
       getMember
       return
     end // of function 
@@ -84976,7 +84976,7 @@ movie 'game.swf' compressed // flash 8, total frames: 1, frame rate: 40 fps, 700
 
     setMember
     push r:1, ')YC0'
-    function2 (r:2='](L') (r:1='this')
+    function2 (r:2='tid') (r:1='this')
       push r:this, ')_()'
       getMember
       push '3C[pb'
@@ -84989,13 +84989,13 @@ movie 'game.swf' compressed // flash 8, total frames: 1, frame rate: 40 fps, 700
       pop
       push r:this, '-nvL6'
       getMember
-      push r:'](L', r:this, '-nvL6'
+      push r:'tid', r:this, '-nvL6'
       getMember
-      push r:'](L'
+      push r:'tid'
       getMember
       increment
       setMember
-      push 1, 1, r:4, r:'](L'
+      push 1, 1, r:4, r:'tid'
       getMember
       push '2hssz'
       callMethod
@@ -85026,7 +85026,7 @@ movie 'game.swf' compressed // flash 8, total frames: 1, frame rate: 40 fps, 700
       setMember
       push r:6, 1, r:this, '1p37a'
       callMethod
-      push r:'](L'
+      push r:'tid'
       equals
       not
       branchIfTrue label3065
@@ -85057,7 +85057,7 @@ movie 'game.swf' compressed // flash 8, total frames: 1, frame rate: 40 fps, 700
      label3066:
       branch label3063
      label3067:
-      push r:'](L', r:3, 1, r:this, '1p37a'
+      push r:'tid', r:3, 1, r:this, '1p37a'
       callMethod
       equals
       not

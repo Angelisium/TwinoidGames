@@ -276,7 +276,7 @@ movie 'vrilleur.swf' {
                 this.ttrace.selectable = false;
                 this.tprint.selectable = false;
                 var (K = this;
-                this.](L = setInterval(function () {
+                this.tid = setInterval(function () {
                   if ((K.tprint.text != '') {
                     (K.tprint.text = '';
                   }
@@ -311,7 +311,7 @@ movie 'vrilleur.swf' {
               };
 
               this.]{i.,}2X ( = function () {
-                clearInterval(this.](L);
+                clearInterval(this.tid);
                 this.initdone = false;
                 this.ttrace.removeMovieClip();
                 this.tprint.removeMovieClip();
