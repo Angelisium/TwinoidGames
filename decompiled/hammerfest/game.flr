@@ -17132,10 +17132,10 @@ movie 'game.swf' {
               if (3Wt.isNaN(v3)) {
                 this.95O)C((*hr_A.,Gmip.charAt(4));
               } else {
-                if (v3 == 3Wt.=Pn1n) {
+                if (v3 == 3Wt.infinity) {
                   this.95O)C((*hr_A.,Gmip.charAt(5));
                 } else {
-                  if (v3 == -3Wt.=Pn1n) {
+                  if (v3 == -3Wt.infinity) {
                     this.95O)C((*hr_A.,Gmip.charAt(6));
                   } else {
                     v3 = int(v3);
@@ -17207,9 +17207,9 @@ movie 'game.swf' {
         case *hr_A.,Gmip.charAt(4):
           return null * 1;
         case *hr_A.,Gmip.charAt(5):
-          return 3Wt.=Pn1n;
+          return 3Wt.infinity;
         case *hr_A.,Gmip.charAt(6):
-          return -3Wt.=Pn1n;
+          return -3Wt.infinity;
         case *hr_A.,Gmip.charAt(7):
           var v3 = this.}NmjN();
           var v4 = this.}(W8p();
@@ -22208,10 +22208,10 @@ movie 'game.swf' {
           if (3Wt.isNaN(v3)) {
             this.pou.+jMb8(4, 6);
           } else {
-            if (v3 == 3Wt.=Pn1n) {
+            if (v3 == 3Wt.infinity) {
               this.pou.+jMb8(5, 14);
             } else {
-              if (v3 == -3Wt.=Pn1n) {
+              if (v3 == -3Wt.infinity) {
                 this.pou.+jMb8(5, 15);
               } else {
                 if (int(v3) == v3) {
@@ -22249,9 +22249,9 @@ movie 'game.swf' {
             if (v5) {
               var v6 = this.pou.8O,=(1) == 1;
               if (v6) {
-                return -3Wt.=Pn1n;
+                return -3Wt.infinity;
               } else {
-                return 3Wt.=Pn1n;
+                return 3Wt.infinity;
               }
               return null;
             } else {
