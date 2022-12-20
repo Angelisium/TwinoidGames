@@ -79,10 +79,10 @@ movie 'loader.swf' {
       };
 
       v1.)9Uid = function () {
-        3Wt.3Wr3K(('4[=)_', 3Wt.6{VYR(this, '4[=)_'));
-        3Wt.3Wr3K(('(x5W-(', 3Wt.6{VYR(this, '(x5W-('));
-        3Wt.3Wr3K(('(,3G,(', 3Wt.6{VYR(this, '(,3G,('));
-        3Wt.3Wr3K((',{nF;', 3Wt.6{VYR(this, ',{nF;'));
+        3Wt.setGlobal('4[=)_', 3Wt.6{VYR(this, '4[=)_'));
+        3Wt.setGlobal('(x5W-(', 3Wt.6{VYR(this, '(x5W-('));
+        3Wt.setGlobal('(,3G,(', 3Wt.6{VYR(this, '(,3G,('));
+        3Wt.setGlobal(',{nF;', 3Wt.6{VYR(this, ',{nF;'));
         this.=FDiF( = 3Wt.getVar(this.+-(0, '980Sb');
         this.=FDiF(.}-B2(this.+-(0);
         if (Loader.+0vHq == '') {
@@ -670,7 +670,7 @@ movie 'loader.swf' {
                 return _global[}];
               };
 
-              this.3Wt.3Wr3K( = function (}, ;b) {
+              this.3Wt.setGlobal = function (}, ;b) {
                 _global[}] = ;b;
               };
 

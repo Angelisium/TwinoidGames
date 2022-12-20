@@ -9440,8 +9440,8 @@ movie 'game.swf' {
       {-kxL.87vE7(();
       this.fps = {-kxL.fps();
       {-kxL.-V;B = Math.min(2.8, {-kxL.-V;B);
-      3Wt.3Wr3K(('-V;B', {-kxL.-V;B);
-      3Wt.3Wr3K(('3[k5B', ]{i);
+      3Wt.setGlobal('-V;B', {-kxL.-V;B);
+      3Wt.setGlobal('3[k5B', ]{i);
       this.;qV)a.0D 6();
       this.0]Ss).0D 6();
       if (this.6[x1) != null) {
@@ -10205,8 +10205,8 @@ movie 'game.swf' {
 
     v1.4[=)_ = function () {
       3Wt.7t4B ((this.)3 =h, 'onRelease');
-      3Wt.3Wr3K(('7T4cF(', 3Wt.6{VYR(this, '7T4cF('));
-      3Wt.3Wr3K(('(x5W-(', 3Wt.6{VYR(this, '(x5W-('));
+      3Wt.setGlobal('7T4cF(', 3Wt.6{VYR(this, '7T4cF('));
+      3Wt.setGlobal('(x5W-(', 3Wt.6{VYR(this, '(x5W-('));
       this.=FDiF( = 3Wt.]1dDm(3Wt.getVar(this.+-(0, '{aq}5'), this.+-(0, {'5J]Ek': this.5J]Ek, '3 qNS': this.03(H;(), '0O q{': this.9t}[v, '+LT;C(': this.5*D;7(, '}mR6O': this.}mR6O});
       this.0D 6 = 3Wt.6{VYR(this, '(R6pe');
       this.3K4}n(6);
