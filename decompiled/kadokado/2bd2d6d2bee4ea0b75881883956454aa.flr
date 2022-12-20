@@ -4800,7 +4800,7 @@ for ($somevar in arg0) {
         return _global.escape(arg0);
       };
 
-      v1.__class__.+M;(j = function (arg0) {
+      v1.__class__.urlDecode = function (arg0) {
         return _global.unescape(arg0);
       };
 

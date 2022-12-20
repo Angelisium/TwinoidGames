@@ -3970,7 +3970,7 @@ for ($somevar in v2) {
                                                       }
                                                       var v4 = this. [*.substr(this.4AF, v3);
                                                       this.4AF += v3;
-                                                      v4 = StringTools.+M;(j(v4);
+                                                      v4 = StringTools.urlDecode(v4);
                                                       this.{3b96.push(v4);
                                                       return v4;
                                     } else {
@@ -5265,7 +5265,7 @@ for ($somevar in arg0) {
       return _global.escape(arg0);
     };
 
-    v1.__class__.+M;(j = function (arg0) {
+    v1.__class__.urlDecode = function (arg0) {
       return _global.unescape(arg0);
     };
 

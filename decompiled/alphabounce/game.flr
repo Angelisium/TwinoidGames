@@ -4633,7 +4633,7 @@ for ($somevar in this.1) {
       return _global.escape(arg0);
     };
 
-    v1.__class__.+M;(j = function (arg0) {
+    v1.__class__.urlDecode = function (arg0) {
       return _global.unescape(arg0);
     };
 
@@ -8458,7 +8458,7 @@ for ($somevar in v2) {
                                                       }
                                                       var v4 = this. [*.substr(this.4AF, v3);
                                                       this.4AF += v3;
-                                                      v4 = StringTools.+M;(j(v4);
+                                                      v4 = StringTools.urlDecode(v4);
                                                       this.{3b96.push(v4);
                                                       return v4;
                                     } else {
@@ -8885,7 +8885,7 @@ for ($somevar in v2) {
     };
 
     v1.__class__.7wSt] = function () {
-      var v2 = StringTools.+M;(j(=BjP7(.(GRW7();
+      var v2 = StringTools.urlDecode(=BjP7(.(GRW7();
       var v3 = new 9K.+}B.*hr_A('bonjour');
       =BjP7(. ]55 = haxe.Unserializer.;LI(v3.;LI(v2));
       return true;
@@ -18305,7 +18305,7 @@ for ($somevar in v2) {
     v1 = } q4X.prototype;
     v1.__class__ = } q4X;
     v1.__class__.7wSt] = function () {
-      var v2 = StringTools.+M;(j(} q4X.(GRW7();
+      var v2 = StringTools.urlDecode(} q4X.(GRW7();
       var v3 = new 9K.+}B.*hr_A('bonjour');
       } q4X.,xu+F = haxe.Unserializer.;LI(v3.;LI(v2));
       var v4 = new 9K.28xol(2657);

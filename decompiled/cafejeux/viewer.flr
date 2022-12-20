@@ -2381,7 +2381,7 @@ for ($somevar in arg0) {
       }
     };
 
-    v1.__class__.+M;(j = function (arg0) {
+    v1.__class__.urlDecode = function (arg0) {
       $s.push('StringTools::' + 'urlDecode');
       var v3 = $s.length;
       try {
